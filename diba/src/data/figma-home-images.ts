@@ -102,7 +102,9 @@ export const FIGMA_KENNISBANK_ACNE = {
 
 /* Yasin, 10 september 2026: "bij pigment zie je een microneedlingfoto." Klopte: kb-pigment
    toont de Dermapen. Dit is het Cosmelan-masker, en dat is precies waar de kaart over gaat:
-   een pigmenttraject dat over maanden loopt. */
+   een pigmenttraject dat over maanden loopt. Dit beeld hoort bij de kaart op de homepage;
+   de pigmentpagina zelf heeft sinds diezelfde dag een eigen hero-foto, zie
+   FIGMA_PIGMENT_HERO hieronder. */
 export const FIGMA_KENNISBANK_PIGMENT = {
   src: shoot("beh-cosmelan-masker"),
   alt: "Een Cosmelan-masker wordt aangebracht bij een pigmenttraject",
@@ -111,6 +113,14 @@ export const FIGMA_KENNISBANK_PIGMENT = {
 /* En kb-laser toonde een laserpuls op de hoofdhuid, wat naast een kaart over
    laserontharing als haarbehandeling leest. Deze toont het handstuk op een baardlijn, met
    de oogbescherming die erbij hoort. */
+/* De hero van /huidproblemen/pigmentvlekken. Daar stond hetzelfde Cosmelan-masker als op
+   de kennisbankkaart, en Yasin las dat als de OxyGeneo: "doe daar een peelingfoto." Dit is
+   de TCA-peeling, met het flesje in beeld, en dat is bij pigment ook wat er gebeurt. */
+export const FIGMA_PIGMENT_HERO = {
+  src: shoot("stoel-peeling"),
+  alt: "Een TCA-peeling wordt met een wattenstaafje aangebracht tijdens een pigmentbehandeling",
+} as const satisfies Beeld;
+
 export const FIGMA_KENNISBANK_LASER = {
   src: shoot("beh-laserontharing-man"),
   alt: "Laserontharing van de baardlijn, met oogbescherming voor de cliënt",

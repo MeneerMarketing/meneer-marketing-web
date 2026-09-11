@@ -60,8 +60,28 @@ const LOADER = "https://static-widget.salonized.com/loader.js";
 /** Het groen van de site, zodat de knoppen in de agenda die van ons zijn. */
 const KLEUR = "#434f3a";
 
-/** Hoe hoog het vak wordt. Uit de code van Salonized zelf. */
-const HOOGTE = 1500;
+/**
+ * De maten van het vak, en waarom ze zo staan.
+ *
+ * Yasin, 10 september 2026: "die widget gaat niet lekker qua breedte op desktop, en op een
+ * iPhone heb je dubbele scroll: een in de widget en een van de pagina zelf."
+ *
+ * Het eerste is opgelost door de breedte mee te geven. Zonder `width` staat de agenda op
+ * de 500 punten van Salonized, en dat is een smalle strook in het midden van een breed
+ * scherm. Nu is hij zo breed als de kolom waar hij in staat.
+ *
+ * Het tweede is niet weg te nemen: de agenda is een paneel met een eigen kop en een
+ * schuivende dienstenlijst eronder, en het laadscript kent geen manier om zich aan zijn
+ * inhoud aan te passen (`auto-height` zet alleen de hoogte niet, en er luistert niets naar
+ * een bericht van binnenuit). Wat wel kan is de hoogte zo kiezen dat het paneel als paneel
+ * leest in plaats van als afgekapte pagina. Op een breed scherm 760 punten, ruim genoeg om
+ * een stap in een keer te zien; op een telefoon 620, net iets minder dan het beeld, zodat
+ * de pagina eronder zichtbaar doorloopt en je merkt waar het paneel ophoudt. Salonized zelf
+ * houdt op hun eigen boekpagina 744 punten aan als bovengrens, dus dit ligt in dezelfde orde.
+ */
+const HOOGTE = 760;
+const HOOGTE_MOBIEL = 620;
+const BREEDTE = 720;
 
 export default function Boekingswidget() {
   const vak = useRef<HTMLDivElement>(null);
@@ -87,15 +107,30 @@ export default function Boekingswidget() {
     const doel = vak.current;
     if (!doel) return;
 
-    /* Zodra het script iets in het vak zet, is de agenda er en mag de melding weg. */
-    const kijker = new MutationObserver(() => {
-      if (doel.firstElementChild) setMislukt(false);
-    });
-    kijker.observe(doel, { childList: true });
+    /* Zodra het script een venster naar Salonized in het vak zet, is de agenda er en mag
+       de melding weg. Wijst dat venster ergens anders heen, dan is het geen agenda: het
+       laadscript zet op een ontwikkelmachine `http://localhost:8090` neer, en dat draait
+       alleen bij hen. Zo'n venster vult het vak wel maar toont niets. */
+    const deugt = () => {
+      const venster = doel.querySelector("iframe");
+      if (!venster) return false;
+      try {
+        return new URL(venster.src, window.location.href).hostname.endsWith(
+          "salonized.com",
+        );
+      } catch {
+        return false;
+      }
+    };
 
-    /* Blijft het vak acht seconden leeg, dan is er iets misgegaan. */
+    const kijker = new MutationObserver(() => {
+      if (deugt()) setMislukt(false);
+    });
+    kijker.observe(doel, { childList: true, subtree: true, attributes: true });
+
+    /* Staat er na acht seconden geen agenda, dan is er iets misgegaan. */
     const t = window.setTimeout(() => {
-      if (!doel.firstElementChild) setMislukt(true);
+      if (!deugt()) setMislukt(true);
     }, 8000);
 
     return () => {
@@ -113,11 +148,16 @@ export default function Boekingswidget() {
         data-color={KLEUR}
         data-language="nl"
         data-height={HOOGTE}
+        data-height-mobile={HOOGTE_MOBIEL}
+        data-width={BREEDTE}
+        data-outline="none"
         data-inline="true"
         /* De ruimte staat gereserveerd zolang we wachten, zodat de pagina niet
            verspringt zodra de agenda binnenkomt. Lukt het niet, dan valt die ruimte weg:
            een halve meter wit boven een foutmelding leest als een storing in onze site. */
-        style={mislukt || opLocalhost ? undefined : { minHeight: HOOGTE }}
+        /* Geen `min-height` meer: het laadscript zet de hoogte zelf op het vak, en een
+           eigen ondergrens erbovenop gaf op een telefoon een stuk wit onder de agenda. */
+        style={undefined}
       />
       {opLocalhost ? (
         /* Alleen zichtbaar voor wie de site lokaal bekijkt; op het echte domein bestaat
@@ -132,11 +172,13 @@ export default function Boekingswidget() {
         </div>
       ) : null}
 
-      {mislukt ? (
+      {/* Niet op localhost: daar staat de melding hierboven al, en die legt uit waarom
+          het vak leeg blijft. Twee meldingen onder elkaar leest als twee storingen. */}
+      {mislukt && !opLocalhost ? (
         <div className="rounded-[var(--r-md)] bg-[var(--g-025)] p-6">
           <p className="text-[16px] leading-7 text-[var(--t-strong)]">
             De agenda laadt hier niet. Dat ligt meestal aan een adblocker of aan
-            het netwerk waar je op zit.
+            het netwerk waar je op zit. Bellen kan ook: 010-2038423.
           </p>
           <a
             href={DIBA_SALONIZED_BOOKING_URL}

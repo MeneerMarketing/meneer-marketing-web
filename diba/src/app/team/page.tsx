@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Label from "@/components/ui/Label";
+import Veegrij from "@/components/ui/Veegrij";
 import Image from "next/image";
 import {
   KWALITEITSREGISTER,
@@ -198,7 +199,7 @@ export default function TeamPage() {
           {perVak.map((v) => (
             <div key={v.id}>
               <Label>
-                {v.label} · {v.leden.length}
+                {v.label} ({v.leden.length})
               </Label>
               {/* Op een telefoon twee portretten naast elkaar en de bio pas vanaf sm: acht
                   kaarten van een heel scherm onder elkaar was zeven schermen scrollen voor
@@ -332,36 +333,40 @@ export default function TeamPage() {
               </p>
             </div>
 
-            <ul className="mt-8 sm:mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-              {genoemd.map(({ lid, reviews }) => (
-                <li
-                  key={lid.slug}
-                  className="flex flex-col rounded-[var(--r-lg)] bg-white p-7 sm:p-8"
-                >
-                  <p className="diba-card-title text-[var(--t-strong)]">
-                    {lid.naam}
-                  </p>
-                  <p className="diba-label mt-2 text-[var(--t-label)]">
-                    {lid.functie}
-                  </p>
-                  <p className="mt-4 text-[14px] leading-6 text-[var(--t-muted)] tabular-nums">
-                    {reviews.length}{" "}
-                    {reviews.length === 1
-                      ? "review noemt deze naam"
-                      : "reviews noemen deze naam"}
-                  </p>
-                  <blockquote className="mt-5 flex-1 text-[15px] leading-7 text-[var(--t-body)]">
-                    {reviews[0].quote}
-                  </blockquote>
-                  <p className="mt-5 text-[14px] leading-6 text-[var(--t-muted)]">
-                    {reviews[0].name}
-                    {reviews[0].relativeDate
-                      ? ` · ${reviews[0].relativeDate}`
-                      : ""}
-                  </p>
-                </li>
-              ))}
-            </ul>
+            <Veegrij
+              label="Reviews waarin een naam valt"
+              klasse="-mx-5 mt-8 sm:-mx-9 sm:mt-10 lg:-mx-[7.5vw]"
+              breedte="w-[82%] max-w-[420px] sm:w-[46%] lg:w-[31%]"
+              items={genoemd.map(({ lid, reviews }) => ({
+                sleutel: lid.slug,
+                naam: lid.naam,
+                inhoud: (
+                  <div className="flex h-full flex-col rounded-[var(--r-lg)] bg-white p-7 sm:p-8">
+                    <p className="diba-card-title text-[var(--t-strong)]">
+                      {lid.naam}
+                    </p>
+                    <p className="diba-label mt-2 text-[var(--t-label)]">
+                      {lid.functie}
+                    </p>
+                    <p className="mt-4 text-[14px] leading-6 text-[var(--t-muted)] tabular-nums">
+                      {reviews.length}{" "}
+                      {reviews.length === 1
+                        ? "review noemt deze naam"
+                        : "reviews noemen deze naam"}
+                    </p>
+                    <blockquote className="mt-5 flex-1 text-[15px] leading-7 text-[var(--t-body)]">
+                      {reviews[0].quote}
+                    </blockquote>
+                    <p className="mt-5 text-[14px] leading-6 text-[var(--t-muted)]">
+                      {reviews[0].name}
+                      {reviews[0].relativeDate
+                        ? `, ${reviews[0].relativeDate}`
+                        : ""}
+                    </p>
+                  </div>
+                ),
+              }))}
+            />
 
             <Link
               href="/reviews"

@@ -127,7 +127,7 @@ export default async function ReviewsPage({
           </div>
 
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
-            <Label>De stand bij de bron</Label>
+            <Label>Het cijfer</Label>
             <p className="mt-5 text-[64px] leading-none font-medium tracking-[-.05em] text-[var(--t-strong)] tabular-nums">
               {gemiddeld}
             </p>
@@ -147,7 +147,9 @@ export default async function ReviewsPage({
         </div>
       </section>
 
-      <section className="px-5 pb-10 sm:pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+      {/* Yasin, 10 september 2026: boven de foto miste lucht; hij lag tegen het groene
+          vlak van de hero aan. Onder even veel als boven. */}
+      <section className="px-5 py-10 sm:px-9 sm:py-14 lg:px-[7.5vw] lg:py-16">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/team-tweetal.jpg"

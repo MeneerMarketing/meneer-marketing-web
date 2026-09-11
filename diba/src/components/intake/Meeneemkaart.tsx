@@ -47,11 +47,12 @@ export default function Meeneemkaart() {
   const leeg = profielIsLeeg(profiel);
   const stand = compleetheid(profiel);
   const melden = meldPunten(profiel);
+  const tekst = intakeTekst(profiel);
 
   async function kopieer() {
     setMislukt(false);
     try {
-      await navigator.clipboard.writeText(intakeTekst(profiel));
+      await navigator.clipboard.writeText(tekst);
       setGekopieerd(true);
       window.setTimeout(() => setGekopieerd(false), 4000);
     } catch {
@@ -117,7 +118,23 @@ export default function Meeneemkaart() {
         </ul>
       ) : null}
 
-      <div className="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3">
+      {/* Wat er in je klembord komt, zichtbaar voordat je kopieert.
+
+          Yasin, 10 september 2026: "als ik mijn profiel kopieer zie ik alleen dat
+          Fitzpatrick-ding." Hij had twee van de negen onderdelen ingevuld, dus de tekst wás
+          twee regels; hij kon dat alleen nergens zien. Nu staat de tekst er gewoon, en zie
+          je meteen dat er meer in komt zodra je meer invult. Onderaan de tekst staan de
+          onderdelen die nog open zijn; zie `intakeTekst` in data/huidprofiel. */}
+      <details className="mt-6 rounded-[var(--r-md)] bg-white">
+        <summary className="diba-label flex min-h-12 cursor-pointer items-center justify-between gap-3 px-5 text-[var(--g-800)]">
+          Bekijk wat je meestuurt
+        </summary>
+        <pre className="max-h-72 overflow-y-auto border-t border-[var(--g-100)] px-5 py-4 text-[14px] leading-6 whitespace-pre-wrap text-[var(--t-body)]">
+          {tekst}
+        </pre>
+      </details>
+
+      <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
         <button
           type="button"
           onClick={kopieer}

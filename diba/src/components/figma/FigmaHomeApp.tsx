@@ -4,22 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import FigmaKennisbankSection from "@/components/figma/FigmaKennisbankSection";
+import HeroSchermvullend from "@/components/hero-variant/HeroSchermvullend";
 import HeroVariant from "@/components/hero-variant/HeroVariant";
 import HomeHero from "@/components/home/HomeHero";
+import Wensenrij from "@/components/home/Wensenrij";
 import Reviewslider from "@/components/home/Reviewslider";
 import HoofdNav from "@/components/nav/HoofdNav";
 import Topbalk from "@/components/nav/Topbalk";
-import FigmaVoorJouSection from "@/components/figma/FigmaVoorJouSection";
 import type { HomeWens } from "@/data/home-intents";
 import Button from "@/components/ui/Button";
 import DibaIcon from "@/components/ui/DibaIcon";
-import {
-  ArrowUpRight,
-  Close,
-  PlusMinus,
-  Pulse,
-  Sparkle,
-} from "@/components/ui/Icon";
+import { ArrowUpRight, Close, Pulse, Vinkje } from "@/components/ui/Icon";
 import { BelOfAppInline } from "@/components/ui/BelOfApp";
 import SiteFooter from "@/components/ui/SiteFooter";
 import Label from "@/components/ui/Label";
@@ -75,15 +70,23 @@ const EERLIJK_ADVIES_PUNTEN = [
 /**
  * De homepage.
  *
- * `heroVariant` wisselt alleen het bovenste blok om. /  draait hem uit en
- * /home-variant draait hem aan, zodat die twee routes verder letterlijk dezelfde
- * pagina zijn en een vergelijking dus over de hero gaat en nergens anders over.
+ * `hero` wisselt alleen het bovenste blok om, zodat een vergelijking over de hero gaat en
+ * nergens anders over:
+ *
+ *   "figma"        de huidige homepage: balk, navigatie, en de hero met beeld naast tekst
+ *   "variant"      het beeldvlak met ronde hoeken en de navigatie erin
+ *   "schermvullend" video van rand tot rand, balk en navigatie doorschijnend erover
+ *
+ * Sinds 11 september 2026 draaien / en /home-variant allebei "schermvullend": die hero is
+ * goedgekeurd en staat nu op de homepage zelf. De andere twee standen blijven staan zolang
+ * ze nog te vergelijken moeten zijn; verdwijnt die behoefte, dan mag deze prop weg en met
+ * hem HeroVariant en HomeHero.
  */
 export default function FigmaHomeApp({
-  heroVariant = false,
+  hero = "figma",
   wensen,
 }: {
-  heroVariant?: boolean;
+  hero?: "figma" | "variant" | "schermvullend";
   /** Van de server (lib/home-wensen): de zeven huidwensen met hun behandelingen. */
   wensen: readonly HomeWens[];
 }) {
@@ -105,17 +108,13 @@ export default function FigmaHomeApp({
 
   return (
     <main className="figma-home min-h-screen overflow-x-clip bg-[var(--g-010)] text-[var(--t-strong)] selection:bg-[var(--on-dark-accent)]">
-      {/* De hero is het enige verschil tussen deze pagina en /home-variant.
-
-          Die route liet eerst alleen de hero zien met een toelichting eronder. Dat is
-          geen vergelijking: je zag twee heroes maar maar één pagina, en juist hoe een
-          hero doorloopt naar de rest bepaalt of hij werkt. Nu draaien beide routes deze
-          hele component en verschilt alleen dit blok.
-
-          HeroVariant brengt zijn eigen Topbalk en HoofdNav mee, want in dat ontwerp
-          zweven die binnen het beeld in plaats van erboven te staan. Vandaar dat ze in
-          de andere tak apart staan en hier niet. */}
-      {heroVariant ? (
+      {/* Het bovenste blok is het enige dat per stand verschilt. De schermvullende hero
+          en HeroVariant brengen hun eigen Topbalk en HoofdNav mee, want in die ontwerpen
+          zweven die over het beeld in plaats van erboven te staan. Vandaar dat ze in de
+          derde tak apart staan en in de andere twee niet. */}
+      {hero === "schermvullend" ? (
+        <HeroSchermvullend />
+      ) : hero === "variant" ? (
         <HeroVariant />
       ) : (
         <>
@@ -125,11 +124,14 @@ export default function FigmaHomeApp({
           <HomeHero />
         </>
       )}
-      {/* De cijfers staan nu in HomeHero zelf. Op /home-variant niet, want die
-          route gebruikt een andere hero; daar blijft de losse balk staan. */}
-      {heroVariant ? <ProofBar items={DIBA_HOME_PROOF_ITEMS} /> : null}
+      {/* De cijfers staan in de hero zelf: bij "figma" in HomeHero, bij "schermvullend"
+          als strook eronder. Alleen de oude variant met het beeldvlak heeft ze niet en
+          krijgt hier de losse balk. */}
+      {hero === "variant" ? <ProofBar items={DIBA_HOME_PROOF_ITEMS} /> : null}
 
-      <FigmaVoorJouSection wensen={wensen} />
+      {/* De zeven wensen als rij die je opzij veegt, in plaats van zeven uitklapkaarten
+          onder elkaar (Yasin, 11 september 2026). */}
+      <Wensenrij wensen={wensen} />
 
       <section
         id="huidscan"
@@ -149,26 +151,17 @@ export default function FigmaHomeApp({
               de EVE-M. Zo kun je later zien of er iets veranderd is. Niet elke
               behandeling vraagt om zo’n analyse.
             </p>
-            {/* items-center en niet items-start. De wikkel is `w-fit`, dus precies zo
-                breed als de knop; met links uitlijnen begon de link daaronder aan de
-                linkerrand van die knop in plaats van eronder te staan. Nu hangt hij
-                gecentreerd onder de knop, en dat blijft kloppen als de knoptekst verandert. */}
-            <div className="mt-9 flex w-fit flex-col items-center gap-4">
-              {/* De mini-scan in de kaart hiernaast is de primaire actie van deze
-                  sectie. Deze knop is de uitleg-route en blijft dus secundair. */}
+            {/* Eén uitgang, niet twee. De link "Meer over de huidanalyse" stond hieronder
+                en is eruit (Yasin, 11 september 2026): de mini-scan hiernaast is de actie
+                van deze sectie, deze knop is de uitleg, en een derde route erbij maakte van
+                een keuze een lijstje. */}
+            <div className="mt-9">
               <Button
                 variant="secundair-op-donker"
                 onClick={() => setScanOpen(true)}
               >
                 Wat gebeurt er in een huidanalyse?
               </Button>
-              <Link
-                href="/behandelingen/huidanalyse"
-                className="diba-label diba-label-on-dark inline-flex items-center gap-1.5 underline underline-offset-4"
-              >
-                Meer over de huidanalyse
-                <ArrowUpRight size={13} />
-              </Link>
             </div>
           </div>
           <MiniHuidscan />
@@ -186,7 +179,9 @@ export default function FigmaHomeApp({
             Op donker en niet op mintgroen: dit is nu een onderdeel van de groene sectie en
             geen los kaartje. De vulling is wit op tien procent, want een tweede
             donkergroen vlak in hetzelfde vlak leest als een fout. */}
-        <div className="mx-auto mt-12 flex flex-wrap items-center justify-between gap-5 rounded-[var(--r-lg)] bg-white/10 px-7 py-6 sm:px-10 lg:mt-16">
+        {/* Weg op een telefoon (Yasin, 11 september 2026). De vaste balk onderaan het
+            scherm draagt WhatsApp daar al, en dit blok zei hetzelfde een scherm hoger. */}
+        <div className="mx-auto mt-12 hidden flex-wrap items-center justify-between gap-5 rounded-[var(--r-lg)] bg-white/10 px-7 py-6 sm:flex sm:px-10 lg:mt-16">
           <div className="flex items-center gap-5">
             <DibaIcon variant="wit" size={52} />
             <p className="max-w-xl text-sm leading-6 text-[var(--on-dark-body)]">
@@ -200,7 +195,10 @@ export default function FigmaHomeApp({
             href={DIBA_WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="diba-label inline-flex shrink-0 items-center gap-1.5 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-5 py-3 text-[var(--on-dark-btn-text)] transition hover:bg-white"
+            /* `ml-auto` voor de telefoon: de rij loopt daar om, en dan komt de knop op
+               een eigen regel links te staan. Yasin, 11 september 2026: die hoort rechts.
+               Op een breed scherm doet `justify-between` het al en verandert er niets. */
+            className="diba-label ml-auto inline-flex shrink-0 items-center gap-1.5 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-5 py-3 text-[var(--on-dark-btn-text)] transition hover:bg-white"
           >
             Stel je vraag
             <ArrowUpRight size={13} />
@@ -292,7 +290,7 @@ export default function FigmaHomeApp({
               aria-hidden="true"
             />
             <span className="diba-label absolute bottom-6 left-6 text-white">
-              Diba Clinics · Rotterdam
+              Diba Clinics in Rotterdam
             </span>
           </div>
 
@@ -446,8 +444,8 @@ export default function FigmaHomeApp({
                 aria-hidden="true"
               />
               <blockquote className="absolute bottom-7 left-7 right-7 max-w-md text-2xl leading-[1.15] tracking-[-.04em] text-white sm:text-3xl">
-                “Ik voelde me voor het eerst niet als een probleem dat opgelost
-                moest worden.”
+                “Ze namen de tijd om te kijken, en ik hoorde precies wat er wel
+                en niet kon.”
               </blockquote>
             </div>
           </div>
@@ -456,22 +454,16 @@ export default function FigmaHomeApp({
 
       <section className="bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto">
-          <div className="flex flex-wrap items-end justify-between gap-6">
-            <div>
-              <Label>In de kliniek</Label>
-              <h2 className="diba-display-m mt-4">
-                Wat je van een afspraak kunt verwachten.
-              </h2>
-            </div>
-            <p className="max-w-sm text-[15px] leading-7 text-[var(--t-body)]">
-              Je leest hier wat je voor de afspraak moet weten en wat je na
-              afloop meekrijgt.
-            </p>
+          <div>
+            <Label>In de kliniek</Label>
+            <h2 className="diba-display-m mt-4">
+              Wat je van een afspraak kunt verwachten.
+            </h2>
           </div>
-          <MobielInklap
-            className="mt-8 sm:mt-12"
-            label="Bekijk wat je kunt verwachten"
-          >
+          {/* De regel "je leest hier wat je voor de afspraak moet weten" stond hiernaast en
+              is eruit (Yasin, 11 september 2026): hij zei wat de drie kaarten eronder zelf
+              al zeggen. Het inklapblok eromheen is ook weg; deze sectie staat nu open. */}
+          <div className="mt-8 sm:mt-12">
             <div className="grid gap-4 md:grid-cols-[.75fr_1.25fr_.75fr]">
               <div className="rounded-[var(--r-lg)] bg-[var(--g-200)] p-6 md:min-h-[300px] md:p-7">
                 <span className="grid h-10 w-10 place-items-center rounded-[var(--r-pill)] bg-white text-[var(--g-500)]">
@@ -521,8 +513,11 @@ export default function FigmaHomeApp({
                 </Link>
               </div>
               <div className="rounded-[var(--r-lg)] bg-white p-6 md:min-h-[300px] md:p-7">
+                {/* Een vinkje en geen sprankeling (Yasin, 11 september 2026). Dit vak gaat
+                    over wat je vooraf te horen krijgt; een vinkje zegt "afgesproken", een
+                    sterretje zegt "magie". */}
                 <span className="grid h-10 w-10 place-items-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-500)]">
-                  <Sparkle size={18} />
+                  <Vinkje size={18} />
                 </span>
                 <h3 className="diba-card-title-lg mt-6 md:mt-28">
                   Een resultaat met een verwachting
@@ -544,7 +539,7 @@ export default function FigmaHomeApp({
                 </Link>
               </div>
             </div>
-          </MobielInklap>
+          </div>
         </div>
       </section>
 
@@ -555,7 +550,7 @@ export default function FigmaHomeApp({
           naar de volledige lijst. */}
       <Reviewslider />
 
-      <section className="px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      <section className="bg-[var(--g-025)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto grid gap-10 lg:grid-cols-[.7fr_1.3fr]">
           <div>
             <Label>Goed om te weten</Label>
@@ -568,19 +563,36 @@ export default function FigmaHomeApp({
               <BelOfAppInline />.
             </p>
           </div>
-          <div className="border-t border-[var(--g-100)]">
-            {HOME_FAQ_ITEMS.map((item) => (
+          <div className="space-y-2">
+            {/* Dezelfde vorm als elke andere uitklapvraag op de site: een wit vak op een
+                  zachte ondergrond, opschrift op zestien pixels, tweeënzeventig pixels hoog
+                  als hij dicht is. Yasin, 10 september 2026: "het moet overal gewoon
+                  hetzelfde zijn." Hier stonden regels met haarlijnen en een opschrift van
+                  twintig, dat op een telefoon over twee regels brak. */}
+            {HOME_FAQ_ITEMS.map((item, i) => (
               <details
                 key={item.id}
-                className="group border-b border-[var(--g-100)] py-6"
+                open={i === 0}
+                className="group rounded-[var(--r-md)] bg-white px-6 py-3"
               >
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-xl tracking-[-.035em]">
+                <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 text-[16px] leading-[1.4] font-medium">
                   <span>{item.question}</span>
-                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)] transition group-open:rotate-180">
-                    <PlusMinus size={16} />
+                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)]">
+                    <svg
+                      aria-hidden="true"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 18 18"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                    >
+                      <path d="M2 9h14" />
+                      <path d="M9 2v14" className="group-open:opacity-0" />
+                    </svg>
                   </span>
                 </summary>
-                <p className="max-w-xl pt-4 text-[15px] leading-7 text-[var(--t-body)]">
+                <p className="max-w-xl pt-4 pb-2 text-[15px] leading-7 text-[var(--t-body)]">
                   {publicCopy(item.answer)}
                 </p>
               </details>

@@ -13,17 +13,12 @@ import {
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import DrieKnoppen from "@/components/porien/DrieKnoppen";
 import Button from "@/components/ui/Button";
-import ProofBar from "@/components/ui/ProofBar";
 import { FIGMA_INTENT_ACNE } from "@/data/figma-home-images";
 import { PORIEN_FAQ, PORIEN_SOORTEN, PORIEN_WEL_NIET } from "@/data/porien";
 import { zonderVlaggen } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
-import {
-  DIBA_PROOF_STRIP_ITEMS,
-  DIBA_SITE_URL,
-  DIBA_WHATSAPP_URL,
-} from "@/lib/site";
+import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
@@ -85,56 +80,57 @@ export default function PorienPage() {
       />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-10 sm:py-14 lg:py-20">
+      {/* Donkergroen, zoals elke andere hoofdingang van de site (Yasin, 11 september
+          2026). */}
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)]">
+        {/* Op een telefoon plakte het beeld tegen de onderrand van het groene vlak: de
+            tekstkolom bracht zijn eigen onderruimte mee, de beeldkolom niet (Yasin, 11
+            september 2026). Vanaf 1024 staan ze naast elkaar en geldt het niet. */}
+        <div className="mx-auto grid gap-6 px-5 pb-10 sm:px-9 sm:pb-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-10 lg:px-[7.5vw] lg:pb-0">
+          <div className="py-10 sm:py-14 lg:py-20 max-lg:pb-0">
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <Link href="/huidproblemen" className="hover:text-[var(--g-700)]">
+              <Link href="/huidproblemen" className="hover:text-white">
                 Huidproblemen
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Poriën</span>
+              <span className="text-[var(--on-dark-body)]">Poriën</span>
             </nav>
 
-            <h1 className="diba-display-l mt-6">
+            <h1 className="diba-display-l mt-6 text-[var(--on-dark)]">
               Grote poriën
               <br />
-              <span className="diba-accent">in je gezicht</span>
+              <span className="diba-accent-on-dark">in je gezicht</span>
             </h1>
 
-            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               De doorsnede van een porie ligt vast in je aanleg, maar hoe
               opvallend ze zijn hangt af van de huid eromheen. Daar valt veel
               aan te doen.
             </p>
-            <LeesVerder>
-              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <LeesVerder opDonker>
+              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
                 Met peelings, microneedling en een HydraFacial maken we de
                 poriën leeg en de huid eromheen gladder. Samen zorgt dat ervoor
                 dat ze een stuk minder opvallen.
               </p>
             </LeesVerder>
 
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
-              <Button
-                href="#knoppen"
-                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
-              >
+            <div className="diba-knoprij mt-9">
+              <Button variant="primair-op-donker" href="#knoppen">
                 Zet de drie knoppen aan
               </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
-                variant="ghost"
+                variant="secundair-op-donker"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
                 kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
@@ -157,8 +153,6 @@ export default function PorienPage() {
         </div>
       </section>
 
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
-
       <PillarNav ankers={ANKERS} />
 
       {/* ── De drie knoppen: de uitblinker ─────────────────────────────── */}
@@ -180,7 +174,7 @@ export default function PorienPage() {
       {/* ── Wat je ziet ────────────────────────────────────────────────── */}
       <section
         id="welke"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="bg-[var(--g-025)] scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop

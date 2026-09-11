@@ -10,7 +10,6 @@ import {
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
-import ProofBar from "@/components/ui/ProofBar";
 import { behandelingVoorSlug, prijsTekst } from "@/data/behandelingen";
 import {
   ALARMSIGNALEN,
@@ -18,14 +17,10 @@ import {
   SNURKEN_FAQ,
   SNURKEN_WEL_NIET,
 } from "@/data/snurken";
-import { publicCopy } from "@/lib/copy-flags";
+import { eersteZin, publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
-import {
-  DIBA_PROOF_STRIP_ITEMS,
-  DIBA_SITE_URL,
-  DIBA_WHATSAPP_URL,
-} from "@/lib/site";
+import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
@@ -84,9 +79,12 @@ export default function SnurkenPage() {
       />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-10 sm:py-14 lg:py-20">
+      <section className="bg-[var(--g-700)] px-5 text-[var(--on-dark)] sm:px-9 lg:px-[7.5vw]">
+        {/* Op een telefoon plakte de kaart tegen de onderrand van het groene vlak: de
+            tekstkolom bracht zijn eigen onderruimte mee, de kaartkolom niet (Yasin, 11
+            september 2026). Vanaf 1024 staan ze naast elkaar en geldt het niet. */}
+        <div className="grid gap-6 pb-10 sm:pb-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-10 lg:pb-0">
+          <div className="py-10 sm:py-14 lg:py-20 max-lg:pb-0">
             <nav
               aria-label="Kruimelpad"
               className="diba-label diba-label-on-dark flex flex-wrap gap-2"
@@ -117,11 +115,10 @@ export default function SnurkenPage() {
               Daarom begint deze pagina bij de bron en niet bij het apparaat.
             </p>
 
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+            <div className="diba-knoprij mt-9">
               <Button
                 variant="primair-op-donker"
                 href="#bron"
-                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
                 kort="Naar de bron"
               >
                 Waar komt jouw geluid vandaan?
@@ -131,7 +128,6 @@ export default function SnurkenPage() {
                 variant="secundair-op-donker"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
                 kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
@@ -165,16 +161,19 @@ export default function SnurkenPage() {
                           `${nightlase.duurMinuten} minuten`,
                         ] as const)
                       : null,
-                    ["Hoe vaak", nightlase.sessies] as const,
-                    ["Herstel", nightlase.herstel] as const,
+                    ["Hoe vaak", eersteZin(nightlase.sessies)] as const,
+                    ["Herstel", eersteZin(nightlase.herstel)] as const,
                   ].filter(Boolean) as readonly (readonly [string, string])[]
                 ).map(([kop, waarde]) => (
                   <div
                     key={kop}
-                    className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-4"
+                    /* Op een telefoon onder elkaar. Naast een opschrift van acht tekens
+                       blijft er nog geen tweehonderd pixels over voor het antwoord, en
+                       daar liep de tekst over vijf rechts uitgelijnde regels in. */
+                    className="py-4 sm:flex sm:flex-wrap sm:items-baseline sm:justify-between sm:gap-x-6 sm:gap-y-1"
                   >
                     <dt className="diba-label shrink-0">{kop}</dt>
-                    <dd className="max-w-[30ch] text-right text-[15px] leading-7 text-[var(--t-strong)]">
+                    <dd className="mt-1 text-[15px] leading-7 text-[var(--t-strong)] sm:mt-0 sm:max-w-[30ch] sm:text-right">
                       {publicCopy(waarde)}
                     </dd>
                   </div>
@@ -189,8 +188,6 @@ export default function SnurkenPage() {
           </div>
         </div>
       </section>
-
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
 
       <PillarNav ankers={ANKERS} />
 
@@ -218,7 +215,10 @@ export default function SnurkenPage() {
                     : "bg-white"
                 }`}
               >
-                <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
+                {/* Op een telefoon het label boven de kop (`flex-col-reverse`), vanaf 640
+                    weer naast elkaar. In één omlopende rij met `items-baseline` komen de
+                    twee bij het afbreken tegen elkaar aan te staan. */}
+                <div className="flex flex-col-reverse gap-1.5 sm:flex-row sm:flex-wrap sm:items-baseline sm:justify-between sm:gap-x-6 sm:gap-y-2">
                   <h3
                     className={`diba-card-title ${bron.binnenBereik ? "" : "text-[var(--t-strong)]"}`}
                   >

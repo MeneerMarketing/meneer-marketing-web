@@ -12,7 +12,6 @@ import {
 import Button from "@/components/ui/Button";
 import { HuidStrakker } from "@/components/ui/HuidIcon";
 import Label from "@/components/ui/Label";
-import ProofBar from "@/components/ui/ProofBar";
 import {
   STRIAE_BEOORDELING,
   STRIAE_FAQ,
@@ -22,11 +21,7 @@ import {
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
-import {
-  DIBA_PROOF_STRIP_ITEMS,
-  DIBA_SITE_URL,
-  DIBA_WHATSAPP_URL,
-} from "@/lib/site";
+import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
@@ -68,55 +63,59 @@ export default function StriaePage() {
         ])}
       />
 
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-10 sm:py-14 lg:py-20">
+      {/* Donkergroen, zoals elke andere hoofdingang van de site (Yasin, 11 september
+          2026). */}
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)]">
+        {/* Op een telefoon plakte het beeld tegen de onderrand van het groene vlak: de
+            tekstkolom bracht zijn eigen onderruimte mee, de beeldkolom niet (Yasin, 11
+            september 2026). Vanaf 1024 staan ze naast elkaar en geldt het niet. */}
+        <div className="mx-auto grid gap-6 px-5 pb-10 sm:px-9 sm:pb-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-10 lg:px-[7.5vw] lg:pb-0">
+          <div className="py-10 sm:py-14 lg:py-20 max-lg:pb-0">
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <Link href="/huidproblemen" className="hover:text-[var(--g-700)]">
+              <Link href="/huidproblemen" className="hover:text-white">
                 Huidproblemen
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Striae</span>
+              <span className="text-[var(--on-dark-body)]">Striae</span>
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
-              Striae <span className="diba-accent">behandelen</span>
+              Striae <span className="diba-accent-on-dark">behandelen</span>
             </h1>
 
-            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Striae behandelen we met microneedling en laser, die de aanmaak
               van collageen in het gescheurde bindweefsel op gang brengen. Zo
               worden ze vlakker en minder zichtbaar.
             </p>
-            <LeesVerder>
-              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <LeesVerder opDonker>
+              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
                 Het stadium bepaalt wat er haalbaar is. Rode en paarse striae
                 reageren het beste; bij witte werken we op de structuur. Tijdens
                 de intake stelt de behandelaar vast waar jij staat.
               </p>
             </LeesVerder>
 
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+            <div className="diba-knoprij mt-9">
               <Button
+                variant="primair-op-donker"
                 href="/intake"
-                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
                 kort="Plan consult"
               >
                 Plan een huidconsult
               </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
-                variant="ghost"
+                variant="secundair-op-donker"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
                 kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
@@ -138,8 +137,6 @@ export default function StriaePage() {
           </div>
         </div>
       </section>
-
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
 
       <PillarNav ankers={ANKERS} />
 
@@ -166,7 +163,7 @@ export default function StriaePage() {
                 <h3 className="diba-card-title">{stap.kop}</h3>
                 {/* min-h in lh, zoals elders: gelijke tekstlengte geeft niet altijd
                     gelijke regels, want dat hangt af van waar de woorden breken. */}
-                <p className="mt-3 min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
+                <p className="mt-3 lg:min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
                   {publicCopy(stap.tekst)}
                 </p>
               </li>
@@ -177,7 +174,7 @@ export default function StriaePage() {
 
       <section
         id="soorten"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="bg-[var(--g-025)] scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -200,10 +197,10 @@ export default function StriaePage() {
                 <p className="diba-label mt-2 text-[var(--t-muted)]">
                   {s.vakterm}
                 </p>
-                <p className="mt-4 min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
+                <p className="mt-4 lg:min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
                   {publicCopy(s.watHetIs)}
                 </p>
-                <p className="mt-4 min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
+                <p className="mt-4 lg:min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
                   {publicCopy(s.watWijDoen)}
                 </p>
                 <p className="mt-auto border-t border-[var(--g-100)] pt-4 text-[15px] leading-7 text-[var(--t-muted)]">

@@ -2,13 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import Label from "@/components/ui/Label";
-import ProofBar from "@/components/ui/ProofBar";
 import { APPARATUUR } from "@/data/apparatuur";
 import { BEHANDELINGEN } from "@/data/behandelingen";
 import { KENNISBANK } from "@/data/kennisbank";
 import { BESTEMMINGEN } from "@/data/symptoomzoeker";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
+import { DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
 import LeesVerder from "@/components/ui/LeesVerder";
 
@@ -127,8 +126,6 @@ export default function KennisbankPage() {
           />
         </div>
       </section>
-
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
 
       {/* ── Het register ──
 

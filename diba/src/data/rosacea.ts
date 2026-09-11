@@ -56,10 +56,10 @@ export const ROSACEA_TRIGGERS: readonly Trigger[] = [
   },
   {
     id: "cosmetica",
-    naam: "Producten met alcohol of parfum",
+    naam: "Verzorging met parfum",
     groep: "beinvloedbaar",
     waarom:
-      "Prikkelen een huid die al overactief reageert. Vaak de stille dader.",
+      "Parfum en alcohol in crèmes prikkelen een huid die al overactief reageert. Vaak de stille dader.",
   },
   {
     id: "sauna",

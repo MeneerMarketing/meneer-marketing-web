@@ -27,7 +27,9 @@ function soort(pad) {
 }
 
 const browser = await chromium.launch();
-const pagina = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+const pagina = await browser.newPage({
+  viewport: { width: 1440, height: 900 },
+});
 
 await pagina.goto(`${BASIS}/sitemap.xml`, { waitUntil: "domcontentloaded" });
 const xml = await pagina.content();
@@ -40,7 +42,9 @@ const uit = new Map(); // pad -> Set van doelen
 const naar = new Map(); // pad -> aantal pagina's dat ernaar wijst
 
 for (const pad of paden) {
-  await pagina.goto(`${BASIS}${pad}`, { waitUntil: "domcontentloaded" }).catch(() => {});
+  await pagina
+    .goto(`${BASIS}${pad}`, { waitUntil: "domcontentloaded" })
+    .catch(() => {});
 
   /* Alleen links in de inhoud. De kop- en voettekst staan op elke pagina en zeggen dus
      niets over of déze pagina ergens heen wijst. */
@@ -61,7 +65,9 @@ await browser.close();
 /* ── Wat wijst waarheen ─────────────────────────────────────────────────── */
 const SOORTEN = ["huidprobleem", "behandeling", "apparaat"];
 
-console.log("\nPer paginasoort: naar hoeveel van de andere soorten wordt gewezen\n");
+console.log(
+  "\nPer paginasoort: naar hoeveel van de andere soorten wordt gewezen\n",
+);
 for (const s of SOORTEN) {
   const paginas = paden.filter((p) => soort(p) === s);
   const gaten = [];
@@ -79,7 +85,9 @@ for (const s of SOORTEN) {
 
 /* ── Waar komt niemand ──────────────────────────────────────────────────── */
 const wees = paden.filter((p) => p !== "/" && !naar.has(p));
-console.log(`Pagina's waar geen enkele andere pagina naar wijst: ${wees.length}`);
+console.log(
+  `Pagina's waar geen enkele andere pagina naar wijst: ${wees.length}`,
+);
 for (const p of wees) console.log("   " + p);
 
 const dun = paden.filter((p) => p !== "/" && (naar.get(p) ?? 0) === 1);

@@ -12,7 +12,6 @@ import {
 import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
-import ProofBar from "@/components/ui/ProofBar";
 import { publicCopy, zonderVlaggen } from "@/lib/copy-flags";
 import {
   BOLLETJE_BEELDEN,
@@ -22,11 +21,7 @@ import {
 } from "@/data/gerstekorrels";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
-import {
-  DIBA_PROOF_STRIP_ITEMS,
-  DIBA_SITE_URL,
-  DIBA_WHATSAPP_URL,
-} from "@/lib/site";
+import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 import LeesVerder from "@/components/ui/LeesVerder";
 
 export const metadata: Metadata = zoekmachineVelden({
@@ -74,40 +69,45 @@ export default function Pagina() {
         ])}
       />
 
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-10 sm:py-14 lg:py-20">
+      {/* Donkergroen, zoals elke andere hoofdingang van de site (Yasin, 11 september
+          2026). */}
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)]">
+        {/* Op een telefoon plakte het beeld tegen de onderrand van het groene vlak: de
+            tekstkolom bracht zijn eigen onderruimte mee, de beeldkolom niet (Yasin, 11
+            september 2026). Vanaf 1024 staan ze naast elkaar en geldt het niet. */}
+        <div className="mx-auto grid gap-6 px-5 pb-10 sm:px-9 sm:pb-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-10 lg:px-[7.5vw] lg:pb-0">
+          <div className="py-10 sm:py-14 lg:py-20 max-lg:pb-0">
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <Link href="/huidproblemen" className="hover:text-[var(--g-700)]">
+              <Link href="/huidproblemen" className="hover:text-white">
                 Huidproblemen
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">
+              <span className="text-[var(--on-dark-body)]">
                 Gerstekorrels en milia
               </span>
             </nav>
 
-            <h1 className="diba-display-l mt-6">
+            <h1 className="diba-display-l mt-6 text-[var(--on-dark)]">
               Gerstekorrels
               <br />
-              <span className="diba-accent">en witte bultjes</span>
+              <span className="diba-accent-on-dark">en witte bultjes</span>
             </h1>
 
-            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Gerstekorrel betekent in de volksmond en in de spreekkamer twee
               verschillende dingen. Wat mensen meestal bedoelen is een milium:
               een hard wit bolletje dat er maanden zit, geen pijn doet en niet
               uit te knijpen is. Dat is in seconden weg.
             </p>
-            <LeesVerder>
-              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <LeesVerder opDonker>
+              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
                 Een milium halen we weg met een fijne naald, in een paar
                 seconden per bolletje. Is het rood, warm en pijnlijk, dan gaat
                 het om een ontsteking; kom dan langs, want de aanpak is dan een
@@ -115,19 +115,15 @@ export default function Pagina() {
               </p>
             </LeesVerder>
 
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
-              <Button
-                href="#welke"
-                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
-              >
+            <div className="diba-knoprij mt-9">
+              <Button variant="primair-op-donker" href="#welke">
                 Kijk wat jij hebt
               </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
-                variant="ghost"
+                variant="secundair-op-donker"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
                 kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
@@ -149,14 +145,12 @@ export default function Pagina() {
         </div>
       </section>
 
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
-
       <PillarNav ankers={ANKERS} />
 
       {/* ── In de behandelkamer ── */}
       <section
         id="afspraak"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="bg-[var(--g-025)] scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop

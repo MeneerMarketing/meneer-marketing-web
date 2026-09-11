@@ -19,7 +19,9 @@
     "start:meten": "next start --port 3021",
     "beeld": "node scripts/controleer-beeld.mjs",
     "links": "node scripts/controleer-links.mjs",
-    "hover": "node scripts/controleer-hover.mjs"
+    "hover": "node scripts/controleer-hover.mjs",
+    "knoppen": "node scripts/controleer-knoppen.mjs",
+    "uitblok": "node scripts/controleer-uitblok.mjs"
   },
   "dependencies": {
     "next": "16.2.2",

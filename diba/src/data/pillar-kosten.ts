@@ -1,4 +1,4 @@
-import { behandelingVoorSlug, prijsTekst } from "@/data/behandelingen";
+import { behandelingVoorSlug, prijsCijfer } from "@/data/behandelingen";
 
 /**
  * De kostenvraag op de huidprobleempagina's.
@@ -33,7 +33,11 @@ import { behandelingVoorSlug, prijsTekst } from "@/data/behandelingen";
  */
 export function kostenVraag(): { vraag: string; antwoord: string } {
   const intake = behandelingVoorSlug("huidanalyse");
-  const bedrag = intake ? prijsTekst(intake.prijs) : "een vast bedrag";
+  /* Het getal en het woord, niet het teken: Yasin wil geen eurotekens meer (10 september
+     2026) en "de intake kost 50" leest als een halve zin. */
+  const bedrag = intake
+    ? `${prijsCijfer(intake.prijs)} euro`
+    : "een vast bedrag";
 
   return {
     vraag: "Wat kost dit?",

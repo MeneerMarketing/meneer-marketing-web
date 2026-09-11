@@ -104,12 +104,7 @@ const statisch = zoekPaginas(join(process.cwd(), "src", "app"))
   .filter((p) => !p.includes("[") && !p.includes("("));
 
 const paden = [...new Set([...statisch, ...uitSitemap, ...uitOverzichten])]
-  .filter(
-    (p) =>
-      !p.startsWith("/preview-login") &&
-      !p.startsWith("/api") &&
-      !p.startsWith("/dev"),
-  )
+  .filter((p) => !p.startsWith("/api") && !p.startsWith("/dev"))
   .sort();
 
 /**
@@ -322,9 +317,23 @@ const METEN = ({ TIKDOEL, LETTER, TUSSENRUIMTE }) => {
     klein: [...klein.entries()].map(([px, wat]) => `${px} "${wat}"`),
     geduld,
     afgeknipt: [...new Set(afgeknipt)],
-    overloop:
-      document.documentElement.scrollWidth -
-      document.documentElement.clientWidth,
+    /* Kan de bezoeker de pagina echt opzij duwen?
+     *
+     * Hier stond `documentElement.scrollWidth - clientWidth`. Dat getal telt ook inhoud mee
+     * die een voorouder wegknipt met `overflow-x: clip`, en dat doet `main` op elke pagina.
+     * Zodra er ergens een veegrij bij kwam meldde deze controle 242 pixels overloop op een
+     * pagina die met geen mogelijkheid opzij te schuiven is: gemeten bleef `window.scrollX`
+     * nul en was `body.scrollWidth` precies de schermbreedte.
+     *
+     * Daarom nu de proef op de som: duw de pagina opzij en kijk of hij meegeeft. Dat is
+     * exact wat deze regel wil weten, en er zit geen aanname meer tussen. */
+    overloop: (() => {
+      const y = window.scrollY;
+      window.scrollTo(9999, y);
+      const uit = Math.round(window.scrollX);
+      window.scrollTo(0, y);
+      return uit;
+    })(),
   };
 };
 

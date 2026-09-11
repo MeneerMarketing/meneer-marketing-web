@@ -77,9 +77,9 @@ export const VACATURES: readonly Vacature[] = [
     paginaTitel: { kop: "Vacature huidtherapeut", accent: "in Rotterdam" },
     tabTitel: "Vacature huidtherapeut Rotterdam",
     omschrijving:
-      "Vacature huidtherapeut bij Diba Clinics in Rotterdam. Werken met EVE-M, Fotona, Nordlys, SkinPen, Dermapen 4 en peelings, in een team van acht. Parttime of fulltime.",
+      "Vacature huidtherapeut bij Diba Clinics in Rotterdam. Werken met EVE-M, Fotona, Nordlys, SkinPen en peelings, in een team van elf. Parttime of fulltime.",
     intro: [
-      "Diba Clinics is een huidkliniek in Rotterdam-Noord. We behandelen acne, pigment, littekens, huidverbetering en ongewenste haargroei, en we werken sinds 2017 met een vast team van acht.",
+      "Diba Clinics is een huidkliniek in Rotterdam-Noord. We behandelen acne, pigment, littekens, huidverbetering en ongewenste haargroei, en we werken sinds 2017 met een vast team van elf.",
       "We zoeken een huidtherapeut die zelfstandig een spreekuur draait: meten, een behandelplan opstellen en dat plan zelf uitvoeren op de apparatuur die er staat.",
     ],
     geplaatst: GEPLAATST,
@@ -113,7 +113,7 @@ export const VACATURES: readonly Vacature[] = [
       "Beschikbaar op minimaal twee avonden per maand, want dinsdag en donderdag lopen door tot 21:00",
     ],
     watWeBieden: [
-      "Een vaste plek in een team van acht, met huidtherapeuten en orthomoleculair huidspecialisten naast elkaar",
+      "Een vaste plek in een team van elf, met huidtherapeuten en orthomoleculair huidspecialisten naast elkaar",
       "Apparatuur die er staat en werkt: Fotona TimeWalker, Nordlys IPL, GentleMax Pro, SkinPen, Dermapen 4, U225 en de EVE-M",
       "Tijd voor een intake van een uur, want daar begint elk traject mee",
       "Ruimte voor bij- en nascholing, ook omdat het Kwaliteitsregister die punten vraagt",

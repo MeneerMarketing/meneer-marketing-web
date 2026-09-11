@@ -942,6 +942,15 @@ function labelVan<T extends { readonly id: string; readonly label: string }>(
  *
  * Eerst waarvoor iemand komt, dan wat er in de weg kan zitten. Dat laatste is waar het om
  * gaat: het zijn precies de dingen die anders pas aan de balie boven tafel komen.
+ *
+ * WAT ER NIET IS INGEVULD, STAAT ER OOK.
+ *
+ * Yasin, 10 september 2026: "als ik mijn profiel kopieer zie ik alleen dat Fitzpatrick-ding,
+ * het is niet gedetailleerd." Hij had er twee van de negen ingevuld, dus stonden er twee
+ * regels. Dat klopte en het hielp niemand: de behandelaar leest een berichtje van twee regels
+ * en weet niet of de rest niet speelt of niet gevraagd is. Nu staat er onderaan welke
+ * onderdelen open bleven. Voor de bezoeker is dat een zetje om ze alsnog in te vullen, en
+ * voor de kliniek de lijst met wat er in de afspraak nog uitgevraagd moet worden.
  */
 export function intakeTekst(p: Huidprofiel): string {
   const regels: string[] = ["Mijn huidprofiel van dibaclinics.nl", ""];
@@ -1004,11 +1013,38 @@ export function intakeTekst(p: Huidprofiel): string {
     for (const m of melden) regels.push(`- ${m}`);
   }
 
+  const open = nogOpen(p);
+  if (open.length > 0) {
+    regels.push("", `Nog niet ingevuld: ${open.join(", ")}.`);
+  }
+
   regels.push(
     "",
     "Dit is wat ik zelf heb ingevuld, geen meting. Ik weet dat er niets vaststaat tot er gemeten is.",
   );
   return regels.join("\n");
+}
+
+/**
+ * Welke onderdelen van het profiel nog leeg zijn, in gewone woorden.
+ *
+ * Dezelfde negen als in `compleetheid`, want anders telt de kaart iets anders dan deze
+ * lijst opsomt en klopt "twee van de negen" niet meer bij wat eronder staat.
+ */
+export function nogOpen(p: Huidprofiel): readonly string[] {
+  const open: string[] = [];
+  if (!p.scan) open.push("de huidscan");
+  if (p.doelen.length === 0) open.push("waarvoor ik kom");
+  if (!p.leeftijd) open.push("leeftijd");
+  if (!p.huidtype) open.push("huidtype");
+  if (!p.herstel) open.push("hersteltijd die ik heb");
+  if (!p.conditie) open.push("huidconditie");
+  if (!p.gevoeligheid) open.push("gevoeligheid");
+  if (p.gebruikt.length === 0) open.push("wat ik nu gebruik");
+  if (p.situatie.length === 0 && p.voorgeschiedenis.length === 0) {
+    open.push("wat er verder speelt");
+  }
+  return open;
 }
 
 export function profielSamenvatting(p: Huidprofiel): readonly string[] {

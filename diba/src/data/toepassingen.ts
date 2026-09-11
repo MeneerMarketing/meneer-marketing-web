@@ -67,7 +67,7 @@ export const TOEPASSINGEN: readonly Toepassing[] = [
     kop: "Microneedling bij",
     accent: "acnelittekens",
     omschrijving:
-      "Microneedling met de SkinPen of de Dermapen 4 bij acnelittekens in Rotterdam. Wat het doet bij putjes, wat het niet doet bij vlekken, en hoeveel sessies het vraagt.",
+      "Microneedling met de SkinPen of Dermapen 4 bij acnelittekens in Rotterdam. Wat het doet bij putjes, wat niet bij vlekken, en hoeveel sessies het kost.",
     intro:
       "Acnelittekens zijn geen vlekken maar vormen: de huid mist er bindweefsel, en daardoor vangt hij het licht anders. Daar helpt geen crème tegen en geen peeling; die werken op kleur en op de bovenlaag. Microneedling werkt op de vorm. Dezelfde behandeling doen we ook met de Dermapen 4; welke pen het wordt, kiest de behandelaar per zone.",
     waarom: [
@@ -290,7 +290,7 @@ export const TOEPASSINGEN: readonly Toepassing[] = [
       },
     ],
     verwachting:
-      "Minder diepe striae met een gelijkmatiger oppervlak. Bij rode striae vaak ook minder kleurverschil. Wat er niet gebeurt is dat ze verdwijnen; wie dat belooft, belooft iets over weefsel dat niet klopt.",
+      "Minder diepe striae met een gelijkmatiger oppervlak. Bij rode striae vaak ook minder kleurverschil. Wat er niet gebeurt is dat ze verdwijnen: het litteken blijft zitten, het valt minder op.",
     grens: [
       "Witte striae reageren minder dan rode. Dat is geen instelling die anders kan; het is wat er nog te herstellen valt.",
       "Tijdens de zwangerschap en de borstvoeding behandelen we niet.",
@@ -494,7 +494,7 @@ export const TOEPASSINGEN: readonly Toepassing[] = [
       },
     ],
     verwachting:
-      "Een rustigere huid met minder ontstoken plekjes, en minder roodheid rond de puistjes die er zijn. Het is de rustige stap in een acnetraject: geen hersteltijd, geen prikkeling, wel herhaling.",
+      "Een rustigere huid met minder ontstoken plekjes, en minder roodheid rond de puistjes die er zijn. Het is de rustige stap in een acnetraject: geen hersteltijd, geen prikkeling, en het effect komt uit de herhaling.",
     grens: [
       "Als losse behandeling doet het weinig; zonder aanpak van de verstopping komt het terug.",
       "Bij zware ontstoken acne hoort een arts mee te kijken.",

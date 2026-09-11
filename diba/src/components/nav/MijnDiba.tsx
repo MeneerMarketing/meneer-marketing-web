@@ -14,10 +14,21 @@ import { MIJN_DIBA } from "@/data/hoofdnavigatie";
  * BESLUIT-OKAN: of dit portaal er komt en of het zo heet.
  */
 
-export default function MijnDiba() {
+export type MijnDibaProps = {
+  /** Doorschijnend over een beeld: witte letters, geen eigen vlak. */
+  opBeeld?: boolean;
+};
+
+export default function MijnDiba({ opBeeld = false }: MijnDibaProps) {
   return (
     <details className="group relative">
-      <summary className="diba-label flex h-9 cursor-pointer list-none items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-050)] px-3 text-[var(--t-label)] transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] [&::-webkit-details-marker]:hidden">
+      <summary
+        className={`diba-label flex h-9 cursor-pointer list-none items-center gap-2 rounded-[var(--r-pill)] px-3 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 [&::-webkit-details-marker]:hidden ${
+          opBeeld
+            ? "border border-white/40 text-white hover:bg-white/15 focus-visible:outline-white"
+            : "bg-[var(--g-050)] text-[var(--t-label)] hover:bg-[var(--g-100)] focus-visible:outline-[var(--g-700)]"
+        }`}
+      >
         <svg
           viewBox="0 0 16 16"
           className="h-3.5 w-3.5 text-[var(--g-600)]"
@@ -34,7 +45,7 @@ export default function MijnDiba() {
         {MIJN_DIBA.label}
       </summary>
 
-      <div className="absolute right-0 z-40 mt-2 w-72 rounded-[var(--r-sm)] border border-[var(--g-100)] bg-white p-5 shadow-[var(--shadow-float)]">
+      <div className="absolute right-0 z-[45] mt-2 w-72 rounded-[var(--r-sm)] border border-[var(--g-100)] bg-white p-5 shadow-[var(--shadow-float)]">
         <p className="diba-card-title text-[var(--t-strong)]">
           {MIJN_DIBA.kop}
         </p>

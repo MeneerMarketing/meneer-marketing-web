@@ -318,6 +318,49 @@ export const INSURERS: readonly Insurer[] = [
   },
 ];
 
+/**
+ * De verzekeraars die er sinds 10 september 2026 bij horen, zonder eigen pagina.
+ *
+ * Okan gaf deze vier door met de opmerking dat DSW voor Rotterdam de belangrijkste is. Ze
+ * staan in de lijst op /vergoedingen en wijzen door naar hun eigen vergoedingenpagina.
+ *
+ * Waarom geen eigen pagina: een pagina hier belooft drie dingen die eerst nagelezen moeten
+ * worden, en die zijn er voor deze vier nog niet. Zes keer dezelfde tekst met een andere
+ * naam erboven is een doorslagpagina, en dat is precies wat de huisregels verbieden.
+ *
+ * De merken tussen haakjes zijn labels die onder dezelfde verzekeraar vallen; mensen kennen
+ * vaak alleen die naam van hun pas.
+ */
+export type ExtraVerzekeraar = {
+  readonly naam: string;
+  /** De merken die eronder vallen, zoals ze op iemands zorgpas staan. */
+  readonly labels?: readonly string[];
+  /** Hun eigen vergoedingenpagina. Nagekeken op 11 september 2026, alle vier 200. */
+  readonly url: string;
+};
+
+export const EXTRA_VERZEKERAARS: readonly ExtraVerzekeraar[] = [
+  {
+    naam: "DSW",
+    labels: ["Stad Holland", "inTwente"],
+    url: "https://www.dsw.nl/vergoedingen",
+  },
+  {
+    naam: "Zorg en Zekerheid",
+    url: "https://www.zorgenzekerheid.nl/vergoedingen",
+  },
+  {
+    naam: "Salland",
+    labels: ["HollandZorg"],
+    url: "https://www.salland.nl/vergoedingen",
+  },
+  {
+    naam: "Aevitae",
+    labels: ["EUCARE"],
+    url: "https://www.aevitae.com/vergoedingen",
+  },
+];
+
 export function insurerBySlug(slug: string): Insurer | undefined {
   return INSURERS.find((i) => i.slug === slug);
 }

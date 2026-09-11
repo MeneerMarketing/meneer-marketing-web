@@ -16,8 +16,8 @@ function PlusMin({ open }: { open: boolean }) {
   return (
     <svg
       aria-hidden="true"
-      width="18"
-      height="18"
+      width="14"
+      height="14"
       viewBox="0 0 18 18"
       stroke="var(--diba-green-700)"
       strokeWidth="1.5"
@@ -45,7 +45,12 @@ export default function FaqAccordion({ items }: { items: FaqItem[] }) {
         const panelId = `${baseId}-panel-${i}`;
         const btnId = `${baseId}-btn-${i}`;
         return (
-          <div key={i} className="rounded-[var(--r-md)] bg-white px-6 py-5">
+          /* Dezelfde maten als de uitklappers in `PillarSecties`, die op veertig
+             klachtpagina's staan. Yasin, 10 september 2026: "waarom is dit blokje weer
+             anders? het moet overal gewoon hetzelfde zijn." Er waren twee verschillen: dit
+             vak had padding én de knop erin ook (samen vierennegentig pixels hoog tegen
+             achtenzestig daar), en het opschrift stond een maat kleiner. */
+          <div key={i} className="rounded-[var(--r-md)] bg-white px-6 py-3">
             <h3>
               <button
                 id={btnId}
@@ -53,15 +58,19 @@ export default function FaqAccordion({ items }: { items: FaqItem[] }) {
                 aria-expanded={isOpen}
                 aria-controls={panelId}
                 onClick={() => setOpen(isOpen ? null : i)}
-                className="flex min-h-12 w-full items-center justify-between gap-[var(--space-4)]
-                           py-[var(--space-4)] text-left
-                           text-[16px] font-medium leading-[1.4] text-[var(--ink-900)]
+                className="flex min-h-12 w-full cursor-pointer items-center justify-between gap-4
+                           text-left text-[16px] leading-[1.4] font-medium text-[var(--ink-900)]
                            [font-family:var(--font-body)]
                            focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
                            focus-visible:outline-[var(--diba-green-700)]"
               >
-                {item.question}
-                <PlusMin open={isOpen} />
+                <span>{item.question}</span>
+                <span
+                  className="grid h-8 w-8 shrink-0 place-items-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)]"
+                  aria-hidden="true"
+                >
+                  <PlusMin open={isOpen} />
+                </span>
               </button>
             </h3>
             <div
@@ -74,7 +83,7 @@ export default function FaqAccordion({ items }: { items: FaqItem[] }) {
               style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }}
             >
               <div className="overflow-hidden">
-                <p className="max-w-[720px] pb-[var(--space-6)] text-[16px] leading-[1.6] text-[var(--ink-600)]">
+                <p className="max-w-[68ch] pt-4 text-[15px] leading-7 text-[var(--t-body)]">
                   {item.answer}
                 </p>
               </div>

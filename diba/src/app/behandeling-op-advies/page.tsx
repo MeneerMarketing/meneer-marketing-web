@@ -175,18 +175,22 @@ export default function BehandelingOpAdviesPage() {
               </p>
             </LeesVerder>
 
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            <div className="mt-8 diba-knoprij">
               <Link
                 href="/afspraak"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
               >
-                Boek een behandeling op advies
+                <span className="sm:hidden">Boek op advies</span>
+                <span className="max-sm:hidden">
+                  Boek een behandeling op advies
+                </span>
               </Link>
               <a
                 href="#routes"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-[var(--g-200)] px-6 text-[var(--t-strong)] transition-colors hover:border-[var(--g-700)] hover:bg-[var(--g-025)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
               >
-                Nieuw of al klant?
+                <span className="sm:hidden">Nieuw of klant?</span>
+                <span className="max-sm:hidden">Nieuw of al klant?</span>
               </a>
             </div>
           </div>
@@ -215,8 +219,8 @@ export default function BehandelingOpAdviesPage() {
         <div className="mx-auto">
           <Label>Kies de afspraak die bij jou past</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
-            Twee routes,{" "}
-            <span className="diba-accent">en ze kosten niet hetzelfde</span>
+            Nieuw bij ons{" "}
+            <span className="diba-accent">of al eens geweest</span>
           </h2>
 
           <div className="mt-8 sm:mt-12 grid gap-4 lg:grid-cols-2 lg:items-start">
@@ -246,7 +250,7 @@ export default function BehandelingOpAdviesPage() {
               <p className="diba-label mt-7 text-[var(--t-label)]">
                 Daarna hoor je
               </p>
-              <ul className="mt-3 space-y-2.5">
+              <ul className="mt-3 space-y-1.5">
                 {[
                   "welke behandeling we adviseren",
                   "waarom die bij jouw huid past",
@@ -257,7 +261,7 @@ export default function BehandelingOpAdviesPage() {
                 ].map((r) => (
                   <li key={r} className="flex gap-3">
                     <Vinkje />
-                    <span className="text-[15px] leading-7 text-[var(--t-body)]">
+                    <span className="text-[15px] leading-6 text-[var(--t-body)]">
                       {r}
                     </span>
                   </li>
@@ -350,14 +354,19 @@ export default function BehandelingOpAdviesPage() {
           </div>
 
           <div>
-            <ul className="grid gap-3 sm:grid-cols-2">
+            {/* Negen witte kaartjes onder elkaar met zestien pixels padding en twaalf
+                ertussen: op een telefoon werd dat een halve pagina lucht voor negen korte
+                regels (Yasin, 10 september 2026: "die opsommingen zijn veel te gespreid").
+                Onder 640 pixels is het daarom één vak met haarlijnen ertussen; vanaf daar
+                blijven het twee kolommen kaarten, want daar past het wel. */}
+            <ul className="rounded-[var(--r-sm)] bg-white px-4 max-sm:divide-y max-sm:divide-[var(--g-100)] sm:grid sm:grid-cols-2 sm:gap-3 sm:rounded-none sm:bg-transparent sm:px-0">
               {HULPVRAGEN.map((h) => (
                 <li
                   key={h}
-                  className="flex gap-3 rounded-[var(--r-sm)] bg-white p-4"
+                  className="flex gap-3 py-3 sm:rounded-[var(--r-sm)] sm:bg-white sm:p-4"
                 >
                   <Vinkje />
-                  <span className="text-[15px] leading-7 text-[var(--t-body)]">
+                  <span className="text-[15px] leading-6 text-[var(--t-body)] sm:leading-7">
                     {h}
                   </span>
                 </li>
@@ -377,8 +386,8 @@ export default function BehandelingOpAdviesPage() {
         <div className="mx-auto">
           <Label>Zo verloopt je afspraak</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
-            Vier stappen,{" "}
-            <span className="diba-accent">en jij beslist bij de laatste</span>
+            Vier stappen{" "}
+            <span className="diba-accent">van vraag tot behandeling</span>
           </h2>
 
           <ol className="mt-8 sm:mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -390,7 +399,7 @@ export default function BehandelingOpAdviesPage() {
                 <span className="diba-label text-[var(--g-700)]">
                   Stap {i + 1}
                 </span>
-                <p className="diba-card-title mt-3 min-h-[2lh] text-[var(--t-strong)]">
+                <p className="diba-card-title mt-3 sm:min-h-[2lh] text-[var(--t-strong)]">
                   {s.kop}
                 </p>
                 <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
@@ -402,8 +411,11 @@ export default function BehandelingOpAdviesPage() {
         </div>
       </section>
 
-      {/* ── FAQ ── */}
-      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      {/* ── FAQ ──
+          Op --g-025, net als op de klachtpagina's. Zonder die tint staan witte vakken op
+          een bijna-witte ondergrond en zie je geen blokken maar zwevende vragen met veel
+          lucht ertussen (Yasin, 10 september 2026). */}
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
           <div>
             <Label>Veelgestelde vragen</Label>
@@ -431,12 +443,13 @@ export default function BehandelingOpAdviesPage() {
               Het advies komt van de behandelaar, de keuze maak je samen, en er
               gebeurt niets zonder dat je weet wat het is en wat het kost.
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            <div className="mt-8 diba-knoprij">
               <Link
                 href="/afspraak"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
-                Ik ben nieuw bij Diba
+                <span className="sm:hidden">Ik ben nieuw</span>
+                <span className="max-sm:hidden">Ik ben nieuw bij Diba</span>
               </Link>
               <Link
                 href="/afspraak"

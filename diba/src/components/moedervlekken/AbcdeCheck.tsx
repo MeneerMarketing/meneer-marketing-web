@@ -248,7 +248,7 @@ export default function AbcdeCheck() {
         {PUNTEN.map((p) => {
           const k = sleutel(p);
           const gekozen = antwoorden[k];
-          const naam = "letter" in p ? `${p.letter} · ${p.naam}` : p.naam;
+          const naam = "letter" in p ? `${p.letter}: ${p.naam}` : p.naam;
 
           return (
             <li key={k} className="bg-white p-6 sm:p-8">

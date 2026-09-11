@@ -17,10 +17,9 @@ export type PriceTableProps = {
   rows: PriceRow[];
 };
 
-const euro = new Intl.NumberFormat("nl-NL", {
-  style: "currency",
-  currency: "EUR",
-  minimumFractionDigits: 0,
+/* Zonder euroteken (Yasin, 10 september 2026): in een tabel met veertig zones staat het
+   teken veertig keer en zegt het elke keer hetzelfde. De kolomkop noemt de eenheid. */
+const getal = new Intl.NumberFormat("nl-NL", {
   maximumFractionDigits: 0,
 });
 
@@ -36,7 +35,7 @@ const euro = new Intl.NumberFormat("nl-NL", {
 function fmtPrice(value: number | undefined): string | null {
   if (value === undefined) return null;
   if (value === 0) return "Nog niet bekend";
-  return euro.format(value);
+  return getal.format(value);
 }
 
 export default function PriceTable({ caption, rows }: PriceTableProps) {
@@ -67,7 +66,7 @@ export default function PriceTable({ caption, rows }: PriceTableProps) {
             scope="col"
             className="w-[30%] py-3 pr-3 text-right text-[11px] font-semibold tracking-[.1em] text-[var(--t-label)] uppercase"
           >
-            Per sessie
+            Per sessie in euro&rsquo;s
           </th>
           {heeftTraject ? (
             <th
@@ -107,7 +106,7 @@ export default function PriceTable({ caption, rows }: PriceTableProps) {
               <td className="rounded-r-[var(--r-sm)] py-3 pr-4 text-right leading-6 tabular-nums">
                 {row.traject ? (
                   <>
-                    <span className="text-[15px] font-medium text-[var(--t-strong)]">
+                    <span className="text-[15px] text-[var(--t-strong)]">
                       {fmtPrice(row.traject.price)}
                     </span>
                     {row.traject.sessions ? (

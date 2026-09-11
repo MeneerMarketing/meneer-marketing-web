@@ -5,6 +5,7 @@ import Ingangkiezer from "@/components/contact/Ingangkiezer";
 import Kaart, { MAPS_URL } from "@/components/contact/Kaart";
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import Label from "@/components/ui/Label";
+import MobielInklap from "@/components/ui/MobielInklap";
 import Reviewregel from "@/components/reviews/Reviewregel";
 import { SITUATIES } from "@/data/voorwaarden";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -298,28 +299,35 @@ export default function ContactPage() {
           </p>
 
           <ul className="mt-8 grid gap-4 sm:mt-12 lg:grid-cols-2 lg:items-start">
+            {/* Yasin, 10 september 2026: "maak die blokken op mobiel uitklapbaar, nu
+                nemen ze verticaal te veel ruimte; je tikt aan wat jouw geval is en leest
+                dan de rest." Vier kaarten van drie alinea's zijn samen twee schermen,
+                terwijl er maar één van de vier over jou gaat. De titel is nu de knop; op
+                desktop staat alles gewoon open. */}
             {SITUATIES.map((s) => (
               <li
                 key={s.id}
                 className="rounded-[var(--r-lg)] bg-white p-6 sm:p-8"
               >
-                <p className="diba-card-title text-[var(--t-strong)]">
+                <p className="diba-card-title hidden text-[var(--t-strong)] lg:block">
                   {s.kop}
                 </p>
-                <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
-                  {s.gebeurt}
-                </p>
-                <div className="mt-5 rounded-[var(--r-sm)] bg-[var(--g-025)] p-4">
-                  <p className="diba-label text-[var(--t-label)]">
-                    Wat het kost
+                <MobielInklap label={s.kop} vorm="kop">
+                  <p className="text-[16px] leading-7 text-[var(--t-body)] lg:mt-4">
+                    {s.gebeurt}
                   </p>
-                  <p className="mt-1.5 text-[16px] leading-7 text-[var(--t-strong)]">
-                    {s.kost}
+                  <div className="mt-5 rounded-[var(--r-sm)] bg-[var(--g-025)] p-4">
+                    <p className="diba-label text-[var(--t-label)]">
+                      Wat het kost
+                    </p>
+                    <p className="mt-1.5 text-[16px] leading-7 text-[var(--t-strong)]">
+                      {s.kost}
+                    </p>
+                  </div>
+                  <p className="mt-5 text-[15px] leading-7 text-[var(--t-muted)]">
+                    {s.waarom}
                   </p>
-                </div>
-                <p className="mt-5 text-[15px] leading-7 text-[var(--t-muted)]">
-                  {s.waarom}
-                </p>
+                </MobielInklap>
               </li>
             ))}
           </ul>

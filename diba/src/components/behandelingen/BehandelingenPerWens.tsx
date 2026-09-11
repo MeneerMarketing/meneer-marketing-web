@@ -39,7 +39,7 @@ function Kaart({ b }: { b: Behandeling }) {
         className="group flex h-full min-w-0 flex-col rounded-[var(--r-lg)] bg-white p-6 transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:bg-[var(--g-075)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
       >
         <p className="diba-card-title text-[var(--t-strong)]">{b.naam}</p>
-        <p className="mt-3 min-h-[3lh] text-[15px] leading-7 text-[var(--t-body)]">
+        <p className="mt-3 sm:min-h-[3lh] text-[15px] leading-7 text-[var(--t-body)]">
           {publicCopy(b.kort)}
         </p>
         {/* Hier stond het aantal sessies, maar dat is bij eenenveertig van de
@@ -64,13 +64,18 @@ function Kaart({ b }: { b: Behandeling }) {
 
 /** De zeven keuzes, als eerste wat je op de pagina ziet. */
 export function Wenskiezer() {
+  /* Op een telefoon twee kolommen van gelijke breedte en niet een rij die omloopt. Met
+     zeven pillen van "Acne" tot "Ongewenste haargroei" gaf omlopen een rafelrand: drie
+     rijen die elk ergens anders ophielden (Yasin, 10 september 2026: "die uitlijning is
+     slordig"). De laatste staat alleen, en die pakt dan de volle breedte in plaats van een
+     halve rij open te laten. */
   return (
-    <ul className="flex flex-wrap gap-2">
+    <ul className="grid grid-cols-2 gap-2 [&>li:last-child:nth-child(odd)]:col-span-2 sm:flex sm:flex-wrap">
       {HUIDWENSEN.filter((w) => w.id !== "overig").map((w) => (
         <li key={w.id}>
           <a
             href={`#wens-${w.id}`}
-            className="diba-label inline-flex min-h-11 items-center rounded-[var(--r-pill)] bg-white px-5 text-[var(--t-strong)] transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+            className="diba-label flex min-h-11 items-center justify-center rounded-[var(--r-pill)] bg-white px-4 text-center text-[var(--t-strong)] transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] sm:inline-flex sm:px-5"
           >
             {w.knop}
           </a>

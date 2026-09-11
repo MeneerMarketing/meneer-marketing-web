@@ -72,12 +72,23 @@ function Vlag({ code }: { code: string }) {
   );
 }
 
-export default function Taalkiezer() {
+export type TaalkiezerProps = {
+  /** Doorschijnend over een beeld: witte letters in plaats van donkere. */
+  opBeeld?: boolean;
+};
+
+export default function Taalkiezer({ opBeeld = false }: TaalkiezerProps) {
   const huidig = TALEN[0];
 
   return (
     <details className="group relative">
-      <summary className="diba-label flex h-9 cursor-pointer list-none items-center gap-2 rounded-[var(--r-pill)] px-2 text-[var(--t-label)] transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] [&::-webkit-details-marker]:hidden">
+      <summary
+        className={`diba-label flex h-9 cursor-pointer list-none items-center gap-2 rounded-[var(--r-pill)] px-2 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 [&::-webkit-details-marker]:hidden ${
+          opBeeld
+            ? "text-white hover:bg-white/15 focus-visible:outline-white"
+            : "text-[var(--t-label)] hover:bg-[var(--g-100)] focus-visible:outline-[var(--g-700)]"
+        }`}
+      >
         <Vlag code={huidig.code} />
         {huidig.code}
         <svg
@@ -94,7 +105,7 @@ export default function Taalkiezer() {
         </svg>
       </summary>
 
-      <ul className="absolute right-0 z-40 mt-2 w-48 overflow-hidden rounded-[var(--r-sm)] border border-[var(--g-100)] bg-white py-1 shadow-[var(--shadow-float)]">
+      <ul className="absolute right-0 z-[45] mt-2 w-48 overflow-hidden rounded-[var(--r-sm)] border border-[var(--g-100)] bg-white py-1 shadow-[var(--shadow-float)]">
         {TALEN.map((t) => (
           <li key={t.code}>
             <span

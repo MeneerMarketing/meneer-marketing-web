@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import Label from "@/components/ui/Label";
-import ProofBar from "@/components/ui/ProofBar";
 import { APPARATUUR } from "@/data/apparatuur";
 import {
   KWALITEITSREGISTER,
@@ -16,7 +15,6 @@ import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_ADDRESS,
   DIBA_EMAIL,
-  DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE,
   DIBA_SITE_URL,
   DIBA_TELEFOON,
@@ -180,19 +178,18 @@ export default function VerwijzersPage() {
               >
                 Verwijzing mailen
               </a>
-              <Link
-                href="/ons-verbond"
+              <a
+                href={DIBA_TELEFOON_HREF}
                 className="diba-label diba-label-on-dark text-[var(--on-dark-accent)] underline underline-offset-4 hover:text-white"
               >
-                Waar onze grens ligt
-              </Link>
+                Of bel ons
+              </a>
             </div>
           </div>
 
           {/* De soorten nee, meteen in beeld. Dat is wat een verwijzer als eerste nodig
               heeft. Rojda, 8 september 2026: "Dit doen wij niet" kan hier eruit; voor een
-              verwijzer gaat het om de medische grens en het moment, niet om ons aanbod.
-              Op /ons-verbond staat die derde soort nog wel. */}
+              verwijzer gaat het om de medische grens en het moment, niet om ons aanbod. */}
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
             <Label>Waar de grens ligt</Label>
             <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
@@ -215,21 +212,19 @@ export default function VerwijzersPage() {
               ))}
             </ul>
             <Link
-              href="/ons-verbond"
+              href="/huidproblemen"
               className="diba-label mt-6 inline-block text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
             >
-              De volledige lijst
+              Per klacht uitgewerkt
             </Link>
           </div>
         </div>
       </section>
 
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
-
       {/* ── Wie het uitvoert ── */}
       {/* Een verwijzer stuurt iemand naar een plek die hij zelf nooit heeft gezien. Dit is
           die plek. */}
-      <section className="px-5 pb-10 sm:pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+      <section className="px-5 py-10 sm:px-9 sm:py-14 lg:px-[7.5vw] lg:py-16">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/kliniek-behandelkamer.jpg"

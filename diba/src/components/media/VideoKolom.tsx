@@ -118,8 +118,8 @@ export default function VideoKolom({
 
           <p className="diba-label mt-8 text-[var(--t-muted)]">
             {sfeer
-              ? "Eigen opname · zonder geluid"
-              : "Eigen opname · met geluid en ondertiteling"}
+              ? "Eigen opname, zonder geluid"
+              : "Eigen opname, met geluid en ondertiteling"}
           </p>
         </div>
 

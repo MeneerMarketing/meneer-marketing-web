@@ -92,7 +92,7 @@ export default function HuidproblemenBijApparaat({
               {/* De behandelingen die hier op dit apparaat voor worden ingezet. Drie
                   regelhoogtes gereserveerd, zodat de kaarten in een rij gelijk blijven
                   ook als de ene klacht er twee heeft en de andere een. */}
-              <ul className="mt-4 min-h-[3lh] grow space-y-2">
+              <ul className="mt-4 md:min-h-[3lh] grow space-y-2">
                 {k.behandelingen.map((b) => (
                   <li
                     key={b.slug}

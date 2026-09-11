@@ -10,15 +10,10 @@ import AcneZoneKaart from "@/components/acne/AcneZoneKaart";
 import Button from "@/components/ui/Button";
 import { ArrowUpRight } from "@/components/ui/Icon";
 import Label from "@/components/ui/Label";
-import ProofBar from "@/components/ui/ProofBar";
 import { ACNE_FAQ, ACNE_WEL_NIET, ACNE_WIJ_DOEN_NIET } from "@/data/acne";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import {
-  DIBA_PROOF_STRIP_ITEMS,
-  DIBA_SITE_URL,
-  DIBA_WHATSAPP_URL,
-} from "@/lib/site";
+import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 import { RASTER_SECTIEKOP, RASTER_SECTIEKOP_GELIJK } from "@/lib/raster";
 import { zoekmachineVelden } from "@/lib/seo";
 import LeesVerder from "@/components/ui/LeesVerder";
@@ -84,34 +79,39 @@ export default function AcnePage() {
           De kop haalt de schaamte weg en is tegelijk klinisch juist: acne is een
           ontstekingsreactie, geen vuil. Dat is het snijpunt van "warm maar nooit
           soft" (A2), en het is de zin waar de rest van de pagina op rust. */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-10 sm:py-14 lg:py-20">
+      {/* Donkergroen, zoals elke andere hoofdingang van de site (Yasin, 11 september
+          2026). */}
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)]">
+        {/* Op een telefoon plakte het beeld tegen de onderrand van het groene vlak: de
+            tekstkolom bracht zijn eigen onderruimte mee, de beeldkolom niet (Yasin, 11
+            september 2026). Vanaf 1024 staan ze naast elkaar en geldt het niet. */}
+        <div className="mx-auto grid gap-6 px-5 pb-10 sm:px-9 sm:pb-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-10 lg:px-[7.5vw] lg:pb-0">
+          <div className="py-10 sm:py-14 lg:py-20 max-lg:pb-0">
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <Link href="/huidproblemen" className="hover:text-[var(--g-700)]">
+              <Link href="/huidproblemen" className="hover:text-white">
                 Huidproblemen
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Acne</span>
+              <span className="text-[var(--on-dark-body)]">Acne</span>
             </nav>
 
             {/* Kop en eerste alinea zijn van Rojda, augustus 2026. De vorige kop
                 ("Acne is niet vies. Het is ontsteking.") ontkende eerst een verwijt
                 voordat hij iets beloofde; deze begint bij wat je komt halen. */}
-            <h1 className="diba-display-l mt-6">
+            <h1 className="diba-display-l mt-6 text-[var(--on-dark)]">
               Acne die steeds
               <br />
-              <span className="diba-accent">terugkomt</span>
+              <span className="diba-accent-on-dark">terugkomt</span>
             </h1>
 
-            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Acne kent verschillende vormen, en elke vorm vraagt een andere
               aanpak. We stellen eerst vast waar het bij jou om gaat en
               behandelen daarop, met peelings, needling, laser of een
@@ -120,7 +120,7 @@ export default function AcnePage() {
 
             {/* Kruisverwijzing naar wat er ná de acne overblijft. Wie hier komt voor de
                 plekken en niet voor de puistjes hoort dat meteen te lezen. */}
-            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Zit je vooral met wat er is achtergebleven? Dan begint het bij{" "}
               <Link
                 href="/huidproblemen/acne-littekens"
@@ -131,20 +131,19 @@ export default function AcnePage() {
               , want dat is vaak helemaal geen litteken.
             </p>
 
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+            <div className="diba-knoprij mt-9">
               <Button
+                variant="primair-op-donker"
                 href="/intake?topic=acne"
-                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
                 kort="Plan consult"
               >
                 Plan een huidconsult
               </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
-                variant="ghost"
+                variant="secundair-op-donker"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
                 kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
@@ -167,8 +166,6 @@ export default function AcnePage() {
           </div>
         </div>
       </section>
-
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
 
       <PillarNav ankers={ANKERS} />
 
@@ -438,19 +435,39 @@ export default function AcnePage() {
             </h2>
           </div>
 
-          <div className="border-t border-[var(--g-100)]">
-            {ACNE_FAQ.map((item) => (
-              <details key={item.vraag} className="group py-6">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-xl tracking-[-.035em]">
+          <div className="space-y-2">
+            {/* Dezelfde vorm als elke andere uitklapvraag op de site: een wit vak op een
+                  zachte ondergrond, opschrift op zestien pixels, tweeënzeventig pixels hoog
+                  als hij dicht is. Yasin, 10 september 2026: "het moet overal gewoon
+                  hetzelfde zijn." Hier stonden regels met haarlijnen en een opschrift van
+                  twintig, dat op een telefoon over twee regels brak. */}
+            {ACNE_FAQ.map((item, i) => (
+              <details
+                key={item.vraag}
+                open={i === 0}
+                className="group rounded-[var(--r-md)] bg-white px-6 py-3"
+              >
+                <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 text-[16px] leading-[1.4] font-medium">
                   <span>{item.vraag}</span>
                   <span
-                    className="grid h-8 w-8 shrink-0 place-items-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)] transition group-open:rotate-45"
+                    className="grid h-8 w-8 shrink-0 place-items-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)]"
                     aria-hidden="true"
                   >
-                    +
+                    <svg
+                      aria-hidden="true"
+                      width="14"
+                      height="14"
+                      viewBox="0 0 18 18"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                    >
+                      <path d="M2 9h14" />
+                      <path d="M9 2v14" className="group-open:opacity-0" />
+                    </svg>
                   </span>
                 </summary>
-                <p className="max-w-[68ch] pt-4 text-[15px] leading-7 text-[var(--t-body)]">
+                <p className="max-w-[68ch] pt-4 pb-2 text-[15px] leading-7 text-[var(--t-body)]">
                   {publicCopy(item.antwoord)}
                 </p>
               </details>

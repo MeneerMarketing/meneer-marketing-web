@@ -25,8 +25,11 @@
  * se wallen, maar mensen vragen ons regelmatig of we dit kunnen behandelen. Het zijn
  * vet-/lipidenophopingen rondom de ogen, vaak geassocieerd met verhoogd cholesterol." Het
  * staat als vierde beeld in de kiezer, met de eerlijke toevoeging dat het geen wal is.
- * [GEGEVEN-NODIG: behandelt Diba xanthelasma zelf, en waarmee? Tot dat bekend is zegt de
- * kaart "laat het bekijken" en niet "dit halen we weg".]
+ *
+ * Yasin, 10 september 2026: ja, we behandelen het, maar wat we precies doen ligt aan het
+ * geval en dat hoeft er niet bij te staan. De kaart zegt dus dat we ernaar kijken en wijst
+ * naar de huisarts voor het cholesterol; welke behandeling het wordt hoor je in het
+ * consult.
  *
  * MEDISCH.
  *
@@ -114,12 +117,12 @@ export const WAL_OORZAKEN: readonly WalOorzaak[] = [
     watHetIs:
       "Geen wal maar een ophoping van vet (lipiden) in de huid van het ooglid. Het hangt vaak samen met een verhoogd cholesterol, en daarom is het ook iets voor je huisarts. [MEDISCHE-CHECK-ROJDA]",
     watWijDoen:
-      "Mensen vragen er ons geregeld naar. We bekijken het in het consult en zeggen wat er bij Diba kan. Laat daarnaast je cholesterol nakijken, want daar komt het vaak vandaan. [GEGEVEN-NODIG: behandelt Diba xanthelasma, en waarmee? Griss, 9 september 2026]",
+      "Mensen vragen er ons geregeld naar en we behandelen het ook. Wat er bij jou past hangt af van hoe groot en hoe diep de plekjes zitten, dus dat bepaalt de behandelaar in het consult. Laat daarnaast je cholesterol nakijken, want daar komt het vaak vandaan.",
     binnenBereik: true,
     uitgelicht: {
       label: "Eerst laten bekijken",
       tekst:
-        "Geen wal, wel een vraag die we vaak krijgen. In het consult zie je of het xanthelasma is en wat er bij Diba kan; de cholesterolcontrole hoort bij de huisarts.",
+        "Geen wal, wel iets wat we behandelen. In het consult stellen we vast of het xanthelasma is en wat er bij jou past; de cholesterolcontrole hoort bij de huisarts.",
     },
   },
 ];

@@ -2,14 +2,11 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ReviewsBijOnderwerp from "@/components/reviews/ReviewsBijOnderwerp";
-import LaserHuidtypeRing from "@/components/laser/LaserHuidtypeRing";
-import LaserPulseMap from "@/components/laser/LaserPulseMap";
 import PillarNav from "@/components/pillar/PillarNav";
 import { PillarFaq, SectieKop } from "@/components/pillar/PillarSecties";
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import { PincetHaar } from "@/components/ui/HuidIcon";
 import Label from "@/components/ui/Label";
-import SalonizedScorePanel from "@/components/ui/SalonizedScorePanel";
 import { FIGMA_INTENT_LASER } from "@/data/figma-home-images";
 import { LASER_LANDING_FAQ, LASER_USP_ROWS } from "@/data/laser-landing";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -53,12 +50,75 @@ export const metadata: Metadata = zoekmachineVelden({
     "Laserontharing met GentleMax Pro in Rotterdam. Bereken je prijs per zone, veilig voor huidtype I tot VI.",
 });
 
+/* De ankerbalk wijst naar de secties die er zijn. "Jouw huidtype" en "Hoeveel sessies"
+   waren twee losse koppen; die zijn samengegaan in één sectie over wat het aantal sessies
+   bepaalt, en "tarieven" is er nieuw bij (Yasin, 10 september 2026). */
 const ANKERS = [
   { id: "zones", label: "Waar je wilt ontharen" },
-  { id: "huidtype", label: "Jouw huidtype" },
-  { id: "sessies", label: "Hoeveel sessies" },
+  { id: "tarieven", label: "Wat het kost" },
+  { id: "huidtype", label: "Hoeveel sessies" },
   { id: "reviews", label: "Reviews" },
   { id: "vragen", label: "Vragen" },
+] as const;
+
+/**
+ * De drie gebieden, met wat eronder valt en waar de tarieven liggen.
+ *
+ * De bedragen zijn de laagste en de hoogste zone binnen dat gebied over beide
+ * prijslijsten, uitgerekend uit `laser-zones.ts` en met de hand overgenomen zodat er op
+ * deze pagina geen tweede rekenlaag ontstaat. Ze staan er als richting, niet als tarief:
+ * de volledige tabel staat op /tarieven.
+ */
+const GEBIEDEN = [
+  {
+    id: "gelaat",
+    label: "Gelaat en hals",
+    vanaf: 20,
+    tot: 190,
+    zones:
+      "Bovenlip, kin, onderkin, wangen, bakkebaard, voorhoofd, tussen de wenkbrauwen, haarlijn, hals en nek, los of als hele gelaat.",
+  },
+  {
+    id: "bovenlichaam",
+    label: "Bovenlichaam",
+    vanaf: 30,
+    tot: 230,
+    zones:
+      "Oksels, boven- en onderarmen, buik, navelstrook, borst, schouders en rug, los of als hele rug.",
+  },
+  {
+    id: "onderlichaam",
+    label: "Onderlichaam",
+    vanaf: 80,
+    tot: 200,
+    zones:
+      "Boven- en onderbenen, bikinilijn klein of groot, bilnaad en bilwangen, los of als hele benen.",
+  },
+] as const;
+
+/**
+ * Wat het aantal sessies bepaalt.
+ *
+ * Vier dingen, en geen van de vier is vooraf op een website vast te stellen. Dat is precies
+ * waarom er hier geen aantal staat. [MEDISCHE-CHECK-ROJDA]
+ */
+const BEPAALT = [
+  {
+    kop: "Je huidtype",
+    zin: "Hoe je huid op zon reageert, van type I tot VI. Het bepaalt met welke van de twee golflengtes er gewerkt wordt en hoeveel energie erop mag.",
+  },
+  {
+    kop: "De kleur en dikte van je haar",
+    zin: "De laser mikt op het pigment in de haarwortel. Donker en dik haar neemt het licht het best op; grijs en heel licht haar nauwelijks.",
+  },
+  {
+    kop: "De zone",
+    zin: "Op de bovenlip groeit haar sneller terug dan op een onderbeen, en dat scheelt in het aantal sessies en in de tijd ertussen.",
+  },
+  {
+    kop: "Je hormonen",
+    zin: "Bij PCOS of een andere hormonale oorzaak blijft er aanvoer van nieuw haar. Ontharen werkt dan, maar het onderhoud houdt niet vanzelf op.",
+  },
 ] as const;
 
 export default function LaserontharingPage() {
@@ -71,49 +131,63 @@ export default function LaserontharingPage() {
         ])}
       />
 
-      {/* ── Hero ── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-10 sm:py-14 lg:py-20">
+      {/* ── Hero ──
+          Donkergroen, zoals elke andere hoofdingang van de site (Yasin, 10 september
+          2026). */}
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)]">
+        {/* Op een telefoon plakte het beeld tegen de onderrand van het groene vlak: de
+            tekstkolom bracht zijn eigen onderruimte mee, de beeldkolom niet (Yasin, 11
+            september 2026). De ruimte tussen de twee is kleiner, en onder het beeld staat
+            nu evenveel als erboven. Vanaf 1024 staan ze naast elkaar en geldt het niet. */}
+        <div className="mx-auto grid gap-6 px-5 pb-10 sm:px-9 sm:pb-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-10 lg:px-[7.5vw] lg:pb-0">
+          <div className="py-10 sm:py-14 lg:py-20 max-lg:pb-0">
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Laserontharing</span>
+              <span className="text-[var(--on-dark-body)]">Laserontharing</span>
             </nav>
 
-            <h1 className="diba-display-l mt-6 max-w-[21ch]">
+            <h1 className="diba-display-l mt-6 max-w-[21ch] text-[var(--on-dark)]">
               Laserontharing
               <br />
-              <span className="diba-accent">in Rotterdam</span>
+              <span className="diba-accent-on-dark">in Rotterdam</span>
             </h1>
 
-            <p className="mt-7 max-w-[52ch] text-[17px] leading-8 text-[var(--t-body)]">
-              Laserontharing wordt bijna overal per zone verkocht zonder dat je
-              vooraf weet wat het bij jou wordt. Hier kies je je zones, zie je
-              meteen je opbouw, en staat erbij wat een pakket vervangt.
+            {/* De oude tekst ging over de configurator: "hier kies je je zones en zie je
+                meteen je opbouw". Die configurator staat sinds september uit, dus dat
+                klopte niet meer (Yasin, 10 september 2026). Wat er nu staat is wat je hier
+                wél vindt: de zones, de tarieven per zone en het huidtype. */}
+            <p className="mt-7 max-w-[52ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
+              De haarwortel neemt het licht op en wordt uitgeschakeld. Elk
+              tarief staat per zone op de tarievenpagina, dus je weet wat een
+              sessie kost voordat je boekt.
             </p>
-            <LeesVerder>
-              <p className="mt-4 max-w-[52ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <LeesVerder opDonker>
+              <p className="mt-4 max-w-[52ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
                 Wat je niet vooraf krijgt is het aantal sessies. Dat hangt af
-                van je huidtype en de zone, en dat hoor je na de meting in
-                plaats van nu.
+                van je huidtype, de zone en de dikte van je haar, en dat hoor je
+                na de meting in plaats van nu.
               </p>
             </LeesVerder>
 
-            <div className="mt-9 flex flex-wrap items-center gap-6">
+            <div className="mt-9 diba-knoprij">
               <Link
-                href="/tarieven"
-                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                href="/afspraak"
+                className="diba-label inline-flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
-                Bekijk de tarieven per zone
-                <span aria-hidden="true">›</span>
+                Afspraak maken
               </Link>
-              <SalonizedScorePanel variant="compact" />
+              <Link
+                href="#tarieven"
+                className="diba-label inline-flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] border border-white/50 px-6 text-white transition-colors hover:border-white hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                Tarieven
+              </Link>
             </div>
           </div>
 
@@ -147,7 +221,11 @@ export default function LaserontharingPage() {
       {/* Een stilleven en geen behandelfoto, met opzet. Veiligheid is bij laser het
           onderwerp waar mensen het minst over horen en het meest over twijfelen; een bril
           op een handdoek zegt dat rustiger dan een zin erover. */}
-      <section className="px-5 pb-10 sm:pb-14 sm:px-9 lg:px-[7.5vw]">
+      {/* `pt` erbij: de hero eindigt met zijn eigen beeld, en zonder ruimte erboven
+          plakten de twee foto's tegen elkaar (Yasin, 10 september 2026). */}
+      {/* Onderruimte kleiner dan bovenruimte: de sectie hierna brengt zijn eigen ruimte
+          mee, dus die twee telden bij elkaar op (Yasin, 11 september 2026). */}
+      <section className="px-5 pt-10 pb-4 sm:px-9 sm:pt-14 sm:pb-6 lg:px-[7.5vw]">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/laser-met-bril.jpg"
@@ -177,44 +255,110 @@ export default function LaserontharingPage() {
 
       <PillarNav ankers={ANKERS} />
 
-      {/* ── Zones ── */}
+      {/* ── Zones ──
+
+          Hier stond een tekening van een lichaam waar je een gebied op aanwees, met een
+          intro die verwees naar de configurator. Twee dingen mis (Yasin, 10 september
+          2026): die configurator staat uit sinds september, en op een telefoon was de
+          tekening een blok van driehonderd pixels waar niets in te klikken viel omdat de
+          knoppen eronder buiten beeld stonden.
+
+          Wat ervoor in de plaats staat is wat de tekening probeerde te zeggen: welke zones
+          er per gebied zijn, en wat een sessie kost. De volledige tabel met alle
+          tweeënzestig zones en beide prijslijsten staat op de tarievenpagina; die
+          verdubbelen we hier niet. */}
       <section
         id="zones"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
+        <span id="tarieven" className="sr-only" />
         <div className="mx-auto">
           <SectieKop
             icoon={PincetHaar}
             label="De zones"
             kop="Waar wil je"
             accent="ontharen?"
-            intro="Kies een gebied en je ziet welke zones daaronder vallen. In de configurator daarna wijs je ze los aan en zie je meteen wat je opbouw wordt, inclusief het moment waarop een pakket goedkoper is dan de losse zones."
+            intro="We ontharen van de bovenlip tot de hele rug. Hieronder staat per gebied wat eronder valt en wat de goedkoopste en de duurste zone daar kost; het tarief van jouw zone staat op de tarievenpagina."
           />
-          <div className="mt-12">
-            <LaserPulseMap />
+
+          <ul className="mt-10 grid gap-4 sm:mt-12 lg:grid-cols-3">
+            {GEBIEDEN.map((g) => (
+              <li
+                key={g.id}
+                className="flex h-full flex-col rounded-[var(--r-lg)] bg-white p-6 sm:p-8"
+              >
+                <p className="diba-card-title text-[var(--t-strong)]">
+                  {g.label}
+                </p>
+                <p className="diba-label mt-2 text-[var(--g-700)]">
+                  {g.vanaf} tot {g.tot} euro per sessie
+                </p>
+                <p className="mt-4 flex-1 text-[15px] leading-7 text-[var(--t-body)]">
+                  {g.zones}
+                </p>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-8 diba-knoprij">
+            <Link
+              href="/tarieven#laserontharing-per-zone"
+              className="diba-label inline-flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+            >
+              <span className="sm:hidden">Alle tarieven</span>
+              <span className="max-sm:hidden">Alle tarieven per zone</span>
+            </Link>
+            <Link
+              href="/gentlemax-pro"
+              className="diba-label inline-flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] border border-[var(--g-200)] px-6 text-[var(--t-strong)] transition-colors hover:border-[var(--g-700)] hover:bg-[var(--g-025)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+            >
+              <span className="sm:hidden">De laser</span>
+              <span className="max-sm:hidden">De laser die we gebruiken</span>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* ── Huidtype ── */}
+      {/* ── Huidtype ──
+
+          Hier stond een ring die je van Fitzpatrick I tot VI kon draaien. Yasin, 10
+          september 2026: "leuk, maar ik zie de meerwaarde er niet van; zet er liever
+          gewoon duidelijke informatie over laserontharing neer." Dat is wat er nu staat, en
+          het huidtype zelf is één van de vier dingen die het aantal sessies bepalen. */}
+      {/* Op een vlak: de kaarten zijn wit en de pagina is dat bijna ook, dus zonder tint
+          zie je vier alinea's in plaats van vier kaarten (Yasin, 11 september 2026). */}
       <section
         id="huidtype"
         className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
-            label="Huidtype"
-            kop="Fitzpatrick I"
-            accent="tot en met VI."
-            intro="Je huidtype bepaalt niet óf laserontharing kan, maar met welke instelling. Het gaat daarbij om hoe je huid op zon reageert en niet om hoe hij eruitziet, en weet je het niet zeker, dan wordt het bij de intake bepaald."
+            label="Goed om te weten"
+            kop="Wat het aantal sessies"
+            accent="bepaalt"
+            intro="Niemand kan je vooraf zeggen hoeveel sessies je nodig hebt, en wie dat wel doet raadt. Deze vier dingen bepalen het, en de behandelaar stelt ze vast tijdens de intake."
           />
-          <div className="mt-12 rounded-[var(--r-lg)] bg-white p-7 sm:p-10">
-            <LaserHuidtypeRing />
-          </div>
-          <p className="mt-6 max-w-[76ch] text-[15px] leading-7 text-[var(--t-muted)]">
+
+          <ul className="mt-10 grid gap-4 sm:mt-12 sm:grid-cols-2">
+            {BEPAALT.map((b) => (
+              <li
+                key={b.kop}
+                className="rounded-[var(--r-lg)] bg-white p-6 sm:p-8"
+              >
+                <p className="diba-card-title text-[var(--t-strong)]">
+                  {b.kop}
+                </p>
+                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)] sm:min-h-[4lh]">
+                  {b.zin}
+                </p>
+              </li>
+            ))}
+          </ul>
+
+          <p className="mt-8 max-w-[76ch] text-[15px] leading-7 text-[var(--t-muted)]">
             De GentleMax Pro heeft twee golflengtes, en welke van de twee je
-            krijgt hangt hiervan af. Dat is de enige technische keuze op deze
-            site die rechtstreeks over veiligheid gaat.{" "}
+            krijgt hangt af van je huidtype. Dat is de enige technische keuze op
+            deze site die rechtstreeks over veiligheid gaat.{" "}
             <Link
               href="/gentlemax-pro"
               className="text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
@@ -245,27 +389,31 @@ export default function LaserontharingPage() {
       />
 
       {/* ── Afsluiter ── */}
-      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+      <section className="mx-5 mt-16 mb-5 rounded-[var(--r-xl)] lg:mt-20 bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
         <div className="mx-auto grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end lg:gap-16">
           <div>
+            {/* Ook deze tekst ging over de configurator, die uitstaat (Yasin, 10 september
+                2026). Er staat nu wat er in de eerste afspraak gebeurt. */}
             <Label opDonker>Volgende stap</Label>
             <h2 className="diba-display-m mt-5 max-w-[18ch]">
-              Stel het samen
-              <br />
-              <span className="diba-accent-on-dark">voordat je boekt</span>
+              Het aantal sessies{" "}
+              <span className="diba-accent-on-dark">
+                hoor je in het consult
+              </span>
             </h2>
             <p className="mt-6 max-w-[54ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-              In de configurator stel je zelf samen wat je wilt en zie je het
-              bedrag per sessie. Je keuze staat daarna in de adresbalk, dus je
-              kunt hem bewaren of doorsturen en er later op terugkomen.
+              In het consult stelt de behandelaar je huidtype vast, kijkt naar
+              je haar en de zone, en zegt hoeveel sessies er realistisch nodig
+              zijn en wat dat kost. Past het niet, dan hoor je dat ook.
             </p>
           </div>
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="diba-knoprij">
             <Link
               href="/intake"
               className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              Plan een huidconsult
+              <span className="sm:hidden">Huidconsult</span>
+              <span className="max-sm:hidden">Plan een huidconsult</span>
               <span aria-hidden="true">›</span>
             </Link>
             <a
@@ -274,7 +422,8 @@ export default function LaserontharingPage() {
               rel="noopener noreferrer"
               className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-800)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-900)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              Eerst je vraag stellen
+              <span className="sm:hidden">Stel je vraag</span>
+              <span className="max-sm:hidden">Eerst je vraag stellen</span>
               <span aria-hidden="true">↗</span>
             </a>
           </div>

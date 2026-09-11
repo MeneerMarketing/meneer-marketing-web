@@ -194,7 +194,7 @@ export default function Reviewarchief({
           opzij in plaats van over zes regels om te vouwen: vijftien knoppen die omvouwen
           waren vier centimeter beeld voordat je de eerste review zag. De rij loopt tot de
           schermrand door, zodat je ziet dat er meer staat. */}
-      <ul className="-mx-5 mt-4 flex gap-2 overflow-x-auto px-5 pb-1 [scrollbar-width:none] sm:mx-0 sm:flex-wrap sm:px-0 [&::-webkit-scrollbar]:hidden">
+      <ul className="diba-schuifrij -mx-5 mt-4 flex gap-2 px-5 pb-1 sm:mx-0 sm:flex-wrap sm:px-0">
         <Knop
           href={adres({
             onderwerp: "alle",
@@ -305,8 +305,7 @@ export default function Reviewarchief({
       >
         <Label>Beoordelingen zonder tekst</Label>
         <h3 className="diba-card-title mt-3 text-[var(--t-strong)]">
-          {ZONDER_TEKST.toLocaleString("nl-NL")} mensen gaven wel sterren, maar
-          schreven niets
+          {ZONDER_TEKST.toLocaleString("nl-NL")} mensen gaven alleen sterren
         </h3>
         <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
           Ze tellen mee voor het gemiddelde en daarom staan ze hier, allemaal.
@@ -320,45 +319,71 @@ export default function Reviewarchief({
             : `${ONDER_VIJF.toLocaleString("nl-NL")} beoordelingen staan onder de vijf sterren. Ook die staan op deze pagina; ze zijn niet weggefilterd.`}
         </p>
 
-        <p className="mt-8 text-[14px] leading-6 text-[var(--t-muted)]">
-          {`In de volgorde van Salonized: nieuwste eerst. Pagina ${sterrenHuidig} van ${sterrenPaginas}.`}
-        </p>
-        <ul className="mt-3 grid gap-x-10 lg:grid-cols-2 2xl:grid-cols-3">
-          {regels.map((r) => (
-            /* Op een telefoon twee regels: sterren en naam, daaronder de datum. Vanaf 640
+        {/* Yasin, 10 september 2026: "onnodig om zo een lange lijst standaard te tonen."
+            Tachtig regels namen op een telefoon vier schermen in beslag voor iets wat je
+            alleen opzoekt als je het wilt natellen. Een `details` en geen eigen component:
+            dit hoeft niet op elk scherm anders te doen en werkt ook zonder JavaScript. */}
+        <details className="group mt-8">
+          <summary className="diba-label flex min-h-13 cursor-pointer list-none items-center justify-between gap-3 rounded-[var(--r-md)] border border-[var(--g-200)] bg-white px-4 py-2.5 text-[var(--t-strong)] transition-colors group-open:bg-[var(--g-050)] group-open:text-[var(--g-800)] hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] [&::-webkit-details-marker]:hidden">
+            Toon de beoordelingen zonder tekst
+            <span
+              aria-hidden="true"
+              className="flex h-7 w-7 shrink-0 items-center justify-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)] group-open:bg-white"
+            >
+              <svg
+                viewBox="0 0 12 12"
+                className="h-3 w-3 transition-transform duration-300 group-open:rotate-180"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M2.5 4.5 6 8l3.5-3.5" />
+              </svg>
+            </span>
+          </summary>
+
+          <p className="mt-6 text-[14px] leading-6 text-[var(--t-muted)]">
+            {`In de volgorde van Salonized: nieuwste eerst. Pagina ${sterrenHuidig} van ${sterrenPaginas}.`}
+          </p>
+          <ul className="mt-3 grid gap-x-10 lg:grid-cols-2 2xl:grid-cols-3">
+            {regels.map((r) => (
+              /* Op een telefoon twee regels: sterren en naam, daaronder de datum. Vanaf 640
                pixels één regel met de datum rechts. Alles-op-één-regel paste niet: naast
                "ongeveer een jaar geleden" bleef er van een naam één letter over, en een rij
                die soms wel en soms niet omslaat leest als rommel. */
-            <li
-              key={r.id}
-              className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-x-3 gap-y-0.5 border-b border-[var(--g-100)] py-2.5 text-[14px] leading-5 sm:flex"
-            >
-              <span className="sm:shrink-0">
-                <Sterren aantal={Math.round(r.sterren)} maat="sm" />
-              </span>
-              <span className="min-w-0 truncate text-[var(--t-strong)] sm:flex-1">
-                {r.naam}
-              </span>
-              <span className="col-start-2 text-[13px] text-[var(--t-muted)] sm:ml-auto sm:shrink-0 sm:text-[14px]">
-                {r.datum}
-              </span>
-            </li>
-          ))}
-        </ul>
+              <li
+                key={r.id}
+                className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-x-3 gap-y-0.5 border-b border-[var(--g-100)] py-2.5 text-[14px] leading-5 sm:flex"
+              >
+                <span className="sm:shrink-0">
+                  <Sterren aantal={Math.round(r.sterren)} maat="sm" />
+                </span>
+                <span className="min-w-0 truncate text-[var(--t-strong)] sm:flex-1">
+                  {r.naam}
+                </span>
+                <span className="col-start-2 text-[13px] text-[var(--t-muted)] sm:ml-auto sm:shrink-0 sm:text-[14px]">
+                  {r.datum}
+                </span>
+              </li>
+            ))}
+          </ul>
 
-        <Bladeren
-          huidig={sterrenHuidig}
-          paginas={sterrenPaginas}
-          label="Meer beoordelingen zonder tekst"
-          naar={(p) =>
-            adres({
-              onderwerp,
-              pagina: huidig,
-              sterren: p,
-              anker: "zonder-tekst",
-            })
-          }
-        />
+          <Bladeren
+            huidig={sterrenHuidig}
+            paginas={sterrenPaginas}
+            label="Meer beoordelingen zonder tekst"
+            naar={(p) =>
+              adres({
+                onderwerp,
+                pagina: huidig,
+                sterren: p,
+                anker: "zonder-tekst",
+              })
+            }
+          />
+        </details>
       </section>
     </div>
   );

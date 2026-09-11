@@ -6,8 +6,8 @@ import Uurtijdlijn from "@/components/intake/Uurtijdlijn";
 import { PillarFaq, SectieKop } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
 import BelOfApp from "@/components/ui/BelOfApp";
+import DibaLeafMark from "@/components/ui/DibaLeafMark";
 import Label from "@/components/ui/Label";
-import ProofBar from "@/components/ui/ProofBar";
 import { behandelingVoorSlug, prijsTekst } from "@/data/behandelingen";
 import {
   ADVIES_MINUTEN,
@@ -16,7 +16,6 @@ import {
   INTAKE_FAQ,
   INTAKE_FEITEN_VAST,
   INTAKE_MINUTEN,
-  OOK_ALS_JE_STOPT,
   VOORBEREIDING,
 } from "@/data/intake";
 import { SALONIZED_REVIEWS } from "@/data/salonized-reviews";
@@ -24,11 +23,7 @@ import { RASTER_GELIJK } from "@/lib/raster";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
-import {
-  DIBA_PROOF_STRIP_ITEMS,
-  DIBA_SITE_URL,
-  DIBA_WHATSAPP_URL,
-} from "@/lib/site";
+import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 import MobielInklap from "@/components/ui/MobielInklap";
 
 /**
@@ -81,7 +76,6 @@ function intakeFeiten() {
 const ANKERS = [
   { id: "uur", label: "Wat er gebeurt" },
   { id: "voorbereiden", label: "Voorbereiden" },
-  { id: "ook-als-je-stopt", label: "Als je hierna stopt" },
   { id: "vragen", label: "Vragen" },
 ];
 
@@ -127,11 +121,10 @@ export default function IntakePage() {
               intakekosten. Je beslist in je eigen tijd wat je daarna doet.
             </p>
 
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+            <div className="diba-knoprij mt-9">
               <Button
                 variant="primair-op-donker"
                 href="/afspraak"
-                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
                 kort="Plan consult"
               >
                 Plan een huidconsult
@@ -141,7 +134,6 @@ export default function IntakePage() {
                 variant="secundair-op-donker"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
                 kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
@@ -165,14 +157,12 @@ export default function IntakePage() {
                 </div>
               ))}
             </dl>
-            <p className="mt-6 text-[15px] leading-7 text-[var(--t-body)]">
-              Wat kost Behandeling op advies?
-            </p>
           </div>
         </div>
       </section>
 
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
+      {/* De balk met vier cijfers stond hier. Yasin, 10 september 2026: eraf, net als op
+          /tarieven en de behandelpagina's. Het cijfer staat al in de balk bovenaan. */}
 
       {/* ── De twee manieren om te beginnen ──
 
@@ -186,7 +176,9 @@ export default function IntakePage() {
           kleine lettertjes maar het verschil tussen de twee. */}
       {/* Dit is letterlijk wat het huidconsult is: samen naar dezelfde meting kijken. Het
           beeld staat ook op de homepage, en dat is hier geen herhaling maar bevestiging. */}
-      <section className="px-5 pb-10 sm:pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+      {/* Vulling boven en onder, niet alleen onder. Zonder die bovenkant plakte de foto
+          tegen de sectie erboven (Yasin, 11 september 2026). */}
+      <section className="px-5 py-10 sm:px-9 sm:py-14 lg:px-[7.5vw] lg:py-16">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/hero-huidscan.jpg"
@@ -288,7 +280,7 @@ export default function IntakePage() {
         aria-label="Op deze pagina"
         className="sticky top-[var(--nav-h)] z-20 bg-[var(--g-010)]/95 backdrop-blur"
       >
-        <ul className="mx-auto flex gap-6 overflow-x-auto px-5 py-4 sm:px-9 lg:px-[7.5vw]">
+        <ul className="diba-schuifrij mx-auto flex gap-6 px-5 py-4 sm:px-9 lg:px-[7.5vw]">
           {ANKERS.map((a) => (
             <li key={a.id}>
               <a
@@ -389,50 +381,6 @@ export default function IntakePage() {
         </div>
       </section>
 
-      {/* ── Wat je overhoudt als je stopt ──
-          De drempel bij een intake is meestal het vermoeden dat het de ingang
-          van een traject is. Schaarste en kortingen mogen hier niet en werken bij een
-          medische keuze averechts; het risico wegnemen werkt wel. Dus staat hier wat de
-          afspraak oplevert als je daarna nooit meer terugkomt. */}
-      <section
-        id="ook-als-je-stopt"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
-      >
-        <div className="mx-auto">
-          <SectieKop
-            label="Wat je meeneemt"
-            kop="Wat je na dit uur"
-            accent="in handen hebt"
-            intro="Deze afspraak levert vier dingen op die van jou zijn, ook als je er verder niets mee doet. Ze staan los van wat je daarna besluit."
-            raster="gelijk"
-          />
-
-          <MobielInklap className="mt-8 sm:mt-12" label="Lees wat je overhoudt">
-            <ul className={RASTER_GELIJK}>
-              {OOK_ALS_JE_STOPT.map((k) => (
-                <li
-                  key={k.kop}
-                  className="rounded-[var(--r-lg)] bg-white p-7 sm:p-9"
-                >
-                  <p className="diba-card-title text-[var(--t-strong)]">
-                    {k.kop}
-                  </p>
-                  <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
-                    {k.zin}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          </MobielInklap>
-
-          <p className="mt-8 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Je beslist in je eigen tijd. Er volgt geen belronde, geen aanbod dat
-            verloopt en geen korting die vandaag afloopt: wat je hoort in de
-            afspraak geldt ook volgende maand nog.
-          </p>
-        </div>
-      </section>
-
       {/* ── Wat mensen zeiden die precies dit deden ──
           Op /reviews staan alle 56, met uitleg over wat zo een cijfer wel en niet zegt.
           Hier staan alleen de mensen die voor een consult kwamen, geselecteerd op de
@@ -490,7 +438,11 @@ export default function IntakePage() {
       <PillarFaq items={INTAKE_FAQ} onderwerp="intake" />
 
       {/* ── Slot ── */}
-      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+      <section className="relative overflow-hidden mx-5 mt-16 mb-5 rounded-[var(--r-xl)] lg:mt-20 bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+        <DibaLeafMark
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-6 -bottom-10 h-[260px] w-[260px] -rotate-12 opacity-20"
+        />
         <div className="mx-auto lg:grid lg:grid-cols-[1.35fr_0.65fr] lg:gap-10">
           <div>
             <Label opDonker>Behandeling nul</Label>
@@ -505,12 +457,22 @@ export default function IntakePage() {
               Je gaat weg met een meting die van jou is en een advies dat ook
               nee mag zijn. Wat je daarna doet, beslis je thuis.
             </p>
-            <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3">
-              <Button href="/afspraak" variant="primair-op-donker">
+            <div className="mt-7 diba-knoprij">
+              <Button
+                href="/afspraak"
+                variant="primair-op-donker"
+                kort="Huidconsult"
+              >
                 Plan een huidconsult
               </Button>
-              <Button href="/ons-verbond" variant="secundair-op-donker">
-                Lees ons verbond
+              {/* Wees naar /ons-verbond; die pagina is op 10 september 2026 weggehaald.
+                  Wat een bezoeker hier nog wil is de prijs zien voordat hij boekt. */}
+              <Button
+                href="/tarieven"
+                variant="secundair-op-donker"
+                kort="Tarieven"
+              >
+                Bekijk de tarieven
               </Button>
             </div>
           </div>

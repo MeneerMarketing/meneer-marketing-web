@@ -14,7 +14,6 @@ import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
 import Button from "@/components/ui/Button";
 import { HuidStrakker } from "@/components/ui/HuidIcon";
 import Label from "@/components/ui/Label";
-import ProofBar from "@/components/ui/ProofBar";
 import {
   VERSLAPPING_BEELDEN,
   VERSLAPPING_FAQ,
@@ -24,11 +23,7 @@ import {
 import { publicCopy, zonderVlaggen } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
-import {
-  DIBA_PROOF_STRIP_ITEMS,
-  DIBA_SITE_URL,
-  DIBA_WHATSAPP_URL,
-} from "@/lib/site";
+import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
@@ -85,57 +80,60 @@ export default function Pagina() {
         ])}
       />
 
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-10 sm:py-14 lg:py-20">
+      {/* Donkergroen, zoals elke andere hoofdingang van de site (Yasin, 11 september
+          2026). */}
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)]">
+        {/* Op een telefoon plakte het beeld tegen de onderrand van het groene vlak: de
+            tekstkolom bracht zijn eigen onderruimte mee, de beeldkolom niet (Yasin, 11
+            september 2026). Vanaf 1024 staan ze naast elkaar en geldt het niet. */}
+        <div className="mx-auto grid gap-6 px-5 pb-10 sm:px-9 sm:pb-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-10 lg:px-[7.5vw] lg:pb-0">
+          <div className="py-10 sm:py-14 lg:py-20 max-lg:pb-0">
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <Link href="/huidproblemen" className="hover:text-[var(--g-700)]">
+              <Link href="/huidproblemen" className="hover:text-white">
                 Huidproblemen
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Huidverslapping</span>
+              <span className="text-[var(--on-dark-body)]">
+                Huidverslapping
+              </span>
             </nav>
 
-            <h1 className="diba-display-l mt-6">
+            <h1 className="diba-display-l mt-6 text-[var(--on-dark)]">
               Een verslapte kaaklijn
               <br />
-              <span className="diba-accent">en zakkende wangen</span>
+              <span className="diba-accent-on-dark">en zakkende wangen</span>
             </h1>
 
-            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Een zakkende kaaklijn en wangen behandelen we met technieken die
               de aanmaak van collageen op gang brengen: microneedling met de
               SkinPen of de Dermapen 4, fractionele laser met de Fotona, en
               radiofrequentie. Dat geeft steviger weefsel en een vastere lijn.
             </p>
-            <LeesVerder>
-              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <LeesVerder opDonker>
+              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
                 Welke techniek bij jou past hangt af van je huid en van het
                 stadium waarin de verslapping zit. Dat stelt de huidtherapeut
                 tijdens de intake vast, en meestal is het een combinatie.
               </p>
             </LeesVerder>
 
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
-              <Button
-                href="#test"
-                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
-              >
-                Doe de zwaartekrachttest
+            <div className="diba-knoprij mt-9">
+              <Button variant="primair-op-donker" href="#test">
+                Waar het zichtbaar wordt
               </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
-                variant="ghost"
+                variant="secundair-op-donker"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
                 kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
@@ -155,8 +153,6 @@ export default function Pagina() {
           </div>
         </div>
       </section>
-
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
 
       <PillarNav ankers={ANKERS} />
 
@@ -215,12 +211,12 @@ export default function Pagina() {
             </p>
             <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Lijnen en verslapping komen samen voor maar zijn niet hetzelfde.
-              Gaat het je om de lijnen zelf, dan begint het bij de beweegtest op
-              de rimpelpagina.
+              Gaat het je om de lijnen zelf, dan begint het bij het verschil
+              tussen huid en spier op de rimpelpagina.
             </p>
             <div className="mt-7">
               <Button href="/huidproblemen/rimpels" variant="primair-op-donker">
-                Naar rimpels en fijne lijntjes
+                Naar rimpels
               </Button>
             </div>
           </div>
@@ -261,7 +257,7 @@ export default function Pagina() {
       <PillarCta
         kop="Plan een intake"
         accent="bij Diba Clinics"
-        tekst="In het huidconsult doen we de zwaartekrachttest samen en meten we wat er nu is. Blijkt er weinig te winnen, dan hoor je dat, en dan is dat het advies."
+        tekst="In het huidconsult kijkt de behandelaar hoeveel je huid nog terugveert en meet hij wat er nu is. Blijkt er weinig te winnen, dan hoor je dat, en dan is dat het advies."
         topic="huidverslapping"
         whatsappHref={DIBA_WHATSAPP_URL}
       />

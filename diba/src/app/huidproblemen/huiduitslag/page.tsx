@@ -10,7 +10,6 @@ import {
 } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
-import ProofBar from "@/components/ui/ProofBar";
 import {
   ALARM,
   ALARM_ROUTE,
@@ -22,11 +21,7 @@ import {
 } from "@/data/huiduitslag";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import {
-  DIBA_PROOF_STRIP_ITEMS,
-  DIBA_SITE_URL,
-  DIBA_WHATSAPP_URL,
-} from "@/lib/site";
+import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
 import LeesVerder from "@/components/ui/LeesVerder";
 
@@ -120,8 +115,6 @@ export default function HuiduitslagPage() {
         </div>
       </section>
 
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
-
       <PillarNav ankers={ANKERS} />
 
       {/* ── Alarmsignalen. Vóór alles, want dit is het enige dat echt haast heeft. ── */}
@@ -193,7 +186,7 @@ export default function HuiduitslagPage() {
           zonder dat je er iets voor hoeft te doen. */}
       <section
         id="gedrag"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="bg-[var(--g-025)] scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -204,15 +197,16 @@ export default function HuiduitslagPage() {
             intro="Niet wat je ziet maar wat het doet, zegt het meeste. Dit is ook de eerste vraag die je krijgt, bij ons en bij de huisarts."
           />
 
-          <ul className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          {/* Witte kaarten op --g-010 met zestien pixels ertussen: op een telefoon zag je
+              geen kaarten maar losse alinea's met veel lucht ertussen (Yasin, 10 september
+              2026). De haarlijnen van de sectie hieronder doen het wel, dus doet deze het
+              nu ook zo: een vak met scheidingslijnen in plaats van vier zwevende blokken. */}
+          <ul className="mt-8 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] sm:mt-12 md:grid-cols-2 lg:grid-cols-4">
             {UITSLAG_GEDRAG.map((g) => (
-              <li
-                key={g.kop}
-                className="rounded-[var(--r-md)] bg-white p-7 sm:p-8"
-              >
+              <li key={g.kop} className="bg-white p-6 sm:p-7">
                 <h3 className="diba-card-title">{g.kop}</h3>
                 {/* Zes regelhoogtes, zodat de vier kaarten in een rij gelijk blijven. */}
-                <p className="mt-3 min-h-[6lh] text-[15px] leading-7 text-[var(--t-body)]">
+                <p className="mt-3 md:min-h-[6lh] text-[15px] leading-7 text-[var(--t-body)]">
                   {publicCopy(g.zin)}
                 </p>
               </li>
@@ -246,7 +240,7 @@ export default function HuiduitslagPage() {
                 </p>
                 {/* min-h in lh: het aantal regels hangt hier af van waar de woorden breken en niet
                       van de lengte, dus reserveren we de ruimte in plaats van tekens te tellen. */}
-                <p className="mt-1.5 min-h-[3lh] text-[15px] leading-6 text-[var(--t-body)]">
+                <p className="mt-1.5 md:min-h-[3lh] text-[15px] leading-6 text-[var(--t-body)]">
                   {o.waarheen.replace(/\[[^\]]+\]/g, "").trim()}
                 </p>
                 {"pad" in o && o.pad ? (
@@ -276,7 +270,7 @@ export default function HuiduitslagPage() {
       <PillarFaq items={UITSLAG_FAQ} onderwerp="huiduitslag" />
 
       {/* ── Afsluiting zonder afspraakknop ── */}
-      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-050)] px-7 py-10 sm:py-14 sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+      <section className="mx-5 mt-16 mb-5 rounded-[var(--r-xl)] lg:mt-20 bg-[var(--g-050)] px-7 py-10 sm:py-14 sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
         <div className="mx-auto">
           <Label>Waar je wel heen gaat</Label>
           <h2 className="diba-display-s mt-5 max-w-[22ch]">

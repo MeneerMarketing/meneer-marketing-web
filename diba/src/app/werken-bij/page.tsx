@@ -131,7 +131,7 @@ export default function WerkenBijPage() {
 
           {/* De vacatures meteen in beeld: daar kom je voor. */}
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
-            <Label>Open vacatures · {VACATURES.length}</Label>
+            <Label>Open vacatures ({VACATURES.length})</Label>
             <ul className="mt-6 space-y-2">
               {VACATURES.map((v) => (
                 <li key={v.slug}>
@@ -221,7 +221,7 @@ export default function WerkenBijPage() {
       {/* ── Waar je mee werkt ── */}
       {/* Een vacaturepagina laat zelden zien hoe het er tussendoor aan toegaat, en dat is nu
           juist waar een sollicitant naar raadt. */}
-      <section className="px-5 pb-10 sm:pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+      <section className="px-5 py-10 sm:px-9 sm:py-14 lg:px-[7.5vw] lg:py-16">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/team-koffie-gang.jpg"

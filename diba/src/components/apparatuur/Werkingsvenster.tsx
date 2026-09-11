@@ -224,7 +224,7 @@ function LegendaOnder({ bodem, beweegt }: { bodem: number; beweegt: boolean }) {
         return (
           <li
             key={laag.id}
-            className="flex gap-3 py-3 first:pt-0 last:pb-0"
+            className="flex gap-3 py-2 first:pt-0 last:pb-0 sm:py-3"
             style={{
               opacity: geraakt ? 1 : 0.45,
               transition: beweegt ? "opacity 500ms ease" : undefined,
@@ -248,7 +248,7 @@ function LegendaOnder({ bodem, beweegt }: { bodem: number; beweegt: boolean }) {
                   tot {laag.tot}
                 </span>
               </p>
-              <p className="mt-0.5 text-[13px] leading-5 text-[var(--t-muted)]">
+              <p className="mt-0.5 hidden text-[13px] leading-5 text-[var(--t-muted)] sm:block">
                 {laag.bevat}
               </p>
             </div>
@@ -502,7 +502,7 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
                     fill="white"
                     style={{ letterSpacing: "0.02em" }}
                   >
-                    {`Tot hier · ~${diepteInMm(bodem)} mm`}
+                    {`Tot hier, ~${diepteInMm(bodem)} mm`}
                   </text>
                 </g>
               </g>
@@ -533,7 +533,9 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
 
         {/* [MEDISCHE-CHECK-ROJDA]: de dieptes en de fasen per apparaat. De vlag hoort in
             dit commentaar en niet in de zin eronder, want die zin lezen bezoekers wel. */}
-        <p className="mt-4 text-[13px] leading-6 text-[var(--t-muted)]">
+        {/* Naslag, en op een telefoon vier regels die tussen de tekening en de knoppen
+            staan. Vanaf 640 pixels staat hij er weer. */}
+        <p className="mt-4 hidden text-[13px] leading-6 text-[var(--t-muted)] sm:block">
           De verhoudingen zijn schematisch; de diepten erbij zijn dat niet.{" "}
           {HUIDLAGEN_BRON} Hoe diep er bij jou gewerkt wordt hangt af van de
           instelling die de behandelaar kiest.
@@ -545,7 +547,7 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
         <p className="diba-label text-[var(--t-label)]">Wat er gebeurt</p>
 
         {/* Onder de tekening (md tot xl) in drie kolommen, ernaast (vanaf xl) als één rij. */}
-        <ol className="mt-5 grid gap-2 md:grid-cols-3 xl:grid-cols-1">
+        <ol className="mt-4 grid gap-1.5 sm:mt-5 sm:gap-2 md:grid-cols-3 xl:grid-cols-1">
           {fasen.map((f, i) => {
             const actief = i === stap;
             const gehad = i < stap;
@@ -555,7 +557,7 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
                   type="button"
                   onClick={() => kies(i)}
                   aria-current={actief ? "step" : undefined}
-                  className={`flex w-full gap-4 rounded-[var(--r-sm)] p-4 text-left transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
+                  className={`flex w-full gap-3 rounded-[var(--r-sm)] p-3 text-left transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] sm:gap-4 sm:p-4 ${
                     actief
                       ? "bg-[var(--g-050)]"
                       : "bg-transparent hover:bg-[var(--g-025)]"

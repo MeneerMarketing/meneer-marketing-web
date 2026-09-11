@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Whatsapp } from "@/components/ui/Icon";
 import { DIBA_WHATSAPP_URL } from "@/lib/site";
 
 /**
@@ -102,6 +103,7 @@ export default function MobieleActiebalk() {
           rel="noopener noreferrer"
           className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-[var(--g-200)] px-4 text-[var(--t-strong)] transition-colors hover:border-[var(--g-700)] hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
         >
+          <Whatsapp size={16} />
           WhatsApp
         </a>
       </div>

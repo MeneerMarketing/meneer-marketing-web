@@ -263,7 +263,10 @@ export const DIBA_HOME_PROOF_ITEMS: readonly ProofStripItem[] = [
     value: AANTAL.behandelingen,
     suffix: "+",
     label: "Uitgevoerde behandelingen",
-    kort: "Behandelingen",
+    /* "Behandelingen" is in kleine kapitalen met letterafstand ruim honderd pixels breed,
+       en een vak in de cijferkaart is er op een telefoon achtentachtig (Yasin, 11 september
+       2026: "het woord behandelingen is te lang waardoor het uit zijn vakje gaat"). */
+    kort: "Behandeld",
   },
   {
     value: AANTAL.geholpenKlanten,
@@ -280,3 +283,15 @@ export const DIBA_HOME_PROOF_ITEMS: readonly ProofStripItem[] = [
     href: DIBA_ZORGKAART.url,
   },
 ] as const;
+
+/**
+ * Wie de site gebouwd heeft, met een verwijzing.
+ *
+ * Yasin, 11 september 2026: "in de voettekst wil ik de copyright links en rechts een
+ * backlink naar Meneer Marketing." Het domein is nagekeken: meneermarketing.nl geeft 200
+ * en is het bureau van Yasin zelf.
+ */
+export const DIBA_BOUWER = {
+  naam: "Meneer Marketing",
+  url: "https://meneermarketing.nl",
+} as const;

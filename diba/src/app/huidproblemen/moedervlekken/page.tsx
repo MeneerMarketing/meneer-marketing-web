@@ -11,14 +11,13 @@ import {
 } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
-import ProofBar from "@/components/ui/ProofBar";
 import {
   MOEDERVLEK_FAQ,
   MOEDERVLEK_VOORWAARDEN,
   MOEDERVLEK_WEL_NIET,
 } from "@/data/moedervlekken";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
+import { DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
 import LeesVerder from "@/components/ui/LeesVerder";
 
@@ -115,11 +114,20 @@ export default function MoedervlekkenPage() {
               </p>
             </LeesVerder>
 
-            <div className="mt-9 flex flex-wrap gap-3">
-              <Button variant="primair-op-donker" href="/intake">
-                Plan een huidconsult
+            <div className="mt-9 diba-knoprij">
+              <Button
+                variant="primair-op-donker"
+                href="/intake"
+                kort="Huidconsult"
+              >
+                <span className="sm:hidden">Huidconsult</span>
+                <span className="max-sm:hidden">Plan een huidconsult</span>
               </Button>
-              <Button href="#check" variant="secundair-op-donker">
+              <Button
+                href="#check"
+                variant="secundair-op-donker"
+                kort="ABCDE-check"
+              >
                 Eerst de ABCDE-check
               </Button>
             </div>
@@ -141,8 +149,6 @@ export default function MoedervlekkenPage() {
           </div>
         </div>
       </section>
-
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
 
       <PillarNav ankers={ANKERS} />
 
@@ -187,7 +193,7 @@ export default function MoedervlekkenPage() {
           de site zonder afspraakknop. Nu staat er wat er gebeurt als je komt, in de
           volgorde waarin het gebeurt. De huisarts is niet weg: hij staat in stap één, waar
           hij thuishoort. */}
-      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+      <section className="mx-5 mt-16 mb-5 rounded-[var(--r-xl)] lg:mt-20 bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
         <div className="mx-auto lg:grid lg:grid-cols-[1.1fr_.9fr] lg:gap-16">
           <div>
             <Label opDonker>Hoe het gaat</Label>
@@ -199,7 +205,7 @@ export default function MoedervlekkenPage() {
               dan dekken we die af en gaan we verder. Kom je voor de moedervlek
               zelf, dan begint het met kijken.
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            <div className="mt-8 diba-knoprij">
               <Link
                 href="/intake"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--on-dark-accent)]"
@@ -210,7 +216,8 @@ export default function MoedervlekkenPage() {
                 href="/huidproblemen/pigmentvlekken"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-white/25 px-6 text-[var(--on-dark)] transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--on-dark-accent)]"
               >
-                Ik zoek pigmentvlekken
+                <span className="sm:hidden">Pigmentvlekken</span>
+                <span className="max-sm:hidden">Ik zoek pigmentvlekken</span>
               </Link>
             </div>
           </div>

@@ -31,8 +31,14 @@ export type Lijnsoort = {
   readonly naam: string;
   readonly klanttaal: string;
   readonly vakterm: string;
-  /** Wat de beweegtest bij deze soort doet. */
-  readonly beweegtest: string;
+  /**
+   * Waaraan je deze soort herkent, in rust en in beweging.
+   *
+   * Heette `beweegtest`, naar een opdracht aan de bezoeker om voor de spiegel te gaan
+   * staan. Rojda wil dat soort dingen niet op de site en Yasin bevestigde dat op 11
+   * september 2026; het is de behandelaar die dit vaststelt, niet de lezer thuis.
+   */
+  readonly herkenbaarAan: string;
   readonly watHetIs: string;
   readonly watWijDoen: string;
   /** Werkt een huidbehandeling hier, of ligt het elders. */
@@ -45,7 +51,7 @@ export const LIJNSOORTEN: readonly Lijnsoort[] = [
     naam: "Droogtelijntjes",
     klanttaal: "Fijne streepjes die er 's ochtends zijn en later minder",
     vakterm: "dehydratielijnen",
-    beweegtest:
+    herkenbaarAan:
       "Ze verdwijnen al als je je huid goed verzorgt, en verschillen per dag en per seizoen.",
     watHetIs:
       "Geen rimpel maar een huid met te weinig vocht. De bovenste laag ligt dan niet glad en vangt licht in kleine streepjes. [MEDISCHE-CHECK-ROJDA]",
@@ -58,7 +64,7 @@ export const LIJNSOORTEN: readonly Lijnsoort[] = [
     naam: "Mimieklijnen",
     klanttaal: "Lijnen die je ziet als je lacht of fronst, en anders niet",
     vakterm: "dynamische rimpels",
-    beweegtest:
+    herkenbaarAan:
       "Ontspan je gezicht helemaal. Is de lijn dan weg? Dan is hij dynamisch.",
     watHetIs:
       "Een vouw die ontstaat doordat een spier de huid samentrekt. De huid zelf is nog intact. [MEDISCHE-CHECK-ROJDA]",
@@ -71,7 +77,7 @@ export const LIJNSOORTEN: readonly Lijnsoort[] = [
     naam: "Lijnen die blijven staan",
     klanttaal: "Lijnen die er ook zijn als je gezicht in rust is",
     vakterm: "statische rimpels",
-    beweegtest:
+    herkenbaarAan:
       "Ontspan je gezicht. Staat de lijn er nog steeds? Dan zit het in de huid en niet in de spier.",
     watHetIs:
       "De huid heeft op die plek collageen en elasticiteit verloren en vouwt niet meer terug. Dit is waar een huidbehandeling werkt. [MEDISCHE-CHECK-ROJDA]",
@@ -84,7 +90,7 @@ export const LIJNSOORTEN: readonly Lijnsoort[] = [
     naam: "Verslapping",
     klanttaal: "Je gezicht zakt en de contour van je kaaklijn wordt vager",
     vakterm: "laxiteit",
-    beweegtest:
+    herkenbaarAan:
       "Kijk in de spiegel terwijl je iets voorover buigt, en daarna liggend. Verandert de vorm van je gezicht duidelijk, dan gaat het om verslapping en niet om lijnen.",
     watHetIs:
       "Niet een lijn maar de hele structuur die meegeeft: minder elasticiteit, minder steun, en zwaartekracht die zijn werk doet. [MEDISCHE-CHECK-ROJDA]",
@@ -96,7 +102,7 @@ export const LIJNSOORTEN: readonly Lijnsoort[] = [
 
 export const RIMPELS_WEL_NIET = {
   wel: [
-    "Eerst de beweegtest, want een dynamische lijn en een statische lijn vragen om iets anders",
+    "Eerst vaststellen of de lijn in de huid of in de spier zit, want die twee vragen om iets anders",
     "Collageenopbouw op gang brengen, in een reeks over maanden en niet in een sessie",
     "Zonbescherming, elke dag. Dit is verreweg de grootste factor in hoe snel er nieuwe lijnen bij komen [MEDISCHE-CHECK-ROJDA]",
     "Een huidanalyse, want bij dit huidprobleem gaat het om maanden en je ziet je eigen gezicht elke dag",
@@ -159,18 +165,18 @@ export const BEWEEGTEST_STAPPEN: readonly {
   readonly tekst: string;
 }[] = [
   {
-    kop: "Ontspan alles",
+    kop: "Eerst in rust",
     tekst:
-      "Ga voor de spiegel staan en laat je gezicht helemaal los. Niet lachen, niet fronsen, ook niet een beetje. Dat laatste is lastiger dan het klinkt.",
+      "De behandelaar kijkt naar je gezicht in volledige rust. De lijnen die er dan staan, staan in je huid; die verdwijnen niet als je stilzit.",
   },
   {
-    kop: "Kijk waar de lijn nog staat",
+    kop: "Dan in beweging",
     tekst:
-      "Welke lijnen zijn verdwenen nu je gezicht in rust is, en welke staan er nog? Alleen dat verschil telt; hoe diep ze zijn doet er nu even niet toe.",
+      "Lachen, fronsen, wenkbrauwen op. De lijnen die alleen dan verschijnen komen uit de spier eronder, en niet uit de huid zelf.",
   },
   {
-    kop: "Trek dan een gezicht",
+    kop: "Waarom dat verschil telt",
     tekst:
-      "Lach breed, frons, trek je wenkbrauwen op. De lijnen die er alleen nu zijn, zitten in de spier. De lijnen die er ook in rust waren, zitten in je huid.",
+      "Een lijn in de huid behandelen we met microneedling, laser of een peeling. Een lijn in de spier vraagt om iets anders; daar werken wij niet mee.",
   },
 ];

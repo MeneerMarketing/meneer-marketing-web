@@ -13,6 +13,21 @@ export const LEGACY_REDIRECTS: readonly {
      er wel: de agenda van Salonized staat daar op onze eigen pagina, dus deze omleiding is
      weg. /boeken blijft wijzen, nu naar diezelfde pagina. */
   { source: "/boeken", destination: "/afspraak" },
+  /* Ons verbond is op 10 september 2026 van de site gehaald (Yasin: "te veel en te
+     overdreven"). Wat er stond, de grenzen per klacht, staat op de klachtpagina's zelf; wie
+     de belofte zocht komt hier het dichtst in de buurt. */
+  { source: "/ons-verbond", destination: "/kwaliteit-en-registraties" },
+  /* "Voor wie" en de vier doelgroeppagina's zijn op 10 september 2026 weggehaald (Yasin:
+     "mag volledig uit de website, het is te veel"). Wie zocht op zijn eigen situatie komt
+     verder bij de klacht waar hij mee zit. */
+  { source: "/doelgroep", destination: "/huidproblemen" },
+  { source: "/doelgroep/jongeren", destination: "/huidproblemen/acne" },
+  { source: "/doelgroep/mannen", destination: "/huidproblemen" },
+  {
+    source: "/doelgroep/huid-van-kleur",
+    destination: "/huidproblemen/pigmentvlekken",
+  },
+  { source: "/doelgroep/bruiden", destination: "/behandelingen" },
   { source: "/laser", destination: "/laserontharing" },
   { source: "/laserontharing/prijzen", destination: "/laserontharing" },
   /* De Lumi 8 staat niet meer in de kliniek; het LED-werk gebeurt nu op het Precision

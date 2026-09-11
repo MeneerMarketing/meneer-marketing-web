@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Label from "@/components/ui/Label";
 import LeesVerder from "@/components/ui/LeesVerder";
-import { INSURERS } from "@/data/insurers";
+import { EXTRA_VERZEKERAARS, INSURERS } from "@/data/insurers";
 import { MISVERSTANDEN, ONZE_ROL, ROUTE } from "@/data/vergoeding-route";
 import { ERKENNINGEN } from "@/data/team";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -196,6 +196,39 @@ export default function VergoedingenPage() {
               </li>
             ))}
           </ul>
+
+          {/* De vier die er sinds kort bij horen (Okan, 10 september 2026). Ze hebben nog
+              geen eigen pagina hier, dus wijzen ze naar hun eigen vergoedingenpagina. Een
+              kaart zonder inhoud zou beloven dat er iets te lezen valt. */}
+          <div className="mt-8">
+            <p className="text-[16px] leading-7 text-[var(--t-body)]">
+              Ook bij deze verzekeraars kun je bij ons terecht. Hun voorwaarden
+              staan nog niet op onze site; deze links gaan naar hun eigen
+              vergoedingenpagina.
+            </p>
+            <ul className="mt-4 flex flex-wrap gap-2">
+              {EXTRA_VERZEKERAARS.map((v) => (
+                <li key={v.naam}>
+                  <a
+                    href={v.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-white px-5 text-[15px] leading-6 text-[var(--t-strong)] transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                  >
+                    {v.naam}
+                    {v.labels ? (
+                      <span className="text-[var(--t-muted)]">
+                        ({v.labels.join(", ")})
+                      </span>
+                    ) : null}
+                    <span aria-hidden="true" className="text-[var(--t-muted)]">
+                      ↗
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
 
           <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3">
             <Link

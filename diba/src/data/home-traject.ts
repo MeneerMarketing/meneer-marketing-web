@@ -12,4 +12,4 @@ export const HOME_TRAJECT_METRICS: readonly TrajectMetric[] = [
 ] as const;
 
 export const HOME_TRAJECT_QUOTE =
-  "Ik voelde me voor het eerst niet als een probleem dat opgelost moest worden." as const;
+  "Ze namen de tijd om te kijken, en ik hoorde precies wat er wel en niet kon." as const;

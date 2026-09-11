@@ -5,7 +5,6 @@ import { INSURERS } from "@/data/insurers";
 import { APPARATUUR } from "@/data/apparatuur";
 import { BEHANDELINGEN } from "@/data/behandelingen";
 import { TOEPASSINGEN } from "@/data/toepassingen";
-import { DOELGROEPEN } from "@/data/doelgroep";
 import { DIBA_SITE_URL } from "@/lib/site";
 
 /**
@@ -50,7 +49,7 @@ const APP = join(process.cwd(), "src", "app");
  * Zodra ze weer opengaan: hier weghalen en de twee regels in redirects.ts.
  */
 const OVERSLAAN =
-  /^\/(dev|preview-login|home-variant|resultaten|laserontharing\/configurator)(\/|$)/;
+  /^\/(dev|home-variant|resultaten|laserontharing\/configurator)(\/|$)/;
 
 /** Alle statische routes met een eigen pagina, gevonden in de app-map. */
 function statischeRoutes(): string[] {
@@ -105,7 +104,6 @@ function gewicht(route: string): number {
     return 0.8;
   if (route.startsWith("/apparatuur")) return 0.6;
   if (route.startsWith("/vergoedingen")) return 0.6;
-  if (route.startsWith("/doelgroep")) return 0.6;
   /* De juridische pagina's horen erin te staan maar hoeven niet vaak nagelopen. */
   if (/^\/(privacybeleid|cookiebeleid|algemene-voorwaarden)$/.test(route))
     return 0.3;
@@ -134,7 +132,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...TOEPASSINGEN.map((t) => `/behandelingen/${t.behandeling}/${t.slug}`),
     ...APPARATUUR.map((a) => `/apparatuur/${a.slug}`),
     ...INSURERS.map((i) => `/vergoedingen/${i.slug}`),
-    ...DOELGROEPEN.map((d) => `/doelgroep/${d.slug}`),
   ];
 
   /* Een slug kan zowel een eigen page.tsx als een record in de data hebben. Dan staat hij

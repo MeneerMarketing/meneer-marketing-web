@@ -192,7 +192,9 @@ export default function Huidreis() {
         <div
           role="tablist"
           aria-label="Hoe diep"
-          className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4"
+          /* Twee bij twee, ook op een breed scherm: in de kolom waar deze rij staat is
+             een vierde 99 pixels breed en past "Bovenste lederhuid" er niet in. */
+          className="mt-4 grid grid-cols-2 gap-2"
         >
           {HUIDLAGEN.map((l) => (
             <button

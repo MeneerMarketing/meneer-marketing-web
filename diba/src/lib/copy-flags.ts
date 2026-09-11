@@ -40,3 +40,19 @@ export function zonderVlaggen<T>(waarde: T): T {
   }
   return waarde;
 }
+
+/**
+ * De eerste zin van een tekst.
+ *
+ * De blokken "In het kort" zijn samenvattingen: een handvol regels die je in tien seconden
+ * leest. De volledige tekst over hersteltijd of het aantal sessies staat verderop op
+ * dezelfde pagina, dus hier hoeft alleen de kern te staan.
+ *
+ * Yasin, 11 september 2026: "die tekstjes zijn veel te lang waardoor de regels stapelen,
+ * ik wil er maximaal twee." Bij elke behandeling is de kern toevallig ook precies de eerste
+ * zin: "Drie tot vijf dagen." of "Een reeks van drie, met ongeveer drie weken ertussen."
+ */
+export function eersteZin(tekst: string): string {
+  const m = tekst.match(/^[^.!?]*[.!?]/);
+  return m ? m[0].trim() : tekst;
+}

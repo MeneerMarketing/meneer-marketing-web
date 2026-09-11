@@ -140,7 +140,6 @@ const statisch = zoekPaginas(join(process.cwd(), "src", "app"))
 const paden = [...new Set([...statisch, ...uitSitemap, ...uitOverzichten])]
   .filter(
     (p) =>
-      !p.startsWith("/preview-login") &&
       !p.startsWith("/api") &&
       !p.startsWith("/dev") &&
       !p.startsWith("/home-variant"),

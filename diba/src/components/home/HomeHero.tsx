@@ -110,7 +110,9 @@ function Cijfers({ compact = false }: { compact?: boolean }) {
             )}
             <dt
               className={`text-[var(--t-muted)] ${
-                compact ? "mt-1 text-[10px] leading-tight" : "diba-label mt-2"
+                compact
+                  ? "diba-label mt-1 text-[10px] leading-tight"
+                  : "diba-label mt-2"
               }`}
             >
               {compact ? (item.kort ?? item.label) : item.label}

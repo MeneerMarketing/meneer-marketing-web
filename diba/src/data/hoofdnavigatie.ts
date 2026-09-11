@@ -288,10 +288,19 @@ export const HOOFDNAV: readonly NavItem[] = [
             href: "/apparatuur",
             zin: "Welk apparaat waarvoor wordt ingezet",
           },
+          /* Tarieven stond hier eerst ook, en ging eruit omdat het toen een eigen kop in de
+             balk was (Yasin, 10 september 2026: "hij staat al als hoofdkopje"). Die kop is
+             er sinds 11 september niet meer, dus staat hij weer hier. Vergoedingen erbij:
+             dat is de vraag die direct op een prijs volgt. */
           {
             label: "Tarieven",
             href: "/tarieven",
-            zin: "Elk bedrag, per sessie en per zone",
+            zin: "Elk tarief, per sessie en per zone",
+          },
+          {
+            label: "Vergoedingen",
+            href: "/vergoedingen",
+            zin: "Wat je verzekeraar hiervan vergoedt",
           },
         ],
       },
@@ -362,11 +371,10 @@ export const HOOFDNAV: readonly NavItem[] = [
     ],
     uitgelicht: HUIDPROFIEL_BLOK,
   },
-  /* Tarieven staat hier en niet in de topbalk (Yasin, 5 september 2026). Het is geen
-     praktisch regeltje maar een keuze, en die keuze maak je naast de behandelingen.
-     Zonder kolommen, dus het is een gewone link en geen paneel. */
-  { label: "Tarieven", href: "/tarieven" },
   {
+    /* Over Diba draagt de vijf uit de voettekst en niets meer: wie we zijn, en wat anderen
+       van ons zien. Contact, nazorg, kwaliteit en de verwijzers stonden hier ook en zijn
+       naar Praktisch gegaan; dat waren geen antwoorden op "wie zijn jullie". */
     label: "Over Diba",
     href: "/over-ons",
     kolommen: [
@@ -388,20 +396,10 @@ export const HOOFDNAV: readonly NavItem[] = [
             href: "/team",
             zin: "Negen mensen, en wie wat doet",
           },
-          {
-            label: "Werken bij Diba",
-            href: "/werken-bij",
-            zin: "Twee vacatures en een open sollicitatie",
-          },
-          {
-            label: "Contact",
-            href: "/contact",
-            zin: "Adres, tijden en hoe snel we antwoorden",
-          },
         ],
       },
       {
-        kop: "Waar wij voor staan",
+        kop: "Wat anderen zien",
         items: [
           {
             label: "Wat klanten zeggen",
@@ -409,30 +407,59 @@ export const HOOFDNAV: readonly NavItem[] = [
             zin: "Alles op Salonized, zonder selectie vooraf",
           },
           {
-            label: "Merken en apparatuur",
-            href: "/partners",
-            zin: "Waar we mee werken, en waarvoor",
+            label: "Werken bij Diba",
+            href: "/werken-bij",
+            zin: "Twee vacatures en een open sollicitatie",
+          },
+        ],
+      },
+    ],
+    uitgelicht: REVIEWS_BLOK,
+  },
+  {
+    /* Praktisch: alles wat over het bezoek zelf gaat en niet over de huid. Dezelfde vijf
+       als in de voettekst, met Merken en apparatuur erbij omdat die pagina anders nergens
+       meer in de navigatie staat. */
+    label: "Praktisch",
+    href: "/contact",
+    kolommen: [
+      {
+        kop: "Voor en na je afspraak",
+        items: [
+          {
+            label: "Contact en route",
+            href: "/contact",
+            zin: "Adres, tijden en hoe snel we antwoorden",
           },
           {
-            label: "Kwaliteit en registraties",
-            href: "/kwaliteit-en-registraties",
-            zin: "Waar we op aangesproken kunnen worden",
+            label: "Je eerste afspraak",
+            href: "/intake",
+            zin: "Wat er in een huidconsult gebeurt",
           },
-          {
-            label: "Ons verbond",
-            href: "/ons-verbond",
-            zin: "Wat wij beloven en wat niet",
-          },
-
           {
             label: "Nazorg",
             href: "/nazorg",
             zin: "Per behandeling: wanneer alles weer mag",
           },
+        ],
+      },
+      {
+        kop: "Goed om te weten",
+        items: [
           {
-            label: "Voor wie",
-            href: "/doelgroep",
-            zin: "Vier groepen, dezelfde behandellijst",
+            label: "Kennisbank",
+            href: "/kennisbank",
+            zin: "Alle uitleg op een plek",
+          },
+          {
+            label: "Kwaliteit en registraties",
+            href: "/kwaliteit-en-registraties",
+            zin: "Bij welke registers we horen",
+          },
+          {
+            label: "Merken en apparatuur",
+            href: "/partners",
+            zin: "Waar we mee werken, en waarvoor",
           },
           {
             /* Yasin, 8 september 2026: de naam en de onderzin letterlijk zo. */
@@ -443,14 +470,13 @@ export const HOOFDNAV: readonly NavItem[] = [
         ],
       },
     ],
-    uitgelicht: REVIEWS_BLOK,
+    uitgelicht: ZOEKER_BLOK,
   },
 ];
 
 /** De praktische links in de topbalk. Kort houden: dit is geen tweede hoofdmenu. */
 export const TOPBALK_LINKS: readonly NavLink[] = [
   { label: "Vergoedingen", href: "/vergoedingen" },
-  { label: "Voor wie", href: "/doelgroep" },
   { label: "Contact", href: "/contact" },
 ];
 

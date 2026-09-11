@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { useCallback, useEffect, useState, useSyncExternalStore } from "react";
 import DibaLeafMark from "@/components/ui/DibaLeafMark";
 import Spinnenweb from "@/components/ui/Spinnenweb";
 import { prijsTekst } from "@/data/behandelingen";
@@ -29,6 +30,10 @@ import { useHuidprofiel } from "@/lib/huidprofiel-opslag";
  *    daarom zit er ruimte onder gereserveerd zolang die balk er is. Ingeklapt is het een
  *    knop van 48 pixels en verder niets.
  * 3. HIJ SLUIT ALTIJD. Escape, de kruisknop, of klikken buiten het paneel.
+ * 4. HIJ STAAT NIET IN DE HERO. Op een pagina met een schermvullende hero dekte hij de
+ *    knoppen daarin af (Yasin, 11 september 2026: "die wil ik niet zien in de hero, pas
+ *    als je de hero voorbij bent"). Hij komt tevoorschijn zodra het vlak met `data-hero`
+ *    helemaal uit beeld is. Staat er geen zo'n vlak op de pagina, dan is hij er meteen.
  *
  * Wat erin staat is een samenvatting en geen tweede pagina: het spinnenweb, de twee assen
  * die eruit springen, en welke behandelingen erbij passen. Wie meer wil klikt door.
@@ -37,6 +42,32 @@ import { useHuidprofiel } from "@/lib/huidprofiel-opslag";
 export default function HuidprofielKnop() {
   const { profiel } = useHuidprofiel();
   const [open, setOpen] = useState(false);
+  const pad = usePathname();
+
+  /* Of de hero voorbij is leest hij uit het DOM en niet uit eigen state: de waarheid is
+     waar het vlak staat. De waarnemer meldt precies de momenten waarop dat omslaat. De
+     selector wordt opnieuw opgezocht bij elke routewissel, want dan is het een ander vlak
+     (of geen). */
+  const abonneerHero = useCallback(
+    (herteken: () => void) => {
+      void pad;
+      const hero = document.querySelector("[data-hero]");
+      if (!hero) return () => {};
+      const waarnemer = new IntersectionObserver(herteken, { threshold: 0 });
+      waarnemer.observe(hero);
+      return () => waarnemer.disconnect();
+    },
+    [pad],
+  );
+
+  const leesHero = useCallback(() => {
+    const hero = document.querySelector("[data-hero]");
+    if (!hero) return true;
+    const doos = hero.getBoundingClientRect();
+    return doos.bottom <= 0 || doos.top >= window.innerHeight;
+  }, []);
+
+  const voorbijHero = useSyncExternalStore(abonneerHero, leesHero, () => true);
 
   useEffect(() => {
     if (!open) return undefined;
@@ -49,6 +80,9 @@ export default function HuidprofielKnop() {
 
   const scan = profiel.scan;
   if (!scan) return null;
+  // Staat het paneel open terwijl je terugscrollt, dan blijft het staan: iets wat je zelf
+  // hebt geopend hoort niet onder je handen weg te vallen.
+  if (!voorbijHero && !open) return null;
 
   const top = aandachtspunten(scan);
   const passend = maakMatches(profiel).filter((m) => m.oordeel === "past");
@@ -189,9 +223,17 @@ export default function HuidprofielKnop() {
           /* Op een telefoon is dit alleen het blad. De twee regels ernaast namen daar
              de halve breedte in beslag en dekten de inhoud af; op een groot scherm is er
              ruimte zat en helpt het label. */
-          className="flex min-h-12 items-center gap-3 rounded-[var(--r-pill)] bg-white p-2 shadow-[var(--shadow-float)] transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] sm:py-2 sm:pr-5 sm:pl-2.5"
+          /* Op een telefoon is dit alleen de cirkel met het blad. De witte pil eromheen
+             las als een dikke rand om een knopje (Yasin, 10 september 2026: "waarom zit
+             daar opeens een dikke witte border? doe gewoon een cirkel met blad"). Vanaf
+             640 pixels staat het opschrift ernaast en dan draagt de pil dat. */
+          className="flex min-h-12 items-center gap-3 rounded-[var(--r-pill)] transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] sm:bg-white sm:p-2 sm:py-2 sm:pr-5 sm:pl-2.5 sm:shadow-[var(--shadow-float)]"
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)]">
+          {/* Een witte ring van drie pixels eromheen. Zonder die ring valt de mintcirkel
+              weg tegen een lichte pagina (Yasin, 11 september 2026: "je ziet hem nu niet
+              goed"). Het is geen kader om een knopje meer, want de ring is nu de rand van
+              de cirkel zelf en niet een pil eromheen. */}
+          <span className="flex h-12 w-12 items-center justify-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)] shadow-[var(--shadow-float)] ring-[3px] ring-white sm:h-9 sm:w-9 sm:shadow-none sm:ring-0">
             <DibaLeafMark className="h-5 w-5" />
           </span>
           <span className="sr-only sm:not-sr-only sm:text-left">

@@ -2,16 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Button from "@/components/ui/Button";
 import BeeldVignet from "@/components/ui/BeeldVignet";
+import DibaLeafMark from "@/components/ui/DibaLeafMark";
 import Label from "@/components/ui/Label";
-import ProofBar from "@/components/ui/ProofBar";
 import Raster from "@/components/huidproblemen/Raster";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
-import {
-  DIBA_PROOF_STRIP_ITEMS,
-  DIBA_SITE_URL,
-  DIBA_WHATSAPP_URL,
-} from "@/lib/site";
+import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
@@ -89,8 +85,12 @@ export default function HuidproblemenPage() {
               Je hoeft niet te weten hoe het heet. Kruis aan wat je ziet, dan
               zoeken wij de pagina erbij.
             </p>
-            <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3">
-              <Button href="/huidproblemen/symptoomzoeker" variant="primair">
+            <div className="mt-7 diba-knoprij">
+              <Button
+                href="/huidproblemen/symptoomzoeker"
+                variant="primair"
+                kort="Symptoomzoeker"
+              >
                 Naar de symptoomzoeker
               </Button>
               <Button
@@ -98,6 +98,7 @@ export default function HuidproblemenPage() {
                 variant="secundair"
                 target="_blank"
                 rel="noopener noreferrer"
+                kort="Stel je vraag"
               >
                 Of stel je vraag
               </Button>
@@ -106,14 +107,12 @@ export default function HuidproblemenPage() {
         </div>
       </section>
 
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
-
       {/* ── Het filterbare raster ──
           Wit vlak, mintkaarten. Stond de sectie ook op mint, dan liepen kaart en
           ondergrond in elkaar over en las het als losse tekst in plaats van als kaarten. */}
       {/* Zestien huidproblemen naast elkaar kan overweldigen. Dit beeld zegt dat er aan het
           eind van elke pagina gewoon een gesprek staat. */}
-      <section className="px-5 pb-10 sm:pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+      <section className="px-5 py-10 sm:px-9 sm:py-14 lg:px-[7.5vw] lg:py-16">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/kliniek-kamer-overzicht.jpg"
@@ -163,7 +162,7 @@ export default function HuidproblemenPage() {
                 <h3 className="diba-card-title">{kop}</h3>
                 {/* min-h in lh: het aantal regels hangt hier af van waar de woorden breken, niet
                     van de lengte. Ruimte reserveren werkt op elke breedte. */}
-                <p className="mt-3 min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
+                <p className="mt-3 md:min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
                   {tekst}
                 </p>
               </li>
@@ -173,7 +172,11 @@ export default function HuidproblemenPage() {
       </section>
 
       {/* ── Slot ── */}
-      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+      <section className="relative overflow-hidden mx-5 mt-16 mb-5 rounded-[var(--r-xl)] lg:mt-20 bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+        <DibaLeafMark
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-6 -bottom-10 h-[260px] w-[260px] -rotate-12 opacity-20"
+        />
         <div className="mx-auto lg:grid lg:grid-cols-[1.35fr_0.65fr] lg:gap-10">
           <div>
             <Label opDonker>Behandeling nul</Label>

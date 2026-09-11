@@ -1,9 +1,10 @@
-import Link from "next/link";
-import Sterren from "@/components/ui/Sterren";
+import Reviewregelrol, {
+  type Regelreview,
+} from "@/components/reviews/Reviewregelrol";
 import { reviewsForTopic, type ReviewTopic } from "@/data/reviews";
 
 /**
- * Eén review, op één regel.
+ * Eén review, op één regel, die doorschuift.
  *
  * Yasin, 10 september 2026: "reviews vaker laten terugkomen, hoeft niet in blokken, mag
  * klein." De site had ze op vijf plekken staan en dan meteen met drie tegelijk, onder een
@@ -11,57 +12,63 @@ import { reviewsForTopic, type ReviewTopic } from "@/data/reviews";
  * staat. Dit is het kleine broertje: sterren, een korte zin, een naam, een link naar de
  * rest. Past onder een prijslijst of naast een formulier zonder de bladzijde te sturen.
  *
- * WELKE REVIEW.
+ * Diezelfde dag erbij: er schuiven er nu meer langs in plaats van dat er één blijft staan.
+ * Het schuiven zelf zit in `Reviewregelrol`; hier gebeurt de keuze.
  *
- * De kortste die bij het onderwerp hoort, want deze regel mag niet afbreken. Is er voor dat
- * onderwerp niets, dan valt hij terug op de algemene stapel; is die ook leeg, dan rendert
- * hij niets. Een lege aanhalingstekenregel is erger dan geen regel.
+ * WAAROM DE KEUZE HIER STAAT EN NIET IN DE BROWSER.
  *
- * De keuze is bewust niet willekeurig: dezelfde pagina hoort bij elke bouw dezelfde review
+ * Het archief is 2.467 reviews met tekst. Die lijst naar elke bezoeker sturen om er zes te
+ * tonen is zeshonderd kilobyte voor niets. Deze component draait op de server, kiest er zes
+ * en geeft alleen die zes door.
+ *
+ * DE LENGTEBAND IS GEEN SMAAKKWESTIE.
+ *
+ * Alle zes moeten over hetzelfde aantal regels breken, anders springt het vak bij elke
+ * wisseling. Daarom komen ze uit een smalle band, en staan de kortste vooraan zodat een
+ * pagina met weinig ruimte de kortste krijgt.
+ *
+ * De keuze is bewust niet willekeurig: dezelfde pagina hoort bij elke bouw dezelfde reeks
  * te tonen, anders verandert de tekst van een statische pagina zonder dat iemand iets heeft
- * aangepast. Met `keuze` pakt een pagina een andere uit dezelfde stapel, zodat er niet op
- * vijf plekken hetzelfde zinnetje staat.
+ * aangepast. Met `keuze` pakt een pagina een ander stuk uit dezelfde stapel, zodat er niet
+ * op vijf plekken hetzelfde zinnetje staat.
  */
+
+/** Zoveel reviews schuiven er langs. Meer voegt niets toe en kost alleen laadtijd. */
+const HOEVEEL = 6;
+
 export default function Reviewregel({
   onderwerp = "alle",
   keuze = 0,
   className = "",
 }: {
   onderwerp?: ReviewTopic;
-  /** De hoeveelste uit de stapel. Zo staat er niet overal dezelfde zin. */
+  /** Vanaf welke plek in de stapel deze pagina zijn zes pakt. */
   keuze?: number;
   className?: string;
 }) {
   const bij = reviewsForTopic(onderwerp);
   const stapel = bij.length > 0 ? bij : reviewsForTopic("alle");
-  /* Kort genoeg voor één of twee regels, en de kortste wint bij gelijke lengte. */
   const kort = [...stapel]
-    .filter((r) => r.quote.length >= 40 && r.quote.length <= 150)
+    .filter((r) => r.quote.length >= 45 && r.quote.length <= 110)
     .sort(
       (a, b) => a.quote.length - b.quote.length || a.id.localeCompare(b.id),
     );
-  const review = kort[keuze % Math.max(1, kort.length)];
-  if (!review) return null;
+  if (kort.length === 0) return null;
 
-  return (
-    <figure
-      className={`flex flex-wrap items-baseline gap-x-3 gap-y-1 ${className}`.trim()}
-    >
-      <Sterren aantal={review.stars} maat="sm" />
-      <blockquote className="min-w-0 text-[15px] leading-7 text-[var(--t-body)]">
-        &ldquo;{review.quote}&rdquo;
-      </blockquote>
-      <figcaption className="diba-label text-[var(--t-muted)]">
-        {review.name}
-        {review.relativeDate ? ` · ${review.relativeDate}` : ""}
-        <span aria-hidden="true"> · </span>
-        <Link
-          href="/reviews"
-          className="text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
-        >
-          Alle reviews
-        </Link>
-      </figcaption>
-    </figure>
+  const start = (keuze * HOEVEEL) % kort.length;
+  const reeks: Regelreview[] = Array.from(
+    { length: Math.min(HOEVEEL, kort.length) },
+    (_, n) => {
+      const r = kort[(start + n) % kort.length];
+      return {
+        id: r.id,
+        quote: r.quote,
+        name: r.name,
+        stars: r.stars,
+        relativeDate: r.relativeDate,
+      };
+    },
   );
+
+  return <Reviewregelrol reviews={reeks} className={className} />;
 }

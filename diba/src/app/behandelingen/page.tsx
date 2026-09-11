@@ -9,6 +9,7 @@ import Huidreis from "@/components/behandelingen/Huidreis";
 import DibaLeafMark from "@/components/ui/DibaLeafMark";
 import Reviewregel from "@/components/reviews/Reviewregel";
 import Label from "@/components/ui/Label";
+import Veegrij from "@/components/ui/Veegrij";
 import {
   behandelingVoorSlug,
   COMBINATIES,
@@ -17,12 +18,7 @@ import {
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
-import {
-  DIBA_SALONIZED_RATING,
-  DIBA_SALONIZED_REVIEWS_URL,
-  DIBA_SALONIZED_REVIEW_COUNT,
-  DIBA_SITE_URL,
-} from "@/lib/site";
+import { DIBA_SITE_URL } from "@/lib/site";
 import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
@@ -58,18 +54,6 @@ export const metadata: Metadata = zoekmachineVelden({
     "Kies waar je iets aan wilt doen: acne, pigment, littekens, huidveroudering, glow of haar. Tijdens het huidconsult bepaalt de behandelaar wat bij jouw huid past.",
 });
 
-const TROTS = [
-  {
-    getal: `${DIBA_SALONIZED_RATING.toLocaleString("nl-NL", { minimumFractionDigits: 1 })}`,
-    bij: "op Salonized",
-  },
-  {
-    getal: DIBA_SALONIZED_REVIEW_COUNT.toLocaleString("nl-NL"),
-    bij: "reviews",
-  },
-  { getal: "2017", bij: "open in Rotterdam" },
-] as const;
-
 const intakeBehandeling = behandelingVoorSlug("huidanalyse");
 const intakeBedrag = intakeBehandeling
   ? prijsTekst(intakeBehandeling.prijs)
@@ -95,7 +79,7 @@ const POPULAIR = [
   .map((slug) => behandelingVoorSlug(slug))
   .filter((b): b is NonNullable<typeof b> => Boolean(b));
 
-/** Wat geen huidbehandeling is maar wel bij ons gebeurt. */
+/** Onderzoek waarbij er niets aan een huid gedaan wordt. */
 const onderzoeken = ["voedingsintolerantietest"]
   .map((slug) => behandelingVoorSlug(slug))
   .filter((b): b is NonNullable<typeof b> => Boolean(b));
@@ -148,30 +132,9 @@ export default function BehandelingenPage() {
                 de behandelaar welke aanpak bij jouw huid past.
               </p>
 
-              {/* Bewijs in één regel in plaats van een cijferbalk. Kleiner, en het
-                onderbreekt de pagina niet halverwege. */}
-              <ul className="mt-7 flex flex-wrap items-center gap-x-8 gap-y-3">
-                {TROTS.map((t) => (
-                  <li key={t.bij} className="flex items-baseline gap-2">
-                    <span className="text-[19px] leading-7 font-medium text-[var(--on-dark-accent)] tabular-nums">
-                      {t.getal}
-                    </span>
-                    <span className="text-[14px] leading-6 text-[var(--on-dark-body)]">
-                      {t.bij}
-                    </span>
-                  </li>
-                ))}
-                <li>
-                  <a
-                    href={DIBA_SALONIZED_REVIEWS_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="diba-label diba-label-on-dark underline underline-offset-4 hover:text-white"
-                  >
-                    Lees ze zelf
-                  </a>
-                </li>
-              </ul>
+              {/* Hier stonden drie cijfers en een link naar de reviews. Yasin, 10
+                  september 2026: eraf. Wie op deze pagina komt zoekt een behandeling, en
+                  het cijfer staat al in de balk bovenaan elke pagina. */}
             </div>
 
             {/* De rechterkolom was leeg op drie cijfers na (Yasin, 7 september 2026: "zo
@@ -203,6 +166,196 @@ export default function BehandelingenPage() {
           <div className="mt-5">
             <Wenskiezer />
           </div>
+        </div>
+      </section>
+
+      {/* ══ Alles, per huidwens ══ */}
+      <section
+        id="alles"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
+          <Label>Alles op een rij</Label>
+          <h2 className="diba-display-m mt-4 max-w-[20ch]">
+            Alle behandelingen,{" "}
+            <span className="diba-accent">op wat je wilt bereiken</span>
+          </h2>
+          <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
+            Een behandeling kan onder meerdere kopjes staan. Een medische
+            peeling doet iets bij acne, bij pigment en bij een doffe huid, en
+            welke van die drie het bij jou wordt hangt af van de sterkte die de
+            behandelaar kiest.
+          </p>
+
+          <div className="mt-14">
+            <BehandelingenPerWens />
+          </div>
+        </div>
+      </section>
+
+      {/* ══ Onderzoek en gezondheid ══
+          De voedingsintolerantietest stond tussen de huidbehandelingen. Het is een
+          bloedafname en geen huidbehandeling, en de claims eromheen moeten nog nagekeken
+          worden voor die groter uitgemeten worden. [MEDISCHE-CHECK-ROJDA] */}
+      {/* Yasin, 10 september 2026: "die sectie is nog te wit en saai, geef dat een
+          blokje." Klopte: één witte kaart op een bijna-witte pagina is geen kaart maar een
+          alinea. Nu staat het geheel in een groen vlak, met de kaart wit erin, en het staat
+          hoger op de pagina. */}
+      {onderzoeken.length > 0 ? (
+        <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
+          <div className="mx-auto rounded-[var(--r-xl)] bg-[var(--g-050)] p-7 sm:p-10 lg:p-14">
+            <Label>Onderzoek en gezondheid</Label>
+            <h2 className="diba-display-s mt-3 max-w-[24ch]">
+              Onderzoek <span className="diba-accent">dat we ook doen</span>
+            </h2>
+            <p className="mt-4 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
+              Niet elke afspraak gaat over je huid. Dit onderzoek doen we ook,
+              en het staat hier omdat mensen het bij ons aanvragen zonder dat ze
+              een behandeling zoeken.
+            </p>
+            <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {onderzoeken.map((b) => (
+                <li key={b.slug} className="min-w-0">
+                  <Link
+                    href={`/behandelingen/${b.slug}`}
+                    className="flex h-full min-w-0 flex-col rounded-[var(--r-lg)] border border-[var(--g-100)] bg-white p-6 transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:border-[var(--g-700)] hover:bg-[var(--g-025)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                  >
+                    <p className="diba-card-title text-[var(--t-strong)]">
+                      {b.naam}
+                    </p>
+                    <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
+                      {publicCopy(b.kort)}
+                    </p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      ) : null}
+
+      {/* ══ Meest gevraagd ══
+          Zes, en dezelfde zes als in het menu. Niet "de beste", want dat is de vraag die
+          verderop op deze pagina geen antwoord krijgt. */}
+      <section className="bg-white px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
+        <div className="mx-auto">
+          <Label>Meest gevraagd</Label>
+          <h2 className="diba-display-m mt-4 max-w-[20ch]">
+            Waar mensen het vaakst{" "}
+            <span className="diba-accent">voor komen</span>
+          </h2>
+          <ul className="mt-8 sm:mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {POPULAIR.map((b) => (
+              /* min-w-0 op kaart en regel: het afgekapte apparaatlabel had anders een
+                 minimale breedte van zijn hele tekst, en op een telefoon duwde dat de
+                 hele kaart 80px buiten het scherm, prijs en al. */
+              <li key={b.slug} className="min-w-0">
+                <Link
+                  href={`/behandelingen/${b.slug}`}
+                  className="flex h-full min-w-0 flex-col rounded-[var(--r-lg)] bg-[var(--g-025)] p-6 transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                >
+                  <p className="diba-card-title text-[var(--t-strong)]">
+                    {b.naam}
+                  </p>
+                  <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)] max-md:hidden md:min-h-[3lh]">
+                    {publicCopy(b.kort)}
+                  </p>
+                  <p className="diba-label mt-5 flex min-w-0 items-baseline justify-between gap-3 text-[var(--t-muted)]">
+                    <span className="min-w-0 truncate" title={b.apparaat}>
+                      {b.apparaat ?? ""}
+                    </span>
+                    <span className="shrink-0 text-[var(--g-700)]">
+                      {b.prijs === 0
+                        ? "Op aanvraag"
+                        : `vanaf ${prijsTekst(b.prijs)}`}
+                    </span>
+                  </p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* ══ Veelgekozen combinaties ══
+          Deze stonden nergens, terwijl ze wel op de tarievenlijst staan. Als losse kaarten
+          zouden ze het overzicht verdubbelen; als blok zijn ze wat ze zijn: twee
+          behandelingen in dezelfde afspraak. */}
+      {/* Op een vlak, want de kaarten zijn wit en de pagina is dat bijna ook: je zag
+          geen kaarten maar zeven alinea's onder elkaar (Yasin, 10 september 2026). */}
+      <section className="bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+        <div className="mx-auto">
+          <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end lg:gap-16">
+            <div>
+              <Label>Vaak samen</Label>
+              <h2 className="diba-display-m mt-4 max-w-[16ch]">
+                Twee behandelingen,{" "}
+                <span className="diba-accent">één afspraak</span>
+              </h2>
+            </div>
+            <p className="max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
+              Sommige behandelingen doen meer naast elkaar dan achter elkaar.
+              Wat er in jouw geval kan hangt af van je huid op dat moment; de
+              behandelaar bepaalt tijdens de afspraak of de tweede stap
+              doorgaat.
+            </p>
+          </div>
+
+          <Veegrij
+            label="Veelgekozen combinaties"
+            klasse="-mx-5 mt-8 sm:-mx-9 sm:mt-12 lg:-mx-[7.5vw]"
+            breedte="w-[82%] max-w-[420px] sm:w-[46%] lg:w-[31%]"
+            items={COMBINATIES.map((c) => {
+              const delen = c.delen
+                .map((slug) => behandelingVoorSlug(slug))
+                .filter(Boolean);
+              if (delen.length < 2) return null;
+              return {
+                sleutel: c.delen.join("-"),
+                naam: delen.map((b) => b!.naam).join(" en "),
+                inhoud: (
+                  <div className="flex h-full flex-col rounded-[var(--r-lg)] bg-white p-6">
+                    {/* De twee namen onder elkaar met een plus ertussen, in plaats van
+                      "A + B" op één regel. Zo zie je in één oogopslag dat het er twee
+                      zijn, en breekt de langste naam niet midden in de combinatie af. */}
+                    <ul className="space-y-1.5">
+                      {delen.map((b, n) => (
+                        <li key={b!.slug}>
+                          {n > 0 ? (
+                            <span
+                              aria-hidden="true"
+                              className="mb-1.5 block h-px w-6 bg-[var(--g-200)]"
+                            />
+                          ) : null}
+                          <Link
+                            href={`/behandelingen/${b!.slug}`}
+                            className="diba-card-title text-[var(--t-strong)] underline decoration-[var(--g-200)] underline-offset-4 transition-colors hover:decoration-[var(--g-700)]"
+                          >
+                            {b!.naam}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="mt-4 grow text-[15px] leading-7 text-[var(--t-body)]">
+                      {c.waarom}
+                    </p>
+                  </div>
+                ),
+              };
+            }).filter((x) => x !== null)}
+          />
+
+          <p className="mt-8 max-w-[58ch] text-[15px] leading-7 text-[var(--t-muted)]">
+            De tarieven van de combinaties staan bij de losse behandelingen op
+            de{" "}
+            <Link
+              href="/tarieven"
+              className="text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+            >
+              tarievenpagina
+            </Link>
+            .
+          </p>
         </div>
       </section>
 
@@ -268,164 +421,36 @@ export default function BehandelingenPage() {
               </p>
             </LeesVerder>
           </div>
-          <div className="flex flex-wrap items-center gap-3 lg:justify-end">
+          <div className="diba-knoprij lg:justify-end">
             <Link
               href="/intake"
               className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
             >
-              Plan een huidconsult
+              <span className="sm:hidden">Huidconsult</span>
+              <span className="max-sm:hidden">Plan een huidconsult</span>
             </Link>
             <Link
               href="/huidprofiel"
               className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-[var(--g-200)] px-6 text-[var(--t-strong)] transition-colors hover:border-[var(--g-700)] hover:bg-[var(--g-075)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
             >
-              Of maak eerst je huidprofiel
+              <span className="sm:hidden">Huidprofiel</span>
+              <span className="max-sm:hidden">
+                Of maak eerst je huidprofiel
+              </span>
             </Link>
           </div>
-        </div>
-      </section>
-
-      {/* ══ Meest gevraagd ══
-          Zes, en dezelfde zes als in het menu. Niet "de beste", want dat is de vraag die
-          verderop op deze pagina geen antwoord krijgt. */}
-      <section className="bg-white px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
-        <div className="mx-auto">
-          <Label>Meest gevraagd</Label>
-          <h2 className="diba-display-m mt-4 max-w-[20ch]">
-            Waar mensen het vaakst{" "}
-            <span className="diba-accent">voor komen</span>
-          </h2>
-          <ul className="mt-8 sm:mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {POPULAIR.map((b) => (
-              /* min-w-0 op kaart en regel: het afgekapte apparaatlabel had anders een
-                 minimale breedte van zijn hele tekst, en op een telefoon duwde dat de
-                 hele kaart 80px buiten het scherm, prijs en al. */
-              <li key={b.slug} className="min-w-0">
-                <Link
-                  href={`/behandelingen/${b.slug}`}
-                  className="flex h-full min-w-0 flex-col rounded-[var(--r-lg)] bg-[var(--g-025)] p-6 transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
-                >
-                  <p className="diba-card-title text-[var(--t-strong)]">
-                    {b.naam}
-                  </p>
-                  <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)] max-md:hidden md:min-h-[3lh]">
-                    {publicCopy(b.kort)}
-                  </p>
-                  <p className="diba-label mt-5 flex min-w-0 items-baseline justify-between gap-3 text-[var(--t-muted)]">
-                    <span className="min-w-0 truncate" title={b.apparaat}>
-                      {b.apparaat ?? ""}
-                    </span>
-                    <span className="shrink-0 text-[var(--g-700)]">
-                      {b.prijs === 0
-                        ? "Op aanvraag"
-                        : `vanaf ${prijsTekst(b.prijs)}`}
-                    </span>
-                  </p>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* ══ Alles, per huidwens ══ */}
-      <section
-        id="alles"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
-      >
-        <div className="mx-auto">
-          <Label>Alles op een rij</Label>
-          <h2 className="diba-display-m mt-4 max-w-[20ch]">
-            Alle behandelingen,{" "}
-            <span className="diba-accent">op wat je wilt bereiken</span>
-          </h2>
-          <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Een behandeling kan onder meerdere kopjes staan. Een medische
-            peeling doet iets bij acne, bij pigment en bij een doffe huid, en
-            welke van die drie het bij jou wordt hangt af van de sterkte die de
-            behandelaar kiest.
-          </p>
-
-          <div className="mt-14">
-            <BehandelingenPerWens />
-          </div>
-        </div>
-      </section>
-
-      {/* ══ Veelgekozen combinaties ══
-          Deze stonden nergens, terwijl ze wel op de tarievenlijst staan. Als losse kaarten
-          zouden ze het overzicht verdubbelen; als blok zijn ze wat ze zijn: twee
-          behandelingen in dezelfde afspraak. */}
-      <section className="px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto">
-          <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end lg:gap-16">
-            <div>
-              <Label>Vaak samen</Label>
-              <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                Twee behandelingen,{" "}
-                <span className="diba-accent">één afspraak</span>
-              </h2>
-            </div>
-            <p className="max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Sommige behandelingen doen meer naast elkaar dan achter elkaar.
-              Wat er in jouw geval kan hangt af van je huid op dat moment; de
-              behandelaar bepaalt tijdens de afspraak of de tweede stap
-              doorgaat.
-            </p>
-          </div>
-
-          <ul className="mt-8 sm:mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {COMBINATIES.map((c) => {
-              const delen = c.delen
-                .map((slug) => behandelingVoorSlug(slug))
-                .filter(Boolean);
-              if (delen.length < 2) return null;
-              return (
-                <li
-                  key={c.delen.join("-")}
-                  className="rounded-[var(--r-lg)] bg-white p-6"
-                >
-                  <p className="diba-card-title text-[var(--t-strong)]">
-                    {delen.map((b) => b!.naam).join(" + ")}
-                  </p>
-                  <p className="mt-3 min-h-[3lh] text-[15px] leading-7 text-[var(--t-body)]">
-                    {c.waarom}
-                  </p>
-                  <ul className="diba-label mt-5 flex flex-wrap gap-x-4 gap-y-2">
-                    {delen.map((b) => (
-                      <li key={b!.slug}>
-                        <Link
-                          href={`/behandelingen/${b!.slug}`}
-                          className="text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)]"
-                        >
-                          {b!.naam}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              );
-            })}
-          </ul>
-
-          <p className="mt-8 max-w-[58ch] text-[15px] leading-7 text-[var(--t-muted)]">
-            De tarieven van de combinaties staan bij de losse behandelingen op
-            de{" "}
-            <Link
-              href="/tarieven"
-              className="text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
-            >
-              tarievenpagina
-            </Link>
-            .
-          </p>
         </div>
       </section>
 
       {/* ══ De huidreis ══
           Stond hoog op de pagina als de manier om te kiezen. Okan: de diepte mag blijven
-          als educatief onderdeel, maar lager. Dat is waar hij nu staat. */}
-      <section className="bg-white px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+          als educatief onderdeel, maar lager. Dat is waar hij nu staat.
+
+          Op een telefoon staat hij helemaal niet meer (Yasin, 10 september 2026). De
+          sonde die je door de huidlagen sleept vraagt om een muis en om ruimte; op 375
+          pixels is het een blok dat je voorbijscrolt. Hij blijft in de HTML staan, dus
+          Google leest hem gewoon. */}
+      <section className="bg-white px-5 py-12 max-lg:hidden sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto">
           <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-end lg:gap-16">
             <div>
@@ -453,7 +478,10 @@ export default function BehandelingenPage() {
       {/* ══ Liever filteren ══
           De oude ingang. Hij filtert op hersteltijd en op je huidprofiel, en dat is iets
           wat de indeling hierboven niet doet. */}
-      <section className="bg-[var(--g-025)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+      {/* Negen schermen filter op een telefoon, onder een lijst die daar al alles toont:
+          Yasin, 10 september 2026, "mag op mobiel helemaal weg". Op een groot scherm staat
+          hij naast de lijst en doet hij wel werk. */}
+      <section className="bg-[var(--g-025)] px-5 py-12 max-lg:hidden sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto">
           <Label>Of filter zelf</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
@@ -468,77 +496,6 @@ export default function BehandelingenPage() {
 
           <div className="mt-12">
             <Behandelingenoverzicht />
-          </div>
-        </div>
-      </section>
-
-      {/* ══ Onderzoek en gezondheid ══
-          De voedingsintolerantietest stond tussen de huidbehandelingen. Het is een
-          bloedafname en geen huidbehandeling, en de claims eromheen moeten nog nagekeken
-          worden voor die groter uitgemeten worden. [MEDISCHE-CHECK-ROJDA] */}
-      {onderzoeken.length > 0 ? (
-        <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
-          <div className="mx-auto">
-            <Label>Onderzoek en gezondheid</Label>
-            <h2 className="diba-display-s mt-3 max-w-[24ch]">
-              Geen huidbehandeling,{" "}
-              <span className="diba-accent">wel bij ons te doen</span>
-            </h2>
-            <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {onderzoeken.map((b) => (
-                <li key={b.slug} className="min-w-0">
-                  <Link
-                    href={`/behandelingen/${b.slug}`}
-                    className="flex h-full min-w-0 flex-col rounded-[var(--r-lg)] bg-white p-6 transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:bg-[var(--g-075)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
-                  >
-                    <p className="diba-card-title text-[var(--t-strong)]">
-                      {b.naam}
-                    </p>
-                    <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
-                      {publicCopy(b.kort)}
-                    </p>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-      ) : null}
-
-      {/* ══ De eerlijke tegenhanger ══ */}
-      <section className="px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
-        <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
-          <div>
-            <Label>Wat hier niet staat</Label>
-            <h2 className="diba-display-m mt-4 max-w-[18ch]">
-              Waarom hier niet staat{" "}
-              <span className="diba-accent">welke de beste is</span>
-            </h2>
-            <DibaLeafMark
-              aria-hidden="true"
-              className="mt-10 hidden h-24 w-24 opacity-70 lg:block"
-            />
-          </div>
-
-          <div className="max-w-[58ch]">
-            <p className="text-[17px] leading-8 text-[var(--t-body)]">
-              Die vraag heeft geen antwoord zonder jouw huid erbij. Dieper is
-              niet beter, duurder is niet beter, en nieuwer al helemaal niet.
-              Een behandeling is passend of niet passend, en dat verschilt per
-              persoon en per moment.
-            </p>
-            <LeesVerder>
-              <p className="mt-5 text-[17px] leading-8 text-[var(--t-body)]">
-                Ook je huidprofiel hierboven geeft geen advies. Het legt naast
-                elkaar wat jij hebt ingevuld en wat een behandeling doet, en
-                zegt waar dat wringt. Dat is iets anders dan een aanbeveling, en
-                het is bewust iets anders.
-              </p>
-              <p className="mt-5 text-[17px] leading-8 text-[var(--t-body)]">
-                Wat bij jou past hoor je na de meting, van een mens. Soms is dat
-                geen van de vijf.
-              </p>
-            </LeesVerder>
           </div>
         </div>
       </section>
@@ -567,18 +524,22 @@ export default function BehandelingenPage() {
                   aan de hand is. Neem je huidprofiel mee: dan hoef je het
                   gesprek niet bij nul te beginnen.
                 </p>
-                <div className="mt-8 flex flex-wrap items-center gap-3">
+                <div className="mt-8 diba-knoprij">
                   <Link
                     href="/intake"
                     className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                   >
-                    Plan een huidconsult
+                    <span className="sm:hidden">Huidconsult</span>
+                    <span className="max-sm:hidden">Plan een huidconsult</span>
                   </Link>
                   <Link
                     href="/huidproblemen"
                     className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-white/50 px-6 text-white transition-colors hover:border-white hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                   >
-                    Of begin bij je huidprobleem
+                    <span className="sm:hidden">Huidprobleem</span>
+                    <span className="max-sm:hidden">
+                      Of begin bij je huidprobleem
+                    </span>
                   </Link>
                 </div>
               </div>

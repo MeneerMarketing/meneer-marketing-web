@@ -42,7 +42,11 @@ export default function VoetKolommen({
                 aria-expanded={isOpen}
                 aria-controls={id}
                 onClick={() => setOpen(isOpen ? null : kolom.kop)}
-                className="flex min-h-12 w-full items-center justify-between gap-3 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] lg:hidden"
+                /* De opmaak staat op de h2 eromheen, maar een knop erft `text-transform`
+                   niet: browsers zetten die op `none` in hun eigen stijlblad. Daardoor
+                   stonden de kopjes in de voettekst op een telefoon in gewone letters van
+                   tien pixels in plaats van in kleine kapitalen. */
+                className={`${kopKlasse} flex min-h-12 w-full items-center justify-between gap-3 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] lg:hidden`}
               >
                 {kolom.kop}
                 <svg

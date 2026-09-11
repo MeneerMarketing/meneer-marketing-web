@@ -6,7 +6,7 @@ import DibaLeafMark from "@/components/ui/DibaLeafMark";
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import Label from "@/components/ui/Label";
 import { APPARAAT_CATEGORIEEN, APPARATUUR } from "@/data/apparatuur";
-import { behandelingVoorSlug } from "@/data/behandelingen";
+import { behandelingVoorSlug, prijsCijfer } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
@@ -27,6 +27,26 @@ import LeesVerder from "@/components/ui/LeesVerder";
  *
  * Eén donkergroen vlak: de stelling bovenaan (§5).
  */
+
+/**
+ * De regel onder de haarlijn op een kaart: waarvoor het apparaat gebruikt wordt.
+ *
+ * Hij mag één regel zijn. Uitgeschreven werd dat bij de Fotona een blok van vijf regels,
+ * en een raster van kaarten waarin één kaart vijf regels langer is dan de rest komt
+ * nergens meer uit (Yasin, 10 september 2026: "die dikke gestapelde lijst moet weg, noem er
+ * twee en zeg 'en meer'").
+ */
+const consult = behandelingVoorSlug("huidanalyse");
+const intakeBedrag = consult ? `${prijsCijfer(consult.prijs)} euro` : "50 euro";
+
+function waarvoor(slugs: readonly string[]): string {
+  const namen = slugs
+    .map((s) => behandelingVoorSlug(s)?.naam)
+    .filter((n): n is string => Boolean(n));
+  if (namen.length === 0) return "";
+  if (namen.length <= 2) return namen.join(" en ");
+  return `${namen[0]}, ${namen[1]} en nog ${namen.length - 2}`;
+}
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/apparatuur",
@@ -55,7 +75,7 @@ export default function ApparatuurPage() {
   );
 
   return (
-    <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)] max-lg:flex max-lg:flex-col">
+    <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)]">
       <SchemaMarkup
         data={breadcrumbSchema([
           { name: "Home", url: DIBA_SITE_URL },
@@ -67,7 +87,7 @@ export default function ApparatuurPage() {
           Donker, net als de hero's van home, /behandelingen en /tarieven (Yasin,
           7 september 2026). De mintcirkel en het blad rechtsboven zijn weg: die vulden de
           hoek zonder iets te zeggen, en Yasin vond ze niet mooi. */}
-      <section className="bg-[var(--g-700)] text-[var(--on-dark)] max-lg:-order-2">
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)]">
         <div className="mx-auto grid gap-10 px-5 pt-12 pb-14 sm:px-9 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-16 lg:px-[7.5vw] lg:pt-16 lg:pb-16">
           <div>
             <nav
@@ -113,7 +133,9 @@ export default function ApparatuurPage() {
               fill
               priority
               sizes="(min-width: 1024px) 44vw, 100vw"
-              className="object-cover object-[50%_35%]"
+              /* Op 35 procent viel het hoofd van de behandelaar buiten het kader
+                 (Yasin, 10 september 2026). Op 12 staat ze er helemaal op. */
+              className="object-cover object-[50%_12%]"
             />
             <span className="diba-label absolute top-5 left-5 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">
               In de kliniek
@@ -122,88 +144,11 @@ export default function ApparatuurPage() {
         </div>
       </section>
 
-      {/* ── De stelling ──
-          Licht, want de hero erboven is nu donker en twee donkere vlakken achter elkaar
-          mag niet (§5). Het blok blijft een vlak, alleen in de zachte tint. */}
-      <section className="px-5 py-10 sm:py-14 sm:px-9 lg:px-[7.5vw] lg:py-20">
-        <div className="mx-auto">
-          <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-8 text-[var(--t-strong)] sm:p-12">
-            <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:gap-16">
-              <div>
-                <Label>Waarom dit ertoe doet</Label>
-                <p className="diba-display-s mt-4 max-w-[22ch]">
-                  Twee klinieken met hetzelfde apparaat{" "}
-                  <span className="diba-accent">
-                    {" "}
-                    geven niet hetzelfde resultaat.
-                  </span>
-                </p>
-              </div>
-              <div>
-                <p className="text-[16px] leading-7 text-[var(--t-body)]">
-                  Het verschil zit in wat er vooraf gemeten is, welke instelling
-                  er wordt gekozen en of iemand durft te zeggen dat een
-                  behandeling bij jou niet past. Een merknaam zegt daar niets
-                  over.
-                </p>
-                <LeesVerder>
-                  <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
-                    Daarom begint elk traject hier met een meting en niet met
-                    een apparaat.
-                  </p>
-                </LeesVerder>
-                <Link
-                  href="/intake"
-                  className="diba-label mt-8 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)]"
-                >
-                  Wat er in een huidconsult gebeurt
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Alles op één schaal ── */}
-      {/* Deze pagina beweert dat er twaalf apparaten staan. Een opname van een ervan in de
-          kamer maakt dat controleerbaar in plaats van een opsomming. */}
-      <section className="px-5 pb-10 sm:pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
-        <div className="mx-auto">
-          <BeeldVignet
-            src="/images/shoot/kliniek-nordlys-behandeling.jpg"
-            alt="Huidtherapeut behandelt een client met de Nordlys in de behandelkamer"
-            onderschrift="De Nordlys, zoals hij bij ons staat"
-            sizes="(min-width: 1024px) 86vw, 92vw"
-            className="aspect-[16/9] lg:aspect-[21/9]"
-          />
-        </div>
-      </section>
-
-      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto">
-          <div>
-            <Label>Naast elkaar</Label>
-            <h2 className="diba-display-m mt-4">
-              {APPARATUUR.length} apparaten,{" "}
-              <span className="diba-accent">één schaal.</span>
-            </h2>
-            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-              Het verschil tussen deze apparaten zit in twee dingen: waar ze op
-              aangrijpen en tot hoe diep ze komen. Dat tweede is meteen de grens
-              van wat ze kunnen. Een peeling neemt geen rimpels weg omdat hij
-              daar niet komt, en dat is hieronder te zien in plaats van te
-              geloven.
-            </p>
-          </div>
-
-          <div className="mt-10">
-            <Dieptevergelijker />
-          </div>
-        </div>
-      </section>
-
-      {/* ── De apparaten ── */}
-      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24 max-lg:-order-1">
+      {/* ── De apparaten ──
+          Op een vlak, want de kaarten zijn wit en de pagina is dat bijna ook: je zag alleen
+          bij hover dat het kaarten waren (Yasin, 10 september 2026). En dit staat nu direct
+          onder de hero, want dit is waar de pagina over gaat. */}
+      <section className="bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <ul className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {apparaten.map(({ apparaat: a, categorie }) => (
@@ -248,22 +193,27 @@ export default function ApparatuurPage() {
                   </span>
 
                   <span className="flex flex-1 flex-col p-6 sm:p-7">
-                    {a.merk ? (
-                      <span className="diba-label text-[var(--t-muted)]">
-                        {a.merk}
-                      </span>
-                    ) : null}
+                    {/* Altijd een regel, ook zonder merk. De EVE-M heeft er geen, en
+                        daardoor begon zijn naam een regel hoger dan die van de kaarten
+                        ernaast en liep de hele kaart uit de pas (Yasin, 10 september
+                        2026: "dat oogt niet strak"). */}
+                    <span className="diba-label min-h-[1lh] text-[var(--t-muted)]">
+                      {a.merk ?? ""}
+                    </span>
                     <span className="diba-card-title mt-2 text-[var(--t-strong)]">
                       {a.naam}
                     </span>
-                    <span className="mt-3 flex-1 text-[15px] leading-7 text-[var(--t-body)] max-md:hidden">
+                    {/* De beschrijving stond op een telefoon uit. Dan las je merk, naam en
+                        daaronder een rij behandelnamen, en bij de Dermapen 4 stond er onder
+                        "Dermapen 4" nog een keer "Dermapen 4" (Yasin, 10 september 2026). */}
+                    <span className="mt-3 flex-1 text-[15px] leading-7 text-[var(--t-body)]">
                       {publicCopy(a.kort)}
                     </span>
+                    {/* Twee namen en dan "en nog X". De Fotona draagt vijftien
+                        behandelingen; uitgeschreven werd dat een blok van vijf regels
+                        onderaan één kaart, waardoor geen enkele kaart meer uitkwam. */}
                     <span className="mt-6 border-t border-[var(--g-100)] pt-4 text-[13px] leading-5 text-[var(--t-muted)]">
-                      {a.behandelingen
-                        .map((s) => behandelingVoorSlug(s)?.naam)
-                        .filter(Boolean)
-                        .join(" · ")}
+                      {waarvoor(a.behandelingen)}
                     </span>
                   </span>
                 </Link>
@@ -273,35 +223,138 @@ export default function ApparatuurPage() {
         </div>
       </section>
 
-      {/* ── Verder ──
-          Stond als losse tekst op het paginavlak, terwijl elke andere afsluiter op de site
-          in een donkergroen blok met ronde hoeken staat. Nu ook hier. */}
-      <section className="px-5 pb-12 sm:pb-20 sm:px-9 lg:px-[7.5vw] lg:pb-28">
+      {/* ── De stelling ──
+          Licht, want de hero erboven is nu donker en twee donkere vlakken achter elkaar
+          mag niet (§5). Het blok blijft een vlak, alleen in de zachte tint. */}
+      <section className="px-5 py-10 sm:py-14 sm:px-9 lg:px-[7.5vw] lg:py-20">
+        <div className="mx-auto">
+          <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-8 text-[var(--t-strong)] sm:p-12">
+            <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:gap-16">
+              <div>
+                <Label>Waarom dit ertoe doet</Label>
+                <p className="diba-display-s mt-4 max-w-[22ch]">
+                  Twee klinieken met hetzelfde apparaat{" "}
+                  <span className="diba-accent">
+                    {" "}
+                    geven niet hetzelfde resultaat.
+                  </span>
+                </p>
+              </div>
+              <div>
+                <p className="text-[16px] leading-7 text-[var(--t-body)]">
+                  Het verschil zit in wat er vooraf gemeten is, welke instelling
+                  er wordt gekozen en of iemand durft te zeggen dat een
+                  behandeling bij jou niet past. Een merknaam zegt daar niets
+                  over.
+                </p>
+                <LeesVerder>
+                  <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
+                    Daarom begint elk traject hier met een meting en niet met
+                    een apparaat.
+                  </p>
+                </LeesVerder>
+                {/* De merkenpagina hing tot 10 september 2026 aan een blok op
+                    /kwaliteit-en-registraties dat eruit is gegaan, en had daarna geen enkele
+                    verwijzing meer in een tekst staan. Hier hoort hij: dit is de alinea die
+                    zegt dat een merknaam niets zegt, en wie dan tóch wil weten welke er
+                    staan klikt hier door. */}
+                <Link
+                  href="/partners"
+                  className="diba-label mt-4 inline-block text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+                >
+                  Welke merken hier staan
+                </Link>
+                <Link
+                  href="/intake"
+                  className="diba-label mt-8 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)]"
+                >
+                  <span className="sm:hidden">Huidconsult</span>
+                  <span className="max-sm:hidden">
+                    Wat er in een huidconsult gebeurt
+                  </span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Alles op één schaal ── */}
+      {/* Deze pagina beweert dat er twaalf apparaten staan. Een opname van een ervan in de
+          kamer maakt dat controleerbaar in plaats van een opsomming. */}
+      <section className="px-5 py-10 sm:px-9 sm:py-14 lg:px-[7.5vw] lg:py-16">
+        <div className="mx-auto">
+          <BeeldVignet
+            src="/images/shoot/kliniek-nordlys-behandeling.jpg"
+            alt="Huidtherapeut behandelt een client met de Nordlys in de behandelkamer"
+            onderschrift="De Nordlys, zoals hij bij ons staat"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="aspect-[16/9] lg:aspect-[21/9]"
+          />
+        </div>
+      </section>
+
+      {/* Yasin, 10 september 2026: de kop "12 apparaten, één schaal" zegt niets, en de
+          schuifbalk waarmee je door de huidlagen gaat is op een telefoon een blok dat je
+          voorbijscrolt. De kop noemt nu waar het over gaat, en op een telefoon staat de
+          sectie uit. Hij blijft in de HTML, dus Google leest hem gewoon. */}
+      <section className="bg-[var(--g-025)] px-5 py-10 max-lg:hidden sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto">
+          <div>
+            <Label>Naast elkaar</Label>
+            <h2 className="diba-display-m mt-4">
+              Hoe diep komt <span className="diba-accent">welk apparaat</span>
+            </h2>
+            <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
+              Het verschil tussen deze apparaten zit in twee dingen: waar ze op
+              aangrijpen en tot hoe diep ze komen. Dat tweede is meteen de grens
+              van wat ze kunnen. Een peeling neemt geen rimpels weg omdat hij
+              daar niet komt, en dat is hieronder te zien in plaats van te
+              geloven.
+            </p>
+          </div>
+
+          <div className="mt-10">
+            <Dieptevergelijker />
+          </div>
+        </div>
+      </section>
+
+      {/* ── Afsluiter ──
+          Er stond "Zoek op wat je wilt bereiken", met een alinea over mensen die bij de
+          techniek beginnen. Yasin, 10 september 2026: "dat is zweverig, maak er een simpele
+          afsluiter van in begrijpelijke taal en conversiegericht." Er staat nu wat de
+          volgende stap is, hoe lang die duurt en wat hij kost. De witruimte eronder is
+          gehalveerd; die was ruimer dan bij welke andere afsluiter ook. */}
+      <section className="px-5 pb-8 sm:pb-12 sm:px-9 lg:px-[7.5vw] lg:pb-16">
         <div className="mx-auto">
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
-            <Label opDonker>Verder</Label>
-            <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              Zoek op wat je
-              <br />
-              <span className="diba-accent-on-dark">wilt bereiken</span>
+            <Label opDonker>De volgende stap</Label>
+            <h2 className="diba-display-m mt-4 max-w-[18ch]">
+              Welk apparaat bij jou past,{" "}
+              <span className="diba-accent-on-dark">
+                hoor je in het consult
+              </span>
             </h2>
             <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Wie begint bij de techniek komt uit bij waar het meest over
-              geschreven is. Dat is zelden hetzelfde als wat bij jouw huid past.
-              Begin bij wat je wil veranderen, of laat het eerst meten.
+              Een huidtherapeut kijkt naar je huid, meet mee met de EVE-M en
+              vertelt welke behandeling erbij past, hoe vaak je moet komen en
+              wat het kost. Dertig minuten, {intakeBedrag}, en je beslist daarna
+              zelf.
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            <div className="mt-8 diba-knoprij">
               <Link
-                href="/behandelingen"
-                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                href="/afspraak"
+                className="diba-label inline-flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
-                Alle behandelingen
+                <span className="sm:hidden">Afspraak</span>
+                <span className="max-sm:hidden">Afspraak maken</span>
               </Link>
               <Link
-                href="/huidprofiel"
-                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-white/50 px-6 text-white transition-colors hover:border-white hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                href="/tarieven"
+                className="diba-label inline-flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] border border-white/50 px-6 text-white transition-colors hover:border-white hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
-                Maak je huidprofiel
+                Tarieven
               </Link>
             </div>
           </div>

@@ -17,32 +17,68 @@ import type { HuidIconNaam } from "@/components/ui/HuidIcon";
  * COPY-STATUS: concept. De koppeling tussen kenmerken en pagina's langs Rojda.
  */
 
+/**
+ * In welke groep een kenmerk hoort.
+ *
+ * De volgorde hieronder is de volgorde waarin je naar je eigen huid kijkt: eerst wat je
+ * ziet aan kleur, dan wat je ziet aan reliëf, dan wat je merkt als je het aanraakt. De twee
+ * kenmerken die om een huisarts vragen staan apart en niet ergens tussenin.
+ */
+export type KenmerkGroep = "kleur" | "structuur" | "gevoel" | "apart";
+
+export const KENMERK_GROEPEN: readonly {
+  readonly id: KenmerkGroep;
+  readonly naam: string;
+}[] = [
+  { id: "kleur", naam: "Kleur en vlekken" },
+  { id: "structuur", naam: "Bultjes en structuur" },
+  { id: "gevoel", naam: "Hoe het aanvoelt" },
+  { id: "apart", naam: "Dit vragen we apart" },
+];
+
 export type Kenmerk = {
   readonly id: string;
   readonly tekst: string;
+  readonly groep: KenmerkGroep;
   /** Zet de huisarts bovenaan, wat er verder ook aangevinkt staat. */
   readonly urgent?: true;
 };
 
 export const KENMERKEN: readonly Kenmerk[] = [
-  { id: "rood", tekst: "Rood of rode plekken" },
-  { id: "puistjes", tekst: "Puistjes of mee-eters" },
-  { id: "bultjes", tekst: "Bultjes zonder puistje" },
-  { id: "adertjes", tekst: "Zichtbare adertjes of rode lijntjes" },
-  { id: "jeuk", tekst: "Het jeukt" },
-  { id: "schilfers", tekst: "Schilfers of vellen" },
-  { id: "droog", tekst: "Droog of trekkerig" },
-  { id: "prikt", tekst: "Producten prikken of branden" },
-  { id: "bruine-vlek", tekst: "Bruine vlekken" },
-  { id: "witte-vlek", tekst: "Witte of lichtere plekken" },
-  { id: "kringen", tekst: "Donkere kringen onder mijn ogen" },
-  { id: "kuiltjes", tekst: "Kuiltjes of putjes" },
-  { id: "strepen", tekst: "Strepen of littekens" },
-  { id: "lijntjes", tekst: "Fijne lijntjes" },
-  { id: "ruw", tekst: "Ruw of dof" },
-  { id: "glans", tekst: "Glimt snel of grove poriën" },
-  { id: "verandert", tekst: "Een plekje dat verandert", urgent: true },
-  { id: "ziek", tekst: "Ik voel me er ziek bij", urgent: true },
+  { id: "rood", tekst: "Rood of rode plekken", groep: "kleur" },
+  {
+    id: "adertjes",
+    tekst: "Zichtbare adertjes of rode lijntjes",
+    groep: "kleur",
+  },
+  { id: "bruine-vlek", tekst: "Bruine vlekken", groep: "kleur" },
+  { id: "witte-vlek", tekst: "Witte of lichtere plekken", groep: "kleur" },
+  {
+    id: "kringen",
+    tekst: "Donkere kringen onder mijn ogen",
+    groep: "kleur",
+  },
+
+  { id: "puistjes", tekst: "Puistjes of mee-eters", groep: "structuur" },
+  { id: "bultjes", tekst: "Bultjes zonder puistje", groep: "structuur" },
+  { id: "glans", tekst: "Glimt snel of grove poriën", groep: "structuur" },
+  { id: "kuiltjes", tekst: "Kuiltjes of putjes", groep: "structuur" },
+  { id: "strepen", tekst: "Strepen of littekens", groep: "structuur" },
+  { id: "lijntjes", tekst: "Fijne lijntjes", groep: "structuur" },
+  { id: "ruw", tekst: "Ruw of dof", groep: "structuur" },
+
+  { id: "jeuk", tekst: "Het jeukt", groep: "gevoel" },
+  { id: "droog", tekst: "Droog of trekkerig", groep: "gevoel" },
+  { id: "schilfers", tekst: "Schilfers of vellen", groep: "gevoel" },
+  { id: "prikt", tekst: "Producten prikken of branden", groep: "gevoel" },
+
+  {
+    id: "verandert",
+    tekst: "Een plekje dat verandert",
+    groep: "apart",
+    urgent: true,
+  },
+  { id: "ziek", tekst: "Ik voel me er ziek bij", groep: "apart", urgent: true },
 ];
 
 /**

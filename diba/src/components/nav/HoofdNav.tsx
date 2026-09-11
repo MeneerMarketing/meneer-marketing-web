@@ -607,8 +607,8 @@ function WhatsAppIcoon() {
 const ONDERZIN: Record<string, string> = {
   Huidproblemen: "Herken je klacht en zie wat eraan te doen is",
   Behandelingen: "Wat we doen, waarmee, en wat het kost",
-  Tarieven: "Elk bedrag, per sessie en per zone",
-  "Over Diba": "Het team, de reviews en de apparatuur",
+  "Over Diba": "Wie hier werkt, en wat anderen ervan zeggen",
+  Praktisch: "Contact, je eerste afspraak en de nazorg",
 };
 
 function ChevronRechts({ className = "" }: { className?: string }) {
@@ -647,8 +647,13 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
     ? (HOOFDNAV.find((n) => n.label === sub && n.kolommen) ?? null)
     : null;
 
+  /* De aanraakkleur loopt van haarlijn tot haarlijn.
+     Yasin, 11 september 2026: "die ronde achtergrond matcht niet met die horizontale
+     strepen." Klopte: het vlak had ronde hoeken en stak links en rechts twee pixels buiten
+     de lijnen, dus het lag scheef op het raster. Zonder ronding en zonder negatieve marge
+     vallen de boven- en onderrand van het vlak precies op de twee lijnen. */
   const rij =
-    "flex min-h-14 items-center justify-between gap-4 py-2 text-left active:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]";
+    "flex min-h-14 items-center justify-between gap-4 py-2 text-left transition-colors active:bg-[var(--g-025)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]";
 
   return (
     <div className="fixed inset-0 z-[60] flex flex-col bg-white lg:hidden">
@@ -702,11 +707,16 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
               const inhoud = (
                 <>
                   <span className="min-w-0">
-                    <span className="block text-[26px] leading-none font-medium tracking-[-.035em] text-[var(--t-strong)]">
+                    {/* Negentien in plaats van zesentwintig pixels, en de onderzin een
+                        maat kleiner. Yasin, 11 september 2026: "alles is super groot, het
+                        moet overzichtelijker." Vier rijen van vierentachtig pixels vullen
+                        een half scherm; nu passen ze samen met de snelkoppelingen in beeld
+                        zonder te scrollen. */}
+                    <span className="block text-[19px] leading-6 font-medium tracking-[-.02em] text-[var(--t-strong)]">
                       {item.label}
                     </span>
                     {onderzin ? (
-                      <span className="mt-2 block text-[14px] leading-5 text-[var(--t-muted)]">
+                      <span className="mt-1 block truncate text-[13px] leading-5 text-[var(--t-muted)]">
                         {onderzin}
                       </span>
                     ) : null}
@@ -720,7 +730,7 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
                     <button
                       type="button"
                       onClick={() => setSub(item.label)}
-                      className={`${rij} min-h-[84px] w-full`}
+                      className={`${rij} min-h-[64px] w-full`}
                     >
                       {inhoud}
                     </button>
@@ -729,7 +739,7 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
                       prefetch={false}
                       href={item.href}
                       onClick={onSluit}
-                      className={`${rij} min-h-[84px]`}
+                      className={`${rij} min-h-[64px]`}
                     >
                       {inhoud}
                     </Link>
@@ -797,11 +807,11 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
             aria-label={actief.label}
             className="absolute inset-0 flex flex-col overflow-y-auto px-5 pb-6 [animation:menu-in_.32s_var(--ease-diba)_both]"
           >
-            <p className="text-[26px] leading-none font-medium tracking-[-.035em] text-[var(--t-strong)]">
+            <p className="text-[19px] leading-6 font-medium tracking-[-.02em] text-[var(--t-strong)]">
               {actief.label}
             </p>
             {ONDERZIN[actief.label] ? (
-              <p className="mt-2 text-[14px] leading-5 text-[var(--t-muted)]">
+              <p className="mt-1 truncate text-[13px] leading-5 text-[var(--t-muted)]">
                 {ONDERZIN[actief.label]}
               </p>
             ) : null}
@@ -821,14 +831,14 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
                         prefetch={false}
                         href={l.href}
                         onClick={onSluit}
-                        className={`${rij} -mx-2 rounded-[var(--r-sm)] px-2`}
+                        className={`${rij} px-1`}
                       >
                         <span className="min-w-0">
-                          <span className="block text-[17px] leading-6 font-medium text-[var(--t-strong)]">
+                          <span className="block text-[16px] leading-6 font-medium text-[var(--t-strong)]">
                             {l.label}
                           </span>
                           {l.zin ? (
-                            <span className="mt-0.5 block text-[13px] leading-5 text-[var(--t-muted)]">
+                            <span className="mt-0.5 block truncate text-[13px] leading-5 text-[var(--t-muted)]">
                               {l.zin}
                             </span>
                           ) : null}

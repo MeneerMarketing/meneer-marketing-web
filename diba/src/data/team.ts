@@ -275,9 +275,9 @@ export const VAKGEBIEDEN: readonly {
  * we echt professioneel ogen". Bestanden in /public/images/logos, opgehaald van de sites
  * van de organisaties zelf; elk logo linkt daar ook naartoe.
  *
- * [GEGEVEN-NODIG: is Diba een erkend leerbedrijf (SBB)? Yasin noemde het als iets dat
- * de site mist; het staat er nu met het SBB-beeldmerk en gaat eruit als het niet klopt.
- * Het officiële "erkend leerbedrijf"-logo krijgt de kliniek via mijnsbb.nl.]
+ * Diba is erkend leerbedrijf bij SBB; Yasin bevestigde dat op 10 september 2026. Het
+ * officiële "erkend leerbedrijf"-logo krijgt de kliniek via mijnsbb.nl; zolang dat er niet
+ * is staat hier het gewone SBB-beeldmerk.
  */
 type Logo = {
   readonly naam: string;

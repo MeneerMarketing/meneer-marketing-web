@@ -164,7 +164,7 @@ export const VERSLAPPING_FAQ = [
   {
     vraag: "Vanaf welke leeftijd heeft dit zin?",
     antwoord:
-      "Leeftijd zegt hier weinig; de zwaartekrachttest zegt meer. Zie je liggend duidelijk verschil met staand, dan valt er iets te winnen. Is dat verschil er nauwelijks, dan is er nog niets om aan te spannen of juist te veel om aan te pakken. [MEDISCHE-CHECK-ROJDA]",
+      "Leeftijd zegt hier weinig. Waar het om gaat is hoeveel je huid nog terugveert, en dat stelt de behandelaar in het consult vast. Is er weinig te winnen, dan hoor je dat, en dan is dat het advies. [MEDISCHE-CHECK-ROJDA]",
   },
   {
     vraag: "Hoe lang houdt het resultaat aan?",

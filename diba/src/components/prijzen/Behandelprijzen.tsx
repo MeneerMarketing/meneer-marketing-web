@@ -6,7 +6,7 @@ import Label from "@/components/ui/Label";
 import {
   BEHANDELINGEN,
   CATEGORIEEN,
-  prijsTekst,
+  prijsCijfer,
   type Behandeling,
 } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
@@ -163,7 +163,10 @@ function Regel({
               ook als er een chevron naast staat en bij de ene wel en bij de andere niet.
               Dat is het hele punt van een prijslijst: je scant de rechterrand omlaag en
               niet elke regel apart. */}
-          <span className="min-w-[6.5ch] text-right text-[18px] leading-7 font-medium text-[var(--t-strong)] tabular-nums">
+          {/* Zonder euroteken en zonder vet (Yasin, 10 september 2026). Veertig bedragen
+              onder elkaar met een teken ervoor en een zwaardere letter leest als een
+              opsomming van kosten; als kaal getal scan je de rand gewoon omlaag. */}
+          <span className="min-w-[6.5ch] text-right text-[18px] leading-7 text-[var(--t-strong)] tabular-nums">
             {b.prijs > 0 ? (
               <>
                 {hogerErna ? (
@@ -171,7 +174,7 @@ function Regel({
                     vanaf
                   </span>
                 ) : null}
-                {prijsTekst(b.prijs)}
+                {prijsCijfer(b.prijs)}
               </>
             ) : (
               "Na de meting"
@@ -301,14 +304,14 @@ function Regel({
                         {v.bij ? (
                           <span className="text-[var(--t-muted)]">
                             {" "}
-                            · {v.bij}
+                            ({v.bij})
                           </span>
                         ) : null}
                       </span>
                       {/* Dezelfde breedte als het bedrag in de rij erboven, zodat de
                           bedragen onder elkaar uitkomen in plaats van te zwerven. */}
-                      <span className="min-w-[6.5ch] shrink-0 text-right text-[15px] leading-6 font-medium text-[var(--t-strong)] tabular-nums">
-                        {prijsTekst(v.prijs)}
+                      <span className="min-w-[6.5ch] shrink-0 text-right text-[15px] leading-6 text-[var(--t-strong)] tabular-nums">
+                        {prijsCijfer(v.prijs)}
                       </span>
                     </li>
                   ))}
@@ -378,7 +381,7 @@ export default function Behandelprijzen() {
           het scrollt. */}
       <nav
         aria-label="Categorieën"
-        className="-mx-5 mb-6 overflow-x-auto px-5 [scrollbar-width:none] sm:-mx-9 sm:px-9 lg:hidden [&::-webkit-scrollbar]:hidden"
+        className="diba-schuifrij -mx-5 mb-6 px-5 sm:-mx-9 sm:px-9 lg:hidden"
       >
         <ul className="flex w-max gap-2">
           {groepen.map((g) => (

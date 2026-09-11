@@ -29,6 +29,15 @@ import type { Insurer } from "@/data/insurers";
  * Kruis is drie keer zo breed als hoog (473 bij 152). In een vast vak met `object-contain`
  * krijgen ze allemaal evenveel ruimte en blijft de tekst ernaast op één lijn staan.
  *
+ * NIET OP EEN DONKER VLAK.
+ *
+ * In de hero stond het logo op het groen, op een wit vlakje met marges, omdat de meeste
+ * verzekeraars donkere kleuren voeren. Yasin, 10 september 2026: "dat witte vlak eromheen
+ * is lelijk, gewoon logo only." Het merk in wit hertekenen leek de oplossing, maar het merk
+ * van CZ is een hart met de letters eruit gespaard: in wit wordt dat een vlek. Daarom staat
+ * het logo nu in de witte kaart ernaast, waar het zonder vlak eronder kan en zijn eigen
+ * kleuren houdt. Zet dit component dus niet op een donkere ondergrond.
+ *
  * Geen next/image: dit zijn statische SVG's uit de eigen map, en die hebben geen
  * optimalisatie nodig. Bovendien vraagt SVG door next/image om `dangerouslyAllowSVG`, en
  * dat zetten we niet aan voor zes bestanden die we zelf hebben neergezet.

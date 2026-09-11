@@ -11,14 +11,9 @@ import {
 import Silhouet from "@/components/psoriasis/Silhouet";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
-import ProofBar from "@/components/ui/ProofBar";
 import { PSORIASIS_FAQ, PSORIASIS_WEL_NIET } from "@/data/psoriasis";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import {
-  DIBA_PROOF_STRIP_ITEMS,
-  DIBA_SITE_URL,
-  DIBA_WHATSAPP_URL,
-} from "@/lib/site";
+import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
 
 /**
@@ -119,8 +114,6 @@ export default function PsoriasisPage() {
         </div>
       </section>
 
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
-
       <PillarNav ankers={ANKERS} />
 
       {/* ── Het silhouet: de uitblinker ── */}
@@ -152,7 +145,7 @@ export default function PsoriasisPage() {
       <PillarFaq items={PSORIASIS_FAQ} onderwerp="psoriasis" />
 
       {/* ── Afsluiting zonder afspraakknop ── */}
-      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-050)] px-7 py-10 sm:py-14 sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+      <section className="mx-5 mt-16 mb-5 rounded-[var(--r-xl)] lg:mt-20 bg-[var(--g-050)] px-7 py-10 sm:py-14 sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
         <div className="mx-auto">
           <Label>Waar je wel heen gaat</Label>
           <h2 className="diba-display-s mt-5 max-w-[22ch]">

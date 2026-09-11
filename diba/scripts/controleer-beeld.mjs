@@ -21,7 +21,9 @@ const BASIS = process.env.BASIS ?? "http://localhost:3010";
 const GRENS_PROCENT = 10;
 
 const browser = await chromium.launch();
-const pagina = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+const pagina = await browser.newPage({
+  viewport: { width: 1440, height: 900 },
+});
 
 /* De sitemap als bron, net als de andere controles. */
 await pagina.goto(`${BASIS}/sitemap.xml`, { waitUntil: "domcontentloaded" });
@@ -34,36 +36,40 @@ const paden = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)]
 const bevindingen = [];
 
 for (const pad of paden) {
-  await pagina.goto(`${BASIS}${pad}`, { waitUntil: "networkidle" }).catch(() => {});
+  await pagina
+    .goto(`${BASIS}${pad}`, { waitUntil: "networkidle" })
+    .catch(() => {});
 
-  const beelden = await pagina.evaluate(() => {
-    const uit = [];
-    for (const img of document.querySelectorAll("img")) {
-      if (!img.naturalWidth || !img.naturalHeight) continue;
-      const stijl = getComputedStyle(img);
-      if (stijl.objectFit !== "cover") continue;
+  const beelden = await pagina
+    .evaluate(() => {
+      const uit = [];
+      for (const img of document.querySelectorAll("img")) {
+        if (!img.naturalWidth || !img.naturalHeight) continue;
+        const stijl = getComputedStyle(img);
+        if (stijl.objectFit !== "cover") continue;
 
-      const doos = img.getBoundingClientRect();
-      if (doos.width < 200 || doos.height < 120) continue;
+        const doos = img.getBoundingClientRect();
+        if (doos.width < 200 || doos.height < 120) continue;
 
-      /* Hoeveel van de foto valt er verticaal buiten het kader?
+        /* Hoeveel van de foto valt er verticaal buiten het kader?
          Bij cover schaalt de foto tot de kortste kant past. Is de foto relatief hoger
          dan het kader, dan gaat het verschil er van boven en onder af. */
-      const fotoVerhouding = img.naturalWidth / img.naturalHeight;
-      const kaderVerhouding = doos.width / doos.height;
-      if (fotoVerhouding >= kaderVerhouding) continue; // dan snijdt hij links en rechts
+        const fotoVerhouding = img.naturalWidth / img.naturalHeight;
+        const kaderVerhouding = doos.width / doos.height;
+        if (fotoVerhouding >= kaderVerhouding) continue; // dan snijdt hij links en rechts
 
-      const zichtbaar = fotoVerhouding / kaderVerhouding;
-      uit.push({
-        src: img.currentSrc.replace(/^.*?url=/, "").split("&")[0],
-        alt: img.alt,
-        weg: Math.round((1 - zichtbaar) * 100),
-        positie: stijl.objectPosition,
-        kader: `${Math.round(doos.width)}x${Math.round(doos.height)}`,
-      });
-    }
-    return uit;
-  }).catch(() => []);
+        const zichtbaar = fotoVerhouding / kaderVerhouding;
+        uit.push({
+          src: img.currentSrc.replace(/^.*?url=/, "").split("&")[0],
+          alt: img.alt,
+          weg: Math.round((1 - zichtbaar) * 100),
+          positie: stijl.objectPosition,
+          kader: `${Math.round(doos.width)}x${Math.round(doos.height)}`,
+        });
+      }
+      return uit;
+    })
+    .catch(() => []);
 
   for (const b of beelden) {
     if (b.weg >= GRENS_PROCENT) bevindingen.push({ pad, ...b });

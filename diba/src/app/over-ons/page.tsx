@@ -232,7 +232,7 @@ export default function OverOnsPage() {
       {/* Het einde van een afspraak, en daarmee van deze pagina: iemand die met haar
           tas de deur uit loopt. De rest van de site gaat over wat er binnen gebeurt; dit
           is het enige beeld waarop iemand weer weggaat. */}
-      <section className="px-5 pb-10 sm:pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-20">
+      <section className="px-5 py-10 sm:px-9 sm:py-16 lg:px-[7.5vw] lg:py-20">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/behandelkamer-overzicht.jpg"

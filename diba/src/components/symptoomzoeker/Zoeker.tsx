@@ -5,6 +5,7 @@ import { useState } from "react";
 import Label from "@/components/ui/Label";
 import {
   BESTEMMINGEN,
+  KENMERK_GROEPEN,
   KENMERKEN,
   SPOED_TEKST,
   ZOEKER_LEEG,
@@ -28,6 +29,19 @@ import { publicCopy } from "@/lib/copy-flags";
  *
  * Anders dan de kleurwijzer op de verkleuringspagina: die splitst op één as en toont een
  * vaste lijst. Deze filtert op meerdere kenmerken tegelijk en rangschikt.
+ *
+ * WAAROM HET GEEN PILLEN MEER ZIJN.
+ *
+ * Yasin, 11 september 2026: "de symptoomzoeker is super rommelig en onoverzichtelijk; zorg
+ * voor een goede ervaring op mobiel zodat het fijn oogt." Het waren achttien pillen van elk
+ * een andere breedte in een rij die omloopt. Op een telefoon gaf dat rijen met soms één en
+ * soms twee pillen, rafelige randen aan beide kanten, en geen volgorde om op te rusten. Je
+ * moest achttien keer opnieuw beginnen met lezen.
+ *
+ * Nu zijn het regels onder elkaar met een vinkvakje links, in vier groepen met een kopje
+ * erboven. Alles begint op dezelfde x, elke regel is even hoog, en je leest van boven naar
+ * beneden in plaats van heen en weer. Een vinkvakje zegt bovendien zonder woorden dat je er
+ * meerdere mag kiezen; bij een pil moet je dat raden.
  */
 
 export default function Zoeker() {
@@ -57,38 +71,73 @@ export default function Zoeker() {
     <div className="mt-8 sm:mt-12 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12">
       {/* ── Wat je ziet ── */}
       <div className="self-start">
-        <Label>Wat zie of voel je</Label>
-        <ul className="mt-5 flex flex-wrap gap-2">
-          {KENMERKEN.map((k) => {
-            const aan = gekozen.has(k.id);
-            return (
-              <li key={k.id}>
-                <button
-                  type="button"
-                  aria-pressed={aan}
-                  onClick={() => wissel(k.id)}
-                  className={`min-h-12 rounded-[var(--r-pill)] px-4 text-[15px] leading-6 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
-                    aan
-                      ? "bg-[var(--g-700)] text-[var(--on-dark)]"
-                      : "bg-white text-[var(--t-body)] hover:bg-[var(--g-100)]"
-                  }`}
-                >
-                  {k.tekst}
-                </button>
-              </li>
-            );
-          })}
-        </ul>
+        <div className="flex flex-wrap items-baseline justify-between gap-3">
+          <Label>Wat zie of voel je</Label>
+          {gekozen.size > 0 ? (
+            <button
+              type="button"
+              onClick={() => setGekozen(new Set())}
+              className="diba-label text-[var(--t-muted)] underline underline-offset-4 hover:text-[var(--g-700)]"
+            >
+              Begin opnieuw
+            </button>
+          ) : null}
+        </div>
 
-        {gekozen.size > 0 ? (
-          <button
-            type="button"
-            onClick={() => setGekozen(new Set())}
-            className="diba-label mt-6 underline underline-offset-4 hover:text-[var(--g-700)]"
-          >
-            Begin opnieuw
-          </button>
-        ) : null}
+        <div className="mt-5 space-y-6">
+          {KENMERK_GROEPEN.map((groep) => (
+            <div key={groep.id}>
+              <p className="diba-label text-[var(--t-muted)]">{groep.naam}</p>
+              <ul className="mt-3 space-y-1.5">
+                {KENMERKEN.filter((k) => k.groep === groep.id).map((k) => {
+                  const aan = gekozen.has(k.id);
+                  return (
+                    <li key={k.id}>
+                      <button
+                        type="button"
+                        role="checkbox"
+                        aria-checked={aan}
+                        onClick={() => wissel(k.id)}
+                        className={`flex min-h-12 w-full items-center gap-3 rounded-[var(--r-sm)] px-4 py-2.5 text-left text-[15px] leading-6 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
+                          aan
+                            ? "bg-white text-[var(--t-strong)] ring-2 ring-[var(--g-700)]"
+                            : "bg-white text-[var(--t-body)] hover:bg-[var(--g-100)]"
+                        }`}
+                      >
+                        {/* Het vinkvakje draagt de stand. Een hele regel groen kleuren
+                            werkt bij één keuze, maar hier vink je er vijf aan en dan is het
+                            blok groen met wat wit ertussen. */}
+                        <span
+                          aria-hidden="true"
+                          className={`grid h-5 w-5 shrink-0 place-items-center rounded-[6px] border transition-colors ${
+                            aan
+                              ? "border-[var(--g-700)] bg-[var(--g-700)] text-white"
+                              : "border-[var(--g-200)] bg-white"
+                          }`}
+                        >
+                          {aan ? (
+                            <svg
+                              viewBox="0 0 16 16"
+                              className="h-3 w-3"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            >
+                              <path d="M3 8.5l3.2 3.2L13 5" />
+                            </svg>
+                          ) : null}
+                        </span>
+                        {k.tekst}
+                      </button>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* ── Waar je dan moet zijn ── */}

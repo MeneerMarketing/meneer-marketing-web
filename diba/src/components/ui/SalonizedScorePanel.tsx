@@ -46,7 +46,7 @@ export default function SalonizedScorePanel({
       >
         <Stars size={11} />
         <span>
-          {rating.toFixed(1).replace(".", ",")} · {countFormatted} reviews
+          {rating.toFixed(1).replace(".", ",")} uit {countFormatted} reviews
         </span>
         <span aria-hidden="true">↗</span>
       </a>
@@ -64,7 +64,7 @@ export default function SalonizedScorePanel({
       <div className="relative flex flex-wrap items-end justify-between gap-8">
         <div>
           <p className="text-[10px] font-medium uppercase tracking-[.14em] text-[var(--t-label)]">
-            Salonized · live
+            Live uit Salonized
           </p>
           <p className="mt-3 flex items-baseline gap-3">
             <span className="text-6xl font-medium tracking-[-.08em] text-[var(--g-700)] sm:text-7xl">

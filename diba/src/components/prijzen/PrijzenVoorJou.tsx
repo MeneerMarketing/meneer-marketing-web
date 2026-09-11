@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useMemo } from "react";
 import Label from "@/components/ui/Label";
-import { prijsTekst } from "@/data/behandelingen";
+import { prijsCijfer } from "@/data/behandelingen";
 import {
   compleetheid,
   maakMatches,
@@ -111,8 +111,8 @@ export default function PrijzenVoorJou() {
                       {publicCopy(m.reden)}
                     </span>
                   </span>
-                  <span className="shrink-0 text-[17px] leading-7 font-medium text-[var(--t-strong)] tabular-nums">
-                    {prijsTekst(m.behandeling.prijs)}
+                  <span className="shrink-0 text-[17px] leading-7 text-[var(--t-strong)] tabular-nums">
+                    {prijsCijfer(m.behandeling.prijs)}
                   </span>
                 </Link>
               </li>
@@ -145,7 +145,7 @@ export default function PrijzenVoorJou() {
           </p>
           {geenMatch.danWel.length > 0 ? (
             <p className="mt-4 max-w-[62ch] text-[15px] leading-7 text-[var(--g-900)]">
-              Wat er dan wel past: {geenMatch.danWel.join(" · ")}.
+              Wat er dan wel past: {geenMatch.danWel.join(", ")}.
             </p>
           ) : null}
 

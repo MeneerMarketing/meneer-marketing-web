@@ -138,12 +138,7 @@ const paden = [...new Set([...statisch, ...uitSitemap, ...apparaatSlugs])]
   /* Routes die geen pagina voor bezoekers zijn.
      `/dev/components` is de etalage waarin elk component met placeholders staat; daar
      hóren de vlaggen, dat is precies waar hij voor is. */
-  .filter(
-    (p) =>
-      !p.startsWith("/preview-login") &&
-      !p.startsWith("/api") &&
-      !p.startsWith("/dev"),
-  )
+  .filter((p) => !p.startsWith("/api") && !p.startsWith("/dev"))
   .sort();
 
 if (paden.length === 0) {
@@ -208,11 +203,15 @@ for (const pad of paden) {
 
   /* Overloop meet je op de smalste telefoon die we aanhouden, niet op een bureaublad. */
   await mobiel.goto(BASIS + pad, { waitUntil: "domcontentloaded" });
-  const over = await mobiel.evaluate(
-    () =>
-      document.documentElement.scrollWidth -
-      document.documentElement.clientWidth,
-  );
+  /* De proef op de som: duw de pagina opzij en kijk of hij meegeeft. `scrollWidth` telt
+     ook weggeknipte inhoud mee en meldde daardoor overloop op pagina's die niet schuiven. */
+  const over = await mobiel.evaluate(() => {
+    const y = window.scrollY;
+    window.scrollTo(9999, y);
+    const uit = Math.round(window.scrollX);
+    window.scrollTo(0, y);
+    return uit;
+  });
   if (over > 0) {
     problemen.push(`${pad}: ${over}px horizontale overloop op mobiel`);
   }

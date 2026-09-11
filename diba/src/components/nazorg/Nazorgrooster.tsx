@@ -57,12 +57,12 @@ export default function Nazorgrooster() {
     <div>
       <Schuifhint wat="het rooster" />
       <div className="mt-3 overflow-x-auto">
-        <div className="min-w-[820px]">
+        <div className="min-w-[980px]">
           {/* Kop: de behandelingen. */}
           <div
             className="grid gap-2"
             style={{
-              gridTemplateColumns: `minmax(190px, 1.1fr) repeat(${NAZORG.length}, minmax(0, 1fr))`,
+              gridTemplateColumns: `minmax(190px, 1.05fr) repeat(${NAZORG.length}, minmax(140px, 1fr))`,
             }}
           >
             <span className="diba-label self-end text-[var(--t-label)]">
@@ -71,7 +71,11 @@ export default function Nazorgrooster() {
             {NAZORG.map((n) => (
               <span
                 key={n.slug}
-                className="self-end text-[15px] leading-6 font-medium text-[var(--t-strong)]"
+                /* `min-w-0` en afbreken: "gezichtsbehandeling" is langer dan een kolom
+                   breed is, en zonder deze twee liep dat woord over de kolom ernaast heen
+                   (Yasin, 10 september 2026). */
+                className="min-w-0 self-end text-[15px] leading-6 font-medium break-words hyphens-auto text-[var(--t-strong)]"
+                lang="nl"
               >
                 {n.naam}
               </span>
@@ -85,7 +89,7 @@ export default function Nazorgrooster() {
                 key={b.id}
                 className="grid gap-2"
                 style={{
-                  gridTemplateColumns: `minmax(190px, 1.1fr) repeat(${NAZORG.length}, minmax(0, 1fr))`,
+                  gridTemplateColumns: `minmax(190px, 1.05fr) repeat(${NAZORG.length}, minmax(140px, 1fr))`,
                 }}
               >
                 <span className="flex items-center text-[15px] leading-6 text-[var(--t-strong)]">

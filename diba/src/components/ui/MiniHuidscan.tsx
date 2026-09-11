@@ -187,20 +187,6 @@ const VRAGEN: readonly Vraag[] = [
 
 const BASIS = 16;
 const MAX = 92;
-const CX = 170;
-const CY = 170;
-const R = 116;
-
-/** Hoek per as: eerste as recht omhoog, dan met de klok mee. */
-function punt(index: number, straal: number) {
-  const hoek = ((-90 + index * (360 / ASSEN.length)) * Math.PI) / 180;
-  return [CX + straal * Math.cos(hoek), CY + straal * Math.sin(hoek)] as const;
-}
-
-function veelhoek(straal: number) {
-  return ASSEN.map((_, i) => punt(i, straal).join(",")).join(" ");
-}
-
 type Fase = "intro" | "vragen" | "scannen" | "resultaat";
 
 export default function MiniHuidscan() {
@@ -211,7 +197,6 @@ export default function MiniHuidscan() {
   const [keuzes, setKeuzes] = useState<(number | null)[]>(() =>
     VRAGEN.map(() => null),
   );
-  const [onthuld, setOnthuld] = useState(false);
   const statusRef = useRef<HTMLParagraphElement>(null);
 
   const profiel = useMemo(() => {
@@ -268,10 +253,7 @@ export default function MiniHuidscan() {
   useEffect(() => {
     if (fase !== "scannen") return;
     const duur = reduced ? 0 : 1500;
-    const t = window.setTimeout(() => {
-      setFase("resultaat");
-      setOnthuld(true);
-    }, duur);
+    const t = window.setTimeout(() => setFase("resultaat"), duur);
     return () => window.clearTimeout(t);
   }, [fase, reduced]);
 
@@ -293,7 +275,6 @@ export default function MiniHuidscan() {
   function opnieuw() {
     setKeuzes(VRAGEN.map(() => null));
     setStap(0);
-    setOnthuld(false);
     setFase("vragen");
   }
 
@@ -312,7 +293,7 @@ export default function MiniHuidscan() {
           EVE-M
         </span>
         <span className="diba-label text-[var(--t-muted)]">
-          {fase === "resultaat" ? "Jouw profielschets" : "Mini-scan · 4 vragen"}
+          {fase === "resultaat" ? "Jouw profielschets" : "Mini-scan, 4 vragen"}
         </span>
       </div>
 
@@ -353,12 +334,11 @@ export default function MiniHuidscan() {
           />
         ) : null}
 
-        {fase === "scannen" ? <Scannen reduced={reduced} /> : null}
+        {fase === "scannen" ? <Scannen /> : null}
 
         {fase === "resultaat" ? (
           <Resultaat
             profiel={profiel}
-            onthuld={onthuld}
             aandachtspunten={aandachtspunten}
             focus={gekozenFocus}
             onOpnieuw={opnieuw}
@@ -373,21 +353,20 @@ export default function MiniHuidscan() {
 
 function Intro({ onStart, titelId }: { onStart: () => void; titelId: string }) {
   return (
-    <div className="grid gap-6 sm:grid-cols-[1fr_auto] sm:items-center">
-      <div>
-        <h3 id={titelId} className="diba-card-title">
-          Doe de mini-scan
-        </h3>
-        <p className="mt-3 max-w-sm text-[15px] leading-7 text-[var(--t-body)]">
-          Weet je nog niet waar te beginnen? Vier vragen, dertig seconden. Je
-          krijgt een profielschets op basis van wat je zelf aangeeft. Een meting
-          doen we in de kliniek; dit is een eerste indruk.
-        </p>
-        <Button onClick={onStart} className="mt-6">
-          Start de mini-scan
-        </Button>
-      </div>
-      <RadarStil />
+    <div>
+      <h3 id={titelId} className="diba-card-title">
+        Doe de mini-scan
+      </h3>
+      <p className="mt-3 max-w-[52ch] text-[15px] leading-7 text-[var(--t-body)]">
+        Weet je nog niet waar te beginnen? Vier vragen, dertig seconden. Je
+        krijgt een profielschets op basis van wat je zelf aangeeft. Een meting
+        doen we in de kliniek; dit is een eerste indruk.
+      </p>
+      {/* Op /huidprofiel staat deze kaart in een smalle kolom; daar is 191 pixels voor de
+          knop en "START DE MINI-SCAN" heeft er 208 nodig. */}
+      <Button onClick={onStart} className="mt-6" kort="Start de scan">
+        Start de mini-scan
+      </Button>
     </div>
   );
 }
@@ -467,36 +446,29 @@ function Vraagstap({
   );
 }
 
-function Scannen({ reduced }: { reduced: boolean }) {
+function Scannen() {
   return (
-    <div className="grid place-items-center py-6">
-      <div className="relative">
-        <RadarStil scannend={!reduced} />
-      </div>
-      <p className="diba-label mt-4 text-[var(--t-muted)]">Profiel opbouwen…</p>
+    <div className="grid place-items-center py-10">
+      <p className="diba-label text-[var(--t-muted)]">Profiel opbouwen…</p>
     </div>
   );
 }
 
 function Resultaat({
   profiel,
-  onthuld,
   aandachtspunten,
   focus,
   onOpnieuw,
 }: {
   profiel: Record<AsId, number>;
-  onthuld: boolean;
   aandachtspunten: readonly (typeof ASSEN)[number][];
   focus: Optie | null;
   onOpnieuw: () => void;
 }) {
   return (
     <div className="grid gap-6">
-      {/* Bewust onder elkaar: in twee kolommen wordt de radar zo smal dat de
-          aslabels over elkaar en buiten het vlak vallen. */}
-      <RadarResultaat profiel={profiel} onthuld={onthuld} />
-
+      {/* Hier stond de radar. Weg (Yasin, 11 september 2026): tweehonderdvijftig pixels
+          hoog, en wat je eraan afleest staat hieronder als getal. */}
       <div>
         <h3 className="diba-card-title">Waar jouw aandacht naartoe gaat.</h3>
 
@@ -571,148 +543,5 @@ function Resultaat({
         </button>
       </div>
     </div>
-  );
-}
-
-/* ── Radar ─────────────────────────────────────────────────────────────── */
-
-const RINGEN = [0.3, 0.55, 0.8, 1];
-
-function RadarGrid() {
-  return (
-    <g>
-      {RINGEN.map((f) => (
-        <polygon
-          key={f}
-          points={veelhoek(R * f)}
-          fill="none"
-          stroke="var(--g-100)"
-          strokeWidth={f === 1 ? 1.2 : 0.8}
-        />
-      ))}
-      {ASSEN.map((as, i) => {
-        const [x, y] = punt(i, R);
-        return (
-          <line
-            key={as.id}
-            x1={CX}
-            y1={CY}
-            x2={x}
-            y2={y}
-            stroke="var(--g-100)"
-            strokeWidth="0.8"
-          />
-        );
-      })}
-    </g>
-  );
-}
-
-/** Rustige staat: alleen het raster, met een zachte sweep tijdens het scannen. */
-function RadarStil({ scannend = false }: { scannend?: boolean }) {
-  return (
-    <svg
-      viewBox="0 0 340 340"
-      className="h-[220px] w-[220px] sm:h-[250px] sm:w-[250px]"
-      aria-hidden="true"
-    >
-      <RadarGrid />
-      {scannend ? (
-        <g
-          className="diba-scan-sweep"
-          style={{ transformOrigin: `${CX}px ${CY}px` }}
-        >
-          <line
-            x1={CX}
-            y1={CY}
-            x2={CX}
-            y2={CY - R}
-            stroke="var(--g-400)"
-            strokeWidth="1.5"
-          />
-          <circle cx={CX} cy={CY - R} r="4" fill="var(--g-700)" />
-        </g>
-      ) : null}
-      <circle cx={CX} cy={CY} r="4" fill="var(--g-700)" />
-    </svg>
-  );
-}
-
-function RadarResultaat({
-  profiel,
-  onthuld,
-}: {
-  profiel: Record<AsId, number>;
-  onthuld: boolean;
-}) {
-  const vorm = ASSEN.map((as, i) =>
-    punt(i, (R * (onthuld ? profiel[as.id] : 0)) / 100).join(","),
-  ).join(" ");
-
-  return (
-    <figure className="m-0">
-      {/* De viewBox is breder dan de radar zelf: de aslabels staan buiten de zeshoek
-          en hebben links en rechts ruimte nodig, anders kapt de rand ze af. */}
-      <svg
-        viewBox="-52 -12 444 364"
-        className="mx-auto w-full max-w-[420px]"
-        role="img"
-        aria-label="Radar met jouw profielschets op zes assen"
-      >
-        <RadarGrid />
-
-        {/* De buitenring is bewust leeg: dat is de meting die nog niet bestaat. */}
-        <polygon
-          points={veelhoek(R)}
-          fill="none"
-          stroke="var(--g-300)"
-          strokeWidth="1.2"
-          strokeDasharray="3 6"
-        />
-
-        <polygon
-          points={vorm}
-          fill="var(--g-400)"
-          fillOpacity="0.22"
-          stroke="var(--g-700)"
-          strokeWidth="2"
-          strokeLinejoin="round"
-          className="transition-all duration-700 ease-[var(--ease-diba)] motion-reduce:transition-none"
-        />
-
-        {ASSEN.map((as, i) => {
-          const [x, y] = punt(i, (R * (onthuld ? profiel[as.id] : 0)) / 100);
-          return (
-            <circle
-              key={as.id}
-              cx={x}
-              cy={y}
-              r="3.5"
-              fill="var(--g-700)"
-              className="transition-all duration-700 ease-[var(--ease-diba)] motion-reduce:transition-none"
-            />
-          );
-        })}
-
-        {ASSEN.map((as, i) => {
-          const [x, y] = punt(i, R + 22);
-          return (
-            <text
-              key={as.id}
-              x={x}
-              y={y}
-              textAnchor={x < CX - 5 ? "end" : x > CX + 5 ? "start" : "middle"}
-              dominantBaseline="middle"
-              className="fill-[var(--t-muted)] text-[10px] font-semibold uppercase [letter-spacing:0.08em]"
-            >
-              {as.label}
-            </text>
-          );
-        })}
-      </svg>
-      <figcaption className="diba-label mt-1 text-center text-[var(--t-muted)]">
-        Gestippeld = nog niet gemeten
-      </figcaption>
-    </figure>
   );
 }

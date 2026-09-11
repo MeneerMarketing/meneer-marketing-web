@@ -140,66 +140,22 @@ export default function PartnersPage() {
         </div>
       </section>
 
-      {/* ── Wat we niet claimen ──
-          Dit blok is de reden dat de pagina "merken en apparatuur" heet en niet "partners".
-          Een merk noemen is iets anders dan een samenwerking claimen, en dat verschil hoort
-          op de pagina zelf te staan en niet alleen in de broncode. */}
-      <section className="px-5 pb-10 sm:pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
-        <div className="mx-auto">
-          <div className="grid gap-10 rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:grid-cols-[1fr_1fr] lg:gap-16 lg:p-14">
-            <div>
-              <Label opDonker>Wat hier niet staat</Label>
-              <h2 className="diba-display-m mt-4 max-w-[18ch]">
-                Het woord <span className="diba-accent-on-dark">partner.</span>
-              </h2>
-            </div>
-            <div>
-              <p className="max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-                Werken met de apparatuur van een merk maakt je nog geen
-                officiële partner van dat merk. Dat is een afspraak op papier,
-                en zolang die er niet ligt schrijven we hem hier ook niet op.
-              </p>
-              <LeesVerder opDonker>
-                <p className="mt-4 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-                  Wat er wel staat is te controleren: welk systeem er in de
-                  kamer staat en waarvoor het gebruikt wordt. Voor jou als
-                  bezoeker is dat het antwoord op dezelfde vraag.
-                </p>
-              </LeesVerder>
-              {NOG_UITZOEKEN.length > 0 ? (
-                <>
-                  <p className="diba-label mt-8 text-[var(--on-dark-accent)]">
-                    Nog aan het uitzoeken
-                  </p>
-                  <ul className="mt-3 space-y-1.5">
-                    {NOG_UITZOEKEN.map((n) => (
-                      <li
-                        key={n}
-                        className="text-[15px] leading-7 text-[var(--on-dark-body)]"
-                      >
-                        {n}
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              ) : null}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── Door ── */}
       <section className="px-5 pb-12 sm:pb-20 sm:px-9 lg:px-[7.5vw] lg:pb-28">
-        <div className="mx-auto flex flex-wrap items-center gap-3">
+        {/* Yasin, 10 september 2026: knoppen naast elkaar op een telefoon, niet gestapeld.
+            Twee kolommen onder 640 pixels, met een korter opschrift op de eerste zodat hij
+            in zijn helft past. */}
+        <div className="diba-knoprij mx-auto">
           <Link
             href="/apparatuur"
-            className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+            className="diba-label inline-flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors max-sm:px-3 hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
           >
-            Alle apparatuur, per apparaat
+            <span className="sm:hidden">Alle apparatuur</span>
+            <span className="max-sm:hidden">Alle apparatuur, per apparaat</span>
           </Link>
           <Link
             href="/kwaliteit-en-registraties"
-            className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-[var(--g-200)] px-6 text-[var(--t-strong)] transition-colors hover:border-[var(--g-700)] hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+            className="diba-label inline-flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] border border-[var(--g-200)] px-6 text-[var(--t-strong)] transition-colors max-sm:px-3 hover:border-[var(--g-700)] hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
           >
             Onze registraties
           </Link>

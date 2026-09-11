@@ -5,7 +5,6 @@ import BeeldVignet from "@/components/ui/BeeldVignet";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import { PillarFaq, SectieKop } from "@/components/pillar/PillarSecties";
-import ProofBar from "@/components/ui/ProofBar";
 import {
   vacatureBeschrijvingHtml,
   vacatureGeldigTot,
@@ -18,7 +17,6 @@ import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_ADDRESS,
   DIBA_EMAIL,
-  DIBA_PROOF_STRIP_ITEMS,
   DIBA_SITE,
   DIBA_SITE_URL,
   DIBA_TELEFOON,
@@ -173,11 +171,10 @@ export default function VacatureHuidtherapeutPage() {
               </p>
             ))}
 
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+            <div className="diba-knoprij mt-9">
               <Button
                 variant="primair-op-donker"
                 href={mailto}
-                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
                 kort="Solliciteer"
               >
                 Solliciteer op deze functie
@@ -187,7 +184,6 @@ export default function VacatureHuidtherapeutPage() {
                 variant="secundair-op-donker"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
                 kort="Stel een vraag"
               >
                 Eerst een vraag stellen
@@ -237,13 +233,16 @@ export default function VacatureHuidtherapeutPage() {
         </div>
       </section>
 
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
+      {/* Yasin, 10 september 2026: "haal die vier cijfers hier weg, wat heb je daaraan op
+          zo'n pagina?" Terecht: 55.000 behandelingen zegt een klant iets over de kliniek en
+          een sollicitant niets over het werk. Ze staan wel op de pagina's waar ze een vraag
+          beantwoorden. */}
 
       <nav
         aria-label="Op deze pagina"
         className="sticky top-[var(--nav-h)] z-20 bg-[var(--g-010)]/95 backdrop-blur"
       >
-        <ul className="mx-auto flex gap-6 overflow-x-auto px-5 py-4 sm:px-9 lg:px-[7.5vw]">
+        <ul className="diba-schuifrij mx-auto flex gap-6 px-5 py-4 sm:px-9 lg:px-[7.5vw]">
           {ANKERS.map((a) => (
             <li key={a.id}>
               <a
@@ -280,7 +279,7 @@ export default function VacatureHuidtherapeutPage() {
                 <h3 className="diba-card-title">{w.kop}</h3>
                 {/* Vijf regelhoogtes gereserveerd, zodat de vier kaarten even hoog
                     blijven ook als een zin net omvalt. */}
-                <p className="mt-3 min-h-[5lh] text-[15px] leading-7 text-[var(--t-body)]">
+                <p className="mt-3 md:min-h-[5lh] text-[15px] leading-7 text-[var(--t-body)]">
                   {publicCopy(w.zin)}
                 </p>
               </li>
@@ -369,7 +368,7 @@ export default function VacatureHuidtherapeutPage() {
                 <p className="diba-card-title text-[var(--t-strong)]">
                   {stap.kop}
                 </p>
-                <p className="mt-3 min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
+                <p className="mt-3 md:min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
                   {publicCopy(stap.zin)}
                 </p>
               </li>
@@ -403,12 +402,13 @@ export default function VacatureHuidtherapeutPage() {
               Een motivatiebrief hoeft niet. Een paar regels over waar je nu
               werkt en wat je zoekt is genoeg, en binnen een week hoor je iets.
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            <div className="mt-8 diba-knoprij">
               <a
                 href={mailto}
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white"
               >
-                Mail je sollicitatie
+                <span className="sm:hidden">Mail je cv</span>
+                <span className="max-sm:hidden">Mail je sollicitatie</span>
               </a>
               <a
                 href={DIBA_WHATSAPP_URL}
@@ -416,7 +416,10 @@ export default function VacatureHuidtherapeutPage() {
                 rel="noopener noreferrer"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-white/25 px-6 text-[var(--on-dark)] transition-colors hover:bg-white/10"
               >
-                Stel een vraag via WhatsApp
+                <span className="sm:hidden">WhatsApp</span>
+                <span className="max-sm:hidden">
+                  Stel een vraag via WhatsApp
+                </span>
               </a>
             </div>
           </div>

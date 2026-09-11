@@ -148,31 +148,36 @@ export default async function ApparaatPage({ params }: PageProps) {
           Zonder foto vervalt de rechterkolom en loopt de tekst over de volle breedte. Dat
           is beter dan een grijs vlak: twee apparaten wachten nog op een opname waarvan
           zeker is welk apparaat erop staat. */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
+      {/* Donkergroen, net als de heros van /behandelingen, /tarieven, /huidprofiel en het
+          overzicht van de apparatuur (Yasin, 10 september 2026). Deze twaalf waren de
+          laatste die nog wit begonnen. */}
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)]">
         <div
-          className={`grid gap-8 py-14 lg:items-stretch lg:gap-12 lg:py-20 ${
-            a.foto ? "lg:grid-cols-[1fr_0.82fr]" : ""
+          className={`mx-auto grid gap-8 px-5 py-14 sm:px-9 lg:grid-cols-[1fr_0.82fr] lg:items-stretch lg:gap-12 lg:px-[7.5vw] lg:py-20 ${
+            a.foto ? "" : "lg:grid-cols-1"
           }`}
         >
           <div className="flex flex-col">
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <Link href="/apparatuur" className="hover:text-[var(--g-700)]">
+              <Link href="/apparatuur" className="hover:text-white">
                 Apparatuur
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">{a.naam}</span>
+              <span className="text-[var(--on-dark-body)]">{a.naam}</span>
             </nav>
 
             <div className="mt-8">
-              {a.merk ? <Label>{a.merk}</Label> : null}
-              <h1 className="diba-display-l mt-3 max-w-[16ch]">{a.naam}</h1>
+              {a.merk ? <Label opDonker>{a.merk}</Label> : null}
+              <h1 className="diba-display-l mt-3 max-w-[16ch] text-[var(--on-dark)]">
+                {a.naam}
+              </h1>
               {/* Alleen waar de fabrikant een eigen site heeft. Extern, dus in een
                   nieuw tabblad; de bezoeker is hier nog niet klaar. */}
               {a.merk && a.merkUrl ? (
@@ -180,7 +185,7 @@ export default async function ApparaatPage({ params }: PageProps) {
                   href={a.merkUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="diba-label mt-4 inline-flex min-h-11 items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+                  className="diba-label diba-label-on-dark mt-4 inline-flex min-h-11 items-center gap-1.5 text-[var(--on-dark-accent)] underline underline-offset-4 hover:text-white"
                 >
                   Meer over {woord} bij {a.merk}
                   <span aria-hidden="true">›</span>
@@ -188,11 +193,11 @@ export default async function ApparaatPage({ params }: PageProps) {
               ) : null}
             </div>
 
-            <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               {publicCopy(a.kort)}
             </p>
 
-            <p className="mt-6 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-6 max-w-[54ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               {publicCopy(a.wat)}
             </p>
 
@@ -201,20 +206,22 @@ export default async function ApparaatPage({ params }: PageProps) {
                 `mt-auto` duwt dit blok naar de voet, zodat de tekstkolom even lang wordt als
                 het beeld ernaast. De hele reden dat deze pagina naast de behandelpagina
                 bestaat staat hier, dus hij mag niet wegzakken onder de vouw. */}
-            <div className="mt-auto rounded-[var(--r-lg)] bg-white p-7 pt-10 sm:p-9">
-              <Label>Wat we ermee doen</Label>
+            {/* Op --g-800 en niet meer wit: een wit vlak in een donkergroene hero is een
+                gat. De tinten binnen het vlak schuiven mee. */}
+            <div className="mt-auto rounded-[var(--r-lg)] bg-[var(--g-800)] p-7 pt-10 sm:p-9">
+              <Label opDonker>Wat we ermee doen</Label>
               {behandelingen.length > 0 ? (
                 <ul className="mt-5 space-y-2">
                   {behandelingen.map((b) => (
                     <li key={b.slug}>
                       <Link
                         href={`/behandelingen/${b.slug}`}
-                        className="-mx-4 flex items-baseline justify-between gap-4 rounded-[var(--r-sm)] px-4 py-3 transition-colors hover:bg-[var(--g-100)]"
+                        className="-mx-4 flex items-baseline justify-between gap-4 rounded-[var(--r-sm)] px-4 py-3 transition-colors hover:bg-white/10"
                       >
-                        <span className="text-[16px] leading-6 font-medium text-[var(--t-strong)]">
+                        <span className="text-[16px] leading-6 font-medium text-[var(--on-dark)]">
                           {b.naam}
                         </span>
-                        <span className="shrink-0 text-[14px] leading-6 text-[var(--t-muted)] tabular-nums">
+                        <span className="shrink-0 text-[14px] leading-6 text-[var(--on-dark-accent)] tabular-nums">
                           {prijsTekst(b.prijs)}
                         </span>
                       </Link>
@@ -222,12 +229,12 @@ export default async function ApparaatPage({ params }: PageProps) {
                   ))}
                 </ul>
               ) : (
-                <p className="mt-5 text-[15px] leading-7 text-[var(--t-body)]">
+                <p className="mt-5 text-[15px] leading-7 text-[var(--on-dark-body)]">
                   Nog niet gekoppeld aan een behandeling op deze site.
                 </p>
               )}
 
-              <p className="mt-6 text-[14px] leading-6 text-[var(--t-muted)]">
+              <p className="mt-6 text-[14px] leading-6 text-[var(--on-dark-body)]">
                 {a.soort === "productlijn"
                   ? "De behandelaar kiest de lijn, de sterkte en de inwerktijd op basis van je huid, je gezondheid, de zone en het doel van de behandeling."
                   : "De behandelaar kiest de instellingen op basis van je huid, je gezondheid, de behandelzone en het doel van de behandeling."}
@@ -240,7 +247,7 @@ export default async function ApparaatPage({ params }: PageProps) {
             <BeeldVignet
               src={a.foto.src}
               alt={a.foto.alt}
-              onderschrift={a.merk ? `${a.naam} · ${a.merk}` : a.naam}
+              onderschrift={a.merk ? `${a.naam}, ${a.merk}` : a.naam}
               priority
               sizes="(min-width: 1024px) 42vw, 92vw"
               className="min-h-[460px] sm:min-h-[560px] lg:min-h-[640px]"
@@ -369,7 +376,7 @@ export default async function ApparaatPage({ params }: PageProps) {
                   {/* Vier regelhoogtes gereserveerd, zoals bij de stapkaarten op de
                       behandelpagina's: even lange teksten geven niet vanzelf even hoge
                       kaarten, want dat hangt af van waar de woorden breken. */}
-                  <p className="mt-4 min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
+                  <p className="mt-4 lg:min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
                     {publicCopy(v.verschil)}
                   </p>
                   <Link
@@ -465,7 +472,10 @@ export default async function ApparaatPage({ params }: PageProps) {
                     href="/intake"
                     className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--on-dark-accent)]"
                   >
-                    Wat er in een huidconsult gebeurt
+                    <span className="sm:hidden">Huidconsult</span>
+                    <span className="max-sm:hidden">
+                      Wat er in een huidconsult gebeurt
+                    </span>
                   </Link>
                   <Link
                     href="/apparatuur"

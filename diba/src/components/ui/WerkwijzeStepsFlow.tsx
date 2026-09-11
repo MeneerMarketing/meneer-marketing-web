@@ -49,34 +49,80 @@ export default function WerkwijzeStepsFlow({
   const [actief, setActief] = useState(0);
   const [gepauzeerd, setGepauzeerd] = useState(false);
   const timer = useRef<ReturnType<typeof setInterval> | null>(null);
+  const rij = useRef<HTMLUListElement>(null);
+  const [inBeeld, setInBeeld] = useState(false);
 
   const volgende = useCallback(() => {
     setActief((vorig) => (vorig + 1) % stappen.length);
   }, [stappen.length]);
 
+  /* Pas tellen als de rij in beeld staat. Anders is de derde stap al aan de beurt voordat
+     iemand de sectie heeft bereikt (Yasin, 11 september 2026). */
   useEffect(() => {
-    if (gepauzeerd) return undefined;
+    const el = rij.current;
+    if (!el) return undefined;
+    const waarnemer = new IntersectionObserver(
+      ([item]) => setInBeeld(item.isIntersecting),
+      { threshold: 0.34 },
+    );
+    waarnemer.observe(el);
+    return () => waarnemer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (gepauzeerd || !inBeeld) return undefined;
     timer.current = setInterval(volgende, DUUR_MS);
     return () => {
       if (timer.current) clearInterval(timer.current);
     };
-  }, [volgende, gepauzeerd]);
+  }, [volgende, gepauzeerd, inBeeld]);
+
+  /* De rij meeschuiven met de stap die aan de beurt is. Alleen als er iets te schuiven
+     valt: vanaf 640 pixels staan de drie naast elkaar en is de rij net zo breed als zijn
+     inhoud. */
+  useEffect(() => {
+    const el = rij.current;
+    if (!el || el.scrollWidth <= el.clientWidth) return;
+    const kind = el.children[actief] as HTMLElement | undefined;
+    const eerste = el.children[0] as HTMLElement | undefined;
+    if (!kind || !eerste) return;
+    el.scrollTo({
+      left: kind.offsetLeft - eerste.offsetLeft,
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? "auto"
+        : "smooth",
+    });
+  }, [actief]);
 
   return (
     <div
-      className={className}
+      /* `w-full min-w-0` op een telefoon: deze component staat in een flexrij naast de kop,
+         en zonder die twee rekt de rij mee met de breedte van alle kaarten samen. Gemeten
+         werd de pagina dan 813 pixels breed op een scherm van 390, en schoof de hele sectie
+         naar links uit beeld. */
+      className={`w-full min-w-0 sm:w-auto ${className}`}
       onMouseEnter={() => setGepauzeerd(true)}
       onMouseLeave={() => setGepauzeerd(false)}
+      onPointerDown={() => setGepauzeerd(true)}
       onFocus={() => setGepauzeerd(true)}
       onBlur={(e) => {
         if (!e.currentTarget.contains(e.relatedTarget)) setGepauzeerd(false);
       }}
     >
-      <ul className="grid gap-3 sm:grid-cols-3">
+      {/* Op een telefoon een rij die je ook zelf opzij kunt vegen; vanaf 640 een raster van
+          drie. De rij loopt rechts door tot buiten de marge van deze kolom, want dat stuk
+          van de volgende kaart is het teken dat er meer is. */}
+      <ul
+        ref={rij}
+        className="diba-schuifrij flex snap-x snap-mandatory gap-3 sm:grid sm:grid-cols-3 sm:overflow-visible"
+      >
         {stappen.map((stap, i) => {
           const aan = actief === i;
           return (
-            <li key={stap.id} className="flex">
+            <li
+              key={stap.id}
+              className="flex w-[82%] shrink-0 snap-start sm:w-auto"
+            >
               <button
                 type="button"
                 aria-pressed={aan}

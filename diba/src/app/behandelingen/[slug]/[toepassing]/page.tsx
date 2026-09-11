@@ -10,7 +10,7 @@ import {
   toepassingVoor,
   toepassingenBijBehandeling,
 } from "@/data/toepassingen";
-import { publicCopy } from "@/lib/copy-flags";
+import { eersteZin, publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, faqSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
@@ -113,6 +113,11 @@ export default async function ToepassingPage({
           aria-label="Kruimelpad"
           className="diba-label diba-label-on-dark flex flex-wrap gap-2"
         >
+          {/* Op een telefoon staat hier alleen Home en de pagina waar je bent. "Home /
+              Behandelingen / Medische peelings" is veertig tekens in kleine kapitalen met
+              letterafstand, en dat is vijf pixels breder dan een telefoon (Yasin, 10
+              september 2026: "de breadcrumb moet altijd op één regel"). Vanaf 640 pixels
+              staat het hele pad er weer. */}
           <Link href="/" className="hover:text-white">
             Home
           </Link>
@@ -127,7 +132,7 @@ export default async function ToepassingPage({
                 href={`/behandelingen/${b.slug}`}
                 className="hover:text-white"
               >
-                {b.naam}
+                {b.naamKort ?? b.naam}
               </Link>
             </>
           ) : null}
@@ -199,14 +204,14 @@ export default async function ToepassingPage({
                 key={publicCopy(s.kop)}
                 className="rounded-[var(--r-lg)] bg-white p-6 sm:p-7"
               >
-                <p className="diba-card-title min-h-[2lh] text-[var(--t-strong)]">
+                <p className="diba-card-title sm:min-h-[2lh] text-[var(--t-strong)]">
                   {publicCopy(s.kop)}
                 </p>
                 {/* Vier regelhoogtes gereserveerd, ook bij drie regels tekst. De drie
                     kaarten dragen per toepassing verschillend lange zinnen; zonder dit
                     staat de onderrand scheef, en inkorten tot ze toevallig even lang
                     zijn laat de opmaak de inhoud sturen. */}
-                <p className="mt-3 min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
+                <p className="mt-3 sm:min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
                   {publicCopy(s.zin)}
                 </p>
               </li>
@@ -231,18 +236,21 @@ export default async function ToepassingPage({
             </p>
             {b ? (
               <dl className="mt-8 space-y-3 border-t border-[var(--g-100)] pt-6">
-                <div className="flex items-baseline justify-between gap-6">
+                {/* De eerste zin, en op een telefoon onder het opschrift in plaats van
+                    ernaast. Het hele verhaal over hersteltijd staat verderop op deze
+                    pagina (Yasin, 11 september 2026). */}
+                <div className="sm:flex sm:items-baseline sm:justify-between sm:gap-6">
                   <dt className="diba-label text-[var(--t-label)]">Hoe vaak</dt>
-                  <dd className="max-w-[34ch] text-right text-[15px] leading-7 text-[var(--t-body)]">
-                    {publicCopy(b.sessies)}
+                  <dd className="mt-1 text-[15px] leading-7 text-[var(--t-body)] sm:mt-0 sm:max-w-[34ch] sm:text-right">
+                    {eersteZin(publicCopy(b.sessies))}
                   </dd>
                 </div>
-                <div className="flex items-baseline justify-between gap-6">
+                <div className="sm:flex sm:items-baseline sm:justify-between sm:gap-6">
                   <dt className="diba-label text-[var(--t-label)]">
                     Hersteltijd
                   </dt>
-                  <dd className="max-w-[34ch] text-right text-[15px] leading-7 text-[var(--t-body)]">
-                    {publicCopy(b.herstel)}
+                  <dd className="mt-1 text-[15px] leading-7 text-[var(--t-body)] sm:mt-0 sm:max-w-[34ch] sm:text-right">
+                    {eersteZin(publicCopy(b.herstel))}
                   </dd>
                 </div>
                 <div className="flex items-baseline justify-between gap-6">
@@ -289,7 +297,7 @@ export default async function ToepassingPage({
 
       {/* ── FAQ ── */}
       {faq.length > 0 ? (
-        <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
           <div className="mx-auto grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
             <div>
               <Label>Veelgestelde vragen</Label>
@@ -318,7 +326,7 @@ export default async function ToepassingPage({
                     href={`/behandelingen/${x.behandeling}/${x.slug}`}
                     className="flex h-full flex-col rounded-[var(--r-lg)] bg-white p-6 transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                   >
-                    <p className="diba-card-title min-h-[2lh] text-[var(--t-strong)]">
+                    <p className="diba-card-title sm:min-h-[2lh] text-[var(--t-strong)]">
                       {x.naam}
                     </p>
                     <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">

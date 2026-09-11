@@ -21,13 +21,15 @@
  * ook niet. Ze verzinnen zou dezelfde fout zijn als de vorige keer, alleen minder
  * zichtbaar omdat de rest nu wel klopt. [GEGEVEN-NODIG: aantal sessies per zone, Okan]
  *
- * DE ENE REGEL DIE IK NIET HEB OVERGENOMEN.
+ * DE ENE REGEL DIE ERAF IS.
  *
- * "Haarlijn – €6" bij dames. Bij heren staat diezelfde zone op €70, en elke andere
- * gezichtszone bij dames ligt tussen de 20 en 60. Zes euro is vrijwel zeker een ontbrekende
- * nul. Ik zet er geen 60 neer want dat zou ik verzinnen, en geen 6 want dan publiceren we
- * een fout die mensen aan de balie meebrengen. Hij staat op 0 en de site zegt dan "Nog niet
- * bekend". [PRIJS-NODIG: haarlijn dames, Okan; staat nu als €6 op dibaclinics.nl]
+ * "Haarlijn" bij dames. Die stond hier op nul en dus als "Nog niet bekend" op de site, en
+ * Okan gaf op 10 september 2026 door dat die regel eruit mag. Bij heren blijft hij staan op
+ * €70.
+ *
+ * Wel iets om te weten: op dibaclinics.nl/tarieven-2 staat haarlijn bij dames inmiddels op
+ * €60. Ik heb dat bedrag er niet neergezet, want de instructie was de regel weg te halen.
+ * [BESLUIT-OKAN: weghouden of alsnog op €60 zetten?]
  */
 
 /** Stond op `true` toen de bedragen verzonnen waren. Ze komen nu van de kliniek zelf. */
@@ -97,7 +99,7 @@ const ONTBREEKT = -1;
 
 const TARIEVEN: readonly Rij[] = [
   // ── Gelaat ──
-  ["haarlijn", "Haarlijn", "gelaat", ["voorhoofd"], 0, 70],
+  ["haarlijn", "Haarlijn", "gelaat", ["voorhoofd"], ONTBREEKT, 70],
   ["voorhoofd", "Voorhoofd", "gelaat", ["voorhoofd"], 50, 65],
   [
     "tussen-wenkbrauwen",

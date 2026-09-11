@@ -3,7 +3,6 @@ import Link from "next/link";
 import VideoKolom from "@/components/media/VideoKolom";
 import ProfielOordeel from "@/components/huidprofiel/ProfielOordeel";
 import BeeldVignet from "@/components/ui/BeeldVignet";
-import Reviewregel from "@/components/reviews/Reviewregel";
 import { notFound } from "next/navigation";
 import Werkingsvenster, {
   type WerkingsvensterApparaat,
@@ -14,18 +13,21 @@ import { toepassingenBijBehandeling } from "@/data/toepassingen";
 import { videoVoor } from "@/data/videos";
 import { apparatenVoorBehandeling, type Apparaat } from "@/data/apparatuur";
 import { PillarFaq } from "@/components/pillar/PillarSecties";
-import ProofBar from "@/components/ui/ProofBar";
 import {
   BEHANDELINGEN,
   HUIDLAGEN,
   behandelingVoorSlug,
+  prijsCijfer,
   prijsTekst,
   diepteVanLagen,
+  type Behandeling,
 } from "@/data/behandelingen";
-import { publicCopy } from "@/lib/copy-flags";
+import { eersteZin, publicCopy } from "@/lib/copy-flags";
+import DibaLeafMark from "@/components/ui/DibaLeafMark";
+import { BESTEMMINGEN } from "@/data/symptoomzoeker";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
-import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
+import { DIBA_SITE_URL } from "@/lib/site";
 
 /**
  * De behandelpagina's.
@@ -61,17 +63,40 @@ export function generateStaticParams() {
   return BEHANDELINGEN.map((b) => ({ slug: b.slug }));
 }
 
-export async function generateMetadata({
-  params,
-}: PageProps): Promise<Metadata> {
-  const { slug } = await params;
-  const b = behandelingVoorSlug(slug);
-  if (!b) return {};
-  return zoekmachineVelden({
-    pad: `/behandelingen/${b.slug}`,
-    titel: b.naam,
-    omschrijving: publicCopy(b.kort),
+/**
+ * De vragen die bij elke behandeling gesteld worden.
+ *
+ * Ze komen uit de gegevens van de behandeling zelf, dus er wordt hier niets bedacht: de
+ * duur, de hersteltijd, het aantal sessies en het bedrag staan allemaal al op de pagina.
+ * Dat ze er twee keer staan is geen fout maar het punt van een vragenlijst: iemand die
+ * "hoeveel hersteltijd" zoekt leest niet eerst het blok bovenaan.
+ */
+function basisvragen(b: Behandeling): { vraag: string; antwoord: string }[] {
+  const uit: { vraag: string; antwoord: string }[] = [];
+  if (b.duurMinuten) {
+    uit.push({
+      vraag: "Hoe lang duurt een afspraak?",
+      antwoord: `Reken op ${b.duurMinuten} minuten in de kliniek. Dat is de tijd die in de agenda voor je gereserveerd staat, inclusief het reinigen vooraf.`,
+    });
+  }
+  uit.push({
+    vraag: "Hoeveel hersteltijd heb ik nodig?",
+    antwoord: publicCopy(b.herstel),
   });
+  uit.push({
+    vraag: "Hoe vaak moet ik komen?",
+    antwoord: publicCopy(b.sessies, "Dat hoor je tijdens de intake."),
+  });
+  if (b.prijs > 0) {
+    uit.push({
+      vraag: "Wat kost het?",
+      antwoord:
+        b.varianten && b.varianten.length > 1
+          ? `Vanaf ${prijsCijfer(b.prijs)} euro; het bedrag hangt af van de variant die je kiest. Alle varianten staan op de tarievenpagina.`
+          : `${prijsCijfer(b.prijs)} euro per sessie. Alle tarieven staan openbaar op de tarievenpagina.`,
+    });
+  }
+  return uit;
 }
 
 const ANKERS = [
@@ -111,6 +136,20 @@ export default async function BehandelingPage({ params }: PageProps) {
   /* De koppeling loopt twee kanten op: hier het apparaat, en op de apparatuurpagina de
      behandelingen die erop draaien. Beide uit dezelfde tabel. */
   const apparaten = apparatenVoorBehandeling(b.slug);
+
+  const vragen = [...(b.faq ?? []), ...basisvragen(b)];
+
+  /* De klachten waar deze behandeling bij hoort, met de zin van de klachtpagina erbij.
+     Twee verwijzingen vallen af: het huidconsult en het overzicht van alle huidproblemen.
+     Die staan elders op deze pagina al, en het zijn geen klachten. /snurken en
+     /laserontharing blijven staan: dat zijn wél de pagina's waar de klacht behandeld
+     wordt, ze heten alleen niet /huidproblemen. */
+  const klachten = (b.bijProblemen ?? [])
+    .filter((p) => p.href !== "/intake" && p.href !== "/huidproblemen")
+    .map((p) => ({
+      ...p,
+      zin: BESTEMMINGEN.find((x) => x.pad === p.href)?.zin,
+    }));
 
   /* De verwante behandelingen, met hun record erbij. Een slug die nergens bij hoort valt
      stil weg in plaats van een lege kaart op te leveren. */
@@ -169,14 +208,23 @@ export default async function BehandelingPage({ params }: PageProps) {
               Home
             </Link>
             <span aria-hidden="true">/</span>
+            {/* Op een telefoon staat hier alleen Home en de pagina waar je bent. "Home /
+                Behandelingen / Medische peelings" is veertig tekens in kleine kapitalen met
+                letterafstand, en dat is vijf pixels breder dan een telefoon (Yasin, 10
+                september 2026: "de breadcrumb moet altijd op één regel"). Vanaf 640 pixels
+                staat het hele pad er weer. */}
             <Link href="/behandelingen" className="hover:text-[var(--g-700)]">
               Behandelingen
             </Link>
             <span aria-hidden="true">/</span>
-            <span className="text-[var(--t-muted)]">{b.naam}</span>
+            <span className="text-[var(--t-muted)]">
+              {b.naamKort ?? b.naam}
+            </span>
           </nav>
 
-          <h1 className="diba-display-l mt-4 max-w-[21ch] sm:mt-6">{b.naam}</h1>
+          <h1 className="diba-display-l mt-4 max-w-[21ch] sm:mt-6">
+            {b.naamKort ?? b.naam}
+          </h1>
 
           {/* ── De rij: wat je ziet, naast wat je moet weten ── */}
           <div
@@ -188,9 +236,13 @@ export default async function BehandelingPage({ params }: PageProps) {
               <BeeldVignet
                 src={b.foto.src}
                 alt={b.foto.alt}
+                /* De apparaatnaam er alleen achter zetten als hij niet al in de
+                   behandelnaam staat. Bij "Consult met EVE-M huidanalyse" werd het anders
+                   "Consult met EVE-M huidanalyse, EVE-M" (Yasin, 10 september 2026). */
                 onderschrift={
-                  b.apparaat && b.apparaat !== b.naam
-                    ? `${b.naam} · ${b.apparaat}`
+                  b.apparaat &&
+                  !b.naam.toLowerCase().includes(b.apparaat.toLowerCase())
+                    ? `${b.naam}, ${b.apparaat}`
                     : b.naam
                 }
                 priority
@@ -215,22 +267,27 @@ export default async function BehandelingPage({ params }: PageProps) {
                   b.duurMinuten
                     ? (["Hoe lang", `${b.duurMinuten} minuten`] as const)
                     : null,
-                  ["Herstel", publicCopy(b.herstel)] as const,
+                  ["Herstel", eersteZin(publicCopy(b.herstel))] as const,
                   [
                     "Hoe vaak",
-                    publicCopy(b.sessies, "Nog niet vastgesteld"),
+                    eersteZin(publicCopy(b.sessies, "Nog niet vastgesteld")),
                   ] as const,
                 ]
                   .filter((rij): rij is NonNullable<typeof rij> => rij !== null)
                   .map(([kop, waarde]) => (
+                    /* Op een telefoon onder elkaar en niet naast elkaar. Naast een
+                       opschrift van vier tekens blijft er 180 pixels over voor het
+                       antwoord, en daar liep "Je gaat meteen door met je dag..." over vier
+                       regels in (Yasin, 10 september 2026). Onder elkaar krijgt het
+                       antwoord de hele breedte en past het in twee. */
                     <div
                       key={kop}
-                      className="flex items-baseline justify-between gap-6 rounded-[var(--r-sm)] bg-[var(--g-800)] px-4 py-3 sm:px-5 sm:py-4"
+                      className="rounded-[var(--r-sm)] bg-[var(--g-800)] px-4 py-3 sm:flex sm:items-baseline sm:justify-between sm:gap-6 sm:px-5 sm:py-4"
                     >
                       <dt className="diba-label diba-label-on-dark shrink-0">
                         {kop}
                       </dt>
-                      <dd className="diba-card-title text-right max-sm:text-[17px] max-sm:leading-6">
+                      <dd className="diba-card-title max-sm:mt-1 max-sm:text-[15px] max-sm:leading-6 sm:text-right">
                         {waarde}
                       </dd>
                     </div>
@@ -260,27 +317,15 @@ export default async function BehandelingPage({ params }: PageProps) {
             {publicCopy(b.kort)}
           </p>
 
-          {apparaten.length > 0 ? (
-            <p className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-1 text-[15px] leading-7 text-[var(--t-body)]">
-              <span className="text-[var(--t-muted)]">We doen dit met</span>
-              {apparaten.map((a, i) => (
-                <span key={a.slug}>
-                  <Link
-                    href={`/apparatuur/${a.slug}`}
-                    className="font-medium text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
-                  >
-                    {a.naam}
-                  </Link>
-                  {i < apparaten.length - 1 ? <span>,</span> : null}
-                </span>
-              ))}
-            </p>
-          ) : null}
+          {/* Hier stond "We doen dit met <apparaat>". Yasin, 10 september 2026: eraf, samen
+              met de cijferbalk eronder. De verwijzing naar het apparaat zelf is niet
+              verdwenen; die staat nu in "Wat het doet", bij het venster dat laat zien hoe
+              diep het komt. Daar hoort hij ook, want dan weet je waar het over gaat. */}
 
-          <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+          <div className="diba-knoprij mt-8">
             <Link
               href="/afspraak"
-              className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] max-sm:w-full max-sm:justify-center max-sm:px-3"
+              className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
             >
               <span className="sm:hidden">Plan consult</span>
               <span className="max-sm:hidden">Plan een huidconsult</span>
@@ -296,13 +341,14 @@ export default async function BehandelingPage({ params }: PageProps) {
         </div>
       </section>
 
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
+      {/* De balk met vier cijfers stond hier. Yasin, 10 september 2026: te veel, op elk
+          scherm. Het cijfer staat al in de balk bovenaan elke pagina. */}
 
       <nav
         aria-label="Op deze pagina"
         className="sticky top-[var(--nav-h)] z-20 bg-[var(--g-010)]/95 backdrop-blur"
       >
-        <ul className="mx-auto flex gap-6 overflow-x-auto px-5 py-4 sm:px-9 lg:px-[7.5vw]">
+        <ul className="diba-schuifrij mx-auto flex gap-6 px-5 py-4 sm:px-9 lg:px-[7.5vw]">
           {ANKERS.map((a) => (
             <li key={a.id}>
               <a
@@ -335,6 +381,23 @@ export default async function BehandelingPage({ params }: PageProps) {
               De diepte komt uit de lagen van deze behandeling en niet uit het apparaat:
               de Fotona haalt vijfentachtig procent, maar niet elke behandeling erop gaat
               zo diep. Het apparaat levert het hoe, de behandeling bepaalt het hoever. */}
+          {apparaten.length > 0 ? (
+            <p className="mt-5 flex flex-wrap items-center gap-x-2 gap-y-1 text-[15px] leading-7 text-[var(--t-body)]">
+              <span className="text-[var(--t-muted)]">Dit draait op</span>
+              {apparaten.map((a, i) => (
+                <span key={a.slug}>
+                  <Link
+                    href={`/apparatuur/${a.slug}`}
+                    className="font-medium text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+                  >
+                    {a.naam}
+                  </Link>
+                  {i < apparaten.length - 1 ? <span>,</span> : null}
+                </span>
+              ))}
+            </p>
+          ) : null}
+
           {apparaten.length > 0 && b.lagen.length > 0 ? (
             <div className="mt-10">
               <Werkingsvenster
@@ -344,6 +407,10 @@ export default async function BehandelingPage({ params }: PageProps) {
             </div>
           ) : null}
 
+          {/* Op een telefoon staat de lagenlijst uit (Yasin, 10 september 2026). Vier
+              rijen met een naam, een zin, een diepte en een oordeel ernaast worden op 375
+              pixels acht regels per rij; je scrolt er langs zonder te lezen. Het venster
+              erboven laat dezelfde diepte zien in één beeld. */}
           {/* De lagen in woorden.
 
               Dit was een trapje met donkergroene balken, en dat werkte tot de doorsnede
@@ -351,7 +418,7 @@ export default async function BehandelingPage({ params }: PageProps) {
               duidelijk maar half zo rustig, en het luidste van de twee wint dan van het
               nauwkeurigste. De tekening zegt nu waar het aankomt; deze lijst voegt toe
               wat elke laag eigenlijk is. */}
-          <ul className="mt-10 divide-y divide-[var(--g-100)] overflow-hidden rounded-[var(--r-md)] bg-white">
+          <ul className="mt-10 divide-y divide-[var(--g-100)] overflow-hidden rounded-[var(--r-md)] bg-white max-lg:hidden">
             {HUIDLAGEN.map((laag, i) => {
               const raakt = b.lagen.includes(laag.id);
               /* Een laag waar niet gewerkt wordt maar die wel boven de diepste ligt,
@@ -403,11 +470,15 @@ export default async function BehandelingPage({ params }: PageProps) {
                         : "text-[var(--t-muted)]"
                     }`}
                   >
+                    {/* "Blijft onaangeroerd" zei niet wat het betekende (Yasin, 10
+                        september 2026: "wazig en niet duidelijk"). Wat een bezoeker wil
+                        weten is of deze behandeling daar komt, en het antwoord is ja, hij
+                        gaat er alleen doorheen, of nee. Zo staat het er nu. */}
                     {raakt
                       ? "Hier werkt het"
                       : doorheen
-                        ? "Gaat er doorheen"
-                        : "Blijft onaangeroerd"}
+                        ? "Gaat hier doorheen"
+                        : "Komt hier niet"}
                   </span>
                 </li>
               );
@@ -422,17 +493,17 @@ export default async function BehandelingPage({ params }: PageProps) {
           precies de vijf dunste pagina's van de reeks. Nu draagt hij zichzelf zodra er iets
           in te zetten valt: de stappen als die er zijn, en anders het verloop van de
           afspraak. */}
-      {/* Eén regel van iemand die hier is geweest, tussen twee blokken van onszelf. */}
-      <section className="px-5 pt-8 sm:px-9 lg:px-[7.5vw]">
-        <div className="mx-auto">
-          <Reviewregel keuze={4} />
-        </div>
-      </section>
+      {/* Hier stond een reviewregel tussen twee blokken. Yasin, 10 september 2026: eraf.
+          Hij had alleen ruimte erboven en niet eronder, dus hij plakte tegen de sectie die
+          erop volgde, en hij is op deze pagina ook niet nodig: het cijfer staat al in de
+          balk bovenaan en de reviews staan op /reviews. */}
 
       {b.stappen?.length || b.inDeStoel?.length ? (
         <section
           id="afspraak"
-          className="scroll-mt-[var(--anker-offset)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
+          /* Op een vlak, want de kaarten met de stappen zijn wit en de pagina is dat
+             bijna ook. Yasin, 10 september 2026: "oogt nu te wit en saai." */
+          className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
         >
           <div className="mx-auto">
             <Label>In de afspraak</Label>
@@ -473,7 +544,7 @@ export default async function BehandelingPage({ params }: PageProps) {
                     {/* Drie regelhoogtes gereserveerd. Even lange teksten geven niet
                         vanzelf even hoge kaarten, want dat hangt af van waar de woorden
                         breken; in lh schaalt het bovendien mee met de lettergrootte. */}
-                    <p className="mt-3 min-h-[3lh] text-[15px] leading-7 text-[var(--t-body)]">
+                    <p className="mt-3 md:min-h-[3lh] text-[15px] leading-7 text-[var(--t-body)]">
                       {publicCopy(s.zin)}
                     </p>
                   </li>
@@ -506,6 +577,11 @@ export default async function BehandelingPage({ params }: PageProps) {
                   <BeeldVignet
                     src={b.fotoInDeStoel.src}
                     alt={b.fotoInDeStoel.alt}
+                    /* Zonder onderschrift geen verloop, en dan is het een kale foto in een
+                       groen vlak (Yasin, 11 september 2026: "die foto is te droog"). Niet
+                       alleen de naam, want die staat al onder de hero; hier hoort erbij dat
+                       dit de behandeling zelf is. */
+                    onderschrift={`${b.naam}, tijdens de behandeling`}
                     sizes="(min-width: 1024px) 46vw, 92vw"
                     className="aspect-[4/3] sm:aspect-[3/2] lg:aspect-auto lg:min-h-[520px]"
                   />
@@ -610,21 +686,9 @@ export default async function BehandelingPage({ params }: PageProps) {
               </div>
             </div>
 
-            <div className="mt-12">
-              <Label>Komt vaak voor bij</Label>
-              <ul className="mt-5 flex flex-wrap gap-2">
-                {(b.bijProblemen ?? []).map((p) => (
-                  <li key={p.href}>
-                    <Link
-                      href={p.href}
-                      className="diba-label inline-flex min-h-12 items-center rounded-[var(--r-pill)] bg-white px-5 text-[var(--t-label)] transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
-                    >
-                      {p.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {/* Hier stond een rij pillen "Komt vaak voor bij". Die is een eigen sectie
+                geworden, verderop, met bij elke klacht de zin die op de klachtpagina zelf
+                ook boven staat (Yasin, 10 september 2026). */}
           </div>
         </section>
       ) : null}
@@ -635,7 +699,9 @@ export default async function BehandelingPage({ params }: PageProps) {
 
       {/* Voor wie halverwege denkt: is dit het wel? Zonder dit blok is de enige uitweg
           terug naar het overzicht, waar dezelfde twijfel opnieuw begint. */}
-      <section className="px-5 pb-4 sm:px-9 lg:px-[7.5vw]">
+      {/* Even veel ruimte boven als onder. Dit blok had alleen `pb-4`, dus het plakte
+          tegen de sectie erboven en had eronder wel lucht (Yasin, 10 september 2026). */}
+      <section className="px-5 py-8 sm:px-9 sm:py-10 lg:px-[7.5vw]">
         <div className="mx-auto">
           <Link
             href="/behandeling-op-advies"
@@ -656,6 +722,65 @@ export default async function BehandelingPage({ params }: PageProps) {
           </Link>
         </div>
       </section>
+
+      {/* ── Bij welke klachten ──
+
+          Yasin, 10 september 2026: "ik mis op de behandelingenpagina's een sectie die de
+          behandeling koppelt aan de huidproblemen die ermee behandeld worden, dat is goed
+          voor de interne links en het maakt doorklikken interessant."
+
+          De koppeling zat er wel, als een rij pillen onderin de grenzensectie: een naam en
+          verder niets. Hier staat bij elke klacht de zin die op de klachtpagina zelf ook
+          bovenaan staat, zodat je weet waar je heen klikt. De zinnen komen uit
+          `BESTEMMINGEN`, dezelfde bron als de symptoomzoeker en het menu, dus ze lopen
+          niet uit elkaar.
+
+          Verwijzingen die geen klachtpagina zijn (het huidconsult, het overzicht) vallen
+          eruit: die staan elders op deze pagina al. */}
+      {klachten.length > 0 ? (
+        <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+          <div className="mx-auto">
+            <Label>Waarvoor mensen hiermee komen</Label>
+            <h2 className="diba-display-m mt-4 max-w-[22ch]">
+              De klachten waar dit{" "}
+              <span className="diba-accent">bij hoort</span>
+            </h2>
+            <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
+              Op elke klachtpagina staat wat de klacht is, wat eraan te doen is
+              en wanneer een andere aanpak meer oplevert.
+            </p>
+
+            <ul className="mt-8 grid gap-4 sm:mt-10 sm:grid-cols-2 lg:grid-cols-3">
+              {klachten.map((k) => (
+                <li key={k.href}>
+                  <Link
+                    href={k.href}
+                    className="group flex h-full flex-col rounded-[var(--r-lg)] border border-[var(--g-100)] bg-white p-6 transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:border-[var(--g-700)] hover:bg-[var(--g-025)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                  >
+                    <span className="diba-card-title text-[var(--t-strong)]">
+                      {k.label}
+                    </span>
+                    {k.zin ? (
+                      <span className="mt-3 flex-1 text-[15px] leading-7 text-[var(--t-body)] sm:min-h-[3lh]">
+                        {k.zin}
+                      </span>
+                    ) : null}
+                    <span className="diba-label mt-5 inline-flex items-center gap-1.5 text-[var(--g-700)]">
+                      Lees over {k.label.toLowerCase()}
+                      <span
+                        aria-hidden="true"
+                        className="transition-transform duration-200 group-hover:translate-x-0.5"
+                      >
+                        ›
+                      </span>
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      ) : null}
 
       {/* ── Waar we dit voor gebruiken ──
           De toepassingen van deze behandeling: dezelfde techniek, per klacht uitgeschreven.
@@ -679,7 +804,7 @@ export default async function BehandelingPage({ params }: PageProps) {
                     href={`/behandelingen/${t.behandeling}/${t.slug}`}
                     className="flex h-full flex-col rounded-[var(--r-lg)] bg-white p-6 transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:bg-[var(--g-025)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                   >
-                    <p className="diba-card-title min-h-[2lh] text-[var(--t-strong)]">
+                    <p className="diba-card-title sm:min-h-[2lh] text-[var(--t-strong)]">
                       {t.naam}
                     </p>
                     <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
@@ -720,7 +845,7 @@ export default async function BehandelingPage({ params }: PageProps) {
                       {prijsTekst(v.prijs)}
                     </span>
                   </div>
-                  <p className="mt-3 min-h-[3lh] grow text-[15px] leading-7 text-[var(--t-body)]">
+                  <p className="mt-3 md:min-h-[3lh] grow text-[15px] leading-7 text-[var(--t-body)]">
                     {waarom}
                   </p>
                   <Link
@@ -746,8 +871,14 @@ export default async function BehandelingPage({ params }: PageProps) {
           Het was bovendien een tweede kopie van PillarFaq, die datzelfde doet mét de
           indeling van de rest en de vragen ook aanmeldt bij Google. Dat laatste deden deze
           pagina's dus niet. */}
-      {b.faq?.length ? (
-        <PillarFaq items={b.faq} onderwerp={b.naam.toLowerCase()} />
+      {/* Yasin, 10 september 2026: "waarom staat er bij veelgestelde vragen maar één
+          vraag? Dat slaat nergens op, doe er minimaal drie of vier." Vijftien behandelingen
+          hadden er geen, dertien hadden er een of twee. De eigen vragen staan voorop; daarna
+          komen de vier die iedereen stelt en waarvan het antwoord al in deze pagina staat:
+          hoe lang, welke hersteltijd, hoe vaak en wat het kost. Blijft het onder de drie,
+          dan staat de sectie er niet. */}
+      {vragen.length >= 3 ? (
+        <PillarFaq items={vragen} onderwerp={b.naam.toLowerCase()} />
       ) : null}
 
       {/* ── Afsluiter ── */}
@@ -756,24 +887,36 @@ export default async function BehandelingPage({ params }: PageProps) {
           lijn van de voettekst, en dat is te veel. */}
       <section className="px-5 pt-10 sm:pt-16 sm:px-9 lg:px-[7.5vw] lg:pt-20">
         <div className="mx-auto">
-          <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
-            <Label opDonker>De eerste afspraak</Label>
-            <h2 className="diba-display-m mt-4 max-w-[22ch]">
-              Begin met een{" "}
-              <span className="diba-accent-on-dark">huidanalyse</span>
-            </h2>
-            <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-              De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast
-              wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat
-              en wat het kost. Word je in dezelfde afspraak behandeld, dan
-              vervallen de intakekosten.
-            </p>
-            <Link
-              href="/intake"
-              className="diba-label mt-8 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-            >
-              Wat er in een huidconsult gebeurt
-            </Link>
+          {/* Het blad groot en doorschijnend in de hoek, zoals in de afsluiter van
+              /behandelingen. Yasin, 10 september 2026: "dat vind ik mooi, kun je dat vaker
+              toepassen?" Hier dus ook, en op /intake, /huidprofiel en /apparatuur. */}
+          <div className="relative overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
+            <DibaLeafMark
+              aria-hidden="true"
+              className="pointer-events-none absolute -right-6 -bottom-10 h-[260px] w-[260px] -rotate-12 opacity-20"
+            />
+            <div className="relative">
+              <Label opDonker>De eerste afspraak</Label>
+              <h2 className="diba-display-m mt-4 max-w-[22ch]">
+                Begin met een{" "}
+                <span className="diba-accent-on-dark">huidanalyse</span>
+              </h2>
+              <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+                De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast
+                wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat
+                en wat het kost. Word je in dezelfde afspraak behandeld, dan
+                vervallen de intakekosten.
+              </p>
+              <Link
+                href="/intake"
+                className="diba-label mt-8 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                <span className="sm:hidden">Huidconsult</span>
+                <span className="max-sm:hidden">
+                  Wat er in een huidconsult gebeurt
+                </span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

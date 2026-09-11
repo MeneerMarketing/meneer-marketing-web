@@ -11,7 +11,6 @@ import {
   WelNiet,
 } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
-import ProofBar from "@/components/ui/ProofBar";
 import { FIGMA_INTENT_PIGMENT } from "@/data/figma-home-images";
 import {
   KRINGEN_BEOORDELING,
@@ -22,11 +21,7 @@ import {
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
-import {
-  DIBA_PROOF_STRIP_ITEMS,
-  DIBA_SITE_URL,
-  DIBA_WHATSAPP_URL,
-} from "@/lib/site";
+import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 
 /**
  * Donkere kringen — zevende eigen pagina.
@@ -83,55 +78,61 @@ export default function DonkereKringenPage() {
       />
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="py-10 sm:py-14 lg:py-20">
+      {/* Donkergroen, zoals elke andere hoofdingang van de site (Yasin, 11 september
+          2026). */}
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)]">
+        {/* Op een telefoon plakte het beeld tegen de onderrand van het groene vlak: de
+            tekstkolom bracht zijn eigen onderruimte mee, de beeldkolom niet (Yasin, 11
+            september 2026). Vanaf 1024 staan ze naast elkaar en geldt het niet. */}
+        <div className="mx-auto grid gap-6 px-5 pb-10 sm:px-9 sm:pb-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-10 lg:px-[7.5vw] lg:pb-0">
+          <div className="py-10 sm:py-14 lg:py-20 max-lg:pb-0">
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <Link href="/huidproblemen" className="hover:text-[var(--g-700)]">
+              <Link href="/huidproblemen" className="hover:text-white">
                 Huidproblemen
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Donkere kringen</span>
+              <span className="text-[var(--on-dark-body)]">
+                Donkere kringen
+              </span>
             </nav>
 
-            <h1 className="diba-display-l mt-6">
+            <h1 className="diba-display-l mt-6 text-[var(--on-dark)]">
               Donkere kringen
               <br />
-              <span className="diba-accent">onder je ogen</span>
+              <span className="diba-accent-on-dark">onder je ogen</span>
             </h1>
 
-            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Donkere kringen hebben drie mogelijke oorzaken: pigment,
               doorschijnende vaatjes of schaduw door een groef. Pigment
               behandelen we met peelings en gerichte verzorging.
             </p>
 
-            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
+            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Tijdens de intake stellen we vast om welke van de drie het gaat en
               wat daarbij past.
             </p>
 
-            <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
+            <div className="diba-knoprij mt-9">
               <Button
+                variant="primair-op-donker"
                 href="/intake"
-                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
                 kort="Plan consult"
               >
                 Plan een huidconsult
               </Button>
               <Button
                 href={DIBA_WHATSAPP_URL}
-                variant="ghost"
+                variant="secundair-op-donker"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="max-sm:w-full max-sm:justify-center max-sm:px-3"
                 kort="Stel een vraag"
               >
                 Liever eerst een vraag stellen
@@ -152,8 +153,6 @@ export default function DonkereKringenPage() {
           </div>
         </div>
       </section>
-
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
 
       <PillarNav ankers={ANKERS} />
 
@@ -180,7 +179,7 @@ export default function DonkereKringenPage() {
                 className="rounded-[var(--r-md)] bg-white p-7 sm:p-8"
               >
                 <h3 className="diba-card-title">{stap.kop}</h3>
-                <p className="mt-3 min-h-[5lh] text-[15px] leading-7 text-[var(--t-body)]">
+                <p className="mt-3 md:min-h-[5lh] text-[15px] leading-7 text-[var(--t-body)]">
                   {publicCopy(stap.tekst)}
                 </p>
               </li>
@@ -192,7 +191,7 @@ export default function DonkereKringenPage() {
       {/* ── De drie types als naslag ───────────────────────────────────── */}
       <section
         id="types"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="bg-[var(--g-025)] scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -215,7 +214,7 @@ export default function DonkereKringenPage() {
                       gaven vijf en vier regels, want het verschil zit op een woordgrens en
                       niet in de lengte. Vijf regelhoogtes gereserveerd, die meegroeien als
                       de tekst op een smal scherm meer nodig heeft. */}
-                  <p className="mt-4 min-h-[5lh] text-[15px] leading-7 text-[var(--t-body)]">
+                  <p className="mt-4 md:min-h-[5lh] text-[15px] leading-7 text-[var(--t-body)]">
                     {u.watHetIs.replace(/\[[^\]]+\]/g, "").trim()}
                   </p>
                   <p

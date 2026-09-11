@@ -129,8 +129,10 @@ export default function GentleMaxProPage() {
         </div>
       </section>
 
-      {/* ── De koeling ── */}
-      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      {/* ── De koeling ──
+          Op een vlak, want het blok "Wat je gaat voelen" erin is wit en de pagina is dat
+          bijna ook (Yasin, 11 september 2026). */}
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Label>Het derde onderdeel</Label>
@@ -164,63 +166,8 @@ export default function GentleMaxProPage() {
         </div>
       </section>
 
-      {/* ── De grenzen ── */}
-      <section className="px-5 pb-10 sm:pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
-        <div className="mx-auto">
-          <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12 lg:p-14">
-            <div className="max-w-[62ch]">
-              <Label opDonker>Wat dit apparaat niet kan</Label>
-              <h2 className="diba-display-m mt-4 max-w-[20ch]">
-                Waarvoor deze laser{" "}
-                <span className="diba-accent-on-dark">niets doet</span>
-              </h2>
-              <p className="mt-6 text-[16px] leading-7 text-[var(--on-dark-body)]">
-                De eerste hieronder is voor een deel van de mensen
-                doorslaggevend, want dan heeft de hele behandeling geen zin. Dat
-                hoor je liever nu dan na de eerste sessie.
-              </p>
-            </div>
-
-            <ul className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-2">
-              {GRENZEN.map((g) => (
-                <li
-                  key={g.kop}
-                  className="rounded-[var(--r-lg)] bg-white/10 p-7 sm:p-8"
-                >
-                  <p className="text-[18px] leading-7 font-medium">{g.kop}</p>
-                  <p className="mt-3 text-[15px] leading-7 text-[var(--on-dark-body)]">
-                    {g.zin}
-                  </p>
-                </li>
-              ))}
-            </ul>
-
-            {/* Okan, 5 september 2026: hier hoort de doorverwijzing naar elektrische
-                epilatie. Dit is precies het moment waarop iemand leest dat de laser bij
-                hem niets doet, en dan is "dan kan het niet" het verkeerde einde van het
-                verhaal: voor grijs en licht haar bestaat er wel een methode. */}
-            <div className="mt-10 max-w-[62ch]">
-              <p className="text-[15px] leading-7 text-[var(--on-dark-body)]">
-                Twijfel je of jouw haar genoeg pigment heeft, dan is dat bij de
-                intake in één blik te zien. Dat kost je een afspraak en geen
-                traject.
-              </p>
-              <p className="mt-4 text-[15px] leading-7 text-[var(--on-dark-body)]">
-                Blijkt het te licht, dan houdt het niet op. Bij elektrische
-                epilatie gaat er een naaldje langs de haar naar de wortel en
-                doet de kleur er niet toe. Dat werkt ook op de losse haren die
-                na een laserkuur blijven staan.
-              </p>
-              <Link
-                href="/behandelingen/elektrische-epilatie"
-                className="diba-label mt-6 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-              >
-                Over elektrische epilatie
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hier stond "Wat dit apparaat niet kan". Yasin, 10 september 2026: die sectie
+          mag helemaal uit de site. */}
 
       {/* ── Door naar de behandeling ── */}
       <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">

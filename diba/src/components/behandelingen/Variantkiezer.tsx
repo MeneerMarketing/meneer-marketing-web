@@ -57,7 +57,7 @@ export default function Variantkiezer({ varianten, basisprijs }: Props) {
         <span className="diba-label diba-label-on-dark">
           {varianten.length === 1
             ? "Per sessie"
-            : `Per sessie · ${varianten.length} varianten`}
+            : `Per sessie, ${varianten.length} varianten`}
         </span>
         <span className="diba-card-title text-right tabular-nums">
           {prijsTekst(actief.prijs)}

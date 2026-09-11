@@ -3,10 +3,9 @@ import Link from "next/link";
 import { Suspense } from "react";
 import Configurator from "@/components/laser/Configurator";
 import Label from "@/components/ui/Label";
-import ProofBar from "@/components/ui/ProofBar";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { VOORLOPIGE_PRIJZEN } from "@/data/laser-zones";
-import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
+import { DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
 
 /**
@@ -113,8 +112,6 @@ export default function LaserConfiguratorPage() {
           </div>
         </div>
       </section>
-
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
 
       {/* ── De configurator ── */}
       <section className="bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">

@@ -11,14 +11,9 @@ import {
 } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
-import ProofBar from "@/components/ui/ProofBar";
 import { ECZEEM_FAQ, ECZEEM_WEL_NIET, VERWAR_NIET } from "@/data/eczeem";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import {
-  DIBA_PROOF_STRIP_ITEMS,
-  DIBA_SITE_URL,
-  DIBA_WHATSAPP_URL,
-} from "@/lib/site";
+import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
 import LeesVerder from "@/components/ui/LeesVerder";
 
@@ -123,8 +118,6 @@ export default function EczeemPage() {
         </div>
       </section>
 
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
-
       <PillarNav ankers={ANKERS} />
 
       {/* ── De krabcirkel: de uitblinker ── */}
@@ -146,7 +139,7 @@ export default function EczeemPage() {
       {/* ── Of is het iets anders ── */}
       <section
         id="verwar"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="bg-[var(--g-025)] scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -188,7 +181,7 @@ export default function EczeemPage() {
       <PillarFaq items={ECZEEM_FAQ} onderwerp="eczeem" />
 
       {/* ── Afsluiting zonder afspraakknop ── */}
-      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-050)] px-7 py-10 sm:py-14 sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+      <section className="mx-5 mt-16 mb-5 rounded-[var(--r-xl)] lg:mt-20 bg-[var(--g-050)] px-7 py-10 sm:py-14 sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
         <div className="mx-auto">
           <Label>Waar je wel heen gaat</Label>
           <h2 className="diba-display-s mt-5 max-w-[22ch]">

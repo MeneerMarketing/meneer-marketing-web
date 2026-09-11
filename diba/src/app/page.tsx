@@ -14,7 +14,7 @@ export const metadata: Metadata = zoekmachineVelden({
     "Huidkliniek in Rotterdam. We meten je huid, leggen uit wat er in jouw geval mogelijk is en wat het oplevert. Prijzen vooraf online.",
 });
 
-/** Homepage = de Figma-hero met de Figma-secties. */
+/** Homepage = de schermvullende video-hero met de Figma-secties. */
 export default function HomePage() {
   return (
     <>
@@ -28,7 +28,9 @@ export default function HomePage() {
       />
       {/* De huidwensen met hun behandelingen worden hier, op de server, samengesteld en
           als kale props doorgegeven: de behandelingendata blijft uit de browser. */}
-      <FigmaHomeApp wensen={homeWensen()} />
+      {/* Goedgekeurd op 11 september 2026: de schermvullende hero die op /home-variant
+          stond staat vanaf nu hier. */}
+      <FigmaHomeApp hero="schermvullend" wensen={homeWensen()} />
     </>
   );
 }

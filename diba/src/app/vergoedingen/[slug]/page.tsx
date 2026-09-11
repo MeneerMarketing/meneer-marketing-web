@@ -104,16 +104,6 @@ export default async function InsurerPage({ params }: PageProps) {
               <span className="text-[var(--on-dark-body)]">{insurer.name}</span>
             </nav>
 
-            {/* Op het donkere vlak krijgt het logo een wit plaatje: de meeste verzekeraars
-                voeren donkere kleuren en zouden anders in het groen verdwijnen. */}
-            <div className="mt-6 inline-flex rounded-[var(--r-sm)] bg-white px-4 py-3">
-              <VerzekeraarLogo
-                verzekeraar={insurer}
-                hoogte={44}
-                breedte={120}
-              />
-            </div>
-
             <h1 className="diba-display-l mt-5 max-w-[15ch]">
               {insurer.name}:
               <br />
@@ -132,7 +122,18 @@ export default async function InsurerPage({ params }: PageProps) {
             </p>
           </div>
 
-          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
+          {/* Het logo stond op het groen, op een wit vlakje omdat de meeste verzekeraars
+              donkere kleuren voeren. Yasin, 10 september 2026: "dat witte vlak eromheen is
+              lelijk, gewoon logo only." In wit hertekenen hielp niet: het merk van CZ is een
+              hart met de letters eruit gespaard, en dat wordt dan een witte vlek. Dus staat
+              het waar het zonder vlak kan: bovenin de kaart die hier toch al wit is. */}
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 text-[var(--t-strong)] sm:p-10">
+            <VerzekeraarLogo
+              verzekeraar={insurer}
+              hoogte={40}
+              breedte={132}
+              className="mb-6"
+            />
             <Label>Bij {insurer.name} zelf</Label>
             <p className="mt-5 text-[17px] leading-8 text-[var(--t-body)]">
               {insurer.waarTeVinden}
@@ -293,21 +294,32 @@ export default async function InsurerPage({ params }: PageProps) {
           verzekeraar-specifiek — hij geldt voor alle zes — en het hele verhaal staat al op
           /vergoedingen. Zes keer dezelfde tekst onder zes koppen is de doorslagpagina die
           de huisregels verbieden, en de link naar het origineel stond er al onder. */}
+      {/* Yasin, 10 september 2026: "die sectie is helemaal leeg, alleen een tekstje in het
+          midden." Klopte: een alinea van tweeënzestig tekens breed in een sectie over de
+          volle breedte is een zin die in een leeg vlak hangt. De inhoud blijft, want die
+          vraag komt vóór alle andere; hij staat nu in de twee kolommen die de rest van deze
+          pagina ook aanhoudt, met de kop links en het antwoord rechts. */}
       <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto max-w-[62ch]">
-          <Label>Voordat je belt</Label>
-          <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-            Eén vraag komt hier nog vóór: of er een medische reden is. Zonder
-            die reden vergoedt geen enkele verzekeraar iets, ook {insurer.name}{" "}
-            niet, en voor het grootste deel van wat wij doen is dat het
-            antwoord.
-          </p>
-          <Link
-            href="/vergoedingen"
-            className="diba-label mt-6 inline-flex min-h-11 items-center text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
-          >
-            De hele route, met wat er gebeurt als het antwoord nee is
-          </Link>
+        <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+          <div>
+            <Label>Voordat je belt</Label>
+            <h2 className="diba-display-m mt-4 max-w-[16ch]">
+              Eén vraag komt <span className="diba-accent">hiervoor.</span>
+            </h2>
+          </div>
+          <div className="max-w-[58ch]">
+            <p className="text-[17px] leading-8 text-[var(--t-body)]">
+              Is er een medische reden voor je klacht? Zonder die reden vergoedt
+              geen enkele verzekeraar iets, ook {insurer.name} niet, en voor het
+              grootste deel van wat wij doen is dat het antwoord.
+            </p>
+            <Link
+              href="/vergoedingen"
+              className="diba-label mt-6 inline-flex min-h-11 items-center text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+            >
+              De hele route, met wat er gebeurt als het antwoord nee is
+            </Link>
+          </div>
         </div>
       </section>
 

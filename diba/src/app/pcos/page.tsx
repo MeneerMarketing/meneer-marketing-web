@@ -246,7 +246,7 @@ export default function PcosPage() {
                   href="/behandelingen"
                   className="diba-label mt-8 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white"
                 >
-                  Bekijk wat we wel behandelen
+                  Wat we wel doen
                 </Link>
               </div>
 

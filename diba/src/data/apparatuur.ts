@@ -212,7 +212,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       {
         vraag: "Waarom niet gewoon een foto met de telefoon?",
         antwoord:
-          "Omdat die niet met een vorige te vergelijken is. Andere afstand, ander licht, andere hoek — en dan weet je na acht weken nog steeds niet of er iets veranderd is of dat de zon anders stond.",
+          "Omdat die niet met een vorige te vergelijken is. Andere afstand, ander licht, andere hoek – en dan weet je na acht weken nog steeds niet of er iets veranderd is of dat de zon anders stond.",
       },
       {
         vraag: "Wat zie ik onder UV dat ik anders niet zie?",
@@ -237,7 +237,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     },
     naam: "EVE-M",
     categorie: "meten",
-    kort: "Het apparaat waarmee de huidtherapeut je huid vastlegt en meet, onder licht dat elke keer hetzelfde is.",
+    kort: "Legt je huid vast onder licht dat elke keer hetzelfde is, en meet pigment, roodheid, poriën en vocht. Zo is vooruitgang te zien.",
     wat: "De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het blote oog niet altijd te zien is: beginnende pigmentatie, vochttekort, poriestructuur en tekenen van huidveroudering. Verschillende huidlagen worden geanalyseerd, en door de meting te herhalen wordt voortgang objectief zichtbaar. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Vastleggen wat er nu is, op een manier die over maanden nog vergelijkbaar is",
@@ -305,7 +305,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     naam: "Fotona TimeWalker",
     merk: "Fotona",
     categorie: "laser",
-    kort: "Een laser die op meerdere dieptes werkt. Hij draagt de behandelingen 4D, SmoothEye, LipLase, VectorLift en NightLase.",
+    kort: "Een laser die op meerdere dieptes werkt, van een oppervlakkige peel tot diep in de lederhuid. Eén apparaat, een reeks protocollen.",
     wat: "Een laserplatform dat huidveroudering op meerdere niveaus aanpakt: van binnenuit door de mondholte en van buitenaf over de huid. Elke behandeling op dit apparaat mikt op één ding, en daarom er meerdere namen op staan. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Verslapping en volumeverlies aanpakken zonder injectables",
@@ -410,7 +410,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     naam: "GentleMax Pro",
     merk: "Candela",
     categorie: "laser",
-    kort: "De laser die we voor ontharing gebruiken. Hij mikt op het pigment in de haarwortel, en de huid eromheen wordt gekoeld.",
+    kort: "De laser voor ontharing. Hij mikt op het pigment in de haarwortel en koelt de huid eromheen, met twee golflengtes voor elk huidtype.",
     wat: "Een laser die ongewenste haargroei bij de kern aanpakt, ingegroeide haren en irritatie vermindert en zorgt voor een langdurig gladde en rustige huid. Wat de energie opneemt warmt op, de rest niet. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Haargroei op vrijwel elke zone van het lichaam",
@@ -465,7 +465,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       {
         vraag: "Is IPL hetzelfde als laser?",
         antwoord:
-          "Nee. Een laser zendt één golflengte uit, IPL een band. Die band raakt daardoor meerdere dingen tegelijk — roodheid, vaatjes en oppervlakkig pigment — en komt gemiddeld minder diep.",
+          "Nee. Een laser zendt één golflengte uit, IPL een band. Die band raakt daardoor meerdere dingen tegelijk – roodheid, vaatjes en oppervlakkig pigment – en komt gemiddeld minder diep.",
       },
       {
         vraag: "Waarom wordt een vlek eerst donkerder?",
@@ -507,7 +507,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       "Eén specifiek plekje; daar is een laser preciezer voor",
       "Elk huidtype [MEDISCHE-CHECK-ROJDA]",
     ],
-    behandelingen: ["nordlys-ipl"],
+    behandelingen: ["nordlys-pigment", "nordlys-roodheid"],
 
     werkwijze: "licht",
     doelwit: "bloedvat",
@@ -588,7 +588,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     merk: "Skin Complete",
     merkUrl: "https://skincomplete.eu",
     categorie: "licht",
-    kort: "LED-licht in meerdere golflengtes, elk met een eigen diepte in de huid. Zonder naalden, zuren of hersteltijd.",
+    kort: "LED-licht in meerdere golflengtes, elk met een eigen diepte in de huid. Zonder naalden, zonder zuren en zonder hersteltijd.",
     wat: "Het LED-systeem van Skin Complete waar wij mee werken. Het licht wordt door de huid opgenomen en ondersteunt daar het herstel; de behandelaar kiest de golflengte en de tijd op basis van de huidanalyse. Meestal aansluitend op een andere behandeling, en bij roodheid of rosacea ook als losse reeks. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Roodheid en rosacea rustiger maken [MEDISCHE-CHECK-ROJDA]",
@@ -668,7 +668,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     naam: "Hydrafacial syndeo",
     merk: "HydraFacial",
     categorie: "overig",
-    kort: "Reinigen, exfoliëren, poriën leegzuigen en voeden gebeuren hier in één doorgang, met hetzelfde handstuk.",
+    kort: "Reinigen, exfoliëren, poriën leegzuigen en voeden gebeuren in één doorgang, met hetzelfde handstuk en zonder hersteltijd.",
     wat: "Een apparaat dat in één behandeling reinigt, de bovenste laag losmaakt, poriën leegzuigt en er daarna werkzame stoffen in brengt. Het blijft aan de oppervlakte, en juist daarom zie je het meteen en merk je er verder niets van. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Een huid die er meteen frisser uit moet zien",
@@ -820,7 +820,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     naam: "SkinPen CIT",
     merk: "SkinPen",
     categorie: "needling",
-    kort: "Deze medisch gecertificeerde microneedlingbehandeling werkt met gecontroleerde prikjes in de huid.",
+    kort: "Medisch gecertificeerde microneedling: gecontroleerde prikjes op een ingestelde diepte, die de huid aanzetten tot herstel.",
     wat: "Met fijne naalden worden kanaaltjes tot in de bovenste lederhuid gemaakt. De huid reageert daarop met herstel en collageenaanmaak; dat herstel is het doel, de prikjes zijn de aanleiding. Daarom duurt het weken voor je iets ziet. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Littekens die door verlies van structuur zijn ontstaan",
@@ -980,7 +980,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     naam: "U225 intradermale injector",
     merk: "U225",
     categorie: "injectie",
-    kort: "Brengt werkzame stoffen in de huid in plaats van erop, automatisch en regelmatig.",
+    kort: "Brengt werkzame stoffen in de huid in plaats van erop. De injector werkt automatisch, dus elke prik komt op dezelfde diepte.",
     wat: "Bij mesotherapie worden werkzame stoffen direct in de huid gebracht. De U225 doet dat automatisch en regelmatig; de naald zit los van de spuit gemonteerd, wat de precisie van de toediening verbetert. Er zijn verschillende skinboosters, ook een depigmentatiebooster voor gezicht, hals en décolleté. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Fijne lijnen en verslapping",
@@ -1062,7 +1062,7 @@ export const APPARATUUR: readonly Apparaat[] = [
     naam: "Dermaplane pro",
     merk: "DermaplanePro",
     categorie: "overig",
-    kort: "Een chirurgisch mesje onder 45 graden. Geen zuren, dus ook bij een gevoelige huid.",
+    kort: "Een chirurgisch mesje onder 45 graden haalt dode cellen en fijne haartjes weg. Geen zuren, dus ook bij een gevoelige huid.",
     wat: "Dode huidcellen en donshaartjes worden verwijderd met een chirurgisch mesje onder een hoek van 45 graden. Er komen geen zuren aan te pas, waardoor het ook kan bij een gevoelige, droge of allergische huid en tijdens de zwangerschap. Het is pijnloos en het resultaat is meteen zichtbaar. [MEDISCHE-CHECK-ROJDA]",
     waarvoor: [
       "Een direct gladde, egale huid",
@@ -1155,7 +1155,7 @@ export const APPARATUUR: readonly Apparaat[] = [
       "Zwangerschap en borstvoeding [MEDISCHE-CHECK-ROJDA]",
       "Vlak voor veel zon [MEDISCHE-CHECK-ROJDA]",
     ],
-    behandelingen: ["peelings", "cosmelan-dermamelan", "happy-intim"],
+    behandelingen: ["peelings", "cosmelan", "dermamelan", "happy-intim"],
 
     werkwijze: "chemisch",
     doelwit: "hoornlaag",

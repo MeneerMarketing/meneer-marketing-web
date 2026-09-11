@@ -326,12 +326,9 @@ export function WijZeggenNee({
           ))}
         </ul>
 
-        <p className="diba-label diba-label-on-dark mt-10">
-          Dit staat ook in ons verbond ·{" "}
-          <Link href="/ons-verbond" className="underline underline-offset-4">
-            lees de tien weigeringen
-          </Link>
-        </p>
+        {/* Hier stond een verwijzing naar /ons-verbond. Die pagina is op 10 september 2026
+            weggehaald; wat er stond hoort per klacht op de klachtpagina zelf, en daar staat
+            het ook. */}
       </div>
     </section>
   );
@@ -467,21 +464,38 @@ export function PillarFaq({
         </div>
 
         <div className="space-y-2">
-          {items.map((item) => (
+          {items.map((item, i) => (
             <details
               key={publicCopy(item.vraag)}
-              className="group rounded-[var(--r-md)] bg-white px-6 py-5"
+              open={i === 0}
+              className="group rounded-[var(--r-md)] bg-white px-6 py-3"
             >
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-xl tracking-[-.035em]">
+              {/* Dezelfde maten en dezelfde letter als `FaqAccordion`, die op /tarieven en
+                  /behandeling-op-advies staat. Yasin, 10 september 2026: "het moet overal
+                  gewoon hetzelfde zijn." Het opschrift stond hier op twintig pixels en
+                  daar op zestien; op een telefoon brak twintig over twee regels en werd
+                  het vak een kwart hoger. */}
+              <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 text-[16px] leading-[1.4] font-medium">
                 <span>{item.vraag}</span>
                 <span
-                  className="grid h-8 w-8 shrink-0 place-items-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)] transition group-open:rotate-45"
+                  className="grid h-8 w-8 shrink-0 place-items-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)]"
                   aria-hidden="true"
                 >
-                  +
+                  <svg
+                    aria-hidden="true"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 18 18"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                  >
+                    <path d="M2 9h14" />
+                    <path d="M9 2v14" className="group-open:opacity-0" />
+                  </svg>
                 </span>
               </summary>
-              <p className="max-w-[68ch] pt-4 text-[15px] leading-7 text-[var(--t-body)]">
+              <p className="max-w-[68ch] pt-4 pb-2 text-[15px] leading-7 text-[var(--t-body)]">
                 {publicCopy(item.antwoord)}
               </p>
             </details>

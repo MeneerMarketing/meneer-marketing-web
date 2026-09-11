@@ -11,9 +11,10 @@ import { zoekmachineVelden } from "@/lib/seo";
  *
  * WAAROM HIER GEEN TWEEDE MANIFEST MEER STAAT.
  *
- * Deze pagina had vijf regels met bij elke regel wat die ons kost, en /ons-verbond heeft
- * er tien ("Tien dingen die wij niet doen"). Twee manifesten dus, waarvan dit het
- * stelligste was. Yasin was daar duidelijk over: die toon hoort alleen in het verbond.
+ * Deze pagina had vijf regels met bij elke regel wat die ons kost, en /ons-verbond had er
+ * tien ("Tien dingen die wij niet doen"). Twee manifesten dus, waarvan dit het stelligste
+ * was. Yasin wilde die toon hier niet, en op 10 september 2026 ging /ons-verbond er in zijn
+ * geheel af ("te veel en te overdreven").
  *
  * Met 64 ontkenningen per 1000 woorden was dit ook de zwaarste pagina van de site die geen
  * juridische tekst is, terwijl "Ons verhaal" nu juist de plek is waar iemand komt kijken
@@ -188,14 +189,17 @@ export default function OnsVerhaalPage() {
       ) : null}
 
       {/* ── De andere vier ── */}
-      {/* Vijf punten op een rij blijft een abstract verhaal. Dit is waar het in de praktijk
-          gebeurt: twee behandelaars die samen besluiten wat er meegaat. */}
-      <section className="px-5 pb-10 sm:pb-14 sm:px-9 lg:px-[7.5vw] lg:pb-16">
+      {/* Vijf punten op een rij blijft een abstract verhaal; dit is waar het in de praktijk
+          gebeurt. Het bijschrift stond op "Wat er wel en niet in huis komt", en dat gaat over
+          inkoop terwijl de sectie eronder over onze regels gaat, en je op de foto twee
+          behandelaars ziet die samen een doosje bekijken. Yasin, 10 september 2026: "die
+          tekst komt niet overeen en is zweverig." Nu staat er wat je ziet. */}
+      <section className="px-5 py-10 sm:px-9 sm:py-14 lg:px-[7.5vw] lg:py-16">
         <div className="mx-auto">
           <BeeldVignet
             src="/images/shoot/team-producten-overleg.jpg"
             alt="Twee behandelaars bekijken samen een verpakking in de kliniek"
-            onderschrift="Wat er wel en niet in huis komt"
+            onderschrift="Een nieuw product, eerst zelf bekeken"
             sizes="(min-width: 1024px) 86vw, 92vw"
             className="aspect-[16/10] lg:aspect-[2/1]"
           />

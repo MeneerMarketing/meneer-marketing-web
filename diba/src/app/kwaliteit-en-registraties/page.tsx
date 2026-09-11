@@ -177,19 +177,23 @@ export default function KwaliteitPage() {
         </nav>
 
         <div className="mt-6 grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-end lg:gap-16">
+          {/* Yasin, 10 september 2026: "maak deze hero gewoon over onze kwaliteit en
+              registraties, niet 'waar je ons op kunt aanspreken' alsof we bewijsdrang
+              hebben." De oude tekst begon bij wat er in Nederland allemaal mag en kwam pas
+              in de tweede alinea bij ons uit. Nu staat er meteen wat er te zien is. */}
           <h1 className="diba-display-l max-w-[15ch]">
-            Waar je ons{" "}
-            <span className="diba-accent-on-dark">op kunt aanspreken</span>
+            Kwaliteit en{" "}
+            <span className="diba-accent-on-dark">registraties</span>
           </h1>
           <div>
             <p className="max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
-              Iedereen mag in Nederland een huidkliniek beginnen. Wat een
-              kliniek onderscheidt is dus niet wat zij zelf zegt, maar bij welke
-              regels zij zich heeft laten aansluiten en wie daarop toeziet.
+              Onze huidtherapeuten staan in het Kwaliteitsregister Paramedici en
+              zijn lid van de beroepsvereniging. De kliniek is aangesloten bij
+              ANBOS en gecontracteerd bij alle zorgverzekeraars.
             </p>
             <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
-              Hieronder staat waar we bij aangesloten zijn, wat dat inhoudt, wat
-              je eraan hebt en hoe een klacht loopt.
+              Hieronder staat per register wat het inhoudt en hoe je het zelf
+              kunt nakijken.
             </p>
           </div>
         </div>
@@ -228,7 +232,10 @@ export default function KwaliteitPage() {
                     />
                   </span>
                 ) : null}
-                <p className="diba-card-title mt-3 min-h-[2lh] text-[var(--t-strong)]">
+                {/* De gereserveerde twee regels lijnen de teksten van drie kaarten naast elkaar
+                    uit. Onder `md` staat er maar een kaart per rij, en dan is die reserve
+                    een gat tussen de naam en de eerste zin (Yasin, 10 september 2026). */}
+                <p className="diba-card-title mt-3 text-[var(--t-strong)] md:min-h-[2lh]">
                   {r.naam}
                 </p>
                 <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
@@ -300,97 +307,6 @@ export default function KwaliteitPage() {
               </dd>
             </div>
           </dl>
-        </div>
-      </section>
-
-      {/* ── Klachten ── */}
-      <section
-        id="klachten"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24"
-      >
-        <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
-          <div>
-            <Label>Als het misgaat</Label>
-            <h2 className="diba-display-m mt-4 max-w-[18ch]">
-              Een klacht gaat{" "}
-              <span className="diba-accent">niet alleen langs ons</span>
-            </h2>
-            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-              De Wet kwaliteit, klachten en geschillen zorg verplicht elke
-              zorgaanbieder tot een klachtenregeling, een klachtenfunctionaris
-              en aansluiting bij een erkende geschilleninstantie. Sinds 2016
-              geldt dat ook voor cosmetische behandelingen. Wij vallen onder de
-              klachtenregeling van ANBOS; zo loopt die.
-            </p>
-            <Link
-              href="/contact"
-              className="diba-label mt-8 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
-            >
-              Neem contact op
-            </Link>
-          </div>
-          <ol className="grid gap-4">
-            {KLACHTROUTE.map((stap, i) => (
-              <li
-                key={stap.kop}
-                className="flex gap-5 rounded-[var(--r-lg)] bg-white p-6 sm:p-7"
-              >
-                <span
-                  aria-hidden="true"
-                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--g-700)] text-[14px] font-semibold text-white tabular-nums"
-                >
-                  {i + 1}
-                </span>
-                <div className="min-w-0">
-                  <p className="text-[17px] leading-6 font-medium text-[var(--t-strong)]">
-                    {stap.kop}
-                  </p>
-                  <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
-                    {stap.tekst}
-                  </p>
-                  {"link" in stap ? (
-                    <a
-                      href={stap.link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="diba-label mt-3 inline-block text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)]"
-                    >
-                      {stap.link.label}
-                    </a>
-                  ) : null}
-                </div>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
-
-      {/* ── Geen logo's ── */}
-      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
-        <div className="mx-auto rounded-[var(--r-lg)] bg-[var(--g-050)] p-8 sm:p-10">
-          <Label>Waarom hier geen logo&apos;s staan</Label>
-          <p className="diba-card-title mt-3 text-[var(--t-strong)]">
-            Een keurmerk zegt pas iets als je weet wat erachter zit
-          </p>
-          <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Daarom staat hierboven per register wat het inhoudt en wat de
-            drempel ervoor is, in plaats van een rij plaatjes. Dat kun je
-            nakijken; een plaatje niet.
-          </p>
-          <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
-            <Link
-              href="/team"
-              className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
-            >
-              Wie er werkt en met welke titel
-            </Link>
-            <Link
-              href="/partners"
-              className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
-            >
-              De merken waarmee we werken
-            </Link>
-          </div>
         </div>
       </section>
     </main>

@@ -21,9 +21,11 @@ import LeesVerder from "@/components/ui/LeesVerder";
  * WAT IK CONTROLEERDE VOORDAT IK IETS SCHREEF.
  *
  * Hier stond een algemeen verhaal over gegevens die "u zelf invult". Dat klopte niet met de
- * code: deze site heeft geen enkel formulier. De enige e-mailvelden staan op /dev/components
- * (een componentenetalage) en de enige API-route is de preview-login. Er is niets dat
- * bezoekersgegevens naar een server stuurt.
+ * code: deze site had toen geen enkel formulier.
+ *
+ * Sinds /contact een contactformulier heeft, klopt dat andersom niet meer. Er is nu precies
+ * één plek waar een bezoeker gegevens naar ons stuurt, en die staat hieronder als eerste
+ * genoemd. De rest is ongewijzigd: de cookiekeuze en het huidprofiel blijven in de browser.
  *
  * Wat er wél is, is twee dingen in localStorage: de cookiekeuze en het huidprofiel. Dat
  * laatste zijn keuzes uit lijstjes, geen naam en geen mailadres, en het blijft in de browser
@@ -84,8 +86,18 @@ const PLEKKEN = [
   {
     plek: "Deze website",
     van: "Ons",
-    wat: "Twee dingen, en allebei blijven ze in je eigen browser: de keuze die je op de cookiebalk maakt, en het huidprofiel als je dat invult. Dat profiel bestaat uit keuzes uit lijstjes, zonder naam, mailadres of foto.",
-    heen: "Nergens heen. Er is op deze site geen formulier en geen server die dit ontvangt. Wis je je browsergegevens, dan is het weg.",
+    wat: "De keuze die je op de cookiebalk maakt en het huidprofiel als je dat invult. Allebei blijven ze in je eigen browser; dat profiel bestaat uit keuzes uit lijstjes, zonder naam, mailadres of foto.",
+    heen: "Nergens heen. Wis je je browsergegevens, dan is het weg.",
+    hier: true,
+  },
+  {
+    plek: "Het contactformulier",
+    van: "Deze website",
+    wat: "Je naam, je mailadres, je telefoonnummer als je dat invult, het onderwerp dat je kiest en je bericht. Alleen als je dat formulier zelf verstuurt.",
+    /* [BESLUIT-OKAN: klopt het dat die mails alleen in de mailbox blijven en niet in een
+       systeem of lijst terechtkomen?] De vlag staat hier en niet in de zin zelf: `heen`
+       wordt rechtstreeks getoond en een vlag in die tekst belandt op het scherm. */
+    heen: "Als mail naar de kliniek, verstuurd door Resend als verwerker. We bewaren het bericht in onze mailbox en zetten het niet in een systeem of een lijst.",
     hier: true,
   },
   {
@@ -209,13 +221,14 @@ export default function PrivacyPage() {
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
-              Er staat geen enkel formulier op {DIBA_SITE.domain}. Geen
-              nieuwsbrief, geen contactformulier, geen veld waar je je mailadres
-              achterlaat. Er is dus ook niets dat naar ons toe gestuurd wordt.
+              Op {DIBA_SITE.domain} staat één formulier, op de contactpagina.
+              Wat je daar invult komt als mail bij ons binnen en verder nergens.
+              Geen nieuwsbrief, geen profiel dat we aanleggen, geen veld dat
+              stiekem iets anders doet.
             </p>
             <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
-              Dat betekent niet dat er nergens gegevens van je zijn. Ze staan
-              alleen ergens anders, en hieronder staat waar.
+              De meeste gegevens van je staan trouwens ergens anders dan op deze
+              site. Hieronder staat waar, en wat daar gebeurt.
             </p>
           </div>
 

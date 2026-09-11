@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import ProfielBouwer from "@/components/huidprofiel/ProfielBouwer";
-import Reviewregel from "@/components/reviews/Reviewregel";
 import { PROFIEL_ONDERDELEN, telwoord } from "@/data/huidprofiel";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
@@ -48,29 +47,32 @@ export default function HuidprofielPage() {
           over de volle breedte op 2:1; die kostte een half scherm en zei hetzelfde als de
           tekst ernaast. Nu staat hij náást de tekst, staand, in het formaat waar een
           rechterkolom om vraagt. */}
-      <section className="mx-auto px-5 pt-10 pb-12 sm:px-9 lg:px-[7.5vw] lg:pt-12 lg:pb-16">
-        <div className="grid items-center gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
+      {/* Donkergroen, net als de hero van /behandelingen en /tarieven (Yasin, 10 september
+          2026). Dit was de laatste grote pagina met een witte kop, en dan begint de site
+          op elke ingang anders. */}
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)]">
+        <div className="mx-auto grid items-center gap-6 px-5 pt-10 pb-12 sm:px-9 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14 lg:px-[7.5vw] lg:pt-12 lg:pb-16">
           <div>
             <nav
               aria-label="Kruimelpad"
-              className="diba-label flex flex-wrap gap-2"
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
-              <Link href="/" className="hover:text-[var(--g-700)]">
+              <Link href="/" className="hover:text-white">
                 Home
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--t-muted)]">Je huidprofiel</span>
+              <span className="text-[var(--on-dark-body)]">Je huidprofiel</span>
             </nav>
 
             {/* Het aantal komt uit PROFIEL_ONDERDELEN en staat hier niet als woord:
                 er kwam een negende vraag bij en de kop bleef "in acht stappen" staan. */}
-            <h1 className="diba-display-l mt-6 max-w-[15ch]">
+            <h1 className="diba-display-l mt-6 max-w-[15ch] text-[var(--on-dark)]">
               Stel je huidprofiel
               <br />
-              <span className="diba-accent">samen</span>
+              <span className="diba-accent-on-dark">samen</span>
             </h1>
 
-            <p className="mt-6 max-w-[50ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-6 max-w-[50ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               {telwoord(PROFIEL_ONDERDELEN).replace(/^./, (c) =>
                 c.toUpperCase(),
               )}{" "}
@@ -100,14 +102,14 @@ export default function HuidprofielPage() {
                     viewBox="0 0 18 18"
                     className="mt-1 shrink-0"
                     fill="none"
-                    stroke="var(--g-700)"
+                    stroke="var(--on-dark-accent)"
                     strokeWidth="1.6"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
                     <path d="M3.5 9.5 7 13l7.5-8" />
                   </svg>
-                  <span className="text-[16px] leading-7 text-[var(--t-body)]">
+                  <span className="text-[16px] leading-7 text-[var(--on-dark-body)]">
                     {regel}
                   </span>
                 </li>
@@ -116,33 +118,31 @@ export default function HuidprofielPage() {
 
             {/* Waarom je dit vooraf doet, in één zin met drie voorbeelden. Kort genoeg om
                 ook op een telefoon te blijven staan. */}
-            <p className="mt-6 max-w-[50ch] text-[17px] leading-8 text-[var(--t-body)]">
+            <p className="mt-6 max-w-[50ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               Retinol, zwangerschap, een gebruinde huid: je ziet het hier
               meteen, niet pas aan de balie.
             </p>
 
-            <div className="mt-8 flex flex-wrap items-center gap-3 max-sm:grid max-sm:grid-cols-2">
+            {/* De regel "blijft in je eigen browser, geen account" en de reviewregel
+                stonden hier ook. Yasin, 10 september 2026: allebei eraf. Dat het profiel
+                in je browser blijft staat in de bouwer zelf, op het moment dat je begint
+                met invullen; daar telt het, hier is het een voorbehoud vooraf. */}
+            <div className="mt-8 diba-knoprij">
               <Link
                 href="#profiel"
-                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] max-sm:justify-center max-sm:px-3 transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                className="diba-label inline-flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 <span className="sm:hidden">Begin</span>
                 <span className="max-sm:hidden">Begin bij de eerste vraag</span>
               </Link>
               <Link
                 href="/intake"
-                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-[var(--g-200)] px-6 max-sm:justify-center max-sm:px-3 text-[var(--t-strong)] transition-colors hover:border-[var(--g-700)] hover:bg-[var(--g-025)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                className="diba-label inline-flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] border border-white/50 px-6 text-white transition-colors hover:border-white hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 <span className="sm:hidden">Hoe het werkt</span>
                 <span className="max-sm:hidden">Zo werkt het huidconsult</span>
               </Link>
             </div>
-
-            <p className="diba-label mt-6 text-[var(--t-muted)]">
-              Blijft in je eigen browser &middot; Geen account
-            </p>
-
-            <Reviewregel className="mt-6 max-w-[52ch]" keuze={2} />
           </div>
 
           {/* Staande foto in een staande kolom. Dezelfde behandelaar met dezelfde tablet

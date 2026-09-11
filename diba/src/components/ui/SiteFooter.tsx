@@ -2,10 +2,12 @@ import Link from "next/link";
 import DibaLogo from "@/components/ui/DibaLogo";
 import {
   DIBA_ADDRESS,
+  DIBA_BOUWER,
   DIBA_INSTAGRAM_URL,
   DIBA_SITE,
   DIBA_TELEFOON,
   DIBA_TELEFOON_HREF,
+  DIBA_WHATSAPP_URL,
 } from "@/lib/site";
 import { figmaInnerContainer } from "@/lib/figma-inner-layout";
 import VoetKolommen from "@/components/ui/VoetKolommen";
@@ -46,6 +48,18 @@ const kolomLabel =
 
 const kolomLink =
   "inline-block text-[13px] leading-6 text-[var(--t-body)] transition hover:text-[var(--g-700)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]";
+
+const balkTekst =
+  "text-[10px] font-medium uppercase tracking-[.13em] text-[var(--t-muted)]";
+
+/**
+ * De knopjes onder het logo: adres, telefoon, WhatsApp en Instagram.
+ *
+ * Een rand en geen vulling, want de voettekst werkt met ruimte en haarlijnen en niet met
+ * vlakken. `min-h-11` haalt de tikmaat zonder dat het knoppen worden.
+ */
+const voetPil =
+  "diba-label inline-flex min-h-11 items-center rounded-[var(--r-pill)] border border-[var(--g-100)] px-4 text-[var(--t-body)] transition-colors hover:border-[var(--g-700)] hover:text-[var(--g-700)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]";
 
 const balkLink =
   "text-[10px] font-medium uppercase tracking-[.13em] text-[var(--t-muted)] transition hover:text-[var(--g-700)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]";
@@ -100,7 +114,6 @@ const KOLOMMEN: readonly {
       { label: "Je eerste afspraak", href: "/intake" },
       { label: "Nazorg", href: "/nazorg" },
       { label: "Kennisbank", href: "/kennisbank" },
-      { label: "Ons verbond", href: "/ons-verbond" },
       {
         label: "Kwaliteit en registraties",
         href: "/kwaliteit-en-registraties",
@@ -128,19 +141,61 @@ export default function SiteFooter({ instagramHref }: SiteFooterProps) {
        groene vlak; toen achtentwintig en was het te veel. Twintig is de maat waarop het
        twee dingen zijn zonder dat er een gat valt. */
     <footer className={`${figmaInnerContainer} pb-12 pt-16 lg:pt-20`}>
-      <div className="mx-auto border-t border-[var(--g-100)] pt-12 lg:pt-14">
-        <div className="grid gap-10 lg:grid-cols-[1fr_2.6fr] lg:gap-16">
-          {/* Het merk. Hier stond alleen het blad; dat is het merkteken en niet het
-              logo, en wie onderaan een pagina belandt hoort de naam te zien. Verder is de
-              voettekst om verder te komen en niet om nog eens te vertellen wie we zijn. */}
-          <div>
-            <DibaLogo />
-            <p className="mt-5 max-w-[26ch] text-[13px] leading-6 text-[var(--t-body)]">
-              Huidkliniek in {DIBA_SITE.neighborhood}. Behandelingen voor acne,
-              pigment, littekens, huidverbetering en ongewenste haargroei.
-            </p>
-          </div>
+      {/* De lijn boven de voettekst is eraf (Yasin, 11 september 2026). De ruimte erboven
+          doet het werk al; een streep erbij maakt er een vak van. */}
+      <div className="mx-auto pt-12 lg:pt-14">
+        {/* Het merk, in het midden.
 
+            Hier stond het logo links met een zin van drie regels ernaast, in een kolom van
+            zesentwintig tekens. Dat leest als een restje (Yasin: "droog en lelijk"). Nu
+            staat het logo boven de kolommen in het midden, met één regel eronder en de
+            manieren om ons te bereiken als knopjes daaronder: adres, telefoon, WhatsApp en
+            Instagram. Dat zijn de vier dingen waarvoor iemand naar een voettekst scrolt. */}
+        <div className="text-center">
+          <DibaLogo maat="groot" className="mx-auto" />
+          <p className="mx-auto mt-6 max-w-[48ch] text-[15px] leading-7 text-[var(--t-body)]">
+            Huidkliniek in {DIBA_SITE.neighborhood}, sinds 2017. Acne, pigment,
+            littekens, huidverbetering en ongewenste haargroei, door
+            huidtherapeuten die eerst meten en daarna pas behandelen.
+          </p>
+
+          <ul className="mt-7 flex flex-wrap items-center justify-center gap-2">
+            <li>
+              <Link href="/contact" className={voetPil}>
+                {DIBA_ADDRESS.street}, {DIBA_ADDRESS.city}
+              </Link>
+            </li>
+            <li>
+              <a href={DIBA_TELEFOON_HREF} className={voetPil}>
+                {DIBA_TELEFOON}
+              </a>
+            </li>
+            <li>
+              <a
+                href={DIBA_WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={voetPil}
+              >
+                WhatsApp
+              </a>
+            </li>
+            {instagram ? (
+              <li>
+                <a
+                  href={instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={voetPil}
+                >
+                  Instagram
+                </a>
+              </li>
+            ) : null}
+          </ul>
+        </div>
+
+        <div className="mt-12 lg:mt-16">
           <VoetKolommen
             kolommen={KOLOMMEN}
             kopKlasse={kolomLabel}
@@ -152,28 +207,28 @@ export default function SiteFooter({ instagramHref }: SiteFooterProps) {
             het is geen navigatie, maar wel iets wat je onderaan een zorgsite zoekt. */}
         {/* De kop staat in het midden sinds de logo's dat doen: een gecentreerde rij
             onder een linkse regel hangt scheef. */}
-        <div className="mt-12 border-t border-[var(--g-100)] pt-8 text-center">
+        {/* Geen tweede lijn op een telefoon. De kolommenlijst sluit daar al af met een
+            rand (`border-y` op de nav), en een `border-t` hier zette daar achtenveertig
+            punten onder met nog een lijn: twee strepen met lucht ertussen leest als een
+            leeg vak. Yasin, 10 september 2026: "waarom staat er onder Praktisch nog een
+            leeg vak?" Op desktop staat die rand er wel, want daar heeft de nav hem niet. */}
+        <div className="mt-8 pt-0 text-center lg:mt-12 lg:border-t lg:border-[var(--g-100)] lg:pt-8">
           <p className={kolomLabel}>Aangesloten bij en geregistreerd in</p>
           <Logostrook className="mt-6" />
         </div>
 
-        {/* De onderste balk. Adres en telefoon staan hier en niet in een kolom: het zijn
-            geen pagina's maar gegevens, en je zoekt ze onderaan. */}
-        <div className="mt-14 flex flex-col gap-5 border-t border-[var(--g-100)] pt-7 lg:mt-16 lg:flex-row lg:items-center lg:justify-between">
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
-            <span className="text-[10px] font-medium uppercase tracking-[.13em] text-[var(--t-muted)]">
-              © {year} {DIBA_SITE.name}
-            </span>
-            <span className="text-[10px] font-medium uppercase tracking-[.13em] text-[var(--t-muted)]">
-              {DIBA_ADDRESS.street} · {DIBA_ADDRESS.postalCode}{" "}
-              {DIBA_ADDRESS.city}
-            </span>
-            <a href={DIBA_TELEFOON_HREF} className={balkLink}>
-              {DIBA_TELEFOON}
-            </a>
-          </div>
+        {/* De onderste balk, in twee lagen.
 
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            De juridische pagina's stonden op één rij met Instagram, en dat is het verschil
+            tussen een voorwaarde en een kanaal (Yasin, 11 september 2026). Instagram staat
+            nu bovenin bij de andere manieren om ons te bereiken; hier staan alleen de drie
+            pagina's die je onderaan een site verwacht, in het midden.
+
+            Daaronder de regel die elke site heeft: links van wie de site is, rechts wie
+            hem gebouwd heeft. Adres en telefoon stonden hier ook; die zijn naar boven
+            verhuisd, want het zijn gegevens en geen kleine lettertjes. */}
+        <div className="mt-14 border-t border-[var(--g-100)] pt-7 lg:mt-16">
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
             {JURIDISCH.map((l) => (
               <Link
                 key={l.href}
@@ -184,19 +239,35 @@ export default function SiteFooter({ instagramHref }: SiteFooterProps) {
                 {l.label}
               </Link>
             ))}
-            {instagram ? (
-              <a
-                href={instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={balkLink}
-              >
-                Instagram
-              </a>
-            ) : (
-              <span className={`${balkLink} opacity-50`}>Instagram</span>
-            )}
           </div>
+
+          {/* Gecentreerd, met een streepje ertussen (Yasin, 11 september 2026). Alleen de
+              naam is onderstreept en niet de woorden "website door": onderstrepen betekent
+              dat je erop kunt klikken, en dat geldt voor de naam. */}
+          <p className="mt-6 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-center">
+            <span className={balkTekst}>
+              &copy; {year} {DIBA_SITE.name}
+            </span>
+            {/* Op een telefoon past de regel niet op een regel en breekt hij achter het
+                streepje af; dat streepje bungelt dan aan het eind van de bovenste regel.
+                Twee regels onder elkaar en geen streepje is daar het nettere beeld. */}
+            {/* Een gewoon streepje en geen kastlijntje: dat laatste staat in de
+                huisregels als verboden teken en de controle ving het bij de eerste run. */}
+            <span aria-hidden="true" className={`${balkTekst} max-sm:hidden`}>
+              &ndash;
+            </span>
+            <span className={balkTekst}>
+              Website door{" "}
+              <a
+                href={DIBA_BOUWER.url}
+                target="_blank"
+                rel="noopener"
+                className={`${balkLink} underline decoration-[var(--g-200)] underline-offset-4 hover:decoration-[var(--g-700)]`}
+              >
+                {DIBA_BOUWER.naam}
+              </a>
+            </span>
+          </p>
         </div>
       </div>
     </footer>

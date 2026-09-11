@@ -4,14 +4,9 @@ import { SectieKop } from "@/components/pillar/PillarSecties";
 import Zoeker from "@/components/symptoomzoeker/Zoeker";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
-import ProofBar from "@/components/ui/ProofBar";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
-import {
-  DIBA_PROOF_STRIP_ITEMS,
-  DIBA_SITE_URL,
-  DIBA_WHATSAPP_URL,
-} from "@/lib/site";
+import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
@@ -83,12 +78,8 @@ export default function SymptoomzoekerPage() {
             </p>
           </LeesVerder>
 
-          <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-4 max-sm:grid max-sm:grid-cols-2 max-sm:gap-3">
-            <Button
-              variant="primair-op-donker"
-              href="#zoeker"
-              className="max-sm:w-full max-sm:justify-center max-sm:px-3"
-            >
+          <div className="diba-knoprij mt-9">
+            <Button variant="primair-op-donker" href="#zoeker">
               Begin met aankruisen
             </Button>
             <Button
@@ -96,7 +87,6 @@ export default function SymptoomzoekerPage() {
               variant="secundair-op-donker"
               target="_blank"
               rel="noopener noreferrer"
-              className="max-sm:w-full max-sm:justify-center max-sm:px-3"
               kort="Stel je vraag"
             >
               Of stel je vraag gewoon
@@ -104,8 +94,6 @@ export default function SymptoomzoekerPage() {
           </div>
         </div>
       </section>
-
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
 
       {/* ── De zoeker ── */}
       <section
@@ -124,7 +112,7 @@ export default function SymptoomzoekerPage() {
       </section>
 
       {/* ── Afsluiting ── */}
-      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+      <section className="mx-5 mt-16 mb-5 rounded-[var(--r-xl)] lg:mt-20 bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
         <div className="mx-auto lg:grid lg:grid-cols-[1.35fr_0.65fr] lg:gap-10">
           <div>
             <Label opDonker>Komt er niets uit</Label>

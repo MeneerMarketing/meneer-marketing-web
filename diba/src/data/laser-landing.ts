@@ -40,7 +40,7 @@ export const LASER_LANDING_FAQ = [
     id: "laser-faq-4",
     question: "Wat kost laserontharing?",
     answer:
-      "Dat hangt af van de zones die je kiest en van welke tarievenlijst er geldt: voor dezelfde zone verschilt het bedrag tussen dames en heren. In de configurator wijs je je zones aan en zie je de opbouw meteen staan, met alle bedragen erbij.",
+      "Dat hangt af van de zone en van welke tarievenlijst er geldt: voor dezelfde zone verschilt het bedrag tussen dames en heren. Alle tweeënzestig zones staan met hun tarief op de tarievenpagina, dus je weet wat een sessie kost voordat je boekt.",
   },
 ] as const;
 
@@ -51,7 +51,7 @@ export const LASER_USP_ROWS = [
   },
   {
     title: "Prijs vooraf",
-    body: "De configurator toont je opbouw voordat je boekt. Wat je hoort aan de balie staat er nu al.",
+    body: "Elke zone staat met zijn tarief op de tarievenpagina. Wat je aan de balie hoort staat er nu al.",
   },
   {
     title: "Huidtype I tot VI",

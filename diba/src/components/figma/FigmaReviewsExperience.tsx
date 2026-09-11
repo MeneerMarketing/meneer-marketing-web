@@ -129,12 +129,12 @@ export default function FigmaReviewsExperience({
           <div className="relative">
             <div className="flex flex-wrap items-end justify-between gap-6">
               <div>
-                <Label opDonker>Salonized · live</Label>
+                <Label opDonker>Live uit Salonized</Label>
                 <p className="mt-3 text-[clamp(2.5rem,5vw,4rem)] font-medium leading-none tracking-[-.08em] text-white tabular-nums">
                   {SALONIZED_REVIEW_SUMMARY.rating.toFixed(1).replace(".", ",")}
                 </p>
                 <p className="mt-2 text-[15px] text-[var(--on-dark-body)]">
-                  {SALONIZED_REVIEW_SUMMARY.countFormatted} reviews · echt en
+                  {SALONIZED_REVIEW_SUMMARY.countFormatted} reviews, echt en
                   openbaar
                 </p>
               </div>

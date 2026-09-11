@@ -213,7 +213,7 @@ export default function Uitkomst({ profiel }: Props) {
       {melden.length > 0 ? (
         <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-7 sm:p-9 lg:p-11">
           <p className="diba-label text-[var(--t-label)]">
-            Meld dit tijdens de intake · {melden.length}
+            Meld dit tijdens de intake ({melden.length})
           </p>
           <p className="mt-3 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
             Dit zijn dingen die in de praktijk pas aan de balie boven tafel
@@ -316,7 +316,7 @@ export default function Uitkomst({ profiel }: Props) {
                   Wat er dan wel past
                 </p>
                 <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
-                  {geenMatch.danWel.join(" · ")}
+                  {geenMatch.danWel.join(", ")}
                 </p>
               </div>
             ) : null}
@@ -350,7 +350,7 @@ export default function Uitkomst({ profiel }: Props) {
         <div className="rounded-[var(--r-lg)] bg-white p-7 sm:p-9 lg:p-11">
           <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2">
             <p className="diba-label text-[var(--t-label)]">
-              Dit nu niet · {kanNiet.length}
+              Dit nu niet ({kanNiet.length})
             </p>
             <p className="text-[14px] leading-6 text-[var(--t-muted)]">
               {groepen.length} {groepen.length === 1 ? "reden" : "redenen"},

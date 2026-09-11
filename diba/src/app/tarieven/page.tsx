@@ -7,7 +7,7 @@ import PrijzenVoorJou from "@/components/prijzen/PrijzenVoorJou";
 import FaqAccordion, { type FaqItem } from "@/components/ui/FaqAccordion";
 import Label from "@/components/ui/Label";
 import ProofBar from "@/components/ui/ProofBar";
-import { behandelingVoorSlug, prijsTekst } from "@/data/behandelingen";
+import { behandelingVoorSlug, prijsCijfer } from "@/data/behandelingen";
 import { kostenVraag } from "@/data/pillar-kosten";
 import { SITUATIES, VAST } from "@/data/voorwaarden";
 import { breadcrumbSchema, faqSchema, SchemaMarkup } from "@/lib/schema";
@@ -38,9 +38,9 @@ export const metadata: Metadata = zoekmachineVelden({
 });
 
 const intakeBehandeling = behandelingVoorSlug("huidanalyse");
-const intakeBedrag = intakeBehandeling
-  ? prijsTekst(intakeBehandeling.prijs)
-  : "een vast bedrag";
+const intakeCijfer = intakeBehandeling
+  ? prijsCijfer(intakeBehandeling.prijs)
+  : "50";
 
 function situatie(id: string): string {
   return SITUATIES.find((s) => s.id === id)?.gebeurt ?? "";
@@ -142,7 +142,7 @@ export default function TarievenPage() {
           <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 text-[var(--t-strong)] sm:p-10">
             <Label>Waar een prijs begint</Label>
             <p className="diba-card-title mt-4 text-[var(--t-strong)]">
-              De intake: {intakeBedrag}
+              De intake kost {intakeCijfer} euro
             </p>
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
               Welke behandeling bij je huid past, hoor je tijdens de intake. Tot
@@ -165,7 +165,8 @@ export default function TarievenPage() {
         </div>
       </section>
 
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} className="max-lg:-order-1" />
+      {/* Hier stond de balk met vier usps. Yasin, 10 september 2026: eraf. Wie op deze
+          pagina komt wil een bedrag zien, en vier beloftes ervoor stellen dat uit. */}
 
       {/* ── Wat het bij jou kost ──
           De lijst hieronder is ruim vier schermen lang, en dat blijft zo: alles staat er,
@@ -239,7 +240,7 @@ export default function TarievenPage() {
           Een tarievenpagina roept vragen op die nergens anders thuishoren: gaat er btw
           overheen, krijg ik het vergoed, wat als ik afzeg. Die antwoorden stonden al in de
           voorwaarden en op /vergoedingen, alleen niet op de pagina waar de vraag opkomt. */}
-      <section className="bg-[var(--g-050)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
         <div className="mx-auto">
           <SchemaMarkup data={faqSchema(PRIJZEN_FAQ)} />
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
@@ -287,9 +288,8 @@ export default function TarievenPage() {
           <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-12">
             <Label opDonker>Wat het totaal bepaalt</Label>
             <h2 className="diba-display-m mt-4 max-w-[22ch]">
-              Niet de prijs per sessie,
-              <br />
-              <span className="diba-accent-on-dark">maar het aantal.</span>
+              Het aantal sessies{" "}
+              <span className="diba-accent-on-dark">bepaalt je totaal</span>
             </h2>
             <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               De bedragen hierboven liggen vast. Wat je in totaal kwijt bent
@@ -304,18 +304,20 @@ export default function TarievenPage() {
                 iets zinnigs over kan zeggen.
               </p>
             </LeesVerder>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            <div className="mt-8 diba-knoprij">
               <Link
                 href="/intake"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
-                Plan een intake
+                <span className="sm:hidden">Intake</span>
+                <span className="max-sm:hidden">Plan een intake</span>
               </Link>
               <Link
                 href="/behandelingen"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-white/50 px-6 text-white transition-colors hover:border-white hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
-                Wat de behandelingen doen
+                <span className="sm:hidden">Behandelingen</span>
+                <span className="max-sm:hidden">Wat de behandelingen doen</span>
               </Link>
             </div>
           </div>

@@ -5,7 +5,6 @@ import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProble
 import { PillarFaq, SectieKop } from "@/components/pillar/PillarSecties";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
-import ProofBar from "@/components/ui/ProofBar";
 import {
   KLEUREN,
   KLEUR_ALARM,
@@ -14,7 +13,7 @@ import {
 } from "@/data/huidverkleuring";
 import { publicCopy } from "@/lib/copy-flags";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
-import { DIBA_PROOF_STRIP_ITEMS, DIBA_SITE_URL } from "@/lib/site";
+import { DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
 
 /**
@@ -112,8 +111,6 @@ export default function HuidverkleuringPage() {
         </div>
       </section>
 
-      <ProofBar items={DIBA_PROOF_STRIP_ITEMS} />
-
       {/* ── De kleurwijzer ── */}
       <section
         id="kleur"
@@ -136,7 +133,7 @@ export default function HuidverkleuringPage() {
           dat een wegwijzer je uit handen hoort te nemen. */}
       <section
         id="overzicht"
-        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="bg-[var(--g-025)] scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
       >
         <div className="mx-auto">
           <SectieKop
@@ -209,7 +206,7 @@ export default function HuidverkleuringPage() {
                 <p className="diba-card-title text-[var(--t-strong)]">
                   {n.kop}
                 </p>
-                <p className="mt-4 min-h-[5lh] text-[16px] leading-7 text-[var(--t-body)]">
+                <p className="mt-4 lg:min-h-[5lh] text-[16px] leading-7 text-[var(--t-body)]">
                   {n.zin}
                 </p>
               </li>
@@ -236,7 +233,7 @@ export default function HuidverkleuringPage() {
       <PillarFaq items={VERKLEURING_FAQ} onderwerp="huidverkleuring" />
 
       {/* ── Afsluiting ── */}
-      <section className="mx-5 mb-5 rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+      <section className="mx-5 mt-16 mb-5 rounded-[var(--r-xl)] lg:mt-20 bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
         <div className="mx-auto lg:grid lg:grid-cols-[1.35fr_0.65fr] lg:gap-10">
           <div>
             <Label opDonker>Weet je het nog niet</Label>

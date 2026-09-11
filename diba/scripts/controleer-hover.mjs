@@ -25,7 +25,9 @@ const BASIS = process.env.BASIS ?? "http://localhost:3010";
 const GRENS = 6;
 
 const browser = await chromium.launch();
-const pagina = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+const pagina = await browser.newPage({
+  viewport: { width: 1440, height: 900 },
+});
 
 await pagina.goto(`${BASIS}/sitemap.xml`, { waitUntil: "domcontentloaded" });
 const xml = await pagina.content();
@@ -37,7 +39,9 @@ const paden = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)]
 const bevindingen = [];
 
 for (const pad of paden) {
-  await pagina.goto(`${BASIS}${pad}`, { waitUntil: "domcontentloaded" }).catch(() => {});
+  await pagina
+    .goto(`${BASIS}${pad}`, { waitUntil: "domcontentloaded" })
+    .catch(() => {});
 
   const fouten = await pagina
     .evaluate((grens) => {
@@ -72,13 +76,15 @@ for (const pad of paden) {
         let p = el;
         while (p) {
           const c = getComputedStyle(p).backgroundColor;
-          if (c && c !== "rgba(0, 0, 0, 0)" && c !== "transparent") return rgb(c);
+          if (c && c !== "rgba(0, 0, 0, 0)" && c !== "transparent")
+            return rgb(c);
           p = p.parentElement;
         }
         return rgb(getComputedStyle(document.body).backgroundColor);
       };
 
-      const afstand = (a, b) => Math.max(...a.map((v, i) => Math.abs(v - b[i])));
+      const afstand = (a, b) =>
+        Math.max(...a.map((v, i) => Math.abs(v - b[i])));
 
       /** De eerste omliggende kleur die van de kaart zelf verschilt. */
       const omgevingKleur = (el, eigen) => {
@@ -115,7 +121,10 @@ for (const pad of paden) {
 
         uit.push({
           klasse: (klas.match(/hover:bg-\[?[^\s]+/) ?? [""])[0],
-          soort: dEigen < grens ? "geen verschil met de kaart" : "lost op in de omgeving",
+          soort:
+            dEigen < grens
+              ? "geen verschil met de kaart"
+              : "lost op in de omgeving",
           hover: hover.join(","),
           onder: (dEigen < grens ? eigen : omgeving).join(","),
           verschil: Math.min(dEigen, dOmgeving),
@@ -149,7 +158,9 @@ for (const [sleutel, lijst] of [...perFout.entries()].sort(
 )) {
   const e = lijst[0];
   const paden = [...new Set(lijst.map((x) => x.pad))];
-  console.log(`${String(lijst.length).padStart(3)}x  ${sleutel}   verschil ${e.verschil}`);
+  console.log(
+    `${String(lijst.length).padStart(3)}x  ${sleutel}   verschil ${e.verschil}`,
+  );
   console.log(`      "${e.tekst}"`);
   console.log(
     `      ${paden.slice(0, 3).join(", ")}${paden.length > 3 ? ` en nog ${paden.length - 3}` : ""}`,
@@ -158,5 +169,7 @@ for (const [sleutel, lijst] of [...perFout.entries()].sort(
 }
 
 if (bevindingen.length === 0) {
-  console.log("ok — elke hover is te zien tegen de achtergrond waarop hij ligt.");
+  console.log(
+    "ok — elke hover is te zien tegen de achtergrond waarop hij ligt.",
+  );
 }

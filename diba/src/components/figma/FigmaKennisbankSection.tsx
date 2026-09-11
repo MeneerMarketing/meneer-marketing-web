@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "@/components/ui/Icon";
 import Label from "@/components/ui/Label";
+import Veegrij from "@/components/ui/Veegrij";
 import { HOME_KENNISBANK_ARTICLES } from "@/data/home-kennisbank";
 
 type FigmaKennisbankSectionProps = {
@@ -9,14 +10,24 @@ type FigmaKennisbankSectionProps = {
   className?: string;
 };
 
-/** Kennisbank — drie kaarten met eigen fotografie, groene tint en categorie-tag. */
+/**
+ * Kennisbank — drie kaarten met eigen fotografie en een categorie-tag.
+ *
+ * Op een telefoon een rij die je opzij veegt en niet drie kaarten onder elkaar (Yasin,
+ * 11 september 2026). Gemeten scheelt dat op 390 pixels ruim achthonderd pixels hoogte:
+ * van drie schermen naar één. Vanaf 768 is het weer een raster van drie, want daar is de
+ * ruimte er wel en is kijken sneller dan vegen.
+ *
+ * De marges staan daarom niet meer op de sectie maar op de onderdelen: een veegrij moet
+ * rechts tot de schermrand kunnen doorlopen, anders zie je niet dat er meer is.
+ */
 export default function FigmaKennisbankSection({
   id = "kennis",
-  className = "px-5 py-20 sm:px-9 lg:px-[7.5vw]",
+  className = "py-20",
 }: FigmaKennisbankSectionProps) {
   return (
     <section id={id} className={className}>
-      <div className="mx-auto">
+      <div className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="flex flex-wrap items-end justify-between gap-5">
           <div>
             <Label>Diba kennisbank</Label>
@@ -32,11 +43,18 @@ export default function FigmaKennisbankSection({
             <ArrowUpRight size={13} />
           </Link>
         </div>
+      </div>
 
-        <div className="mt-8 sm:mt-10 grid gap-5 md:grid-cols-3">
-          {HOME_KENNISBANK_ARTICLES.map((article) => (
+      <Veegrij
+        label="Uitleg per klacht"
+        raster="md"
+        klasse="mt-8 sm:mt-10"
+        breedte="w-[82%] max-w-[420px] sm:w-[56%]"
+        items={HOME_KENNISBANK_ARTICLES.map((article) => ({
+          sleutel: article.id,
+          naam: article.title,
+          inhoud: (
             <Link
-              key={article.id}
               href={article.href}
               className="group flex flex-col overflow-hidden rounded-[var(--r-md)] bg-[var(--g-025)] transition hover:-translate-y-1 hover:shadow-[0_14px_35px_rgba(67,79,58,.1)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
             >
@@ -74,9 +92,9 @@ export default function FigmaKennisbankSection({
                 </span>
               </div>
             </Link>
-          ))}
-        </div>
-      </div>
+          ),
+        }))}
+      />
     </section>
   );
 }

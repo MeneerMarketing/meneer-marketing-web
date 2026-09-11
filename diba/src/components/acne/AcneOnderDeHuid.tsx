@@ -225,7 +225,10 @@ export default function AcneOnderDeHuid() {
             Vier knoppen boven één balk die meegroeit. Zo is te zien dat dit een volgorde
             is en hoe ver je erin zit, in plaats van vier losse keuzes. */}
         <div className="mt-6">
-          <div className="grid grid-cols-4 gap-1.5">
+          {/* Twee bij twee op een telefoon: "VERHOORNING" is 105 pixels breed en een
+              vierde van de rij is er 69, dus stak het woord buiten zijn vakje (Yasin,
+              11 september 2026). Vanaf 640 weer vier naast elkaar. */}
+          <div className="grid grid-cols-2 gap-1.5 sm:grid-cols-4">
             {ACNE_STADIA.map((s, i) => (
               <button
                 key={s.id}

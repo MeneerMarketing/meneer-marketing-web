@@ -73,11 +73,11 @@ export const KENNISBANK: readonly Kennisgroep[] = [
     zin: "Ook bij een andere kliniek. Dit deel is niet geschreven om jou hier te houden.",
     stukken: [
       {
-        id: "verbond",
+        id: "kwaliteit",
         vraag: "Waar mag ik jullie aan houden",
-        naam: "Ons verbond",
-        zin: "Tien dingen die wij niet doen, met bij elke regel wat hij ons kost. Een belofte zonder prijs is een slogan.",
-        href: "/ons-verbond",
+        naam: "Kwaliteit en registraties",
+        zin: "Bij welke registers we horen, wat dat inhoudt en hoe je het zelf nakijkt.",
+        href: "/kwaliteit-en-registraties",
       },
     ],
   },

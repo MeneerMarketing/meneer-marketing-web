@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Sterren from "@/components/ui/Sterren";
 import { SALONIZED_REVIEWS } from "@/data/salonized-reviews";
-import { ZONDER_TEKST } from "@/data/reviews-archief";
 import {
   DIBA_SALONIZED_RATING,
   DIBA_SALONIZED_REVIEWS_URL,
@@ -123,23 +122,11 @@ export default function Reviewslider() {
           </div>
 
           <div>
-            {/* Yasin, 10 september 2026: "deze tekst anders, niet vanuit wantrouwen
-                benoemen, gewoon positief zijn." Hij stond er: een 5,0 was "een cijfer dat
-                je hoort te wantrouwen". Wat eronder zat blijft staan, want het is het
-                sterkste dat we over die reviews kunnen zeggen: ze komen uit Salonized, wij
-                verzamelen ze niet en we kunnen er niets uit weghalen. Dat is nu de zin. */}
-            <p className="max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-              {DIBA_SALONIZED_REVIEW_COUNT.toLocaleString("nl-NL")} mensen
-              beoordeelden ons na hun afspraak, gemiddeld met een 5,0. Ze komen
-              uit Salonized en staan hier allemaal, met tekst en zonder, in de
-              volgorde van de bron.
-            </p>
-            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
-              {ZONDER_TEKST.toLocaleString("nl-NL")} mensen gaven alleen
-              sterren. Hieronder schuiven de reviews langs waar iemand er iets
-              bij schreef.
-            </p>
-            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
+            {/* Hier stonden twee alinea's die vertelden hoeveel reviews er zijn en dat ze
+                langsschuiven. Weg (Yasin, 11 september 2026): het cijfer staat er links in
+                tachtig punten en de kaarten schuiven eronder langs. Wie dat leest weet het
+                al; het opschrijven maakt het niet waarder. */}
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
               <Link
                 href="/reviews"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
@@ -171,12 +158,13 @@ export default function Reviewslider() {
             "linear-gradient(to right, transparent, black 6%, black 94%, transparent)",
         }}
       >
+        {/* Twee banden, ook op een telefoon (Yasin, 11 september 2026: "waarom zie ik maar
+            één slidende balk, we hadden er toch twee onder elkaar die tegen elkaar in
+            bewogen?"). Ze stonden er, maar de tweede was op mobiel verborgen omdat twee
+            banden van driehonderd pixels een half scherm kosten. Die twee richtingen zijn
+            precies wat het doet werken, dus ze staan er allebei weer. */}
         <Band reviews={BAND_EEN} />
-        {/* Op een telefoon één band: twee banden van driehonderd pixels is een half
-            scherm reviews, en de tweede zegt niets wat de eerste niet zegt. */}
-        <div className="max-md:hidden">
-          <Band reviews={BAND_TWEE} terug />
-        </div>
+        <Band reviews={BAND_TWEE} terug />
       </div>
     </section>
   );

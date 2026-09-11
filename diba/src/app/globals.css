@@ -268,7 +268,10 @@ html {
   }
 }
 
+/* Een woord dat niet past breekt af, in plaats van buiten zijn vlak te steken. Alleen als
+   het echt niet past: `break-word` laat alles wat wél past met rust. */
 body {
+  overflow-wrap: break-word;
   margin: 0;
   min-height: 100%;
   background: var(--diba-cream-50);
@@ -916,11 +919,6 @@ body:has(.figma-home) {
     color: var(--on-dark);
   }
 
-  /* De sweep van de mini-scan: één rondgang per 1,5s, zolang de scan loopt. */
-  .diba-scan-sweep {
-    animation: diba-sweep 1.5s linear infinite;
-  }
-
   /* ── Fasekleur van de littekenklok ──
      Twee dingen dwingen deze vorm af, allebei uit meting:
 
@@ -1052,21 +1050,6 @@ body:has(.figma-home) {
     .diba-schuif::-moz-range-thumb {
       transition: none;
     }
-  }
-}
-
-@keyframes diba-sweep {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .diba-scan-sweep {
-    animation: none;
   }
 }
 
@@ -1272,5 +1255,109 @@ body {
   to {
     opacity: 1;
     transform: none;
+  }
+}
+
+/**
+ * Een rij die opzij schuift, zonder dat er een schuifbalk onder hangt.
+ *
+ * Yasin, 10 september 2026, over de ankerbalk op /intake: "waarom zie ik daar een
+ * horizontale scrollbalk op mobiel?" Omdat `overflow-x-auto` op Windows en Android een
+ * echte balk tekent, en die staat er dan onder een rij van vier woorden. Schuiven mag,
+ * de balk niet: de rij loopt tot de schermrand door en dat is het teken.
+ *
+ * Gebruik dit op elke rij die op een telefoon opzij gaat.
+ */
+.diba-schuifrij {
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.diba-schuifrij::-webkit-scrollbar {
+  display: none;
+}
+
+/**
+ * Twee knoppen naast elkaar, ook op een telefoon.
+ *
+ * Yasin vroeg er drie keer om: "die knoppen naast elkaar in plaats van gestapeld", en de
+ * laatste keer erbij waarom het toch misging: "op mobiel is de tekst te lang, waardoor ze
+ * onder elkaar komen." Beide helften van dat probleem staan hier.
+ *
+ * Onder de 640 pixels wordt de rij een raster van twee gelijke kolommen, zodat er niets te
+ * breken valt, en krijgen de knoppen erin een smallere binnenmarge; dat scheelt vierentwintig
+ * pixels per knop. De opschriften zelf worden ingekort met `kort` op `Button`, of met een
+ * `sm:hidden`-span bij een losse link. Vanaf 640 is het weer een gewone rij die mag omlopen.
+ *
+ * De selector noemt `a` en `button` bij naam. Dat is expres: hij moet winnen van de `px-6`
+ * die Tailwind op de knop zelf zet, en een klasse plus een elementnaam weegt zwaarder dan
+ * een klasse alleen.
+ */
+.diba-knoprij {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+@media (width < 40rem) {
+  .diba-knoprij > a,
+  .diba-knoprij > button {
+    /* Groeien tot de rij vol is, maar nooit krimpen onder het eigen opschrift. Past het
+       tweede opschrift er niet meer naast, dan valt die knop op een eigen regel en pakt
+       daar de volle breedte. Zo staan twee korte knoppen naast elkaar en twee lange onder
+       elkaar, en slaat een opschrift nooit om (Yasin, 11 september 2026).
+
+       Hiervoor stond hier een raster van twee even brede kolommen. Dat oogde netter maar
+       dwong elk opschrift in de helft van het scherm: op 375 pixels is dat 162, en
+       "BEHANDELINGEN" met pijltje heeft er 160 nodig. Alles wat langer was sloeg om. */
+    flex: 1 0 auto;
+    max-width: 100%;
+    padding-inline: 0.5rem;
+    white-space: nowrap;
+    /* Een knop is bijna altijd breder dan zijn opschrift. Zonder deze regel gaat dat
+       opschrift links tegen de rand staan en lijkt de knop scheef (Yasin, 10 september
+       2026: "waarom is dat zo raar en niet gecentreerd?"). */
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/**
+ * Het kruimelpad past altijd op één regel.
+ *
+ * Yasin, 10 september 2026: "die breadcrumb moet ook altijd op max 1 regel, laat dat een
+ * vaste regel op de site zijn." Op /behandelingen/huidanalyse liep hij over twee regels,
+ * want de laatste kruimel is de paginanaam en die kan lang zijn.
+ *
+ * De rij loopt niet meer om, en de laatste kruimel, de pagina waar je nu bent, wordt
+ * afgekapt met drie puntjes. Dat is de kruimel die je het minst nodig hebt: hij staat
+ * eronder als kop, voluit. Home en de tussenstappen blijven heel, want dat zijn de links
+ * waarop je terug klikt.
+ */
+[aria-label="Kruimelpad"] {
+  flex-wrap: nowrap;
+}
+
+[aria-label="Kruimelpad"] > * {
+  white-space: nowrap;
+}
+
+/*
+ * Onder de 640 pixels blijven alleen Home en de pagina zelf staan.
+ *
+ * "Home / Huidproblemen / Huidverkleuring" is in kleine kapitalen met letterafstand 316
+ * pixels breed, en een telefoon van 320 heeft er 280. Alles wat tussen de eerste en de
+ * laatste kruimel staat gaat er dus af, inclusief het schuine streepje ervoor: dat is
+ * `:nth-child(n+3)` (vanaf de derde) gekruist met `:nth-last-child(n+2)` (tot en met de
+ * op een na laatste). Bij twee kruimels raakt die doorsnede niets, bij drie de middelste
+ * plus zijn streepje, bij vier alle twee de tussenstappen.
+ *
+ * Wat je kwijtraakt is de tussenstap, en die staat in het menu en op de knop terug van de
+ * browser. Wat je overhoudt is waar je bent, op één regel.
+ */
+@media (width < 40rem) {
+  [aria-label="Kruimelpad"] > :nth-child(n + 3):nth-last-child(n + 2) {
+    display: none;
   }
 }

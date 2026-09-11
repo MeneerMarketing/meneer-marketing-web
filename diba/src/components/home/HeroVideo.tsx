@@ -1,6 +1,7 @@
 "use client";
 
-import { useRef, useState, useSyncExternalStore } from "react";
+import { useSyncExternalStore } from "react";
+import VideoKnop from "@/components/home/VideoKnop";
 
 /**
  * De opname in het beeldvlak van de hero.
@@ -23,9 +24,17 @@ import { useRef, useState, useSyncExternalStore } from "react";
  * WIE OM MINDER BEWEGING VRAAGT KRIJGT DE POSTER. Bij `prefers-reduced-motion` start de
  * video niet vanzelf; er staat dan een afspeelknop over het stilstaande beeld. De browser
  * doet dat niet uit zichzelf voor video.
+ *
+ * TWEE OPNAMES, EEN STAANDE EN EEN LIGGENDE. Een staande opname over een breed vlak leggen
+ * betekent hem opblazen en er het grootste deel van afsnijden; een liggende op een telefoon
+ * net zo goed andersom. Met `bestandBreed` kiest de hero vanaf 768 pixels een tweede
+ * opname. De keuze gebeurt in de browser en niet met `media` op de bronnen: die attributen
+ * worden maar één keer gelezen, bij het laden, en kloppen daarna niet meer als je het
+ * venster versleept.
  */
 
 const QUERY = "(prefers-reduced-motion: reduce)";
+const BREED = "(min-width: 768px)";
 
 function luister(herteken: () => void) {
   const mq = window.matchMedia(QUERY);
@@ -37,80 +46,82 @@ function lees() {
   return window.matchMedia(QUERY).matches;
 }
 
+function luisterBreed(herteken: () => void) {
+  const mq = window.matchMedia(BREED);
+  mq.addEventListener("change", herteken);
+  return () => mq.removeEventListener("change", herteken);
+}
+
+function leesBreed() {
+  return window.matchMedia(BREED).matches;
+}
+
 export default function HeroVideo({
   bestand,
+  bestandBreed,
   poster,
+  posterBreed,
   beschrijving,
+  id = "hero-video",
+  eigenKnop = true,
+  knopKlasse = "top-5 right-5 sm:top-7 sm:right-7",
 }: {
   bestand: string;
+  /** De liggende opname, vanaf 768 pixels. Zonder deze blijft de staande overal staan. */
+  bestandBreed?: string;
   poster: string;
+  /** De stilstaande versie van die liggende opname. */
+  posterBreed?: string;
   /** Wat er te zien is, voor wie de video niet kan zien. */
   beschrijving: string;
+  /** Waaraan de pauzeknop deze video herkent. Eén video per pagina, dus één id. */
+  id?: string;
+  /**
+   * Zet de knop zelf neer. Uit als de hero hem ergens anders plaatst, bijvoorbeeld in de
+   * regel boven de kop; er hoort er altijd precies één te zijn.
+   */
+  eigenKnop?: boolean;
+  /**
+   * Waar de pauzeknop komt te staan, als plaatsingsklassen.
+   *
+   * In het beeldvlak op de homepage is rechtsboven vrij. In de schermvullende hero
+   * staat daar de navigatie, dus daar moet de knop eronder. De knop hoort bij de video
+   * en verhuist dus mee in plaats van dat hij twee keer wordt gebouwd.
+   */
+  knopKlasse?: string;
 }) {
-  const ref = useRef<HTMLVideoElement>(null);
   const rustig = useSyncExternalStore(luister, lees, () => false);
-  const [speelt, setSpeelt] = useState(true);
-
-  function wissel() {
-    const el = ref.current;
-    if (!el) return;
-    if (el.paused) {
-      void el.play();
-      setSpeelt(true);
-    } else {
-      el.pause();
-      setSpeelt(false);
-    }
-  }
+  const breed = useSyncExternalStore(luisterBreed, leesBreed, () => false);
+  const bron = breed && bestandBreed ? bestandBreed : bestand;
+  const plaat = breed && posterBreed ? posterBreed : poster;
 
   return (
     <>
+      {/* `key` op de bron: zonder dat wisselt het `src`-attribuut wel maar laadt de
+          browser de nieuwe opname niet. Met een nieuwe sleutel komt er een nieuw element,
+          en dat begint netjes bij de poster. */}
       <video
-        ref={ref}
+        key={bron}
+        id={id}
         className="absolute inset-0 h-full w-full object-cover"
-        poster={poster}
+        poster={plaat}
         preload="metadata"
         autoPlay={!rustig}
         muted
         loop
         playsInline
         aria-label={beschrijving}
-        onPlay={() => setSpeelt(true)}
-        onPause={() => setSpeelt(false)}
       >
-        <source src={bestand} type="video/mp4" />
+        <source src={bron} type="video/mp4" />
       </video>
 
       {/* Rechtsboven. Linksboven zit de plaatsnaam en rechtsonder het zegel, en
           linksonder buigt het beeldvlak weg in die grote ronde hoek: een knop die daar
           staat wordt door de overflow weggeknipt. Dat gebeurde ook: hij stond binnen de
           maten van het element en toch niet in beeld. */}
-      <button
-        type="button"
-        onClick={wissel}
-        aria-label={speelt ? "Beeld pauzeren" : "Beeld afspelen"}
-        className="absolute top-5 right-5 grid h-10 w-10 place-items-center rounded-[var(--r-pill)] bg-white/85 text-[var(--g-700)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:top-7 sm:right-7"
-      >
-        {speelt ? (
-          <svg
-            viewBox="0 0 24 24"
-            className="h-3.5 w-3.5"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path d="M7 5h4v14H7zM13 5h4v14h-4z" />
-          </svg>
-        ) : (
-          <svg
-            viewBox="0 0 24 24"
-            className="ml-0.5 h-3.5 w-3.5"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path d="M8 5v14l11-7z" />
-          </svg>
-        )}
-      </button>
+      {eigenKnop ? (
+        <VideoKnop doel={`#${id}`} className={`absolute ${knopKlasse}`} />
+      ) : null}
     </>
   );
 }

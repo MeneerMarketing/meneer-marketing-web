@@ -34,6 +34,10 @@
  * staat in `prijsTekst`, en het is belangrijker dan het lijkt: wie € 0 ziet staan denkt
  * aan een aanbieding.
  */
+const getal = new Intl.NumberFormat("nl-NL", {
+  maximumFractionDigits: 0,
+});
+
 const euro = new Intl.NumberFormat("nl-NL", {
   style: "currency",
   currency: "EUR",
@@ -43,6 +47,19 @@ const euro = new Intl.NumberFormat("nl-NL", {
 
 export function prijsTekst(bedrag: number): string {
   return bedrag === 0 ? "Op aanvraag" : euro.format(bedrag);
+}
+
+/**
+ * Hetzelfde bedrag, maar als kaal getal.
+ *
+ * Yasin, 10 september 2026: "bij tarieven wil ik alle eurotekens weg." In een prijslijst
+ * heeft hij gelijk: het teken staat veertig keer onder elkaar en zegt elke keer hetzelfde.
+ * In een lopende zin is het omgekeerde waar, want "het consult kost 50" leest als een
+ * ontbrekend woord. Vandaar twee functies en niet een instelling: de lijsten gebruiken
+ * `prijsCijfer`, de zinnen `prijsTekst`.
+ */
+export function prijsCijfer(bedrag: number): string {
+  return bedrag === 0 ? "Op aanvraag" : getal.format(bedrag);
 }
 
 /**
@@ -192,14 +209,14 @@ export const HUIDWENSEN = [
     id: "pigment",
     label: "Pigment, roodheid en vaatjes",
     kort: "Vlekken die blijven staan, roodheid die niet wegtrekt, zichtbare vaatjes.",
-    knop: "Pigment en roodheid",
+    knop: "Pigment",
     pad: "/huidproblemen/pigmentvlekken",
   },
   {
     id: "littekens",
     label: "Littekens, poriën en huidstructuur",
     kort: "Putjes na acne, grove poriën, een huid die oneffen aanvoelt.",
-    knop: "Littekens en poriën",
+    knop: "Littekens",
     pad: "/huidproblemen/littekens",
   },
   {
@@ -213,14 +230,14 @@ export const HUIDWENSEN = [
     id: "glow",
     label: "Glow en huidonderhoud",
     kort: "Een frisse behandeling zonder hersteltijd, of onderhoud tussendoor.",
-    knop: "Glow en onderhoud",
+    knop: "Glow",
     pad: "/huidproblemen/doffe-huid",
   },
   {
     id: "ontharing",
     label: "Ongewenste haargroei",
     kort: "Haar dat terugkomt, ingroei, dagelijks scheren.",
-    knop: "Ongewenste haargroei",
+    knop: "Haargroei",
     pad: "/laserontharing",
   },
   {
@@ -233,7 +250,7 @@ export const HUIDWENSEN = [
   {
     id: "overig",
     label: "Overige behandelingen",
-    kort: "Wat geen huidbehandeling is, maar wel bij ons gebeurt.",
+    kort: "Snurken en fibromen.",
     knop: "Overig",
     pad: "/behandelingen/nightlase",
   },
@@ -277,6 +294,17 @@ export type Variant = {
 export type Behandeling = {
   readonly slug: string;
   readonly naam: string;
+  /**
+   * De naam voor de kop bovenaan de eigen pagina, als de volledige naam daar te lang voor
+   * is.
+   *
+   * "Consult met EVE-M huidanalyse" is negenentwintig tekens. In een kop van deze maat
+   * past op een telefoon ongeveer de helft, en hij brak op het streepje: "Consult met
+   * EVE-" op de eerste regel en "M huidanalyse" op de tweede (Yasin, 10 september 2026:
+   * "die titel moet op één regel"). De volledige naam blijft staan waar hij hoort: in de
+   * tabbladtitel, in de prijslijst en in de kaarten die naar deze pagina wijzen.
+   */
+  readonly naamKort?: string;
   /** Het apparaat of merk waar de kliniek mee werkt, als dat bekend is. */
   readonly apparaat?: string;
   readonly categorie: CategorieId;
@@ -408,6 +436,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       alt: "Cliënt in de EVE-M huidscanner, met de opname op het scherm ernaast",
     },
     naam: "Consult met EVE-M huidanalyse",
+    naamKort: "Huidanalyse",
     apparaat: "EVE-M",
     categorie: "meting",
     kort: "De meting waar elk traject mee begint. Je huid in kaart, en een behandelplan dat daaruit volgt.",
@@ -660,6 +689,9 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { naam: "Mesoestetic peeling", prijs: 140 },
       { naam: "TCA Dermaceutic 12 tot 20%", prijs: 180 },
       { naam: "Mesoestetic peeling rug", prijs: 160 },
+      { naam: "Mesoestetic rugkuur van drie", prijs: 399 },
+      { naam: "TCA-kuur van drie met drie producten", prijs: 650 },
+      { naam: "TCA-kuur van drie met K-ceutic", prijs: 540 },
     ],
     wel: [
       "Maakt oppervlakkige verkleuring lichter",
@@ -701,8 +733,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
        met onder andere antibacteriële eigenschappen, en ze stonden nergens genoemd behalve
        als prijsregel onder de peelings. Nu een eigen behandeling: hij werkt anders (kruiden
        die de huid prikkelen, geen zuur) en heeft een eigen tarief.
-       [GEGEVEN-NODIG: welk merk kruidenpeel, Rojda] [BEELD-NODIG: eigen opname; nu de
-       peelingfoto] */
+       Het merk is ADO (Yasin, 10 september 2026). Een eigen opname is er niet; hier staat
+       daarom de gewone peelingfoto. [BEELD-NODIG: eigen opname van de kruidenpeel] */
     slug: "kruidenpeel",
     foto: {
       src: "/images/shoot/beh-peeling.jpg",
@@ -714,7 +746,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     kort: "Een peeling van fijngemalen kruiden, zonder zuur. Remt de ontsteking en werkt antibacterieel.",
     lagen: ["hoornlaag", "opperhuid"],
     werking:
-      "De kruiden worden in de huid gemasseerd. De fijne plantendeeltjes prikkelen de huid, waardoor de bovenlaag in de dagen erna loslaat en zich vernieuwt. De kruiden zelf werken ontstekingsremmend en antibacterieel, en daarom zetten we deze peeling juist in bij ontstoken acne, waar een zuurpeeling soms te veel is. [MEDISCHE-CHECK-ROJDA]",
+      "Wij werken met de kruidenpeeling van ADO. De kruiden worden in de huid gemasseerd. De fijne plantendeeltjes prikkelen de huid, waardoor de bovenlaag in de dagen erna loslaat en zich vernieuwt. De kruiden zelf werken ontstekingsremmend en antibacterieel, en daarom zetten we deze peeling juist in bij ontstoken acne, waar een zuurpeeling soms te veel is. [MEDISCHE-CHECK-ROJDA]",
     herstel:
       "Drie tot vijf dagen. Eerst rood en warm, daarna vervelt de huid. Niet aan plukken. [MEDISCHE-CHECK-ROJDA]",
     sessies:
@@ -723,6 +755,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     varianten: [
       { naam: "Gezicht", prijs: 150 },
       { naam: "Rug", prijs: 200 },
+      { naam: "Rugkuur van drie", prijs: 499 },
     ],
     wel: [
       "Remt de ontsteking bij actieve acne en werkt antibacterieel [MEDISCHE-CHECK-ROJDA]",
@@ -855,9 +888,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "De diepte wordt per zone bijgesteld. Rond je ogen en op je voorhoofd gaat hij ondieper dan op je wangen, en dat merk je: hoe dieper, hoe meer druk je voelt.",
       "Erna gelden dezelfde afspraken. Een tot drie dagen rood, de eerste dag met rust laten, en zonbescherming daarna niet overslaan. [MEDISCHE-CHECK-ROJDA]",
     ],
+    /* Yasin, 10 september 2026: de opname van Andres met het handstuk in beeld. Daarop
+       zie je de behandeling zelf gebeuren en niet alleen een apparaat. */
     foto: {
-      src: "/images/shoot/beh-dermapen.jpg",
-      alt: "Behandeling met de Dermapen 4 bij een cliënt",
+      src: "/images/shoot/beh-dermapen-andres.jpg",
+      alt: "Andres behandelt de huid van een cliënt met de Dermapen 4",
     },
     naam: "Dermapen 4",
     apparaat: "Dermapen 4",
@@ -1035,7 +1070,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Kleine bultjes die binnen een dag wegtrekken. Blauwe plekjes komen voor rond de ogen. [MEDISCHE-CHECK-ROJDA]",
     sessies:
       "Een reeks, met een paar weken ertussen, daarna onderhoud. Het aantal hoor je tijdens de intake. [GEGEVEN-NODIG: aantal sessies per reeks]",
-    prijs: 0,
+    prijs: 130,
+    varianten: [
+      { naam: "Losse behandeling", prijs: 130 },
+      { naam: "Kuur van drie", prijs: 350 },
+    ],
     bijProblemen: [
       { label: "Donkere kringen", href: "/huidproblemen/donkere-kringen" },
       { label: "Wallen", href: "/huidproblemen/wallen" },
@@ -1130,6 +1169,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       { naam: "Fotona 4D", prijs: 370 },
       { naam: "Fotona 4D Full Package", prijs: 575 },
       { naam: "Fotona 4D kuur van drie", prijs: 995 },
+      { naam: "Laserpeel met Frax", prijs: 250 },
     ],
     bijProblemen: [
       { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
@@ -1226,6 +1266,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     sessies:
       "Los te doen of als kuur van drie, met vier tot zes weken ertussen. Wat er bij jou past hoor je tijdens de intake. [MEDISCHE-CHECK-ROJDA]",
     prijs: 370,
+    varianten: [
+      { naam: "Losse behandeling", prijs: 370 },
+      { naam: "Kuur van drie", prijs: 995 },
+    ],
     bijProblemen: [
       { label: "Huidveroudering", href: "/huidproblemen/huidveroudering" },
       { label: "Huidverslapping", href: "/huidproblemen/huidverslapping" },
@@ -1686,6 +1730,12 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     sessies:
       "Een reeks van drie tot vier, met enkele weken ertussen. [MEDISCHE-CHECK-ROJDA]",
     prijs: 150,
+    varianten: [
+      { naam: "Losse behandeling", prijs: 150 },
+      { naam: "Kuur van drie", prijs: 395 },
+      { naam: "Met RRS Eyes", prijs: 280 },
+      { naam: "Met RRS Eyes, kuur van drie", prijs: 600 },
+    ],
     bijProblemen: [
       { label: "Rimpels", href: "/huidproblemen/rimpels" },
       { label: "Wallen", href: "/huidproblemen/wallen" },
@@ -1762,6 +1812,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     sessies:
       "Een reeks van drie, met enkele weken ertussen. [MEDISCHE-CHECK-ROJDA]",
     prijs: 150,
+    varianten: [
+      { naam: "Losse behandeling", prijs: 150 },
+      { naam: "Kuur van drie", prijs: 395 },
+    ],
     bijProblemen: [{ label: "Rimpels", href: "/huidproblemen/rimpels" }],
     wel: [
       "Werkt met je eigen weefsel, dus zonder dat er iets ingebracht wordt",
@@ -1835,6 +1889,10 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     sessies:
       "Een reeks van drie tot vier, met enkele weken ertussen. [MEDISCHE-CHECK-ROJDA]",
     prijs: 150,
+    varianten: [
+      { naam: "Losse behandeling", prijs: 150 },
+      { naam: "Kuur van drie", prijs: 395 },
+    ],
     bijProblemen: [
       { label: "Huidverslapping", href: "/huidproblemen/huidverslapping" },
       { label: "Rimpels", href: "/huidproblemen/rimpels" },
@@ -1911,6 +1969,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     sessies:
       "Meestal een reeks binnen een acnetraject, met enkele weken ertussen. [MEDISCHE-CHECK-ROJDA]",
     prijs: 0,
+    duurMinuten: 60,
     bijProblemen: [
       { label: "Acne", href: "/huidproblemen/acne" },
       { label: "Onzuivere huid", href: "/huidproblemen/onzuivere-huid" },
@@ -1985,7 +2044,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Een tot enkele dagen rood, afhankelijk van de diepte en de zone. [MEDISCHE-CHECK-ROJDA]",
     sessies:
       "Meestal drie tot zes, met vier tot zes weken ertussen. [MEDISCHE-CHECK-ROJDA]",
-    prijs: 0,
+    prijs: 195,
     bijProblemen: [
       { label: "Acnelittekens", href: "/huidproblemen/acne-littekens" },
       { label: "Littekens en striae", href: "/huidproblemen/littekens" },
@@ -2310,6 +2369,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       alt: "Behandeling met de Nordlys, met beschermbril op",
     },
     naam: "Nordlys IPL bij roodheid en vaatjes",
+    naamKort: "Roodheid en vaatjes",
     apparaat: "Nordlys",
     categorie: "laser",
     huidwens: ["pigment"],
@@ -2349,6 +2409,44 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       },
     ],
     duurMinuten: 30,
+  },
+  {
+    slug: "skincomplete-led-consult",
+    naam: "Consult SkinComplete LED-masker",
+    naamKort: "Consult LED-masker",
+    categorie: "meting",
+    kort: "Een uur over LED thuis: je huid bekeken, je doelen besproken en een protocol dat daarbij past.",
+    lagen: [],
+    werking:
+      "We bekijken je huid en bespreken wat je ermee wilt. Daaruit volgt een LED-protocol voor thuis: welke stand, hoe lang en hoe vaak, met het SkinComplete-masker. Schaf je het masker aan, dan krijg je er begeleiding bij zodat je eruit haalt wat erin zit.",
+    herstel: "Geen. Dit is een gesprek met een blik op je huid.",
+    sessies:
+      "Eén afspraak van een uur. Daarna gebruik je het masker thuis, volgens het protocol dat je meekrijgt.",
+    prijs: 100,
+    duurMinuten: 60,
+    faq: [
+      {
+        vraag: "Waar gaat die honderd euro naartoe?",
+        antwoord:
+          "Koop je het masker, dan wordt dat bedrag ermee verrekend. Koop je het niet, dan is het de prijs van dit uitgebreide consult.",
+      },
+      {
+        vraag: "Moet ik het masker kopen?",
+        antwoord:
+          "Nee. Je kunt het consult doen om te horen wat LED bij jouw huid kan doen en daarna zelf beslissen.",
+      },
+    ],
+    verwant: [
+      {
+        slug: "led-therapie",
+        waarom:
+          "Hetzelfde licht, maar dan in de kliniek en op een sterker apparaat",
+      },
+      {
+        slug: "huidanalyse",
+        waarom: "Wil je eerst een meting van je huid, dan begin je daar",
+      },
+    ],
   },
   {
     slug: "led-therapie",
@@ -2594,6 +2692,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
         naam: "Kuur inclusief lightening crème, oksels of intieme zone",
         prijs: 300,
       },
+      { naam: "Kuur inclusief lightening crème", prijs: 300 },
     ],
     bijProblemen: [
       { label: "Huidverkleuring", href: "/huidproblemen/huidverkleuring" },
@@ -2643,7 +2742,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     naam: "Elektrische epilatie",
     categorie: "ontharing",
     huidwens: ["ontharing"],
-    kort: "Haar voor haar, ook grijs en blond. Voor wat de laser niet ziet zitten.",
+    kort: "Haar voor haar, ook grijs en blond. Voor wat de laser niet ziet zitten. De behandeltijd rekenen we per kwartier.",
     lagen: ["opperhuid", "lederhuid-boven"],
     werking:
       "De laser mikt op het pigment in de haarwortel. Zit daar geen pigment, dan is er niets om op te mikken; dat is waarom grijs, wit en heel licht blond haar niet op laser reageert. Bij elektrische epilatie gaat er een dun naaldje langs de haar het haarkanaal in en krijgt de wortel zelf een korte stroomstoot. Kleur doet er dan niet toe. Het gaat haar voor haar, dus het is trager dan laser en het is bedoeld voor kleine gebieden. [MEDISCHE-CHECK-ROJDA]",
@@ -2651,7 +2750,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "De behandelde plekjes zijn een paar uur rood en kunnen wat opstaan, vergelijkbaar met na het harsen. Bij de meeste mensen is dat dezelfde dag weg. [MEDISCHE-CHECK-ROJDA]",
     sessies:
       "Een reeks, met een paar weken ertussen. Hoeveel hangt af van het aantal haren en van het gebied. [MEDISCHE-CHECK-ROJDA]",
-    prijs: 0,
+    prijs: 30,
+    varianten: [{ naam: "Per kwartier", prijs: 30 }],
     duurMinuten: 30,
     welNietKop: {
       kop: "Waar elektrische epilatie",
@@ -2861,6 +2961,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     sessies:
       "Los te doen. Bij terugkerende acne is een reeks of het traject de betere route. [MEDISCHE-CHECK-ROJDA]",
     prijs: 0,
+    duurMinuten: 60,
     wel: [
       "Haalt verstoppingen en ontstekingen weg zonder dat je zelf gaat drukken",
       "Is los te boeken, ook als je niet aan een traject wilt beginnen",
@@ -3002,7 +3103,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Acne op jonge leeftijd kan zwaar zijn voor je zelfvertrouwen. Hiervoor is een medisch onderbouwd programma van drie maanden met begeleiding, opgezet voor jongeren van achttien jaar en jonger. [MEDISCHE-CHECK-ROJDA]",
     herstel: "Wisselt per fase van het traject. [MEDISCHE-CHECK-ROJDA]",
     sessies: "Drie maanden met begeleiding",
-    prijs: 450,
+    prijs: 297,
     bijProblemen: [{ label: "Acne", href: "/huidproblemen/acne" }],
     wel: [
       "Is opgezet voor achttien jaar en jonger, met een programma van drie maanden [MEDISCHE-CHECK-ROJDA]",
@@ -3125,7 +3226,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Kleine bultjes die binnen een dag wegtrekken, en soms een blauwe plek. Make-up laat je die dag liever staan. [MEDISCHE-CHECK-ROJDA]",
     sessies:
       "Een reeks van drie tot vier, met twee tot vier weken ertussen. [MEDISCHE-CHECK-ROJDA]",
-    prijs: 0,
+    prijs: 175,
+    varianten: [
+      { naam: "Losse behandeling", prijs: 175 },
+      { naam: "Kuur van drie", prijs: 500 },
+    ],
     duurMinuten: 60,
     wel: [
       "Brengt vocht en werkzame stoffen in de huid in plaats van erop",
@@ -3189,7 +3294,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Rood en warm voor een paar uur tot een dag; bij de afsluitende peelingstap kan de huid een paar dagen ruw aanvoelen. [MEDISCHE-CHECK-ROJDA]",
     sessies:
       "Een reeks van drie, met vier tot zes weken ertussen. Daarna een keer per jaar onderhoud. [MEDISCHE-CHECK-ROJDA]",
-    prijs: 0,
+    prijs: 575,
+    varianten: [
+      { naam: "Losse behandeling", prijs: 575 },
+      { naam: "Kuur van drie", prijs: 1495 },
+    ],
     duurMinuten: 120,
     wel: [
       "Neemt de hals en de kaaklijn mee, waar verslapping het eerst zichtbaar is",
@@ -3238,7 +3347,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Een paar uur rood en warm. De dag erna zie je er meestal normaal uit. [MEDISCHE-CHECK-ROJDA]",
     sessies:
       "Los te doen, of als onderhoud om de paar maanden. [MEDISCHE-CHECK-ROJDA]",
-    prijs: 0,
+    prijs: 170,
+    duurMinuten: 60,
     wel: [
       "Vraagt vrijwel geen hersteltijd, dus het kan op een gewone werkdag",
       "Werkt op de hele huid en niet op een plek",
@@ -3278,7 +3388,12 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "De oogzone is een paar uur rood en kan de dagen erna licht vervellen. Oogmake-up laat je even staan. [MEDISCHE-CHECK-ROJDA]",
     sessies:
       "Een reeks van drie tot zes, met weken ertussen. [MEDISCHE-CHECK-ROJDA]",
-    prijs: 0,
+    prijs: 30,
+    varianten: [
+      { naam: "Als toevoeging aan een behandeling", prijs: 30 },
+      { naam: "Perioculaire peel met RRS Eyes", prijs: 160 },
+      { naam: "Perioculaire peel met RRS Eyes, kuur van drie", prijs: 430 },
+    ],
     duurMinuten: 15,
     wel: [
       "Mag op de dunne huid rond het oog, waar gewone peelings te sterk zijn",
