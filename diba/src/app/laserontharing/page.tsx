@@ -69,32 +69,6 @@ const ANKERS = [
  * deze pagina geen tweede rekenlaag ontstaat. Ze staan er als richting, niet als tarief:
  * de volledige tabel staat op /tarieven.
  */
-const GEBIEDEN = [
-  {
-    id: "gelaat",
-    label: "Gelaat en hals",
-    vanaf: 20,
-    tot: 190,
-    zones:
-      "Bovenlip, kin, onderkin, wangen, bakkebaard, voorhoofd, tussen de wenkbrauwen, haarlijn, hals en nek, los of als hele gelaat.",
-  },
-  {
-    id: "bovenlichaam",
-    label: "Bovenlichaam",
-    vanaf: 30,
-    tot: 230,
-    zones:
-      "Oksels, boven- en onderarmen, buik, navelstrook, borst, schouders en rug, los of als hele rug.",
-  },
-  {
-    id: "onderlichaam",
-    label: "Onderlichaam",
-    vanaf: 80,
-    tot: 200,
-    zones:
-      "Boven- en onderbenen, bikinilijn klein of groot, bilnaad en bilwangen, los of als hele benen.",
-  },
-] as const;
 
 /**
  * Wat het aantal sessies bepaalt.
@@ -267,55 +241,29 @@ export default function LaserontharingPage() {
           er per gebied zijn, en wat een sessie kost. De volledige tabel met alle
           tweeënzestig zones en beide prijslijsten staat op de tarievenpagina; die
           verdubbelen we hier niet. */}
+      {/* De twee uitgangen van de zonesectie die hier stond: de volledige tarievenlijst
+          en het apparaat. De sectie zelf is eraf (Okan, 11 september 2026), deze twee niet:
+          dit is de pagina waar je op zoek bent naar een bedrag. */}
       <section
         id="zones"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-10 sm:px-9 sm:py-14 lg:px-[7.5vw] lg:py-16"
       >
         <span id="tarieven" className="sr-only" />
-        <div className="mx-auto">
-          <SectieKop
-            icoon={PincetHaar}
-            label="De zones"
-            kop="Waar wil je"
-            accent="ontharen?"
-            intro="We ontharen van de bovenlip tot de hele rug. Hieronder staat per gebied wat eronder valt en wat de goedkoopste en de duurste zone daar kost; het tarief van jouw zone staat op de tarievenpagina."
-          />
-
-          <ul className="mt-10 grid gap-4 sm:mt-12 lg:grid-cols-3">
-            {GEBIEDEN.map((g) => (
-              <li
-                key={g.id}
-                className="flex h-full flex-col rounded-[var(--r-lg)] bg-white p-6 sm:p-8"
-              >
-                <p className="diba-card-title text-[var(--t-strong)]">
-                  {g.label}
-                </p>
-                <p className="diba-label mt-2 text-[var(--g-700)]">
-                  {g.vanaf} tot {g.tot} euro per sessie
-                </p>
-                <p className="mt-4 flex-1 text-[15px] leading-7 text-[var(--t-body)]">
-                  {g.zones}
-                </p>
-              </li>
-            ))}
-          </ul>
-
-          <div className="mt-8 diba-knoprij">
-            <Link
-              href="/tarieven#laserontharing-per-zone"
-              className="diba-label inline-flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
-            >
-              <span className="sm:hidden">Alle tarieven</span>
-              <span className="max-sm:hidden">Alle tarieven per zone</span>
-            </Link>
-            <Link
-              href="/gentlemax-pro"
-              className="diba-label inline-flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] border border-[var(--g-200)] px-6 text-[var(--t-strong)] transition-colors hover:border-[var(--g-700)] hover:bg-[var(--g-025)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
-            >
-              <span className="sm:hidden">De laser</span>
-              <span className="max-sm:hidden">De laser die we gebruiken</span>
-            </Link>
-          </div>
+        <div className="mx-auto diba-knoprij">
+          <Link
+            href="/tarieven#laserontharing-per-zone"
+            className="diba-label inline-flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+          >
+            <span className="sm:hidden">Alle tarieven</span>
+            <span className="max-sm:hidden">Alle tarieven per zone</span>
+          </Link>
+          <Link
+            href="/gentlemax-pro"
+            className="diba-label inline-flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] border border-[var(--g-200)] px-6 text-[var(--t-strong)] transition-colors hover:border-[var(--g-700)] hover:bg-[var(--g-025)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+          >
+            <span className="sm:hidden">De laser</span>
+            <span className="max-sm:hidden">De laser die we gebruiken</span>
+          </Link>
         </div>
       </section>
 

@@ -28,8 +28,8 @@ export default function HomePage() {
       />
       {/* De huidwensen met hun behandelingen worden hier, op de server, samengesteld en
           als kale props doorgegeven: de behandelingendata blijft uit de browser. */}
-      {/* Goedgekeurd op 11 september 2026: de schermvullende hero die op /home-variant
-          stond staat vanaf nu hier. */}
+      {/* De schermvullende hero. Stond tot 11 september 2026 op een eigen route om te
+          vergelijken; die route is weg sinds deze hier staat. */}
       <FigmaHomeApp hero="schermvullend" wensen={homeWensen()} />
     </>
   );

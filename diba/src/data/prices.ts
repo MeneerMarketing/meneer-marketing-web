@@ -82,14 +82,17 @@ const LASER_GEBIEDEN: readonly {
   readonly caption: string;
   readonly zin?: string;
 }[] = [
-  { id: "gelaat", caption: "gelaat" },
-  { id: "bovenlichaam", caption: "bovenlichaam" },
-  { id: "onderlichaam", caption: "onderlichaam" },
+  /* De pakketten eerst (Okan, 11 september 2026: "vaak komt iemand toch voor een pakket").
+     Wie voor een pakket komt hoeft dan niet eerst langs vijfendertig losse zones, en wie
+     een losse zone zoekt ziet meteen dat een pakket bestaat. */
   {
     id: "pakket",
     caption: "pakketten",
     zin: "Een pakket vervangt de losse zones die erin zitten; die tellen dan niet nog een keer mee.",
   },
+  { id: "gelaat", caption: "gelaat" },
+  { id: "bovenlichaam", caption: "bovenlichaam" },
+  { id: "onderlichaam", caption: "onderlichaam" },
 ];
 
 const laserSecties: readonly PriceSection[] = LASER_GESLACHTEN.flatMap((g) =>

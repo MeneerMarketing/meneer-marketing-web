@@ -48,8 +48,7 @@ const APP = join(process.cwd(), "src", "app");
  *
  * Zodra ze weer opengaan: hier weghalen en de twee regels in redirects.ts.
  */
-const OVERSLAAN =
-  /^\/(dev|home-variant|resultaten|laserontharing\/configurator)(\/|$)/;
+const OVERSLAAN = /^\/(dev|resultaten|laserontharing\/configurator)(\/|$)/;
 
 /** Alle statische routes met een eigen pagina, gevonden in de app-map. */
 function statischeRoutes(): string[] {

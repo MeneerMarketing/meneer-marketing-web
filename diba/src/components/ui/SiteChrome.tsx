@@ -27,7 +27,7 @@ export default function SiteChrome({
 }: SiteChromeProps) {
   const pathname = usePathname();
 
-  const eigenChrome = pathname === "/" || pathname === "/home-variant";
+  const eigenChrome = pathname === "/";
 
   if (eigenChrome) {
     return <>{children}</>;

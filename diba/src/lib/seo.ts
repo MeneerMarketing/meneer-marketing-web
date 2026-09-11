@@ -34,9 +34,19 @@ import { DIBA_SITE, DIBA_SITE_URL } from "@/lib/site";
  * En in een generateMetadata dezelfde aanroep, met de waarden uit de data.
  */
 
-/** Het deelbeeld. 1200x630 is de maat die WhatsApp, LinkedIn en Facebook verwachten. */
+/**
+ * Het deelbeeld. 1200x630 is de maat die WhatsApp, LinkedIn en Facebook verwachten.
+ *
+ * Opnieuw gemaakt op 11 september 2026. Rojda: "het lettertype is niet het Diba-lettertype
+ * en de kleur klopt ook niet." Het oude beeld stond op een helder smaragdgroen en zette
+ * DIBA CLINICS in een schreefletter; dit staat op Olive leaf (--g-700) met het echte
+ * woordmerk en DM Sans, gebouwd uit de bestanden van de site zelf (scratch/maak-og.mjs).
+ *
+ * Nieuwe bestandsnaam en niet dezelfde: WhatsApp en LinkedIn bewaren het oude beeld per
+ * adres. Onder dezelfde naam blijven mensen die het al deelden het oude zien.
+ */
 const DEELBEELD = {
-  url: "/images/og-diba-clinics.jpg",
+  url: "/images/og/diba-clinics-2026.jpg",
   width: 1200,
   height: 630,
   alt: `${DIBA_SITE.name}, huidkliniek in ${DIBA_SITE.area}`,

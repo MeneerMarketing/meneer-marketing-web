@@ -1272,6 +1272,12 @@ body {
   overflow-x: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  /* Zonder dit krijgt de pagina zelf een schuifbalk naar rechts. Zie de toelichting in
+     scratch/golf36a.py en het commentaar hieronder: Chromium telt de scrollbreedte van dit
+     vlak mee in de overloop van de pagina zodra een voorouder `overflow-x: clip` gebruikt,
+     en dat doet `main` overal. Gemeten op 446 pixels: 734 om 446 zonder, 446 om 446 met.
+     Het knipt niets extra weg, want een scrollvlak knipt zijn inhoud toch al af. */
+  contain: paint;
 }
 .diba-schuifrij::-webkit-scrollbar {
   display: none;

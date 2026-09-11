@@ -77,10 +77,10 @@ const EERLIJK_ADVIES_PUNTEN = [
  *   "variant"      het beeldvlak met ronde hoeken en de navigatie erin
  *   "schermvullend" video van rand tot rand, balk en navigatie doorschijnend erover
  *
- * Sinds 11 september 2026 draaien / en /home-variant allebei "schermvullend": die hero is
- * goedgekeurd en staat nu op de homepage zelf. De andere twee standen blijven staan zolang
- * ze nog te vergelijken moeten zijn; verdwijnt die behoefte, dan mag deze prop weg en met
- * hem HeroVariant en HomeHero.
+ * Sinds 11 september 2026 draait / op "schermvullend": die hero is goedgekeurd en de
+ * vergelijkingsroute is weg. De andere twee standen staan er nog voor het geval er opnieuw
+ * vergeleken moet worden; is dat niet meer nodig, dan mag deze prop weg en met hem
+ * HeroVariant en HomeHero.
  */
 export default function FigmaHomeApp({
   hero = "figma",

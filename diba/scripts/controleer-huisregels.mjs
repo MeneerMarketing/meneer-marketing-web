@@ -203,15 +203,14 @@ for (const pad of paden) {
 
   /* Overloop meet je op de smalste telefoon die we aanhouden, niet op een bureaublad. */
   await mobiel.goto(BASIS + pad, { waitUntil: "domcontentloaded" });
-  /* De proef op de som: duw de pagina opzij en kijk of hij meegeeft. `scrollWidth` telt
-     ook weggeknipte inhoud mee en meldde daardoor overloop op pagina's die niet schuiven. */
-  const over = await mobiel.evaluate(() => {
-    const y = window.scrollY;
-    window.scrollTo(9999, y);
-    const uit = Math.round(window.scrollX);
-    window.scrollTo(0, y);
-    return uit;
-  });
+  /* Terug naar de scrollbreedte. De variant die de pagina opzij probeerde te duwen zag de
+     echte overloop niet: een scrollvlak binnen `overflow-x: clip` lekt zijn breedte door in
+     de pagina zonder dat `scrollTo` meegeeft. Zie controleer-mobiel.mjs. */
+  const over = await mobiel.evaluate(
+    () =>
+      document.documentElement.scrollWidth -
+      document.documentElement.clientWidth,
+  );
   if (over > 0) {
     problemen.push(`${pad}: ${over}px horizontale overloop op mobiel`);
   }

@@ -64,10 +64,10 @@ export default function HeroSchermvullend() {
             Dezelfde component draagt beide, dus de pauzeknop komt mee: bewegend beeld dat je
             niet kunt stoppen is voor sommige mensen misselijkmakend.
 
-            De pauzeknop stond boven de kop en staat nu klein in de linkerbenedenhoek
-            (Yasin, 11 september 2026: het zegel hoort op die plek). Hij blijft wel bestaan:
-            beeld dat vanzelf beweegt moet te stoppen zijn, en `prefers-reduced-motion`
-            telt daar niet als vervanging voor.
+            Zonder pauzeknop, op verzoek (Yasin, 11 september 2026, nadat ik hem op de
+            regel had gewezen). Dat wijkt af van §9 en van WCAG 2.2.2; zie de toelichting
+            onderaan dit bestand. `prefers-reduced-motion` blijft wel werken: wie dat aan
+            heeft staan krijgt de stilstaande shootfoto.
 
             Zolang de video laadt staat de shootfoto er als poster, en wie om minder
             beweging vraagt krijgt die foto met een afspeelknop erover. */}
@@ -78,7 +78,7 @@ export default function HeroSchermvullend() {
             poster={FIGMA_HERO_PORTRAIT}
             posterBreed={FIGMA_HOME_PORTRAIT_WIDE.src}
             beschrijving={FIGMA_HERO_PORTRAIT_ALT}
-            knopKlasse="bottom-3 left-5 z-20 h-9 w-9 bg-white/70 sm:bottom-4 sm:left-9 lg:left-[7.5vw]"
+            eigenKnop={false}
           />
         </div>
 
@@ -109,22 +109,25 @@ export default function HeroSchermvullend() {
           </div>
 
           <div className="mt-auto px-5 pb-10 sm:px-9 sm:pb-14 lg:px-[7.5vw] lg:pb-20">
-            {/* Het zegel op de plek waar eerst de pauzeknop stond: linksboven de kop
-                (Yasin, 11 september 2026). Het hangt daar niet meer los aan de rechterrand
-                maar staat aan het begin van de regel, waar je leest. */}
-            <span className="diba-label mb-4 grid h-[72px] w-[72px] place-items-center rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] text-center text-[10px] leading-4 text-[var(--on-dark-btn-text)] sm:h-24 sm:w-24 sm:text-[11px]">
-              Sinds
-              <br />
-              {DIBA_PROOF.activeSince}
-            </span>
-            {/* `justify-between` op elke maat: het zegel staat tegen de rechtermarge en
-                niet een stukje ervoor (Yasin, 11 september 2026: "meer naar rechts,
-                helemaal uitlijnen"). */}
-            <h1 className="diba-display-l text-[var(--on-dark)] max-[359px]:text-[2.25rem]">
-              Dé huidkliniek
-              <br />
-              <span className="diba-accent-on-dark">in Rotterdam</span>
-            </h1>
+            {/* Kop en zegel op één regel, het zegel rechts en verticaal in het midden van
+                de kop (Yasin, 11 september 2026). `items-center` op de rij doet dat: de kop
+                is twee regels hoog, het zegel staat op de helft daarvan.
+
+                `justify-between` zet het tegen de rechtermarge in plaats van een stukje
+                ervoor, en `shrink-0` houdt de cirkel rond als de kop breed wordt. */}
+            <div className="flex items-center justify-between gap-4">
+              <h1 className="diba-display-l text-[var(--on-dark)] max-[359px]:text-[2.25rem]">
+                Dé huidkliniek
+                <br />
+                <span className="diba-accent-on-dark">in Rotterdam</span>
+              </h1>
+
+              <span className="diba-label grid h-[72px] w-[72px] shrink-0 place-items-center rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] text-center text-[10px] leading-4 text-[var(--on-dark-btn-text)] sm:h-24 sm:w-24 sm:text-[11px]">
+                Sinds
+                <br />
+                {DIBA_PROOF.activeSince}
+              </span>
+            </div>
 
             {/* Eén regel, op elke maat (Yasin, 11 september 2026: "doe toch wel een korte,
                 strakke, pakkende subtekst onder de titel"). Hier stond de opsomming van zes

@@ -138,12 +138,7 @@ const statisch = zoekPaginas(join(process.cwd(), "src", "app"))
   .filter((p) => !p.includes("[") && !p.includes("("));
 
 const paden = [...new Set([...statisch, ...uitSitemap, ...uitOverzichten])]
-  .filter(
-    (p) =>
-      !p.startsWith("/api") &&
-      !p.startsWith("/dev") &&
-      !p.startsWith("/home-variant"),
-  )
+  .filter((p) => !p.startsWith("/api") && !p.startsWith("/dev"))
   .sort();
 
 /* ── De tekst per pagina ophalen ─────────────────────────────────────────── */

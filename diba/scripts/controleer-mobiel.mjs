@@ -317,23 +317,17 @@ const METEN = ({ TIKDOEL, LETTER, TUSSENRUIMTE }) => {
     klein: [...klein.entries()].map(([px, wat]) => `${px} "${wat}"`),
     geduld,
     afgeknipt: [...new Set(afgeknipt)],
-    /* Kan de bezoeker de pagina echt opzij duwen?
+    /* De scrollbreedte van de pagina tegen de schermbreedte.
      *
-     * Hier stond `documentElement.scrollWidth - clientWidth`. Dat getal telt ook inhoud mee
-     * die een voorouder wegknipt met `overflow-x: clip`, en dat doet `main` op elke pagina.
-     * Zodra er ergens een veegrij bij kwam meldde deze controle 242 pixels overloop op een
-     * pagina die met geen mogelijkheid opzij te schuiven is: gemeten bleef `window.scrollX`
-     * nul en was `body.scrollWidth` precies de schermbreedte.
-     *
-     * Daarom nu de proef op de som: duw de pagina opzij en kijk of hij meegeeft. Dat is
-     * exact wat deze regel wil weten, en er zit geen aanname meer tussen. */
-    overloop: (() => {
-      const y = window.scrollY;
-      window.scrollTo(9999, y);
-      const uit = Math.round(window.scrollX);
-      window.scrollTo(0, y);
-      return uit;
-    })(),
+     * Ik heb deze meting één dag vervangen door "duw de pagina opzij en kijk of hij
+     * meegeeft", omdat `scrollX` nul bleef en het vals alarm leek. Dat was verkeerd gezien:
+     * Yasin stuurde een schermafdruk met een horizontale schuifbalk erop, precies op de
+     * pagina die deze regel had aangewezen. Een scrollvlak binnen een voorouder met
+     * `overflow-x: clip` laat in Chromium zijn breedte in de pagina doorlekken zonder dat
+     * `scrollTo` er iets mee doet. Deze meting zag dat wel. Hij blijft. */
+    overloop:
+      document.documentElement.scrollWidth -
+      document.documentElement.clientWidth,
   };
 };
 

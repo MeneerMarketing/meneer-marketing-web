@@ -15828,16 +15828,6 @@ BESCHERMBRIL, VOOR JOU EN VOOR ONS
 
 - Huidtype I tot VI De instellingen worden afgestemd op je Fitzpatrick-type en op de zone.
 
-**Waar wil je ontharen?**
-
-We ontharen van de bovenlip tot de hele rug. Hieronder staat per gebied wat eronder valt en wat de goedkoopste en de duurste zone daar kost; het tarief van jouw zone staat op de tarievenpagina.
-
-- Gelaat en hals 20 TOT 190 EURO PER SESSIE Bovenlip, kin, onderkin, wangen, bakkebaard, voorhoofd, tussen de wenkbrauwen, haarlijn, hals en nek, los of als hele gelaat.
-
-- Bovenlichaam 30 TOT 230 EURO PER SESSIE Oksels, boven- en onderarmen, buik, navelstrook, borst, schouders en rug, los of als hele rug.
-
-- Onderlichaam 80 TOT 200 EURO PER SESSIE Boven- en onderbenen, bikinilijn klein of groot, bilnaad en bilwangen, los of als hele benen.
-
 > knop: ALLE TARIEVEN PER ZONE
 
 > knop: DE LASER DIE WE GEBRUIKEN
@@ -16740,9 +16730,29 @@ Laserontharing heeft twee tarievenlijsten. Welke geldt voor jou?
 
 > knop: HEREN
 
+Een pakket vervangt de losse zones die erin zitten; die tellen dan niet nog een keer mee.
+
 *BEHANDELING*
 
 *PER SESSIE IN EURO’S*
+
+*Pakket A: oksels en bikinilijn groot*
+
+*Pakket B: oksels, gehele armen en bikinilijn groot*
+
+125
+
+*Pakket C: oksels, gehele armen en gehele benen*
+
+*Pakket D: oksels, gehele benen en bikinilijn groot*
+
+*Pakket E: full body zonder gezicht*
+
+349
+
+*Gelaat inclusief hals*
+
+99
 
 *Voorhoofd*
 
@@ -16779,8 +16789,6 @@ Laserontharing heeft twee tarievenlijsten. Welke geldt voor jou?
 85
 
 *Gehele gezicht*
-
-125
 
 *Gehele gelaat*
 
@@ -16829,24 +16837,6 @@ Laserontharing heeft twee tarievenlijsten. Welke geldt voor jou?
 *Bikinilijn groot*
 
 *Bilwangen*
-
-Een pakket vervangt de losse zones die erin zitten; die tellen dan niet nog een keer mee.
-
-*Pakket A: oksels en bikinilijn groot*
-
-*Pakket B: oksels, gehele armen en bikinilijn groot*
-
-*Pakket C: oksels, gehele armen en gehele benen*
-
-*Pakket D: oksels, gehele benen en bikinilijn groot*
-
-*Pakket E: full body zonder gezicht*
-
-349
-
-*Gelaat inclusief hals*
-
-99
 
 GEEN STERRETJES Er staan hier geen voetnoten met voorwaarden en geen bedragen die pas aan de balie compleet worden. Wat je hier ziet is wat een sessie kost. Hoeveel sessies je nodig hebt hoor je tijdens de intake, en dat getal bepaalt je totaal meer dan het tarief hiernaast.
 
@@ -17143,4 +17133,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_138 pagina's · 8015 tekstblokken · ongeveer 115.693 woorden._
+_138 pagina's · 8010 tekstblokken · ongeveer 115.583 woorden._
