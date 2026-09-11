@@ -228,8 +228,7 @@ export function CasesPreviewHeader() {
           <span className="text-[#FF5722]">Echte trajecten.</span>
         </h2>
         <p className="mt-4 text-lg leading-relaxed text-slate-600">
-          SkinComplete, BestRest en echte projecten met echte beelden.
-          Hills Pilates: echte keuzes, echte volgorde en resultaat dat je kunt uitleggen.
+          SkinComplete, BestRest, DIBA Clinics en Hills Pilates. Echte keuzes, echte volgorde en resultaat dat je kunt uitleggen.
         </p>
       </div>
       <div className="flex flex-col gap-2 self-start sm:flex-row sm:items-center lg:self-auto">

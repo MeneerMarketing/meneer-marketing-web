@@ -91,6 +91,26 @@ export const CASES_PAGE_STORIES: Record<CaseSceneId, CasePageStory> = {
     ],
     punch: "Site, app en mail. Eén lijn. Alles op dezelfde stack.",
   },
+  "diba-clinics": {
+    hook: "Veel klinieksites schreeuwen urgentie. DIBA wilde vertrouwen, alsof je al in de stoel zit.",
+    meneerLine:
+      "Next.js from scratch. Prijzen zichtbaar, geen pop-ups, SEO per behandeling. Kliniek-niveau online.",
+    beats: [
+      {
+        label: "Zo begon het",
+        text: "De markt zit vol templates, stock en vage prijzen. DIBA wilde online hetzelfde gevoel als in Hillegersberg: eerlijk, rustig, professioneel.",
+      },
+      {
+        label: "Zo bouwde ik",
+        text: "Custom site in Next.js met merkgroen, echte behandelfoto's en harde contentregels. Elke pagina een volgende stap. Prijzen en trajecten altijd zichtbaar. SEO per behandeling en lokale zoekintentie.",
+      },
+      {
+        label: "Zo staat het nu",
+        text: "dibaclinics.nl draait live in Rotterdam. Bezoekers zien wat het kost, weten hoe ze boeken en vinden de kliniek op de manier waarop mensen echt zoeken.",
+      },
+    ],
+    punch: "Live op dibaclinics.nl. Kliniek-niveau online, 24/7 open.",
+  },
 };
 
 export const CASES_PAGE_CTA = {
@@ -101,7 +121,7 @@ export const CASES_PAGE_CTA = {
 
 export const CASES_PAGE_PROOF = {
   eyebrow: "Live check",
-  title: "Drie links die je zelf opent.",
+  title: "Vier links die je zelf opent.",
   titleAccent: "Alles live op productie.",
   lead: "Alles wat je hierboven zag draait ergens op productie. Ik hoef je geen deck te sturen. Klik, kijk, oordeel.",
   meneerQuip: "Staat de URL niet live? Dan staat het niet op deze pagina.",
@@ -122,7 +142,7 @@ export const CASES_PAGE_WERKWIJZE = {
     route:
       "BestRest kreeg per matras een andere route. Toppers zijn geen matrassen. Logisch.",
     bouwen:
-      "Hills kreeg site, app en mail in één lijn. Vijf losse abonnementen die niet praten? Dat was het oude model.",
+      "DIBA kreeg een Next.js site die als kliniek voelt, niet als influencer-template. Hills kreeg site, app en mail in één lijn.",
     sturen:
       "Ads opschalen als het al verkocht. Anders gok je met iemand anders zijn budget.",
   },
@@ -145,7 +165,7 @@ export const CASES_PAGE_HONEST = {
     "Websites from scratch, Shopify custom, Next.js apps",
     "SEO en fundament eerst. Ads als het rendement klopt",
     "Update in normale taal: wat live staat en wat het doet",
-    "Route op maat. SkinComplete ≠ BestRest ≠ Hills",
+    "Route op maat. SkinComplete ≠ BestRest ≠ Hills ≠ DIBA",
   ],
   meneerLine: "Ik groei als jij groeit. Direct advies, geen agency-praat. Iemand die meedenkt en doorpakt.",
 } as const;

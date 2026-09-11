@@ -316,6 +316,14 @@ const CASE_HOOKS: Record<string, string> = {
   skincomplete: "Salons bestellen 24/7 via B2B-portaal. SEO vóór ads.",
   bestrest: "Custom shop in matrassenland. Per lijn eigen marketing.",
   "hills-pilates": "Boekingsapp + site + mail. Alles op één stack.",
+  "diba-clinics": "Huidkliniek-site from scratch. Prijzen zichtbaar, live in Rotterdam.",
+};
+
+const CASE_LABELS: Record<string, string> = {
+  skincomplete: "SkinComplete",
+  bestrest: "BestRest",
+  "hills-pilates": "Hills Pilates",
+  "diba-clinics": "DIBA Clinics",
 };
 
 export function getZoekenLinksForDienstSlug(
@@ -384,12 +392,7 @@ export function getCaseLinkForArticle(articleSlug: string): CaseLinkItem | null 
   const caseSlug =
     ARTICLE_CASE_OVERRIDES[articleSlug] ?? PILLAR_CASE_FALLBACK[article.category].slug;
 
-  const label =
-    caseSlug === "skincomplete"
-      ? "SkinComplete"
-      : caseSlug === "bestrest"
-        ? "BestRest"
-        : "Hills Pilates";
+  const label = CASE_LABELS[caseSlug] ?? "Case";
 
   return {
     href: `/cases/${caseSlug}`,
@@ -398,16 +401,19 @@ export function getCaseLinkForArticle(articleSlug: string): CaseLinkItem | null 
   };
 }
 
-import { getLiveVerticals } from "@/data/verticals/registry";
-
 /** Commerciële branche-landings (niet /zoeken/). Sitebreed in footer + topical authority. */
-export const VERTICAL_LANDING_LINKS: readonly InternalLinkItem[] = getLiveVerticals().map(
-  (vertical) => ({
-    href: vertical.path,
-    label: vertical.verticalNamePlural,
-    hint: vertical.seoFocus[0] ?? vertical.fitNote,
-  }),
-);
+export const VERTICAL_LANDING_LINKS: readonly InternalLinkItem[] = [
+  {
+    href: "/pilates-studios",
+    label: "Pilates studio's",
+    hint: "Pilates website laten maken, SEO en marketing",
+  },
+  {
+    href: "/huidklinieken",
+    label: "Huidklinieken",
+    hint: "Website en lokale vindbaarheid voor klinieken",
+  },
+] as const;
 
 export const HOME_PILLAR_LINKS: readonly {
   slug: PillarSlug;

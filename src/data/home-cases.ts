@@ -1,4 +1,8 @@
-export type CaseSceneId = "skincomplete" | "bestrest" | "hills-pilates";
+export type CaseSceneId =
+  | "skincomplete"
+  | "bestrest"
+  | "hills-pilates"
+  | "diba-clinics";
 
 export type CaseServiceId =
   | "portal"
@@ -81,6 +85,13 @@ const HP_PALETTE = {
   surface: "#F5F0EA",
   deep: "#45382C",
   onAccent: "#FEFCFC",
+} as const;
+
+const DIBA_PALETTE = {
+  accent: "#434f3a",
+  surface: "#f7faf5",
+  deep: "#0a0a09",
+  onAccent: "#f7faf5",
 } as const;
 
 export const HOME_CASES: HomeCase[] = [
@@ -202,11 +213,61 @@ export const HOME_CASES: HomeCase[] = [
       { id: "app", label: "Boekingsapp", blurb: "Agenda voor klant én team" },
     ],
   },
+  {
+    id: "diba-clinics",
+    client: "DIBA Clinics",
+    eyebrow: "Next.js · Huidkliniek · SEO",
+    title: "Huidkliniek-site from scratch met prijzen en afspraakflow",
+    homeHook:
+      "Next.js from scratch voor een echte huidkliniek. Vertrouwen, geen influencer-glitter.",
+    metric: "Live",
+    metricHint: "dibaclinics.nl · Rotterdam",
+    body: "DIBA Clinics vroeg om een site die als kliniek voelt: prijzen zichtbaar, duidelijke route naar afspraak, SEO die past bij behandelingen en lokale vindbaarheid.",
+    challenge:
+      "In de esthetische markt ogen veel sites hetzelfde: stock, urgentie-trucs, vage prijzen. DIBA wilde online hetzelfde vertrouwen als in de stoel, zonder template-look.",
+    move:
+      "Custom Next.js-site gebouwd from scratch met merkgroen, echte behandelfoto's en strakke contentregels. Prijzen en trajecten zichtbaar, afspraakflow en twijfel-route ingebouwd. SEO-structuur per behandeling en intentie.",
+    result:
+      "dibaclinics.nl staat live als vestiging die 24/7 open is. Bezoekers zien wat het kost, weten wat de volgende stap is en vinden de kliniek op de manier waarop mensen echt zoeken.",
+    tags: [
+      "Website from scratch",
+      "Next.js",
+      "SEO & lokale vindbaarheid",
+      "Afspraakflow",
+    ],
+    palette: DIBA_PALETTE,
+    accent: DIBA_PALETTE.accent,
+    scene: "diba-clinics",
+    href: "/cases/diba-clinics",
+    website: { url: "https://dibaclinics.nl", hostname: "dibaclinics.nl" },
+    previewImage: "/cases/diba-clinics-hero.jpg",
+    previewObjectPosition: "center center",
+    services: [
+      {
+        id: "website",
+        label: "Next.js site",
+        blurb: "From scratch, geen page builder",
+      },
+      {
+        id: "seo",
+        label: "SEO",
+        blurb: "Behandelingen en lokale intentie",
+      },
+      {
+        id: "email",
+        label: "Afspraakflow",
+        blurb: "Prijzen zichtbaar, route naar consult",
+      },
+    ],
+  },
 ] as const;
 
 /** Alleen cases op de homepage proof-strip (SkinComplete zit al in bouw-sectie) */
 export const HOME_PROOF_CASES = HOME_CASES.filter(
-  (c) => c.id === "bestrest" || c.id === "hills-pilates",
+  (c) =>
+    c.id === "bestrest" ||
+    c.id === "hills-pilates" ||
+    c.id === "diba-clinics",
 );
 
 /** Alias voor cases-pagina en andere imports */

@@ -29,6 +29,13 @@ export const CASE_SEO: Record<string, CaseSeoEntry> = {
     publishedAt: "2025-06-01",
     dateModified: "2026-05-01",
   },
+  "diba-clinics": {
+    title: "Case DIBA Clinics | huidkliniek-site from scratch | Meneer Marketing",
+    description:
+      "Geen influencer-template voor een echte kliniek. Next.js from scratch, prijzen zichtbaar, SEO per behandeling. Live op dibaclinics.nl.",
+    publishedAt: "2026-08-01",
+    dateModified: "2026-09-10",
+  },
 };
 
 export function getCaseSeo(slug: string): CaseSeoEntry | null {

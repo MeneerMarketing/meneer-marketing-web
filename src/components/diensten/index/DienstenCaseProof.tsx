@@ -8,7 +8,7 @@ import { Reveal } from "@/components/effects/Reveal";
 import { DIENSTEN_CASE_PROOF } from "@/data/diensten-index";
 import { HOME_CASES } from "@/data/home-cases";
 
-const CASE_IDS = ["skincomplete", "bestrest", "hills-pilates"] as const;
+const CASE_IDS = ["skincomplete", "bestrest", "hills-pilates", "diba-clinics"] as const;
 
 export function DienstenCaseProof() {
   const reduce = useReducedMotion();
@@ -42,7 +42,7 @@ export function DienstenCaseProof() {
           </p>
         </Reveal>
 
-        <div className="mt-10 grid gap-10 lg:grid-cols-3 lg:gap-6">
+        <div className="mt-10 grid gap-10 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 lg:gap-6">
           {cases.map((caseItem, index) => {
             const meta = DIENSTEN_CASE_PROOF.cases.find(
               (c) => c.href === caseItem.href,

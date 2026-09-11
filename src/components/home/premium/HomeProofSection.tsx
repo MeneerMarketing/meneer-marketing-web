@@ -44,7 +44,7 @@ export function HomeProofSection() {
           </Link>
         </div>
 
-        <div className="mt-10 grid gap-10 lg:grid-cols-2 lg:gap-8">
+        <div className="mt-10 grid gap-10 lg:grid-cols-3 lg:gap-8">
           {HOME_PROOF_CASES.map((caseItem, index) => (
             <motion.article
               key={caseItem.id}

@@ -35,6 +35,9 @@ export function CaseSceneIllustration({
       {scene === "hills-pilates" && (
         <HillsPilatesScene accent={accent} deep={deep} reduce={!!reduce} />
       )}
+      {scene === "diba-clinics" && (
+        <DibaClinicsScene accent={accent} deep={deep} reduce={!!reduce} />
+      )}
     </svg>
   );
 }
@@ -260,6 +263,75 @@ function HillsPilatesScene({
         animate={{ pathLength: 1 }}
         transition={{ delay: 0.45 }}
       />
+    </>
+  );
+}
+
+function DibaClinicsScene({
+  accent,
+  deep,
+  reduce,
+}: {
+  accent: string;
+  deep: string;
+  reduce: boolean;
+}) {
+  return (
+    <>
+      <rect x="16" y="20" width="368" height="240" rx="14" fill="#f7faf5" stroke={accent} strokeWidth="1.5" />
+      <rect x="32" y="36" width="336" height="28" rx="8" fill="white" stroke={accent} strokeWidth="1" />
+      <text x="200" y="54" textAnchor="middle" fill={accent} fontSize="11" fontWeight="800" fontFamily="system-ui">
+        dibaclinics.nl · huidkliniek
+      </text>
+
+      <motion.g
+        initial={reduce ? false : { opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.15, type: "spring", stiffness: 180, damping: 16 }}
+      >
+        <rect x="40" y="80" width="150" height="160" rx="10" fill="white" stroke={accent} strokeWidth="2" />
+        <text x="115" y="108" textAnchor="middle" fill={deep} fontSize="12" fontWeight="900" fontFamily="system-ui">
+          HydraFacial
+        </text>
+        <rect x="60" y="120" width="110" height="8" rx="2" fill={`${accent}33`} />
+        <rect x="60" y="136" width="80" height="8" rx="2" fill={`${accent}22`} />
+        <text x="115" y="162" textAnchor="middle" fill={accent} fontSize="10" fontWeight="800" fontFamily="system-ui">
+          €149
+        </text>
+        <rect x="70" y="174" width="90" height="24" rx="8" fill={accent} />
+        <text x="115" y="190" textAnchor="middle" fill="#f7faf5" fontSize="9" fontWeight="700" fontFamily="system-ui">
+          Afspraak
+        </text>
+      </motion.g>
+
+      <rect x="204" y="80" width="164" height="76" rx="10" fill="white" stroke={`${accent}55`} />
+      <text x="220" y="100" fill={deep} fontSize="9" fontWeight="800" fontFamily="system-ui">
+        SEO per behandeling
+      </text>
+      <motion.polyline
+        points="220,140 250,128 280,132 310,108 350,96"
+        stroke={accent}
+        strokeWidth="2"
+        fill="none"
+        initial={reduce ? false : { pathLength: 0 }}
+        animate={{ pathLength: 1 }}
+        transition={{ delay: 0.3 }}
+      />
+
+      <rect x="204" y="164" width="164" height="76" rx="10" fill="white" stroke={`${accent}55`} />
+      {["Prijzen zichtbaar", "Twijfel-route", "Rotterdam"].map((label, i) => (
+        <motion.g
+          key={label}
+          initial={reduce ? false : { opacity: 0, x: 8 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.35 + i * 0.08 }}
+        >
+          <rect x="216" y={176 + i * 18} width="140" height="14" rx="4" fill="#f7faf5" />
+          <text x="224" y={186 + i * 18} fill={accent} fontSize="8" fontWeight="700" fontFamily="system-ui">
+            {label}
+          </text>
+        </motion.g>
+      ))}
     </>
   );
 }

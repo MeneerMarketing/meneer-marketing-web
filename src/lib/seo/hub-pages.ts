@@ -30,7 +30,7 @@ export const HUB_PAGE_SEO = {
 
     description:
 
-      "SkinComplete, BestRest, Hills Pilates. Echte video en resultaten, geen stockfoto-theater. Zo ziet bouwen plus campagnes eruit als één guy het regelt.",
+      "SkinComplete, BestRest, Hills Pilates en DIBA Clinics. Echte video en resultaten, geen stockfoto-theater. Zo ziet bouwen plus campagnes eruit als één guy het regelt.",
 
     ogAccent: "FF5722",
 

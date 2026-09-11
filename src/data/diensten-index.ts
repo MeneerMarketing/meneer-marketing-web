@@ -166,6 +166,12 @@ export const DIENSTEN_CASE_PROOF = {
       tags: ["Next.js", "Boekingsapp", "Automatisering"],
       href: "/cases/hills-pilates",
     },
+    {
+      name: "Huidkliniek",
+      hook: "Kliniek-niveau online. Prijzen zichtbaar, geen template-trucs.",
+      tags: ["Next.js", "SEO per behandeling", "Afspraakflow"],
+      href: "/cases/diba-clinics",
+    },
   ],
 } as const;
 
@@ -249,12 +255,12 @@ export const DIENSTEN_FAQ = [
       "Ja, als het past bij je fase. Vaak hangen dingen wel samen: een site zonder meetplan of SEO maakt ads duurder. Daarom begin ik met context en kies ik de juiste volgorde.",
   },
   {
-    question: "Bouw je met templates of page builders?",
+    question: "Bouwen jullie met templates of page builders?",
     answer:
       "Nee. Websites en Shopify-thema's bouw ik from scratch. Custom code, snel en klaar om op te schalen. Eigen code die meegroeit, zonder template dat je over een jaar tegen de plinten loopt.",
   },
   {
-    question: "Doe je ook alleen Google Ads of alleen SEO?",
+    question: "Doen jullie ook alleen Google Ads of alleen SEO?",
     answer:
       "Dat kan, mits de basis klopt. Vaak begin ik met SEO en e-mail. Ads pas wanneer organisch verkeer al verkocht. Die volgorde bespreek ik eerlijk.",
   },
@@ -269,7 +275,7 @@ export const DIENSTEN_FAQ = [
       "Met een intake. Twee minuten invullen, daarna een gesprek. Je krijgt scherpte op prioriteit en route. Daarna een voorstel dat past bij je fase, niet bij een standaardpakket.",
   },
   {
-    question: "Werk je ook buiten Apeldoorn?",
+    question: "Werken jullie ook buiten Apeldoorn?",
     answer:
       "Ja. Apeldoorn is thuisbasis, maar ik werk landelijk met dezelfde aanpak. Online groeien, waar je ook zit.",
   },
