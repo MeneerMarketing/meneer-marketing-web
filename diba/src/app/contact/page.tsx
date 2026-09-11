@@ -13,10 +13,10 @@ import { zoekmachineVelden } from "@/lib/seo";
 import {
   DIBA_ADDRESS,
   DIBA_EMAIL,
-  DIBA_INSTAGRAM_URL,
   DIBA_OPENINGSTIJDEN,
   DIBA_SITE,
   DIBA_SITE_URL,
+  DIBA_SOCIALS,
   DIBA_TELEFOON,
   DIBA_TELEFOON_HREF,
   DIBA_WHATSAPP_URL,
@@ -71,7 +71,7 @@ export const metadata: Metadata = zoekmachineVelden({
   omschrijving: `Diba Clinics staat aan de ${DIBA_ADDRESS.street} in ${DIBA_SITE.neighborhood}, ${DIBA_ADDRESS.city}. Bellen, appen, mailen of je vraag stellen via het formulier.`,
 });
 
-/** De vier manieren die geen keuze vragen: ze staan er gewoon. */
+/** De manieren die geen keuze vragen: ze staan er gewoon. */
 const DIRECT = [
   {
     label: "Bellen",
@@ -91,14 +91,19 @@ const DIRECT = [
     href: `mailto:${DIBA_EMAIL}`,
     extern: false,
   },
-  /* Rojda, 7 september 2026: de Instagram koppelen. Een bericht via Instagram is voor een
-     deel van de klanten de gewone manier om een kliniek iets te vragen. */
-  {
-    label: "Instagram",
-    waarde: "@dibaclinics",
-    href: DIBA_INSTAGRAM_URL,
+  /* Rojda, 7 september 2026: de Instagram koppelen. Een bericht via zo'n kanaal is voor
+     een deel van de klanten de gewone manier om een kliniek iets te vragen. Sinds
+     11 september staan TikTok en Facebook er ook bij, uit dezelfde lijst als de voettekst,
+     zodat die twee plekken niet uit elkaar kunnen lopen.
+
+     De handle staat erachter en niet "Stuur een bericht": bij een profiel wil je zien waar
+     je uitkomt voordat je wegklikt van de site. */
+  ...DIBA_SOCIALS.map((kanaal) => ({
+    label: kanaal.naam,
+    waarde: kanaal.handle,
+    href: kanaal.url,
     extern: true,
-  },
+  })),
 ];
 
 /* Voorlopige tekst: de reistijden en de lijnnummers horen door de kliniek bevestigd te

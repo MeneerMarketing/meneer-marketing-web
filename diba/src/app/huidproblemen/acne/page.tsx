@@ -124,7 +124,10 @@ export default function AcnePage() {
               Zit je vooral met wat er is achtergebleven? Dan begint het bij{" "}
               <Link
                 href="/huidproblemen/acne-littekens"
-                className="text-[var(--g-700)] underline underline-offset-4"
+                /* Op donker de accentkleur voor donker. In `--g-700` viel dit woord weg
+                   tegen het vlak eronder: zelfde kleur, dus een gat in de zin (Okan,
+                   11 september 2026). */
+                className="text-[var(--on-dark-accent)] underline underline-offset-4 hover:text-white"
               >
                 acnelittekens
               </Link>
@@ -488,7 +491,9 @@ export default function AcnePage() {
       {/* Welke behandelingen bij acne horen, en op welk apparaat ze draaien. */}
       <BehandelingenBijProbleem pad="/huidproblemen/acne" />
 
-      <section className="mx-5 mb-5 overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+      {/* `mt` erbij: zonder bovenmarge plakt dit vlak tegen de sectie erboven, net als op
+          de homepage (Yasin, 11 september 2026). */}
+      <section className="mx-5 mt-5 mb-5 overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 text-[var(--on-dark)] sm:mx-9 sm:mt-8 sm:mb-8 sm:px-12 sm:py-14 lg:mx-[7.5vw] lg:mt-12 lg:mb-12 lg:px-16 lg:py-20">
         <div className="mx-auto grid max-w-[1600px] gap-10 lg:grid-cols-[1.35fr_.65fr]">
           <div>
             <Label opDonker>Huidconsult</Label>

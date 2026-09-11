@@ -447,6 +447,15 @@ export default function PrivacyPage() {
             </h2>
           </div>
           <div className="max-w-[58ch]">
+            {/* AANTEKENING BIJ DE ADVERTENTIEBELOFTE. Deze zin klopt zolang er alleen
+     Google Analytics 4 en Microsoft Clarity laden. De kliniek gaat adverteren (Yasin,
+     11 september 2026); zodra er een advertentiepixel bij komt, of het nu Google
+     Ads-conversiemeting is of Meta, wordt deze zin onwaar en hoort hij herschreven te
+     worden, samen met de andere twee plekken die hetzelfde beloven:
+     cookiebeleid/page.tsx (de omschrijving voor zoekmachines en de tekst bij "Anonieme
+     statistieken") en privacybeleid/page.tsx. De cookiebalk zelf doet die belofte sinds
+     vandaag niet meer, juist omdat een samenvatting die jaren meegaat er geen hoort te
+     doen. */}
             <p className="text-[17px] leading-8 text-[var(--t-body)]">
               Er worden geen advertentieprofielen van je opgebouwd en er wordt
               niets doorverkocht of geruild. De enige meting op deze site is

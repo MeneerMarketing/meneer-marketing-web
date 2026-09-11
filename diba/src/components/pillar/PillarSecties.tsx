@@ -10,7 +10,6 @@ import {
   RASTER_SECTIEKOP,
   RASTER_SECTIEKOP_GELIJK,
 } from "@/lib/raster";
-import MobielInklap from "@/components/ui/MobielInklap";
 
 /**
  * De secties die elke huidprobleempagina deelt.
@@ -146,8 +145,11 @@ export function WelNiet({
         <div className={`mt-8 sm:mt-12 ${RASTER_GELIJK}`}>
           <div className="rounded-[var(--r-md)] bg-white p-6 sm:p-8">
             <h3 className="diba-label text-[var(--g-700)]">Dit werkt</h3>
+            {/* Alles in één lijst. De eerste drie stonden er en de rest zat achter een
+                uitklapper; bij vijf punten is dat een knop voor twee regels (Okan,
+                11 september 2026: "zou dit gewoon eronder zetten"). */}
             <ul className="mt-5 space-y-4">
-              {wel.slice(0, 3).map((r) => (
+              {wel.map((r) => (
                 <li
                   key={publicCopy(r)}
                   className="flex gap-3 text-[15px] leading-7"
@@ -168,37 +170,6 @@ export function WelNiet({
                 </li>
               ))}
             </ul>
-            {wel.length > 3 ? (
-              <MobielInklap
-                className="mt-4"
-                label={`Nog ${wel.length - 3} punten`}
-              >
-                <ul className="space-y-4">
-                  {wel.slice(3).map((r) => (
-                    <li
-                      key={publicCopy(r)}
-                      className="flex gap-3 text-[15px] leading-7"
-                    >
-                      <svg
-                        viewBox="0 0 20 20"
-                        className="mt-1.5 h-4 w-4 shrink-0 text-[var(--g-700)]"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        aria-hidden="true"
-                      >
-                        <path d="M4 10.5 8 14.5 16 5.5" />
-                      </svg>
-                      <span className="text-[var(--t-body)]">
-                        {publicCopy(r)}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </MobielInklap>
-            ) : null}
           </div>
 
           <div className="rounded-[var(--r-md)] bg-white p-6 sm:p-8">
@@ -206,7 +177,7 @@ export function WelNiet({
               Dit raden we af
             </h3>
             <ul className="mt-5 space-y-4">
-              {niet.slice(0, 3).map((r) => (
+              {niet.map((r) => (
                 <li
                   key={publicCopy(r)}
                   className="flex gap-3 text-[15px] leading-7"
@@ -226,36 +197,6 @@ export function WelNiet({
                 </li>
               ))}
             </ul>
-            {niet.length > 3 ? (
-              <MobielInklap
-                className="mt-4"
-                label={`Nog ${niet.length - 3} punten`}
-              >
-                <ul className="space-y-4">
-                  {niet.slice(3).map((r) => (
-                    <li
-                      key={publicCopy(r)}
-                      className="flex gap-3 text-[15px] leading-7"
-                    >
-                      <svg
-                        viewBox="0 0 20 20"
-                        className="mt-1.5 h-4 w-4 shrink-0 text-[var(--warn)]"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        aria-hidden="true"
-                      >
-                        <path d="M5.5 5.5l9 9M14.5 5.5l-9 9" />
-                      </svg>
-                      <span className="text-[var(--t-body)]">
-                        {publicCopy(r)}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </MobielInklap>
-            ) : null}
           </div>
         </div>
       </div>

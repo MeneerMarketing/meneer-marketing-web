@@ -218,7 +218,7 @@ export default function Pagina() {
             </p>
             <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
               Bultjes op geschoren zones met een donkere krul eronder zijn
-              ingegroeide haren. Dat is een ander mechanisme en een andere
+              ingegroeide haren. Dat is een andere indicatie en een andere
               behandeling.
             </p>
             <div className="mt-7">

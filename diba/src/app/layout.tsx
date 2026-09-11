@@ -11,10 +11,10 @@ import { medicalClinicSchema, SchemaMarkup } from "@/lib/schema";
 import {
   DIBA_ADDRESS,
   DIBA_CITAAT,
-  DIBA_INSTAGRAM_URL,
   DIBA_NAP,
   DIBA_SITE,
   DIBA_SITE_URL,
+  DIBA_SOCIALS,
 } from "@/lib/site";
 import "./globals.css";
 
@@ -120,11 +120,15 @@ export default function RootLayout({
             nap: DIBA_NAP,
             url: DIBA_SITE_URL,
             /* Rojda, 7 september 2026: de Instagram koppelen. Voor Google is dit de
-               koppeling: hetzelfde bedrijf op een andere plek. */
-            sameAs: DIBA_INSTAGRAM_URL ? [DIBA_INSTAGRAM_URL] : undefined,
+               koppeling: hetzelfde bedrijf op een andere plek. Sinds 11 september 2026
+               staan TikTok en Facebook er ook in; met alleen de Instagram erin legt Google
+               die koppeling voor de andere twee niet. */
+            sameAs: DIBA_SOCIALS.length
+              ? DIBA_SOCIALS.map((kanaal) => kanaal.url)
+              : undefined,
           })}
         />
-        <SiteChrome instagramHref={DIBA_INSTAGRAM_URL || undefined}>
+        <SiteChrome>
           <RevealObserver />
           {children}
         </SiteChrome>

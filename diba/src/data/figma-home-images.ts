@@ -106,8 +106,12 @@ export const FIGMA_KENNISBANK_ACNE = {
    de pigmentpagina zelf heeft sinds diezelfde dag een eigen hero-foto, zie
    FIGMA_PIGMENT_HERO hieronder. */
 export const FIGMA_KENNISBANK_PIGMENT = {
-  src: shoot("beh-cosmelan-masker"),
-  alt: "Een Cosmelan-masker wordt aangebracht bij een pigmenttraject",
+  /* Hier stond het Cosmelan-masker. Dat is een pigmentbehandeling, maar een gezicht onder
+     een donkerbruin masker is het laatste beeld dat je bij "een realistisch plan" wilt zien
+     (Okan, 11 september 2026). De Nordlys is het apparaat waarmee pigment hier behandeld
+     wordt, en dat beeld is rustig. */
+  src: shoot("kliniek-nordlys-behandeling"),
+  alt: "Een huidtherapeut werkt met de Nordlys aan pigment in het gezicht",
 } as const satisfies Beeld;
 
 /* En kb-laser toonde een laserpuls op de hoofdhuid, wat naast een kaart over

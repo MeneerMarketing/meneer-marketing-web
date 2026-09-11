@@ -40,6 +40,15 @@ import LeesVerder from "@/components/ui/LeesVerder";
  * naar WhatsApp en dat staat er dan ook zo.
  */
 
+/* AANTEKENING BIJ DE ADVERTENTIEBELOFTE. Deze zin klopt zolang er alleen
+     Google Analytics 4 en Microsoft Clarity laden. De kliniek gaat adverteren (Yasin,
+     11 september 2026); zodra er een advertentiepixel bij komt, of het nu Google
+     Ads-conversiemeting is of Meta, wordt deze zin onwaar en hoort hij herschreven te
+     worden, samen met de andere twee plekken die hetzelfde beloven:
+     cookiebeleid/page.tsx (de omschrijving voor zoekmachines en de tekst bij "Anonieme
+     statistieken") en privacybeleid/page.tsx. De cookiebalk zelf doet die belofte sinds
+     vandaag niet meer, juist omdat een samenvatting die jaren meegaat er geen hoort te
+     doen. */
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/cookiebeleid",
   titel: "Cookiebeleid",
@@ -98,6 +107,8 @@ export default function CookiePage() {
               <span className="diba-accent-on-dark">we gebruiken</span>
             </h1>
 
+            {/* Zie de aantekening bovenaan dit bestand: "Advertentie-tracking staat er
+                niet op" is waar tot de eerste advertentiepixel, en daarna niet meer. */}
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
               De ene soort is nodig om de site te laten werken. De andere is
               anonieme statistiek, en die laadt alleen als je daar akkoord voor

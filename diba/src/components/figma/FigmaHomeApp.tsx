@@ -603,7 +603,10 @@ export default function FigmaHomeApp({
 
       <section
         id="boeken"
-        className="mx-5 mb-5 overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 sm:py-14 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20"
+        /* `mt` erbij: dit vlak had alleen een ondermarge en plakte daardoor tegen de
+           sectie erboven (Yasin, 11 september 2026). De maat loopt mee met de zijmarge,
+           zodat het blok aan alle kanten evenveel lucht heeft. */
+        className="mx-5 mt-5 mb-5 overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 text-[var(--on-dark)] sm:mx-9 sm:mt-8 sm:mb-8 sm:px-12 sm:py-14 lg:mx-[7.5vw] lg:mt-12 lg:mb-12 lg:px-16 lg:py-20"
       >
         {/* 1.35 en niet 1.2: bij die verdeling paste "Wij kijken met je mee." net niet
             in de kolom en brak de kop naar drie regels, ondanks de harde afbreking. */}

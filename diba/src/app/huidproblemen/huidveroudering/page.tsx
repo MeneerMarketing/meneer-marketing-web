@@ -126,21 +126,21 @@ export default function HuidverouderingPage() {
               huidtherapeut kiest uit medische peelings, microneedling met de{" "}
               <Link
                 href="/behandelingen/skinpen"
-                className="font-medium text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+                className="font-medium text-[var(--on-dark-accent)] underline underline-offset-4 hover:text-white"
               >
                 SkinPen
               </Link>{" "}
               of de{" "}
               <Link
                 href="/behandelingen/dermapen-4"
-                className="font-medium text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+                className="font-medium text-[var(--on-dark-accent)] underline underline-offset-4 hover:text-white"
               >
                 Dermapen 4
               </Link>
               , fractionele laser op de{" "}
               <Link
                 href="/apparatuur/fotona"
-                className="font-medium text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+                className="font-medium text-[var(--on-dark-accent)] underline underline-offset-4 hover:text-white"
               >
                 Fotona
               </Link>

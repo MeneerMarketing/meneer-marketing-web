@@ -5,6 +5,10 @@
  * kiezen; dat is eerlijker dan ze verbergen en later toveren, en het laat meteen zien
  * welke kant het op gaat.
  *
+ * Bij die drie staat "binnenkort" in hun eigen taal en niet in het Nederlands (Yasin,
+ * 11 september 2026). Dat is het hele punt van de regel: hij is voor iemand die de
+ * Nederlandse site niet leest, en die heeft aan "Straks" niets.
+ *
  * Gebouwd op `details`/`summary` en niet op React-state. Dat werkt met toetsenbord en
  * muis zonder één regel JavaScript, en na de hydratieproblemen van deze week is een
  * bediening die ook zonder JavaScript werkt de veiligere keuze voor iets dat in elke
@@ -17,15 +21,18 @@
 
 type Taal = {
   readonly code: string;
+  /** De taal in zijn eigen naam: English, niet Engels. */
   readonly naam: string;
+  /** "Binnenkort", in die taal. Staat er alleen bij de talen die er nog niet zijn. */
+  readonly straks?: string;
   readonly actief?: true;
 };
 
 const TALEN: readonly Taal[] = [
   { code: "NL", naam: "Nederlands", actief: true },
-  { code: "EN", naam: "English" },
-  { code: "ES", naam: "Español" },
-  { code: "FR", naam: "Français" },
+  { code: "EN", naam: "English", straks: "Soon" },
+  { code: "ES", naam: "Español", straks: "Pronto" },
+  { code: "FR", naam: "Français", straks: "Bientôt" },
 ];
 
 function Vlag({ code }: { code: string }) {
@@ -109,6 +116,7 @@ export default function Taalkiezer({ opBeeld = false }: TaalkiezerProps) {
         {TALEN.map((t) => (
           <li key={t.code}>
             <span
+              lang={t.code.toLowerCase()}
               className={`flex items-center gap-3 px-4 py-2.5 text-[14px] ${
                 t.actief
                   ? "font-medium text-[var(--t-strong)]"
@@ -132,7 +140,7 @@ export default function Taalkiezer({ opBeeld = false }: TaalkiezerProps) {
                 </svg>
               ) : (
                 <span className="diba-label ml-auto text-[var(--t-muted)]">
-                  Straks
+                  {t.straks}
                 </span>
               )}
             </span>

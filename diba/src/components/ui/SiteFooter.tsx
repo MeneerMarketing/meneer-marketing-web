@@ -3,8 +3,8 @@ import DibaLogo from "@/components/ui/DibaLogo";
 import {
   DIBA_ADDRESS,
   DIBA_BOUWER,
-  DIBA_INSTAGRAM_URL,
   DIBA_SITE,
+  DIBA_SOCIALS,
   DIBA_TELEFOON,
   DIBA_TELEFOON_HREF,
   DIBA_WHATSAPP_URL,
@@ -12,10 +12,6 @@ import {
 import { figmaInnerContainer } from "@/lib/figma-inner-layout";
 import VoetKolommen from "@/components/ui/VoetKolommen";
 import Logostrook from "@/components/ui/Logostrook";
-
-export type SiteFooterProps = {
-  instagramHref?: string;
-};
 
 /**
  * De voettekst.
@@ -131,26 +127,31 @@ const JURIDISCH: readonly { readonly label: string; readonly href: string }[] =
     { label: "Voorwaarden", href: "/algemene-voorwaarden" },
   ];
 
-export default function SiteFooter({ instagramHref }: SiteFooterProps) {
+export default function SiteFooter() {
   const year = new Date().getFullYear();
-  const instagram = instagramHref ?? DIBA_INSTAGRAM_URL;
 
   return (
     /* De ruimte boven de voettekst zit hier en niet in de sectie erboven, zodat het op
        elke pagina hetzelfde is. Eerst was het vier pixels en plakte de voettekst aan het
-       groene vlak; toen achtentwintig en was het te veel. Twintig is de maat waarop het
-       twee dingen zijn zonder dat er een gat valt. */
-    <footer className={`${figmaInnerContainer} pb-12 pt-16 lg:pt-20`}>
+       groene vlak; toen achtentwintig en was het te veel.
+       Op 11 september 2026 nog een keer bijgesteld: er stond een tweede marge binnenin, en
+       samen maakten ze er 112 tot 136 pixels van. Dat las als een gat tussen het
+       afsluitblok en het logo. Nu één marge van 40 op een telefoon en 56 daarboven; met de
+       ondermarge van het afsluitblok erbij komt dat op 60 en 104. */
+    <footer className={`${figmaInnerContainer} pt-10 pb-12 lg:pt-14`}>
       {/* De lijn boven de voettekst is eraf (Yasin, 11 september 2026). De ruimte erboven
           doet het werk al; een streep erbij maakt er een vak van. */}
-      <div className="mx-auto pt-12 lg:pt-14">
+      {/* Geen tweede marge hier: `pt-16 lg:pt-20` hierboven is de ruimte boven de
+          voettekst. Die twee stapelden en maakten er 112 tot 136 pixels van, wat als
+          een gat leest tussen het afsluitblok en het logo (Yasin, 11 september 2026). */}
+      <div className="mx-auto">
         {/* Het merk, in het midden.
 
             Hier stond het logo links met een zin van drie regels ernaast, in een kolom van
             zesentwintig tekens. Dat leest als een restje (Yasin: "droog en lelijk"). Nu
             staat het logo boven de kolommen in het midden, met één regel eronder en de
             manieren om ons te bereiken als knopjes daaronder: adres, telefoon, WhatsApp en
-            Instagram. Dat zijn de vier dingen waarvoor iemand naar een voettekst scrolt. */}
+            de drie profielen. Dat is waarvoor iemand naar een voettekst scrolt. */}
         <div className="text-center">
           <DibaLogo maat="groot" className="mx-auto" />
           <p className="mx-auto mt-6 max-w-[48ch] text-[15px] leading-7 text-[var(--t-body)]">
@@ -180,18 +181,21 @@ export default function SiteFooter({ instagramHref }: SiteFooterProps) {
                 WhatsApp
               </a>
             </li>
-            {instagram ? (
-              <li>
+            {/* Instagram, TikTok en Facebook, uit de lijst in site.ts. Ze staan hier
+                naast het adres, het nummer en WhatsApp, want dit rijtje is "hoe je ons
+                vindt" en niet "welke apps we hebben". */}
+            {DIBA_SOCIALS.map((kanaal) => (
+              <li key={kanaal.naam}>
                 <a
-                  href={instagram}
+                  href={kanaal.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={voetPil}
                 >
-                  Instagram
+                  {kanaal.naam}
                 </a>
               </li>
-            ) : null}
+            ))}
           </ul>
         </div>
 

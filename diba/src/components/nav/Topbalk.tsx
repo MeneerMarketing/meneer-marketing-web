@@ -50,13 +50,25 @@ export default function Topbalk({ opBeeld = false }: TopbalkProps) {
        het logo eronder. Twee balken boven elkaar die geen van beide op de inhoud
        uitlijnen valt niet op als fout, maar het is precies waarom een kop scheef oogt. */
     <div
-      className={`mx-auto flex w-full items-center justify-between gap-4 px-5 py-2.5 sm:px-9 lg:px-[7.5vw] ${
-        /* Niet volledig doorzichtig maar een groen vlak met doorzicht (Yasin, 11
-           september 2026). Zo blijft de balk een balk in plaats van vier zwevende
-           elementen, en de video schemert er nog doorheen. */
-        opBeeld ? "bg-[var(--g-800)]/45 backdrop-blur-sm" : "bg-[var(--g-050)]"
+      className={`relative mx-auto flex w-full items-center justify-between gap-4 px-5 py-2.5 sm:px-9 lg:px-[7.5vw] ${
+        opBeeld ? "" : "bg-[var(--g-050)]"
       }`}
     >
+      {/* Het groene vlak met doorzicht (Yasin, 11 september 2026: "niet volledig
+          doorzichtig, de video mag er nog doorheen schemeren"). Zo blijft de balk een balk
+          in plaats van vier zwevende elementen.
+
+          Waarom een eigen laagje en niet gewoon op de balk: `backdrop-filter` maakt van het
+          element waar het op staat een stapelcontext. Stond het op de balk, dan werd de hele
+          balk als één pakketje getekend op de plek van de balk, en ging het uitklapmenu van
+          de taalkiezer daarin mee, onder de navigatie door, hoe hoog je het z-getal van dat
+          menu ook zette. Op dit laagje zit niets, dus hier mag het. */}
+      {opBeeld ? (
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-10 bg-[var(--g-800)]/45 backdrop-blur-sm"
+        />
+      ) : null}
       <a
         href={DIBA_SALONIZED_REVIEWS_URL}
         target="_blank"

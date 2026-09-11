@@ -170,7 +170,7 @@ export const KP_FAQ = [
   {
     vraag: "Komt het door iets dat ik doe?",
     antwoord:
-      "Nee. Het is grotendeels erfelijk en het heeft niets te maken met hygiëne, voeding of hoe je je huid verzorgt. Dat is voor veel mensen de nuttigste zin op deze pagina. [MEDISCHE-CHECK-ROJDA]",
+      "Nee. Het is grotendeels erfelijk en het heeft niets te maken met hygiëne, voeding of hoe je je huid verzorgt. [MEDISCHE-CHECK-ROJDA]",
   },
   {
     vraag: "Waarom is het 's winters erger?",

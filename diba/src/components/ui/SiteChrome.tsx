@@ -8,23 +8,19 @@ import { figmaHomeShell } from "@/lib/figma-home-layout";
 
 type SiteChromeProps = {
   children: React.ReactNode;
-  instagramHref?: string;
 };
 
 /**
  * De vaste omlijsting van elke pagina: topbalk, hoofdnavigatie, inhoud, voettekst.
  *
- * Twee routes brengen hun eigen kop mee en slaan dit over: de homepage en de hero-variant
- * die als voorbeeld naast de homepage staat. Zonder die uitzondering staan er twee headers
- * boven elkaar en valt er niets te beoordelen.
+ * Een route brengt zijn eigen kop mee en slaat dit over: de homepage, met de schermvullende
+ * hero. Zonder die uitzondering staan er twee headers boven elkaar. De hero-variant die hier
+ * ook stond is weg sinds de livegang.
  *
  * De topbalk scrollt gewoon mee weg, alleen de navigatie blijft hangen. Andersom zou een
  * kwart van een telefoonscherm permanent bezet zijn door een waardering en een taalkiezer.
  */
-export default function SiteChrome({
-  children,
-  instagramHref,
-}: SiteChromeProps) {
+export default function SiteChrome({ children }: SiteChromeProps) {
   const pathname = usePathname();
 
   const eigenChrome = pathname === "/";
@@ -38,7 +34,7 @@ export default function SiteChrome({
       <Topbalk />
       <HoofdNav />
       {children}
-      <SiteFooter instagramHref={instagramHref} />
+      <SiteFooter />
     </div>
   );
 }

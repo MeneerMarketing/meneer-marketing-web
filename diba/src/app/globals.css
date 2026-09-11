@@ -1185,6 +1185,34 @@ html.js-reveal [data-reveal].is-visible {
    al af is voelt traag. Respecteert prefers-reduced-motion, want dit is
    versiering en geen informatie.
    ────────────────────────────────────────────────────────────────────────── */
+/**
+ * De cookiekaart komt van onderen aanzweven.
+ *
+ * Twaalf pixels en een halve seconde: genoeg om te zien dat er iets bijkomt, te weinig om
+ * erop te moeten wachten. Wie minder beweging heeft gevraagd krijgt hem meteen; hij staat
+ * er dan gewoon, en dat is precies zo bruikbaar.
+ */
+@keyframes diba-koek-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.diba-koekkaart {
+  animation: diba-koek-in 0.42s var(--ease-diba) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .diba-koekkaart {
+    animation: none;
+  }
+}
+
 @keyframes diba-paneel-in {
   from {
     opacity: 0;

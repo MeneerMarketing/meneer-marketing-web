@@ -44,11 +44,11 @@ NL
 
 - Nederlands
 
-- English STRAKS
+- English SOON
 
-- Español STRAKS
+- Español PRONTO
 
-- Français STRAKS
+- Français BIENTÔT
 
 > knop: AFSPRAAK MAKEN
 
@@ -234,6 +234,10 @@ Huidkliniek in Rotterdam, sinds 2017. Acne, pigment, littekens, huidverbetering 
 
 - INSTAGRAM
 
+- TIKTOK
+
+- FACEBOOK
+
 AANGESLOTEN BIJ EN GEREGISTREERD IN
 
 © 2026 DIBA CLINICS – WEBSITE DOOR MENEER MARKETING
@@ -257,6 +261,10 @@ Bel ons, stuur een bericht of vul het formulier hieronder in. Wil je een afspraa
 - E-MAIL info@dibaclinics.nl
 
 - INSTAGRAM @dibaclinics
+
+- TIKTOK @dibaclinics.nl
+
+- FACEBOOK Diba Clinics Rotterdam
 
 Bellen kan tijdens onze openingstijden, die staan hieronder.
 
@@ -966,8 +974,6 @@ De juiste volgorde levert hier vaak meer op dan de zwaarste behandeling.
 
 - Zonbescherming, elke dag. Bij bruine vlekken is dit geen aanvulling maar de kern
 
-> knop: Nog 2 punten
-
 - Een huidanalyse in zijlicht, want in recht licht zie je putjes nauwelijks
 
 - Zeggen wanneer afwachten meer oplevert dan behandelen, ook als je hier zat voor een behandeling
@@ -1148,8 +1154,6 @@ Bij couperose is de lijst korter dan bij de meeste huidproblemen, en dat is geen
 
 - Elke dag zonbescherming. UV rekt vaatwanden verder op en is de belangrijkste reden dat er nieuwe bij komen
 
-> knop: Nog 2 punten
-
 - Uitzoeken waardoor de gloed opkomt, want zolang die blijft terugkomen ontstaan er nieuwe vaatjes
 
 - Vooraf zeggen wanneer één sessie waarschijnlijk volstaat en wanneer je op een reeks moet rekenen
@@ -1298,8 +1302,6 @@ Bij dofheid is het effect vaak snel zichtbaar en houdt het een aantal weken aan.
 
 - Eerlijk zeggen dat het effect van een gezichtsbehandeling op dofheid vaak tijdelijk is
 
-> knop: Nog 2 punten
-
 - Zonbescherming, want ongelijke kleur is de traagste van de vier om terug te draaien
 
 - Benoemen wanneer slaap en water meer opleveren dan wat wij kunnen doen
@@ -1439,8 +1441,6 @@ Behandelen voordat duidelijk is om welke van de drie het gaat, kost de meeste me
 - Zonbescherming tot op het ooglid als het om pigment gaat. Die plek wordt bijna altijd overgeslagen.
 
 - Stoppen met wrijven. Wrijven en krabben zijn een bekende aanjager van pigment op deze plek.
-
-> knop: Nog 2 punten
 
 - Je foto's onder hetzelfde licht vergelijken, want licht van boven maakt elke kring erger.
 
@@ -1594,8 +1594,6 @@ Meer producten gebruiken omdat het niet beter wordt, richt de meeste schade aan.
 
 - Reinigen dat je huid niet piepschoon achterlaat. Piepschoon betekent dat er ook vet weg is dat je nodig had.
 
-> knop: Nog 2 punten
-
 - Bij twijfel afbouwen: alles weg behalve reinigen en één verzorgend product, twee weken lang. Dan zie je wat het echt is.
 
 - Accepteren dat de vetas grotendeels aanleg is en dat de wateras wél te sturen valt.
@@ -1738,8 +1736,6 @@ Wachten met de huisarts omdat je eerst zelf iets wilt proberen, kost meestal de 
 
 - Lauw en kort douchen, en daarna binnen enkele minuten insmeren.
 
-> knop: Nog 2 punten
-
 - Nagels kort houden en 's nachts iets tussen je nagels en je huid. Het meeste krabben gebeurt in je slaap.
 
 - Bijhouden wanneer het opvlamt. Prikkels zijn persoonlijk en een patroon zie je alleen achteraf.
@@ -1864,8 +1860,6 @@ Bij milia is het antwoord meestal kort: als het het juiste bultje is, is het in 
 
 - Kijken of er een aanleiding is: te rijke oogcrème, zonschade, of iets dat de huid heeft beschadigd
 
-> knop: Nog 1 punten
-
 - Doorsturen naar de huisarts bij alles wat rood, pijnlijk of warm is
 
 **DIT RADEN WE AF**
@@ -1983,8 +1977,6 @@ Prikken betekent niet dat een product werkt. Dat is het hardnekkigste misverstan
 - Alles nieuw eerst een paar dagen op één plekje proberen, bijvoorbeeld in je hals.
 
 - Op de ingrediëntenlijst kijken en niet op de claim. Op de voorkant staat wat het merk wil, achterop staat wat erin zit.
-
-> knop: Nog 2 punten
 
 - Bijhouden wat er gebeurde en wanneer. Een gevoelige huid reageert vaak met vertraging, en dan is je geheugen geen goede getuige.
 
@@ -2137,8 +2129,6 @@ Zalf op onbekende uitslag verandert het beeld dat de arts moet beoordelen.
 - Een foto maken bij het begin. Uitslag verandert snel en de arts ziet zelden de eerste dag.
 
 - Opschrijven wanneer het begon en wat eraan voorafging: nieuw product, nieuw medicijn, iets gegeten, ergens gelopen.
-
-> knop: Nog 2 punten
 
 - Neem bij twijfel contact op met de huisarts of huisartsenpost. Zij kunnen beoordelen hoe snel je gezien moet worden.
 
@@ -2458,8 +2448,6 @@ De eerste regel links is de goedkoopste behandeling op deze hele site, en de eni
 
 - Beginnen bij kleur en structuur, want daar zie je het snelst of de richting klopt.
 
-> knop: Nog 2 punten
-
 - Je verwachting vooraf op tafel leggen. Als die niet haalbaar is, hoor je dat vóór je betaalt.
 
 - Accepteren dat een deel niet met huidbehandelingen op te lossen is, en dat gewoon benoemen.
@@ -2624,8 +2612,6 @@ Hier is geduld geen bijzaak. Collageen bouwt over maanden op, en dat is niet te 
 
 - Een huidanalyse, want verandering over maanden zie je in de spiegel niet en op een meting wel
 
-> knop: Nog 2 punten
-
 - Dagelijkse zonbescherming, omdat uv-straling collageen en elastine afbreekt
 
 - Zeggen wanneer het verschil te klein wordt om de investering waard te zijn
@@ -2786,8 +2772,6 @@ Strak scheren, pincetten en scrubben houden het probleem in stand. Ermee stoppen
 
 - Kijken naar hoe je nu onthaart. Soms is anders scheren de hele oplossing, en dan zeggen we dat
 
-> knop: Nog 2 punten
-
 - Instellingen aanpassen op je huidtype, want juist bij een donkerder huid moet dat nauwkeuriger
 
 - Zonbescherming op de behandelde zone, anders blijven de donkere vlekjes staan
@@ -2894,8 +2878,6 @@ Bij keloid telt de aanleg zwaarder dan de verzorging. Wat je wel in de hand hebt
 
 - Laten beoordelen zodra het verhoogd blijft of begint te groeien
 
-> knop: Nog 1 punten
-
 - Jeuk en pijn benoemen, want die zeggen iets over hoe actief het weefsel is
 
 **DIT RADEN WE AF**
@@ -2998,7 +2980,7 @@ Verhoorning rond de haarzakjes. Niet te genezen, wel soepeler en minder rood te 
 
 Dan is dit niet je pagina.
 
-Bultjes op geschoren zones met een donkere krul eronder zijn ingegroeide haren. Dat is een ander mechanisme en een andere behandeling.
+Bultjes op geschoren zones met een donkere krul eronder zijn ingegroeide haren. Dat is een andere indicatie en een andere behandeling.
 
 > knop: NAAR INGEGROEIDE HAREN
 
@@ -3013,8 +2995,6 @@ Dit is een aandoening waar onderhoud bij hoort. Met een reeks behandelingen en d
 - De bovenlaag geleidelijk soepeler maken, met een tempo dat de huid aankan
 
 - Onderhoud dat je zelf volhoudt, want zonder dat komt het beeld terug
-
-> knop: Nog 2 punten
 
 - De roodheid apart aanpakken, want die stoort vaak meer dan de bultjes zelf
 
@@ -3044,7 +3024,7 @@ Omdat de verhoorning rond het haarzakje zit en niet op de oppervlakte. Je schuur
 
 Komt het door iets dat ik doe?
 
-Nee. Het is grotendeels erfelijk en het heeft niets te maken met hygiëne, voeding of hoe je je huid verzorgt. Dat is voor veel mensen de nuttigste zin op deze pagina.
+Nee. Het is grotendeels erfelijk en het heeft niets te maken met hygiëne, voeding of hoe je je huid verzorgt.
 
 Waarom is het 's winters erger?
 
@@ -3167,8 +3147,6 @@ Het eerste kruisje rechts is de duurste fout van deze pagina, en hij kost niets 
 - Op tijd komen. Rood en jong reageert beter dan wit en oud, en dat scheelt meer dan de keuze van de behandeling
 
 - Eerst de acne of het onderliggende probleem rustig krijgen, dan pas het litteken
-
-> knop: Nog 2 punten
 
 - Meten voordat we starten, want littekens veranderen traag en je oog went eraan
 
@@ -3340,8 +3318,6 @@ Het eerste kruisje rechts is bij melasma de duurste fout die er is, en hij wordt
 
 - Eerst kijken hoe diep het zit. Dat bepaalt of behandelen zin heeft, en het kost één afspraak.
 
-> knop: Nog 2 punten
-
 - Warmte vermijden rond een behandeling, ook sauna en hete douches.
 
 - Accepteren dat dit beheerd wordt en niet genezen. Wie dat vooraf weet, is achteraf niet teleurgesteld.
@@ -3473,8 +3449,6 @@ Het eerste kruisje rechts is de enige op deze site die niet over geld gaat: iets
 - Foto's maken van plekjes die je in de gaten houdt, van dichtbij en met iets ernaast voor de schaal.
 
 - Ook kijken waar je niet vanzelf kijkt: je rug, je hoofdhuid, tussen je tenen en onder je nagels.
-
-> knop: Nog 2 punten
 
 - Bij twijfel naar de huisarts. Daar is die spreekuur voor.
 
@@ -3613,8 +3587,6 @@ De winst zit hier vaker in wat je stopt dan in wat je erbij doet. Strenger reini
 - De bovenlaag geleidelijk laten vernieuwen zodat volle poriën weer opengaan
 
 - Kijken wat je nu gebruikt, want een paar veelgebruikte producten houden het beeld in stand
-
-> knop: Nog 2 punten
 
 - Meewegen dat een vette huid niet uitgedroogd hoort te worden; die maakt dan méér talg
 
@@ -3757,8 +3729,6 @@ Bij pigment is zonbescherming geen advies achteraf maar onderdeel van de behande
 - Een huidanalyse onder UV-licht, want daar zie je pigment dat er al zit en nog niet zichtbaar is
 
 - Zonbescherming, elke dag en het hele jaar. Zonder dat komen de vlekken terug en werkt de rest niet
-
-> knop: Nog 2 punten
 
 - Licht op platte, egale vlekken, in een reeks met tijd ertussen
 
@@ -3944,8 +3914,6 @@ Bij pigment gaat het vaak mis door te vroeg beginnen, niet door te weinig behand
 
 - Meten per seizoen, want pigment beweegt met het jaar mee
 
-> knop: Nog 2 punten
-
 - Vóór de eerste behandeling vaststellen welk type het is en hoe diep het zit: in de opperhuid, in de lederhuid of in allebei
 
 - Een pet of hoed. Die houdt meer zon tegen dan welke crème ook
@@ -4114,8 +4082,6 @@ Vier van deze gewoontes doen mensen thuis in de overtuiging dat ze helpen. Ermee
 
 - Werken aan de stevigheid van de huid rondom, want die bepaalt de vorm van de opening.
 
-> knop: Nog 2 punten
-
 - Weten of je naar poriën kijkt of naar kuiltjes. Dat verschil bepaalt de hele aanpak.
 
 - Foto's onder hetzelfde licht vergelijken. Poriën zien er onder licht van opzij altijd erger uit.
@@ -4262,8 +4228,6 @@ Gewrichtsklachten laat je op tijd beoordelen. Uitstel kost daar schade die niet 
 
 - Je nagels laten zien tijdens dat gesprek. Ze worden vaak vergeten en ze zeggen iets.
 
-> knop: Nog 2 punten
-
 - Blijven insmeren op rustige dagen. Een soepele huid scheurt minder snel open, en beschadiging kan een nieuwe plek uitlokken.
 
 - Weten dat het in periodes gaat. Dat maakt een rustige periode geen genezing en een opvlamming geen falen.
@@ -4387,8 +4351,6 @@ Bij lijnen zit de winst in de juiste keuze en in geduld. Collageen bouwt in maan
 - Collageenopbouw op gang brengen, in een reeks over maanden en niet in een sessie
 
 - Zonbescherming, elke dag. Dit is verreweg de grootste factor in hoe snel er nieuwe lijnen bij komen
-
-> knop: Nog 2 punten
 
 - Een huidanalyse, want bij dit huidprobleem gaat het om maanden en je ziet je eigen gezicht elke dag
 
@@ -4594,8 +4556,6 @@ Bij rosacea is het eerste punt links gratis en levert het vaak het meest op. Dat
 
 - Lauw douchen en je gezicht lauw afspoelen. Onaantrekkelijk advies, groot effect
 
-> knop: Nog 2 punten
-
 - Producten zonder alcohol en parfum, en niet meer dan drie stappen
 
 - Doorverwijzen naar de arts als er bultjes bij komen
@@ -4752,8 +4712,6 @@ Bij een steelwratje is het antwoord meestal kort: als het het juiste plekje is, 
 
 - Per kwartier rekenen, zodat meerdere kleine plekjes tegelijk niet per stuk duurder worden
 
-> knop: Nog 2 punten
-
 - Doorsturen naar de huisarts bij alles wat verandert of niet duidelijk is
 
 - Uitleggen waarom ze op die plekken zitten, want dan snap je waarom er nieuwe bij komen
@@ -4765,8 +4723,6 @@ Bij een steelwratje is het antwoord meestal kort: als het het juiste plekje is, 
 - Iets weghalen dat verandert. Dan is er niets meer over om te onderzoeken
 
 - Zelf afbinden met een draadje of afknippen met een nagelschaar. Dat gaat vaak lang goed en één keer niet
-
-> knop: Nog 1 punten
 
 - Beloven dat er nooit meer nieuwe bij komen. De aanleg en de wrijving blijven
 
@@ -4848,8 +4804,6 @@ Bij striae telt het moment zwaarder dan de techniek. Wie begint zolang ze nog ro
 
 - De huid soepel houden met een verzorging die je volhoudt
 
-> knop: Nog 2 punten
-
 - Een reeks afspreken met een moment waarop we opnieuw kijken
 
 - Zonbescherming op de plek, want vers weefsel verkleurt sneller
@@ -4861,8 +4815,6 @@ Bij striae telt het moment zwaarder dan de techniek. Wie begint zolang ze nog ro
 - Crèmes die beloven dat witte striae verdwijnen. Dat gebeurt niet, ongeacht de prijs
 
 - Zonnebank of zon op verse striae. Het verschil in kleur wordt daar groter van
-
-> knop: Nog 1 punten
 
 - Elke week in de spiegel vergelijken. Striae veranderen in maanden, niet in weken
 
@@ -5050,8 +5002,6 @@ De huid onder je oog is de dunste van je lichaam. Dat bepaalt zowel wat er kan a
 
 - Bij een pigmentwal, een bruine kleur onder het oog: de eye peel, vaak samen met RRS Eyes
 
-> knop: Nog 3 punten
-
 - Zonbescherming rond de ogen, want een dunnere huid laat alles eronder beter zien
 
 - Meewegen wat er verder speelt: slaap, zout, alcohol, allergie
@@ -5065,8 +5015,6 @@ De huid onder je oog is de dunste van je lichaam. Dat bepaalt zowel wat er kan a
 - Agressieve behandelingen op de dunste huid van je gezicht
 
 - Een crème adviseren tegen een vetkussen Een crème kan een uitgezakt vetkussen onder het oog niet verplaatsen.
-
-> knop: Nog 1 punten
 
 - Beloven dat het weggaat als het van dag tot dag niet verandert
 
@@ -16528,8 +16476,6 @@ Bij snurken zit de waarde vooral in wat er níét gebeurt. De helft van de mense
 
 - NightLase als reeks van drie, met vooraf afgesproken momenten om te kijken of het werkt
 
-> knop: Nog 2 punten
-
 - Eerlijk zeggen dat het effect niet blijvend is en dat herhalen erbij hoort
 
 - Meewegen wat er verder speelt: gewicht, alcohol voor het slapen, slaaphouding
@@ -16541,8 +16487,6 @@ Bij snurken zit de waarde vooral in wat er níét gebeurt. De helft van de mense
 - Behandelen bij een vermoeden van slaapapneu. Daar hoort eerst slaaponderzoek bij
 
 - Beloven dat het snurken helemaal verdwijnt. Minder is realistisch, weg niet altijd
-
-> knop: Nog 1 punten
 
 - Een neusspray of een beugel verkopen naast de behandeling. Dat is niet ons vak
 
@@ -17131,4 +17075,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_138 pagina's · 8009 tekstblokken · ongeveer 115.563 woorden._
+_138 pagina's · 7981 tekstblokken · ongeveer 115.464 woorden._

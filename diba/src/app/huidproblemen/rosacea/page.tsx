@@ -138,7 +138,7 @@ export default function RosaceaPage() {
               waarschijnlijk om{" "}
               <Link
                 href="/huidproblemen/couperose"
-                className="text-[var(--g-700)] underline underline-offset-4"
+                className="text-[var(--on-dark-accent)] underline underline-offset-4 hover:text-white"
               >
                 couperose
               </Link>

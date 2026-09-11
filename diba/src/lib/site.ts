@@ -73,6 +73,48 @@ export const DIBA_INSTAGRAM_URL =
   process.env.NEXT_PUBLIC_INSTAGRAM_URL ??
   "https://www.instagram.com/dibaclinics/";
 
+/** TikTok. Aangeleverd door Yasin op 11 september 2026, adres nagekeken. */
+export const DIBA_TIKTOK_URL =
+  process.env.NEXT_PUBLIC_TIKTOK_URL ??
+  "https://www.tiktok.com/@dibaclinics.nl";
+
+/**
+ * Facebook. Let op de naam in het adres: daar staat nog `dibabeautycenter`, terwijl de
+ * pagina zelf "Diba Clinics | Rotterdam" heet. Dat is geen typefout hier maar het echte
+ * adres, en dat is de reden om het niet op te schonen bij een volgende bewerking.
+ */
+export const DIBA_FACEBOOK_URL =
+  process.env.NEXT_PUBLIC_FACEBOOK_URL ??
+  "https://www.facebook.com/dibabeautycenter/?locale=nl_NL";
+
+/**
+ * De drie profielen, in een lijst.
+ *
+ * Ze staan op drie plekken: de knopjes in de voettekst, het rijtje op /contact en het
+ * bedrijfsschema dat Google leest. Drie losse constanten op drie plekken zijn negen
+ * plaatsen waar er een kan gaan afwijken; deze lijst is er een. Komt er een vierde kanaal
+ * bij, dan is dit de enige plek waar het erbij hoort.
+ *
+ * `handle` is wat er op /contact naast de naam komt te staan, zodat je ziet bij welk account
+ * je uitkomt voordat je klikt.
+ *
+ * De filter is er voor de omgevingsvariabelen: staat er een leeg adres ingesteld, dan valt
+ * dat kanaal weg in plaats van dat er een doodlopende link overblijft.
+ */
+export const DIBA_SOCIALS: readonly {
+  readonly naam: string;
+  readonly handle: string;
+  readonly url: string;
+}[] = [
+  { naam: "Instagram", handle: "@dibaclinics", url: DIBA_INSTAGRAM_URL },
+  { naam: "TikTok", handle: "@dibaclinics.nl", url: DIBA_TIKTOK_URL },
+  {
+    naam: "Facebook",
+    handle: "Diba Clinics Rotterdam",
+    url: DIBA_FACEBOOK_URL,
+  },
+].filter((kanaal) => Boolean(kanaal.url));
+
 /** Hero-achtergrondvideo op de homepage (geluidloos, decoratief). */
 export const DIBA_HERO_VIDEO_SRC = "/videos/hero-hydrafacial.mp4";
 
