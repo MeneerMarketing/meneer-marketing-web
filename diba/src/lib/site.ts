@@ -79,22 +79,29 @@ export const DIBA_HERO_VIDEO_SRC = "/videos/hero-hydrafacial.mp4";
 /**
  * Openingstijden.
  *
- * BEVESTIGD door Okan op 5 september 2026, naast het Google-profiel van de kliniek gelegd.
- * Ze stonden hier als voorstel met een vlag erop en blijken precies te kloppen.
+ * OVERGENOMEN VAN HET GOOGLE-PROFIEL op 11 september 2026, nadat er meldingen kwamen dat de
+ * tijden op de site niet klopten (Yasin: "haal die van Google af, dat moet precies goed
+ * kloppen"). Ze stonden hier sinds 5 september als "bevestigd", en dat was dus niet zo:
+ * er stond maandag open van negen tot half zes, terwijl de kliniek maandag dicht is.
  *
- * Wijzig ze op deze ene plek. Ze voeden de contactpagina, de voettekst en het
- * LocalBusiness-schema tegelijk; wie ze op één van die drie aanpast krijgt drie
+ * Wat er nu staat is wat Google toont, op drie plekken nagekeken (het profiel zelf, de
+ * samenvatting in de zoekresultaten en de vermelding op Skincare.nl). Alle drie zeggen
+ * hetzelfde: maandag en zondag dicht, doordeweeks vanaf tien uur, woensdag en donderdag
+ * tot negen.
+ *
+ * Wijzig ze op deze ene plek. Ze voeden de contactpagina, de navigatie, de afspraakpagina
+ * en het LocalBusiness-schema tegelijk; wie ze op één daarvan aanpast krijgt vier
  * verschillende antwoorden op dezelfde vraag.
  *
  * `dag` volgt de schema.org-notatie, want daar gaan ze uiteindelijk heen.
  */
 export const DIBA_OPENINGSTIJDEN = [
-  { dag: "Monday", label: "Maandag", van: "09:00", tot: "17:30" },
-  { dag: "Tuesday", label: "Dinsdag", van: "09:00", tot: "21:00" },
-  { dag: "Wednesday", label: "Woensdag", van: "09:00", tot: "17:30" },
-  { dag: "Thursday", label: "Donderdag", van: "09:00", tot: "21:00" },
-  { dag: "Friday", label: "Vrijdag", van: "09:00", tot: "17:30" },
-  { dag: "Saturday", label: "Zaterdag", van: "10:00", tot: "16:00" },
+  { dag: "Monday", label: "Maandag", van: null, tot: null },
+  { dag: "Tuesday", label: "Dinsdag", van: "10:00", tot: "18:00" },
+  { dag: "Wednesday", label: "Woensdag", van: "10:00", tot: "21:00" },
+  { dag: "Thursday", label: "Donderdag", van: "10:00", tot: "21:00" },
+  { dag: "Friday", label: "Vrijdag", van: "10:00", tot: "18:00" },
+  { dag: "Saturday", label: "Zaterdag", van: "10:00", tot: "18:00" },
   { dag: "Sunday", label: "Zondag", van: null, tot: null },
 ] as const;
 

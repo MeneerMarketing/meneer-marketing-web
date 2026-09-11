@@ -110,7 +110,7 @@ export const VACATURES: readonly Vacature[] = [
       "Ingeschreven in het Kwaliteitsregister Paramedici, of daar op korte termijn aan kunnen voldoen",
       "Ervaring met laser, IPL of microneedling, of de bereidheid je daarop in te werken",
       "Je kunt uitleggen wat je doet in gewone taal, ook als het antwoord tegenvalt",
-      "Beschikbaar op minimaal twee avonden per maand, want dinsdag en donderdag lopen door tot 21:00",
+      "Beschikbaar op minimaal twee avonden per maand, want woensdag en donderdag lopen door tot 21:00",
     ],
     watWeBieden: [
       "Een vaste plek in een team van elf, met huidtherapeuten en orthomoleculair huidspecialisten naast elkaar",
@@ -147,7 +147,7 @@ export const VACATURES: readonly Vacature[] = [
       {
         vraag: "Hoeveel uur is er beschikbaar?",
         antwoord:
-          "24 tot 38 uur, in overleg. Dinsdag en donderdag lopen door tot 21:00 en zaterdag tot 16:00, dus avonden en zaterdagen horen bij het rooster.",
+          "24 tot 38 uur, in overleg. Woensdag en donderdag lopen door tot 21:00 en zaterdag tot 18:00, dus avonden en zaterdagen horen bij het rooster.",
       },
       {
         vraag: "Zit er een salarisindicatie bij?",

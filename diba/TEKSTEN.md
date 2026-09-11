@@ -272,17 +272,17 @@ Binnen twee werkdagen. Voor iets met haast is bellen of appen sneller. Heb je ha
 
 Openingstijden
 
-- Maandag 09:00 tot 17:30
+- Maandag Gesloten
 
-- Dinsdag 09:00 tot 21:00
+- Dinsdag 10:00 tot 18:00
 
-- Woensdag 09:00 tot 17:30
+- Woensdag 10:00 tot 21:00
 
-- Donderdag 09:00 tot 21:00
+- Donderdag 10:00 tot 21:00
 
-- Vrijdag 09:00 tot 17:30
+- Vrijdag 10:00 tot 18:00
 
-- Zaterdag 10:00 tot 16:00
+- Zaterdag 10:00 tot 18:00
 
 - Zondag Gesloten
 
@@ -531,8 +531,6 @@ Het register is vrijwillig, dus inschrijving zegt iets en het ontbreken ervan ze
 > knop: HET REGISTER BEKIJKEN ↗
 
 **Wat klanten schreven over wie hen hielp.**
-
-Toon hier alleen reviews die rechtstreeks uit Salonized komen. Laat de oorspronkelijke tekst staan en zorg dat de naam van een medewerker alleen wordt getoond wanneer die naam ook in de review of afspraak staat.
 
 - Iris HUIDTHERAPEUT 8 reviews noemen deze naam Elke afspraak verloopt erg goed. Iris is heel vriendelijk en professioneel, waardoor ik me altijd op mijn gemak voel. Ze legt alles duidelijk uit, werkt zorgvuldig en neemt de tijd voor je. Tugce, 3 maanden geleden
 
@@ -15102,17 +15100,17 @@ Verzetten of afzeggen doe je het snelst telefonisch. Alles staat voluit in de al
 
 Binnen die tijden staat niet elk uur een therapeut vrij. Wat je in de agenda kunt aanklikken is wat er echt open is.
 
-- Maandag 09:00 tot 17:30
+- Maandag Gesloten
 
-- Dinsdag 09:00 tot 21:00
+- Dinsdag 10:00 tot 18:00
 
-- Woensdag 09:00 tot 17:30
+- Woensdag 10:00 tot 21:00
 
-- Donderdag 09:00 tot 21:00
+- Donderdag 10:00 tot 21:00
 
-- Vrijdag 09:00 tot 17:30
+- Vrijdag 10:00 tot 18:00
 
-- Zaterdag 10:00 tot 16:00
+- Zaterdag 10:00 tot 18:00
 
 - Zondag Gesloten
 
@@ -15806,9 +15804,11 @@ Aangesloten bij ANBOS en op eigen naam geregistreerd in het SKIN Register, het k
 
 **LASERONTHARING IN ROTTERDAM**
 
-De haarwortel neemt het licht op en wordt uitgeschakeld. Elk tarief staat per zone op de tarievenpagina, dus je weet wat een sessie kost voordat je boekt.
+We werken met de GentleMax Pro, een lasersysteem voor veilige en effectieve ontharing. De tarieven verschillen per behandelgebied; je vindt ze per zone op de tarievenpagina.
 
-Wat je niet vooraf krijgt is het aantal sessies. Dat hangt af van je huidtype, de zone en de dikte van je haar, en dat hoor je na de meting in plaats van nu.
+Hoeveel behandelingen je nodig hebt verschilt per persoon. Dat hangt af van je huidtype, je haarkleur en haardikte, de zone en de groeifase van de haren. Omdat niet alle haren tegelijk in dezelfde groeifase zitten, zijn er meerdere sessies nodig.
+
+Tijdens het traject beoordelen we de voortgang, en kunnen we steeds beter inschatten hoeveel sessies er voor jou nodig zijn.
 
 > knop: Lees verder
 
@@ -15834,17 +15834,15 @@ BESCHERMBRIL, VOOR JOU EN VOOR ONS
 
 **Wat het aantal sessies bepaalt**
 
-Niemand kan je vooraf zeggen hoeveel sessies je nodig hebt, en wie dat wel doet raadt. Deze vier dingen bepalen het, en de behandelaar stelt ze vast tijdens de intake.
+Niemand kan je vooraf zeggen hoeveel sessies je nodig hebt, en wie dat wel doet raadt. Deze vier dingen bepalen het. Bij de intake maakt de behandelaar een eerste inschatting, en tijdens de reeks wordt die scherper.
 
-- Je huidtype Hoe je huid op zon reageert, van type I tot VI. Het bepaalt met welke van de twee golflengtes er gewerkt wordt en hoeveel energie erop mag.
+- Je huidtype We bepalen je huidtype volgens de Fitzpatrick-indeling, van I tot en met VI. Daaruit volgt welke golflengte het meest geschikt is, Alexandrite of Nd:YAG, en met welke instellingen we werken.
 
-- De kleur en dikte van je haar De laser mikt op het pigment in de haarwortel. Donker en dik haar neemt het licht het best op; grijs en heel licht haar nauwelijks.
+- De kleur en dikte van je haar De laser richt zich op het pigment in de haarwortel. Donker en dik haar neemt de energie het best op. Bij witte, grijze en rode haren zit er te weinig geschikt pigment in, en dan werkt laseren meestal niet.
 
-- De zone Op de bovenlip groeit haar sneller terug dan op een onderbeen, en dat scheelt in het aantal sessies en in de tijd ertussen.
+- De zone De haargroei verschilt per zone. Haar op de bovenlip komt sneller terug dan haar op een onderbeen, dus het aantal sessies en de tijd ertussen verschillen per gebied.
 
-- Je hormonen Bij PCOS of een andere hormonale oorzaak blijft er aanvoer van nieuw haar. Ontharen werkt dan, maar het onderhoud houdt niet vanzelf op.
-
-De GentleMax Pro heeft twee golflengtes, en welke van de twee je krijgt hangt af van je huidtype. Dat is de enige technische keuze op deze site die rechtstreeks over veiligheid gaat. Zo werkt dat.
+- Je hormonen Bij een hormonale oorzaak zoals PCOS blijft je lichaam nieuwe haren aanmaken. De bestaande haargroei neemt sterk af, maar onderhoudsbehandelingen blijven dan nodig.
 
 **Wat anderen erover zeggen.**
 
@@ -16946,7 +16944,7 @@ Links de eisen die er echt toe doen, rechts wat daar bij Diba tegenover staat. B
 
 - Je kunt uitleggen wat je doet in gewone taal, ook als het antwoord tegenvalt
 
-- Beschikbaar op minimaal twee avonden per maand, want dinsdag en donderdag lopen door tot 21:00
+- Beschikbaar op minimaal twee avonden per maand, want woensdag en donderdag lopen door tot 21:00
 
 - Een vaste plek in een team van elf, met huidtherapeuten en orthomoleculair huidspecialisten naast elkaar
 
@@ -16980,7 +16978,7 @@ Je draait een eigen spreekuur en ziet je eigen clienten terug bij de controles. 
 
 Hoeveel uur is er beschikbaar?
 
-24 tot 38 uur, in overleg. Dinsdag en donderdag lopen door tot 21:00 en zaterdag tot 16:00, dus avonden en zaterdagen horen bij het rooster.
+24 tot 38 uur, in overleg. Woensdag en donderdag lopen door tot 21:00 en zaterdag tot 18:00, dus avonden en zaterdagen horen bij het rooster.
 
 Zit er een salarisindicatie bij?
 
@@ -17133,4 +17131,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_138 pagina's · 8010 tekstblokken · ongeveer 115.583 woorden._
+_138 pagina's · 8009 tekstblokken · ongeveer 115.563 woorden._

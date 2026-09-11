@@ -113,9 +113,12 @@ export default function HeroSchermvullend() {
                 de kop (Yasin, 11 september 2026). `items-center` op de rij doet dat: de kop
                 is twee regels hoog, het zegel staat op de helft daarvan.
 
-                `justify-between` zet het tegen de rechtermarge in plaats van een stukje
-                ervoor, en `shrink-0` houdt de cirkel rond als de kop breed wordt. */}
-            <div className="flex items-center justify-between gap-4">
+                Zonder `justify-between`: het zegel staat direct naast de kop en niet tegen
+                de rechtermarge (Yasin, 11 september 2026: "meer naar links, tegen de titel
+                aan"). De kop breekt zelf af met een `<br />`, dus hij is precies zo breed
+                als zijn langste regel en het zegel sluit daarop aan. `shrink-0` houdt de
+                cirkel rond als de kop breed wordt. */}
+            <div className="flex items-center gap-4 sm:gap-6">
               <h1 className="diba-display-l text-[var(--on-dark)] max-[359px]:text-[2.25rem]">
                 Dé huidkliniek
                 <br />

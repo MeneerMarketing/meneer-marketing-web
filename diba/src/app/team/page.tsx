@@ -325,12 +325,6 @@ export default function TeamPage() {
                 Wat klanten schreven{" "}
                 <span className="diba-accent">over wie hen hielp.</span>
               </h2>
-              <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
-                Toon hier alleen reviews die rechtstreeks uit Salonized komen.
-                Laat de oorspronkelijke tekst staan en zorg dat de naam van een
-                medewerker alleen wordt getoond wanneer die naam ook in de
-                review of afspraak staat.
-              </p>
             </div>
 
             <Veegrij

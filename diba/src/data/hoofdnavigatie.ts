@@ -389,7 +389,7 @@ export const HOOFDNAV: readonly NavItem[] = [
           {
             label: "Ons verhaal",
             href: "/ons-verhaal",
-            zin: "Vijf regels, en wat ze kosten",
+            zin: "Hoe we werken, en waarom zo",
           },
           {
             label: "Het team",

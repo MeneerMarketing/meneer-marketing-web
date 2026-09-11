@@ -20,14 +20,15 @@ import { DIBA_HOME_PROOF_ITEMS } from "@/lib/site";
  * een schaduw maakte er een object van dat over de rand van de hero viel; deze vier cijfers
  * zijn geen object maar een regel onder de kop.
  *
- * EEN DUNNE BALK.
+ * DE MAAT, EN WAAROM HIJ TERUG IS WAAR HIJ WAS.
  *
- * Yasin, 11 september 2026: "kleiner en dunner, dezelfde stijl en dezelfde afscheiders,
- * maar alles kleiner." De maten hieronder zijn daarop gezet: de vulling van 32 naar 16
- * pixels, het cijfer op een breed scherm van 30 naar 20 punten en het opschrift overal op
- * 10. Een ronde later ging de vulling naar 8 pixels en verdween die in de vakken helemaal:
- * "boven en onder nog minder witruimte, dat het echt een strook wordt." Wat er nu staat is
- * de regel zelf met acht pixels lucht eromheen.
+ * Deze balk is twee keer kleiner gemaakt op verzoek, eerst naar de helft en daarna tot een
+ * strook van acht pixels lucht. Dat laatste was te ver: "die balk die nu zo klein en dun is
+ * vind ik niet mooi, zet hem terug in de grootte zoals je hem eerst had, dat oogde strakker"
+ * (Yasin, 11 september 2026). De maten hieronder zijn dus weer die van de versie die het
+ * wel deed: 32 pixels vulling boven en onder, het cijfer op 15 punten op een telefoon en 30
+ * op een breed scherm. Wat uit die tussenrondes bleef is de vorm zelf: geen kaart, geen
+ * rand, alleen de cijfers met drie streepjes ertussen.
  *
  * VIER KOLOMMEN, OOK OP EEN TELEFOON.
  *
@@ -51,18 +52,18 @@ export default function Cijferstrook({
   className?: string;
 }) {
   return (
-    <div className={`px-5 py-2 sm:px-9 sm:py-2.5 lg:px-[7.5vw] ${className}`}>
+    <div className={`px-5 py-8 sm:px-9 sm:py-10 lg:px-[7.5vw] ${className}`}>
       <dl className="mx-auto grid grid-cols-4">
         {DIBA_HOME_PROOF_ITEMS.map((item, i) => {
           const cijfer = (
-            <dd className="text-[15px] leading-tight font-medium tracking-[-.03em] text-[var(--g-700)] tabular-nums sm:text-[20px] sm:tracking-[-.04em]">
+            <dd className="text-[18px] leading-tight font-medium tracking-[-.03em] text-[var(--g-700)] tabular-nums sm:text-[30px] sm:tracking-[-.04em]">
               {getal(item)}
             </dd>
           );
           return (
             <div
               key={item.label}
-              className={`min-w-0 px-1 text-center sm:px-4 ${
+              className={`min-w-0 px-0.5 text-center sm:px-4 ${
                 i > 0 ? "border-l border-[var(--g-100)]" : ""
               }`}
             >
@@ -85,7 +86,12 @@ export default function Cijferstrook({
               ) : (
                 cijfer
               )}
-              <dt className="diba-label mt-0.5 text-[10px] leading-tight text-[var(--t-muted)] sm:mt-1">
+              {/* Op een telefoon een punt groter dan het was, maar met minder letterafstand:
+                  `diba-label` staat op 0,13em en dan is "BEHANDELD" tachtig pixels breed
+                  in een vakje van vierentachtig, en breekt het woord over twee regels.
+                  Met 0,06em is het er vierenzeventig en past het met ruimte over. Vanaf 640
+                  is er plek genoeg en staat de gewone letterafstand er weer. */}
+              <dt className="diba-label mt-1 text-[11px] leading-tight tracking-[0.06em] text-[var(--t-muted)] sm:mt-2 sm:text-[12px] sm:tracking-[0.13em]">
                 <span className="sm:hidden">{item.kort ?? item.label}</span>
                 <span className="max-sm:hidden">{item.label}</span>
               </dt>

@@ -79,19 +79,19 @@ const ANKERS = [
 const BEPAALT = [
   {
     kop: "Je huidtype",
-    zin: "Hoe je huid op zon reageert, van type I tot VI. Het bepaalt met welke van de twee golflengtes er gewerkt wordt en hoeveel energie erop mag.",
+    zin: "We bepalen je huidtype volgens de Fitzpatrick-indeling, van I tot en met VI. Daaruit volgt welke golflengte het meest geschikt is, Alexandrite of Nd:YAG, en met welke instellingen we werken.",
   },
   {
     kop: "De kleur en dikte van je haar",
-    zin: "De laser mikt op het pigment in de haarwortel. Donker en dik haar neemt het licht het best op; grijs en heel licht haar nauwelijks.",
+    zin: "De laser richt zich op het pigment in de haarwortel. Donker en dik haar neemt de energie het best op. Bij witte, grijze en rode haren zit er te weinig geschikt pigment in, en dan werkt laseren meestal niet.",
   },
   {
     kop: "De zone",
-    zin: "Op de bovenlip groeit haar sneller terug dan op een onderbeen, en dat scheelt in het aantal sessies en in de tijd ertussen.",
+    zin: "De haargroei verschilt per zone. Haar op de bovenlip komt sneller terug dan haar op een onderbeen, dus het aantal sessies en de tijd ertussen verschillen per gebied.",
   },
   {
     kop: "Je hormonen",
-    zin: "Bij PCOS of een andere hormonale oorzaak blijft er aanvoer van nieuw haar. Ontharen werkt dan, maar het onderhoud houdt niet vanzelf op.",
+    zin: "Bij een hormonale oorzaak zoals PCOS blijft je lichaam nieuwe haren aanmaken. De bestaande haargroei neemt sterk af, maar onderhoudsbehandelingen blijven dan nodig.",
   },
 ] as const;
 
@@ -137,15 +137,20 @@ export default function LaserontharingPage() {
                 klopte niet meer (Yasin, 10 september 2026). Wat er nu staat is wat je hier
                 wél vindt: de zones, de tarieven per zone en het huidtype. */}
             <p className="mt-7 max-w-[52ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
-              De haarwortel neemt het licht op en wordt uitgeschakeld. Elk
-              tarief staat per zone op de tarievenpagina, dus je weet wat een
-              sessie kost voordat je boekt.
+              We werken met de GentleMax Pro, een lasersysteem voor veilige en
+              effectieve ontharing. De tarieven verschillen per behandelgebied;
+              je vindt ze per zone op de tarievenpagina.
             </p>
             <LeesVerder opDonker>
               <p className="mt-4 max-w-[52ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
-                Wat je niet vooraf krijgt is het aantal sessies. Dat hangt af
-                van je huidtype, de zone en de dikte van je haar, en dat hoor je
-                na de meting in plaats van nu.
+                Hoeveel behandelingen je nodig hebt verschilt per persoon. Dat
+                hangt af van je huidtype, je haarkleur en haardikte, de zone en
+                de groeifase van de haren. Omdat niet alle haren tegelijk in
+                dezelfde groeifase zitten, zijn er meerdere sessies nodig.
+              </p>
+              <p className="mt-4 max-w-[52ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
+                Tijdens het traject beoordelen we de voortgang, en kunnen we
+                steeds beter inschatten hoeveel sessies er voor jou nodig zijn.
               </p>
             </LeesVerder>
 
@@ -284,7 +289,7 @@ export default function LaserontharingPage() {
             label="Goed om te weten"
             kop="Wat het aantal sessies"
             accent="bepaalt"
-            intro="Niemand kan je vooraf zeggen hoeveel sessies je nodig hebt, en wie dat wel doet raadt. Deze vier dingen bepalen het, en de behandelaar stelt ze vast tijdens de intake."
+            intro="Niemand kan je vooraf zeggen hoeveel sessies je nodig hebt, en wie dat wel doet raadt. Deze vier dingen bepalen het. Bij de intake maakt de behandelaar een eerste inschatting, en tijdens de reeks wordt die scherper."
           />
 
           <ul className="mt-10 grid gap-4 sm:mt-12 sm:grid-cols-2">
@@ -302,19 +307,6 @@ export default function LaserontharingPage() {
               </li>
             ))}
           </ul>
-
-          <p className="mt-8 max-w-[76ch] text-[15px] leading-7 text-[var(--t-muted)]">
-            De GentleMax Pro heeft twee golflengtes, en welke van de twee je
-            krijgt hangt af van je huidtype. Dat is de enige technische keuze op
-            deze site die rechtstreeks over veiligheid gaat.{" "}
-            <Link
-              href="/gentlemax-pro"
-              className="text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
-            >
-              Zo werkt dat
-            </Link>
-            .
-          </p>
         </div>
       </section>
 
