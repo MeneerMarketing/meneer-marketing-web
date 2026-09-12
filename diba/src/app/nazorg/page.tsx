@@ -49,7 +49,9 @@ import {
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/nazorg",
-  titel: "Nazorg",
+  /* De pagina is een rooster met "vanaf wanneer mag alles weer". Dat is de zoekvraag
+     (sporten na laserontharing, retinol na een peeling), en die stond niet in de titel. */
+  titel: "Nazorg: wat mag wanneer weer",
   omschrijving:
     "Mag ik morgen sporten, wanneer mag die retinol weer? Per behandeling een rooster met vanaf wanneer alles weer mag, en waarom.",
 });

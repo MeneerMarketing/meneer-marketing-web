@@ -2,14 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import Label from "@/components/ui/Label";
-import { APPARATUUR } from "@/data/apparatuur";
-import { BEHANDELINGEN } from "@/data/behandelingen";
 import { KENNISBANK } from "@/data/kennisbank";
 import { BESTEMMINGEN } from "@/data/symptoomzoeker";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
-import LeesVerder from "@/components/ui/LeesVerder";
 
 /**
  * De kennisbank.
@@ -44,9 +41,9 @@ import LeesVerder from "@/components/ui/LeesVerder";
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/kennisbank",
-  titel: "Kennisbank",
+  titel: "Kennisbank: alles wat we uitleggen",
   omschrijving:
-    "Alles wat op deze site wordt uitgelegd, geordend op de vraag die je stelt. Met de doorsnedes, testen en vergelijkers die verspreid over de site staan.",
+    "Wat een behandeling inhoudt en kost, waar een klacht vandaan komt en wat een apparaat wel en niet kan. Geordend op de vraag die je stelt.",
 });
 
 export default function KennisbankPage() {
@@ -83,36 +80,39 @@ export default function KennisbankPage() {
               </h1>
             </div>
 
+            {/* De intro telde eerst het aantal huidprobleem-, apparaat- en behandelpagina's
+                op. Yasin, 12 september 2026: "dat slaat nergens op om te benoemen." Hij
+                heeft gelijk: hoeveel pagina's wij hebben is ons probleem, niet dat van de
+                bezoeker. Wat hij wil weten is wat hij hier kan vinden en hoe het geordend
+                is. */}
             <p className="mt-7 max-w-[62ch] text-[17px] leading-8 text-[var(--t-body)]">
-              Alles wat hier wordt uitgelegd staat verspreid over{" "}
-              {BESTEMMINGEN.length} huidprobleempagina&apos;s,{" "}
-              {APPARATUUR.length} apparaatpagina&apos;s en{" "}
-              {BEHANDELINGEN.length} behandelpagina&apos;s. Deze pagina brengt
-              dat bij elkaar, geordend op de vraag die je stelt in plaats van op
-              wat wij aanbieden.
+              Wat een behandeling inhoudt en kost, waar een klacht vandaan komt,
+              wat een apparaat wel en niet kan, en wat een titel achter de
+              behandelstoel betekent. Het staat hier geordend op de vraag die je
+              stelt, en niet op wat wij aanbieden.
             </p>
-            <LeesVerder>
-              <p className="mt-4 max-w-[62ch] text-[17px] leading-8 text-[var(--t-body)]">
-                De doorsnedes, testen en vergelijkers staan er los bij. Die zijn
-                het meeste werk en tegelijk het slechtst vindbaar, want ze staan
-                halverwege een pagina waar je niet komt als je er niet naar
-                zoekt.
-              </p>
-            </LeesVerder>
 
-            <div className="mt-auto flex flex-wrap items-center gap-x-6 gap-y-4 pt-10">
-              <Link
-                href="/huidproblemen/symptoomzoeker"
-                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
-              >
-                Weet je niet hoe het heet?
-              </Link>
-              <Link
-                href="/huidproblemen"
-                className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
-              >
-                Alle huidproblemen
-              </Link>
+            {/* De tweede link stond naast de knop en viel op een telefoon onder de knop
+                links uit. Nu staan ze in één kolom die zo breed is als de knop, dus staat
+                de link op elk scherm gecentreerd eronder. */}
+            {/* Geen mt-auto meer. Dat duwde de knop naar de onderrand van het beeld
+                ernaast, en met de kortere intro werd dat een gat van bijna tweehonderd
+                pixels. De knop hoort bij de tekst, dus staat hij eronder. */}
+            <div className="mt-10">
+              <div className="inline-flex flex-col items-center gap-2">
+                <Link
+                  href="/huidproblemen/symptoomzoeker"
+                  className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
+                >
+                  Weet je niet hoe het heet?
+                </Link>
+                <Link
+                  href="/huidproblemen"
+                  className="diba-label inline-flex min-h-11 items-center text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+                >
+                  Alle huidproblemen
+                </Link>
+              </div>
             </div>
           </div>
 

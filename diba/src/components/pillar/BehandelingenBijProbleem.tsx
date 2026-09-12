@@ -55,6 +55,11 @@ export default function BehandelingenBijProbleem({
     pad.replace("/huidproblemen/", ""),
   );
 
+  /* Eén link per landingspagina. Op /huidproblemen/huidveroudering staan vijf Fotona-
+     behandelingen die allemaal naar "Fotona 4D in Rotterdam" wijzen; vijf keer dezelfde link
+     in één blok leest als opvulling. De eerste kaart waar hij bij hoort krijgt hem. */
+  const landingGetoond = new Set<string>();
+
   return (
     <section
       id="behandelingen"
@@ -82,6 +87,11 @@ export default function BehandelingenBijProbleem({
             const toepassing = toepassingen.find(
               (t) => t.behandeling === b.slug,
             );
+            const landing =
+              b.landing && !landingGetoond.has(b.landing.href)
+                ? b.landing
+                : null;
+            if (landing) landingGetoond.add(landing.href);
             return (
               <li
                 key={b.slug}
@@ -117,6 +127,19 @@ export default function BehandelingenBijProbleem({
                       className="diba-label text-[var(--t-muted)] underline underline-offset-4 hover:text-[var(--g-700)]"
                     >
                       Met de {apparaat.naam}
+                    </Link>
+                  ) : null}
+                  {/* De landingspagina, als die er is: wat het bij ons kost en hoe een
+                      afspraak gaat. Dit blok staat op negenentwintig huidprobleempagina's,
+                      dus een behandeling met een landingspagina krijgt daarmee een
+                      verwijzing vanaf elke klacht waar hij bij hoort, met de naam van de
+                      pagina als ankertekst. */}
+                  {landing ? (
+                    <Link
+                      href={landing.href}
+                      className="diba-label text-[var(--t-muted)] underline underline-offset-4 hover:text-[var(--g-700)]"
+                    >
+                      {landing.tekst}
                     </Link>
                   ) : null}
                 </div>

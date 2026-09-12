@@ -1,10 +1,12 @@
-import { readdirSync, readFileSync } from "fs";
+import { execSync } from "child_process";
+import { existsSync, readdirSync, readFileSync } from "fs";
 import { join, relative, sep } from "path";
 import type { MetadataRoute } from "next";
 import { INSURERS } from "@/data/insurers";
 import { APPARATUUR } from "@/data/apparatuur";
 import { BEHANDELINGEN } from "@/data/behandelingen";
 import { TOEPASSINGEN } from "@/data/toepassingen";
+import { LANDINGS } from "@/data/landings";
 import { DIBA_SITE_URL } from "@/lib/site";
 
 /**
@@ -101,6 +103,9 @@ function gewicht(route: string): number {
     route === "/laserontharing"
   )
     return 0.8;
+  /* De landingspagina's: waar iemand terechtkomt die "X rotterdam" zoekt. Even zwaar als
+     de behandelpagina's, want het is dezelfde koopvraag met de plaats erbij. */
+  if (route.startsWith("/kennisbank/")) return 0.8;
   if (route.startsWith("/apparatuur")) return 0.6;
   if (route.startsWith("/vergoedingen")) return 0.6;
   /* De juridische pagina's horen erin te staan maar hoeven niet vaak nagelopen. */
@@ -122,25 +127,130 @@ function frequentie(route: string): "weekly" | "monthly" | "yearly" {
   return "monthly";
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const nu = new Date();
+/**
+ * Wanneer een pagina voor het laatst inhoudelijk is veranderd.
+ *
+ * WAT HIER STOND, EN WAAROM DAT SLECHTER WAS DAN NIETS.
+ *
+ * `lastModified: new Date()` op elke pagina. Elke build meldde dus dat alle pagina's die dag
+ * gewijzigd waren. Google leert daarvan dat het veld bij deze site niets betekent en negeert
+ * het, ook op de dag dat er wél iets verandert. Een signaal dat altijd aan staat, is geen
+ * signaal.
+ *
+ * HOE HET NU WERKT.
+ *
+ * De datum komt uit git: de laatste commit die het bestand van de pagina raakte, of het
+ * databestand waar de inhoud uit komt. Eén git-aanroep voor de hele site, een halve seconde.
+ * Een landingspagina draagt daarnaast zijn eigen datum (`gewijzigd`), en die telt als hij
+ * recenter is.
+ *
+ * Staat er geen git-geschiedenis op de bouwmachine, dan blijft het veld weg. Weglaten mag en
+ * is eerlijk; een verzonnen datum is dat niet.
+ */
+function commitdatums(): Map<string, number> {
+  const uit = new Map<string, number>();
+  try {
+    const prefix = execSync("git rev-parse --show-prefix", {
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "ignore"],
+    }).trim();
+    const log = execSync("git log --format=@%cI --name-only -- src", {
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "ignore"],
+      maxBuffer: 64 * 1024 * 1024,
+    });
+    let datum = 0;
+    for (const regel of log.split("\n")) {
+      if (regel.startsWith("@")) {
+        datum = Date.parse(regel.slice(1).trim());
+        continue;
+      }
+      const pad = regel.trim();
+      if (!pad || !datum) continue;
+      const lokaal =
+        prefix && pad.startsWith(prefix) ? pad.slice(prefix.length) : pad;
+      if (!uit.has(lokaal)) uit.set(lokaal, datum);
+    }
+  } catch {
+    /* Geen git op de bouwmachine: dan geen datums, zie hierboven. */
+  }
+  return uit;
+}
 
-  const routes = [
-    ...statischeRoutes(),
-    ...BEHANDELINGEN.map((b) => `/behandelingen/${b.slug}`),
-    ...TOEPASSINGEN.map((t) => `/behandelingen/${t.behandeling}/${t.slug}`),
-    ...APPARATUUR.map((a) => `/apparatuur/${a.slug}`),
-    ...INSURERS.map((i) => `/vergoedingen/${i.slug}`),
-  ];
+export default function sitemap(): MetadataRoute.Sitemap {
+  /* Per route de bestanden waar de inhoud uit komt. De dynamische eerst, de statische
+     daarna: heeft een slug ook een eigen page.tsx, dan is dat bestand de bron. */
+  const bronnen = new Map<string, string[]>();
+  for (const b of BEHANDELINGEN) {
+    bronnen.set(`/behandelingen/${b.slug}`, [
+      "src/app/behandelingen/[slug]/page.tsx",
+      "src/data/behandelingen.ts",
+    ]);
+  }
+  for (const t of TOEPASSINGEN) {
+    bronnen.set(`/behandelingen/${t.behandeling}/${t.slug}`, [
+      "src/app/behandelingen/[slug]/[toepassing]/page.tsx",
+      "src/data/toepassingen.ts",
+    ]);
+  }
+  for (const a of APPARATUUR) {
+    bronnen.set(`/apparatuur/${a.slug}`, [
+      "src/app/apparatuur/[slug]/page.tsx",
+      "src/data/apparatuur.ts",
+    ]);
+  }
+  for (const i of INSURERS) {
+    bronnen.set(`/vergoedingen/${i.slug}`, [
+      "src/app/vergoedingen/[slug]/page.tsx",
+      "src/data/insurers.ts",
+    ]);
+  }
+  for (const l of LANDINGS) {
+    bronnen.set(`/kennisbank/${l.slug}`, [
+      "src/components/kennisbank/LandingPagina.tsx",
+      `src/data/landings/${l.slug}.ts`,
+    ]);
+  }
+  for (const route of statischeRoutes()) {
+    const eigen =
+      route === "/" ? "src/app/page.tsx" : `src/app${route}/page.tsx`;
+    /* Veel pagina's halen hun tekst uit een databestand met dezelfde naam, zoals
+       /huidproblemen/acne uit data/acne.ts. Staat dat er, dan telt het mee. */
+    const laatste = route.split("/").filter(Boolean).pop();
+    const data = laatste ? `src/data/${laatste}.ts` : "";
+    bronnen.set(
+      route,
+      data && existsSync(join(process.cwd(), data)) ? [eigen, data] : [eigen],
+    );
+  }
+
+  const datums = commitdatums();
+  const nieuwste = Math.max(0, ...datums.values());
+  const landingDatum = new Map(
+    LANDINGS.map((l) => [`/kennisbank/${l.slug}`, Date.parse(l.gewijzigd)]),
+  );
+
+  const laatstGewijzigd = (route: string): Date | undefined => {
+    /* De homepage toont stukken van de hele site, dus hij verandert als de site verandert. */
+    if (route === "/") return nieuwste ? new Date(nieuwste) : undefined;
+    const kandidaten = (bronnen.get(route) ?? [])
+      .map((b) => datums.get(b) ?? 0)
+      .concat(landingDatum.get(route) ?? 0);
+    const datum = Math.max(0, ...kandidaten);
+    return datum ? new Date(datum) : undefined;
+  };
 
   /* Een slug kan zowel een eigen page.tsx als een record in de data hebben. Dan staat hij
      er twee keer in, en een dubbele URL in een sitemap is een fout. */
-  const uniek = [...new Set(routes)].sort();
+  const uniek = [...new Set(bronnen.keys())].sort();
 
-  return uniek.map((route) => ({
-    url: `${DIBA_SITE_URL}${route === "/" ? "" : route}`,
-    lastModified: nu,
-    changeFrequency: frequentie(route),
-    priority: gewicht(route),
-  }));
+  return uniek.map((route) => {
+    const datum = laatstGewijzigd(route);
+    return {
+      url: `${DIBA_SITE_URL}${route === "/" ? "" : route}`,
+      ...(datum ? { lastModified: datum } : {}),
+      changeFrequency: frequentie(route),
+      priority: gewicht(route),
+    };
+  });
 }

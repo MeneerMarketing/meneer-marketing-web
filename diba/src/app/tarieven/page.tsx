@@ -32,9 +32,11 @@ import LeesVerder from "@/components/ui/LeesVerder";
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/tarieven",
-  titel: "Tarieven",
+  /* "Tarieven" claimde niets. De pagina beantwoordt de vraag "wat kost een
+     huidbehandeling in Rotterdam", dus staat dat er nu ook boven. */
+  titel: "Tarieven huidbehandelingen Rotterdam",
   omschrijving:
-    "Alle tarieven van Diba Clinics op één pagina, per sessie en per zone. Wat er staat is wat je betaalt.",
+    "Alle tarieven van Diba Clinics op één pagina, per sessie en per zone. Wat er staat is wat je betaalt, zonder pakketten en zonder acties.",
 });
 
 const intakeBehandeling = behandelingVoorSlug("huidanalyse");

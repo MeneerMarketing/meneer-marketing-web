@@ -30,6 +30,9 @@
  * daar al is gemarkeerd voor controle.
  */
 
+import { LANDINGS, landingNaam } from "@/data/landings";
+import type { Landing } from "@/data/landings/types";
+
 export type Kennisstuk = {
   readonly id: string;
   /** Wat je ermee kunt, in de vorm van de vraag die je stelt. */
@@ -58,20 +61,78 @@ export type Kennisgroep = {
   readonly stukken: readonly Kennisstuk[];
 };
 
+/**
+ * De landingspagina's, uitgesplitst naar waar ze horen.
+ *
+ * De plaatspagina's gaan over een behandeling bij ons in Rotterdam en staan bovenaan. De
+ * vraagpagina's gaan over de vraag die daaraan voorafgaat en horen bij elkaar, op één na:
+ * "hoe kies je een huidkliniek" gaat niet over behandelen maar over kiezen, en dat is
+ * precies het hoofdstuk onderaan. Vandaar deze ene naam als uitzondering en niet als
+ * veld in de data: het is een plek in deze index, geen eigenschap van de pagina.
+ */
+const PLAATS = LANDINGS.filter((l) => (l.soort ?? "plaats") === "plaats");
+const VRAAG = LANDINGS.filter((l) => l.soort === "vraag");
+const BEOORDELEN = new Set(["huidkliniek-kiezen"]);
+
+const alsStuk = (l: Landing): Kennisstuk => ({
+  id: l.slug,
+  vraag: l.kaart.vraag,
+  naam: landingNaam(l),
+  zin: l.kaart.zin,
+  href: `/kennisbank/${l.slug}`,
+});
+
 export const KENNISBANK: readonly Kennisgroep[] = [
+  {
+    id: "in-rotterdam",
+    tint: "zacht",
+    kop: "Een behandeling bij ons in Rotterdam",
+    zin: "Wat een behandeling hier inhoudt en kost, voor wie hij past en hoe een afspraak verloopt, en wat een huidtherapeut eigenlijk doet. Dit zijn de pagina's van de kennisbank die over onze kliniek zelf gaan.",
+    /* Uit het register van de landingspagina's, zodat een nieuwe pagina hier vanzelf
+       verschijnt. Dit is ook de enige plek op de site die naar al die pagina's tegelijk
+       wijst, en daarom staat de groep bovenaan: een verwijzing hoger op een pagina telt
+       zwaarder. */
+    stukken: PLAATS.map(alsStuk),
+  },
+  {
+    id: "elke-behandeling",
+    tint: "wit",
+    kop: "Wat voor elke behandeling geldt",
+    zin: "Vier vragen die niet over één behandeling gaan maar over allemaal: je huidtype, het aantal sessies, de zon en de zwangerschap.",
+    stukken: VRAAG.filter((l) => !BEOORDELEN.has(l.slug)).map(alsStuk),
+  },
   {
     id: "beginnen",
     tint: "mint",
     kop: "Weet je nog niet waar je moet beginnen",
     zin: "Twee ingangen, afhankelijk van of je al een naam hebt voor wat je ziet.",
-    stukken: [],
+    /* Deze groep stond hier leeg, met kop en al. Een hoofdstuk zonder inhoud belooft
+       iets wat er niet is, en dat is precies waarom deze pagina bestaat. Het zijn de
+       twee ingangen die de kop noemt. */
+    stukken: [
+      {
+        id: "symptoomzoeker",
+        vraag: "Ik weet niet hoe het heet",
+        naam: "Symptoomzoeker",
+        zin: "Je klikt aan wat je ziet en waar het zit, en komt uit bij de pagina die erover gaat.",
+        href: "/huidproblemen/symptoomzoeker",
+      },
+      {
+        id: "huidprofiel",
+        vraag: "Wat geef ik vooraf door",
+        naam: "Je huidprofiel",
+        zin: "Negen korte vragen over je huid, je medicatie en je grenzen. De uitkomst neem je mee naar de afspraak.",
+        href: "/huidprofiel",
+      },
+    ],
   },
   {
     id: "beoordelen",
-    tint: "wit",
+    tint: "zacht",
     kop: "Zelf beoordelen wat je voorgeschoteld krijgt",
     zin: "Ook bij een andere kliniek. Dit deel is niet geschreven om jou hier te houden.",
     stukken: [
+      ...VRAAG.filter((l) => BEOORDELEN.has(l.slug)).map(alsStuk),
       {
         id: "kwaliteit",
         vraag: "Waar mag ik jullie aan houden",

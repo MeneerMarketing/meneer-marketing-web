@@ -64,6 +64,54 @@ export function generateStaticParams() {
 }
 
 /**
+ * De velden voor zoekmachines en gedeelde links.
+ *
+ * WAT HIER ONTBRAK. Deze functie bestond niet. `zoekmachineVelden` werd bovenaan
+ * geïmporteerd en nergens aangeroepen, en daardoor hadden alle 46 behandelpagina's de titel
+ * en de omschrijving van de homepage, geen canonical en geen deelbeeld. In de zoekresultaten
+ * stond boven elke behandeling "Diba Clinics | Rotterdam", met dezelfde zin eronder. Gevonden
+ * met een scan over de hele sitemap op 11 september 2026; de andere negentig pagina's waren
+ * in orde.
+ *
+ * DE TITEL is de naam van de behandeling, zonder "in Rotterdam". De lokale zoekvraag is van
+ * de klachtpagina's ("Acne behandelen in Rotterdam") en van de landingspagina's in de
+ * kennisbank ("HydraFacial Rotterdam"). Zet je de plaats ook hier, dan concurreren drie
+ * pagina's om dezelfde vraag en kiest Google er zelf een.
+ *
+ * DE OMSCHRIJVING is de korte zin van de behandeling met het tarief en de duur erachter, en
+ * de plaats erbij als dat binnen de lengte past. Het bedrag is wat iemand in de
+ * zoekresultaten het eerst zoekt.
+ */
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const b = behandelingVoorSlug(slug);
+  if (!b) return {};
+  const kort = publicCopy(b.kort);
+  const kortZin = /[.!?]$/.test(kort) ? kort : `${kort}.`;
+  const bedrag =
+    b.prijs > 0
+      ? ` ${b.varianten && b.varianten.length > 1 ? "Vanaf" : "Tarief"} € ${b.prijs.toLocaleString("nl-NL")}${
+          b.duurMinuten ? `, ${b.duurMinuten} minuten` : ""
+        }.`
+      : "";
+  const kandidaten = [
+    `${kortZin}${bedrag} Bij Diba Clinics in Rotterdam.`,
+    `${kortZin}${bedrag}`,
+    kortZin,
+  ];
+  const omschrijving =
+    kandidaten.find((k) => k.length <= 158) ?? kortZin.slice(0, 155);
+  return zoekmachineVelden({
+    pad: `/behandelingen/${b.slug}`,
+    titel: b.naam,
+    omschrijving,
+    ...(b.foto ? { beeld: { url: b.foto.src, alt: b.foto.alt } } : {}),
+  });
+}
+
+/**
  * De vragen die bij elke behandeling gesteld worden.
  *
  * Ze komen uit de gegevens van de behandeling zelf, dus er wordt hier niets bedacht: de
@@ -316,6 +364,21 @@ export default async function BehandelingPage({ params }: PageProps) {
           <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)] sm:mt-8">
             {publicCopy(b.kort)}
           </p>
+
+          {/* De landingspagina in de kennisbank, als die er is. Zie het veld `landing` in
+              behandelingen.ts voor waarom deze verwijzing er hoort te staan. */}
+          {b.landing ? (
+            <p className="mt-3 text-[16px] leading-7 text-[var(--t-muted)]">
+              {b.landing.zin}{" "}
+              <Link
+                href={b.landing.href}
+                className="text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+              >
+                {b.landing.tekst}
+              </Link>
+              .
+            </p>
+          ) : null}
 
           {/* Hier stond "We doen dit met <apparaat>". Yasin, 10 september 2026: eraf, samen
               met de cijferbalk eronder. De verwijzing naar het apparaat zelf is niet

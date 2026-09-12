@@ -341,6 +341,23 @@ export type Behandeling = {
   /** De varianten zoals ze op de tarievenlijst staan. */
   readonly varianten?: readonly Variant[];
   /**
+   * De landingspagina in de kennisbank die over deze behandeling bij ons in Rotterdam gaat.
+   *
+   * Twee pagina's over hetzelfde onderwerp op één site is geen dubbele kans maar een halve:
+   * zonder verwijzing tussen de twee kan een zoekmachine ze als concurrenten zien en kiest
+   * hij er zelf een. Deze regel legt de rolverdeling vast. De behandelpagina zegt wat de
+   * behandeling is; de landingspagina zegt wat het hier kost, wie het doet en hoe een
+   * afspraak verloopt.
+   *
+   * Alleen invullen als die pagina er echt is.
+   */
+  readonly landing?: {
+    readonly href: string;
+    /** De ankertekst. Zegt waar je terechtkomt; "lees meer" vertelt niemand iets. */
+    readonly tekst: string;
+    readonly zin: string;
+  };
+  /**
    * Waar de echte tarieven staan als ze niet in varianten passen.
    *
    * Laserontharing heeft veertig zones in twee lijsten (dames en heren), en die staan als
@@ -436,6 +453,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       alt: "Cliënt in de EVE-M huidscanner, met de opname op het scherm ernaast",
     },
     naam: "Consult met EVE-M huidanalyse",
+    landing: {
+      href: "/kennisbank/huidanalyse-rotterdam",
+      tekst: "Huidanalyse in Rotterdam",
+      zin: "Wat een huidanalyse bij ons kost, wat de EVE-M meet en welke afspraak je boekt, staat op",
+    },
     naamKort: "Huidanalyse",
     apparaat: "EVE-M",
     categorie: "meting",
@@ -507,6 +529,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       alt: "HydraFacial-behandeling in uitvoering bij Diba Clinics",
     },
     naam: "HydraFacial",
+    landing: {
+      href: "/kennisbank/hydrafacial-rotterdam",
+      tekst: "HydraFacial in Rotterdam",
+      zin: "Wat een HydraFacial bij ons kost, met welk apparaat we werken en hoe een eerste afspraak verloopt, staat op",
+    },
     apparaat: "HydraFacial",
     categorie: "gezicht",
     huidwens: ["glow"],
@@ -558,6 +585,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       alt: "Behandelgel op de huid met het handstuk erop",
     },
     naam: "Oxygeneo glow",
+    landing: {
+      href: "/kennisbank/oxygeneo-rotterdam",
+      tekst: "OxyGeneo in Rotterdam",
+      zin: "Wat OxyGeneo bij ons kost, wat de belletjes doen en wat het verschil met een HydraFacial is, staat op",
+    },
     apparaat: "OxyGeneo",
     categorie: "gezicht",
     huidwens: ["glow"],
@@ -624,6 +656,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Vlak erna is je gezicht opvallend glad en neemt het crème makkelijker op. De donshaartjes komen terug zoals ze waren, dus wie het bevalt komt ongeveer maandelijks terug.",
     ],
     naam: "Dermaplaning",
+    landing: {
+      href: "/kennisbank/dermaplaning-rotterdam",
+      tekst: "Dermaplaning in Rotterdam",
+      zin: "Wat dermaplaning bij ons kost, waarom het haar niet dikker terugkomt en hoe een eerste afspraak verloopt, staat op",
+    },
     categorie: "gezicht",
     huidwens: ["glow"],
     kort: "Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid.",
@@ -668,6 +705,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       alt: "Een peeling wordt met een wattenstaafje op het voorhoofd aangebracht",
     },
     naam: "Medische peelings",
+    landing: {
+      href: "/kennisbank/chemische-peeling-rotterdam",
+      tekst: "Chemische peeling in Rotterdam",
+      zin: "Wat een peeling bij ons kost, welke sterkte bij welke klacht past en wanneer je beter even wacht, staat op",
+    },
     apparaat: "Mesoestetic, Dermaceutic, Skin Tech Pharma",
     categorie: "peeling",
     huidwens: ["acne", "pigment", "glow"],
@@ -741,6 +783,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       alt: "Een peeling wordt aangebracht in de behandelkamer",
     },
     naam: "Kruidenpeel",
+    landing: {
+      href: "/kennisbank/chemische-peeling-rotterdam",
+      tekst: "Chemische peeling in Rotterdam",
+      zin: "Hoe de kruidenpeel zich verhoudt tot de peelings met zuur, en wat die bij ons kosten, staat op",
+    },
     categorie: "peeling",
     huidwens: ["acne"],
     kort: "Een peeling van fijngemalen kruiden, zonder zuur. Remt de ontsteking en werkt antibacterieel.",
@@ -819,6 +866,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       alt: "Microneedling met de SkinPen bij een cliënt",
     },
     naam: "SkinPen Microneedling",
+    landing: {
+      href: "/kennisbank/microneedling-rotterdam",
+      tekst: "Microneedling in Rotterdam",
+      zin: "Wat microneedling bij ons kost, het verschil met de Dermapen en hoe een eerste afspraak verloopt, staat op",
+    },
     apparaat: "SkinPen CIT",
     categorie: "needling",
     /* Griss, 9 september 2026: pigment na een ontsteking (PIH) is naast acne wat we het
@@ -895,6 +947,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       alt: "Andres behandelt de huid van een cliënt met de Dermapen 4",
     },
     naam: "Dermapen 4",
+    landing: {
+      href: "/kennisbank/microneedling-rotterdam",
+      tekst: "Microneedling in Rotterdam",
+      zin: "Wat microneedling bij ons kost, het verschil met de SkinPen en hoe een eerste afspraak verloopt, staat op",
+    },
     apparaat: "Dermapen 4",
     categorie: "needling",
     huidwens: ["littekens", "pigment", "glow"],
@@ -978,6 +1035,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       alt: "Een skinbooster wordt onder het oog ingebracht",
     },
     naam: "Skinboosters en mesotherapie",
+    landing: {
+      href: "/kennisbank/skinboosters-rotterdam",
+      tekst: "Skinboosters in Rotterdam",
+      zin: "Wat skinboosters bij ons kosten, het verschil met een filler en hoe een kuur verloopt, staat op",
+    },
     apparaat: "U225 intradermale injector",
     categorie: "injectie",
     huidwens: ["verjonging"],
@@ -1060,6 +1122,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       alt: "De behandelaar zet een depot onder het oog tijdens een RRS Eyes-behandeling",
     },
     naam: "RRS Eyes",
+    landing: {
+      href: "/kennisbank/skinboosters-rotterdam",
+      tekst: "Skinboosters in Rotterdam",
+      zin: "RRS Eyes is de skinbooster voor rond de ogen. Wat de boosters bij ons kosten en hoe een kuur verloopt, staat op",
+    },
     categorie: "injectie",
     huidwens: ["verjonging"],
     kort: "Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik.",
@@ -1148,6 +1215,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       alt: "Fotona-laserbehandeling met oogbescherming",
     },
     naam: "Fotona TimeWalker",
+    landing: {
+      href: "/kennisbank/fotona-4d-rotterdam",
+      tekst: "Fotona 4D in Rotterdam",
+      zin: "De bekendste behandeling op dit apparaat is Fotona 4D. Wat die bij ons kost en hoe hij verloopt, staat op",
+    },
     apparaat: "Fotona 4D TimeWalker",
     categorie: "laser",
     kort: "Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel.",
@@ -1254,6 +1326,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Daarna werkt de behandelaar aan de buitenkant. De verwarmende stand loopt op tot net voor het ongemakkelijke, en zij vraagt tijdens de sessie hoe warm het aanvoelt. De laatste stap voelt als korte tikjes. [MEDISCHE-CHECK-ROJDA]",
     ],
     naam: "Fotona 4D",
+    landing: {
+      href: "/kennisbank/fotona-4d-rotterdam",
+      tekst: "Fotona 4D in Rotterdam",
+      zin: "Wat Fotona 4D bij ons kost, hoe de vier stappen verlopen en wat het volledige pakket is, staat op",
+    },
     apparaat: "Fotona 4D TimeWalker",
     categorie: "laser",
     huidwens: ["verjonging"],
@@ -1335,6 +1412,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Wat je merkt is dat de warmte iets verder oploopt. Dat is de bedoeling: een dikkere huid heeft meer nodig om dezelfde diepte te bereiken.",
     ],
     naam: "Fotona 4D Men",
+    landing: {
+      href: "/kennisbank/fotona-4d-rotterdam",
+      tekst: "Fotona 4D in Rotterdam",
+      zin: "Hoe Fotona 4D bij ons verloopt en wat hij kost, staat op",
+    },
     apparaat: "Fotona 4D TimeWalker",
     categorie: "laser",
     huidwens: ["verjonging"],
@@ -1412,6 +1494,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Erna is er aan de buitenkant niets te zien. Je kunt gewoon eten en drinken; sommige mensen vinden het de eerste uren wat droog aanvoelen in de mond.",
     ],
     naam: "SmoothLiftin",
+    landing: {
+      href: "/kennisbank/fotona-4d-rotterdam",
+      tekst: "Fotona 4D in Rotterdam",
+      zin: "Deze stap is een van de vier van Fotona 4D. Wat de hele behandeling kost en hoe hij verloopt, staat op",
+    },
     apparaat: "Fotona 4D TimeWalker",
     categorie: "laser",
     huidwens: ["verjonging"],
@@ -1488,6 +1575,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Erna ben je rood en warm. In de dagen die volgen kan de huid fijn korrelig aanvoelen en licht schilferen; dat is de oude bovenlaag die eraf komt. [MEDISCHE-CHECK-ROJDA]",
     ],
     naam: "FRAC3",
+    landing: {
+      href: "/kennisbank/fotona-4d-rotterdam",
+      tekst: "Fotona 4D in Rotterdam",
+      zin: "Deze stap is een van de vier van Fotona 4D. Wat de hele behandeling kost en hoe hij verloopt, staat op",
+    },
     apparaat: "Fotona 4D TimeWalker",
     categorie: "laser",
     huidwens: ["pigment", "littekens"],
@@ -1565,6 +1657,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Erna voelt de huid warm en ziet hij er wat voller uit. Dat is de warmte en nog geen resultaat; de opbouw komt over de weken erna.",
     ],
     naam: "PIANO skin tightening",
+    landing: {
+      href: "/kennisbank/fotona-4d-rotterdam",
+      tekst: "Fotona 4D in Rotterdam",
+      zin: "Deze stap is een van de vier van Fotona 4D. Wat de hele behandeling kost en hoe hij verloopt, staat op",
+    },
     apparaat: "Fotona 4D TimeWalker",
     categorie: "laser",
     huidwens: ["verjonging"],
@@ -1642,6 +1739,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Erna is je huid roze en voelt hij strak aan. Dat trekt binnen een paar uur weg en de dag erna is je huid zichtbaar gladder.",
     ],
     naam: "SupErficial laserpeel",
+    landing: {
+      href: "/kennisbank/fotona-4d-rotterdam",
+      tekst: "Fotona 4D in Rotterdam",
+      zin: "Deze stap is een van de vier van Fotona 4D. Wat de hele behandeling kost en hoe hij verloopt, staat op",
+    },
     apparaat: "Fotona 4D TimeWalker",
     categorie: "laser",
     huidwens: ["littekens", "glow"],
@@ -2321,6 +2423,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       alt: "Nordlys IPL-behandeling met beschermbril",
     },
     naam: "Nordlys IPL bij pigment",
+    landing: {
+      href: "/kennisbank/ipl-rotterdam",
+      tekst: "IPL-behandeling in Rotterdam",
+      zin: "Wat IPL bij ons kost, waarom het geen laser is en wanneer je beter wacht, staat op",
+    },
     apparaat: "Nordlys",
     categorie: "laser",
     huidwens: ["pigment"],
@@ -2369,6 +2476,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       alt: "Behandeling met de Nordlys, met beschermbril op",
     },
     naam: "Nordlys IPL bij roodheid en vaatjes",
+    landing: {
+      href: "/kennisbank/ipl-rotterdam",
+      tekst: "IPL-behandeling in Rotterdam",
+      zin: "Wat IPL bij ons kost, waarom het geen laser is en wat het bij rosacea wel en niet doet, staat op",
+    },
     naamKort: "Roodheid en vaatjes",
     apparaat: "Nordlys",
     categorie: "laser",
@@ -2541,6 +2653,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Na een paar dagen ga je vervellen. We spreken daarom vooraf af wanneer je begint, zodat het niet samenvalt met een vakantie of een drukke week. [MEDISCHE-CHECK-ROJDA]",
     ],
     naam: "Cosmelan",
+    landing: {
+      href: "/kennisbank/cosmelan-dermamelan-rotterdam",
+      tekst: "Cosmelan en Dermamelan in Rotterdam",
+      zin: "Het verschil met Dermamelan, wanneer je het beste begint en wat het traject bij ons kost, staat op",
+    },
     apparaat: "Mesoestetic",
     categorie: "pigment",
     huidwens: ["pigment"],
@@ -2594,6 +2711,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "Vervellen begint na een paar dagen. Plan het begin dus niet vlak voor een vakantie of een belangrijke datum. [MEDISCHE-CHECK-ROJDA]",
     ],
     naam: "Dermamelan",
+    landing: {
+      href: "/kennisbank/cosmelan-dermamelan-rotterdam",
+      tekst: "Cosmelan en Dermamelan in Rotterdam",
+      zin: "Het verschil met Cosmelan, wanneer je het beste begint en wat het traject bij ons kost, staat op",
+    },
     apparaat: "Mesoestetic",
     categorie: "pigment",
     huidwens: ["pigment"],
@@ -2635,6 +2757,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   {
     slug: "dermamelan-intimate",
     naam: "Dermamelan Intimate",
+    landing: {
+      href: "/kennisbank/cosmelan-dermamelan-rotterdam",
+      tekst: "Cosmelan en Dermamelan in Rotterdam",
+      zin: "Hoe dit traject zich verhoudt tot Cosmelan en Dermamelan voor het gezicht, en wat de trajecten kosten, staat op",
+    },
     apparaat: "Mesoestetic",
     categorie: "pigment",
     huidwens: ["pigment"],
@@ -2740,6 +2867,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   {
     slug: "elektrische-epilatie",
     naam: "Elektrische epilatie",
+    landing: {
+      href: "/kennisbank/elektrische-epilatie-rotterdam",
+      tekst: "Elektrische epilatie in Rotterdam",
+      zin: "Wat elektrische epilatie bij ons kost, waarom de laser grijs haar niet ziet en hoe het samengaat met laser, staat op",
+    },
     categorie: "ontharing",
     huidwens: ["ontharing"],
     kort: "Haar voor haar, ook grijs en blond. Voor wat de laser niet ziet zitten. De behandeltijd rekenen we per kwartier.",
@@ -3215,6 +3347,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   {
     slug: "rrs-hyalift",
     naam: "RRS Hyalift",
+    landing: {
+      href: "/kennisbank/skinboosters-rotterdam",
+      tekst: "Skinboosters in Rotterdam",
+      zin: "RRS Hyalift is een van de skinboosters die we zetten. Wat een kuur kost en hoe die verloopt, staat op",
+    },
     apparaat: "RRS, met de U225",
     categorie: "injectie",
     huidwens: ["verjonging"],
@@ -3283,6 +3420,11 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
   {
     slug: "fotona-4d-full",
     naam: "Fotona 4D Full Package",
+    landing: {
+      href: "/kennisbank/fotona-4d-rotterdam",
+      tekst: "Fotona 4D in Rotterdam",
+      zin: "Hoe het volledige pakket zich verhoudt tot de gewone Fotona 4D, en wat allebei kosten, staat op",
+    },
     apparaat: "Fotona 4D TimeWalker",
     categorie: "laser",
     huidwens: ["verjonging"],

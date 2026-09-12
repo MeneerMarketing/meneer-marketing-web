@@ -191,7 +191,7 @@ for (const [eigenaar, vlaggen] of Object.entries(perEigenaar).sort()) {
   for (const [vlag, rijen] of Object.entries(vlaggen).sort(
     (a, b) => b[1].length - a[1].length,
   )) {
-    md += `\n### ${vlag} · ${rijen.length}\n\n${UITLEG[vlag]}\n`;
+    md += `\n### ${vlag} (${rijen.length})\n\n${UITLEG[vlag]}\n`;
     const perOnderwerp = {};
     for (const r of rijen) (perOnderwerp[r.onderwerp] ??= []).push(r);
     for (const [ond, rs] of Object.entries(perOnderwerp).sort()) {

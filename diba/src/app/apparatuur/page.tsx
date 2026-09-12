@@ -50,7 +50,7 @@ function waarvoor(slugs: readonly string[]): string {
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/apparatuur",
-  titel: "Onze apparatuur",
+  titel: "Apparatuur in onze huidkliniek",
   omschrijving:
     "Welke apparaten er in de kliniek staan, welke behandelingen erop draaien, tot hoe diep ze komen en wat ze niet kunnen.",
 });

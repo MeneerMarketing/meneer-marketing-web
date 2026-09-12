@@ -30,6 +30,7 @@ export default function ReviewsBijOnderwerp({
   intro,
   minimum = 3,
   achtergrond = "wit",
+  reeks = 0,
 }: {
   onderwerp: Exclude<ReviewTopic, "alle">;
   /** Eén regel die zegt waar deze reviews over gaan. */
@@ -37,10 +38,19 @@ export default function ReviewsBijOnderwerp({
   /** Onder dit aantal blijft de sectie weg. */
   minimum?: number;
   achtergrond?: "wit" | "zacht";
+  /**
+   * Welk drietal, als meer pagina's hetzelfde onderwerp tonen.
+   *
+   * Vier landingspagina's over gezichtsbehandelingen lieten precies dezelfde drie reviews
+   * zien, want de keuze hieronder is vast. Voor wie van de ene pagina naar de andere klikt
+   * leest dat als een kliniek met drie reviews. Met een ander nummer krijgt een pagina een
+   * ander drietal, dat niet overlapt met de drietallen ervoor. Nul is wat het altijd was.
+   */
+  reeks?: number;
 }) {
   const overOnderwerp = reviewsForTopic(onderwerp);
   if (overOnderwerp.length < minimum) return null;
-  const reviews = drieVanGelijkeLengte(overOnderwerp);
+  const reviews = drieVanGelijkeLengte(overOnderwerp, reeks);
 
   return (
     <section
@@ -93,17 +103,31 @@ export default function ReviewsBijOnderwerp({
  * Kiezen op lengte is geen kiezen op inhoud: de intro belooft dat we niet de mooiste
  * eruit halen, en dat blijft zo. Wie langer is dan een ander zegt niets over wat er staat.
  */
-function drieVanGelijkeLengte(reviews: readonly Review[]): readonly Review[] {
+function drieVanGelijkeLengte(
+  reviews: readonly Review[],
+  reeks = 0,
+): readonly Review[] {
   if (reviews.length <= 3) return reviews;
   const opLengte = [...reviews].sort((a, b) => a.quote.length - b.quote.length);
-  let beste = opLengte.slice(0, 3);
-  let kleinste = Infinity;
-  for (let i = 0; i + 3 <= opLengte.length; i++) {
-    const spreiding = opLengte[i + 2].quote.length - opLengte[i].quote.length;
-    if (spreiding < kleinste) {
-      kleinste = spreiding;
-      beste = opLengte.slice(i, i + 3);
-    }
+  /* Alle drietallen van opeenvolgende lengtes, van het kleinste verschil naar het grootste. */
+  const vensters = opLengte
+    .slice(0, -2)
+    .map((_, i) => ({
+      i,
+      spreiding: opLengte[i + 2].quote.length - opLengte[i].quote.length,
+    }))
+    .sort((a, b) => a.spreiding - b.spreiding || a.i - b.i);
+  /* Het eerste drietal is wat hier altijd stond. Elk volgend drietal deelt geen review met de
+     drietallen ervoor, zodat twee pagina's over hetzelfde onderwerp niets dubbel tonen. */
+  const bezet = new Set<number>();
+  const gekozen: number[] = [];
+  for (const v of vensters) {
+    if ([v.i, v.i + 1, v.i + 2].some((j) => bezet.has(j))) continue;
+    gekozen.push(v.i);
+    [v.i, v.i + 1, v.i + 2].forEach((j) => bezet.add(j));
+    if (gekozen.length > reeks) break;
   }
+  const begin = gekozen[Math.min(reeks, gekozen.length - 1)];
+  const beste = opLengte.slice(begin, begin + 3);
   return reviews.filter((r) => beste.includes(r));
 }

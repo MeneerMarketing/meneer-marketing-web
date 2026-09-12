@@ -237,6 +237,132 @@ export function jobPostingSchema(opts: {
   } as const;
 }
 
+/**
+ * Een dienst met een tarief, gekoppeld aan deze kliniek en aan dit verzorgingsgebied.
+ *
+ * WAAROM DIT NAAST `behandelingSchema` STAAT EN HET NIET VERVANGT.
+ *
+ * `MedicalProcedure` beschrijft wat een behandeling ís: de ingreep, medisch gezien. Het kent
+ * geen prijs en geen plaats. `Service` beschrijft wat een bedrijf aanbiedt: met een tarief,
+ * een aanbieder en een gebied waar dat aanbod geldt. Voor een zoekopdracht als "hydrafacial
+ * rotterdam" is dat tweede het antwoord, en voor een taalmodel dat de vraag "wat kost een
+ * hydrafacial in Rotterdam" krijgt is het de enige plek waar het bedrag machineleesbaar
+ * staat. De twee sluiten elkaar niet uit; een pagina mag ze allebei dragen.
+ *
+ * WAT ER IN MOET, EN WAT NIET.
+ *
+ * `offers` alleen met bedragen die ook zichtbaar op de pagina staan. Een prijs die in het
+ * schema staat maar niet op het scherm is precies het soort verschil waar Google een
+ * handmatige maatregel voor uitdeelt, en het is bovendien onaardig tegen wie het leest.
+ *
+ * Geen `aggregateRating`. Een waardering die de aanbieder zelf over zichzelf meldt telt niet
+ * en hoort hier niet (zie de kop van dit bestand).
+ */
+export function dienstSchema(opts: {
+  naam: string;
+  omschrijving: string;
+  /** De volledige URL van de pagina waar dit aanbod op staat. */
+  url: string;
+  siteUrl: string;
+  /** Waar het aanbod onder valt: "Gezichtsbehandeling", "Laserontharing". */
+  soort: string;
+  /** Waar we het aanbieden. Een stad, eventueel met de wijk erbij. */
+  gebied: readonly string[];
+  /** De varianten met hun tarief. Alleen bedragen die op de pagina staan. */
+  varianten: readonly {
+    readonly naam: string;
+    readonly prijs: number;
+    readonly zin?: string;
+  }[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${opts.url}#dienst`,
+    name: opts.naam,
+    serviceType: opts.soort,
+    description: opts.omschrijving,
+    url: opts.url,
+    provider: { "@id": `${opts.siteUrl}#kliniek` },
+    areaServed: opts.gebied.map((plaats) => ({
+      "@type": "City",
+      name: plaats,
+    })),
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: opts.naam,
+      itemListElement: opts.varianten.map((v) => ({
+        "@type": "Offer",
+        name: v.naam,
+        ...(v.zin ? { description: v.zin } : {}),
+        price: v.prijs,
+        priceCurrency: "EUR",
+        url: opts.url,
+        availability: "https://schema.org/InStock",
+        /* Zonder deze datum mag een zoekmachine het tarief als verlopen beschouwen. Een
+           jaar vooruit, en de tarieven worden hoe dan ook vaker nagelopen dan dat. */
+        priceValidUntil: `${new Date().getFullYear() + 1}-12-31`,
+      })),
+    },
+  } as const;
+}
+
+/**
+ * De pagina zelf, als medische uitlegpagina.
+ *
+ * WAAROM HET TYPE ERTOE DOET. `MedicalWebPage` zegt tegen een zoekmachine: dit is geen
+ * winkelpagina maar uitleg over een behandeling, geschreven door een zorgaanbieder. Dat is
+ * het type waar Google zijn strengere beoordeling op loslaat, en tegelijk het type dat in
+ * antwoorden wordt aangehaald. Je kunt het niet half doen: wie het type claimt, hoort ook de
+ * datum en de controleur te leveren.
+ *
+ * `reviewedBy` IS EEN BEWERING OVER EEN MENS. Vul die alleen als die persoon de tekst
+ * werkelijk heeft nagekeken. Een naam neerzetten omdat het goed staat in een schema is
+ * precies het soort onwaarheid dat een kliniek zich niet kan veroorloven, en het is niet te
+ * verdedigen als iemand ernaar vraagt. Zolang de controle er niet is, blijft het veld leeg
+ * en staat er op de pagina ook geen controleur.
+ */
+export function medischePaginaSchema(opts: {
+  url: string;
+  siteUrl: string;
+  naam: string;
+  omschrijving: string;
+  /** Datum in ISO, de dag waarop de inhoud voor het laatst is aangepast. */
+  gewijzigd: string;
+  /** Waar de pagina over gaat, als verwijzing naar het MedicalProcedure op dezelfde pagina. */
+  overProcedure?: string;
+  /** Alleen invullen na een echte inhoudelijke controle. Zie de toelichting hierboven. */
+  nagekekenDoor?: { readonly naam: string; readonly functie: string };
+  /** Datum van die controle, in ISO. */
+  nagekekenOp?: string;
+  beeld?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "@id": `${opts.url}#pagina`,
+    name: opts.naam,
+    description: opts.omschrijving,
+    url: opts.url,
+    inLanguage: "nl-NL",
+    dateModified: opts.gewijzigd,
+    isPartOf: { "@id": `${opts.siteUrl}#kliniek` },
+    ...(opts.overProcedure ? { about: { "@id": opts.overProcedure } } : {}),
+    ...(opts.beeld ? { primaryImageOfPage: opts.beeld } : {}),
+    ...(opts.nagekekenDoor && opts.nagekekenOp
+      ? {
+          lastReviewed: opts.nagekekenOp,
+          reviewedBy: {
+            "@type": "Person",
+            name: opts.nagekekenDoor.naam,
+            jobTitle: opts.nagekekenDoor.functie,
+            worksFor: { "@id": `${opts.siteUrl}#kliniek` },
+          },
+        }
+      : {}),
+  } as const;
+}
+
 /** Rendert JSON-LD. Server component. */
 export function SchemaMarkup({ data }: { data: object }) {
   return (

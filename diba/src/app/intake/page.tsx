@@ -46,7 +46,7 @@ import MobielInklap from "@/components/ui/MobielInklap";
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/intake",
-  titel: "Het huidconsult",
+  titel: "Het huidconsult: wat er gebeurt",
   omschrijving:
     "Wat er in het huidconsult gebeurt, hoe lang het duurt en wat het kost. Bij behandelen in dezelfde afspraak vervallen de intakekosten.",
 });

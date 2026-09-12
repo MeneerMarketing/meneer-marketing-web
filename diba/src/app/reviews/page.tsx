@@ -50,7 +50,7 @@ import MobielInklap from "@/components/ui/MobielInklap";
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/reviews",
-  titel: "Reviews",
+  titel: "Ervaringen van onze klanten",
   omschrijving: `${SALONIZED_REVIEW_SUMMARY.countFormatted} reviews op Salonized, gemiddeld een ${SALONIZED_REVIEW_SUMMARY.rating.toFixed(1).replace(".", ",")}. Wat dat wel zegt en wat niet, met de quotes zelf erbij.`,
 });
 

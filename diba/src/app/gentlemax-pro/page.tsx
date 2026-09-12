@@ -43,7 +43,10 @@ import LeesVerder from "@/components/ui/LeesVerder";
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/gentlemax-pro",
-  titel: "GentleMax Pro",
+  /* Deze pagina heette net zo als /apparatuur/gentlemax-pro, en dan kiest een zoekmachine
+     er zelf een van de twee. De rolverdeling: daar staat het apparaat, hier staat de vraag
+     welke van de twee golflengtes bij jouw huidtype hoort, met de kiezer erbij. */
+  titel: "Welke laser past bij jouw huidtype",
   omschrijving:
     "Twee lasers in één apparaat: 755 nm en 1064 nm. Welke van de twee je krijgt hangt af van je huidtype, en dat is een veiligheidskeuze en geen detail.",
 });
@@ -199,6 +202,15 @@ export default function GentleMaxProPage() {
                 className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
               >
                 Alles over laserontharing
+              </Link>
+              {/* De rolverdeling met de apparaatpagina staat nu in de titels vast, en dan
+                  hoort er ook een verwijzing heen te staan. Anders blijft het voor een
+                  zoekmachine twee pagina's over hetzelfde ding. */}
+              <Link
+                href="/apparatuur/gentlemax-pro"
+                className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+              >
+                Het apparaat zelf
               </Link>
             </div>
           </div>

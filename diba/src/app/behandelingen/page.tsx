@@ -49,7 +49,9 @@ import LeesVerder from "@/components/ui/LeesVerder";
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/behandelingen",
-  titel: "Behandelingen",
+  /* "Behandelingen" is de naam van de map, niet de vraag van de bezoeker. De klachtlaag
+     draagt "Huidproblemen behandelen in Rotterdam"; dit is de aanbodkant ernaast. */
+  titel: "Huidbehandelingen in Rotterdam",
   omschrijving:
     "Kies waar je iets aan wilt doen: acne, pigment, littekens, huidveroudering, glow of haar. Tijdens het huidconsult bepaalt de behandelaar wat bij jouw huid past.",
 });

@@ -1,6 +1,6 @@
 # Alle teksten van de website
 
-Diba Clinics · gegenereerd op 11 september 2026 · 138 pagina's
+Diba Clinics · gegenereerd op 12 september 2026 · 155 pagina's
 
 Dit document bevat elke tekst die een bezoeker op de site ziet, in de volgorde waarin
 hij op de pagina staat. Het is uit de echte pagina's getrokken en niet uit de broncode,
@@ -378,11 +378,11 @@ BIJ BINNENKOMST
 
 ### /ons-verhaal
 
-**Tabbladtitel:** Ons verhaal | Diba Clinics
+**Tabbladtitel:** Hoe wij werken | Diba Clinics
 
-**Google-omschrijving:** Huidkliniek in Rotterdam sinds 2017. Geregistreerde huidtherapeuten, een traject dat begint met een huidanalyse en prijzen die op de site staan.
+**Google-omschrijving:** Hoe een traject bij Diba Clinics verloopt: het begint met een huidanalyse, de tarieven staan per sessie op de site en je hoort ook wat er niet kan.
 
-**EEN HUIDKLINIEK IN ROTTERDAM**
+**HOE WIJ WERKEN**
 
 Sinds 2017 helpen onze huidtherapeuten en specialisten je met acne, pigment, littekens, huidverbetering en ongewenst haar.
 
@@ -424,7 +424,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /over-ons
 
-**Tabbladtitel:** Over ons | Diba Clinics
+**Tabbladtitel:** Over Diba Clinics in Rotterdam | Diba Clinics
 
 **Google-omschrijving:** Diba Clinics in Rotterdam, Rotterdam. Actief sinds 2017, 11 mensen, 12 apparaten. En wat die cijfers niet zeggen.
 
@@ -876,7 +876,7 @@ Deze komen uit Salonized en zijn niet door ons uitgezocht op inhoud: het zijn de
 
 **Wat we hiervoor inzetten**
 
-- Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. BIJ DEZE KLACHT MET DE PEELINGLIJNEN
+- Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. BIJ DEZE KLACHT MET DE PEELINGLIJNEN CHEMISCHE PEELING IN ROTTERDAM
 
 - Kruidenpeel € 150 Een peeling van fijngemalen kruiden, zonder zuur. Remt de ontsteking en werkt antibacterieel. WAT HET INHOUDT
 
@@ -1016,11 +1016,11 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 **Wat we hiervoor inzetten**
 
-- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. BIJ DEZE KLACHT MET DE SKINPEN CIT
+- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. BIJ DEZE KLACHT MET DE SKINPEN CIT MICRONEEDLING IN ROTTERDAM
 
 - Dermapen 4 € 180 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. WAT HET INHOUDT MET DE DERMAPEN 4
 
-- FRAC3 Op aanvraag Fractionele laser die dieper gaat, voor structuur, poriën en onregelmatigheden. WAT HET INHOUDT MET DE FOTONA TIMEWALKER
+- FRAC3 Op aanvraag Fractionele laser die dieper gaat, voor structuur, poriën en onregelmatigheden. WAT HET INHOUDT MET DE FOTONA TIMEWALKER FOTONA 4D IN ROTTERDAM
 
 - Fotona Scar Repair € 195 Laser op littekens: acnelittekens, operatielittekens en striae. WAT HET INHOUDT MET DE FOTONA TIMEWALKER
 
@@ -1194,7 +1194,7 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 **Wat we hiervoor inzetten**
 
-- Nordlys IPL bij roodheid en vaatjes € 75 Licht op zichtbare vaatjes, rosacea en blijvende roodheid. Het vaatje wordt donkerder en trekt weg. BIJ DEZE KLACHT MET DE NORDLYS
+- Nordlys IPL bij roodheid en vaatjes € 75 Licht op zichtbare vaatjes, rosacea en blijvende roodheid. Het vaatje wordt donkerder en trekt weg. BIJ DEZE KLACHT MET DE NORDLYS IPL-BEHANDELING IN ROTTERDAM
 
 - LED-therapie € 30 Licht dat de huid rustiger maakt. In meerdere golflengtes, zonder naalden of zuren. WAT HET INHOUDT MET DE PRECISION PHOTONIC SYSTEM
 
@@ -1344,21 +1344,21 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 **Wat we hiervoor inzetten**
 
-- HydraFacial € 170 Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd. WAT HET INHOUDT MET DE HYDRAFACIAL SYNDEO
+- HydraFacial € 170 Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd. WAT HET INHOUDT MET DE HYDRAFACIAL SYNDEO HYDRAFACIAL IN ROTTERDAM
 
-- Oxygeneo glow € 150 Exfoliëren en zuurstof in de huid brengen, in één behandeling. WAT HET INHOUDT MET DE OXYGENEO
+- Oxygeneo glow € 150 Exfoliëren en zuurstof in de huid brengen, in één behandeling. WAT HET INHOUDT MET DE OXYGENEO OXYGENEO IN ROTTERDAM
 
-- Dermaplaning € 150 Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid. WAT HET INHOUDT MET DE DERMAPLANE PRO
+- Dermaplaning € 150 Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid. WAT HET INHOUDT MET DE DERMAPLANE PRO DERMAPLANING IN ROTTERDAM
 
-- Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. WAT HET INHOUDT MET DE PEELINGLIJNEN
+- Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. WAT HET INHOUDT MET DE PEELINGLIJNEN CHEMISCHE PEELING IN ROTTERDAM
 
 - Kruidenpeel € 150 Een peeling van fijngemalen kruiden, zonder zuur. Remt de ontsteking en werkt antibacterieel. WAT HET INHOUDT
 
-- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. WAT HET INHOUDT MET DE SKINPEN CIT
+- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. WAT HET INHOUDT MET DE SKINPEN CIT MICRONEEDLING IN ROTTERDAM
 
 - Dermapen 4 € 180 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. WAT HET INHOUDT MET DE DERMAPEN 4
 
-- SupErficial laserpeel Op aanvraag Een oppervlakkige laserpeeling voor een gladdere huid en meer glans. WAT HET INHOUDT MET DE FOTONA TIMEWALKER
+- SupErficial laserpeel Op aanvraag Een oppervlakkige laserpeeling voor een gladdere huid en meer glans. WAT HET INHOUDT MET DE FOTONA TIMEWALKER FOTONA 4D IN ROTTERDAM
 
 - Fotona Resurfacing Op aanvraag Huidvernieuwing met laser, voor poriën, textuur en een gladdere huid. WAT HET INHOUDT MET DE FOTONA TIMEWALKER
 
@@ -1482,7 +1482,7 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 **Wat we hiervoor inzetten**
 
-- Skinboosters en mesotherapie € 175 Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. WAT HET INHOUDT MET DE U225 INTRADERMALE INJECTOR
+- Skinboosters en mesotherapie € 175 Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. WAT HET INHOUDT MET DE U225 INTRADERMALE INJECTOR SKINBOOSTERS IN ROTTERDAM
 
 - RRS Eyes € 130 Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik. WAT HET INHOUDT
 
@@ -1632,13 +1632,13 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 **Wat we hiervoor inzetten**
 
-- HydraFacial € 170 Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd. WAT HET INHOUDT MET DE HYDRAFACIAL SYNDEO
+- HydraFacial € 170 Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd. WAT HET INHOUDT MET DE HYDRAFACIAL SYNDEO HYDRAFACIAL IN ROTTERDAM
 
-- Oxygeneo glow € 150 Exfoliëren en zuurstof in de huid brengen, in één behandeling. WAT HET INHOUDT MET DE OXYGENEO
+- Oxygeneo glow € 150 Exfoliëren en zuurstof in de huid brengen, in één behandeling. WAT HET INHOUDT MET DE OXYGENEO OXYGENEO IN ROTTERDAM
 
-- Dermaplaning € 150 Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid. WAT HET INHOUDT MET DE DERMAPLANE PRO
+- Dermaplaning € 150 Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid. WAT HET INHOUDT MET DE DERMAPLANE PRO DERMAPLANING IN ROTTERDAM
 
-- RRS Hyalift € 175 Hyaluronzuur en vitamines in de huid brengen. Voor stevigheid en vocht, niet voor volume. WAT HET INHOUDT
+- RRS Hyalift € 175 Hyaluronzuur en vitamines in de huid brengen. Voor stevigheid en vocht, niet voor volume. WAT HET INHOUDT SKINBOOSTERS IN ROTTERDAM
 
 **Veelgestelde vragen**
 
@@ -2270,9 +2270,9 @@ Verandert een plek van vorm, kleur of grootte, jeukt of bloedt hij, of is hij er
 
 **Wat we hiervoor inzetten**
 
-- Nordlys IPL bij pigment € 75 Licht op pigmentvlekken en zonschade. Het pigment komt eerst naar boven en vervaagt daarna. WAT HET INHOUDT MET DE NORDLYS
+- Nordlys IPL bij pigment € 75 Licht op pigmentvlekken en zonschade. Het pigment komt eerst naar boven en vervaagt daarna. WAT HET INHOUDT MET DE NORDLYS IPL-BEHANDELING IN ROTTERDAM
 
-- Dermamelan Intimate € 550 Pigmentbehandeling voor de intieme zone, met dezelfde opzet als het gezichtstraject. WAT HET INHOUDT
+- Dermamelan Intimate € 550 Pigmentbehandeling voor de intieme zone, met dezelfde opzet als het gezichtstraject. WAT HET INHOUDT COSMELAN EN DERMAMELAN IN ROTTERDAM
 
 - Happy Intim € 175 Peelings die pigment in de intieme zone en oksels lichter en egaler maken. WAT HET INHOUDT MET DE PEELINGLIJNEN
 
@@ -2486,15 +2486,15 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 **Wat we hiervoor inzetten**
 
-- Dermaplaning € 150 Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid. WAT HET INHOUDT MET DE DERMAPLANE PRO
+- Dermaplaning € 150 Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid. WAT HET INHOUDT MET DE DERMAPLANE PRO DERMAPLANING IN ROTTERDAM
 
-- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. WAT HET INHOUDT MET DE SKINPEN CIT
+- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. WAT HET INHOUDT MET DE SKINPEN CIT MICRONEEDLING IN ROTTERDAM
 
 - Dermapen 4 € 180 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. WAT HET INHOUDT MET DE DERMAPEN 4
 
-- Skinboosters en mesotherapie € 175 Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. WAT HET INHOUDT MET DE U225 INTRADERMALE INJECTOR
+- Skinboosters en mesotherapie € 175 Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. WAT HET INHOUDT MET DE U225 INTRADERMALE INJECTOR SKINBOOSTERS IN ROTTERDAM
 
-- Fotona TimeWalker € 150 Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel. WAT HET INHOUDT MET DE FOTONA TIMEWALKER
+- Fotona TimeWalker € 150 Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel. WAT HET INHOUDT MET DE FOTONA TIMEWALKER FOTONA 4D IN ROTTERDAM
 
 - Fotona 4D € 370 Vier laserbehandelingen in een sessie. Van binnenuit door de wang tot een afsluitende peeling. WAT HET INHOUDT MET DE FOTONA TIMEWALKER
 
@@ -2654,7 +2654,7 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 **Wat we hiervoor inzetten**
 
-- Fotona TimeWalker € 150 Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel. WAT HET INHOUDT MET DE FOTONA TIMEWALKER
+- Fotona TimeWalker € 150 Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel. WAT HET INHOUDT MET DE FOTONA TIMEWALKER FOTONA 4D IN ROTTERDAM
 
 - Fotona 4D € 370 Vier laserbehandelingen in een sessie. Van binnenuit door de wang tot een afsluitende peeling. WAT HET INHOUDT MET DE FOTONA TIMEWALKER
 
@@ -2790,7 +2790,7 @@ Strak scheren, pincetten en scrubben houden het probleem in stand. Ermee stoppen
 
 **Wat we hiervoor inzetten**
 
-- Elektrische epilatie € 30 Haar voor haar, ook grijs en blond. Voor wat de laser niet ziet zitten. De behandeltijd rekenen we per kwartier. WAT HET INHOUDT
+- Elektrische epilatie € 30 Haar voor haar, ook grijs en blond. Voor wat de laser niet ziet zitten. De behandeltijd rekenen we per kwartier. WAT HET INHOUDT ELEKTRISCHE EPILATIE IN ROTTERDAM
 
 - Laserontharing € 20 De haarwortel uitschakelen. Per zone of als pakket, voor dames en heren. WAT HET INHOUDT MET DE GENTLEMAX PRO
 
@@ -3190,11 +3190,11 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 **Wat we hiervoor inzetten**
 
-- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. BIJ DEZE KLACHT MET DE SKINPEN CIT
+- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. BIJ DEZE KLACHT MET DE SKINPEN CIT MICRONEEDLING IN ROTTERDAM
 
 - Dermapen 4 € 180 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. WAT HET INHOUDT MET DE DERMAPEN 4
 
-- Fotona TimeWalker € 150 Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel. WAT HET INHOUDT MET DE FOTONA TIMEWALKER
+- Fotona TimeWalker € 150 Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel. WAT HET INHOUDT MET DE FOTONA TIMEWALKER FOTONA 4D IN ROTTERDAM
 
 - FRAC3 Op aanvraag Fractionele laser die dieper gaat, voor structuur, poriën en onregelmatigheden. WAT HET INHOUDT MET DE FOTONA TIMEWALKER
 
@@ -3360,9 +3360,9 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 **Wat we hiervoor inzetten**
 
-- Skinboosters en mesotherapie € 175 Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. WAT HET INHOUDT MET DE U225 INTRADERMALE INJECTOR
+- Skinboosters en mesotherapie € 175 Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. WAT HET INHOUDT MET DE U225 INTRADERMALE INJECTOR SKINBOOSTERS IN ROTTERDAM
 
-- Dermamelan € 920 De intensievere pigmentaanpak, meestal bij melasma. Zes maanden, met een strak schema thuis. WAT HET INHOUDT MET DE PEELINGLIJNEN
+- Dermamelan € 920 De intensievere pigmentaanpak, meestal bij melasma. Zes maanden, met een strak schema thuis. WAT HET INHOUDT MET DE PEELINGLIJNEN COSMELAN EN DERMAMELAN IN ROTTERDAM
 
 **Veelgestelde vragen**
 
@@ -3606,9 +3606,9 @@ De winst zit hier vaker in wat je stopt dan in wat je erbij doet. Strenger reini
 
 **Wat we hiervoor inzetten**
 
-- HydraFacial € 170 Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd. WAT HET INHOUDT MET DE HYDRAFACIAL SYNDEO
+- HydraFacial € 170 Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd. WAT HET INHOUDT MET DE HYDRAFACIAL SYNDEO HYDRAFACIAL IN ROTTERDAM
 
-- Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. WAT HET INHOUDT MET DE PEELINGLIJNEN
+- Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. WAT HET INHOUDT MET DE PEELINGLIJNEN CHEMISCHE PEELING IN ROTTERDAM
 
 - Kruidenpeel € 150 Een peeling van fijngemalen kruiden, zonder zuur. Remt de ontsteking en werkt antibacterieel. WAT HET INHOUDT
 
@@ -3772,11 +3772,11 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 **Wat we hiervoor inzetten**
 
-- Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. WAT HET INHOUDT MET DE PEELINGLIJNEN
+- Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. WAT HET INHOUDT MET DE PEELINGLIJNEN CHEMISCHE PEELING IN ROTTERDAM
 
-- Nordlys IPL bij pigment € 75 Licht op pigmentvlekken en zonschade. Het pigment komt eerst naar boven en vervaagt daarna. BIJ DEZE KLACHT MET DE NORDLYS
+- Nordlys IPL bij pigment € 75 Licht op pigmentvlekken en zonschade. Het pigment komt eerst naar boven en vervaagt daarna. BIJ DEZE KLACHT MET DE NORDLYS IPL-BEHANDELING IN ROTTERDAM
 
-- Cosmelan € 720 Traject van zes maanden tegen hyperpigmentatie, met een masker in de kliniek en producten thuis. WAT HET INHOUDT MET DE PEELINGLIJNEN
+- Cosmelan € 720 Traject van zes maanden tegen hyperpigmentatie, met een masker in de kliniek en producten thuis. WAT HET INHOUDT MET DE PEELINGLIJNEN COSMELAN EN DERMAMELAN IN ROTTERDAM
 
 **Veelgestelde vragen**
 
@@ -3958,15 +3958,15 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 **Wat we hiervoor inzetten**
 
-- Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. BIJ DEZE KLACHT MET DE PEELINGLIJNEN
+- Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. BIJ DEZE KLACHT MET DE PEELINGLIJNEN CHEMISCHE PEELING IN ROTTERDAM
 
-- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. WAT HET INHOUDT MET DE SKINPEN CIT
+- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. WAT HET INHOUDT MET DE SKINPEN CIT MICRONEEDLING IN ROTTERDAM
 
 - Dermapen 4 € 180 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. WAT HET INHOUDT MET DE DERMAPEN 4
 
-- Nordlys IPL bij pigment € 75 Licht op pigmentvlekken en zonschade. Het pigment komt eerst naar boven en vervaagt daarna. WAT HET INHOUDT MET DE NORDLYS
+- Nordlys IPL bij pigment € 75 Licht op pigmentvlekken en zonschade. Het pigment komt eerst naar boven en vervaagt daarna. WAT HET INHOUDT MET DE NORDLYS IPL-BEHANDELING IN ROTTERDAM
 
-- Cosmelan € 720 Traject van zes maanden tegen hyperpigmentatie, met een masker in de kliniek en producten thuis. WAT HET INHOUDT MET DE PEELINGLIJNEN
+- Cosmelan € 720 Traject van zes maanden tegen hyperpigmentatie, met een masker in de kliniek en producten thuis. WAT HET INHOUDT MET DE PEELINGLIJNEN COSMELAN EN DERMAMELAN IN ROTTERDAM
 
 - Dermamelan € 920 De intensievere pigmentaanpak, meestal bij melasma. Zes maanden, met een strak schema thuis. WAT HET INHOUDT MET DE PEELINGLIJNEN
 
@@ -4124,17 +4124,17 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 **Wat we hiervoor inzetten**
 
-- HydraFacial € 170 Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd. WAT HET INHOUDT MET DE HYDRAFACIAL SYNDEO
+- HydraFacial € 170 Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd. WAT HET INHOUDT MET DE HYDRAFACIAL SYNDEO HYDRAFACIAL IN ROTTERDAM
 
-- Oxygeneo glow € 150 Exfoliëren en zuurstof in de huid brengen, in één behandeling. WAT HET INHOUDT MET DE OXYGENEO
+- Oxygeneo glow € 150 Exfoliëren en zuurstof in de huid brengen, in één behandeling. WAT HET INHOUDT MET DE OXYGENEO OXYGENEO IN ROTTERDAM
 
-- Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. WAT HET INHOUDT MET DE PEELINGLIJNEN
+- Medische peelings € 140 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. WAT HET INHOUDT MET DE PEELINGLIJNEN CHEMISCHE PEELING IN ROTTERDAM
 
-- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. BIJ DEZE KLACHT MET DE SKINPEN CIT
+- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. BIJ DEZE KLACHT MET DE SKINPEN CIT MICRONEEDLING IN ROTTERDAM
 
 - Dermapen 4 € 180 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. WAT HET INHOUDT MET DE DERMAPEN 4
 
-- FRAC3 Op aanvraag Fractionele laser die dieper gaat, voor structuur, poriën en onregelmatigheden. WAT HET INHOUDT MET DE FOTONA TIMEWALKER
+- FRAC3 Op aanvraag Fractionele laser die dieper gaat, voor structuur, poriën en onregelmatigheden. WAT HET INHOUDT MET DE FOTONA TIMEWALKER FOTONA 4D IN ROTTERDAM
 
 - SupErficial laserpeel Op aanvraag Een oppervlakkige laserpeeling voor een gladdere huid en meer glans. WAT HET INHOUDT MET DE FOTONA TIMEWALKER
 
@@ -4394,15 +4394,15 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 **Wat we hiervoor inzetten**
 
-- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. BIJ DEZE KLACHT MET DE SKINPEN CIT
+- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. BIJ DEZE KLACHT MET DE SKINPEN CIT MICRONEEDLING IN ROTTERDAM
 
 - Dermapen 4 € 180 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. WAT HET INHOUDT MET DE DERMAPEN 4
 
-- Skinboosters en mesotherapie € 175 Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. WAT HET INHOUDT MET DE U225 INTRADERMALE INJECTOR
+- Skinboosters en mesotherapie € 175 Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. WAT HET INHOUDT MET DE U225 INTRADERMALE INJECTOR SKINBOOSTERS IN ROTTERDAM
 
 - RRS Eyes € 130 Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik. WAT HET INHOUDT
 
-- Fotona TimeWalker € 150 Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel. WAT HET INHOUDT MET DE FOTONA TIMEWALKER
+- Fotona TimeWalker € 150 Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel. WAT HET INHOUDT MET DE FOTONA TIMEWALKER FOTONA 4D IN ROTTERDAM
 
 - Fotona 4D € 370 Vier laserbehandelingen in een sessie. Van binnenuit door de wang tot een afsluitende peeling. WAT HET INHOUDT MET DE FOTONA TIMEWALKER
 
@@ -4596,7 +4596,7 @@ Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daar
 
 **Wat we hiervoor inzetten**
 
-- Nordlys IPL bij roodheid en vaatjes € 75 Licht op zichtbare vaatjes, rosacea en blijvende roodheid. Het vaatje wordt donkerder en trekt weg. BIJ DEZE KLACHT MET DE NORDLYS
+- Nordlys IPL bij roodheid en vaatjes € 75 Licht op zichtbare vaatjes, rosacea en blijvende roodheid. Het vaatje wordt donkerder en trekt weg. BIJ DEZE KLACHT MET DE NORDLYS IPL-BEHANDELING IN ROTTERDAM
 
 - LED-therapie € 30 Licht dat de huid rustiger maakt. In meerdere golflengtes, zonder naalden of zuren. WAT HET INHOUDT MET DE PRECISION PHOTONIC SYSTEM
 
@@ -4820,7 +4820,7 @@ Bij striae telt het moment zwaarder dan de techniek. Wie begint zolang ze nog ro
 
 **Wat we hiervoor inzetten**
 
-- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. BIJ DEZE KLACHT MET DE SKINPEN CIT
+- SkinPen Microneedling € 180 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. BIJ DEZE KLACHT MET DE SKINPEN CIT MICRONEEDLING IN ROTTERDAM
 
 - Dermapen 4 € 180 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. WAT HET INHOUDT MET DE DERMAPEN 4
 
@@ -5020,7 +5020,7 @@ De huid onder je oog is de dunste van je lichaam. Dat bepaalt zowel wat er kan a
 
 **Wat we hiervoor inzetten**
 
-- RRS Eyes € 130 Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik. WAT HET INHOUDT
+- RRS Eyes € 130 Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik. WAT HET INHOUDT SKINBOOSTERS IN ROTTERDAM
 
 - SmoothEye € 150 Laser rond de oogcontour, voor kraaienpootjes en fijne lijntjes. WAT HET INHOUDT MET DE FOTONA TIMEWALKER
 
@@ -5050,7 +5050,7 @@ In het huidconsult stellen we vast of het vocht, vet of schaduw is. Bij twee van
 
 ### /behandelingen
 
-**Tabbladtitel:** Behandelingen | Diba Clinics
+**Tabbladtitel:** Huidbehandelingen in Rotterdam | Diba Clinics
 
 **Google-omschrijving:** Kies waar je iets aan wilt doen: acne, pigment, littekens, huidveroudering, glow of haar. Tijdens het huidconsult bepaalt de behandelaar wat bij jouw huid past.
 
@@ -5408,9 +5408,9 @@ In het huidconsult kijken we onder vast licht wat er bij jou aan de hand is. Nee
 
 ### /behandelingen/acne-traject
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Acnetraject | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Een begeleid traject voor acne: behandelingen in de kliniek, producten en controles thuis. Tarief € 570, 60 minuten. Bij Diba Clinics in Rotterdam.
 
 **ACNETRAJECT**
 
@@ -5526,9 +5526,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/acnebehandeling
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Acnebehandeling | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Eén afspraak voor een onrustige huid: reinigen, verstoppingen weghalen, kalmeren. Los te boeken. Bij Diba Clinics in Rotterdam.
 
 **ACNEBEHANDELING**
 
@@ -5648,9 +5648,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/cosmelan
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Cosmelan | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Traject van zes maanden tegen hyperpigmentatie, met een masker in de kliniek en producten thuis. Tarief € 720, 60 minuten. Bij Diba Clinics in Rotterdam.
 
 **COSMELAN**
 
@@ -5673,6 +5673,8 @@ Vervellen en roodheid in de eerste dagen, en maandenlang strikte zonbescherming.
 Eén traject van ongeveer zes maanden
 
 Traject van zes maanden tegen hyperpigmentatie, met een masker in de kliniek en producten thuis.
+
+Het verschil met Dermamelan, wanneer je het beste begint en wat het traject bij ons kost, staat op Cosmelan en Dermamelan in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -5792,9 +5794,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/dermamelan
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Dermamelan | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** De intensievere pigmentaanpak, meestal bij melasma. Zes maanden, met een strak schema thuis. Tarief € 920, 60 minuten. Bij Diba Clinics in Rotterdam.
 
 **DERMAMELAN**
 
@@ -5817,6 +5819,8 @@ Vervellen en roodheid in de eerste dagen, en maandenlang strikte zonbescherming.
 Eén traject van ongeveer zes maanden
 
 De intensievere pigmentaanpak, meestal bij melasma. Zes maanden, met een strak schema thuis.
+
+Het verschil met Cosmelan, wanneer je het beste begint en wat het traject bij ons kost, staat op Cosmelan en Dermamelan in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -5934,9 +5938,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/dermamelan-intimate
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Dermamelan Intimate | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Pigmentbehandeling voor de intieme zone, met dezelfde opzet als het gezichtstraject. Tarief € 550, 30 minuten. Bij Diba Clinics in Rotterdam.
 
 **DERMAMELAN INTIMATE**
 
@@ -5957,6 +5961,8 @@ De huid is de eerste dagen gevoelig en gaat vervellen.
 Eén traject, met controles onderweg
 
 Pigmentbehandeling voor de intieme zone, met dezelfde opzet als het gezichtstraject.
+
+Hoe dit traject zich verhoudt tot Cosmelan en Dermamelan voor het gezicht, en wat de trajecten kosten, staat op Cosmelan en Dermamelan in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -6026,9 +6032,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/dermapen-4
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Dermapen 4 | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. Vanaf € 180, 60 minuten. Bij Diba Clinics in Rotterdam.
 
 **DERMAPEN 4**
 
@@ -6059,6 +6065,8 @@ Een reeks van drie tot zes, met vier tot zes weken ertussen.
 > knop: Rug € 255
 
 Microneedling met trillende naaldjes, die gelijkmatig door de huid komen.
+
+Wat microneedling bij ons kost, het verschil met de SkinPen en hoe een eerste afspraak verloopt, staat op Microneedling in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -6200,9 +6208,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/dermaplaning
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Dermaplaning | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid. Tarief € 150, 60 minuten.
 
 **DERMAPLANING**
 
@@ -6225,6 +6233,8 @@ Geen.
 Los, of elke vier tot zes weken als onderhoud.
 
 Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid.
+
+Wat dermaplaning bij ons kost, waarom het haar niet dikker terugkomt en hoe een eerste afspraak verloopt, staat op Dermaplaning in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -6336,9 +6346,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/elektrische-epilatie
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Elektrische epilatie | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Haar voor haar, ook grijs en blond. Voor wat de laser niet ziet zitten. De behandeltijd rekenen we per kwartier. Tarief € 30, 30 minuten.
 
 **ELEKTRISCHE EPILATIE**
 
@@ -6359,6 +6369,8 @@ De behandelde plekjes zijn een paar uur rood en kunnen wat opstaan, vergelijkbaa
 Een reeks, met een paar weken ertussen.
 
 Haar voor haar, ook grijs en blond. Voor wat de laser niet ziet zitten. De behandeltijd rekenen we per kwartier.
+
+Wat elektrische epilatie bij ons kost, waarom de laser grijs haar niet ziet en hoe het samengaat met laser, staat op Elektrische epilatie in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -6452,9 +6464,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/eye-peel
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Eye peel | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Een peeling die op de oogcontour mag. Voor fijne lijntjes en een doffe, donkere oogzone. Vanaf € 30, 15 minuten. Bij Diba Clinics in Rotterdam.
 
 **EYE PEEL**
 
@@ -6566,9 +6578,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/fibromen
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Fibromen verwijderen | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Steelwratjes weghalen, meestal in één afspraak. De behandeltijd rekenen we per kwartier. Tarief € 30, 15 minuten. Bij Diba Clinics in Rotterdam.
 
 **FIBROMEN VERWIJDEREN**
 
@@ -6684,9 +6696,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/fotona
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Fotona TimeWalker | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel. Vanaf € 150, 60 minuten.
 
 **FOTONA TIMEWALKER**
 
@@ -6729,6 +6741,8 @@ Los of als kuur van drie, met vier tot zes weken ertussen.
 > knop: Laserpeel met Frax € 250
 
 Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel.
+
+De bekendste behandeling op dit apparaat is Fotona 4D. Wat die bij ons kost en hoe hij verloopt, staat op Fotona 4D in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -6862,9 +6876,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/fotona-4d
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Fotona 4D | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Vier laserbehandelingen in een sessie. Van binnenuit door de wang tot een afsluitende peeling. Vanaf € 370, 90 minuten. Bij Diba Clinics in Rotterdam.
 
 **FOTONA 4D**
 
@@ -6889,6 +6903,8 @@ Los te doen of als kuur van drie, met vier tot zes weken ertussen.
 > knop: Kuur van drie € 995
 
 Vier laserbehandelingen in een sessie. Van binnenuit door de wang tot een afsluitende peeling.
+
+Wat Fotona 4D bij ons kost, hoe de vier stappen verlopen en wat het volledige pakket is, staat op Fotona 4D in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -7034,9 +7050,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/fotona-4d-full
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Fotona 4D Full Package | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Het volledige 4D-protocol met de hals en de kaaklijn erbij, in één afspraak. Vanaf € 575, 120 minuten. Bij Diba Clinics in Rotterdam.
 
 **FOTONA 4D FULL PACKAGE**
 
@@ -7061,6 +7077,8 @@ Een reeks van drie, met vier tot zes weken ertussen.
 > knop: Kuur van drie € 1.495
 
 Het volledige 4D-protocol met de hals en de kaaklijn erbij, in één afspraak.
+
+Hoe het volledige pakket zich verhoudt tot de gewone Fotona 4D, en wat allebei kosten, staat op Fotona 4D in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -7140,9 +7158,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/fotona-4d-men
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Fotona 4D Men | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Hetzelfde protocol van vier, ingesteld op de doorgaans dikkere mannenhuid. Bij Diba Clinics in Rotterdam.
 
 **FOTONA 4D MEN**
 
@@ -7163,6 +7181,8 @@ Een paar uur tot een dag rood en warm.
 Los te doen of als kuur van drie, met vier tot zes weken ertussen.
 
 Hetzelfde protocol van vier, ingesteld op de doorgaans dikkere mannenhuid.
+
+Hoe Fotona 4D bij ons verloopt en wat hij kost, staat op Fotona 4D in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -7296,9 +7316,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/fotona-acne-control
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Fotona Acne Control | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Laser bij actieve acne, gericht op de ontsteking en de talgklier. Bij Diba Clinics in Rotterdam.
 
 **FOTONA ACNE CONTROL**
 
@@ -7452,9 +7472,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/fotona-resurfacing
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Fotona Resurfacing | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Huidvernieuwing met laser, voor poriën, textuur en een gladdere huid. Bij Diba Clinics in Rotterdam.
 
 **FOTONA RESURFACING**
 
@@ -7606,9 +7626,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/fotona-scar-repair
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Fotona Scar Repair | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Laser op littekens: acnelittekens, operatielittekens en striae. Tarief € 195, 30 minuten. Bij Diba Clinics in Rotterdam.
 
 **FOTONA SCAR REPAIR**
 
@@ -7764,9 +7784,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/frac3
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** FRAC3 | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Fractionele laser die dieper gaat, voor structuur, poriën en onregelmatigheden. Bij Diba Clinics in Rotterdam.
 
 **FRAC3**
 
@@ -7783,6 +7803,8 @@ Een tot enkele dagen rood, soms met een fijne korrelige structuur die eraf schil
 Meestal een reeks van drie tot vier, met vier tot zes weken ertussen.
 
 Fractionele laser die dieper gaat, voor structuur, poriën en onregelmatigheden.
+
+Deze stap is een van de vier van Fotona 4D. Wat de hele behandeling kost en hoe hij verloopt, staat op Fotona 4D in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -7912,9 +7934,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/full-face-brushing
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Full Face Brushing | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Een lichte laserpas over het hele gezicht. Frisser vel zonder dat je eruit ligt. Tarief € 170, 60 minuten. Bij Diba Clinics in Rotterdam.
 
 **FULL FACE BRUSHING**
 
@@ -8008,9 +8030,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/hairestart
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** HAIRestart | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Laser op de hoofdhuid bij beginnende haarverdunning. Bij Diba Clinics in Rotterdam.
 
 **HAIRESTART**
 
@@ -8156,9 +8178,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/happy-intim
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Happy Intim | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Peelings die pigment in de intieme zone en oksels lichter en egaler maken. Vanaf € 175, 30 minuten. Bij Diba Clinics in Rotterdam.
 
 **HAPPY INTIM**
 
@@ -8310,9 +8332,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/huidanalyse
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Consult met EVE-M huidanalyse | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** De meting waar elk traject mee begint. Je huid in kaart, en een behandelplan dat daaruit volgt. Vanaf € 50, 30 minuten. Bij Diba Clinics in Rotterdam.
 
 **HUIDANALYSE**
 
@@ -8341,6 +8363,8 @@ Eén keer aan het begin, daarna bij elke controle opnieuw
 > knop: Consult laserontharen € 50
 
 De meting waar elk traject mee begint. Je huid in kaart, en een behandelplan dat daaruit volgt.
+
+Wat een huidanalyse bij ons kost, wat de EVE-M meet en welke afspraak je boekt, staat op Huidanalyse in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -8424,9 +8448,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/hydrafacial
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** HydraFacial | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd. Vanaf € 170, 60 minuten. Bij Diba Clinics in Rotterdam.
 
 **HYDRAFACIAL**
 
@@ -8455,6 +8479,8 @@ Los te doen, of maandelijks als onderhoud.
 > knop: Platinum € 220
 
 Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd.
+
+Wat een HydraFacial bij ons kost, met welk apparaat we werken en hoe een eerste afspraak verloopt, staat op HydraFacial in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -8574,9 +8600,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/jongeren-acne-traject
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Jongeren acne traject | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Een begeleid programma van drie maanden, opgezet voor jongeren tot en met achttien jaar. Tarief € 297, 60 minuten. Bij Diba Clinics in Rotterdam.
 
 **JONGEREN ACNE TRAJECT**
 
@@ -8688,9 +8714,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/kruidenpeel
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Kruidenpeel | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Een peeling van fijngemalen kruiden, zonder zuur. Remt de ontsteking en werkt antibacterieel. Vanaf € 150, 60 minuten. Bij Diba Clinics in Rotterdam.
 
 **KRUIDENPEEL**
 
@@ -8719,6 +8745,8 @@ Een reeks; hoeveel hangt af van hoe je huid reageert.
 > knop: Rugkuur van drie € 499
 
 Een peeling van fijngemalen kruiden, zonder zuur. Remt de ontsteking en werkt antibacterieel.
+
+Hoe de kruidenpeel zich verhoudt tot de peelings met zuur, en wat die bij ons kosten, staat op Chemische peeling in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -8804,9 +8832,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/laserontharing
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Laserontharing | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** De haarwortel uitschakelen. Per zone of als pakket, voor dames en heren. Tarief € 20, 30 minuten. Bij Diba Clinics in Rotterdam.
 
 **LASERONTHARING**
 
@@ -8948,9 +8976,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/led-therapie
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** LED-therapie | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Licht dat de huid rustiger maakt. In meerdere golflengtes, zonder naalden of zuren. Tarief € 30, 15 minuten. Bij Diba Clinics in Rotterdam.
 
 **LED-THERAPIE**
 
@@ -9188,9 +9216,9 @@ Alles hierboven geldt voor deze klacht in het algemeen. Wat er bij jou aan de ha
 
 ### /behandelingen/liplase
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** LipLase | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Vollere en gladdere lippen zonder filler, met laser van binnen en buiten. Vanaf € 150, 45 minuten. Bij Diba Clinics in Rotterdam.
 
 **LIPLASE**
 
@@ -9348,9 +9376,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/littekentherapie
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Littekentherapie | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Voor littekens na een operatie of keizersnede. De prijs volgt de lengte van het litteken. Vanaf € 100, 30 minuten. Bij Diba Clinics in Rotterdam.
 
 **LITTEKENTHERAPIE**
 
@@ -9474,9 +9502,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/nightlase
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** NightLase | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Laser tegen snurken. Het zachte gehemelte wordt steviger, zonder operatie of beugel. Bij Diba Clinics in Rotterdam.
 
 **NIGHTLASE**
 
@@ -9594,9 +9622,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/nordlys-pigment
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Nordlys IPL bij pigment | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Licht op pigmentvlekken en zonschade. Het pigment komt eerst naar boven en vervaagt daarna. Vanaf € 75, 30 minuten. Bij Diba Clinics in Rotterdam.
 
 **NORDLYS IPL BIJ PIGMENT**
 
@@ -9627,6 +9655,8 @@ Een reeks van drie tot zes, met vier weken ertussen.
 > knop: Hele gelaat € 250
 
 Licht op pigmentvlekken en zonschade. Het pigment komt eerst naar boven en vervaagt daarna.
+
+Wat IPL bij ons kost, waarom het geen laser is en wanneer je beter wacht, staat op IPL-behandeling in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -9822,9 +9852,9 @@ Alles hierboven geldt voor deze klacht in het algemeen. Wat er bij jou aan de ha
 
 ### /behandelingen/nordlys-roodheid
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Nordlys IPL bij roodheid en vaatjes | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Licht op zichtbare vaatjes, rosacea en blijvende roodheid. Het vaatje wordt donkerder en trekt weg. Vanaf € 75, 30 minuten. Bij Diba Clinics in Rotterdam.
 
 **ROODHEID EN VAATJES**
 
@@ -9853,6 +9883,8 @@ Een reeks van drie tot zes, met vier weken ertussen.
 > knop: Hele gelaat € 250
 
 Licht op zichtbare vaatjes, rosacea en blijvende roodheid. Het vaatje wordt donkerder en trekt weg.
+
+Wat IPL bij ons kost, waarom het geen laser is en wat het bij rosacea wel en niet doet, staat op IPL-behandeling in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -10116,9 +10148,9 @@ Alles hierboven geldt voor deze klacht in het algemeen. Wat er bij jou aan de ha
 
 ### /behandelingen/oxygeneo
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Oxygeneo glow | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Exfoliëren en zuurstof in de huid brengen, in één behandeling. Tarief € 150, 60 minuten. Bij Diba Clinics in Rotterdam.
 
 **OXYGENEO GLOW**
 
@@ -10141,6 +10173,8 @@ Geen.
 Los, of als onderhoud elke vier tot zes weken.
 
 Exfoliëren en zuurstof in de huid brengen, in één behandeling.
+
+Wat OxyGeneo bij ons kost, wat de belletjes doen en wat het verschil met een HydraFacial is, staat op OxyGeneo in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -10270,9 +10304,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/peelings
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Medische peelings | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. Vanaf € 140, 60 minuten. Bij Diba Clinics in Rotterdam.
 
 **MEDISCHE PEELINGS**
 
@@ -10307,6 +10341,8 @@ Meestal een reeks van vier tot zes, met twee tot vier weken ertussen.
 > knop: TCA-kuur van drie met K-ceutic € 540
 
 Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt.
+
+Wat een peeling bij ons kost, welke sterkte bij welke klacht past en wanneer je beter even wacht, staat op Chemische peeling in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -10674,9 +10710,9 @@ Alles hierboven geldt voor deze klacht in het algemeen. Wat er bij jou aan de ha
 
 ### /behandelingen/piano
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** PIANO skin tightening | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Diepe, gelijkmatige verwarming voor versteviging van gezicht, kaaklijn en hals. Bij Diba Clinics in Rotterdam.
 
 **PIANO SKIN TIGHTENING**
 
@@ -10693,6 +10729,8 @@ Geen tot een paar uur lichte roodheid.
 Een reeks van drie tot vier, met vier tot zes weken ertussen.
 
 Diepe, gelijkmatige verwarming voor versteviging van gezicht, kaaklijn en hals.
+
+Deze stap is een van de vier van Fotona 4D. Wat de hele behandeling kost en hoe hij verloopt, staat op Fotona 4D in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -10824,9 +10862,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/rrs-eyes
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** RRS Eyes | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik. Vanaf € 130, 30 minuten. Bij Diba Clinics in Rotterdam.
 
 **RRS EYES**
 
@@ -10853,6 +10891,8 @@ Een reeks, met een paar weken ertussen, daarna onderhoud.
 > knop: Kuur van drie € 350
 
 Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik.
+
+RRS Eyes is de skinbooster voor rond de ogen. Wat de boosters bij ons kosten en hoe een kuur verloopt, staat op Skinboosters in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -10958,9 +10998,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/rrs-hyalift
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** RRS Hyalift | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Hyaluronzuur en vitamines in de huid brengen. Voor stevigheid en vocht, niet voor volume. Vanaf € 175, 60 minuten. Bij Diba Clinics in Rotterdam.
 
 **RRS HYALIFT**
 
@@ -10985,6 +11025,8 @@ Een reeks van drie tot vier, met twee tot vier weken ertussen.
 > knop: Kuur van drie € 500
 
 Hyaluronzuur en vitamines in de huid brengen. Voor stevigheid en vocht, niet voor volume.
+
+RRS Hyalift is een van de skinboosters die we zetten. Wat een kuur kost en hoe die verloopt, staat op Skinboosters in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -11076,9 +11118,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/skinboosters
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Skinboosters en mesotherapie | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. Vanaf € 175, 60 minuten. Bij Diba Clinics in Rotterdam.
 
 **SKINBOOSTERS EN MESOTHERAPIE**
 
@@ -11111,6 +11153,8 @@ Vaak een kuur van drie, met twee tot vier weken ertussen.
 > knop: RRS Eyes kuur van drie € 350
 
 Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik.
+
+Wat skinboosters bij ons kosten, het verschil met een filler en hoe een kuur verloopt, staat op Skinboosters in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -11244,9 +11288,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/skincomplete-led-consult
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Consult SkinComplete LED-masker | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Een uur over LED thuis: je huid bekeken, je doelen besproken en een protocol dat daarbij past. Tarief € 100, 60 minuten. Bij Diba Clinics in Rotterdam.
 
 **CONSULT LED-MASKER**
 
@@ -11326,9 +11370,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/skinpen
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** SkinPen Microneedling | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. Vanaf € 180, 60 minuten. Bij Diba Clinics in Rotterdam.
 
 **SKINPEN MICRONEEDLING**
 
@@ -11359,6 +11403,8 @@ Een reeks van drie tot zes, met vier tot zes weken ertussen.
 > knop: Rug € 255
 
 Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit.
+
+Wat microneedling bij ons kost, het verschil met de Dermapen en hoe een eerste afspraak verloopt, staat op Microneedling in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -11908,9 +11954,9 @@ Alles hierboven geldt voor deze klacht in het algemeen. Wat er bij jou aan de ha
 
 ### /behandelingen/smootheye
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** SmoothEye | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Laser rond de oogcontour, voor kraaienpootjes en fijne lijntjes. Vanaf € 150, 60 minuten. Bij Diba Clinics in Rotterdam.
 
 **SMOOTHEYE**
 
@@ -12076,9 +12122,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/smoothliftin
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** SmoothLiftin | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Collageenstimulatie van binnenuit, door het slijmvlies van je wang. Bij Diba Clinics in Rotterdam.
 
 **SMOOTHLIFTIN**
 
@@ -12095,6 +12141,8 @@ Geen.
 Meestal een reeks, met enkele weken ertussen.
 
 Collageenstimulatie van binnenuit, door het slijmvlies van je wang.
+
+Deze stap is een van de vier van Fotona 4D. Wat de hele behandeling kost en hoe hij verloopt, staat op Fotona 4D in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -12226,9 +12274,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/superficial-peel
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** SupErficial laserpeel | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Een oppervlakkige laserpeeling voor een gladdere huid en meer glans. Bij Diba Clinics in Rotterdam.
 
 **SUPERFICIAL LASERPEEL**
 
@@ -12249,6 +12297,8 @@ Een paar uur licht rood.
 Los te doen als opfrisser of als reeks.
 
 Een oppervlakkige laserpeeling voor een gladdere huid en meer glans.
+
+Deze stap is een van de vier van Fotona 4D. Wat de hele behandeling kost en hoe hij verloopt, staat op Fotona 4D in Rotterdam.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -12384,9 +12434,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/vectorlift
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** VectorLift | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Laser wenkbrauwlift en versteviging van het voorhoofd, zonder naalden. Vanaf € 150, 45 minuten. Bij Diba Clinics in Rotterdam.
 
 **VECTORLIFT**
 
@@ -12548,9 +12598,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/voedingsintolerantietest
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** Voedingsintolerantietest | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Een bloedtest die in kaart brengt op welke voedingsmiddelen je lichaam reageert. Tarief € 300, 30 minuten. Bij Diba Clinics in Rotterdam.
 
 **VOEDINGSINTOLERANTIETEST**
 
@@ -12662,9 +12712,9 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/xl-hair
 
-**Tabbladtitel:** Diba Clinics | Rotterdam
+**Tabbladtitel:** XL Hair | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.
+**Google-omschrijving:** Tegen haaruitval en dunner wordend haar. Een traject van maanden, afgestemd op je hoofdhuid. Vanaf € 800, 30 minuten. Bij Diba Clinics in Rotterdam.
 
 **XL HAIR**
 
@@ -12814,7 +12864,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /apparatuur
 
-**Tabbladtitel:** Onze apparatuur | Diba Clinics
+**Tabbladtitel:** Apparatuur in onze huidkliniek | Diba Clinics
 
 **Google-omschrijving:** Welke apparaten er in de kliniek staan, welke behandelingen erop draaien, tot hoe diep ze komen en wat ze niet kunnen.
 
@@ -15192,7 +15242,7 @@ Het advies komt van de behandelaar, de keuze maak je samen, en er gebeurt niets 
 
 ### /gentlemax-pro
 
-**Tabbladtitel:** GentleMax Pro | Diba Clinics
+**Tabbladtitel:** Welke laser past bij jouw huidtype | Diba Clinics
 
 **Google-omschrijving:** Twee lasers in één apparaat: 755 nm en 1064 nm. Welke van de twee je krijgt hangt af van je huidtype, en dat is een veiligheidskeuze en geen detail.
 
@@ -15456,7 +15506,7 @@ Dit is geen diagnose en geen advies. Het legt naast elkaar wat jij hebt ingevuld
 
 ### /intake
 
-**Tabbladtitel:** Het huidconsult | Diba Clinics
+**Tabbladtitel:** Het huidconsult: wat er gebeurt | Diba Clinics
 
 **Google-omschrijving:** Wat er in het huidconsult gebeurt, hoe lang het duurt en wat het kost. Bij behandelen in dezelfde afspraak vervallen de intakekosten.
 
@@ -15612,25 +15662,63 @@ Je gaat weg met een meting die van jou is en een advies dat ook nee mag zijn. Wa
 
 ### /kennisbank
 
-**Tabbladtitel:** Kennisbank | Diba Clinics
+**Tabbladtitel:** Kennisbank: alles wat we uitleggen | Diba Clinics
 
-**Google-omschrijving:** Alles wat op deze site wordt uitgelegd, geordend op de vraag die je stelt. Met de doorsnedes, testen en vergelijkers die verspreid over de site staan.
+**Google-omschrijving:** Wat een behandeling inhoudt en kost, waar een klacht vandaan komt en wat een apparaat wel en niet kan. Geordend op de vraag die je stelt.
 
 **ALLES WAT WE UITLEGGEN**
 
-Alles wat hier wordt uitgelegd staat verspreid over 29 huidprobleempagina's, 12 apparaatpagina's en 46behandelpagina's. Deze pagina brengt dat bij elkaar, geordend op de vraag die je stelt in plaats van op wat wij aanbieden.
-
-De doorsnedes, testen en vergelijkers staan er los bij. Die zijn het meeste werk en tegelijk het slechtst vindbaar, want ze staan halverwege een pagina waar je niet komt als je er niet naar zoekt.
-
-> knop: Lees verder
+Wat een behandeling inhoudt en kost, waar een klacht vandaan komt, wat een apparaat wel en niet kan, en wat een titel achter de behandelstoel betekent. Het staat hier geordend op de vraag die je stelt, en niet op wat wij aanbieden.
 
 > knop: WEET JE NIET HOE HET HEET?
 
 EERST BEGRIJPEN WAAR HET ZIT
 
+Wat een behandeling hier inhoudt en kost, voor wie hij past en hoe een afspraak verloopt, en wat een huidtherapeut eigenlijk doet. Dit zijn de pagina's van de kennisbank die over onze kliniek zelf gaan.
+
+- WAT DOET EEN HUIDTHERAPEUT Huidtherapeut in Rotterdam Wat de titel inhoudt, welke klachten een huidtherapeut behandelt, wanneer huidtherapie vergoed wordt en wie er bij ons in de behandelkamer staan. BEKIJKEN
+
+- WAT KOST EEN HUIDANALYSE Huidanalyse in Rotterdam Wat de EVE-M meet, waarom dat anders is dan een foto met je telefoon, wat de intake kost en wanneer dat bedrag bij een behandeling vervalt. BEKIJKEN
+
+- WAT KOST EEN HYDRAFACIAL HydraFacial in Rotterdam De drie varianten met hun tarief, het verschil tussen HydraFacial en hydradermabrasie, en de vergelijking met de andere gezichtsbehandelingen hier. BEKIJKEN
+
+- WAT KOST EEN OXYGENEO OxyGeneo in Rotterdam Wat de belletjes op je huid doen, voor wie het past, hoe lang je er iets van ziet en hoe het zich verhoudt tot een HydraFacial. BEKIJKEN
+
+- WAT KOST DERMAPLANING Dermaplaning in Rotterdam Wat het mesje weghaalt, waarom het haar niet dikker terugkomt, voor wie het past en hoe het zich verhoudt tot een peeling of een HydraFacial. BEKIJKEN
+
+- WAT KOSTEN SKINBOOSTERS Skinboosters in Rotterdam Wat een skinbooster in je huid brengt, waarom het geen filler is, wat de U225 anders doet dan een spuit en wat een kuur van drie kost. BEKIJKEN
+
+- WAT KOST MICRONEEDLING Microneedling in Rotterdam Het verschil tussen de SkinPen en de Dermapen, wat een reeks kost, wat je de dagen erna ziet en wanneer laser het betere antwoord is. BEKIJKEN
+
+- WAT KOST EEN CHEMISCHE PEELING Chemische peeling in Rotterdam Welke sterkte bij welke klacht past, de kruidenpeel als peeling zonder zuur, wat je de dagen erna ziet en wanneer je beter even wacht. BEKIJKEN
+
+- WAT KOST FOTONA 4D Fotona 4D in Rotterdam De vier stappen van het protocol, wat het doet bij verslapping en textuur, het volledige pakket met hals en kaaklijn, en wat een kuur kost. BEKIJKEN
+
+- WAT KOST EEN IPL-BEHANDELING IPL-behandeling in Rotterdam Wat IPL doet bij pigment en bij roodheid, waarom het geen laser is, wanneer je beter wacht en wat een behandeling per zone kost. BEKIJKEN
+
+- WAT KOST COSMELAN OF DERMAMELAN Cosmelan en Dermamelan Het verschil tussen Cosmelan en Dermamelan, hoe de zes maanden verlopen, waarom je niet in de zomer begint en wat het traject kost. BEKIJKEN
+
+- WAT KOST ELEKTRISCHE EPILATIE Elektrische epilatie Waarom de laser grijs en wit haar niet ziet, hoe het haar voor haar gaat, voor welke gebieden het bedoeld is en hoe het samengaat met laser. BEKIJKEN
+
+Vier vragen die niet over één behandeling gaan maar over allemaal: je huidtype, het aantal sessies, de zon en de zwangerschap.
+
+- WELK HUIDTYPE HEB JE Welk huidtype heb je De zes types van Fitzpatrick, wat je type betekent voor laser, IPL en peelings, en hoe je het zelf nagaat. BEKIJKEN
+
+- HOEVEEL SESSIES HEB JE NODIG Hoeveel sessies heb je nodig Waarom de ene behandeling één keer kan en de andere acht keer vraagt, hoeveel tijd er tussen sessies hoort en wanneer het aantal vaststaat. BEKIJKEN
+
+- MAG IK IN DE ZON Zon, vakantie en je huid Waarom een gebruinde huid niet gelaserd wordt, hoe lang je wacht na de zon en wat er na een behandeling hoort. BEKIJKEN
+
+- WAT KAN ER TIJDENS ZWANGERSCHAP Zwanger of borstvoeding Welke behandelingen wachten tot na de borstvoeding, wat er in die maanden wel kan, en waarom pigment vaak vanzelf verandert. BEKIJKEN
+
 Twee ingangen, afhankelijk van of je al een naam hebt voor wat je ziet.
 
+- IK WEET NIET HOE HET HEET Symptoomzoeker Je klikt aan wat je ziet en waar het zit, en komt uit bij de pagina die erover gaat. BEKIJKEN
+
+- WAT GEEF IK VOORAF DOOR Je huidprofiel Negen korte vragen over je huid, je medicatie en je grenzen. De uitkomst neem je mee naar de afspraak. BEKIJKEN
+
 Ook bij een andere kliniek. Dit deel is niet geschreven om jou hier te houden.
+
+- HOE KIES JE EEN KLINIEK Hoe kies je een huidkliniek Welke registers je zelf kunt nakijken, wat een intake hoort op te leveren, hoe je een voor-en-nafoto leest en wanneer nee het goede antwoord is. BEKIJKEN
 
 - WAAR MAG IK JULLIE AAN HOUDEN Kwaliteit en registraties Bij welke registers we horen, wat dat inhoudt en hoe je het zelf nakijkt. BEKIJKEN
 
@@ -15700,7 +15788,3969 @@ Elke pagina begint bij de vraag die er het vaakst over gesteld wordt. Die vraag 
 
 Alles hierboven staat er zodat je een gesprek kunt voeren in plaats van een aanbod te moeten geloven. Ook als dat gesprek ergens anders plaatsvindt.
 
-Het register telt nu 1 onderdelen. Het groeit mee met de site: elke nieuwe pagina met een eigen tool hoort hier bij te komen, anders is hij weer onvindbaar.
+Het register telt nu 20 onderdelen. Het groeit mee met de site: elke nieuwe pagina met een eigen tool hoort hier bij te komen, anders is hij weer onvindbaar.
+
+> knop: PLAN EEN HUIDCONSULT
+
+---
+
+### /kennisbank/chemische-peeling-rotterdam
+
+**Tabbladtitel:** Chemische peeling Rotterdam | Diba Clinics
+
+**Google-omschrijving:** Chemische peeling in Rotterdam bij Diba Clinics. Vier merken in drie sterktes, vanaf € 140. Voor acne, pigment en een doffe huid.
+
+**CHEMISCHE PEELING IN ROTTERDAM**
+
+Een chemische peeling is een behandeling waarbij een zuur de verbinding tussen de buitenste huidcellen losmaakt, zodat die laag sneller wordt vervangen. Bij Diba Clinics in Rotterdam werken we met vier merken in drie sterktes. Een peeling kost vanaf € 140 en duurt 60 minuten; afhankelijk van de sterkte ben je daarna twee tot vijf dagen droog en schilferig.
+
+> knop: PLAN EEN AFSPRAAK
+
+> knop: BEKIJK DE TARIEVEN
+
+*DUUR*
+
+*TARIEF*
+
+Vanaf € 140
+
+*HERSTELTIJD*
+
+2 tot 5 dagen
+
+*STERKTES*
+
+Drie niveaus
+
+**Wat een peeling met je huid doet**
+
+Een peeling versnelt iets wat je huid uit zichzelf al doet: de bovenste laag vervangen. Hoe ver dat gaat, hangt af van het middel.
+
+Je huid vervangt zijn bovenste laag voortdurend, maar niet altijd even snel. Blijven de oude cellen te lang zitten, dan voelt je huid ruw, ziet hij er dof uit, raken poriën verstopt en blijft oppervlakkige verkleuring langer staan dan nodig.
+
+Een peeling maakt de verbinding tussen die buitenste cellen los, zodat de laag sneller wordt vervangen. Wat het middel doet, hangt af van drie dingen samen: welk zuur erin zit, hoe geconcentreerd het is en hoe zuur het mengsel als geheel is. Fruitzuren blijven in de hoornlaag, salicylzuur lost op in talg en komt daardoor in de porie, en sterkere mengsels gaan tot in de opperhuid.
+
+Op de site en in de agenda heet dit een medische peeling. Chemische peeling is dezelfde behandeling, onder de naam waarmee de meeste mensen ernaar zoeken.
+
+Per klacht staat het apart uitgewerkt: een peeling bij acne, bij pigmentvlekken en voor huidverjonging. Wat de zon rond een peeling doet staat bij zon en je huid, en wat er tijdens een zwangerschap kan bij zwanger of borstvoeding.
+
+**Vier merken in drie sterktes**
+
+Een peeling is geen apparaat maar een vloeistof. Welke er bij je past, hangt af van je huid op dat moment en van het seizoen.
+
+We werken met peelings van Skin Tech Pharma, Dermaceutic, ADO en Mesoestetic, in drie niveaus. De lichtste werken op de bovenlaag en laten je meestal niet zichtbaar vervellen. De sterkste, zoals de TCA-peeling van Dermaceutic in 12 tot 20 procent, gaan dieper en vragen voorbereiding en hersteltijd.
+
+De inwerktijd wordt op je huid afgemeten. Langer laten zitten geeft geen beter resultaat maar meer schade, en daarom blijft de behandelaar erbij zolang de peeling op je huid zit.
+
+Voor een huid met ontstoken acne is een zuur soms te veel. Daarvoor is er de kruidenpeel van ADO: fijngemalen kruiden zonder zuur, die ontstekingsremmend en antibacterieel werken. De huid is daarna drie tot vijf dagen rood en vervelt.
+
+> knop: OVER DE BEHANDELING
+
+**Wat een peeling bij ons kost**
+
+Het bedrag hangt af van de peeling, het gebied en of je een kuur boekt. Bij sommige kuren zitten de producten voor thuis inbegrepen.
+
+- Mesoestetic peeling € 140
+
+- TCA Dermaceutic 12 tot 20% € 180
+
+- Mesoestetic peeling rug € 160
+
+- Mesoestetic rugkuur van drie € 399
+
+- TCA-kuur van drie met drie producten € 650
+
+- TCA-kuur van drie met K-ceutic € 540
+
+- Kruidenpeel, gezicht € 150
+
+- Kruidenpeel, rug € 200
+
+- Kruidenpeel, rugkuur van drie € 499
+
+Peelings werken meestal in een reeks van vier tot zes, met twee tot vier weken ertussen. Hoeveel het er bij jou worden, hoor je na de meting.
+
+**Kom je voor het eerst**
+
+Dan boek je een behandeling op advies. We reserveren daar maximaal twee uur voor: de intake, en daarna minstens een uur om te behandelen. Is behandelen op dat moment verantwoord en wil je dat, dan doen we de eerste peeling in dezelfde afspraak.
+
+**Wat de intake kost**
+
+Wordt er in dezelfde afspraak behandeld, dan vervallen de intakekosten en betaal je alleen de behandeling. Gaat de behandeling niet door, dan kost de intake € 50. Een losse intake zonder behandeling duurt maximaal 30 minuten en kost altijd € 50.
+
+**Ben je hier al eerder geweest**
+
+Dan boek je de peeling rechtstreeks in de agenda. Reken op 60 minuten. Is er sinds je laatste bezoek iets veranderd aan je huid, je medicatie of je verwachting, zeg dat dan bij binnenkomst.
+
+**Wat helpt en wat we afraden**
+
+Een peeling werkt op de bovenste lagen. Voor littekens die dieper zitten en voor hardnekkig pigment is er een zwaardere weg.
+
+**DIT WERKT**
+
+- Oppervlakkige verkleuring, en pigment dat na een puistje is achtergebleven
+
+- Een ruwe huid en een doffe textuur
+
+- Verstopte poriën, doordat de bovenlaag sneller vernieuwt
+
+- Ontstoken acne, met de kruidenpeel of een peeling die daarop is afgestemd
+
+**DIT RADEN WE AF**
+
+- Littekens die dieper zitten dan de opperhuid. Daarvoor kies je microneedling
+
+- Hardnekkig pigment of melasma. Daar zijn Cosmelan en Dermamelan de zwaardere trajecten
+
+- Peelen vlak voor veel zon, of bij pigment in de zomermaanden
+
+- Tijdens een zwangerschap of in de periode dat je borstvoeding geeft
+
+**Peeling naast de alternatieven**
+
+Voor een betere huidtextuur zijn er meer wegen. Dit is wat ze doen, wat je erna merkt en wat ze kosten.
+
+*WAARIN HET VERSCHILT*
+
+*VANAF*
+
+*Medische peelings*
+
+Een zuur maakt de bovenlaag los. Drie sterktes, van nauwelijks vervellen tot een paar dagen schilferen.
+
+Twee tot vijf dagen droog en schilferig, afhankelijk van de sterkte.
+
+Kruiden in plaats van zuur. Remt de ontsteking en werkt antibacterieel, en daarom vooral bij ontstoken acne.
+
+Drie tot vijf dagen.
+
+*HydraFacial*
+
+Reinigt en zuigt poriën leeg, zonder zuur en zonder vervellen. Minder effect op verkleuring, en het resultaat zie je meteen.
+
+Er is doorgaans geen hersteltijd en je kunt na de afspraak je dag vervolgen.
+
+€ 170
+
+*SkinPen Microneedling*
+
+Werkt met naalden in de lederhuid, dieper dan een peeling. Voor littekens en structuur.
+
+Eén tot drie dagen rood, als een stevige zonnegloed.
+
+Een traject van zes maanden tegen hardnekkig pigment, met een masker in de kliniek en producten thuis.
+
+Vervellen en roodheid in de eerste dagen, en maandenlang strikte zonbescherming.
+
+€ 720
+
+**Waar je ons vindt in Rotterdam**
+
+Aan de noordkant van de stad, in een woonwijk en niet in een winkelstraat. Dat scheelt bij het parkeren en het is rustiger als je net behandeld bent.
+
+Je parkeert in de straat. De route vanaf de ring en met het openbaar vervoer staat op de contactpagina.
+
+*Maandag*
+
+Gesloten
+
+*Dinsdag*
+
+10:00 tot 18:00
+
+*Woensdag*
+
+10:00 tot 21:00
+
+*Donderdag*
+
+*Vrijdag*
+
+*Zaterdag*
+
+*Zondag*
+
+De agenda is actueler dan dit rijtje: binnen openingstijden staat niet elk uur een behandelaar vrij.
+
+Een peeling wordt bij ons gedaan door een huidtherapeut. Die kiest de sterkte, meet de inwerktijd af op je huid en bouwt bij een reeks pas op als je huid dat aankan.
+
+Wie er werkt, met welke titel en wat die titel precies inhoudt, staat met foto en al op de teampagina.
+
+**Wat anderen erover zeggen.**
+
+Reviews van klanten die hier voor acne kwamen, waarbij peelings vaak een deel van de behandeling zijn. Ze komen rechtstreeks uit onze agenda en staan er zoals ze geschreven zijn.
+
+- “De toppers van Diba zijn super vriendelijk! Ik laat mijn huid nooit ergens anders dan Diba behandelen, ben van mijn langdurige acne af.” Busra Bezoek Diba Clinics MEER DAN 4 JAAR GELEDEN
+
+- “Ik vind dat de therapeut de tijd had genomen om de onzuiverheden te verwijderen. En ze betrok mij bij het proces van wat de stappen waren.” Malika Bezoek Diba Clinics ONGEVEER 6 JAAR GELEDEN
+
+- “Had gisteren een dermapen en carbonlaser afspraak. Mijn huid voelt meteen al glad aan en de puistjes verminderen nu al. Daarnaast ook hele lieve dames!” Jenna Microneedling ONGEVEER 7 JAAR GELEDEN
+
+**Veelgestelde vragen**
+
+Wat kost een chemische peeling in Rotterdam?
+
+Bij Diba Clinics kost een Mesoestetic-peeling € 140 en een TCA-peeling van Dermaceutic € 180. Een kruidenpeel kost € 150 voor het gezicht. Er zijn ook kuren van drie, waarvan sommige met producten voor thuis. Kom je voor het eerst, dan begint je afspraak met een intake van € 50, die vervalt als we in dezelfde afspraak behandelen.
+
+Wat is het verschil tussen een chemische en een medische peeling?
+
+Er is geen verschil; het zijn twee namen voor dezelfde behandeling. Wij noemen het een medische peeling, omdat het gaat om middelen die per huid gekozen en op je huid afgemeten worden. Chemische peeling is de naam waarmee de meeste mensen zoeken.
+
+Ga ik vervellen na een peeling?
+
+Bij een lichte peeling meestal niet, bij een sterkere wel. Reken bij de sterkere varianten op twee tot vijf dagen droog en schilferig. Dat hoor je vooraf, want het bepaalt wanneer je de behandeling het beste inplant.
+
+Kan ik een peeling in de zomer doen?
+
+Bij pigment liever niet, en bij de sterkere peelings ook niet. Zon op een huid die net gepeeld is, is precies de combinatie die het resultaat kost. Een lichte peeling voor de textuur kan soms wel, met strikte zonbescherming.
+
+Hoeveel peelings heb ik nodig?
+
+Meestal een reeks van vier tot zes, met twee tot vier weken ertussen. Hoeveel het er bij jou worden, hangt af van je huid en van hoe die reageert; dat meten we tussendoor.
+
+Helpt een chemische peeling tegen acne?
+
+Ja, peelings zijn bij acne een van de belangrijkste middelen. Bij ontstoken acne werken we met chemische peelings en met de kruidenpeel, die ook antibacterieel werkt. Littekens pakken we pas aan als de huid rustig is.
+
+Helpt een peeling tegen pigmentvlekken?
+
+Bij oppervlakkige verkleuring wel, zoals de vlekken die na een puistje achterblijven. Zit het pigment dieper of is het melasma, dan is een traject als Cosmelan of Dermamelan het passender antwoord. Welke van de twee het is, stellen we vast met een meting.
+
+Kan een peeling bij een donkere huid?
+
+Ja, en het vraagt een andere aanpak. Bij huidtype IV tot VI is de kans op nieuwe pigmentvlekken door de behandeling groter, dus kiezen we de sterkte voorzichtiger en bouwen we trager op. Dat bespreken we vooraf.
+
+Waar in Rotterdam zitten jullie?
+
+Aan de Weissenbruchlaan 166 in Rotterdam, aan de noordkant van de stad in een woonwijk. Je parkeert in de straat. De route en de openingstijden staan op onze contactpagina.
+
+**Weet je niet welke peeling je nodig hebt**
+
+Dat hoef je ook niet te weten voordat je komt. We meten je huid, kijken wat er speelt en kiezen de sterkte die daarbij past. Is een peeling niet het goede antwoord, dan hoor je dat.
+
+Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met iets anders, stel je vraag dan via WhatsApp. Daar zit een behandelaar aan de andere kant en geen formulier.
+
+> knop: Lees verder
+
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+
+**Een peeling in Rotterdam plannen**
+
+We meten je huid en kiezen daarna de peeling en de sterkte die erbij passen. Is behandelen verstandig, dan kan dat vaak in dezelfde afspraak.
+
+> knop: PLAN EEN HUIDCONSULT
+
+---
+
+### /kennisbank/cosmelan-dermamelan-rotterdam
+
+**Tabbladtitel:** Cosmelan en Dermamelan Rotterdam | Diba Clinics
+
+**Google-omschrijving:** Cosmelan en Dermamelan in Rotterdam: zes maanden, een masker in de kliniek en producten thuis. Voor het gezicht € 720 tot € 920, inclusief producten.
+
+**COSMELAN EN DERMAMELAN**
+
+Cosmelan en Dermamelan zijn trajecten van ongeveer zes maanden tegen hardnekkig pigment: een masker in de kliniek, en daarna een vaste routine met producten thuis. Dermamelan is de sterkste van de twee en wordt vaker bij melasma ingezet. Bij Diba Clinics in Rotterdam kost Cosmelan € 720 en Dermamelan € 920, inclusief de producten.
+
+> knop: PLAN EEN AFSPRAAK
+
+> knop: BEKIJK DE TARIEVEN
+
+*DUUR*
+
+Zes maanden
+
+*TARIEF*
+
+€ 720 tot € 920
+
+*HERSTELTIJD*
+
+Dagen vervellen
+
+*MERK*
+
+Mesoestetic
+
+**Wat het traject met pigment doet**
+
+De meeste behandelingen halen weg wat er zit. Dit traject remt ook wat er nog aangemaakt wordt, en daarom duurt het maanden.
+
+Pigment wordt aangemaakt door cellen in de onderste laag van de opperhuid. Bij hardnekkig pigment staan die cellen als het ware harder aan dan nodig, door zon, hormonen en aanleg. Haal je alleen weg wat er zit, dan maken ze het in de maanden erna gewoon opnieuw aan.
+
+Cosmelan en Dermamelan werken op twee fronten. Het masker in de kliniek remt de aanmaak en laat de bovenlaag met het pigment vervellen. De producten thuis houden die rem daarna vast, maandenlang. Dat tweede deel is geen bijzaak: het is het grootste deel van het traject, en het bepaalt de uitkomst meer dan wat er in de kliniek gebeurt.
+
+Het traject begint met twee weken voorbereiding thuis. Daarna gaat in de kliniek het masker op, dat je mee naar huis neemt en er na het afgesproken aantal uren zelf afhaalt. Na een paar dagen ga je vervellen, en vanaf dan volgt de routine, met controles onderweg.
+
+Wat pigment is en welk type je hebt, staat bij pigmentvlekken en bij melasma. De twee behandelingen staan apart bij Cosmelan en Dermamelan. Waarom een traject niet in de zomer begint staat bij zon en je huid.
+
+**Cosmelan of Dermamelan**
+
+Dezelfde opzet, een andere sterkte en een ander doel. Welke bij jou past, stelt de behandelaar vast met een meting.
+
+Cosmelan is de lichtere van de twee. Hij wordt vaker gekozen bij zonschade en losse pigmentvlekken: scherp afgebakende vlekken op de plekken waar de zon komt. Voor dat soort pigment is hij sterk genoeg.
+
+Dermamelan is intensiever en wordt vaker ingezet bij melasma: symmetrische, wolkachtige vlakken die op hormonen en warmte reageren en na elke zomer terug kunnen komen. Het schema thuis is strakker, want melasma komt terug zodra de aanpak losser wordt. Het doel bij melasma is beheersen en niet laten verdwijnen, en dat hoor je vooraf.
+
+Er is ook een variant voor de intieme zone, Dermamelan Intimate, voor donkere verkleuring in de lies- en bikinizone. Die volgt dezelfde opzet, gebeurt in een afgesloten kamer en bij een behandelaar van je eigen voorkeur.
+
+> knop: OVER COSMELAN
+
+**Wat het traject bij ons kost**
+
+Eén bedrag voor het hele traject, met de producten voor thuis erbij. De intakeregeling staat er compleet bij.
+
+- Cosmelan, traject inclusief producten € 720
+
+- Dermamelan, traject inclusief producten € 920
+
+- Dermamelan Intimate, traject inclusief producten € 550
+
+Het bedrag is voor het traject, met de producten voor thuis erbij.
+
+**Kom je voor het eerst**
+
+Dan begin je met een intake. We meten je huid, stellen vast welk type pigment het is en of Cosmelan of Dermamelan erbij past. Een losse intake duurt maximaal 30 minuten en kost € 50.
+
+**Wanneer je begint**
+
+Liever in het najaar, zodat je maanden met weinig zon voor je hebt. Tussen mei en augustus beginnen we geen pigmenttraject. Plan de start ook niet vlak voor een vakantie of een drukke week, want na een paar dagen ga je vervellen.
+
+**Tijdens het traject**
+
+Twee weken voorbereiding thuis, dan het masker in de kliniek, en daarna de routine met producten. Onderweg zijn er controles, waarbij we meten in plaats van schatten, zodat je ziet of het schema werkt.
+
+**Wat helpt en wat we afraden**
+
+Dit traject is voor hardnekkig pigment. Voor pigment dat oppervlakkig zit, en voor wie het werk thuis niet ziet zitten, is er een lichtere weg.
+
+**DIT WERKT**
+
+- Hardnekkig pigment waar losse behandelingen op stuklopen
+
+- Melasma, met Dermamelan, waarbij beheersen het eerlijke doel is
+
+- Zonschade en losse pigmentvlekken, met Cosmelan
+
+- Donkere verkleuring in de lies- en bikinizone, met Dermamelan Intimate
+
+**DIT RADEN WE AF**
+
+- Zonder het schema thuis. Dat is het grootste deel van het traject, en zonder loopt het vast
+
+- Starten in de zomer. Tussen mei en augustus beginnen we niet
+
+- Zonder dagelijkse zonbescherming. Zon brengt het pigment terug
+
+- Een belofte dat melasma voorgoed weggaat. Het blijft iets dat terug kan komen
+
+**Het traject naast de alternatieven**
+
+Voor pigment zijn er meer wegen, en niet elke vlek vraagt zes maanden. Dit is wat ze doen, wat je erna merkt en wat ze kosten.
+
+*BEHANDELING*
+
+*WAARIN HET VERSCHILT*
+
+*VANAF*
+
+Het lichtere traject van zes maanden, vaker bij zonschade en losse vlekken.
+
+Vervellen en roodheid in de eerste dagen, en maandenlang strikte zonbescherming.
+
+Het intensievere traject, vaker bij melasma, met een strakker schema thuis.
+
+*Nordlys IPL bij pigment*
+
+Licht op scherp afgebakende vlekken, in een reeks losse behandelingen. Niet de eerste keuze bij melasma.
+
+Meestal een paar uur rood.
+
+€ 75
+
+*Medische peelings*
+
+Een zuur op de bovenlaag, voor oppervlakkige verkleuring, in een reeks.
+
+Twee tot vijf dagen droog en schilferig, afhankelijk van de sterkte.
+
+€ 140
+
+*Skinboosters en mesotherapie*
+
+De depigmentatiebooster brengt stoffen in de huid, meestal als kuur van drie.
+
+Kort rood en soms kleine bultjes, meestal binnen een dag weg.
+
+€ 175
+
+**Waar je ons vindt in Rotterdam**
+
+Aan de noordkant van de stad, in een woonwijk en niet in een winkelstraat. Dat scheelt bij het parkeren en het is rustiger als je net behandeld bent.
+
+Je parkeert in de straat. De route vanaf de ring en met het openbaar vervoer staat op de contactpagina.
+
+*Maandag*
+
+Gesloten
+
+*Dinsdag*
+
+10:00 tot 18:00
+
+*Woensdag*
+
+10:00 tot 21:00
+
+*Donderdag*
+
+*Vrijdag*
+
+*Zaterdag*
+
+*Zondag*
+
+De agenda is actueler dan dit rijtje: binnen openingstijden staat niet elk uur een behandelaar vrij.
+
+Het traject begint met een meting, en bij de controles onderweg wordt er opnieuw gemeten, zodat je op de opnames ziet wat er verandert.
+
+Wie er werkt, met welke titel en wat die titel precies inhoudt, staat met foto en al op de teampagina.
+
+**Veelgestelde vragen**
+
+Wat kost Cosmelan in Rotterdam?
+
+Bij Diba Clinics kost het Cosmelan-traject € 720 en Dermamelan € 920, allebei inclusief de producten voor thuis. Dermamelan Intimate kost € 550. Het traject begint met een intake van € 50.
+
+Wat is het verschil tussen Cosmelan en Dermamelan?
+
+Dezelfde opzet, een andere sterkte en een ander doel. Cosmelan is de lichtere en wordt vaker gekozen bij zonschade en losse pigmentvlekken; Dermamelan is intensiever en wordt vaker ingezet bij melasma. Welke bij jou past, stelt de behandelaar vast bij de intake.
+
+Hoe lang duurt een Cosmelan-traject?
+
+Ongeveer zes maanden. Het begint met twee weken voorbereiding thuis, dan gaat het masker op in de kliniek, en daarna volgt een routine met producten en controles onderweg.
+
+Ga ik vervellen van Cosmelan?
+
+Ja. Na een paar dagen gaat je huid vervellen en is hij rood. Plan het begin daarom niet vlak voor een vakantie of een belangrijke datum.
+
+Waarom mag ik in de zomer niet beginnen?
+
+Omdat je dan maanden tegen de zon in werkt. Pigmentcellen die net zijn aangepakt reageren extra fel op UV, en dan betaal je voor een resultaat dat je in september kwijt bent. Tussen mei en augustus beginnen we daarom geen pigmenttraject.
+
+Gaat melasma weg met Dermamelan?
+
+Niet voorgoed. Melasma blijft iets dat terug kan komen, vooral na de zomer. Dermamelan kan het rustig krijgen, en met zonbescherming en het schema thuis houd je het zo. Beheersen is bij melasma het eerlijke doel.
+
+Kan Cosmelan bij een donkere huid?
+
+Vaak wel, en het vraagt een andere aanpak. Bij huidtype IV tot VI is de kans op nieuwe pigmentvlekken groter, dus kijken we vooraf extra goed en bouwen we voorzichtig op. Dat bespreken we bij de intake.
+
+Kan ik Cosmelan doen als ik zwanger ben?
+
+Nee, tijdens een zwangerschap en in de periode dat je borstvoeding geeft beginnen we er niet aan. Pigment verandert in die tijd bovendien vaak vanzelf, en dan is wachten de beste keuze.
+
+Waar in Rotterdam zitten jullie?
+
+Aan de Weissenbruchlaan 166 in Rotterdam, aan de noordkant van de stad in een woonwijk. Je parkeert in de straat. De route en de openingstijden staan op onze contactpagina.
+
+**Weet je niet welk pigment je hebt**
+
+Dat hoef je ook niet te weten voordat je komt. Een meting laat zien welk type het is en hoe diep het zit, en daarna hoor je of een traject van zes maanden nodig is of dat iets lichters volstaat.
+
+Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met iets anders, stel je vraag dan via WhatsApp. Daar zit een behandelaar aan de andere kant en geen formulier.
+
+> knop: Lees verder
+
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+
+**Een pigmenttraject in Rotterdam**
+
+We meten eerst je huid en stellen vast welk type pigment het is. Daarna bespreken we of Cosmelan of Dermamelan past, en wanneer je het beste begint.
+
+> knop: PLAN EEN HUIDCONSULT
+
+---
+
+### /kennisbank/dermaplaning-rotterdam
+
+**Tabbladtitel:** Dermaplaning Rotterdam | Diba Clinics
+
+**Google-omschrijving:** Dermaplaning in Rotterdam bij Diba Clinics. € 150, zestig minuten en geen hersteltijd. Zonder zuren, dus ook bij een gevoelige huid.
+
+**DERMAPLANING IN ROTTERDAM**
+
+Dermaplaning is een behandeling waarbij een chirurgisch mesje onder een vaste hoek dode huidcellen en donshaartjes van je gezicht haalt. Er komen geen zuren aan te pas. Bij Diba Clinics in Rotterdam duurt een behandeling 60 minuten en kost hij € 150; je huid is meteen glad en je hebt geen hersteltijd.
+
+> knop: PLAN EEN AFSPRAAK
+
+> knop: BEKIJK DE TARIEVEN
+
+*DUUR*
+
+*TARIEF*
+
+*HERSTELTIJD*
+
+Geen
+
+*WERKWIJZE*
+
+Mesje, geen zuur
+
+**Wat dermaplaning met je huid doet**
+
+Het is de eenvoudigste behandeling in de kliniek: een steriel mesje, een strak getrokken huid en een vaste hoek. Er komt geen stroom, licht of warmte aan te pas.
+
+De buitenste laag van je huid bestaat uit dode cellen die vanzelf loslaten, maar niet altijd even vlot. Daartussen zitten de fijne, lichte donshaartjes die bijna iedereen op het gezicht heeft. Samen maken ze het oppervlak ruwer dan het hoeft te zijn, en make-up blijft er eerder in hangen dan dat hij glad over je huid gaat.
+
+Bij dermaplaning trekt de behandelaar je huid strak en gaat het mesje er in korte halen overheen, onder een hoek van 45 graden. Het snijdt niet in de huid maar schraapt over het oppervlak. Wat eraf gaat zijn dode cellen uit de hoornlaag en de donshaartjes die daarin vastzitten; wat blijft is levende huid.
+
+Omdat er geen zuur aan te pas komt, kan het ook bij een gevoelige, droge of allergische huid, en tijdens de zwangerschap. Pijn doet het niet. Het gekste eraan is het geluid: een zacht schrapen dat je eerder in je kaak voelt dan op je huid.
+
+Hoe het mesje en de hoek precies werken staat bij de Dermaplane Pro. De behandeling zelf, los van de plaats, staat op de behandelpagina.
+
+**Groeit het haar dikker terug**
+
+Het is de vraag die bijna iedereen stelt, en het antwoord is nee. Hieronder waarom.
+
+Scheren en dermaplaning veranderen de haarschacht niet, alleen het uiteinde. Een haar dat nog nooit is afgesneden heeft een dunne, zachte punt. Na het afsnijden is die punt recht, en een recht uiteinde voelt de eerste dagen stugger aan. Dat is wat mensen voor dikker haar aanzien.
+
+Het haar groeit terug zoals het was: even fijn en even licht. Het wordt er niet donkerder van en het komt niet sneller terug. Wie het bevalt, komt ongeveer maandelijks terug, want in die tijd is de laag dode cellen weer opgebouwd en staan de haartjes er weer.
+
+Wil je van de haartjes af in plaats van ze bij te houden, dan is dit de verkeerde behandeling. Voor donker haar is dat laserontharing; voor licht, grijs of wit haar dat de laser niet ziet, is dat elektrische epilatie.
+
+> knop: OVER DE BEHANDELING
+
+**Wat dermaplaning bij ons kost**
+
+Eén tarief voor de hele behandeling, zonder varianten. De intakeregeling voor een eerste afspraak staat er compleet bij, want dat is het bedrag dat mensen niet zien aankomen.
+
+- Dermaplaning € 150
+
+Dermaplaning gaat goed samen met een behandeling die daarna op een gladde huid werkt, zoals een peeling of een HydraFacial. Wat er in jouw geval bij past, bespreken we bij de intake.
+
+**Kom je voor het eerst**
+
+Dan boek je een behandeling op advies. We reserveren daar maximaal twee uur voor: de intake, en daarna minstens een uur om te behandelen. Is behandelen op dat moment verantwoord en wil je dat, dan doen we de dermaplaning in dezelfde afspraak.
+
+**Wat de intake kost**
+
+Wordt er in dezelfde afspraak behandeld, dan vervallen de intakekosten en betaal je alleen de behandeling. Gaat de behandeling niet door, dan kost de intake € 50. Een losse intake zonder behandeling duurt maximaal 30 minuten en kost altijd € 50.
+
+**Ben je hier al eerder geweest**
+
+Dan boek je de dermaplaning rechtstreeks in de agenda. Reken op 60 minuten. Is er sinds je laatste bezoek iets veranderd aan je huid, je medicatie of je verwachting, zeg dat dan bij binnenkomst.
+
+**Wat helpt en wat we afraden**
+
+Dermaplaning werkt op de buitenste laag. Voor wat dieper zit, en voor haar dat weg moet blijven, is er een andere behandeling.
+
+**DIT WERKT**
+
+- Een ruwe of doffe huid die direct glad en egaal moet zijn
+
+- Een huid die geen zuren verdraagt, zoals een gevoelige, droge of allergische huid
+
+- Een gladde basis voor make-up, of een behandeling vlak voor een gelegenheid
+
+- Een combinatie met bijna elke andere behandeling
+
+**DIT RADEN WE AF**
+
+- Pigment of littekens die dieper zitten. Daarvoor kies je laser of microneedling
+
+- Blijvend minder haar. De donshaartjes groeien terug zoals ze waren
+
+- Een huid met actieve ontstekingen of een beschadigde barrière. Dan doen we het niet
+
+- Verschil dat blijft. Het effect duurt tot de laag dode cellen weer is opgebouwd, meestal een paar weken
+
+**Dermaplaning naast de alternatieven**
+
+Voor een gladdere huid zijn er meer wegen. Dit is wat ze doen, wat je erna merkt en wat ze kosten.
+
+*WAARIN HET VERSCHILT*
+
+*VANAF*
+
+Een mesje haalt dode cellen en donshaar weg. Geen zuur, en het resultaat is er meteen.
+
+Geen.
+
+Reinigt en zuigt poriën leeg met onderdruk en brengt stoffen terug. Werkt ook op wat er in de porie zit.
+
+Er is doorgaans geen hersteltijd en je kunt na de afspraak je dag vervolgen.
+
+€ 170
+
+*Oxygeneo glow*
+
+Maakt de bovenlaag los met een gel en een capsule, waarbij je huid een prikkel krijgt voor de doorbloeding.
+
+*Medische peelings*
+
+Een zuur maakt de bovenlaag los en gaat dieper. Meer effect op verkleuring, en meer reactie van je huid.
+
+Twee tot vijf dagen droog en schilferig, afhankelijk van de sterkte.
+
+€ 140
+
+**Waar je ons vindt in Rotterdam**
+
+Aan de noordkant van de stad, in een woonwijk en niet in een winkelstraat. Dat scheelt bij het parkeren en het is rustiger als je net behandeld bent.
+
+Je parkeert in de straat. De route vanaf de ring en met het openbaar vervoer staat op de contactpagina.
+
+*Maandag*
+
+Gesloten
+
+*Dinsdag*
+
+10:00 tot 18:00
+
+*Woensdag*
+
+10:00 tot 21:00
+
+*Donderdag*
+
+*Vrijdag*
+
+*Zaterdag*
+
+*Zondag*
+
+De agenda is actueler dan dit rijtje: binnen openingstijden staat niet elk uur een behandelaar vrij.
+
+De behandelaar beoordeelt eerst of je huid rustig genoeg is, want bij een actieve ontsteking gaat het mesje er niet overheen.
+
+Wie er werkt, met welke titel en wat die titel precies inhoudt, staat met foto en al op de teampagina.
+
+**Wat anderen erover zeggen.**
+
+Reviews van klanten die hier voor een gezichtsbehandeling waren. Ze komen rechtstreeks uit onze agenda en staan er zoals ze geschreven zijn.
+
+- “Hele fijne en lieve dame die mij heeft geholpen! Geeft goed advies en geeft op tijd aan wat ze gaat doen. Dermapen was wel een beetje pijnlijk maar werd goed begeleid!” Sarah Dermapen 4 MAANDEN GELEDEN
+
+- “Heerlijk genoten van een Hydrafacial behandeling bij Iris! Mijn huid straalt weer en heeft die mooie glow terug. Bedankt team Diba, zoals altijd GLOW SKIN bij jullie!” Yasemin HydraFacial MEER DAN EEN JAAR GELEDEN
+
+- “Lief en kundig personeel. Ben goed geïnformeerd en ze hebben een plan gericht op mijn dunne huid gemaakt. Na 1 peeling zie ik al verschil in mijn huid. Zooo blij mee!” Liesbeth Peeling MEER DAN 2 JAAR GELEDEN
+
+**Veelgestelde vragen**
+
+Wat kost dermaplaning in Rotterdam?
+
+Bij Diba Clinics kost dermaplaning € 150 en duurt een behandeling 60 minuten. Kom je voor het eerst, dan begint je afspraak met een intake van € 50, die vervalt als we in dezelfde afspraak behandelen.
+
+Groeit mijn haar dikker terug na dermaplaning?
+
+Nee. Dermaplaning verandert de haarschacht niet, alleen het uiteinde. Een recht afgesneden punt voelt de eerste dagen stugger dan een punt die nog nooit geknipt is, en dat voelt als dikker haar. Het haar groeit terug zoals het was: even fijn en even licht.
+
+Doet dermaplaning pijn?
+
+Nee. Je voelt het mesje in korte halen over je huid gaan, en je hoort vooral een zacht schrapen. Het is een van de rustigste behandelingen die we doen.
+
+Snijdt het mesje in mijn huid?
+
+Nee, het schraapt over het oppervlak onder een vaste hoek. Wat eraf gaat zijn dode cellen uit de hoornlaag en de donshaartjes die daarin vastzitten.
+
+Hoe vaak kun je dermaplaning doen?
+
+Los, of elke vier tot zes weken als onderhoud. In die tijd is de laag dode cellen weer opgebouwd en staan de donshaartjes er weer.
+
+Kan dermaplaning tijdens de zwangerschap?
+
+Meestal wel, want er komen geen zuren of andere middelen aan te pas. Vertel het ons wel bij de intake, dan houden we er rekening mee bij wat er verder op je huid komt.
+
+Kan dermaplaning bij een gevoelige huid?
+
+Vaak wel, want er komen geen zuren aan te pas. Bij actieve ontstekingen of een beschadigde barrière doen we het niet. Of het bij jou kan, bepaalt de behandelaar bij de intake.
+
+Waarom neemt mijn crème daarna beter op?
+
+Omdat de laag dode cellen eraf is die er anders tussen zit. Dat effect is tijdelijk en duurt zolang die laag zich niet heeft hersteld.
+
+Waar in Rotterdam zitten jullie?
+
+Aan de Weissenbruchlaan 166 in Rotterdam, aan de noordkant van de stad in een woonwijk. Je parkeert in de straat. De route en de openingstijden staan op onze contactpagina.
+
+**Weet je niet of dermaplaning bij je past**
+
+Dat hoef je ook niet te weten voordat je komt. Boek een behandeling op advies: we bekijken je huid en zeggen welke behandeling erbij past. Is dat een peeling of een HydraFacial, dan hoor je dat.
+
+Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met iets anders, stel je vraag dan via WhatsApp. Daar zit een behandelaar aan de andere kant en geen formulier.
+
+> knop: Lees verder
+
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+
+**Dermaplaning in Rotterdam plannen**
+
+We bekijken eerst je huid en zeggen daarna of dermaplaning erbij past. Is dat zo, dan kan de behandeling vaak in dezelfde afspraak.
+
+> knop: PLAN EEN HUIDCONSULT
+
+---
+
+### /kennisbank/elektrische-epilatie-rotterdam
+
+**Tabbladtitel:** Elektrische epilatie Rotterdam | Diba Clinics
+
+**Google-omschrijving:** Elektrische epilatie in Rotterdam: haar voor haar, ook grijs, wit en licht blond haar waar de laser niet op werkt. € 30 per kwartier.
+
+**ELEKTRISCHE EPILATIE**
+
+Elektrische epilatie is een ontharingsmethode waarbij een dun naaldje langs de haar de wortel bereikt en die met een korte stroomstoot uitschakelt, haar voor haar. Omdat kleur er niet toe doet, werkt het ook op grijs, wit en licht blond haar waar de laser niet op reageert. Bij Diba Clinics in Rotterdam kost het € 30 per kwartier.
+
+> knop: PLAN EEN AFSPRAAK
+
+> knop: BEKIJK DE TARIEVEN
+
+*TARIEF*
+
+*HAARKLEUR*
+
+Elke kleur
+
+*GEBIED*
+
+Klein, per haar
+
+*HERSTELTIJD*
+
+Een paar uur rood
+
+**Wat elektrische epilatie doet**
+
+Waar de laser een kleur nodig heeft om op te mikken, gaat dit rechtstreeks naar de wortel. Daarom maakt de kleur van het haar hier niet uit.
+
+De laser mikt op het pigment in de haarwortel. Zit daar geen pigment meer, zoals bij grijs, wit en heel licht blond haar, dan is er niets om op te mikken. Dat ligt niet aan het apparaat of aan de instelling; zo werkt laserontharing.
+
+Bij elektrische epilatie gaat er een dun naaldje langs de haar het haarkanaal in, tot bij de wortel. Die krijgt een korte stroomstoot, en daarmee is het de wortel zelf die wordt aangepakt en niet de kleur. Je voelt per haar een korte prik.
+
+Het gaat haar voor haar, en dat maakt het trager dan laser. Daarom is het bedoeld voor kleine gebieden, zoals de kin, de bovenlip en rond de wenkbrauw, en voor de losse haren die na een laserkuur zijn blijven staan. Een haar reageert alleen in de groeifase, dus je komt in een reeks, met een paar weken ertussen.
+
+Heeft je haar wel kleur, dan is laserontharing sneller en voordeliger. Bij haargroei door PCOS staat meer op de pagina over PCOS. De behandeling zelf staat op de behandelpagina.
+
+**Laser en epilatie samen**
+
+De twee sluiten elkaar niet uit. In de meeste gevallen is het een volgorde, en die scheelt je tijd en geld.
+
+Heeft een deel van je haar nog kleur, dan begin je met een laserkuur. De laser pakt in één flits een heel vlak aan en werkt daardoor veel sneller dan haar voor haar. Wat daarna blijft staan, meestal de lichte of grijze haren, gaat met elektrische epilatie. Zo betaal je niet per haar voor wat sneller kan.
+
+Is al je haar grijs, wit of heel licht, dan is elektrische epilatie de methode die voor die haren bedoeld is. Dat is geen tweede keus maar de juiste behandeling voor dat haar.
+
+Voor grote vlakken, zoals benen of rug, is het niet geschikt: haar voor haar kost daar te veel tijd en te veel sessies. Ook dat hoor je bij de intake, samen met wat er in jouw geval wel kan.
+
+> knop: OVER LASERONTHARING
+
+**Wat epilatie bij ons kost**
+
+Het tarief gaat per kwartier, want het hangt af van hoeveel haren er staan. De intakeregeling staat er compleet bij.
+
+- Elektrische epilatie, per kwartier € 30
+
+Hoeveel kwartieren je nodig hebt, hangt af van het gebied en van het aantal haren. Dat schatten we bij de intake in, en na de eerste afspraak weet je het beter.
+
+**Kom je voor het eerst**
+
+Dan boek je een behandeling op advies. We reserveren daar maximaal twee uur voor: de intake, en daarna minstens een uur om te behandelen. Is behandelen op dat moment verantwoord en wil je dat, dan doen we de eerste epilatie in dezelfde afspraak.
+
+**Wat de intake kost**
+
+Wordt er in dezelfde afspraak behandeld, dan vervallen de intakekosten en betaal je alleen de behandeling. Gaat de behandeling niet door, dan kost de intake € 50. Een losse intake zonder behandeling duurt maximaal 30 minuten en kost altijd € 50.
+
+**Ben je hier al eerder geweest**
+
+Dan boek je de epilatie rechtstreeks in de agenda. Reken op 30 minuten. Is er sinds je laatste bezoek iets veranderd aan je huid, je medicatie of je verwachting, zeg dat dan bij binnenkomst.
+
+**Wat helpt en wat we afraden**
+
+Elektrische epilatie is precisiewerk voor kleine gebieden. Voor grote vlakken met donker haar is de laser het betere antwoord.
+
+**DIT WERKT**
+
+- Grijs, wit en heel licht blond haar, waar de laser niet op werkt
+
+- De losse haren die na een laserkuur zijn blijven staan
+
+- Kleine gebieden waar precisie telt, zoals kin, bovenlip en wenkbrauw
+
+- Wie geen laser kan of wil, bijvoorbeeld door het huidtype
+
+**DIT RADEN WE AF**
+
+- Grote vlakken zoals benen of rug. Daar is laserontharing sneller en voordeliger
+
+- Een vol gebied in weinig sessies. Het gaat per haar, dus het vraagt meer tijd
+
+- Resultaat na één afspraak. Het bouwt op over de reeks
+
+- Een huid die op dat moment geïrriteerd of ontstoken is
+
+**Epilatie naast de alternatieven**
+
+Er zijn meer manieren om van haar af te komen. Dit is wat ze doen, wat je erna merkt en wat ze kosten.
+
+*BEHANDELING*
+
+*WAARIN HET VERSCHILT*
+
+*VANAF*
+
+Haar voor haar, via de wortel. Werkt op elke haarkleur, en daardoor ook op grijs en wit.
+
+De behandelde plekjes zijn een paar uur rood en kunnen wat opstaan, vergelijkbaar met na het harsen.
+
+*Laserontharing*
+
+Licht op het pigment in de wortel. Snel over een groot vlak, maar alleen op haar met kleur.
+
+Een paar uur rood, soms bultjes rond de haarzakjes.
+
+€ 20
+
+*Dermaplaning*
+
+Een mesje haalt donshaar tijdelijk weg, samen met dode huidcellen. Het haar groeit terug zoals het was.
+
+Geen.
+
+€ 150
+
+**Waar je ons vindt in Rotterdam**
+
+Aan de noordkant van de stad, in een woonwijk en niet in een winkelstraat. Dat scheelt bij het parkeren en het is rustiger als je net behandeld bent.
+
+Je parkeert in de straat. De route vanaf de ring en met het openbaar vervoer staat op de contactpagina.
+
+*Maandag*
+
+Gesloten
+
+*Dinsdag*
+
+10:00 tot 18:00
+
+*Woensdag*
+
+10:00 tot 21:00
+
+*Donderdag*
+
+*Vrijdag*
+
+*Zaterdag*
+
+*Zondag*
+
+De agenda is actueler dan dit rijtje: binnen openingstijden staat niet elk uur een behandelaar vrij.
+
+De behandelaar kijkt eerst of een deel van je haar nog op laser reageert, want dan is dat de snellere weg. Wat overblijft, doet de behandelaar haar voor haar.
+
+Wie er werkt, met welke titel en wat die titel precies inhoudt, staat met foto en al op de teampagina.
+
+**Veelgestelde vragen**
+
+Wat kost elektrische epilatie in Rotterdam?
+
+Bij Diba Clinics kost elektrische epilatie € 30 per kwartier. Hoeveel kwartieren je nodig hebt, hangt af van het gebied en het aantal haren. Kom je voor het eerst, dan begint je afspraak met een intake van € 50, die vervalt als we in dezelfde afspraak behandelen.
+
+Waarom werkt de laser niet op grijs haar?
+
+Omdat de laser het pigment in de haarwortel opzoekt en de warmte daar zijn werk doet. Grijs en wit haar heeft dat pigment niet meer, dus er is niets om op te mikken. Dat ligt niet aan het apparaat of aan de instelling.
+
+Doet elektrische epilatie pijn?
+
+Je voelt per haar een korte prik, en daarna een warm gevoel op die plek. Het is goed te doen, maar omdat het haar voor haar gaat, is een langere sessie wel merkbaar.
+
+Is elektrische epilatie blijvend?
+
+Een haar waarvan de wortel goed is uitgeschakeld, komt niet terug. Omdat haren niet allemaal tegelijk in de groeifase zitten, heb je wel een reeks afspraken nodig om een gebied rustig te krijgen. Hoeveel verschilt per persoon.
+
+Kan ik het combineren met laserontharing?
+
+Dat is de gebruikelijke volgorde. Eerst de laserkuur voor alles wat pigment heeft, en daarna elektrische epilatie voor de haren die zijn blijven staan. Zo betaal je niet per haar voor wat sneller kan.
+
+Welke gebieden kun je met elektrische epilatie behandelen?
+
+Kleine gebieden waar precisie belangrijker is dan snelheid: de kin, de bovenlip en rond de wenkbrauw. Voor grote vlakken zoals benen of rug is het niet bedoeld; daar is laser sneller en voordeliger.
+
+Hoe zie ik eruit na elektrische epilatie?
+
+De behandelde plekjes zijn een paar uur rood en kunnen wat opstaan, vergelijkbaar met na het harsen. Bij de meeste mensen is dat dezelfde dag weg.
+
+Helpt elektrische epilatie bij haargroei door PCOS?
+
+Voor de lichte haren die de laser niet ziet, ja. Bij PCOS blijft je lichaam nieuwe haren aanmaken, dus bij laser en bij epilatie hoort dan onderhoud. Meer daarover staat op onze pagina over PCOS.
+
+Waar in Rotterdam zitten jullie?
+
+Aan de Weissenbruchlaan 166 in Rotterdam, aan de noordkant van de stad in een woonwijk. Je parkeert in de straat. De route en de openingstijden staan op onze contactpagina.
+
+**Weet je niet of je haar op laser reageert**
+
+Dat hoef je ook niet te weten voordat je komt. Bij de intake kijken we naar de kleur en de dikte van je haar, en dan hoor je of laser, epilatie of een combinatie het beste werkt.
+
+Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met iets anders, stel je vraag dan via WhatsApp. Daar zit een behandelaar aan de andere kant en geen formulier.
+
+> knop: Lees verder
+
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+
+**Elektrische epilatie in Rotterdam**
+
+We kijken eerst naar je haar en je huid, en zeggen dan of laser, epilatie of allebei past. Past epilatie, dan kan de eerste sessie vaak in dezelfde afspraak.
+
+> knop: PLAN EEN HUIDCONSULT
+
+---
+
+### /kennisbank/fitzpatrick-huidtype
+
+**Tabbladtitel:** Fitzpatrick huidtype: welk type heb je | Diba Clinics
+
+**Google-omschrijving:** De zes Fitzpatrick-huidtypes, wat je type zegt over laser, IPL en peelings, en hoe je het zelf bepaalt. Uitgelegd door de huidtherapeuten van Diba Clinics.
+
+**WELK HUIDTYPE HEB JE**
+
+Het Fitzpatrick-huidtype is een indeling in zes types die zegt hoe je huid op zon reageert: type I verbrandt vrijwel altijd en wordt nauwelijks bruin, type VI verbrandt zelden. Voor laser, IPL en peelings bepaalt je type niet óf iets kan, maar met welke golflengte, welke energie en hoe voorzichtig er wordt opgebouwd. Bij Diba Clinics in Rotterdam stellen we je type vast bij de intake.
+
+> knop: PLAN EEN AFSPRAAK
+
+> knop: BEKIJK DE TARIEVEN
+
+*SCHAAL*
+
+Zes types, I tot VI
+
+*GAAT OVER*
+
+Reactie op zon
+
+*BEPAALT*
+
+De instelling
+
+*VASTGESTELD*
+
+Bij de intake
+
+**Wat een huidtype precies zegt**
+
+Het gaat niet over de kleur die je in de spiegel ziet, maar over wat je huid met zon doet. Verbrand je snel, word je bruin, of allebei een beetje: daar zit de indeling in.
+
+De schaal is in 1975 bedacht door de Amerikaanse dermatoloog Thomas Fitzpatrick, en hij is er gekomen omdat een behandeling met licht anders uitpakt bij de ene huid dan bij de andere. De vraag was dus niet hoe iemand eruitziet, maar hoeveel licht zijn huid opneemt en wat er daarna gebeurt.
+
+Je type volgt uit twee dingen: hoe snel je verbrandt in de eerste zon van het jaar, en hoe makkelijk je daarna bruin wordt. Iemand die na een halfuur rood is en nooit bruin wordt zit aan het begin van de schaal; iemand die zelden verbrandt en diep bruin wordt aan het eind. De meeste mensen in Nederland zitten er ergens tussenin.
+
+Het is een grove indeling en zo is hij ook bedoeld. Twee mensen van hetzelfde type kunnen anders reageren, en je eigen huid reageert in maart anders dan in augustus. Daarom is het bij ons een startpunt en geen eindoordeel: wat je huid werkelijk doet, blijkt uit een proefplek en uit hoe de eerste behandeling verloopt.
+
+Wat het type níet zegt: hoe droog of gevoelig je huid is, of je snel puistjes krijgt en hoe dik je huid is. Dat zijn andere eigenschappen, en die meten we apart bij de huidanalyse.
+
+Welk type je hebt kun je zelf vastleggen in je huidprofiel, zodat het al bekend is voordat je binnenkomt. Welke van de twee golflengtes bij jouw type hoort, kun je nakijken bij de laserkiezer. Wat er tijdens een meting verder langskomt staat bij de huidanalyse.
+
+**Waarom je type de laser stuurt**
+
+Laser en IPL mikken op pigment. Zit er veel pigment in je bovenhuid, dan vangt die een deel van het licht op, en dat is precies wat de instelling moet ondervangen.
+
+Een ontharingslaser zoekt het pigment in de haarwortel. Het licht moet daar komen zonder onderweg te veel te worden opgenomen door de huid erboven. Bij een lichte huid is dat verschil groot en gaat vrijwel alle energie naar de wortel; bij een donkere huid is het verschil kleiner en moet de golflengte anders gekozen worden.
+
+Daarom staan er twee golflengtes in één apparaat. De alexandriet van 755 nanometer wordt sterk opgenomen door pigment en werkt efficiënt bij de types I tot en met III. De Nd:YAG van 1064 nanometer wordt veel minder opgenomen, gaat grotendeels langs de bovenlaag heen en is daarmee de keuze bij type V en VI.
+
+Type IV ligt op de grens, en dat is geen slap compromis maar de eerlijke stand van zaken. Reageert je huid rustig op de proefplek, dan kan de alexandriet op een lagere energie; is er twijfel, dan gaat het naar de Nd:YAG. Die keuze wordt in de behandelkamer gemaakt en niet vooraf op een website.
+
+Bij IPL ligt het anders, want dat is geen laser maar een bundel golflengtes tegelijk. Daar is minder ruimte om om je eigen pigment heen te werken, en bij een donkere huid kiezen we daarom vaker iets anders.
+
+> knop: OVER LASERONTHARING
+
+**Wat helpt en wat we afraden**
+
+Je type is een van de gegevens waarmee een behandeling wordt ingesteld. Het is er één van meer, en het beslist minder dan mensen denken.
+
+**DIT WERKT**
+
+- Welke golflengte bij ontharen de veilige en de efficiënte keuze is
+
+- Hoe voorzichtig de sterkte van een peeling wordt opgebouwd
+
+- Hoe groot de kans is dat er na een behandeling pigment achterblijft
+
+- Of een proefplek vooraf hoort, en hoe lang we die laten staan
+
+**DIT RADEN WE AF**
+
+- Of een behandeling kan. Op elk type wordt hier behandeld, met een andere instelling
+
+- Hoe gevoelig, droog of vet je huid is. Dat is iets anders en dat meten we apart
+
+- Hoeveel sessies je nodig hebt. Dat hangt vooral af van de zone en van je haar
+
+- Wat je huid vandaag aankan. Een gebruinde huid van type II telt op dat moment anders
+
+**De zes types naast elkaar**
+
+Wat elk type met zon doet, welke golflengte er bij ontharen bij hoort en waar we verder op letten. De middelste kolom komt uit dezelfde tabel die in de behandelkamer wordt gebruikt.
+
+*HUIDTYPE*
+
+*REACTIE OP ZON*
+
+*BIJ ONTHAREN*
+
+*WAAR WE OP LETTEN*
+
+Zeer licht, verbrandt snel
+
+Alexandriet, 755 nm
+
+Verbranden gaat hier sneller dan verkleuren. Zonbescherming is het aandachtspunt, voor en na een behandeling.
+
+*Type II*
+
+Licht, verbrandt gemakkelijk
+
+Weinig kans dat er pigment achterblijft na een behandeling. De huid wordt wel snel rood en dat trekt weer weg.
+
+*Type III*
+
+Licht tot medium
+
+Vanaf hier telt je voorgeschiedenis mee: bleef er eerder een vlek achter na een puist of een wondje, zeg dat dan.
+
+Medium tot olijf
+
+Alexandriet of Nd:YAG, na een proefplek
+
+De kans op nieuw pigment na een behandeling is groter. We bouwen de sterkte trager op en beginnen lager.
+
+*Type V*
+
+Donker olijf tot bruin
+
+Nd:YAG, 1064 nm
+
+IPL is hier vaak niet de juiste keuze, omdat de huid zelf te veel licht opneemt. Laser en peeling gaan met beleid.
+
+*Type VI*
+
+Donker bruin tot zwart
+
+Energie en sterkte gaan omlaag en een proefplek hoort erbij. Wat hier telt is geduld en niet meer vermogen.
+
+**Waar je ons vindt in Rotterdam**
+
+Aan de noordkant van de stad, in een woonwijk en niet in een winkelstraat. Dat scheelt bij het parkeren en het is rustiger als je net behandeld bent.
+
+Je parkeert in de straat. De route vanaf de ring en met het openbaar vervoer staat op de contactpagina.
+
+*Maandag*
+
+Gesloten
+
+*Dinsdag*
+
+10:00 tot 18:00
+
+*Woensdag*
+
+10:00 tot 21:00
+
+*Donderdag*
+
+*Vrijdag*
+
+*Zaterdag*
+
+*Zondag*
+
+De agenda is actueler dan dit rijtje: binnen openingstijden staat niet elk uur een behandelaar vrij.
+
+Je type wordt vastgesteld door de huidtherapeut of de laserspecialist die je behandelt, tijdens de intake. Dat gebeurt met de vragen hierboven en met de meting; een losse intake kost € 50 en vervalt als er in dezelfde afspraak behandeld wordt.
+
+Wie er werkt, met welke titel en wat die titel precies inhoudt, staat met foto en al op de teampagina.
+
+**Veelgestelde vragen**
+
+Hoe bepaal ik zelf welk Fitzpatrick-type ik heb?
+
+Door twee vragen te beantwoorden over de eerste zon van het jaar: verbrand je, en word je daarna bruin? Verbrand je altijd en word je nooit bruin, dan zit je bij type I of II. Verbrand je zelden en word je makkelijk bruin, dan bij type IV of hoger. Twijfel je, dan is dat geen probleem: bij de intake stellen we het samen vast.
+
+Kan laserontharing bij elk huidtype?
+
+Ja, de GentleMax Pro werkt op type I tot en met VI. Je type bepaalt niet of het kan, maar met welke golflengte, welke energie en welke koeling er gewerkt wordt. Bij de donkere types gaat dat met de Nd:YAG en met een proefplek vooraf.
+
+Waarom vragen jullie naar mijn huidtype voordat ik kom?
+
+Omdat het bepaalt wat er op de dag zelf mogelijk is. Staat je type al in je huidprofiel, dan hoeft dat gesprek niet meer aan de balie te beginnen en is de intake korter. Het blijft een startpunt: wat je huid werkelijk doet, blijkt uit de proefplek.
+
+Verandert mijn huidtype in de zomer?
+
+Je type zelf niet, je huid op dat moment wel. Een gebruinde huid bevat verse kleur die licht opneemt, en dan wordt er anders ingesteld of even gewacht. Hoeveel weken dat vraagt hoor je bij de intake, want dat verschilt per huid.
+
+Wat betekent mijn type voor een peeling?
+
+Bij type IV tot en met VI is de kans groter dat er na een peeling pigment achterblijft. Daarom kiezen we de sterkte voorzichtiger, bouwen we trager op en bespreken we vooraf wat je huid eerder deed na een ontsteking of een wondje.
+
+Is IPL geschikt voor een donkere huid?
+
+Vaak niet. IPL stuurt een bundel golflengtes tegelijk, en een huid met veel eigen pigment neemt daar te veel van op. Bij een donkere huid kiezen we daarom meestal een andere behandeling, en wat dat is hangt af van waarvoor je komt.
+
+Wat is het verschil tussen huidtype en huidconditie?
+
+Je type ligt vast en gaat over je reactie op zon. Je conditie verandert en gaat over hoe je huid er vandaag voor staat: droog, vettig, gevoelig, ontstoken. Voor de keuze van een behandeling telt de conditie vaak zwaarder dan het type.
+
+Waarom een proefplek als mijn type al bekend is?
+
+Omdat de schaal een indeling is en geen meting van jouw huid. Twee mensen van hetzelfde type kunnen anders reageren op dezelfde energie. Een proefplek laat zien wat jouw huid doet, en dat weegt zwaarder dan het getal.
+
+Kost het bepalen van mijn huidtype iets apart?
+
+Nee. Het hoort bij de intake, samen met de meting van je huid. Een losse intake kost € 50 en duurt maximaal dertig minuten. Wordt er in dezelfde afspraak behandeld, dan vervalt dat bedrag en betaal je alleen de behandeling.
+
+Waar in Rotterdam zitten jullie?
+
+Aan de Weissenbruchlaan 166 in Rotterdam, aan de noordkant van de stad in een woonwijk. Je parkeert in de straat. De route en de openingstijden staan op onze contactpagina.
+
+**Weet je je type niet zeker**
+
+Dat hoeft ook niet voordat je komt. We stellen het vast bij de intake, samen met de meting, en daar volgt uit wat er in jouw geval mogelijk is en met welke instelling. Blijkt behandelen op dat moment niet verstandig, dan hoor je dat en doen we het niet.
+
+Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met iets anders, stel je vraag dan via WhatsApp. Daar zit een behandelaar aan de andere kant en geen formulier.
+
+> knop: Lees verder
+
+Laatst bijgewerkt op 12 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+
+**Je huidtype laten bepalen**
+
+We meten je huid, stellen je type vast en bespreken wat er daarmee mogelijk is. Is behandelen verantwoord en wil je dat, dan kan het vaak in dezelfde afspraak.
+
+> knop: PLAN EEN HUIDCONSULT
+
+---
+
+### /kennisbank/fotona-4d-rotterdam
+
+**Tabbladtitel:** Fotona 4D Rotterdam | Diba Clinics
+
+**Google-omschrijving:** Fotona 4D in Rotterdam: vier laserstappen in één sessie van 90 minuten, zonder naalden. € 370 per behandeling, € 995 voor een kuur van drie.
+
+**FOTONA 4D IN ROTTERDAM**
+
+Fotona 4D is een laserbehandeling in vier stappen in één sessie: eerst van binnenuit door de wang, daarna op diepte in de huid, en tot slot een lichte laserpeeling. Samen werken ze op verslapping, textuur en kleur, zonder naalden. Bij Diba Clinics in Rotterdam duurt een behandeling 90 minuten en kost hij € 370.
+
+> knop: PLAN EEN AFSPRAAK
+
+> knop: BEKIJK DE TARIEVEN
+
+*DUUR*
+
+*TARIEF*
+
+€ 370 per sessie
+
+*HERSTELTIJD*
+
+Uren tot een dag
+
+*APPARAAT*
+
+Fotona TimeWalker
+
+**Wat Fotona 4D met je huid doet**
+
+Vier behandelingen die in dezelfde sessie op elkaar volgen, elk op een andere diepte. Samen raken ze wat één stap alleen niet haalt.
+
+Met de jaren maakt je huid minder collageen aan, het bindweefsel dat hem stevig houdt. Dat zie je als verslapping langs de kaaklijn, fijne lijntjes en een huid die minder egaal is. Die veranderingen zitten op verschillende diepten, en daarom werkt Fotona 4D ook op verschillende diepten.
+
+Het begint van binnenuit met SmoothLiftin: een handstuk tegen de binnenkant van je wang, dat het weefsel verwarmt waar je van buitenaf niet bij komt. Daarna werkt FRAC3 op diepte op onregelmatigheden, en verwarmt PIANO het weefsel vlak en gelijkmatig. SupErficial sluit af met een lichte laserpeeling van de bovenste laag.
+
+Direct na de sessie ziet de huid er voller uit door de warmte, maar dat is nog geen resultaat. De aanmaak van collageen kost weken, en het verschil bouwt zich op over de reeks: los te doen of als kuur van drie, met vier tot zes weken ertussen.
+
+De behandeling zelf staat op de behandelpagina, en welke behandelingen er nog meer op dit apparaat draaien bij de Fotona TimeWalker. Wat een kuur aan tijd vraagt staat bij het aantal sessies.
+
+**Twee lasers in één apparaat**
+
+De Fotona TimeWalker is geen behandeling maar een platform. Dat hij twee lasers heeft, is waarom 4D kan wat één laser niet kan.
+
+In de kast zitten twee lasers. Een Er:YAG op 2940 nanometer, die bijna volledig door water wordt opgenomen en daardoor aan de oppervlakte blijft. En een Nd:YAG op 1064 nanometer, die veel minder door water wordt tegengehouden en dus dieper komt. Samen dekken ze een bereik dat één laser niet haalt.
+
+De verwarmende stappen gebruiken de SMOOTH-modus: de energie komt in een reeks trage pulsen in plaats van één harde. Het weefsel wordt daardoor verwarmd zonder dat de bovenlaag wordt weggenomen. Wat je voelt is een oplopende warmte die net voor het ongemakkelijke stopt, en de behandelaar vraagt tijdens de sessie hoe warm het aanvoelt.
+
+Er is ook een volledig pakket, Fotona 4D Full Package, waarin de hals en de kaaklijn meegaan. Daar valt verslapping vaak het eerst op, terwijl het gezicht er nog strak uitziet. En er is Fotona 4D Men, met instellingen voor de doorgaans dikkere mannenhuid.
+
+> knop: OVER DE FOTONA
+
+**Wat Fotona 4D bij ons kost**
+
+Een losse behandeling of een kuur van drie, voor het gezicht of met de hals en de kaaklijn erbij. De intakeregeling staat er compleet bij.
+
+- Fotona 4D, losse behandeling € 370
+
+- Fotona 4D, kuur van drie € 995
+
+- Full Package, losse behandeling € 575
+
+- Full Package, kuur van drie € 1.495
+
+Een kuur van drie kost € 995, tegen € 1.110 voor drie losse behandelingen. Het tarief voor Fotona 4D Men hoor je bij de intake.
+
+**Kom je voor het eerst**
+
+Dan boek je een behandeling op advies, waar we maximaal twee uur voor reserveren. Fotona 4D duurt zelf 90 minuten, dus of hij in die eerste afspraak past, hangt af van hoe lang de intake duurt. Past het niet, dan plannen we hem direct daarna in.
+
+**Wat de intake kost**
+
+Wordt er in dezelfde afspraak behandeld, dan vervallen de intakekosten en betaal je alleen de behandeling. Gaat de behandeling niet door, dan kost de intake € 50. Een losse intake zonder behandeling duurt maximaal 30 minuten en kost altijd € 50.
+
+**Ben je hier al eerder geweest**
+
+Dan boek je de Fotona 4D rechtstreeks in de agenda. Reken op 90 minuten. Is er sinds je laatste bezoek iets veranderd aan je huid, je medicatie of je verwachting, zeg dat dan bij binnenkomst.
+
+**Wat helpt en wat we afraden**
+
+Fotona 4D werkt op verslapping, textuur en kleur. Voor huid die echt is gaan hangen, en voor wie in één keer resultaat wil, is het niet de goede keuze.
+
+**DIT WERKT**
+
+- Beginnende verslapping, vooral langs de kaaklijn en rond de mond
+
+- Fijne lijntjes en een huid die minder egaal is geworden
+
+- Werken in vier diepten tegelijk, van het slijmvlies tot de bovenste huidlaag
+
+- Een behandeling zonder naalden en zonder snijden
+
+**DIT RADEN WE AF**
+
+- Huid die echt is gaan hangen. Daarvoor is chirurgie het antwoord
+
+- Resultaat in één keer. Het effect bouwt zich op over de reeks
+
+- Een dag waarop je er meteen weer onberispelijk uit moet zien. Reken op een paar uur tot een dag rood en warm
+
+- Een vast aantal sessies vooraf. Hoeveel je huid opbouwt verschilt per persoon, dus we leggen het verloop vast
+
+**Fotona 4D naast de alternatieven**
+
+Voor een stevigere huid zijn er meer wegen. Dit is wat ze doen, wat je erna merkt en wat ze kosten.
+
+*BEHANDELING*
+
+*WAARIN HET VERSCHILT*
+
+*VANAF*
+
+Vier laserstappen in één sessie, van binnenuit tot een afsluitende peeling.
+
+Een paar uur tot een dag rood en warm, alsof je te lang in de zon hebt gezeten.
+
+Hetzelfde protocol met de hals en de kaaklijn erbij, in een afspraak van twee uur.
+
+Rood en warm voor een paar uur tot een dag; bij de afsluitende peelingstap kan de huid een paar dagen ruw aanvoelen.
+
+*VectorLift*
+
+Laser op het voorhoofd en rond de wenkbrauw, voor wie vooral daar verslapping ziet.
+
+Een paar uur licht rood op het voorhoofd.
+
+€ 150
+
+*SmoothEye*
+
+Laser rond de oogcontour, voor kraaienpootjes en fijne lijntjes.
+
+Een paar uur licht rood rond de ogen.
+
+*Skinboosters en mesotherapie*
+
+Werkzame stoffen in de huid met naalden. Werkt op vocht en stevigheid, zonder warmte.
+
+Kort rood en soms kleine bultjes, meestal binnen een dag weg.
+
+€ 175
+
+**Waar je ons vindt in Rotterdam**
+
+Aan de noordkant van de stad, in een woonwijk en niet in een winkelstraat. Dat scheelt bij het parkeren en het is rustiger als je net behandeld bent.
+
+Je parkeert in de straat. De route vanaf de ring en met het openbaar vervoer staat op de contactpagina.
+
+*Maandag*
+
+Gesloten
+
+*Dinsdag*
+
+10:00 tot 18:00
+
+*Woensdag*
+
+10:00 tot 21:00
+
+*Donderdag*
+
+*Vrijdag*
+
+*Zaterdag*
+
+*Zondag*
+
+De agenda is actueler dan dit rijtje: binnen openingstijden staat niet elk uur een behandelaar vrij.
+
+Fotona 4D wordt bij ons gedaan door een huidtherapeut of een laserspecialist. Die stelt het apparaat per stap en per zone in, en past de warmte aan op wat jij tijdens de sessie aangeeft.
+
+Wie er werkt, met welke titel en wat die titel precies inhoudt, staat met foto en al op de teampagina.
+
+**Veelgestelde vragen**
+
+Wat kost Fotona 4D in Rotterdam?
+
+Bij Diba Clinics kost Fotona 4D € 370 per behandeling en € 995 voor een kuur van drie. Het volledige pakket met hals en kaaklijn kost € 575, of € 1.495 als kuur van drie. Kom je voor het eerst, dan begint je afspraak met een intake van € 50.
+
+Waarom heet het 4D?
+
+Omdat er vier behandelingen in een sessie op elkaar volgen, elk op een andere diepte: van het slijmvlies aan de binnenkant van je wang tot de bovenste huidlaag.
+
+Doet Fotona 4D pijn?
+
+Het is warm. De eerste stap gebeurt in je mond en voelt warm tegen je wang; daarna loopt de warmte aan de buitenkant op tot net voor het ongemakkelijke. De behandelaar vraagt tijdens de sessie hoe het voelt en stelt het apparaat daarop bij. De laatste stap voelt als korte tikjes.
+
+Heb je hersteltijd na Fotona 4D?
+
+Weinig. Je bent een paar uur tot een dag rood en warm, alsof je te lang in de zon hebt gezeten. Bij het volledige pakket kan de huid door de afsluitende peeling een paar dagen ruw aanvoelen.
+
+Wanneer zie ik resultaat van Fotona 4D?
+
+Direct na de sessie ziet de huid er voller uit door de warmte, maar dat is nog geen resultaat. De opbouw van collageen kost weken; het verschil bouwt zich over de reeks op.
+
+Hoeveel behandelingen Fotona 4D heb ik nodig?
+
+Los te doen of als kuur van drie, met vier tot zes weken ertussen. Bij het volledige pakket volgt na de kuur meestal een keer per jaar onderhoud. Wat bij jou past, hoor je bij de intake.
+
+Is Fotona 4D een alternatief voor een facelift?
+
+Nee. Fotona 4D werkt op beginnende verslapping, textuur en kleur, zonder naalden en zonder snijden. Voor huid die echt is gaan hangen is chirurgie het antwoord, en dat zeggen we je dan ook.
+
+Kan ik ook een van de vier stappen los doen?
+
+Ja. SmoothLiftin, FRAC3, PIANO en SupErficial zijn elk los te boeken. Welke bij jou past, hoor je bij de intake.
+
+Waar in Rotterdam zitten jullie?
+
+Aan de Weissenbruchlaan 166 in Rotterdam, aan de noordkant van de stad in een woonwijk. Je parkeert in de straat. De route en de openingstijden staan op onze contactpagina.
+
+**Weet je niet of Fotona 4D bij je past**
+
+Dat hoef je ook niet te weten voordat je komt. We bekijken je huid, bespreken wat je wilt bereiken en zeggen welke behandeling daarbij past. Is dat iets anders dan Fotona, of iets waar laser niet bij helpt, dan hoor je dat.
+
+Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met iets anders, stel je vraag dan via WhatsApp. Daar zit een behandelaar aan de andere kant en geen formulier.
+
+> knop: Lees verder
+
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+
+**Fotona 4D in Rotterdam plannen**
+
+We bekijken eerst je huid en bespreken wat Fotona 4D daar kan doen en wat niet. Daarna plannen we de eerste sessie.
+
+> knop: PLAN EEN HUIDCONSULT
+
+---
+
+### /kennisbank/hoeveel-sessies
+
+**Tabbladtitel:** Hoeveel sessies heb je nodig | Diba Clinics
+
+**Google-omschrijving:** Hoeveel sessies een huidbehandeling vraagt, waarom er weken tussen zitten en waarom het aantal pas na een meting te zeggen is. Per behandeling op een rij.
+
+**HOEVEEL SESSIES HEB JE NODIG**
+
+Hoeveel sessies je nodig hebt hangt af van de behandeling en van je huid. Een gezichtsbehandeling kan los, microneedling en peelings gaan meestal in een reeks van drie tot zes met vier tot zes weken ertussen, en laserontharing vraagt er zes tot tien, verspreid over maanden, omdat haar in cycli groeit. Bij Diba Clinics in Rotterdam hoor je na de meting welk aantal in jouw geval realistisch is.
+
+> knop: PLAN EEN AFSPRAAK
+
+> knop: BEKIJK DE TARIEVEN
+
+*PEELING*
+
+Vier tot zes keer
+
+*MICRONEEDLING*
+
+Drie tot zes keer
+
+*LASERONTHARING*
+
+Zes tot tien keer
+
+*ERTUSSEN*
+
+Vier tot zes weken
+
+**Waarom het vaak een reeks is**
+
+Je huid werkt in cycli en je haar ook. Een behandeling die daarop aansluit vraagt herhaling; een behandeling die aan de oppervlakte blijft, vaak niet.
+
+De bovenste laag van je huid vernieuwt zichzelf in ongeveer vier weken. Een behandeling die daar werkt, zoals een gezichtsbehandeling of een oppervlakkige peeling, doet zijn werk binnen die ene cyclus. Het resultaat is er meteen en het loopt in de weken erna weer terug naar het uitgangspunt, en dat is de reden dat die behandelingen onderhoud heten.
+
+Gaat een behandeling dieper, dan werk je niet met de cyclus mee maar zet je herstel in gang. Nieuw collageen bouwt zich over weken op, en elke sessie legt daar een laag bij. Daarom zit er bij microneedling en bij de meeste laserbehandelingen vier tot zes weken tussen: eerder is de vorige sessie nog niet af, later begin je deels opnieuw.
+
+Bij ontharen is het weer anders. Een laser raakt alleen het haar dat op dat moment in de groeifase zit, en dat is maar een deel van wat er staat. De rest komt in de weken erna aan de beurt, en daarom zijn er zes tot tien sessies nodig verspreid over maanden. Het aantal hangt af van de zone en van je huidtype.
+
+Een pigmenttraject als Cosmelan of Dermamelan telt geen sessies maar maanden: één masker in de kliniek, en daarna een vaste routine thuis met controles onderweg. Wat je daar doet weegt zwaarder dan wat er in de behandelkamer gebeurt.
+
+Het aantal per behandeling staat ook op de behandelpagina zelf, bij alle behandelingen. Hoe een eerste afspraak verloopt staat bij het huidconsult.
+
+**Waarom je vooraf een reeks hoort**
+
+Een exact aantal noemen voordat je huid gemeten is, klinkt behulpzaam en is het niet. Wat je wel krijgt, is een reeks met de reden erbij.
+
+Wat een behandeling doet, hangt af van hoe jouw huid erop reageert, en dat is vooraf een inschatting. Bij de een is de textuur na drie sessies waar hij zijn moet, bij de ander vraagt hetzelfde doel er zes. Een getal dat vooraf vastligt is dus een belofte over iemand anders zijn huid.
+
+Daarom meten we bij het begin en leggen we die meting vast. Bij elke controle komt de nieuwe opname naast de vorige, onder hetzelfde licht en vanuit dezelfde hoek. Zo is er halverwege een gesprek mogelijk over wat er is veranderd, in plaats van een gevoel achteraf.
+
+Levert een aanpak te weinig op, dan is bijstellen of stoppen de uitkomst van dat gesprek. Een reeks afmaken omdat hij nu eenmaal geboekt is, is de verkeerde volgorde. Wat je vooruitbetaalde aan een kuur blijft dan staan voor een andere behandeling.
+
+Tussentijds stoppen levert het resultaat van een halve reeks op, en dat is iets anders dan de helft van het resultaat. Bij ontharen is dat het duidelijkst: het haar dat tijdens de gemiste sessies in de groeifase zat, is gewoon niet geraakt.
+
+> knop: OVER DE HUIDANALYSE
+
+**Wat helpt en wat we afraden**
+
+Een reeks is er om iets op te bouwen. Voor wat daarbuiten valt, is herhalen het verkeerde antwoord.
+
+**DIT WERKT**
+
+- Herstel dat zich over weken opbouwt, zoals bij microneedling en laser
+
+- Haar dat in cycli groeit, waardoor er per keer maar een deel te raken is
+
+- Onderhoud van een resultaat dat uit zichzelf terugloopt
+
+- Een traject waarin de thuisroutine het meeste werk doet
+
+**DIT RADEN WE AF**
+
+- Een resultaat dat na één keer al vaststaat. Dan is een tweede sessie er een te veel
+
+- Een klacht die niet reageert. Blijft de meting gelijk, dan verandert de aanpak
+
+- Een huid die op dat moment ontstoken of geïrriteerd is. Die brengen we eerst tot rust
+
+- Een aantal dat vooraf vastligt zonder dat je huid gemeten is
+
+**Wat elke behandeling aan tijd vraagt**
+
+Hoe vaak een behandeling meestal gebeurt en wat één keer kost. De middelste kolom komt letterlijk van de behandelpagina zelf, zodat de twee niet uit elkaar kunnen lopen.
+
+*BEHANDELING*
+
+*HOE VAAK*
+
+*PER KEER*
+
+*HydraFacial*
+
+Los te doen, of maandelijks als onderhoud. Een startreeks is meestal drie tot zes.
+
+€ 170
+
+*Oxygeneo glow*
+
+Los, of als onderhoud elke vier tot zes weken.
+
+€ 150
+
+*Medische peelings*
+
+Meestal een reeks van vier tot zes, met twee tot vier weken ertussen.
+
+€ 140
+
+*SkinPen Microneedling*
+
+Een reeks van drie tot zes, met vier tot zes weken ertussen.
+
+€ 180
+
+*Skinboosters en mesotherapie*
+
+Vaak een kuur van drie, met twee tot vier weken ertussen.
+
+€ 175
+
+*Fotona 4D*
+
+Los te doen of als kuur van drie, met vier tot zes weken ertussen. Wat er bij jou past hoor je tijdens de intake.
+
+€ 370
+
+*Nordlys IPL bij pigment*
+
+Een reeks van drie tot zes, met vier weken ertussen.
+
+€ 75
+
+*Laserontharing*
+
+Altijd een reeks, meestal zes tot tien. Het aantal hangt af van zone en huidtype.
+
+Vanaf € 20 per zone
+
+*Elektrische epilatie*
+
+Een reeks, met een paar weken ertussen. Hoeveel hangt af van het aantal haren en van het gebied.
+
+€ 30
+
+Eén traject van ongeveer zes maanden
+
+€ 720
+
+**Waar je ons vindt in Rotterdam**
+
+Aan de noordkant van de stad, in een woonwijk en niet in een winkelstraat. Dat scheelt bij het parkeren en het is rustiger als je net behandeld bent.
+
+Je parkeert in de straat. De route vanaf de ring en met het openbaar vervoer staat op de contactpagina.
+
+*Maandag*
+
+Gesloten
+
+*Dinsdag*
+
+10:00 tot 18:00
+
+*Woensdag*
+
+10:00 tot 21:00
+
+*Donderdag*
+
+*Vrijdag*
+
+*Zaterdag*
+
+*Zondag*
+
+De agenda is actueler dan dit rijtje: binnen openingstijden staat niet elk uur een behandelaar vrij.
+
+De huidtherapeut of laserspecialist die je behandelt, op basis van de meting bij het begin en de controles onderweg. Bij elke controle komen de opnames naast elkaar, en daaruit volgt of de reeks doorgaat zoals hij stond.
+
+Wie er werkt, met welke titel en wat die titel precies inhoudt, staat met foto en al op de teampagina.
+
+**Veelgestelde vragen**
+
+Hoeveel sessies laserontharing heb je nodig?
+
+Meestal zes tot tien, verspreid over maanden. Dat komt doordat een laser alleen het haar raakt dat op dat moment in de groeifase zit; de rest komt in de weken erna aan de beurt. Het aantal hangt af van de zone, van je huidtype en van je haar, en je hoort bij de intake wat er in jouw geval realistisch is.
+
+Hoeveel sessies microneedling zijn nodig?
+
+Meestal een reeks van drie tot zes, met vier tot zes weken ertussen. Die tijd is er niet voor de agenda maar voor je huid: nieuw collageen bouwt zich over weken op, en elke sessie legt daar een laag bij. Bij littekens en bij diepere textuur liggen er vaker zes dan drie.
+
+Waarom zit er vier tot zes weken tussen twee sessies?
+
+Omdat je huid die tijd nodig heeft om af te maken wat de vorige sessie in gang zette. Eerder behandelen betekent op een huid werken die nog bezig is; veel later betekent dat een deel van de winst alweer is teruggelopen.
+
+Kan ik na één sessie al iets zien?
+
+Bij een gezichtsbehandeling meestal meteen, want die werkt aan de oppervlakte. Bij microneedling, laser en peelings zie je na de eerste sessie vaak iets in de textuur, maar het doel waarvoor je komt vraagt de hele reeks.
+
+Wat gebeurt er als ik halverwege stop?
+
+Dan houd je het resultaat van een halve reeks, en dat is iets anders dan de helft van het resultaat. Bij ontharen is dat het duidelijkst: het haar dat tijdens de gemiste sessies in de groeifase zat, is niet geraakt en groeit gewoon door.
+
+Waarom noemen jullie geen vast aantal vooraf?
+
+Omdat het afhangt van hoe jouw huid reageert, en dat is vooraf een inschatting. Je krijgt een reeks met de reden erbij, een meting aan het begin en een controle onderweg waarin we naast elkaar leggen wat er is veranderd. Daaruit volgt het aantal dat je echt nodig hebt.
+
+Is een kuur goedkoper dan losse sessies?
+
+Bij een aantal behandelingen wel. Skinboosters en Fotona 4D hebben een kuurtarief dat lager ligt dan drie losse sessies bij elkaar. De bedragen staan bij de behandeling zelf en op de tarievenpagina, en je kiest pas na de intake.
+
+Hoe vaak moet ik terugkomen voor onderhoud?
+
+Bij een gezichtsbehandeling meestal elke vier tot zes weken, omdat het effect uit zichzelf terugloopt. Bij een traject dat herstel opbouwt is onderhoud een controle per half jaar tot een jaar, afhankelijk van wat we meten.
+
+Moet ik alle sessies vooraf boeken?
+
+Dat hoeft niet, maar het helpt wel. De tijd tussen twee sessies is onderdeel van de behandeling, en een reeks die uitloopt omdat er geen plek was, levert minder op. Je kunt de afspraken in één keer inplannen en later nog verzetten.
+
+Waar in Rotterdam zitten jullie?
+
+Aan de Weissenbruchlaan 166 in Rotterdam, aan de noordkant van de stad in een woonwijk. Je parkeert in de straat. De route en de openingstijden staan op onze contactpagina.
+
+**Weet je niet of een reeks nodig is**
+
+Dat is precies wat de eerste afspraak uitwijst. We meten je huid, bespreken wat je wilt veranderen en zeggen wat daarvoor nodig is, ook als dat minder is dan je dacht. Blijkt er niets te zijn wat behandeling vraagt, dan hoor je dat ook.
+
+Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met iets anders, stel je vraag dan via WhatsApp. Daar zit een behandelaar aan de andere kant en geen formulier.
+
+> knop: Lees verder
+
+Laatst bijgewerkt op 12 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+
+**Een plan met een aantal erbij**
+
+In het huidconsult meten we je huid en bespreken we wat er nodig is, met het aantal sessies en het tarief erbij. Je zit daarna nergens aan vast.
+
+> knop: PLAN EEN HUIDCONSULT
+
+---
+
+### /kennisbank/huidanalyse-rotterdam
+
+**Tabbladtitel:** Huidanalyse Rotterdam met de EVE-M | Diba Clinics
+
+**Google-omschrijving:** Huidanalyse in Rotterdam met de EVE-M. Een losse intake duurt maximaal 30 minuten en kost € 50. Wat er gemeten wordt en welke afspraak je boekt.
+
+**HUIDANALYSE IN ROTTERDAM**
+
+Een huidanalyse is een meting van je huid met een scanner die elke keer onder hetzelfde licht opneemt en ook onder UV kijkt, zodat je ziet wat er onder de oppervlakte zit. Bij Diba Clinics in Rotterdam gebeurt dat met de EVE-M, als onderdeel van de intake. Een losse intake met huidanalyse duurt maximaal 30 minuten en kost € 50.
+
+> knop: PLAN EEN AFSPRAAK
+
+> knop: BEKIJK DE TARIEVEN
+
+*DUUR*
+
+Max. 30 minuten
+
+*TARIEF*
+
+*APPARAAT*
+
+*AANRAKING*
+
+Geen
+
+**Wat een huidanalyse laat zien**
+
+Wat je in de spiegel ziet is de buitenkant. Een meting laat zien wat eronder zit, en legt het vast op een manier die je later kunt vergelijken.
+
+Twee mensen met dezelfde vlekken kunnen iets heel anders hebben. Pigment kan in de opperhuid zitten of dieper, en die diepte bepaalt welke behandeling er iets aan doet. Roodheid kan van een vaatje komen of van een ontsteking. In gewoon licht zie je dat verschil vaak niet, en dan behandel je op een gok.
+
+De EVE-M legt je huid vast en meet. Je gezicht komt in een vaste houder, zodat de afstand en de hoek bij elke opname gelijk zijn, en de belichting komt uit het apparaat zelf. Naast gewoon licht wordt er ook onder UV opgenomen, en dan is pigment dat dieper zit wel te zien. Er raakt niets je huid.
+
+Wat eruit komt is geen diagnose; die stelt een arts. Het is een vastlegging van wat er nu is: pigment, roodheid, poriën, vocht en tekenen van veroudering. Daarop bouwt de behandelaar het plan, en bij elke controle wordt dezelfde meting herhaald. Dan zie je op de opnames of het werkt, in plaats van dat je het moet geloven.
+
+Hoe het apparaat werkt staat op de pagina over de EVE-M. Wat er in de rest van de intake gebeurt, staat bij het huidconsult.
+
+**Waarom geen telefoonfoto**
+
+Iedereen kan een foto van zijn huid maken. Het verschil zit in wat je er na acht weken mee kunt.
+
+Een foto met je telefoon is elke keer anders: een andere afstand, ander licht, een andere hoek. Leg je er na acht weken een nieuwe naast, dan weet je nog steeds niet of er iets veranderd is of dat de zon anders stond.
+
+De EVE-M neemt die verschillen weg. Omdat de omstandigheden bij elke opname hetzelfde zijn, is een verschil op de opname ook een verschil in je huid. Daarmee kun je een traject bijsturen op wat er gemeten is, en stoppen als iets niet werkt.
+
+Het meten zelf doet niets met je huid. Je gaat meteen door met je dag, en wil je in dezelfde afspraak behandeld worden, dan reserveren we daar tijd voor.
+
+> knop: OVER DE EVE-M
+
+**Wat een huidanalyse bij ons kost**
+
+Een vast bedrag, en een regeling die bepaalt of je het apart betaalt. Die staat er compleet bij.
+
+- Consult gelaat € 50
+
+- Consult lichaam € 50
+
+- Consult laserontharen € 50
+
+De drie consulten kosten hetzelfde; ze verschillen in waar de behandelaar naar kijkt.
+
+**Alleen een huidanalyse**
+
+Dan boek je een losse intake. We reserveren daar maximaal 30 minuten voor, je huid wordt gemeten en je krijgt een behandelplan mee. Er wordt in deze afspraak niet behandeld, en de intake kost altijd € 50.
+
+**Meten en meteen beginnen**
+
+Dan boek je een behandeling op advies, de afspraak die de meeste mensen kiezen. We reserveren maximaal twee uur: de intake met de meting, en daarna minstens een uur om te behandelen. Wordt er behandeld, dan vervalt de intake en betaal je alleen de behandeling.
+
+**Tijdens een traject**
+
+Dan wordt dezelfde meting herhaald bij de controles. Zo zie je op de opnames wat er veranderd is, onder hetzelfde licht als de eerste keer.
+
+**Wat helpt en wat we afraden**
+
+Een huidanalyse legt vast wat er is. Hij behandelt niets en hij stelt geen diagnose.
+
+**DIT WERKT**
+
+- Vastleggen wat er nu is, op een manier die over maanden nog vergelijkbaar is
+
+- Zien wat er onder de oppervlakte zit, zoals pigment dat dieper ligt
+
+- Een behandelplan dat op een meting rust in plaats van op een inschatting
+
+- De voortgang van een traject controleren in plaats van inschatten
+
+**DIT RADEN WE AF**
+
+- Een diagnose stellen. Voor een plek of aandoening kijkt een arts mee
+
+- Behandelen. Er gebeurt tijdens de meting niets met je huid
+
+- Voorspellen wat een behandeling gaat opleveren
+
+- Een moedervlek beoordelen die verandert. Daarvoor ga je naar je huisarts
+
+**Welke afspraak je boekt**
+
+Er zijn drie manieren om met een meting te beginnen. Het verschil zit in de tijd die we reserveren en in wat je betaalt.
+
+*WAT ER GEBEURT*
+
+*GERESERVEERD*
+
+*KOSTEN*
+
+*Losse intake*
+
+Een meting van je huid en een behandelplan, zonder behandeling.
+
+*Behandeling op advies*
+
+De meting, het plan, en daarna de eerste behandeling als dat verantwoord is.
+
+Max. 120 minuten
+
+Alleen de behandeling, of € 50 als er niet behandeld wordt
+
+*Als je al klant bent*
+
+Geen nieuwe intake; je komt voor je behandeling, en bij controles wordt er opnieuw gemeten.
+
+60 minuten
+
+De behandeling
+
+**Waar je ons vindt in Rotterdam**
+
+Aan de noordkant van de stad, in een woonwijk en niet in een winkelstraat. Dat scheelt bij het parkeren en het is rustiger als je net behandeld bent.
+
+Je parkeert in de straat. De route vanaf de ring en met het openbaar vervoer staat op de contactpagina.
+
+*Maandag*
+
+Gesloten
+
+*Dinsdag*
+
+10:00 tot 18:00
+
+*Woensdag*
+
+10:00 tot 21:00
+
+*Donderdag*
+
+*Vrijdag*
+
+*Zaterdag*
+
+*Zondag*
+
+De agenda is actueler dan dit rijtje: binnen openingstijden staat niet elk uur een behandelaar vrij.
+
+De meting en het plan doet een huidtherapeut of een orthomoleculair huidspecialist. Rojda, de oprichter, legt de meting vaak zelf uit, en zij zegt het ook als behandelen geen zin heeft.
+
+Wie er werkt, met welke titel en wat die titel precies inhoudt, staat met foto en al op de teampagina.
+
+**Wat anderen erover zeggen.**
+
+Reviews van klanten over hun intake en de uitleg die ze kregen. Ze komen rechtstreeks uit onze agenda en staan er zoals ze geschreven zijn.
+
+- “Tijdens de intake duidelijke uitleg gehad over de scan/huidanalyse. Vervolgens uitleg gekregen over de aangeraden behandeling, alvorens er met de eerste behandeling werd begonnen. Fijne behandelaar en zeer vriendelijk!” Astrid Huidconsult MEER DAN EEN JAAR GELEDEN
+
+- “Heb de behandeling als zeer professioneel en plezierig ervaren. Vanaf het maken van de afspraak, de heldere intake over wat wel en niet mogelijk is en wat het kost, ben stipt op tijd geholpen en alles in een aangename sfeer.” Robin Huidconsult BIJNA 4 JAAR GELEDEN
+
+- “Vanaf het moment dat ik binnen kwam ben ik goed geinformeerd. Ook tijdens de consult heb ik veel vragen kunnen stellen en is er goed meegedacht. Ik ben blij met het oprechte advies en de behandelkeuze en mogelijkheden daarin.” Maryam Huidconsult MEER DAN 4 JAAR GELEDEN
+
+**Veelgestelde vragen**
+
+Wat kost een huidanalyse in Rotterdam?
+
+Bij Diba Clinics kost een intake met huidanalyse € 50. Boek je een behandeling op advies en wordt er in dezelfde afspraak behandeld, dan vervalt dat bedrag en betaal je alleen de behandeling.
+
+Hoe lang duurt een huidanalyse?
+
+Een losse intake met huidanalyse duurt maximaal 30 minuten. Wil je in dezelfde afspraak ook behandeld worden, dan reserveren we maximaal twee uur, met minstens een uur om te behandelen.
+
+Wat meet de EVE-M?
+
+Pigment, ook als het dieper in de huid zit, roodheid, poriën, vocht en tekenen van huidveroudering. De opnames worden onder vast licht en ook onder UV gemaakt, zodat ze bij een volgende meting te vergelijken zijn.
+
+Doet een huidanalyse pijn?
+
+Nee. Je gezicht komt in een houder en het apparaat maakt opnames; er raakt niets je huid. Je gaat daarna meteen door met je dag.
+
+Moet ik een huidanalyse doen voordat ik behandeld kan worden?
+
+Bij een eerste afspraak begin je met een intake, en bij de meeste klachten hoort daar een meting bij. Ben je al klant en kom je voor een behandeling die je eerder had, dan is er geen nieuwe intake nodig.
+
+Krijg ik een diagnose?
+
+Nee. Een meting is geen diagnose; dat is werk voor een arts. Wat je krijgt is wat er gemeten is en wat dat betekent voor wat er kan. Zien we iets waar een arts naar moet kijken, dan hoor je dat.
+
+Waarom niet gewoon een foto met mijn telefoon?
+
+Omdat die niet met een vorige te vergelijken is. Een andere afstand, ander licht, een andere hoek: na acht weken weet je dan nog steeds niet of er iets veranderd is of dat de zon anders stond.
+
+Hoe vaak wordt er gemeten?
+
+Eén keer aan het begin, daarna bij elke controle opnieuw. Zo zie je op de opnames of een traject werkt.
+
+Waar in Rotterdam zitten jullie?
+
+Aan de Weissenbruchlaan 166 in Rotterdam, aan de noordkant van de stad in een woonwijk. Je parkeert in de straat. De route en de openingstijden staan op onze contactpagina.
+
+**Weet je niet waar je moet beginnen**
+
+Dan is dit de plek. Een meting laat zien wat er speelt, en daarna hoor je wat erbij past, ook als het antwoord is dat je niets hoeft te doen.
+
+Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met iets anders, stel je vraag dan via WhatsApp. Daar zit een behandelaar aan de andere kant en geen formulier.
+
+> knop: Lees verder
+
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+
+**Een huidanalyse in Rotterdam plannen**
+
+Een meting van je huid met de EVE-M, en een plan dat daaruit volgt. Wil je meteen beginnen, boek dan een behandeling op advies.
+
+> knop: PLAN EEN HUIDCONSULT
+
+---
+
+### /kennisbank/huidkliniek-kiezen
+
+**Tabbladtitel:** Hoe kies je een huidkliniek | Diba Clinics
+
+**Google-omschrijving:** Waar je op let bij een huidkliniek: welke registers je zelf kunt nakijken, wat een intake hoort op te leveren en hoe je een voor-en-nafoto leest.
+
+**HOE KIES JE EEN HUIDKLINIEK**
+
+Bij het kiezen van een huidkliniek zijn vier dingen na te kijken zonder dat je er geweest bent: of je behandelaar in een openbaar register staat, of er eerst gemeten wordt voordat er behandeld wordt, of de tarieven vooraf op de site staan, en of er wordt uitgelegd wanneer iets juist niet verstandig is. De rest merk je pas in de behandelkamer.
+
+> knop: PLAN EEN AFSPRAAK
+
+> knop: BEKIJK DE TARIEVEN
+
+*NA TE KIJKEN*
+
+Openbare registers
+
+*BESCHERMDE TITEL*
+
+Huidtherapeut
+
+*VOORAF*
+
+Een meting
+
+*ONAFHANKELIJK*
+
+ZorgkaartNederland
+
+**Wat je vooraf kunt nakijken**
+
+Vier dingen staan online en zijn in tien minuten te controleren. Ze zeggen niet alles, maar ze zeggen meer dan een indruk van een website.
+
+Huidtherapeut is een wettelijk beschermde opleidingstitel, vastgelegd in artikel 34 van de Wet BIG. Daar hoort een hbo-bachelor huidtherapie van vier jaar bij, en die opleiding bestaat in Nederland op twee plekken. Schoonheidsspecialist is geen beschermde titel; dat zegt niets over iemands vakmanschap, maar het betekent wel dat de titel zelf geen garantie draagt.
+
+De titel zegt dat iemand de opleiding heeft gedaan. Het Kwaliteitsregister Paramedici zegt iets anders: dat iemand het vak ook uitoefent en bijhoudt. Voor herregistratie tellen minstens 1600 werkuren over drie jaar plus 160 punten bijscholing. Dat register is openbaar en je zoekt er op naam, ook op de naam van je behandelaar bij een andere kliniek.
+
+Voor het niet-paramedische deel van het werk bestaan ANBOS en het SKIN Register. Het eerste is de branchevereniging met een gedragscode, hygiënerichtlijnen en een klachtenregeling; het tweede registreert schoonheidsspecialisten op eigen naam. Ook die zijn na te zoeken.
+
+En dan zijn er de beoordelingen. Een cijfer dat op de site zelf staat, staat er omdat iemand het daar heeft gezet. Een oordeel dat buiten de kliniek om wordt bijgehouden, zoals op ZorgkaartNederland van de Patiëntenfederatie, kan door de kliniek niet geplaatst of weggehaald worden, en zegt daarmee meer.
+
+Bij welke registers wij horen en hoe je dat nakijkt staat op kwaliteit en registraties. Wie hier werkt en met welke titel staat bij het team.
+
+**Wat een eerste afspraak oplevert**
+
+Het tweede deel zie je pas als je binnen bent, en het is het deel dat het verschil maakt tussen een behandeling en een plan.
+
+Een eerste afspraak hoort te beginnen met kijken en meten, en niet met behandelen. Zonder vertrekpunt is achteraf niet vast te stellen of er iets is veranderd, en dan blijft alleen het gevoel over dat het wel goed zat. Vraag dus of er gemeten wordt, waarmee, en of je die opname terugkrijgt.
+
+Daarna hoort er een plan te komen waarin staat wat er nodig is, hoeveel keer dat is en wat het kost. Een bedrag dat pas in de behandelkamer valt is geen prijsafspraak maar een verrassing. Alle tarieven horen vooraf vindbaar te zijn, en die van ons staan op de tarievenpagina.
+
+Het derde is het lastigste om te vragen en het meest zeggend: wat gebeurt er als behandelen op dat moment niet verstandig is. Een huid die ontstoken is, een gebruinde huid vlak voor een laserbehandeling, een plek die eerst door een arts beoordeeld moet worden. Daar hoort een nee bij, met een reden en een alternatief.
+
+Ten slotte de foto's. Een voor-en-nafoto is alleen te vergelijken als het licht, de hoek, de afstand en de make-up gelijk zijn. Verschilt daar iets aan, dan vergelijk je twee opnames en geen resultaat. Vraag hoe de opnames gemaakt worden, en of je die van jezelf naast elkaar te zien krijgt.
+
+> knop: WAT EEN HUIDCONSULT INHOUDT
+
+**Wat helpt en wat we afraden**
+
+Deze punten zeggen iets over de manier van werken. Over de uitkomst van jouw behandeling zeggen ze minder dan mensen hopen.
+
+**DIT WERKT**
+
+- Of de titel van je behandelaar beschermd is, en of de registratie klopt
+
+- Of er gemeten wordt voordat er behandeld wordt
+
+- Of het tarief vooraf vindbaar is, met varianten en al
+
+- Of er uitgelegd wordt wanneer iets beter niet gebeurt
+
+**DIT RADEN WE AF**
+
+- Of een behandeling bij jouw huid past. Dat volgt pas uit de meting
+
+- Hoeveel sessies je nodig hebt. Een getal vooraf gaat over iemand anders zijn huid
+
+- Of een duurder apparaat een beter resultaat geeft. Wat telt is de keuze erachter
+
+- Hoe het voelt om er te zitten. Daarvoor moet je een keer geweest zijn
+
+**Zeven dingen om na te vragen**
+
+Wat je kunt controleren, hoe je dat doet, en hoe het bij ons geregeld is. De middelste kolom werkt bij elke kliniek, ook als je hier niet komt.
+
+*WAAR JE OP LET*
+
+*HOE JE HET NAKIJKT*
+
+*BIJ ONS*
+
+*De titel van je behandelaar*
+
+Huidtherapeut is beschermd in artikel 34 van de Wet BIG, met een hbo-opleiding van vier jaar erachter.
+
+Vijf huidtherapeuten, met naam en functie op de teampagina
+
+*De registratie*
+
+Het Kwaliteitsregister Paramedici is openbaar; je zoekt er op naam.
+
+Onze huidtherapeuten staan erin, en de schoonheidsspecialisten in het SKIN Register
+
+*De meting vooraf*
+
+Vraag of er gemeten wordt voordat er behandeld wordt, en waarmee.
+
+Elke eerste afspraak begint met een meting op de EVE-M; € 50, en dat vervalt bij behandelen
+
+*Het tarief*
+
+Zoek de prijslijst op de site en kijk of jouw behandeling er met varianten in staat.
+
+Alle tarieven staan online, ook de losse zones bij ontharen
+
+*Wanneer iets niet doorgaat*
+
+Vraag wat er gebeurt als behandelen op dat moment niet verstandig is.
+
+Dan hoor je dat bij de meting, met de reden erbij en met waar je wel terechtkunt
+
+*De voor-en-nafoto's*
+
+Let op licht, hoek, afstand en make-up. Verschilt dat, dan vergelijk je twee opnames.
+
+Opnames uit het eigen apparaat, onder hetzelfde licht, die je bij de controle naast elkaar ziet
+
+*De beoordelingen*
+
+Kijk of er ook een oordeel bestaat dat niet door de kliniek zelf wordt bijgehouden.
+
+Onze reviews komen uit de agenda, en op ZorgkaartNederland staan we met een 9,7
+
+**Waar je ons vindt in Rotterdam**
+
+Aan de noordkant van de stad, in een woonwijk en niet in een winkelstraat. Dat scheelt bij het parkeren en het is rustiger als je net behandeld bent.
+
+Je parkeert in de straat. De route vanaf de ring en met het openbaar vervoer staat op de contactpagina.
+
+*Maandag*
+
+Gesloten
+
+*Dinsdag*
+
+10:00 tot 18:00
+
+*Woensdag*
+
+10:00 tot 21:00
+
+*Donderdag*
+
+*Vrijdag*
+
+*Zaterdag*
+
+*Zondag*
+
+De agenda is actueler dan dit rijtje: binnen openingstijden staat niet elk uur een behandelaar vrij.
+
+Bij ons werken vijf huidtherapeuten, schoonheidsspecialisten en orthomoleculair huidspecialisten. Welke titel bij welke behandeling hoort staat per persoon op de teampagina, en wie jouw afspraak doet hoor je bij het maken ervan.
+
+Wie er werkt, met welke titel en wat die titel precies inhoudt, staat met foto en al op de teampagina.
+
+**Veelgestelde vragen**
+
+Waar let ik op bij een voor-en-nafoto?
+
+Op licht, hoek, afstand en make-up. Zijn die vier gelijk, dan vergelijk je een huid met dezelfde huid. Verschilt er iets aan, dan vergelijk je twee opnames en zegt het verschil niets over de behandeling. Vraag ook of de foto's uit een vast apparaat komen of uit een telefoon.
+
+Is een duurdere behandeling beter?
+
+Niet automatisch. De prijs zegt iets over het apparaat, de tijd en de producten, en niets over of die behandeling bij jouw klacht past. Een goedkopere behandeling die het juiste doet levert meer op dan een dure die het verkeerde doet. Dat verschil komt uit de meting en niet uit de prijslijst.
+
+Moet ik een behandelplan op papier krijgen?
+
+Je hoort in elk geval te horen wat er nodig is, hoeveel sessies dat zijn en wat het kost, voordat je iets afspreekt. Bij ons gaat dat gesprek na de meting, en je krijgt de uitkomst mee. Je zit daarna nergens aan vast.
+
+Mag ik vragen wie mij behandelt?
+
+Ja, en dat is een normale vraag. Bij ons staat op de teampagina wie er werkt en met welke titel, en bij het maken van de afspraak hoor je wie hem doet. Wissel je van behandelaar, dan blijft je dossier met de metingen gewoon staan.
+
+Wat als een kliniek meteen wil behandelen?
+
+Vraag dan waarop die keuze gebaseerd is. Behandelen zonder meting kan prima uitpakken, maar achteraf is niet vast te stellen wat er is veranderd, en bij een klacht die niet reageert weet je niet waar het misging. Bij ons begint een eerste afspraak daarom met kijken en meten.
+
+Hoe weet ik of een kliniek bij mijn verzekeraar hoort?
+
+Dat staat in de zorgzoeker van je verzekeraar en meestal ook op de site van de kliniek. Een contract betekent niet dat alles vergoed wordt: dat hangt af van je aanvullende polis en van de indicatie. Wij zijn gecontracteerd bij alle Nederlandse zorgverzekeraars.
+
+Zegt een certificaat van een apparaat iets?
+
+Het zegt dat het apparaat is wat het heet, en dat is nuttig. Het zegt niets over de instelling waarmee ermee gewerkt wordt, en juist daar zit het verschil tussen een goede en een matige behandeling. Vraag dus liever wie het apparaat bedient en hoe de instelling gekozen wordt.
+
+Wat is een redelijke uitkomst van een eerste afspraak?
+
+Dat je weet wat je hebt, wat eraan te doen is, hoeveel keer dat vraagt en wat het kost. En dat je hoort wat er níet aan te doen is. Komt er uit de meting niets wat behandeling vraagt, dan is dat ook een uitkomst en heb je een consult betaald in plaats van een traject.
+
+Kan ik ergens terecht met een klacht over een behandeling?
+
+Ja. Voor het paramedische deel loopt dat via de beroepsvereniging en het Kwaliteitsregister Paramedici; voor het schoonheidsdeel via de ANBOS-klachtenregeling. Die routes staan los van de kliniek zelf, en dat is precies de bedoeling ervan.
+
+Waar in Rotterdam zitten jullie?
+
+Aan de Weissenbruchlaan 166 in Rotterdam, aan de noordkant van de stad in een woonwijk. Je parkeert in de straat. De route en de openingstijden staan op onze contactpagina.
+
+**Twijfel je over een aanbod**
+
+Leg het gerust hier voor. We zeggen wat we ervan vinden, ook als het antwoord is dat wat je gevonden hebt prima klinkt of dat je met die klacht bij een arts hoort. Daar hoef je geen afspraak voor te maken.
+
+Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met iets anders, stel je vraag dan via WhatsApp. Daar zit een behandelaar aan de andere kant en geen formulier.
+
+> knop: Lees verder
+
+Laatst bijgewerkt op 12 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+
+**Kom langs en kijk zelf**
+
+In het huidconsult meten we je huid en bespreken we wat er mogelijk is, met het aantal sessies en het tarief erbij. Daarna beslis je, en je zit nergens aan vast.
+
+> knop: PLAN EEN HUIDCONSULT
+
+---
+
+### /kennisbank/huidtherapeut-rotterdam
+
+**Tabbladtitel:** Huidtherapeut Rotterdam | Diba Clinics
+
+**Google-omschrijving:** Huidtherapeut in Rotterdam bij Diba Clinics. Wat een huidtherapeut doet, wanneer huidtherapie vergoed wordt en hoe je eerste afspraak gaat. Intake € 50.
+
+**HUIDTHERAPEUT IN ROTTERDAM**
+
+Een huidtherapeut is een paramedicus met een hbo-opleiding die huidklachten behandelt, zoals acne, littekens, pigment, couperose en ongewenste haargroei. Bij Diba Clinics aan de Weissenbruchlaan in Rotterdam werken vijf huidtherapeuten, allemaal ingeschreven in het Kwaliteitsregister Paramedici. Een intake kost € 50 en vervalt als je in dezelfde afspraak behandeld wordt.
+
+> knop: PLAN EEN AFSPRAAK
+
+> knop: BEKIJK DE TARIEVEN
+
+*OPLEIDING*
+
+Hbo, vier jaar
+
+*TITEL*
+
+Wettelijk beschermd
+
+*REGISTER*
+
+*INTAKE*
+
+**Wat een huidtherapeut voor je doet**
+
+Huidtherapie zit tussen de verzorgende behandeling en de dermatoloog in. Het helpt om te weten waar precies, want dat bepaalt waarvoor je waar terechtkunt.
+
+Een huidtherapeut behandelt de huid op een medisch-cosmetische manier: klachten die je dagelijks ziet en voelt, maar waarvoor je niet naar het ziekenhuis hoeft. Denk aan acne en de littekens die het achterlaat, pigmentvlekken, couperose en rosacea, ongewenste haargroei, littekens na een operatie en een huid die sneller veroudert dan je wilt.
+
+Het werk gebeurt met apparatuur en middelen waarbij de instelling per huid wordt gekozen: lasers en licht, microneedling, medische peelings. Daar maakt de opleiding het verschil. Hoe diep je gaat, hoeveel energie een huid aankan en wanneer je beter niet behandelt, zijn beslissingen die je in vier jaar opleiding leert en daarna bijhoudt in het register.
+
+Een huidtherapeut stelt geen diagnose; dat is het werk van een arts. Ziet de huidtherapeut iets wat een arts moet beoordelen, zoals een moedervlek die verandert, dan hoor je dat. Er is bij ons geen vast overleg met artsen, dus in dat geval adviseren we je zelf naar je huisarts te gaan.
+
+Welke klachten we behandelen staat per klacht in het overzicht van huidproblemen. Welke behandelingen we daarvoor inzetten, met tarief en hersteltijd, staat bij de behandelingen. Moet je nog kiezen waar je heen gaat, dan staat bij hoe je een huidkliniek kiest waar je zelf op kunt letten.
+
+**Een titel die je kunt nakijken**
+
+Niet elke titel in deze branche zegt iets over de opleiding erachter. Deze wel, en je kunt het zelf controleren.
+
+Huidtherapeut is een wettelijk beschermde opleidingstitel, vastgelegd in artikel 34 van de Wet BIG. Je mag je alleen zo noemen met de hbo-bachelor huidtherapie, en die opleiding bestaat in Nederland op twee plekken: de Haagse Hogeschool en Hogeschool Utrecht.
+
+De titel zegt dat iemand de opleiding heeft afgerond. Het Kwaliteitsregister Paramedici zegt iets anders: dat iemand het vak ook echt uitoefent en zijn kennis bijhoudt. Leden van de Nederlandse Vereniging van Huidtherapeuten moeten in dat register staan, en onze huidtherapeuten staan erin.
+
+Kijk je dat liever zelf na, dan kan dat: het register is openbaar en je zoekt er op naam. Dat geldt voor elke huidtherapeut, ook buiten deze kliniek, en het is de snelste manier om te weten met wie je te maken hebt.
+
+> knop: ONZE REGISTRATIES
+
+**Wat een afspraak bij ons kost**
+
+Een intake, en daarna de behandeling die bij je huid past. Of je verzekering meebetaalt, hangt af van je klacht en je polis.
+
+- Intake met huidanalyse € 50
+
+- Medische peeling vanaf € 140
+
+- Microneedling vanaf € 180
+
+- IPL bij pigment of roodheid vanaf € 75
+
+- HydraFacial vanaf € 170
+
+Huidtherapie zit niet in de basisverzekering, maar bij de meeste verzekeraars wel in het aanvullende pakket. Dan moet er een medische reden zijn, en vaak een verwijzing van je huisarts vóór de eerste behandeling. Hoe dat per stap zit, staat op de pagina over vergoedingen.
+
+**Kom je voor het eerst**
+
+Dan boek je een behandeling op advies. We reserveren daar maximaal twee uur voor: de intake, en daarna minstens een uur om te behandelen. Is behandelen op dat moment verantwoord en wil je dat, dan doen we de behandeling in dezelfde afspraak.
+
+**Wat de intake kost**
+
+Wordt er in dezelfde afspraak behandeld, dan vervallen de intakekosten en betaal je alleen de behandeling. Gaat de behandeling niet door, dan kost de intake € 50. Een losse intake zonder behandeling duurt maximaal 30 minuten en kost altijd € 50.
+
+**Wil je het vergoed krijgen**
+
+Regel dan vóór je eerste afspraak de verwijzing van je huisarts, als je polis die vraagt, en zeg bij het boeken dat je een vergoeding verwacht. Dan kijken we meteen of alles klopt. Achteraf een verwijzing opsturen accepteren verzekeraars zelden.
+
+**Wat helpt en wat we afraden**
+
+Een huidtherapeut behandelt wat in en op de huid speelt. Voor een diagnose, voor medicijnen en voor wat met spoed moet, ben je bij een arts.
+
+**DIT WERKT**
+
+- Acne, en de littekens en vlekken die het achterlaat
+
+- Pigmentvlekken, couperose en rosacea
+
+- Ongewenste haargroei, ook bij PCOS
+
+- Littekens na een operatie of keizersnede, en striae
+
+- Een huid die sneller veroudert of verslapt dan je wilt
+
+**DIT RADEN WE AF**
+
+- Een diagnose stellen. Twijfel je over een plek die verandert, dan ga je naar je huisarts
+
+- Medicijnen voorschrijven. Antibiotica, de pil of isotretinoïne lopen via je huisarts of dermatoloog
+
+- Een ontsteking die koorts geeft of snel erger wordt. Dan bel je dezelfde dag je huisarts
+
+- Beloven hoeveel sessies je nodig hebt. Dat hangt af van hoe je huid reageert, en dat meten we tussendoor
+
+- Behandelen als het op dat moment niet verstandig is. Dan hoor je dat, en adviseren we te wachten of een arts te zien
+
+**Wie doet wat in de huidzorg**
+
+Vier titels die je tegenkomt als je iets aan je huid wilt laten doen. Wat de opleiding is, of de titel beschermd is en waarvoor je er komt.
+
+*BESCHERMD*
+
+*WAARVOOR JE ER KOMT*
+
+Hbo-bachelor huidtherapie
+
+Ja, artikel 34 van de Wet BIG
+
+Acne, littekens, pigment, vaatjes en haargroei, behandeld met apparatuur en peelings
+
+*Dermatoloog*
+
+Arts, daarna de specialisatie tot dermatoloog
+
+Ja, in het BIG-register
+
+Een diagnose, huidziekten, verdachte plekken en medicijnen. Meestal via je huisarts
+
+*Schoonheidsspecialist*
+
+Een vakopleiding, meestal op mbo-niveau
+
+Nee
+
+Verzorgende behandelingen: reinigen, verzorgen en ontspannen
+
+*Orthomoleculair huidspecialist*
+
+Een aanvullende opleiding naast de huidtherapie of schoonheidsspecialiste
+
+Wat er van binnenuit meespeelt: voeding, hormonen en vertering
+
+**Waar je ons vindt in Rotterdam**
+
+Aan de noordkant van de stad, in een woonwijk en niet in een winkelstraat. Dat scheelt bij het parkeren en het is rustiger als je net behandeld bent.
+
+Je parkeert in de straat. De route vanaf de ring en met het openbaar vervoer staat op de contactpagina.
+
+*Maandag*
+
+Gesloten
+
+*Dinsdag*
+
+10:00 tot 18:00
+
+*Woensdag*
+
+10:00 tot 21:00
+
+*Donderdag*
+
+*Vrijdag*
+
+*Zaterdag*
+
+*Zondag*
+
+De agenda is actueler dan dit rijtje: binnen openingstijden staat niet elk uur een behandelaar vrij.
+
+Bij ons werken Andres, Iris, Griselle, Cheyenne en Anouk: vijf huidtherapeuten, allemaal ingeschreven in het Kwaliteitsregister Paramedici. India doet de laserbehandelingen en volgt de opleiding tot huidtherapeut.
+
+Wie er werkt, met welke titel en wat die titel precies inhoudt, staat met foto en al op de teampagina.
+
+**Wat anderen erover zeggen.**
+
+Reviews waarin klanten iets zeggen over de kennis en de zorgvuldigheid van hun behandelaar. Ze komen rechtstreeks uit onze agenda en staan er zoals ze geschreven zijn.
+
+- “Andres dankjewel voor jouw aandacht, professionaliteit, gezelligheid en vakkennis! Zoals gebruikelijk een hele fijne afspraak gehad bij Diba Clinics.” Martyna Behandeling bij Andres 4 MAANDEN GELEDEN
+
+- “Mijn allereerste ervaring bij een huidtherapeut én met Andres was uitstekend! Hele informatieve en fijne intake. Direct een vervolg afspraak geboekt!” Oscaly Huidconsult MEER DAN 4 JAAR GELEDEN
+
+- “Ik heb een fijne gezichtsbehandeling gehad bij Andres. Hij werkte professioneel en nam echt de tijd. Mijn huid voelde na afloop fris en verzorgd aan.” Ouarda Gezichtsbehandeling 8 MAANDEN GELEDEN
+
+**Veelgestelde vragen**
+
+Wat kost een huidtherapeut in Rotterdam?
+
+Bij Diba Clinics kost een intake met huidanalyse € 50. Wordt er in dezelfde afspraak behandeld, dan vervalt dat bedrag en betaal je alleen de behandeling. Behandelingen hebben elk hun eigen tarief; een medische peeling begint bij € 140 en microneedling bij € 180. Alle bedragen staan op onze tarievenpagina.
+
+Wordt huidtherapie vergoed?
+
+Soms. Huidtherapie zit niet in de basisverzekering, maar bij de meeste verzekeraars wel in het aanvullende pakket. Dan moet er een medische reden zijn, en vaak een verwijzing van je huisarts die er is vóór de eerste behandeling. Een cosmetische behandeling wordt niet vergoed.
+
+Heb ik een verwijzing van de huisarts nodig?
+
+Om bij ons te komen niet: je kunt rechtstreeks een afspraak maken. Voor een vergoeding soms wel, want veel aanvullende pakketten vergoeden alleen met een verwijzing. Regel die dan vóór je eerste afspraak; achteraf accepteren verzekeraars hem zelden.
+
+Wat is het verschil tussen een huidtherapeut en een dermatoloog?
+
+Een dermatoloog is een arts. Die stelt diagnoses, behandelt huidziekten en schrijft medicijnen voor, en je komt er meestal via je huisarts. Een huidtherapeut is een paramedicus die huidklachten behandelt met apparatuur, peelings en begeleiding, en je kunt er rechtstreeks terecht. Ben je onder behandeling bij een dermatoloog, dan kun je vaak ook bij ons terecht; vertel het ons wel.
+
+Wat is het verschil met een schoonheidsspecialist?
+
+De opleiding en de titel. Huidtherapeut is een beschermde titel met een hbo-opleiding van vier jaar; schoonheidsspecialist is geen beschermde titel. In de praktijk zie je het verschil vooral bij behandelingen waarbij de instelling per huid telt, zoals laser, microneedling en sterkere peelings.
+
+Hoe weet ik of een huidtherapeut geregistreerd is?
+
+Door het na te kijken in het Kwaliteitsregister Paramedici. Dat register is openbaar en je zoekt er op naam. Onze huidtherapeuten staan erin, en hun namen staan op de teampagina.
+
+Welke klachten behandelt een huidtherapeut?
+
+Acne en acnelittekens, pigmentvlekken, couperose en rosacea, ongewenste haargroei, littekens na een operatie, striae en huidveroudering. Twijfel je over wat je hebt, dan beginnen we met een meting, en als het iets is voor een arts, hoor je dat.
+
+Hoe gaat een eerste afspraak?
+
+Je boekt een behandeling op advies. We reserveren maximaal twee uur: de intake met een meting van je huid, en daarna minstens een uur om te behandelen als dat verantwoord is en je dat wilt. Je zit daarna nergens aan vast.
+
+Waar in Rotterdam zitten jullie?
+
+Aan de Weissenbruchlaan 166 in Rotterdam, aan de noordkant van de stad in een woonwijk. Je parkeert in de straat. De route en de openingstijden staan op onze contactpagina.
+
+**Weet je niet of je hier goed zit**
+
+Dat hoef je ook niet te weten voordat je komt. We meten je huid, bespreken wat er speelt en zeggen of het iets is voor ons, voor je huisarts of voor allebei. Blijkt behandelen niet verstandig, dan hoor je dat en doen we het niet.
+
+Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met iets anders, stel je vraag dan via WhatsApp. Daar zit een behandelaar aan de andere kant en geen formulier.
+
+> knop: Lees verder
+
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+
+**Naar een huidtherapeut in Rotterdam**
+
+We beginnen met een meting van je huid en bespreken daarna wat erbij past. Is behandelen verstandig, dan kan dat vaak in dezelfde afspraak.
+
+> knop: PLAN EEN HUIDCONSULT
+
+---
+
+### /kennisbank/hydrafacial-rotterdam
+
+**Tabbladtitel:** HydraFacial Rotterdam | Diba Clinics
+
+**Google-omschrijving:** HydraFacial in Rotterdam bij Diba Clinics. Zestig minuten, € 170 tot € 220, geen hersteltijd. Wat het doet, voor wie het past en hoe een afspraak gaat.
+
+**HYDRAFACIAL IN ROTTERDAM**
+
+Een HydraFacial is een gezichtsbehandeling waarbij één mondstuk tegelijk reinigt, de bovenste huidlaag losmaakt, poriën leegzuigt en er werkzame stoffen in brengt. Bij Diba Clinics aan de Weissenbruchlaan in Rotterdam duurt de behandeling 60 minuten, kost hij 170 tot 220 euro en is er geen hersteltijd.
+
+> knop: PLAN EEN AFSPRAAK
+
+> knop: BEKIJK DE TARIEVEN
+
+*DUUR*
+
+*TARIEF*
+
+€ 170 tot € 220
+
+*HERSTELTIJD*
+
+Geen
+
+*APPARAAT*
+
+HydraFacial Syndeo
+
+**Wat een HydraFacial met je huid doet**
+
+Het begint niet bij het apparaat maar bij wat er in je huid speelt, want dat bepaalt of deze behandeling er iets aan doet.
+
+Je huid maakt voortdurend nieuwe cellen aan en laat de oude aan de buitenkant los. Dat loslaten gaat niet bij iedereen even vlot. Blijven die cellen te lang zitten, dan hopen ze zich samen met talg en resten van make-up op in je poriën. Dat is wat je ziet als je huid dof staat en je poriën groter lijken dan ze zijn: er zit iets in, en het licht weerkaatst niet meer op een gladde laag maar op een onregelmatige.
+
+Een HydraFacial haalt dat weg, en doet het in één beweging. In het mondstuk zit een spiraalvormig kanaal waar tegelijk onderdruk op staat en vloeistof doorheen loopt. Die twee samen maken een wervelende beweging over je huid. De vloeistof maakt de verbinding tussen de buitenste cellen los, de onderdruk trekt ze mee naar buiten samen met wat er in de porie zat, en via hetzelfde kanaal gaat er in dezelfde doorgang een serum naar binnen.
+
+De behandeling blijft aan de oppervlakte, in de hoornlaag en de bovenste opperhuid. Dat is precies de reden dat je het resultaat meteen ziet en er verder niets van merkt: er wordt niets beschadigd dat daarna moet herstellen. Het is ook de reden dat het effect tijdelijk is. Je hoornlaag vernieuwt zichzelf, dus wat je nu weghaalt bouwt zich in de weken erna weer op.
+
+Hoe het mondstuk precies is opgebouwd en waarom de tips verschillen, staat op de pagina over de HydraFacial Syndeo. De behandeling zelf, los van de plaats, staat op de behandelpagina. Of een gezichtsbehandeling tijdens een zwangerschap kan, staat bij zwanger of borstvoeding.
+
+**HydraFacial en hydradermabrasie**
+
+De namen worden door elkaar gebruikt, maar het is niet hetzelfde apparaat. Dat is de moeite waard zodra je tarieven naast elkaar legt, en niet alleen bij ons.
+
+HydraFacial is een merknaam en geen soort behandeling. Er bestaan meer apparaten die met onderdruk en vloeistof werken; die heten hydradermabrasie. Ze werken volgens hetzelfde principe en het resultaat gaat dezelfde kant op, maar het mondstuk, de vloeistoffen en de tips verschillen per fabrikant.
+
+Wij werken met de HydraFacial Syndeo, het huidige model van het merk zelf. De tips zijn wegwerpartikelen en gaan per behandeling; welke er gebruikt wordt hangt af van je huid en van het doel. Dat is geen detail voor de folder: de grofte van de spiraal bepaalt hoeveel er losgemaakt wordt.
+
+Leg je tarieven van verschillende klinieken naast elkaar, vraag dan welk apparaat er staat en welke tips erbij horen. Dat is een gewone vraag en je hoort er gewoon antwoord op te krijgen. Het antwoord bepaalt of je twee keer hetzelfde vergelijkt.
+
+> knop: OVER DIT APPARAAT
+
+**Wat een HydraFacial bij ons kost**
+
+Drie varianten, allemaal 60 minuten. De intakeregeling staat er compleet bij, want dat is het bedrag dat mensen bij een eerste afspraak niet zien aankomen.
+
+- Signature € 170
+
+- Deluxe € 190
+
+- Platinum € 220
+
+Welke van de drie bij je past bespreekt de behandelaar tijdens de intake, op basis van wat je huid nodig heeft en wat je met de behandeling wilt.
+
+**Kom je voor het eerst**
+
+Dan boek je een behandeling op advies. We reserveren daar maximaal twee uur voor: de intake, en daarna minstens een uur om te behandelen. Is behandelen op dat moment verantwoord en wil je dat, dan doen we de HydraFacial in dezelfde afspraak.
+
+**Wat de intake kost**
+
+Wordt er in dezelfde afspraak behandeld, dan vervallen de intakekosten en betaal je alleen de behandeling. Gaat de behandeling niet door, dan kost de intake € 50. Een losse intake zonder behandeling duurt maximaal 30 minuten en kost altijd € 50.
+
+**Ben je hier al eerder geweest**
+
+Dan boek je de HydraFacial rechtstreeks in de agenda. Reken op 60 minuten. Is er sinds je laatste bezoek iets veranderd aan je huid, je medicatie of je verwachting, zeg dat dan bij binnenkomst. Dat verandert soms de keuze van de tip of het serum.
+
+**Wat helpt en wat we afraden**
+
+Een HydraFacial werkt op wat er in en op je huid ligt. Voor alles wat dieper zit is er een andere behandeling, en dan zeggen we dat.
+
+**DIT WERKT**
+
+- Een doffe huid en poriën waar zichtbaar iets in zit, vooral rond je neus en kin
+
+- Een huid die er binnen een dag beter uit moet zien, bijvoorbeeld voor een gelegenheid
+
+- Onderhoud naast een lopend traject voor acne, pigment of huidverbetering
+
+- Een eerste kennismaking als je nog niet weet wat je huid nodig heeft
+
+**DIT RADEN WE AF**
+
+- Littekens en pigment dat dieper in de huid zit. Daar werkt microneedling of laser op, want die komen in de laag waar het probleem zit.
+
+- Blijvend verschil in de structuur van je huid. Een HydraFacial is onderhoud; het effect houdt dagen tot weken aan en bouwt niet op.
+
+- Actieve, ontstoken acne. Dan begint het bij het acnetraject en niet bij een losse behandeling.
+
+- Een huid die net gepeeld, gelaserd of genaald is. Daar houden we tijd tussen; hoeveel hangt af van wat er gedaan is.
+
+**Naast de andere gezichtsbehandelingen**
+
+Wie deze naam kent, kent de andere vaak niet. Dit is wat ze doen, wat je erna merkt en wat ze kosten.
+
+*BEHANDELING*
+
+*WAARIN HET VERSCHILT*
+
+*VANAF*
+
+Haalt eruit wat erin zit en brengt in dezelfde beweging stoffen terug. Je ziet het meteen.
+
+Er is doorgaans geen hersteltijd en je kunt na de afspraak je dag vervolgen.
+
+*Oxygeneo glow*
+
+Maakt de bovenste laag los met een gel in plaats van met onderdruk, waarbij er in de huid zuurstof vrijkomt. Rustiger aan je huid, minder gericht op het legen van poriën.
+
+Geen.
+
+€ 150
+
+*Dermaplaning*
+
+Schraapt de dode laag en het donshaar er met een mesje af. Vooral voor een gladde huid onder make-up; het doet niets aan wat er in de porie zit.
+
+*Medische peelings*
+
+Werkt met zuren en gaat dieper. Meer effect op pigment en op de structuur, en daardoor ook meer reactie van je huid na afloop.
+
+Twee tot vijf dagen droog en schilferig, afhankelijk van de sterkte.
+
+€ 140
+
+*SkinPen Microneedling*
+
+Maakt met naalden kleine kanaaltjes in de lederhuid, zodat je huid zelf collageen gaat aanmaken. Voor littekens en structuur, met een paar dagen roodheid.
+
+Eén tot drie dagen rood, als een stevige zonnegloed.
+
+€ 180
+
+**Waar je ons vindt in Rotterdam**
+
+Aan de noordkant van de stad, in een woonwijk en niet in een winkelstraat. Dat scheelt bij het parkeren en het is rustiger als je net behandeld bent.
+
+Je parkeert in de straat. De route vanaf de ring en met het openbaar vervoer staat op de contactpagina.
+
+*Maandag*
+
+Gesloten
+
+*Dinsdag*
+
+10:00 tot 18:00
+
+*Woensdag*
+
+10:00 tot 21:00
+
+*Donderdag*
+
+*Vrijdag*
+
+*Zaterdag*
+
+*Zondag*
+
+De agenda is actueler dan dit rijtje: binnen openingstijden staat niet elk uur een behandelaar vrij.
+
+Een HydraFacial wordt bij ons gedaan door een huidtherapeut of een orthomoleculair huidspecialist. De huidtherapeuten staan in het Kwaliteitsregister Paramedici en zijn aangesloten bij de Nederlandse Vereniging van Huidtherapeuten.
+
+Wie er werkt, met welke titel en wat die titel precies inhoudt, staat met foto en al op de teampagina.
+
+**Wat anderen erover zeggen.**
+
+Reviews van klanten die hier voor een gezichtsbehandeling waren. Ze komen rechtstreeks uit onze agenda en staan er zoals ze geschreven zijn.
+
+- “Super fijne gezichtsbehandeling gehad! De producten die me zijn geadviseerd, vind ik ook heel erg fijn.” Hajar Gezichtsbehandeling ONGEVEER EEN JAAR GELEDEN
+
+- “Vandaag behandeld door de lieve en kundige Iris voor de skinpen/dermapen. Altijd blij met Diba clinics!” Ezgi Microneedling MEER DAN EEN JAAR GELEDEN
+
+- “Hele fijne Hydrafacial behandeling gehad door Iris. Wat een lieve meid! Bedankt en tot de volgende keer!” Rojda HydraFacial MEER DAN 2 JAAR GELEDEN
+
+**Veelgestelde vragen**
+
+Wat kost een HydraFacial in Rotterdam?
+
+Bij Diba Clinics kost een HydraFacial € 170 voor de Signature, € 190 voor de Deluxe en € 220 voor de Platinum. Een behandeling duurt 60 minuten. Kom je voor het eerst, dan boek je een behandeling op advies: die begint met een intake, en de intakekosten van € 50 vervallen zodra we in dezelfde afspraak behandelen.
+
+Hoe lang duurt een HydraFacial?
+
+60 minuten. Voor een eerste afspraak reserveren we maximaal twee uur, omdat daar de intake bij komt en er geen haast mag ontstaan. Die tijd is een maximum en geen verplichting; vaak ben je eerder klaar.
+
+Heb je hersteltijd na een HydraFacial?
+
+Nee. Je huid is na afloop roze en voelt strak aan, en dat trekt meestal binnen een uur weg. Make-up kan dezelfde dag nog. Je kunt er direct na de afspraak weer mee de deur uit.
+
+Hoe vaak kun je een HydraFacial doen?
+
+Los te doen, of maandelijks als onderhoud. Een startreeks is meestal drie tot zes behandelingen. Wat er in jouw geval zinvol is, hangt af van je huid en van wat je ermee wilt; dat bespreken we bij de intake.
+
+Kan ik een HydraFacial doen vlak voor een bruiloft of feest?
+
+Ja, dat is een van de redenen dat mensen deze behandeling kiezen: het effect is er meteen en er is geen dag waarop je binnen moet blijven. Heb je hem nog nooit gehad, plan hem dan minstens een week van tevoren, zodat je weet hoe je huid erop reageert voordat het erop aankomt.
+
+Wat is het verschil met een gewone gezichtsbehandeling?
+
+Bij een klassieke gezichtsbehandeling gebeuren reinigen, uitdrukken en verzorgen na elkaar en met de hand. Bij een HydraFacial gebeurt het in één doorgang met één mondstuk, waarbij onderdruk het werk doet in plaats van vingers. Dat is gelijkmatiger over je gezicht en je huid raakt er minder van geïrriteerd.
+
+Helpt een HydraFacial tegen acne?
+
+Bij verstopte poriën en meeëters kan het helpen, want dat is precies wat er weggehaald wordt. Bij actieve, ontstoken acne is het niet de eerste stap: dan begin je met het acnetraject, waar we de huid eerst tot rust brengen. Wat bij jou past bepaalt de behandelaar na de meting.
+
+Kan een HydraFacial bij een gevoelige huid?
+
+Vaak wel. Er komen geen zuren aan te pas en de behandeling blijft aan de oppervlakte, waardoor je huid er weinig van te verduren krijgt. Bij actieve rosacea of een ontstoken huid brengen we die eerst tot rust. Of het bij jou kan, bepaalt de meting tijdens de intake.
+
+Wordt een HydraFacial vergoed door de zorgverzekering?
+
+Nee. Een HydraFacial is een onderhoudsbehandeling zonder medische noodzaak en valt daarmee buiten het stelsel. Heeft je klacht wel een medische reden, bijvoorbeeld bij acne of een litteken, dan is er soms een route naar vergoeding; die staat uitgelegd op onze pagina over vergoedingen.
+
+Waar in Rotterdam zitten jullie?
+
+Aan de Weissenbruchlaan 166 in Rotterdam, aan de noordkant van de stad in een woonwijk. Je parkeert in de straat. De route en de openingstijden staan op onze contactpagina.
+
+**Weet je niet of dit de juiste behandeling is**
+
+Dat hoef je ook niet te weten voordat je komt. Boek een behandeling op advies: we meten je huid, bespreken wat er speelt en zeggen welke behandeling daarbij past. Blijkt een HydraFacial niet het beste antwoord op jouw vraag, dan hoor je dat en doen we die dag iets anders of niets.
+
+Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met iets anders, stel je vraag dan via WhatsApp. Daar zit een behandelaar aan de andere kant en geen formulier.
+
+> knop: Lees verder
+
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+
+**Een HydraFacial in Rotterdam plannen**
+
+We beginnen met een meting van je huid en bespreken daarna welke behandeling erbij past. Is dat een HydraFacial, dan kan die vaak in dezelfde afspraak.
+
+> knop: PLAN EEN HUIDCONSULT
+
+---
+
+### /kennisbank/ipl-rotterdam
+
+**Tabbladtitel:** IPL Rotterdam: pigment en roodheid | Diba Clinics
+
+**Google-omschrijving:** IPL in Rotterdam met de Nordlys van Candela, voor pigmentvlekken, zonschade, couperose en rosacea. Vanaf € 75, meestal een paar uur rood.
+
+**IPL-BEHANDELING IN ROTTERDAM**
+
+IPL is een behandeling met intens gepulst licht dat pigment en kleine vaatjes in de huid opzoekt, zodat vlekken vervagen en roodheid wegtrekt. Bij Diba Clinics in Rotterdam werken we met de Nordlys van Candela. Een behandeling duurt 30 minuten en kost € 75 voor de neus tot € 250 voor het hele gelaat, en je bent meestal een paar uur rood.
+
+> knop: PLAN EEN AFSPRAAK
+
+> knop: BEKIJK DE TARIEVEN
+
+*DUUR*
+
+*TARIEF*
+
+€ 75 tot € 250
+
+*HERSTELTIJD*
+
+Een paar uur rood
+
+*APPARAAT*
+
+Nordlys, Candela
+
+**Wat IPL met je huid doet**
+
+Het licht zoekt kleur op. In een pigmentvlek is dat melanine, in een vaatje is het bloed, en daar gaat de energie naartoe.
+
+IPL stuurt geen enkele golflengte de huid in maar een band, met een filter dat het grofste eruit haalt. Die band raakt daardoor meerdere dingen tegelijk: oppervlakkig pigment, zichtbare vaatjes en een huid die structureel rood staat. Het licht komt gemiddeld minder diep dan een laser, en dat is precies wat oppervlakkige klachten nodig hebben.
+
+Bij pigment neemt de vlek de energie op, wordt hij korrelig en werkt hij naar de oppervlakte. In de dagen erna wordt de vlek eerst donkerder en vervaagt hij daarna. Dat donkerder worden hoort erbij en betekent niet dat het erger wordt.
+
+Bij roodheid mikt het licht op het bloed in de vaatjes. Dat warmt op, het vaatje klapt dicht en wordt door je lichaam opgeruimd. Bij rosacea gaat het minder om een los vaatje en meer om een gebied dat structureel rood staat; dan werkt het licht over het hele vlak.
+
+Per klacht staat het apart uitgewerkt: IPL bij zonnevlekken, bij couperose en bij rosacea. Begin je liever bij de klacht, kijk dan bij pigmentvlekken. Welke rol je huidtype hierbij speelt staat bij het Fitzpatrick-huidtype.
+
+**IPL is geen laser**
+
+De twee worden vaak door elkaar gehaald. Het verschil bepaalt waarvoor je welk apparaat kiest.
+
+Een laser zendt één golflengte uit en is daarmee heel precies. IPL zendt een band uit, raakt daardoor meerdere doelen tegelijk en werkt over een groter vlak. Voor één specifiek plekje is een laser preciezer; voor zonschade verspreid over je wangen is IPL sneller en gelijkmatiger.
+
+Wij werken met de Nordlys van Candela. Candela noemt zijn variant Selective Waveband Technology: twee filters knippen de boven- en onderkant van het spectrum weg, zodat er een smallere band overblijft dan bij gewone IPL, met pulsen korter dan een milliseconde.
+
+Welke band er uitkomt, hangt af van het handstuk dat de behandelaar kiest. Voor pigment is dat een ander dan voor vaatjes, want elke band is gekozen rond wat hij moet raken.
+
+> knop: OVER DE NORDLYS
+
+**Wat IPL bij ons kost**
+
+Het tarief hangt af van de zone en is voor pigment en roodheid hetzelfde. De intakeregeling staat er compleet bij.
+
+- Neus € 75
+
+- Wangen € 150
+
+- Wangen, neus en kin € 200
+
+- Hele gelaat € 250
+
+IPL werkt in een reeks van drie tot zes behandelingen, met vier weken ertussen. Bij rosacea hoort daarna onderhoud, omdat de roodheid kan terugkomen.
+
+**Kom je voor het eerst**
+
+Dan boek je een behandeling op advies. We reserveren daar maximaal twee uur voor: de intake, en daarna minstens een uur om te behandelen. Is behandelen op dat moment verantwoord en wil je dat, dan doen we de eerste IPL-behandeling in dezelfde afspraak.
+
+**Wat de intake kost**
+
+Wordt er in dezelfde afspraak behandeld, dan vervallen de intakekosten en betaal je alleen de behandeling. Gaat de behandeling niet door, dan kost de intake € 50. Een losse intake zonder behandeling duurt maximaal 30 minuten en kost altijd € 50.
+
+**Ben je hier al eerder geweest**
+
+Dan boek je de IPL-behandeling rechtstreeks in de agenda. Reken op 30 minuten. Is er sinds je laatste bezoek iets veranderd aan je huid, je medicatie of je verwachting, zeg dat dan bij binnenkomst.
+
+**Wat helpt en wat we afraden**
+
+IPL werkt op wat oppervlakkig zit en kleur heeft. Voor melasma, voor wat diep zit en in de zomer kiezen we iets anders of wachten we.
+
+**DIT WERKT**
+
+- Zonschade en scherp afgebakende pigmentvlekken, ook over een groot vlak
+
+- Losse zichtbare vaatjes, bijvoorbeeld rond de neusvleugels
+
+- Een gebied dat structureel rood staat, zoals bij rosacea
+
+- Weinig hersteltijd: meestal ben je dezelfde dag weer presentabel
+
+**DIT RADEN WE AF**
+
+- Melasma. Dat pigment reageert vaak juist op warmte, en daar is IPL niet de eerste keuze
+
+- Pigment in de zomermaanden. Tussen mei en augustus behandelen we pigment niet
+
+- Rosacea genezen. IPL haalt de zichtbare roodheid weg, en die kan terugkomen
+
+- Elk huidtype. Bij een donkere huid is de kans op nieuwe pigmentvlekken groter, en dan kiezen we een andere behandeling
+
+**IPL naast de alternatieven**
+
+Voor pigment en roodheid zijn er meer wegen. Dit is wat ze doen, wat je erna merkt en wat ze kosten.
+
+*BEHANDELING*
+
+*WAARIN HET VERSCHILT*
+
+*VANAF*
+
+*Nordlys IPL bij pigment*
+
+Licht op scherp afgebakende vlekken en zonschade. De vlek wordt eerst donkerder en vervaagt daarna.
+
+Meestal een paar uur rood.
+
+*Nordlys IPL bij roodheid en vaatjes*
+
+Licht op het bloed in de vaatjes. Voor couperose, losse vaatjes en rosacea.
+
+Een paar uur rood, en de behandelde vaatjes zijn eerst donkerder voor ze wegtrekken.
+
+*Cosmelan*
+
+Een traject van zes maanden dat de aanmaak van pigment remt, voor hardnekkig pigment waar losse behandelingen op stuklopen.
+
+Vervellen en roodheid in de eerste dagen, en maandenlang strikte zonbescherming.
+
+€ 720
+
+*Medische peelings*
+
+Een zuur op de bovenlaag. Werkt op oppervlakkige verkleuring, zonder warmte.
+
+Twee tot vijf dagen droog en schilferig, afhankelijk van de sterkte.
+
+€ 140
+
+*LED-therapie*
+
+Licht dat de huid rustiger maakt, zonder warmte en zonder hersteltijd. Vaak naast een andere behandeling bij roodheid.
+
+Geen.
+
+€ 30
+
+**Waar je ons vindt in Rotterdam**
+
+Aan de noordkant van de stad, in een woonwijk en niet in een winkelstraat. Dat scheelt bij het parkeren en het is rustiger als je net behandeld bent.
+
+Je parkeert in de straat. De route vanaf de ring en met het openbaar vervoer staat op de contactpagina.
+
+*Maandag*
+
+Gesloten
+
+*Dinsdag*
+
+10:00 tot 18:00
+
+*Woensdag*
+
+10:00 tot 21:00
+
+*Donderdag*
+
+*Vrijdag*
+
+*Zaterdag*
+
+*Zondag*
+
+De agenda is actueler dan dit rijtje: binnen openingstijden staat niet elk uur een behandelaar vrij.
+
+IPL wordt bij ons gedaan door een huidtherapeut of een laserspecialist. Die kiest per zone het handstuk en de instelling, en past die aan op je huidtype.
+
+Wie er werkt, met welke titel en wat die titel precies inhoudt, staat met foto en al op de teampagina.
+
+**Veelgestelde vragen**
+
+Wat kost een IPL-behandeling in Rotterdam?
+
+Bij Diba Clinics kost IPL € 75 voor de neus, € 150 voor de wangen en € 250 voor het hele gelaat; wangen, neus en kin samen kosten € 200. Dat geldt voor pigment en voor roodheid. Kom je voor het eerst, dan begint je afspraak met een intake van € 50, die vervalt als we in dezelfde afspraak behandelen.
+
+Is IPL hetzelfde als laser?
+
+Nee. Een laser zendt één golflengte uit, IPL een band. Die band raakt daardoor meerdere dingen tegelijk, zoals roodheid, vaatjes en oppervlakkig pigment, en komt gemiddeld minder diep.
+
+Waarom wordt mijn pigmentvlek eerst donkerder?
+
+Dat hoort erbij. Het pigment komt naar de oppervlakte voordat het vervaagt, en dat duurt een aantal dagen. Het betekent niet dat het erger wordt.
+
+Doet IPL pijn?
+
+Je voelt bij elke lichtflits een korte, warme tik, vaak vergeleken met een elastiekje tegen je huid. Het is kort en goed te doen.
+
+Hoeveel IPL-behandelingen heb ik nodig?
+
+Meestal drie tot zes, met vier weken ertussen. Bij rosacea hoort daarna onderhoud, omdat de roodheid kan terugkomen.
+
+Kan ik IPL in de zomer doen?
+
+Voor pigment niet. Tussen mei en augustus behandelen we pigment niet, omdat een huid die net behandeld is extra fel op zon reageert. Voor roodheid en vaatjes ligt dat anders; dat bespreken we per geval.
+
+Helpt IPL tegen couperose en rosacea?
+
+Het haalt losse vaatjes weg en maakt een gebied dat structureel rood staat rustiger. Rosacea geneest het niet: de zichtbare roodheid gaat weg, en die kan terugkomen. Daarom hoort er bij rosacea onderhoud bij.
+
+Kan IPL bij een donkere huid?
+
+Niet bij elk huidtype. Bij een donkere huid neemt de huid zelf meer licht op, en is de kans op nieuwe pigmentvlekken groter. We bepalen je huidtype vooraf en kiezen de behandeling die bij je huid past.
+
+Waar in Rotterdam zitten jullie?
+
+Aan de Weissenbruchlaan 166 in Rotterdam, aan de noordkant van de stad in een woonwijk. Je parkeert in de straat. De route en de openingstijden staan op onze contactpagina.
+
+**Weet je niet of het pigment of roodheid is**
+
+Dat hoef je ook niet te weten voordat je komt. De meting laat zien wat het is en hoe diep het zit, en daarna hoor je of IPL het goede antwoord is. Is het melasma, dan kiezen we iets anders.
+
+Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met iets anders, stel je vraag dan via WhatsApp. Daar zit een behandelaar aan de andere kant en geen formulier.
+
+> knop: Lees verder
+
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+
+**IPL in Rotterdam plannen**
+
+We meten je huid en bepalen of het pigment of roodheid is, en hoe diep het zit. Past IPL, dan kan de eerste behandeling vaak in dezelfde afspraak.
+
+> knop: PLAN EEN HUIDCONSULT
+
+---
+
+### /kennisbank/microneedling-rotterdam
+
+**Tabbladtitel:** Microneedling Rotterdam: SkinPen en Dermapen | Diba Clinics
+
+**Google-omschrijving:** Microneedling in Rotterdam met de SkinPen en de Dermapen 4. Vanaf € 180 per sessie, een tot drie dagen rood. Voor littekens, poriën en huidstructuur.
+
+**MICRONEEDLING IN ROTTERDAM**
+
+Microneedling is een behandeling waarbij fijne naalden heel veel kleine kanaaltjes in de huid maken, zodat je huid zelf nieuw collageen gaat aanmaken. Bij Diba Clinics in Rotterdam werken we met de SkinPen en de Dermapen 4. Een behandeling van het gezicht kost € 180 en duurt 60 minuten, en daarna ben je een tot drie dagen rood.
+
+> knop: PLAN EEN AFSPRAAK
+
+> knop: BEKIJK DE TARIEVEN
+
+*DUUR*
+
+*TARIEF*
+
+Vanaf € 180
+
+*HERSTELTIJD*
+
+1 tot 3 dagen rood
+
+*REEKS*
+
+3 tot 6 sessies
+
+**Wat microneedling met je huid doet**
+
+Het resultaat komt niet van de prikjes zelf maar van wat je huid daarna doet, en daarom zie je het pas na weken.
+
+Onder de opperhuid ligt de lederhuid, en daar zit het bindweefsel dat je huid stevig en glad houdt. Bij een litteken, een grove porie of een huid die met de jaren minder veerkracht heeft, is dat bindweefsel ongelijk of dunner geworden. Een crème komt daar niet; die laag ligt te diep.
+
+Microneedling maakt met fijne naalden heel veel kleine kanaaltjes tot in de bovenste lederhuid. Je huid behandelt die als kleine wondjes en begint te herstellen, en bij dat herstel maakt hij nieuw collageen aan. Dat herstel is het doel; de prikjes zijn alleen de aanleiding.
+
+Daarom zie je het resultaat niet na één behandeling maar over een reeks. Wat je de eerste dagen ziet is roodheid en een beetje zwelling. Het echte verschil bouwt zich over weken op en wordt het best zichtbaar als de reeks van drie tot zes behandelingen klaar is, met vier tot zes weken ertussen.
+
+Wat microneedling bij een bepaalde klacht doet, staat apart uitgewerkt: bij acnelittekens, bij grove poriën, bij fijne lijntjes, bij littekens na een operatie en bij striae. Waarom er weken tussen de sessies zitten staat bij het aantal sessies.
+
+**SkinPen en Dermapen 4**
+
+We werken met twee microneedlingpennen. Welke je krijgt hangt af van de zone en de diepte die daar past, en niet van welke beter is.
+
+De SkinPen heeft veertien naalden en werkt iets bedaarder. De Dermapen 4 haalt tot 1920 prikken per seconde en werkt een vlak daardoor sneller af, met voorgeprogrammeerde standen, waaronder een instelling voor littekens op de maximale diepte. De diepte is bij allebei in te stellen van 0,25 tot 3 millimeter.
+
+Die diepte is de instelling die er echt toe doet. Ondiep raakt alleen de opperhuid en heelt binnen een dag; drie millimeter komt tot in het bindweefsel en vraagt langer. Rond je ogen en op je voorhoofd, waar de huid dun over bot ligt, gaat de pen minder diep dan op je wangen.
+
+De naaldcartridges zijn steriel en gaan per behandeling weg. Bij microneedling is dat geen detail, want de naalden gaan door de beschermlaag van je huid heen. Vooraf gaat er een verdovende crème op die een half uur intrekt; wat je daarna voelt is vooral trilling en druk.
+
+> knop: OVER DE BEHANDELING
+
+**Wat microneedling bij ons kost**
+
+Het tarief is voor de SkinPen en de Dermapen hetzelfde en hangt af van het gebied. De intakeregeling staat er compleet bij.
+
+- Gezicht € 180
+
+- Gezicht en hals € 210
+
+- Gezicht, hals en décolleté € 240
+
+- Rug € 255
+
+Microneedling werkt in een reeks. Vergelijk je tarieven, reken dan met het bedrag per sessie maal het aantal sessies. Hoeveel het er bij jou worden hoor je na de meting; een vast aantal vooraf beloven we niet.
+
+**Kom je voor het eerst**
+
+Dan boek je een behandeling op advies. We reserveren daar maximaal twee uur voor: de intake, en daarna minstens een uur om te behandelen. Is behandelen op dat moment verantwoord en wil je dat, dan doen we de eerste microneedling in dezelfde afspraak.
+
+**Wat de intake kost**
+
+Wordt er in dezelfde afspraak behandeld, dan vervallen de intakekosten en betaal je alleen de behandeling. Gaat de behandeling niet door, dan kost de intake € 50. Een losse intake zonder behandeling duurt maximaal 30 minuten en kost altijd € 50.
+
+**Ben je hier al eerder geweest**
+
+Dan boek je de microneedling rechtstreeks in de agenda. Reken op 60 minuten. Is er sinds je laatste bezoek iets veranderd aan je huid, je medicatie of je verwachting, zeg dat dan bij binnenkomst.
+
+**Wat helpt en wat we afraden**
+
+Microneedling werkt op de structuur van je huid. Voor pigment door zon, voor vaatjes en voor een ontstoken huid is er een ander antwoord.
+
+**DIT WERKT**
+
+- Littekens die door verlies van structuur zijn ontstaan, zoals de ondiepe kuiltjes na acne
+
+- Fijne lijntjes en een ongelijke textuur
+
+- Grove poriën en een huid die dof is geworden
+
+- Pigment dat na een puistje of wondje is achtergebleven
+
+**DIT RADEN WE AF**
+
+- Zonschade en losse pigmentvlekken. Daarvoor kies je laser of IPL
+
+- Een huid met actieve, ontstoken acne. Die brengen we eerst tot rust
+
+- Een enkele sessie. Wat je na één keer ziet is zwelling; het resultaat komt over de reeks
+
+- Diepe of ingetrokken littekens met alleen microneedling. Die vragen vaak een combinatie met laser
+
+**Microneedling of laser en peeling**
+
+Voor littekens en structuur zijn er meer wegen. Dit is wat ze doen, wat je erna merkt en wat ze kosten.
+
+*WAARIN HET VERSCHILT*
+
+*VANAF*
+
+*SkinPen Microneedling*
+
+Veertien naalden en een bedaarder ritme. Instelbaar van 0,25 tot 3 millimeter.
+
+Eén tot drie dagen rood, als een stevige zonnegloed.
+
+Meer prikken per seconde en sneller over een groot vlak, met een vaste stand voor littekens.
+
+Eén tot drie dagen rood.
+
+*Fotona Scar Repair*
+
+Laser in plaats van naalden. Voor diepere of ingetrokken littekens, vaak samen met microneedling.
+
+Een tot enkele dagen rood, afhankelijk van de diepte en de zone.
+
+€ 195
+
+*Medische peelings*
+
+Werkt met zuren op de bovenlaag. Minder diep, en meer effect op oppervlakkige verkleuring en ruwheid.
+
+Twee tot vijf dagen droog en schilferig, afhankelijk van de sterkte.
+
+€ 140
+
+**Waar je ons vindt in Rotterdam**
+
+Aan de noordkant van de stad, in een woonwijk en niet in een winkelstraat. Dat scheelt bij het parkeren en het is rustiger als je net behandeld bent.
+
+Je parkeert in de straat. De route vanaf de ring en met het openbaar vervoer staat op de contactpagina.
+
+*Maandag*
+
+Gesloten
+
+*Dinsdag*
+
+10:00 tot 18:00
+
+*Woensdag*
+
+10:00 tot 21:00
+
+*Donderdag*
+
+*Vrijdag*
+
+*Zaterdag*
+
+*Zondag*
+
+De agenda is actueler dan dit rijtje: binnen openingstijden staat niet elk uur een behandelaar vrij.
+
+Microneedling wordt bij ons gedaan door een huidtherapeut. Die kiest per zone de diepte en de pen, en stelt die bij als je huid anders reageert dan verwacht.
+
+Wie er werkt, met welke titel en wat die titel precies inhoudt, staat met foto en al op de teampagina.
+
+**Wat anderen erover zeggen.**
+
+Reviews van klanten die hier kwamen voor littekens. Ze komen rechtstreeks uit onze agenda en staan er zoals ze geschreven zijn.
+
+- “In het algemeen heel tevreden. Kwam de eerste keer binnen met veel Onzuiverheden en littekens en ik kan met positiviteit zeggen dat mijn gezicht er heel egaal uitziet en mooi eruit ziet.” Brayson Bezoek Diba Clinics ONGEVEER 6 JAAR GELEDEN
+
+- “Super fijne Hydrafacial behandeling gehad. Heb een hele mooie glow! Ook mijn littekens zijn voor het eerst behandeld dus ik verheug me op de voortgang van dit proces :) Dankjewel lieve Rojda.” Elif HydraFacial BIJNA 4 JAAR GELEDEN
+
+- “Inmiddels 3 keer langs geweest voor de diodelaser en ik zie echt 80% verschil! Ook de littekens en vlekjes van mijn huid zijn zwaar verbeterd dankzij de dermapen. Sowieso forever vaste klant!!” Sara Laserontharing MEER DAN 7 JAAR GELEDEN
+
+**Veelgestelde vragen**
+
+Wat kost microneedling in Rotterdam?
+
+Bij Diba Clinics kost microneedling € 180 voor het gezicht en € 255 voor de rug. Met de hals erbij is het € 210, en met hals en decolleté € 240. Dat is per sessie, en microneedling werkt in een reeks van drie tot zes. Kom je voor het eerst, dan begint je afspraak met een intake; die kost € 50 en vervalt als we in dezelfde afspraak behandelen.
+
+Doet microneedling pijn?
+
+Het is goed te doen. Vooraf gaat er een verdovende crème op die een half uur intrekt. Wat je daarna voelt is vooral trilling en druk, het sterkst waar de huid dun over bot ligt, zoals op je voorhoofd.
+
+Hoe lang ben ik rood na microneedling?
+
+Een tot drie dagen, ongeveer als een stevige zonnegloed. De eerste vierentwintig uur laat je je huid met rust: geen make-up en niet sporten tot je flink zweet.
+
+Hoeveel behandelingen heb ik nodig?
+
+Meestal drie tot zes, met vier tot zes weken ertussen. Hoeveel het er bij jou worden hangt af van je klacht en van hoe je huid reageert. Dat meten we tussendoor, en een vast aantal vooraf beloven we niet.
+
+Wanneer zie ik resultaat van microneedling?
+
+Niet na de eerste keer; wat je dan ziet is zwelling. Het collageen dat je huid aanmaakt bouwt zich over weken op, dus het verschil zie je in de loop van de reeks en het duidelijkst een paar maanden na de laatste behandeling.
+
+Wat is het verschil tussen de SkinPen en de Dermapen?
+
+Het motorontwerp en het aantal naalden. De SkinPen heeft er veertien en werkt iets bedaarder; de Dermapen haalt meer prikken per seconde en werkt een vlak sneller af. De diepte is bij allebei in te stellen tot 3 millimeter, en het tarief is hetzelfde.
+
+Helpt microneedling tegen acnelittekens?
+
+Bij littekens die door verlies van structuur zijn ontstaan, zoals de ondiepe kuiltjes na acne, kan het goed helpen. Diepe of ingetrokken littekens vragen vaak een combinatie met laser. Zolang de acne nog actief is, beginnen we er niet aan: de huid moet eerst rustig zijn.
+
+Kan microneedling bij een donkere huid?
+
+Vaak wel, en het is dan een van de betere opties, omdat er geen warmte aan te pas komt. Bij huidtype IV tot VI letten we extra op pigmentvorming na de behandeling en passen we de diepte daarop aan. Dat bespreken we vooraf.
+
+Waar in Rotterdam zitten jullie?
+
+Aan de Weissenbruchlaan 166 in Rotterdam, aan de noordkant van de stad in een woonwijk. Je parkeert in de straat. De route en de openingstijden staan op onze contactpagina.
+
+**Weet je niet of microneedling bij je past**
+
+Dat hoef je ook niet te weten voordat je komt. Boek een behandeling op advies: we meten je huid, kijken wat voor litteken of structuur het is en zeggen welke behandeling daarbij past. Is dat laser of een peeling, dan hoor je dat.
+
+Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met iets anders, stel je vraag dan via WhatsApp. Daar zit een behandelaar aan de andere kant en geen formulier.
+
+> knop: Lees verder
+
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+
+**Microneedling in Rotterdam plannen**
+
+We meten je huid en bespreken welke diepte en welke pen erbij passen. Is behandelen verstandig, dan kan de eerste sessie vaak in dezelfde afspraak.
+
+> knop: PLAN EEN HUIDCONSULT
+
+---
+
+### /kennisbank/oxygeneo-rotterdam
+
+**Tabbladtitel:** OxyGeneo Rotterdam | Diba Clinics
+
+**Google-omschrijving:** OxyGeneo in Rotterdam bij Diba Clinics. € 150, zestig minuten en geen hersteltijd. Exfoliëren en voeden in één behandeling.
+
+**OXYGENEO IN ROTTERDAM**
+
+OxyGeneo is een gezichtsbehandeling waarbij een capsule op de huid met een gel reageert: de bovenste laag wordt losgemaakt, werkzame stoffen gaan erin, en de huid krijgt een prikkel om meer zuurstofrijk bloed naar het oppervlak te sturen. Bij Diba Clinics in Rotterdam duurt de behandeling 60 minuten, kost hij € 150 en is er geen hersteltijd.
+
+> knop: PLAN EEN AFSPRAAK
+
+> knop: BEKIJK DE TARIEVEN
+
+*DUUR*
+
+*TARIEF*
+
+*HERSTELTIJD*
+
+Geen
+
+*APPARAAT*
+
+OxyGeneo, Pollogen
+
+**Wat OxyGeneo met je huid doet**
+
+Drie dingen in één beweging: losmaken, inbrengen en de doorbloeding een zet geven. Het blijft aan de oppervlakte, en daarom zie je het meteen.
+
+Een huid die dof staat, heeft vaak een laag dode cellen die te lang blijft zitten, en een oppervlak dat weinig licht terugkaatst. Crèmes komen door die laag slecht heen. Wat helpt is de laag losmaken en tegelijk iets teruggeven, en dat is precies wat deze behandeling in één doorgang doet.
+
+Het handstuk beweegt een capsule over je huid terwijl er een gel op ligt. Die twee reageren met elkaar en er ontstaan kleine CO2-belletjes. Je huid reageert daarop door meer zuurstofrijk bloed naar de plek te sturen. Intussen maakt de capsule de buitenste laag los en gaan de stoffen uit de gel erin.
+
+Het blijft aan de oppervlakte, en dat is de reden dat je er meteen iets van ziet en er verder niets van merkt. Het is ook de reden dat het effect dagen aanhoudt en geen weken. Veel mensen plannen deze behandeling daarom vlak voor een gelegenheid, of elke vier tot zes weken als onderhoud.
+
+Hoe het apparaat werkt staat bij de OxyGeneo van Pollogen. De behandeling zelf staat op de behandelpagina.
+
+**Een van de rustigste behandelingen**
+
+Er komen geen naalden, geen zuren en geen warmte aan te pas. Wat je voelt is vooral een licht bruisen.
+
+Eerst gaan make-up en talg eraf, anders werkt de rest op een laagje in plaats van op je huid. Daarna gaat de gel op en beweegt de behandelaar het handstuk in banen over je gezicht. De gel en de capsule reageren met elkaar en dat bruist licht; je hoort het meer dan dat je het voelt.
+
+Erna is je huid roze en voelt hij zacht aan. Dat trekt meestal binnen een uur weg, en make-up mag dezelfde dag nog. Er is niets waar je rekening mee hoeft te houden behalve zonbescherming, en die geldt sowieso.
+
+Bij een huid die op dat moment ontstoken of geïrriteerd is, doen we het niet; dan brengen we je huid eerst tot rust. Bij een gevoelige huid kan het meestal wel, en dat beoordeelt de behandelaar bij de intake.
+
+> knop: OVER DE OXYGENEO
+
+**Wat OxyGeneo bij ons kost**
+
+Eén tarief, en geen varianten om uit te kiezen. De intakeregeling voor een eerste afspraak staat er compleet bij, want daar zit het bedrag dat mensen niet zien aankomen.
+
+- Oxygeneo glow € 150
+
+Wil je het effect vasthouden, dan plan je het elke vier tot zes weken als onderhoud. Hoe vaak dat bij jou zin heeft, bespreken we bij de intake.
+
+**Kom je voor het eerst**
+
+Dan boek je een behandeling op advies. We reserveren daar maximaal twee uur voor: de intake, en daarna minstens een uur om te behandelen. Is behandelen op dat moment verantwoord en wil je dat, dan doen we de OxyGeneo in dezelfde afspraak.
+
+**Wat de intake kost**
+
+Wordt er in dezelfde afspraak behandeld, dan vervallen de intakekosten en betaal je alleen de behandeling. Gaat de behandeling niet door, dan kost de intake € 50. Een losse intake zonder behandeling duurt maximaal 30 minuten en kost altijd € 50.
+
+**Ben je hier al eerder geweest**
+
+Dan boek je de OxyGeneo rechtstreeks in de agenda. Reken op 60 minuten. Is er sinds je laatste bezoek iets veranderd aan je huid, je medicatie of je verwachting, zeg dat dan bij binnenkomst.
+
+**Wat helpt en wat we afraden**
+
+OxyGeneo werkt op de bovenste lagen. Voor wat dieper zit, en voor verschil dat blijft, is er een andere behandeling.
+
+**DIT WERKT**
+
+- Een doffe huid die er meteen frisser uit mag zien
+
+- Een droge of vochtarme huid
+
+- Een behandeling vlak voor een gelegenheid, zonder dag waarop je binnen moet blijven
+
+- Onderhoud naast een traject, zonder hersteltijd
+
+**DIT RADEN WE AF**
+
+- Littekens of pigment dat dieper zit. Daar is microneedling of laser voor
+
+- Een huid die op dat moment ontstoken of geïrriteerd is. Die brengen we eerst tot rust
+
+- Blijvend verschil. Het effect houdt dagen aan, dus het is onderhoud
+
+- Verstopte poriën legen. Daarvoor is een HydraFacial gerichter
+
+**OxyGeneo naast de alternatieven**
+
+Voor een frissere huid zijn er meer wegen. Dit is wat ze doen, wat je erna merkt en wat ze kosten.
+
+*BEHANDELING*
+
+*WAARIN HET VERSCHILT*
+
+*VANAF*
+
+Een capsule en een gel maken de bovenlaag los en brengen stoffen in, met een prikkel voor de doorbloeding. Rustig en zonder hersteltijd.
+
+Geen.
+
+Zuigt poriën leeg met onderdruk en brengt in dezelfde beweging serum terug. Gerichter op wat er in de porie zit.
+
+Er is doorgaans geen hersteltijd en je kunt na de afspraak je dag vervolgen.
+
+€ 170
+
+*Dermaplaning*
+
+Een mesje haalt dode cellen en donshaar weg. Voor een gladde huid onder make-up.
+
+*LED-therapie*
+
+Licht dat de huid rustiger maakt, zonder warmte. Vaak als toevoeging aan een andere behandeling.
+
+€ 30
+
+*Medische peelings*
+
+Een zuur maakt de bovenlaag los en gaat dieper. Meer effect op verkleuring, en meer reactie van je huid.
+
+Twee tot vijf dagen droog en schilferig, afhankelijk van de sterkte.
+
+€ 140
+
+**Waar je ons vindt in Rotterdam**
+
+Aan de noordkant van de stad, in een woonwijk en niet in een winkelstraat. Dat scheelt bij het parkeren en het is rustiger als je net behandeld bent.
+
+Je parkeert in de straat. De route vanaf de ring en met het openbaar vervoer staat op de contactpagina.
+
+*Maandag*
+
+Gesloten
+
+*Dinsdag*
+
+10:00 tot 18:00
+
+*Woensdag*
+
+10:00 tot 21:00
+
+*Donderdag*
+
+*Vrijdag*
+
+*Zaterdag*
+
+*Zondag*
+
+De agenda is actueler dan dit rijtje: binnen openingstijden staat niet elk uur een behandelaar vrij.
+
+De behandelaar beoordeelt vooraf of je huid er rustig genoeg voor is, en kiest de gel op wat je huid op dat moment nodig heeft.
+
+Wie er werkt, met welke titel en wat die titel precies inhoudt, staat met foto en al op de teampagina.
+
+**Wat anderen erover zeggen.**
+
+Reviews van klanten die hier voor een gezichtsbehandeling waren. Ze komen rechtstreeks uit onze agenda en staan er zoals ze geschreven zijn.
+
+- “Had gisteren een dermapen en carbonlaser afspraak. Mijn huid voelt meteen al glad aan en de puistjes verminderen nu al. Daarnaast ook hele lieve dames!” Jenna Microneedling ONGEVEER 7 JAAR GELEDEN
+
+- “Ik heb een fijne gezichtsbehandeling gehad bij Andres. Hij werkte professioneel en nam echt de tijd. Mijn huid voelde na afloop fris en verzorgd aan.” Ouarda Gezichtsbehandeling 8 MAANDEN GELEDEN
+
+- “Anders heeft mij wederom heel fijn behandeld. Fijne peeling en masker. Mijn gezicht gaat super vooruit, zo fijn om tr zien. Ben super blij met Anders.” Maria Peeling ONGEVEER EEN JAAR GELEDEN
+
+**Veelgestelde vragen**
+
+Wat kost OxyGeneo in Rotterdam?
+
+Bij Diba Clinics kost een OxyGeneo-behandeling € 150 en duurt hij 60 minuten. Kom je voor het eerst, dan begint je afspraak met een intake van € 50, die vervalt als we in dezelfde afspraak behandelen.
+
+Wat zijn die belletjes op mijn huid?
+
+CO2 dat vrijkomt als de capsule met de gel reageert. Je huid reageert daarop met een betere doorbloeding, en dat is precies de bedoeling.
+
+Voel ik iets van OxyGeneo?
+
+Een licht bruisen en wat warmte. Geen prikken en geen hersteltijd; je kunt er direct mee de deur uit.
+
+Hoe lang zie ik er iets van?
+
+Het effect houdt dagen aan, geen weken. Veel mensen plannen deze behandeling daarom vlak voor een gelegenheid, of elke vier tot zes weken als onderhoud.
+
+Wat is het verschil tussen OxyGeneo en een HydraFacial?
+
+Allebei werken ze op de bovenste laag en zonder hersteltijd. Een HydraFacial zuigt met onderdruk poriën leeg en brengt serum terug; OxyGeneo maakt de laag los met een capsule en een gel, waarbij je huid een prikkel krijgt om meer zuurstofrijk bloed naar het oppervlak te sturen. Voor verstopte poriën is de HydraFacial gerichter.
+
+Kan OxyGeneo bij een gevoelige huid?
+
+Meestal wel. De behandelaar beoordeelt dat tijdens de intake; bij actieve rosacea of ontstoken acne brengen we eerst je huid tot rust.
+
+Kan ik OxyGeneo doen vlak voor een feest?
+
+Ja, daar is hij juist geschikt voor: het effect is er meteen en er is geen dag waarop je binnen moet blijven. Je huid is na afloop kort roze, en dat trekt meestal binnen een uur weg.
+
+Hoe vaak kun je OxyGeneo doen?
+
+Los, of als onderhoud elke vier tot zes weken. Wat bij jou zin heeft, bespreken we bij de intake.
+
+Waar in Rotterdam zitten jullie?
+
+Aan de Weissenbruchlaan 166 in Rotterdam, aan de noordkant van de stad in een woonwijk. Je parkeert in de straat. De route en de openingstijden staan op onze contactpagina.
+
+**Weet je niet of OxyGeneo bij je past**
+
+Dat hoef je ook niet te weten voordat je komt. We bekijken je huid en zeggen welke behandeling erbij past. Zitten je poriën vol, dan is een HydraFacial misschien het betere antwoord, en dat hoor je dan.
+
+Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met iets anders, stel je vraag dan via WhatsApp. Daar zit een behandelaar aan de andere kant en geen formulier.
+
+> knop: Lees verder
+
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+
+**OxyGeneo in Rotterdam plannen**
+
+We bekijken eerst je huid en zeggen daarna of OxyGeneo erbij past. Is dat zo, dan kan de behandeling vaak in dezelfde afspraak.
+
+> knop: PLAN EEN HUIDCONSULT
+
+---
+
+### /kennisbank/skinboosters-rotterdam
+
+**Tabbladtitel:** Skinboosters Rotterdam | Diba Clinics
+
+**Google-omschrijving:** Skinboosters in Rotterdam met de U225 injector. Vanaf € 130, met kleine bultjes die binnen een dag zakken. Voor vocht, fijne lijnen en pigment.
+
+**SKINBOOSTERS IN ROTTERDAM**
+
+Een skinbooster is een behandeling waarbij werkzame stoffen, zoals hyaluronzuur en vitamines, met heel fijne prikjes ín de huid worden gebracht in plaats van erop. Bij Diba Clinics in Rotterdam gebeurt dat met de U225, die elke prik op dezelfde diepte zet. Een losse behandeling kost € 180 en een kuur van drie € 500.
+
+> knop: PLAN EEN AFSPRAAK
+
+> knop: BEKIJK DE TARIEVEN
+
+*DUUR*
+
+60 minuten
+
+*TARIEF*
+
+Vanaf € 130
+
+*HERSTELTIJD*
+
+Bultjes, een dag
+
+*KUUR*
+
+Drie sessies
+
+**Wat een skinbooster met je huid doet**
+
+Een crème blijft grotendeels aan de oppervlakte. Een skinbooster brengt de stoffen in de laag waar ze hun werk moeten doen.
+
+Wat je op je huid smeert, komt voor het grootste deel niet verder dan de buitenste laag. Die laag is er juist om dingen tegen te houden. Voor vocht en stevigheid moeten stoffen als hyaluronzuur dieper zitten, in de huid zelf, en daar kom je met een crème niet.
+
+Bij een skinbooster gaat een mengsel van werkzame stoffen met heel fijne prikjes vlak onder de huid, verdeeld over het hele vlak in plaats van op één plek. Het doel is niet opvullen maar de kwaliteit van de huid: dat hij vochtiger en steviger aanvoelt. Welk mengsel en hoeveel, hangt af van wat je huid nodig heeft.
+
+Er zijn verschillende boosters: een voor fijne lijnen en vocht, zoals RRS Hyalift, een aparte voor de dunne huid rond de ogen, en een depigmentatiebooster voor gezicht, hals en decolleté bij pigment, zonneschade en melasma. Omdat de huid tussen de sessies het werk doet, is het meestal een kuur van drie.
+
+Hoe de injector werkt staat bij de U225. De behandeling zelf staat op de behandelpagina, en de booster voor de ogen bij RRS Eyes.
+
+**Een skinbooster is geen filler**
+
+Ze worden vaak door elkaar gehaald, en het verschil bepaalt wat je van de behandeling kunt verwachten.
+
+Een filler brengt volume op één plek: een plooi opvullen, een lip voller maken, een contour veranderen. Een skinbooster doet dat niet. Hij wordt dun over het hele vlak verdeeld en werkt op de kwaliteit van je huid, niet op de vorm van je gezicht. Fillers zetten we hier niet.
+
+Wat hier het verschil maakt is de U225. Bij met de hand injecteren beweegt de hele spuit mee; bij de U225 staat de spuit stil en beweegt alleen de naald, tot acht keer per seconde. Daardoor trilt er minder en is elke prik even diep, ook als er een paar honderd achter elkaar gaan.
+
+Vooraf gaat er een verdovende crème op. Wat je daarna voelt is een reeks korte prikjes, rond de ogen gevoeliger dan op de wang. Vlak erna zie je kleine bultjes op de plek van elke prik; die zakken meestal binnen een dag.
+
+> knop: OVER DE U225
+
+**Wat skinboosters bij ons kosten**
+
+Een losse behandeling of een kuur van drie, en voor de ogen een eigen booster. De intakeregeling staat er compleet bij.
+
+- Skinbooster los € 180
+
+- RRS hyalift mini filler booster € 175
+
+- Kuur van drie € 500
+
+- RRS Eyes € 130
+
+- RRS Eyes kuur van drie € 350
+
+Een kuur van drie kost € 500, tegen € 540 voor drie losse behandelingen. Omdat de huid tussen de sessies het werk doet, is de kuur meestal ook de zinvolle keuze.
+
+**Kom je voor het eerst**
+
+Dan boek je een behandeling op advies. We reserveren daar maximaal twee uur voor: de intake, en daarna minstens een uur om te behandelen. Is behandelen op dat moment verantwoord en wil je dat, dan doen we de eerste skinbooster in dezelfde afspraak.
+
+**Wat de intake kost**
+
+Wordt er in dezelfde afspraak behandeld, dan vervallen de intakekosten en betaal je alleen de behandeling. Gaat de behandeling niet door, dan kost de intake € 50. Een losse intake zonder behandeling duurt maximaal 30 minuten en kost altijd € 50.
+
+**Ben je hier al eerder geweest**
+
+Dan boek je de skinbooster rechtstreeks in de agenda. Reken op 60 minuten. Is er sinds je laatste bezoek iets veranderd aan je huid, je medicatie of je verwachting, zeg dat dan bij binnenkomst. Plan een skinbooster niet vlak voor iets waar je op de foto moet: rond de ogen kan een blauw plekje langer blijven.
+
+**Wat helpt en wat we afraden**
+
+Een skinbooster werkt op de kwaliteit van je huid. Voor volume, voor diepe lijnen en voor wie geen naalden verdraagt, is het niet de goede keuze.
+
+**DIT WERKT**
+
+- Een huid die vocht en stevigheid mist, over het hele vlak
+
+- Fijne lijntjes, ook rond de ogen met een booster die daarvoor bedoeld is
+
+- Pigment, zonneschade en melasma, met de depigmentatiebooster
+
+- Een combinatie met behandelingen die op de bovenlaag werken
+
+**DIT RADEN WE AF**
+
+- Volume of een andere vorm. Dat is filler, en dat doen we niet
+
+- Diepe lijnen of plooien. Die haalt een skinbooster niet weg
+
+- Wie geen naalden verdraagt. Het zijn er veel, al zijn ze klein
+
+- Pigment zonder zonbescherming. Zonder dat loopt het door, ook tijdens de kuur
+
+**Skinboosters naast de alternatieven**
+
+Voor een stevigere, vochtigere huid zijn er meer wegen. Dit is wat ze doen, wat je erna merkt en wat ze kosten.
+
+*BEHANDELING*
+
+*WAARIN HET VERSCHILT*
+
+*VANAF*
+
+*Skinboosters en mesotherapie*
+
+Werkzame stoffen in de huid, verdeeld over het vlak met de U225. Werkt op vocht en stevigheid.
+
+Kort rood en soms kleine bultjes, meestal binnen een dag weg.
+
+Een van de mengsels die we als skinbooster gebruiken: hyaluronzuur, vitamines en aminozuren.
+
+Kleine bultjes die binnen een dag wegtrekken, en soms een blauwe plek.
+
+*SkinPen Microneedling*
+
+Naalden zonder middel, zodat je huid zelf collageen aanmaakt. Meer voor structuur en littekens.
+
+Eén tot drie dagen rood, als een stevige zonnegloed.
+
+*Fotona 4D*
+
+Laser in vier stappen, van binnenuit door de wang tot een afsluitende peeling. Werkt op verslapping, zonder naalden.
+
+Een paar uur tot een dag rood en warm, alsof je te lang in de zon hebt gezeten.
+
+€ 370
+
+*HydraFacial*
+
+Brengt serum in de bovenste laag, zonder naalden. Meteen zichtbaar, en korter van duur.
+
+Er is doorgaans geen hersteltijd en je kunt na de afspraak je dag vervolgen.
+
+€ 170
+
+**Waar je ons vindt in Rotterdam**
+
+Aan de noordkant van de stad, in een woonwijk en niet in een winkelstraat. Dat scheelt bij het parkeren en het is rustiger als je net behandeld bent.
+
+Je parkeert in de straat. De route vanaf de ring en met het openbaar vervoer staat op de contactpagina.
+
+*Maandag*
+
+Gesloten
+
+*Dinsdag*
+
+10:00 tot 18:00
+
+*Woensdag*
+
+10:00 tot 21:00
+
+*Donderdag*
+
+*Vrijdag*
+
+*Zaterdag*
+
+*Zondag*
+
+De agenda is actueler dan dit rijtje: binnen openingstijden staat niet elk uur een behandelaar vrij.
+
+De behandelaar kiest het mengsel en de diepte, en stelt de U225 per zone in: rond de ogen anders dan op de wang.
+
+Wie er werkt, met welke titel en wat die titel precies inhoudt, staat met foto en al op de teampagina.
+
+**Wat anderen erover zeggen.**
+
+Reviews van klanten die hier voor een gezichtsbehandeling waren. Ze komen rechtstreeks uit onze agenda en staan er zoals ze geschreven zijn.
+
+- “Super fijne Hydrafacial behandeling gehad. Heb een hele mooie glow! Ook mijn littekens zijn voor het eerst behandeld dus ik verheug me op de voortgang van dit proces :) Dankjewel lieve Rojda.” Elif HydraFacial BIJNA 4 JAAR GELEDEN
+
+- “Inmiddels 3 keer langs geweest voor de diodelaser en ik zie echt 80% verschil! Ook de littekens en vlekjes van mijn huid zijn zwaar verbeterd dankzij de dermapen. Sowieso forever vaste klant!!” Sara Laserontharing MEER DAN 7 JAAR GELEDEN
+
+- “Weer een fijne behandeling gehad bij Diba door Iris. De Hydrafacial in combinatie met een peeling is echt een aanrader, mijn huid voelt fris en verzorgd aan. En die glow maakt het helemaal af!” Yasemin HydraFacial 8 MAANDEN GELEDEN
+
+**Veelgestelde vragen**
+
+Wat kosten skinboosters in Rotterdam?
+
+Bij Diba Clinics kost een losse skinbooster € 180 en een kuur van drie € 500. De RRS Hyalift-booster kost € 175, en de booster voor de ogen, RRS Eyes, € 130 per keer of € 350 voor een kuur van drie. Kom je voor het eerst, dan begint je afspraak met een intake van € 50, die vervalt als we in dezelfde afspraak behandelen.
+
+Wat is het verschil tussen een skinbooster en een filler?
+
+Een filler brengt volume op één plek en verandert een vorm. Een skinbooster wordt dun over het hele vlak verdeeld en werkt op het vocht en de stevigheid van de huid zelf. Fillers zetten we hier niet.
+
+Doet een skinbooster pijn?
+
+Het voelt als een reeks korte prikjes en het gaat snel. Vooraf gaat er een verdovende crème op. Rond de ogen is het gevoeliger dan op de wang.
+
+Zie ik er daarna uit alsof ik geprikt ben?
+
+Vlak erna zie je kleine bultjes op de plek van elke prik; die zakken meestal binnen een dag. Blauwe plekjes kunnen, vooral rond de ogen, en die blijven langer. Plan het dus niet vlak voor een gelegenheid.
+
+Waarom een kuur van drie?
+
+Omdat de huid tussen de sessies door het werk doet. Er zijn meerdere prikkels nodig voordat er iets wordt opgebouwd, met twee tot vier weken ertussen.
+
+Wanneer zie ik resultaat van een skinbooster?
+
+Je huid voelt vaak al snel vochtiger aan, maar het echte verschil bouwt zich over de kuur op. Hoe snel dat gaat, verschilt per huid.
+
+Helpt een skinbooster tegen pigment?
+
+Daar is een aparte booster voor, de depigmentatiebooster, voor gezicht, hals en decolleté bij pigment, zonneschade en melasma. Zonder dagelijkse zonbescherming loopt het pigment door, ook tijdens de kuur.
+
+Wat doet de U225 anders dan een spuit?
+
+Bij de U225 staat de spuit stil en beweegt alleen de naald, tot acht keer per seconde. Daardoor trilt er minder en is de diepte van prik tot prik gelijk, ook als er een paar honderd achter elkaar gaan.
+
+Waar in Rotterdam zitten jullie?
+
+Aan de Weissenbruchlaan 166 in Rotterdam, aan de noordkant van de stad in een woonwijk. Je parkeert in de straat. De route en de openingstijden staan op onze contactpagina.
+
+**Weet je niet of een skinbooster bij je past**
+
+Dat hoef je ook niet te weten voordat je komt. We bekijken je huid, bespreken wat je wilt bereiken en zeggen welke behandeling daarbij past. Zoek je volume, dan hoor je dat een skinbooster daar niet voor is.
+
+Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met iets anders, stel je vraag dan via WhatsApp. Daar zit een behandelaar aan de andere kant en geen formulier.
+
+> knop: Lees verder
+
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+
+**Skinboosters in Rotterdam plannen**
+
+We bekijken je huid en kiezen daarna het mengsel dat erbij past. Is behandelen verstandig, dan kan de eerste sessie vaak in dezelfde afspraak.
+
+> knop: PLAN EEN HUIDCONSULT
+
+---
+
+### /kennisbank/zon-en-je-huid
+
+**Tabbladtitel:** Zon, vakantie en je huid | Diba Clinics
+
+**Google-omschrijving:** Waarom een gebruinde huid niet gelaserd wordt, hoe lang je wacht na de zon, wat er na een behandeling hoort en hoe je een behandeling rond een vakantie plant.
+
+**ZON, VAKANTIE EN JE HUID**
+
+Licht en kleur zitten elkaar in de weg. Zit er verse kleur van zon of zonnebank in je huid, dan neemt die het licht van een laser of IPL op en gaat de energie naar de verkeerde plek; daarom wordt er op een gebruinde huid niet gelaserd. Na een behandeling is je huid juist gevoeliger voor zon, en dan hoort dagelijks SPF 50 erbij.
+
+> knop: PLAN EEN AFSPRAAK
+
+> knop: BEKIJK DE TARIEVEN
+
+*VOOR LASER*
+
+Eigen kleur terug
+
+*NA EEN PEELING*
+
+Dagelijks SPF 50
+
+*ZONVAKANTIE*
+
+Plan het erna
+
+*PIGMENTTRAJECT*
+
+Niet in de zomer
+
+**Wat de zon met je huid doet**
+
+Bruin worden is geen kleur die je krijgt maar een reactie die je huid maakt. Dat is precies waarom het in de weg zit bij een behandeling met licht.
+
+Onder invloed van UV maken de pigmentcellen in je opperhuid extra melanine. Dat pigment gaat als een laagje boven de celkernen liggen en vangt een deel van het licht op dat erna binnenkomt. Je huid doet dat om zichzelf te beschermen, en het is dus een teken dat er schade is opgetreden en niet dat er niets aan de hand was.
+
+Dat extra pigment blijft weken tot maanden zitten, ook als je zelf vindt dat je kleur er alweer af is. Voor een laser telt alleen wat er op dat moment in je huid zit, en niet wat je in de spiegel ziet.
+
+Zon versnelt daarnaast het verouderen van je huid en jaagt pigmentvlekken aan. Bij melasma is zonbescherming geen advies naast de behandeling maar een deel van de behandeling zelf: zonder die bescherming loopt de rest terug binnen één seizoen.
+
+Een huid die net behandeld is, mist tijdelijk een deel van zijn afweer. Na een peeling, na microneedling en na laser is de barrière opener en reageert het pigment heftiger op UV. Dat is de periode waarin een dag zonder bescherming een vlek kan achterlaten die er eerst niet was.
+
+Wat zonbescherming bij pigment precies doet staat bij melasma en bij pigmentvlekken. Welke rol je huidtype speelt staat bij het Fitzpatrick-huidtype.
+
+**Wanneer we even wachten**
+
+Er zijn twee momenten waarop zon een afspraak verplaatst: de kleur die er al in zit, en de zon die eraan komt. Ze hebben allebei een andere oplossing.
+
+Kom je met verse kleur van zon of zonnebank, dan gaat een behandeling met licht niet door. Het licht mikt op pigment, en het pigment dat je net hebt opgebouwd ligt ervoor. De energie komt dan terecht in de bovenlaag in plaats van bij de haarwortel of de vlek, en dat geeft een kans op een brandplek of op een nieuwe verkleuring.
+
+Hoeveel weken je dan wacht, hoor je bij de intake. Dat staat hier met opzet niet als getal: het hangt af van je huidtype, van hoeveel kleur er is en van waar op je lichaam de behandeling zou gebeuren. De meting kan op dat moment gewoon doorgaan, en behandelingen die niet met licht werken meestal ook.
+
+Staat er een zonvakantie op de agenda, dan is het omgekeerde aan de hand. Een huid die net behandeld is, hoort een tijd uit de zon te blijven, en dat is precies wat op een vakantie niet lukt. Plan de behandeling dan erna, of ruim ervoor, zodat je huid tot rust is voordat je vertrekt.
+
+Ook voor een vertrek is de meting nuttig. Je weet dan waar je op moet letten in de zon, en bij terugkomst ligt er een vertrekpunt waarmee je meteen kunt beginnen, in plaats van dat je dan pas aan de wachttijd denkt.
+
+Wie in het najaar begint heeft het op al deze punten makkelijker. De zon staat lager, de vakanties zijn achter de rug, en een traject dat maanden duurt loopt dan niet halverwege tegen de zomer aan. Dat is ook de reden dat de agenda voor pigmenttrajecten vanaf september voller staat dan in mei.
+
+> knop: WAT EEN HUIDCONSULT INHOUDT
+
+**Wat helpt en wat we afraden**
+
+Een zonvakantie hoeft je traject niet stil te leggen. Het bepaalt vooral de volgorde waarin je de dingen plant.
+
+**DIT WERKT**
+
+- De meting en het advies, ook vlak voor vertrek
+
+- Behandelingen die niet met licht werken, in overleg met je behandelaar
+
+- Een traject starten in het najaar, als de zon eruit is
+
+- Onderhoud dat je zonder hersteltijd doet, zoals een rustige gezichtsbehandeling
+
+**DIT RADEN WE AF**
+
+- Laser of IPL op een huid met verse kleur van zon of zonnebank
+
+- Een peeling vlak voor een week in de volle zon
+
+- Een pigmenttraject beginnen in de maanden mei tot en met augustus
+
+- Zonbescherming overslaan zodra een vlek lichter wordt. Dan is hij er binnen een seizoen terug
+
+**Wat de zon per behandeling doet**
+
+Of een behandeling doorgaat op een gebruinde huid, en waar je in de weken erna rekening mee houdt. De regels gelden ook bij een zonnebank; die geeft dezelfde kleur.
+
+*BEHANDELING*
+
+*MET KLEUR VAN DE ZON*
+
+*IN DE WEKEN ERNA*
+
+*Laserontharing*
+
+Nee. Het licht mikt op pigment, en verse kleur ligt ervoor.
+
+De behandelde zone uit de volle zon houden en beschermen.
+
+*IPL bij pigment of roodheid*
+
+Nee. IPL stuurt meer golflengtes tegelijk en is hier nog gevoeliger voor.
+
+Dagelijks beschermen, anders komt de verkleuring terug.
+
+*Chemische peeling*
+
+Meestal niet, en anders in een lagere sterkte.
+
+Vervellen laten gebeuren, niet plukken, dagelijks SPF 50.
+
+*Microneedling*
+
+Vaak wel, mits je huid niet verbrand is.
+
+Een paar dagen rood, daarna beschermen tegen UV.
+
+*Cosmelan en Dermamelan*
+
+Nee, en we starten sowieso niet tussen mei en augustus.
+
+Vervellen, en daarna het hele jaar door beschermen.
+
+*Fotona 4D*
+
+Niet op een gebruinde huid; het blijft een laser.
+
+Een dag rood en warm, daarna beschermen.
+
+*HydraFacial*
+
+Ja. Er komt geen licht aan te pas.
+
+Geen hersteltijd. De gewone zonbescherming blijft gelden.
+
+*Dermaplaning*
+
+Ja, tenzij je huid verbrand is.
+
+**Waar je ons vindt in Rotterdam**
+
+Aan de noordkant van de stad, in een woonwijk en niet in een winkelstraat. Dat scheelt bij het parkeren en het is rustiger als je net behandeld bent.
+
+Je parkeert in de straat. De route vanaf de ring en met het openbaar vervoer staat op de contactpagina.
+
+*Maandag*
+
+Gesloten
+
+*Dinsdag*
+
+10:00 tot 18:00
+
+*Woensdag*
+
+10:00 tot 21:00
+
+*Donderdag*
+
+*Vrijdag*
+
+*Zaterdag*
+
+*Zondag*
+
+De agenda is actueler dan dit rijtje: binnen openingstijden staat niet elk uur een behandelaar vrij.
+
+De behandelaar kijkt bij binnenkomst naar je huid en naar de zone die aan de beurt is. Ziet die verse kleur, dan gaat de lichtbehandeling niet door en bespreken we wat er op dat moment wel kan. Dat oordeel gaat voor op de agenda.
+
+Wie er werkt, met welke titel en wat die titel precies inhoudt, staat met foto en al op de teampagina.
+
+**Veelgestelde vragen**
+
+Hoe lang moet ik wachten met laseren na de zon?
+
+Tot je huid haar eigen kleur terug heeft. Hoeveel weken dat duurt hoor je bij de intake, want het hangt af van je huidtype, van hoeveel kleur er is en van de zone. Wat je zelf ziet in de spiegel loopt meestal voor op wat er in je huid nog aan pigment zit.
+
+Mag ik na laserontharing in de zon?
+
+De behandelde zone hoort in de eerste dagen uit de volle zon, en daarna beschermd. Een huid die net behandeld is reageert heftiger op UV, en dan kan er een verkleuring achterblijven die er eerst niet was. Bedekken werkt beter dan insmeren alleen.
+
+Telt de zonnebank ook mee?
+
+Ja, precies zo. Een zonnebank maakt hetzelfde pigment aan als de zon, en dat pigment ligt op dezelfde manier in de weg bij een behandeling met licht. Zeg het dus ook als je kleur van een zonnebank komt.
+
+Welke factor zonnebrand heb ik nodig na een behandeling?
+
+SPF 50, elke dag, ook als het bewolkt is. Bij een peeling en bij een pigmenttraject is dat geen bijzaak maar een deel van de behandeling: zonder bescherming loopt het resultaat binnen een seizoen terug.
+
+Kan ik een behandeling doen vlak voor mijn vakantie?
+
+Liever niet. Een net behandelde huid hoort een tijd uit de zon, en dat lukt op vakantie zelden. Plan de behandeling erna, of ruim ervoor zodat je huid tot rust is. De meting en het advies kunnen wel, en die zijn juist voor vertrek nuttig.
+
+Waarom starten jullie geen pigmenttraject in de zomer?
+
+Omdat een traject als Cosmelan of Dermamelan maanden duurt en je huid in die tijd extra gevoelig is voor UV. In de zomerse maanden werkt de zon de behandeling tegen, en dan betaal je voor een resultaat dat meteen weer terugloopt. We starten daarom buiten de maanden mei tot en met augustus.
+
+Ik ben van nature donker. Geldt dit ook voor mij?
+
+Je eigen kleur is iets anders dan verse kleur van de zon. Op elk huidtype wordt hier behandeld, met een instelling die daarbij past. Waar het om gaat is de kleur die er sinds kort bij is gekomen, want daar is de instelling niet op afgestemd.
+
+Wat kan er wel als ik net terug ben van vakantie?
+
+De meting en het advies kunnen altijd, en behandelingen zonder licht meestal ook. Dan staat je vertrekpunt vast en kun je beginnen zodra je kleur eruit is, in plaats van op dat moment pas aan de wachttijd te denken.
+
+Moet ik in de winter ook zonbescherming gebruiken?
+
+Bij een pigmenttraject en in de weken na een peeling wel, elke dag. UV komt ook door bewolking en door glas heen, en pigmentcellen reageren daar het hele jaar op. Buiten die trajecten is het vooral een kwestie van gewoonte: wat je in de winter overslaat, sla je in maart ook over.
+
+Helpt zonbescherming echt zo veel bij pigmentvlekken?
+
+Bij pigment is het het grootste deel van het werk. Een vlek die lichter is gemaakt, komt terug zodra er weer UV op valt, en dat gaat sneller dan de behandeling hem lichter maakte. Dagelijks beschermen is daarmee goedkoper dan opnieuw behandelen.
+
+Waar in Rotterdam zitten jullie?
+
+Aan de Weissenbruchlaan 166 in Rotterdam, aan de noordkant van de stad in een woonwijk. Je parkeert in de straat. De route en de openingstijden staan op onze contactpagina.
+
+**Twijfel je over het moment**
+
+Laat het ons weten bij het maken van de afspraak. Staat er een vakantie op de agenda of ben je net terug, dan kiezen we daar de behandeling en de volgorde op, in plaats van je voor niets te laten komen.
+
+Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met iets anders, stel je vraag dan via WhatsApp. Daar zit een behandelaar aan de andere kant en geen formulier.
+
+> knop: Lees verder
+
+Laatst bijgewerkt op 12 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+
+**Plan het op het goede moment**
+
+In het huidconsult meten we je huid en bespreken we wat er nu kan en wat beter wacht. Ook als je net terug bent van vakantie is dat het juiste vertrekpunt.
+
+> knop: PLAN EEN HUIDCONSULT
+
+---
+
+### /kennisbank/zwanger-of-borstvoeding
+
+**Tabbladtitel:** Zwanger of borstvoeding: wat kan wel | Diba Clinics
+
+**Google-omschrijving:** Welke huidbehandelingen tijdens een zwangerschap en borstvoeding wel kunnen en welke wachten, en waarom pigment in die periode vaak vanzelf verandert.
+
+**ZWANGER OF BORSTVOEDING**
+
+Tijdens een zwangerschap en in de periode dat je borstvoeding geeft doen we een deel van de behandelingen niet: voor peelings, microneedling, skinboosters en de pigmenttrajecten ontbreekt het onderzoek om te kunnen zeggen dat het veilig is. Wat wel kan is meten, adviseren en de rustige gezichtsbehandelingen, zoals dermaplaning. Zeg het bij het maken van de afspraak, dan kiezen we daaruit.
+
+> knop: PLAN EEN AFSPRAAK
+
+> knop: BEKIJK DE TARIEVEN
+
+*ALTIJD MOGELIJK*
+
+Meten en advies
+
+*MEESTAL WEL*
+
+Dermaplaning
+
+*WACHT*
+
+Peeling en needling
+
+*PIGMENT*
+
+Verandert vaak zelf
+
+**Waarom een deel moet wachten**
+
+Het gaat bijna nooit om een aangetoond gevaar. Het gaat om het ontbreken van onderzoek, en dat is in deze periode een reden op zich.
+
+Zwangere vrouwen worden om begrijpelijke redenen niet in onderzoek naar huidbehandelingen opgenomen. Daardoor is er voor een deel van wat wij doen geen enkel bewijs dat het veilig is, en ook niet dat het schadelijk is. Als die twee allebei ontbreken, is het niet doen de enige keuze die te verdedigen valt.
+
+Daar komt bij dat je huid in deze maanden anders reageert. Hormonen maken pigmentcellen actiever, de doorbloeding is hoger en de huid is vaak gevoeliger. Een peeling of een laser die eerder rustig verliep, kan nu een reactie geven die er anders niet geweest zou zijn.
+
+Bij borstvoeding speelt nog iets mee: een deel van de stoffen die bij een behandeling op of in de huid komen, is niet onderzocht op wat er in de moedermelk terechtkomt. Daarom loopt die periode in ons beleid mee met de zwangerschap.
+
+Voor pigment is er een tweede reden om te wachten, en die is praktisch. Vlekken die tijdens een zwangerschap zijn ontstaan, trekken erna vaak grotendeels weg. Behandelen terwijl de aanjager nog aan staat, kost geld voor een resultaat dat je deels gratis had gekregen.
+
+Op het wachten is één uitzondering, en dat is de meting. Die brengt niets in je huid en levert juist nu iets op, want hormonen veranderen pigment, talg en gevoeligheid tegelijk. Wat je in deze maanden vastlegt, is straks het vertrekpunt waarmee je ziet wat er echt is gebleven en wat vanzelf is weggetrokken.
+
+Wat pigment in deze periode doet staat bij melasma. Hoe het met striae na een zwangerschap zit staat bij striae.
+
+**Wat er in die maanden wel kan**
+
+Er blijft meer over dan mensen denken. Het meeste daarvan werkt aan de oppervlakte, en dat is precies waarom het kan.
+
+De meting kan altijd. Je huid wordt in kaart gebracht, je hoort wat er speelt en wat er straks bij past, en die opname is het vertrekpunt waarmee je na de borstvoeding meteen kunt beginnen. Voor wie in deze periode juist verandering in haar huid ziet, is dat vaak het nuttigste wat er nu te doen is.
+
+Dermaplaning kan, want daarbij komt alleen een steriel mesje over de buitenste laag en er zijn geen zuren bij betrokken. Een rustige, reinigende gezichtsbehandeling kan meestal ook, met producten die de behandelaar erop uitzoekt. Wat er precies past, beoordeelt zij bij de afspraak.
+
+Verder is dit de periode waarin zonbescherming het meeste oplevert. Bij pigment dat in de zwangerschap is opgekomen, houdt dagelijks beschermen de vlekken lichter en voorkomt het dat ze zich uitbreiden. Dat is geen uitstel maar behandeling, en het is het enige deel dat nu al werkt.
+
+Ook je eigen routine verandert in deze maanden. Retinol en de sterkere zuren laat je staan, en je huid reageert bovendien gevoeliger dan je van jezelf gewend bent. Wat er dan wel in past is meestal een eenvoudiger schema: rustig reinigen, een vochtinbrenger en dagelijkse zonbescherming.
+
+Zet het ook in je huidprofiel voordat je komt. Dan staat het in je dossier voordat het gesprek begint, en hoeft de behandelaar niet halverwege het plan om te gooien.
+
+> knop: OVER DERMAPLANING
+
+**Wat helpt en wat we afraden**
+
+De grens ligt bij wat er in of door de huid gaat. Wat aan de oppervlakte blijft, kan in overleg meestal gewoon.
+
+**DIT WERKT**
+
+- De huidanalyse en het advies, in elke maand
+
+- Dermaplaning en een rustige gezichtsbehandeling, in overleg
+
+- Zonbescherming en een thuisroutine die je huid rustig houdt
+
+- Een plan maken voor de periode na de borstvoeding
+
+**DIT RADEN WE AF**
+
+- Peelings met zuren, ook de mildere sterktes
+
+- Microneedling, op het gezicht en op het lichaam
+
+- Skinboosters en alles wat met een naald de huid in gaat
+
+- De pigmenttrajecten Cosmelan en Dermamelan
+
+**Wat kan en wat wacht tot erna**
+
+Per behandeling wat er tijdens de zwangerschap en tijdens de borstvoeding gebeurt. Waar er twijfel is, staat dat er als twijfel en niet als regel.
+
+*BEHANDELING*
+
+*TIJDENS DE ZWANGERSCHAP*
+
+*TIJDENS DE BORSTVOEDING*
+
+*Huidanalyse*
+
+Kan, in elke maand
+
+Kan. Geen zuren, alleen de buitenste laag.
+
+*HydraFacial*
+
+Meestal wel, met aangepaste producten.
+
+Meestal wel.
+
+*Chemische peeling*
+
+Nee. Staat als contra-indicatie bij de peelinglijnen.
+
+Nee, ook niet op het lichaam.
+
+Nee. Staat als contra-indicatie bij de U225.
+
+*Laserontharing*
+
+In overleg; meestal wachten we tot erna.
+
+In overleg.
+
+*IPL bij pigment of roodheid*
+
+In overleg; pigment verandert nu toch.
+
+Nee. We beginnen er in deze periode niet aan.
+
+*Striae behandelen*
+
+Meten kan, behandelen niet.
+
+Nee. We wachten tot na de borstvoeding en beoordelen dan opnieuw.
+
+**Waar je ons vindt in Rotterdam**
+
+Aan de noordkant van de stad, in een woonwijk en niet in een winkelstraat. Dat scheelt bij het parkeren en het is rustiger als je net behandeld bent.
+
+Je parkeert in de straat. De route vanaf de ring en met het openbaar vervoer staat op de contactpagina.
+
+*Maandag*
+
+Gesloten
+
+*Dinsdag*
+
+10:00 tot 18:00
+
+*Woensdag*
+
+10:00 tot 21:00
+
+*Donderdag*
+
+*Vrijdag*
+
+*Zaterdag*
+
+*Zondag*
+
+De agenda is actueler dan dit rijtje: binnen openingstijden staat niet elk uur een behandelaar vrij.
+
+De huidtherapeut die je afspraak doet, aan de hand van wat je doorgeeft en van wat de meting laat zien. Staat het in je huidprofiel, dan is het bekend voordat je binnen bent en gaat de tijd naar het gesprek in plaats van naar de vragenlijst.
+
+Wie er werkt, met welke titel en wat die titel precies inhoudt, staat met foto en al op de teampagina.
+
+**Veelgestelde vragen**
+
+Kan ik een gezichtsbehandeling doen als ik zwanger ben?
+
+Een rustige, reinigende behandeling kan meestal wel, met producten die daarop uitgezocht zijn. Dermaplaning kan ook, want daarbij komen geen zuren aan te pas. Wat er in jouw geval past, beoordeelt de behandelaar bij de afspraak.
+
+Mag microneedling tijdens de zwangerschap?
+
+Nee. We behandelen dan niet met microneedling, ook niet op het lichaam en ook niet in een lagere diepte. Na de borstvoeding beoordelen we opnieuw; bij striae is dat vaak ook het moment waarop ze uit zichzelf al lichter zijn geworden.
+
+Mag een chemische peeling als ik zwanger ben?
+
+Nee. Zwangerschap en borstvoeding staan bij onze peelinglijnen als contra-indicatie, en dat geldt ook voor de mildere sterktes. Voor een huid die in deze periode ruw of dof staat, kijken we naar wat er zonder zuren mogelijk is.
+
+Kan laserontharing tijdens de zwangerschap?
+
+Dat bespreken we per geval, en meestal wachten we tot erna. Er is geen onderzoek dat schade aantoont, maar er is ook geen onderzoek dat veiligheid aantoont, en daar komt bij dat haargroei door de hormonen toch verandert. Zeg het bij het boeken, dan kiezen we samen het moment.
+
+Ik heb pigmentvlekken gekregen tijdens mijn zwangerschap.
+
+Beschermen wel, behandelen niet. Vlekken die door de hormonen zijn opgekomen trekken na de zwangerschap vaak grotendeels weg, en behandelen terwijl de aanjager nog aan staat levert weinig blijvends op. Dagelijkse zonbescherming houdt ze in die tijd zo licht mogelijk.
+
+Hoe lang na de bevalling kan ik weer behandeld worden?
+
+Geef je geen borstvoeding, dan kan er na de bevalling weer gemeten en behandeld worden zodra je je er goed bij voelt. Geef je wel borstvoeding, dan wachten we daarmee tot die periode voorbij is. De meting kan intussen gewoon.
+
+Moet ik het zeggen als ik zwanger ben of borstvoeding geef?
+
+Ja, en het liefst bij het maken van de afspraak. Dan reserveren we meteen de juiste behandeling en de juiste tijd, in plaats van dat het plan aan de balie omgegooid moet worden. Je kunt het ook vooraf in je huidprofiel zetten.
+
+Heeft het zin om nu al langs te komen?
+
+Vaak wel. De meting legt vast hoe je huid er nu voor staat, en dat is het vertrekpunt waarmee je na de borstvoeding direct kunt beginnen. Een losse intake kost € 50 en duurt maximaal dertig minuten.
+
+Mag ik retinol blijven gebruiken als ik zwanger ben?
+
+Nee. Retinol en de verwante vitamine A-zuren laat je in deze periode staan, en dat geldt ook voor de sterkere zuren uit je eigen routine. Wat er dan wel past is meestal een eenvoudiger schema: rustig reinigen, een vochtinbrenger en dagelijkse zonbescherming. Neem je producten mee naar de afspraak, dan lopen we ze samen door.
+
+Kan ik iets doen aan acne die tijdens de zwangerschap opkomt?
+
+Binnen de grenzen hierboven wel. Wat in deze periode afvalt zijn de zuren, de medicatie en de behandelingen die de huid in gaan; wat overblijft is een rustige reiniging, een aangepaste thuisroutine en meekijken hoe het verloopt. Vaak zakt het na de bevalling weer, en dan pakken we op wat er dan nog staat.
+
+Waarom loopt de borstvoeding mee met de zwangerschap?
+
+Omdat voor een deel van de stoffen die bij een behandeling gebruikt worden niet onderzocht is wat er in de moedermelk terechtkomt. Dat is dezelfde reden als bij de zwangerschap: het ontbreken van onderzoek, en niet een aangetoond gevaar.
+
+Waar in Rotterdam zitten jullie?
+
+Aan de Weissenbruchlaan 166 in Rotterdam, aan de noordkant van de stad in een woonwijk. Je parkeert in de straat. De route en de openingstijden staan op onze contactpagina.
+
+**Weet je niet wat nu kan**
+
+Bel of app het even voordat je boekt. We kijken dan samen wat er in deze periode past en wat beter wacht, en zo nodig plannen we alleen de meting. Dat scheelt je een afspraak die aan de balie alsnog verandert.
+
+Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met iets anders, stel je vraag dan via WhatsApp. Daar zit een behandelaar aan de andere kant en geen formulier.
+
+> knop: Lees verder
+
+Laatst bijgewerkt op 12 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+
+**Meten kan altijd**
+
+In het huidconsult leggen we vast hoe je huid er nu voor staat en bespreken we wat er in deze periode mogelijk is. Daarmee heb je een vertrekpunt voor straks.
 
 > knop: PLAN EEN HUIDCONSULT
 
@@ -15832,7 +19882,7 @@ In het consult stelt de behandelaar je huidtype vast, kijkt naar je haar en de z
 
 ### /nazorg
 
-**Tabbladtitel:** Nazorg | Diba Clinics
+**Tabbladtitel:** Nazorg: wat mag wanneer weer | Diba Clinics
 
 **Google-omschrijving:** Mag ik morgen sporten, wanneer mag die retinol weer? Per behandeling een rooster met vanaf wanneer alles weer mag, en waarom.
 
@@ -16038,7 +20088,7 @@ Loopt er al iets bij je huisarts of gynaecoloog, zeg dat dan bij de intake. Niet
 
 ### /reviews
 
-**Tabbladtitel:** Reviews | Diba Clinics
+**Tabbladtitel:** Ervaringen van onze klanten | Diba Clinics
 
 **Google-omschrijving:** 3.893 reviews op Salonized, gemiddeld een 5,0. Wat dat wel zegt en wat niet, met de quotes zelf erbij.
 
@@ -16526,9 +20576,9 @@ In het eerste gesprek kijken we waar het geluid ontstaat en vragen we naar je na
 
 ### /tarieven
 
-**Tabbladtitel:** Tarieven | Diba Clinics
+**Tabbladtitel:** Tarieven huidbehandelingen Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Alle tarieven van Diba Clinics op één pagina, per sessie en per zone. Wat er staat is wat je betaalt.
+**Google-omschrijving:** Alle tarieven van Diba Clinics op één pagina, per sessie en per zone. Wat er staat is wat je betaalt, zonder pakketten en zonder acties.
 
 **ALLE TARIEVEN OP ÉÉN PLEK**
 
@@ -17075,4 +21125,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_138 pagina's · 7981 tekstblokken · ongeveer 115.464 woorden._
+_155 pagina's · 9938 tekstblokken · ongeveer 145.774 woorden._

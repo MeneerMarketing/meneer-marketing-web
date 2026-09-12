@@ -33,9 +33,11 @@ import { zoekmachineVelden } from "@/lib/seo";
 
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/ons-verhaal",
-  titel: "Ons verhaal",
+  /* Zie /over-ons: die twee droegen dezelfde kop en dezelfde belofte. Deze pagina gaat
+     over de werkwijze, dus draagt hij die vraag en niet de plaatsnaam. */
+  titel: "Hoe wij werken",
   omschrijving:
-    "Huidkliniek in Rotterdam sinds 2017. Geregistreerde huidtherapeuten, een traject dat begint met een huidanalyse en prijzen die op de site staan.",
+    "Hoe een traject bij Diba Clinics verloopt: het begint met een huidanalyse, de tarieven staan per sessie op de site en je hoort ook wat er niet kan.",
 });
 
 /**
@@ -116,10 +118,10 @@ export default function OnsVerhaalPage() {
               <span className="text-[var(--on-dark-body)]">Ons verhaal</span>
             </nav>
 
+            {/* Geen handmatige regelbreuk meer: die stond er voor "Een huidkliniek in /
+                Rotterdam" en duwt deze kortere kop nu onnodig op twee regels. */}
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
-              Een huidkliniek in
-              <br />
-              <span className="diba-accent-on-dark">Rotterdam</span>
+              Hoe wij <span className="diba-accent-on-dark">werken</span>
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
