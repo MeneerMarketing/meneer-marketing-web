@@ -119,7 +119,18 @@ export async function POST(request: NextRequest) {
 
   const sleutel = process.env.RESEND_API_KEY?.trim();
   const afzender = process.env.CONTACT_AFZENDER?.trim();
-  const ontvanger = process.env.CONTACT_ONTVANGER?.trim() || DIBA_EMAIL;
+  /**
+   * Waar de vraag heen gaat. Meerdere adressen mag, gescheiden door komma's.
+   *
+   * Dat is er bewust in gezet voor de overgang: tijdens het testen gaat de post naar een
+   * postvak waar je zelf bij kunt, en bij het omzetten naar de kliniek kunnen ze even
+   * allebei meelezen. Eén adres blijft gewoon werken; zonder instelling is het het adres
+   * uit `lib/site.ts`.
+   */
+  const ontvangers = (process.env.CONTACT_ONTVANGER?.trim() || DIBA_EMAIL)
+    .split(",")
+    .map((adres) => adres.trim())
+    .filter(Boolean);
 
   if (!sleutel || !afzender) {
     return NextResponse.json(
@@ -152,7 +163,7 @@ export async function POST(request: NextRequest) {
       },
       body: JSON.stringify({
         from: afzender,
-        to: [ontvanger],
+        to: ontvangers,
         reply_to: email,
         subject: `Contactformulier: ${onderwerp}`,
         text: regels,
