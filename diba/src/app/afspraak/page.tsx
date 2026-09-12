@@ -159,45 +159,46 @@ export default function AfspraakPage() {
         id="agenda"
         className="scroll-mt-[var(--anker-offset)] px-5 py-10 sm:px-9 sm:py-16 lg:px-[7.5vw] lg:py-20"
       >
-        {/* De agenda is 720 punten breed. In een kolom over de volle breedte staat hij
-            als een strook in het midden van een leeg vlak; naast de uitleg over wat je
-            kiest vult hij de bladzijde en staat het antwoord op de vraag "welke moet ik
-            hebben" naast de knop waarmee je hem kiest. */}
-        <div className="mx-auto grid gap-10 lg:grid-cols-[minmax(0,760px)_1fr] lg:items-start lg:gap-14">
-          <div>
-            <Boekingswidget />
-            {/* Hier stond een alinea die uitlegde dat de agenda van Salonized is. Weg op
-                verzoek van Okan (10 september 2026). De uitwijk naar hun eigen agenda is
-                niet weg: die verschijnt in de widget zelf zodra die niet laadt, en dat is
-                het enige moment waarop iemand er iets aan heeft. */}
-            <Reviewregel className="mt-6" keuze={5} />
-          </div>
+        {/* Yasin, 12 september 2026: "waarom is dat blok van afspraak zo klein terwijl
+            het juist daarom draait." De agenda stond in een kolom van 760 punten met de
+            uitleg ernaast, en daarmee was het kleinste ding op de pagina precies het ding
+            waarvoor je kwam. Nu krijgt hij de volle breedte en staat de uitleg eronder,
+            in twee kaarten naast elkaar in plaats van onder elkaar. */}
+        <div className="mx-auto">
+          <Boekingswidget />
+          {/* Hier stond een alinea die uitlegde dat de agenda van Salonized is. Weg op
+              verzoek van Okan (10 september 2026). De uitwijk naar hun eigen agenda is
+              niet weg: die verschijnt in de widget zelf zodra die niet laadt, en dat is
+              het enige moment waarop iemand er iets aan heeft. */}
+          <Reviewregel className="mt-6" keuze={5} />
 
-          <div className="lg:pt-2">
-            <Label>Als je twijfelt</Label>
-            {/* De kop brak in de smalle kolom over drie regels; de huisregel houdt het
-                op twee. Korter dus, en wat eraf viel staat in de zin eronder. */}
-            <h2 className="diba-display-s mt-3 max-w-[16ch] text-[var(--t-strong)]">
-              Twee manieren
-            </h2>
-            <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
-              Weet je nog niet welke behandeling je nodig hebt, dan begin je met
-              een van deze twee. In allebei kijkt een behandelaar eerst naar je
-              huid.
-            </p>
+          <div className="mt-10 rounded-[var(--r-lg)] bg-[var(--g-025)] p-6 sm:p-8 lg:mt-14">
+            <div className="grid gap-3 lg:grid-cols-[0.8fr_1.2fr] lg:items-end lg:gap-12">
+              <div>
+                <Label>Als je twijfelt</Label>
+                <h2 className="diba-display-s mt-3 text-[var(--t-strong)]">
+                  Twee manieren
+                </h2>
+              </div>
+              <p className="text-[16px] leading-7 text-[var(--t-body)]">
+                Weet je nog niet welke behandeling je nodig hebt, dan begin je
+                met een van deze twee. In allebei kijkt een behandelaar eerst
+                naar je huid.
+              </p>
+            </div>
 
-            <ul className="mt-5 space-y-3">
+            <ul className="mt-6 grid gap-4 sm:grid-cols-2">
               {KEUZES.map((k) => (
                 <li
                   key={k.kop}
-                  className="rounded-[var(--r-md)] bg-[var(--g-025)] p-5"
+                  className="rounded-[var(--r-md)] bg-white p-5 sm:p-6"
                 >
-                  <p className="text-[16px] leading-7 font-medium text-[var(--t-strong)]">
-                    {k.kop}
-                  </p>
-                  <p className="diba-label mt-1.5 text-[var(--t-label)]">
-                    {k.meta}
-                  </p>
+                  <div className="flex flex-wrap items-baseline justify-between gap-x-5 gap-y-1">
+                    <p className="text-[16px] leading-7 font-medium text-[var(--t-strong)]">
+                      {k.kop}
+                    </p>
+                    <p className="diba-label text-[var(--t-label)]">{k.meta}</p>
+                  </div>
                   <p className="mt-2.5 text-[15px] leading-7 text-[var(--t-body)]">
                     {k.zin}
                   </p>
@@ -207,7 +208,7 @@ export default function AfspraakPage() {
 
             <Link
               href="/behandeling-op-advies"
-              className="diba-label mt-5 inline-flex text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+              className="diba-label mt-6 inline-flex min-h-11 items-center text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
             >
               Meer over de behandeling op advies
             </Link>

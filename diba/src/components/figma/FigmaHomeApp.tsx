@@ -145,11 +145,16 @@ export default function FigmaHomeApp({
               <br />
               <span className="diba-accent-on-dark">een traject bij ons</span>
             </h2>
+            {/* Yasin, 12 september 2026: op een telefoon liep dit tegen de zeven regels
+                aan; hij wil er vier. Twee keer ingekort, want de eerste poging haalde er
+                vijf. Wat eruit ging: "tijdens de intake" (dat staat in de kop erboven) en
+                de slotzin dat niet elke behandeling om een analyse vraagt. Die laatste is
+                geen verlies, want "helpt een huidanalyse daarbij" zegt hetzelfde: het is
+                een voorwaarde, geen vaste stap. */}
             <p className="mt-7 max-w-md text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Tijdens de intake bespreken we je klacht en bekijkt de behandelaar
-              je huid. Helpt een huidanalyse daarbij, dan maken we opnames met
-              de EVE-M. Zo kun je later zien of er iets veranderd is. Niet elke
-              behandeling vraagt om zo’n analyse.
+              We bekijken je huid en bespreken je klacht. Helpt een huidanalyse
+              daarbij, dan meten we met de EVE-M, zodat je later ziet wat er
+              veranderd is.
             </p>
             {/* Eén uitgang, niet twee. De link "Meer over de huidanalyse" stond hieronder
                 en is eruit (Yasin, 11 september 2026): de mini-scan hiernaast is de actie

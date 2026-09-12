@@ -31,6 +31,13 @@
 export type Insurer = {
   readonly slug: string;
   readonly name: string;
+  /**
+   * De merken die onder deze verzekeraar vallen, zoals ze op iemands zorgpas staan.
+   *
+   * Mensen kennen vaak alleen die naam en niet de verzekeraar erachter: wie een pas van
+   * Stad Holland heeft, zoekt niet op DSW.
+   */
+  readonly labels?: readonly string[];
   /** Hun eigen pagina over vergoeding van huidbehandelingen. Geverifieerd, geen gok. */
   readonly vergoedingenUrl: string;
 
@@ -316,50 +323,173 @@ export const INSURERS: readonly Insurer[] = [
     eigenaardigheid:
       "Bij a.s.r. staat de voorwaarde in de polisvoorwaarden en niet in de vergoedingenvinder. De vinder geeft je het bedrag; of je er recht op hebt hangt af van een eis die een pdf verderop staat.",
   },
+  {
+    slug: "dsw",
+    logoSchaal: 1,
+    /* Nog geen logo. VerzekeraarLogo laat het vak dan weg; een naam zonder merk leest
+       beter dan een leeg grijs vlak. [BEELD-NODIG: logo van DSW] */
+    logo: "",
+    labels: ["Stad Holland", "inTwente"],
+    name: "DSW",
+    vergoedingenUrl:
+      "https://www.dsw.nl/Consumenten/Vergoedingen/Acnebehandeling",
+    waarTeVinden:
+      "DSW zet acnebehandeling en camouflage op twee losse pagina's. Je kiest daar je aanvullende verzekering, en pas dan verschijnt het bedrag dat bij jouw pakket hoort. Stad Holland en inTwente lopen via dezelfde pagina's.",
+    eigenaardigheid:
+      "DSW vergoedt acnebehandeling alleen in het gezicht en de hals. Voor een andere zone is er geen vergoeding, ook niet met een aanvullend pakket.",
+    eisAanBehandelaar:
+      "De behandelaar moet een huidtherapeut zijn die is aangesloten bij de Nederlandse Vereniging van Huidtherapeuten, met een eigen AGB-code in het register van Vektis. Een schoonheidsspecialist voldoet daar niet aan.",
+    zoVindJeHet: [
+      "Ga naar de pagina acnebehandeling; camouflageproducten staan bij DSW op een aparte pagina met een eigen voorwaarde.",
+      "Kies onderaan je eigen aanvullende verzekering. Zonder die keuze staat er geen bedrag, ook niet als je bent ingelogd.",
+      "Kijk of de zone waarvoor je komt het gezicht of de hals is; daarbuiten vergoedt DSW deze behandeling niet.",
+    ],
+    antwoorden: [
+      {
+        vraag: "Heb ik een verwijzing nodig?",
+        antwoord:
+          "Nee. DSW schrijft dat je voor deze behandeling geen verwijzing en geen toestemming vooraf nodig hebt. De voorwaarde zit bij de behandelaar en niet bij je huisarts.",
+      },
+      {
+        vraag: "Deel ik dit budget met iets anders?",
+        antwoord:
+          "Acnebehandeling en camouflage staan bij DSW op aparte pagina's met een eigen maximum. Kijk dus op de pagina van de behandeling waarvoor je komt, en ga niet af op wat je bij de andere las.",
+      },
+      {
+        vraag: "Gaat dit van mijn eigen risico af?",
+        antwoord:
+          "Nee. DSW zet het er letterlijk bij: deze vergoeding telt niet mee voor je eigen risico, want dat hoort bij de basisverzekering en dit komt uit de aanvullende.",
+      },
+    ],
+  },
+  {
+    slug: "zorg-en-zekerheid",
+    logoSchaal: 1,
+    /* [BEELD-NODIG: logo van Zorg en Zekerheid] */
+    logo: "",
+    name: "Zorg en Zekerheid",
+    vergoedingenUrl:
+      "https://service.zorgenzekerheid.nl/vergoedingenzoeker/acnebehandeling",
+    waarTeVinden:
+      "Zorg en Zekerheid heeft een vergoedingenzoeker. Typ daar acnebehandeling en kies je pakket. Wat je terugkrijgt hangt bij hen niet alleen van je pakket af, maar ook van het zorgprofiel dat de huidtherapeut vaststelt.",
+    eigenaardigheid:
+      "Sinds 2026 vergoedt Zorg en Zekerheid acnebehandeling pas vanaf zorgprofiel 2, en alleen als een huidtherapeut de behandeling doet. Dat profiel loopt van 0 tot 4 en wordt door de huidtherapeut zelf bepaald; het moet samen met de AGB-code op de factuur staan.",
+    eisAanBehandelaar:
+      "Een huidtherapeut die voldoet aan de eisen van het Kwaliteitsregister Paramedici. Een verwijzing is dan niet nodig. Behandelingen door een schoonheidsspecialist vergoeden ze sinds 2026 niet meer.",
+    zoVindJeHet: [
+      "Open de vergoedingenzoeker en zoek op acnebehandeling; die staat los van camouflageles.",
+      "Kies je aanvullende pakket. Daar staat wat je terugkrijgt en vanaf welk zorgprofiel dat geldt.",
+      "Vraag ons om je zorgprofiel en onze AGB-code voordat je declareert. Staan die niet op de factuur, dan wijzen ze hem af.",
+    ],
+    antwoorden: [
+      {
+        vraag: "Heb ik een verwijzing nodig?",
+        antwoord:
+          "Nee, je kunt zonder verwijzing naar een huidtherapeut, mits die voldoet aan de eisen van het Kwaliteitsregister Paramedici. Dat register is openbaar en je kunt er zelf op naam zoeken.",
+      },
+      {
+        vraag: "Wat is dat zorgprofiel?",
+        antwoord:
+          "Een indeling van 0 tot 4 die zegt hoe uitgebreid de acne is. De huidtherapeut stelt hem vast bij de eerste afspraak. Sinds 2026 vergoedt Zorg en Zekerheid pas vanaf profiel 2, dus dit bepaalt of je iets terugkrijgt.",
+      },
+      {
+        vraag: "Gaat dit van mijn eigen risico af?",
+        antwoord:
+          "Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.",
+      },
+    ],
+  },
+  {
+    slug: "salland",
+    logoSchaal: 1,
+    /* [BEELD-NODIG: logo van Salland] */
+    logo: "",
+    labels: ["HollandZorg"],
+    name: "Salland",
+    vergoedingenUrl:
+      "https://www.salland.nl/vergoedingen2026/gezichtsverzorging",
+    waarTeVinden:
+      "Bij Salland staat het onder gezichtsverzorging: acne, littekens, huidvlekken en overbeharing bij elkaar op één pagina. HollandZorg loopt onder dezelfde voorwaarden.",
+    eigenaardigheid:
+      "Salland wil vooraf schriftelijk toestemming geven, dus voordat de behandeling begint, en vraagt daarbij foto's van je gezicht en hals. Dat verzoek mail je zelf naar hun toestemmingsadres. Begin je zonder die toestemming, dan is het achteraf moeilijk recht te zetten.",
+    eisAanBehandelaar:
+      "Een huidtherapeut mag alle zorg uit deze vergoeding leveren. Een schoonheidsspecialist alleen de acnebehandeling, en dan met kernlidmaatschap van ANBOS en de specialisatie acne erbij.",
+    zoVindJeHet: [
+      "Open de pagina gezichtsverzorging van het lopende jaar; Salland zet het jaartal in het adres, dus let op dat je niet in een oud overzicht kijkt.",
+      "Regel de toestemming voor je eerste behandeling. Je mailt zelf een verzoek met foto's van gezicht en hals naar het adres dat op die pagina staat.",
+      "Bewaar het antwoord. Declareer je zonder die toestemming, dan volgt bijna zeker een afwijzing en achteraf regelen lukt zelden.",
+    ],
+    antwoorden: [
+      {
+        vraag: "Heb ik een verwijzing nodig?",
+        antwoord:
+          "Nee, een verwijzing van je huisarts vraagt Salland niet. Wat ze wel vragen is hun eigen toestemming vooraf, en dat is iets anders: die regel je bij de verzekeraar en niet bij de dokter.",
+      },
+      {
+        vraag: "Waarom willen ze foto's?",
+        antwoord:
+          "Om vooraf te beoordelen of het om zorg gaat en niet om verzorging. Dat oordeel vormen ze voordat je begint, en daarom werkt achteraf declareren hier slechter dan bij de meeste andere verzekeraars.",
+      },
+      {
+        vraag: "Gaat dit van mijn eigen risico af?",
+        antwoord:
+          "Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.",
+      },
+    ],
+  },
+  {
+    slug: "aevitae",
+    logoSchaal: 1,
+    /* [BEELD-NODIG: logo van Aevitae] */
+    logo: "",
+    labels: ["EUCARE"],
+    name: "Aevitae",
+    vergoedingenUrl:
+      "https://www.aevitae.com/vergoedingen-aanvullende-verzekering/acnetherapie/",
+    waarTeVinden:
+      "Aevitae voert de verzekering uit voor EUCARE; op je pas staat vaak die tweede naam. Acnetherapie heeft er een eigen pagina, en wat jij terugkrijgt staat in Mijn Aevitae, want dat verschilt per aanvullend pakket.",
+    eigenaardigheid:
+      "Bij een deel van de pakketten is er één budget voor huidbehandelingen samen, inclusief camouflagetherapie en ontharing. Wat je aan het een besteedt gaat van het ander af, dus vraag er ook bij wat je er dit jaar al van gebruikt hebt.",
+    eisAanBehandelaar:
+      "Een huidtherapeut die lid is van de Nederlandse Vereniging van Huidtherapeuten, of een schoonheidsspecialist met het diploma Beauty Care-B.",
+    zoVindJeHet: [
+      "Open de pagina over acnetherapie; camouflagetherapie en epilatie staan er los naast, met eigen voorwaarden.",
+      "Log in op Mijn Aevitae. Daar staat het bedrag dat bij jouw pakket hoort; op de algemene pagina staat het niet.",
+      "Vraag er meteen bij of je budget gedeeld is met camouflage en ontharing, en hoeveel je er dit jaar al van gebruikt hebt.",
+    ],
+    antwoorden: [
+      {
+        vraag: "Heb ik een verwijzing nodig?",
+        antwoord:
+          "Nee. Aevitae vraagt voor deze vergoeding geen verwijzing. De voorwaarde zit bij de behandelaar: een huidtherapeut die lid is van de beroepsvereniging, of een schoonheidsspecialist met het diploma Beauty Care-B.",
+      },
+      {
+        vraag: "Deel ik dit budget met iets anders?",
+        antwoord:
+          "Bij een deel van de pakketten wel: huidbehandelingen, camouflagetherapie en ontharing komen dan uit één budget. Vraag daarom niet alleen wat je krijgt, maar ook wat je er dit jaar al van hebt gebruikt.",
+      },
+      {
+        vraag: "Gaat dit van mijn eigen risico af?",
+        antwoord:
+          "Nee. Aevitae schrijft dat er bij deze vergoeding uit de aanvullende verzekering geen eigen risico en geen eigen bijdrage geldt.",
+      },
+    ],
+  },
 ];
 
 /**
- * De verzekeraars die er sinds 10 september 2026 bij horen, zonder eigen pagina.
+ * De vier die er op 10 september 2026 bij kwamen, hebben sinds 12 september een eigen
+ * pagina.
  *
- * Okan gaf deze vier door met de opmerking dat DSW voor Rotterdam de belangrijkste is. Ze
- * staan in de lijst op /vergoedingen en wijzen door naar hun eigen vergoedingenpagina.
+ * Ze stonden hier apart omdat er nog geen voorwaarden van nagekeken waren; een pagina
+ * met drie lege kopjes belooft iets wat er niet is. Die voorwaarden staan er nu, en ze
+ * lopen per verzekeraar scherp uiteen: DSW vergoedt alleen gezicht en hals, Zorg en
+ * Zekerheid pas vanaf zorgprofiel 2 en alleen bij een huidtherapeut, Salland wil vooraf
+ * toestemming met foto's, en bij Aevitae komt het bij een deel van de pakketten uit één
+ * gedeeld budget. Daarmee is elke pagina een eigen antwoord en geen doorslag.
  *
- * Waarom geen eigen pagina: een pagina hier belooft drie dingen die eerst nagelezen moeten
- * worden, en die zijn er voor deze vier nog niet. Zes keer dezelfde tekst met een andere
- * naam erboven is een doorslagpagina, en dat is precies wat de huisregels verbieden.
- *
- * De merken tussen haakjes zijn labels die onder dezelfde verzekeraar vallen; mensen kennen
- * vaak alleen die naam van hun pas.
+ * Wat er nog niet is: hun logo's. Het vak blijft dan gewoon weg.
  */
-export type ExtraVerzekeraar = {
-  readonly naam: string;
-  /** De merken die eronder vallen, zoals ze op iemands zorgpas staan. */
-  readonly labels?: readonly string[];
-  /** Hun eigen vergoedingenpagina. Nagekeken op 11 september 2026, alle vier 200. */
-  readonly url: string;
-};
-
-export const EXTRA_VERZEKERAARS: readonly ExtraVerzekeraar[] = [
-  {
-    naam: "DSW",
-    labels: ["Stad Holland", "inTwente"],
-    url: "https://www.dsw.nl/vergoedingen",
-  },
-  {
-    naam: "Zorg en Zekerheid",
-    url: "https://www.zorgenzekerheid.nl/vergoedingen",
-  },
-  {
-    naam: "Salland",
-    labels: ["HollandZorg"],
-    url: "https://www.salland.nl/vergoedingen",
-  },
-  {
-    naam: "Aevitae",
-    labels: ["EUCARE"],
-    url: "https://www.aevitae.com/vergoedingen",
-  },
-];
 
 export function insurerBySlug(slug: string): Insurer | undefined {
   return INSURERS.find((i) => i.slug === slug);

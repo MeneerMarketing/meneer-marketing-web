@@ -79,9 +79,16 @@ const KLEUR = "#434f3a";
  * de pagina eronder zichtbaar doorloopt en je merkt waar het paneel ophoudt. Salonized zelf
  * houdt op hun eigen boekpagina 744 punten aan als bovengrens, dus dit ligt in dezelfde orde.
  */
-const HOOGTE = 760;
+/* Yasin, 12 september 2026: "waarom is dat blok van afspraak zo klein terwijl het juist
+   daarom draait, die wil ik lekker groot hebben." Terecht: dit is de enige plek op de site
+   waar iemand daadwerkelijk boekt. De agenda stond in een kolom van 760 punten naast de
+   uitleg; nu krijgt hij de volle breedte en gaat de uitleg eronder staan. Breedte en
+   hoogte gaan mee omhoog, zodat er meer diensten tegelijk in beeld staan en je minder in
+   het paneel hoeft te schuiven. Op een telefoon blijft de hoogte 620: net iets minder dan
+   het beeld, zodat je ziet dat de pagina eronder doorloopt. */
+const HOOGTE = 880;
 const HOOGTE_MOBIEL = 620;
-const BREEDTE = 720;
+const BREEDTE = 1080;
 
 export default function Boekingswidget() {
   const vak = useRef<HTMLDivElement>(null);

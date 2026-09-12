@@ -199,10 +199,25 @@ export default function IntakePage() {
             </p>
           </div>
 
-          <div className="mt-6 grid gap-4 lg:grid-cols-2 lg:items-stretch">
-            <div className="flex flex-col rounded-[var(--r-lg)] bg-white p-5 sm:p-9">
-              <Label>Alleen meten</Label>
-              <p className="diba-card-title-lg mt-4 text-[var(--t-strong)]">
+          {/* Yasin, 12 september 2026: "waarom is hier zoveel witruimte en is het zo
+              slordig." Dat kwam van twee dingen tegelijk: de kaarten stonden op gelijke
+              hoogte (`items-stretch`) terwijl de rechter veel meer tekst heeft, en de
+              regel met de duur werd met `mt-auto` naar de onderrand geduwd. In de linker
+              kaart stond daardoor een gat van bijna tweehonderd pixels, puur om die ene
+              regel gelijk te krijgen. Nu staat de duur bovenaan naast het label, waar je
+              hem zoekt, en is elke kaart zo hoog als zijn eigen inhoud. */}
+          <div className="mt-6 grid gap-4 lg:grid-cols-2 lg:items-start">
+            {/* Een rand om de witte kaart. Zonder die rand stond hij als los zwevende
+                tekst naast een mintkleurige kaart, en dat is precies waardoor de rij
+                rommelig oogde: de een was een kaart, de ander niet. */}
+            <div className="rounded-[var(--r-lg)] border border-[var(--g-100)] bg-white p-5 sm:p-7">
+              <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+                <Label>Alleen meten</Label>
+                <span className="diba-label text-[var(--t-label)]">
+                  Max. {INTAKE_MINUTEN} minuten
+                </span>
+              </div>
+              <p className="diba-card-title-lg mt-3 text-[var(--t-strong)]">
                 Het huidconsult
               </p>
               <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
@@ -219,14 +234,16 @@ export default function IntakePage() {
                 Hij kost 50 euro. Kies je voor de afspraak waarin ook behandeld
                 kan worden, dan vervalt dat bedrag zodra we behandelen.
               </p>
-              <p className="diba-label mt-auto pt-6 text-[var(--t-label)]">
-                Max. {INTAKE_MINUTEN} minuten
-              </p>
             </div>
 
-            <div className="flex flex-col rounded-[var(--r-lg)] bg-[var(--g-075)] p-5 sm:p-9">
-              <Label>{COMBINATIE_AFSPRAAK.label}</Label>
-              <p className="diba-card-title-lg mt-4 text-[var(--t-strong)]">
+            <div className="rounded-[var(--r-lg)] bg-[var(--g-075)] p-5 sm:p-7">
+              <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+                <Label>{COMBINATIE_AFSPRAAK.label}</Label>
+                <span className="diba-label text-[var(--t-label)]">
+                  {COMBINATIE_AFSPRAAK.minuten} minuten
+                </span>
+              </div>
+              <p className="diba-card-title-lg mt-3 text-[var(--t-strong)]">
                 {COMBINATIE_AFSPRAAK.kop}
               </p>
               <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
@@ -254,9 +271,9 @@ export default function IntakePage() {
                 . Ben je al klant, dan hoeft de intake niet opnieuw en duurt hij{" "}
                 {ADVIES_MINUTEN.bestaand} minuten.
               </p>
-              <p className="diba-label mt-auto pt-6 text-[var(--t-label)]">
-                {COMBINATIE_AFSPRAAK.minuten} minuten, met minstens{" "}
-                {ADVIES_MINUTEN.minimaalBehandelen} minuten behandeltijd
+              <p className="mt-4 border-t border-[var(--g-100)] pt-4 text-[15px] leading-7 text-[var(--t-muted)]">
+                Van die {COMBINATIE_AFSPRAAK.minuten} minuten is minstens{" "}
+                {ADVIES_MINUTEN.minimaalBehandelen} minuten behandeltijd.
               </p>
             </div>
           </div>

@@ -1395,3 +1395,18 @@ body {
     display: none;
   }
 }
+
+/**
+ * De agenda van Salonized.
+ *
+ * Het laadscript zet de breedte uit `data-width` als vaste maat op het venster dat het
+ * neerzet. Die maat staat hoog, zodat de agenda binnenin ruim opmaakt en er meer diensten
+ * tegelijk in beeld staan. Op een scherm dat smaller is dan die maat zou het venster
+ * daarmee buiten de pagina steken, en dat is precies de horizontale schuifbalk die de
+ * huisregels verbieden. Deze regel maakt er een bovengrens van in plaats van een vaste
+ * maat: het venster wordt zo breed als de kolom waarin het staat, nooit breder.
+ */
+.salonized-booking iframe {
+  width: 100% !important;
+  max-width: 100% !important;
+}

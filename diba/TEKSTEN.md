@@ -1,6 +1,6 @@
 # Alle teksten van de website
 
-Diba Clinics · gegenereerd op 12 september 2026 · 155 pagina's
+Diba Clinics · gegenereerd op 12 september 2026 · 159 pagina's
 
 Dit document bevat elke tekst die een bezoeker op de site ziet, in de volgorde waarin
 hij op de pagina staat. Het is uit de echte pagina's getrokken en niet uit de broncode,
@@ -84,7 +84,7 @@ Veeg langs de klachten en klik door naar het hele verhaal: wat het is, wat eraan
 
 **Zo verloopt een traject bij ons**
 
-Tijdens de intake bespreken we je klacht en bekijkt de behandelaar je huid. Helpt een huidanalyse daarbij, dan maken we opnames met de EVE-M. Zo kun je later zien of er iets veranderd is. Niet elke behandeling vraagt om zo’n analyse.
+We bekijken je huid en bespreken je klacht. Helpt een huidanalyse daarbij, dan meten we met de EVE-M, zodat je later ziet wat er veranderd is.
 
 > knop: WAT GEBEURT ER IN EEN HUIDANALYSE?
 
@@ -14276,15 +14276,13 @@ Per verzekeraar staat waar in de polis je moet kijken en welke voorwaarde er het
 
 - a.s.r.
 
-Ook bij deze verzekeraars kun je bij ons terecht. Hun voorwaarden staan nog niet op onze site; deze links gaan naar hun eigen vergoedingenpagina.
+- DSW (Stad Holland, inTwente)
 
-- DSW (Stad Holland, inTwente) ↗
+- Zorg en Zekerheid
 
-- Zorg en Zekerheid ↗
+- Salland (HollandZorg)
 
-- Salland (HollandZorg) ↗
-
-- Aevitae (EUCARE) ↗
+- Aevitae (EUCARE)
 
 > knop: START JE INTAKE
 
@@ -14331,6 +14329,98 @@ Mensen stellen behandeling uit op grond van iets wat niet klopt. Daarom staat di
 - WAT MENSEN DENKEN Dat regelt de kliniek wel voor me Wij zetten op je factuur wat er precies gedaan is, zodat je die kunt indienen. Wat jouw polis dekt staat alleen in jouw polis, en dat gesprek voer je met je verzekeraar. Weet je niet waar je moet kijken, vraag het ons dan bij de intake.
 
 - WAT MENSEN DENKEN Ik hoor het later wel Een verwijzing of een akkoord telt alleen als het er is vóórdat de behandeling begint. Regel je het van tevoren, dan is het meestal een kwestie van één belletje naar je huisarts.
+
+---
+
+### /vergoedingen/aevitae
+
+**Tabbladtitel:** Vergoeding Aevitae | Diba Clinics
+
+**Google-omschrijving:** Waar je bij Aevitae vindt wat jouw polis vergoedt, en welke voorwaarde daar het vaakst in de weg zit. Wij kunnen je polis niet zien.
+
+**AEVITAE: WAAR JE HET VINDT.**
+
+Wij kunnen niet zien wat er in jouw polis staat, en wij kunnen ook niets toezeggen namens Aevitae. Wat we wel kunnen is je precies vertellen waar je het antwoord vindt en welke voorwaarde daar het vaakst tussen zit.
+
+Bedragen staan hier niet. Die veranderen per jaar en per pakket, en bij geld is onjuist erger dan afwezig.
+
+Aevitae voert de verzekering uit voor EUCARE; op je pas staat vaak die tweede naam. Acnetherapie heeft er een eigen pagina, en wat jij terugkrijgt staat in Mijn Aevitae, want dat verschilt per aanvullend pakket.
+
+> knop: NAAR AEVITAE ↗
+
+Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd voor op wat hier staat.
+
+Bedragen en pakketnamen staan er bewust niet bij.
+
+**Waar het op vastloopt**
+
+Bij een deel van de pakketten is er één budget voor huidbehandelingen samen, inclusief camouflagetherapie en ontharing. Wat je aan het een besteedt gaat van het ander af, dus vraag er ook bij wat je er dit jaar al van gebruikt hebt.
+
+Dit is niet het bedrag maar de voorwaarde, en dat is bewust: een voorwaarde verandert veel minder vaak dan een maximum, en het is meestal de reden dat een declaratie wordt afgewezen.
+
+**Wat Aevitae van ons vraagt**
+
+Een huidtherapeut die lid is van de Nederlandse Vereniging van Huidtherapeuten, of een schoonheidsspecialist met het diploma Beauty Care-B.
+
+Dit is het deel dat wij voor je kunnen nakijken. Vraag het even voordat je boekt, dan zeggen we of we aan deze eis voldoen.
+
+> knop: Lees verder
+
+> knop: BEL 010-2038423
+
+> knop: APP ONS
+
+**Zo kom je bij jouw eigen bedrag**
+
+Drie stappen, en je hebt het bedrag dat bij jouw polis hoort. Wij kunnen het niet voor je opzoeken: wat er in jouw pakket zit ziet alleen jij, achter je eigen inlog.
+
+- STAP 1 Open de pagina over acnetherapie; camouflagetherapie en epilatie staan er los naast, met eigen voorwaarden.
+
+- STAP 2 Log in op Mijn Aevitae. Daar staat het bedrag dat bij jouw pakket hoort; op de algemene pagina staat het niet.
+
+- STAP 3 Vraag er meteen bij of je budget gedeeld is met camouflage en ontharing, en hoeveel je er dit jaar al van gebruikt hebt.
+
+**De vragen die er bij Aevitae toe doen**
+
+Hieronder staat wat Aevitae er zelf over publiceert. Neem het mee als je belt en vraag het na voor jouw polis: wat voor het ene pakket geldt, hoeft voor het andere niet te gelden.
+
+- Heb ik een verwijzing nodig? Nee. Aevitae vraagt voor deze vergoeding geen verwijzing. De voorwaarde zit bij de behandelaar: een huidtherapeut die lid is van de beroepsvereniging, of een schoonheidsspecialist met het diploma Beauty Care-B.
+
+- Deel ik dit budget met iets anders? Bij een deel van de pakketten wel: huidbehandelingen, camouflagetherapie en ontharing komen dan uit één budget. Vraag daarom niet alleen wat je krijgt, maar ook wat je er dit jaar al van hebt gebruikt.
+
+- Gaat dit van mijn eigen risico af? Nee. Aevitae schrijft dat er bij deze vergoeding uit de aanvullende verzekering geen eigen risico en geen eigen bijdrage geldt.
+
+**Eén vraag komt hiervoor.**
+
+Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook Aevitae niet, en voor het grootste deel van wat wij doen is dat het antwoord.
+
+**Een factuur die klopt.**
+
+Wij zetten op je factuur wat er precies gedaan is en door wie, zodat je die kunt indienen. Vraagt Aevitae om een registratienummer of om de kwalificatie van de behandelaar, dan krijg je dat van ons. Bel gerust voordat je boekt: dat scheelt je een afwijzing achteraf.
+
+Wat wij niet doen is rechtstreeks declareren of toezeggen dat iets vergoed wordt. Dat gesprek voer je met je verzekeraar, en wij zouden het antwoord moeten raden.
+
+**Zit je niet bij Aevitae?**
+
+- CZ
+
+- VGZ
+
+- Menzis
+
+- Zilveren Kruis
+
+- ONVZ
+
+- a.s.r.
+
+- DSW
+
+- Zorg en Zekerheid
+
+- Salland
+
+Staat jouw verzekeraar er niet bij? De vier vragen hierboven werken overal, want ze gaan over voorwaarden die elke verzekeraar hanteert.
 
 ---
 
@@ -14413,6 +14503,14 @@ Wat wij niet doen is rechtstreeks declareren of toezeggen dat iets vergoed wordt
 - Zilveren Kruis
 
 - ONVZ
+
+- DSW
+
+- Zorg en Zekerheid
+
+- Salland
+
+- Aevitae
 
 Staat jouw verzekeraar er niet bij? De vier vragen hierboven werken overal, want ze gaan over voorwaarden die elke verzekeraar hanteert.
 
@@ -14498,6 +14596,106 @@ Wat wij niet doen is rechtstreeks declareren of toezeggen dat iets vergoed wordt
 
 - a.s.r.
 
+- DSW
+
+- Zorg en Zekerheid
+
+- Salland
+
+- Aevitae
+
+Staat jouw verzekeraar er niet bij? De vier vragen hierboven werken overal, want ze gaan over voorwaarden die elke verzekeraar hanteert.
+
+---
+
+### /vergoedingen/dsw
+
+**Tabbladtitel:** Vergoeding DSW | Diba Clinics
+
+**Google-omschrijving:** Waar je bij DSW vindt wat jouw polis vergoedt, en welke voorwaarde daar het vaakst in de weg zit. Wij kunnen je polis niet zien.
+
+**DSW: WAAR JE HET VINDT.**
+
+Wij kunnen niet zien wat er in jouw polis staat, en wij kunnen ook niets toezeggen namens DSW. Wat we wel kunnen is je precies vertellen waar je het antwoord vindt en welke voorwaarde daar het vaakst tussen zit.
+
+Bedragen staan hier niet. Die veranderen per jaar en per pakket, en bij geld is onjuist erger dan afwezig.
+
+DSW zet acnebehandeling en camouflage op twee losse pagina's. Je kiest daar je aanvullende verzekering, en pas dan verschijnt het bedrag dat bij jouw pakket hoort. Stad Holland en inTwente lopen via dezelfde pagina's.
+
+> knop: NAAR DSW ↗
+
+Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd voor op wat hier staat.
+
+Bedragen en pakketnamen staan er bewust niet bij.
+
+**Waar het op vastloopt**
+
+DSW vergoedt acnebehandeling alleen in het gezicht en de hals. Voor een andere zone is er geen vergoeding, ook niet met een aanvullend pakket.
+
+Dit is niet het bedrag maar de voorwaarde, en dat is bewust: een voorwaarde verandert veel minder vaak dan een maximum, en het is meestal de reden dat een declaratie wordt afgewezen.
+
+**Wat DSW van ons vraagt**
+
+De behandelaar moet een huidtherapeut zijn die is aangesloten bij de Nederlandse Vereniging van Huidtherapeuten, met een eigen AGB-code in het register van Vektis. Een schoonheidsspecialist voldoet daar niet aan.
+
+Dit is het deel dat wij voor je kunnen nakijken. Vraag het even voordat je boekt, dan zeggen we of we aan deze eis voldoen.
+
+> knop: Lees verder
+
+> knop: BEL 010-2038423
+
+> knop: APP ONS
+
+**Zo kom je bij jouw eigen bedrag**
+
+Drie stappen, en je hebt het bedrag dat bij jouw polis hoort. Wij kunnen het niet voor je opzoeken: wat er in jouw pakket zit ziet alleen jij, achter je eigen inlog.
+
+- STAP 1 Ga naar de pagina acnebehandeling; camouflageproducten staan bij DSW op een aparte pagina met een eigen voorwaarde.
+
+- STAP 2 Kies onderaan je eigen aanvullende verzekering. Zonder die keuze staat er geen bedrag, ook niet als je bent ingelogd.
+
+- STAP 3 Kijk of de zone waarvoor je komt het gezicht of de hals is; daarbuiten vergoedt DSW deze behandeling niet.
+
+**De vragen die er bij DSW toe doen**
+
+Hieronder staat wat DSW er zelf over publiceert. Neem het mee als je belt en vraag het na voor jouw polis: wat voor het ene pakket geldt, hoeft voor het andere niet te gelden.
+
+- Heb ik een verwijzing nodig? Nee. DSW schrijft dat je voor deze behandeling geen verwijzing en geen toestemming vooraf nodig hebt. De voorwaarde zit bij de behandelaar en niet bij je huisarts.
+
+- Deel ik dit budget met iets anders? Acnebehandeling en camouflage staan bij DSW op aparte pagina's met een eigen maximum. Kijk dus op de pagina van de behandeling waarvoor je komt, en ga niet af op wat je bij de andere las.
+
+- Gaat dit van mijn eigen risico af? Nee. DSW zet het er letterlijk bij: deze vergoeding telt niet mee voor je eigen risico, want dat hoort bij de basisverzekering en dit komt uit de aanvullende.
+
+**Eén vraag komt hiervoor.**
+
+Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook DSW niet, en voor het grootste deel van wat wij doen is dat het antwoord.
+
+**Een factuur die klopt.**
+
+Wij zetten op je factuur wat er precies gedaan is en door wie, zodat je die kunt indienen. Vraagt DSW om een registratienummer of om de kwalificatie van de behandelaar, dan krijg je dat van ons. Bel gerust voordat je boekt: dat scheelt je een afwijzing achteraf.
+
+Wat wij niet doen is rechtstreeks declareren of toezeggen dat iets vergoed wordt. Dat gesprek voer je met je verzekeraar, en wij zouden het antwoord moeten raden.
+
+**Zit je niet bij DSW?**
+
+- CZ
+
+- VGZ
+
+- Menzis
+
+- Zilveren Kruis
+
+- ONVZ
+
+- a.s.r.
+
+- Zorg en Zekerheid
+
+- Salland
+
+- Aevitae
+
 Staat jouw verzekeraar er niet bij? De vier vragen hierboven werken overal, want ze gaan over voorwaarden die elke verzekeraar hanteert.
 
 ---
@@ -14581,6 +14779,14 @@ Wat wij niet doen is rechtstreeks declareren of toezeggen dat iets vergoed wordt
 - ONVZ
 
 - a.s.r.
+
+- DSW
+
+- Zorg en Zekerheid
+
+- Salland
+
+- Aevitae
 
 Staat jouw verzekeraar er niet bij? De vier vragen hierboven werken overal, want ze gaan over voorwaarden die elke verzekeraar hanteert.
 
@@ -14666,6 +14872,106 @@ Wat wij niet doen is rechtstreeks declareren of toezeggen dat iets vergoed wordt
 
 - a.s.r.
 
+- DSW
+
+- Zorg en Zekerheid
+
+- Salland
+
+- Aevitae
+
+Staat jouw verzekeraar er niet bij? De vier vragen hierboven werken overal, want ze gaan over voorwaarden die elke verzekeraar hanteert.
+
+---
+
+### /vergoedingen/salland
+
+**Tabbladtitel:** Vergoeding Salland | Diba Clinics
+
+**Google-omschrijving:** Waar je bij Salland vindt wat jouw polis vergoedt, en welke voorwaarde daar het vaakst in de weg zit. Wij kunnen je polis niet zien.
+
+**SALLAND: WAAR JE HET VINDT.**
+
+Wij kunnen niet zien wat er in jouw polis staat, en wij kunnen ook niets toezeggen namens Salland. Wat we wel kunnen is je precies vertellen waar je het antwoord vindt en welke voorwaarde daar het vaakst tussen zit.
+
+Bedragen staan hier niet. Die veranderen per jaar en per pakket, en bij geld is onjuist erger dan afwezig.
+
+Bij Salland staat het onder gezichtsverzorging: acne, littekens, huidvlekken en overbeharing bij elkaar op één pagina. HollandZorg loopt onder dezelfde voorwaarden.
+
+> knop: NAAR SALLAND ↗
+
+Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd voor op wat hier staat.
+
+Bedragen en pakketnamen staan er bewust niet bij.
+
+**Waar het op vastloopt**
+
+Salland wil vooraf schriftelijk toestemming geven, dus voordat de behandeling begint, en vraagt daarbij foto's van je gezicht en hals. Dat verzoek mail je zelf naar hun toestemmingsadres. Begin je zonder die toestemming, dan is het achteraf moeilijk recht te zetten.
+
+Dit is niet het bedrag maar de voorwaarde, en dat is bewust: een voorwaarde verandert veel minder vaak dan een maximum, en het is meestal de reden dat een declaratie wordt afgewezen.
+
+**Wat Salland van ons vraagt**
+
+Een huidtherapeut mag alle zorg uit deze vergoeding leveren. Een schoonheidsspecialist alleen de acnebehandeling, en dan met kernlidmaatschap van ANBOS en de specialisatie acne erbij.
+
+Dit is het deel dat wij voor je kunnen nakijken. Vraag het even voordat je boekt, dan zeggen we of we aan deze eis voldoen.
+
+> knop: Lees verder
+
+> knop: BEL 010-2038423
+
+> knop: APP ONS
+
+**Zo kom je bij jouw eigen bedrag**
+
+Drie stappen, en je hebt het bedrag dat bij jouw polis hoort. Wij kunnen het niet voor je opzoeken: wat er in jouw pakket zit ziet alleen jij, achter je eigen inlog.
+
+- STAP 1 Open de pagina gezichtsverzorging van het lopende jaar; Salland zet het jaartal in het adres, dus let op dat je niet in een oud overzicht kijkt.
+
+- STAP 2 Regel de toestemming voor je eerste behandeling. Je mailt zelf een verzoek met foto's van gezicht en hals naar het adres dat op die pagina staat.
+
+- STAP 3 Bewaar het antwoord. Declareer je zonder die toestemming, dan volgt bijna zeker een afwijzing en achteraf regelen lukt zelden.
+
+**De vragen die er bij Salland toe doen**
+
+Hieronder staat wat Salland er zelf over publiceert. Neem het mee als je belt en vraag het na voor jouw polis: wat voor het ene pakket geldt, hoeft voor het andere niet te gelden.
+
+- Heb ik een verwijzing nodig? Nee, een verwijzing van je huisarts vraagt Salland niet. Wat ze wel vragen is hun eigen toestemming vooraf, en dat is iets anders: die regel je bij de verzekeraar en niet bij de dokter.
+
+- Waarom willen ze foto's? Om vooraf te beoordelen of het om zorg gaat en niet om verzorging. Dat oordeel vormen ze voordat je begint, en daarom werkt achteraf declareren hier slechter dan bij de meeste andere verzekeraars.
+
+- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.
+
+**Eén vraag komt hiervoor.**
+
+Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook Salland niet, en voor het grootste deel van wat wij doen is dat het antwoord.
+
+**Een factuur die klopt.**
+
+Wij zetten op je factuur wat er precies gedaan is en door wie, zodat je die kunt indienen. Vraagt Salland om een registratienummer of om de kwalificatie van de behandelaar, dan krijg je dat van ons. Bel gerust voordat je boekt: dat scheelt je een afwijzing achteraf.
+
+Wat wij niet doen is rechtstreeks declareren of toezeggen dat iets vergoed wordt. Dat gesprek voer je met je verzekeraar, en wij zouden het antwoord moeten raden.
+
+**Zit je niet bij Salland?**
+
+- CZ
+
+- VGZ
+
+- Menzis
+
+- Zilveren Kruis
+
+- ONVZ
+
+- a.s.r.
+
+- DSW
+
+- Zorg en Zekerheid
+
+- Aevitae
+
 Staat jouw verzekeraar er niet bij? De vier vragen hierboven werken overal, want ze gaan over voorwaarden die elke verzekeraar hanteert.
 
 ---
@@ -14750,6 +15056,14 @@ Wat wij niet doen is rechtstreeks declareren of toezeggen dat iets vergoed wordt
 
 - a.s.r.
 
+- DSW
+
+- Zorg en Zekerheid
+
+- Salland
+
+- Aevitae
+
 Staat jouw verzekeraar er niet bij? De vier vragen hierboven werken overal, want ze gaan over voorwaarden die elke verzekeraar hanteert.
 
 ---
@@ -14833,6 +15147,106 @@ Wat wij niet doen is rechtstreeks declareren of toezeggen dat iets vergoed wordt
 - ONVZ
 
 - a.s.r.
+
+- DSW
+
+- Zorg en Zekerheid
+
+- Salland
+
+- Aevitae
+
+Staat jouw verzekeraar er niet bij? De vier vragen hierboven werken overal, want ze gaan over voorwaarden die elke verzekeraar hanteert.
+
+---
+
+### /vergoedingen/zorg-en-zekerheid
+
+**Tabbladtitel:** Vergoeding Zorg en Zekerheid | Diba Clinics
+
+**Google-omschrijving:** Waar je bij Zorg en Zekerheid vindt wat jouw polis vergoedt, en welke voorwaarde daar het vaakst in de weg zit. Wij kunnen je polis niet zien.
+
+**ZORG EN ZEKERHEID: WAAR JE HET VINDT.**
+
+Wij kunnen niet zien wat er in jouw polis staat, en wij kunnen ook niets toezeggen namens Zorg en Zekerheid. Wat we wel kunnen is je precies vertellen waar je het antwoord vindt en welke voorwaarde daar het vaakst tussen zit.
+
+Bedragen staan hier niet. Die veranderen per jaar en per pakket, en bij geld is onjuist erger dan afwezig.
+
+Zorg en Zekerheid heeft een vergoedingenzoeker. Typ daar acnebehandeling en kies je pakket. Wat je terugkrijgt hangt bij hen niet alleen van je pakket af, maar ook van het zorgprofiel dat de huidtherapeut vaststelt.
+
+> knop: NAAR ZORG EN ZEKERHEID ↗
+
+Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd voor op wat hier staat.
+
+Bedragen en pakketnamen staan er bewust niet bij.
+
+**Waar het op vastloopt**
+
+Sinds 2026 vergoedt Zorg en Zekerheid acnebehandeling pas vanaf zorgprofiel 2, en alleen als een huidtherapeut de behandeling doet. Dat profiel loopt van 0 tot 4 en wordt door de huidtherapeut zelf bepaald; het moet samen met de AGB-code op de factuur staan.
+
+Dit is niet het bedrag maar de voorwaarde, en dat is bewust: een voorwaarde verandert veel minder vaak dan een maximum, en het is meestal de reden dat een declaratie wordt afgewezen.
+
+**Wat Zorg en Zekerheid van ons vraagt**
+
+Een huidtherapeut die voldoet aan de eisen van het Kwaliteitsregister Paramedici. Een verwijzing is dan niet nodig. Behandelingen door een schoonheidsspecialist vergoeden ze sinds 2026 niet meer.
+
+Dit is het deel dat wij voor je kunnen nakijken. Vraag het even voordat je boekt, dan zeggen we of we aan deze eis voldoen.
+
+> knop: Lees verder
+
+> knop: BEL 010-2038423
+
+> knop: APP ONS
+
+**Zo kom je bij jouw eigen bedrag**
+
+Drie stappen, en je hebt het bedrag dat bij jouw polis hoort. Wij kunnen het niet voor je opzoeken: wat er in jouw pakket zit ziet alleen jij, achter je eigen inlog.
+
+- STAP 1 Open de vergoedingenzoeker en zoek op acnebehandeling; die staat los van camouflageles.
+
+- STAP 2 Kies je aanvullende pakket. Daar staat wat je terugkrijgt en vanaf welk zorgprofiel dat geldt.
+
+- STAP 3 Vraag ons om je zorgprofiel en onze AGB-code voordat je declareert. Staan die niet op de factuur, dan wijzen ze hem af.
+
+**De vragen die er bij Zorg en Zekerheid toe doen**
+
+Hieronder staat wat Zorg en Zekerheid er zelf over publiceert. Neem het mee als je belt en vraag het na voor jouw polis: wat voor het ene pakket geldt, hoeft voor het andere niet te gelden.
+
+- Heb ik een verwijzing nodig? Nee, je kunt zonder verwijzing naar een huidtherapeut, mits die voldoet aan de eisen van het Kwaliteitsregister Paramedici. Dat register is openbaar en je kunt er zelf op naam zoeken.
+
+- Wat is dat zorgprofiel? Een indeling van 0 tot 4 die zegt hoe uitgebreid de acne is. De huidtherapeut stelt hem vast bij de eerste afspraak. Sinds 2026 vergoedt Zorg en Zekerheid pas vanaf profiel 2, dus dit bepaalt of je iets terugkrijgt.
+
+- Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.
+
+**Eén vraag komt hiervoor.**
+
+Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook Zorg en Zekerheid niet, en voor het grootste deel van wat wij doen is dat het antwoord.
+
+**Een factuur die klopt.**
+
+Wij zetten op je factuur wat er precies gedaan is en door wie, zodat je die kunt indienen. Vraagt Zorg en Zekerheid om een registratienummer of om de kwalificatie van de behandelaar, dan krijg je dat van ons. Bel gerust voordat je boekt: dat scheelt je een afwijzing achteraf.
+
+Wat wij niet doen is rechtstreeks declareren of toezeggen dat iets vergoed wordt. Dat gesprek voer je met je verzekeraar, en wij zouden het antwoord moeten raden.
+
+**Zit je niet bij Zorg en Zekerheid?**
+
+- CZ
+
+- VGZ
+
+- Menzis
+
+- Zilveren Kruis
+
+- ONVZ
+
+- a.s.r.
+
+- DSW
+
+- Salland
+
+- Aevitae
 
 Staat jouw verzekeraar er niet bij? De vier vragen hierboven werken overal, want ze gaan over voorwaarden die elke verzekeraar hanteert.
 
@@ -15546,8 +15960,6 @@ We reserveren er maximaal 30 minuten voor: het gesprek, de beoordeling van je hu
 
 Hij kost 50 euro. Kies je voor de afspraak waarin ook behandeld kan worden, dan vervalt dat bedrag zodra we behandelen.
 
-MAX. 30 MINUTEN
-
 Meten en meteen beginnen
 
 Boek je eerste afspraak
@@ -15558,7 +15970,7 @@ Of dat kan hangt af van wat de meting laat zien, van eventuele contra-indicaties
 
 Deze afspraak heet behandeling op advies. Ben je al klant, dan hoeft de intake niet opnieuw en duurt hij 60 minuten.
 
-120 MINUTEN, MET MINSTENS 60 MINUTEN BEHANDELTIJD
+Van die 120 minuten is minstens 60 minuten behandeltijd.
 
 Neem je huidprofiel mee
 
@@ -21125,4 +21537,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_155 pagina's · 9938 tekstblokken · ongeveer 145.774 woorden._
+_159 pagina's · 10128 tekstblokken · ongeveer 148.431 woorden._

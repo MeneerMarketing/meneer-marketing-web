@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Label from "@/components/ui/Label";
 import LeesVerder from "@/components/ui/LeesVerder";
-import { EXTRA_VERZEKERAARS, INSURERS } from "@/data/insurers";
+import { INSURERS } from "@/data/insurers";
 import { MISVERSTANDEN, ONZE_ROL, ROUTE } from "@/data/vergoeding-route";
 import { ERKENNINGEN } from "@/data/team";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -191,44 +191,27 @@ export default function VergoedingenPage() {
                       lopen van bijna vierkant tot drie keer zo breed als hoog; zonder dat
                       vak zou elke kaart een andere tekstinspringing krijgen. */}
                   <VerzekeraarLogo verzekeraar={v} hoogte={30} breedte={80} />
-                  <span>{v.name}</span>
+                  <span>
+                    {v.name}
+                    {/* De merknaam van je pas erbij: wie bij Stad Holland zit weet vaak
+                        niet dat dat DSW is, en zoekt dan verder op een lijst waar hij al
+                        op staat. */}
+                    {v.labels ? (
+                      <span className="text-[var(--t-muted)]">
+                        {" "}
+                        ({v.labels.join(", ")})
+                      </span>
+                    ) : null}
+                  </span>
                 </Link>
               </li>
             ))}
           </ul>
 
-          {/* De vier die er sinds kort bij horen (Okan, 10 september 2026). Ze hebben nog
-              geen eigen pagina hier, dus wijzen ze naar hun eigen vergoedingenpagina. Een
-              kaart zonder inhoud zou beloven dat er iets te lezen valt. */}
-          <div className="mt-8">
-            <p className="text-[16px] leading-7 text-[var(--t-body)]">
-              Ook bij deze verzekeraars kun je bij ons terecht. Hun voorwaarden
-              staan nog niet op onze site; deze links gaan naar hun eigen
-              vergoedingenpagina.
-            </p>
-            <ul className="mt-4 flex flex-wrap gap-2">
-              {EXTRA_VERZEKERAARS.map((v) => (
-                <li key={v.naam}>
-                  <a
-                    href={v.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-white px-5 text-[15px] leading-6 text-[var(--t-strong)] transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
-                  >
-                    {v.naam}
-                    {v.labels ? (
-                      <span className="text-[var(--t-muted)]">
-                        ({v.labels.join(", ")})
-                      </span>
-                    ) : null}
-                    <span aria-hidden="true" className="text-[var(--t-muted)]">
-                      ↗
-                    </span>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Hier stond een rijtje met vier verzekeraars zonder eigen pagina, met de
+              zin dat hun voorwaarden nog niet op onze site stonden. Dat klopte niet meer
+              zodra die voorwaarden er wel waren, en Yasin wees er op 12 september 2026
+              op: ze horen gewoon in de lijst hierboven. */}
 
           <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-3">
             <Link
