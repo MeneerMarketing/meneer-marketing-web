@@ -6,6 +6,7 @@ import {
   TextField,
   TextareaField,
 } from "@/components/ui/FormField";
+import { meld } from "@/lib/meten";
 import {
   DIBA_EMAIL,
   DIBA_REACTIETIJDEN,
@@ -90,6 +91,9 @@ export default function Contactformulier() {
       } | null;
 
       if (res.ok && data?.ok) {
+        /* Alleen het onderwerp gaat mee, en dat is een keuze uit een vaste lijst. Naam,
+           mailadres en de vraag zelf horen niet in een statistiekenpakket. */
+        meld("contact_verstuurd", { onderwerp: velden.onderwerp });
         setVelden(leeg);
         setStand("gelukt");
         return;
