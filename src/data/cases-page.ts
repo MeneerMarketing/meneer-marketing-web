@@ -92,24 +92,24 @@ export const CASES_PAGE_STORIES: Record<CaseSceneId, CasePageStory> = {
     punch: "Site, app en mail. Eén lijn. Alles op dezelfde stack.",
   },
   "diba-clinics": {
-    hook: "Veel klinieksites schreeuwen urgentie. DIBA wilde vertrouwen, alsof je al in de stoel zit.",
+    hook: "Glitter-template of echte kliniek? DIBA koos het tweede. Ook online.",
     meneerLine:
-      "Website from scratch, SEO, Google Ads en Meta in één lijn. Prijzen zichtbaar, geen pop-ups. Kliniek-niveau online.",
+      "Site from scratch, SEO per behandeling, Google Ads en Meta op landings die verkopen. Eén marketinglijn, geen losse partijen.",
     beats: [
       {
         label: "Zo begon het",
-        text: "De markt zit vol templates, stock en vage prijzen. Losse ads op een zwakke site lekt budget. DIBA wilde online hetzelfde vertrouwen als aan de Weissenbruchlaan in Hillegersberg, Rotterdam.",
+        text: "Sterke kliniek, zwak digitaal fundament. Mooie behandelingen, site die als template voelt. Ads los gezet zonder pagina's die meewerken. Budget lekte weg voordat iemand boekte.",
       },
       {
         label: "Zo bouwde ik",
-        text: "Custom website from scratch met merkgroen, echte behandelfoto's en harde contentregels. SEO per behandeling en lokale zoekintentie. Google Ads en Meta op landings die echt matchen met zoekgedrag.",
+        text: "Website from scratch met echt merk, echte foto's, prijzen op tafel. SEO per klacht en behandeling. Google Ads en Meta op pagina's die passen bij wat mensen zoeken én bij wat DIBA belooft in de stoel.",
       },
       {
         label: "Zo staat het nu",
-        text: "dibaclinics.nl draait live in Hillegersberg, Rotterdam. Bezoekers vinden de kliniek via SEO, klikken door op ads en boeken via een site die als kliniek voelt, niet als template.",
+        text: "dibaclinics.nl draait live. Organisch verkeer, betaalde campagnes en de site praten dezelfde taal. Bezoekers weten wat het kost en hoe ze boeken. Dat is het verschil tussen klikken en converteren.",
       },
     ],
-    punch: "Site, SEO, Google Ads en Meta. Eén marketinglijn voor een echte huidkliniek.",
+    punch: "Kliniek-niveau online. Site, SEO en ads die samen werken.",
   },
 };
 
@@ -142,7 +142,7 @@ export const CASES_PAGE_WERKWIJZE = {
     route:
       "BestRest kreeg per matras een andere route. Toppers zijn geen matrassen. Logisch.",
     bouwen:
-      "DIBA kreeg site, SEO, Google Ads en Meta in één lijn. Hills kreeg site, app en mail in dezelfde stack.",
+      "DIBA: site die als kliniek voelt, plus SEO en ads die niet schreeuwen. Hills: site, app en mail in één stack.",
     sturen:
       "DIBA: ads op landings die al converteren. SkinComplete: ads pas als SEO en mail al dragen.",
   },

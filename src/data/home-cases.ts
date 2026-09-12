@@ -216,19 +216,19 @@ export const HOME_CASES: HomeCase[] = [
   {
     id: "diba-clinics",
     client: "DIBA Clinics",
-    eyebrow: "Website · SEO · Google Ads & Meta",
-    title: "Huidkliniek from scratch met SEO, ads en afspraakflow",
+    eyebrow: "Site · SEO · Google Ads & Meta",
+    title: "Marketing from scratch voor een kliniek die vertrouwen verkoopt",
     homeHook:
-      "Website from scratch, SEO, Google Ads en Meta. Kliniek-niveau, geen influencer-template.",
-    metric: "Vol stack",
-    metricHint: "Site, SEO, ads · Hillegersberg, Rotterdam",
-    body: "DIBA Clinics vroeg om een volledig marketingtraject: site from scratch, vindbaarheid per behandeling, Google Ads en Meta op landings die converteren. Prijzen zichtbaar, route naar afspraak strak.",
+      "Site, SEO, Google Ads en Meta in één lijn. Kliniek-niveau online, geen glitter-template.",
+    metric: "Full stack",
+    metricHint: "site, vindbaarheid en campagnes op één lijn",
+    body: "DIBA Clinics had in de stoel al het vertrouwen. Online moest hetzelfde gevoel: site from scratch, SEO per behandeling, Google Ads en Meta op pagina's die echt converteren.",
     challenge:
-      "In de esthetische markt ogen veel sites hetzelfde: stock, urgentie-trucs, vage prijzen. Losse ads op een zwakke site verbranden budget. DIBA wilde online hetzelfde vertrouwen als in de stoel.",
+      "De esthetische markt schreeuwt online: pop-ups, stock, prijzen achter een formulier. Losse ads op zo'n site is geld weggooien. DIBA wilde het digitale equivalent van een eerlijk consult.",
     move:
-      "Custom website gebouwd from scratch met merkgroen, echte behandelfoto's en strakke contentregels. SEO per behandeling en lokale intentie. Google Ads en Meta Ads op pagina's die matchen met wat mensen zoeken.",
+      "Website from scratch met merkgroen, echte behandelfoto's en prijzen op tafel. SEO per klacht en behandeling. Google Ads en Meta op landings die matchen met zoekintentie én met wat DIBA in de praktijk belooft.",
     result:
-      "dibaclinics.nl draait live aan de Weissenbruchlaan in Hillegersberg, Rotterdam. Site, vindbaarheid en campagnes trekken dezelfde kant op.",
+      "dibaclinics.nl draait live. Organisch verkeer, betaalde campagnes en de site praten dezelfde taal. Bezoekers weten wat het kost en hoe ze boeken.",
     tags: [
       "Website from scratch",
       "SEO",
@@ -246,17 +246,17 @@ export const HOME_CASES: HomeCase[] = [
       {
         id: "website",
         label: "Website",
-        blurb: "From scratch, geen page builder",
+        blurb: "From scratch. Vertrouwen, geen glitter",
       },
       {
         id: "seo",
         label: "SEO",
-        blurb: "Behandelingen en lokale intentie",
+        blurb: "Per behandeling, niet alleen homepage",
       },
       {
         id: "google-ads",
         label: "Google Ads",
-        blurb: "Landings op zoekintentie",
+        blurb: "Landings op echte zoekintentie",
       },
       {
         id: "meta-ads",

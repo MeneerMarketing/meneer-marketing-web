@@ -168,7 +168,7 @@ export const DIENSTEN_CASE_PROOF = {
     },
     {
       name: "Huidkliniek",
-      hook: "Site, SEO, Google Ads en Meta in één lijn voor een echte kliniek.",
+      hook: "Sterke kliniek, zwak online? DIBA kreeg site, SEO en ads in één lijn.",
       tags: ["Website from scratch", "SEO", "Google Ads & Meta"],
       href: "/cases/diba-clinics",
     },
