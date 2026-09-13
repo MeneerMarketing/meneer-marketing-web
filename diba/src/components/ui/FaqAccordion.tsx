@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useState } from "react";
+import { useTc } from "@/lib/gebruik-taal";
 
 /**
  * DIBA FaqAccordion — referentie batch 1 (DIBA-RULES.md §8)
@@ -13,6 +14,7 @@ import { useId, useState } from "react";
 export type FaqItem = { question: string; answer: string };
 
 function PlusMin({ open }: { open: boolean }) {
+  const tc = useTc();
   return (
     <svg
       aria-hidden="true"
@@ -35,6 +37,7 @@ function PlusMin({ open }: { open: boolean }) {
 }
 
 export default function FaqAccordion({ items }: { items: FaqItem[] }) {
+  const tc = useTc();
   const baseId = useId();
   const [open, setOpen] = useState<number | null>(0);
 
@@ -64,7 +67,7 @@ export default function FaqAccordion({ items }: { items: FaqItem[] }) {
                            focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2
                            focus-visible:outline-[var(--diba-green-700)]"
               >
-                <span>{item.question}</span>
+                <span>{tc(item.question)}</span>
                 <span
                   className="grid h-8 w-8 shrink-0 place-items-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)]"
                   aria-hidden="true"
@@ -84,7 +87,7 @@ export default function FaqAccordion({ items }: { items: FaqItem[] }) {
             >
               <div className="overflow-hidden">
                 <p className="max-w-[68ch] pt-4 text-[15px] leading-7 text-[var(--t-body)]">
-                  {item.answer}
+                  {tc(item.answer)}
                 </p>
               </div>
             </div>

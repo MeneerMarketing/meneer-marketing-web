@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useTc } from "@/lib/gebruik-taal";
 
 /**
  * DIBA ProofStrip v3 — VERVANGT v2 (handtekening-batch 3.5, Addendum A3/A11)
@@ -42,6 +43,7 @@ export default function ProofStrip({
   /** Label van het ENE cijfer dat in deze context olijf kleurt (Green Touch, A3) */
   highlightLabel?: string;
 }) {
+  const tc = useTc();
   const ref = useRef<HTMLDListElement>(null);
   const [progress, setProgress] = useState(1); // SSR: definitieve waarden
   const started = useRef(false);
@@ -92,7 +94,7 @@ export default function ProofStrip({
         const shown = Math.round(item.value * progress);
         const isHi = highlightLabel != null && item.label === highlightLabel;
         return (
-          <div key={item.label} className="text-center">
+          <div key={tc(item.label)} className="text-center">
             <dd
               className={`text-[40px] leading-none md:text-[64px] ${isHi ? numHi : numBase}
                           [font-family:var(--font-display)] font-semibold tracking-[0.02em]
@@ -104,7 +106,7 @@ export default function ProofStrip({
             <dt
               className={`mt-[var(--space-2)] text-[13px] leading-[1.45] ${lab}`}
             >
-              {item.label}
+              {tc(item.label)}
             </dt>
           </div>
         );

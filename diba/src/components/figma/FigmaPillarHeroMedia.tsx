@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FIGMA_HOME_PORTRAIT } from "@/data/figma-home-images";
 import { publicCopy } from "@/lib/copy-flags";
+import { tc } from "@/lib/vertaal";
 
 type FigmaPillarHeroMediaProps = {
   src: string;
@@ -31,7 +32,7 @@ export default function FigmaPillarHeroMedia({
     <div className="relative min-h-[400px] overflow-hidden rounded-bl-[6rem] bg-[var(--g-200)] sm:min-h-[440px] lg:min-h-[480px] lg:rounded-bl-[10rem]">
       <Image
         src={image.src}
-        alt={image.alt}
+        alt={tc(image.alt)}
         fill
         priority
         sizes="(min-width: 1024px) 46vw, 100vw"
@@ -42,7 +43,7 @@ export default function FigmaPillarHeroMedia({
         className="absolute inset-0 bg-gradient-to-t from-[var(--foto-scrim)]/32 via-transparent to-transparent"
       />
       <span className="absolute left-6 top-6 rounded-full bg-white/90 px-4 py-2 text-[10px] font-medium uppercase tracking-[.12em] text-[var(--g-700)] sm:left-7 sm:top-7">
-        {badge}
+        {tc(badge)}
       </span>
     </div>
   );

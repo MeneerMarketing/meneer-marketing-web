@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { tc } from "@/lib/vertaal";
 
 export type FigmaBreadcrumbItem = {
   label: string;
@@ -8,12 +9,12 @@ export type FigmaBreadcrumbItem = {
 export function FigmaBreadcrumbs({ items }: { items: FigmaBreadcrumbItem[] }) {
   return (
     <nav
-      aria-label="Broodkruimels"
+      aria-label={tc("Broodkruimels")}
       className="mb-8 flex flex-wrap items-center gap-x-2 gap-y-1 text-[10px] font-medium uppercase tracking-[.12em] text-[var(--t-label)]"
     >
       {items.map((item, index) => (
         <span
-          key={`${item.label}-${index}`}
+          key={`${tc(item.label)}-${index}`}
           className="inline-flex items-center gap-2"
         >
           {index > 0 ? (
@@ -26,10 +27,10 @@ export function FigmaBreadcrumbs({ items }: { items: FigmaBreadcrumbItem[] }) {
               href={item.href}
               className="transition hover:text-[var(--g-700)]"
             >
-              {item.label}
+              {tc(item.label)}
             </Link>
           ) : (
-            <span className="text-[var(--g-700)]">{item.label}</span>
+            <span className="text-[var(--g-700)]">{tc(item.label)}</span>
           )}
         </span>
       ))}
@@ -96,7 +97,7 @@ export function FigmaWelNietGrid({
     <div className="grid gap-4 md:grid-cols-2">
       <div className="rounded-[1.5rem] border border-[var(--g-100)] bg-white p-7 shadow-[0_8px_32px_rgba(67,79,58,.04)] sm:p-8">
         <p className="text-[10px] font-semibold uppercase tracking-[.14em] text-[var(--t-label)]">
-          {welLabel}
+          {tc(welLabel)}
         </p>
         <ul className="mt-5 flex flex-col gap-3">
           {wel.map((item) => (
@@ -105,14 +106,14 @@ export function FigmaWelNietGrid({
               className="flex gap-3 text-[15px] leading-7 text-[var(--t-strong)]"
             >
               <FigmaCheckIcon />
-              {item}
+              {tc(item)}
             </li>
           ))}
         </ul>
       </div>
       <div className="rounded-[1.5rem] bg-[var(--g-025)] p-7 sm:p-8">
         <p className="text-[10px] font-semibold uppercase tracking-[.14em] text-[#9a6b6b]">
-          {nietLabel}
+          {tc(nietLabel)}
         </p>
         <ul className="mt-5 flex flex-col gap-3">
           {niet.map((item) => (
@@ -121,7 +122,7 @@ export function FigmaWelNietGrid({
               className="flex gap-3 text-[15px] leading-7 text-[#5f5765]"
             >
               <FigmaCrossIcon />
-              {item}
+              {tc(item)}
             </li>
           ))}
         </ul>
@@ -154,7 +155,7 @@ export function FigmaFilterPills<T extends string>({
     <div
       className={`flex flex-wrap gap-2 ${className}`}
       role="tablist"
-      aria-label={ariaLabel}
+      aria-label={tc(ariaLabel)}
     >
       {items.map((item) => {
         const active = value === item.id;
@@ -174,7 +175,7 @@ export function FigmaFilterPills<T extends string>({
                             : "border-[var(--g-100)] bg-white text-[var(--t-strong)] hover:border-[var(--g-300)]"
                         }`}
           >
-            {item.label}
+            {tc(item.label)}
           </button>
         );
       })}

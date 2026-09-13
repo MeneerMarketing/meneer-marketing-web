@@ -8,6 +8,7 @@ import { BEHANDELINGEN } from "@/data/behandelingen";
 import { TOEPASSINGEN } from "@/data/toepassingen";
 import { LANDINGS } from "@/data/landings";
 import { DIBA_SITE_URL } from "@/lib/site";
+import { anderePad, taalAlternatieven, taalVanPad } from "@/lib/taal";
 
 /**
  * De sitemap leidt zichzelf af uit de routes.
@@ -52,9 +53,16 @@ const APP = join(process.cwd(), "src", "app");
  */
 const OVERSLAAN = /^\/(dev|resultaten|laserontharing\/configurator)(\/|$)/;
 
-/** Alle statische routes met een eigen pagina, gevonden in de app-map. */
-function statischeRoutes(): string[] {
-  const uit: string[] = [];
+/**
+ * Alle statische routes met een eigen pagina, gevonden in de app-map.
+ *
+ * Per route komt ook het bestand mee waar hij uit komt. Dat was eerst af te leiden uit het
+ * adres, maar sinds de routegroepen `(nl)` en `(en)` klopt dat niet meer: /tarieven woont
+ * in src/app/(nl)/tarieven. De commitdatum wordt met dat pad opgezocht, dus zonder dit
+ * kreeg elke pagina de datum van de hele site.
+ */
+function statischeRoutes(): { route: string; bestand: string }[] {
+  const uit: { route: string; bestand: string }[] = [];
 
   const loop = (map: string) => {
     for (const item of readdirSync(map, { withFileTypes: true })) {
@@ -65,7 +73,12 @@ function statischeRoutes(): string[] {
       }
       if (item.name !== "page.tsx") continue;
 
-      const rel = relative(APP, map).split(sep).join("/");
+      /* Een segment tussen haakjes is een routegroep: die ordent de mappen maar staat niet
+         in het adres. src/app/(nl)/tarieven is gewoon /tarieven. */
+      const rel = relative(APP, map)
+        .split(sep)
+        .filter((deel) => !/^\(.*\)$/.test(deel))
+        .join("/");
       const route = rel === "" ? "/" : `/${rel}`;
 
       /* Een dynamisch segment levert geen eigen URL op; die komen uit de data. */
@@ -77,12 +90,20 @@ function statischeRoutes(): string[] {
       const bron = readFileSync(pad, "utf8");
       if (/permanentRedirect\(|\bredirect\(/.test(bron)) continue;
 
-      uit.push(route);
+      /* Een pagina die zichzelf op noindex zet hoort hier ook niet. Dat zijn de Engelse
+         pagina's waarvan de vertaling nog niet rond is: ze bestaan en ze werken, maar
+         zolang de teksten nog Nederlands zijn melden we ze niet aan bij Google. */
+      if (/robots:\s*\{\s*index:\s*false/.test(bron)) continue;
+
+      uit.push({
+        route,
+        bestand: `${relative(process.cwd(), pad).split(sep).join("/")}`,
+      });
     }
   };
 
   loop(APP);
-  return uit.sort();
+  return uit.sort((a, b) => a.route.localeCompare(b.route));
 }
 
 /**
@@ -94,6 +115,11 @@ function statischeRoutes(): string[] {
  */
 function gewicht(route: string): number {
   if (route === "/") return 1;
+  /* De Engelse pagina's staan lager dan hun Nederlandse tegenhanger. Niet omdat ze minder
+     af zijn, maar omdat de kliniek in Rotterdam staat en het meeste zoekverkeer Nederlands
+     is. Crawlbudget hoort eerst naar de taal waarin de meeste vragen binnenkomen. */
+  if (route === "/en") return 0.6;
+  if (route.startsWith("/en/")) return 0.5;
   if (route.startsWith("/huidproblemen/")) return 0.9;
   if (route === "/huidproblemen" || route === "/behandelingen") return 0.85;
   if (route.startsWith("/behandelingen/")) return 0.8;
@@ -183,25 +209,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const bronnen = new Map<string, string[]>();
   for (const b of BEHANDELINGEN) {
     bronnen.set(`/behandelingen/${b.slug}`, [
-      "src/app/behandelingen/[slug]/page.tsx",
+      "src/app/(nl)/behandelingen/[slug]/page.tsx",
       "src/data/behandelingen.ts",
     ]);
   }
   for (const t of TOEPASSINGEN) {
     bronnen.set(`/behandelingen/${t.behandeling}/${t.slug}`, [
-      "src/app/behandelingen/[slug]/[toepassing]/page.tsx",
+      "src/app/(nl)/behandelingen/[slug]/[toepassing]/page.tsx",
       "src/data/toepassingen.ts",
     ]);
   }
   for (const a of APPARATUUR) {
     bronnen.set(`/apparatuur/${a.slug}`, [
-      "src/app/apparatuur/[slug]/page.tsx",
+      "src/app/(nl)/apparatuur/[slug]/page.tsx",
       "src/data/apparatuur.ts",
     ]);
   }
   for (const i of INSURERS) {
     bronnen.set(`/vergoedingen/${i.slug}`, [
-      "src/app/vergoedingen/[slug]/page.tsx",
+      "src/app/(nl)/vergoedingen/[slug]/page.tsx",
       "src/data/insurers.ts",
     ]);
   }
@@ -211,9 +237,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       `src/data/landings/${l.slug}.ts`,
     ]);
   }
-  for (const route of statischeRoutes()) {
-    const eigen =
-      route === "/" ? "src/app/page.tsx" : `src/app${route}/page.tsx`;
+  for (const { route, bestand: eigen } of statischeRoutes()) {
     /* Veel pagina's halen hun tekst uit een databestand met dezelfde naam, zoals
        /huidproblemen/acne uit data/acne.ts. Staat dat er, dan telt het mee. */
     const laatste = route.split("/").filter(Boolean).pop();
@@ -224,6 +248,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     );
   }
 
+  /* Elke Nederlandse pagina heeft een Engelse tegenhanger onder /en, op vier na. Die
+     stonden hier alleen als ze een eigen bestand hadden, en dat hebben de pagina's met een
+     slug niet: /en/behandelingen/hydrafacial komt uit de route [slug]. Er stonden daardoor
+     59 Engelse adressen in de sitemap tegenover 156 Nederlandse, terwijl ze alle 152
+     bestaan. Ze delen hun bron met het Nederlands en dus ook hun datum: de tekst komt uit
+     hetzelfde bestand, alleen door het woordenboek. */
+  for (const [route, bron] of [...bronnen]) {
+    if (taalVanPad(route) === "en") continue;
+    const en = anderePad(route, "en");
+    if (en) bronnen.set(en, bron);
+  }
+
   const datums = commitdatums();
   const nieuwste = Math.max(0, ...datums.values());
   const landingDatum = new Map(
@@ -232,7 +268,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const laatstGewijzigd = (route: string): Date | undefined => {
     /* De homepage toont stukken van de hele site, dus hij verandert als de site verandert. */
-    if (route === "/") return nieuwste ? new Date(nieuwste) : undefined;
+    if (route === "/" || route === "/en")
+      return nieuwste ? new Date(nieuwste) : undefined;
     const kandidaten = (bronnen.get(route) ?? [])
       .map((b) => datums.get(b) ?? 0)
       .concat(landingDatum.get(route) ?? 0);
@@ -244,13 +281,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
      er twee keer in, en een dubbele URL in een sitemap is een fout. */
   const uniek = [...new Set(bronnen.keys())].sort();
 
+  const heel = (p: string) => `${DIBA_SITE_URL}${p === "/" ? "" : p}`;
+
   return uniek.map((route) => {
     const datum = laatstGewijzigd(route);
+    /* Dezelfde hreflang-verwijzingen als in de kop van de pagina zelf. Google mag ze uit
+       de sitemap of uit de HTML halen; twee keer hetzelfde signaal is geen probleem, een
+       ontbrekend signaal wel. */
+    const talen = taalAlternatieven(route);
     return {
-      url: `${DIBA_SITE_URL}${route === "/" ? "" : route}`,
+      url: heel(route),
       ...(datum ? { lastModified: datum } : {}),
       changeFrequency: frequentie(route),
       priority: gewicht(route),
+      ...(talen
+        ? {
+            alternates: {
+              languages: Object.fromEntries(
+                Object.entries(talen).map(([taal, p]) => [taal, heel(p)]),
+              ),
+            },
+          }
+        : {}),
     };
   });
 }

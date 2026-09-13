@@ -1,7 +1,8 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import { useState } from "react";
+import { useT } from "@/lib/gebruik-taal";
 
 /**
  * De vier kolommen van de voettekst.
@@ -24,11 +25,12 @@ export default function VoetKolommen({
   kopKlasse: string;
   linkKlasse: string;
 }) {
+  const t = useT();
   const [open, setOpen] = useState<string | null>(null);
 
   return (
     <nav
-      aria-label="Voettekst"
+      aria-label={t("Voettekst")}
       className="grid max-lg:divide-y max-lg:divide-[var(--g-100)] max-lg:border-y max-lg:border-[var(--g-100)] lg:grid-cols-4 lg:gap-10"
     >
       {kolommen.map((kolom) => {
@@ -48,7 +50,7 @@ export default function VoetKolommen({
                    tien pixels in plaats van in kleine kapitalen. */
                 className={`${kopKlasse} flex min-h-12 w-full items-center justify-between gap-3 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] lg:hidden`}
               >
-                {kolom.kop}
+                {t(kolom.kop)}
                 <svg
                   viewBox="0 0 12 12"
                   className={`h-3 w-3 shrink-0 text-[var(--g-700)] transition-transform duration-300 ${
@@ -64,7 +66,7 @@ export default function VoetKolommen({
                   <path d="M2.5 4.5 6 8l3.5-3.5" />
                 </svg>
               </button>
-              <span className="hidden lg:inline">{kolom.kop}</span>
+              <span className="hidden lg:inline">{t(kolom.kop)}</span>
             </h2>
             <ul
               id={id}
@@ -75,7 +77,7 @@ export default function VoetKolommen({
               {kolom.links.map((l) => (
                 <li key={l.href}>
                   <Link prefetch={false} href={l.href} className={linkKlasse}>
-                    {l.label}
+                    {t(l.label)}
                   </Link>
                 </li>
               ))}

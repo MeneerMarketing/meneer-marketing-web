@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import { leesTriggers, ROSACEA_TRIGGERS } from "@/data/rosacea";
-import { publicCopy } from "@/lib/copy-flags";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * De triggersorteerder — de uitblinker van de rosaceapagina.
@@ -43,6 +43,8 @@ const GROEP_INFO = {
 } as const;
 
 export default function Triggersorteerder() {
+  const t = useT();
+  const tc = useTc();
   const [gekozen, setGekozen] = useState<string[]>([]);
   const lezing = useMemo(() => leesTriggers(gekozen), [gekozen]);
 
@@ -51,9 +53,9 @@ export default function Triggersorteerder() {
       h.includes(id) ? h.filter((x) => x !== id) : [...h, id],
     );
 
-  const nogTeKiezen = ROSACEA_TRIGGERS.filter((t) => !gekozen.includes(t.id));
+  const nogTeKiezen = ROSACEA_TRIGGERS.filter((x) => !gekozen.includes(x.id));
   const perGroep = (g: keyof typeof GROEP_INFO) =>
-    ROSACEA_TRIGGERS.filter((t) => gekozen.includes(t.id) && t.groep === g);
+    ROSACEA_TRIGGERS.filter((x) => gekozen.includes(x.id) && x.groep === g);
 
   return (
     <div className="mt-12">
@@ -62,8 +64,10 @@ export default function Triggersorteerder() {
         <div className="flex flex-wrap items-baseline justify-between gap-3">
           <Label>
             {gekozen.length === 0
-              ? "Tik aan wat jou rood maakt"
-              : `${gekozen.length} van ${ROSACEA_TRIGGERS.length} aangetikt`}
+              ? t("Tik aan wat jou rood maakt")
+              : `${gekozen.length} ${t("van")} ${ROSACEA_TRIGGERS.length} ${t(
+                  "aangetikt",
+                )}`}
           </Label>
           {gekozen.length > 0 ? (
             <button
@@ -71,30 +75,31 @@ export default function Triggersorteerder() {
               onClick={() => setGekozen([])}
               className="diba-label text-[var(--t-muted)] underline underline-offset-4 hover:text-[var(--g-700)]"
             >
-              Opnieuw
+              {t("Opnieuw")}
             </button>
           ) : null}
         </div>
 
         <div
           className="mt-5 flex flex-wrap gap-2"
-          aria-label="Beschikbare triggers"
+          aria-label={tc("Beschikbare triggers")}
         >
           {nogTeKiezen.length === 0 ? (
             <p className="text-[15px] leading-7 text-[var(--t-body)]">
-              Je hebt ze allemaal aangetikt. Dat komt voor, en het betekent niet
-              dat je er slechter aan toe bent dan iemand met twee.
+              {t(
+                "Je hebt ze allemaal aangetikt. Dat komt voor, en het betekent niet dat je er slechter aan toe bent dan iemand met twee.",
+              )}
             </p>
           ) : (
-            nogTeKiezen.map((t) => (
+            nogTeKiezen.map((trg) => (
               <button
-                key={t.id}
+                key={trg.id}
                 type="button"
                 aria-pressed={false}
-                onClick={() => wissel(t.id)}
+                onClick={() => wissel(trg.id)}
                 className="diba-label min-h-12 rounded-[var(--r-pill)] bg-[var(--g-050)] px-4 text-[var(--t-label)] transition hover:bg-[var(--g-075)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
               >
-                {t.naam}
+                {tc(trg.naam)}
               </button>
             ))
           )}
@@ -119,37 +124,37 @@ export default function Triggersorteerder() {
                   aria-hidden="true"
                 />
                 <h3 className="diba-label text-[var(--t-strong)]">
-                  {info.kop}
+                  {tc(info.kop)}
                 </h3>
               </div>
               <p className="mt-2 text-sm leading-6 text-[var(--t-body)]">
-                {info.toelichting}
+                {tc(info.toelichting)}
               </p>
 
               <ul className="mt-5 space-y-2.5" aria-live="polite">
                 {items.length === 0 ? (
                   <li className="text-sm leading-6 text-[var(--t-muted)]">
-                    Nog niets in deze groep.
+                    {t("Nog niets in deze groep.")}
                   </li>
                 ) : (
-                  items.map((t) => (
-                    <li key={t.id}>
+                  items.map((trg) => (
+                    <li key={trg.id}>
                       <button
                         type="button"
                         aria-pressed
-                        onClick={() => wissel(t.id)}
+                        onClick={() => wissel(trg.id)}
                         className="w-full rounded-[var(--r-sm)] bg-white p-4 text-left transition hover:bg-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                       >
                         <span className="flex items-baseline justify-between gap-3">
                           <strong className="text-[15px] font-medium leading-6">
-                            {t.naam}
+                            {tc(trg.naam)}
                           </strong>
                           <span className="diba-label shrink-0 text-[var(--t-muted)]">
-                            Weghalen
+                            {t("Weghalen")}
                           </span>
                         </span>
                         <span className="mt-1 block text-sm leading-6 text-[var(--t-body)]">
-                          {publicCopy(t.waarom)}
+                          {tc(trg.waarom)}
                         </span>
                       </button>
                     </li>
@@ -167,32 +172,32 @@ export default function Triggersorteerder() {
         aria-live="polite"
       >
         <div>
-          <h3 className="diba-card-title-lg">{lezing.kop}</h3>
+          <h3 className="diba-card-title-lg">{tc(lezing.kop)}</h3>
           <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
-            {lezing.tekst}
+            {tc(lezing.tekst)}
           </p>
         </div>
 
         <div className="flex flex-col rounded-[var(--r-sm)] bg-[var(--g-075)] p-5">
-          <Label>Waar wij dan beginnen</Label>
+          <Label>{t("Waar wij dan beginnen")}</Label>
           <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
-            {publicCopy(lezing.waarDeKnopZit)}
+            {tc(lezing.waarDeKnopZit)}
           </p>
           <Button
             href={`/intake?topic=rosacea${gekozen.length ? `&triggers=${gekozen.join(",")}` : ""}`}
             className="mt-6 w-fit"
           >
             {gekozen.length
-              ? "Neem dit mee naar de intake"
-              : "Plan een huidconsult"}
+              ? t("Neem dit mee naar de intake")
+              : t("Plan een huidconsult")}
           </Button>
         </div>
       </div>
 
       <p className="mt-5 max-w-[72ch] text-sm leading-6 text-[var(--t-muted)]">
-        Dit is geen diagnose en geen test. Het is een manier om je eigen patroon
-        te zien voordat je hier binnenloopt, zodat het gesprek niet bij nul
-        begint.
+        {t(
+          "Dit is geen diagnose en geen test. Het is een manier om je eigen patroon te zien voordat je hier binnenloopt, zodat het gesprek niet bij nul begint.",
+        )}
       </p>
     </div>
   );

@@ -6,6 +6,7 @@ import Label from "@/components/ui/Label";
 import { LITTEKEN_FASES, VENSTER_TEKST } from "@/data/littekens";
 import { publicCopy } from "@/lib/copy-flags";
 import { RASTER_SECTIE } from "@/lib/raster";
+import { useTc, useT } from "@/lib/gebruik-taal";
 
 /**
  * De littekenklok — de uitblinker van de littekens- en striaepagina.
@@ -51,6 +52,8 @@ const VENSTER_TEKSTKLEUR = {
 } as const;
 
 export default function Littekenklok() {
+  const t = useT();
+  const tc = useTc();
   const [index, setIndex] = useState(1); // start in het venster, niet op nul
   const fase = LITTEKEN_FASES[index];
   const venster = VENSTER_TEKST[fase.venster];
@@ -71,15 +74,15 @@ export default function Littekenklok() {
         <div className="rounded-[var(--r-md)] bg-[var(--g-025)] p-6 sm:p-8">
           <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
             <Label className={VENSTER_TEKSTKLEUR[fase.venster]}>
-              {venster.kop}
+              {tc(venster.kop)}
             </Label>
             <span className="diba-label text-[var(--t-muted)]">
-              {fase.vakterm}
+              {tc(fase.vakterm)}
             </span>
           </div>
 
           <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-            {venster.tekst}
+            {tc(venster.tekst)}
           </p>
 
           {/* De balk is dik en de baan blijft zichtbaar, zodat je ziet hoeveel er wég is
@@ -88,7 +91,7 @@ export default function Littekenklok() {
               niet. Er valt dan weinig te halen, niet niets. */}
           <div
             role="img"
-            aria-label={`Ruimte om iets te veranderen bij ${fase.label}: ${venster.kop}`}
+            aria-label={`${t("Ruimte om iets te veranderen bij")} ${tc(fase.label)}: ${tc(venster.kop)}`}
             className="mt-6 h-5 w-full overflow-hidden rounded-[var(--r-pill)] bg-[var(--g-100)]"
           >
             <div
@@ -101,16 +104,16 @@ export default function Littekenklok() {
           </div>
 
           <p className="mt-4 text-[14px] leading-6 text-[var(--t-muted)]">
-            De balk is geen meting maar een verhouding: hij laat zien hoe de
-            ruimte om iets te veranderen krimpt naarmate een litteken ouder
-            wordt.
+            {t(
+              "De balk is geen meting maar een verhouding: hij laat zien hoe de ruimte om iets te veranderen krimpt naarmate een litteken ouder wordt.",
+            )}
           </p>
         </div>
 
         {/* De schuifbalk. */}
         <div className="mt-7">
           <label htmlFor="littekenklok" className="diba-label block">
-            Hoe lang heb je het al?
+            {t("Hoe lang heb je het al?")}
           </label>
           <input
             id="littekenklok"
@@ -138,7 +141,7 @@ export default function Littekenklok() {
                 aria-pressed={i === index}
                 // Op mobiel staat er "3 mnd" in beeld; een schermlezer hoort altijd
                 // de hele fase.
-                aria-label={f.label}
+                aria-label={tc(f.label)}
                 className={`diba-label min-h-12 flex-1 px-1 text-center transition-colors ${
                   i === index
                     ? "text-[var(--t-strong)]"
@@ -148,8 +151,8 @@ export default function Littekenklok() {
                 {/* Vijf volle labels naast elkaar breken op mobiel in drie regels en
                     maken de rij rafelig. De volledige fase staat er als kop naast,
                     dus de korte variant kost hier geen duidelijkheid. */}
-                <span className="sm:hidden">{f.kort}</span>
-                <span className="hidden sm:inline">{f.label}</span>
+                <span className="sm:hidden">{tc(f.kort)}</span>
+                <span className="hidden sm:inline">{tc(f.label)}</span>
               </button>
             ))}
           </div>
@@ -158,21 +161,21 @@ export default function Littekenklok() {
 
       {/* ── De lezing ── */}
       <div className="flex flex-col" aria-live="polite">
-        <h3 className="diba-card-title-lg">{fase.label}</h3>
+        <h3 className="diba-card-title-lg">{tc(fase.label)}</h3>
 
         {/* Eerst een streep links, toen gevulde vlakjes: allebei mis. De vlakjes maakten
             er kaarten in een kaart van en drie identieke plakken lezen als één massa.
             Ruimte doet het werk: strak binnen een paar, ruim ertussen. */}
         <dl className="mt-7 space-y-6">
           {[
-            ["Wat er dan in je huid gebeurt", fase.watErGebeurt],
-            ["Wat realistisch is", fase.watRealistischIs],
-            ["Wat wij zouden doen", fase.watWijDoen],
+            [t("Wat er dan in je huid gebeurt"), fase.watErGebeurt],
+            [t("Wat realistisch is"), fase.watRealistischIs],
+            [t("Wat wij zouden doen"), fase.watWijDoen],
           ].map(([kop, tekst]) => (
             <div key={kop}>
-              <dt className="diba-label text-[var(--t-label)]">{kop}</dt>
+              <dt className="diba-label text-[var(--t-label)]">{tc(kop)}</dt>
               <dd className="mt-1.5 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-                {publicCopy(tekst)}
+                {tc(tekst)}
               </dd>
             </div>
           ))}
@@ -185,19 +188,20 @@ export default function Littekenklok() {
             variant={fase.venster === "gesloten" ? "secundair" : "primair"}
           >
             {fase.venster === "gesloten"
-              ? "Laat het eerlijk narekenen"
-              : "Laat dit bekijken"}
+              ? t("Laat het eerlijk narekenen")
+              : t("Laat dit bekijken")}
           </Button>
           {fase.venster === "open" ? (
             <Label className="max-w-[26ch]">
-              Dit is het moment waarop het het meeste uitmaakt.
+              {t("Dit is het moment waarop het het meeste uitmaakt.")}
             </Label>
           ) : null}
         </div>
 
         <p className="mt-6 text-sm leading-6 text-[var(--t-muted)]">
-          Weet je niet precies hoe oud het is? Kijk naar de kleur. Rood betekent
-          jong, wit betekent oud. Dat is nauwkeuriger dan je geheugen.
+          {t(
+            "Weet je niet precies hoe oud het is? Kijk naar de kleur. Rood betekent jong, wit betekent oud. Dat is nauwkeuriger dan je geheugen.",
+          )}
         </p>
       </div>
     </div>

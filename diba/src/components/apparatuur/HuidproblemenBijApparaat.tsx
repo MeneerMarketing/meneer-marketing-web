@@ -1,7 +1,8 @@
-import Link from "next/link";
+import Link from "@/components/ui/Linktaal";
 import Label from "@/components/ui/Label";
 import type { Apparaat } from "@/data/apparatuur";
 import { BEHANDELINGEN, prijsTekst } from "@/data/behandelingen";
+import { t, tc } from "@/lib/vertaal";
 
 /**
  * Welke huidklachten we met dit apparaat behandelen.
@@ -64,14 +65,15 @@ export default function HuidproblemenBijApparaat({
       className="scroll-mt-[var(--anker-offset)] px-5 pb-10 sm:pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24"
     >
       <div className="mx-auto">
-        <Label>Waarvoor we het inzetten</Label>
+        <Label>{t("Waarvoor we het inzetten")}</Label>
         <h2 className="diba-display-m mt-4 max-w-[24ch]">
-          Welke klachten we{" "}
-          <span className="diba-accent">hiermee behandelen</span>
+          {t("Welke klachten we")}{" "}
+          <span className="diba-accent">{t("hiermee behandelen")}</span>
         </h2>
         <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-          Per klacht staat erbij welke behandeling hiervoor wordt ingezet. Welke
-          bij jou past, stelt de huidtherapeut tijdens de intake vast.
+          {t(
+            "Per klacht staat erbij welke behandeling hiervoor wordt ingezet. Welke bij jou past, stelt de huidtherapeut tijdens de intake vast.",
+          )}
         </p>
 
         <ul className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -85,7 +87,7 @@ export default function HuidproblemenBijApparaat({
                   href={k.href}
                   className="underline decoration-[var(--g-200)] underline-offset-4 transition-colors hover:decoration-[var(--g-700)]"
                 >
-                  {k.label}
+                  {tc(k.label)}
                 </Link>
               </h3>
 
@@ -102,10 +104,10 @@ export default function HuidproblemenBijApparaat({
                       href={`/behandelingen/${b.slug}`}
                       className="text-[15px] leading-6 text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
                     >
-                      {b.naam}
+                      {tc(b.naam)}
                     </Link>
                     <span className="shrink-0 text-[14px] leading-6 text-[var(--t-muted)] tabular-nums">
-                      {prijsTekst(b.prijs)}
+                      {tc(prijsTekst(b.prijs))}
                     </span>
                   </li>
                 ))}
@@ -115,7 +117,7 @@ export default function HuidproblemenBijApparaat({
                 href={k.href}
                 className="diba-label mt-5 border-t border-[var(--g-100)] pt-5 text-[var(--t-muted)] underline underline-offset-4 hover:text-[var(--g-700)]"
               >
-                Over {k.label.toLowerCase()}
+                {t("Over")} {tc(k.label).toLowerCase()}
               </Link>
             </li>
           ))}

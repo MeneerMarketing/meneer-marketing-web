@@ -1,5 +1,10 @@
+"use client";
+
 import type { Review } from "@/data/reviews";
 import { primaryReviewTopic, reviewTopicLabel } from "@/data/reviews";
+import { useT, useTaal, useTc } from "@/lib/gebruik-taal";
+import { relatieveDatum } from "@/lib/relatieve-datum";
+import { reviewtekst } from "@/lib/reviewtaal";
 
 export type FigmaReviewCardVariant = "standard" | "featured" | "spotlight";
 
@@ -68,6 +73,9 @@ function AuthorRow({
   review: Review;
   onDark?: boolean;
 }) {
+  const t = useT();
+  const tc = useTc();
+  const taal = useTaal();
   return (
     <figcaption className="flex items-center gap-3">
       <span
@@ -93,7 +101,7 @@ function AuthorRow({
             onDark ? "text-[var(--on-dark-body)]" : "text-[var(--t-muted)]"
           }`}
         >
-          {review.treatment}
+          {tc(review.treatment)}
         </span>
       </div>
       {review.relativeDate ? (
@@ -102,7 +110,7 @@ function AuthorRow({
             onDark ? "text-[var(--on-dark-label)]" : "text-[var(--t-muted)]"
           }`}
         >
-          {review.relativeDate}
+          {relatieveDatum(review.relativeDate, taal)}
         </span>
       ) : null}
     </figcaption>
@@ -114,6 +122,8 @@ export default function FigmaReviewCard({
   variant = "standard",
   className = "",
 }: FigmaReviewCardProps) {
+  const t = useT();
+  const taal = useTaal();
   if (variant === "spotlight") {
     return (
       <figure
@@ -121,13 +131,13 @@ export default function FigmaReviewCard({
       >
         <div className="flex flex-wrap items-center justify-between gap-3">
           <TopicPill review={review} onDark />
-          <span role="img" aria-label={`${review.stars} van 5 sterren`}>
+          <span role="img" aria-label={`${review.stars} ${t("van 5 sterren")}`}>
             <Stars onDark size={13} />
           </span>
         </div>
         <blockquote>
           <p className="max-w-3xl text-[clamp(1.35rem,2.8vw,2rem)] leading-[1.2] tracking-[-.04em] text-white text-balance">
-            {review.quote}
+            {reviewtekst(review.quote, review.quoteEn, taal)}
           </p>
         </blockquote>
         <AuthorRow review={review} onDark />
@@ -142,13 +152,13 @@ export default function FigmaReviewCard({
       >
         <div className="flex items-center justify-between gap-3">
           <TopicPill review={review} />
-          <span role="img" aria-label={`${review.stars} van 5 sterren`}>
+          <span role="img" aria-label={`${review.stars} ${t("van 5 sterren")}`}>
             <Stars size={12} />
           </span>
         </div>
         <blockquote className="mt-6 flex-1">
           <p className="diba-card-title text-[var(--t-strong)]">
-            {review.quote}
+            {reviewtekst(review.quote, review.quoteEn, taal)}
           </p>
         </blockquote>
         <div className="mt-8 border-t border-[var(--g-100)] pt-6">
@@ -164,13 +174,13 @@ export default function FigmaReviewCard({
     >
       <div className="flex items-center justify-between gap-3">
         <TopicPill review={review} />
-        <span role="img" aria-label={`${review.stars} van 5 sterren`}>
+        <span role="img" aria-label={`${review.stars} ${t("van 5 sterren")}`}>
           <Stars size={11} />
         </span>
       </div>
       <blockquote className="mt-5 flex-1">
         <p className="text-[15px] leading-7 text-[var(--t-body)]">
-          {review.quote}
+          {reviewtekst(review.quote, review.quoteEn, taal)}
         </p>
       </blockquote>
       <div className="mt-6 border-t border-[var(--g-100)] pt-5">

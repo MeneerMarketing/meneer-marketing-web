@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useT, useTc } from "@/lib/gebruik-taal";
 import {
   DIBA_EMAIL,
   DIBA_REACTIETIJDEN,
@@ -121,6 +122,8 @@ const KANALEN = {
 } as const;
 
 export default function Ingangkiezer() {
+  const tc = useTc();
+  const t = useT();
   const [gekozen, setGekozen] = useState<string>(INGANGEN[0].id);
   const ingang = INGANGEN.find((i) => i.id === gekozen) ?? INGANGEN[0];
   const kanaal = KANALEN[ingang.kanaal];
@@ -143,7 +146,7 @@ export default function Ingangkiezer() {
                 }`}
               >
                 <span className="text-[16px] leading-6 font-medium">
-                  {i.vraag}
+                  {tc(i.vraag)}
                 </span>
                 {/* Stond op --g-300: 1,97 op wit, en dat is te bleek om te zien. Deze
                     pijl wijst aan welke vraag je kunt aantikken, dus zichtbaarheid is
@@ -163,21 +166,23 @@ export default function Ingangkiezer() {
       </ul>
 
       <div className="rounded-[var(--r-lg)] bg-[var(--g-200)] p-7 sm:p-9 lg:p-10">
-        <p className="diba-label text-[var(--g-800)]">Dan kom je hier uit</p>
-        <p className="diba-display-s mt-4">{kanaal.label}</p>
+        <p className="diba-label text-[var(--g-800)]">
+          {t("Dan kom je hier uit")}
+        </p>
+        <p className="diba-display-s mt-4">{tc(kanaal.label)}</p>
 
         <p className="mt-5 max-w-[46ch] text-[16px] leading-8 text-[var(--g-900)]">
-          {ingang.waarom}
+          {tc(ingang.waarom)}
         </p>
 
         {/* Hoe snel je antwoord krijgt. Dat is de tweede vraag na "waar moet ik zijn",
             en zonder dat antwoord kies je alsnog op gevoel welk kanaal het snelst is. */}
         <p className="mt-5 max-w-[46ch] rounded-[var(--r-md)] bg-white p-5">
           <span className="diba-label block text-[var(--t-label)]">
-            Wanneer je antwoord hebt
+            {t("Wanneer je antwoord hebt")}
           </span>
           <span className="mt-2 block text-[15px] leading-7 text-[var(--t-body)]">
-            {kanaal.hoeSnel}
+            {tc(kanaal.hoeSnel)}
           </span>
         </p>
 
@@ -185,7 +190,7 @@ export default function Ingangkiezer() {
             en die op geen enkele contactpagina staat. */}
         {ingang.nietHier ? (
           <p className="mt-5 max-w-[46ch] rounded-[var(--r-md)] bg-white p-5 text-[15px] leading-7 text-[var(--t-body)]">
-            {ingang.nietHier}
+            {tc(ingang.nietHier)}
           </p>
         ) : null}
 
@@ -196,7 +201,7 @@ export default function Ingangkiezer() {
             : {})}
           className="diba-label mt-8 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-7 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
         >
-          {kanaal.actie}
+          {tc(kanaal.actie)}{" "}
           {kanaal.extern ? <span aria-hidden="true">↗</span> : null}
         </a>
       </div>

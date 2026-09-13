@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import { useState } from "react";
 import Label from "@/components/ui/Label";
 import {
@@ -12,6 +12,7 @@ import {
 } from "@/data/huidprofiel";
 import { useHuidprofiel } from "@/lib/huidprofiel-opslag";
 import { DIBA_WHATSAPP_URL } from "@/lib/site";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * De meeneemkaart op /intake.
@@ -40,6 +41,8 @@ import { DIBA_WHATSAPP_URL } from "@/lib/site";
  */
 
 export default function Meeneemkaart() {
+  const tc = useTc();
+  const t = useT();
   const { profiel } = useHuidprofiel();
   const [gekopieerd, setGekopieerd] = useState(false);
   const [mislukt, setMislukt] = useState(false);
@@ -65,21 +68,21 @@ export default function Meeneemkaart() {
   if (leeg) {
     return (
       <div className="rounded-[var(--r-lg)] bg-white p-7 sm:p-9">
-        <Label>Voordat je komt</Label>
+        <Label>{t("Voordat je komt")}</Label>
         <p className="diba-card-title mt-3 text-[var(--t-strong)]">
-          Neem je huidprofiel mee
+          {t("Neem je huidprofiel mee")}
         </p>
         <p className="mt-4 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
-          In {PROFIEL_ONDERDELEN} stappen leg je vast wat je wil veranderen en
-          wat je huid aankan. Retinol, zwangerschap, een gebruinde huid,
-          medicatie: met die antwoorden staat je behandeling al klaar als je
-          binnenkomt.
+          In {PROFIEL_ONDERDELEN}
+          {t(
+            "stappen leg je vast wat je wil veranderen en wat je huid aankan. Retinol, zwangerschap, een gebruinde huid, medicatie: met die antwoorden staat je behandeling al klaar als je binnenkomt.",
+          )}
         </p>
         <Link
           href="/huidprofiel"
           className="diba-label mt-7 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)]"
         >
-          Stel je huidprofiel samen
+          {t("Stel je huidprofiel samen")}
         </Link>
       </div>
     );
@@ -88,21 +91,26 @@ export default function Meeneemkaart() {
   return (
     <div className="rounded-[var(--r-lg)] bg-[var(--g-200)] p-7 sm:p-9">
       <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2">
-        <Label className="text-[var(--g-800)]">Je neemt dit mee</Label>
+        <Label className="text-[var(--g-800)]">{t("Je neemt dit mee")}</Label>
         <p className="text-[14px] leading-6 text-[var(--g-900)] tabular-nums">
-          {stand} van {PROFIEL_ONDERDELEN} ingevuld
+          {stand} van {PROFIEL_ONDERDELEN}
+          {t("ingevuld")}
         </p>
       </div>
 
       <p className="diba-card-title mt-3 text-[var(--g-900)]">
         {melden.length > 0
           ? `${melden.length} ${melden.length === 1 ? "ding" : "dingen"} om te bespreken`
-          : "Je profiel is klaar"}
+          : t("Je profiel is klaar")}
       </p>
       <p className="mt-4 max-w-[58ch] text-[16px] leading-7 text-[var(--g-900)]">
         {melden.length > 0
-          ? "Dit zijn de dingen die anders pas aan de balie boven tafel komen. Stuur ze mee als je boekt, dan is de afspraak meteen de juiste."
-          : "Er zit op grond van je antwoorden niets in de weg. Stuur je profiel mee als je boekt, dan hoeft het niet nog een keer uitgevraagd te worden."}
+          ? t(
+              "Dit zijn de dingen die anders pas aan de balie boven tafel komen. Stuur ze mee als je boekt, dan is de afspraak meteen de juiste.",
+            )
+          : t(
+              "Er zit op grond van je antwoorden niets in de weg. Stuur je profiel mee als je boekt, dan hoeft het niet nog een keer uitgevraagd te worden.",
+            )}
       </p>
 
       {melden.length > 0 ? (
@@ -112,7 +120,7 @@ export default function Meeneemkaart() {
               key={m}
               className="rounded-[var(--r-md)] bg-white p-5 text-[15px] leading-7 text-[var(--t-body)]"
             >
-              {m}
+              {tc(m)}
             </li>
           ))}
         </ul>
@@ -127,10 +135,10 @@ export default function Meeneemkaart() {
           onderdelen die nog open zijn; zie `intakeTekst` in data/huidprofiel. */}
       <details className="mt-6 rounded-[var(--r-md)] bg-white">
         <summary className="diba-label flex min-h-12 cursor-pointer items-center justify-between gap-3 px-5 text-[var(--g-800)]">
-          Bekijk wat je meestuurt
+          {t("Bekijk wat je meestuurt")}
         </summary>
         <pre className="max-h-72 overflow-y-auto border-t border-[var(--g-100)] px-5 py-4 text-[14px] leading-6 whitespace-pre-wrap text-[var(--t-body)]">
-          {tekst}
+          {tc(tekst)}
         </pre>
       </details>
 
@@ -148,13 +156,13 @@ export default function Meeneemkaart() {
           rel="noopener noreferrer"
           className="diba-label inline-flex min-h-12 items-center text-[var(--g-800)] underline underline-offset-4 hover:text-[var(--g-900)]"
         >
-          Daarna plakken in je bericht
+          {t("Daarna plakken in je bericht")}
         </a>
         <Link
           href="/huidprofiel"
           className="diba-label inline-flex min-h-12 items-center text-[var(--g-800)] underline underline-offset-4 hover:text-[var(--g-900)]"
         >
-          Aanvullen
+          {t("Aanvullen")}
         </Link>
       </div>
 
@@ -163,17 +171,21 @@ export default function Meeneemkaart() {
         className="mt-5 text-[14px] leading-6 text-[var(--g-900)]"
       >
         {gekopieerd
-          ? "De tekst staat op je klembord. Er is niets verstuurd: dat doe jij zelf, als je wil."
-          : "Je profiel blijft in deze browser staan en gaat uit zichzelf nergens heen. Kopiëren zet het op je klembord, meer niet."}
+          ? t(
+              "De tekst staat op je klembord. Er is niets verstuurd: dat doe jij zelf, als je wil.",
+            )
+          : t(
+              "Je profiel blijft in deze browser staan en gaat uit zichzelf nergens heen. Kopiëren zet het op je klembord, meer niet.",
+            )}
       </p>
 
       {mislukt ? (
         <div className="mt-5 rounded-[var(--r-md)] bg-white p-5">
           <p className="diba-label text-[var(--t-label)]">
-            Kopiëren lukte niet in deze browser
+            {t("Kopiëren lukte niet in deze browser")}
           </p>
           <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
-            Selecteer de tekst hieronder en kopieer hem met de hand.
+            {t("Selecteer de tekst hieronder en kopieer hem met de hand.")}
           </p>
           <pre className="mt-4 max-h-64 overflow-auto rounded-[var(--r-sm)] bg-[var(--g-025)] p-4 text-[13px] leading-6 whitespace-pre-wrap text-[var(--t-body)]">
             {intakeTekst(profiel)}

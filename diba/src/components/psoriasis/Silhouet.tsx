@@ -5,6 +5,7 @@ import Label from "@/components/ui/Label";
 import { SILHOUET_SLOT, ZONES } from "@/data/psoriasis";
 import { publicCopy } from "@/lib/copy-flags";
 import { RASTER_SECTIE } from "@/lib/raster";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * Het silhouet — de uitblinker van de psoriasispagina.
@@ -26,6 +27,8 @@ import { RASTER_SECTIE } from "@/lib/raster";
  */
 
 export default function Silhouet() {
+  const tc = useTc();
+  const t = useT();
   const [actief, setActief] = useState(0);
   const zone = ZONES[actief];
 
@@ -45,15 +48,17 @@ export default function Silhouet() {
           schimmel, de hoofdhuid voor hardnekkige roos. */}
       <ul
         role="radiogroup"
-        aria-label="De plekken waar psoriasis zich laat zien"
+        aria-label={tc("De plekken waar psoriasis zich laat zien")}
         className="flex flex-col gap-2 rounded-[var(--r-md)] bg-white p-5 sm:p-6 lg:h-full"
       >
         <li>
           <p className="diba-label text-[var(--t-label)]">
-            Van boven naar beneden
+            {t("Van boven naar beneden")}
           </p>
           <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
-            Ze horen bij dezelfde aandoening, ook als ze niet tegelijk opspelen.
+            {t(
+              "Ze horen bij dezelfde aandoening, ook als ze niet tegelijk opspelen.",
+            )}
           </p>
         </li>
         {ZONES.map((z, i) => {
@@ -72,7 +77,7 @@ export default function Silhouet() {
                 }`}
               >
                 <span className="text-[16px] leading-6 font-medium">
-                  {z.naam}
+                  {tc(z.naam)}
                 </span>
                 {/* Bij de gewrichten kan wachten blijvende schade geven. Dat mag je niet
                     pas zien nadat je hem hebt aangetikt. */}
@@ -84,7 +89,7 @@ export default function Silhouet() {
                         : "bg-[var(--g-050)] text-[var(--warn-text)]"
                     }`}
                   >
-                    Niet mee wachten
+                    {t("Niet mee wachten")}
                   </span>
                 ) : null}
               </button>
@@ -97,24 +102,26 @@ export default function Silhouet() {
       <div aria-live="polite">
         {zone.dringend ? (
           <Label className="text-[var(--warn-text)]">
-            Hier niet mee wachten
+            {t("Hier niet mee wachten")}
           </Label>
         ) : (
-          <Label>Wat hier bij hoort</Label>
+          <Label>{t("Wat hier bij hoort")}</Label>
         )}
 
-        <h3 className="diba-card-title-lg mt-4">{zone.naam}</h3>
-        <p className="diba-label mt-3 text-[var(--t-muted)]">{zone.vakterm}</p>
+        <h3 className="diba-card-title-lg mt-4">{tc(zone.naam)}</h3>
+        <p className="diba-label mt-3 text-[var(--t-muted)]">
+          {tc(zone.vakterm)}
+        </p>
 
         {/* Stond op strepen links. Vlakken of niets, en hier is niets genoeg: een label
             met een waarde eronder heeft geen bak nodig, ruimte doet het werk. */}
         <dl className="mt-7 space-y-6">
           <div>
             <dt className="diba-label text-[var(--t-label)]">
-              Wat je ziet of voelt
+              {t("Wat je ziet of voelt")}
             </dt>
             <dd className="mt-1.5 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-              {publicCopy(zone.watJeZiet)}
+              {tc(zone.watJeZiet)}
             </dd>
           </div>
           <div>
@@ -125,16 +132,16 @@ export default function Silhouet() {
                   : "text-[var(--t-label)]"
               }`}
             >
-              Waarom dit telt
+              {t("Waarom dit telt")}
             </dt>
             <dd className="mt-1.5 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-              {publicCopy(zone.waaromHetTelt)}
+              {tc(zone.waaromHetTelt)}
             </dd>
           </div>
         </dl>
 
         <p className="mt-8 rounded-[var(--r-sm)] bg-[var(--g-050)] p-5 text-[15px] leading-7 text-[var(--t-body)]">
-          {SILHOUET_SLOT}
+          {tc(SILHOUET_SLOT)}
         </p>
       </div>
     </div>

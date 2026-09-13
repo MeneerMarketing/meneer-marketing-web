@@ -326,9 +326,10 @@ export const INSURERS: readonly Insurer[] = [
   {
     slug: "dsw",
     logoSchaal: 1,
-    /* Nog geen logo. VerzekeraarLogo laat het vak dan weg; een naam zonder merk leest
-       beter dan een leeg grijs vlak. [BEELD-NODIG: logo van DSW] */
-    logo: "",
+    /* Van dsw.nl, september 2026. Zij hebben twee versies: een langgerekte voor een brede
+       balk en een compacte voor een telefoon. De eerste werd in dit vak acht keer zo breed
+       als hoog en daarmee een streepje van tien punten; dit is de compacte. */
+    logo: "/images/verzekeraars/dsw.svg",
     labels: ["Stad Holland", "inTwente"],
     name: "DSW",
     vergoedingenUrl:
@@ -365,8 +366,8 @@ export const INSURERS: readonly Insurer[] = [
   {
     slug: "zorg-en-zekerheid",
     logoSchaal: 1,
-    /* [BEELD-NODIG: logo van Zorg en Zekerheid] */
-    logo: "",
+    /* Van zorgenzekerheid.nl, september 2026. */
+    logo: "/images/verzekeraars/zorg-en-zekerheid.svg",
     name: "Zorg en Zekerheid",
     vergoedingenUrl:
       "https://service.zorgenzekerheid.nl/vergoedingenzoeker/acnebehandeling",
@@ -401,9 +402,10 @@ export const INSURERS: readonly Insurer[] = [
   },
   {
     slug: "salland",
-    logoSchaal: 1,
-    /* [BEELD-NODIG: logo van Salland] */
-    logo: "",
+    /* Van salland.nl, september 2026. Dit merk is bijna vierkant en oogt daardoor kleiner
+       dan de woordmerken ernaast; vandaar wat meer hoogte, net als bij CZ. */
+    logoSchaal: 1.15,
+    logo: "/images/verzekeraars/salland.svg",
     labels: ["HollandZorg"],
     name: "Salland",
     vergoedingenUrl:
@@ -440,8 +442,9 @@ export const INSURERS: readonly Insurer[] = [
   {
     slug: "aevitae",
     logoSchaal: 1,
-    /* [BEELD-NODIG: logo van Aevitae] */
-    logo: "",
+    /* Van aevitae.com, september 2026. Zij leveren geen SVG op hun site, dus dit is hun
+       PNG op zeshonderd punten breed; in een vak van tachtig punten is dat ruim genoeg. */
+    logo: "/images/verzekeraars/aevitae.png",
     labels: ["EUCARE"],
     name: "Aevitae",
     vergoedingenUrl:
@@ -488,7 +491,8 @@ export const INSURERS: readonly Insurer[] = [
  * toestemming met foto's, en bij Aevitae komt het bij een deel van de pakketten uit één
  * gedeeld budget. Daarmee is elke pagina een eigen antwoord en geen doorslag.
  *
- * Wat er nog niet is: hun logo's. Het vak blijft dan gewoon weg.
+ * Hun logo's staan er sinds 12 september 2026 ook bij, van hun eigen site gehaald,
+ * net als die van de eerste zes.
  */
 
 export function insurerBySlug(slug: string): Insurer | undefined {

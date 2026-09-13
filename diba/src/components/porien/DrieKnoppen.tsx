@@ -5,6 +5,7 @@ import Label from "@/components/ui/Label";
 import { KNOPPEN, UITKOMST, VIERDE_KNOP, type Knop } from "@/data/porien";
 import { publicCopy } from "@/lib/copy-flags";
 import { RASTER_SECTIE } from "@/lib/raster";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * Drie knoppen — de uitblinker van de poriënpagina.
@@ -62,6 +63,8 @@ const PORIEN = [
 type Aan = Record<Knop["id"], boolean>;
 
 export default function DrieKnoppen() {
+  const tc = useTc();
+  const t = useT();
   const [aan, setAan] = useState<Aan>({
     inhoud: false,
     spanning: false,
@@ -104,7 +107,7 @@ export default function DrieKnoppen() {
             viewBox="0 0 520 300"
             className="block max-h-[40vw] w-full sm:max-h-none"
             role="img"
-            aria-label={`Schematisch stuk huid met poriën. ${uitkomst.kop}.`}
+            aria-label={`Schematisch stuk huid met poriën. ${tc(uitkomst.kop)}.`}
           >
             <defs>
               {/* De glans is een lichtbaan die schuin over de huid valt, geen witte
@@ -193,14 +196,15 @@ export default function DrieKnoppen() {
         </div>
 
         <p className="mt-5 text-sm leading-6 text-[var(--t-muted)]">
-          Let op wat er níet gebeurt: geen enkele opening wordt kleiner. Ze zijn
-          in elke stand precies even groot.
+          {t(
+            "Let op wat er níet gebeurt: geen enkele opening wordt kleiner. Ze zijn in elke stand precies even groot.",
+          )}
         </p>
       </div>
 
       {/* ── De bediening ── */}
       <div>
-        <Label>Wat je wel kunt veranderen</Label>
+        <Label>{t("Wat je wel kunt veranderen")}</Label>
 
         <ul className="mt-5 space-y-3">
           {KNOPPEN.map((k) => {
@@ -218,7 +222,7 @@ export default function DrieKnoppen() {
                   }`}
                 >
                   <span className="flex items-center justify-between gap-4">
-                    <span className="diba-card-title">{k.label}</span>
+                    <span className="diba-card-title">{tc(k.label)}</span>
                     {/* Een echte schakelaar, want dat maakt de vierde pas grappig. */}
                     <span
                       aria-hidden="true"
@@ -234,11 +238,11 @@ export default function DrieKnoppen() {
                     </span>
                   </span>
                   <span className="mt-2 block text-[15px] leading-7 text-[var(--t-body)]">
-                    {isAan ? k.aanTekst : k.uitTekst}
+                    {tc(isAan ? k.aanTekst : k.uitTekst)}
                   </span>
                   {isAan ? (
                     <span className="mt-2 block text-sm leading-6 text-[var(--t-muted)]">
-                      {publicCopy(k.hoe)}
+                      {tc(k.hoe)}
                     </span>
                   ) : null}
                 </button>
@@ -257,13 +261,13 @@ export default function DrieKnoppen() {
             type="button"
             aria-expanded={uitlegOpen}
             aria-controls={uitlegId}
-            aria-label={`${VIERDE_KNOP.label}. Deze schakelaar doet het niet. Lees waarom.`}
+            aria-label={`${tc(VIERDE_KNOP.label)}. Deze schakelaar doet het niet. Lees waarom.`}
             onClick={() => setUitlegOpen(true)}
             className="w-full cursor-help rounded-[var(--r-sm)] border border-dashed border-[var(--g-200)] p-5 text-left transition-colors hover:border-[var(--g-300)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
           >
             <span className="flex items-center justify-between gap-4">
               <span className="diba-card-title text-[var(--t-muted)]">
-                {VIERDE_KNOP.label}
+                {tc(VIERDE_KNOP.label)}
               </span>
               <span
                 aria-hidden="true"
@@ -284,14 +288,16 @@ export default function DrieKnoppen() {
               </span>
             </span>
             <span className="mt-2 block text-[15px] leading-7 text-[var(--t-muted)]">
-              Deze schakelaar doet het niet. Druk erop als je wilt weten waarom.
+              {t(
+                "Deze schakelaar doet het niet. Druk erop als je wilt weten waarom.",
+              )}
             </span>
           </button>
 
           <div id={uitlegId} aria-live="polite">
             {uitlegOpen ? (
               <p className="mt-3 rounded-[var(--r-sm)] bg-[var(--g-050)] p-5 text-[15px] leading-7 text-[var(--t-body)]">
-                {publicCopy(VIERDE_KNOP.waarom)}
+                {tc(VIERDE_KNOP.waarom)}
               </p>
             ) : null}
           </div>
@@ -299,10 +305,10 @@ export default function DrieKnoppen() {
 
         {/* ── De uitkomst ── */}
         <div className="mt-8 pt-6" aria-live="polite">
-          <Label>{`${telAan} van 3 aangepakt`}</Label>
-          <h3 className="diba-card-title-lg mt-3">{uitkomst.kop}</h3>
+          <Label>{`${telAan} ${t("van")} 3 ${t("aangepakt")}`}</Label>
+          <h3 className="diba-card-title-lg mt-3">{tc(uitkomst.kop)}</h3>
           <p className="mt-3 text-[16px] leading-7 text-[var(--t-body)]">
-            {uitkomst.tekst}
+            {tc(uitkomst.tekst)}
           </p>
         </div>
       </div>

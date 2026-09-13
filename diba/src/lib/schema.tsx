@@ -9,6 +9,8 @@
  */
 
 import { DIBA_OPENINGSTIJDEN } from "@/lib/site";
+import { t, tc } from "@/lib/vertaal";
+import { taalNu } from "@/lib/taalcontext";
 
 export const DIBA_CITAAT =
   "Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.";
@@ -31,7 +33,7 @@ export function medicalClinicSchema(opts: {
     "@type": ["MedicalClinic", "LocalBusiness"],
     "@id": `${opts.url}#kliniek`,
     name: opts.nap.name,
-    description: DIBA_CITAAT,
+    description: t(DIBA_CITAAT),
     url: opts.url,
     foundingDate: "2017",
     address: {
@@ -63,8 +65,8 @@ export function faqSchema(items: { question: string; answer: string }[]) {
     "@type": "FAQPage",
     mainEntity: items.map((i) => ({
       "@type": "Question",
-      name: i.question,
-      acceptedAnswer: { "@type": "Answer", text: i.answer },
+      name: tc(i.question),
+      acceptedAnswer: { "@type": "Answer", text: tc(i.answer) },
     })),
   } as const;
 }
@@ -76,7 +78,7 @@ export function breadcrumbSchema(items: { name: string; url: string }[]) {
     itemListElement: items.map((i, idx) => ({
       "@type": "ListItem",
       position: idx + 1,
-      name: i.name,
+      name: tc(i.name),
       item: i.url,
     })),
   } as const;
@@ -91,8 +93,8 @@ export function behandelingSchema(opts: {
   return {
     "@context": "https://schema.org",
     "@type": "MedicalProcedure",
-    name: opts.name,
-    description: opts.description,
+    name: tc(opts.name),
+    description: tc(opts.description),
     url: opts.url,
     provider: { "@id": `${opts.siteUrl}#kliniek` },
   } as const;
@@ -109,7 +111,7 @@ export function physicianSchema(opts: {
     "@context": "https://schema.org",
     "@type": "Person",
     name: opts.name,
-    jobTitle: opts.jobTitle,
+    jobTitle: tc(opts.jobTitle),
     url: opts.url,
     ...(opts.image ? { image: opts.image } : {}),
     worksFor: { "@id": `${opts.siteUrl}#kliniek` },
@@ -279,9 +281,9 @@ export function dienstSchema(opts: {
     "@context": "https://schema.org",
     "@type": "Service",
     "@id": `${opts.url}#dienst`,
-    name: opts.naam,
-    serviceType: opts.soort,
-    description: opts.omschrijving,
+    name: tc(opts.naam),
+    serviceType: tc(opts.soort),
+    description: tc(opts.omschrijving),
     url: opts.url,
     provider: { "@id": `${opts.siteUrl}#kliniek` },
     areaServed: opts.gebied.map((plaats) => ({
@@ -290,11 +292,11 @@ export function dienstSchema(opts: {
     })),
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: opts.naam,
+      name: tc(opts.naam),
       itemListElement: opts.varianten.map((v) => ({
         "@type": "Offer",
-        name: v.naam,
-        ...(v.zin ? { description: v.zin } : {}),
+        name: tc(v.naam),
+        ...(v.zin ? { description: tc(v.zin) } : {}),
         price: v.prijs,
         priceCurrency: "EUR",
         url: opts.url,
@@ -341,10 +343,10 @@ export function medischePaginaSchema(opts: {
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
     "@id": `${opts.url}#pagina`,
-    name: opts.naam,
-    description: opts.omschrijving,
+    name: tc(opts.naam),
+    description: tc(opts.omschrijving),
     url: opts.url,
-    inLanguage: "nl-NL",
+    inLanguage: taalNu() === "en" ? "en-GB" : "nl-NL",
     dateModified: opts.gewijzigd,
     isPartOf: { "@id": `${opts.siteUrl}#kliniek` },
     ...(opts.overProcedure ? { about: { "@id": opts.overProcedure } } : {}),
@@ -355,7 +357,7 @@ export function medischePaginaSchema(opts: {
           reviewedBy: {
             "@type": "Person",
             name: opts.nagekekenDoor.naam,
-            jobTitle: opts.nagekekenDoor.functie,
+            jobTitle: tc(opts.nagekekenDoor.functie),
             worksFor: { "@id": `${opts.siteUrl}#kliniek` },
           },
         }

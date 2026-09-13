@@ -70,7 +70,10 @@ function onderwerp(pad) {
   const naam = d[d.length - 1].replace(/\.(tsx?|ts)$/, "");
   if (d.includes("app")) {
     const i = d.indexOf("app");
-    const route = d.slice(i + 1, -1).filter((s) => !s.startsWith("["));
+    /* Dynamische segmenten en routegroepen staan niet in het adres. */
+    const route = d
+      .slice(i + 1, -1)
+      .filter((s) => !s.startsWith("[") && !/^\(.*\)$/.test(s));
     return route.length ? "/" + route.join("/") : "Homepage";
   }
   if (d.includes("data")) return "Inhoud: " + naam;

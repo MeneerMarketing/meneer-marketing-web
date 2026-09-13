@@ -11,6 +11,7 @@ import {
 } from "@/data/gevoelige-huid";
 import { publicCopy } from "@/lib/copy-flags";
 import { RASTER_SECTIE } from "@/lib/raster";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * De stapelteller — de uitblinker van de pagina over een gevoelige huid.
@@ -48,6 +49,8 @@ const METER_TEKST = {
 const MAX_PUNTEN = 8;
 
 export default function Stapelteller() {
+  const tc = useTc();
+  const t = useT();
   const [aan, setAan] = useState<ReadonlySet<string>>(new Set());
 
   const punten = STAPELAARS.filter((s) => aan.has(s.id)).reduce(
@@ -100,10 +103,10 @@ export default function Stapelteller() {
                 />
                 <span>
                   <span className="block text-[16px] leading-6 font-medium text-[var(--t-strong)]">
-                    {s.naam}
+                    {tc(s.naam)}
                   </span>
                   <span className="mt-1 block text-sm leading-6 text-[var(--t-muted)]">
-                    {s.onder}
+                    {tc(s.onder)}
                   </span>
                 </span>
               </label>
@@ -114,7 +117,7 @@ export default function Stapelteller() {
 
       {/* ── De uitkomst ── */}
       <div className="self-start lg:sticky lg:top-24">
-        <Label>Wat er samen op je huid werkt</Label>
+        <Label>{t("Wat er samen op je huid werkt")}</Label>
 
         <div className="mt-4 h-2.5 w-full overflow-hidden rounded-[var(--r-pill)] bg-[var(--g-100)]">
           <div
@@ -125,20 +128,20 @@ export default function Stapelteller() {
 
         <div aria-live="polite">
           <h3 className={`diba-card-title-lg mt-6 ${METER_TEKST[belasting]}`}>
-            {lezing.kop}
+            {tc(lezing.kop)}
           </h3>
           <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
-            {lezing.tekst}
+            {tc(lezing.tekst)}
           </p>
           <p className="mt-4 rounded-[var(--r-sm)] bg-white p-4 text-[16px] leading-7 text-[var(--t-strong)]">
-            {publicCopy(lezing.advies)}
+            {tc(lezing.advies)}
           </p>
 
           {botsingen.length > 0 ? (
             <div className="mt-7 rounded-[var(--r-sm)] bg-[var(--g-050)] p-5">
               <Label className="text-[var(--warn-text)]">
                 {botsingen.length === 1
-                  ? "Eén combinatie valt op"
+                  ? t("Eén combinatie valt op")
                   : `${botsingen.length} combinaties vallen op`}
               </Label>
               <ul className="mt-3 space-y-1.5">
@@ -147,12 +150,12 @@ export default function Stapelteller() {
                     key={`${p.a}-${p.b}`}
                     className="text-[15px] leading-6 text-[var(--t-body)]"
                   >
-                    {naam(p.a)} naast {naam(p.b).toLowerCase()}
+                    {tc(naam(p.a))} {t("naast")} {tc(naam(p.b)).toLowerCase()}
                   </li>
                 ))}
               </ul>
               <p className="mt-3 text-sm leading-6 text-[var(--t-muted)]">
-                {publicCopy(BOTSING_UITLEG)}
+                {tc(BOTSING_UITLEG)}
               </p>
             </div>
           ) : null}
@@ -161,11 +164,11 @@ export default function Stapelteller() {
         <div className="diba-knoprij mt-8">
           {belasting === "rustig" ? (
             <Button href="#anders" variant="secundair">
-              Kijk dan hieronder verder
+              {t("Kijk dan hieronder verder")}
             </Button>
           ) : (
             <Button href="/intake?topic=gevoelige-huid">
-              Laat meekijken naar je routine
+              {t("Laat meekijken naar je routine")}
             </Button>
           )}
           {punten > 0 ? (
@@ -174,7 +177,7 @@ export default function Stapelteller() {
               onClick={() => setAan(new Set())}
               className="diba-label underline underline-offset-4 hover:text-[var(--g-700)]"
             >
-              Begin opnieuw
+              {t("Begin opnieuw")}
             </button>
           ) : null}
         </div>

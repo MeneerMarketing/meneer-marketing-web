@@ -5,6 +5,7 @@ import Label from "@/components/ui/Label";
 import { FASES, FASE_ADVIES, PROCESSEN, type Stand } from "@/data/veroudering";
 import { publicCopy } from "@/lib/copy-flags";
 import { RASTER_SECTIE } from "@/lib/raster";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * Wat begint wanneer — de tweede interactie op de pagina over huidveroudering.
@@ -56,6 +57,8 @@ const BRON_CHIP = {
 } as const;
 
 export default function WatBegintWanneer() {
+  const tc = useTc();
+  const t = useT();
   const [index, setIndex] = useState(1); // 30 tot 40: waar de meeste mensen dit gaan zoeken
   const fase = FASES[index];
   const advies = FASE_ADVIES[fase.id];
@@ -65,7 +68,7 @@ export default function WatBegintWanneer() {
       {/* Fasekiezer. Tikken, geen schuiven: dit zijn losse fases en geen doorlopende as. */}
       <div
         role="tablist"
-        aria-label="Levensfase"
+        aria-label={tc("Levensfase")}
         className="flex flex-wrap gap-2"
       >
         {FASES.map((f, i) => (
@@ -81,7 +84,7 @@ export default function WatBegintWanneer() {
                 : "bg-white text-[var(--t-label)] hover:bg-[var(--g-100)]"
             } focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]`}
           >
-            {f.label}
+            {tc(f.label)}
           </button>
         ))}
       </div>
@@ -95,11 +98,11 @@ export default function WatBegintWanneer() {
             return (
               <li key={p.id} className="bg-white p-5 sm:p-6">
                 <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2">
-                  <h3 className="diba-card-title">{p.naam}</h3>
+                  <h3 className="diba-card-title">{tc(p.naam)}</h3>
                   <span
                     className={`diba-label rounded-[var(--r-pill)] bg-[var(--g-050)] px-3 py-1 ${BRON_CHIP[p.bron]}`}
                   >
-                    {BRON_LABEL[p.bron]}
+                    {tc(BRON_LABEL[p.bron])}
                   </span>
                 </div>
 
@@ -117,15 +120,15 @@ export default function WatBegintWanneer() {
                     ))}
                   </div>
                   <span className="text-sm text-[var(--t-muted)]">
-                    {STAND_TEKST[stand]}
+                    {tc(STAND_TEKST[stand])}
                   </span>
                 </div>
 
                 <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
-                  {publicCopy(p.uitleg)}
+                  {tc(p.uitleg)}
                 </p>
                 <p className="diba-label mt-2 text-[var(--t-muted)]">
-                  {p.vakterm}
+                  {tc(p.vakterm)}
                 </p>
               </li>
             );
@@ -134,18 +137,18 @@ export default function WatBegintWanneer() {
 
         {/* Het advies bij deze fase. */}
         <div aria-live="polite" className="lg:sticky lg:top-24 lg:self-start">
-          <Label>Wat wij hier zouden zeggen</Label>
-          <h3 className="diba-card-title-lg mt-4">{advies.kop}</h3>
+          <Label>{t("Wat wij hier zouden zeggen")}</Label>
+          <h3 className="diba-card-title-lg mt-4">{tc(advies.kop)}</h3>
           <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
-            {advies.tekst}
+            {tc(advies.tekst)}
           </p>
 
           <div className="mt-8 rounded-[var(--r-md)] bg-[var(--g-050)] p-6">
-            <Label>Waarom de kleur ertoe doet</Label>
+            <Label>{t("Waarom de kleur ertoe doet")}</Label>
             <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
-              Tel de okeren balkjes. Dat is het deel van wat je ziet dat door
-              zon komt, en daarmee het deel waar vandaag nog iets aan te doen
-              valt. De groene balkjes lopen door wat je ook kiest.
+              {t(
+                "Tel de okeren balkjes. Dat is het deel van wat je ziet dat door zon komt, en daarmee het deel waar vandaag nog iets aan te doen valt. De groene balkjes lopen door wat je ook kiest.",
+              )}
             </p>
           </div>
         </div>

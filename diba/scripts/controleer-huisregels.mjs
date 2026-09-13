@@ -129,10 +129,13 @@ const statisch = zoekPaginas(join(process.cwd(), "src", "app"))
       "/" +
       relative(join(process.cwd(), "src", "app"), m)
         .split(sep)
+        /* Een segment tussen haakjes is een routegroep: `(nl)` en `(en)` ordenen de
+           mappen maar staan niet in het adres. src/app/(nl)/tarieven is /tarieven. */
+        .filter((deel) => !/^\(.*\)$/.test(deel))
         .join("/"),
   )
-  .map((p) => (p === "/." ? "/" : p))
-  .filter((p) => !p.includes("[") && !p.includes("("));
+  .map((p) => (p === "/." || p === "/" ? "/" : p))
+  .filter((p) => !p.includes("["));
 
 const paden = [...new Set([...statisch, ...uitSitemap, ...apparaatSlugs])]
   /* Routes die geen pagina voor bezoekers zijn.
@@ -184,7 +187,10 @@ for (const pad of paden) {
     problemen.push(`${pad}: vlag in alt-tekst "${vlagInAlt[0]}"`);
   }
 
-  if (!JURIDISCH.includes(pad)) {
+  /* De Engelse tegenhanger van een pagina volgt dezelfde uitzondering: /en/verwijzers is
+     dezelfde pagina als /verwijzers, alleen in een andere taal. */
+  const kaalPad = pad.startsWith("/en/") ? pad.slice(3) : pad;
+  if (!JURIDISCH.includes(kaalPad)) {
     const u = tekst.match(U_VORM);
     if (u) {
       const regel = tekst

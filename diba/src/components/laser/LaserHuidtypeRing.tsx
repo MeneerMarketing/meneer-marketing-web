@@ -2,9 +2,12 @@
 
 import { useState } from "react";
 import { FITZPATRICK_TYPES, type FitzpatrickId } from "@/data/laser-zones";
+import { useTc, useT } from "@/lib/gebruik-taal";
 
 /** Ring van huidtypes I–VI — GentleMax Pro context. */
 export default function LaserHuidtypeRing() {
+  const t = useT();
+  const tc = useTc();
   const [selected, setSelected] = useState<FitzpatrickId>("III");
   const current = FITZPATRICK_TYPES.find((t) => t.id === selected)!;
 
@@ -13,7 +16,7 @@ export default function LaserHuidtypeRing() {
       <div
         className="relative mx-auto grid h-52 w-52 place-items-center sm:h-60 sm:w-60"
         role="radiogroup"
-        aria-label="Fitzpatrick huidtype"
+        aria-label={tc("Fitzpatrick huidtype")}
       >
         <div
           aria-hidden="true"
@@ -49,16 +52,16 @@ export default function LaserHuidtypeRing() {
           );
         })}
         <span className="text-center text-[10px] font-medium uppercase tracking-[.14em] text-[var(--t-label)]">
-          Fitzpatrick
+          {t("Fitzpatrick")}
         </span>
       </div>
 
       <div>
         <p className="text-[10px] font-medium uppercase tracking-[.14em] text-[var(--t-label)]">
-          Huidtype {current.label}
+          {t("Huidtype")} {tc(current.label)}
         </p>
         <h3 className="mt-3 text-2xl tracking-[-.05em] sm:text-3xl">
-          {current.description}
+          {tc(current.description)}
         </h3>
         <p className="mt-4 text-sm leading-6 text-[var(--t-muted)]">
           {/* [MEDISCHE-CHECK-ROJDA]: de uitspraak over Fitzpatrick I tot VI. De vlag

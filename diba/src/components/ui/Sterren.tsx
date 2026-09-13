@@ -1,3 +1,6 @@
+"use client";
+
+import { useT } from "@/lib/gebruik-taal";
 /**
  * Vijf sterren, overal dezelfde.
  *
@@ -22,6 +25,7 @@ export default function Sterren({
   maat?: "sm" | "md" | "lg";
   opDonker?: boolean;
 }) {
+  const t = useT();
   const px = maat === "sm" ? 13 : maat === "lg" ? 20 : 16;
   const vol = opDonker ? "var(--on-dark-accent)" : "var(--g-600)";
   const leeg = opDonker ? "rgba(255,255,255,.35)" : "var(--g-200)";
@@ -30,7 +34,7 @@ export default function Sterren({
     <span
       className="inline-flex items-center gap-0.5"
       role="img"
-      aria-label={`${aantal} van de vijf sterren`}
+      aria-label={`${aantal} ${t("van de vijf sterren")}`}
     >
       {Array.from({ length: 5 }, (_, i) => (
         <svg

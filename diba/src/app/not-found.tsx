@@ -1,66 +1,38 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import FigmaHeading from "@/components/figma/FigmaHeading";
-import { figmaBtnMint, figmaBtnPrimary } from "@/lib/figma-home-layout";
-import {
-  figmaBody,
-  figmaInnerContainer,
-  figmaSection,
-} from "@/lib/figma-inner-layout";
-import { DIBA_WHATSAPP_URL } from "@/lib/site";
+import Nietgevonden from "@/components/ui/Nietgevonden";
+import Paginavulling from "@/components/ui/Paginavulling";
+import { LETTERKLASSEN } from "@/lib/lettertypen";
+import "./globals.css";
+
+/**
+ * De 404 voor een adres dat bij geen van beide talen hoort.
+ *
+ * Dit bestand staat buiten `(nl)` en `(en)`, en daarmee buiten allebei de wortelindelingen:
+ * een adres als /oude-link-uit-2019 valt in geen van de twee groepen, dus Next weet niet
+ * welke indeling eromheen hoort. Zonder dit bestand krijgt zo'n bezoeker de kale
+ * "404: This page could not be found." van Next, in plaats van onze pagina met de zoekhulp.
+ *
+ * Next zet hier zijn eigen html en body omheen. Daarom maakt deze pagina die niet zelf; een
+ * tweede html-element in dezelfde stroom is ongeldige opmaak. Het gevolg is wel dat onze
+ * klassen niet op html en body kunnen staan: de lettertypes en de kolomindeling staan
+ * daarom op deze schil, met `.paginaschil-los` in globals.css erbij voor de basisletter.
+ *
+ * Binnen een taal is er een eigen 404: `(nl)/not-found.tsx` en `(en)/not-found.tsx`. Die
+ * vangen `notFound()` vanuit een pagina die wél bestaat, bijvoorbeeld een behandeling die
+ * er niet meer is, en staan netjes in de indeling van hun eigen taal.
+ */
 
 export const metadata: Metadata = {
-  title: "Pagina niet gevonden",
+  title: "Deze link hoort bij de oude site",
   robots: { index: false, follow: false },
 };
 
 export default function NotFound() {
   return (
-    <main className="flex flex-1 items-center pb-20">
-      <div
-        className={`${figmaInnerContainer} ${figmaSection} mx-auto max-w-xl text-center`}
-      >
-        <FigmaHeading
-          as="h1"
-          size="hero"
-          text="Deze pagina *bestaat* niet (meer)"
-          className="mx-auto"
-        />
-        <p className={`mx-auto mt-7 max-w-md ${figmaBody}`}>
-          De link klopt niet of de pagina is verplaatst. Begin op de homepage of
-          stel je vraag via WhatsApp.
-        </p>
-        <div className="mt-9 flex flex-col items-center gap-3">
-          <Link href="/" className={figmaBtnPrimary}>
-            Naar de homepage ↗
-          </Link>
-          <Link
-            href={DIBA_WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={figmaBtnMint}
-          >
-            Nog niet zeker? Stel je vraag ↗
-          </Link>
-        </div>
-        <p className={`mx-auto mt-10 max-w-md ${figmaBody}`}>
-          Of ga direct naar{" "}
-          <Link
-            href="/huidproblemen"
-            className="text-[var(--g-700)] underline-offset-4 hover:underline"
-          >
-            huidproblemen
-          </Link>{" "}
-          of{" "}
-          <Link
-            href="/intake"
-            className="text-[var(--g-700)] underline-offset-4 hover:underline"
-          >
-            intake
-          </Link>
-          .
-        </p>
-      </div>
-    </main>
+    <div className={`${LETTERKLASSEN} paginaschil-los antialiased`}>
+      <Paginavulling>
+        <Nietgevonden />
+      </Paginavulling>
+    </div>
   );
 }

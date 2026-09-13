@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useSyncExternalStore } from "react";
+import { useT } from "@/lib/gebruik-taal";
 
 /**
  * De knop die een video op de pagina stopt en weer start.
@@ -33,6 +34,7 @@ export default function VideoKnop({
   doel: string;
   className?: string;
 }) {
+  const t = useT();
   const abonneer = useCallback(
     (herteken: () => void) => {
       const el = document.querySelector<HTMLVideoElement>(doel);
@@ -65,7 +67,7 @@ export default function VideoKnop({
     <button
       type="button"
       onClick={wissel}
-      aria-label={speelt ? "Beeld pauzeren" : "Beeld afspelen"}
+      aria-label={speelt ? t("Beeld pauzeren") : t("Beeld afspelen")}
       className={`grid h-10 w-10 shrink-0 place-items-center rounded-[var(--r-pill)] bg-white/85 text-[var(--g-700)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white ${className}`}
     >
       {speelt ? (

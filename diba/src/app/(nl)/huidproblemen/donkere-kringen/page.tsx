@@ -1,0 +1,285 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "@/components/ui/Linktaal";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
+import PillarNav from "@/components/pillar/PillarNav";
+import {
+  HuidanalyseAssen,
+  PillarCta,
+  PillarFaq,
+  SectieKop,
+  WelNiet,
+} from "@/components/pillar/PillarSecties";
+import Button from "@/components/ui/Button";
+import { FIGMA_INTENT_PIGMENT } from "@/data/figma-home-images";
+import {
+  KRINGEN_BEOORDELING,
+  KRINGEN_FAQ,
+  KRINGEN_WEL_NIET,
+  UITKOMSTEN,
+} from "@/data/kringen";
+import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
+import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import { t, tc } from "@/lib/vertaal";
+
+/**
+ * Donkere kringen — zevende eigen pagina.
+ *
+ * De kernvraag verschilt per pagina. Acne: waar. Pigment: wanneer in het jaar. Rosacea:
+ * wat zet het aan. Littekens: hoe oud is het. Veroudering: tijd of zon. Poriën: wat kun
+ * je veranderen. Hier: is dit wel één ding, en welk van de drie is het bij jou.
+ *
+ * Deze pagina heeft geen SoortKiezer. Dat is geen bezuiniging: de spiegeltest ís de
+ * herkenning, en er twee keer hetzelfde laten kiezen zou de test ondermijnen. Wel staan
+ * de drie types eronder als naslag, voor wie de test overslaat.
+ *
+ * Bij één van de drie uitkomsten verdwijnt de knop naar de intake. Een pagina die zegt
+ * dat wij niets kunnen doen en er dan toch een afspraakknop onder zet, zegt het niet.
+ *
+ * Twee donkergroene vlakken, niet meer (§5). Staat op noindex tot Rojda en de prijzen.
+ */
+
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/donkere-kringen",
+  titel: "Donkere kringen: welk type heb jij?",
+  omschrijving:
+    "Donkere kringen behandelen: pigment, doorschijnende vaatjes of schaduw. Hoe we vaststellen om welke van de drie het gaat.",
+});
+
+const PAD = "/huidproblemen/donkere-kringen";
+
+const ANKERS = [
+  { id: "test", label: "In het consult" },
+  { id: "types", label: "De drie types" },
+  { id: "wel-niet", label: "Wat helpt" },
+  { id: "meten", label: "Hoe we meten" },
+  { id: "vragen", label: "Vragen" },
+] as const;
+
+/* Stond op "Hier kunnen wij iets / deels iets / niets". Drie labels waarvan er twee met
+   een ontkenning openden, op de plek waar iemand kijkt of hij hier goed zit. Nu zeggen ze
+   wat de route is in plaats van wat wij niet kunnen. */
+const HELPT_LABEL = {
+  ja: "Dit behandelen wij",
+  deels: "Deels behandelbaar",
+  nee: "Andere discipline",
+} as const;
+
+export default function DonkereKringenPage() {
+  return (
+    <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)]">
+      <SchemaMarkup
+        data={breadcrumbSchema([
+          { name: "Home", url: DIBA_SITE_URL },
+          { name: "Huidproblemen", url: `${DIBA_SITE_URL}/huidproblemen` },
+          { name: "Donkere kringen", url: `${DIBA_SITE_URL}${PAD}` },
+        ])}
+      />
+
+      {/* ── Hero ─────────────────────────────────────────────────────────── */}
+      {/* Donkergroen, zoals elke andere hoofdingang van de site (Yasin, 11 september
+          2026). */}
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)]">
+        {/* Op een telefoon plakte het beeld tegen de onderrand van het groene vlak: de
+            tekstkolom bracht zijn eigen onderruimte mee, de beeldkolom niet (Yasin, 11
+            september 2026). Vanaf 1024 staan ze naast elkaar en geldt het niet. */}
+        <div className="mx-auto grid gap-6 px-5 pb-10 sm:px-9 sm:pb-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-10 lg:px-[7.5vw] lg:pb-0">
+          <div className="py-10 sm:py-14 lg:py-20 max-lg:pb-0">
+            <nav
+              aria-label={tc("Kruimelpad")}
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
+            >
+              <Link href="/" className="hover:text-white">
+                {t("Home")}
+              </Link>
+              <span aria-hidden="true">/</span>
+              <Link href="/huidproblemen" className="hover:text-white">
+                {t("Huidproblemen")}
+              </Link>
+              <span aria-hidden="true">/</span>
+              <span className="text-[var(--on-dark-body)]">
+                {t("Donkere kringen")}
+              </span>
+            </nav>
+
+            <h1 className="diba-display-l mt-6 text-[var(--on-dark)]">
+              {t("Donkere kringen")}
+              <br />
+              <span className="diba-accent-on-dark">{t("onder je ogen")}</span>
+            </h1>
+
+            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+              {t(
+                "Donkere kringen hebben drie mogelijke oorzaken: pigment, doorschijnende vaatjes of schaduw door een groef. Pigment behandelen we met peelings en gerichte verzorging.",
+              )}
+            </p>
+
+            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+              {t(
+                "Tijdens de intake stellen we vast om welke van de drie het gaat en wat daarbij past.",
+              )}
+            </p>
+
+            <div className="diba-knoprij mt-9">
+              <Button
+                variant="primair-op-donker"
+                href="/intake"
+                kort="Plan consult"
+              >
+                {t("Plan een huidconsult")}
+              </Button>
+              <Button
+                href={DIBA_WHATSAPP_URL}
+                variant="secundair-op-donker"
+                target="_blank"
+                rel="noopener noreferrer"
+                kort="Stel een vraag"
+              >
+                {t("Liever eerst een vraag stellen")}
+              </Button>
+            </div>
+          </div>
+
+          {/* Leent het pigmentbeeld: dat is het enige type dat wij behandelen. */}
+          <div className="relative min-h-[220px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] sm:min-h-[300px] lg:min-h-[460px]">
+            <Image
+              src={FIGMA_INTENT_PIGMENT.src}
+              alt={tc(FIGMA_INTENT_PIGMENT.alt)}
+              fill
+              priority
+              sizes="(min-width: 1024px) 44vw, 100vw"
+              className="object-cover object-center"
+            />
+          </div>
+        </div>
+      </section>
+
+      <PillarNav ankers={ANKERS} />
+
+      {/* ── De spiegeltest: de uitblinker ──────────────────────────────── */}
+      <section
+        id="test"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
+          <SectieKop
+            label="In het consult"
+            kop="Waar we"
+            accent="naar kijken"
+            intro="Onder het oog telt het licht dubbel: een lamp van boven maakt van elke holte een donkere plek. Daarom beoordelen we het onder vaste belichting."
+          />
+
+          {/* Hier stond een test met drie vragen die je thuis voor een raam moest doen.
+              Okan: dat moeten mensen niet zelf uitzoeken, daarvoor komen ze hier. Wat de
+              huidtherapeut beoordeelt staat er nu, en waarom je dat thuis niet ziet. */}
+          <ul className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-3">
+            {KRINGEN_BEOORDELING.map((stap) => (
+              <li
+                key={stap.kop}
+                className="rounded-[var(--r-md)] bg-white p-7 sm:p-8"
+              >
+                <h3 className="diba-card-title">{tc(stap.kop)}</h3>
+                <p className="mt-3 md:min-h-[5lh] text-[15px] leading-7 text-[var(--t-body)]">
+                  {tc(stap.tekst)}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* ── De drie types als naslag ───────────────────────────────────── */}
+      <section
+        id="types"
+        className="bg-[var(--g-025)] scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
+          <SectieKop
+            label="De drie types"
+            kop="Drie"
+            accent="oorzaken"
+            intro="De drie oorzaken naast elkaar, met per soort wat je ziet, waar het vandaan komt en wat er in de kliniek aan te doen is."
+          />
+
+          <ul className="mt-8 sm:mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-3">
+            {(["pigment", "vaten", "schaduw"] as const).map((id) => {
+              const u = UITKOMSTEN[id];
+              return (
+                <li key={u.id} className="bg-white p-6 sm:p-8">
+                  <h3 className="diba-card-title">{tc(u.kop)}</h3>
+                  <p className="diba-label mt-2 text-[var(--t-muted)]">
+                    {tc(u.vakterm)}
+                  </p>
+                  {/* min-h in lh, net als op de littekenpagina: twee blokken van 151 tekens
+                      gaven vijf en vier regels, want het verschil zit op een woordgrens en
+                      niet in de lengte. Vijf regelhoogtes gereserveerd, die meegroeien als
+                      de tekst op een smal scherm meer nodig heeft. */}
+                  <p className="mt-4 md:min-h-[5lh] text-[15px] leading-7 text-[var(--t-body)]">
+                    {tc(u.watHetIs)}
+                  </p>
+                  <p
+                    className={`diba-label mt-5 ${
+                      u.wijHelpen === "nee"
+                        ? "text-[var(--warn-text)]"
+                        : "text-[var(--g-700)]"
+                    }`}
+                  >
+                    {tc(HELPT_LABEL[u.wijHelpen])}
+                  </p>
+                </li>
+              );
+            })}
+          </ul>
+
+          <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 rounded-[var(--r-md)] bg-white p-6">
+            <p className="max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
+              {t(
+                "Kwam er pigment uit? Dan gelden dezelfde regels als voor pigment elders in je gezicht, inclusief het seizoen waarin je beter niet begint.",
+              )}
+            </p>
+            <Link
+              href="/huidproblemen/pigmentvlekken"
+              className="diba-label text-[var(--g-700)] underline underline-offset-4"
+            >
+              {t("Naar de pigmentpagina")}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <WelNiet
+        wel={KRINGEN_WEL_NIET.wel}
+        niet={KRINGEN_WEL_NIET.niet}
+        intro="Behandelen voordat duidelijk is om welke van de drie het gaat, kost de meeste mensen het meeste geld."
+      />
+
+      <HuidanalyseAssen
+        kop="Onder het oog telt het licht dubbel."
+        alineas={[
+          "Geen enkel gebied is zo gevoelig voor de stand van een lamp als dit. Licht van boven maakt van elke holte een donkere plek, en dan meet je vooral je verlichting in plaats van je huid.",
+          "Daarom leggen we dit gebied vast met vaste belichting en op vaste afstand. Pas dan is een verschil later een verschil, en geen ander moment van de dag.",
+        ]}
+        assen={[
+          ["Kleur", "Hoeveel pigment er in de huid zelf zit"],
+          ["Doorschijnen", "Hoe sterk het vaatnetwerk eronder meetelt"],
+          ["Schaduw", "Hoe diep de overgang naar de wang ligt"],
+        ]}
+      />
+
+      {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
+          draaien. Leeg als er niets gekoppeld is; zie het component. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/donkere-kringen" />
+
+      <PillarFaq items={KRINGEN_FAQ} onderwerp="donkere kringen" />
+
+      <PillarCta
+        kop="Eerst weten"
+        accent="welk type je hebt."
+        tekst="We kijken onder vaste belichting welk van de drie het is. Blijkt het schaduw, dan hoor je dat en houdt het op. Blijkt het pigment, dan weet je meteen wat er mogelijk is."
+        topic="donkere-kringen"
+        whatsappHref={DIBA_WHATSAPP_URL}
+      />
+    </main>
+  );
+}

@@ -6,6 +6,7 @@ import {
   hasAnalyticsConsent,
 } from "@/lib/cookie-consent";
 import { DIBA_ADDRESS } from "@/lib/site";
+import { useT } from "@/lib/gebruik-taal";
 
 /**
  * De kaart bij de route.
@@ -39,6 +40,7 @@ export const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encod
 )}`;
 
 export default function Kaart({ className = "" }: { className?: string }) {
+  const t = useT();
   const [mag, setMag] = useState(false);
   /* Pas na het inladen kijken: op de server bestaat localStorage niet, en dan zou de
      eerste opmaak van de pagina iets anders zijn dan wat de browser erna toont. */
@@ -64,15 +66,18 @@ export default function Kaart({ className = "" }: { className?: string }) {
       ) : (
         <div className="flex h-full min-h-[280px] flex-col justify-between gap-6 p-6 sm:p-8 lg:min-h-[420px]">
           <div>
-            <p className="diba-label text-[var(--t-label)]">Op de kaart</p>
+            <p className="diba-label text-[var(--t-label)]">
+              {t("Op de kaart")}
+            </p>
             <address className="mt-3 text-[20px] leading-8 not-italic text-[var(--t-strong)]">
               {DIBA_ADDRESS.street}
               <br />
               {DIBA_ADDRESS.postalCode} {DIBA_ADDRESS.city}
             </address>
             <p className="mt-4 max-w-[38ch] text-[15px] leading-7 text-[var(--t-body)]">
-              De kaart komt van Google en zet cookies. Daarom laden we hem pas
-              als je erom vraagt.
+              {t(
+                "De kaart komt van Google en zet cookies. Daarom laden we hem pas als je erom vraagt.",
+              )}
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
@@ -81,7 +86,7 @@ export default function Kaart({ className = "" }: { className?: string }) {
               onClick={() => setMag(true)}
               className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
             >
-              Toon de kaart
+              {t("Toon de kaart")}
             </button>
             <a
               href={MAPS_URL}
@@ -89,7 +94,7 @@ export default function Kaart({ className = "" }: { className?: string }) {
               rel="noopener noreferrer"
               className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
             >
-              Of open Maps
+              {t("Of open Maps")}
             </a>
           </div>
         </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useState } from "react";
+import { useTc } from "@/lib/gebruik-taal";
 
 /**
  * Een lijst die op een telefoon ingeklapt begint en op desktop gewoon openstaat.
@@ -41,6 +42,7 @@ export default function MobielInklap({
   vorm?: "knop" | "kop";
   className?: string;
 }) {
+  const tc = useTc();
   const [open, setOpen] = useState(false);
   const id = `inklap-${useId().replace(/:/g, "")}`;
   const isKop = vorm === "kop";
@@ -63,7 +65,7 @@ export default function MobielInklap({
               }`
         }
       >
-        {opschrift}
+        {tc(opschrift)}
         <span
           aria-hidden="true"
           className="flex h-7 w-7 shrink-0 items-center justify-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)]"

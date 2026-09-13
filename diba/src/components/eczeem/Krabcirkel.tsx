@@ -5,6 +5,7 @@ import Label from "@/components/ui/Label";
 import { CIRKEL, CIRKEL_SLOT, WIE_LABEL } from "@/data/eczeem";
 import { publicCopy } from "@/lib/copy-flags";
 import { RASTER_SECTIE } from "@/lib/raster";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * De krabcirkel — de uitblinker van de eczeempagina.
@@ -45,6 +46,8 @@ const WIE_KLEUR = {
 } as const;
 
 export default function Krabcirkel() {
+  const t = useT();
+  const tc = useTc();
   const [actief, setActief] = useState(0);
   const schakel = CIRKEL[actief];
 
@@ -86,7 +89,7 @@ export default function Krabcirkel() {
           {/* De tekst in het midden stond in de SVG en schaalde dus mee met de tekening.
               Als gewone tekst leest hij op elk formaat even goed. */}
           <p className="diba-label pointer-events-none absolute top-1/2 left-1/2 w-40 -translate-x-1/2 -translate-y-1/2 text-center text-[var(--t-muted)]">
-            Draait door tot je hem breekt
+            {t("Draait door tot je hem breekt")}
           </p>
 
           {CIRKEL.map((s, i) => {
@@ -104,42 +107,45 @@ export default function Krabcirkel() {
                     : "bg-white text-[var(--t-label)] shadow-[var(--shadow-float)] hover:bg-[var(--g-100)]"
                 }`}
               >
-                <span className="diba-label whitespace-nowrap">{s.kort}</span>
+                <span className="diba-label whitespace-nowrap">
+                  {tc(s.kort)}
+                </span>
               </button>
             );
           })}
         </div>
 
         <p className="mt-6 text-sm leading-6 text-[var(--t-muted)]">
-          Tik een schakel aan. Elk punt heeft iemand die hem kan doorbreken, en
-          dat is lang niet altijd dezelfde.
+          {t(
+            "Tik een schakel aan. Elk punt heeft iemand die hem kan doorbreken, en dat is lang niet altijd dezelfde.",
+          )}
         </p>
       </div>
 
       {/* ── De lezing ── */}
       <div aria-live="polite">
         <Label className={WIE_KLEUR[schakel.wie]}>
-          {WIE_LABEL[schakel.wie]}
+          {tc(WIE_LABEL[schakel.wie])}
         </Label>
-        <h3 className="diba-card-title-lg mt-4">{schakel.naam}</h3>
+        <h3 className="diba-card-title-lg mt-4">{tc(schakel.naam)}</h3>
 
         <dl className="mt-6 space-y-5">
           <div className="rounded-[var(--r-sm)] bg-white p-4">
-            <dt className="diba-label">Wat er gebeurt</dt>
+            <dt className="diba-label">{t("Wat er gebeurt")}</dt>
             <dd className="mt-1.5 text-[16px] leading-7 text-[var(--t-body)]">
-              {publicCopy(schakel.watGebeurtEr)}
+              {tc(schakel.watGebeurtEr)}
             </dd>
           </div>
           <div className="rounded-[var(--r-sm)] bg-white p-4">
-            <dt className="diba-label">Hier valt de cirkel te breken</dt>
+            <dt className="diba-label">{t("Hier valt de cirkel te breken")}</dt>
             <dd className="mt-1.5 text-[16px] leading-7 text-[var(--t-body)]">
-              {publicCopy(schakel.doorbreken)}
+              {tc(schakel.doorbreken)}
             </dd>
           </div>
         </dl>
 
         <p className="mt-8 rounded-[var(--r-sm)] bg-[var(--g-050)] p-5 text-[15px] leading-7 text-[var(--t-body)]">
-          {CIRKEL_SLOT}
+          {tc(CIRKEL_SLOT)}
         </p>
       </div>
     </div>

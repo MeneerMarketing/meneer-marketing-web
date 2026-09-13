@@ -1,7 +1,9 @@
-import Link from "next/link";
+import Link from "@/components/ui/Linktaal";
 import { SectieKop } from "@/components/pillar/PillarSecties";
 import ReviewCard from "@/components/ui/ReviewCard";
 import { reviewsForTopic, type Review, type ReviewTopic } from "@/data/reviews";
+import { t, tc } from "@/lib/vertaal";
+import Vertaaldnoot from "@/components/reviews/Vertaaldnoot";
 
 /**
  * Wat anderen over dít onderwerp schreven.
@@ -62,17 +64,19 @@ export default function ReviewsBijOnderwerp({
       <div className="mx-auto">
         <SectieKop
           label="Reviews"
-          kop="Wat anderen"
-          accent="erover zeggen."
+          kop={t("Wat anderen")}
+          accent={t("erover zeggen.")}
           intro={intro}
           raster="gelijk"
         />
-        <ul className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-3 md:items-start">
+        <Vertaaldnoot className="mt-6" />
+        <ul className="mt-4 sm:mt-6 grid gap-4 md:grid-cols-3 md:items-start">
           {reviews.map((r, i) => (
             /* Op een telefoon twee reviews; de derde staat vanaf md. */
             <li key={r.id} className={i >= 2 ? "max-md:hidden" : undefined}>
               <ReviewCard
                 quote={r.quote}
+                quoteEn={r.quoteEn}
                 name={r.name}
                 treatment={r.treatment}
                 stars={r.stars}
@@ -85,7 +89,7 @@ export default function ReviewsBijOnderwerp({
           href="/reviews"
           className="diba-label mt-10 inline-flex min-h-11 items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
         >
-          Alle reviews
+          {t("Alle reviews")}
           <span aria-hidden="true">›</span>
         </Link>
       </div>

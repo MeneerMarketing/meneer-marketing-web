@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import Lichaamskaart from "@/components/laser/Lichaamskaart";
@@ -27,6 +27,7 @@ import {
   zonesUitQuery,
 } from "@/lib/laser-pricing";
 import { DIBA_WHATSAPP_URL } from "@/lib/site";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * De laserconfigurator.
@@ -73,6 +74,8 @@ const OVER_DE_REEKS = {
 } as const;
 
 export default function Configurator() {
+  const tc = useTc();
+  const t = useT();
   /**
    * De keuze komt uit de URL, en dat gebeurt via `useSearchParams` en niet via een effect
    * dat na het monteren alsnog state zet. Die eerste versie werkte wel maar zette twee
@@ -162,14 +165,15 @@ export default function Configurator() {
       <div>
         {/* ── Welke prijslijst ── */}
         <div className="mb-8">
-          <Label>Welke prijslijst</Label>
+          <Label>{t("Welke prijslijst")}</Label>
           <p className="mt-3 max-w-[56ch] text-[15px] leading-7 text-[var(--t-body)]">
-            De kliniek hanteert twee tarievenlijsten. Voor dezelfde zone
-            verschilt het bedrag, en niet elke zone staat op beide lijsten.
+            {t(
+              "De kliniek hanteert twee tarievenlijsten. Voor dezelfde zone verschilt het bedrag, en niet elke zone staat op beide lijsten.",
+            )}
           </p>
           <div
             role="group"
-            aria-label="Prijslijst"
+            aria-label={tc("Prijslijst")}
             className="mt-4 flex flex-wrap gap-2"
           >
             {LASER_GESLACHTEN.map((g) => (
@@ -184,7 +188,7 @@ export default function Configurator() {
                     : "bg-white text-[var(--t-label)] hover:bg-[var(--g-100)]"
                 }`}
               >
-                {g.label}
+                {tc(g.label)}
               </button>
             ))}
           </div>
@@ -200,15 +204,16 @@ export default function Configurator() {
         {/* ── De tarieven zonder eigen vorm op de kaart ── */}
         {overigePerGebied.length > 0 ? (
           <div className="mt-12">
-            <Label>Verder op de tarievenlijst</Label>
+            <Label>{t("Verder op de tarievenlijst")}</Label>
             <p className="mt-3 max-w-[56ch] text-[15px] leading-7 text-[var(--t-body)]">
-              Niet elke regel heeft een eigen plek op de tekening. Deze staan
-              wel op de lijst en zijn hier net zo goed te kiezen.
+              {t(
+                "Niet elke regel heeft een eigen plek op de tekening. Deze staan wel op de lijst en zijn hier net zo goed te kiezen.",
+              )}
             </p>
             {overigePerGebied.map((gebied) => (
               <div key={gebied.id} className="mt-7">
                 <p className="diba-label text-[var(--t-label)]">
-                  {gebied.label}
+                  {tc(gebied.label)}
                 </p>
                 <ul className="mt-3 flex flex-wrap gap-2">
                   {gebied.zones.map((z) => {
@@ -229,7 +234,7 @@ export default function Configurator() {
                                 : "bg-white text-[var(--t-label)] hover:bg-[var(--g-100)]"
                           }`}
                         >
-                          {z.label}
+                          {tc(z.label)}
                           <span className="tabular-nums opacity-70">
                             {dicht
                               ? "zit er al in"
@@ -247,10 +252,11 @@ export default function Configurator() {
 
         {/* ── Pakketten ── */}
         <div className="mt-12">
-          <Label>Of kies een pakket</Label>
+          <Label>{t("Of kies een pakket")}</Label>
           <p className="mt-3 max-w-[56ch] text-[15px] leading-7 text-[var(--t-body)]">
-            Een pakket vervangt de losse zones die erin zitten. Die blijven
-            aangewezen staan op de tekening, maar tellen niet nog een keer mee.
+            {t(
+              "Een pakket vervangt de losse zones die erin zitten. Die blijven aangewezen staan op de tekening, maar tellen niet nog een keer mee.",
+            )}
           </p>
           {/* Kaartjes en geen labelknoppen.
 
@@ -279,7 +285,7 @@ export default function Configurator() {
                         aan ? "text-white" : "text-[var(--t-strong)]"
                       }`}
                     >
-                      {p.label}
+                      {tc(p.label)}
                     </span>
                     <span
                       className={`shrink-0 text-[14px] tabular-nums ${
@@ -298,12 +304,13 @@ export default function Configurator() {
 
           {advies ? (
             <p className="mt-5 max-w-[56ch] rounded-[var(--r-sm)] bg-[var(--g-050)] p-5 text-[15px] leading-7 text-[var(--t-body)]">
-              Je hebt {advies.gekozen} van de {advies.totaal} zones uit{" "}
+              {t("Je hebt")} {advies.gekozen} van de {advies.totaal} zones uit{" "}
               <strong className="font-medium text-[var(--t-strong)]">
-                {advies.label}
+                {tc(advies.label)}
               </strong>{" "}
               aangewezen. Wat er nog bij zou komen:{" "}
-              {advies.erbij.map((id) => label(id).toLowerCase()).join(", ")}. Of
+              {advies.erbij.map((id) => tc(label(id)).toLowerCase()).join(", ")}
+              . {t("Of")}
               dat gunstiger uitkomt hangt af van de definitieve tarieven.
             </p>
           ) : null}
@@ -311,16 +318,18 @@ export default function Configurator() {
 
         {/* ── Huidtype ── */}
         <div className="mt-12">
-          <Label>Je huidtype</Label>
+          <Label>{t("Je huidtype")}</Label>
           <h2 className="diba-display-s mt-4 max-w-[20ch]">
-            Zes huidtypes
+            {t("Zes huidtypes")}
             <br />
-            <span className="diba-accent">en alle zes te behandelen</span>
+            <span className="diba-accent">
+              {t("en alle zes te behandelen")}
+            </span>
           </h2>
           <p className="mt-4 max-w-[56ch] text-[15px] leading-7 text-[var(--t-body)]">
-            De GentleMax Pro werkt op Fitzpatrick I tot en met VI. Je type
-            bepaalt niet óf het kan, maar met welke instellingen. Weet je het
-            niet, laat het dan open; we bepalen het tijdens de intake.
+            {t(
+              "De GentleMax Pro werkt op Fitzpatrick I tot en met VI. Je type bepaalt niet óf het kan, maar met welke instellingen. Weet je het niet, laat het dan open; we bepalen het tijdens de intake.",
+            )}
           </p>
           <ul className="mt-6 grid gap-2 sm:grid-cols-2">
             {FITZPATRICK_TYPES.map((t) => {
@@ -338,10 +347,10 @@ export default function Configurator() {
                     }`}
                   >
                     <span className="text-[15px] leading-6 font-medium text-[var(--t-strong)]">
-                      {t.label}
+                      {tc(t.label)}
                     </span>
                     <span className="text-[13px] leading-5 text-[var(--t-muted)]">
-                      {t.description}
+                      {tc(t.description)}
                     </span>
                   </button>
                 </li>
@@ -352,14 +361,14 @@ export default function Configurator() {
 
         {/* ── Over de reeks ── */}
         <div className="mt-12 rounded-[var(--r-md)] bg-[var(--g-700)] p-7 text-[var(--on-dark)] sm:p-9">
-          <Label opDonker>Wat je moet weten</Label>
-          <p className="diba-card-title mt-4">{OVER_DE_REEKS.kop}</p>
+          <Label opDonker>{t("Wat je moet weten")}</Label>
+          <p className="diba-card-title mt-4">{tc(OVER_DE_REEKS.kop)}</p>
           {OVER_DE_REEKS.regels.map((r) => (
             <p
               key={r}
               className="mt-4 max-w-[62ch] text-[15px] leading-7 text-[var(--on-dark-body)]"
             >
-              {r}
+              {tc(r)}
             </p>
           ))}
         </div>
@@ -368,7 +377,7 @@ export default function Configurator() {
       {/* ── Rechts: de opbouw ── */}
       <aside className="lg:sticky lg:top-[calc(var(--nav-h)+1.5rem)]">
         <div className="rounded-[var(--r-md)] bg-white p-6 sm:p-7">
-          <Label>Je opbouw</Label>
+          <Label>{t("Je opbouw")}</Label>
 
           {/* Een leeg totaal is niet hetzelfde als een onbekend totaal.
 
@@ -381,18 +390,23 @@ export default function Configurator() {
           </p>
           <p className="mt-3 text-[14px] leading-6 text-[var(--t-muted)]">
             {opbouw.lines.length === 0
-              ? "Wijs een zone aan, dan staat het bedrag hier."
+              ? t("Wijs een zone aan, dan staat het bedrag hier.")
               : opbouw.hasMissingPrices
-                ? "Voor een deel van je keuze is nog geen tarief bekend. De opbouw klopt al wel."
-                : "Prijs per sessie. Het aantal sessies hoor je tijdens de intake."}
+                ? t(
+                    "Voor een deel van je keuze is nog geen tarief bekend. De opbouw klopt al wel.",
+                  )
+                : t(
+                    "Prijs per sessie. Het aantal sessies hoor je tijdens de intake.",
+                  )}
           </p>
 
           {/* Hangt aan de vlag in de data, niet aan een los stukje tekst. Zolang daar
               verzonnen bedragen in staan kan deze mededeling er niet af. */}
           {VOORLOPIGE_PRIJZEN ? (
             <p className="mt-3 rounded-[var(--r-sm)] bg-[var(--g-050)] p-3 text-[13px] leading-5 text-[var(--t-body)]">
-              Deze bedragen zijn voorlopig en nog niet door de kliniek
-              vastgesteld.
+              {t(
+                "Deze bedragen zijn voorlopig en nog niet door de kliniek vastgesteld.",
+              )}
             </p>
           ) : null}
 
@@ -410,33 +424,34 @@ export default function Configurator() {
                     type="button"
                     onClick={() => wissel(l.zoneId)}
                     className="inline-flex min-h-12 items-center text-left text-[15px] leading-6 text-[var(--t-strong)] underline decoration-[var(--g-300)] decoration-dotted underline-offset-4 hover:decoration-[var(--g-700)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
-                    aria-label={`${l.label} weghalen`}
+                    aria-label={`${tc(l.label)} ${t("weghalen")}`}
                   >
-                    {l.label}
+                    {tc(l.label)}
                   </button>
                   <span className="shrink-0 text-[14px] text-[var(--t-muted)] tabular-nums">
-                    {l.formatted}
+                    {tc(l.formatted)}
                   </span>
                 </li>
               ))}
             </ul>
           ) : (
             <p className="mt-6 pt-5 text-[15px] leading-7 text-[var(--t-body)]">
-              Nog niets aangewezen. Kies links een zone op de tekening of in de
-              lijst ernaast.
+              {t(
+                "Nog niets aangewezen. Kies links een zone op de tekening of in de lijst ernaast.",
+              )}
             </p>
           )}
 
           {gedekt.length > 0 ? (
             <p className="mt-4 text-[13px] leading-5 text-[var(--t-muted)]">
-              Zit al in je pakket:{" "}
-              {gedekt.map((id) => label(id).toLowerCase()).join(", ")}.
+              {t("Zit al in je pakket:")}{" "}
+              {gedekt.map((id) => tc(label(id)).toLowerCase()).join(", ")}.
             </p>
           ) : null}
 
           {huidtype ? (
             <p className="mt-4 pt-4 text-[14px] leading-6 text-[var(--t-body)]">
-              Huidtype Fitzpatrick {huidtype}
+              {t("Huidtype Fitzpatrick")} {huidtype}
             </p>
           ) : null}
 
@@ -445,7 +460,7 @@ export default function Configurator() {
               href="/afspraak"
               className="diba-label inline-flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-5 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
             >
-              Plan een huidconsult
+              {t("Plan een huidconsult")}
             </Link>
             <a
               href={DIBA_WHATSAPP_URL}
@@ -453,7 +468,7 @@ export default function Configurator() {
               rel="noopener noreferrer"
               className="diba-label inline-flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-050)] px-5 text-[var(--t-label)] transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
             >
-              Vraag stellen
+              {t("Vraag stellen")}
             </a>
           </div>
 
@@ -474,15 +489,16 @@ export default function Configurator() {
                 }}
                 className="diba-label min-h-11 text-[var(--t-muted)] transition-colors hover:text-[var(--t-strong)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
               >
-                Opnieuw
+                {t("Opnieuw")}
               </button>
             </div>
           ) : null}
         </div>
 
         <p className="mt-4 px-1 text-[13px] leading-5 text-[var(--t-muted)]">
-          Je keuze staat in de adresbalk. Sla die op of stuur hem door, dan
-          staat alles er nog als je terugkomt.
+          {t(
+            "Je keuze staat in de adresbalk. Sla die op of stuur hem door, dan staat alles er nog als je terugkomt.",
+          )}
         </p>
       </aside>
     </div>

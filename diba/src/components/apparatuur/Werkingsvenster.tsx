@@ -4,6 +4,7 @@ import { useEffect, useId, useRef, useState } from "react";
 import { DOELWITTEN, type Apparaat } from "@/data/apparatuur";
 import { HUIDLAGEN, HUIDLAGEN_BRON, LAAGAANDEEL } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * Het werkingsvenster: een doorsnede van de huid waarin je ziet wat een apparaat doet.
@@ -145,6 +146,8 @@ function laagMidden(i: number): number {
  * dat is precies waarvoor ze er zijn.
  */
 function LegendaNaast({ bodem, beweegt }: { bodem: number; beweegt: boolean }) {
+  const t = useT();
+  const tc = useTc();
   const rijen = HUIDLAGEN.length;
   return (
     <div className="relative hidden min-w-0 flex-1 md:block">
@@ -191,14 +194,14 @@ function LegendaNaast({ bodem, beweegt }: { bodem: number; beweegt: boolean }) {
                     geraakt ? "font-semibold" : "font-medium"
                   }`}
                 >
-                  {laag.naam}
+                  {t(laag.naam)}
                 </span>
                 <span className="text-[12px] leading-5 text-[var(--t-muted)] tabular-nums">
-                  tot {laag.tot}
+                  {t("tot")} {tc(laag.tot)}
                 </span>
               </p>
               <p className="mt-1 max-w-[40ch] text-[13px] leading-[18px] text-[var(--t-muted)]">
-                {laag.bevat}
+                {t(laag.bevat)}
               </p>
             </li>
           );
@@ -217,6 +220,8 @@ function LegendaNaast({ bodem, beweegt }: { bodem: number; beweegt: boolean }) {
  * net als in de huid. Wat buiten bereik ligt vervaagt, net als in de tekening.
  */
 function LegendaOnder({ bodem, beweegt }: { bodem: number; beweegt: boolean }) {
+  const t = useT();
+  const tc = useTc();
   return (
     <ol className="mt-5 divide-y divide-[var(--g-100)] md:hidden">
       {HUIDLAGEN.map((laag, i) => {
@@ -242,14 +247,14 @@ function LegendaOnder({ bodem, beweegt }: { bodem: number; beweegt: boolean }) {
                     geraakt ? "font-semibold" : "font-medium"
                   }`}
                 >
-                  {laag.naam}
+                  {t(laag.naam)}
                 </span>
                 <span className="shrink-0 text-[12px] leading-5 text-[var(--t-muted)] tabular-nums">
-                  tot {laag.tot}
+                  {t("tot")} {tc(laag.tot)}
                 </span>
               </p>
               <p className="mt-0.5 hidden text-[13px] leading-5 text-[var(--t-muted)] sm:block">
-                {laag.bevat}
+                {t(laag.bevat)}
               </p>
             </div>
           </li>
@@ -295,6 +300,8 @@ type Props = {
 };
 
 export default function Werkingsvenster({ apparaat, diepte }: Props) {
+  const t = useT();
+  const tc = useTc();
   const [stap, setStap] = useState(0);
   const [zelfGestuurd, setZelfGestuurd] = useState(false);
   const [rustig, setRustig] = useState(true);
@@ -359,7 +366,7 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
               viewBox={`0 0 270 ${HOOGTE}`}
               className="block h-auto w-full md:h-full md:w-auto"
               role="img"
-              aria-label={`Doorsnede van de huid met de werking van ${apparaat.naam}. Stap ${stap + 1} van ${fasen.length}: ${fasen[stap].kop}.`}
+              aria-label={`${t("Doorsnede van de huid met de werking van")} ${tc(apparaat.naam)}. ${t("Stap")} ${stap + 1} ${t("van")} ${fasen.length}: ${tc(fasen[stap].kop)}.`}
             >
               <defs>
                 <clipPath id={`huid-${uid}`}>
@@ -502,7 +509,7 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
                     fill="white"
                     style={{ letterSpacing: "0.02em" }}
                   >
-                    {`Tot hier, ~${diepteInMm(bodem)} mm`}
+                    {`${t("Tot hier")}, ~${diepteInMm(bodem)} mm`}
                   </text>
                 </g>
               </g>
@@ -521,7 +528,9 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
                   transition: beweegt ? "opacity 400ms ease" : undefined,
                 }}
               >
-                {apparaat.werkwijzeNaam ?? WERKWIJZE_NAAM[apparaat.werkwijze]}
+                {t(
+                  apparaat.werkwijzeNaam ?? WERKWIJZE_NAAM[apparaat.werkwijze],
+                )}
               </text>
             </svg>
           </div>
@@ -536,15 +545,21 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
         {/* Naslag, en op een telefoon vier regels die tussen de tekening en de knoppen
             staan. Vanaf 640 pixels staat hij er weer. */}
         <p className="mt-4 hidden text-[13px] leading-6 text-[var(--t-muted)] sm:block">
-          De verhoudingen zijn schematisch; de diepten erbij zijn dat niet.{" "}
-          {HUIDLAGEN_BRON} Hoe diep er bij jou gewerkt wordt hangt af van de
-          instelling die de behandelaar kiest.
+          {t(
+            "De verhoudingen zijn schematisch; de diepten erbij zijn dat niet.",
+          )}{" "}
+          {t(HUIDLAGEN_BRON)}{" "}
+          {t(
+            "Hoe diep er bij jou gewerkt wordt hangt af van de instelling die de behandelaar kiest.",
+          )}
         </p>
       </div>
 
       {/* ── De stappen ── */}
       <div className="flex flex-col">
-        <p className="diba-label text-[var(--t-label)]">Wat er gebeurt</p>
+        <p className="diba-label text-[var(--t-label)]">
+          {t("Wat er gebeurt")}
+        </p>
 
         {/* Onder de tekening (md tot xl) in drie kolommen, ernaast (vanaf xl) als één rij. */}
         <ol className="mt-4 grid gap-1.5 sm:mt-5 sm:gap-2 md:grid-cols-3 xl:grid-cols-1">
@@ -583,7 +598,7 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
                           : "text-[var(--t-body)]"
                       }`}
                     >
-                      {f.kop}
+                      {t(f.kop)}
                     </span>
                     <span
                       className="grid text-[15px] leading-7 text-[var(--t-body)]"
@@ -596,7 +611,7 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
                       }}
                     >
                       <span className="overflow-hidden">
-                        <span className="block pt-1">{publicCopy(f.zin)}</span>
+                        <span className="block pt-1">{tc(f.zin)}</span>
                       </span>
                     </span>
                   </span>
@@ -608,20 +623,22 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
 
         {/* Waar het op aangrijpt. Bij licht is dit natuurkunde, geen marketing. */}
         <div className="mt-6 rounded-[var(--r-md)] bg-[var(--g-050)] p-5">
-          <p className="diba-label text-[var(--t-label)]">Grijpt aan op</p>
+          <p className="diba-label text-[var(--t-label)]">
+            {t("Grijpt aan op")}
+          </p>
           <p className="mt-2 text-[16px] leading-6 font-medium text-[var(--t-strong)]">
-            {doelwit.naam}
+            {t(doelwit.naam)}
           </p>
           <p className="mt-1.5 text-[15px] leading-7 text-[var(--t-body)]">
-            {doelwit.zin}
+            {t(doelwit.zin)}
           </p>
         </div>
 
         {!rustig ? (
           <p className="mt-4 text-[13px] leading-6 text-[var(--t-muted)]">
             {zelfGestuurd
-              ? "Je stuurt zelf. Kies een stap om verder te kijken."
-              : "Loopt vanzelf door. Klik een stap om zelf te sturen."}
+              ? t("Je stuurt zelf. Kies een stap om verder te kijken.")
+              : t("Loopt vanzelf door. Klik een stap om zelf te sturen.")}
           </p>
         ) : null}
       </div>
@@ -646,6 +663,7 @@ type MechaniekProps = {
 };
 
 function Mechaniek({ apparaat, stap, bodem, beweegt, uid }: MechaniekProps) {
+  const t = useT();
   const soepel = (ms: number, vertraging = 0) =>
     beweegt
       ? `transform ${ms}ms cubic-bezier(.22,.61,.36,1) ${vertraging}ms, opacity ${Math.round(ms * 0.7)}ms ease ${vertraging}ms`

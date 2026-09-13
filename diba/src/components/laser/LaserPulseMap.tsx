@@ -1,8 +1,9 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import { useMemo, useState } from "react";
 import Label from "@/components/ui/Label";
+import { useT, useTc } from "@/lib/gebruik-taal";
 import {
   DELEN_PER_AANZICHT,
   LICHAAM_VIEWBOX,
@@ -61,6 +62,8 @@ const GEBIEDEN = LASER_ZONE_AREAS.filter((a) => a.id !== "pakket") as readonly {
 }[];
 
 export default function LaserPulseMap() {
+  const tc = useTc();
+  const t = useT();
   const [actief, setActief] =
     useState<Exclude<LaserZoneArea, "pakket">>("gelaat");
 
@@ -83,7 +86,9 @@ export default function LaserPulseMap() {
           viewBox={LICHAAM_VIEWBOX}
           className="mx-auto block h-auto w-full max-w-[240px]"
           role="img"
-          aria-label={`Silhouet met het gebied ${GEBIEDEN.find((g) => g.id === actief)?.label.toLowerCase()} opgelicht.`}
+          aria-label={`${t("Silhouet met het gebied")} ${tc(
+            GEBIEDEN.find((g) => g.id === actief)?.label ?? "",
+          ).toLowerCase()} ${t("opgelicht.")}`}
         >
           <defs>
             <clipPath id="pulsekaart-lichaam">
@@ -128,11 +133,11 @@ export default function LaserPulseMap() {
       </div>
 
       <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-7 sm:p-9">
-        <Label>Zones</Label>
+        <Label>{t("Zones")}</Label>
 
         <div
           role="group"
-          aria-label="Kies een gebied"
+          aria-label={tc("Kies een gebied")}
           className="mt-4 flex flex-wrap gap-2"
         >
           {GEBIEDEN.map((gebied) => (
@@ -147,15 +152,16 @@ export default function LaserPulseMap() {
                   : "bg-white text-[var(--t-label)] hover:bg-[var(--g-025)]"
               }`}
             >
-              {gebied.label}
+              {tc(gebied.label)}
             </button>
           ))}
         </div>
 
-        <h3 className="diba-card-title-lg mt-7">Stel je zones samen.</h3>
+        <h3 className="diba-card-title-lg mt-7">{t("Stel je zones samen.")}</h3>
         <p className="mt-4 max-w-[52ch] text-[15px] leading-7 text-[var(--t-body)]">
-          In de configurator zie je meteen wat je opbouw wordt, inclusief wat
-          een pakket vervangt. Hieronder staat wat er in dit gebied valt.
+          {t(
+            "In de configurator zie je meteen wat je opbouw wordt, inclusief wat een pakket vervangt. Hieronder staat wat er in dit gebied valt.",
+          )}
         </p>
 
         <ul className="mt-6 flex flex-wrap gap-2">
@@ -164,7 +170,7 @@ export default function LaserPulseMap() {
               key={zone}
               className="rounded-[var(--r-pill)] bg-white px-4 py-2 text-[14px] leading-6 text-[var(--t-body)]"
             >
-              {zone}
+              {tc(zone)}
             </li>
           ))}
         </ul>
@@ -173,7 +179,7 @@ export default function LaserPulseMap() {
           href="/tarieven"
           className="diba-label mt-8 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
         >
-          Bekijk de tarieven
+          {t("Bekijk de tarieven")}
           <span aria-hidden="true">›</span>
         </Link>
       </div>

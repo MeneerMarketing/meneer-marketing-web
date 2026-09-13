@@ -1,3 +1,6 @@
+"use client";
+
+import { useTc } from "@/lib/gebruik-taal";
 import type {
   InputHTMLAttributes,
   ReactNode,
@@ -33,13 +36,14 @@ function Wrapper({
   required,
   children,
 }: BaseProps & { required?: boolean; children: ReactNode }) {
+  const tc = useTc();
   return (
     <div className="flex flex-col gap-2">
       <label
         htmlFor={id}
         className="text-[14px] font-medium leading-relaxed text-[var(--g-900)]"
       >
-        {label}
+        {tc(label)}{" "}
         {required ? (
           <span aria-hidden="true" className="text-[var(--t-label)]">
             {" "}
@@ -60,7 +64,7 @@ function Wrapper({
           id={`${id}-hint`}
           className="text-[13px] leading-relaxed text-[var(--t-muted)]"
         >
-          {hint}
+          {tc(hint)}
         </p>
       ) : null}
     </div>
@@ -75,6 +79,7 @@ export function TextField({
   className = "",
   ...rest
 }: BaseProps & InputHTMLAttributes<HTMLInputElement>) {
+  const tc = useTc();
   return (
     <Wrapper
       label={label}
@@ -105,6 +110,7 @@ export function TextareaField({
   rows = 4,
   ...rest
 }: BaseProps & TextareaHTMLAttributes<HTMLTextAreaElement>) {
+  const tc = useTc();
   return (
     <Wrapper
       label={label}
@@ -143,6 +149,7 @@ export function SelectField({
   children,
   ...rest
 }: BaseProps & SelectHTMLAttributes<HTMLSelectElement>) {
+  const tc = useTc();
   return (
     <Wrapper
       label={label}

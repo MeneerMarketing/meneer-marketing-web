@@ -1,8 +1,9 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import { publicCopy } from "@/lib/copy-flags";
 import { useOordelen } from "@/lib/huidprofiel-oordeel";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * Wat er bij jou uit het huidprofiel kwam, op de pagina van deze behandeling zelf.
@@ -38,6 +39,8 @@ import { useOordelen } from "@/lib/huidprofiel-oordeel";
  */
 
 export default function ProfielOordeel({ slug }: { slug: string }) {
+  const tc = useTc();
+  const t = useT();
   const oordelen = useOordelen();
   const match = oordelen?.get(slug);
 
@@ -71,7 +74,7 @@ export default function ProfielOordeel({ slug }: { slug: string }) {
     <div className={`mt-8 rounded-[var(--r-md)] p-6 sm:p-7 ${vlak}`}>
       <p className={`diba-label ${koptint}`}>{kop}</p>
       <p className="mt-2 max-w-[64ch] text-[16px] leading-7 text-[var(--t-body)]">
-        {publicCopy(match.reden)}
+        {tc(match.reden)}
       </p>
 
       {match.letOp.length > 0 ? (
@@ -81,7 +84,7 @@ export default function ProfielOordeel({ slug }: { slug: string }) {
               key={l}
               className="max-w-[64ch] text-[15px] leading-7 text-[var(--t-muted)]"
             >
-              {publicCopy(l)}
+              {tc(l)}
             </li>
           ))}
         </ul>
@@ -93,7 +96,7 @@ export default function ProfielOordeel({ slug }: { slug: string }) {
         href="/huidprofiel"
         className="diba-label mt-5 inline-block text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
       >
-        Op je huidprofiel aanpassen
+        {t("Op je huidprofiel aanpassen")}
       </Link>
     </div>
   );

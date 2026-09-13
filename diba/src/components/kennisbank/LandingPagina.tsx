@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/ui/Linktaal";
 import type { ReactNode } from "react";
 import PillarNav from "@/components/pillar/PillarNav";
 import {
@@ -14,7 +14,8 @@ import Label from "@/components/ui/Label";
 import LeesVerder from "@/components/ui/LeesVerder";
 import { LANDINGS, landingNaam } from "@/data/landings";
 import { euro, TWIJFEL_WHATSAPP, type Landing } from "@/data/landings/types";
-import { publicCopy } from "@/lib/copy-flags";
+import { taalNu } from "@/lib/taalcontext";
+import { t, tc } from "@/lib/vertaal";
 import {
   behandelingSchema,
   breadcrumbSchema,
@@ -71,7 +72,7 @@ const LINKPATROON = /\[([^\]]+)\]\((\/[^)\s]*)\)/g;
 
 /** Een alinea met de redactievlaggen eruit en de links erin. */
 function metLinks(tekst: string): ReactNode[] {
-  const schoon = publicCopy(tekst);
+  const schoon = tc(tekst);
   const delen: ReactNode[] = [];
   let vanaf = 0;
   for (const m of schoon.matchAll(LINKPATROON)) {
@@ -93,7 +94,7 @@ const BEDRAG = /^(vanaf\s+)?€\s?[\d.,]+$/i;
 
 /** Dezelfde tekst zonder opmaak, voor het schema. */
 function kaal(tekst: string): string {
-  return publicCopy(tekst).replace(LINKPATROON, "$1");
+  return tc(tekst).replace(LINKPATROON, "$1");
 }
 
 const SECTIE =
@@ -103,11 +104,15 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
   const pad = `/kennisbank/${l.slug}`;
   const url = `${DIBA_SITE_URL}${pad}`;
   const naam = landingNaam(l);
-  const gewijzigd = new Date(l.gewijzigd).toLocaleDateString("nl-NL", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
+  /* De datum volgt de taal van de pagina: 11 september wordt 11 September. */
+  const gewijzigd = new Date(l.gewijzigd).toLocaleDateString(
+    taalNu() === "en" ? "en-GB" : "nl-NL",
+    {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    },
+  );
 
   const helft = Math.ceil(l.werking.alineas.length / 2);
   const links = l.werking.alineas.slice(0, helft);
@@ -118,13 +123,13 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
   const soort = l.soort ?? "plaats";
 
   const ankers = [
-    { id: "werking", label: l.werking.anker },
-    { id: "onderscheid", label: l.onderscheid.anker },
-    ...(tarief ? [{ id: "tarief", label: tarief.anker }] : []),
-    { id: "wel-niet", label: "Voor wie" },
-    { id: "vergelijking", label: l.vergelijking.anker },
-    { id: "rotterdam", label: "Waar we zitten" },
-    { id: "vragen", label: "Vragen" },
+    { id: "werking", label: tc(l.werking.anker) },
+    { id: "onderscheid", label: tc(l.onderscheid.anker) },
+    ...(tarief ? [{ id: "tarief", label: tc(tarief.anker) }] : []),
+    { id: "wel-niet", label: t("Voor wie") },
+    { id: "vergelijking", label: tc(l.vergelijking.anker) },
+    { id: "rotterdam", label: t("Waar we zitten") },
+    { id: "vragen", label: t("Vragen") },
   ];
 
   /* De pillen onderaan staan in twee rijen: eerst de pagina's van dezelfde soort, dan die
@@ -133,13 +138,17 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
      daarmee krijgt elke vraagpagina in één keer een verwijzing vanaf alle plaatspagina's. */
   const pilrijen = [
     {
-      label: soort === "vraag" ? "Meer uitgezocht" : "Ook bij ons in Rotterdam",
+      label:
+        soort === "vraag"
+          ? t("Meer uitgezocht")
+          : t("Ook bij ons in Rotterdam"),
       items: LANDINGS.filter(
         (x) => x.slug !== l.slug && (x.soort ?? "plaats") === soort,
       ),
     },
     {
-      label: soort === "vraag" ? "Ook bij ons in Rotterdam" : "Ook uitgezocht",
+      label:
+        soort === "vraag" ? t("Ook bij ons in Rotterdam") : t("Ook uitgezocht"),
       items: LANDINGS.filter((x) => (x.soort ?? "plaats") !== soort),
     },
   ].filter((rij) => rij.items.length);
@@ -205,23 +214,23 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
         <div className="mx-auto grid gap-6 px-5 pb-10 sm:px-9 sm:pb-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-10 lg:px-[7.5vw] lg:pb-0">
           <div className="py-10 sm:py-14 lg:py-20 max-lg:pb-0">
             <nav
-              aria-label="Kruimelpad"
+              aria-label={tc("Kruimelpad")}
               className="diba-label diba-label-on-dark flex flex-wrap gap-2"
             >
               <Link href="/" className={LINK_OP_DONKER}>
-                Home
+                {t("Home")}
               </Link>
               <span aria-hidden="true">/</span>
               <Link href="/kennisbank" className={LINK_OP_DONKER}>
-                Kennisbank
+                {t("Kennisbank")}
               </Link>
               <span aria-hidden="true">/</span>
-              <span className="text-[var(--on-dark)]">{l.kruimel}</span>
+              <span className="text-[var(--on-dark)]">{tc(l.kruimel)}</span>
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[18ch]">
-              {l.h1.kop}{" "}
-              <span className="diba-accent-on-dark">{l.h1.accent}</span>
+              {tc(l.h1.kop)}{" "}
+              <span className="diba-accent-on-dark">{tc(l.h1.accent)}</span>
             </h1>
 
             {/* Het antwoordblok. Eén alinea die los van de pagina te lezen is, want zo
@@ -234,13 +243,13 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
 
             <div className="diba-knoprij mt-8">
               <Button href="/afspraak" variant="primair-op-donker">
-                Plan een afspraak
+                {t("Plan een afspraak")}
               </Button>
               <Button
                 href={tarief ? "#tarief" : "/tarieven"}
                 variant="secundair-op-donker"
               >
-                Bekijk de tarieven
+                {t("Bekijk de tarieven")}
               </Button>
             </div>
 
@@ -249,9 +258,9 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
             <dl className="mt-10 grid grid-cols-2 gap-x-6 gap-y-5 sm:grid-cols-4">
               {l.feiten.map((f) => (
                 <div key={f.kop} className="min-w-0">
-                  <dt className="diba-label diba-label-on-dark">{f.kop}</dt>
+                  <dt className="diba-label diba-label-on-dark">{tc(f.kop)}</dt>
                   <dd className="mt-1.5 text-[16px] leading-6 font-medium text-[var(--on-dark)]">
-                    {f.waarde}
+                    {tc(f.waarde)}
                   </dd>
                 </div>
               ))}
@@ -261,7 +270,7 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[var(--r-lg)] max-lg:mb-10 lg:aspect-auto lg:h-[32rem] lg:self-end">
             <Image
               src={l.beeld.src}
-              alt={l.beeld.alt}
+              alt={tc(l.beeld.alt)}
               fill
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="object-cover"
@@ -276,10 +285,10 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
       {/* ── De werking ────────────────────────────────────────────────────── */}
       <section id="werking" className={`${SECTIE} bg-white`}>
         <SectieKop
-          label={l.werking.label}
-          kop={l.werking.kop}
-          accent={l.werking.accent}
-          intro={l.werking.intro}
+          label={tc(l.werking.label)}
+          kop={tc(l.werking.kop)}
+          accent={tc(l.werking.accent)}
+          intro={tc(l.werking.intro)}
           raster="gelijk"
         />
         <div className="mt-8 grid gap-6 sm:mt-12 lg:grid-cols-2 lg:gap-10">
@@ -308,10 +317,10 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
       {/* ── Het onderscheid ───────────────────────────────────────────────── */}
       <section id="onderscheid" className={`${SECTIE} bg-[var(--g-050)]`}>
         <SectieKop
-          label={l.onderscheid.label}
-          kop={l.onderscheid.kop}
-          accent={l.onderscheid.accent}
-          intro={l.onderscheid.intro}
+          label={tc(l.onderscheid.label)}
+          kop={tc(l.onderscheid.kop)}
+          accent={tc(l.onderscheid.accent)}
+          intro={tc(l.onderscheid.intro)}
           raster="gelijk"
         />
         <div className="mt-8 grid gap-8 sm:mt-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
@@ -323,14 +332,14 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
             ))}
             {l.onderscheid.knop ? (
               <Button href={l.onderscheid.knop.href} variant="secundair">
-                {l.onderscheid.knop.tekst}
+                {tc(l.onderscheid.knop.tekst)}
               </Button>
             ) : null}
           </div>
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[var(--r-lg)] lg:aspect-[3/4]">
             <Image
               src={l.onderscheid.beeld.src}
-              alt={l.onderscheid.beeld.alt}
+              alt={tc(l.onderscheid.beeld.alt)}
               fill
               sizes="(min-width: 1024px) 35vw, 100vw"
               className="object-cover"
@@ -343,10 +352,10 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
       {tarief ? (
         <section id="tarief" className={`${SECTIE} bg-white`}>
           <SectieKop
-            label={tarief.label}
-            kop={tarief.kop}
-            accent={tarief.accent}
-            intro={tarief.intro}
+            label={tc(tarief.label)}
+            kop={tc(tarief.kop)}
+            accent={tc(tarief.accent)}
+            intro={tc(tarief.intro)}
             raster="gelijk"
           />
 
@@ -359,10 +368,10 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
                     className="flex items-baseline justify-between gap-4 rounded-[var(--r-md)] bg-[var(--g-050)] px-5 py-4"
                   >
                     <span className="text-[16px] leading-6 font-medium">
-                      {r.naam}
+                      {tc(r.naam)}
                     </span>
                     <span className="shrink-0 text-[18px] leading-6 font-medium tabular-nums">
-                      {r.vanaf ? "vanaf " : ""}
+                      {r.vanaf ? `${t("vanaf")} ` : ""}
                       {euro(r.prijs)}
                     </span>
                   </li>
@@ -377,7 +386,7 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
                 href="/tarieven"
                 className={`${LABELLINK} mt-5 inline-flex`}
               >
-                Alle tarieven van de kliniek
+                {t("Alle tarieven van de kliniek")}
               </Link>
             </div>
 
@@ -388,7 +397,7 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
                   className="rounded-[var(--r-md)] border border-[var(--g-100)] p-6"
                 >
                   <h3 className="text-[17px] leading-6 font-medium">
-                    {stap.kop}
+                    {tc(stap.kop)}
                   </h3>
                   <p className="mt-2 text-[16px] leading-7 text-[var(--t-body)]">
                     {metLinks(stap.zin)}
@@ -402,9 +411,9 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
 
       {/* ── Wel en niet ───────────────────────────────────────────────────── */}
       <WelNiet
-        wel={l.welNiet.wel}
-        niet={l.welNiet.niet}
-        intro={l.welNiet.intro}
+        wel={l.welNiet.wel.map((x) => tc(x))}
+        niet={l.welNiet.niet.map((x) => tc(x))}
+        intro={tc(l.welNiet.intro)}
       />
 
       {/* ── De vergelijking ───────────────────────────────────────────────────
@@ -413,16 +422,18 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
           taalmodel stelt. Op een telefoon schuift hij binnen zijn eigen vlak. */}
       <section id="vergelijking" className={`${SECTIE} bg-white`}>
         <SectieKop
-          label={l.vergelijking.label}
-          kop={l.vergelijking.kop}
-          accent={l.vergelijking.accent}
-          intro={l.vergelijking.intro}
+          label={tc(l.vergelijking.label)}
+          kop={tc(l.vergelijking.kop)}
+          accent={tc(l.vergelijking.accent)}
+          intro={tc(l.vergelijking.intro)}
           raster="gelijk"
         />
 
         <div className="diba-schuifrij mt-8 sm:mt-12">
           <table className="w-full min-w-[46rem] border-collapse text-left">
-            <caption className="sr-only">{l.vergelijking.bijschrift}</caption>
+            <caption className="sr-only">
+              {tc(l.vergelijking.bijschrift)}
+            </caption>
             <thead>
               <tr className="border-b border-[var(--g-200)]">
                 {l.vergelijking.kolommen.map((k, i) => (
@@ -431,7 +442,7 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
                     scope="col"
                     className={`diba-label py-3 ${i < l.vergelijking.kolommen.length - 1 ? "pr-4" : ""}`}
                   >
-                    {k}
+                    {tc(k)}
                   </th>
                 ))}
               </tr>
@@ -448,16 +459,16 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
                         href={r.href}
                         className={`inline-flex min-h-11 items-center text-[16px] leading-6 ${LINK}`}
                       >
-                        {r.naam}
+                        {tc(r.naam)}
                       </Link>
                     ) : (
                       <span className="inline-flex min-h-11 items-center text-[16px] leading-6">
-                        {r.naam}
+                        {tc(r.naam)}
                       </span>
                     )}
                   </th>
                   {r.cellen.map((c, i) => {
-                    const tekst = publicCopy(c);
+                    const tekst = tc(c);
                     /* Alleen een cel die echt een bedrag is, krijgt de opmaak van een
                        bedrag: vet, cijfers onder elkaar en niet afbreken. Een zin met een
                        bedrag erin blijft een zin en breekt gewoon af. */
@@ -471,7 +482,7 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
                             : "max-w-[28rem] text-[var(--t-body)]"
                         } ${i < r.cellen.length - 1 ? "pr-4" : ""}`}
                       >
-                        {tekst}
+                        {tc(tekst)}
                       </td>
                     );
                   })}
@@ -485,66 +496,73 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
       {/* ── Waar we zitten en wie het doet ────────────────────────────────── */}
       <section id="rotterdam" className={`${SECTIE} bg-[var(--g-050)]`}>
         <SectieKop
-          label="De kliniek"
-          kop="Waar je ons vindt"
+          label={t("De kliniek")}
+          kop={t("Waar je ons vindt")}
           accent="in Rotterdam"
-          intro="Aan de noordkant van de stad, in een woonwijk en niet in een winkelstraat. Dat scheelt bij het parkeren en het is rustiger als je net behandeld bent."
+          intro={t(
+            "Aan de noordkant van de stad, in een woonwijk en niet in een winkelstraat. Dat scheelt bij het parkeren en het is rustiger als je net behandeld bent.",
+          )}
           raster="gelijk"
         />
 
         <div className="mt-8 grid gap-6 sm:mt-12 lg:grid-cols-3 lg:gap-8">
           <div className="rounded-[var(--r-md)] bg-white p-6 sm:p-8">
-            <Label>Adres</Label>
+            <Label>{t("Adres")}</Label>
             <address className="mt-4 text-[17px] leading-8 not-italic">
               {DIBA_ADDRESS.street}
               <br />
               {DIBA_ADDRESS.postalCode} {DIBA_ADDRESS.city}
             </address>
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
-              Je parkeert in de straat. De route vanaf de ring en met het
-              openbaar vervoer staat op de contactpagina.
+              {t(
+                "Je parkeert in de straat. De route vanaf de ring en met het openbaar vervoer staat op de contactpagina.",
+              )}
             </p>
             <Link href="/contact" className={`${LABELLINK} mt-5 inline-flex`}>
-              Route en contact
+              {t("Route en contact")}
             </Link>
           </div>
 
           <div className="rounded-[var(--r-md)] bg-white p-6 sm:p-8">
-            <Label>Openingstijden</Label>
+            <Label>{t("Openingstijden")}</Label>
             <dl className="mt-4 space-y-1.5">
               {DIBA_OPENINGSTIJDEN.map((d) => (
                 <div
                   key={d.dag}
                   className="flex items-baseline justify-between gap-4 text-[15px] leading-7"
                 >
-                  <dt className="text-[var(--t-body)]">{d.label}</dt>
+                  <dt className="text-[var(--t-body)]">{t(d.label)}</dt>
                   <dd className="tabular-nums">
-                    {d.van && d.tot ? `${d.van} tot ${d.tot}` : "Gesloten"}
+                    {d.van && d.tot
+                      ? `${d.van} ${t("tot")} ${d.tot}`
+                      : t("Gesloten")}
                   </dd>
                 </div>
               ))}
             </dl>
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-muted)]">
-              De agenda is actueler dan dit rijtje: binnen openingstijden staat
-              niet elk uur een behandelaar vrij.
+              {t(
+                "De agenda is actueler dan dit rijtje: binnen openingstijden staat niet elk uur een behandelaar vrij.",
+              )}
             </p>
           </div>
 
           <div className="rounded-[var(--r-md)] bg-white p-6 sm:p-8">
-            <Label>{l.wie.label}</Label>
+            <Label>{tc(l.wie.label)}</Label>
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
               {metLinks(l.wie.zin)}
             </p>
             <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
-              Wie er werkt, met welke titel en wat die titel precies inhoudt,
-              staat met foto en al op de teampagina.
+              {t(
+                "Wie er werkt, met welke titel en wat die titel precies inhoudt, staat met foto en al op de teampagina.",
+              )}
             </p>
             <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2">
               <Link href="/team" className={LABELLINK}>
-                Het team
+                {t("Het team")}
               </Link>
               <Link href="/kwaliteit-en-registraties" className={LABELLINK}>
-                Onze registraties
+                {t("Onze registraties")}
               </Link>
             </div>
           </div>
@@ -555,7 +573,7 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
       {l.reviews ? (
         <ReviewsBijOnderwerp
           onderwerp={l.reviews.onderwerp}
-          intro={l.reviews.intro}
+          intro={tc(l.reviews.intro)}
           reeks={l.reviews.reeks}
         />
       ) : null}
@@ -566,23 +584,25 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
       {/* ── Twijfel, en de andere landingspagina's ────────────────────────── */}
       <section className="bg-white px-5 py-12 sm:px-9 sm:py-16 lg:px-[7.5vw]">
         <div className="mx-auto max-w-[70ch]">
-          <Label>Twijfel je</Label>
+          <Label>{t("Twijfel je")}</Label>
           <h2 className="diba-display-m mt-4">
-            {l.twijfel.voor}{" "}
-            <span className="diba-accent">{l.twijfel.accent}</span>
-            {l.twijfel.na ? ` ${l.twijfel.na}` : ""}
+            {tc(l.twijfel.voor)}{" "}
+            <span className="diba-accent">{tc(l.twijfel.accent)}</span>
+            {l.twijfel.na ? ` ${tc(l.twijfel.na)}` : ""}
           </h2>
           <p className="mt-6 text-[17px] leading-8 text-[var(--t-body)]">
             {metLinks(l.twijfel.zin)}
           </p>
           <LeesVerder>
             <p className="mt-4 text-[17px] leading-8 text-[var(--t-body)]">
-              {TWIJFEL_WHATSAPP}
+              {t(TWIJFEL_WHATSAPP)}
             </p>
           </LeesVerder>
           <p className="mt-8 text-[14px] leading-6 text-[var(--t-muted)]">
-            Laatst bijgewerkt op {gewijzigd}. Tarieven en behandeltijden worden
-            bij elke wijziging nagelopen.
+            {t("Laatst bijgewerkt op")} {gewijzigd}{" "}
+            {t(
+              ". Tarieven en behandeltijden worden bij elke wijziging nagelopen.",
+            )}
           </p>
 
           {/* De andere landingspagina's. Een landingspagina waar niets naartoe wijst
@@ -591,10 +611,10 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
           {pilrijen.map((rij) => (
             <nav
               key={rij.label}
-              aria-label={rij.label}
+              aria-label={tc(rij.label)}
               className="mt-12 border-t border-[var(--g-100)] pt-8"
             >
-              <Label>{rij.label}</Label>
+              <Label>{tc(rij.label)}</Label>
               <ul className="mt-4 flex flex-wrap gap-2">
                 {rij.items.map((x) => (
                   <li key={x.slug} className="max-w-full">
@@ -602,7 +622,7 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
                       href={`/kennisbank/${x.slug}`}
                       className="diba-label inline-flex min-h-11 max-w-full items-center rounded-[var(--r-pill)] border border-[var(--g-200)] px-4 whitespace-nowrap text-[var(--g-700)] transition-colors hover:border-[var(--g-700)] hover:bg-[var(--g-025)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                     >
-                      {landingNaam(x)}
+                      {tc(landingNaam(x))}
                     </Link>
                   </li>
                 ))}

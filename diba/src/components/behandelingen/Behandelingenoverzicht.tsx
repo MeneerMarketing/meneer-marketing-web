@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import { useMemo, useState } from "react";
 import {
   BEHANDELINGEN,
@@ -19,6 +19,7 @@ import {
 } from "@/data/huidprofiel";
 import { publicCopy } from "@/lib/copy-flags";
 import { useHuidprofiel } from "@/lib/huidprofiel-opslag";
+import { useTc, useT } from "@/lib/gebruik-taal";
 
 /**
  * Alle behandelingen, filterbaar.
@@ -115,6 +116,8 @@ const RANG: Record<MatchOordeel, number> = {
 };
 
 export default function Behandelingenoverzicht() {
+  const t = useT();
+  const tc = useTc();
   const { profiel } = useHuidprofiel();
   const [categorie, setCategorie] = useState<CategorieId | "alles">("alles");
   const [herstel, setHerstel] = useState<HerstelFilter>("alles");
@@ -155,7 +158,7 @@ export default function Behandelingenoverzicht() {
       <div className="flex flex-col gap-5">
         <div
           role="tablist"
-          aria-label="Soort behandeling"
+          aria-label={tc("Soort behandeling")}
           className="flex flex-wrap gap-2"
         >
           {[{ id: "alles" as const, label: "Alles" }, ...CATEGORIEEN].map(
@@ -174,7 +177,7 @@ export default function Behandelingenoverzicht() {
                       : "bg-white text-[var(--t-label)] hover:bg-[var(--g-100)]"
                   }`}
                 >
-                  {c.label}
+                  {tc(c.label)}
                   <span
                     className={`rounded-[var(--r-pill)] px-1.5 py-0.5 text-[10px] tabular-nums ${
                       aan
@@ -192,11 +195,11 @@ export default function Behandelingenoverzicht() {
 
         <div
           role="tablist"
-          aria-label="Hersteltijd"
+          aria-label={tc("Hersteltijd")}
           className="flex flex-wrap items-center gap-2"
         >
           <span className="diba-label mr-1 text-[var(--t-muted)]">
-            Hersteltijd
+            {t("Hersteltijd")}
           </span>
           {HERSTELFILTERS.map((h) => {
             const aan = herstel === h.id;
@@ -213,7 +216,7 @@ export default function Behandelingenoverzicht() {
                     : "border-[var(--g-100)] bg-white text-[var(--t-muted)] hover:border-[var(--g-300)]"
                 }`}
               >
-                {h.label}
+                {tc(h.label)}
               </button>
             );
           })}
@@ -224,26 +227,26 @@ export default function Behandelingenoverzicht() {
       <p className="mt-7 max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
         {heeftProfiel ? (
           <>
-            De volgorde volgt je huidprofiel: bovenaan wat past, onderaan wat
-            over iets anders gaat. Waar de reden per behandeling verschilt,
-            staat hij op de kaart.{" "}
+            {t(
+              "De volgorde volgt je huidprofiel: bovenaan wat past, onderaan wat over iets anders gaat. Waar de reden per behandeling verschilt, staat hij op de kaart.",
+            )}{" "}
             <Link
               href="/huidprofiel"
               className="text-[var(--g-700)] underline underline-offset-4"
             >
-              Profiel aanvullen
+              {t("Profiel aanvullen")}
             </Link>
           </>
         ) : (
           <>
-            De volgorde is diepte: van de buitenste laag naar binnen.{" "}
+            {t("De volgorde is diepte: van de buitenste laag naar binnen.")}{" "}
             <Link
               href="/huidprofiel"
               className="text-[var(--g-700)] underline underline-offset-4"
             >
-              Maak je huidprofiel
+              {t("Maak je huidprofiel")}
             </Link>{" "}
-            en de lijst schikt zich naar wat bij jou past.
+            {t("en de lijst schikt zich naar wat bij jou past.")}
           </>
         )}
       </p>
@@ -254,8 +257,11 @@ export default function Behandelingenoverzicht() {
           const match = heeftProfiel ? oordeelVan.get(b.slug) : undefined;
           const diepste =
             b.lagen.length === 0
-              ? "Raakt niets"
-              : `Tot in de ${HUIDLAGEN.find((l) => l.id === b.lagen[b.lagen.length - 1])?.naam.toLowerCase()}`;
+              ? t("Raakt niets")
+              : `${t("Tot in de")} ${tc(
+                  HUIDLAGEN.find((l) => l.id === b.lagen[b.lagen.length - 1])
+                    ?.naam ?? "",
+                ).toLowerCase()}`;
           return (
             <li key={b.slug}>
               <Link
@@ -270,7 +276,7 @@ export default function Behandelingenoverzicht() {
                   className={`flex flex-wrap items-center gap-2 ${match ? "" : "max-md:hidden"}`}
                 >
                   <span className="diba-label text-[var(--t-muted)] max-md:hidden">
-                    {diepste}
+                    {tc(diepste)}
                   </span>
                   {match ? (
                     <span
@@ -282,16 +288,16 @@ export default function Behandelingenoverzicht() {
                 </span>
 
                 <span className="diba-card-title mt-3 text-[var(--t-strong)] max-md:mt-0 max-md:text-[18px] max-md:leading-6">
-                  {b.naam}
+                  {tc(b.naam)}
                 </span>
                 {b.apparaat ? (
                   <span className="mt-1 text-[13px] leading-5 text-[var(--t-muted)]">
-                    {b.apparaat}
+                    {tc(b.apparaat)}
                   </span>
                 ) : null}
 
                 <span className="mt-3 text-[15px] leading-7 text-[var(--t-body)] max-md:hidden">
-                  {publicCopy(b.kort)}
+                  {tc(b.kort)}
                 </span>
 
                 {/* De reden, maar alleen als die iets zegt dat de badge nog niet zei.
@@ -316,7 +322,7 @@ export default function Behandelingenoverzicht() {
                     {ALGEMEEN[match.grond] ? null : match.reden}
                     {match.letOp.length > 0 ? (
                       <span className="mt-2 block font-medium text-[var(--t-strong)]">
-                        Let op: {match.letOp[0]}
+                        {t("Let op:")} {match.letOp[0]}
                       </span>
                     ) : null}
                   </span>
@@ -324,10 +330,10 @@ export default function Behandelingenoverzicht() {
 
                 <span className="mt-auto flex items-baseline justify-between gap-4 pt-4 max-md:pt-2">
                   <span className="text-[13px] leading-5 text-[var(--t-muted)]">
-                    {publicCopy(b.herstel)}
+                    {tc(b.herstel)}
                   </span>
                   <span className="shrink-0 text-[15px] leading-6 font-medium text-[var(--t-strong)] tabular-nums">
-                    {prijsTekst(b.prijs)}
+                    {tc(prijsTekst(b.prijs))}
                   </span>
                 </span>
               </Link>
@@ -338,8 +344,9 @@ export default function Behandelingenoverzicht() {
 
       {lijst.length === 0 ? (
         <p className="mt-10 text-[16px] leading-7 text-[var(--t-body)]">
-          Geen behandelingen met deze combinatie van filters. Zet de hersteltijd
-          wat ruimer.
+          {t(
+            "Geen behandelingen met deze combinatie van filters. Zet de hersteltijd wat ruimer.",
+          )}
         </p>
       ) : null}
     </div>

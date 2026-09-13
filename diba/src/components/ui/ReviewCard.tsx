@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * DIBA ReviewCard — referentie batch 1 (DIBA-RULES.md §8)
  * Crème kaart · quote in het gewone lettertype · naam, behandeling en sterren klein.
@@ -7,10 +9,20 @@
  * citaat maar wel slechter leesbaar, en het botst met de rest van de pagina.
  * Server component, geen client-JS. Sterren als inline SVG (geen icon-library).
  * Content komt uit echte reviews (review-mining, fase 2) — nooit verzonnen quotes.
+ *
+ * De quote blijft in het Nederlands, ook op de Engelse site: die is door een klant
+ * geschreven en een vertaalde review is een verzonnen review. Wat eromheen staat is
+ * van ons, dus de behandelingsnaam en de datum gaan wel mee met de taal.
  */
+
+import { relatieveDatum } from "@/lib/relatieve-datum";
+import { useT, useTaal } from "@/lib/gebruik-taal";
+import { reviewtekst } from "@/lib/reviewtaal";
 
 export type ReviewCardProps = {
   quote: string;
+  /** De Engelse vertaling van de quote. Zie `lib/reviewtaal.ts`. */
+  quoteEn?: string;
   name: string;
   treatment: string;
   /** 1 t/m 5 */
@@ -19,6 +31,7 @@ export type ReviewCardProps = {
 };
 
 function Star({ filled }: { filled: boolean }) {
+  const t = useT();
   return (
     <svg
       aria-hidden="true"
@@ -36,17 +49,20 @@ function Star({ filled }: { filled: boolean }) {
 
 export default function ReviewCard({
   quote,
+  quoteEn,
   name,
   treatment,
   stars,
   relativeDate,
 }: ReviewCardProps) {
+  const t = useT();
   const n = Math.max(1, Math.min(5, Math.round(stars)));
+  const taal = useTaal();
   return (
     <figure className="rounded-[var(--r-lg)] bg-white p-6 shadow-[var(--shadow-float)] sm:p-8">
       <blockquote>
         <p className="text-[17px] leading-8 text-[var(--g-900)] md:text-[18px]">
-          &ldquo;{quote}&rdquo;
+          &ldquo;{reviewtekst(quote, quoteEn, taal)}&rdquo;
         </p>
       </blockquote>
       <figcaption className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2">
@@ -57,7 +73,9 @@ export default function ReviewCard({
           aria-hidden="true"
           className="h-1 w-1 rounded-full bg-[var(--g-100)]"
         />
-        <span className="text-[13px] text-[var(--t-muted)]">{treatment}</span>
+        <span className="text-[13px] text-[var(--t-muted)]">
+          {t(treatment)}
+        </span>
         {relativeDate ? (
           <>
             <span
@@ -65,14 +83,14 @@ export default function ReviewCard({
               className="h-1 w-1 rounded-full bg-[var(--g-100)]"
             />
             <span className="text-[11px] uppercase tracking-[.1em] text-[var(--t-muted)]">
-              {relativeDate}
+              {relatieveDatum(relativeDate, taal)}
             </span>
           </>
         ) : null}
         <span
           className="ml-auto inline-flex gap-[3px]"
           role="img"
-          aria-label={`${n} van 5 sterren`}
+          aria-label={`${n} ${t("van 5 sterren")}`}
         >
           {Array.from({ length: 5 }, (_, i) => (
             <Star key={i} filled={i < n} />

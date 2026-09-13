@@ -23,11 +23,21 @@ type SiteChromeProps = {
 export default function SiteChrome({ children }: SiteChromeProps) {
   const pathname = usePathname();
 
-  const eigenChrome = pathname === "/";
+  /* De homepage brengt zijn eigen kop mee, in beide talen: /en is dezelfde pagina. */
+  const eigenChrome = pathname === "/" || pathname === "/en";
 
   if (eigenChrome) {
     return <>{children}</>;
   }
+
+  /* Hier stond een aparte Engelse omlijsting, omdat het menu naar honderdvijftig
+     Nederlandse pagina's wees die er in het Engels niet waren. Die pagina's zijn er nu
+     wel, dus het is weer één omlijsting voor allebei de talen: dezelfde balk, hetzelfde
+     menu, dezelfde voettekst, met de teksten in de taal van het adres. Dat is wat Yasin
+     op 12 september 2026 vroeg: dezelfde site, alleen andere woorden.
+
+     Sinds 13 september is er ook geen uitzondering meer: de vier pagina's die een eigen
+     Engels adres hadden zijn weg, en elk adres is nu dezelfde pagina met /en ervoor. */
 
   return (
     <div className={figmaHomeShell}>

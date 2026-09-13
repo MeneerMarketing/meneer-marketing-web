@@ -1,4 +1,6 @@
-import Link from "next/link";
+"use client";
+
+import Link from "@/components/ui/Taalpad";
 import DibaLogo from "@/components/ui/DibaLogo";
 import {
   DIBA_ADDRESS,
@@ -12,6 +14,7 @@ import {
 import { figmaInnerContainer } from "@/lib/figma-inner-layout";
 import VoetKolommen from "@/components/ui/VoetKolommen";
 import Logostrook from "@/components/ui/Logostrook";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * De voettekst.
@@ -128,6 +131,8 @@ const JURIDISCH: readonly { readonly label: string; readonly href: string }[] =
   ];
 
 export default function SiteFooter() {
+  const tc = useTc();
+  const t = useT();
   const year = new Date().getFullYear();
 
   return (
@@ -155,9 +160,10 @@ export default function SiteFooter() {
         <div className="text-center">
           <DibaLogo maat="groot" className="mx-auto" />
           <p className="mx-auto mt-6 max-w-[48ch] text-[15px] leading-7 text-[var(--t-body)]">
-            Huidkliniek in {DIBA_SITE.neighborhood}, sinds 2017. Acne, pigment,
-            littekens, huidverbetering en ongewenste haargroei, door
-            huidtherapeuten die eerst meten en daarna pas behandelen.
+            {t("Huidkliniek in")} {DIBA_SITE.neighborhood}{" "}
+            {t(
+              ", sinds 2017. Acne, pigment, littekens, huidverbetering en ongewenste haargroei, door huidtherapeuten die eerst meten en daarna pas behandelen.",
+            )}
           </p>
 
           <ul className="mt-7 flex flex-wrap items-center justify-center gap-2">
@@ -178,21 +184,21 @@ export default function SiteFooter() {
                 rel="noopener noreferrer"
                 className={voetPil}
               >
-                WhatsApp
+                {t("WhatsApp")}
               </a>
             </li>
             {/* Instagram, TikTok en Facebook, uit de lijst in site.ts. Ze staan hier
                 naast het adres, het nummer en WhatsApp, want dit rijtje is "hoe je ons
                 vindt" en niet "welke apps we hebben". */}
             {DIBA_SOCIALS.map((kanaal) => (
-              <li key={kanaal.naam}>
+              <li key={tc(kanaal.naam)}>
                 <a
                   href={kanaal.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={voetPil}
                 >
-                  {kanaal.naam}
+                  {tc(kanaal.naam)}
                 </a>
               </li>
             ))}
@@ -217,7 +223,9 @@ export default function SiteFooter() {
             leeg vak. Yasin, 10 september 2026: "waarom staat er onder Praktisch nog een
             leeg vak?" Op desktop staat die rand er wel, want daar heeft de nav hem niet. */}
         <div className="mt-8 pt-0 text-center lg:mt-12 lg:border-t lg:border-[var(--g-100)] lg:pt-8">
-          <p className={kolomLabel}>Aangesloten bij en geregistreerd in</p>
+          <p className={kolomLabel}>
+            {t("Aangesloten bij en geregistreerd in")}
+          </p>
           <Logostrook className="mt-6" />
         </div>
 
@@ -240,7 +248,7 @@ export default function SiteFooter() {
                 href={l.href}
                 className={balkLink}
               >
-                {l.label}
+                {t(l.label)}
               </Link>
             ))}
           </div>
@@ -261,7 +269,7 @@ export default function SiteFooter() {
               &ndash;
             </span>
             <span className={balkTekst}>
-              Website door{" "}
+              {t("Website door")}{" "}
               <a
                 href={DIBA_BOUWER.url}
                 target="_blank"

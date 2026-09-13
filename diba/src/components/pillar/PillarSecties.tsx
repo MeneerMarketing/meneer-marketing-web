@@ -1,8 +1,8 @@
-import Link from "next/link";
+import Link from "@/components/ui/Linktaal";
 import Button from "@/components/ui/Button";
 import { ArrowUpRight } from "@/components/ui/Icon";
 import Label from "@/components/ui/Label";
-import { publicCopy } from "@/lib/copy-flags";
+import { t, tc } from "@/lib/vertaal";
 import { faqSchema, SchemaMarkup } from "@/lib/schema";
 import {
   RASTER_GELIJK,
@@ -80,7 +80,7 @@ export function SectieKop({
             <Icoon size={34} />
           </span>
         ) : null}
-        <Label opDonker={opDonker}>{label}</Label>
+        <Label opDonker={opDonker}>{t(label)}</Label>
         {/* 18ch kneep de kop af, en met de accentregel eronder kwam je dan op drie
             regels uit. Drieendertig sectiekoppen op de site hadden dat. 26ch laat de
             eerste regel heel, en de kolom is er breed genoeg voor. */}
@@ -89,14 +89,14 @@ export function SectieKop({
             oogt als een kop die is afgekapt. Onder de twintig tekens passen ze samen op
             een regel en laten we de browser het breken bepalen. */}
         <h2 className="diba-display-m mt-4 max-w-[26ch]">
-          {kop}
+          {t(kop)}{" "}
           {accent ? (
             <>
-              {(kop + " " + accent).length > 24 ? <br /> : " "}
+              {(t(kop) + " " + t(accent)).length > 24 ? <br /> : " "}
               <span
                 className={opDonker ? "diba-accent-on-dark" : "diba-accent"}
               >
-                {accent}
+                {t(accent)}
               </span>
             </>
           ) : null}
@@ -108,7 +108,7 @@ export function SectieKop({
             opDonker ? "text-[var(--on-dark-body)]" : "text-[var(--t-body)]"
           }`}
         >
-          {intro}
+          {t(intro)}
         </p>
       ) : null}
     </div>
@@ -133,8 +133,8 @@ export function WelNiet({
     >
       <div className="mx-auto">
         <SectieKop
-          label="Zonder omwegen"
-          kop="Wat helpt en wat we afraden"
+          label={t("Zonder omwegen")}
+          kop={t("Wat helpt en wat we afraden")}
           intro={
             intro ??
             "Bij elk punt staat waarom, want een “niet doen” zonder reden onthoudt niemand."
@@ -144,16 +144,13 @@ export function WelNiet({
 
         <div className={`mt-8 sm:mt-12 ${RASTER_GELIJK}`}>
           <div className="rounded-[var(--r-md)] bg-white p-6 sm:p-8">
-            <h3 className="diba-label text-[var(--g-700)]">Dit werkt</h3>
+            <h3 className="diba-label text-[var(--g-700)]">{t("Dit werkt")}</h3>
             {/* Alles in één lijst. De eerste drie stonden er en de rest zat achter een
                 uitklapper; bij vijf punten is dat een knop voor twee regels (Okan,
                 11 september 2026: "zou dit gewoon eronder zetten"). */}
             <ul className="mt-5 space-y-4">
               {wel.map((r) => (
-                <li
-                  key={publicCopy(r)}
-                  className="flex gap-3 text-[15px] leading-7"
-                >
+                <li key={tc(r)} className="flex gap-3 text-[15px] leading-7">
                   <svg
                     viewBox="0 0 20 20"
                     className="mt-1.5 h-4 w-4 shrink-0 text-[var(--g-700)]"
@@ -166,7 +163,7 @@ export function WelNiet({
                   >
                     <path d="M4 10.5 8 14.5 16 5.5" />
                   </svg>
-                  <span className="text-[var(--t-body)]">{publicCopy(r)}</span>
+                  <span className="text-[var(--t-body)]">{tc(r)}</span>
                 </li>
               ))}
             </ul>
@@ -174,14 +171,11 @@ export function WelNiet({
 
           <div className="rounded-[var(--r-md)] bg-white p-6 sm:p-8">
             <h3 className="diba-label text-[var(--warn-text)]">
-              Dit raden we af
+              {t("Dit raden we af")}
             </h3>
             <ul className="mt-5 space-y-4">
               {niet.map((r) => (
-                <li
-                  key={publicCopy(r)}
-                  className="flex gap-3 text-[15px] leading-7"
-                >
+                <li key={tc(r)} className="flex gap-3 text-[15px] leading-7">
                   <svg
                     viewBox="0 0 20 20"
                     className="mt-1.5 h-4 w-4 shrink-0 text-[var(--warn)]"
@@ -193,7 +187,7 @@ export function WelNiet({
                   >
                     <path d="M5.5 5.5l9 9M14.5 5.5l-9 9" />
                   </svg>
-                  <span className="text-[var(--t-body)]">{publicCopy(r)}</span>
+                  <span className="text-[var(--t-body)]">{tc(r)}</span>
                 </li>
               ))}
             </ul>
@@ -224,7 +218,7 @@ export function WijZeggenNee({
     >
       <div className="mx-auto">
         <SectieKop
-          label="Waar wij nee zeggen"
+          label={t("Waar wij nee zeggen")}
           kop={kop}
           accent={accent}
           intro={intro}
@@ -250,7 +244,7 @@ export function WijZeggenNee({
         <ul className="mt-12 space-y-3">
           {punten.map((p) => (
             <li
-              key={p.titel}
+              key={tc(p.titel)}
               /* Donkerder dan de sectie en niet lichter. Met bg-white/10 werd het groen
                  opgelicht tot rgb(62,120,86) en zakte de bodytekst naar 4,08, onder de
                  AA-grens. Op --g-800 haalt diezelfde tekst 7,57 en de titel 9,68, dus het
@@ -258,10 +252,10 @@ export function WijZeggenNee({
               className="grid gap-4 rounded-[var(--r-lg)] bg-[var(--g-800)] p-7 sm:p-9 lg:grid-cols-[0.8fr_1.2fr] lg:items-baseline lg:gap-12"
             >
               <h3 className="text-[22px] leading-[1.15] font-medium tracking-[-.03em] text-balance sm:text-[26px]">
-                {p.titel}
+                {tc(p.titel)}
               </h3>
               <p className="max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-                {publicCopy(p.tekst)}
+                {tc(p.tekst)}
               </p>
             </li>
           ))}
@@ -302,14 +296,14 @@ export function HuidanalyseAssen({
             tekst ernaast. */}
       <div className={`mx-auto ${RASTER_SECTIE}`}>
         <div>
-          <Label>De huidanalyse</Label>
-          <h2 className="diba-display-m mt-4 max-w-[18ch]">{kop}</h2>
+          <Label>{t("De huidanalyse")}</Label>
+          <h2 className="diba-display-m mt-4 max-w-[18ch]">{tc(kop)}</h2>
           {alineas.map((a) => (
             <p
-              key={publicCopy(a)}
+              key={tc(a)}
               className="mt-5 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]"
             >
-              {publicCopy(a)}
+              {tc(a)}
             </p>
           ))}
           <Button
@@ -317,28 +311,30 @@ export function HuidanalyseAssen({
             variant="secundair"
             className="mt-8"
           >
-            Meer over de huidanalyse
+            {t("Meer over de huidanalyse")}
           </Button>
         </div>
 
         <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-7 sm:p-9 lg:h-full">
-          <p className="diba-label text-[var(--t-label)]">Wat we hier meten</p>
+          <p className="diba-label text-[var(--t-label)]">
+            {t("Wat we hier meten")}
+          </p>
           <dl className="mt-6 space-y-6">
             {assen.map(([as, wat]) => (
               <div key={as}>
                 <dt className="text-[19px] leading-7 font-medium text-[var(--t-strong)]">
-                  {as}
+                  {tc(as)}
                 </dt>
                 <dd className="mt-1 max-w-[46ch] text-[15px] leading-7 text-[var(--t-body)]">
-                  {wat}
+                  {tc(wat)}
                 </dd>
               </div>
             ))}
           </dl>
           <p className="mt-8 max-w-[46ch] text-[14px] leading-6 text-[var(--t-muted)]">
-            Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde
-            belichting. Daarom is verschil later iets dat je ziet en niet iets
-            dat je moet geloven.
+            {t(
+              "Elke as wordt bij elke controle opnieuw gemeten, onder dezelfde belichting. Daarom is verschil later iets dat je ziet en niet iets dat je moet geloven.",
+            )}
           </p>
         </div>
       </div>
@@ -384,8 +380,8 @@ export function PillarFaq({
         <SchemaMarkup
           data={faqSchema(
             items.map((i) => ({
-              question: i.vraag,
-              answer: publicCopy(i.antwoord),
+              question: tc(i.vraag),
+              answer: tc(i.antwoord),
             })),
           )}
         />
@@ -398,16 +394,18 @@ export function PillarFaq({
             erboven, waar het in kleine kapitalen op een regel past, en de kop is overal
             dezelfde twee woorden. */}
         <div>
-          <Label>{onderwerp ? `Over ${onderwerp}` : "Goed om te weten"}</Label>
+          <Label>
+            {onderwerp ? `${t("Over")} ${t(onderwerp)}` : t("Goed om te weten")}
+          </Label>
           <h2 className="diba-display-m mt-4 max-w-[16ch]">
-            Veelgestelde vragen
+            {t("Veelgestelde vragen")}
           </h2>
         </div>
 
         <div className="space-y-2">
           {items.map((item, i) => (
             <details
-              key={publicCopy(item.vraag)}
+              key={tc(item.vraag)}
               open={i === 0}
               className="group rounded-[var(--r-md)] bg-white px-6 py-3"
             >
@@ -417,7 +415,7 @@ export function PillarFaq({
                   daar op zestien; op een telefoon brak twintig over twee regels en werd
                   het vak een kwart hoger. */}
               <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 text-[16px] leading-[1.4] font-medium">
-                <span>{item.vraag}</span>
+                <span>{tc(item.vraag)}</span>
                 <span
                   className="grid h-8 w-8 shrink-0 place-items-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)]"
                   aria-hidden="true"
@@ -437,7 +435,7 @@ export function PillarFaq({
                 </span>
               </summary>
               <p className="max-w-[68ch] pt-4 pb-2 text-[15px] leading-7 text-[var(--t-body)]">
-                {publicCopy(item.antwoord)}
+                {tc(item.antwoord)}
               </p>
             </details>
           ))}
@@ -469,21 +467,21 @@ export function PillarCta({
     <section className="mx-5 mb-5 mt-16 overflow-hidden rounded-[var(--r-xl)] bg-[var(--g-700)] px-7 py-10 sm:py-14 lg:mt-20 text-[var(--on-dark)] sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
       <div className="mx-auto grid max-w-[1600px] gap-10 lg:grid-cols-[1.35fr_.65fr]">
         <div>
-          <Label opDonker>Huidconsult</Label>
+          <Label opDonker>{t("Huidconsult")}</Label>
           <h2 className="diba-display-l mt-5">
-            {kop} <span className="diba-accent-on-dark">{accent}</span>
+            {t(kop)} <span className="diba-accent-on-dark">{t(accent)}</span>
           </h2>
         </div>
         <div className="flex flex-col justify-end">
           <p className="max-w-sm text-[16px] leading-7 text-[var(--on-dark-body)]">
-            {tekst}
+            {tc(tekst)}
           </p>
           <Button
             href={`/intake?topic=${topic}`}
             variant="primair-op-donker"
             className="mt-8 w-fit"
           >
-            Plan een huidconsult
+            {t("Plan een huidconsult")}
           </Button>
           <a
             href={whatsappHref}
@@ -491,7 +489,7 @@ export function PillarCta({
             rel="noopener noreferrer"
             className="diba-label diba-label-on-dark mt-4 inline-flex items-center gap-1.5 underline underline-offset-4"
           >
-            Nog niet zeker? Stel je vraag
+            {t("Nog niet zeker? Stel je vraag")}
             <ArrowUpRight size={13} />
           </a>
         </div>

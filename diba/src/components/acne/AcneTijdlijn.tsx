@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Label from "@/components/ui/Label";
 import { ACNE_TIJDLIJN } from "@/data/acne";
+import { useTc } from "@/lib/gebruik-taal";
 
 /**
  * De eerlijke tijdlijn, als bespeelbare lijn.
@@ -17,6 +18,7 @@ import { ACNE_TIJDLIJN } from "@/data/acne";
  * nooit alarmrood voor iets dat geen fout is).
  */
 export default function AcneTijdlijn() {
+  const tc = useTc();
   const [actief, setActief] = useState(0);
   const fase = ACNE_TIJDLIJN[actief];
   const totaal = ACNE_TIJDLIJN.length;
@@ -44,14 +46,14 @@ export default function AcneTijdlijn() {
         {/* De vier grepen op de lijn. Tablist, dus pijltjes werken. */}
         <div
           role="tablist"
-          aria-label="Fases in het acnetraject"
+          aria-label={tc("Fases in het acnetraject")}
           className="grid grid-cols-2 gap-x-4 sm:grid-cols-4"
         >
           {ACNE_TIJDLIJN.map((f, i) => {
             const gekozen = i === actief;
             return (
               <button
-                key={f.periode}
+                key={tc(f.periode)}
                 role="tab"
                 type="button"
                 aria-selected={gekozen}
@@ -70,14 +72,14 @@ export default function AcneTijdlijn() {
                       : "text-[var(--t-muted)]"
                   }`}
                 >
-                  {f.periode}
+                  {tc(f.periode)}
                 </span>
                 <span
                   className={`mt-1 block text-[15px] leading-6 transition-colors ${
                     gekozen ? "text-[var(--t-strong)]" : "text-[var(--t-body)]"
                   }`}
                 >
-                  {f.kop}
+                  {tc(f.kop)}
                 </span>
               </button>
             );
@@ -94,13 +96,13 @@ export default function AcneTijdlijn() {
       >
         <div>
           <div className="flex flex-wrap items-baseline gap-x-3">
-            <h3 className="diba-card-title-lg">{fase.kop}</h3>
+            <h3 className="diba-card-title-lg">{tc(fase.kop)}</h3>
             <span className="diba-label text-[var(--t-muted)]">
-              {fase.periode}
+              {tc(fase.periode)}
             </span>
           </div>
           <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
-            {fase.tekst}
+            {tc(fase.tekst)}
           </p>
         </div>
 
@@ -114,7 +116,7 @@ export default function AcneTijdlijn() {
             {fase.isDip ? "Let hier op" : "Wat wij dan doen"}
           </Label>
           <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
-            {fase.watWijDoen}
+            {tc(fase.watWijDoen)}
           </p>
         </div>
       </div>

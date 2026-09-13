@@ -311,10 +311,15 @@ export const DIBA_HOME_PROOF_ITEMS: readonly ProofStripItem[] = [
   {
     value: AANTAL.behandelingen,
     suffix: "+",
-    label: "Uitgevoerde behandelingen",
-    /* "Behandelingen" is in kleine kapitalen met letterafstand ruim honderd pixels breed,
-       en een vak in de cijferkaart is er op een telefoon achtentachtig (Yasin, 11 september
-       2026: "het woord behandelingen is te lang waardoor het uit zijn vakje gaat"). */
+    /* "Uitgevoerde behandelingen" was tweehonderdtweeëntwintig pixels in kleine kapitalen
+       en liet in een kolom van tweehonderdzeventig maar vijfentwintig pixels lucht over,
+       tegen tachtig bij de andere drie. Die ene regel maakte de hele strook gepropt
+       (Yasin, 13 september 2026). Het cijfer erboven zegt al dat het om behandelingen
+       gaat die gedaan zijn. */
+    label: "Behandelingen",
+    /* Op een telefoon is een vak achtentachtig pixels breed en past ook dat woord niet
+       (Yasin, 11 september 2026: "het woord behandelingen is te lang waardoor het uit zijn
+       vakje gaat"). */
     kort: "Behandeld",
   },
   {

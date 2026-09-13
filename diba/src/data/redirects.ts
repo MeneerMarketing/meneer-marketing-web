@@ -82,4 +82,12 @@ export const LEGACY_REDIRECTS: readonly {
   /* De klachtenpagina is uit de site (Yasin, 5 september 2026). De wettelijke uitleg
      staat op /kwaliteit-en-registraties; wie de oude URL heeft komt bij contact uit. */
   { source: "/klachten", destination: "/contact" },
+  /* De vier Engelse pagina's met een eigen adres zijn op 13 september 2026 vervallen: het
+     waren losse kopieën die het woordenboek niet gebruikten, en dus liepen ze uit de pas
+     met het Nederlands. Elk Engels adres is nu het Nederlandse met /en ervoor. Deze
+     omleidingen houden de oude adressen in de lucht. */
+  { source: "/en/prices", destination: "/en/tarieven" },
+  { source: "/en/book", destination: "/en/afspraak" },
+  { source: "/en/treatments", destination: "/en/behandelingen" },
+  { source: "/en/treatments/:slug", destination: "/en/behandelingen/:slug" },
 ] as const;

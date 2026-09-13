@@ -5,6 +5,7 @@ import Label from "@/components/ui/Label";
 import { STAPPEN } from "@/data/intake";
 import { publicCopy } from "@/lib/copy-flags";
 import { RASTER_SECTIE } from "@/lib/raster";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * De tijdlijn van het uur — de uitblinker van de intakepagina.
@@ -22,6 +23,8 @@ import { RASTER_SECTIE } from "@/lib/raster";
  */
 
 export default function Uurtijdlijn() {
+  const tc = useTc();
+  const t = useT();
   const [actief, setActief] = useState(0);
   const stap = STAPPEN[actief];
 
@@ -55,14 +58,14 @@ export default function Uurtijdlijn() {
                 }`}
               >
                 <span className="diba-label block text-[var(--t-muted)]">
-                  {s.tijd}
+                  {tc(s.tijd)}
                 </span>
                 <span
                   className={`diba-card-title mt-1 block ${
                     aan ? "text-[var(--t-strong)]" : "text-[var(--t-body)]"
                   }`}
                 >
-                  {s.naam}
+                  {tc(s.naam)}
                 </span>
               </button>
             </li>
@@ -72,18 +75,18 @@ export default function Uurtijdlijn() {
 
       {/* ── De lezing ── */}
       <div aria-live="polite" className="self-start">
-        <Label>{stap.tijd}</Label>
-        <h3 className="diba-card-title-lg mt-4">{stap.naam}</h3>
+        <Label>{tc(stap.tijd)}</Label>
+        <h3 className="diba-card-title-lg mt-4">{tc(stap.naam)}</h3>
 
         <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
-          {publicCopy(stap.watErGebeurt)}
+          {tc(stap.watErGebeurt)}
         </p>
 
         {/* De kolom die deze tijdlijn anders maakt dan die van iedereen. */}
         <div className="mt-7 rounded-[var(--r-sm)] bg-[var(--g-050)] p-5">
-          <Label>Wat je hier niet hoeft</Label>
+          <Label>{t("Wat je hier niet hoeft")}</Label>
           <p className="mt-3 text-[16px] leading-7 text-[var(--t-strong)]">
-            {stap.nietNodig}
+            {tc(stap.nietNodig)}
           </p>
         </div>
       </div>

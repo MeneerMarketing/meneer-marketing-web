@@ -4,12 +4,14 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { FIGMA_HOME_PORTRAIT_WIDE } from "@/data/figma-home-images";
 import { DIBA_HERO_VIDEO_SRC } from "@/lib/site";
+import { useTc } from "@/lib/gebruik-taal";
 
 /**
  * Achtergrondvideo voor de hero-variant. Stil, geluidloos, decoratief.
  * Bij prefers-reduced-motion valt hij terug op de shootfoto.
  */
 export default function HeroVariantVideo() {
+  const tc = useTc();
   const videoRef = useRef<HTMLVideoElement>(null);
   const [showVideo, setShowVideo] = useState(false);
 
@@ -31,7 +33,7 @@ export default function HeroVariantVideo() {
     <>
       <Image
         src={FIGMA_HOME_PORTRAIT_WIDE.src}
-        alt={FIGMA_HOME_PORTRAIT_WIDE.alt}
+        alt={tc(FIGMA_HOME_PORTRAIT_WIDE.alt)}
         fill
         priority
         quality={92}

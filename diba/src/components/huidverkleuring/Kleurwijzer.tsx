@@ -1,11 +1,12 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import { useState } from "react";
 import Label from "@/components/ui/Label";
 import { KLEUREN, KLEUR_UITLEG } from "@/data/huidverkleuring";
 import { publicCopy } from "@/lib/copy-flags";
 import { RASTER_SECTIE } from "@/lib/raster";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * De kleurwijzer — de uitblinker van de pagina over huidverkleuring.
@@ -23,6 +24,8 @@ import { RASTER_SECTIE } from "@/lib/raster";
  */
 
 export default function Kleurwijzer() {
+  const tc = useTc();
+  const t = useT();
   const [actief, setActief] = useState(0);
   const kleur = KLEUREN[actief];
 
@@ -31,7 +34,7 @@ export default function Kleurwijzer() {
       {/* De vier stalen. Kiezen zonder dat je een term hoeft te kennen. */}
       <div
         role="tablist"
-        aria-label="Kleur van de verkleuring"
+        aria-label={tc("Kleur van de verkleuring")}
         className="flex flex-wrap gap-3"
       >
         {KLEUREN.map((k, i) => (
@@ -52,7 +55,7 @@ export default function Kleurwijzer() {
               className="block h-7 w-7 shrink-0 rounded-[var(--r-pill)] border border-white/40"
               style={{ background: k.staal }}
             />
-            <span className="diba-label">{k.naam}</span>
+            <span className="diba-label">{tc(k.naam)}</span>
           </button>
         ))}
       </div>
@@ -60,18 +63,18 @@ export default function Kleurwijzer() {
       <div className={`mt-10 ${RASTER_SECTIE}`} aria-live="polite">
         {/* ── Wat die kleur betekent ── */}
         <div className="self-start rounded-[var(--r-md)] bg-white p-6 sm:p-8">
-          <Label>Wat deze kleur betekent</Label>
+          <Label>{t("Wat deze kleur betekent")}</Label>
           <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
-            {publicCopy(kleur.watHetIs)}
+            {tc(kleur.watHetIs)}
           </p>
           <p className="mt-6 pt-5 text-[16px] leading-7 text-[var(--t-strong)]">
-            {kleur.vraag}
+            {tc(kleur.vraag)}
           </p>
         </div>
 
         {/* ── Waar het dan over gaat ── */}
         <div>
-          <Label>Dan gaat het waarschijnlijk hierover</Label>
+          <Label>{t("Dan gaat het waarschijnlijk hierover")}</Label>
           <ul className="mt-5 space-y-3">
             {kleur.routes.map((r) => (
               <li key={r.naam}>
@@ -79,9 +82,9 @@ export default function Kleurwijzer() {
                   href={r.pad}
                   className="block rounded-[var(--r-sm)] bg-white p-5 transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
-                  <span className="diba-card-title block">{r.naam}</span>
+                  <span className="diba-card-title block">{tc(r.naam)}</span>
                   <span className="mt-1.5 block text-[15px] leading-7 text-[var(--t-body)]">
-                    {r.wanneer}
+                    {tc(r.wanneer)}
                   </span>
                 </Link>
               </li>
@@ -91,7 +94,7 @@ export default function Kleurwijzer() {
       </div>
 
       <p className="mt-8 max-w-[80ch] rounded-[var(--r-sm)] bg-[var(--g-050)] p-5 text-[15px] leading-7 text-[var(--t-body)]">
-        {KLEUR_UITLEG}
+        {tc(KLEUR_UITLEG)}
       </p>
     </div>
   );

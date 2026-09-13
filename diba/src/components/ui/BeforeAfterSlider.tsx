@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useId, useState } from "react";
 import { publicCopy } from "@/lib/copy-flags";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 export type BeforeAfterSliderProps = {
   before: { src: string; alt: string };
@@ -23,6 +24,8 @@ export default function BeforeAfterSlider({
   aspect = "4/5",
   sizes = "(min-width: 768px) 720px, 100vw",
 }: BeforeAfterSliderProps) {
+  const tc = useTc();
+  const t = useT();
   const [pos, setPos] = useState(50);
   const id = useId();
 
@@ -34,7 +37,7 @@ export default function BeforeAfterSlider({
       >
         <Image
           src={after.src}
-          alt={publicCopy(after.alt, "Foto volgt")}
+          alt={tc(after.alt, "Foto volgt")}
           fill
           sizes={sizes}
           className="object-cover"
@@ -55,7 +58,7 @@ export default function BeforeAfterSlider({
         </div>
 
         <span className="pointer-events-none absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[.1em] text-[var(--t-muted)]">
-          Voor
+          {t("Voor")}
         </span>
         <span className="pointer-events-none absolute right-3 top-3 rounded-full bg-white/90 px-3 py-1 text-[10px] font-semibold uppercase tracking-[.1em] text-[var(--t-muted)]">
           Na
@@ -90,7 +93,7 @@ export default function BeforeAfterSlider({
           step={1}
           value={pos}
           onChange={(e) => setPos(Number(e.target.value))}
-          aria-label={`Vergelijk voor en na: ${publicCopy(before.alt, "beeld volgt")}`}
+          aria-label={`Vergelijk voor en na: ${tc(before.alt, "beeld volgt")}`}
           className="absolute inset-0 h-full w-full cursor-ew-resize appearance-none bg-transparent opacity-0"
         />
       </div>

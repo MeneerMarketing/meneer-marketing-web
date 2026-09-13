@@ -1,7 +1,8 @@
-import Link from "next/link";
+import Link from "@/components/ui/Linktaal";
 import Label from "@/components/ui/Label";
 import HuidIcon, { type HuidIconNaam } from "@/components/ui/HuidIcon";
 import { BESTEMMINGEN, type Groep } from "@/data/symptoomzoeker";
+import { tc } from "@/lib/vertaal";
 
 /**
  * Het raster op het huidproblemenoverzicht.
@@ -104,7 +105,7 @@ export default function Raster() {
           Plakt onder de header, zodat je vanaf elke plek naar een groep kunt springen.
           Dezelfde vorm als de in-paginanavigatie op de huidprobleempagina's zelf. */}
       <nav
-        aria-label="Naar een groep"
+        aria-label={tc("Naar een groep")}
         className="sticky top-[var(--nav-h)] z-20 -mx-5 bg-[var(--g-010)]/95 shadow-[0_6px_16px_-12px_rgba(67,79,58,.5)] backdrop-blur sm:-mx-9 lg:-mx-[7.5vw]"
       >
         <ul className="mx-auto flex gap-2 overflow-x-auto px-5 py-3 sm:px-9 lg:px-[7.5vw]">
@@ -116,7 +117,7 @@ export default function Raster() {
                   href={`#${g.anker}`}
                   className="diba-label flex min-h-11 shrink-0 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-050)] px-4 whitespace-nowrap text-[var(--t-label)] transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
-                  {g.kort}
+                  {tc(g.kort)}
                   <span className="tabular-nums text-[var(--t-muted)]">
                     {aantal}
                   </span>
@@ -138,17 +139,17 @@ export default function Raster() {
           >
             <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:items-end lg:gap-12">
               <div>
-                <Label>{g.label}</Label>
+                <Label>{tc(g.label)}</Label>
                 <h2 className="diba-display-m mt-4 max-w-[16ch]">
                   {/* Voorwaardelijk breken, net als in SectieKop: een korte kop hoort
                       op een regel, een lange mag afbreken op de bedoelde plek. */}
-                  {g.kop}
+                  {tc(g.kop)}{" "}
                   {(g.kop + " " + g.accent).length > 24 ? <br /> : " "}
-                  <span className="diba-accent">{g.accent}</span>
+                  <span className="diba-accent">{tc(g.accent)}</span>
                 </h2>
               </div>
               <p className="max-w-[58ch] self-end text-[16px] leading-7 text-[var(--t-body)]">
-                {g.intro}
+                {tc(g.intro)}
               </p>
             </div>
 
@@ -185,10 +186,10 @@ export default function Raster() {
                     </span>
 
                     <span className="diba-card-title mt-4 block text-[var(--t-strong)] max-sm:text-[17px] max-sm:leading-6 sm:mt-8">
-                      {b.naam}
+                      {tc(b.naam)}
                     </span>
                     <span className="mt-2 block text-[15px] leading-6 text-[var(--t-body)] max-sm:hidden">
-                      {b.eersteVraag}
+                      {tc(b.eersteVraag)}
                     </span>
                   </Link>
                 </li>

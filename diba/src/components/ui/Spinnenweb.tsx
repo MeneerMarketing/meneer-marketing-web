@@ -1,4 +1,7 @@
+"use client";
+
 import { SCAN_ASSEN, type AsId } from "@/data/huidprofiel";
+import { useTc } from "@/lib/gebruik-taal";
 
 /**
  * Het spinnenweb van de EVE-M-scan.
@@ -49,6 +52,7 @@ export default function Spinnenweb({
   metLabels = false,
   className = "",
 }: Props) {
+  const tc = useTc();
   const vorm = SCAN_ASSEN.map((as, i) =>
     punt(i, (R * Math.min(100, Math.max(0, waarden[as.id]))) / 100).join(","),
   ).join(" ");
@@ -124,7 +128,7 @@ export default function Spinnenweb({
                 fontSize="12"
                 fill="var(--t-muted)"
               >
-                {as.label}
+                {tc(as.label)}
               </text>
             );
           })

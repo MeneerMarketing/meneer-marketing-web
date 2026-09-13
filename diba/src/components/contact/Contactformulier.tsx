@@ -7,6 +7,7 @@ import {
   TextareaField,
 } from "@/components/ui/FormField";
 import { meld } from "@/lib/meten";
+import { useT, useTc } from "@/lib/gebruik-taal";
 import {
   DIBA_EMAIL,
   DIBA_REACTIETIJDEN,
@@ -50,6 +51,8 @@ const leeg = {
 };
 
 export default function Contactformulier() {
+  const tc = useTc();
+  const t = useT();
   const [velden, setVelden] = useState(leeg);
   const [stand, setStand] = useState<Stand>("leeg");
   const [melding, setMelding] = useState("");
@@ -113,7 +116,7 @@ export default function Contactformulier() {
     return (
       <div className="rounded-[var(--r-lg)] bg-white p-6 sm:p-8">
         <p className="diba-card-title text-[var(--t-strong)]">
-          Je bericht is verstuurd.
+          {t("Je bericht is verstuurd.")}
         </p>
         <p className="mt-3 text-[16px] leading-7 text-[var(--t-body)]">
           {DIBA_REACTIETIJDEN.email} Heb je er eerder antwoord op nodig, bel dan{" "}
@@ -130,7 +133,7 @@ export default function Contactformulier() {
           onClick={() => setStand("leeg")}
           className="diba-label mt-6 text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
         >
-          Nog een vraag stellen
+          {t("Nog een vraag stellen")}
         </button>
       </div>
     );
@@ -141,10 +144,13 @@ export default function Contactformulier() {
       onSubmit={verstuur}
       className="rounded-[var(--r-lg)] bg-white p-6 sm:p-8"
     >
-      <p className="diba-card-title text-[var(--t-strong)]">Stel je vraag</p>
+      <p className="diba-card-title text-[var(--t-strong)]">
+        {t("Stel je vraag")}
+      </p>
       <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
-        Je krijgt antwoord van iemand die in de kliniek staat. Wat er bij jouw
-        huid kan, zien we pas als we hem gezien hebben.
+        {t(
+          "Je krijgt antwoord van iemand die in de kliniek staat. Wat er bij jouw huid kan, zien we pas als we hem gezien hebben.",
+        )}
       </p>
 
       <div className="mt-6 space-y-4">
@@ -188,7 +194,7 @@ export default function Contactformulier() {
         >
           {ONDERWERPEN.map((o) => (
             <option key={o} value={o}>
-              {o}
+              {tc(o)}
             </option>
           ))}
         </SelectField>
@@ -205,7 +211,7 @@ export default function Contactformulier() {
         {/* Het onzichtbare veld tegen scripts. Buiten beeld en buiten de tabvolgorde, dus
             een schermlezer en een toetsenbord komen er niet langs. */}
         <div aria-hidden="true" className="absolute -left-[9999px] h-0 w-0">
-          <label htmlFor="contact-website">Laat dit veld leeg</label>
+          <label htmlFor="contact-website">{t("Laat dit veld leeg")}</label>
           <input id="contact-website" name="website" tabIndex={-1} />
         </div>
       </div>
@@ -215,7 +221,7 @@ export default function Contactformulier() {
           role="alert"
           className="mt-5 rounded-[var(--r-sm)] bg-[var(--g-025)] p-4 text-[15px] leading-7 text-[var(--t-strong)]"
         >
-          {melding}
+          {tc(melding)}
         </p>
       ) : null}
 
@@ -225,14 +231,15 @@ export default function Contactformulier() {
           className="mt-5 rounded-[var(--r-sm)] bg-[var(--g-025)] p-4"
         >
           <p className="text-[15px] leading-7 text-[var(--t-strong)]">
-            Het versturen lukt nu niet. Je vraag is niet weg: hij staat klaar in
-            een mail die je zelf verstuurt.
+            {t(
+              "Het versturen lukt nu niet. Je vraag is niet weg: hij staat klaar in een mail die je zelf verstuurt.",
+            )}
           </p>
           <a
             href={alsMail()}
             className="diba-label mt-3 inline-flex text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
           >
-            Open het bericht in je mail
+            {t("Open het bericht in je mail")}
           </a>
         </div>
       ) : null}
@@ -242,27 +249,27 @@ export default function Contactformulier() {
         disabled={stand === "bezig"}
         className="diba-label mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] disabled:opacity-60 sm:w-auto"
       >
-        {stand === "bezig" ? "Bezig met versturen…" : "Verstuur je vraag"}
+        {stand === "bezig" ? t("Bezig met versturen…") : t("Verstuur je vraag")}
       </button>
 
       <p className="mt-4 text-[14px] leading-6 text-[var(--t-muted)]">
-        {DIBA_REACTIETIJDEN.email} Heb je haast, bel{" "}
+        {tc(DIBA_REACTIETIJDEN.email)} {t("Heb je haast, bel")}{" "}
         <a
           href={DIBA_TELEFOON_HREF}
           className="text-[var(--g-700)] underline underline-offset-4"
         >
           {DIBA_TELEFOON}
         </a>{" "}
-        of stuur een{" "}
+        {t("of stuur een")}{" "}
         <a
           href={DIBA_WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="text-[var(--g-700)] underline underline-offset-4"
         >
-          WhatsApp-bericht
+          {t("WhatsApp-bericht")}
         </a>
-        . We gebruiken je gegevens alleen om je vraag te beantwoorden.
+        {t(". We gebruiken je gegevens alleen om je vraag te beantwoorden.")}
       </p>
     </form>
   );

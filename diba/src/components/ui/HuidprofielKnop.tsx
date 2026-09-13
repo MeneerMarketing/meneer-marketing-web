@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useState, useSyncExternalStore } from "react";
 import DibaLeafMark from "@/components/ui/DibaLeafMark";
@@ -13,6 +13,7 @@ import {
   SCAN_ASSEN,
 } from "@/data/huidprofiel";
 import { useHuidprofiel } from "@/lib/huidprofiel-opslag";
+import { useTc, useT } from "@/lib/gebruik-taal";
 
 /**
  * Je huidprofiel, rechtsonder, op elke pagina.
@@ -40,6 +41,8 @@ import { useHuidprofiel } from "@/lib/huidprofiel-opslag";
  */
 
 export default function HuidprofielKnop() {
+  const t = useT();
+  const tc = useTc();
   const { profiel } = useHuidprofiel();
   const [open, setOpen] = useState(false);
   const pad = usePathname();
@@ -95,7 +98,7 @@ export default function HuidprofielKnop() {
       {open ? (
         <button
           type="button"
-          aria-label="Huidprofiel sluiten"
+          aria-label={tc("Huidprofiel sluiten")}
           onClick={() => setOpen(false)}
           className="fixed inset-0 z-[45] cursor-default"
         />
@@ -105,23 +108,23 @@ export default function HuidprofielKnop() {
         {open ? (
           <div
             role="dialog"
-            aria-label="Je huidprofiel"
+            aria-label={tc("Je huidprofiel")}
             className="w-[min(22rem,calc(100vw-2rem))] overflow-hidden rounded-[var(--r-lg)] bg-white shadow-[var(--shadow-float)]"
             style={{ animation: "diba-paneel-in .28s var(--ease-diba) both" }}
           >
             <div className="flex items-start justify-between gap-4 px-6 pt-6 pb-5">
               <div>
                 <p className="diba-label text-[var(--t-label)]">
-                  Je huidprofiel
+                  {t("Je huidprofiel")}
                 </p>
                 <p className="mt-1 text-[13px] leading-5 text-[var(--t-muted)]">
-                  Ingevuld {wanneer}
+                  {t("Ingevuld")} {wanneer}
                 </p>
               </div>
               <button
                 type="button"
                 onClick={() => setOpen(false)}
-                aria-label="Sluiten"
+                aria-label={tc("Sluiten")}
                 className="-mt-1 -mr-2 flex h-10 w-10 shrink-0 items-center justify-center rounded-[var(--r-pill)] text-[var(--t-muted)] transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
               >
                 <svg
@@ -148,10 +151,11 @@ export default function HuidprofielKnop() {
                   {top.map((as) => (
                     <li key={as.id}>
                       <span className="block text-[14px] leading-5 font-medium text-[var(--t-strong)]">
-                        {as.label}
+                        {tc(as.label)}
                       </span>
                       <span className="block text-[12px] leading-4 text-[var(--t-muted)] tabular-nums">
-                        {scan.assen[as.id]} van 100
+                        {scan.assen[as.id]}
+                        {t("van 100")}
                       </span>
                     </li>
                   ))}
@@ -159,14 +163,15 @@ export default function HuidprofielKnop() {
               </div>
 
               <p className="mt-5 text-[13px] leading-5 text-[var(--t-muted)]">
-                Dit is wat jij ons vertelde, nog niet wat we gemeten hebben. De
-                open buitenrand is precies dat verschil.
+                {t(
+                  "Dit is wat jij ons vertelde, nog niet wat we gemeten hebben. De open buitenrand is precies dat verschil.",
+                )}
               </p>
 
               {passend.length > 0 ? (
                 <div className="mt-5 pt-5">
                   <p className="diba-label text-[var(--t-muted)]">
-                    Past hierbij
+                    {t("Past hierbij")}
                   </p>
                   <ul className="mt-3 space-y-1.5">
                     {passend.map((m) => (
@@ -176,9 +181,9 @@ export default function HuidprofielKnop() {
                           onClick={() => setOpen(false)}
                           className="flex items-baseline justify-between gap-3 text-[14px] leading-6 text-[var(--t-strong)] hover:text-[var(--g-700)]"
                         >
-                          {m.behandeling.naam}
+                          {tc(m.behandeling.naam)}
                           <span className="shrink-0 text-[13px] text-[var(--t-muted)] tabular-nums">
-                            {prijsTekst(m.behandeling.prijs)}
+                            {tc(prijsTekst(m.behandeling.prijs))}
                           </span>
                         </Link>
                       </li>
@@ -193,14 +198,14 @@ export default function HuidprofielKnop() {
                   onClick={() => setOpen(false)}
                   className="diba-label flex min-h-11 items-center justify-center rounded-[var(--r-pill)] bg-[var(--g-700)] px-5 text-white transition-colors hover:bg-[var(--g-800)]"
                 >
-                  Profiel aanvullen
+                  {t("Profiel aanvullen")}
                 </Link>
                 <Link
                   href="/behandelingen"
                   onClick={() => setOpen(false)}
                   className="diba-label flex min-h-11 items-center justify-center rounded-[var(--r-pill)] bg-[var(--g-050)] px-5 text-[var(--t-label)] transition-colors hover:bg-[var(--g-100)]"
                 >
-                  Alle behandelingen
+                  {t("Alle behandelingen")}
                 </Link>
                 {scan.pillar ? (
                   <Link
@@ -208,7 +213,7 @@ export default function HuidprofielKnop() {
                     onClick={() => setOpen(false)}
                     className="diba-label flex min-h-11 items-center justify-center text-[var(--g-700)] underline underline-offset-4"
                   >
-                    Lees over {scan.kort ?? "je huidprobleem"}
+                    {t("Lees over")} {scan.kort ?? "je huidprobleem"}
                   </Link>
                 ) : null}
               </div>
@@ -238,10 +243,10 @@ export default function HuidprofielKnop() {
           </span>
           <span className="sr-only sm:not-sr-only sm:text-left">
             <span className="diba-label block text-[var(--t-label)]">
-              Je huidprofiel
+              {t("Je huidprofiel")}
             </span>
             <span className="block text-[12px] leading-4 text-[var(--t-muted)]">
-              {top.map((a) => a.label.toLowerCase()).join(" en ")}
+              {top.map((a) => tc(a.label).toLowerCase()).join(` ${t("en")} `)}
             </span>
           </span>
         </button>
@@ -250,8 +255,8 @@ export default function HuidprofielKnop() {
       {/* Ruimte voor de schermlezer: het aantal assen wordt nergens genoemd en dit is de
           enige plek waar dat nog uit te leggen valt zonder de kaart vol te zetten. */}
       <p className="sr-only">
-        Je huidprofiel is opgebouwd uit {SCAN_ASSEN.length} onderdelen die je
-        zelf hebt aangegeven in de mini-scan.
+        {t("Je huidprofiel is opgebouwd uit")} {SCAN_ASSEN.length}{" "}
+        {t("onderdelen die je zelf hebt aangegeven in de mini-scan.")}
       </p>
     </>
   );

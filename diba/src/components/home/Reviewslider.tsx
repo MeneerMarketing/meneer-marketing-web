@@ -1,6 +1,13 @@
-import Link from "next/link";
+"use client";
+
+import Link from "@/components/ui/Taalpad";
 import Sterren from "@/components/ui/Sterren";
 import { SALONIZED_REVIEWS } from "@/data/salonized-reviews";
+import { useT } from "@/lib/gebruik-taal";
+import { relatieveDatum } from "@/lib/relatieve-datum";
+import { useTaal } from "@/lib/gebruik-taal";
+import { reviewtekst } from "@/lib/reviewtaal";
+import Vertaaldnoot from "@/components/reviews/Vertaaldnoot";
 import {
   DIBA_SALONIZED_RATING,
   DIBA_SALONIZED_REVIEWS_URL,
@@ -31,22 +38,28 @@ import {
 
 function Kaart({
   quote,
+  quoteEn,
   naam,
   wanneer,
 }: {
   quote: string;
+  quoteEn?: string;
   naam: string;
   wanneer?: string;
 }) {
+  const taal = useTaal();
+  const t = useT();
   return (
     <li className="flex w-[300px] shrink-0 flex-col rounded-[var(--r-md)] bg-white p-6 sm:w-[340px]">
       <Sterren />
       <p className="mt-4 line-clamp-4 grow text-[15px] leading-7 text-[var(--g-900)]">
-        {quote}
+        {reviewtekst(quote, quoteEn, taal)}
       </p>
       <p className="diba-label mt-5 flex items-baseline justify-between gap-3 text-[var(--t-muted)]">
         <span className="truncate">{naam}</span>
-        {wanneer ? <span className="shrink-0">{wanneer}</span> : null}
+        {wanneer ? (
+          <span className="shrink-0">{relatieveDatum(wanneer, taal)}</span>
+        ) : null}
       </p>
     </li>
   );
@@ -83,6 +96,7 @@ function Band({
         <Kaart
           key={`${r.id}-${i}`}
           quote={r.quote}
+          quoteEn={r.quoteEn}
           naam={r.name}
           wanneer={r.relativeDate}
         />
@@ -92,6 +106,7 @@ function Band({
 }
 
 export default function Reviewslider() {
+  const t = useT();
   const gemiddeld = DIBA_SALONIZED_RATING.toLocaleString("nl-NL", {
     minimumFractionDigits: 1,
   });
@@ -110,14 +125,15 @@ export default function Reviewslider() {
               <span className="pb-2">
                 <Sterren />
                 <span className="diba-label mt-2 block text-[var(--t-muted)]">
-                  {DIBA_SALONIZED_REVIEW_COUNT.toLocaleString("nl-NL")} reviews
+                  {DIBA_SALONIZED_REVIEW_COUNT.toLocaleString("nl-NL")}
+                  {t("reviews")}
                 </span>
               </span>
             </div>
 
             <h2 className="diba-display-m mt-7 max-w-[16ch]">
-              Wat mensen erover{" "}
-              <span className="diba-accent">geschreven hebben</span>
+              {t("Wat mensen erover")}{" "}
+              <span className="diba-accent">{t("geschreven hebben")}</span>
             </h2>
           </div>
 
@@ -131,7 +147,7 @@ export default function Reviewslider() {
                 href="/reviews"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
               >
-                Lees alle reviews
+                {t("Lees alle reviews")}
               </Link>
               <a
                 href={DIBA_SALONIZED_REVIEWS_URL}
@@ -139,9 +155,10 @@ export default function Reviewslider() {
                 rel="noopener noreferrer"
                 className="diba-label text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)]"
               >
-                Of controleer ze bij de bron
+                {t("Of controleer ze bij de bron")}
               </a>
             </div>
+            <Vertaaldnoot className="mt-4" />
           </div>
         </div>
       </div>

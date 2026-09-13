@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import { useMemo, useState } from "react";
 import Label from "@/components/ui/Label";
 import {
@@ -12,6 +12,7 @@ import {
 import { publicCopy } from "@/lib/copy-flags";
 import { useOordelen } from "@/lib/huidprofiel-oordeel";
 import type { Match, MatchGrond } from "@/data/huidprofiel";
+import { useTc, useT } from "@/lib/gebruik-taal";
 
 /**
  * De behandelprijzen, met wat je voor dat bedrag krijgt.
@@ -89,6 +90,8 @@ function Regel({
   onWissel: () => void;
   oordeel?: Match;
 }) {
+  const t = useT();
+  const tc = useTc();
   const b = behandeling;
   const heeftDetail =
     Boolean(b.herstel) ||
@@ -119,7 +122,7 @@ function Regel({
       >
         <span className="min-w-0">
           <span className="block text-[17px] leading-7 font-medium text-[var(--t-strong)]">
-            {b.naam}
+            {tc(b.naam)}
           </span>
           {/* Op een telefoon alleen als de rij niet open kan; anders staat deze regel in
               het uitgeklapte deel en is de dichte rij naam plus bedrag. */}
@@ -128,7 +131,7 @@ function Regel({
               heeftDetail ? "max-sm:hidden" : ""
             }`}
           >
-            {publicCopy(b.kort)}
+            {tc(b.kort)}
           </span>
           {/* Wat het huidprofiel over deze regel te zeggen heeft.
 
@@ -171,13 +174,13 @@ function Regel({
               <>
                 {hogerErna ? (
                   <span className="mr-1.5 text-[13px] font-normal text-[var(--t-muted)]">
-                    vanaf
+                    {t("vanaf")}
                   </span>
                 ) : null}
                 {prijsCijfer(b.prijs)}
               </>
             ) : (
-              "Na de meting"
+              t("Na de meting")
             )}
           </span>
           {/* Alleen het pijltje, zonder cirkel eromheen.
@@ -228,7 +231,7 @@ function Regel({
         <div className="border-t border-[var(--g-100)] bg-white px-4 py-5 sm:px-7 sm:py-6">
           {/* Waar het voor is: op een telefoon staat dat niet in de dichte rij, dus hier. */}
           <p className="mb-5 text-[15px] leading-7 text-[var(--t-body)] sm:hidden">
-            {publicCopy(b.kort)}
+            {tc(b.kort)}
           </p>
           {/* Staan de tarieven ergens anders (laserontharing: de zonetabel verderop op
               deze pagina), dan is dát het nieuws van deze rij en staat het bovenaan, als
@@ -236,14 +239,14 @@ function Regel({
           {b.prijsElders ? (
             <div className="mb-6 flex flex-col gap-4 rounded-[var(--r-md)] bg-[var(--g-050)] p-5 sm:flex-row sm:items-center sm:justify-between sm:gap-8 sm:p-6">
               <p className="max-w-[48ch] text-[15px] leading-7 text-[var(--t-body)]">
-                {b.prijsElders.zin}
+                {tc(b.prijsElders.zin)}
               </p>
               <div className="flex shrink-0 flex-col items-start gap-3 sm:items-end">
                 <a
                   href={b.prijsElders.href}
                   className="diba-label inline-flex min-h-11 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-5 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
-                  {b.prijsElders.knop}
+                  {tc(b.prijsElders.knop)}
                   <span aria-hidden="true">↓</span>
                 </a>
                 {b.prijsElders.tweede ? (
@@ -251,7 +254,7 @@ function Regel({
                     href={b.prijsElders.tweede.href}
                     className="diba-label text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)]"
                   >
-                    {b.prijsElders.tweede.tekst}
+                    {tc(b.prijsElders.tweede.tekst)}
                   </a>
                 ) : null}
               </div>
@@ -260,7 +263,7 @@ function Regel({
           <div className="grid gap-x-10 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
             <div>
               <p className="diba-label text-[var(--t-label)]">
-                Goed om te weten
+                {t("Goed om te weten")}
               </p>
               <dl className="mt-3 space-y-2.5">
                 {(
@@ -278,10 +281,10 @@ function Regel({
                 ).map(([kop, waarde]) => (
                   <div key={kop} className="flex gap-3">
                     <dt className="w-[7rem] shrink-0 text-[14px] leading-6 text-[var(--t-muted)] sm:w-[9.5rem]">
-                      {kop}
+                      {tc(kop)}
                     </dt>
                     <dd className="text-[15px] leading-6 text-[var(--t-body)]">
-                      {waarde}
+                      {tc(waarde)}
                     </dd>
                   </div>
                 ))}
@@ -291,20 +294,20 @@ function Regel({
             {b.varianten?.length ? (
               <div>
                 <p className="diba-label text-[var(--t-label)]">
-                  Varianten en tarieven
+                  {t("Varianten en tarieven")}
                 </p>
                 <ul className="mt-3 space-y-2.5">
                   {b.varianten.map((v) => (
                     <li
-                      key={v.naam}
+                      key={tc(v.naam)}
                       className="flex items-baseline justify-between gap-x-4 border-b border-[var(--g-100)] pb-2.5 last:border-b-0 last:pb-0"
                     >
                       <span className="text-[15px] leading-6 text-[var(--t-body)]">
-                        {v.naam}
+                        {tc(v.naam)}{" "}
                         {v.bij ? (
                           <span className="text-[var(--t-muted)]">
                             {" "}
-                            ({v.bij})
+                            ({tc(v.bij)})
                           </span>
                         ) : null}
                       </span>
@@ -322,15 +325,15 @@ function Regel({
             {b.niet?.length ? (
               <div>
                 <p className="diba-label text-[var(--t-label)]">
-                  Hiervoor kies je iets anders
+                  {t("Hiervoor kies je iets anders")}
                 </p>
                 <ul className="mt-3 space-y-2.5">
                   {b.niet.slice(0, 2).map((n) => (
                     <li
-                      key={publicCopy(n)}
+                      key={tc(n)}
                       className="text-[15px] leading-6 text-[var(--t-body)]"
                     >
-                      {publicCopy(n)}
+                      {tc(n)}
                     </li>
                   ))}
                 </ul>
@@ -342,7 +345,7 @@ function Regel({
             href={`/behandelingen/${b.slug}`}
             className="diba-label mt-6 inline-flex min-h-11 items-center gap-1.5 border-t border-[var(--g-100)] pt-5 text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
           >
-            Alles over {b.naam.toLowerCase()}
+            {t("Alles over")} {tc(b.naam).toLowerCase()}
             <span aria-hidden="true">›</span>
           </Link>
         </div>
@@ -352,6 +355,7 @@ function Regel({
 }
 
 export default function Behandelprijzen() {
+  const tc = useTc();
   const [open, setOpen] = useState<string | null>(null);
   const groepen = useMemo(() => metInhoud(), []);
   const oordelen = useOordelen();
@@ -380,7 +384,7 @@ export default function Behandelprijzen() {
           schermrand door (negatieve marge tegen de sectiemarge), zodat te zien is dat
           het scrollt. */}
       <nav
-        aria-label="Categorieën"
+        aria-label={tc("Categorieën")}
         className="diba-schuifrij -mx-5 mb-6 px-5 sm:-mx-9 sm:px-9 lg:hidden"
       >
         <ul className="flex w-max gap-2">
@@ -390,7 +394,7 @@ export default function Behandelprijzen() {
                 href={`#prijs-${g.id}`}
                 className="diba-label inline-flex min-h-10 items-center rounded-[var(--r-pill)] bg-white px-4 whitespace-nowrap text-[var(--t-strong)] transition-colors hover:bg-[var(--g-075)] active:bg-[var(--g-075)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
               >
-                {g.label}
+                {tc(g.label)}
               </a>
             </li>
           ))}
@@ -404,10 +408,15 @@ export default function Behandelprijzen() {
             id={`prijs-${g.id}`}
             className="scroll-mt-[var(--anker-offset)]"
           >
-            <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-1 pb-4">
-              <Label>{g.label}</Label>
+            {/* Het opschrift en zijn toelichting naast elkaar, niet naar de twee randen
+                geduwd. Met `justify-between` stond "Meten" links en "Eerst kijken, nog
+                niets doen" op een scherm van 1920 veertienhonderd pixels verderop tegen
+                de rechterrand, en dan lezen ze niet meer als één regel (Yasin,
+                12 september 2026). */}
+            <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1 pb-4">
+              <Label>{tc(g.label)}</Label>
               <p className="text-[15px] leading-7 text-[var(--t-muted)]">
-                {g.zin}
+                {tc(g.zin)}
               </p>
             </div>
 

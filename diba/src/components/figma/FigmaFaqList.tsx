@@ -1,4 +1,5 @@
 import { publicCopy } from "@/lib/copy-flags";
+import { tc } from "@/lib/vertaal";
 
 export type FigmaFaqItem = {
   question: string;
@@ -15,7 +16,7 @@ export default function FigmaFaqList({ items }: { items: FigmaFaqItem[] }) {
           className="group rounded-[var(--r-md)] bg-white px-6 py-3"
         >
           <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 text-[16px] leading-[1.4] font-medium text-[var(--t-strong)]">
-            <span>{publicCopy(item.question)}</span>
+            <span>{tc(item.question)}</span>
             <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-[var(--g-050)] text-[var(--g-700)]">
               <svg
                 aria-hidden="true"
@@ -32,7 +33,7 @@ export default function FigmaFaqList({ items }: { items: FigmaFaqItem[] }) {
             </span>
           </summary>
           <p className="max-w-2xl pt-4 text-[15px] leading-7 text-[var(--t-body)]">
-            {publicCopy(item.answer)}
+            {tc(item.answer)}
           </p>
         </details>
       ))}

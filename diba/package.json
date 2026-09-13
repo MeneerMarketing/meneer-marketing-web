@@ -21,7 +21,9 @@
     "links": "node scripts/controleer-links.mjs",
     "hover": "node scripts/controleer-hover.mjs",
     "knoppen": "node scripts/controleer-knoppen.mjs",
-    "uitblok": "node scripts/controleer-uitblok.mjs"
+    "uitblok": "node scripts/controleer-uitblok.mjs",
+    "vertaalstand": "node scripts/vertaalstand.mjs",
+    "ontdubbel": "py scratch/ontdubbel.py"
   },
   "dependencies": {
     "next": "16.2.2",

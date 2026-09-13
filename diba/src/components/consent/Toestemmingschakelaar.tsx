@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useT, useTc } from "@/lib/gebruik-taal";
 import {
   acceptCookieConsent,
   COOKIE_CONSENT_EVENT,
@@ -56,6 +57,8 @@ const TEKST: Record<
 };
 
 export default function Toestemmingschakelaar() {
+  const tc = useTc();
+  const t = useT();
   const [stand, setStand] = useState<Toestemming | "laden">("laden");
 
   useEffect(() => {
@@ -68,16 +71,16 @@ export default function Toestemmingschakelaar() {
   if (stand === "laden") {
     return (
       <div className="rounded-[var(--r-lg)] bg-white p-7 sm:p-9">
-        <p className="diba-label text-[var(--t-label)]">Jouw keuze</p>
+        <p className="diba-label text-[var(--t-label)]">{t("Jouw keuze")}</p>
         <p className="mt-3 text-[16px] leading-7 text-[var(--t-body)]">
-          Je huidige keuze wordt opgehaald uit deze browser.
+          {t("Je huidige keuze wordt opgehaald uit deze browser.")}
         </p>
       </div>
     );
   }
 
   const sleutel = stand === null ? "onbekend" : stand;
-  const t = TEKST[sleutel];
+  const tekst = TEKST[sleutel];
   const toegestaan = stand === "toegestaan";
 
   return (
@@ -89,18 +92,18 @@ export default function Toestemmingschakelaar() {
       <p
         className={`diba-label ${toegestaan ? "text-[var(--g-900)]" : "text-[var(--t-label)]"}`}
       >
-        Jouw keuze
+        {t("Jouw keuze")}
       </p>
       <p
         aria-live="polite"
         className={`diba-card-title mt-3 ${toegestaan ? "text-[var(--g-900)]" : "text-[var(--t-strong)]"}`}
       >
-        {t.kop}
+        {tc(tekst.kop)}
       </p>
       <p
         className={`mt-3 max-w-[58ch] text-[16px] leading-7 ${toegestaan ? "text-[var(--g-900)]" : "text-[var(--t-body)]"}`}
       >
-        {t.zin}
+        {tc(tekst.zin)}
       </p>
 
       <button
@@ -110,15 +113,15 @@ export default function Toestemmingschakelaar() {
         }
         className="mt-7 inline-flex min-h-12 items-center rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[13px] leading-none font-medium text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
       >
-        {t.knop}
+        {tc(tekst.knop)}
       </button>
 
       <p
         className={`mt-6 max-w-[58ch] text-[14px] leading-6 ${toegestaan ? "text-[var(--g-900)]" : "text-[var(--t-muted)]"}`}
       >
-        Intrekken werkt vanaf nu en niet met terugwerkende kracht: wat er eerder
-        gemeten is, blijft bij die diensten staan. Wil je dat ook verwijderd
-        hebben, neem dan contact met ons op.
+        {t(
+          "Intrekken werkt vanaf nu en niet met terugwerkende kracht: wat er eerder gemeten is, blijft bij die diensten staan. Wil je dat ook verwijderd hebben, neem dan contact met ons op.",
+        )}
       </p>
     </div>
   );

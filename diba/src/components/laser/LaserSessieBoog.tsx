@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import DeLijn from "@/components/ui/DeLijn";
+import { useTc, useT } from "@/lib/gebruik-taal";
 
 const SESSIES = [
   { nr: 1, label: "Start", note: "Intake + huidtype + eerste sessie" },
@@ -17,6 +18,8 @@ const SESSIES = [
  * Interactief: klik een punt, lees de toelichting.
  */
 export default function LaserSessieBoog() {
+  const t = useT();
+  const tc = useTc();
   const [active, setActive] = useState(0);
   const pct = (active / (SESSIES.length - 1)) * 100;
   const current = SESSIES[active];
@@ -24,10 +27,10 @@ export default function LaserSessieBoog() {
   return (
     <div className="rounded-[var(--r-lg)] bg-white p-7 shadow-[var(--shadow-float)] sm:p-10">
       <p className="text-[10px] font-medium uppercase tracking-[.14em] text-[var(--t-label)]">
-        Traject in beeld
+        {t("Traject in beeld")}
       </p>
       <h3 className="mt-3 text-2xl tracking-[-.05em] sm:text-3xl">
-        Voor laserontharing zijn meestal meerdere sessies nodig
+        {t("Voor laserontharing zijn meestal meerdere sessies nodig")}
       </h3>
 
       <div className="relative mt-12">
@@ -64,7 +67,7 @@ export default function LaserSessieBoog() {
                   className="fill-[var(--t-muted)] text-[11px] font-medium uppercase tracking-wider"
                   style={{ fontSize: 10 }}
                 >
-                  {s.label}
+                  {tc(s.label)}
                 </text>
               </g>
             );
@@ -77,9 +80,11 @@ export default function LaserSessieBoog() {
 
       <div className="mt-8 rounded-[1.25rem] bg-[var(--g-025)] p-6">
         <p className="text-[10px] font-medium uppercase tracking-[.12em] text-[var(--t-label)]">
-          Sessie {current.nr}
+          {t("Sessie")} {current.nr}
         </p>
-        <p className="mt-2 text-lg text-[var(--t-strong)]">{current.note}</p>
+        <p className="mt-2 text-lg text-[var(--t-strong)]">
+          {tc(current.note)}
+        </p>
       </div>
 
       <div className="mt-6 flex flex-wrap gap-2">
@@ -95,7 +100,7 @@ export default function LaserSessieBoog() {
                 : "bg-[var(--g-050)] text-[var(--g-700)] hover:bg-[var(--g-100)]"
             }`}
           >
-            {s.label}
+            {tc(s.label)}
           </button>
         ))}
       </div>

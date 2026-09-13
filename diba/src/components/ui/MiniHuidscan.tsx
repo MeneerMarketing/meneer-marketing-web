@@ -11,6 +11,7 @@ import {
 import { bewaarScan } from "@/lib/huidprofiel-opslag";
 import { ArrowRight, ArrowUpRight } from "@/components/ui/Icon";
 import { useReducedMotion } from "@/lib/use-reduced-motion";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * De mini-scan — het interactieve hart van de huidscan-sectie.
@@ -190,6 +191,7 @@ const MAX = 92;
 type Fase = "intro" | "vragen" | "scannen" | "resultaat";
 
 export default function MiniHuidscan() {
+  const t = useT();
   const reduced = useReducedMotion();
   const titelId = useId();
   const [fase, setFase] = useState<Fase>("intro");
@@ -290,10 +292,12 @@ export default function MiniHuidscan() {
       {/* Kop van de kaart */}
       <div className="flex items-center justify-between gap-4">
         <span className="diba-label diba-pill-active rounded-[var(--r-pill)] px-3 py-1.5">
-          EVE-M
+          {t("EVE-M")}
         </span>
         <span className="diba-label text-[var(--t-muted)]">
-          {fase === "resultaat" ? "Jouw profielschets" : "Mini-scan, 4 vragen"}
+          {fase === "resultaat"
+            ? t("Jouw profielschets")
+            : t("Mini-scan, 4 vragen")}
         </span>
       </div>
 
@@ -352,20 +356,21 @@ export default function MiniHuidscan() {
 /* ── Fases ─────────────────────────────────────────────────────────────── */
 
 function Intro({ onStart, titelId }: { onStart: () => void; titelId: string }) {
+  const t = useT();
   return (
     <div>
       <h3 id={titelId} className="diba-card-title">
-        Doe de mini-scan
+        {t("Doe de mini-scan")}
       </h3>
       <p className="mt-3 max-w-[52ch] text-[15px] leading-7 text-[var(--t-body)]">
-        Weet je nog niet waar te beginnen? Vier vragen, dertig seconden. Je
-        krijgt een profielschets op basis van wat je zelf aangeeft. Een meting
-        doen we in de kliniek; dit is een eerste indruk.
+        {t(
+          "Weet je nog niet waar te beginnen? Vier vragen, dertig seconden. Je krijgt een profielschets op basis van wat je zelf aangeeft. Een meting doen we in de kliniek; dit is een eerste indruk.",
+        )}
       </p>
       {/* Op /huidprofiel staat deze kaart in een smalle kolom; daar is 191 pixels voor de
           knop en "START DE MINI-SCAN" heeft er 208 nodig. */}
       <Button onClick={onStart} className="mt-6" kort="Start de scan">
-        Start de mini-scan
+        {t("Start de mini-scan")}
       </Button>
     </div>
   );
@@ -386,11 +391,13 @@ function Vraagstap({
   onKies: (i: number) => void;
   onTerug?: () => void;
 }) {
+  const tc = useTc();
+  const t = useT();
   return (
     <div>
       <div className="flex items-baseline justify-between gap-4">
         <span className="diba-label text-[var(--t-muted)]">
-          Vraag {index + 1} / {totaal}
+          {t("Vraag")} {index + 1} / {totaal}
         </span>
         {onTerug ? (
           <button
@@ -398,22 +405,22 @@ function Vraagstap({
             onClick={onTerug}
             className="diba-label text-[var(--g-700)] underline underline-offset-4"
           >
-            Vorige
+            {t("Vorige")}
           </button>
         ) : null}
       </div>
 
-      <h3 className="diba-card-title mt-2">{vraag.vraag}</h3>
+      <h3 className="diba-card-title mt-2">{tc(vraag.vraag)}</h3>
       {vraag.toelichting ? (
         <p className="mt-2 max-w-md text-sm leading-6 text-[var(--t-body)]">
-          {vraag.toelichting}
+          {tc(vraag.toelichting)}
         </p>
       ) : null}
 
       <div
         className="mt-5 grid gap-2 sm:grid-cols-2"
         role="radiogroup"
-        aria-label={vraag.vraag}
+        aria-label={tc(vraag.vraag)}
       >
         {vraag.opties.map((optie, i) => {
           const actief = gekozen === i;
@@ -437,7 +444,7 @@ function Vraagstap({
                   style={{ background: optie.tint }}
                 />
               ) : null}
-              <span>{optie.label}</span>
+              <span>{tc(optie.label)}</span>
             </button>
           );
         })}
@@ -447,9 +454,12 @@ function Vraagstap({
 }
 
 function Scannen() {
+  const t = useT();
   return (
     <div className="grid place-items-center py-10">
-      <p className="diba-label text-[var(--t-muted)]">Profiel opbouwen…</p>
+      <p className="diba-label text-[var(--t-muted)]">
+        {t("Profiel opbouwen…")}
+      </p>
     </div>
   );
 }
@@ -465,12 +475,16 @@ function Resultaat({
   focus: Optie | null;
   onOpnieuw: () => void;
 }) {
+  const t = useT();
+  const tc = useTc();
   return (
     <div className="grid gap-6">
       {/* Hier stond de radar. Weg (Yasin, 11 september 2026): tweehonderdvijftig pixels
           hoog, en wat je eraan afleest staat hieronder als getal. */}
       <div>
-        <h3 className="diba-card-title">Waar jouw aandacht naartoe gaat.</h3>
+        <h3 className="diba-card-title">
+          {t("Waar jouw aandacht naartoe gaat.")}
+        </h3>
 
         <ul className="mt-4 grid gap-2 sm:grid-cols-2">
           {aandachtspunten.map((as) => (
@@ -478,7 +492,7 @@ function Resultaat({
               key={as.id}
               className="flex items-center justify-between gap-4 rounded-[var(--r-sm)] bg-[var(--g-025)] px-4 py-3"
             >
-              <span className="text-[15px] font-medium">{as.label}</span>
+              <span className="text-[15px] font-medium">{tc(as.label)}</span>
               <span className="diba-label text-[var(--g-700)] tabular-nums">
                 {profiel[as.id]}
                 <span className="text-[var(--t-muted)]">/100</span>
@@ -491,10 +505,11 @@ function Resultaat({
         <div className="mt-5 rounded-[var(--r-sm)] border border-[var(--g-100)] bg-white p-4">
           <p className="text-sm leading-6 text-[var(--t-body)]">
             <strong className="font-medium text-[var(--t-strong)]">
-              Dit is wat jij ons vertelt, niet wat we gemeten hebben.
+              {t("Dit is wat jij ons vertelt, niet wat we gemeten hebben.")}
             </strong>{" "}
-            De huidanalyse met EVE-M legt hydratatie, pigment, poriën en
-            structuur objectief vast. Dan pas weten we het echt.
+            {t(
+              "De huidanalyse met EVE-M legt hydratatie, pigment, poriën en structuur objectief vast. Dan pas weten we het echt.",
+            )}
           </p>
         </div>
 
@@ -506,15 +521,15 @@ function Resultaat({
             en niet als knop, want er staat al een primaire knop in dit blok. */}
         <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
           <Button
-            href={`/intake${focus?.onderwerp ? `?topic=${focus.onderwerp}` : ""}`}
+            href={`/intake${focus?.onderwerp ? `?topic=${tc(focus.onderwerp)}` : ""}`}
           >
-            Plan een huidconsult
+            {t("Plan een huidconsult")}
           </Button>
           <a
             href="/huidprofiel"
             className="diba-label inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4"
           >
-            Vul je profiel verder aan
+            {t("Vul je profiel verder aan")}
             <ArrowUpRight size={13} />
           </a>
           {focus?.pillar ? (
@@ -522,15 +537,17 @@ function Resultaat({
               href={`/huidproblemen/${focus.pillar}`}
               className="diba-label inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4"
             >
-              Lees over {focus.kort ?? focus.label.toLowerCase()}
+              {t("Lees over")}{" "}
+              {focus.kort ? tc(focus.kort) : tc(focus.label).toLowerCase()}
               <ArrowUpRight size={13} />
             </a>
           ) : null}
         </div>
 
         <p className="mt-3 text-[13px] leading-6 text-[var(--t-muted)]">
-          Je schets is bewaard op dit apparaat. Ga je naar de behandelingen, dan
-          staat wat bij je profiel past bovenaan.
+          {t(
+            "Je schets is bewaard op dit apparaat. Ga je naar de behandelingen, dan staat wat bij je profiel past bovenaan.",
+          )}
         </p>
 
         <button
@@ -538,7 +555,7 @@ function Resultaat({
           onClick={onOpnieuw}
           className="diba-label mt-4 inline-flex items-center gap-1.5 text-[var(--t-muted)] underline underline-offset-4"
         >
-          Opnieuw invullen
+          {t("Opnieuw invullen")}
           <ArrowRight size={13} />
         </button>
       </div>

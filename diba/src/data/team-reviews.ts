@@ -35,6 +35,7 @@ function naamUitBehandeling(behandeling: string): string | null {
 export type TeamReview = {
   readonly id: string;
   readonly quote: string;
+  readonly quoteEn?: string;
   readonly name: string;
   readonly treatment: string;
   readonly relativeDate?: string;
@@ -54,6 +55,7 @@ export function reviewsVoorTeamlid(teamNaam: string): readonly TeamReview[] {
   }).map((r) => ({
     id: r.id,
     quote: r.quote,
+    quoteEn: r.quoteEn,
     name: r.name,
     treatment: r.treatment,
     relativeDate: r.relativeDate,

@@ -1,8 +1,11 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Whatsapp } from "@/components/ui/Icon";
 import { DIBA_WHATSAPP_URL } from "@/lib/site";
+import { useT } from "@/lib/gebruik-taal";
+import { inTaal } from "@/lib/taalpad";
 
 /**
  * De actiebalk onderaan het scherm, alleen op een telefoon.
@@ -19,6 +22,7 @@ import { DIBA_WHATSAPP_URL } from "@/lib/site";
  *   het scherm uit is gescrold; op een pagina zonder zo'n knop na één scherm.
  * - Niet onderaan de pagina: daar staat het afsluitende blok met dezelfde knop.
  * - Niet zolang de cookiebalk er staat; die heeft dezelfde plek en gaat voor.
+ * - Niet op de pagina's waar je al bent waar de balk naartoe wijst; zie `NIET_OP`.
  * - Nooit op desktop (lg en breder): daar is de knop in de navigatie altijd in beeld.
  *
  * De balk meldt zijn hoogte in `--actiebalk`, zodat de pagina eronder ruimte houdt en
@@ -28,10 +32,30 @@ import { DIBA_WHATSAPP_URL } from "@/lib/site";
 const MOBIEL = "(max-width: 1023px)";
 const HOOGTE = "4.5rem";
 
+/**
+ * Waar de balk nooit hoort te staan.
+ *
+ * Op /afspraak staat de agenda zelf op het scherm. Een vaste balk onderin die "Afspraak
+ * maken" roept terwijl je in het boekingsscherm zit, dekt de agenda af en wijst naar de
+ * pagina waar je al bent (Yasin, 12 september 2026). Op /contact geldt hetzelfde voor het
+ * formulier: daar ben je al aan het doen waar de balk om vraagt.
+ */
+const NIET_OP = new Set([
+  "/afspraak",
+  "/contact",
+  "/en/afspraak",
+  "/en/contact",
+]);
+
 export default function MobieleActiebalk() {
+  const pad = usePathname() ?? "/";
   const [zichtbaar, setZichtbaar] = useState(false);
+  const uit = NIET_OP.has(pad);
+  const t = useT();
 
   useEffect(() => {
+    /* Op deze pagina's meten we niets; de balk rendert hieronder toch niet. */
+    if (uit) return;
     const bereken = () => {
       if (!window.matchMedia(MOBIEL).matches) {
         setZichtbaar(false);
@@ -67,25 +91,25 @@ export default function MobieleActiebalk() {
       window.removeEventListener("resize", bereken);
       window.clearInterval(klok);
     };
-  }, []);
+  }, [uit]);
 
   useEffect(() => {
     document.documentElement.style.setProperty(
       "--actiebalk",
-      zichtbaar ? HOOGTE : "0px",
+      zichtbaar && !uit ? HOOGTE : "0px",
     );
-  }, [zichtbaar]);
+  }, [zichtbaar, uit]);
 
-  if (!zichtbaar) return null;
+  if (uit || !zichtbaar) return null;
 
   /* Sinds 10 september 2026 staat de agenda op onze eigen pagina; zie /afspraak. */
-  const boeken = "/afspraak";
+  const boeken = inTaal("/afspraak", pad);
   const extern = boeken.startsWith("http");
 
   return (
     <div
       role="region"
-      aria-label="Snel een afspraak maken"
+      aria-label={t("Snel een afspraak maken")}
       className="fixed inset-x-0 bottom-0 z-40 border-t border-[var(--g-100)] bg-white/95 px-4 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] shadow-[0_-8px_28px_rgba(67,79,58,.10)] backdrop-blur-sm lg:hidden"
     >
       <div className="mx-auto flex max-w-lg items-center gap-3">
@@ -94,7 +118,7 @@ export default function MobieleActiebalk() {
           {...(extern ? { target: "_blank", rel: "noopener noreferrer" } : {})}
           className="diba-label flex min-h-12 flex-1 items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-5 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
         >
-          Afspraak maken
+          {t("Afspraak maken")}{" "}
           {extern ? <span aria-hidden="true">↗</span> : null}
         </a>
         <a
@@ -104,7 +128,7 @@ export default function MobieleActiebalk() {
           className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] border border-[var(--g-200)] px-4 text-[var(--t-strong)] transition-colors hover:border-[var(--g-700)] hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
         >
           <Whatsapp size={16} />
-          WhatsApp
+          {t("WhatsApp")}
         </a>
       </div>
     </div>

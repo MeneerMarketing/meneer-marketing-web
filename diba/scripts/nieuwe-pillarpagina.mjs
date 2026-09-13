@@ -39,7 +39,7 @@
 import { mkdirSync, writeFileSync, renameSync } from "node:fs";
 
 export function maakPillarPagina(c) {
-  const map = `src/app/huidproblemen/${c.slug}`;
+  const map = `src/app/(nl)/huidproblemen/${c.slug}`;
   mkdirSync(map, { recursive: true });
   const pad = `${map}/page.tsx`;
 

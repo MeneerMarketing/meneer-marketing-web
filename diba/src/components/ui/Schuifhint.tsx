@@ -1,3 +1,6 @@
+"use client";
+
+import { useT, useTc } from "@/lib/gebruik-taal";
 /**
  * De regel boven een blok dat op een telefoon opzij schuift.
  *
@@ -10,10 +13,12 @@
  * Alleen onder `sm`, want daarboven past het gewoon en is de regel onzin.
  */
 export default function Schuifhint({ wat }: { wat: string }) {
+  const t = useT();
+  const tc = useTc();
   return (
     <p className="diba-label mt-4 flex items-center gap-2 text-[var(--t-muted)] sm:hidden">
       <span aria-hidden="true">↔</span>
-      Schuif {wat} opzij om alles te zien
+      {t("Schuif")} {tc(wat)} {t("opzij om alles te zien")}
     </p>
   );
 }

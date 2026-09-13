@@ -1,3 +1,7 @@
+"use client";
+
+import { useT, useTc } from "@/lib/gebruik-taal";
+
 export type PriceRow = {
   name: string;
   /** Losse prijs in euro's; weglaten als alleen traject bestaat */
@@ -39,6 +43,8 @@ function fmtPrice(value: number | undefined): string | null {
 }
 
 export default function PriceTable({ caption, rows }: PriceTableProps) {
+  const t = useT();
+  const tc = useTc();
   /**
    * De trajectkolom staat er alleen als er iets in staat.
    *
@@ -52,7 +58,7 @@ export default function PriceTable({ caption, rows }: PriceTableProps) {
   return (
     <table className="w-full border-collapse text-left">
       <caption className="pb-4 text-left text-xl font-medium tracking-[-.03em] text-[var(--t-strong)] md:text-2xl">
-        {caption}
+        {tc(caption)}
       </caption>
       <thead>
         <tr>
@@ -60,20 +66,20 @@ export default function PriceTable({ caption, rows }: PriceTableProps) {
             scope="col"
             className="py-3 pr-3 text-[11px] font-semibold tracking-[.1em] text-[var(--t-label)] uppercase"
           >
-            Behandeling
+            {t("Behandeling")}
           </th>
           <th
             scope="col"
             className="w-[30%] py-3 pr-3 text-right text-[11px] font-semibold tracking-[.1em] text-[var(--t-label)] uppercase"
           >
-            Per sessie in euro&rsquo;s
+            {t("Per sessie in euro’s")}
           </th>
           {heeftTraject ? (
             <th
               scope="col"
               className="w-[30%] py-3 text-right text-[11px] font-semibold tracking-[.1em] text-[var(--t-label)] uppercase"
             >
-              Traject
+              {t("Traject")}
             </th>
           ) : null}
         </tr>
@@ -86,19 +92,19 @@ export default function PriceTable({ caption, rows }: PriceTableProps) {
              hoger dan nodig. Een zebra leest bij een prijslijst net zo goed, want je oog
              volgt de rij en niet de scheiding. */
           <tr
-            key={`${row.name}-${i}`}
+            key={`${tc(row.name)}-${i}`}
             className={`align-top ${i % 2 === 1 ? "bg-[var(--g-025)]" : ""}`}
           >
             <th
               scope="row"
               className="rounded-l-[var(--r-sm)] py-3 pr-3 pl-4 text-[15px] leading-6 font-normal text-[var(--t-strong)]"
             >
-              {row.name}
+              {tc(row.name)}
             </th>
             <td className="py-3 pr-3 text-right text-[15px] leading-6 text-[var(--t-strong)] tabular-nums">
               {fmtPrice(row.single) ?? (
                 <span className="text-[13px] text-[var(--t-muted)]">
-                  n.v.t.
+                  {t("n.v.t.")}
                 </span>
               )}
             </td>
@@ -112,18 +118,19 @@ export default function PriceTable({ caption, rows }: PriceTableProps) {
                     {row.traject.sessions ? (
                       <span className="text-[13px] text-[var(--t-muted)]">
                         {" "}
-                        ({row.traject.sessions})
+                        ({tc(row.traject.sessions)})
                       </span>
                     ) : null}
                     {row.traject.perMonth !== undefined ? (
                       <span className="block text-[13px] leading-relaxed text-[var(--t-muted)]">
-                        of {fmtPrice(row.traject.perMonth)} per maand
+                        of {fmtPrice(row.traject.perMonth)}
+                        {t("per maand")}
                       </span>
                     ) : null}
                   </>
                 ) : (
                   <span className="text-[13px] text-[var(--t-muted)]">
-                    n.v.t.
+                    {t("n.v.t.")}
                   </span>
                 )}
               </td>

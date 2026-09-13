@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useId, useState } from "react";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * Een voor-en-na met een schuif ertussen.
@@ -41,6 +42,8 @@ export type VoorNaPaar = {
 };
 
 export default function VoorNaSchuif({ paar }: { paar: VoorNaPaar }) {
+  const tc = useTc();
+  const t = useT();
   const [stand, setStand] = useState(50);
   const id = useId();
   const compleet = Boolean(paar.voor && paar.na);
@@ -53,7 +56,7 @@ export default function VoorNaSchuif({ paar }: { paar: VoorNaPaar }) {
             {/* Na ligt onder, voor ligt erover en wordt weggeschoven. */}
             <Image
               src={paar.na!.src}
-              alt={paar.na!.alt}
+              alt={tc(paar.na!.alt)}
               fill
               sizes="(min-width: 1024px) 32vw, 92vw"
               className="object-cover object-center"
@@ -70,7 +73,7 @@ export default function VoorNaSchuif({ paar }: { paar: VoorNaPaar }) {
               >
                 <Image
                   src={paar.voor!.src}
-                  alt={paar.voor!.alt}
+                  alt={tc(paar.voor!.alt)}
                   fill
                   sizes="(min-width: 1024px) 32vw, 92vw"
                   className="object-cover object-center"
@@ -82,13 +85,15 @@ export default function VoorNaSchuif({ paar }: { paar: VoorNaPaar }) {
           /* De lege staat. Twee helften, allebei leeg, met erin wat er komt. */
           <div className="absolute inset-0 flex">
             <div className="flex flex-1 items-end bg-[var(--g-100)] p-5">
-              <span className="diba-label text-[var(--t-muted)]">Voor</span>
+              <span className="diba-label text-[var(--t-muted)]">
+                {t("Voor")}
+              </span>
             </div>
             <div className="flex flex-1 items-end justify-end bg-[var(--g-050)] p-5">
               <span className="diba-label text-[var(--t-muted)]">Na</span>
             </div>
             <p className="diba-label absolute inset-x-0 top-1/2 -translate-y-1/2 px-6 text-center text-[var(--t-muted)]">
-              Nog geen beeld
+              {t("Nog geen beeld")}
             </p>
           </div>
         )}
@@ -120,7 +125,7 @@ export default function VoorNaSchuif({ paar }: { paar: VoorNaPaar }) {
             </div>
 
             <label htmlFor={id} className="sr-only">
-              Schuif tussen de opname vooraf en de opname achteraf
+              {t("Schuif tussen de opname vooraf en de opname achteraf")}
             </label>
             <input
               id={id}
@@ -137,12 +142,14 @@ export default function VoorNaSchuif({ paar }: { paar: VoorNaPaar }) {
 
       <figcaption className="p-6">
         <p className="diba-card-title text-[var(--t-strong)]">
-          {paar.behandeling}
+          {tc(paar.behandeling)}
         </p>
-        <p className="diba-label mt-2 text-[var(--t-label)]">{paar.traject}</p>
+        <p className="diba-label mt-2 text-[var(--t-label)]">
+          {tc(paar.traject)}
+        </p>
         {paar.huidtype ? (
           <p className="mt-3 text-[14px] leading-6 text-[var(--t-muted)]">
-            Huidtype {paar.huidtype}
+            {t("Huidtype")} {paar.huidtype}
           </p>
         ) : null}
       </figcaption>

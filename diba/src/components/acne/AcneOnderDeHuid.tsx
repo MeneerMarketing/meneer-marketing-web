@@ -3,7 +3,8 @@
 import { useState } from "react";
 import Label from "@/components/ui/Label";
 import { ACNE_STADIA } from "@/data/acne";
-import { publicCopy } from "@/lib/copy-flags";
+
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * Onder je huid — één porie die je door de vier stadia heen ziet veranderen.
@@ -45,6 +46,8 @@ import { publicCopy } from "@/lib/copy-flags";
 type Fase = 0 | 1 | 2 | 3;
 
 export default function AcneOnderDeHuid() {
+  const t = useT();
+  const tc = useTc();
   const [actief, setActief] = useState<Fase>(0);
   const stadium = ACNE_STADIA[actief];
 
@@ -61,7 +64,7 @@ export default function AcneOnderDeHuid() {
           className="w-full flex-1"
           preserveAspectRatio="xMidYMid meet"
           role="img"
-          aria-label={`Doorsnede van de huid bij stadium ${actief + 1} van 4: ${stadium.naam}. ${publicCopy(stadium.merkbaar)}`}
+          aria-label={`${t("Doorsnede van de huid bij stadium")} ${actief + 1} ${t("van")} 4: ${tc(stadium.naam)}. ${tc(stadium.merkbaar)}`}
         >
           {/* ── De lagen, van buiten naar binnen ── */}
           <rect x="0" y="70" width="400" height="34" fill="var(--g-100)" />
@@ -207,7 +210,7 @@ export default function AcneOnderDeHuid() {
             fontSize="15"
             letterSpacing="1.6"
           >
-            HUIDOPPERVLAK
+            {t("HUIDOPPERVLAK")}
           </text>
           <text
             x="16"
@@ -216,7 +219,7 @@ export default function AcneOnderDeHuid() {
             fontSize="15"
             letterSpacing="1.6"
           >
-            TALGKLIER
+            {t("TALGKLIER")}
           </text>
         </svg>
 
@@ -241,7 +244,7 @@ export default function AcneOnderDeHuid() {
                     : "bg-[var(--g-050)] text-[var(--t-label)] hover:bg-[var(--g-100)]"
                 }`}
               >
-                {s.naam}
+                {t(s.naam)}
               </button>
             ))}
           </div>
@@ -256,7 +259,7 @@ export default function AcneOnderDeHuid() {
             />
           </div>
           <p className="diba-label mt-3 text-[var(--t-muted)]">
-            Stadium {actief + 1} van {ACNE_STADIA.length}
+            {t("Stadium")} {actief + 1} {t("van")} {ACNE_STADIA.length}
           </p>
         </div>
       </div>
@@ -264,21 +267,21 @@ export default function AcneOnderDeHuid() {
       {/* ── Wat er op dit punt gebeurt ── */}
       <div className="flex flex-col justify-center">
         <h3 className="text-[30px] leading-none tracking-[-.05em] text-[var(--t-strong)] sm:text-[34px]">
-          {stadium.naam}
+          {t(stadium.naam)}
         </h3>
 
         <div className="mt-7 space-y-6">
           <div>
-            <Label>Wat je hiervan merkt</Label>
+            <Label>{t("Wat je hiervan merkt")}</Label>
             <p className="mt-2 text-[16px] leading-7 text-[var(--t-body)]">
-              {publicCopy(stadium.merkbaar)}
+              {tc(stadium.merkbaar)}
             </p>
           </div>
 
           <div>
-            <Label>Wat er gebeurt</Label>
+            <Label>{t("Wat er gebeurt")}</Label>
             <p className="mt-2 text-[16px] leading-7 text-[var(--t-body)]">
-              {publicCopy(stadium.uitleg)}
+              {tc(stadium.uitleg)}
             </p>
           </div>
         </div>
@@ -287,10 +290,10 @@ export default function AcneOnderDeHuid() {
             een eigen vlak in plaats van dat hij als derde alinea meeleest. */}
         <div className="mt-7 rounded-[var(--r-md)] bg-[var(--g-075)] p-6 sm:p-7">
           <Label className="text-[var(--warn-text)]">
-            Waar je hier iets kunt veranderen
+            {t("Waar je hier iets kunt veranderen")}
           </Label>
           <p className="mt-2 text-[16px] leading-7 text-[var(--t-body)]">
-            {publicCopy(stadium.ingrijpen)}
+            {tc(stadium.ingrijpen)}
           </p>
         </div>
       </div>

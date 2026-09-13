@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import { useState } from "react";
 import Label from "@/components/ui/Label";
 import {
@@ -11,6 +11,7 @@ import {
   ZOEKER_LEEG,
 } from "@/data/symptoomzoeker";
 import { publicCopy } from "@/lib/copy-flags";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * De zoeker — de wegwijzer over alle huidprobleempagina's heen.
@@ -45,6 +46,8 @@ import { publicCopy } from "@/lib/copy-flags";
  */
 
 export default function Zoeker() {
+  const tc = useTc();
+  const t = useT();
   const [gekozen, setGekozen] = useState<ReadonlySet<string>>(new Set());
 
   const spoed = KENMERKEN.some((k) => k.urgent && gekozen.has(k.id));
@@ -72,14 +75,14 @@ export default function Zoeker() {
       {/* ── Wat je ziet ── */}
       <div className="self-start">
         <div className="flex flex-wrap items-baseline justify-between gap-3">
-          <Label>Wat zie of voel je</Label>
+          <Label>{t("Wat zie of voel je")}</Label>
           {gekozen.size > 0 ? (
             <button
               type="button"
               onClick={() => setGekozen(new Set())}
               className="diba-label text-[var(--t-muted)] underline underline-offset-4 hover:text-[var(--g-700)]"
             >
-              Begin opnieuw
+              {t("Begin opnieuw")}
             </button>
           ) : null}
         </div>
@@ -87,7 +90,9 @@ export default function Zoeker() {
         <div className="mt-5 space-y-6">
           {KENMERK_GROEPEN.map((groep) => (
             <div key={groep.id}>
-              <p className="diba-label text-[var(--t-muted)]">{groep.naam}</p>
+              <p className="diba-label text-[var(--t-muted)]">
+                {tc(groep.naam)}
+              </p>
               <ul className="mt-3 space-y-1.5">
                 {KENMERKEN.filter((k) => k.groep === groep.id).map((k) => {
                   const aan = gekozen.has(k.id);
@@ -129,7 +134,7 @@ export default function Zoeker() {
                             </svg>
                           ) : null}
                         </span>
-                        {k.tekst}
+                        {tc(k.tekst)}
                       </button>
                     </li>
                   );
@@ -144,42 +149,44 @@ export default function Zoeker() {
       <div aria-live="polite">
         {spoed ? (
           <div className="mb-6 rounded-[var(--r-md)] bg-[var(--g-700)] p-6 text-[var(--on-dark)] sm:p-8">
-            <Label opDonker>Dit gaat voor</Label>
-            <h3 className="diba-card-title-lg mt-4">{SPOED_TEKST.kop}</h3>
+            <Label opDonker>{t("Dit gaat voor")}</Label>
+            <h3 className="diba-card-title-lg mt-4">{tc(SPOED_TEKST.kop)}</h3>
             <p className="mt-4 text-[16px] leading-7 text-[var(--on-dark-body)]">
-              {publicCopy(SPOED_TEKST.tekst)}
+              {tc(SPOED_TEKST.tekst)}
             </p>
           </div>
         ) : null}
 
         {gekozen.size === 0 ? (
           <p className="max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            {ZOEKER_LEEG}
+            {tc(ZOEKER_LEEG)}
           </p>
         ) : (
           <>
             <Label>
               {treffers.length === 1
-                ? "Eén pagina past hierbij"
+                ? t("Eén pagina past hierbij")
                 : `${treffers.length} pagina's passen hierbij`}
             </Label>
             <ul className="mt-5 space-y-3">
-              {treffers.map((t) => (
-                <li key={t.pad}>
+              {treffers.map((tr) => (
+                <li key={tr.pad}>
                   <Link
-                    href={t.pad}
+                    href={tr.pad}
                     className="flex items-baseline justify-between gap-4 rounded-[var(--r-sm)] bg-white p-5 transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                   >
                     <span>
-                      <span className="diba-card-title block">{t.naam}</span>
+                      <span className="diba-card-title block">
+                        {tc(tr.naam)}
+                      </span>
                       <span className="mt-1.5 block text-[15px] leading-7 text-[var(--t-body)]">
-                        {t.zin}
+                        {tc(tr.zin)}
                       </span>
                     </span>
                     {/* Hoeveel van jouw kenmerken deze pagina dekt. Geen score maar een
                         telling, zodat duidelijk is waarom hij bovenaan staat. */}
                     <span className="diba-label shrink-0 text-[var(--t-muted)]">
-                      {t.score} van {gekozen.size}
+                      {tr.score} {t("van")} {gekozen.size}
                     </span>
                   </Link>
                 </li>

@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import { useCallback, useRef, useState } from "react";
 import {
   BEHANDELINGEN,
@@ -9,6 +9,7 @@ import {
   type HuidlaagId,
 } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * De huidreis — het hart van de behandelingenpagina.
@@ -62,6 +63,8 @@ function middenVan(id: HuidlaagId): number {
 }
 
 export default function Huidreis() {
+  const tc = useTc();
+  const t = useT();
   const [diepte, setDiepte] = useState(18);
   const [sleept, setSleept] = useState(false);
   const vlak = useRef<HTMLDivElement | null>(null);
@@ -151,7 +154,7 @@ export default function Huidreis() {
                   transition: "color .3s var(--ease-diba)",
                 }}
               >
-                {l.naam}
+                {tc(l.naam)}
               </span>
             );
           })}
@@ -181,7 +184,7 @@ export default function Huidreis() {
                 <path d="M8 2v12M4.5 10.5 8 14l3.5-3.5M11.5 5.5 8 2 4.5 5.5" />
               </svg>
               <span className="text-[13px] leading-4 font-medium whitespace-nowrap text-[var(--t-strong)]">
-                {laag.naam}
+                {tc(laag.naam)}
               </span>
             </div>
             <div className="h-0.5 flex-1 bg-white shadow-[0_1px_3px_rgba(67,79,58,.25)]" />
@@ -191,7 +194,7 @@ export default function Huidreis() {
         {/* De echte bediening: vier knoppen, met toetsenbord te doen. */}
         <div
           role="tablist"
-          aria-label="Hoe diep"
+          aria-label={tc("Hoe diep")}
           /* Twee bij twee, ook op een breed scherm: in de kolom waar deze rij staat is
              een vierde 99 pixels breed en past "Bovenste lederhuid" er niet in. */
           className="mt-4 grid grid-cols-2 gap-2"
@@ -209,7 +212,7 @@ export default function Huidreis() {
                   : "bg-white text-[var(--t-label)] hover:bg-[var(--g-100)]"
               }`}
             >
-              {l.naam}
+              {tc(l.naam)}
             </button>
           ))}
         </div>
@@ -217,25 +220,29 @@ export default function Huidreis() {
 
       {/* ── Wat daar zit, en wat er komt ── */}
       <div className="lg:pt-6">
-        <p className="diba-label text-[var(--t-muted)]">Je bent nu in de</p>
+        <p className="diba-label text-[var(--t-muted)]">
+          {t("Je bent nu in de")}
+        </p>
         <h2
           key={laag.id}
           className="diba-display-m mt-3 max-w-[16ch]"
           style={{ animation: "diba-paneel-in .3s var(--ease-diba) both" }}
         >
-          {laag.naam}
+          {tc(laag.naam)}
         </h2>
         <p className="mt-5 max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
-          {laag.zin}
+          {tc(laag.zin)}
         </p>
 
         <div className="mt-9 pt-7">
           <p className="diba-label text-[var(--t-muted)]">
             {alleHier.length === 0
-              ? "Hier komt niets van ons"
+              ? t("Hier komt niets van ons")
               : alleHier.length === 1
-                ? "Eén van onze behandelingen komt hier"
-                : `${alleHier.length} van onze behandelingen komen hier`}
+                ? t("Eén van onze behandelingen komt hier")
+                : `${alleHier.length} ${t(
+                    "van onze behandelingen komen hier",
+                  )}`}
           </p>
 
           <ul className="mt-5 space-y-2">
@@ -246,13 +253,13 @@ export default function Huidreis() {
                   className="group flex flex-wrap items-baseline gap-x-5 gap-y-1 rounded-[var(--r-sm)] bg-white px-6 py-5 transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
                   <span className="text-[17px] leading-7 font-medium text-[var(--t-strong)]">
-                    {b.naam}
+                    {tc(b.naam)}
                   </span>
                   <span className="flex-1 text-[14px] leading-6 text-[var(--t-muted)]">
-                    {publicCopy(b.herstel)}
+                    {tc(b.herstel)}
                   </span>
                   <span className="shrink-0 text-[15px] leading-7 font-medium text-[var(--t-strong)] tabular-nums">
-                    {prijsTekst(b.prijs)}
+                    {tc(prijsTekst(b.prijs))}
                   </span>
                   <svg
                     viewBox="0 0 16 16"
@@ -273,14 +280,15 @@ export default function Huidreis() {
 
           {meerHier > 0 ? (
             <p className="mt-4 text-[14px] leading-6 text-[var(--t-muted)]">
-              En nog {meerHier} andere.
+              {t("En nog")} {meerHier} {t("andere.")}
             </p>
           ) : null}
 
           {alleHier.length === 0 ? (
             <p className="mt-5 max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Zo diep gaan wij niet. Wat hier zit hoort bij een arts, of bij
-              niemand.
+              {t(
+                "Zo diep gaan wij niet. Wat hier zit hoort bij een arts, of bij niemand.",
+              )}
             </p>
           ) : null}
         </div>

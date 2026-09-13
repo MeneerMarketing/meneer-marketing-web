@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import { useMemo, useState } from "react";
 import {
   APPARATUUR,
@@ -11,6 +11,7 @@ import {
 import { HUIDLAGEN, LAAGAANDEEL } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
 import Schuifhint from "@/components/ui/Schuifhint";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * De dieptevergelijker: alle apparaten op één schaal.
@@ -68,6 +69,8 @@ const MECHANIEKEN: readonly {
 ];
 
 export default function Dieptevergelijker() {
+  const tc = useTc();
+  const t = useT();
   const [mechaniek, setMechaniek] = useState<Werkwijze | "alles">("alles");
   const [zweeft, setZweeft] = useState<string | null>(null);
 
@@ -92,7 +95,7 @@ export default function Dieptevergelijker() {
       <div
         className="flex flex-wrap gap-2"
         role="group"
-        aria-label="Filter op mechaniek"
+        aria-label={tc("Filter op mechaniek")}
       >
         <Chip
           actief={mechaniek === "alles"}
@@ -105,7 +108,7 @@ export default function Dieptevergelijker() {
             key={m.id}
             actief={mechaniek === m.id}
             onClick={() => setMechaniek(m.id)}
-            label={m.label}
+            label={tc(m.label)}
             telling={tellingen.get(m.id) ?? 0}
           />
         ))}
@@ -123,9 +126,12 @@ export default function Dieptevergelijker() {
         <div className="min-w-[640px]">
           <div className="grid grid-cols-[minmax(190px,1fr)_2.2fr] items-end gap-6">
             <p className="diba-label text-[var(--t-label)]">
-              {rijen.length} {rijen.length === 1 ? "apparaat" : "apparaten"}
+              {rijen.length}{" "}
+              {rijen.length === 1 ? t("apparaat") : t("apparaten")}
             </p>
-            <p className="diba-label text-[var(--t-label)]">Tot hoe diep</p>
+            <p className="diba-label text-[var(--t-label)]">
+              {t("Tot hoe diep")}
+            </p>
           </div>
 
           <ul className="mt-3">
@@ -149,14 +155,16 @@ export default function Dieptevergelijker() {
                   >
                     <span className="min-w-0">
                       <span className="block truncate text-[16px] leading-6 font-medium text-[var(--t-strong)]">
-                        {a.naam}
+                        {tc(a.naam)}
                       </span>
                       <span className="mt-0.5 block truncate text-[13px] leading-5 text-[var(--t-muted)]">
                         {leest
-                          ? "Kijkt tot hier, verandert niets"
+                          ? t("Kijkt tot hier, verandert niets")
                           : doelwit === "geen"
-                            ? "Geen specifiek doelwit"
-                            : `Grijpt aan op ${DOELWITTEN[doelwit].naam.toLowerCase()}`}
+                            ? t("Geen specifiek doelwit")
+                            : `${t("Grijpt aan op")} ${tc(
+                                DOELWITTEN[doelwit].naam,
+                              ).toLowerCase()}`}
                       </span>
                     </span>
 
@@ -231,10 +239,10 @@ export default function Dieptevergelijker() {
               />
               <span className="text-[13px] leading-5 text-[var(--t-body)]">
                 <span className="font-medium text-[var(--t-strong)]">
-                  {HUIDLAGEN[i].naam}
+                  {tc(HUIDLAGEN[i].naam)}
                 </span>{" "}
                 <span className="text-[var(--t-muted)] tabular-nums">
-                  {Math.round(vanaf)} tot {Math.round(vanaf + deel)}
+                  {Math.round(vanaf)} {t("tot")} {Math.round(vanaf + deel)}
                 </span>
               </span>
             </li>
@@ -244,9 +252,9 @@ export default function Dieptevergelijker() {
 
       {/* [MEDISCHE-CHECK-ROJDA]: de dieptewaarden waarop deze hele as rust. */}
       <p className="mt-6 max-w-[62ch] text-[13px] leading-6 text-[var(--t-muted)]">
-        Het getal is een verhouding en geen millimeter: hoe diep een apparaat
-        komt hangt af van de instelling en van jouw huid. Waar het om gaat is de
-        volgorde.
+        {t(
+          "Het getal is een verhouding en geen millimeter: hoe diep een apparaat komt hangt af van de instelling en van jouw huid. Waar het om gaat is de volgorde.",
+        )}
       </p>
 
       {/* ── Wat de mechanieken zijn ── */}
@@ -272,19 +280,19 @@ export default function Dieptevergelijker() {
             >
               <span className="diba-label text-[var(--t-label)]">
                 {tellingen.get(m.id)}{" "}
-                {tellingen.get(m.id) === 1 ? "apparaat" : "apparaten"}
+                {tellingen.get(m.id) === 1 ? t("apparaat") : t("apparaten")}
               </span>
               <span className="mt-2 block text-[17px] leading-6 font-medium text-[var(--t-strong)]">
-                {m.label}
+                {tc(m.label)}
               </span>
               <span className="mt-2 block text-[15px] leading-7 text-[var(--t-body)]">
-                {publicCopy(m.zin)}
+                {tc(m.zin)}
               </span>
               {doelwitten.length > 0 ? (
                 <span className="mt-4 block pt-3 text-[13px] leading-5 text-[var(--t-muted)]">
-                  Grijpt aan op{" "}
+                  {t("Grijpt aan op")}{" "}
                   {doelwitten
-                    .map((d) => DOELWITTEN[d].naam.toLowerCase())
+                    .map((d) => tc(DOELWITTEN[d].naam).toLowerCase())
                     .join(", ")}
                 </span>
               ) : null}
@@ -307,6 +315,8 @@ function Chip({
   readonly label: string;
   readonly telling: number;
 }) {
+  const tc = useTc();
+  const t = useT();
   return (
     <button
       type="button"
@@ -318,7 +328,7 @@ function Chip({
           : "bg-white text-[var(--t-label)] hover:bg-[var(--g-100)]"
       }`}
     >
-      {label}
+      {tc(label)}
       <span
         className={
           actief ? "text-[var(--on-dark-body)]" : "text-[var(--t-muted)]"

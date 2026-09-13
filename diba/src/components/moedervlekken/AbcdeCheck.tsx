@@ -10,6 +10,7 @@ import {
   type Criterium,
 } from "@/data/moedervlekken";
 import { publicCopy } from "@/lib/copy-flags";
+import { useTc, useT } from "@/lib/gebruik-taal";
 
 /**
  * De ABCDE-check — de uitblinker van de moedervlekkenpagina, en de enige op de site
@@ -64,6 +65,8 @@ function Vorm({
   variant: Keuze;
   uid: string;
 }) {
+  const t = useT();
+  const tc = useTc();
   const opvallend = variant === "opvallend";
   const vulling = "var(--t-strong)";
   const dekking = 0.45;
@@ -232,6 +235,8 @@ function Vorm({
 }
 
 export default function AbcdeCheck() {
+  const t = useT();
+  const tc = useTc();
   const [antwoorden, setAntwoorden] = useState<Antwoorden>({});
   const uid = useId().replace(/:/g, "");
 
@@ -248,13 +253,14 @@ export default function AbcdeCheck() {
         {PUNTEN.map((p) => {
           const k = sleutel(p);
           const gekozen = antwoorden[k];
-          const naam = "letter" in p ? `${p.letter}: ${p.naam}` : p.naam;
+          const naam =
+            "letter" in p ? `${p.letter}: ${tc(p.naam)}` : tc(p.naam);
 
           return (
             <li key={k} className="bg-white p-6 sm:p-8">
               <Label>{naam}</Label>
               <p className="mt-3 max-w-[62ch] text-[16px] leading-7 text-[var(--t-strong)]">
-                {p.vraag}
+                {tc(p.vraag)}
               </p>
 
               <div className="mt-5 grid gap-3 sm:grid-cols-2">
@@ -276,7 +282,7 @@ export default function AbcdeCheck() {
                     >
                       <Vorm punt={k} variant={variant} uid={uid} />
                       <span className="text-[15px] leading-6 text-[var(--t-body)]">
-                        {p[variant]}
+                        {tc(p[variant])}
                       </span>
                     </button>
                   );
@@ -284,7 +290,7 @@ export default function AbcdeCheck() {
               </div>
 
               <p className="mt-4 rounded-[var(--r-sm)] bg-[var(--g-025)] p-4 text-sm leading-6 text-[var(--t-muted)]">
-                {publicCopy(p.uitleg)}
+                {tc(p.uitleg)}
               </p>
             </li>
           );
@@ -298,11 +304,13 @@ export default function AbcdeCheck() {
       >
         {!compleet ? (
           <>
-            <Label>{`${beantwoord} van ${PUNTEN.length} beantwoord`}</Label>
+            <Label>{`${beantwoord} ${t("van")} ${PUNTEN.length} ${t(
+              "beantwoord",
+            )}`}</Label>
             <p className="mt-4 max-w-[70ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Loop de punten hierboven langs. Wat je ook invult, de uitkomst van
-              deze check is nooit een oordeel over jouw plekje: hij helpt je
-              alleen te bepalen of je ermee naar de huisarts gaat.
+              {t(
+                "Loop de punten hierboven langs. Wat je ook invult, de uitkomst van deze check is nooit een oordeel over jouw plekje: hij helpt je alleen te bepalen of je ermee naar de huisarts gaat.",
+              )}
             </p>
           </>
         ) : (
@@ -312,31 +320,30 @@ export default function AbcdeCheck() {
             >
               {opvallend > 0
                 ? `${opvallend} van ${PUNTEN.length} punten vielen op`
-                : "Geen van de punten viel op"}
+                : t("Geen van de punten viel op")}
             </Label>
-            <h3 className="diba-card-title-lg mt-4">{uitkomst.kop}</h3>
+            <h3 className="diba-card-title-lg mt-4">{tc(uitkomst.kop)}</h3>
             <p className="mt-4 max-w-[70ch] text-[16px] leading-7 text-[var(--t-body)]">
-              {uitkomst.tekst}
+              {tc(uitkomst.tekst)}
             </p>
             <p className="mt-4 max-w-[70ch] text-[16px] leading-7 text-[var(--t-strong)]">
-              {uitkomst.advies}
+              {tc(uitkomst.advies)}
             </p>
             <button
               type="button"
               onClick={() => setAntwoorden({})}
               className="diba-label mt-7 underline underline-offset-4 hover:text-[var(--g-700)]"
             >
-              Check opnieuw doen
+              {t("Check opnieuw doen")}
             </button>
           </>
         )}
       </div>
 
       <p className="mt-5 max-w-[80ch] text-sm leading-6 text-[var(--t-muted)]">
-        Deze check is voorlichting en geen medisch onderzoek. Hij kan niet zien
-        wat een arts met een dermatoscoop wel ziet, en hij kan dus ook niets
-        uitsluiten. Bij twijfel geldt altijd hetzelfde advies: laat het
-        nakijken.
+        {t(
+          "Deze check is voorlichting en geen medisch onderzoek. Hij kan niet zien wat een arts met een dermatoscoop wel ziet, en hij kan dus ook niets uitsluiten. Bij twijfel geldt altijd hetzelfde advies: laat het nakijken.",
+        )}
       </p>
     </div>
   );

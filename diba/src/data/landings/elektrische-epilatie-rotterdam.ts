@@ -33,18 +33,18 @@ import {
  */
 
 const EE = behandeling("elektrische-epilatie");
-const KWARTIER = variantPrijs("elektrische-epilatie", "Per kwartier");
+const HALFUUR = variantPrijs("elektrische-epilatie", "Per 30 minuten");
 
 export const ELEKTRISCHE_EPILATIE_ROTTERDAM: Landing = {
   slug: "elektrische-epilatie-rotterdam",
   gewijzigd: "2026-09-11",
   titel: "Elektrische epilatie Rotterdam",
-  omschrijving: `Elektrische epilatie in Rotterdam: haar voor haar, ook grijs, wit en licht blond haar waar de laser niet op werkt. ${euro(KWARTIER)} per kwartier.`,
+  omschrijving: `Elektrische epilatie in Rotterdam: haar voor haar, ook grijs, wit en licht blond haar waar de laser niet op werkt. ${euro(HALFUUR)} per half uur.`,
   kruimel: "Elektrische epilatie",
   h1: { kop: "Elektrische", accent: "epilatie" },
-  antwoord: `Elektrische epilatie is een ontharingsmethode waarbij een dun naaldje langs de haar de wortel bereikt en die met een korte stroomstoot uitschakelt, haar voor haar. Omdat kleur er niet toe doet, werkt het ook op grijs, wit en licht blond haar waar de laser niet op reageert. Bij Diba Clinics in Rotterdam kost het ${euro(KWARTIER)} per kwartier. [MEDISCHE-CHECK-ROJDA]`,
+  antwoord: `Elektrische epilatie is een ontharingsmethode waarbij een dun naaldje langs de haar de wortel bereikt en die met een korte stroomstoot uitschakelt, haar voor haar. Omdat kleur er niet toe doet, werkt het ook op grijs, wit en licht blond haar waar de laser niet op reageert. Bij Diba Clinics in Rotterdam kost het ${euro(HALFUUR)} per half uur behandeltijd. [MEDISCHE-CHECK-ROJDA]`,
   feiten: [
-    { kop: "Tarief", waarde: `${euro(KWARTIER)} per kwartier` },
+    { kop: "Tarief", waarde: `${euro(HALFUUR)} per half uur` },
     { kop: "Haarkleur", waarde: "Elke kleur" },
     { kop: "Gebied", waarde: "Klein, per haar" },
     { kop: "Hersteltijd", waarde: "Een paar uur rood" },
@@ -99,9 +99,9 @@ export const ELEKTRISCHE_EPILATIE_ROTTERDAM: Landing = {
     kop: "Wat epilatie",
     accent: "bij ons kost",
     intro:
-      "Het tarief gaat per kwartier, want het hangt af van hoeveel haren er staan. De intakeregeling staat er compleet bij.",
-    rijen: [{ naam: "Elektrische epilatie, per kwartier", prijs: KWARTIER }],
-    zin: "Hoeveel kwartieren je nodig hebt, hangt af van het gebied en van het aantal haren. Dat schatten we bij de intake in, en na de eerste afspraak weet je het beter. [MEDISCHE-CHECK-ROJDA]",
+      "Het tarief gaat per half uur behandeltijd, want het hangt af van hoeveel haren er staan. De intakeregeling staat er compleet bij.",
+    rijen: [{ naam: "Elektrische epilatie, per 30 minuten", prijs: HALFUUR }],
+    zin: "Hoeveel tijd je nodig hebt, hangt af van het gebied en van het aantal haren. Dat schatten we bij de intake in, en na de eerste afspraak weet je het beter. [MEDISCHE-CHECK-ROJDA]",
     afspraak: afspraakBlokken({
       naam: "de eerste epilatie",
       duurMinuten: EE.duurMinuten,
@@ -159,7 +159,7 @@ export const ELEKTRISCHE_EPILATIE_ROTTERDAM: Landing = {
   faq: [
     {
       vraag: "Wat kost elektrische epilatie in Rotterdam?",
-      antwoord: `Bij Diba Clinics kost elektrische epilatie ${euro(KWARTIER)} per kwartier. Hoeveel kwartieren je nodig hebt, hangt af van het gebied en het aantal haren. Kom je voor het eerst, dan begint je afspraak met een intake van ${euro(INTAKE_PRIJS)}, die vervalt als we in dezelfde afspraak behandelen.`,
+      antwoord: `Bij Diba Clinics kost elektrische epilatie ${euro(HALFUUR)} per half uur behandeltijd, zoals het ook in de agenda staat. Hoeveel tijd je nodig hebt, hangt af van het gebied en het aantal haren. Kom je voor het eerst, dan begint je afspraak met een intake van ${euro(INTAKE_PRIJS)}, die vervalt als we in dezelfde afspraak behandelen.`,
     },
     {
       vraag: "Waarom werkt de laser niet op grijs haar?",

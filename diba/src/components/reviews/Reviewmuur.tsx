@@ -7,6 +7,10 @@ import {
 } from "@/data/salonized-reviews";
 import Sterren from "@/components/ui/Sterren";
 import { REVIEW_TOPICS } from "@/data/reviews";
+import { useTaal, useTc, useT } from "@/lib/gebruik-taal";
+import { relatieveDatum } from "@/lib/relatieve-datum";
+import { reviewtekst } from "@/lib/reviewtaal";
+import Vertaaldnoot from "@/components/reviews/Vertaaldnoot";
 
 /**
  * De reviewmuur.
@@ -45,6 +49,9 @@ const ONDERWERPEN = REVIEW_TOPICS.map((t) => ({
 }));
 
 export default function Reviewmuur() {
+  const t = useT();
+  const tc = useTc();
+  const taal = useTaal();
   const [gekozen, setGekozen] = useState<SalonizedReviewTopic | "alles">(
     "alles",
   );
@@ -76,7 +83,7 @@ export default function Reviewmuur() {
       {/* Het filter. Het aantal staat erbij, ook als dat aantal tegenvalt. */}
       <div
         role="group"
-        aria-label="Filter reviews op onderwerp"
+        aria-label={tc("Filter reviews op onderwerp")}
         className="flex flex-wrap gap-2"
       >
         {ONDERWERPEN.map((o) => {
@@ -95,7 +102,7 @@ export default function Reviewmuur() {
                   : "bg-white text-[var(--g-900)] hover:bg-[var(--g-100)]"
               }`}
             >
-              {o.label}
+              {tc(o.label)}
               <span
                 className={`rounded-[var(--r-pill)] px-2 py-1 text-[12px] leading-none tabular-nums ${
                   aan
@@ -117,23 +124,29 @@ export default function Reviewmuur() {
       >
         {gekozen === "alles" ? (
           <>
-            Alle {zichtbaar.length} reviews die we van Salonized hebben
-            overgenomen, in de volgorde waarin ze daar staan.
+            {t("Alle")} {zichtbaar.length}{" "}
+            {t(
+              "reviews die we van Salonized hebben overgenomen, in de volgorde waarin ze daar staan.",
+            )}
           </>
         ) : zichtbaar.length < 5 ? (
           <>
-            {zichtbaar.length} {zichtbaar.length === 1 ? "review" : "reviews"}{" "}
-            over {gekozenLabel.toLowerCase()}. Dat is te weinig om iets uit af
-            te leiden, en daarom staat het aantal op de knop en niet in de
-            kleine letters.
+            {zichtbaar.length}{" "}
+            {zichtbaar.length === 1 ? t("review") : t("reviews")} {t("over")}{" "}
+            {tc(gekozenLabel).toLowerCase()}
+            {t(
+              ". Dat is te weinig om iets uit af te leiden, en daarom staat het aantal op de knop en niet in de kleine letters.",
+            )}
           </>
         ) : (
           <>
-            {zichtbaar.length} reviews waarin {gekozenLabel.toLowerCase()} ter
-            sprake komt.
+            {zichtbaar.length} {t("reviews waarin")}{" "}
+            {tc(gekozenLabel).toLowerCase()} {t("ter sprake komt.")}
           </>
         )}
       </p>
+
+      <Vertaaldnoot className="mt-2" />
 
       {/* De muur. Kolommen zodat korte en lange quotes naast elkaar passen. */}
       <ul className="mt-8 gap-4 sm:columns-2 xl:columns-3 [&>li]:mb-4 [&>li]:break-inside-avoid">
@@ -141,7 +154,7 @@ export default function Reviewmuur() {
           <li key={r.id} className="rounded-[var(--r-lg)] bg-white p-7 sm:p-8">
             <Sterren />
             <blockquote className="mt-5 text-[16px] leading-7 text-[var(--t-strong)]">
-              {r.quote}
+              {reviewtekst(r.quote, r.quoteEn, taal)}
             </blockquote>
             <div className="mt-6 flex flex-wrap items-baseline gap-x-3 gap-y-1">
               <span className="text-[15px] leading-6 font-medium text-[var(--t-strong)]">
@@ -149,12 +162,12 @@ export default function Reviewmuur() {
               </span>
               {r.relativeDate ? (
                 <span className="text-[14px] leading-6 text-[var(--t-muted)]">
-                  {r.relativeDate}
+                  {relatieveDatum(r.relativeDate, taal)}
                 </span>
               ) : null}
             </div>
             <p className="diba-label mt-4 inline-flex rounded-[var(--r-pill)] bg-[var(--g-050)] px-4 py-2 text-[var(--t-label)]">
-              {r.treatment}
+              {tc(r.treatment)}
             </p>
           </li>
         ))}

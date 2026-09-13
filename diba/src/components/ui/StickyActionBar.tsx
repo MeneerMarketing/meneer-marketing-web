@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { figmaBtnMint, figmaBtnPrimary } from "@/lib/figma-home-layout";
+import { useTc } from "@/lib/gebruik-taal";
 
 /**
  * Mobiele sticky balk op behandel- en pillarpagina's.
@@ -22,6 +23,7 @@ export default function StickyActionBar({
   questionLabel = "Vraag stellen",
   intakeLabel = "Start je intake",
 }: StickyActionBarProps) {
+  const tc = useTc();
   const [visible, setVisible] = useState(false);
   const lastY = useRef(0);
 
@@ -58,13 +60,13 @@ export default function StickyActionBar({
           rel="noopener noreferrer"
           className={`${figmaBtnMint} block py-3.5 text-center text-[10px]`}
         >
-          {questionLabel}
+          {tc(questionLabel)}
         </Link>
         <Link
           href={intakeHref}
           className={`${figmaBtnPrimary} block py-3.5 text-center text-[10px]`}
         >
-          {intakeLabel}
+          {tc(intakeLabel)}
         </Link>
       </div>
     </div>

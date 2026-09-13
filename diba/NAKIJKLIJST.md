@@ -1,6 +1,6 @@
 # Nakijklijst Diba Clinics
 
-*Automatisch gegenereerd op 12 september 2026. Draai `npm run nakijklijst` voor een verse versie.*
+*Automatisch gegenereerd op 13 september 2026. Draai `npm run nakijklijst` voor een verse versie.*
 
 Dit is alles wat er op de site staat en nog bevestigd moet worden. Het is met opzet
 ingevuld en niet leeggelaten: een lege pagina laat zich niet beoordelen en een site met
@@ -11,10 +11,10 @@ wat hier nagekeken moet worden.
 `PRIJS-NODIG` staat er wél iets op de site. Wie die regels overslaat publiceert dus geen
 leeg veld maar een verzonnen getal.
 
-**Totaal: 986 regels.**
+**Totaal: 985 regels.**
 
 
-## Voor Okan (53)
+## Voor Okan (52)
 
 ### GEGEVEN-NODIG (27)
 
@@ -23,7 +23,7 @@ Er staat een werkbare aanname. Bevestig hem of geef het juiste getal.
 **/contact** (1)
 
 - })), ]; /* Voorlopige tekst: de reistijden en de lijnnummers horen door de kliniek bevestigd te worden voordat de site live gaat. */
-  <sub>src/app/contact/page.tsx:110</sub>
+  <sub>src/app/(nl)/contact/page.tsx:111</sub>
 
 **Inhoud: apparatuur** (1)
 
@@ -130,18 +130,18 @@ Er staat een werkbare aanname. Bevestig hem of geef het juiste getal.
 **Inhoud: vacatures** (1)
 
 - Die bespreken we in het eerste gesprek, samen met de uren en de startdatum.
-  <sub>src/data/vacatures.ts:155</sub>
+  <sub>src/data/vacatures.ts:156</sub>
 
 **Inhoud: veroudering** (1)
 
 - Zolang de oorzaak niet doorloopt. Zonder bescherming bouwt de zonschade gewoon verder en dan zie je hetzelfde terugkomen; met bescherming houden mensen het meestal een tot twee jaar vol voordat er onderhoud nodig is. Dat is een ervaringsgetal en geen meting, en zo staat het er dan ook.
   <sub>src/data/veroudering.ts:288</sub>
 
-### PRIJS-NODIG (22)
+### PRIJS-NODIG (21)
 
 Er staat een werkbaar bedrag. Bevestig het of geef het juiste tarief.
 
-**Inhoud: behandelingen** (17)
+**Inhoud: behandelingen** (16)
 
 - Dat hangt af van het aantal sessies dat bij jou past, en dat stellen we tijdens de intake vast. De intake kost € 50 en dat bedrag gaat eraf zodra je in dezelfde afspraak behandeld wordt.
   <sub>src/data/behandelingen.ts:1197</sub>
@@ -163,8 +163,6 @@ Er staat een werkbaar bedrag. Bevestig het of geef het juiste tarief.
   <sub>src/data/behandelingen.ts:2270</sub>
 - Dat hangt af van de duur van het traject, en dat stellen we tijdens de intake vast.
   <sub>src/data/behandelingen.ts:2335</sub>
-- Dat hangt af van het gebied en van hoeveel haren er staan, en dat stellen we tijdens de intake vast.
-  <sub>src/data/behandelingen.ts:2930</sub>
 - Dat hoor je tijdens de intake, samen met of een losse behandeling of het traject bij jou past.
   <sub>src/data/behandelingen.ts:3130</sub>
 - Het traject van drie maanden staat als één bedrag op de tarievenpagina, inclusief de controles en de producten. Er komt niets bij aan de balie.
@@ -237,14 +235,14 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 **/huidproblemen/pigmentvlekken** (1)
 
 - {[ De EVE-M-meting legt vast hoe donker en hoe uitgebreid het pigment is voordat we beginnen. Bij pigment meten we per seizoen in plaats van per sessie, omdat het beeld met het jaar meebeweegt., Net zo belangrijk is hoe diep het zit. Pigment kan in de opperhuid liggen (epidermaal), in de lederhui...
-  <sub>src/app/huidproblemen/pigmentvlekken/page.tsx:278</sub>
+  <sub>src/app/(nl)/huidproblemen/pigmentvlekken/page.tsx:282</sub>
 
 **/privacybeleid** (2)
 
 - Wettelijk verplicht op grond van de WGBO (artikel 7:454 BW), gerekend vanaf de laatste wijziging in het dossier. Dit is geen termijn die wij korter mogen maken.
-  <sub>src/app/privacybeleid/page.tsx:137</sub>
+  <sub>src/app/(nl)/privacybeleid/page.tsx:137</sub>
 - Die horen bij het dossier en vallen onder dezelfde plicht. Fotos die je ons apart hebt toegestaan te gebruiken buiten je dossier, verwijderen wij zodra je die toestemming intrekt.
-  <sub>src/app/privacybeleid/page.tsx:143</sub>
+  <sub>src/app/(nl)/privacybeleid/page.tsx:143</sub>
 
 **Inhoud: acne** (12)
 
@@ -929,23 +927,23 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
 - Kleine korstjes die in dagen verdwijnen.
   <sub>src/data/behandelingen.ts:3600</sub>
 - [ Haalt goedaardige steelwratjes weg, meestal in hals, oksels of liezen
-  <sub>src/data/behandelingen.ts:3605</sub>
+  <sub>src/data/behandelingen.ts:3607</sub>
 - [ Verandert een plekje, dan beoordeelt eerst een arts of dermatoloog
-  <sub>src/data/behandelingen.ts:3610</sub>
-- [ Verandert een plekje, dan beoordeelt eerst een arts of dermatoloog , Wie ze aanmaakt blijft ze aanmaken, dus er kunnen nieuwe bij komen, Er blijft een klein plekje achter dat langzaam vervaagt
   <sub>src/data/behandelingen.ts:3612</sub>
+- [ Verandert een plekje, dan beoordeelt eerst een arts of dermatoloog , Wie ze aanmaakt blijft ze aanmaken, dus er kunnen nieuwe bij komen, Er blijft een klein plekje achter dat langzaam vervaagt
+  <sub>src/data/behandelingen.ts:3614</sub>
 - [ Dit is geen huidbehandeling. Er wordt een klein beetje bloed afgenomen en dat gaat naar een laboratorium; in de kliniek zelf ben je binnen een kwartier klaar., De uitslag bespreken we in een aparte afspraak, want een lijst met waardes zonder uitleg leidt vooral tot onnodig schrappen in je eten....
-  <sub>src/data/behandelingen.ts:3656</sub>
+  <sub>src/data/behandelingen.ts:3658</sub>
 - Een test die in kaart brengt op welke voedingsmiddelen je lichaam reageert. Het is geen huidbehandeling, maar de uitslag geeft soms een verklaring voor wat er op je huid gebeurt.
-  <sub>src/data/behandelingen.ts:3663</sub>
+  <sub>src/data/behandelingen.ts:3665</sub>
 - [ Brengt in kaart op welke voedingsmiddelen je lichaam reageert
-  <sub>src/data/behandelingen.ts:3668</sub>
+  <sub>src/data/behandelingen.ts:3670</sub>
 - [ Voor een allergietest of een diagnose ben je bij een arts
-  <sub>src/data/behandelingen.ts:3673</sub>
-- [ Voor een allergietest of een diagnose ben je bij een arts , Aan je huid zelf gebeurt hier niets; dat is een aparte afspraak, Of je huid opknapt van weglaten, verschilt per persoon
   <sub>src/data/behandelingen.ts:3675</sub>
+- [ Voor een allergietest of een diagnose ben je bij een arts , Aan je huid zelf gebeurt hier niets; dat is een aparte afspraak, Of je huid opknapt van weglaten, verschilt per persoon
+  <sub>src/data/behandelingen.ts:3677</sub>
 - Ook dat is een bruikbare uitkomst: je weet dan dat je verder moet zoeken dan je voeding.
-  <sub>src/data/behandelingen.ts:3700</sub>
+  <sub>src/data/behandelingen.ts:3702</sub>
 
 **Inhoud: chemische-peeling-rotterdam** (19)
 
@@ -1166,7 +1164,7 @@ Medische bewering. Klopt hij, en mag hij in deze bewoording op de site?
   <sub>src/data/landings/elektrische-epilatie-rotterdam.ts:71</sub>
 - [ Heeft een deel van je haar nog kleur, dan begin je met een laserkuur. De laser pakt in één flits een heel vlak aan en werkt daardoor veel sneller dan haar voor haar. Wat daarna blijft staan, meestal de lichte of grijze haren, gaat met elektrische epilatie. Zo betaal je niet per haar voor wat sn...
   <sub>src/data/landings/elektrische-epilatie-rotterdam.ts:86</sub>
-- Hoeveel kwartieren je nodig hebt, hangt af van het gebied en van het aantal haren. Dat schatten we bij de intake in, en na de eerste afspraak weet je het beter.
+- Hoeveel tijd je nodig hebt, hangt af van het gebied en van het aantal haren. Dat schatten we bij de intake in, en na de eerste afspraak weet je het beter.
   <sub>src/data/landings/elektrische-epilatie-rotterdam.ts:104</sub>
 - [ Grijs, wit en heel licht blond haar, waar de laser niet op werkt, De losse haren die na een laserkuur zijn blijven staan, Kleine gebieden waar precisie telt, zoals kin, bovenlip en wenkbrauw, Wie geen laser kan of wil, bijvoorbeeld door het huidtype
   <sub>src/data/landings/elektrische-epilatie-rotterdam.ts:118</sub>

@@ -8,6 +8,7 @@ import {
   type GolflengteId,
 } from "@/data/gentlemax";
 import { FITZPATRICK_TYPES, type FitzpatrickId } from "@/data/laser-zones";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * Het golflengtevenster.
@@ -88,6 +89,8 @@ const PIGMENT: Record<FitzpatrickId, number> = {
 };
 
 export default function Golflengtevenster() {
+  const tc = useTc();
+  const t = useT();
   const [type, setType] = useState<FitzpatrickId>("III");
   const id = useId();
 
@@ -122,20 +125,26 @@ export default function Golflengtevenster() {
    */
   const bijschrift =
     keuze.kies === "755"
-      ? "Er zit weinig pigment in de bovenlaag om onderweg op te nemen, dus de 755 komt tot bij de wortel. Dat is meteen de reden dat hij hier de krachtigste van de twee is."
+      ? t(
+          "Er zit weinig pigment in de bovenlaag om onderweg op te nemen, dus de 755 komt tot bij de wortel. Dat is meteen de reden dat hij hier de krachtigste van de twee is.",
+        )
       : keuze.kies === "1064"
-        ? "Kijk waar de 755 stopt. Het pigment in de bovenlaag neemt hem op, dus er komt niets bij de wortel aan en de warmte blijft achter in de huid. Daarom werken we hier met de 1064."
+        ? t(
+            "Kijk waar de 755 stopt. Het pigment in de bovenlaag neemt hem op, dus er komt niets bij de wortel aan en de warmte blijft achter in de huid. Daarom werken we hier met de 1064.",
+          )
         : "Hier ligt het op de grens. De bovenlaag neemt al een deel van de 755 op, en of dat te veel is hangt af van hoe jouw huid op zon reageert. Dat bepalen we bij de intake en niet op deze pagina.";
 
   return (
     <div className="grid gap-4 lg:grid-cols-[0.95fr_1.05fr]">
       {/* Kiezer plus tekening. */}
       <div className="rounded-[var(--r-lg)] bg-white p-7 sm:p-9">
-        <p className="diba-label text-[var(--t-label)]">Kies je huidtype</p>
+        <p className="diba-label text-[var(--t-label)]">
+          {t("Kies je huidtype")}
+        </p>
         <p className="mt-3 max-w-[46ch] text-[15px] leading-7 text-[var(--t-body)]">
-          De schaal van Fitzpatrick gaat over hoe je huid op zon reageert, niet
-          over hoe hij eruitziet. Weet je het niet zeker, dan wordt hij bij de
-          intake bepaald.
+          {t(
+            "De schaal van Fitzpatrick gaat over hoe je huid op zon reageert, niet over hoe hij eruitziet. Weet je het niet zeker, dan wordt hij bij de intake bepaald.",
+          )}
         </p>
 
         <div
@@ -144,7 +153,7 @@ export default function Golflengtevenster() {
           className="mt-6 flex flex-wrap gap-2"
         >
           <span id={`${id}-kop`} className="sr-only">
-            Fitzpatrick huidtype
+            {t("Fitzpatrick huidtype")}
           </span>
           {FITZPATRICK_TYPES.map((t) => {
             const aan = t.id === type;
@@ -167,14 +176,14 @@ export default function Golflengtevenster() {
           })}
         </div>
         <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
-          {FITZPATRICK_TYPES.find((t) => t.id === type)?.description}
+          {tc(FITZPATRICK_TYPES.find((f) => f.id === type)?.description ?? "")}
         </p>
 
         {/* De doorsnede. */}
         <svg
           viewBox="0 0 270 210"
           role="img"
-          aria-label={`Doorsnede van de huid. Bij huidtype ${type} wordt gewerkt met ${actief.map((a) => `${golflengte(a).nm} nanometer`).join(" of ")}. ${bijschrift}`}
+          aria-label={`${t("Doorsnede van de huid. Bij huidtype")} ${type} ${t("wordt gewerkt met")} ${actief.map((a) => `${golflengte(a).nm} ${t("nanometer")}`).join(` ${t("of")} `)}. ${bijschrift}`}
           className="mt-8 w-full"
         >
           <defs>
@@ -271,14 +280,14 @@ export default function Golflengtevenster() {
             y={OPPERVLAK - 8}
             className="fill-[var(--t-label)] text-[9px] tracking-[.14em] uppercase"
           >
-            Bovenlaag met pigment
+            {t("Bovenlaag met pigment")}
           </text>
           <text
             x="10"
             y={diepteY(WORTEL) - 8}
             className="fill-[var(--t-label)] text-[9px] tracking-[.14em] uppercase"
           >
-            Haarwortel
+            {t("Haarwortel")}
           </text>
         </svg>
 
@@ -286,10 +295,10 @@ export default function Golflengtevenster() {
           className="mt-4 rounded-[var(--r-sm)] bg-[var(--g-025)] p-4 text-[15px] leading-7 text-[var(--t-body)]"
           aria-live="polite"
         >
-          {bijschrift}
+          {tc(bijschrift)}
         </p>
         <p className="mt-3 text-[13px] leading-6 text-[var(--t-muted)]">
-          Schematisch. De verhoudingen kloppen niet op de millimeter.
+          {t("Schematisch. De verhoudingen kloppen niet op de millimeter.")}
         </p>
       </div>
 
@@ -297,20 +306,20 @@ export default function Golflengtevenster() {
       <div className="flex flex-col gap-4">
         <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-7 text-[var(--on-dark)] sm:p-9">
           <p className="diba-label diba-label-on-dark">
-            Bij huidtype {type} werken we met
+            {t("Bij huidtype")} {type} {t("werken we met")}
           </p>
           <p className="mt-4 text-[34px] leading-none font-medium tracking-[-.05em]">
             {keuze.kies === "beide"
-              ? "Allebei, dat hangt af van jou"
+              ? t("Allebei, dat hangt af van jou")
               : `${golflengte(keuze.kies).nm} nm`}
           </p>
           {keuze.kies !== "beide" ? (
             <p className="mt-2 text-[17px] leading-7 text-[var(--on-dark-accent)]">
-              {golflengte(keuze.kies).naam}
+              {tc(golflengte(keuze.kies).naam)}
             </p>
           ) : null}
           <p className="mt-5 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-            {keuze.waarom}
+            {tc(keuze.waarom)}
           </p>
         </div>
 
@@ -334,17 +343,17 @@ export default function Golflengtevenster() {
                 <p
                   className={`mt-2 text-[15px] leading-6 ${aan ? "text-[var(--g-900)]" : "text-[var(--t-body)]"}`}
                 >
-                  {g.naam}
+                  {tc(g.naam)}
                 </p>
                 <p
                   className={`mt-4 text-[14px] leading-6 ${aan ? "text-[var(--g-900)]" : "text-[var(--t-muted)]"}`}
                 >
-                  {g.opname}
+                  {tc(g.opname)}
                 </p>
                 <p
                   className={`mt-4 text-[15px] leading-7 ${aan ? "text-[var(--g-900)]" : "text-[var(--t-body)]"}`}
                 >
-                  {g.sterk}
+                  {tc(g.sterk)}
                 </p>
                 <p
                   className={`mt-4 rounded-[var(--r-md)] p-4 text-[14px] leading-6 ${
@@ -354,9 +363,9 @@ export default function Golflengtevenster() {
                   }`}
                 >
                   <span className="diba-label block text-[var(--t-label)]">
-                    De keerzijde
+                    {t("De keerzijde")}
                   </span>
-                  <span className="mt-2 block">{g.zwak}</span>
+                  <span className="mt-2 block">{tc(g.zwak)}</span>
                 </p>
               </li>
             );

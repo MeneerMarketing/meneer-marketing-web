@@ -1,11 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import DibaLogo from "@/components/ui/DibaLogo";
 import { HOOFDNAV, type NavItem } from "@/data/hoofdnavigatie";
+import { useT, useTc } from "@/lib/gebruik-taal";
 import {
   DIBA_OPENINGSTIJDEN,
   DIBA_TELEFOON_HREF,
@@ -89,6 +90,7 @@ const VORM: Record<"opBeeld" | "opWit", Vormgeving> = {
 };
 
 export default function HoofdNav({ opBeeld = false }: { opBeeld?: boolean }) {
+  const t = useT();
   const v = VORM[opBeeld ? "opBeeld" : "opWit"];
   const [open, setOpen] = useState<string | null>(null);
   const [mobielOpen, setMobielOpen] = useState(false);
@@ -177,7 +179,7 @@ export default function HoofdNav({ opBeeld = false }: { opBeeld?: boolean }) {
           <Link
             prefetch={false}
             href="/"
-            aria-label="Diba Clinics, naar de homepage"
+            aria-label={t("Diba Clinics, naar de homepage")}
             className="shrink-0 rounded-[var(--r-sm)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-current"
           >
             <DibaLogo variant={v.logo} priority={opBeeld} />
@@ -185,7 +187,7 @@ export default function HoofdNav({ opBeeld = false }: { opBeeld?: boolean }) {
 
           {/* Alles rechts: menu en knop in één blok tegen de rand. */}
           <div className="flex items-center gap-2 lg:gap-6">
-            <nav aria-label="Hoofdnavigatie" className="hidden lg:block">
+            <nav aria-label={t("Hoofdnavigatie")} className="hidden lg:block">
               <ul className="flex items-center gap-1">
                 {HOOFDNAV.map((item) => (
                   <li key={item.label}>
@@ -207,14 +209,14 @@ export default function HoofdNav({ opBeeld = false }: { opBeeld?: boolean }) {
               href="/afspraak"
               className={`diba-label hidden h-11 shrink-0 items-center gap-2 rounded-[var(--r-pill)] px-5 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:inline-flex ${v.knop}`}
             >
-              Afspraak maken
+              {t("Afspraak maken")}
               <Pijl />
             </Link>
 
             <button
               type="button"
               aria-expanded={mobielOpen}
-              aria-label={mobielOpen ? "Menu sluiten" : "Menu openen"}
+              aria-label={mobielOpen ? t("Menu sluiten") : t("Menu openen")}
               onClick={() => setMobielOpen((b) => !b)}
               className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-[var(--r-pill)] border transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 lg:hidden ${v.hamburger}`}
             >
@@ -265,6 +267,7 @@ export default function HoofdNav({ opBeeld = false }: { opBeeld?: boolean }) {
 }
 
 function Pijl() {
+  const t = useT();
   return (
     <svg
       viewBox="0 0 16 16"
@@ -306,6 +309,7 @@ function NavKnop({
   open: boolean;
   onOpen: () => void;
 }) {
+  const t = useT();
   /* Krapper op de smalste desktopmaat. Met kapitalen groeide de balk zo ver dat de knop
      "Afspraak maken" bij 1024 breed tot 1046 liep, dus tweeëntwintig pixels buiten beeld.
      Precies bij het breekpunt waarop deze navigatie verschijnt. Van px-3 naar px-2 scheelt
@@ -321,7 +325,7 @@ function NavKnop({
         onMouseEnter={onOpen}
         onFocus={onOpen}
       >
-        {item.label}
+        {t(item.label)}
       </Link>
     );
   }
@@ -335,7 +339,7 @@ function NavKnop({
       onClick={onOpen}
       className={`${basis} ${open ? vorm.itemOpen : ""}`}
     >
-      {item.label}
+      {t(item.label)}
       <svg
         viewBox="0 0 12 12"
         className={`h-2.5 w-2.5 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
@@ -375,6 +379,8 @@ function Paneel({
   vorm: Vormgeving;
   onSluit: () => void;
 }) {
+  const tc = useTc();
+  const t = useT();
   /**
    * Het aantal kolommen volgt uit de inhoud en staat niet vast. Met een vast raster van
    * vier bleef er bij Huidproblemen een lege kolom over: driehonderd pixels niets naast
@@ -404,7 +410,9 @@ function Paneel({
                     : undefined
                 }
               >
-                <p className="diba-label text-[var(--t-muted)]">{kolom.kop}</p>
+                <p className="diba-label text-[var(--t-muted)]">
+                  {t(kolom.kop)}
+                </p>
                 <ul
                   className={`mt-3 gap-x-6 ${kolom.breed ? "grid" : "flex flex-col"}`}
                   style={
@@ -419,7 +427,7 @@ function Paneel({
                     <li key={l.href}>
                       {l.kopErboven ? (
                         <p className="diba-label mt-5 mb-3 text-[var(--t-muted)]">
-                          {l.kopErboven}
+                          {tc(l.kopErboven)}
                         </p>
                       ) : null}
                       <Link
@@ -435,11 +443,11 @@ function Paneel({
                             gekozen dat er in de praktijk niets wordt afgekapt; dit is
                             de vangnetregel voor het smalste geval. */}
                         <span className="block truncate text-[15px] leading-6 font-medium text-[var(--t-strong)]">
-                          {l.label}
+                          {t(l.label)}
                         </span>
                         {l.zin ? (
                           <span className="block truncate text-[13px] leading-5 text-[var(--t-muted)]">
-                            {l.zin}
+                            {t(l.zin)}
                           </span>
                         ) : null}
                       </Link>
@@ -457,7 +465,7 @@ function Paneel({
               onClick={onSluit}
               className="diba-label inline-flex items-center gap-2 text-[var(--g-700)] transition-colors hover:text-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
             >
-              Alles onder {item.label.toLowerCase()}
+              {t("Alles onder")} {t(item.label).toLowerCase()}
               <Pijl />
             </Link>
           </div>
@@ -471,7 +479,7 @@ function Paneel({
               <div className="relative aspect-[16/10] w-full overflow-hidden">
                 <Image
                   src={item.uitgelicht.foto.src}
-                  alt={item.uitgelicht.foto.alt}
+                  alt={tc(item.uitgelicht.foto.alt)}
                   fill
                   sizes="30vw"
                   className="object-cover object-center"
@@ -484,13 +492,13 @@ function Paneel({
                 terwijl de lijsten ernaast al pasten. */}
             <div className="flex flex-1 flex-col justify-center p-7">
               <p className="diba-label text-[var(--t-muted)]">
-                {item.uitgelicht.label}
+                {t(item.uitgelicht.label)}
               </p>
               <p className="diba-card-title mt-2 text-[var(--t-strong)]">
-                {item.uitgelicht.kop}
+                {t(item.uitgelicht.kop)}
               </p>
               <p className="mt-2 text-[14px] leading-[22px] text-[var(--t-body)]">
-                {item.uitgelicht.zin}
+                {t(item.uitgelicht.zin)}
               </p>
               <Link
                 prefetch={false}
@@ -498,7 +506,7 @@ function Paneel({
                 onClick={onSluit}
                 className="diba-label mt-5 inline-flex h-11 w-fit items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-5 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
               >
-                {item.uitgelicht.knop}
+                {tc(item.uitgelicht.knop)}
                 <Pijl />
               </Link>
 
@@ -511,7 +519,7 @@ function Paneel({
                   onClick={onSluit}
                   className="mt-3 inline-flex w-fit text-[14px] leading-6 text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
-                  {item.uitgelicht.tweede.tekst}
+                  {t(item.uitgelicht.tweede.tekst)}
                 </Link>
               ) : null}
             </div>
@@ -641,6 +649,8 @@ function ChevronRechts({ className = "" }: { className?: string }) {
  * de eerste laag, want dat is waar je ze zoekt als je het menu opent.
  */
 function MobielPaneel({ onSluit }: { onSluit: () => void }) {
+  const tc = useTc();
+  const t = useT();
   const status = vandaagOpen();
   const [sub, setSub] = useState<string | null>(null);
   const actief = sub
@@ -665,7 +675,7 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
             className="diba-label -ml-2 flex h-11 items-center gap-1.5 rounded-[var(--r-pill)] px-2 text-[var(--t-strong)] active:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
           >
             <ChevronRechts className="rotate-180" />
-            Terug
+            {t("Terug")}
           </button>
         ) : (
           <DibaLogo />
@@ -673,7 +683,7 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
         <button
           type="button"
           onClick={onSluit}
-          aria-label="Menu sluiten"
+          aria-label={t("Menu sluiten")}
           className="-mr-2 flex h-11 w-11 items-center justify-center rounded-[var(--r-pill)] text-[var(--t-strong)] transition-colors hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
         >
           <svg
@@ -693,7 +703,7 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
       <div className="relative min-h-0 flex-1 overflow-hidden">
         {/* ── Laag 1: de keuze ── */}
         <nav
-          aria-label="Hoofdnavigatie"
+          aria-label={t("Hoofdnavigatie")}
           aria-hidden={actief ? true : undefined}
           className={`absolute inset-0 flex flex-col overflow-y-auto px-5 transition-[transform,opacity] duration-300 [transition-timing-function:var(--ease-diba)] ${
             actief
@@ -713,11 +723,11 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
                         een half scherm; nu passen ze samen met de snelkoppelingen in beeld
                         zonder te scrollen. */}
                     <span className="block text-[19px] leading-6 font-medium tracking-[-.02em] text-[var(--t-strong)]">
-                      {item.label}
+                      {t(item.label)}
                     </span>
                     {onderzin ? (
                       <span className="mt-1 block truncate text-[13px] leading-5 text-[var(--t-muted)]">
-                        {onderzin}
+                        {tc(onderzin)}
                       </span>
                     ) : null}
                   </span>
@@ -759,7 +769,7 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
                   onClick={onSluit}
                   className="inline-block py-1 text-[15px] leading-6 text-[var(--t-body)] underline decoration-[var(--g-200)] underline-offset-4 active:text-[var(--g-700)]"
                 >
-                  {l.label}
+                  {t(l.label)}
                 </Link>
               </li>
             ))}
@@ -777,7 +787,7 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
                     : "bg-[var(--g-200)]"
                 }`}
               />
-              {status}
+              {tc(status)}
             </p>
             <div className="mt-3 grid grid-cols-2 gap-3">
               <a
@@ -785,7 +795,7 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
                 className="diba-label flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)] active:bg-[var(--g-100)]"
               >
                 <TelefoonIcoon />
-                Bellen
+                {t("Bellen")}
               </a>
               <a
                 href={DIBA_WHATSAPP_URL}
@@ -794,7 +804,7 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
                 className="diba-label flex min-h-12 items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)] active:bg-[var(--g-100)]"
               >
                 <WhatsAppIcoon />
-                WhatsApp
+                {t("WhatsApp")}
               </a>
             </div>
           </div>
@@ -804,27 +814,29 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
         {actief?.kolommen ? (
           <nav
             key={actief.label}
-            aria-label={actief.label}
+            aria-label={t(actief.label)}
             className="absolute inset-0 flex flex-col overflow-y-auto px-5 pb-6 [animation:menu-in_.32s_var(--ease-diba)_both]"
           >
             <p className="text-[19px] leading-6 font-medium tracking-[-.02em] text-[var(--t-strong)]">
-              {actief.label}
+              {t(actief.label)}
             </p>
             {ONDERZIN[actief.label] ? (
               <p className="mt-1 truncate text-[13px] leading-5 text-[var(--t-muted)]">
-                {ONDERZIN[actief.label]}
+                {tc(ONDERZIN[actief.label])}
               </p>
             ) : null}
 
             {actief.kolommen.map((kolom) => (
               <div key={kolom.kop} className="mt-7">
-                <p className="diba-label text-[var(--t-label)]">{kolom.kop}</p>
+                <p className="diba-label text-[var(--t-label)]">
+                  {t(kolom.kop)}
+                </p>
                 <ul className="mt-1 divide-y divide-[var(--g-100)]">
                   {kolom.items.map((l) => (
                     <li key={l.href}>
                       {l.kopErboven ? (
                         <p className="diba-label mt-4 mb-1 text-[var(--t-muted)]">
-                          {l.kopErboven}
+                          {tc(l.kopErboven)}
                         </p>
                       ) : null}
                       <Link
@@ -835,11 +847,11 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
                       >
                         <span className="min-w-0">
                           <span className="block text-[16px] leading-6 font-medium text-[var(--t-strong)]">
-                            {l.label}
+                            {t(l.label)}
                           </span>
                           {l.zin ? (
                             <span className="mt-0.5 block truncate text-[13px] leading-5 text-[var(--t-muted)]">
-                              {l.zin}
+                              {t(l.zin)}
                             </span>
                           ) : null}
                         </span>
@@ -857,7 +869,7 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
               onClick={onSluit}
               className="diba-label mt-7 inline-flex min-h-12 w-fit items-center gap-2 rounded-[var(--r-pill)] border border-[var(--g-200)] px-5 text-[var(--t-strong)] active:bg-[var(--g-050)]"
             >
-              Alles onder {actief.label.toLowerCase()}
+              {t("Alles onder")} {tc(actief.label).toLowerCase()}
               <Pijl />
             </Link>
 
@@ -869,7 +881,7 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
                   <div className="relative aspect-[16/9]">
                     <Image
                       src={actief.uitgelicht.foto.src}
-                      alt={actief.uitgelicht.foto.alt}
+                      alt={tc(actief.uitgelicht.foto.alt)}
                       fill
                       sizes="100vw"
                       className="object-cover"
@@ -878,13 +890,13 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
                 ) : null}
                 <div className="p-6">
                   <p className="diba-label text-[var(--t-label)]">
-                    {actief.uitgelicht.label}
+                    {tc(actief.uitgelicht.label)}
                   </p>
                   <p className="diba-card-title mt-2 text-[var(--t-strong)]">
-                    {actief.uitgelicht.kop}
+                    {tc(actief.uitgelicht.kop)}
                   </p>
                   <p className="mt-2 text-[14px] leading-6 text-[var(--t-body)]">
-                    {actief.uitgelicht.zin}
+                    {tc(actief.uitgelicht.zin)}
                   </p>
                   <Link
                     prefetch={false}
@@ -892,7 +904,7 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
                     onClick={onSluit}
                     className="diba-label mt-5 inline-flex min-h-11 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-5 text-white active:bg-[var(--g-800)]"
                   >
-                    {actief.uitgelicht.knop}
+                    {tc(actief.uitgelicht.knop)}
                     <Pijl />
                   </Link>
                 </div>
@@ -908,7 +920,7 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
           onClick={onSluit}
           className="diba-label flex min-h-13 w-full items-center justify-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] py-4 text-white"
         >
-          Afspraak maken
+          {t("Afspraak maken")}
           <Pijl />
         </Link>
       </div>

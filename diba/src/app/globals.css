@@ -6,8 +6,15 @@
    alternatieve kleuren uit het brandbook als tussenstappen. Elke tekstkleur hieronder is
    gemeten tegen het vlak waar hij op staat en haalt WCAG 2.2 AA (het getal in het
    commentaar is de laagste ratio op de lichte vlakken). Hardcode nooit een hex buiten
-   dit blok. */
-:root {
+   dit blok.
+
+   De selector draagt ook `.paginaschil-los`. Die schil staat op de 404 buiten de
+   taalgroepen, waar Next zelf de html en de body maakt en onze lettertype-klassen dus
+   een niveau lager staan. Zonder deze tweede plek wijzen `--font-body` en familie daar
+   naar een variabele die op html niet bestaat, en valt alles buiten `.figma-home` terug
+   op het systeemlettertype. */
+:root,
+.paginaschil-los {
   /* ── Merkgroen: de schaal (brandbook = exact overgenomen, anders afgeleid) ── */
   --g-900: #2e3628; /* koppen en bodytekst op licht; diep olijf, afgeleid */
   --g-800: #363f2f; /* hover op primair; afgeleid */
@@ -246,8 +253,25 @@
 
 html {
   -webkit-text-size-adjust: 100%;
-  scroll-behavior: smooth;
   view-transition-name: root;
+}
+
+/* Zacht scrollen alleen bij een sprong naar een anker op dezelfde pagina.
+ *
+ * WAT HIER STOND EN WAT DAT DEED. `scroll-behavior: smooth` op html, dus altijd. De router
+ * zet bij elke paginawissel de scrollpositie terug naar boven, en met deze regel werd dat
+ * een animatie in plaats van een sprong. Die animatie begon onderaan de oude pagina, werd
+ * onderbroken door de render van de nieuwe, en stopte ergens halverwege: je klikte op een
+ * link en kwam honderdveertig pixels onder de bovenkant uit, of bleef in de voettekst
+ * staan (Yasin, 12 september 2026, op de live site).
+ *
+ * `:has(:target)` is alleen waar zolang er een #anker in het adres staat, en dat is precies
+ * het geval waarvoor zacht scrollen bedoeld was: de sprong naar #tarief of #treatments
+ * binnen een pagina. */
+@media (prefers-reduced-motion: no-preference) {
+  html:has(:target) {
+    scroll-behavior: smooth;
+  }
 }
 
 @view-transition {
@@ -282,6 +306,18 @@ body {
   font-variant-numeric: tabular-nums;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* De 404 buiten de taalgroepen krijgt van Next een kale html en body: onze klassen kunnen
+   daar niet op staan, dus staan ze op een schil binnen de body. `font-family` hoort dan mee
+   te verhuizen, want `var(--font-body)` wijst naar een lettertype-variabele die pas op deze
+   schil bestaat. Zie src/app/not-found.tsx. */
+.paginaschil-los {
+  --font-sans: var(--font-body);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: var(--font-body);
 }
 
 body:has(.figma-home) {

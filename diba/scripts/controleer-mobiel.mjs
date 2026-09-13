@@ -98,10 +98,13 @@ const statisch = zoekPaginas(join(process.cwd(), "src", "app"))
       "/" +
       relative(join(process.cwd(), "src", "app"), m)
         .split(sep)
+        /* Een segment tussen haakjes is een routegroep: `(nl)` en `(en)` ordenen de
+           mappen maar staan niet in het adres. src/app/(nl)/tarieven is /tarieven. */
+        .filter((deel) => !/^\(.*\)$/.test(deel))
         .join("/"),
   )
-  .map((p) => (p === "/." ? "/" : p))
-  .filter((p) => !p.includes("[") && !p.includes("("));
+  .map((p) => (p === "/." || p === "/" ? "/" : p))
+  .filter((p) => !p.includes("["));
 
 const paden = [...new Set([...statisch, ...uitSitemap, ...uitOverzichten])]
   .filter((p) => !p.startsWith("/api") && !p.startsWith("/dev"))

@@ -400,11 +400,37 @@ waar Google de snelheid van meet. Concreet:
 `HeroVariantVideo`, dat in de variant zit die sinds de livegang niet meer getoond wordt. Het
 bestand gaat wel mee in elke deploy. Nakijken en weghalen.
 
-### 6c. hreflang, zodra er een tweede taal is (later, maar nu al plannen)
+### 6c. hreflang, zodra er een tweede taal is (gedaan voor het Engels, 12 september 2026)
 
 De taalkiezer belooft Engels, Spaans en Frans. Zodra de eerste er staat, is hreflang
 verplicht; zonder dat gaan de vertalingen met het Nederlands concurreren in plaats van het
 te versterken. Plan de URL-structuur (`/en/...`) vóór de eerste vertaling en niet erna.
+
+Zo staat het er nu:
+
+- Het Nederlands blijft op de wortel, het Engels staat onder `/en`. Geen enkel Nederlands
+  adres is verhuisd, dus er is geen positie mee verplaatst.
+- `src/lib/taal.ts` houdt de lijst met paren bij. Wat daar niet in staat, bestaat in het
+  Engels niet: de taalkiezer biedt het niet aan, er komt geen hreflang bij en de sitemap
+  noemt het niet. Een halve vertaling kan er dus niet ongemerkt tussen komen.
+- De behandelparen komen uit de Engelse databron zelf (`src/data/en/treatments.ts`), zodat
+  er geen tweede lijst is die uit de pas kan gaan lopen.
+- `x-default` wijst naar het Nederlands, want dat is de taal van de kliniek en van de plaats
+  waar ze staat.
+- De taalkeuze wordt onthouden in een koekje dat alleen gezet wordt door een klik waarmee
+  iemand zelf een taal aanwijst: de taalkiezer, of een link die zegt dat hij naar het
+  Nederlands gaat. Nooit op de browsertaal: een zoekmachine die de Nederlandse pagina
+  ophaalt, hoort de Nederlandse pagina te krijgen.
+- Dat koekje stuurt alleen de voordeur. `src/proxy.ts` draait op één adres, de homepage, en
+  verwijst alleen door als het verzoek van buiten de site komt. Klik je op de site zelf op
+  een Nederlandse link, dan krijg je die Nederlandse pagina. Dit was eerst anders — elke
+  Nederlandse pagina met een tegenhanger verwees door — en dat maakte de Nederlandse links
+  op de Engelse pagina's onbruikbaar (Yasin, 12 september 2026).
+
+Elf Engelse pagina's staan er: `/en`, `/en/prices`, `/en/book`, `/en/contact`,
+`/en/treatments` en zes behandelingen. Elk met een eigen Engelse titel, omschrijving en
+schema, dus ze zijn ook zelfstandig vindbaar. Wat nog niet vertaald is, staat op de Engelse
+pagina's eerlijk benoemd met een link naar het Nederlands.
 
 ### 6e. Doorlopend
 
@@ -554,7 +580,7 @@ termijn en kost je daarna het domein.
 | robots.txt met de AI-crawlers | `src/app/robots.ts` |
 | Bedrijfsgegevens, NAP, openingstijden | `src/lib/site.ts` |
 | Het sjabloon voor een landingspagina | `src/components/kennisbank/LandingPagina.tsx` |
-| De route van alle landingspagina's | `src/app/kennisbank/[slug]/page.tsx` |
+| De route van alle landingspagina's | `src/app/(nl)/kennisbank/[slug]/page.tsx` |
 | De teksten, één bestand per pagina | `src/data/landings/*.ts` |
 | Het register met de bouwcontroles | `src/data/landings/index.ts` |
 | De vorm en de gedeelde regels | `src/data/landings/types.ts` |

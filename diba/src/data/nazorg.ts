@@ -284,14 +284,23 @@ export function nazorgVoorSlug(slug: string): NazorgBehandeling | undefined {
   return NAZORG.find((n) => n.slug === slug);
 }
 
-/** "Meteen weer", "Na 12 uur", "Na 3 dagen", "Na 3 maanden". */
-export function wachttijdTekst(uren: number): string {
-  if (uren === 0) return "Meteen weer";
-  if (uren < 24) return `Na ${uren} uur`;
+/**
+ * "Meteen weer", "Na 12 uur", "Na 3 dagen", "Na 3 maanden".
+ *
+ * Met het getal erin is dit geen zin maar een sjabloon, dus gaan de woorden los door de
+ * vertaling. De vertaler komt van buiten: dit bestand wordt ook door client components
+ * geladen en kent de taal van de pagina niet.
+ */
+export function wachttijdTekst(
+  uren: number,
+  vert: (nl: string) => string = (nl) => nl,
+): string {
+  if (uren === 0) return vert("Meteen weer");
+  if (uren < 24) return `${vert("Na")} ${uren} ${vert("uur")}`;
   const d = Math.round(uren / 24);
-  if (d < 14) return `Na ${d} ${d === 1 ? "dag" : "dagen"}`;
-  if (d < 60) return `Na ${Math.round(d / 7)} weken`;
-  return `Na ${Math.round(d / 30)} maanden`;
+  if (d < 14) return `${vert("Na")} ${d} ${vert(d === 1 ? "dag" : "dagen")}`;
+  if (d < 60) return `${vert("Na")} ${Math.round(d / 7)} ${vert("weken")}`;
+  return `${vert("Na")} ${Math.round(d / 30)} ${vert("maanden")}`;
 }
 
 /** Hoe zwaar de beperking weegt, voor de kleur in het rooster. */

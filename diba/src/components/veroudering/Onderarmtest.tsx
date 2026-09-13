@@ -1,10 +1,11 @@
 "use client";
 
 import { useId, useState, type CSSProperties } from "react";
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import Label from "@/components/ui/Label";
 import { ONDERARM, PROEF } from "@/data/veroudering";
 import { publicCopy } from "@/lib/copy-flags";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * De onderarmtest — de uitblinker van de pagina over huidveroudering.
@@ -43,6 +44,8 @@ const MIN = 18;
 const MAX = 80;
 
 export default function Onderarmtest() {
+  const tc = useTc();
+  const t = useT();
   const [leeftijd, setLeeftijd] = useState(35);
   const uid = useId().replace(/:/g, "");
 
@@ -73,23 +76,26 @@ export default function Onderarmtest() {
           Nu eerst de uitkomst in het formaat van een kop. De tabel eronder is daarmee geen
           puzzel meer maar onderbouwing, en die mag je overslaan. */}
       <div className="rounded-[var(--r-lg)] bg-white p-6 sm:p-8">
-        <Label>Zon of leeftijd</Label>
+        <Label>{t("Zon of leeftijd")}</Label>
         <p className="diba-display-s mt-4 max-w-[26ch]">
-          Je binnenarm is even oud als je gezicht.{" "}
-          <span className="diba-accent">Toch ziet hij er jonger uit.</span>
+          {t("Je binnenarm is even oud als je gezicht.")}{" "}
+          <span className="diba-accent">
+            {t("Toch ziet hij er jonger uit.")}
+          </span>
         </p>
         <p className="mt-5 max-w-[70ch] text-[17px] leading-8 text-[var(--t-body)]">
-          Alles wat je op je gezicht extra ziet, is er dus bij gekomen en niet
-          meegegroeid. Dat is het deel waar een behandeling iets aan doet. Zet
-          je leeftijd hieronder in en zie hoe de twee zich verhouden.
+          {t(
+            "Alles wat je op je gezicht extra ziet, is er dus bij gekomen en niet meegegroeid. Dat is het deel waar een behandeling iets aan doet. Zet je leeftijd hieronder in en zie hoe de twee zich verhouden.",
+          )}
         </p>
 
         <div className="mt-6 rounded-[var(--r-sm)] bg-[var(--g-025)] p-5">
           <label htmlFor={`${uid}-leeftijd`} className="diba-label block">
-            Hoe oud ben je?
+            {t("Hoe oud ben je?")}
           </label>
           <p className="diba-display-s mt-2 text-[var(--t-strong)] tabular-nums">
-            {leeftijd} jaar
+            {leeftijd}
+            {t("jaar")}
           </p>
           <input
             id={`${uid}-leeftijd`}
@@ -114,31 +120,31 @@ export default function Onderarmtest() {
         <div className="mt-8">
           <div className="grid grid-cols-2 gap-x-4 px-5 pb-3 sm:grid-cols-[1.2fr_1fr_1fr]">
             <p className="diba-label hidden text-[var(--t-label)] sm:block">
-              Wat er gelijk is
+              {t("Wat er gelijk is")}
             </p>
             <p className="diba-label text-[var(--t-label)]">
-              {ONDERARM.beschut.label}
+              {tc(ONDERARM.beschut.label)}
             </p>
             <p className="diba-label text-[var(--t-label)]">
-              {ONDERARM.blootgesteld.label}
+              {tc(ONDERARM.blootgesteld.label)}
             </p>
           </div>
 
           {rijen.map((r, i) => (
             <div
-              key={r.wat}
+              key={tc(r.wat)}
               className={`grid grid-cols-2 gap-x-4 gap-y-1 rounded-[var(--r-sm)] px-5 py-4 sm:grid-cols-[1.2fr_1fr_1fr] sm:items-baseline ${
                 i % 2 === 1 ? "bg-[var(--g-025)]" : ""
               }`}
             >
               <p className="col-span-2 text-[15px] leading-6 font-medium text-[var(--t-strong)] sm:col-span-1">
-                {r.wat}
+                {tc(r.wat)}
               </p>
               <p className="text-[15px] leading-6 text-[var(--t-body)] tabular-nums">
-                {r.beschut}
+                {tc(r.beschut)}
               </p>
               <p className="text-[15px] leading-6 text-[var(--t-body)] tabular-nums">
-                {r.blootgesteld}
+                {tc(r.blootgesteld)}
               </p>
             </div>
           ))}
@@ -146,19 +152,19 @@ export default function Onderarmtest() {
           {/* De enige regel die niet gelijk is. */}
           <div className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1 rounded-[var(--r-sm)] bg-[var(--g-075)] px-5 py-5 sm:grid-cols-[1.2fr_1fr_1fr] sm:items-baseline">
             <p className="col-span-2 text-[15px] leading-6 font-medium text-[var(--t-strong)] sm:col-span-1">
-              {PROEF.variabele.wat}
+              {tc(PROEF.variabele.wat)}
             </p>
             <p className="text-[16px] leading-6 font-medium text-[var(--t-strong)]">
-              {PROEF.variabele.beschut}
+              {tc(PROEF.variabele.beschut)}
             </p>
             <p className="text-[16px] leading-6 font-medium text-[var(--t-strong)]">
-              {PROEF.variabele.blootgesteld}
+              {tc(PROEF.variabele.blootgesteld)}
             </p>
           </div>
         </div>
 
         <p className="mt-6 max-w-[76ch] text-[15px] leading-7 text-[var(--t-muted)]">
-          {PROEF.slot}
+          {tc(PROEF.slot)}
         </p>
       </div>
 
@@ -169,12 +175,12 @@ export default function Onderarmtest() {
             key={k.label}
             className="rounded-[var(--r-md)] bg-[var(--g-050)] p-6 sm:p-7"
           >
-            <Label>{k.label}</Label>
+            <Label>{tc(k.label)}</Label>
             <p className="mt-2 text-[14px] leading-6 text-[var(--t-muted)]">
-              {k.onder}
+              {tc(k.onder)}
             </p>
             <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
-              {publicCopy(k.lezing)}
+              {tc(k.lezing)}
             </p>
           </div>
         ))}
@@ -184,18 +190,18 @@ export default function Onderarmtest() {
           hij het antwoord op de vraag die de tabel oproept: en nu. */}
       <div className="mt-8 rounded-[var(--r-lg)] bg-[var(--g-700)] p-8 text-[var(--on-dark)] sm:p-10">
         <p className="diba-card-title-lg max-w-[34ch]">
-          Aan opgebouwd zit een knop. Aan meegegroeid niet.
+          {t("Aan opgebouwd zit een knop. Aan meegegroeid niet.")}
         </p>
         <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-          Het deel dat door de zon is opgebouwd, is het deel dat we kunnen
-          behandelen. Tijdens de intake stelt de huidtherapeut vast hoe groot
-          dat deel bij jou is, en welke behandeling daarbij past.
+          {t(
+            "Het deel dat door de zon is opgebouwd, is het deel dat we kunnen behandelen. Tijdens de intake stelt de huidtherapeut vast hoe groot dat deel bij jou is, en welke behandeling daarbij past.",
+          )}
         </p>
         <Link
           href="/intake"
           className="diba-label mt-7 inline-flex min-h-12 w-fit items-center gap-2 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-6 text-[var(--on-dark-btn-text)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
         >
-          Plan een huidconsult
+          {t("Plan een huidconsult")}
         </Link>
       </div>
     </div>

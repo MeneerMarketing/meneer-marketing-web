@@ -1,4 +1,5 @@
 import { FOTOVARIABELEN } from "@/data/fotobewijs";
+import { t, tc } from "@/lib/vertaal";
 
 /**
  * De zeven vragen bij een voor-en-na-foto.
@@ -43,26 +44,28 @@ export default function Fotocheck() {
                 bruikbaarder. */}
             {v.gewicht === 2 ? (
               <span className="diba-label rounded-[var(--r-pill)] bg-[var(--g-075)] px-3 py-1 text-[var(--g-700)]">
-                Weegt het zwaarst
+                {t("Weegt het zwaarst")}
               </span>
             ) : null}
           </div>
 
           <h3 className="diba-card-title mt-4 text-[var(--t-strong)]">
-            {v.label}
+            {tc(v.label)}
           </h3>
 
           <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
-            {v.effect}
+            {tc(v.effect)}
           </p>
 
           <p className="mt-3 text-[15px] leading-7 text-[var(--t-muted)]">
-            {v.waarom}
+            {tc(v.waarom)}
           </p>
 
           <p className="mt-auto border-t border-[var(--g-100)] pt-4 text-[14px] leading-6 text-[var(--t-body)]">
-            <span className="diba-label text-[var(--g-700)]">Bij ons</span>
-            <span className="mt-2 block">{v.onzeRegel}</span>
+            <span className="diba-label text-[var(--g-700)]">
+              {t("Bij ons")}
+            </span>
+            <span className="mt-2 block">{tc(v.onzeRegel)}</span>
           </p>
         </li>
       ))}

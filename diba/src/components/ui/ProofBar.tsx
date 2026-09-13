@@ -1,4 +1,7 @@
+"use client";
+
 import type { ProofStripItem } from "@/lib/site";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * De bewijsstrip (DIBA-RULES §8 en §11).
@@ -36,21 +39,26 @@ export default function ProofBar({
   items: readonly ProofStripItem[];
   className?: string;
 }) {
+  const tc = useTc();
+  const t = useT();
   return (
     /* Een haarlijn onder de strip. De verticale lijnen tussen de cellen hielden anders
        zomaar op in het wit, alsof de strip niet af was (Yasin, 7 september 2026). */
     <section
       className={`border-b border-[var(--g-100)] bg-white px-5 sm:px-9 lg:px-[7.5vw] ${className}`.trim()}
-      aria-label="Diba Clinics in cijfers"
+      aria-label={tc("Diba Clinics in cijfers")}
     >
       <div className="mx-auto grid grid-cols-2 gap-px bg-[var(--g-100)] md:grid-cols-4">
         {items.map((item) => (
-          <div key={item.label} className="bg-white py-3 text-center md:py-7">
+          <div
+            key={tc(item.label)}
+            className="bg-white py-3 text-center md:py-7"
+          >
             <strong className="block text-lg tracking-[-.05em] text-[var(--g-700)] tabular-nums md:text-3xl md:tracking-[-.06em]">
               {formatteer(item)}
             </strong>
             <span className="diba-label mt-1 block text-[var(--t-muted)] md:mt-2">
-              {item.label}
+              {tc(item.label)}
             </span>
           </div>
         ))}

@@ -1,0 +1,230 @@
+import type { Metadata } from "next";
+import Link from "@/components/ui/Linktaal";
+import Krabcirkel from "@/components/eczeem/Krabcirkel";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
+import PillarNav from "@/components/pillar/PillarNav";
+import {
+  PillarFaq,
+  SectieKop,
+  WelNiet,
+  PillarCta,
+} from "@/components/pillar/PillarSecties";
+import Button from "@/components/ui/Button";
+import Label from "@/components/ui/Label";
+import { ECZEEM_FAQ, ECZEEM_WEL_NIET, VERWAR_NIET } from "@/data/eczeem";
+import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import { zoekmachineVelden } from "@/lib/seo";
+import LeesVerder from "@/components/ui/LeesVerder";
+import { t, tc } from "@/lib/vertaal";
+
+/**
+ * Eczeem — twaalfde eigen pagina, en de tweede zonder afspraakknop.
+ *
+ * Eczeem is een aandoening met een medische behandeling en die hoort bij de huisarts of
+ * de dermatoloog. Net als bij moedervlekken staat er daarom geen PillarCta, geen
+ * HuidanalyseAssen en geen link naar /intake in de pagina zelf.
+ *
+ * Het verschil met de moedervlekkenpagina is dat er hier wél één punt is waar wij iets
+ * kunnen: de barrière ondersteunen. Dat staat in de cirkel op zijn plek en niet groter
+ * dan het is, tussen de drie punten waar wij het niet zijn.
+ *
+ * Eén donkergroen vlak (§5 staat er twee toe; het tweede is normaal de intake).
+ *
+ * MEDISCH: alles op deze pagina langs Rojda voordat het online mag.
+ */
+
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/eczeem",
+  titel: "Eczeem: een cirkel, geen plek",
+  omschrijving:
+    "Bij eczeem werken we aan je huidbarrière, naast de behandeling van je huisarts. Hoe die kringloop van jeuk en krabben werkt.",
+});
+
+const PAD = "/huidproblemen/eczeem";
+
+const ANKERS = [
+  { id: "cirkel", label: "De krabcirkel" },
+  { id: "verwar", label: "Of is het iets anders" },
+  { id: "wel-niet", label: "Wat helpt" },
+  { id: "vragen", label: "Vragen" },
+] as const;
+
+export default function EczeemPage() {
+  return (
+    <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)]">
+      <SchemaMarkup
+        data={breadcrumbSchema([
+          { name: "Home", url: DIBA_SITE_URL },
+          { name: "Huidproblemen", url: `${DIBA_SITE_URL}/huidproblemen` },
+          { name: "Eczeem", url: `${DIBA_SITE_URL}${PAD}` },
+        ])}
+      />
+
+      {/* ── Hero ── */}
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+          <div>
+            <nav
+              aria-label={tc("Kruimelpad")}
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
+            >
+              <Link href="/" className="hover:text-white">
+                {t("Home")}
+              </Link>
+              <span aria-hidden="true">/</span>
+              <Link href="/huidproblemen" className="hover:text-white">
+                {t("Huidproblemen")}
+              </Link>
+              <span aria-hidden="true">/</span>
+              <span className="text-[var(--on-dark-body)]">{t("Eczeem")}</span>
+            </nav>
+
+            <h1 className="diba-display-l mt-6">
+              {t("Eczeem: jeuk die")}
+              <br />
+              <span className="diba-accent-on-dark">
+                {t("blijft terugkomen")}
+              </span>
+            </h1>
+
+            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+              {t(
+                "Eczeem is een kringloop: jeuk geeft krabben, krabben breekt je huidbarrière, en een kapotte barrière laat meer prikkels door.",
+              )}
+            </p>
+            <LeesVerder opDonker>
+              <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+                {t(
+                  "Wij werken aan die barrière, met behandelingen en verzorging die hem herstellen. De medicatie loopt via je huisarts, en we stemmen onze aanpak daarop af.",
+                )}
+              </p>
+            </LeesVerder>
+
+            <div className="mt-9">
+              <Button variant="primair-op-donker" href="#cirkel">
+                {t("Bekijk de cirkel")}
+              </Button>
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 text-[var(--t-strong)] sm:p-10">
+            <Label>{t("Het korte antwoord")}</Label>
+            <p className="diba-card-title-lg mt-5">
+              {t(
+                "Jeuk die je uit je slaap houdt, kloofjes, of plekken die steeds terugkomen op dezelfde plaats: dat is een reden voor de huisarts.",
+              )}
+            </p>
+            <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
+              {t(
+                "Er bestaat behandeling voor, en die begint daar. Hoe langer de cirkel draait, hoe moeilijker hij te doorbreken is.",
+              )}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <PillarNav ankers={ANKERS} />
+
+      {/* ── De krabcirkel: de uitblinker ── */}
+      <section
+        id="cirkel"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
+          <SectieKop
+            label="De krabcirkel"
+            kop="De vier"
+            accent="schakels"
+            intro="Elk punt in deze kringloop houdt de volgende in stand. Wij werken aan de barrière, want dat is de schakel die we kunnen herstellen."
+          />
+          <Krabcirkel />
+        </div>
+      </section>
+
+      {/* ── Of is het iets anders ── */}
+      <section
+        id="verwar"
+        className="bg-[var(--g-025)] scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
+          <SectieKop
+            label="Of is het iets anders"
+            kop="Drie dingen die"
+            accent="hierop lijken."
+            intro="Eczeem wordt vaak gebruikt als verzamelnaam voor alles wat rood en schilferig is. Deze drie lijken erop en vragen iets anders."
+          />
+
+          <ul className="mt-8 sm:mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-3">
+            {VERWAR_NIET.map((v) => (
+              <li key={v.naam} className="flex flex-col bg-white p-6 sm:p-8">
+                <h3 className="diba-card-title">{tc(v.naam)}</h3>
+                <p className="mt-3 grow text-[15px] leading-7 text-[var(--t-body)]">
+                  {tc(v.verschil)}
+                </p>
+                <Link
+                  href={v.pad}
+                  className="diba-label mt-5 text-[var(--g-700)] underline underline-offset-4"
+                >
+                  {tc(v.link)}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <WelNiet
+        wel={ECZEEM_WEL_NIET.wel}
+        niet={ECZEEM_WEL_NIET.niet}
+        intro="Wachten met de huisarts omdat je eerst zelf iets wilt proberen, kost meestal de meeste tijd."
+      />
+
+      {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
+          draaien. Leeg als er niets gekoppeld is; zie het component. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/eczeem" />
+
+      <PillarFaq items={ECZEEM_FAQ} onderwerp="eczeem" />
+
+      {/* ── Afsluiting zonder afspraakknop ── */}
+      <section className="mx-5 mt-16 mb-5 rounded-[var(--r-xl)] lg:mt-20 bg-[var(--g-050)] px-7 py-10 sm:py-14 sm:mx-9 sm:px-12 lg:mx-[7.5vw] lg:px-16 lg:py-20">
+        <div className="mx-auto">
+          <Label>{t("Waar je wel heen gaat")}</Label>
+          <h2 className="diba-display-s mt-5 max-w-[22ch]">
+            {t("Samen met")}
+            <span className="diba-accent">{t("je huisarts")}</span>
+          </h2>
+          <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
+            {t(
+              "De diagnose en de medicatie lopen via je huisarts. Wij werken daarnaast aan je huidbarrière, met behandelingen en verzorging die hem herstellen. Is je huid op dat moment rustig, dan kunnen we beginnen.",
+            )}
+          </p>
+          <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3">
+            <Link
+              href="/huidproblemen/droge-huid"
+              className="diba-label text-[var(--g-700)] underline underline-offset-4"
+            >
+              {t("Misschien is het een droge huid")}
+            </Link>
+            <Link
+              href="/behandeling-op-advies"
+              className="diba-label text-[var(--g-700)] underline underline-offset-4"
+            >
+              {t("Of laat eerst je huid beoordelen")}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Okan, 5 september 2026: dit behandelen we wel, alleen niet alleen. Dan
+          hoort er ook een manier te staan om dat af te spreken. */}
+      <PillarCta
+        kop="Plan een huidconsult"
+        accent="bij Diba Clinics"
+        tekst="De diagnose en de medicatie lopen via je huisarts. Wat je huid daarnaast nodig heeft, bekijken wij: welke verzorging de barriere herstelt en welke behandeling kan als je huid rustig is. Is dat op dat moment niets, dan zeggen we dat."
+        topic="eczeem"
+        whatsappHref={DIBA_WHATSAPP_URL}
+      />
+    </main>
+  );
+}

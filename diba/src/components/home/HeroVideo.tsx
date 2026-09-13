@@ -2,6 +2,7 @@
 
 import { useSyncExternalStore } from "react";
 import VideoKnop from "@/components/home/VideoKnop";
+import { useTc } from "@/lib/gebruik-taal";
 
 /**
  * De opname in het beeldvlak van de hero.
@@ -90,6 +91,7 @@ export default function HeroVideo({
    */
   knopKlasse?: string;
 }) {
+  const tc = useTc();
   const rustig = useSyncExternalStore(luister, lees, () => false);
   const breed = useSyncExternalStore(luisterBreed, leesBreed, () => false);
   const bron = breed && bestandBreed ? bestandBreed : bestand;
@@ -110,7 +112,7 @@ export default function HeroVideo({
         muted
         loop
         playsInline
-        aria-label={beschrijving}
+        aria-label={tc(beschrijving)}
       >
         <source src={bron} type="video/mp4" />
       </video>

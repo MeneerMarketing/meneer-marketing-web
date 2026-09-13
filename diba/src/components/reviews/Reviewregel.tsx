@@ -2,6 +2,7 @@ import Reviewregelrol, {
   type Regelreview,
 } from "@/components/reviews/Reviewregelrol";
 import { reviewsForTopic, type ReviewTopic } from "@/data/reviews";
+import { reviewtekst } from "@/lib/reviewtaal";
 
 /**
  * Eén review, op één regel, die doorschuift.
@@ -63,6 +64,7 @@ export default function Reviewregel({
       return {
         id: r.id,
         quote: r.quote,
+        quoteEn: r.quoteEn,
         name: r.name,
         stars: r.stars,
         relativeDate: r.relativeDate,

@@ -36,6 +36,8 @@ type RuweReview = {
   s: number;
   /** Tekst. Ontbreekt bij een beoordeling die alleen sterren is. */
   t?: string;
+  /** Dezelfde tekst in het Engels. Zie `lib/reviewtaal.ts`. */
+  te?: string;
   /** Onderwerpen, afgeleid uit de tekst. */
   o?: string[];
 };
@@ -46,6 +48,7 @@ export type ArchiefReview = {
   readonly datum: string;
   readonly sterren: number;
   readonly tekst: string;
+  readonly tekstEn?: string;
   readonly onderwerpen: readonly SalonizedReviewTopic[];
 };
 
@@ -59,6 +62,7 @@ export const ARCHIEF_MET_TEKST: readonly ArchiefReview[] = RUW.filter(
   datum: r.d,
   sterren: r.s,
   tekst: r.t,
+  ...(r.te ? { tekstEn: r.te } : {}),
   onderwerpen: verfijnOnderwerpen(r.o as SalonizedReviewTopic[], r.t),
 }));
 

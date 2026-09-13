@@ -1,11 +1,12 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import FigmaReviewCard from "@/components/figma/FigmaReviewCard";
 import FigmaSoftAccent from "@/components/figma/FigmaSoftAccent";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
+import { useT, useTc } from "@/lib/gebruik-taal";
 import {
   REVIEW_TOPICS,
   reviewCountForTopic,
@@ -33,6 +34,8 @@ type FigmaReviewsExperienceProps = {
 export default function FigmaReviewsExperience({
   className = "",
 }: FigmaReviewsExperienceProps) {
+  const tc = useTc();
+  const t = useT();
   const [topic, setTopic] = useState<ReviewTopic>("alle");
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [activeFeatured, setActiveFeatured] = useState(0);
@@ -74,11 +77,11 @@ export default function FigmaReviewsExperience({
     <div className={`space-y-16 lg:space-y-24 ${className}`}>
       {/* Filter */}
       <div>
-        <Label>Onderwerp</Label>
+        <Label>{t("Onderwerp")}</Label>
         <div
           className="mt-4 flex flex-wrap gap-2"
           role="tablist"
-          aria-label="Review-onderwerp"
+          aria-label={tc("Review-onderwerp")}
         >
           {REVIEW_TOPICS.map((item) => {
             const active = topic === item.id;
@@ -96,7 +99,7 @@ export default function FigmaReviewsExperience({
                     : "bg-[var(--g-050)] text-[var(--t-label)] hover:bg-[var(--g-100)]"
                 }`}
               >
-                {item.label}
+                {tc(item.label)}
                 <span
                   className={`rounded-[var(--r-pill)] px-2 py-0.5 text-[10px] tabular-nums ${
                     active ? "bg-white/20" : "bg-white text-[var(--g-700)]"
@@ -114,7 +117,7 @@ export default function FigmaReviewsExperience({
       {featured.length > 0 ? (
         <section
           className="relative overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-700)] px-6 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-16"
-          aria-label="Uitgelichte review"
+          aria-label={tc("Uitgelichte review")}
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
           onFocus={() => setPaused(true)}
@@ -129,13 +132,13 @@ export default function FigmaReviewsExperience({
           <div className="relative">
             <div className="flex flex-wrap items-end justify-between gap-6">
               <div>
-                <Label opDonker>Live uit Salonized</Label>
+                <Label opDonker>{t("Live uit Salonized")}</Label>
                 <p className="mt-3 text-[clamp(2.5rem,5vw,4rem)] font-medium leading-none tracking-[-.08em] text-white tabular-nums">
                   {SALONIZED_REVIEW_SUMMARY.rating.toFixed(1).replace(".", ",")}
                 </p>
                 <p className="mt-2 text-[15px] text-[var(--on-dark-body)]">
-                  {SALONIZED_REVIEW_SUMMARY.countFormatted} reviews, echt en
-                  openbaar
+                  {SALONIZED_REVIEW_SUMMARY.countFormatted}
+                  {t("reviews, echt en openbaar")}
                 </p>
               </div>
               <div className="flex items-center gap-2">
@@ -143,7 +146,7 @@ export default function FigmaReviewsExperience({
                   <button
                     key={review.id}
                     type="button"
-                    aria-label={`Review ${i + 1}: ${review.name}`}
+                    aria-label={`${t("Review")} ${i + 1}: ${review.name}`}
                     aria-current={i === activeFeatured}
                     onClick={() => setActiveFeatured(i)}
                     className={`h-1.5 rounded-[var(--r-pill)] transition-all duration-500 [transition-timing-function:var(--ease-diba)] ${
@@ -177,8 +180,8 @@ export default function FigmaReviewsExperience({
 
       {/* Horizontale scroll — korte highlights */}
       {topic === "alle" && filtered.length > 3 ? (
-        <section aria-label="Meer highlights">
-          <Label>Meer highlights</Label>
+        <section aria-label={tc("Meer highlights")}>
+          <Label>{t("Meer highlights")}</Label>
           <div className="relative mt-5 -mx-1">
             <div className="flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               {pickFeaturedReviews(filtered)
@@ -197,13 +200,13 @@ export default function FigmaReviewsExperience({
 
       {/* Grid */}
       {visible.length > 0 ? (
-        <section aria-label="Alle reviews">
+        <section aria-label={tc("Alle reviews")}>
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
-              <Label>Alle reviews</Label>
+              <Label>{t("Alle reviews")}</Label>
               <p className="mt-2 text-[15px] text-[var(--t-body)]">
-                {filtered.length} quote{filtered.length === 1 ? "" : "s"} op
-                deze pagina
+                {filtered.length} quote{filtered.length === 1 ? "" : "s"}
+                {t("op deze pagina")}
               </p>
             </div>
             <Link
@@ -212,7 +215,7 @@ export default function FigmaReviewsExperience({
               rel="noopener noreferrer"
               className="diba-label inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4 transition hover:text-[var(--g-800)]"
             >
-              Volledige lijst op Salonized
+              {t("Volledige lijst op Salonized")}
             </Link>
           </div>
 
@@ -239,14 +242,15 @@ export default function FigmaReviewsExperience({
         </section>
       ) : (
         <p className="text-[15px] leading-7 text-[var(--t-body)]">
-          Nog geen gelabelde reviews voor dit onderwerp. Bekijk alle{" "}
+          {t("Nog geen gelabelde reviews voor dit onderwerp. Bekijk alle")}{" "}
           <Link
             href={SALONIZED_REVIEWS_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="font-medium text-[var(--g-700)] underline underline-offset-4"
           >
-            {SALONIZED_REVIEW_SUMMARY.countFormatted} reviews op Salonized
+            {SALONIZED_REVIEW_SUMMARY.countFormatted}
+            {t("reviews op Salonized")}
           </Link>
           .
         </p>

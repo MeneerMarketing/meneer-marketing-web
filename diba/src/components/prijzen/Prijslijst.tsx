@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import Label from "@/components/ui/Label";
 import PriceTable from "@/components/ui/PriceTable";
 import { LASER_GESLACHTEN, type LaserGeslacht } from "@/data/laser-zones";
+import { useT, useTc } from "@/lib/gebruik-taal";
 import {
   VOORLOPIGE_PRIJZEN,
   sectionsForCategory,
@@ -49,6 +50,8 @@ import {
  * rijen en kolommen in de letterlijke zin, en daar is een tabel het juiste gereedschap.
  */
 export default function Prijslijst() {
+  const tc = useTc();
+  const t = useT();
   const [lijst, setLijst] = useState<LaserGeslacht>("dames");
   const categorie: PriceCategory = "laser";
 
@@ -69,11 +72,13 @@ export default function Prijslijst() {
       {toontLaser ? (
         <div className="mt-5 flex flex-wrap items-center gap-3">
           <p className="text-[15px] leading-6 text-[var(--t-body)]">
-            Laserontharing heeft twee tarievenlijsten. Welke geldt voor jou?
+            {t(
+              "Laserontharing heeft twee tarievenlijsten. Welke geldt voor jou?",
+            )}
           </p>
           <div
             role="group"
-            aria-label="Tarievenlijst laserontharing"
+            aria-label={tc("Tarievenlijst laserontharing")}
             className="flex flex-wrap gap-2"
           >
             {LASER_GESLACHTEN.map((g) => (
@@ -88,7 +93,7 @@ export default function Prijslijst() {
                     : "bg-white text-[var(--t-label)] hover:bg-[var(--g-100)]"
                 }`}
               >
-                {g.label}
+                {tc(g.label)}
               </button>
             ))}
           </div>
@@ -97,17 +102,17 @@ export default function Prijslijst() {
 
       {VOORLOPIGE_PRIJZEN ? (
         <p className="mt-6 max-w-[62ch] rounded-[var(--r-sm)] bg-[var(--g-050)] p-5 text-[15px] leading-7 text-[var(--t-body)]">
-          De bedragen hieronder zijn voorlopig en nog niet door de kliniek
-          vastgesteld. Wat er wel al klopt is de indeling: welke behandelingen
-          er zijn, welke zones er bestaan en wat een pakket vervangt.
+          {t(
+            "De bedragen hieronder zijn voorlopig en nog niet door de kliniek vastgesteld. Wat er wel al klopt is de indeling: welke behandelingen er zijn, welke zones er bestaan en wat een pakket vervangt.",
+          )}
         </p>
       ) : null}
 
       {/* Het register: sneller ergens komen, zonder dat er iets verdwijnt. */}
       {secties.length > 1 ? (
-        <nav aria-label="Naar een prijslijst" className="mt-8">
+        <nav aria-label={tc("Naar een prijslijst")} className="mt-8">
           <p className="diba-label text-[var(--t-label)]">
-            {totaalRegels} tarieven in {secties.length} lijsten
+            {totaalRegels} {t("tarieven in")} {secties.length} {t("lijsten")}
           </p>
           <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-2">
             {secties.map((s) => (
@@ -123,7 +128,7 @@ export default function Prijslijst() {
                   href={`#${s.id}`}
                   className="py-[3px] text-[15px] leading-6 text-[var(--g-700)] underline decoration-[var(--g-300)] underline-offset-4 transition-colors hover:decoration-[var(--g-700)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
-                  {s.caption}{" "}
+                  {tc(s.caption)}{" "}
                   <span className="text-[var(--t-muted)] tabular-nums">
                     {s.rows.length}
                   </span>
@@ -153,7 +158,7 @@ export default function Prijslijst() {
           >
             {s.zin ? (
               <p className="mb-5 max-w-[52ch] text-[14px] leading-6 text-[var(--t-muted)]">
-                {s.zin}
+                {tc(s.zin)}
               </p>
             ) : null}
             <PriceTable caption={s.caption} rows={[...s.rows]} />
@@ -163,17 +168,16 @@ export default function Prijslijst() {
 
       {secties.length === 0 ? (
         <p className="mt-10 text-[16px] leading-7 text-[var(--t-body)]">
-          Er staat nog niets onder deze categorie.
+          {t("Er staat nog niets onder deze categorie.")}
         </p>
       ) : null}
 
       <p className="mt-8 max-w-[62ch] text-[14px] leading-6 text-[var(--t-muted)]">
-        <Label>Geen sterretjes</Label>
+        <Label>{t("Geen sterretjes")}</Label>
         <span className="mt-2 block">
-          Er staan hier geen voetnoten met voorwaarden en geen bedragen die pas
-          aan de balie compleet worden. Wat je hier ziet is wat een sessie kost.
-          Hoeveel sessies je nodig hebt hoor je tijdens de intake, en dat getal
-          bepaalt je totaal meer dan het tarief hiernaast.
+          {t(
+            "Er staan hier geen voetnoten met voorwaarden en geen bedragen die pas aan de balie compleet worden. Wat je hier ziet is wat een sessie kost. Hoeveel sessies je nodig hebt hoor je tijdens de intake, en dat getal bepaalt je totaal meer dan het tarief hiernaast.",
+          )}
         </span>
       </p>
     </div>

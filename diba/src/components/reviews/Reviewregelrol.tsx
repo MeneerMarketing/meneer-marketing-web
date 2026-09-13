@@ -1,8 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import Sterren from "@/components/ui/Sterren";
+import { relatieveDatum } from "@/lib/relatieve-datum";
+import { useT, useTaal } from "@/lib/gebruik-taal";
+import { reviewtekst } from "@/lib/reviewtaal";
+import Vertaaldnoot from "@/components/reviews/Vertaaldnoot";
 
 /**
  * De reviewregel die doorschuift.
@@ -41,6 +45,7 @@ import Sterren from "@/components/ui/Sterren";
 export type Regelreview = {
   readonly id: string;
   readonly quote: string;
+  readonly quoteEn?: string;
   readonly name: string;
   readonly stars: number;
   readonly relativeDate?: string;
@@ -57,6 +62,8 @@ export default function Reviewregelrol({
   className?: string;
 }) {
   const [i, setI] = useState(0);
+  const taal = useTaal();
+  const vert = useT();
 
   useEffect(() => {
     if (reviews.length < 2) return;
@@ -85,23 +92,26 @@ export default function Reviewregelrol({
           >
             <Sterren aantal={r.stars} maat="sm" />
             <blockquote className="min-w-0 text-[15px] leading-7 text-[var(--t-body)]">
-              &ldquo;{r.quote}&rdquo;
+              &ldquo;{reviewtekst(r.quote, r.quoteEn, taal)}&rdquo;
             </blockquote>
             <figcaption className="diba-label flex flex-wrap items-baseline gap-x-3 text-[var(--t-muted)]">
               <span>
                 {r.name}
-                {r.relativeDate ? `, ${r.relativeDate}` : ""}
+                {r.relativeDate
+                  ? `, ${relatieveDatum(r.relativeDate, taal)}`
+                  : ""}
               </span>
               <Link
                 href="/reviews"
                 className="text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
               >
-                Alle reviews
+                {vert("Alle reviews")}
               </Link>
             </figcaption>
           </figure>
         ))}
       </div>
+      <Vertaaldnoot className="mt-2" />
     </div>
   );
 }

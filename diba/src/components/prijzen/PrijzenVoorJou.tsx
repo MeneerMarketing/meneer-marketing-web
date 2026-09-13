@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import { useMemo } from "react";
 import Label from "@/components/ui/Label";
 import { prijsCijfer } from "@/data/behandelingen";
@@ -12,6 +12,7 @@ import {
 } from "@/data/huidprofiel";
 import { publicCopy } from "@/lib/copy-flags";
 import { useHuidprofiel } from "@/lib/huidprofiel-opslag";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * Wat het bij jou zou kosten.
@@ -40,6 +41,8 @@ import { useHuidprofiel } from "@/lib/huidprofiel-opslag";
  * Wie geen profiel wil, scrolt gewoon door naar de lijst en mist niets.
  */
 export default function PrijzenVoorJou() {
+  const tc = useTc();
+  const t = useT();
   const { profiel } = useHuidprofiel();
 
   const stand = compleetheid(profiel);
@@ -55,20 +58,20 @@ export default function PrijzenVoorJou() {
   if (stand === 0) {
     return (
       <div className="rounded-[var(--r-lg)] bg-white p-7 sm:p-9">
-        <Label>Wat kost dit voor mij</Label>
+        <Label>{t("Wat kost dit voor mij")}</Label>
         <p className="diba-card-title mt-3 text-[var(--t-strong)]">
-          De lijst hieronder is lang. Die van jou is dat niet.
+          {t("De lijst hieronder is lang. Die van jou is dat niet.")}
         </p>
         <p className="mt-4 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
-          Stel je huidprofiel samen en hier staan de prijzen van wat bij jou
-          past, met de reden erbij. De volledige lijst blijft er gewoon onder
-          staan; er wordt niets weggefilterd.
+          {t(
+            "Stel je huidprofiel samen en hier staan de prijzen van wat bij jou past, met de reden erbij. De volledige lijst blijft er gewoon onder staan; er wordt niets weggefilterd.",
+          )}
         </p>
         <Link
           href="/huidprofiel"
           className="diba-label mt-7 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)]"
         >
-          Stel je huidprofiel samen
+          {t("Stel je huidprofiel samen")}
         </Link>
       </div>
     );
@@ -77,18 +80,19 @@ export default function PrijzenVoorJou() {
   return (
     <div className="rounded-[var(--r-lg)] bg-white p-7 sm:p-9 lg:p-11">
       <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2">
-        <Label>Wat kost dit voor jou</Label>
+        <Label>{t("Wat kost dit voor jou")}</Label>
         <p className="text-[14px] leading-6 text-[var(--t-muted)] tabular-nums">
-          {stand} van {PROFIEL_ONDERDELEN} vragen ingevuld
+          {stand} van {PROFIEL_ONDERDELEN}
+          {t("vragen ingevuld")}
         </p>
       </div>
 
       {past.length > 0 ? (
         <>
           <p className="mt-3 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Dit is wat er op grond van je profiel bij je past, met het tarief
-            erbij. De volledige lijst staat er gewoon onder; er is niets
-            weggefilterd. Wat bij jou afviel, staat daar aangemerkt.
+            {t(
+              "Dit is wat er op grond van je profiel bij je past, met het tarief erbij. De volledige lijst staat er gewoon onder; er is niets weggefilterd. Wat bij jou afviel, staat daar aangemerkt.",
+            )}
           </p>
 
           <ul className="mt-7 space-y-2">
@@ -101,14 +105,14 @@ export default function PrijzenVoorJou() {
                   <span className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
                     {i === 0 ? (
                       <span className="diba-label rounded-[var(--r-pill)] bg-[var(--g-700)] px-2.5 py-1 text-white">
-                        Beste match
+                        {t("Beste match")}
                       </span>
                     ) : null}
                     <span className="text-[17px] leading-7 font-medium text-[var(--t-strong)]">
-                      {m.behandeling.naam}
+                      {tc(m.behandeling.naam)}
                     </span>
                     <span className="text-[14px] leading-6 text-[var(--t-muted)]">
-                      {publicCopy(m.reden)}
+                      {tc(m.reden)}
                     </span>
                   </span>
                   <span className="shrink-0 text-[17px] leading-7 text-[var(--t-strong)] tabular-nums">
@@ -125,10 +129,10 @@ export default function PrijzenVoorJou() {
                   className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 rounded-[var(--r-md)] bg-[var(--g-050)] px-5 py-4 transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
                   <span className="text-[17px] leading-7 font-medium text-[var(--t-strong)]">
-                    {m.behandeling.naam}
+                    {tc(m.behandeling.naam)}
                   </span>
                   <span className="shrink-0 text-[15px] leading-7 text-[var(--t-muted)]">
-                    Prijs volgt uit de meting
+                    {t("Prijs volgt uit de meting")}
                   </span>
                 </Link>
               </li>
@@ -139,13 +143,15 @@ export default function PrijzenVoorJou() {
         /* Niets dat past is zelf een antwoord, en meestal een tijdelijk antwoord.
            Zonder deze uitleg zou hier een leeg blok boven een lange prijslijst staan. */
         <div className="mt-5 rounded-[var(--r-md)] bg-[var(--g-200)] p-6 sm:p-7">
-          <p className="diba-card-title text-[var(--g-900)]">{geenMatch.kop}</p>
+          <p className="diba-card-title text-[var(--g-900)]">
+            {tc(geenMatch.kop)}
+          </p>
           <p className="mt-3 max-w-[62ch] text-[16px] leading-7 text-[var(--g-900)]">
-            {geenMatch.zin}
+            {tc(geenMatch.zin)}
           </p>
           {geenMatch.danWel.length > 0 ? (
             <p className="mt-4 max-w-[62ch] text-[15px] leading-7 text-[var(--g-900)]">
-              Wat er dan wel past: {geenMatch.danWel.join(", ")}.
+              {t("Wat er dan wel past:")} {geenMatch.danWel.join(", ")}.
             </p>
           ) : null}
 
@@ -153,14 +159,16 @@ export default function PrijzenVoorJou() {
               regel scrol je naar eenentwintig prijzen zonder te weten dat de merktekens
               daar van jou zijn. */}
           <p className="mt-4 max-w-[62ch] text-[15px] leading-7 text-[var(--g-900)]">
-            De volledige lijst staat er gewoon onder; er is niets weggefilterd.
-            Wat bij jou afviel, staat daar aangemerkt.
+            {t(
+              "De volledige lijst staat er gewoon onder; er is niets weggefilterd. Wat bij jou afviel, staat daar aangemerkt.",
+            )}
           </p>
         </div>
       ) : (
         <p className="mt-5 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
-          Vul aan wat je wil veranderen, dan staan hier de tarieven die daarbij
-          horen.
+          {t(
+            "Vul aan wat je wil veranderen, dan staan hier de tarieven die daarbij horen.",
+          )}
         </p>
       )}
 
@@ -170,11 +178,11 @@ export default function PrijzenVoorJou() {
           className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
         >
           {stand < PROFIEL_ONDERDELEN
-            ? "Profiel aanvullen voor een preciezer antwoord"
-            : "Je huidprofiel bijwerken"}
+            ? t("Profiel aanvullen voor een preciezer antwoord")
+            : t("Je huidprofiel bijwerken")}
         </Link>
         <span className="text-[14px] leading-6 text-[var(--t-muted)]">
-          Je profiel blijft in deze browser staan.
+          {t("Je profiel blijft in deze browser staan.")}
         </span>
       </div>
     </div>

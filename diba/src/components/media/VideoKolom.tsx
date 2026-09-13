@@ -3,6 +3,7 @@
 import { useRef, useState, useSyncExternalStore } from "react";
 import Label from "@/components/ui/Label";
 import { type Videoblok } from "@/data/videos";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * Een video naast een even hoge tekstkolom.
@@ -50,6 +51,8 @@ export default function VideoKolom({
   /** Aan welke kant de video staat. Standaard rechts, zoals gevraagd. */
   kant?: "rechts" | "links";
 }) {
+  const t = useT();
+  const tc = useTc();
   const ref = useRef<HTMLVideoElement>(null);
   const sfeer = video.soort === "sfeer";
   const rustig = useSyncExternalStore(luister, lees, () => false);
@@ -86,10 +89,10 @@ export default function VideoKolom({
         <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-[var(--g-050)] p-8 sm:p-10 lg:p-12">
           <Label>{sfeer ? "Zonder uitleg" : "Met uitleg"}</Label>
           <h2 className="diba-display-m mt-4 max-w-[16ch]">
-            {video.kop} <span className="diba-accent">{video.accent}</span>
+            {tc(video.kop)} <span className="diba-accent">{video.accent}</span>
           </h2>
           <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">
-            {video.intro}
+            {tc(video.intro)}
           </p>
 
           <ul className="mt-7 space-y-3">
@@ -110,7 +113,7 @@ export default function VideoKolom({
                   <path d="M3.5 9.5 7 13l7.5-8" />
                 </svg>
                 <span className="text-[15px] leading-7 text-[var(--t-body)]">
-                  {p}
+                  {tc(p)}
                 </span>
               </li>
             ))}
@@ -118,8 +121,8 @@ export default function VideoKolom({
 
           <p className="diba-label mt-8 text-[var(--t-muted)]">
             {sfeer
-              ? "Eigen opname, zonder geluid"
-              : "Eigen opname, met geluid en ondertiteling"}
+              ? t("Eigen opname, zonder geluid")
+              : t("Eigen opname, met geluid en ondertiteling")}
           </p>
         </div>
 
@@ -135,7 +138,7 @@ export default function VideoKolom({
             loop={sfeer}
             playsInline
             controls={!sfeer && speelt}
-            aria-label={video.beschrijving}
+            aria-label={tc(video.beschrijving)}
             onPlay={() => setSpeelt(true)}
             onPause={() => setSpeelt(false)}
           >
@@ -157,7 +160,7 @@ export default function VideoKolom({
             <button
               type="button"
               onClick={wissel}
-              aria-label="Video afspelen met geluid"
+              aria-label={tc("Video afspelen met geluid")}
               className="absolute inset-0 flex items-center justify-center bg-[var(--g-900)]/25 transition-colors hover:bg-[var(--g-900)]/35 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-white"
             >
               <span className="flex h-20 w-20 items-center justify-center rounded-full bg-white/95 shadow-[var(--shadow-float)]">
@@ -175,7 +178,7 @@ export default function VideoKolom({
             <button
               type="button"
               onClick={wissel}
-              aria-label={speelt ? "Video pauzeren" : "Video afspelen"}
+              aria-label={speelt ? t("Video pauzeren") : t("Video afspelen")}
               className="absolute right-4 bottom-4 flex h-11 w-11 items-center justify-center rounded-full bg-white/90 text-[var(--g-700)] transition-colors hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               {speelt ? (

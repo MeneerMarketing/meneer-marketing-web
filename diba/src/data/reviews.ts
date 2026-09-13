@@ -29,6 +29,7 @@ export const REVIEWS: readonly Review[] = SALONIZED_REVIEWS.map(
   (entry: SalonizedReviewEntry): Review => ({
     id: entry.id,
     quote: entry.quote,
+    quoteEn: entry.quoteEn,
     name: entry.name,
     treatment: entry.treatment,
     stars: entry.stars,

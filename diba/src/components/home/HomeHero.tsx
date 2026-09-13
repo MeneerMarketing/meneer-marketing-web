@@ -1,6 +1,9 @@
-import Link from "next/link";
+"use client";
+
+import Link from "@/components/ui/Taalpad";
 import HeroVideo from "@/components/home/HeroVideo";
 import Button from "@/components/ui/Button";
+import { useT, useTc } from "@/lib/gebruik-taal";
 import {
   FIGMA_HERO_PORTRAIT,
   FIGMA_HERO_PORTRAIT_ALT,
@@ -67,6 +70,8 @@ function getal(item: ProofStripItem) {
  * werd gevonden dan de andere bleek dat verschil nergens een reden voor te hebben.
  */
 function Cijfers({ compact = false }: { compact?: boolean }) {
+  const t = useT();
+  const tc = useTc();
   return (
     <dl
       className={`grid grid-cols-4 rounded-[var(--r-md)] bg-white shadow-[0_6px_24px_-16px_rgba(67,79,58,.45)] ${
@@ -125,6 +130,8 @@ function Cijfers({ compact = false }: { compact?: boolean }) {
 }
 
 export default function HomeHero() {
+  const t = useT();
+  const tc = useTc();
   return (
     <section id="top" className="bg-[var(--g-700)] text-[var(--on-dark)]">
       <div className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
@@ -156,13 +163,13 @@ export default function HomeHero() {
                 aria-hidden="true"
               />
               <span className="diba-label absolute top-5 left-5 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)] sm:top-7 sm:left-7">
-                Rotterdam
+                {t("Rotterdam")}
               </span>
               {/* Op mobiel hoger, want daaronder komt de cijferstrook. Licht op het
                   donkere vlak, waar hij eerst donker op licht was: hetzelfde zegel, maar
                   het moet nu tegen olijf afsteken. */}
               <span className="diba-label absolute right-5 bottom-14 grid h-[72px] w-[72px] place-items-center rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] text-center text-[10px] leading-4 text-[var(--on-dark-btn-text)] sm:right-7 sm:bottom-7 sm:h-24 sm:w-24 sm:text-[11px]">
-                Sinds
+                {t("Sinds")}
                 <br />
                 {DIBA_PROOF.activeSince}
               </span>
@@ -183,15 +190,15 @@ export default function HomeHero() {
                 te zeggen dat het niet zomaar een huidkliniek is, en dat is precies wat
                 deze kop bedoelt (Yasin, 5 september 2026). */}
             <h1 className="diba-hero-in diba-display-xl max-w-[13ch] text-[var(--on-dark)]">
-              Dé huidkliniek
+              {t("Dé huidkliniek")}
               <br />
-              <span className="diba-accent-on-dark">in Rotterdam</span>
+              <span className="diba-accent-on-dark">{t("in Rotterdam")}</span>
             </h1>
 
             <p className="diba-hero-in diba-hero-in-1 mt-4 max-w-[46ch] text-[16px] leading-7 text-[var(--on-dark-body)] lg:mt-7">
-              Onze huidtherapeuten helpen je met acne, pigment, roodheid,
-              littekens, huidveroudering en ongewenst haar. Tijdens de intake
-              hoor je wat er bij jou mogelijk is.
+              {t(
+                "Onze huidtherapeuten helpen je met acne, pigment, roodheid, littekens, huidveroudering en ongewenst haar. Tijdens de intake hoor je wat er bij jou mogelijk is.",
+              )}
             </p>
 
             {/* Op mobiel één knop over de volle breedte: één duidelijke stap. De tweede
@@ -208,7 +215,7 @@ export default function HomeHero() {
                 variant="primair-op-donker"
                 className="w-full sm:w-auto"
               >
-                Afspraak maken
+                {t("Afspraak maken")}
               </Button>
               {/* De span en niet de knop zelf: `hidden` op de Button verliest van de
                   `inline-flex` in zijn basisklassen, want dat zijn twee utilities uit
@@ -216,7 +223,7 @@ export default function HomeHero() {
                   stond hij gewoon in beeld. */}
               <span className="hidden sm:inline-flex">
                 <Button href="/behandelingen" variant="secundair-op-donker">
-                  Bekijk de behandelingen
+                  {t("Bekijk de behandelingen")}
                 </Button>
               </span>
             </div>
@@ -225,12 +232,12 @@ export default function HomeHero() {
                 naast elkaar; twee gelijkwaardige zijpaden onder één hoofdknop maken van
                 een keuze een rijtje. */}
             <p className="mt-4 text-[14px] leading-6 text-[var(--on-dark-body)] lg:mt-5">
-              Weet je nog niet welke behandeling past?{" "}
+              {t("Weet je nog niet welke behandeling past?")}{" "}
               <Link
                 href="/behandeling-op-advies"
                 className="text-[var(--on-dark)] underline underline-offset-4 transition-colors hover:text-[var(--on-dark-accent)]"
               >
-                Boek een behandeling op advies
+                {t("Boek een behandeling op advies")}
               </Link>
               .
             </p>

@@ -1,4 +1,7 @@
+"use client";
+
 import { LOGOSTROOK } from "@/data/team";
+import { useTc } from "@/lib/gebruik-taal";
 
 /**
  * De logo's van de verenigingen en registers waar Diba bij hoort.
@@ -37,6 +40,7 @@ import { LOGOSTROOK } from "@/data/team";
  * SVG via next/image vraagt om `dangerouslyAllowSVG`. Zie ook VerzekeraarLogo.
  */
 export default function Logostrook({ className = "" }: { className?: string }) {
+  const tc = useTc();
   return (
     <ul
       className={`mx-auto grid max-w-[22rem] grid-cols-3 items-center justify-items-center gap-x-6 gap-y-6 sm:max-w-none sm:flex sm:flex-wrap sm:justify-center sm:gap-x-12 sm:gap-y-8 ${className}`.trim()}
@@ -58,7 +62,7 @@ export default function Logostrook({ className = "" }: { className?: string }) {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={l.logo}
-              alt={l.naam}
+              alt={tc(l.naam)}
               /* `object-contain` naast een vaste hoogte: in een smal vak krimpt het logo
                  mee in plaats van uitgerekt te worden. */
               className="max-w-full object-contain"

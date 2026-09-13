@@ -1,9 +1,12 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import { ArrowRight, ArrowUpRight } from "@/components/ui/Icon";
 import Label from "@/components/ui/Label";
 import Veegrij from "@/components/ui/Veegrij";
 import { HOME_KENNISBANK_ARTICLES } from "@/data/home-kennisbank";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 type FigmaKennisbankSectionProps = {
   id?: string;
@@ -25,13 +28,15 @@ export default function FigmaKennisbankSection({
   id = "kennis",
   className = "py-20",
 }: FigmaKennisbankSectionProps) {
+  const tc = useTc();
+  const t = useT();
   return (
     <section id={id} className={className}>
       <div className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
         <div className="flex flex-wrap items-end justify-between gap-5">
           <div>
-            <Label>Diba kennisbank</Label>
-            <h2 className="diba-display-m mt-4">Uitleg per klacht.</h2>
+            <Label>{t("Diba kennisbank")}</Label>
+            <h2 className="diba-display-m mt-4">{t("Uitleg per klacht.")}</h2>
           </div>
           {/* Wees hier naar het huidprobleemoverzicht, terwijl de kop "Diba kennisbank"
               belooft. Nu naar de kennisbank zelf, die sinds vandaag bestaat. */}
@@ -39,7 +44,7 @@ export default function FigmaKennisbankSection({
             href="/kennisbank"
             className="diba-label inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4"
           >
-            Naar de kennisbank
+            {t("Naar de kennisbank")}
             <ArrowUpRight size={13} />
           </Link>
         </div>
@@ -61,7 +66,7 @@ export default function FigmaKennisbankSection({
               <div className="relative aspect-[16/7] overflow-hidden bg-[var(--g-200)] md:aspect-[4/3]">
                 <Image
                   src={article.image.src}
-                  alt={article.image.alt}
+                  alt={tc(article.image.alt)}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover transition duration-500 group-hover:scale-[1.03]"
@@ -75,19 +80,19 @@ export default function FigmaKennisbankSection({
                   aria-hidden="true"
                 />
                 <span className="diba-label absolute left-4 top-4 rounded-[var(--r-pill)] bg-white/90 px-3.5 py-1.5 text-[var(--g-700)] backdrop-blur-[2px]">
-                  {article.tag}
+                  {t(article.tag)}
                 </span>
               </div>
 
               <div className="flex flex-1 flex-col p-6 sm:p-7">
                 <h3 className="diba-card-title text-[var(--t-strong)]">
-                  {article.title}
+                  {t(article.title)}
                 </h3>
                 <p className="mt-3 flex-1 text-sm leading-6 text-[var(--t-body)]">
-                  {article.summary}
+                  {t(article.summary)}
                 </p>
                 <span className="diba-label mt-5 inline-flex items-center gap-1.5 transition group-hover:text-[var(--g-700)]">
-                  Lees meer
+                  {t("Lees meer")}
                   <ArrowRight size={13} />
                 </span>
               </div>

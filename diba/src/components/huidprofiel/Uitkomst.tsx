@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import { useMemo } from "react";
 import DibaLeafMark from "@/components/ui/DibaLeafMark";
 import Spinnenweb from "@/components/ui/Spinnenweb";
@@ -22,6 +22,7 @@ import {
   type Match,
 } from "@/data/huidprofiel";
 import { publicCopy } from "@/lib/copy-flags";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * De uitkomst van het huidprofiel.
@@ -82,17 +83,21 @@ function groepeer(matches: readonly Match[]): readonly Afvalgroep[] {
 
 /** Eén regel uit je profiel, als label met waarde. */
 function Regel({ kop, waarde }: { kop: string; waarde: string }) {
+  const tc = useTc();
+  const t = useT();
   return (
     <div className="flex items-baseline justify-between gap-6 rounded-[var(--r-sm)] bg-[var(--g-025)] px-4 py-3">
-      <dt className="diba-label shrink-0 text-[var(--t-label)]">{kop}</dt>
+      <dt className="diba-label shrink-0 text-[var(--t-label)]">{tc(kop)}</dt>
       <dd className="text-right text-[15px] leading-6 font-medium text-[var(--t-strong)]">
-        {waarde}
+        {tc(waarde)}
       </dd>
     </div>
   );
 }
 
 export default function Uitkomst({ profiel }: Props) {
+  const tc = useTc();
+  const t = useT();
   const stand = compleetheid(profiel);
   const matches = useMemo(() => maakMatches(profiel), [profiel]);
   const past = matches.filter((m) => m.oordeel === "past");
@@ -148,8 +153,9 @@ export default function Uitkomst({ profiel }: Props) {
   if (stand === 0) {
     return (
       <p className="mt-6 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
-        Vul hierboven iets in, dan staat hier meteen je profiel, wat erbij past
-        en wat je tijdens de intake moet melden.
+        {t(
+          "Vul hierboven iets in, dan staat hier meteen je profiel, wat erbij past en wat je tijdens de intake moet melden.",
+        )}
       </p>
     );
   }
@@ -170,7 +176,7 @@ export default function Uitkomst({ profiel }: Props) {
               <div className="flex h-[260px] w-[260px] flex-col items-center justify-center rounded-[var(--r-lg)] bg-[var(--g-025)] p-8 text-center">
                 <DibaLeafMark className="h-9 w-9 text-[var(--g-300)]" />
                 <p className="mt-4 text-[14px] leading-6 text-[var(--t-muted)]">
-                  Doe de scan bij stap 1, dan staat je spinnenweb hier.
+                  {t("Doe de scan bij stap 1, dan staat je spinnenweb hier.")}
                 </p>
               </div>
             )}
@@ -178,7 +184,7 @@ export default function Uitkomst({ profiel }: Props) {
 
           <div>
             <p className="diba-label text-[var(--t-label)]">
-              Je huid, zoals jij hem beschrijft
+              {t("Je huid, zoals jij hem beschrijft")}
             </p>
             <div className="mt-5 space-y-3">
               {samenvatting.map((z) => (
@@ -186,7 +192,7 @@ export default function Uitkomst({ profiel }: Props) {
                   key={z}
                   className="max-w-[58ch] text-[17px] leading-8 text-[var(--t-body)]"
                 >
-                  {z}
+                  {tc(z)}
                 </p>
               ))}
             </div>
@@ -201,8 +207,10 @@ export default function Uitkomst({ profiel }: Props) {
 
             {stand < PROFIEL_ONDERDELEN ? (
               <p className="mt-6 text-[14px] leading-6 text-[var(--t-muted)]">
-                Je hebt {stand} van de {PROFIEL_ONDERDELEN} vragen ingevuld.
-                Elke vraag die je nog beantwoordt maakt deze uitkomst preciezer.
+                {t("Je hebt")} {stand} van de {PROFIEL_ONDERDELEN}{" "}
+                {t(
+                  "vragen ingevuld. Elke vraag die je nog beantwoordt maakt deze uitkomst preciezer.",
+                )}
               </p>
             ) : null}
           </div>
@@ -216,8 +224,9 @@ export default function Uitkomst({ profiel }: Props) {
             Meld dit tijdens de intake ({melden.length})
           </p>
           <p className="mt-3 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Dit zijn dingen die in de praktijk pas aan de balie boven tafel
-            komen, en dan een afspraak kosten. Nu weet je het vooraf.
+            {t(
+              "Dit zijn dingen die in de praktijk pas aan de balie boven tafel komen, en dan een afspraak kosten. Nu weet je het vooraf.",
+            )}
           </p>
           <ul className="mt-6 grid gap-3 md:grid-cols-2">
             {melden.map((m) => (
@@ -226,7 +235,7 @@ export default function Uitkomst({ profiel }: Props) {
                 className="flex gap-3 rounded-[var(--r-md)] bg-white p-5 text-[15px] leading-7 text-[var(--t-body)]"
               >
                 <DibaLeafMark className="mt-1.5 h-3.5 w-3.5 shrink-0 text-[var(--g-600)]" />
-                {m}
+                {tc(m)}
               </li>
             ))}
           </ul>
@@ -258,26 +267,28 @@ export default function Uitkomst({ profiel }: Props) {
                     <span className="flex flex-wrap items-baseline gap-3">
                       {i === 0 ? (
                         <span className="diba-label rounded-[var(--r-pill)] bg-[var(--g-700)] px-2.5 py-1 text-white">
-                          Beste match
+                          {t("Beste match")}
                         </span>
                       ) : null}
                       <span className="text-[18px] leading-7 font-medium text-[var(--t-strong)]">
-                        {m.behandeling.naam}
+                        {tc(m.behandeling.naam)}
                       </span>
                     </span>
                     <span className="shrink-0 text-[15px] leading-7 text-[var(--t-muted)] tabular-nums">
-                      {prijsTekst(m.behandeling.prijs)}
+                      {tc(prijsTekst(m.behandeling.prijs))}
                     </span>
                   </span>
 
                   <span className="mt-2 block max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
-                    {publicCopy(m.reden)}
+                    {tc(m.reden)}
                   </span>
 
                   <span className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-[13px] leading-6 text-[var(--t-muted)]">
-                    <span>Herstel: {publicCopy(m.behandeling.herstel)}</span>
                     <span>
-                      {publicCopy(
+                      {t("Herstel:")} {tc(m.behandeling.herstel)}
+                    </span>
+                    <span>
+                      {tc(
                         m.behandeling.sessies,
                         "Aantal sessies volgt tijdens de intake",
                       )}
@@ -287,7 +298,7 @@ export default function Uitkomst({ profiel }: Props) {
                   {m.letOp.length > 0 ? (
                     <span className="mt-3 block rounded-[var(--r-sm)] bg-white px-4 py-3 text-[13px] leading-6 text-[var(--t-body)]">
                       <span className="diba-label block text-[var(--t-label)]">
-                        Eerst bespreken
+                        {t("Eerst bespreken")}
                       </span>
                       <span className="mt-1 block">{m.letOp.join(". ")}</span>
                     </span>
@@ -302,18 +313,18 @@ export default function Uitkomst({ profiel }: Props) {
              ding in de weg staat en dat het volgende maand wel kan. */
           <div className="mt-6 rounded-[var(--r-md)] bg-[var(--g-200)] p-6 sm:p-7">
             <p className="diba-card-title text-[var(--g-900)]">
-              {geenMatch.kop}
+              {tc(geenMatch.kop)}
             </p>
             <p className="mt-3 max-w-[62ch] text-[16px] leading-7 text-[var(--g-900)]">
-              {geenMatch.zin}
+              {tc(geenMatch.zin)}
             </p>
             <p className="mt-4 max-w-[62ch] text-[15px] leading-7 text-[var(--g-900)]">
-              {geenMatch.wat}
+              {tc(geenMatch.wat)}
             </p>
             {geenMatch.danWel.length > 0 ? (
               <div className="mt-6 rounded-[var(--r-sm)] bg-white p-5">
                 <p className="diba-label text-[var(--t-label)]">
-                  Wat er dan wel past
+                  {t("Wat er dan wel past")}
                 </p>
                 <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
                   {geenMatch.danWel.join(", ")}
@@ -323,7 +334,7 @@ export default function Uitkomst({ profiel }: Props) {
           </div>
         ) : (
           <p className="mt-5 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Vul aan wat je wil veranderen, dan komt hier de lijst.
+            {t("Vul aan wat je wil veranderen, dan komt hier de lijst.")}
           </p>
         )}
 
@@ -331,16 +342,17 @@ export default function Uitkomst({ profiel }: Props) {
           <p className="mt-6 text-[15px] leading-7 text-[var(--t-muted)]">
             {deels.length === 1 ? (
               <>
-                Daarnaast doet er één iets aan je doel zonder dat hij daarvoor
-                gemaakt is.
+                {t(
+                  "Daarnaast doet er één iets aan je doel zonder dat hij daarvoor gemaakt is.",
+                )}
               </>
             ) : (
               <>
-                Daarnaast doen er {deels.length} iets aan je doel zonder dat ze
-                daarvoor gemaakt zijn.
+                {t("Daarnaast doen er")} {deels.length}{" "}
+                {t("iets aan je doel zonder dat ze daarvoor gemaakt zijn.")}
               </>
             )}{" "}
-            Die staan op de behandelingenpagina.
+            {t("Die staan op de behandelingenpagina.")}
           </p>
         ) : null}
       </div>
@@ -354,24 +366,25 @@ export default function Uitkomst({ profiel }: Props) {
             </p>
             <p className="text-[14px] leading-6 text-[var(--t-muted)]">
               {groepen.length} {groepen.length === 1 ? "reden" : "redenen"},
-              niet {kanNiet.length} losse
+              niet {kanNiet.length}
+              {t("losse")}
             </p>
           </div>
           <p className="mt-3 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            Hier stond eerder alleen een aantal. Wat er wegvalt en waardoor is
-            net zo bruikbaar als wat er overblijft, want meestal is het één
-            antwoord van jou dat de halve lijst wegneemt.
+            {t(
+              "Hier stond eerder alleen een aantal. Wat er wegvalt en waardoor is net zo bruikbaar als wat er overblijft, want meestal is het één antwoord van jou dat de halve lijst wegneemt.",
+            )}
           </p>
 
           <ul className="mt-7 space-y-3">
             {groepen.map((g) => (
               <li
-                key={g.reden}
+                key={tc(g.reden)}
                 className="rounded-[var(--r-md)] bg-[var(--g-025)] p-5 sm:p-6"
               >
                 <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
                   <p className="max-w-[62ch] text-[16px] leading-7 font-medium text-[var(--t-strong)]">
-                    {g.reden}
+                    {tc(g.reden)}
                   </p>
                   <p className="shrink-0 text-[14px] leading-7 text-[var(--t-muted)] tabular-nums">
                     {g.namen.length}{" "}
@@ -396,7 +409,7 @@ export default function Uitkomst({ profiel }: Props) {
             href="/behandelingen"
             className="diba-label mt-7 inline-flex min-h-11 items-center text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
           >
-            Alle behandelingen, geordend op je profiel
+            {t("Alle behandelingen, geordend op je profiel")}
           </Link>
         </div>
       ) : null}
@@ -405,15 +418,17 @@ export default function Uitkomst({ profiel }: Props) {
       <div className="rounded-[var(--r-lg)] bg-[var(--g-700)] p-7 text-[var(--on-dark)] sm:p-9 lg:p-11">
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14">
           <div>
-            <p className="diba-label diba-label-on-dark">Eerlijk gezegd</p>
+            <p className="diba-label diba-label-on-dark">
+              {t("Eerlijk gezegd")}
+            </p>
             <p className="diba-display-s mt-4 max-w-[16ch]">
-              Dit weten we
-              <span className="diba-accent-on-dark"> nog niet.</span>
+              {t("Dit weten we")}
+              <span className="diba-accent-on-dark">{t("nog niet.")}</span>
             </p>
             <p className="mt-6 max-w-[46ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Alles hierboven komt uit jouw antwoorden. Dat is genoeg om te
-              ordenen en niet genoeg om te beslissen. Wat er hiernaast staat is
-              met het blote oog niet vast te stellen, ook niet door ons.
+              {t(
+                "Alles hierboven komt uit jouw antwoorden. Dat is genoeg om te ordenen en niet genoeg om te beslissen. Wat er hiernaast staat is met het blote oog niet vast te stellen, ook niet door ons.",
+              )}
             </p>
           </div>
           <ul className="space-y-3">
@@ -423,7 +438,7 @@ export default function Uitkomst({ profiel }: Props) {
                 className="flex gap-3.5 rounded-[var(--r-md)] bg-white/10 p-5 text-[15px] leading-7 text-[var(--on-dark-body)]"
               >
                 <DibaLeafMark className="mt-1.5 h-3.5 w-3.5 shrink-0 text-[var(--on-dark-accent)]" />
-                {publicCopy(z)}
+                {tc(z)}
               </li>
             ))}
           </ul>
@@ -436,16 +451,19 @@ export default function Uitkomst({ profiel }: Props) {
       <div className="rounded-[var(--r-lg)] bg-[var(--g-200)] p-7 sm:p-9 lg:p-11">
         <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
           <div>
-            <p className="diba-label text-[var(--g-800)]">De volgende stap</p>
+            <p className="diba-label text-[var(--g-800)]">
+              {t("De volgende stap")}
+            </p>
             <h3 className="diba-display-s mt-4 max-w-[16ch]">
-              Het huidconsult.{" "}
-              <span className="diba-accent"> Meten, niet behandelen.</span>
+              {t("Het huidconsult.")}{" "}
+              <span className="diba-accent">
+                {t("Meten, niet behandelen.")}
+              </span>
             </h3>
             <p className="mt-6 max-w-[52ch] text-[16px] leading-8 text-[var(--g-900)]">
-              Er gebeurt niets met je huid. Er wordt gekeken, gemeten en
-              uitgelegd, en je gaat naar huis met wat er uit de meting kwam en
-              wat dat betekent voor je doel. Ook als dat betekent dat we je iets
-              afraden.
+              {t(
+                "Er gebeurt niets met je huid. Er wordt gekeken, gemeten en uitgelegd, en je gaat naar huis met wat er uit de meting kwam en wat dat betekent voor je doel. Ook als dat betekent dat we je iets afraden.",
+              )}
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
@@ -453,13 +471,13 @@ export default function Uitkomst({ profiel }: Props) {
                 href="/intake"
                 className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-7 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
               >
-                Plan een huidconsult
+                {t("Plan een huidconsult")}
               </Link>
               <Link
                 href="/behandelingen/huidanalyse"
                 className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
               >
-                Wat er precies gebeurt
+                {t("Wat er precies gebeurt")}
               </Link>
             </div>
           </div>
@@ -470,7 +488,7 @@ export default function Uitkomst({ profiel }: Props) {
             {[
               [
                 "Wat het kost",
-                huidanalyse ? prijsTekst(huidanalyse.prijs) : "Op aanvraag",
+                huidanalyse ? prijsTekst(huidanalyse.prijs) : tc("Op aanvraag"),
               ],
               [
                 "Hersteltijd",
@@ -484,10 +502,10 @@ export default function Uitkomst({ profiel }: Props) {
                 className="flex items-baseline justify-between gap-6 rounded-[var(--r-sm)] bg-[var(--g-025)] px-4 py-3"
               >
                 <dt className="diba-label shrink-0 text-[var(--t-label)]">
-                  {kop}
+                  {tc(kop)}
                 </dt>
                 <dd className="text-right text-[16px] leading-7 font-medium text-[var(--t-strong)]">
-                  {waarde}
+                  {tc(waarde)}
                 </dd>
               </div>
             ))}

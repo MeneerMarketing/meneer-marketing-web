@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { HOME_WERKWIJZE_STEPS } from "@/data/home-werkwijze";
+import { useT } from "@/lib/gebruik-taal";
 
 /**
  * De drie stappen naast "We behandelen alleen als we denken dat het zinvol is"
@@ -45,6 +46,7 @@ export default function WerkwijzeStepsFlow({
 }: {
   className?: string;
 }) {
+  const t = useT();
   const stappen = HOME_WERKWIJZE_STEPS;
   const [actief, setActief] = useState(0);
   const [gepauzeerd, setGepauzeerd] = useState(false);
@@ -138,15 +140,15 @@ export default function WerkwijzeStepsFlow({
                     aan ? "text-[var(--g-700)]" : "text-[var(--t-muted)]"
                   }`}
                 >
-                  {STAP_LABEL[i] ?? stap.title}
+                  {t(STAP_LABEL[i] ?? stap.title)}
                 </span>
 
                 <span className="mt-5 block text-[26px] leading-none tracking-[-.05em] text-[var(--t-strong)]">
-                  {stap.title}
+                  {t(stap.title)}
                 </span>
 
                 <span className="mb-6 mt-3 block text-[14px] leading-6 text-[var(--t-body)]">
-                  {stap.body}
+                  {t(stap.body)}
                 </span>
 
                 {/* De voortgang. Een vulling en geen lijn: dat is het verschil tussen
@@ -167,7 +169,7 @@ export default function WerkwijzeStepsFlow({
                   />
                 </span>
                 <span className="sr-only">
-                  Stap {i + 1} van {stappen.length}
+                  {t("Stap")} {i + 1} {t("van")} {stappen.length}
                 </span>
               </button>
             </li>

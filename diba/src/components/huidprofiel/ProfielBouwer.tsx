@@ -23,6 +23,7 @@ import {
 } from "@/data/huidprofiel";
 import { publicCopy } from "@/lib/copy-flags";
 import { useHuidprofiel } from "@/lib/huidprofiel-opslag";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * De profielpagina: je huid in negen stappen.
@@ -70,6 +71,8 @@ function Vraag({
   klaar: boolean;
   children: React.ReactNode;
 }) {
+  const t = useT();
+  const tc = useTc();
   return (
     /* Vlakken, geen lijnen, en alle kaarten dezelfde.
      *
@@ -108,7 +111,7 @@ function Vraag({
             >
               {nummer}
             </span>
-            {klaar ? "Ingevuld" : "Nog open"}
+            {klaar ? t("Ingevuld") : t("Nog open")}
           </p>
 
           {/* Eén regel, en het accentwoord loopt door in plaats van eronder.
@@ -116,13 +119,13 @@ function Vraag({
               altijd af, en een harde regelovergang tussen kop en accent maakte er dan
               drie regels van. Kleiner en doorlopend leest rustiger en past wel. */}
           <h2 className="mt-4 text-[30px] leading-[1.05] font-normal tracking-[-.05em] text-balance sm:text-[34px]">
-            {kop}
-            {accent ? <span className="diba-accent"> {accent}</span> : null}
+            {t(kop)}{" "}
+            {accent ? <span className="diba-accent"> {t(accent)}</span> : null}
           </h2>
 
           {uitleg ? (
             <p className="mt-4 max-w-[42ch] text-[15px] leading-7 text-[var(--t-body)]">
-              {uitleg}
+              {t(uitleg)}
             </p>
           ) : null}
         </div>
@@ -149,18 +152,19 @@ function Blokkop({
   kop: string;
   zin: string;
 }) {
+  const t = useT();
   return (
     <div className="flex items-start gap-5 pt-4">
       <span
         aria-hidden="true"
         className="diba-label mt-1.5 shrink-0 rounded-[var(--r-pill)] bg-white px-4 py-2 text-[var(--g-700)]"
       >
-        {nummer}
+        {t(nummer)}
       </span>
       <div>
-        <h2 className="diba-display-s">{kop}</h2>
+        <h2 className="diba-display-s">{t(kop)}</h2>
         <p className="mt-3 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
-          {zin}
+          {t(zin)}
         </p>
       </div>
     </div>
@@ -178,6 +182,8 @@ function Keuzes({
   onKies: (id: string) => void;
   kolommen?: 1 | 2 | 3;
 }) {
+  const t = useT();
+  const tc = useTc();
   const raster =
     kolommen === 1 ? "" : kolommen === 3 ? "sm:grid-cols-3" : "sm:grid-cols-2";
   return (
@@ -201,14 +207,14 @@ function Keuzes({
             <span
               className={`text-[15px] leading-5 font-medium ${aan ? "text-white" : "text-[var(--t-strong)]"}`}
             >
-              {o.label}
+              {tc(o.label)}
             </span>
             {o.zin ? (
               /* Geen label maar uitleg: hierop baseer je je antwoord, dus leesmaat. */
               <span
                 className={`mt-0.5 text-[13px] leading-5 ${aan ? "text-[var(--on-dark-body)]" : "text-[var(--t-muted)]"}`}
               >
-                {o.zin}
+                {tc(o.zin)}
               </span>
             ) : null}
           </button>
@@ -221,6 +227,8 @@ function Keuzes({
 /* ── De pagina ────────────────────────────────────────────────────────────── */
 
 export default function ProfielBouwer() {
+  const t = useT();
+  const tc = useTc();
   const {
     profiel,
     wisselDoel,
@@ -260,7 +268,7 @@ export default function ProfielBouwer() {
               ))}
             </span>
             <p className="diba-label text-[var(--t-label)]">
-              {stand} van {PROFIEL_ONDERDELEN} ingevuld
+              {stand} {t("van")} {PROFIEL_ONDERDELEN} {t("ingevuld")}
             </p>
           </div>
           <div className="flex items-center gap-6">
@@ -270,14 +278,14 @@ export default function ProfielBouwer() {
                 onClick={wis}
                 className="diba-label min-h-11 text-[var(--t-muted)] transition-colors hover:text-[var(--t-strong)]"
               >
-                Alles wissen
+                {t("Alles wissen")}
               </button>
             ) : null}
             <a
               href="#uitkomst"
               className="diba-label text-[var(--g-700)] underline underline-offset-4"
             >
-              Naar je uitkomst
+              {t("Naar je uitkomst")}
             </a>
           </div>
         </div>
@@ -308,11 +316,11 @@ export default function ProfielBouwer() {
               />
               <div>
                 <p className="diba-label text-[var(--t-label)]">
-                  Ingevuld {hoeLangGeleden(profiel.scan.op)}
+                  {t("Ingevuld")} {hoeLangGeleden(profiel.scan.op)}
                 </p>
                 {profiel.scan.focusLabel ? (
                   <p className="diba-card-title mt-3 text-[var(--t-strong)]">
-                    {profiel.scan.focusLabel}
+                    {tc(profiel.scan.focusLabel)}
                   </p>
                 ) : null}
                 <ul className="mt-5 flex flex-wrap gap-2">
@@ -322,7 +330,7 @@ export default function ProfielBouwer() {
                       className="flex items-baseline gap-2 rounded-[var(--r-pill)] bg-[var(--g-050)] px-4 py-2"
                     >
                       <span className="text-[14px] leading-5 font-medium text-[var(--t-strong)]">
-                        {as.label}
+                        {tc(as.label)}
                       </span>
                       <span className="text-[13px] leading-5 text-[var(--t-muted)] tabular-nums">
                         {profiel.scan!.assen[as.id]}/100
@@ -346,9 +354,9 @@ export default function ProfielBouwer() {
           ) : (
             <div className="rounded-[var(--r-lg)] bg-white p-6 sm:p-8">
               <p className="max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
-                Begin hier: vier vragen, ongeveer een minuut. Je krijgt je
-                profielschets terug en twee van de vragen hieronder staan daarna
-                meteen goed.
+                {t(
+                  "Begin hier: vier vragen, ongeveer een minuut. Je krijgt je profielschets terug en twee van de vragen hieronder staan daarna meteen goed.",
+                )}
               </p>
               <div className="mt-7">
                 <MiniHuidscan />
@@ -408,15 +416,15 @@ export default function ProfielBouwer() {
           klaar={profiel.huidtype !== null}
         >
           <div className="flex flex-wrap gap-2">
-            {FITZPATRICK_TYPES.map((t) => {
-              const aan = profiel.huidtype === t.id;
+            {FITZPATRICK_TYPES.map((ft) => {
+              const aan = profiel.huidtype === ft.id;
               return (
                 <button
-                  key={t.id}
+                  key={ft.id}
                   type="button"
                   aria-pressed={aan}
-                  title={t.description}
-                  onClick={() => zetHuidtype(t.id)}
+                  title={tc(ft.description)}
+                  onClick={() => zetHuidtype(ft.id)}
                   className={`flex min-h-14 min-w-[7rem] flex-col justify-center rounded-[var(--r-md)] border px-4 py-2 transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] ${
                     aan
                       ? "border-[var(--g-700)] bg-[var(--g-700)]"
@@ -426,14 +434,14 @@ export default function ProfielBouwer() {
                   <span
                     className={`text-[15px] leading-5 font-medium ${aan ? "text-white" : "text-[var(--t-strong)]"}`}
                   >
-                    Type {t.id}
+                    {t("Type")} {ft.id}
                   </span>
                   {/* Zelfde reden als hierboven: "Zeer licht, verbrandt snel" is de zin
                       waarmee je je eigen huidtype herkent. */}
                   <span
                     className={`mt-0.5 text-[13px] leading-5 ${aan ? "text-[var(--on-dark-body)]" : "text-[var(--t-muted)]"}`}
                   >
-                    {t.description}
+                    {tc(ft.description)}
                   </span>
                 </button>
               );
@@ -441,7 +449,7 @@ export default function ProfielBouwer() {
           </div>
           {kanttekening ? (
             <p className="mt-5 max-w-[56ch] rounded-[var(--r-sm)] bg-white p-5 text-[14px] leading-6 text-[var(--t-body)]">
-              {publicCopy(kanttekening)}
+              {tc(kanttekening)}
             </p>
           ) : null}
         </Vraag>
@@ -530,7 +538,9 @@ export default function ProfielBouwer() {
           }
         >
           <div>
-            <p className="diba-label text-[var(--t-muted)]">Nu aan de hand</p>
+            <p className="diba-label text-[var(--t-muted)]">
+              {t("Nu aan de hand")}
+            </p>
             <div className="mt-4">
               <Keuzes
                 opties={SITUATIE}
@@ -540,7 +550,9 @@ export default function ProfielBouwer() {
             </div>
           </div>
           <div className="mt-8">
-            <p className="diba-label text-[var(--t-muted)]">Voorgeschiedenis</p>
+            <p className="diba-label text-[var(--t-muted)]">
+              {t("Voorgeschiedenis")}
+            </p>
             <div className="mt-4">
               <Keuzes
                 opties={VOORGESCHIEDENIS}
@@ -573,21 +585,19 @@ export default function ProfielBouwer() {
         id="uitkomst"
         className="scroll-mt-[var(--anker-offset)] pt-8 sm:pt-12 lg:pt-16"
       >
-        <p className="diba-label text-[var(--t-label)]">Je uitkomst</p>
+        <p className="diba-label text-[var(--t-label)]">{t("Je uitkomst")}</p>
         <h2 className="diba-display-m mt-4 max-w-[20ch]">
-          Wat dit betekent
+          {t("Wat dit betekent")}
           <br />
-          <span className="diba-accent">voor jouw huid.</span>
+          <span className="diba-accent">{t("voor jouw huid.")}</span>
         </h2>
 
         <Uitkomst profiel={profiel} />
 
         <p className="mt-10 max-w-[64ch] text-[15px] leading-7 text-[var(--t-body)]">
-          Dit is geen diagnose en geen advies. Het legt naast elkaar wat jij
-          hebt ingevuld en wat een behandeling doet, en zegt waar dat wringt.
-          Wat er bij jou past bepaalt een mens, na de meting. Je profiel blijft
-          in deze browser staan: geen account, geen mailadres, niets dat naar
-          ons toe gaat.
+          {t(
+            "Dit is geen diagnose en geen advies. Het legt naast elkaar wat jij hebt ingevuld en wat een behandeling doet, en zegt waar dat wringt. Wat er bij jou past bepaalt een mens, na de meting. Je profiel blijft in deze browser staan: geen account, geen mailadres, niets dat naar ons toe gaat.",
+          )}
         </p>
       </section>
     </div>

@@ -21,6 +21,7 @@ import {
   type LaserGeslacht,
 } from "@/data/laser-zones";
 import { formatLaserPrice } from "@/lib/laser-pricing";
+import { useTc, useT } from "@/lib/gebruik-taal";
 
 /**
  * De kaart waarop je je zones aanwijst.
@@ -90,6 +91,8 @@ const HUID = "var(--g-100)";
  * elkaar overlappen en er geen haarlijn in het midden staat.
  */
 function Paar({ d, ...rest }: { d: string } & React.SVGProps<SVGPathElement>) {
+  const t = useT();
+  const tc = useTc();
   return (
     <>
       <path d={d} {...rest} />
@@ -104,6 +107,8 @@ export default function Lichaamskaart({
   onWissel,
   geslacht,
 }: Props) {
+  const t = useT();
+  const tc = useTc();
   const [aanzicht, setAanzicht] = useState<Aanzicht>("voor");
   const [zweef, setZweef] = useState<string | null>(null);
   const sleutel = useId().replace(/:/g, "");
@@ -198,7 +203,7 @@ export default function Lichaamskaart({
       {/* ── Aanzicht kiezen ── */}
       <div
         role="tablist"
-        aria-label="Aanzicht"
+        aria-label={tc("Aanzicht")}
         className="flex flex-wrap gap-2"
       >
         {AANZICHTEN.map((a) => (
@@ -217,7 +222,7 @@ export default function Lichaamskaart({
                 : "bg-white text-[var(--t-label)] hover:bg-[var(--g-100)]"
             }`}
           >
-            {a.label}
+            {tc(a.label)}
           </button>
         ))}
       </div>
@@ -298,17 +303,17 @@ export default function Lichaamskaart({
             {onderschrift ? (
               <>
                 <span className="text-[15px] leading-6 font-medium text-[var(--t-strong)]">
-                  {onderschrift.naam}
+                  {tc(onderschrift.naam)}
                 </span>
                 <span className="shrink-0 text-[14px] text-[var(--t-muted)] tabular-nums">
                   {onderschrift.staat === "gedekt"
-                    ? "Zit al in je keuze"
+                    ? t("Zit al in je keuze")
                     : onderschrift.prijs}
                 </span>
               </>
             ) : (
               <span className="text-[14px] leading-6 text-[var(--t-muted)]">
-                Beweeg over het lichaam of kies hiernaast.
+                {t("Beweeg over het lichaam of kies hiernaast.")}
               </span>
             )}
           </div>
@@ -349,7 +354,7 @@ export default function Lichaamskaart({
                       s === "aan" ? "text-white" : "text-[var(--t-strong)]"
                     }`}
                   >
-                    {z.label}
+                    {tc(z.label)}
                   </span>
                   <span
                     className={`shrink-0 text-[13px] tabular-nums ${
@@ -359,7 +364,7 @@ export default function Lichaamskaart({
                     }`}
                   >
                     {s === "gedekt"
-                      ? "Zit er al in"
+                      ? t("Zit er al in")
                       : formatLaserPrice(z.singlePrice)}
                   </span>
                 </button>

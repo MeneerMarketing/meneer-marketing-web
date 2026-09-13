@@ -1,4 +1,7 @@
+"use client";
+
 import { DIBA_HOME_PROOF_ITEMS } from "@/lib/site";
+import { useT } from "@/lib/gebruik-taal";
 
 /**
  * De vier cijfers, als strook onder een hero.
@@ -51,19 +54,20 @@ export default function Cijferstrook({
 }: {
   className?: string;
 }) {
+  const t = useT();
   return (
     <div className={`px-5 py-8 sm:px-9 sm:py-10 lg:px-[7.5vw] ${className}`}>
       <dl className="mx-auto grid grid-cols-4">
         {DIBA_HOME_PROOF_ITEMS.map((item, i) => {
           const cijfer = (
-            <dd className="text-[18px] leading-tight font-medium tracking-[-.03em] text-[var(--g-700)] tabular-nums sm:text-[30px] sm:tracking-[-.04em]">
+            <dd className="text-[17px] leading-tight font-medium tracking-[-.03em] text-[var(--g-700)] tabular-nums sm:text-[25px] sm:tracking-[-.04em]">
               {getal(item)}
             </dd>
           );
           return (
             <div
               key={item.label}
-              className={`min-w-0 px-0.5 text-center sm:px-4 ${
+              className={`min-w-0 px-0.5 text-center sm:px-6 lg:px-8 ${
                 i > 0 ? "border-l border-[var(--g-100)]" : ""
               }`}
             >
@@ -92,8 +96,8 @@ export default function Cijferstrook({
                   Met 0,06em is het er vierenzeventig en past het met ruimte over. Vanaf 640
                   is er plek genoeg en staat de gewone letterafstand er weer. */}
               <dt className="diba-label mt-1 text-[11px] leading-tight tracking-[0.06em] text-[var(--t-muted)] sm:mt-2 sm:text-[12px] sm:tracking-[0.13em]">
-                <span className="sm:hidden">{item.kort ?? item.label}</span>
-                <span className="max-sm:hidden">{item.label}</span>
+                <span className="sm:hidden">{t(item.kort ?? item.label)}</span>
+                <span className="max-sm:hidden">{t(item.label)}</span>
               </dt>
             </div>
           );

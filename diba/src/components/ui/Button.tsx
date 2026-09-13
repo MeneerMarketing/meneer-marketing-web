@@ -1,6 +1,9 @@
-import Link from "next/link";
+"use client";
+
+import Link from "@/components/ui/Taalpad";
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 import { ArrowUpRight } from "@/components/ui/Icon";
+import { useT } from "@/lib/gebruik-taal";
 
 /**
  * DIBA Button (DIBA-RULES.md §8)
@@ -78,6 +81,7 @@ type ButtonAsLink = CommonProps & {
 export type DibaButtonProps = ButtonAsButton | ButtonAsLink;
 
 export default function Button(props: DibaButtonProps) {
+  const t = useT();
   const { variant = "primair", children, className = "", kort } = props;
   const showArrow = props.arrow ?? variant !== "ghost";
   const cls = `${base} ${variants[variant]} ${className}`.trim();
@@ -85,7 +89,7 @@ export default function Button(props: DibaButtonProps) {
     <>
       {kort ? (
         <>
-          <span className="sm:hidden">{kort}</span>
+          <span className="sm:hidden">{t(kort)}</span>
           <span className="max-sm:hidden">{children}</span>
         </>
       ) : (

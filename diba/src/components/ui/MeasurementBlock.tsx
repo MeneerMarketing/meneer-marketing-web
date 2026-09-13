@@ -1,3 +1,5 @@
+import { t, tc } from "@/lib/vertaal";
+
 export type Metric = {
   label: string;
   baseline: number;
@@ -19,10 +21,10 @@ export default function MeasurementBlock({
   return (
     <div className="rounded-[1.5rem] border border-[var(--g-100)] bg-white p-6 shadow-[0_8px_32px_rgba(67,79,58,.04)] sm:p-8">
       <p className="text-[10px] font-semibold uppercase tracking-[.14em] text-[var(--t-label)]">
-        Wij meten
+        {t("Wij meten")}
       </p>
       <p className="mt-1 text-[16px] leading-relaxed text-[var(--g-900)]">
-        {context}
+        {tc(context)}
       </p>
 
       <dl className="mt-6 flex flex-col gap-6">
@@ -37,10 +39,10 @@ export default function MeasurementBlock({
           );
 
           return (
-            <div key={m.label}>
+            <div key={tc(m.label)}>
               <div className="flex items-baseline justify-between gap-3">
                 <dt className="text-[14px] font-medium text-[var(--g-900)]">
-                  {m.label}
+                  {tc(m.label)}
                 </dt>
                 <dd className="text-[13px] text-[var(--t-muted)] tabular-nums">
                   {nf.format(m.baseline)} → {nf.format(m.current)}
@@ -77,7 +79,7 @@ export default function MeasurementBlock({
             aria-hidden="true"
             className="h-[6px] w-[18px] rounded-[3px] bg-[var(--g-300)]"
           />
-          Huidanalyse
+          {t("Huidanalyse")}
         </span>
         <span className="inline-flex items-center gap-2">
           <span
@@ -86,7 +88,7 @@ export default function MeasurementBlock({
           />
           Nu
         </span>
-        <span className="ml-auto">Gemeten met EVE-M huidanalyse</span>
+        <span className="ml-auto">{t("Gemeten met EVE-M huidanalyse")}</span>
       </p>
     </div>
   );

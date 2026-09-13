@@ -5,6 +5,7 @@ import Button from "@/components/ui/Button";
 import { AS_UITLEG, KWADRANTEN, bepaalKwadrant } from "@/data/droge-huid";
 import { publicCopy } from "@/lib/copy-flags";
 import { RASTER_GELIJK } from "@/lib/raster";
+import { useTc, useT } from "@/lib/gebruik-taal";
 
 /**
  * De huidmatrix — de uitblinker van de pagina over een droge huid.
@@ -25,6 +26,8 @@ import { RASTER_GELIJK } from "@/lib/raster";
 const STAP = 6;
 
 export default function Huidmatrix() {
+  const t = useT();
+  const tc = useTc();
   const [punt, setPunt] = useState({ x: 62, y: 58 });
   const [sleept, setSleept] = useState(false);
   const vlakRef = useRef<HTMLDivElement>(null);
@@ -64,12 +67,12 @@ export default function Huidmatrix() {
         {/* De vier aslabels staan elk aan hun eigen kant. Stonden ze alle drie op één
             rij boven het vlak, dan las het als drie labels van dezelfde as. */}
         <div className="diba-label text-center text-[var(--t-label)]">
-          {AS_UITLEG.y.boven}
+          {tc(AS_UITLEG.y.boven)}
         </div>
 
         <div className="mt-2 flex items-center gap-2">
           <span className="diba-label [writing-mode:vertical-rl] rotate-180 text-[var(--t-muted)]">
-            {AS_UITLEG.x.links}
+            {tc(AS_UITLEG.x.links)}
           </span>
 
           <div
@@ -103,7 +106,7 @@ export default function Huidmatrix() {
                           : "text-[var(--t-muted)]"
                       }`}
                     >
-                      {KWADRANTEN[id].naam}
+                      {tc(KWADRANTEN[id].naam)}
                     </span>
                   </span>
                 ),
@@ -122,7 +125,9 @@ export default function Huidmatrix() {
             <button
               type="button"
               onKeyDown={opToets}
-              aria-label="Zet jezelf in de matrix. Gebruik de pijltjestoetsen; de uitkomst staat rechts."
+              aria-label={tc(
+                "Zet jezelf in de matrix. Gebruik de pijltjestoetsen; de uitkomst staat rechts.",
+              )}
               className="absolute h-12 w-12 -translate-x-1/2 -translate-y-1/2 cursor-grab rounded-[var(--r-pill)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] active:cursor-grabbing"
               style={{ left: `${punt.x}%`, top: `${punt.y}%` }}
             >
@@ -136,25 +141,29 @@ export default function Huidmatrix() {
           </div>
 
           <span className="diba-label [writing-mode:vertical-rl] text-[var(--t-muted)]">
-            {AS_UITLEG.x.rechts}
+            {tc(AS_UITLEG.x.rechts)}
           </span>
         </div>
 
         <div className="diba-label mt-2 text-center text-[var(--t-label)]">
-          {AS_UITLEG.y.onder}
+          {tc(AS_UITLEG.y.onder)}
         </div>
 
         <dl className="mt-6 space-y-3 pt-5">
           <div className="flex gap-4">
-            <dt className="diba-label w-16 shrink-0">{AS_UITLEG.x.label}</dt>
+            <dt className="diba-label w-16 shrink-0">
+              {tc(AS_UITLEG.x.label)}
+            </dt>
             <dd className="text-sm leading-6 text-[var(--t-body)]">
-              {AS_UITLEG.x.tekst}
+              {tc(AS_UITLEG.x.tekst)}
             </dd>
           </div>
           <div className="flex gap-4">
-            <dt className="diba-label w-16 shrink-0">{AS_UITLEG.y.label}</dt>
+            <dt className="diba-label w-16 shrink-0">
+              {tc(AS_UITLEG.y.label)}
+            </dt>
             <dd className="text-sm leading-6 text-[var(--t-body)]">
-              {AS_UITLEG.y.tekst}
+              {tc(AS_UITLEG.y.tekst)}
             </dd>
           </div>
         </dl>
@@ -162,21 +171,21 @@ export default function Huidmatrix() {
 
       {/* ── De lezing ── */}
       <div aria-live="polite">
-        <h3 className="diba-card-title-lg">{kwadrant.naam}</h3>
+        <h3 className="diba-card-title-lg">{tc(kwadrant.naam)}</h3>
         <p className="diba-label mt-3 text-[var(--t-muted)]">
-          {kwadrant.vakterm}
+          {tc(kwadrant.vakterm)}
         </p>
 
         <dl className="mt-6 space-y-5">
           {[
-            ["Hoe je dit herkent", kwadrant.herken],
-            ["Waar het vandaan komt", kwadrant.oorzaak],
-            ["Wat er dan moet gebeuren", kwadrant.aanpak],
+            [t("Hoe je dit herkent"), kwadrant.herken],
+            [t("Waar het vandaan komt"), kwadrant.oorzaak],
+            [t("Wat er dan moet gebeuren"), kwadrant.aanpak],
           ].map(([kop, tekst]) => (
             <div key={kop} className="rounded-[var(--r-sm)] bg-white p-4">
               <dt className="diba-label">{kop}</dt>
               <dd className="mt-1.5 text-[16px] leading-7 text-[var(--t-body)]">
-                {publicCopy(tekst)}
+                {tc(tekst)}
               </dd>
             </div>
           ))}
@@ -186,20 +195,21 @@ export default function Huidmatrix() {
         <div className="mt-7">
           {kwadrant.urgentie === "rustig" ? (
             <p className="text-[16px] leading-7 text-[var(--t-strong)]">
-              Hier houdt het op. Zit je echt in dit vak, dan kost een
-              behandeling je geld zonder dat er iets te winnen valt, en dan
-              zeggen we dat liever nu.
+              {t(
+                "Hier houdt het op. Zit je echt in dit vak, dan kost een behandeling je geld zonder dat er iets te winnen valt, en dan zeggen we dat liever nu.",
+              )}
             </p>
           ) : (
             <Button href={`/intake?topic=droge-huid&kwadrant=${kwadrant.id}`}>
-              Laat meten waar je echt zit
+              {t("Laat meten waar je echt zit")}
             </Button>
           )}
         </div>
 
         <p className="mt-6 text-sm leading-6 text-[var(--t-muted)]">
-          Twijfel je tussen twee vakken? Kijk naar het seizoen. De wateras
-          beweegt mee met de winter, de vetas nauwelijks.
+          {t(
+            "Twijfel je tussen twee vakken? Kijk naar het seizoen. De wateras beweegt mee met de winter, de vetas nauwelijks.",
+          )}
         </p>
       </div>
     </div>

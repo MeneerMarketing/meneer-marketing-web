@@ -1,9 +1,9 @@
-import Link from "next/link";
+import Link from "@/components/ui/Linktaal";
 import Label from "@/components/ui/Label";
 import { toepassingenBijProbleem } from "@/data/toepassingen";
 import { apparatenVoorBehandeling } from "@/data/apparatuur";
 import { BEHANDELINGEN, prijsTekst } from "@/data/behandelingen";
-import { publicCopy } from "@/lib/copy-flags";
+import { t, tc } from "@/lib/vertaal";
 
 /**
  * Welke behandelingen horen bij dit huidprobleem, en op welk apparaat draaien ze.
@@ -66,13 +66,13 @@ export default function BehandelingenBijProbleem({
       className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
     >
       <div className="mx-auto">
-        <Label>Bij deze klacht</Label>
+        <Label>{t("Bij deze klacht")}</Label>
         <h2 className="diba-display-m mt-4 max-w-[24ch]">
-          {kop} <span className="diba-accent">{accent}</span>
+          {t(kop)} <span className="diba-accent">{t(accent)}</span>
         </h2>
         {intro ? (
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-            {intro}
+            {t(intro)}
           </p>
         ) : null}
 
@@ -98,16 +98,16 @@ export default function BehandelingenBijProbleem({
                 className="flex flex-col rounded-[var(--r-md)] bg-white p-5 sm:p-8"
               >
                 <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-                  <h3 className="diba-card-title">{b.naam}</h3>
+                  <h3 className="diba-card-title">{tc(b.naam)}</h3>
                   <span className="text-[15px] leading-6 text-[var(--t-muted)] tabular-nums">
-                    {prijsTekst(b.prijs)}
+                    {tc(prijsTekst(b.prijs))}
                   </span>
                 </div>
 
                 {/* Vier regelhoogtes, zodat de kaarten in een rij gelijk blijven ook als
                     de ene omschrijving net omvalt naar een extra regel. */}
                 <p className="mt-3 grow text-[15px] leading-7 text-[var(--t-body)] max-md:hidden md:min-h-[4lh]">
-                  {publicCopy(b.kort)}
+                  {tc(b.kort)}
                 </p>
 
                 <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 border-t border-[var(--g-100)] pt-5">
@@ -119,14 +119,14 @@ export default function BehandelingenBijProbleem({
                     }
                     className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
                   >
-                    {toepassing ? "Bij deze klacht" : "Wat het inhoudt"}
+                    {toepassing ? t("Bij deze klacht") : t("Wat het inhoudt")}
                   </Link>
                   {apparaat ? (
                     <Link
                       href={`/apparatuur/${apparaat.slug}`}
                       className="diba-label text-[var(--t-muted)] underline underline-offset-4 hover:text-[var(--g-700)]"
                     >
-                      Met de {apparaat.naam}
+                      {t("Met de")} {tc(apparaat.naam)}
                     </Link>
                   ) : null}
                   {/* De landingspagina, als die er is: wat het bij ons kost en hoe een
@@ -139,7 +139,7 @@ export default function BehandelingenBijProbleem({
                       href={landing.href}
                       className="diba-label text-[var(--t-muted)] underline underline-offset-4 hover:text-[var(--g-700)]"
                     >
-                      {landing.tekst}
+                      {tc(landing.tekst)}
                     </Link>
                   ) : null}
                 </div>

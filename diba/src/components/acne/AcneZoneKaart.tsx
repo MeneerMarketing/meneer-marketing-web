@@ -7,6 +7,7 @@ import Label from "@/components/ui/Label";
 import { ACNE_ZONES, lees, type ZoneId } from "@/data/acne-zones";
 import { publicCopy } from "@/lib/copy-flags";
 import { RASTER_SECTIE } from "@/lib/raster";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * De acnekaart — het onderdeel dat deze pagina onderscheidt.
@@ -72,6 +73,8 @@ const RASTER_VOLGORDE: readonly GezichtZone[] = [
 ];
 
 export default function AcneZoneKaart() {
+  const tc = useTc();
+  const t = useT();
   const [gekozen, setGekozen] = useState<ZoneId[]>([]);
   const [zweeft, setZweeft] = useState<ZoneId | null>(null);
 
@@ -91,12 +94,13 @@ export default function AcneZoneKaart() {
         <div
           className="rounded-[var(--r-md)] bg-white p-5 sm:p-7"
           role="group"
-          aria-label="Zones van het gezicht, aan te tikken"
+          aria-label={tc("Zones van het gezicht, aan te tikken")}
         >
-          <Label>Waar zit het bij jou?</Label>
+          <Label>{t("Waar zit het bij jou?")}</Label>
           <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
-            Meerdere mag. De plaats zegt vaak meer over de oorzaak dan hoe erg
-            het eruitziet.
+            {t(
+              "Meerdere mag. De plaats zegt vaak meer over de oorzaak dan hoe erg het eruitziet.",
+            )}
           </p>
 
           <div className="mt-6 grid grid-cols-3 gap-2">
@@ -121,7 +125,7 @@ export default function AcneZoneKaart() {
                       : "bg-[var(--g-050)] text-[var(--t-strong)] hover:bg-[var(--g-100)]"
                   }`}
                 >
-                  {zone.naam}
+                  {t(zone.naam)}
                 </button>
               );
             })}
@@ -132,7 +136,7 @@ export default function AcneZoneKaart() {
               Griss, 8 september 2026: de borst erbij, dus twee tegels naast elkaar. */}
           <div className="mt-5">
             <p className="diba-label text-[var(--t-label)]">
-              Buiten het gezicht
+              {t("Buiten het gezicht")}
             </p>
             <div className="mt-3 grid grid-cols-2 gap-2">
               {ACNE_ZONES.filter((z) => z.buitenGezicht).map((zone) => {
@@ -154,7 +158,7 @@ export default function AcneZoneKaart() {
                         : "bg-[var(--g-050)] text-[var(--t-strong)] hover:bg-[var(--g-100)]"
                     }`}
                   >
-                    {zone.naam}
+                    {t(zone.naam)}
                   </button>
                 );
               })}
@@ -167,19 +171,19 @@ export default function AcneZoneKaart() {
             {zweeft ? (
               <>
                 <p className="diba-label text-[var(--t-label)]">
-                  {ACNE_ZONES.find((z) => z.id === zweeft)?.naam}
+                  {t(ACNE_ZONES.find((z) => z.id === zweeft)?.naam ?? "")}
                 </p>
                 <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
-                  {publicCopy(
+                  {tc(
                     ACNE_ZONES.find((z) => z.id === zweeft)?.opZichzelf ?? "",
                   )}
                 </p>
               </>
             ) : (
               <p className="text-[15px] leading-7 text-[var(--t-muted)]">
-                Ga over een zone om te lezen wat die op zichzelf meestal
-                betekent. Tik hem aan om hem mee te tellen in de duiding
-                hiernaast.
+                {t(
+                  "Ga over een zone om te lezen wat die op zichzelf meestal betekent. Tik hem aan om hem mee te tellen in de duiding hiernaast.",
+                )}
               </p>
             )}
           </div>
@@ -194,7 +198,7 @@ export default function AcneZoneKaart() {
         <div className="flex items-center justify-between gap-4">
           <Label>
             {gekozen.length === 0
-              ? "Nog niets gekozen"
+              ? t("Nog niets gekozen")
               : `${gekozen.length} van ${ACNE_ZONES.length} zones`}
           </Label>
           {gekozen.length > 0 ? (
@@ -203,28 +207,28 @@ export default function AcneZoneKaart() {
               onClick={() => setGekozen([])}
               className="diba-label text-[var(--t-muted)] underline underline-offset-4 hover:text-[var(--g-700)]"
             >
-              Wissen
+              {t("Wissen")}
             </button>
           ) : null}
         </div>
 
-        <h3 className="diba-card-title-lg mt-4">{lezing.kop}</h3>
+        <h3 className="diba-card-title-lg mt-4">{t(lezing.kop)}</h3>
         <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
-          {publicCopy(lezing.tekst)}
+          {tc(lezing.tekst)}
         </p>
 
         <div className="mt-6 rounded-[var(--r-sm)] bg-[var(--g-050)] p-5">
-          <Label>Wat wij dan eerst doen</Label>
+          <Label>{t("Wat wij dan eerst doen")}</Label>
           <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
-            {publicCopy(lezing.eersteStap)}
+            {tc(lezing.eersteStap)}
           </p>
         </div>
 
         {/* De eerlijkheidsclausule hoort hier, niet in kleine lettertjes onderaan. */}
         <p className="mt-5 text-sm leading-6 text-[var(--t-muted)]">
-          Dit is een patroonduiding, geen diagnose. Twee mensen met dezelfde
-          zones kunnen een ander plan krijgen. Daarom meten we voordat we
-          behandelen.
+          {t(
+            "Dit is een patroonduiding, geen diagnose. Twee mensen met dezelfde zones kunnen een ander plan krijgen. Daarom meten we voordat we behandelen.",
+          )}
         </p>
 
         <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
@@ -232,8 +236,8 @@ export default function AcneZoneKaart() {
             href={`/intake?topic=acne${gekozen.length ? `&zones=${gekozen.join(",")}` : ""}`}
           >
             {gekozen.length
-              ? "Neem dit mee naar de intake"
-              : "Plan een huidconsult"}
+              ? t("Neem dit mee naar de intake")
+              : t("Plan een huidconsult")}
           </Button>
           {/* Wees hier naar #tijdlijn, en die sectie bestaat niet meer sinds de
               tijdlijn "eerst even slechter" eruit is gehaald. Een link naar een anker
@@ -243,7 +247,7 @@ export default function AcneZoneKaart() {
             href="#meten"
             className="diba-label inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4"
           >
-            Hoe we dit meten
+            {t("Hoe we dit meten")}
             <ArrowRight size={13} />
           </a>
         </div>

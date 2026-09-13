@@ -1,4 +1,5 @@
-import Link from "next/link";
+import Link from "@/components/ui/Linktaal";
+import { t, tc } from "@/lib/vertaal";
 import {
   SALONIZED_REVIEWS_URL,
   SALONIZED_REVIEW_SUMMARY,
@@ -46,7 +47,8 @@ export default function SalonizedScorePanel({
       >
         <Stars size={11} />
         <span>
-          {rating.toFixed(1).replace(".", ",")} uit {countFormatted} reviews
+          {rating.toFixed(1).replace(".", ",")} uit {countFormatted}
+          {t("reviews")}
         </span>
         <span aria-hidden="true">↗</span>
       </a>
@@ -64,7 +66,7 @@ export default function SalonizedScorePanel({
       <div className="relative flex flex-wrap items-end justify-between gap-8">
         <div>
           <p className="text-[10px] font-medium uppercase tracking-[.14em] text-[var(--t-label)]">
-            Live uit Salonized
+            {t("Live uit Salonized")}
           </p>
           <p className="mt-3 flex items-baseline gap-3">
             <span className="text-6xl font-medium tracking-[-.08em] text-[var(--g-700)] sm:text-7xl">
@@ -73,9 +75,10 @@ export default function SalonizedScorePanel({
             <Stars size={18} />
           </p>
           <p className="mt-2 text-[15px] text-[var(--t-muted)]">
-            Gebaseerd op{" "}
+            {t("Gebaseerd op")}{" "}
             <strong className="font-medium text-[var(--g-900)]">
-              {countFormatted} reviews
+              {countFormatted}
+              {t("reviews")}
             </strong>
           </p>
         </div>
@@ -85,7 +88,7 @@ export default function SalonizedScorePanel({
           rel="noopener noreferrer"
           className="rounded-[var(--r-pill)] bg-white/70 px-5 py-3 text-[11px] font-medium uppercase tracking-[.13em] text-[var(--g-700)] transition-colors hover:bg-white"
         >
-          Alle reviews op Salonized ↗
+          {t("Alle reviews op Salonized ↗")}
         </Link>
       </div>
     </div>

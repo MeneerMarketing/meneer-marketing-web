@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { tc } from "@/lib/vertaal";
 
 /**
  * Een foto met een zacht verloop onderin en een witte regel erop.
@@ -58,7 +59,7 @@ export default function BeeldVignet({
     >
       <Image
         src={src}
-        alt={alt}
+        alt={tc(alt)}
         fill
         priority={priority}
         sizes={sizes}
@@ -76,7 +77,7 @@ export default function BeeldVignet({
             className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[var(--g-700)]/88 via-[var(--g-700)]/28 to-transparent"
           />
           <p className="diba-label absolute inset-x-0 bottom-0 px-6 pb-6 text-[var(--on-dark)] sm:px-7 sm:pb-7">
-            {onderschrift}
+            {tc(onderschrift)}
           </p>
         </>
       ) : null}

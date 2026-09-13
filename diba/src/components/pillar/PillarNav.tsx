@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useT } from "@/lib/gebruik-taal";
 
 /**
  * Meelopende inhoudsnavigatie voor de lange huidprobleem-paginas.
@@ -16,6 +17,7 @@ import { useEffect, useState } from "react";
 type Anker = { readonly id: string; readonly label: string };
 
 export default function PillarNav({ ankers }: { ankers: readonly Anker[] }) {
+  const t = useT();
   const [actief, setActief] = useState(ankers[0]?.id ?? "");
 
   useEffect(() => {
@@ -38,7 +40,7 @@ export default function PillarNav({ ankers }: { ankers: readonly Anker[] }) {
 
   return (
     <nav
-      aria-label="Op deze pagina"
+      aria-label={t("Op deze pagina")}
       className="sticky top-[var(--nav-h)] z-20 hidden border-b border-[var(--g-100)] bg-[var(--g-010)]/92 backdrop-blur-sm lg:block"
     >
       <ol className="mx-auto flex flex-wrap items-center gap-x-7 gap-y-2 px-5 py-3.5 sm:px-9 lg:px-[7.5vw]">
@@ -55,7 +57,7 @@ export default function PillarNav({ ankers }: { ankers: readonly Anker[] }) {
                     : "border-transparent text-[var(--t-muted)] hover:text-[var(--g-700)]"
                 }`}
               >
-                {a.label}
+                {t(a.label)}
               </a>
             </li>
           );

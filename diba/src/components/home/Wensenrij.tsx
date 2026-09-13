@@ -1,8 +1,11 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import Label from "@/components/ui/Label";
 import Veegrij from "@/components/ui/Veegrij";
 import type { HomeWens } from "@/data/home-intents";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * "Waar wil je hulp bij?" als rij die je opzij veegt.
@@ -28,21 +31,25 @@ import type { HomeWens } from "@/data/home-intents";
  */
 
 export default function Wensenrij({ wensen }: { wensen: readonly HomeWens[] }) {
+  const tc = useTc();
+  const t = useT();
   return (
     <section className="bg-[var(--g-025)] py-12 sm:py-16 lg:py-24">
       <div className="mx-auto px-5 sm:px-9 lg:px-[7.5vw]">
-        <Label>Voor jou</Label>
+        <Label>{t("Voor jou")}</Label>
         <h2 className="diba-display-m mt-4 max-w-[20ch]">
-          Waar wil je <span className="diba-accent">hulp bij?</span>
+          {t("Waar wil je")}{" "}
+          <span className="diba-accent">{t("hulp bij?")}</span>
         </h2>
         <p className="mt-5 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
-          Veeg langs de klachten en klik door naar het hele verhaal: wat het is,
-          wat eraan te doen valt en wat het kost.
+          {t(
+            "Veeg langs de klachten en klik door naar het hele verhaal: wat het is, wat eraan te doen valt en wat het kost.",
+          )}
         </p>
       </div>
 
       <Veegrij
-        label="Huidklachten"
+        label={t("Huidklachten")}
         vanzelf
         klasse="mt-8 sm:mt-10"
         breedte="w-[78%] max-w-[520px] sm:w-[56%] lg:w-[40%]"
@@ -57,7 +64,7 @@ export default function Wensenrij({ wensen }: { wensen: readonly HomeWens[] }) {
               <span className="relative block aspect-[4/3] overflow-hidden bg-[var(--g-075)]">
                 <Image
                   src={w.image}
-                  alt={w.imageAlt}
+                  alt={tc(w.imageAlt)}
                   fill
                   sizes="(min-width: 1024px) 40vw, (min-width: 640px) 56vw, 78vw"
                   className="object-cover transition-transform duration-500 [transition-timing-function:var(--ease-diba)] group-hover:scale-[1.03]"
@@ -67,13 +74,13 @@ export default function Wensenrij({ wensen }: { wensen: readonly HomeWens[] }) {
 
               <span className="flex flex-1 flex-col p-5 sm:p-6">
                 <span className="diba-card-title text-[var(--t-strong)]">
-                  {w.label}
+                  {t(w.label)}
                 </span>
                 <span className="mt-2 flex-1 text-[15px] leading-7 text-[var(--t-body)] sm:min-h-[2lh]">
-                  {w.kort}
+                  {t(w.kort)}
                 </span>
                 <span className="diba-label mt-5 inline-flex items-center gap-1.5 text-[var(--g-700)]">
-                  {w.totaal} behandelingen
+                  {w.totaal} {t("behandelingen")}
                   <span
                     aria-hidden="true"
                     className="transition-transform duration-200 group-hover:translate-x-0.5"

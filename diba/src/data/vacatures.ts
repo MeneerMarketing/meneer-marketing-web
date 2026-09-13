@@ -1,4 +1,5 @@
 import { DIBA_ADDRESS, DIBA_EMAIL, DIBA_SITE } from "@/lib/site";
+import { t, tc } from "@/lib/vertaal";
 
 /**
  * De vacatures, en waarom ze een eigen pagina hebben.
@@ -176,23 +177,23 @@ export function vacatureVoorSlug(slug: string): Vacature | undefined {
  */
 export function vacatureBeschrijvingHtml(v: Vacature): string {
   const lijst = (items: readonly string[]) =>
-    `<ul>${items.map((i) => `<li>${i}</li>`).join("")}</ul>`;
+    `<ul>${items.map((i) => `<li>${tc(i)}</li>`).join("")}</ul>`;
 
   return [
-    v.intro.map((p) => `<p>${p}</p>`).join(""),
-    "<h2>Wat je doet</h2>",
+    v.intro.map((p) => `<p>${tc(p)}</p>`).join(""),
+    `<h2>${t("Wat je doet")}</h2>`,
     `<ul>${v.watJeDoet
-      .map((w) => `<li><strong>${w.kop}.</strong> ${w.zin}</li>`)
+      .map((w) => `<li><strong>${tc(w.kop)}.</strong> ${tc(w.zin)}</li>`)
       .join("")}</ul>`,
-    "<h2>Wat we vragen</h2>",
+    `<h2>${t("Wat we vragen")}</h2>`,
     lijst(v.watWeVragen),
-    "<h2>Wat we bieden</h2>",
+    `<h2>${t("Wat we bieden")}</h2>`,
     lijst(v.watWeBieden),
-    "<h2>De sollicitatie</h2>",
+    `<h2>${t("De sollicitatie")}</h2>`,
     `<ul>${v.sollicitatie
-      .map((s) => `<li><strong>${s.kop}.</strong> ${s.zin}</li>`)
+      .map((s) => `<li><strong>${tc(s.kop)}.</strong> ${tc(s.zin)}</li>`)
       .join("")}</ul>`,
-    `<p>Diba Clinics, ${DIBA_ADDRESS.line}. Reageren kan via ${DIBA_EMAIL}.</p>`,
+    `<p>Diba Clinics, ${DIBA_ADDRESS.line}. ${t("Reageren kan via")} ${DIBA_EMAIL}.</p>`,
   ].join("");
 }
 

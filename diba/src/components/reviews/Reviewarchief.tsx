@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/ui/Linktaal";
 import Sterren from "@/components/ui/Sterren";
 import Label from "@/components/ui/Label";
 import {
@@ -18,6 +18,11 @@ import {
 } from "@/data/reviews-archief";
 import type { SalonizedReviewTopic } from "@/data/salonized-reviews";
 import MobielInklap from "@/components/ui/MobielInklap";
+import { t, tc } from "@/lib/vertaal";
+import { taalNu } from "@/lib/taalcontext";
+import { relatieveDatum } from "@/lib/relatieve-datum";
+import { reviewtekst } from "@/lib/reviewtaal";
+import Vertaaldnoot from "@/components/reviews/Vertaaldnoot";
 
 /**
  * Alle reviews, gefilterd en gepagineerd via de URL.
@@ -96,7 +101,7 @@ function Knop({
             actief ? "bg-white/20" : "bg-[var(--g-025)] text-[var(--g-700)]"
           }`}
         >
-          {aantal.toLocaleString("nl-NL")}
+          {aantal.toLocaleString(taalNu() === "en" ? "en-GB" : "nl-NL")}
         </span>
       </Link>
     </li>
@@ -118,7 +123,7 @@ function Bladeren({
   if (paginas <= 1) return null;
   return (
     <nav
-      aria-label={label}
+      aria-label={tc(label)}
       className="mt-12 flex flex-wrap items-center justify-between gap-4"
     >
       {huidig > 1 ? (
@@ -126,7 +131,7 @@ function Bladeren({
           href={naar(huidig - 1)}
           className="diba-label inline-flex min-h-12 items-center rounded-[var(--r-pill)] border border-[var(--g-200)] px-6 text-[var(--t-strong)] transition-colors hover:border-[var(--g-700)] hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
         >
-          Vorige
+          {t("Vorige")}
         </Link>
       ) : (
         <span />
@@ -139,7 +144,7 @@ function Bladeren({
           href={naar(huidig + 1)}
           className="diba-label inline-flex min-h-12 items-center rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
         >
-          Volgende
+          {t("Volgende")}
         </Link>
       ) : (
         <span />
@@ -162,6 +167,10 @@ export default function Reviewarchief({
   /** Pagina van de lijst zonder tekst; die bladert los van de kaarten. */
   sterrenPagina: number;
 }) {
+  const taal = taalNu();
+  const getal = (n: number) =>
+    n.toLocaleString(taal === "en" ? "en-GB" : "nl-NL");
+
   const alle = archiefBijOnderwerp(onderwerp);
   const paginas = Math.max(1, Math.ceil(alle.length / PER_PAGINA));
   const huidig = begrens(pagina, paginas);
@@ -203,7 +212,7 @@ export default function Reviewarchief({
             anker: "alles",
           })}
           actief={onderwerp === "alle"}
-          tekst="Alles"
+          tekst={t("Alles")}
           aantal={ARCHIEF_MET_TEKST.length}
         />
         {[...knoppen("klacht"), ...knoppen("bezoek")].map((o) => (
@@ -216,22 +225,25 @@ export default function Reviewarchief({
               anker: "alles",
             })}
             actief={o.id === onderwerp}
-            tekst={o.label}
+            tekst={tc(o.label)}
             aantal={archiefAantal(o.id)}
           />
         ))}
       </ul>
 
       <p className="mt-6 max-w-[62ch] text-[15px] leading-7 text-[var(--t-muted)]">
-        {`${alle.length.toLocaleString("nl-NL")} reviews ${
-          meta ? meta.zin : "met tekst"
-        }, in de volgorde van Salonized: nieuwste eerst. Pagina ${huidig} van ${paginas}.`}
+        {getal(alle.length)} {t("reviews")} {tc(meta ? meta.zin : "met tekst")}
+        {t(", in de volgorde van Salonized: nieuwste eerst. Pagina")} {huidig}{" "}
+        {t("van")} {paginas}.
       </p>
+
+      <Vertaaldnoot className="mt-2" />
 
       {zichtbaar.length === 0 ? (
         <p className="mt-10 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-          Hier schreef nog niemand over. Dat is geen gebrek van de kliniek maar
-          van de reviews: mensen beoordelen het bezoek, niet elk onderwerp.
+          {t(
+            "Hier schreef nog niemand over. Dat is geen gebrek van de kliniek maar van de reviews: mensen beoordelen het bezoek, niet elk onderwerp.",
+          )}
         </p>
       ) : (
         <>
@@ -243,11 +255,13 @@ export default function Reviewarchief({
               >
                 <Sterren aantal={Math.round(r.sterren)} />
                 <p className="mt-4 grow text-[15px] leading-7 text-[var(--g-900)]">
-                  {r.tekst}
+                  {reviewtekst(r.tekst, r.tekstEn, taal)}
                 </p>
                 <p className="diba-label mt-5 flex items-baseline justify-between gap-3 text-[var(--t-muted)]">
                   <span className="truncate">{r.naam}</span>
-                  <span className="shrink-0">{r.datum}</span>
+                  <span className="shrink-0">
+                    {relatieveDatum(r.datum, taal)}
+                  </span>
                 </p>
               </li>
             ))}
@@ -257,7 +271,7 @@ export default function Reviewarchief({
           {zichtbaar.length > 24 ? (
             <MobielInklap
               className="mt-4"
-              label={`Toon nog ${zichtbaar.length - 24} reviews`}
+              label={`${t("Toon nog")} ${zichtbaar.length - 24} ${t("reviews")}`}
             >
               <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {zichtbaar.slice(24).map((r) => (
@@ -267,11 +281,13 @@ export default function Reviewarchief({
                   >
                     <Sterren aantal={Math.round(r.sterren)} />
                     <p className="mt-4 grow text-[15px] leading-7 text-[var(--g-900)]">
-                      {r.tekst}
+                      {reviewtekst(r.tekst, r.tekstEn, taal)}
                     </p>
                     <p className="diba-label mt-5 flex items-baseline justify-between gap-3 text-[var(--t-muted)]">
                       <span className="truncate">{r.naam}</span>
-                      <span className="shrink-0">{r.datum}</span>
+                      <span className="shrink-0">
+                        {relatieveDatum(r.datum, taal)}
+                      </span>
                     </p>
                   </li>
                 ))}
@@ -284,7 +300,7 @@ export default function Reviewarchief({
       <Bladeren
         huidig={huidig}
         paginas={paginas}
-        label="Meer reviews"
+        label={t("Meer reviews")}
         naar={(p) =>
           adres({
             onderwerp,
@@ -303,20 +319,27 @@ export default function Reviewarchief({
         id="zonder-tekst"
         className="mt-16 scroll-mt-[var(--anker-offset)] rounded-[var(--r-lg)] bg-white p-8 sm:p-10"
       >
-        <Label>Beoordelingen zonder tekst</Label>
+        <Label>{t("Beoordelingen zonder tekst")}</Label>
         <h3 className="diba-card-title mt-3 text-[var(--t-strong)]">
-          {ZONDER_TEKST.toLocaleString("nl-NL")} mensen gaven alleen sterren
+          {getal(ZONDER_TEKST)}
+          {t("mensen gaven alleen sterren")}
         </h3>
         <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-          Ze tellen mee voor het gemiddelde en daarom staan ze hier, allemaal.
-          Wat ze niet doen is iets vertellen: je weet niet waarvoor iemand kwam
-          of wat er gebeurde. Reken ze dus mee in het cijfer en niet in je
-          oordeel.
+          {t(
+            "Ze tellen mee voor het gemiddelde en daarom staan ze hier, allemaal. Wat ze niet doen is iets vertellen: je weet niet waarvoor iemand kwam of wat er gebeurde. Reken ze dus mee in het cijfer en niet in je oordeel.",
+          )}
         </p>
         <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-          {ONDER_VIJF === 0
-            ? "Alle beoordelingen staan op vijf sterren."
-            : `${ONDER_VIJF.toLocaleString("nl-NL")} beoordelingen staan onder de vijf sterren. Ook die staan op deze pagina; ze zijn niet weggefilterd.`}
+          {ONDER_VIJF === 0 ? (
+            t("Alle beoordelingen staan op vijf sterren.")
+          ) : (
+            <>
+              {getal(ONDER_VIJF)}
+              {t(
+                "beoordelingen staan onder de vijf sterren. Ook die staan op deze pagina; ze zijn niet weggefilterd.",
+              )}
+            </>
+          )}
         </p>
 
         {/* Yasin, 10 september 2026: "onnodig om zo een lange lijst standaard te tonen."
@@ -325,7 +348,7 @@ export default function Reviewarchief({
             dit hoeft niet op elk scherm anders te doen en werkt ook zonder JavaScript. */}
         <details className="group mt-8">
           <summary className="diba-label flex min-h-13 cursor-pointer list-none items-center justify-between gap-3 rounded-[var(--r-md)] border border-[var(--g-200)] bg-white px-4 py-2.5 text-[var(--t-strong)] transition-colors group-open:bg-[var(--g-050)] group-open:text-[var(--g-800)] hover:bg-[var(--g-050)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] [&::-webkit-details-marker]:hidden">
-            Toon de beoordelingen zonder tekst
+            {t("Toon de beoordelingen zonder tekst")}
             <span
               aria-hidden="true"
               className="flex h-7 w-7 shrink-0 items-center justify-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)] group-open:bg-white"
@@ -345,7 +368,8 @@ export default function Reviewarchief({
           </summary>
 
           <p className="mt-6 text-[14px] leading-6 text-[var(--t-muted)]">
-            {`In de volgorde van Salonized: nieuwste eerst. Pagina ${sterrenHuidig} van ${sterrenPaginas}.`}
+            {t("In de volgorde van Salonized: nieuwste eerst. Pagina")}{" "}
+            {sterrenHuidig} {t("van")} {sterrenPaginas}.
           </p>
           <ul className="mt-3 grid gap-x-10 lg:grid-cols-2 2xl:grid-cols-3">
             {regels.map((r) => (
@@ -364,7 +388,7 @@ export default function Reviewarchief({
                   {r.naam}
                 </span>
                 <span className="col-start-2 text-[13px] text-[var(--t-muted)] sm:ml-auto sm:shrink-0 sm:text-[14px]">
-                  {r.datum}
+                  {relatieveDatum(r.datum, taal)}
                 </span>
               </li>
             ))}
@@ -373,7 +397,7 @@ export default function Reviewarchief({
           <Bladeren
             huidig={sterrenHuidig}
             paginas={sterrenPaginas}
-            label="Meer beoordelingen zonder tekst"
+            label={t("Meer beoordelingen zonder tekst")}
             naar={(p) =>
               adres({
                 onderwerp,

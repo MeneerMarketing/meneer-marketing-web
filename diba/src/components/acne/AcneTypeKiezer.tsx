@@ -4,8 +4,9 @@ import { useState } from "react";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import { ACNE_TYPES } from "@/data/acne";
-import { publicCopy } from "@/lib/copy-flags";
+
 import { RASTER_SECTIE } from "@/lib/raster";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * "Welke acne heb jij?" — de kern van de pagina.
@@ -19,6 +20,8 @@ import { RASTER_SECTIE } from "@/lib/raster";
  * knop is minimaal 48px hoog (§13).
  */
 export default function AcneTypeKiezer() {
+  const t = useT();
+  const tc = useTc();
   const [actief, setActief] = useState(0);
   const type = ACNE_TYPES[actief];
 
@@ -26,13 +29,13 @@ export default function AcneTypeKiezer() {
     <div className={`mt-10 ${RASTER_SECTIE}`}>
       <div
         role="radiogroup"
-        aria-label="Kies het beeld dat het dichtst bij jouw huid komt"
+        aria-label={tc("Kies het beeld dat het dichtst bij jouw huid komt")}
       >
         <ul className="space-y-2">
-          {ACNE_TYPES.map((t, i) => {
+          {ACNE_TYPES.map((soort, i) => {
             const gekozen = i === actief;
             return (
-              <li key={t.id}>
+              <li key={soort.id}>
                 <button
                   type="button"
                   role="radio"
@@ -45,7 +48,7 @@ export default function AcneTypeKiezer() {
                   } focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]`}
                 >
                   <span className="text-[15px] font-medium leading-6">
-                    {t.naam}
+                    {t(soort.naam)}
                   </span>
                   <span
                     className={`text-sm leading-5 ${
@@ -54,7 +57,7 @@ export default function AcneTypeKiezer() {
                         : "text-[var(--t-body)]"
                     }`}
                   >
-                    {t.klanttaal}
+                    {t(soort.klanttaal)}
                   </span>
                 </button>
               </li>
@@ -69,25 +72,25 @@ export default function AcneTypeKiezer() {
         aria-live="polite"
       >
         <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-          <h3 className="diba-card-title-lg">{type.naam}</h3>
+          <h3 className="diba-card-title-lg">{t(type.naam)}</h3>
           <span className="diba-label text-[var(--t-muted)]">
-            {type.vakterm}
+            {t(type.vakterm)}
           </span>
         </div>
 
         <dl className="mt-6 space-y-5">
           {[
-            ["Wat je ziet", type.watJeZiet],
-            ["Wat het betekent", type.watHetBetekent],
-            ["Wat wij eerst doen", type.watWijEersteDoen],
+            [t("Wat je ziet"), type.watJeZiet],
+            [t("Wat het betekent"), type.watHetBetekent],
+            [t("Wat wij eerst doen"), type.watWijEersteDoen],
           ].map(([kop, tekst]) => (
             <div
               key={kop}
               className="rounded-[var(--r-sm)] bg-[var(--g-025)] p-4"
             >
-              <dt className="diba-label">{kop}</dt>
+              <dt className="diba-label">{tc(kop)}</dt>
               <dd className="mt-1.5 text-[15px] leading-7 text-[var(--t-body)]">
-                {publicCopy(tekst)}
+                {tc(tekst)}
               </dd>
             </div>
           ))}
@@ -96,18 +99,18 @@ export default function AcneTypeKiezer() {
         {/* Het misverstand dat bij dit type het vaakst voorkomt. Dit is de plek waar de
             pagina iets wegneemt in plaats van iets uitlegt. */}
         <div className="mt-6 rounded-[var(--r-sm)] bg-[var(--g-075)] p-5">
-          <Label>Wat mensen hier vaak verkeerd hebben</Label>
+          <Label>{t("Wat mensen hier vaak verkeerd hebben")}</Label>
           <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
-            {publicCopy(type.verwarMetNiet)}
+            {tc(type.verwarMetNiet)}
           </p>
         </div>
 
         <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
           <Button href={`/intake?topic=acne&beeld=${type.id}`}>
-            Laat dit beeld bekijken
+            {t("Laat dit beeld bekijken")}
           </Button>
           <Label className="max-w-[24ch]">
-            Weet je het niet zeker? Dan kiezen we het samen.
+            {t("Weet je het niet zeker? Dan kiezen we het samen.")}
           </Label>
         </div>
       </div>

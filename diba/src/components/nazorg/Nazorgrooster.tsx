@@ -9,6 +9,7 @@ import {
   type BezigheidId,
 } from "@/data/nazorg";
 import Schuifhint from "@/components/ui/Schuifhint";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * Het nazorgrooster: wat mag wanneer weer.
@@ -43,6 +44,8 @@ const NIVEAU_VLAK = {
 type Cel = { readonly behandeling: string; readonly bezigheid: BezigheidId };
 
 export default function Nazorgrooster() {
+  const tc = useTc();
+  const t = useT();
   const [gekozen, setGekozen] = useState<Cel | null>(null);
 
   const actief = gekozen
@@ -66,7 +69,7 @@ export default function Nazorgrooster() {
             }}
           >
             <span className="diba-label self-end text-[var(--t-label)]">
-              Wat wil je doen
+              {t("Wat wil je doen")}
             </span>
             {NAZORG.map((n) => (
               <span
@@ -77,7 +80,7 @@ export default function Nazorgrooster() {
                 className="min-w-0 self-end text-[15px] leading-6 font-medium break-words hyphens-auto text-[var(--t-strong)]"
                 lang="nl"
               >
-                {n.naam}
+                {tc(n.naam)}
               </span>
             ))}
           </div>
@@ -93,7 +96,7 @@ export default function Nazorgrooster() {
                 }}
               >
                 <span className="flex items-center text-[15px] leading-6 text-[var(--t-strong)]">
-                  {b.label}
+                  {tc(b.label)}
                 </span>
 
                 {NAZORG.map((n) => {
@@ -116,7 +119,7 @@ export default function Nazorgrooster() {
                         NIVEAU_VLAK[niveau]
                       } ${aan ? "ring-2 ring-[var(--g-900)] ring-offset-2" : "hover:opacity-85"}`}
                     >
-                      {wachttijdTekst(w.uren)}
+                      {wachttijdTekst(w.uren, t)}
                     </button>
                   );
                 })}
@@ -131,23 +134,27 @@ export default function Nazorgrooster() {
         {actief && bezigheid && cel ? (
           <>
             <p className="diba-label text-[var(--t-label)]">
-              {bezigheid.label} na {actief.naam.toLowerCase()}
+              {tc(bezigheid.label)} na {actief.naam.toLowerCase()}
             </p>
             <p className="diba-card-title mt-3 text-[var(--t-strong)]">
-              {wachttijdTekst(cel.uren)}
+              {wachttijdTekst(cel.uren, t)}
             </p>
             <p className="mt-3 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-              {cel.reden}
+              {tc(cel.reden)}
             </p>
             <p className="mt-3 max-w-[62ch] text-[14px] leading-6 text-[var(--t-muted)]">
-              {bezigheid.zin}
+              {tc(bezigheid.zin)}
             </p>
           </>
         ) : (
           <>
-            <p className="diba-label text-[var(--t-label)]">De reden erbij</p>
+            <p className="diba-label text-[var(--t-label)]">
+              {t("De reden erbij")}
+            </p>
             <p className="mt-3 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Klik op een vakje. Dan lees je hier hoe lang je wacht, en waarom.
+              {t(
+                "Klik op een vakje. Dan lees je hier hoe lang je wacht, en waarom.",
+              )}
             </p>
           </>
         )}
@@ -168,7 +175,7 @@ export default function Nazorgrooster() {
               className={`h-4 w-8 rounded-[var(--r-sm)] ${NIVEAU_VLAK[n]}`}
             />
             <span className="text-[14px] leading-6 text-[var(--t-body)]">
-              {tekst}
+              {tc(tekst)}
             </span>
           </li>
         ))}

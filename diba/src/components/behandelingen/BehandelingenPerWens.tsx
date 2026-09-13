@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/ui/Linktaal";
 import {
   behandelingenBijWens,
   HUIDWENSEN,
@@ -7,8 +7,8 @@ import {
   type HuidwensId,
 } from "@/data/behandelingen";
 import Label from "@/components/ui/Label";
-import { publicCopy } from "@/lib/copy-flags";
 import MobielInklap from "@/components/ui/MobielInklap";
+import { tc, t } from "@/lib/vertaal";
 
 /**
  * De behandelingen, gegroepeerd op waarvoor je komt.
@@ -38,9 +38,9 @@ function Kaart({ b }: { b: Behandeling }) {
         href={`/behandelingen/${b.slug}`}
         className="group flex h-full min-w-0 flex-col rounded-[var(--r-lg)] bg-white p-6 transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:bg-[var(--g-075)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
       >
-        <p className="diba-card-title text-[var(--t-strong)]">{b.naam}</p>
+        <p className="diba-card-title text-[var(--t-strong)]">{tc(b.naam)}</p>
         <p className="mt-3 sm:min-h-[3lh] text-[15px] leading-7 text-[var(--t-body)]">
-          {publicCopy(b.kort)}
+          {tc(b.kort)}
         </p>
         {/* Hier stond het aantal sessies, maar dat is bij eenenveertig van de
             vierenveertig kaarten een hele zin en die werd afgekapt. Een halve zin die je
@@ -51,10 +51,12 @@ function Kaart({ b }: { b: Behandeling }) {
             Okan nog dingen nakijken, en zonder deze functie staan ze in beeld. */}
         <p className="diba-label mt-5 flex min-w-0 items-baseline justify-between gap-3 text-[var(--t-muted)]">
           <span className="min-w-0 truncate" title={b.apparaat}>
-            {b.apparaat ?? ""}
+            {tc(b.apparaat ?? "")}
           </span>
           <span className="shrink-0 text-[var(--g-700)]">
-            {b.prijs === 0 ? "Op aanvraag" : `vanaf ${prijsTekst(b.prijs)}`}
+            {b.prijs === 0
+              ? tc("Op aanvraag")
+              : `${t("vanaf")} ${prijsTekst(b.prijs)}`}
           </span>
         </p>
       </Link>
@@ -77,7 +79,7 @@ export function Wenskiezer() {
             href={`#wens-${w.id}`}
             className="diba-label flex min-h-11 items-center justify-center rounded-[var(--r-pill)] bg-white px-4 text-center text-[var(--t-strong)] transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)] sm:inline-flex sm:px-5"
           >
-            {w.knop}
+            {tc(w.knop)}
           </a>
         </li>
       ))}
@@ -100,20 +102,23 @@ export default function BehandelingenPerWens() {
           >
             <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-end lg:gap-12">
               <div>
-                <Label>{behandelingen.length} behandelingen</Label>
+                <Label>
+                  {behandelingen.length}
+                  {t("behandelingen")}
+                </Label>
                 <h3 className="diba-display-s mt-3 max-w-[18ch]">
-                  {wens.label}
+                  {tc(wens.label)}
                 </h3>
               </div>
               <div className="lg:pb-1">
                 <p className="max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
-                  {wens.kort}
+                  {tc(wens.kort)}
                 </p>
                 <Link
                   href={wens.pad}
                   className="diba-label mt-3 inline-block text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)]"
                 >
-                  Eerst lezen wat het is
+                  {t("Eerst lezen wat het is")}
                 </Link>
               </div>
             </div>
@@ -123,7 +128,7 @@ export default function BehandelingenPerWens() {
                 staat alles open (Yasin, 9 september 2026). */}
             <MobielInklap
               className="mt-8"
-              label={`Toon de ${behandelingen.length} behandelingen`}
+              label={`${t("Toon de")} ${behandelingen.length} ${t("behandelingen")}`}
             >
               <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {behandelingen.map((b) => (

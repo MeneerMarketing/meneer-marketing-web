@@ -1,3 +1,6 @@
+"use client";
+
+import { useT, useTc } from "@/lib/gebruik-taal";
 import {
   DIBA_TELEFOON,
   DIBA_TELEFOON_HREF,
@@ -37,29 +40,32 @@ export function BelOfAppInline({
   bellen?: string;
   appen?: string;
 }) {
+  const t = useT();
+  const tc = useTc();
   return (
     <>
       <a href={DIBA_TELEFOON_HREF} className={inlineLink}>
-        {bellen}
+        {tc(bellen)}
       </a>{" "}
-      of{" "}
+      {t("of")}{" "}
       <a
         href={DIBA_WHATSAPP_URL}
         target="_blank"
         rel="noopener noreferrer"
         className={inlineLink}
       >
-        {appen}
+        {tc(appen)}
       </a>
     </>
   );
 }
 
 export default function BelOfApp({ className = "" }: { className?: string }) {
+  const t = useT();
   return (
     <div className={`flex flex-wrap items-center gap-3 ${className}`}>
       <a href={DIBA_TELEFOON_HREF} className={knop}>
-        Bel {DIBA_TELEFOON}
+        {t("Bel")} {DIBA_TELEFOON}
       </a>
       <a
         href={DIBA_WHATSAPP_URL}
@@ -67,7 +73,7 @@ export default function BelOfApp({ className = "" }: { className?: string }) {
         rel="noopener noreferrer"
         className={knop}
       >
-        App ons
+        {t("App ons")}
       </a>
     </div>
   );

@@ -1,7 +1,10 @@
+"use client";
+
 import HoofdNav from "@/components/nav/HoofdNav";
 import Topbalk from "@/components/nav/Topbalk";
 import HeroVariantVideo from "@/components/hero-variant/HeroVariantVideo";
 import Button from "@/components/ui/Button";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * Hero-variant — topbalk boven, daaronder één beeldvlak met de navigatie eróver.
@@ -41,6 +44,8 @@ import Button from "@/components/ui/Button";
  */
 
 export default function HeroVariant() {
+  const t = useT();
+  const tc = useTc();
   return (
     /* De ondergrond is dezelfde tint als de topbalk (--g-050) en niet wit.
 
@@ -127,44 +132,45 @@ export default function HeroVariant() {
             <div className="max-w-[46ch]">
               <h1 className="diba-display-l text-[var(--on-dark)] max-[359px]:text-[2.25rem]">
                 <span className="lg:hidden">
-                  We meten je huid
+                  {t("We meten je huid")}
                   <br />
                   <span className="diba-accent-on-dark">
-                    voordat we adviseren
+                    {t("voordat we adviseren")}
                   </span>
                 </span>
                 <span className="hidden lg:inline">
-                  We meten je huid
+                  {t("We meten je huid")}
                   <br />
                   <span className="diba-accent-on-dark">
-                    voordat we iets voorstellen
+                    {t("voordat we iets voorstellen")}
                   </span>
                 </span>
               </h1>
 
               <p className="mt-4 max-w-[46ch] text-[15px] leading-[1.65] text-[var(--on-dark-body)] sm:mt-5 sm:text-[16px] sm:leading-7">
                 <span className="lg:hidden">
-                  We meten je huid onder vast licht. Je hoort direct wat er
-                  mogelijk is, en wanneer wachten je meer oplevert.
+                  {t(
+                    "We meten je huid onder vast licht. Je hoort direct wat er mogelijk is, en wanneer wachten je meer oplevert.",
+                  )}
                 </span>
                 <span className="hidden lg:inline">
-                  Kom met je klacht, dan zoeken wij de behandeling erbij. We
-                  luisteren, meten je huid en leggen uit wat er in jouw geval
-                  mogelijk is. Alle prijzen staan vooraf online.
+                  {t(
+                    "Kom met je klacht, dan zoeken wij de behandeling erbij. We luisteren, meten je huid en leggen uit wat er in jouw geval mogelijk is. Alle prijzen staan vooraf online.",
+                  )}
                 </span>
               </p>
 
               <div className="mt-6 flex flex-wrap items-center gap-2.5 sm:mt-8 sm:gap-3">
                 <Button href="/intake" variant="primair-op-donker">
-                  <span className="lg:hidden">Plan intake</span>
+                  <span className="lg:hidden">{t("Plan intake")}</span>
                   <span className="hidden lg:inline">
-                    Plan een eerste afspraak
+                    {t("Plan een eerste afspraak")}
                   </span>
                 </Button>
                 <Button href="/behandelingen" variant="secundair-op-donker">
-                  <span className="lg:hidden">Behandelingen</span>
+                  <span className="lg:hidden">{t("Behandelingen")}</span>
                   <span className="hidden lg:inline">
-                    Bekijk de behandelingen
+                    {t("Bekijk de behandelingen")}
                   </span>
                 </Button>
               </div>
@@ -176,13 +182,13 @@ export default function HeroVariant() {
       {/* ── Klinische verantwoording ── */}
       <div className="mx-auto flex flex-wrap items-center gap-x-3 gap-y-1 px-5 py-6 sm:px-9 lg:px-[7.5vw]">
         <span className="text-[14px] leading-6 text-[var(--t-muted)]">
-          De medische inhoud op deze site wordt nagekeken door
+          {t("De medische inhoud op deze site wordt nagekeken door")}
         </span>
         <span className="text-[14px] leading-6 font-medium text-[var(--t-strong)] underline decoration-[var(--g-300)] underline-offset-4">
-          Rojda
+          {t("Rojda")}
         </span>
         <span className="diba-label text-[var(--t-muted)]">
-          Nog vast te leggen
+          {t("Nog vast te leggen")}
         </span>
       </div>
     </div>

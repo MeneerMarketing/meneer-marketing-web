@@ -5,6 +5,7 @@ import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
 import { publicCopy } from "@/lib/copy-flags";
 import { RASTER_SECTIE } from "@/lib/raster";
+import { useTc } from "@/lib/gebruik-taal";
 
 /**
  * Keuzelijst met detailpaneel — het herkenningsonderdeel van elke huidprobleempagina.
@@ -50,6 +51,7 @@ export default function SoortKiezer({
   ctaLabel?: string;
   hint?: string;
 }) {
+  const tc = useTc();
   const [actief, setActief] = useState(0);
   const optie = opties[actief];
 
@@ -72,7 +74,7 @@ export default function SoortKiezer({
           plaats van een gat in de compositie. */}
       <ul
         role="radiogroup"
-        aria-label="Kies het beeld dat het dichtst bij jouw huid komt"
+        aria-label={tc("Kies het beeld dat het dichtst bij jouw huid komt")}
         className="flex flex-col gap-2 rounded-[var(--r-md)] bg-white p-5 sm:p-6 lg:h-full"
       >
         {opties.map((o, i) => {
@@ -91,7 +93,7 @@ export default function SoortKiezer({
                 } focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]`}
               >
                 <span className="text-[15px] font-medium leading-6">
-                  {o.naam}
+                  {tc(o.naam)}
                 </span>
                 <span
                   className={`text-sm leading-5 ${
@@ -100,7 +102,7 @@ export default function SoortKiezer({
                       : "text-[var(--t-body)]"
                   }`}
                 >
-                  {o.klanttaal}
+                  {tc(o.klanttaal)}
                 </span>
               </button>
             </li>
@@ -113,9 +115,9 @@ export default function SoortKiezer({
         aria-live="polite"
       >
         <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-          <h3 className="diba-card-title-lg">{optie.naam}</h3>
+          <h3 className="diba-card-title-lg">{tc(optie.naam)}</h3>
           <span className="diba-label text-[var(--t-muted)]">
-            {optie.vakterm}
+            {tc(optie.vakterm)}
           </span>
         </div>
 
@@ -130,9 +132,9 @@ export default function SoortKiezer({
         <dl className="mt-7 space-y-6">
           {optie.velden.map(([kop, tekst]) => (
             <div key={kop}>
-              <dt className="diba-label text-[var(--t-label)]">{kop}</dt>
+              <dt className="diba-label text-[var(--t-label)]">{tc(kop)}</dt>
               <dd className="mt-1.5 max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
-                {publicCopy(tekst)}
+                {tc(tekst)}
               </dd>
             </div>
           ))}
@@ -140,18 +142,18 @@ export default function SoortKiezer({
 
         {optie.uitgelicht ? (
           <div className="mt-6 rounded-[var(--r-sm)] bg-[var(--g-075)] p-5">
-            <Label>{optie.uitgelicht.label}</Label>
+            <Label>{tc(optie.uitgelicht.label)}</Label>
             <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
-              {publicCopy(optie.uitgelicht.tekst)}
+              {tc(optie.uitgelicht.tekst)}
             </p>
           </div>
         ) : null}
 
         <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
           <Button href={ctaHrefPatroon.replace("{id}", optie.id)}>
-            {ctaLabel}
+            {tc(ctaLabel)}
           </Button>
-          {hint ? <Label className="max-w-[26ch]">{hint}</Label> : null}
+          {hint ? <Label className="max-w-[26ch]">{tc(hint)}</Label> : null}
         </div>
       </div>
     </div>

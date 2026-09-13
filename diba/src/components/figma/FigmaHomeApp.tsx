@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import { useEffect, useState } from "react";
 import FigmaKennisbankSection from "@/components/figma/FigmaKennisbankSection";
 import HeroSchermvullend from "@/components/hero-variant/HeroSchermvullend";
@@ -24,13 +24,14 @@ import MiniHuidscan from "@/components/ui/MiniHuidscan";
 import WerkwijzeStepsFlow from "@/components/ui/WerkwijzeStepsFlow";
 import { FIGMA_TRAJECT_TESTIMONIAL } from "@/data/figma-home-images";
 import { HOME_FAQ_ITEMS } from "@/data/home-faq";
-import { publicCopy } from "@/lib/copy-flags";
+
 import {
   FIGMA_EERLIJK_PORTRAIT,
   FIGMA_EERLIJK_PORTRAIT_ALT,
 } from "@/lib/figma-home-layout";
 import { DIBA_HOME_PROOF_ITEMS, DIBA_WHATSAPP_URL } from "@/lib/site";
 import MobielInklap from "@/components/ui/MobielInklap";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * De drie punten onder "Behandeld door huidtherapeuten".
@@ -90,6 +91,8 @@ export default function FigmaHomeApp({
   /** Van de server (lib/home-wensen): de zeven huidwensen met hun behandelingen. */
   wensen: readonly HomeWens[];
 }) {
+  const t = useT();
+  const tc = useTc();
   const [scanOpen, setScanOpen] = useState(false);
 
   useEffect(() => {
@@ -139,11 +142,13 @@ export default function FigmaHomeApp({
       >
         <div className="mx-auto grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-14">
           <div>
-            <Label opDonker>De huidanalyse</Label>
+            <Label opDonker>{t("De huidanalyse")}</Label>
             <h2 className="diba-display-l mt-5">
-              Zo verloopt
+              {t("Zo verloopt")}
               <br />
-              <span className="diba-accent-on-dark">een traject bij ons</span>
+              <span className="diba-accent-on-dark">
+                {t("een traject bij ons")}
+              </span>
             </h2>
             {/* Yasin, 12 september 2026: op een telefoon liep dit tegen de zeven regels
                 aan; hij wil er vier. Twee keer ingekort, want de eerste poging haalde er
@@ -152,9 +157,9 @@ export default function FigmaHomeApp({
                 geen verlies, want "helpt een huidanalyse daarbij" zegt hetzelfde: het is
                 een voorwaarde, geen vaste stap. */}
             <p className="mt-7 max-w-md text-[16px] leading-7 text-[var(--on-dark-body)]">
-              We bekijken je huid en bespreken je klacht. Helpt een huidanalyse
-              daarbij, dan meten we met de EVE-M, zodat je later ziet wat er
-              veranderd is.
+              {t(
+                "We bekijken je huid en bespreken je klacht. Helpt een huidanalyse daarbij, dan meten we met de EVE-M, zodat je later ziet wat er veranderd is.",
+              )}
             </p>
             {/* Eén uitgang, niet twee. De link "Meer over de huidanalyse" stond hieronder
                 en is eruit (Yasin, 11 september 2026): de mini-scan hiernaast is de actie
@@ -165,7 +170,7 @@ export default function FigmaHomeApp({
                 variant="secundair-op-donker"
                 onClick={() => setScanOpen(true)}
               >
-                Wat gebeurt er in een huidanalyse?
+                {t("Wat gebeurt er in een huidanalyse?")}
               </Button>
             </div>
           </div>
@@ -191,9 +196,9 @@ export default function FigmaHomeApp({
             <DibaIcon variant="wit" size={52} />
             <p className="max-w-xl text-sm leading-6 text-[var(--on-dark-body)]">
               <strong className="font-medium text-[var(--on-dark)]">
-                Nog geen idee waar te beginnen?
+                {t("Nog geen idee waar te beginnen?")}
               </strong>{" "}
-              Stel je vraag, dan kijken we samen welke richting past.
+              {t("Stel je vraag, dan kijken we samen welke richting past.")}
             </p>
           </div>
           <a
@@ -205,7 +210,7 @@ export default function FigmaHomeApp({
                Op een breed scherm doet `justify-between` het al en verandert er niets. */
             className="diba-label ml-auto inline-flex shrink-0 items-center gap-1.5 rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] px-5 py-3 text-[var(--on-dark-btn-text)] transition hover:bg-white"
           >
-            Stel je vraag
+            {t("Stel je vraag")}
             <ArrowUpRight size={13} />
           </a>
         </div>
@@ -227,27 +232,27 @@ export default function FigmaHomeApp({
               type="button"
               onClick={() => setScanOpen(false)}
               className="absolute right-5 top-5 grid h-9 w-9 place-items-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)]"
-              aria-label="Sluiten"
+              aria-label={tc("Sluiten")}
             >
               <Close size={18} />
             </button>
             <span className="diba-label inline-block rounded-[var(--r-pill)] bg-[var(--g-050)] px-3 py-2">
-              De huidanalyse
+              {t("De huidanalyse")}
             </span>
             <h3 id="scan-dialog-title" className="diba-card-title-lg mt-6">
-              Jouw huid in kaart.
+              {t("Jouw huid in kaart.")}
             </h3>
             <p className="mt-5 max-w-md leading-7 text-[var(--t-body)]">
-              De opnames laten pigment, roodheid, poriegrootte, vochtgehalte en
-              huidstructuur zien, in gewoon licht en onder UV-licht. Je ziet ze
-              op het scherm en de behandelaar bespreekt ze met je.
+              {t(
+                "De opnames laten pigment, roodheid, poriegrootte, vochtgehalte en huidstructuur zien, in gewoon licht en onder UV-licht. Je ziet ze op het scherm en de behandelaar bespreekt ze met je.",
+              )}
             </p>
             <Button
               href="/intake"
               onClick={() => setScanOpen(false)}
               className="mt-7"
             >
-              Plan een huidconsult
+              {t("Plan een huidconsult")}
             </Button>
           </div>
         </div>
@@ -260,11 +265,11 @@ export default function FigmaHomeApp({
         <div className="mx-auto">
           <div className="grid gap-8 lg:grid-cols-[.8fr_1.2fr]">
             <div>
-              <Label>Onze werkwijze</Label>
+              <Label>{t("Onze werkwijze")}</Label>
               <h2 className="diba-display-m mt-4">
-                Hoe een behandeling
+                {t("Hoe een behandeling")}
                 <br />
-                bij ons begint
+                {t("bij ons begint")}
               </h2>
             </div>
             <WerkwijzeStepsFlow className="self-end" />
@@ -283,7 +288,7 @@ export default function FigmaHomeApp({
           <div className="relative min-h-[220px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] sm:min-h-[320px] lg:min-h-[440px]">
             <Image
               src={FIGMA_EERLIJK_PORTRAIT}
-              alt={FIGMA_EERLIJK_PORTRAIT_ALT}
+              alt={tc(FIGMA_EERLIJK_PORTRAIT_ALT)}
               fill
               sizes="(min-width: 1024px) 46vw, 100vw"
               className="object-cover object-center"
@@ -295,20 +300,19 @@ export default function FigmaHomeApp({
               aria-hidden="true"
             />
             <span className="diba-label absolute bottom-6 left-6 text-white">
-              Diba Clinics in Rotterdam
+              {t("Diba Clinics in Rotterdam")}
             </span>
           </div>
 
           <div className="rounded-[var(--r-md)] bg-white p-5 sm:p-9 lg:p-10">
-            <Label>De behandelaars</Label>
+            <Label>{t("De behandelaars")}</Label>
             <h2 className="diba-card-title-lg mt-4">
-              Behandeld door huidtherapeuten
+              {t("Behandeld door huidtherapeuten")}
             </h2>
             <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
-              Bij Diba werken huidtherapeuten, orthomoleculair huidspecialisten
-              en schoonheidsspecialisten. Huidtherapeut is een beschermde titel:
-              daarvoor volg je een hbo-opleiding en sta je ingeschreven in het
-              Kwaliteitsregister Paramedici.
+              {t(
+                "Bij Diba werken huidtherapeuten, orthomoleculair huidspecialisten en schoonheidsspecialisten. Huidtherapeut is een beschermde titel: daarvoor volg je een hbo-opleiding en sta je ingeschreven in het Kwaliteitsregister Paramedici.",
+              )}
             </p>
 
             <MobielInklap className="mt-6" label="Lees waarom dat uitmaakt">
@@ -324,10 +328,10 @@ export default function FigmaHomeApp({
                     />
                     <span>
                       <strong className="block text-[15px] font-medium leading-6 text-[var(--t-strong)]">
-                        {punt.titel}
+                        {t(punt.titel)}
                       </strong>
                       <span className="mt-0.5 block text-sm leading-6 text-[var(--t-body)]">
-                        {punt.tekst}
+                        {t(punt.tekst)}
                       </span>
                     </span>
                   </li>
@@ -336,7 +340,7 @@ export default function FigmaHomeApp({
             </MobielInklap>
 
             <Button href="/intake" variant="secundair" className="mt-7">
-              Zo werkt een eerste afspraak
+              {t("Zo werkt een eerste afspraak")}
             </Button>
           </div>
         </div>
@@ -365,14 +369,15 @@ export default function FigmaHomeApp({
               niet dat ze even hoog beginnen, maar dat ze samen één regel vormen. */}
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between lg:gap-16">
             <div className="shrink-0">
-              <Label>Het traject</Label>
+              <Label>{t("Het traject")}</Label>
               <h2 className="diba-display-m mt-4 lg:whitespace-nowrap">
-                Hoeveel afspraken je nodig hebt.
+                {t("Hoeveel afspraken je nodig hebt.")}
               </h2>
             </div>
             <p className="max-w-[46ch] text-[16px] leading-7 text-[var(--t-body)]">
-              Dat verschilt per klacht en per behandeling. Tijdens de intake
-              hoor je wat er in jouw geval nodig is.
+              {t(
+                "Dat verschilt per klacht en per behandeling. Tijdens de intake hoor je wat er in jouw geval nodig is.",
+              )}
             </p>
           </div>
           <div className="mt-14 grid gap-4 lg:grid-cols-[1.05fr_.95fr]">
@@ -384,14 +389,14 @@ export default function FigmaHomeApp({
             <div className="overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-050)] p-7 max-lg:hidden sm:p-10">
               <div className="flex items-center justify-between">
                 <span className="diba-label rounded-[var(--r-pill)] bg-white px-4 py-2 text-[var(--g-700)]">
-                  Mijn Diba
+                  {t("Mijn Diba")}
                 </span>
                 <DibaIcon variant="groen" size={38} />
               </div>
               <h3 className="diba-display-s mt-16 max-w-lg">
-                Wat we
+                {t("Wat we")}
                 <br />
-                vastleggen.
+                {t("vastleggen.")}
               </h3>
               {/* Hier stonden drie verzonnen cijfers: "Hydratatie +18%" met een balkje
                   op tweeënzeventig procent. Mooi, en het betekende niets — het getal kwam
@@ -426,10 +431,10 @@ export default function FigmaHomeApp({
                       className="rounded-[var(--r-sm)] bg-white p-4"
                     >
                       <span className="diba-label text-[var(--t-muted)]">
-                        {as.label}
+                        {t(as.label)}
                       </span>
                       <span className="mt-3 block text-[13px] leading-6 text-[var(--t-body)]">
-                        {as.zin}
+                        {t(as.zin)}
                       </span>
                     </li>
                   ))}
@@ -439,7 +444,7 @@ export default function FigmaHomeApp({
             <div className="relative min-h-[410px] overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-300)]">
               <Image
                 src={FIGMA_TRAJECT_TESTIMONIAL.src}
-                alt={FIGMA_TRAJECT_TESTIMONIAL.alt}
+                alt={tc(FIGMA_TRAJECT_TESTIMONIAL.alt)}
                 fill
                 sizes="(min-width: 1024px) 45vw, 100vw"
                 className="object-cover object-[center_30%]"
@@ -449,8 +454,9 @@ export default function FigmaHomeApp({
                 aria-hidden="true"
               />
               <blockquote className="absolute bottom-7 left-7 right-7 max-w-md text-2xl leading-[1.15] tracking-[-.04em] text-white sm:text-3xl">
-                “Ze namen de tijd om te kijken, en ik hoorde precies wat er wel
-                en niet kon.”
+                {t(
+                  "“Ze namen de tijd om te kijken, en ik hoorde precies wat er wel en niet kon.”",
+                )}
               </blockquote>
             </div>
           </div>
@@ -460,9 +466,9 @@ export default function FigmaHomeApp({
       <section className="bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto">
           <div>
-            <Label>In de kliniek</Label>
+            <Label>{t("In de kliniek")}</Label>
             <h2 className="diba-display-m mt-4">
-              Wat je van een afspraak kunt verwachten.
+              {t("Wat je van een afspraak kunt verwachten.")}
             </h2>
           </div>
           {/* De regel "je leest hier wat je voor de afspraak moet weten" stond hiernaast en
@@ -475,18 +481,18 @@ export default function FigmaHomeApp({
                   <Pulse size={18} />
                 </span>
                 <h3 className="diba-card-title-lg mt-6 md:mt-28">
-                  Ervaren behandelaars
+                  {t("Ervaren behandelaars")}
                 </h3>
                 <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
-                  We werken sinds 2017 en hebben ruim 55.000 behandelingen
-                  gedaan. Die ervaring hoor je terug in het advies dat je
-                  krijgt.
+                  {t(
+                    "We werken sinds 2017 en hebben ruim 55.000 behandelingen gedaan. Die ervaring hoor je terug in het advies dat je krijgt.",
+                  )}
                 </p>
                 <Link
                   href="#vragen"
                   className="diba-label mt-6 inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4"
                 >
-                  Veelgestelde vragen
+                  {t("Veelgestelde vragen")}
                   <ArrowUpRight size={13} />
                 </Link>
               </div>
@@ -503,16 +509,16 @@ export default function FigmaHomeApp({
               <div className="relative min-h-[240px] overflow-hidden rounded-[var(--r-lg)] bg-[var(--g-700)] md:min-h-[300px]">
                 <FigmaSoftAccent variant="clinic" className="z-10" />
                 <p className="diba-label absolute left-7 top-7 z-10 rounded-[var(--r-pill)] bg-white/90 px-4 py-2 text-[var(--g-700)]">
-                  Diba Clinics
+                  {t("Diba Clinics")}
                 </p>
                 <p className="diba-display-s absolute bottom-8 left-7 z-10 max-w-[12ch] text-[var(--on-dark)]">
-                  Je vindt ons in{" "}
-                  <span className="diba-accent-on-dark">Rotterdam</span>
+                  {t("Je vindt ons in")}{" "}
+                  <span className="diba-accent-on-dark">{t("Rotterdam")}</span>
                 </p>
                 <Link
                   href="/contact"
                   className="absolute bottom-8 right-8 z-10 grid h-12 w-12 place-items-center rounded-[var(--r-pill)] border border-white/50 text-white transition hover:bg-white/10"
-                  aria-label="Contact en route"
+                  aria-label={tc("Contact en route")}
                 >
                   <ArrowUpRight size={20} />
                 </Link>
@@ -525,21 +531,21 @@ export default function FigmaHomeApp({
                   <Vinkje size={18} />
                 </span>
                 <h3 className="diba-card-title-lg mt-6 md:mt-28">
-                  Een resultaat met een verwachting
+                  {t("Een resultaat met een verwachting")}
                 </h3>
                 {/* Rojda, 7 september 2026: niet "hoeveel afspraken dat vraagt", want hoeveel
                   behandelingen er echt nodig zijn weet niemand vooraf. Wat wel vooraf
                   gezegd kan worden: wat je kunt verwachten en wat het kost. */}
                 <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
-                  Je hoort vooraf wat je van de behandeling kunt verwachten en
-                  welke kosten daarbij horen. Alle tarieven vind je transparant
-                  op deze site.
+                  {t(
+                    "Je hoort vooraf wat je van de behandeling kunt verwachten en welke kosten daarbij horen. Alle tarieven vind je transparant op deze site.",
+                  )}
                 </p>
                 <Link
                   href="/tarieven"
                   className="diba-label mt-6 inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4"
                 >
-                  Bekijk tarieven
+                  {t("Bekijk tarieven")}
                   <ArrowUpRight size={13} />
                 </Link>
               </div>
@@ -558,13 +564,14 @@ export default function FigmaHomeApp({
       <section className="bg-[var(--g-025)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
         <div className="mx-auto grid gap-10 lg:grid-cols-[.7fr_1.3fr]">
           <div>
-            <Label>Goed om te weten</Label>
+            <Label>{t("Goed om te weten")}</Label>
             <h2 className="diba-display-m mt-4" id="vragen">
-              Wat mensen het vaakst vragen
+              {t("Wat mensen het vaakst vragen")}
             </h2>
             <p className="mt-6 max-w-sm text-[15px] leading-7 text-[var(--t-body)]">
-              Dit zijn de vragen die het vaakst gesteld worden voordat iemand
-              een afspraak maakt. Staat die van jou er niet bij,{" "}
+              {t(
+                "Dit zijn de vragen die het vaakst gesteld worden voordat iemand een afspraak maakt. Staat die van jou er niet bij,",
+              )}{" "}
               <BelOfAppInline />.
             </p>
           </div>
@@ -581,7 +588,7 @@ export default function FigmaHomeApp({
                 className="group rounded-[var(--r-md)] bg-white px-6 py-3"
               >
                 <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 text-[16px] leading-[1.4] font-medium">
-                  <span>{item.question}</span>
+                  <span>{t(item.question)}</span>
                   <span className="grid h-8 w-8 shrink-0 place-items-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)]">
                     <svg
                       aria-hidden="true"
@@ -598,7 +605,7 @@ export default function FigmaHomeApp({
                   </span>
                 </summary>
                 <p className="max-w-xl pt-4 pb-2 text-[15px] leading-7 text-[var(--t-body)]">
-                  {publicCopy(item.answer)}
+                  {tc(item.answer)}
                 </p>
               </details>
             ))}
@@ -618,28 +625,27 @@ export default function FigmaHomeApp({
         <div className="relative mx-auto grid max-w-[1600px] gap-10 lg:grid-cols-[1.35fr_.65fr]">
           <FigmaSoftAccent variant="cta" />
           <div className="relative">
-            <Label opDonker>Jouw eerste afspraak</Label>
+            <Label opDonker>{t("Jouw eerste afspraak")}</Label>
             <h2 className="diba-display-l mt-5">
-              Plan een intake
+              {t("Plan een intake")}
               <br />
-              bij ons in Rotterdam.
+              {t("bij ons in Rotterdam.")}
             </h2>
           </div>
           <div className="relative flex flex-col justify-end">
             {/* De twee manieren om te beginnen als je nog niet weet wat je nodig hebt,
                 met de tijden zoals ze in de agenda staan (Yasin, 10 september 2026). */}
             <p className="max-w-sm text-[16px] leading-7 text-[var(--on-dark-body)]">
-              Wil je alleen advies, dan duurt de afspraak dertig minuten en kost
-              hij 50 euro. Boek je een behandeling op advies, dan reserveren we
-              twee uur als je nieuw bent en een uur als je al klant bent; het
-              bedrag van de intake vervalt zodra we behandelen.
+              {t(
+                "Wil je alleen advies, dan duurt de afspraak dertig minuten en kost hij 50 euro. Boek je een behandeling op advies, dan reserveren we twee uur als je nieuw bent en een uur als je al klant bent; het bedrag van de intake vervalt zodra we behandelen.",
+              )}
             </p>
             <Button
               href="/afspraak"
               variant="primair-op-donker"
               className="mt-8 w-fit"
             >
-              Afspraak maken
+              {t("Afspraak maken")}
             </Button>
             <a
               href={DIBA_WHATSAPP_URL}
@@ -647,7 +653,7 @@ export default function FigmaHomeApp({
               rel="noopener noreferrer"
               className="diba-label diba-label-on-dark mt-4 underline underline-offset-4"
             >
-              Nog niet zeker? Stel je vraag
+              {t("Nog niet zeker? Stel je vraag")}
             </a>
           </div>
         </div>

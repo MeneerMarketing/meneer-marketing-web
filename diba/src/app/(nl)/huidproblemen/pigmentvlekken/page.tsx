@@ -1,0 +1,314 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "@/components/ui/Linktaal";
+import HetZonjaar from "@/components/pigment/HetZonjaar";
+import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
+import PillarNav from "@/components/pillar/PillarNav";
+import {
+  HuidanalyseAssen,
+  PillarCta,
+  PillarFaq,
+  SectieKop,
+  WelNiet,
+} from "@/components/pillar/PillarSecties";
+import SoortKiezer, { type SoortOptie } from "@/components/pillar/SoortKiezer";
+import Button from "@/components/ui/Button";
+import Label from "@/components/ui/Label";
+import { FIGMA_PIGMENT_HERO } from "@/data/figma-home-images";
+import { PIGMENT_FAQ, PIGMENT_SOORTEN, PIGMENT_WEL_NIET } from "@/data/pigment";
+import { zonderVlaggen } from "@/lib/copy-flags";
+import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { zoekmachineVelden } from "@/lib/seo";
+import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
+import LeesVerder from "@/components/ui/LeesVerder";
+import { t, tc } from "@/lib/vertaal";
+
+/**
+ * Pigmentvlekken en melasma — eigen pagina met een eigen uitblinker.
+ *
+ * Waar de acnepagina "waar zit het" als kern heeft, draait deze om "wanneer". Bij pigment
+ * bepaalt UV bijna alles, en het eerlijke advies is vaak "nu niet". Het zonjaar maakt dat
+ * concreet: een kalender die je in juni vertelt dat je beter wacht. Dat is een sectie
+ * waarin we onszelf omzet ontzeggen, en precies daarom hoort hij hier.
+ *
+ * De tweede eigen keuze is het onderscheid zonschade versus melasma bovenaan in plaats
+ * van in de FAQ. Ze lijken op elkaar en vragen het tegenovergestelde, en bij melasma
+ * hoort het woord dat de merkregels voorschrijven: beheersing, niet verdwijning (§10).
+ *
+ * Twee donkergroene vlakken, niet meer (§5). Geen italic accentwoorden.
+ * COPY: concept; medische beweringen gemarkeerd voor Rojda. Staat op noindex.
+ */
+
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/huidproblemen/pigmentvlekken",
+  titel: "Pigmentvlekken behandelen in Rotterdam",
+  omschrijving:
+    "Pigmentvlekken behandelen met laser, IPL en peelings. Welke aanpak past, hangt af van het type vlek, je huidtype en het seizoen.",
+});
+
+const PAD = "/huidproblemen/pigmentvlekken";
+
+const ANKERS = [
+  { id: "wanneer", label: "Wanneer starten" },
+  { id: "welke", label: "Welk pigment" },
+  { id: "wel-niet", label: "Wat helpt" },
+  { id: "meten", label: "Hoe we meten" },
+  { id: "vragen", label: "Vragen" },
+] as const;
+
+const SOORTEN: readonly SoortOptie[] = PIGMENT_SOORTEN.map((s) => ({
+  id: s.id,
+  naam: s.naam,
+  klanttaal: s.klanttaal,
+  vakterm: s.vakterm,
+  velden: [
+    ["Het patroon", s.patroon],
+    ["Waar het vandaan komt", s.oorzaak],
+    ["Wat wij eerst doen", s.aanpak],
+  ] as const,
+  uitgelicht: { label: "Wat realistisch is", tekst: s.realistisch },
+}));
+
+export default function PigmentPage() {
+  return (
+    <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)]">
+      <SchemaMarkup
+        data={breadcrumbSchema([
+          { name: "Home", url: DIBA_SITE_URL },
+          { name: "Huidproblemen", url: `${DIBA_SITE_URL}/huidproblemen` },
+          { name: "Pigmentvlekken", url: `${DIBA_SITE_URL}${PAD}` },
+        ])}
+      />
+
+      {/* ── Hero ───────────────────────────────────────────────────────────
+          De kop zet meteen de omkering neer die deze pagina eigen maakt: bij
+          pigment is timing belangrijker dan techniek. */}
+      {/* Donkergroen, zoals elke andere hoofdingang van de site (Yasin, 11 september
+          2026). */}
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)]">
+        {/* Op een telefoon plakte het beeld tegen de onderrand van het groene vlak: de
+            tekstkolom bracht zijn eigen onderruimte mee, de beeldkolom niet (Yasin, 11
+            september 2026). Vanaf 1024 staan ze naast elkaar en geldt het niet. */}
+        <div className="mx-auto grid gap-6 px-5 pb-10 sm:px-9 sm:pb-14 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-10 lg:px-[7.5vw] lg:pb-0">
+          <div className="py-10 sm:py-14 lg:py-20 max-lg:pb-0">
+            <nav
+              aria-label={tc("Kruimelpad")}
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
+            >
+              <Link href="/" className="hover:text-white">
+                {t("Home")}
+              </Link>
+              <span aria-hidden="true">/</span>
+              <Link href="/huidproblemen" className="hover:text-white">
+                {t("Huidproblemen")}
+              </Link>
+              <span aria-hidden="true">/</span>
+              <span className="text-[var(--on-dark-body)]">
+                {t("Pigmentvlekken")}
+              </span>
+            </nav>
+
+            <h1 className="diba-display-l mt-6 text-[var(--on-dark)]">
+              {t("Pigmentvlekken")}
+              <br />
+              <span className="diba-accent-on-dark">{t("behandelen")}</span>
+            </h1>
+
+            <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+              {t(
+                "We behandelen pigmentvlekken met laser, IPL en peelings. Welke aanpak past, hangt af van het type vlek en van je huidtype. Dat stellen we tijdens de intake samen vast.",
+              )}
+            </p>
+
+            <p className="mt-4 max-w-[48ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
+              {t(
+                "Het seizoen telt mee. Met weinig zon houdt het resultaat beter stand, dus in het najaar en de winter zit je het beste.",
+              )}
+            </p>
+
+            <div className="diba-knoprij mt-9">
+              <Button variant="primair-op-donker" href="#wanneer">
+                {t("Bekijk het zonjaar")}
+              </Button>
+              <Button
+                href={DIBA_WHATSAPP_URL}
+                variant="secundair-op-donker"
+                target="_blank"
+                rel="noopener noreferrer"
+                kort="Stel een vraag"
+              >
+                {t("Liever eerst een vraag stellen")}
+              </Button>
+            </div>
+          </div>
+
+          <div className="relative min-h-[220px] overflow-hidden rounded-[var(--r-md)] bg-[var(--g-200)] sm:min-h-[300px] lg:min-h-[460px]">
+            <Image
+              src={FIGMA_PIGMENT_HERO.src}
+              alt={tc(FIGMA_PIGMENT_HERO.alt)}
+              fill
+              priority
+              sizes="(min-width: 1024px) 44vw, 100vw"
+              className="object-cover object-center"
+            />
+          </div>
+        </div>
+      </section>
+
+      <PillarNav ankers={ANKERS} />
+
+      {/* ── Het zonjaar: de uitblinker ─────────────────────────────────── */}
+      <section
+        id="wanneer"
+        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-050)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
+          <SectieKop
+            label="Het zonjaar"
+            kop="Het jaar bepaalt"
+            accent="of het gaat werken."
+            intro="De staafhoogte is de gemiddelde UV-index in Nederland. Klik op een maand en je ziet wat er dan met pigment gebeurt, en of wij je zouden aanraden om te starten. Deze maand staat al open."
+          />
+          <HetZonjaar />
+        </div>
+      </section>
+
+      {/* ── Welk pigment ───────────────────────────────────────────────── */}
+      <section
+        id="welke"
+        className="scroll-mt-[var(--anker-offset)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
+      >
+        <div className="mx-auto">
+          <SectieKop
+            label="Herkenning"
+            kop="Drie soorten"
+            accent="pigment"
+            intro="Zonschade en melasma lijken op elkaar, maar vragen een andere behandeling. Welk type je hebt, stellen we vast voordat we beginnen. Kies het patroon dat het dichtst bij jou komt."
+          />
+          <SoortKiezer
+            opties={zonderVlaggen(SOORTEN)}
+            ctaHrefPatroon="/intake?topic=pigment&beeld={id}"
+            ctaLabel="Laat dit patroon bekijken"
+            hint="Weet je het niet zeker? Dan bepalen we het bij de meting."
+          />
+        </div>
+      </section>
+
+      {/* ── Het pigmentgeheugen: waarom bescherming de behandeling is ──── */}
+      <section className="bg-[var(--g-025)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28">
+        <div className="mx-auto grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-center lg:gap-12">
+          <div>
+            <Label>{t("Waarom het terugkomt")}</Label>
+            <h2 className="diba-display-m mt-4 max-w-[20ch]">
+              {t("Waarom pigment terugkomt")}
+            </h2>
+            <p className="mt-6 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
+              {t(
+                "Pigmentcellen die eenmaal ontregeld zijn, reageren de volgende keer sneller op zonlicht. Elke onbeschermde zomer telt daardoor op bij de vorige.",
+              )}
+            </p>
+            <LeesVerder>
+              <p className="mt-4 max-w-[54ch] text-[16px] leading-7 text-[var(--t-body)]">
+                {t(
+                  "Dagelijkse zonbescherming en het beperken van nieuwe zonbelasting zijn bij pigment minstens zo belangrijk als de behandeling in de kliniek.",
+                )}
+              </p>
+            </LeesVerder>
+          </div>
+
+          <ul className="grid gap-3">
+            {[
+              [
+                "Zonder bescherming",
+                "Elke zomer legt een laag op de vorige. Wat je in de winter wint, verlies je in juli.",
+              ],
+              [
+                "Met bescherming",
+                "Het pigment dat er is kan lichter worden, en er komt weinig nieuw bij.",
+              ],
+              [
+                "Met bescherming én behandeling",
+                "Hier zit de meeste winst. Begin wel met de bescherming, want zonder dat houdt het resultaat niet stand.",
+              ],
+            ].map(([kop, tekst], i) => (
+              <li
+                key={kop}
+                className="flex gap-4 rounded-[var(--r-sm)] p-5"
+                style={{
+                  background: i === 2 ? "var(--g-075)" : "var(--g-050)",
+                }}
+              >
+                <span
+                  className="mt-1.5 h-2.5 w-2.5 shrink-0 rounded-[var(--r-pill)]"
+                  style={{
+                    background:
+                      i === 0
+                        ? "var(--warn)"
+                        : i === 1
+                          ? "var(--g-400)"
+                          : "var(--g-700)",
+                  }}
+                  aria-hidden="true"
+                />
+                <span>
+                  <strong className="block text-[15px] font-medium leading-6">
+                    {tc(kop)}
+                  </strong>
+                  <span className="mt-1 block text-sm leading-6 text-[var(--t-body)]">
+                    {tc(tekst)}
+                  </span>
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <WelNiet
+        wel={PIGMENT_WEL_NIET.wel}
+        niet={PIGMENT_WEL_NIET.niet}
+        intro="Bij pigment gaat het vaak mis door te vroeg beginnen, niet door te weinig behandelen."
+      />
+
+      {/* De diepte erbij. Griss, 9 september 2026: "Dit is een belangrijk onderdeel van
+          de diagnostiek en bepaalt mede welke behandeling passend is: epidermaal, dermaal
+          of gecombineerd, zoals bij melasma. Bij het consult benoem ik dit zelf altijd."
+          De uitleg over de lagen staat in de tweede alinea; de as eronder is de korte
+          versie. [MEDISCHE-CHECK-ROJDA: beoordeling van de diepte onder UV-licht] */}
+      <HuidanalyseAssen
+        kop="Deze kenmerken volgen we bij pigment"
+        alineas={[
+          "De EVE-M-meting legt vast hoe donker en hoe uitgebreid het pigment is voordat we beginnen. Bij pigment meten we per seizoen in plaats van per sessie, omdat het beeld met het jaar meebeweegt.",
+          "Net zo belangrijk is hoe diep het zit. Pigment kan in de opperhuid liggen (epidermaal), in de lederhuid (dermaal) of in allebei, zoals vaak bij melasma. Oppervlakkig pigment reageert sneller en op meer behandelingen; dieper pigment vraagt meer tijd en een andere keuze. Onder UV-licht is dat verschil te zien, met het blote oog niet. [MEDISCHE-CHECK-ROJDA]",
+          "Dat is ook de eerlijkste manier om te zien of het werkt. Pigment verandert langzaam, en je oog raakt eraan gewend.",
+        ]}
+        assen={[
+          ["Pigment", "Hoe donker en hoe verspreid, objectief in kaart"],
+          [
+            "Diepte",
+            "In de opperhuid, in de lederhuid of in allebei. Dat bepaalt de prognose en de keuze van de behandeling",
+          ],
+          [
+            "UV-belasting",
+            "Wat de zon al heeft aangericht, ook wat je niet ziet",
+          ],
+          ["Textuur", "Of er naast kleur ook oneffenheid meespeelt"],
+        ]}
+      />
+
+      {/* Welke behandelingen bij deze klacht horen, en op welk apparaat ze
+          draaien. Leeg als er niets gekoppeld is; zie het component. */}
+      <BehandelingenBijProbleem pad="/huidproblemen/pigmentvlekken" />
+
+      <PillarFaq items={PIGMENT_FAQ} onderwerp="pigmentvlekken" />
+
+      <PillarCta
+        kop="Waarom het seizoen"
+        accent="meetelt bij pigment"
+        tekst="De huidanalyse kan het hele jaar door. Zo hebben we een vertrekpunt klaarliggen voor het moment dat het seizoen wél meewerkt."
+        topic="pigment"
+        whatsappHref={DIBA_WHATSAPP_URL}
+      />
+    </main>
+  );
+}

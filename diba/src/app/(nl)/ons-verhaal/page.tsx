@@ -1,0 +1,301 @@
+import type { Metadata } from "next";
+import Link from "@/components/ui/Linktaal";
+import Label from "@/components/ui/Label";
+import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
+import { DIBA_PROOF, DIBA_SITE_URL } from "@/lib/site";
+import BeeldVignet from "@/components/ui/BeeldVignet";
+import { zoekmachineVelden } from "@/lib/seo";
+import { t, tc } from "@/lib/vertaal";
+
+/**
+ * Ons verhaal.
+ *
+ * WAAROM HIER GEEN TWEEDE MANIFEST MEER STAAT.
+ *
+ * Deze pagina had vijf regels met bij elke regel wat die ons kost, en /ons-verbond had er
+ * tien ("Tien dingen die wij niet doen"). Twee manifesten dus, waarvan dit het stelligste
+ * was. Yasin wilde die toon hier niet, en op 10 september 2026 ging /ons-verbond er in zijn
+ * geheel af ("te veel en te overdreven").
+ *
+ * Met 64 ontkenningen per 1000 woorden was dit ook de zwaarste pagina van de site die geen
+ * juridische tekst is, terwijl "Ons verhaal" nu juist de plek is waar iemand komt kijken
+ * wie hier werkt.
+ *
+ * Er staan nu vijf dingen die de kliniek zijn: sinds 2017 in Rotterdam, een traject dat
+ * begint met een huidanalyse, prijzen die openbaar staan, geregistreerde huidtherapeuten
+ * en contracten met zorgverzekeraars. De prijstransparantie blijft uitgelicht, want dat is
+ * een echt onderscheid en geen weigering.
+ *
+ * [COPY-NODIG: het persoonlijke verhaal van Rojda, van haarzelf.] Als dat er komt, hoort
+ * het bovenaan deze pagina.
+ *
+ * Eén donkergroen vlak: de prijzen (§5).
+ */
+
+export const metadata: Metadata = zoekmachineVelden({
+  pad: "/ons-verhaal",
+  /* Zie /over-ons: die twee droegen dezelfde kop en dezelfde belofte. Deze pagina gaat
+     over de werkwijze, dus draagt hij die vraag en niet de plaatsnaam. */
+  titel: "Hoe wij werken",
+  omschrijving:
+    "Hoe een traject bij Diba Clinics verloopt: het begint met een huidanalyse, de tarieven staan per sessie op de site en je hoort ook wat er niet kan.",
+});
+
+/**
+ * Waar de kliniek op draait.
+ *
+ * Vijf dingen, in de volgorde waarin je ze tegenkomt en niet op belangrijkheid. De prijzen
+ * staan apart uitgelicht, want daar wijkt deze kliniek het duidelijkst af van de rest.
+ *
+ * De tweede kolom heette `kost` en ging over wat een principe ons kostte. Hij heet nu
+ * `betekent` en gaat over wat het voor de bezoeker oplevert.
+ */
+const REGELS = [
+  {
+    kop: "Sinds 2017 in Rotterdam",
+    zin: "Diba Clinics is in 2017 begonnen als huidkliniek in Rotterdam. Onze huidtherapeuten en specialisten behandelen acne, pigment, littekens, huidverbetering en ongewenst haar.",
+    betekent:
+      "Een team dat elke dag met dezelfde huidklachten werkt, en apparatuur waar het in de praktijk mee is ingeregeld.",
+  },
+  {
+    kop: "Elk traject begint met een huidanalyse",
+    zin: "De behandelaar bekijkt je huid en meet met de EVE-M wat er onder de oppervlakte speelt: pigment, vocht, poriën en structuur. Daaruit volgt het behandelplan.",
+    betekent:
+      "Je ziet zelf waar de adviezen vandaan komen, en bij een volgende afspraak leggen we de opnames naast elkaar.",
+  },
+  {
+    kop: "Elke prijs staat op de site",
+    zin: "Per sessie, per zone, per variant, inclusief de duurste. Je weet voordat je komt waar je aan toe bent.",
+    betekent:
+      "Je kunt thuis rustig vergelijken en beslissen, in plaats van aan de balie op het moment dat het het lastigst is.",
+    uitgelicht: true,
+  },
+  {
+    /* Rojda, 6 september 2026: de huidtherapeuten zijn NVH-lid en staan in het
+       Kwaliteitsregister Paramedici; de schoonheidsspecialisten zijn aangesloten bij ANBOS
+       en staan in het SKIN Register. */
+    kop: "Geregistreerd, in allebei de vakken",
+    zin: "Onze huidtherapeuten zijn lid van de NVH en staan in het Kwaliteitsregister Paramedici. Onze schoonheidsspecialisten zijn aangesloten bij ANBOS en staan in het SKIN Register.",
+    betekent:
+      "Veel aanvullende pakketten stellen die inschrijving als eis voordat ze een behandeling vergoeden.",
+  },
+  {
+    /* [BESLUIT-OKAN] Okan: "gecontracteerd bij alle zorgverzekeraars" alleen gebruiken als
+       het aantoonbaar is en jaarlijks nagekeken wordt. Tot die tijd staat hier dezelfde
+       formulering als op de homepage: er zijn contracten, en of jouw behandeling vergoed
+       wordt hangt af van je klacht en je pakket. */
+    kop: "Contracten met zorgverzekeraars",
+    zin: "Diba Clinics heeft contracten met zorgverzekeraars. Of jouw behandeling vergoed wordt, hangt af van je klacht en van je aanvullende pakket.",
+    betekent:
+      "Tijdens de intake hoor je wat er in jouw geval onder de vergoeding valt, en wat je zelf betaalt.",
+  },
+];
+
+export default function OnsVerhaalPage() {
+  const uitgelicht = REGELS.find((r) => r.uitgelicht);
+  const rest = REGELS.filter((r) => !r.uitgelicht);
+
+  return (
+    <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)]">
+      <SchemaMarkup
+        data={breadcrumbSchema([
+          { name: "Home", url: DIBA_SITE_URL },
+          { name: "Ons verhaal", url: `${DIBA_SITE_URL}/ons-verhaal` },
+        ])}
+      />
+
+      {/* ── Hero ── */}
+      <section className="bg-[var(--g-700)] text-[var(--on-dark)] px-5 sm:px-9 lg:px-[7.5vw]">
+        <div className="grid gap-10 py-10 sm:py-14 lg:grid-cols-[1.1fr_0.9fr] lg:py-20">
+          <div>
+            <nav
+              aria-label={tc("Kruimelpad")}
+              className="diba-label diba-label-on-dark flex flex-wrap gap-2"
+            >
+              <Link href="/" className="hover:text-white">
+                {t("Home")}
+              </Link>
+              <span aria-hidden="true">/</span>
+              <span className="text-[var(--on-dark-body)]">
+                {t("Ons verhaal")}
+              </span>
+            </nav>
+
+            {/* Geen handmatige regelbreuk meer: die stond er voor "Een huidkliniek in /
+                Rotterdam" en duwt deze kortere kop nu onnodig op twee regels. */}
+            <h1 className="diba-display-l mt-6 max-w-[21ch]">
+              {t("Hoe wij")}
+              <span className="diba-accent-on-dark">{t("werken")}</span>
+            </h1>
+
+            <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
+              {t("Sinds")} {DIBA_PROOF.activeSince}{" "}
+              {t(
+                "helpen onze huidtherapeuten en specialisten je met acne, pigment, littekens, huidverbetering en ongewenst haar.",
+              )}
+            </p>
+            <p className="mt-4 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
+              {t(
+                "Hieronder staat hoe we werken: waar een traject begint, wat het kost en waar onze behandelaars voor staan.",
+              )}
+            </p>
+          </div>
+
+          <div className="flex flex-col justify-center rounded-[var(--r-lg)] bg-white p-8 sm:p-10 text-[var(--t-strong)]">
+            <Label>{t("Waar je dit terugziet")}</Label>
+            <p className="mt-5 text-[19px] leading-8 text-[var(--t-body)]">
+              {t(
+                "Elke afspraak begint met een huidanalyse, en daaruit volgt het behandelplan.",
+              )}
+            </p>
+            <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
+              {t(
+                "De prijzen staan per sessie op de site, dus je weet voordat je komt wat het kost. Bij elke behandeling lees je hoeveel sessies erbij horen.",
+              )}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── De duurste regel apart ── */}
+      {uitgelicht ? (
+        <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-20">
+          <div className="mx-auto">
+            <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-8 text-[var(--t-strong)] sm:p-12 lg:p-14">
+              <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start lg:gap-16">
+                <div>
+                  {/* Hier stond het volgnummer op 64px. Een groot cijfer dat nergens naar
+                      verwijst is decoratie, en het label eronder zegt al wat dit is. */}
+                  <Label>{t("Vooraf duidelijk")}</Label>
+                  <h2 className="diba-display-m mt-5 max-w-[16ch]">
+                    {tc(uitgelicht.kop)}
+                  </h2>
+                  {/* De zin stond rechts boven de kaart, en dan hing de titel links alleen in
+                      een leeg vak. Yasin, 8 september 2026: onder de titel, zodat de twee
+                      kolommen op elkaar uitlijnen. */}
+                  <p className="mt-6 max-w-[44ch] text-[17px] leading-8 text-[var(--t-body)]">
+                    {tc(uitgelicht.zin)}
+                  </p>
+                </div>
+                <div>
+                  <div className="rounded-[var(--r-md)] bg-white p-6 sm:p-7">
+                    <p className="diba-label">
+                      {t("Wat dat voor jou betekent")}
+                    </p>
+                    <p className="mt-3 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
+                      {tc(uitgelicht.betekent)}
+                    </p>
+                  </div>
+                  <Link
+                    href="/tarieven"
+                    className="diba-label mt-8 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)]"
+                  >
+                    {t("Kijk zelf, alles staat er")}
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      {/* ── De andere vier ── */}
+      {/* Vijf punten op een rij blijft een abstract verhaal; dit is waar het in de praktijk
+          gebeurt. Het bijschrift stond op "Wat er wel en niet in huis komt", en dat gaat over
+          inkoop terwijl de sectie eronder over onze regels gaat, en je op de foto twee
+          behandelaars ziet die samen een doosje bekijken. Yasin, 10 september 2026: "die
+          tekst komt niet overeen en is zweverig." Nu staat er wat je ziet. */}
+      <section className="px-5 py-10 sm:px-9 sm:py-14 lg:px-[7.5vw] lg:py-16">
+        <div className="mx-auto">
+          <BeeldVignet
+            src="/images/shoot/team-producten-overleg.jpg"
+            alt={tc(
+              "Twee behandelaars bekijken samen een verpakking in de kliniek",
+            )}
+            onderschrift="Een nieuw product, eerst zelf bekeken"
+            sizes="(min-width: 1024px) 86vw, 92vw"
+            className="aspect-[16/10] lg:aspect-[2/1]"
+          />
+        </div>
+      </section>
+
+      <section className="bg-[var(--g-025)] px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto">
+          <div>
+            <Label>{t("De andere vier")}</Label>
+            <h2 className="diba-display-m mt-4">
+              {t("Waar wij")}
+              <span className="diba-accent">{t("voor staan")}</span>
+            </h2>
+          </div>
+
+          <ul className="mt-10 space-y-4">
+            {rest.map((r) => (
+              <li
+                key={tc(r.kop)}
+                className="rounded-[var(--r-lg)] bg-white p-7 sm:p-9 lg:p-11"
+              >
+                <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14">
+                  <div>
+                    {/* "Regel 01" is weg. Deze punten hebben geen volgorde en niemand
+                        verwijst ernaar met een nummer; de kop zegt genoeg. */}
+                    <p className="mt-4 text-[30px] leading-[1.05] font-normal tracking-[-.05em] text-balance sm:text-[34px]">
+                      {tc(r.kop)}
+                    </p>
+                  </div>
+                  <div>
+                    <p className="max-w-[58ch] text-[16px] leading-8 text-[var(--t-body)]">
+                      {tc(r.zin)}
+                    </p>
+                    <div className="mt-6 rounded-[var(--r-md)] bg-[var(--g-050)] p-6">
+                      <p className="diba-label text-[var(--t-label)]">
+                        {t("Wat dat voor jou betekent")}
+                      </p>
+                      <p className="mt-2 max-w-[58ch] text-[15px] leading-7 text-[var(--t-body)]">
+                        {tc(r.betekent)}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* ── Afsluiter ── */}
+      <section className="px-5 py-10 sm:py-16 sm:px-9 lg:px-[7.5vw] lg:py-24">
+        <div className="mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+          <div>
+            <Label>{t("De eerste afspraak")}</Label>
+            <h2 className="diba-display-m mt-4 max-w-[16ch]">
+              {t("Begin met een")}
+              <span className="diba-accent">{t("huidanalyse")}</span>
+            </h2>
+          </div>
+          <div className="max-w-[58ch]">
+            <p className="text-[17px] leading-8 text-[var(--t-body)]">
+              {t(
+                "De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.",
+              )}
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
+              <Link
+                href="/intake"
+                className="diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)]"
+              >
+                {t("Plan een huidconsult")}
+              </Link>
+              <Link
+                href="/over-ons"
+                className="diba-label text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+              >
+                {t("Wie we zijn, in cijfers")}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}

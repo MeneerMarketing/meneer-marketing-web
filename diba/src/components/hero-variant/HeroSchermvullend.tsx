@@ -1,3 +1,5 @@
+"use client";
+
 import HoofdNav from "@/components/nav/HoofdNav";
 import Topbalk from "@/components/nav/Topbalk";
 import HeroVideo from "@/components/home/HeroVideo";
@@ -9,6 +11,7 @@ import {
 import { DIBA_PROOF } from "@/lib/site";
 import Button from "@/components/ui/Button";
 import Cijferstrook from "@/components/home/Cijferstrook";
+import { useT } from "@/lib/gebruik-taal";
 
 /**
  * De schermvullende hero: video van rand tot rand, alles erover.
@@ -45,6 +48,7 @@ import Cijferstrook from "@/components/home/Cijferstrook";
  */
 
 export default function HeroSchermvullend() {
+  const t = useT();
   return (
     <>
       <section
@@ -120,13 +124,13 @@ export default function HeroSchermvullend() {
                 cirkel rond als de kop breed wordt. */}
             <div className="flex items-center gap-4 sm:gap-6">
               <h1 className="diba-display-l text-[var(--on-dark)] max-[359px]:text-[2.25rem]">
-                Dé huidkliniek
+                {t("Dé huidkliniek")}
                 <br />
-                <span className="diba-accent-on-dark">in Rotterdam</span>
+                <span className="diba-accent-on-dark">{t("in Rotterdam")}</span>
               </h1>
 
               <span className="diba-label grid h-[72px] w-[72px] shrink-0 place-items-center rounded-[var(--r-pill)] bg-[var(--on-dark-btn)] text-center text-[10px] leading-4 text-[var(--on-dark-btn-text)] sm:h-24 sm:w-24 sm:text-[11px]">
-                Sinds
+                {t("Sinds")}
                 <br />
                 {DIBA_PROOF.activeSince}
               </span>
@@ -142,7 +146,7 @@ export default function HeroSchermvullend() {
                 stijlgids verbiedt, twee halve zinnen als slogan, en de controle ving het
                 meteen. Deze zegt hetzelfde als hele zin. */}
             <p className="mt-4 text-[17px] leading-8 text-[var(--on-dark-body)] sm:mt-5 sm:text-[19px]">
-              Elke behandeling begint met een meting.
+              {t("Elke eerste behandeling begint met een meting.")}
             </p>
 
             <div className="mt-7 diba-knoprij sm:mt-8">
@@ -155,14 +159,14 @@ export default function HeroSchermvullend() {
                 variant="primair-op-donker"
                 kort="Afspraak"
               >
-                Afspraak maken
+                {t("Afspraak maken")}
               </Button>
               <Button
                 href="/behandelingen"
                 variant="secundair-op-donker"
                 kort="Behandelingen"
               >
-                Bekijk de behandelingen
+                {t("Bekijk de behandelingen")}
               </Button>
             </div>
           </div>

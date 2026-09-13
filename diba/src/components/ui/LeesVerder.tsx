@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useState } from "react";
+import { useT } from "@/lib/gebruik-taal";
 
 /**
  * Op een telefoon ingeklapt, op desktop gewoon zichtbaar.
@@ -23,6 +24,7 @@ export default function LeesVerder({
   /** In een donkergroen vlak: de knop in de lichte accentkleur. */
   opDonker?: boolean;
 }) {
+  const t = useT();
   const [open, setOpen] = useState(false);
   const id = `leesverder-${useId().replace(/:/g, "")}`;
 
@@ -43,7 +45,7 @@ export default function LeesVerder({
               : "text-[var(--g-700)] active:text-[var(--g-800)]"
           }`}
         >
-          {label}
+          {t(label)}
           <svg
             viewBox="0 0 12 12"
             className="h-3 w-3"

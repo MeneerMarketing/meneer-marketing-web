@@ -195,6 +195,22 @@ export function tariefrijen(slug: string): Tariefrij[] {
   return varianten.map((v) => ({ naam: v.naam, prijs: v.prijs }));
 }
 
+/**
+ * Is het getoonde bedrag de ondergrens van een reeks? Dan hoort er "vanaf" voor.
+ *
+ * Dezelfde regel als in de prijslijst zelf (Behandelprijzen.tsx, naar Rojda op
+ * 7 september 2026): het bedrag op de dichte rij is het laagste van de varianten, en zonder
+ * "vanaf" leest dat als dé prijs. Wie daarna de varianten ziet, voelt zich bedrogen.
+ *
+ * Staan de tarieven in een eigen tabel, zoals de veertig laserzones, dan geldt hetzelfde.
+ */
+export function vanafTarief(slug: string): boolean {
+  const b = behandeling(slug);
+  return (
+    (b.varianten ?? []).some((v) => v.prijs > b.prijs) || Boolean(b.prijsElders)
+  );
+}
+
 /** Het laagste en het hoogste tarief van een behandeling. */
 export function bereik(slug: string): { laag: number; hoog: number } {
   const prijzen = tariefrijen(slug).map((r) => r.prijs);

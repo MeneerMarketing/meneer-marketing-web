@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
+import { useT } from "@/lib/gebruik-taal";
 import {
   DIBA_SALONIZED_BOOKING_URL,
   DIBA_SALONIZED_WIDGET_COMPANY,
@@ -90,7 +91,14 @@ const HOOGTE = 880;
 const HOOGTE_MOBIEL = 620;
 const BREEDTE = 1080;
 
-export default function Boekingswidget() {
+export default function Boekingswidget({
+  /* De taal van het paneel. Salonized zet zijn eigen knoppen en stappen daarop; de
+     namen van de diensten komen uit hun agenda en blijven Nederlands. */
+  taal = "nl",
+}: {
+  readonly taal?: "nl" | "en";
+}) {
+  const t = useT();
   const vak = useRef<HTMLDivElement>(null);
   const [mislukt, setMislukt] = useState(false);
   /* Het adres van de pagina verandert nooit tijdens een bezoek, dus een abonnement dat
@@ -153,7 +161,7 @@ export default function Boekingswidget() {
         className="salonized-booking"
         data-company={DIBA_SALONIZED_WIDGET_COMPANY}
         data-color={KLEUR}
-        data-language="nl"
+        data-language={taal}
         data-height={HOOGTE}
         data-height-mobile={HOOGTE_MOBIEL}
         data-width={BREEDTE}
@@ -171,10 +179,9 @@ export default function Boekingswidget() {
            deze melding niet. Zonder hem lijkt het alsof de agenda stuk is. */
         <div className="rounded-[var(--r-md)] bg-[var(--g-025)] p-6">
           <p className="text-[16px] leading-7 text-[var(--t-strong)]">
-            Je bekijkt deze pagina op localhost. Het script van Salonized wijst
-            dan naar hun eigen ontwikkelmachine, dus de agenda blijft hier leeg.
-            Open dezelfde pagina via 127.0.0.1 of op het echte domein om hem te
-            zien.
+            {t(
+              "Je bekijkt deze pagina op localhost. Het script van Salonized wijst dan naar hun eigen ontwikkelmachine, dus de agenda blijft hier leeg. Open dezelfde pagina via 127.0.0.1 of op het echte domein om hem te zien.",
+            )}
           </p>
         </div>
       ) : null}
@@ -184,8 +191,9 @@ export default function Boekingswidget() {
       {mislukt && !opLocalhost ? (
         <div className="rounded-[var(--r-md)] bg-[var(--g-025)] p-6">
           <p className="text-[16px] leading-7 text-[var(--t-strong)]">
-            De agenda laadt hier niet. Dat ligt meestal aan een adblocker of aan
-            het netwerk waar je op zit. Bellen kan ook: 010-2038423.
+            {t(
+              "De agenda laadt hier niet. Dat ligt meestal aan een adblocker of aan het netwerk waar je op zit. Bellen kan ook: 010-2038423.",
+            )}
           </p>
           <a
             href={DIBA_SALONIZED_BOOKING_URL}
@@ -193,7 +201,7 @@ export default function Boekingswidget() {
             rel="noopener noreferrer"
             className="diba-label mt-4 inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
           >
-            Open de agenda in een nieuw venster
+            {t("Open de agenda in een nieuw venster")}
             <span aria-hidden="true">↗</span>
           </a>
         </div>

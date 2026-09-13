@@ -10,6 +10,7 @@ import {
   type ReactNode,
 } from "react";
 import { useReducedMotion } from "@/lib/use-reduced-motion";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * Een rij kaarten die je opzij veegt.
@@ -105,6 +106,8 @@ export default function Veegrij({
   vanzelf?: boolean;
   klasse?: string;
 }) {
+  const t = useT();
+  const tc = useTc();
   const rij = useRef<HTMLUListElement>(null);
   const [actief, setActief] = useState(0);
   /* Dezelfde waarde als `actief`, maar leesbaar binnen de timer. Die wordt één keer
@@ -247,7 +250,7 @@ export default function Veegrij({
     <div className={klasse}>
       <ul
         ref={rij}
-        aria-label={label}
+        aria-label={tc(label)}
         onScroll={meten}
         onPointerDown={(e) => {
           stop();
@@ -282,7 +285,7 @@ export default function Veegrij({
               stop();
               naar(i);
             }}
-            aria-label={`Naar ${item.naam}`}
+            aria-label={`${t("Naar")} ${tc(item.naam)}`}
             aria-current={i === actief ? "true" : undefined}
             className="grid h-6 w-6 place-items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
           >

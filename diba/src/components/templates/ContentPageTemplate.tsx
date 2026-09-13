@@ -12,6 +12,7 @@ import {
   figmaSectionTight,
 } from "@/lib/figma-inner-layout";
 import { SchemaMarkup, breadcrumbSchema } from "@/lib/schema";
+import { t, tc } from "@/lib/vertaal";
 
 export type ContentSection = {
   kop?: string;
@@ -62,12 +63,12 @@ export default function ContentPageTemplate({
           className="mt-4 max-w-4xl"
         />
         {intro ? (
-          <p className={`mt-7 max-w-2xl ${figmaBody}`}>{publicCopy(intro)}</p>
+          <p className={`mt-7 max-w-2xl ${figmaBody}`}>{tc(intro)}</p>
         ) : null}
         {primaireCta ? (
           <div className="mt-9">
             <Link href={primaireCta.href} className={figmaBtnPrimary}>
-              {publicCopy(primaireCta.label)} ↗
+              {tc(primaireCta.label)} ↗
             </Link>
           </div>
         ) : null}
@@ -93,8 +94,8 @@ export default function ContentPageTemplate({
                 className={`flex flex-col gap-4 ${sectie.kop ? "mt-5" : ""}`}
               >
                 {sectie.alineas.map((alinea) => (
-                  <p key={publicCopy(alinea)} className={figmaBody}>
-                    {publicCopy(alinea)}
+                  <p key={tc(alinea)} className={figmaBody}>
+                    {tc(alinea)}
                   </p>
                 ))}
               </div>
@@ -109,8 +110,9 @@ export default function ContentPageTemplate({
             className={`mx-auto ${figmaCardSoft} flex flex-col items-center gap-4 px-7 py-12 text-center sm:px-10`}
           >
             <p className="max-w-md text-[15px] leading-7 text-[var(--t-muted)]">
-              Twijfel je nog? Stel je vraag via WhatsApp. Je krijgt antwoord van
-              een mens.
+              {t(
+                "Twijfel je nog? Stel je vraag via WhatsApp. Je krijgt antwoord van een mens.",
+              )}
             </p>
             <a
               href={whatsappHref}
@@ -118,7 +120,7 @@ export default function ContentPageTemplate({
               rel="noopener noreferrer"
               className={figmaBtnMint}
             >
-              Vraag stellen ↗
+              {t("Vraag stellen ↗")}
             </a>
           </div>
         </section>

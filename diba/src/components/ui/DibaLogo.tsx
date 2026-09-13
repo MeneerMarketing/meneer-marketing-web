@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { dibaLogoSrc, type DibaLogoVariant } from "@/lib/diba-brand";
+import { useTc } from "@/lib/gebruik-taal";
 
 type DibaLogoProps = {
   /** dark = lichte achtergrond, white = donkere achtergrond */
@@ -31,10 +34,11 @@ export default function DibaLogo({
   priority = false,
   maat = "normaal",
 }: DibaLogoProps) {
+  const tc = useTc();
   const image = (
     <Image
       src={dibaLogoSrc(variant)}
-      alt="Diba Clinics"
+      alt={tc("Diba Clinics")}
       width={1024}
       height={152}
       priority={priority}
@@ -47,7 +51,7 @@ export default function DibaLogo({
       <Link
         href={href}
         className="flex shrink-0 items-center"
-        aria-label="Diba Clinics home"
+        aria-label={tc("Diba Clinics home")}
       >
         {image}
       </Link>

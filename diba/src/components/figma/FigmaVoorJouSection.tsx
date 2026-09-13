@@ -1,12 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import { Fragment, useId, useState } from "react";
 import Button from "@/components/ui/Button";
 import HuidIcon from "@/components/ui/HuidIcon";
 import Label from "@/components/ui/Label";
 import type { HomeWens } from "@/data/home-intents";
+import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * "Waar wil je hulp bij?": kies een huidwens en zie wat erbij hoort.
@@ -73,6 +74,7 @@ const ONDERTITEL: Record<Stand, string> = {
 };
 
 function Chevron({ open }: { open: boolean }) {
+  const t = useT();
   return (
     <svg
       width="18"
@@ -104,6 +106,7 @@ function Tegel({
   paneelId: string;
   onKies: () => void;
 }) {
+  const tc = useTc();
   const open = stand === "actief";
   return (
     /* De hele tegel is de knop, het pijltje dus ook. Open en dicht met dezelfde tik. */
@@ -126,12 +129,12 @@ function Tegel({
         {/* Op mobiel staat de titel naast het icoon in een kolom van zo'n 215px; op 24px
             brak bijna elke naam in tweeën. Iets kleiner, en hij past meestal op één regel. */}
         <span className="diba-card-title block max-lg:text-[20px] max-lg:leading-6">
-          {wens.label}
+          {tc(wens.label)}
         </span>
         <span
           className={`mt-1 block text-sm leading-6 lg:mt-2 ${ONDERTITEL[stand]}`}
         >
-          {wens.kort}
+          {tc(wens.kort)}
         </span>
       </span>
       <Chevron open={open} />
@@ -156,6 +159,8 @@ function Paneel({
   /** De terugval als niemand koos: alleen zichtbaar vanaf lg. */
   alleenDesktop?: boolean;
 }) {
+  const tc = useTc();
+  const t = useT();
   const getoond = wens.behandelingen.length;
   return (
     <div
@@ -173,7 +178,7 @@ function Paneel({
         <Image
           key={wens.id}
           src={wens.image}
-          alt={wens.imageAlt}
+          alt={tc(wens.imageAlt)}
           fill
           className="object-cover"
           style={{ objectPosition: `50% ${wens.brandpunt}%` }}
@@ -182,12 +187,12 @@ function Paneel({
       </div>
 
       <div className="p-6 sm:p-7">
-        <Label>Bij deze klacht</Label>
+        <Label>{t("Bij deze klacht")}</Label>
         <h3 className="diba-card-title-lg mt-3 text-[var(--t-strong)]">
-          {wens.label}
+          {tc(wens.label)}
         </h3>
         <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
-          {wens.kort}
+          {tc(wens.kort)}
         </p>
 
         <ul className="mt-5 border-t border-[var(--g-100)]">
@@ -199,16 +204,16 @@ function Paneel({
               >
                 <span className="min-w-0">
                   <span className="block text-[15px] leading-6 font-medium text-[var(--t-strong)]">
-                    {b.naam}
+                    {tc(b.naam)}
                   </span>
                   {b.apparaat ? (
                     <span className="diba-label mt-0.5 block truncate text-[var(--t-muted)]">
-                      {b.apparaat}
+                      {tc(b.apparaat)}
                     </span>
                   ) : null}
                 </span>
                 <span className="diba-label shrink-0 text-[var(--g-700)]">
-                  {b.prijsLabel}
+                  {tc(b.prijsLabel)}
                 </span>
               </Link>
             </li>
@@ -217,12 +222,12 @@ function Paneel({
 
         {wens.totaal > getoond ? (
           <p className="mt-3 text-[14px] leading-6 text-[var(--t-muted)]">
-            Dit zijn {getoond} van de {wens.totaal}.{" "}
+            {t("Dit zijn")} {getoond} van de {wens.totaal}.{" "}
             <Link
               href={`/behandelingen#wens-${wens.id}`}
               className="text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)]"
             >
-              Bekijk ze allemaal
+              {t("Bekijk ze allemaal")}
             </Link>
             .
           </p>
@@ -234,13 +239,13 @@ function Paneel({
               over de volle breedte. De kop van het paneel zegt drie regels hoger al om
               welke klacht het gaat. */}
           <Button href={wens.pad} className="w-full sm:w-auto">
-            Alles over deze klacht
+            {t("Alles over deze klacht")}
           </Button>
           <Link
             href={`/intake?topic=${wens.id}`}
             className="diba-label text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)]"
           >
-            Bespreek dit met ons
+            {t("Bespreek dit met ons")}
           </Link>
         </div>
       </div>
@@ -256,6 +261,8 @@ export default function FigmaVoorJouSection({
 }: {
   wensen: readonly HomeWens[];
 }) {
+  const tc = useTc();
+  const t = useT();
   /* Niets gekozen tot je kiest. Op desktop vult de eerste wens het paneel zolang dat zo
      is; op mobiel staat dan alles dicht. */
   const [actief, setActief] = useState<string | null>(null);
@@ -284,12 +291,15 @@ export default function FigmaVoorJouSection({
       <div className="mx-auto">
         <div className="grid gap-8 lg:grid-cols-[.7fr_1.3fr]">
           <div>
-            <Label>Voor jou</Label>
-            <h2 className="diba-display-s mt-4">Waar wil je hulp bij?</h2>
+            <Label>{t("Voor jou")}</Label>
+            <h2 className="diba-display-s mt-4">
+              {t("Waar wil je hulp bij?")}
+            </h2>
           </div>
           <p className="max-w-xl self-end text-[15px] leading-7 text-[var(--t-body)]">
-            Kies waar je voor komt. Je ziet meteen welke behandelingen erbij
-            horen en wat ze kosten; klik door voor het hele verhaal.
+            {t(
+              "Kies waar je voor komt. Je ziet meteen welke behandelingen erbij horen en wat ze kosten; klik door voor het hele verhaal.",
+            )}
           </p>
         </div>
 
@@ -299,7 +309,7 @@ export default function FigmaVoorJouSection({
         <div
           className="mt-8 sm:mt-12 grid gap-3 lg:grid-cols-[1fr_1fr_1.15fr] lg:gap-4"
           role="group"
-          aria-label="Kies waar je hulp bij zoekt"
+          aria-label={tc("Kies waar je hulp bij zoekt")}
         >
           {wensen.map((w) => {
             const isGekozen = gekozen?.id === w.id;

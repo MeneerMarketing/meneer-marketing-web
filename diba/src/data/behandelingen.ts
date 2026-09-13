@@ -2874,7 +2874,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     },
     categorie: "ontharing",
     huidwens: ["ontharing"],
-    kort: "Haar voor haar, ook grijs en blond. Voor wat de laser niet ziet zitten. De behandeltijd rekenen we per kwartier.",
+    kort: "Haar voor haar, ook grijs en blond. Voor wat de laser niet ziet zitten. De behandeltijd rekenen we per half uur.",
     lagen: ["opperhuid", "lederhuid-boven"],
     werking:
       "De laser mikt op het pigment in de haarwortel. Zit daar geen pigment, dan is er niets om op te mikken; dat is waarom grijs, wit en heel licht blond haar niet op laser reageert. Bij elektrische epilatie gaat er een dun naaldje langs de haar het haarkanaal in en krijgt de wortel zelf een korte stroomstoot. Kleur doet er dan niet toe. Het gaat haar voor haar, dus het is trager dan laser en het is bedoeld voor kleine gebieden. [MEDISCHE-CHECK-ROJDA]",
@@ -2882,8 +2882,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       "De behandelde plekjes zijn een paar uur rood en kunnen wat opstaan, vergelijkbaar met na het harsen. Bij de meeste mensen is dat dezelfde dag weg. [MEDISCHE-CHECK-ROJDA]",
     sessies:
       "Een reeks, met een paar weken ertussen. Hoeveel hangt af van het aantal haren en van het gebied. [MEDISCHE-CHECK-ROJDA]",
-    prijs: 30,
-    varianten: [{ naam: "Per kwartier", prijs: 30 }],
+    prijs: 60,
+    varianten: [{ naam: "Per 30 minuten", prijs: 60 }],
     duurMinuten: 30,
     welNietKop: {
       kop: "Waar elektrische epilatie",
@@ -2927,7 +2927,7 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
       {
         vraag: "Wat kost dit?",
         antwoord:
-          "Dat hangt af van het gebied en van hoeveel haren er staan, en dat stellen we tijdens de intake vast. [PRIJS-NODIG: tarief per kwartier of per zone]",
+          "Zestig euro per half uur behandeltijd, zoals het ook in de agenda staat. Hoeveel tijd je nodig hebt hangt af van het gebied en van hoeveel haren er staan; dat stellen we tijdens de intake vast.",
       },
     ],
     bijProblemen: [
@@ -3600,6 +3600,8 @@ export const BEHANDELINGEN: readonly Behandeling[] = [
     herstel: "Kleine korstjes die in dagen verdwijnen. [MEDISCHE-CHECK-ROJDA]",
     sessies: "Meestal één keer",
     prijs: 30,
+    /* [GEGEVEN-NODIG: staat dit in Salonized ook als een half uur voor zestig euro, zoals bij
+       elektrische epilatie? Okan] */
     varianten: [{ naam: "Per kwartier", prijs: 30 }],
     wel: [
       "Haalt goedaardige steelwratjes weg, meestal in hals, oksels of liezen [MEDISCHE-CHECK-ROJDA]",

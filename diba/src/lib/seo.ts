@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { taalAlternatieven, taalVanPad } from "@/lib/taal";
 import { DIBA_SITE, DIBA_SITE_URL } from "@/lib/site";
 
 /**
@@ -100,12 +101,17 @@ export function zoekmachineVelden({
     ...(titel ? { title: titel } : {}),
     ...(omschrijving ? { description: omschrijving } : {}),
 
-    /* De canonical. Relatief mag: metadataBase in layout.tsx maakt er een hele URL van. */
-    alternates: { canonical: pad },
+    /* De canonical. Relatief mag: metadataBase in layout.tsx maakt er een hele URL van.
+       De hreflang-verwijzingen staan er alleen bij als de pagina echt in twee talen
+       bestaat; zie `lib/taal.ts` voor waarom dat geen detail is. */
+    alternates: {
+      canonical: pad,
+      ...(taalAlternatieven(pad) ? { languages: taalAlternatieven(pad) } : {}),
+    },
 
     openGraph: {
       type: "website",
-      locale: "nl_NL",
+      locale: taalVanPad(pad) === "en" ? "en_GB" : "nl_NL",
       siteName: DIBA_SITE.name,
       url: `${DIBA_SITE_URL}${pad === "/" ? "" : pad}`,
       ...(titel ? { title: metMerknaam(titel) } : {}),

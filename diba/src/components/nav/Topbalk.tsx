@@ -1,7 +1,10 @@
-import Link from "next/link";
+"use client";
+
+import Link from "@/components/ui/Taalpad";
 import MijnDiba from "@/components/nav/MijnDiba";
 import Taalkiezer from "@/components/nav/Taalkiezer";
 import { TOPBALK_LINKS } from "@/data/hoofdnavigatie";
+import { useT } from "@/lib/gebruik-taal";
 import {
   DIBA_SALONIZED_RATING,
   DIBA_SALONIZED_REVIEW_COUNT,
@@ -39,6 +42,7 @@ export type TopbalkProps = {
 };
 
 export default function Topbalk({ opBeeld = false }: TopbalkProps) {
+  const t = useT();
   const cijfer = DIBA_SALONIZED_RATING.toLocaleString("nl-NL", {
     minimumFractionDigits: 1,
   });
@@ -73,7 +77,7 @@ export default function Topbalk({ opBeeld = false }: TopbalkProps) {
         href={DIBA_SALONIZED_REVIEWS_URL}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label={`Waardering ${cijfer} op basis van ${aantal} reviews, bekijk ze op Salonized. Opent in een nieuw tabblad.`}
+        aria-label={`${t("Waardering")} ${cijfer} ${t("op basis van")} ${aantal} ${t("reviews, bekijk ze op Salonized. Opent in een nieuw tabblad.")}`}
         className={`-mx-2 flex min-h-9 items-center gap-2 rounded-[var(--r-pill)] px-2 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${
           opBeeld
             ? "hover:bg-white/15 focus-visible:outline-white"
@@ -103,18 +107,19 @@ export default function Topbalk({ opBeeld = false }: TopbalkProps) {
           aria-hidden="true"
           className={`hidden text-[13px] leading-none sm:inline ${opBeeld ? "text-white/80" : "text-[var(--t-muted)]"}`}
         >
-          gebaseerd op <span className="tabular-nums">{aantal}</span> reviews
+          {t("gebaseerd op")} <span className="tabular-nums">{aantal}</span>{" "}
+          {t("reviews")}
         </span>
         <span
           aria-hidden="true"
           className={`text-[13px] leading-none sm:hidden ${opBeeld ? "text-white/80" : "text-[var(--t-muted)]"}`}
         >
-          <span className="tabular-nums">{aantal}</span> reviews
+          <span className="tabular-nums">{aantal}</span> {t("reviews")}
         </span>
       </a>
 
       <div className="flex items-center gap-1 sm:gap-3">
-        <nav aria-label="Snelle links" className="hidden lg:block">
+        <nav aria-label={t("Snelle links")} className="hidden lg:block">
           <ul className="flex items-center gap-5">
             {TOPBALK_LINKS.map((l) => (
               <li key={l.href}>
@@ -123,7 +128,7 @@ export default function Topbalk({ opBeeld = false }: TopbalkProps) {
                   href={l.href}
                   className={`text-[13px] leading-none transition-colors ${opBeeld ? "text-white/80 hover:text-white" : "text-[var(--t-muted)] hover:text-[var(--g-700)]"}`}
                 >
-                  {l.label}
+                  {t(l.label)}
                 </Link>
               </li>
             ))}

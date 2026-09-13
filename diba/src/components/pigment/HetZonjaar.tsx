@@ -6,6 +6,7 @@ import Label from "@/components/ui/Label";
 import { ZONJAAR, ZONJAAR_KANTTEKENING } from "@/data/pigment";
 import { publicCopy } from "@/lib/copy-flags";
 import { RASTER_SECTIE } from "@/lib/raster";
+import { useTc, useT } from "@/lib/gebruik-taal";
 
 /**
  * Het zonjaar — de uitblinker van de pigmentpagina.
@@ -54,6 +55,8 @@ const ADVIES_TEKSTKLEUR = {
 } as const;
 
 export default function HetZonjaar() {
+  const t = useT();
+  const tc = useTc();
   const huidigeMaand = useHuidigeMaand();
   const [gekozenDoorGebruiker, setGekozen] = useState<number | null>(null);
 
@@ -85,7 +88,9 @@ export default function HetZonjaar() {
         <div className="-mx-5 overflow-x-auto px-5 pb-1 sm:mx-0 sm:overflow-visible sm:px-0 sm:pb-0">
           <div
             role="tablist"
-            aria-label="Maanden van het jaar, met de UV-belasting in Nederland"
+            aria-label={tc(
+              "Maanden van het jaar, met de UV-belasting in Nederland",
+            )}
             /* De balken blijven op een telefoon onder de vierentwintig pixels uit WCAG 2.5.8.
              Dat is hier geen slordigheid maar de voorstelling zelf: een maand die smaller
              wordt getekend dan een andere maand is een verkeerde grafiek. De richtlijn kent
@@ -104,7 +109,7 @@ export default function HetZonjaar() {
                   type="button"
                   aria-selected={gekozen}
                   aria-controls="zonjaar-paneel"
-                  aria-label={`${m.naam}, UV-index ${m.uv}. ${ADVIES_LABEL[m.start]}`}
+                  aria-label={`${tc(m.naam)}, ${t("UV-index")} ${m.uv}. ${tc(ADVIES_LABEL[m.start])}`}
                   onClick={() => setGekozen(i)}
                   onMouseEnter={() => setGekozen(i)}
                   onFocus={() => setGekozen(i)}
@@ -138,7 +143,7 @@ export default function HetZonjaar() {
                         : "text-[var(--t-muted)]"
                     }`}
                   >
-                    {m.kort}
+                    {tc(m.kort)}
                   </span>
                 </button>
               );
@@ -158,11 +163,11 @@ export default function HetZonjaar() {
                 style={{ background: STAAF_KLEUR[k] }}
                 aria-hidden="true"
               />
-              {ADVIES_LABEL[k]}
+              {tc(ADVIES_LABEL[k])}
             </span>
           ))}
           <span className="diba-label text-[var(--t-muted)]">
-            Staafhoogte = gemiddelde UV-index
+            {t("Staafhoogte = gemiddelde UV-index")}
           </span>
         </div>
       </div>
@@ -179,39 +184,40 @@ export default function HetZonjaar() {
       >
         <div className="rounded-[var(--r-md)] bg-white p-6 sm:p-8">
           <div className="flex flex-wrap items-baseline gap-x-3">
-            <h3 className="diba-card-title-lg">{maand.naam}</h3>
+            <h3 className="diba-card-title-lg">{tc(maand.naam)}</h3>
             <span className="diba-label text-[var(--t-muted)] tabular-nums">
-              UV-index {maand.uv.toFixed(1)}
+              {t("UV-index")} {maand.uv.toFixed(1)}
             </span>
           </div>
           <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
-            {publicCopy(maand.watGebeurt)}
+            {tc(maand.watGebeurt)}
           </p>
         </div>
 
         <div className="rounded-[var(--r-md)] bg-[var(--g-075)] p-6 sm:p-8">
           <Label className={ADVIES_TEKSTKLEUR[maand.start]}>
-            {ADVIES_LABEL[maand.start]}
+            {tc(ADVIES_LABEL[maand.start])}
           </Label>
           <p className="mt-3 text-[16px] leading-7 text-[var(--t-body)]">
-            {maand.startAdvies}
+            {tc(maand.startAdvies)}
           </p>
 
           {maand.start === "liever-niet" ? (
             <p className="mt-4 text-sm leading-6 text-[var(--t-muted)]">
-              We zeggen dit ook aan de telefoon. Je mag wel nu al de huidanalyse
-              doen, dan staan we in september klaar met een vertrekpunt.
+              {t(
+                "We zeggen dit ook aan de telefoon. Je mag wel nu al de huidanalyse doen, dan staan we in september klaar met een vertrekpunt.",
+              )}
             </p>
           ) : null}
 
           <Button
-            href={`/intake?topic=pigment&maand=${maand.kort}`}
+            href={`/intake?topic=pigment&maand=${tc(maand.kort)}`}
             variant={maand.start === "liever-niet" ? "secundair" : "primair"}
             className="mt-6"
           >
             {maand.start === "liever-niet"
-              ? "Alleen de huidanalyse doen"
-              : "Plan je huidconsult"}
+              ? t("Alleen de huidanalyse doen")
+              : t("Plan je huidconsult")}
           </Button>
         </div>
       </div>
@@ -220,7 +226,7 @@ export default function HetZonjaar() {
           zonkracht hier, onderschat een heldere junidag met ongeveer de helft, en
           op een pigmentpagina is dat de verkeerde kant om je te vergissen. */}
       <p className="mt-6 max-w-[68ch] text-[14px] leading-6 text-[var(--t-muted)]">
-        {ZONJAAR_KANTTEKENING}
+        {tc(ZONJAAR_KANTTEKENING)}
       </p>
     </div>
   );

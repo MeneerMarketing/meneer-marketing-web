@@ -1,8 +1,9 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/Taalpad";
 import { useCallback, useEffect, useState } from "react";
 import DibaLeafMark from "@/components/ui/DibaLeafMark";
+import { useT, useTc } from "@/lib/gebruik-taal";
 import {
   acceptCookieConsent,
   isGevraagd,
@@ -69,6 +70,8 @@ import {
  */
 
 export default function CookieBar() {
+  const tc = useTc();
+  const t = useT();
   const [zichtbaar, setZichtbaar] = useState(false);
 
   useEffect(() => {
@@ -105,7 +108,7 @@ export default function CookieBar() {
   return (
     <div
       role="dialog"
-      aria-label="Cookievoorkeuren"
+      aria-label={tc("Cookievoorkeuren")}
       data-cookiebalk=""
       className="diba-koekkaart fixed right-3 bottom-3 z-50 rounded-[var(--r-lg)] bg-white p-4 shadow-[var(--shadow-float)] max-md:left-3 sm:p-5 md:right-6 md:bottom-6 md:max-w-[25rem]"
       style={{ marginBottom: "env(safe-area-inset-bottom)" }}
@@ -120,15 +123,16 @@ export default function CookieBar() {
           <DibaLeafMark className="h-4 w-4" />
         </span>
         <p className="text-[13px] leading-6 text-[var(--t-body)] sm:text-[14px]">
-          Cookies om de site te laten werken en om te meten hoe hij gebruikt
-          wordt. In het{" "}
+          {t(
+            "Cookies om de site te laten werken en om te meten hoe hij gebruikt wordt. In het",
+          )}{" "}
           <Link
             href="/cookiebeleid"
             className="text-[var(--g-700)] underline underline-offset-2 hover:text-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
           >
-            cookiebeleid
+            {t("cookiebeleid")}
           </Link>{" "}
-          staat precies wat er laadt.
+          {t("staat precies wat er laadt.")}
         </p>
       </div>
 
@@ -140,7 +144,7 @@ export default function CookieBar() {
           onClick={weiger}
           className={`${knop} bg-[var(--g-050)] text-[var(--g-900)] hover:bg-[var(--g-100)]`}
         >
-          Alleen noodzakelijk
+          {t("Alleen noodzakelijk")}
         </button>
         <button
           type="button"
@@ -150,7 +154,7 @@ export default function CookieBar() {
           }}
           className={`${knop} bg-[var(--g-700)] text-white hover:bg-[var(--g-800)]`}
         >
-          Akkoord
+          {t("Akkoord")}
         </button>
       </div>
     </div>
