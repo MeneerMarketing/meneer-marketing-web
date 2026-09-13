@@ -47,7 +47,7 @@ export default function SalonizedScorePanel({
       >
         <Stars size={11} />
         <span>
-          {rating.toFixed(1).replace(".", ",")} uit {countFormatted}
+          {rating.toFixed(1).replace(".", ",")} uit {countFormatted}{" "}
           {t("reviews")}
         </span>
         <span aria-hidden="true">↗</span>
@@ -77,8 +77,7 @@ export default function SalonizedScorePanel({
           <p className="mt-2 text-[15px] text-[var(--t-muted)]">
             {t("Gebaseerd op")}{" "}
             <strong className="font-medium text-[var(--g-900)]">
-              {countFormatted}
-              {t("reviews")}
+              {countFormatted} {t("reviews")}
             </strong>
           </p>
         </div>

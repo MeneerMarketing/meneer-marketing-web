@@ -124,7 +124,7 @@ export default function GentleMaxProPage() {
           <div>
             <Label>{t("755 of 1064 nanometer")}</Label>
             <h2 className="diba-display-m mt-4">
-              {t("Welke laser")}
+              {t("Welke laser")}{" "}
               <span className="diba-accent">{t("krijg jij?")}</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">

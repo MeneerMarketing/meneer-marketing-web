@@ -100,7 +100,7 @@ export default function MelasmaPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 text-[var(--on-dark)]">
-              {t("Melasma")}
+              {t("Melasma")}{" "}
               <span className="diba-accent-on-dark">{t("behandelen")}</span>
             </h1>
 

@@ -225,7 +225,7 @@ export default function PrivacyPage() {
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
-              Op {DIBA_SITE.domain}
+              Op {DIBA_SITE.domain}{" "}
               {t(
                 "staat één formulier, op de contactpagina. Wat je daar invult komt als mail bij ons binnen en verder nergens. Geen nieuwsbrief, geen profiel dat we aanleggen, geen veld dat stiekem iets anders doet.",
               )}
@@ -325,7 +325,7 @@ export default function PrivacyPage() {
         <div className="mx-auto">
           <Label>{t("Hoe lang het blijft")}</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
-            {t("Hoe lang we")}
+            {t("Hoe lang we")}{" "}
             <span className="diba-accent">{t("je gegevens bewaren")}</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
@@ -454,7 +454,7 @@ export default function PrivacyPage() {
           <div>
             <Label>{t("Wat er niet gebeurt")}</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              {t("Wat we met")}
+              {t("Wat we met")}{" "}
               <span className="diba-accent">{t("je gegevens doen")}</span>
             </h2>
           </div>

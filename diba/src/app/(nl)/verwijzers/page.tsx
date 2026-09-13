@@ -310,7 +310,7 @@ export default function VerwijzersPage() {
             <div className="shrink-0">
               <Label>{t("Na de huidanalyse")}</Label>
               <h2 className="diba-display-m mt-4">
-                {t("Wat uw patiënt")}
+                {t("Wat uw patiënt")}{" "}
                 <span className="diba-accent">{t("meekrijgt")}</span>
               </h2>
             </div>

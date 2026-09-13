@@ -309,7 +309,7 @@ export default function ApparatuurPage() {
           <div>
             <Label>{t("Naast elkaar")}</Label>
             <h2 className="diba-display-m mt-4">
-              {t("Hoe diep komt")}
+              {t("Hoe diep komt")}{" "}
               <span className="diba-accent">{t("welk apparaat")}</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">

@@ -213,7 +213,7 @@ export default function BehandelingenPage() {
           <div className="mx-auto rounded-[var(--r-xl)] bg-[var(--g-050)] p-7 sm:p-10 lg:p-14">
             <Label>{t("Onderzoek en gezondheid")}</Label>
             <h2 className="diba-display-s mt-3 max-w-[24ch]">
-              {t("Onderzoek")}
+              {t("Onderzoek")}{" "}
               <span className="diba-accent">{t("dat we ook doen")}</span>
             </h2>
             <p className="mt-4 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">

@@ -62,7 +62,7 @@ export default function HuidproblemenPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
-              {t("Alle")}
+              {t("Alle")}{" "}
               <span className="diba-accent-on-dark">{t("huidproblemen")}</span>
             </h1>
 

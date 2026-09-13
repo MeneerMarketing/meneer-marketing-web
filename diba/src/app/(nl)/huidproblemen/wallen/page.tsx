@@ -106,7 +106,7 @@ export default function WallenPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 text-[var(--on-dark)]">
-              {t("Wallen onder")}
+              {t("Wallen onder")}{" "}
               <span className="diba-accent-on-dark">{t("je ogen")}</span>
             </h1>
 

@@ -147,7 +147,7 @@ export default function CouperosePage() {
                 waar de hele pagina om draait, en je kunt hem nalezen voor je verder
                 scrolt. */}
             <h1 className="diba-display-l mt-6 text-[var(--on-dark)]">
-              {t("Couperose")}
+              {t("Couperose")}{" "}
               <span className="diba-accent-on-dark">{t("behandelen")}</span>
             </h1>
 

@@ -206,7 +206,7 @@ export default function KwaliteitPage() {
         <div className="mx-auto">
           <Label>{t("Aangesloten bij")}</Label>
           <h2 className="diba-display-m mt-4 max-w-[20ch]">
-            {t("Zes dingen")}
+            {t("Zes dingen")}{" "}
             <span className="diba-accent">{t("die je kunt nakijken")}</span>
           </h2>
 
@@ -281,7 +281,7 @@ export default function KwaliteitPage() {
           <div>
             <Label>{t("Twee vakken")}</Label>
             <h2 className="diba-display-m mt-4 max-w-[18ch]">
-              {t("Wie staat")}
+              {t("Wie staat")}{" "}
               <span className="diba-accent">{t("waarin")}</span>
             </h2>
             <p className="mt-6 max-w-[48ch] text-[16px] leading-7 text-[var(--t-body)]">

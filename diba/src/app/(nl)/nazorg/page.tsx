@@ -132,7 +132,7 @@ export default function NazorgPage() {
           <div>
             <Label>{t("Zeven bezigheden, vijf behandelingen")}</Label>
             <h2 className="diba-display-m mt-4">
-              {t("Wat mag")}
+              {t("Wat mag")}{" "}
               <span className="diba-accent">{t("wanneer weer.")}</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
@@ -156,7 +156,7 @@ export default function NazorgPage() {
               <div>
                 <Label>{t("Bel ons")}</Label>
                 <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                  {t("Wanneer je")}
+                  {t("Wanneer je")}{" "}
                   <span className="diba-accent">{t("moet bellen")}</span>
                 </h2>
                 <p className="mt-6 max-w-[44ch] text-[16px] leading-7 text-[var(--t-body)]">

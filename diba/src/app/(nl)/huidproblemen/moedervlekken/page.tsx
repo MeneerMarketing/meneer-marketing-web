@@ -203,7 +203,7 @@ export default function MoedervlekkenPage() {
           <div>
             <Label opDonker>{t("Hoe het gaat")}</Label>
             <h2 className="diba-display-m mt-4 max-w-[18ch]">
-              {t("Het begint met")}
+              {t("Het begint met")}{" "}
               <span className="diba-accent-on-dark">{t("kijken")}</span>
             </h2>
             <p className="mt-6 max-w-[52ch] text-[16px] leading-7 text-[var(--on-dark-body)]">

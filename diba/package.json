@@ -23,6 +23,7 @@
     "knoppen": "node scripts/controleer-knoppen.mjs",
     "uitblok": "node scripts/controleer-uitblok.mjs",
     "vertaalstand": "node scripts/vertaalstand.mjs",
+    "spaties": "node scripts/controleer-spaties.mjs",
     "ontdubbel": "py scratch/ontdubbel.py"
   },
   "dependencies": {

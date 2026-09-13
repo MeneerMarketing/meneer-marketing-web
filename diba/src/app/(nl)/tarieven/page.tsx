@@ -200,7 +200,7 @@ export default function TarievenPage() {
           <div>
             <Label>{t("Per behandeling")}</Label>
             <h2 className="diba-display-m mt-4">
-              {t("Wat een behandeling")}
+              {t("Wat een behandeling")}{" "}
               <span className="diba-accent">{t("kost")}</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
@@ -254,7 +254,7 @@ export default function TarievenPage() {
             <div>
               <Label>{t("Vragen over prijzen")}</Label>
               <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                {t("Wat mensen")}
+                {t("Wat mensen")}{" "}
                 <span className="diba-accent">{t("hierover vragen.")}</span>
               </h2>
               <p className="mt-6 max-w-[38ch] text-[16px] leading-7 text-[var(--t-body)]">

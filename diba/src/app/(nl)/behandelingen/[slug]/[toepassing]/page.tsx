@@ -175,7 +175,7 @@ export default async function ToepassingPage({
           <div>
             <Label>{t("Het mechaniek")}</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              {t("Waarom dit hier")}
+              {t("Waarom dit hier")}{" "}
               <span className="diba-accent">{t("iets aan doet")}</span>
             </h2>
           </div>
@@ -199,7 +199,7 @@ export default async function ToepassingPage({
         <div className="mx-auto">
           <Label>{t("De aanpak")}</Label>
           <h2 className="diba-display-m mt-4 max-w-[22ch]">
-            {t("Wat hier")}
+            {t("Wat hier")}{" "}
             <span className="diba-accent">{t("anders gaat dan anders")}</span>
           </h2>
           <ul className="mt-8 sm:mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -233,7 +233,7 @@ export default async function ToepassingPage({
           <div>
             <Label>{t("Wat je kunt verwachten")}</Label>
             <h2 className="diba-display-s mt-3 max-w-[18ch]">
-              {t("Wat het je")}
+              {t("Wat het je")}{" "}
               <span className="diba-accent">{t("oplevert")}</span>
             </h2>
             <p className="mt-6 max-w-[54ch] text-[17px] leading-8 text-[var(--t-body)]">
@@ -311,7 +311,7 @@ export default async function ToepassingPage({
             <div>
               <Label>{t("Veelgestelde vragen")}</Label>
               <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                {t("Wat mensen")}
+                {t("Wat mensen")}{" "}
                 <span className="diba-accent">{t("hierover vragen.")}</span>
               </h2>
             </div>

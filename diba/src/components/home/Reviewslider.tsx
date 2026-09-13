@@ -125,7 +125,7 @@ export default function Reviewslider() {
               <span className="pb-2">
                 <Sterren />
                 <span className="diba-label mt-2 block text-[var(--t-muted)]">
-                  {DIBA_SALONIZED_REVIEW_COUNT.toLocaleString("nl-NL")}
+                  {DIBA_SALONIZED_REVIEW_COUNT.toLocaleString("nl-NL")}{" "}
                   {t("reviews")}
                 </span>
               </span>

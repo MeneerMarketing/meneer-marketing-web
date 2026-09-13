@@ -73,7 +73,7 @@ export default function Meeneemkaart() {
           {t("Neem je huidprofiel mee")}
         </p>
         <p className="mt-4 max-w-[58ch] text-[16px] leading-7 text-[var(--t-body)]">
-          In {PROFIEL_ONDERDELEN}
+          In {PROFIEL_ONDERDELEN}{" "}
           {t(
             "stappen leg je vast wat je wil veranderen en wat je huid aankan. Retinol, zwangerschap, een gebruinde huid, medicatie: met die antwoorden staat je behandeling al klaar als je binnenkomt.",
           )}

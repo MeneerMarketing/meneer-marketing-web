@@ -221,7 +221,7 @@ export default function IntakePage() {
                 rommelig oogde: de een was een kaart, de ander niet. */}
             <div className="rounded-[var(--r-lg)] border border-[var(--g-100)] bg-white p-5 sm:p-7">
               <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
-                <Label>{t("Alleen meten")}</Label>
+                <Label>{t("Alleen meten")}</Label>{" "}
                 <span className="diba-label text-[var(--t-label)]">
                   {t("Max.")} {INTAKE_MINUTEN} {t("minuten")}
                 </span>
@@ -251,7 +251,7 @@ export default function IntakePage() {
               <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
                 <Label>{tc(COMBINATIE_AFSPRAAK.label)}</Label>
                 <span className="diba-label text-[var(--t-label)]">
-                  {COMBINATIE_AFSPRAAK.minuten}
+                  {COMBINATIE_AFSPRAAK.minuten}{" "}
                   {t("minuten")}
                 </span>
               </div>
@@ -283,7 +283,7 @@ export default function IntakePage() {
                 {t(
                   ". Ben je al klant, dan hoeft de intake niet opnieuw en duurt hij",
                 )}{" "}
-                {ADVIES_MINUTEN.bestaand}
+                {ADVIES_MINUTEN.bestaand}{" "}
                 {t("minuten.")}
               </p>
               <p className="mt-4 border-t border-[var(--g-100)] pt-4 text-[15px] leading-7 text-[var(--t-muted)]">

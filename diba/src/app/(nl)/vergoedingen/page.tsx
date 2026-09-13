@@ -256,7 +256,7 @@ export default function VergoedingenPage() {
           <div>
             <Label>{t("Drie vragen, op volgorde")}</Label>
             <h2 className="diba-display-m mt-4">
-              {t("Zo loopt de route")}
+              {t("Zo loopt de route")}{" "}
               <span className="diba-accent">{t("naar ja.")}</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
@@ -318,7 +318,7 @@ export default function VergoedingenPage() {
               <div>
                 <Label opDonker>{t("Wie staat waarvoor aan de lat")}</Label>
                 <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                  {t("Samen krijg je het")}
+                  {t("Samen krijg je het")}{" "}
                   <span className="diba-accent-on-dark">{t("rond.")}</span>
                 </h2>
                 <p className="mt-6 max-w-[44ch] text-[16px] leading-7 text-[var(--on-dark-body)]">
@@ -375,7 +375,7 @@ export default function VergoedingenPage() {
           <div>
             <Label>{t("Vier misverstanden")}</Label>
             <h2 className="diba-display-m mt-4">
-              {t("De eerste")}
+              {t("De eerste")}{" "}
               <span className="diba-accent">{t("scheelt geld.")}</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">

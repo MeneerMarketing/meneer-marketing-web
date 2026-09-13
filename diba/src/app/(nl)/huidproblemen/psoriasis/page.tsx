@@ -81,7 +81,7 @@ export default function PsoriasisPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6">
-              {t("Psoriasis en")}
+              {t("Psoriasis en")}{" "}
               <span className="diba-accent-on-dark">{t("je huid")}</span>
             </h1>
 

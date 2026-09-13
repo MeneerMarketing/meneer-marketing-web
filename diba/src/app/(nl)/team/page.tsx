@@ -128,8 +128,10 @@ export default function TeamPage() {
                     className="-mx-4 flex min-h-14 items-center justify-between gap-4 rounded-[var(--r-md)] px-4"
                   >
                     <dt className="text-[16px] leading-6 text-[var(--t-body)]">
-                      {tc(vak.label)}
-                      {s.aantal > 1 ? "en" : ""}
+                      {/* Het meervoud hoort bij het woord en niet erachter geplakt: los
+                          erachter leverde "Skin therapist" + "en" op, dus "Skin
+                          therapisten". Zo gaat het hele woord door het woordenboek. */}
+                      {tc(s.aantal > 1 ? `${vak.label}en` : vak.label)}
                     </dt>
                     <dd className="text-[24px] leading-none font-medium text-[var(--t-strong)] tabular-nums">
                       {s.aantal}
@@ -155,7 +157,7 @@ export default function TeamPage() {
               <div>
                 <Label>{t("Wat een titel betekent")}</Label>
                 <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                  {t("Het verschil in")}
+                  {t("Het verschil in")}{" "}
                   <span className="diba-accent">{t("opleiding")}</span>
                 </h2>
                 <p className="mt-6 max-w-[44ch] text-[16px] leading-7 text-[var(--t-body)]">
@@ -285,7 +287,7 @@ export default function TeamPage() {
               <div>
                 <Label>{t("Bijhouden")}</Label>
                 <p className="diba-display-s mt-4 max-w-[14ch]">
-                  {t("Een diploma is")}
+                  {t("Een diploma is")}{" "}
                   <span className="diba-accent">{t("geen eindpunt.")}</span>
                 </p>
               </div>

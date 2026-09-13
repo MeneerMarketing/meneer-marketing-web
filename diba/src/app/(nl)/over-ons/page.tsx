@@ -261,7 +261,7 @@ export default function OverOnsPage() {
           <div>
             <Label>{t("Wat er in huis is")}</Label>
             <h2 className="diba-display-m mt-4">
-              {t("Onze")}
+              {t("Onze")}{" "}
               <span className="diba-accent">
                 {t("apparatuur en het team.")}
               </span>

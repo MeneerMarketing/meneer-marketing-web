@@ -248,7 +248,7 @@ AANGESLOTEN BIJ EN GEREGISTREERD IN
 
 **Google-omschrijving:** Diba Clinics staat aan de Weissenbruchlaan 166 in Rotterdam, Rotterdam. Bellen, appen, mailen of je vraag stellen via het formulier.
 
-**CONTACT ENROUTE**
+**CONTACT EN ROUTE**
 
 Bel ons, stuur een bericht of vul het formulier hieronder in. Wil je een afspraak maken, dan gaat de online agenda het snelst.
 
@@ -266,7 +266,7 @@ Bel ons, stuur een bericht of vul het formulier hieronder in. Wil je een afspraa
 
 Bellen kan tijdens onze openingstijden, die staan hieronder.
 
-**Stel je vraagof kom langs**
+**Stel je vraag of kom langs**
 
 Je krijgt antwoord van iemand die in de kliniek staat. Wat er bij jouw huid kan, zien we pas als we hem gezien hebben.
 
@@ -296,7 +296,7 @@ Binnen die tijden staat niet elk uur een therapeut vrij. Wat je in de agenda kun
 
 > knop: BEKIJK DE AGENDA ↗
 
-**Bellen, appenof mailen?**
+**Bellen, appen of mailen?**
 
 Gaat het over je afspraak, dan is bellen het snelst: er kijkt meteen iemand met je mee in de agenda. Voor een vraag over een behandeling of de kosten is een bericht genoeg. Kies hieronder je vraag, dan zie je waar je die het beste stelt en hoe snel je antwoord hebt.
 
@@ -342,7 +342,7 @@ Bel je hierover, dan hoor je dit. Het staat hier zodat je vooraf weet wat het ko
 
 Deze vier staan voluit in de algemene voorwaarden, samen met wat er gebeurt als wij moeten afzeggen.
 
-**Aan deWeissenbruchlaan.**
+**Aan de Weissenbruchlaan.**
 
 OP DE KAART
 
@@ -380,7 +380,7 @@ BIJ BINNENKOMST
 
 **Google-omschrijving:** Hoe een traject bij Diba Clinics verloopt: het begint met een huidanalyse, de tarieven staan per sessie op de site en je hoort ook wat er niet kan.
 
-**HOE WIJWERKEN**
+**HOE WIJ WERKEN**
 
 Sinds 2017 helpen onze huidtherapeuten en specialisten je met acne, pigment, littekens, huidverbetering en ongewenst haar.
 
@@ -402,7 +402,7 @@ Je kunt thuis rustig vergelijken en beslissen, in plaats van aan de balie op het
 
 EEN NIEUW PRODUCT, EERST ZELF BEKEKEN
 
-**Waar wijvoor staan**
+**Waar wij voor staan**
 
 - Sinds 2017 in Rotterdam Diba Clinics is in 2017 begonnen als huidkliniek in Rotterdam. Onze huidtherapeuten en specialisten behandelen acne, pigment, littekens, huidverbetering en ongewenst haar. WAT DAT VOOR JOU BETEKENT Een team dat elke dag met dezelfde huidklachten werkt, en apparatuur waar het in de praktijk mee is ingeregeld.
 
@@ -412,7 +412,7 @@ EEN NIEUW PRODUCT, EERST ZELF BEKEKEN
 
 - Contracten met zorgverzekeraars Diba Clinics heeft contracten met zorgverzekeraars. Of jouw behandeling vergoed wordt, hangt af van je klacht en van je aanvullende pakket. WAT DAT VOOR JOU BETEKENT Tijdens de intake hoor je wat er in jouw geval onder de vergoeding valt, en wat je zelf betaalt.
 
-**Begin met eenhuidanalyse**
+**Begin met een huidanalyse**
 
 De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
 
@@ -456,7 +456,7 @@ De reviews worden verzameld door Salonized. Wij kunnen ze niet selecteren of ver
 
 WAAR HET WERK GEBEURT
 
-**Onzeapparatuur en het team.**
+**Onze apparatuur en het team.**
 
 Een laser doet het werk niet alleen. Welke golflengte, welke pulsduur en welke energie er bij jouw huidtype horen, bepaalt de huidtherapeut aan de hand van de meting. Hieronder staat waar we mee werken en wie ermee werkt.
 
@@ -494,7 +494,7 @@ Dat is makkelijk gezegd. Hier staat wiens hand dat is.
 
 Je kiest niet zelf bij wie je terechtkomt. Dat gaat op je vraag, en als je een voorkeur hebt kun je die gewoon noemen.
 
-**Het verschil inopleiding**
+**Het verschil in opleiding**
 
 Wie je huid behandelt en wie meekijkt naar wat er van binnenuit meespeelt, zijn twee verschillende opleidingen. Zo weet je wie er bij welke vraag naast je staat.
 
@@ -526,7 +526,7 @@ Wie je huid behandelt en wie meekijkt naar wat er van binnenuit meespeelt, zijn 
 
 - O FOTO VOLGT Okan PRAKTIJKMANAGER Okan houdt de praktijk draaiend: de agenda, de afspraken en alles wat er misgaat voordat je het merkt. Bel je over een afspraak verzetten, een factuur of iets wat niet klopt, dan kom je bij hem uit.
 
-Een diploma isgeen eindpunt.
+Een diploma is geen eindpunt.
 
 Huidtherapeuten kunnen zich inschrijven in het Kwaliteitsregister Paramedici. Vrijwillig register met een cyclus van vijf jaar. Wie erin blijft staan toont per periode minstens 1600 werkuren aan, verspreid over minimaal 36 maanden, en 160 punten bijscholing.
 
@@ -560,7 +560,7 @@ Wie je meting doet hangt af van waar je voor komt. Gaat het over acne of pigment
 
 **Google-omschrijving:** Bij acne telt waar het zit, bij pigment welk seizoen het is, bij littekens hoe oud ze zijn. Kies waar je last van hebt en zie waar we mee beginnen.
 
-**ALLEHUIDPROBLEMEN**
+**ALLE HUIDPROBLEMEN**
 
 Bij elke klacht telt iets anders: waar het zit, welk seizoen het is, hoe oud het is of hoe diep het ligt. Kies je klacht en lees wat er bij jou telt.
 
@@ -1064,7 +1064,7 @@ In het huidconsult stellen we vast of het littekenweefsel is of kleur. Soms is d
 
 **Google-omschrijving:** Couperose behandelen met IPL en laser. Rode vaatjes op je wangen of naast je neus, hoe je ze herkent en wat een behandeling kost.
 
-**COUPEROSEBEHANDELEN**
+**COUPEROSE BEHANDELEN**
 
 Die dunne rode of paarse lijntjes op je wangen of naast je neus heten couperose. Een egale rode waas is iets anders en vraagt om een andere aanpak, al zitten ze vaak samen. De huidtherapeut beoordeelt onder vergroting welke van de twee het bij jou is.
 
@@ -1772,7 +1772,7 @@ Helpt zonlicht?
 
 Bij sommige mensen wel en bij anderen niet, en verbranden maakt het altijd erger. Lichttherapie bestaat als behandeling maar die hoort bij de dermatoloog en niet bij een huidkliniek.
 
-**Samen metje huisarts**
+**Samen met je huisarts**
 
 De diagnose en de medicatie lopen via je huisarts. Wij werken daarnaast aan je huidbarrière, met behandelingen en verzorging die hem herstellen. Is je huid op dat moment rustig, dan kunnen we beginnen.
 
@@ -2330,7 +2330,7 @@ Je binnenarm is even oud als je gezicht. Toch ziet hij er jonger uit.
 
 Alles wat je op je gezicht extra ziet, is er dus bij gekomen en niet meegegroeid. Dat is het deel waar een behandeling iets aan doet. Zet je leeftijd hieronder in en zie hoe de twee zich verhouden.
 
-35jaar
+35 jaar
 
 WAT ER GELIJK IS
 
@@ -3254,7 +3254,7 @@ Bij een rood litteken of rode striae is dit het moment waarop het het meeste uit
 
 **Google-omschrijving:** Melasma behandelen met peelings, verzorging en zonbescherming. Hoe diep het pigment zit bepaalt wat mogelijk is, en dat zien we onder UV-scan beginnen.
 
-**MELASMABEHANDELEN**
+**MELASMA BEHANDELEN**
 
 Melasma behandelen we met peelings, gerichte verzorging en zonbescherming. Hoe diep het pigment zit, bepaalt wat er mogelijk is, en dat zie je in gewoon licht niet.
 
@@ -3500,7 +3500,7 @@ Hoe vaak moet ik zelf kijken?
 
 Eén keer per maand is een veelgebruikt advies en vooral praktisch: vaak genoeg om verandering op te merken, zeldzaam genoeg om vol te houden. Vraag je huisarts wat in jouw geval verstandig is.
 
-**Het begint metkijken**
+**Het begint met kijken**
 
 Kom je voor iets anders en zit er een moedervlek in het gebied, dan dekken we die af en gaan we verder. Kom je voor de moedervlek zelf, dan begint het met kijken.
 
@@ -4178,7 +4178,7 @@ We kijken onder vast licht waar je naar kijkt, of het poriën zijn of iets ander
 
 **Google-omschrijving:** Psoriasis komt uit je afweersysteem. Wat je huisarts doet, en wat wij daarnaast aan je huidbarrière kunnen doen.
 
-**PSORIASIS ENJE HUID**
+**PSORIASIS EN JE HUID**
 
 Psoriasis is een aandoening van je afweersysteem die zich in de huid laat zien. De behandeling loopt via je huisarts of dermatoloog, en wij werken daarnaast aan je huidbarrière.
 
@@ -4760,7 +4760,7 @@ Foto bovenaan: Jmarchn, CC BY-SA 3.0, via Wikimedia Commons.
 
 **Google-omschrijving:** Striae behandelen met microneedling en laser. Rode striae reageren het best, bij witte werken we op de structuur.
 
-**STRIAEBEHANDELEN**
+**STRIAE BEHANDELEN**
 
 Striae behandelen we met microneedling en laser, die de aanmaak van collageen in het gescheurde bindweefsel op gang brengen. Zo worden ze vlakker en minder zichtbaar.
 
@@ -4934,7 +4934,7 @@ Niet alles past in een lijst, en sommige dingen spelen tegelijk. Dat is geen pro
 
 **Google-omschrijving:** Wallen onder je ogen: waar ze vandaan komen en wat een huidbehandeling kan toevoegen bij vocht of een dunne huid.
 
-**WALLEN ONDERJE OGEN**
+**WALLEN ONDER JE OGEN**
 
 Wallen komen door vocht, een vetkussen of schaduw door een groef. Bij vocht en bij een dunne huid rond de ogen kunnen we iets doen, met gerichte verzorging en behandelingen die de huid steviger maken.
 
@@ -5198,7 +5198,7 @@ Snurken en fibromen.
 
 - Fibromen verwijderen Steelwratjes weghalen, meestal in één afspraak. De behandeltijd rekenen we per kwartier. VANAF € 30
 
-**Onderzoekdat we ook doen**
+**Onderzoek dat we ook doen**
 
 Niet elke afspraak gaat over je huid. Dit onderzoek doen we ook, en het staat hier omdat mensen het bij ons aanvragen zonder dat ze een behandeling zoeken.
 
@@ -9154,7 +9154,7 @@ LED doet niets aan de verstopping en niets aan de talg. Het werkt op wat daarna 
 
 > knop: PLAN EEN HUIDCONSULT
 
-**Waarom dit hieriets aan doet**
+**Waarom dit hier iets aan doet**
 
 In een verstopte porie groeit een bacterie die van nature in de huid voorkomt. Die bacterie maakt stoffen aan die op blauw licht van een bepaalde golflengte reageren; daarbij komt zuurstof vrij die de bacterie zelf beschadigt.
 
@@ -9162,7 +9162,7 @@ Rood licht doet iets anders: het dringt dieper door en remt de ontstekingsreacti
 
 Wat LED niet doet is de porie vrijmaken. Zonder reiniging of een peeling blijft de verstopping zitten en komt de bacterie terug, en dan behandel je elke keer opnieuw hetzelfde.
 
-**Wat hieranders gaat dan anders**
+**Wat hier anders gaat dan anders**
 
 - Meestal aansluitend, niet los Na een reiniging of een peeling, als de porie vrij is. Dan pakt het licht aan wat er nog zit in plaats van wat er bovenop ligt.
 
@@ -9170,7 +9170,7 @@ Wat LED niet doet is de porie vrijmaken. Zonder reiniging of een peeling blijft 
 
 - Kort maar vaak Een sessie duurt twintig minuten en er is geen hersteltijd. Het werkt door herhaling, dus een reeks met een paar dagen tot een week ertussen.
 
-**Wat het jeoplevert**
+**Wat het je oplevert**
 
 Een rustigere huid met minder ontstoken plekjes, en minder roodheid rond de puistjes die er zijn. Het is de rustige stap in een acnetraject: geen hersteltijd, geen prikkeling, en het effect komt uit de herhaling.
 
@@ -9194,7 +9194,7 @@ Geen.
 
 - Bepaalde medicatie maakt de huid lichtgevoelig; dat hoor je te melden voordat er licht op gaat.
 
-**Wat mensenhierover vragen.**
+**Wat mensen hierover vragen.**
 
 **Kan ik alleen LED doen?**
 
@@ -9790,7 +9790,7 @@ Een zonnevlek is een plek waar pigmentcellen jarenlang te veel hebben aangemaakt
 
 > knop: PLAN EEN HUIDCONSULT
 
-**Waarom dit hieriets aan doet**
+**Waarom dit hier iets aan doet**
 
 Het licht van de Nordlys wordt opgenomen door het pigment in de vlek en niet door de lichtere huid ernaast. Daardoor warmt precies de vlek op en blijft de rest koel; dat is wat een IPL onderscheidt van een peeling, die de hele bovenlaag afhaalt.
 
@@ -9798,7 +9798,7 @@ Door die warmte valt de pigmentkorrel uiteen en werkt hij naar de oppervlakte. I
 
 Daarom werkt dit goed op scherp afgebakende vlekken door zon, en minder op pigment dat diffuus of dieper zit.
 
-**Wat hieranders gaat dan anders**
+**Wat hier anders gaat dan anders**
 
 - Alleen op een onbruinde huid Het licht zoekt kleur. Op een gebruinde huid raakt het niet alleen de vlek, en dat geeft kans op verkleuring. Na de zon wachten we.
 
@@ -9806,7 +9806,7 @@ Daarom werkt dit goed op scherp afgebakende vlekken door zon, en minder op pigme
 
 - Drie tot zes sessies Met vier weken ertussen, zodat er tijd is om te zien wat er is weggegaan voordat er opnieuw gewerkt wordt.
 
-**Wat het jeoplevert**
+**Wat het je oplevert**
 
 Vlekken die lichter worden of verdwijnen, met een gelijkmatiger huid als geheel. De eerste week na een sessie ziet het er slechter uit dan ervoor; dat hoort erbij en is geen tegenvaller.
 
@@ -9830,7 +9830,7 @@ Meestal een paar uur rood.
 
 - Op een gebruinde huid gaat het niet door.
 
-**Wat mensenhierover vragen.**
+**Wat mensen hierover vragen.**
 
 **Waarom wordt de vlek eerst donkerder?**
 
@@ -10008,7 +10008,7 @@ Een zichtbaar vaatje is een bloedvat dat wijder is geworden dan het hoort en nie
 
 > knop: PLAN EEN HUIDCONSULT
 
-**Waarom dit hieriets aan doet**
+**Waarom dit hier iets aan doet**
 
 Het licht van de Nordlys wordt opgenomen door het rood in het bloed, en niet door de huid eromheen. Daardoor warmt precies het vaatje op en blijft de rest koel.
 
@@ -10016,7 +10016,7 @@ Door die warmte klapt de wand van het vaatje dicht. Het bloed kan er niet meer d
 
 Meteen na de behandeling kan een vaatje juist donkerder zijn. Dat hoort erbij: het is het teken dat het geraakt is, en het trekt in de dagen erna weg.
 
-**Wat hieranders gaat dan anders**
+**Wat hier anders gaat dan anders**
 
 - Filter op de dikte van het vaatje Een fijn adertje op de wang vraagt een andere instelling dan een dikker vaatje bij de neusvleugel. De behandelaar kiest het filter daarop.
 
@@ -10024,7 +10024,7 @@ Meteen na de behandeling kan een vaatje juist donkerder zijn. Dat hoort erbij: h
 
 - Drie tot zes, met vier weken ertussen Niet alles reageert in één keer, en de tussentijd is nodig om te zien wat er is weggegaan.
 
-**Wat het jeoplevert**
+**Wat het je oplevert**
 
 Zichtbaar minder vaatjes en een rustiger kleur. Wat weg is komt niet terug: dat vaatje bestaat niet meer. Wel kunnen er elders nieuwe ontstaan, want de aanleg die ze maakte verandert niet.
 
@@ -10048,7 +10048,7 @@ Een paar uur rood, en de behandelde vaatjes zijn eerst donkerder voor ze wegtrek
 
 - Bij een rode neus die dikker en bobbelig wordt hoort een arts mee te kijken.
 
-**Wat mensenhierover vragen.**
+**Wat mensen hierover vragen.**
 
 **Komen de vaatjes terug?**
 
@@ -10082,7 +10082,7 @@ Rosacea is meer dan roodheid: het is een huid die overreageert, met opvliegers, 
 
 > knop: PLAN EEN HUIDCONSULT
 
-**Waarom dit hieriets aan doet**
+**Waarom dit hier iets aan doet**
 
 Bij rosacea staan de kleine bloedvaten in het gezicht vaker en langer open. Op den duur gaan ze niet meer helemaal dicht, en dan blijft er een rode ondergrond staan ook als je geen opvlieger hebt.
 
@@ -10090,7 +10090,7 @@ Het licht van de Nordlys wordt door dat bloed opgenomen en maakt de vaatjes dich
 
 Wat blijft is de neiging tot opvliegen. Die zit in hoe de vaten reageren op warmte, alcohol, inspanning of spanning, en daar doet licht niets aan. Wie dat vooraf weet, is achteraf niet teleurgesteld.
 
-**Wat hieranders gaat dan anders**
+**Wat hier anders gaat dan anders**
 
 - Voorzichtig beginnen Een rosacea-huid is prikkelbaar. De eerste sessie op een lagere energie, en pas op wat je huid ermee doet voordat er wordt opgeschaald.
 
@@ -10098,7 +10098,7 @@ Wat blijft is de neiging tot opvliegen. Die zit in hoe de vaten reageren op warm
 
 - Onderhoud hoort erbij Na de startreeks een of twee keer per jaar. Rosacea gaat niet weg; de zichtbare roodheid houd je ermee onder controle.
 
-**Wat het jeoplevert**
+**Wat het je oplevert**
 
 Minder blijvende roodheid en een gelijkmatiger kleur, opgebouwd over drie tot zes sessies. De gevoeligheid en de opvliegers blijven; die vragen om weten wat je huid triggert, en dat is geen behandeling maar kennis.
 
@@ -10122,7 +10122,7 @@ Een paar uur rood, en de behandelde vaatjes zijn eerst donkerder voor ze wegtrek
 
 - Bij een neus die dikker en bobbelig wordt hoort dat bij een arts en niet bij ons.
 
-**Wat mensenhierover vragen.**
+**Wat mensen hierover vragen.**
 
 **Gaan mijn opvliegers hiermee weg?**
 
@@ -10490,7 +10490,7 @@ Een peeling bij acne is geen schoonmaakbeurt. Het zuur doet twee dingen tegelijk
 
 > knop: PLAN EEN HUIDCONSULT
 
-**Waarom dit hieriets aan doet**
+**Waarom dit hier iets aan doet**
 
 Acne begint met een verstopping: de wand van de porie vernieuwt te snel, de losse cellen plakken samen en de talg kan er niet meer uit. Wat daarna volgt aan bacterie en ontsteking zit áchter die verstopping.
 
@@ -10498,7 +10498,7 @@ Salicylzuur lost op in vet en komt daardoor de porie zelf in; het maakt de prop 
 
 Daarom is het bij acne minder een kwestie van sterker of zwakker en meer van welk zuur waar aangrijpt. Dat is wat er tijdens de intake vastgesteld wordt.
 
-**Wat hieranders gaat dan anders**
+**Wat hier anders gaat dan anders**
 
 - Opbouwen, niet meteen vol De eerste keer op een lagere sterkte en een kortere inwerktijd. Hoe je huid daarop reageert bepaalt de volgende.
 
@@ -10506,7 +10506,7 @@ Daarom is het bij acne minder een kwestie van sterker of zwakker en meer van wel
 
 - Een reeks van vier tot zes Met twee tot vier weken ertussen, en daarna onderhoud zolang de huid daarom vraagt.
 
-**Wat het jeoplevert**
+**Wat het je oplevert**
 
 Minder verstoppingen en minder nieuwe puistjes, meestal merkbaar vanaf de derde sessie. Wat een peeling niet doet is bestaande littekens weghalen; die vragen om iets anders en dat komt pas als de acne rustig is.
 
@@ -10530,7 +10530,7 @@ Twee tot vijf dagen droog en schilferig, afhankelijk van de sterkte.
 
 - Op een pas gebruinde huid gaat een peeling niet door.
 
-**Wat mensenhierover vragen.**
+**Wat mensen hierover vragen.**
 
 **Wordt mijn huid eerst slechter?**
 
@@ -10566,7 +10566,7 @@ Een huid die er vermoeid uitziet is vaak niet slap maar dof: de bovenlaag vernie
 
 > knop: PLAN EEN HUIDCONSULT
 
-**Waarom dit hieriets aan doet**
+**Waarom dit hier iets aan doet**
 
 Vanaf een jaar of dertig duurt het langer voordat een huidcel van onderaf de oppervlakte bereikt. Er blijven meer dode cellen liggen, en die liggen niet netjes. Licht dat daarop valt weerkaatst alle kanten op, en dat zien wij als dof.
 
@@ -10574,7 +10574,7 @@ Een peeling maakt die bovenlaag in één keer los, waardoor de nieuwe laag erond
 
 Bij herhaling gebeurt er meer. Een reeks peelings zet ook de aanmaak in de laag eronder aan, en dan gaat het niet alleen over glans maar ook over stevigheid.
 
-**Wat hieranders gaat dan anders**
+**Wat hier anders gaat dan anders**
 
 - Sterkte naar wat je huid aankan Van een oppervlakkige peeling zonder hersteltijd tot een stevigere die een paar dagen vervelt. Wat het wordt hangt af van je huid en van hoeveel dagen je hebt.
 
@@ -10582,7 +10582,7 @@ Bij herhaling gebeurt er meer. Een reeks peelings zet ook de aanmaak in de laag 
 
 - Onderhoud in plaats van een kuur Vier tot zes om te beginnen, daarna om de paar maanden. Het is een onderhoudsbehandeling en dat is geen tekortkoming.
 
-**Wat het jeoplevert**
+**Wat het je oplevert**
 
 Een frissere, gelijkmatiger huid die het licht rustiger weerkaatst, direct na de eerste sessie merkbaar en na een reeks steviger. Diepe lijnen en verslapping vallen hier buiten.
 
@@ -10606,7 +10606,7 @@ Twee tot vijf dagen droog en schilferig, afhankelijk van de sterkte.
 
 - Bij een gevoelige of beschadigde barrière beginnen we met herstellen en niet met afhalen.
 
-**Wat mensenhierover vragen.**
+**Wat mensen hierover vragen.**
 
 **Hoe lang houdt het aan?**
 
@@ -10642,7 +10642,7 @@ Pigment ligt op verschillende diepten, en een peeling komt maar tot één daarva
 
 > knop: PLAN EEN HUIDCONSULT
 
-**Waarom dit hieriets aan doet**
+**Waarom dit hier iets aan doet**
 
 Een pigmentvlek is een plek waar de pigmentcellen te veel hebben aangemaakt. Bij zonschade zit dat pigment meestal hoog, in de opperhuid, en die laag vernieuwt zichzelf voortdurend.
 
@@ -10650,7 +10650,7 @@ Een peeling versnelt die vernieuwing. De cellen met te veel pigment worden snell
 
 Zon is hier geen bijzaak maar de helft van het resultaat. Elke blootstelling zet de pigmentcellen weer aan het werk, en dan haal je weg wat er meteen weer bij komt.
 
-**Wat hieranders gaat dan anders**
+**Wat hier anders gaat dan anders**
 
 - Voorbereiden met producten thuis Twee tot vier weken vooraf remmen wat de pigmentcellen doen. Zonder die voorbereiding is de kans op een vlekkerig resultaat groter.
 
@@ -10658,7 +10658,7 @@ Zon is hier geen bijzaak maar de helft van het resultaat. Elke blootstelling zet
 
 - Dagelijkse bescherming, geen advies maar onderdeel Zonder bescherming komt pigment terug, en dan was de reeks weggegooid geld.
 
-**Wat het jeoplevert**
+**Wat het je oplevert**
 
 Een gelijkmatiger huid met lichtere vlekken, opgebouwd over een reeks. Bij hardnekkig of dieper pigment is een traject van maanden een reëlere route dan losse peelings; dat hoor je tijdens de intake, niet halverwege.
 
@@ -10682,7 +10682,7 @@ Twee tot vijf dagen droog en schilferig, afhankelijk van de sterkte.
 
 - Op een gebruinde huid gaat het niet door.
 
-**Wat mensenhierover vragen.**
+**Wat mensen hierover vragen.**
 
 **Komen de vlekken terug?**
 
@@ -11562,7 +11562,7 @@ Acnelittekens zijn geen vlekken maar vormen: de huid mist er bindweefsel, en daa
 
 > knop: PLAN EEN HUIDCONSULT
 
-**Waarom dit hieriets aan doet**
+**Waarom dit hier iets aan doet**
 
 Een acnelitteken ontstaat doordat een ontsteking bindweefsel heeft opgeruimd en er te weinig voor is teruggekomen. Wat overblijft is een putje waarin het licht een schaduw maakt, en juist die schaduw zie je in de spiegel.
 
@@ -11570,7 +11570,7 @@ De pen zet honderden kanaaltjes tot in de bovenste lederhuid, precies de laag wa
 
 Bij acnelittekens is dat het hele verhaal. Het gaat niet om de kleur maar om de diepte: hoe minder verschil in hoogte, hoe minder schaduw, hoe minder je het litteken ziet.
 
-**Wat hieranders gaat dan anders**
+**Wat hier anders gaat dan anders**
 
 - Dieper dan bij een gewone sessie Voor structuur wordt er dieper gewerkt dan bij een huidverbetering. De behandelaar zet de diepte per zone; op de wang kan meer dan op de kaaklijn.
 
@@ -11578,7 +11578,7 @@ Bij acnelittekens is dat het hele verhaal. Het gaat niet om de kleur maar om de 
 
 - Een reeks, geen sessie Vier tot zes keer met vier tot zes weken ertussen. Die tussentijd is geen wachten maar de behandeling: daarin wordt het collageen aangemaakt.
 
-**Wat het jeoplevert**
+**Wat het je oplevert**
 
 Reken op maanden en op verbetering, niet op verdwijnen. Putjes worden ondieper en de huid oogt gelijkmatiger; een litteken dat er niet meer is, is een belofte die niemand kan waarmaken. Wat er ná de reeks nog staat, bekijken we samen voor we besluiten of er meer zin heeft.
 
@@ -11602,7 +11602,7 @@ Eén tot drie dagen rood, als een stevige zonnegloed.
 
 - Bij aanleg voor keloïd wordt er niet geprikkeld voordat een arts heeft meegekeken.
 
-**Wat mensenhierover vragen.**
+**Wat mensen hierover vragen.**
 
 **Kan het ook als ik nog acne heb?**
 
@@ -11642,7 +11642,7 @@ Een litteken van een operatie is ander weefsel dan de huid eromheen: het bindwee
 
 > knop: PLAN EEN HUIDCONSULT
 
-**Waarom dit hieriets aan doet**
+**Waarom dit hier iets aan doet**
 
 Bij normale huid liggen de collageenvezels door elkaar heen, en dat maakt de huid soepel in elke richting. In een litteken liggen ze evenwijdig, want zo is de wond dichtgetrokken. Dat weefsel is sterk maar stug, en het reflecteert licht anders.
 
@@ -11650,7 +11650,7 @@ Microneedling maakt in dat stugge weefsel duizenden kleine wondjes die opnieuw g
 
 Dat werkt het best als het litteken volgroeid is en niet meer verandert: meestal vanaf een half jaar na de operatie, soms later.
 
-**Wat hieranders gaat dan anders**
+**Wat hier anders gaat dan anders**
 
 - Niet voordat het rijp is Een litteken dat nog rood is verandert nog uit zichzelf, en prikkelen kan dat verstoren. We wachten tot minstens zes maanden na de ingreep.
 
@@ -11658,7 +11658,7 @@ Dat werkt het best als het litteken volgroeid is en niet meer verandert: meestal
 
 - Meer sessies dan bij gewone huid Littekenweefsel reageert trager. Reken op zes tot acht sessies, met vier tot zes weken ertussen.
 
-**Wat het jeoplevert**
+**Wat het je oplevert**
 
 Een litteken dat soepeler aanvoelt, minder glanst en minder scherp afsteekt tegen de huid eromheen. De lijn blijft zichtbaar; wat verandert is hoeveel hij opvalt.
 
@@ -11682,7 +11682,7 @@ Eén tot drie dagen rood, als een stevige zonnegloed.
 
 - Bij een litteken dat open gaat, jeukt of van kleur verandert hoort eerst een arts te kijken.
 
-**Wat mensenhierover vragen.**
+**Wat mensen hierover vragen.**
 
 **Kan het op een keizersnedelitteken?**
 
@@ -11722,7 +11722,7 @@ Er zijn twee soorten lijnen en ze vragen om iets anders. Een fijn lijntje staat 
 
 > knop: PLAN EEN HUIDCONSULT
 
-**Waarom dit hieriets aan doet**
+**Waarom dit hier iets aan doet**
 
 Vanaf een jaar of vijfentwintig maakt de huid ieder jaar iets minder collageen aan. De bovenste lederhuid wordt daardoor dunner en de bovenlaag komt losser te liggen, en dat is wat je als een fijn netwerk van lijntjes ziet.
 
@@ -11730,7 +11730,7 @@ Needling brengt precies in die laag herstel op gang. Het nieuwe collageen maakt 
 
 Dat is geen opvullen. Er wordt niets ingebracht; de huid maakt het zelf, en daarom bouwt het effect op over weken en verdwijnt het ook weer geleidelijk.
 
-**Wat hieranders gaat dan anders**
+**Wat hier anders gaat dan anders**
 
 - Voorzichtig rond de ogen De huid bij de oogkas is dunner dan de rest van het gezicht. Daar wordt met een lagere instelling gewerkt, en soms helemaal niet.
 
@@ -11738,7 +11738,7 @@ Dat is geen opvullen. Er wordt niets ingebracht; de huid maakt het zelf, en daar
 
 - Drie tot zes, en dan onderhoud Met vier weken ertussen. Daarna een of twee keer per jaar om vast te houden wat er is opgebouwd.
 
-**Wat het jeoplevert**
+**Wat het je oplevert**
 
 Na de reeks een huid die gladder aanvoelt en waarin de fijnste lijntjes minder opvallen. Het beste moment om te vergelijken is drie maanden na de laatste sessie, want dan is de opbouw af.
 
@@ -11762,7 +11762,7 @@ Eén tot drie dagen rood, als een stevige zonnegloed.
 
 - Bij een pas gebruinde huid wachten we, ook bij een lichte instelling.
 
-**Wat mensenhierover vragen.**
+**Wat mensen hierover vragen.**
 
 **Is dit een alternatief voor botox?**
 
@@ -11802,7 +11802,7 @@ Een porie kan niet dichtgaan; er moet talg uit. Wat wel kan is dat de rand eromh
 
 > knop: PLAN EEN HUIDCONSULT
 
-**Waarom dit hieriets aan doet**
+**Waarom dit hier iets aan doet**
 
 Poriën vallen op als de huid eromheen slap is. Het gaatje zelf is bij iedereen ongeveer even groot; wat verschilt is of de rand strak staat of iets is ingezakt. Bij een ingezakte rand valt er schaduw in en dan lijkt de opening groter dan hij is.
 
@@ -11810,7 +11810,7 @@ Microneedling brengt in de bovenste lederhuid nieuw collageen op gang. Dat is he
 
 Daarom is dit een structuurbehandeling en geen reiniging. Een porie leeghalen helpt voor een paar dagen; de rand verstevigen houdt langer aan.
 
-**Wat hieranders gaat dan anders**
+**Wat hier anders gaat dan anders**
 
 - Ondieper en over een groter vlak Bij structuur telt de dekking meer dan de diepte. Er wordt over de hele zone gewerkt in plaats van op losse plekken, met een instelling die lichter is dan bij littekens.
 
@@ -11818,7 +11818,7 @@ Daarom is dit een structuurbehandeling en geen reiniging. Een porie leeghalen he
 
 - Onderhoud hoort erbij Na de startreeks houdt een sessie per kwartaal het resultaat vast. Collageen breekt weer af; dat is niet mislukken maar hoe huid werkt.
 
-**Wat het jeoplevert**
+**Wat het je oplevert**
 
 Een huid die egaler oogt en licht gelijkmatiger weerkaatst, meestal vanaf de derde sessie zichtbaar. Wat niet gebeurt is dat poriën verdwijnen: als iemand dat belooft, belooft hij iets over anatomie dat niet klopt.
 
@@ -11842,7 +11842,7 @@ Eén tot drie dagen rood, als een stevige zonnegloed.
 
 - Wie een direct zichtbaar verschil zoekt komt hier bedrogen uit: dit werkt over maanden.
 
-**Wat mensenhierover vragen.**
+**Wat mensen hierover vragen.**
 
 **Worden mijn poriën kleiner?**
 
@@ -11882,7 +11882,7 @@ Striae zijn scheuren in de lederhuid die van binnenuit zijn ontstaan doordat de 
 
 > knop: PLAN EEN HUIDCONSULT
 
-**Waarom dit hieriets aan doet**
+**Waarom dit hier iets aan doet**
 
 Verse striae zijn rood of paars: er lopen nog vaatjes doorheen en het weefsel is nog bezig. In die fase reageert de huid het best op een prikkel, want het herstel is nog aan de gang en je duwt het een kant op.
 
@@ -11890,7 +11890,7 @@ Witte striae zijn uitgewerkt. Het weefsel is dan dunner en er zit weinig pigment
 
 Needling brengt in beide gevallen nieuw collageen op gang in de laag waar de scheur zit. Bij rode striae levert dat meer op dan bij witte, en dat verschil hoor je te weten voordat je aan een reeks begint.
 
-**Wat hieranders gaat dan anders**
+**Wat hier anders gaat dan anders**
 
 - Dieper dan in het gezicht De huid op buik, heupen en dijen is dikker. De diepte wordt daarop afgestemd en verschilt per zone.
 
@@ -11898,7 +11898,7 @@ Needling brengt in beide gevallen nieuw collageen op gang in de laag waar de sch
 
 - Zes tot acht sessies Met vier tot zes weken ertussen. Op het lichaam gaat herstel trager dan in het gezicht.
 
-**Wat het jeoplevert**
+**Wat het je oplevert**
 
 Minder diepe striae met een gelijkmatiger oppervlak. Bij rode striae vaak ook minder kleurverschil. Wat er niet gebeurt is dat ze verdwijnen: het litteken blijft zitten, het valt minder op.
 
@@ -11922,7 +11922,7 @@ Eén tot drie dagen rood, als een stevige zonnegloed.
 
 - Op een pas gebruinde huid wachten we, ook op het lichaam.
 
-**Wat mensenhierover vragen.**
+**Wat mensen hierover vragen.**
 
 **Werkt het ook op oude, witte striae?**
 
@@ -12908,7 +12908,7 @@ Daarom begint elk traject hier met een meting en niet met een apparaat.
 
 DE NORDLYS, ZOALS HIJ BIJ ONS STAAT
 
-**Hoe diep komtwelk apparaat**
+**Hoe diep komt welk apparaat**
 
 Het verschil tussen deze apparaten zit in twee dingen: waar ze op aangrijpen en tot hoe diep ze komen. Dat tweede is meteen de grens van wat ze kunnen. Een peeling neemt geen rimpels weg omdat hij daar niet komt, en dat is hieronder te zien in plaats van te geloven.
 
@@ -14286,7 +14286,7 @@ Per verzekeraar staat waar in de polis je moet kijken en welke voorwaarde er het
 
 AAN DE BALIE, NA AFLOOP
 
-**Zo loopt de routenaar ja.**
+**Zo loopt de route naar ja.**
 
 Bij elke vraag staat waar je aan toe bent, ook als het antwoord de andere kant op valt. Die helft laten de meeste sites weg, en dat is precies de helft waar je iets aan hebt.
 
@@ -14296,7 +14296,7 @@ Bij elke vraag staat waar je aan toe bent, ook als het antwoord de andere kant o
 
 - DERDE VRAAG Is er een verwijzing nodig? Veel pakketten vergoeden alleen met een verwijzing van je huisarts, en die moet er zijn vóórdat de behandeling begint. BIJ JA Dan kun je rechtstreeks terecht. Meld bij de intake wel dat je een vergoeding verwacht, dan wordt er meteen gekeken of alles klopt. BIJ NEE Regel die dan eerst, vóór je afspraak. Achteraf een verwijzing opsturen accepteren verzekeraars zelden, en die rekening blijft dan staan.
 
-**Samen krijg je hetrond.**
+**Samen krijg je het rond.**
 
 Een vergoeding komt rond als beide kanten hun deel doen. Hier staat welk deel van ons is en welk deel van jou, zodat je het vooraf weet en niet pas als de rekening er ligt.
 
@@ -14316,7 +14316,7 @@ DIT DOE JIJ
 
 - De factuur na afloop bij je verzekeraar indienen
 
-**De eerstescheelt geld.**
+**De eerste scheelt geld.**
 
 Mensen stellen behandeling uit op grond van iets wat niet klopt. Daarom staat die bovenaan.
 
@@ -14350,7 +14350,7 @@ Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd v
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
-**Waar hetop vastloopt**
+**Waar het op vastloopt**
 
 Bij een deel van de pakketten is er één budget voor huidbehandelingen samen, inclusief camouflagetherapie en ontharing. Wat je aan het een besteedt gaat van het ander af, dus vraag er ook bij wat je er dit jaar al van gebruikt hebt.
 
@@ -14388,9 +14388,9 @@ Hieronder staat wat Aevitae er zelf over publiceert. Neem het mee als je belt en
 
 - Gaat dit van mijn eigen risico af? Nee. Aevitae schrijft dat er bij deze vergoeding uit de aanvullende verzekering geen eigen risico en geen eigen bijdrage geldt.
 
-**Eén vraag komthiervoor.**
+**Eén vraag komt hiervoor.**
 
-Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook Aevitaeniet, en voor het grootste deel van wat wij doen is dat het antwoord.
+Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook Aevitae niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
 **Een factuur die klopt.**
 
@@ -14442,7 +14442,7 @@ Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd v
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
-**Waar hetop vastloopt**
+**Waar het op vastloopt**
 
 Bij a.s.r. staat de voorwaarde in de polisvoorwaarden en niet in de vergoedingenvinder. De vinder geeft je het bedrag; of je er recht op hebt hangt af van een eis die een pdf verderop staat.
 
@@ -14480,9 +14480,9 @@ Hieronder staat wat a.s.r. er zelf over publiceert. Neem het mee als je belt en 
 
 - Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.
 
-**Eén vraag komthiervoor.**
+**Eén vraag komt hiervoor.**
 
-Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook a.s.r.niet, en voor het grootste deel van wat wij doen is dat het antwoord.
+Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook a.s.r. niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
 **Een factuur die klopt.**
 
@@ -14534,7 +14534,7 @@ Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd v
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
-**Waar hetop vastloopt**
+**Waar het op vastloopt**
 
 Omdat elke behandeling een eigen pagina en een eigen voorwaarde heeft, kan het antwoord voor acne anders zijn dan voor ontharing. Kijk dus op de pagina van jouw behandeling en niet op de algemene.
 
@@ -14572,9 +14572,9 @@ Hieronder staat wat CZ er zelf over publiceert. Neem het mee als je belt en vraa
 
 - Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.
 
-**Eén vraag komthiervoor.**
+**Eén vraag komt hiervoor.**
 
-Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook CZniet, en voor het grootste deel van wat wij doen is dat het antwoord.
+Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook CZ niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
 **Een factuur die klopt.**
 
@@ -14626,7 +14626,7 @@ Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd v
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
-**Waar hetop vastloopt**
+**Waar het op vastloopt**
 
 DSW vergoedt acnebehandeling alleen in het gezicht en de hals. Voor een andere zone is er geen vergoeding, ook niet met een aanvullend pakket.
 
@@ -14664,9 +14664,9 @@ Hieronder staat wat DSW er zelf over publiceert. Neem het mee als je belt en vra
 
 - Gaat dit van mijn eigen risico af? Nee. DSW zet het er letterlijk bij: deze vergoeding telt niet mee voor je eigen risico, want dat hoort bij de basisverzekering en dit komt uit de aanvullende.
 
-**Eén vraag komthiervoor.**
+**Eén vraag komt hiervoor.**
 
-Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook DSWniet, en voor het grootste deel van wat wij doen is dat het antwoord.
+Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook DSW niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
 **Een factuur die klopt.**
 
@@ -14718,7 +14718,7 @@ Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd v
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
-**Waar hetop vastloopt**
+**Waar het op vastloopt**
 
 Bij Menzis draait het om het contract. Ga je naar een huidtherapeut die zij niet erkennen, dan schiet je zelf voor en krijg je hooguit een deel terug. Kijk dus eerst in hun Zorgvinder en pas daarna naar het bedrag.
 
@@ -14756,9 +14756,9 @@ Hieronder staat wat Menzis er zelf over publiceert. Neem het mee als je belt en 
 
 - Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.
 
-**Eén vraag komthiervoor.**
+**Eén vraag komt hiervoor.**
 
-Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook Menzisniet, en voor het grootste deel van wat wij doen is dat het antwoord.
+Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook Menzis niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
 **Een factuur die klopt.**
 
@@ -14810,7 +14810,7 @@ Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd v
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
-**Waar hetop vastloopt**
+**Waar het op vastloopt**
 
 ONVZ hanteert bij acnebehandeling een leeftijdsgrens, en de basisverzekering vergoedt de huidtherapeut niet. Ben je ouder dan die grens, controleer dan eerst of jouw pakket een uitzondering kent voordat je een traject inplant.
 
@@ -14848,9 +14848,9 @@ Hieronder staat wat ONVZ er zelf over publiceert. Neem het mee als je belt en vr
 
 - Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.
 
-**Eén vraag komthiervoor.**
+**Eén vraag komt hiervoor.**
 
-Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook ONVZniet, en voor het grootste deel van wat wij doen is dat het antwoord.
+Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook ONVZ niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
 **Een factuur die klopt.**
 
@@ -14902,7 +14902,7 @@ Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd v
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
-**Waar hetop vastloopt**
+**Waar het op vastloopt**
 
 Salland wil vooraf schriftelijk toestemming geven, dus voordat de behandeling begint, en vraagt daarbij foto's van je gezicht en hals. Dat verzoek mail je zelf naar hun toestemmingsadres. Begin je zonder die toestemming, dan is het achteraf moeilijk recht te zetten.
 
@@ -14940,9 +14940,9 @@ Hieronder staat wat Salland er zelf over publiceert. Neem het mee als je belt en
 
 - Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.
 
-**Eén vraag komthiervoor.**
+**Eén vraag komt hiervoor.**
 
-Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook Sallandniet, en voor het grootste deel van wat wij doen is dat het antwoord.
+Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook Salland niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
 **Een factuur die klopt.**
 
@@ -14994,7 +14994,7 @@ Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd v
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
-**Waar hetop vastloopt**
+**Waar het op vastloopt**
 
 Bij VGZ krijg je een budget per kalenderjaar dat je over acne, camouflage en ontharen samen verdeelt. Wat je aan het een besteedt, gaat van het ander af.
 
@@ -15032,9 +15032,9 @@ Hieronder staat wat VGZ er zelf over publiceert. Neem het mee als je belt en vra
 
 - Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.
 
-**Eén vraag komthiervoor.**
+**Eén vraag komt hiervoor.**
 
-Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook VGZniet, en voor het grootste deel van wat wij doen is dat het antwoord.
+Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook VGZ niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
 **Een factuur die klopt.**
 
@@ -15086,7 +15086,7 @@ Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd v
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
-**Waar hetop vastloopt**
+**Waar het op vastloopt**
 
 Bij Zilveren Kruis geldt één maximum voor acnebehandeling en ontharing samen, en ze stellen eisen aan de registratie van de behandelaar. Vraag dus ook even of wij aan die eis voldoen.
 
@@ -15124,9 +15124,9 @@ Hieronder staat wat Zilveren Kruis er zelf over publiceert. Neem het mee als je 
 
 - Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.
 
-**Eén vraag komthiervoor.**
+**Eén vraag komt hiervoor.**
 
-Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook Zilveren Kruisniet, en voor het grootste deel van wat wij doen is dat het antwoord.
+Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook Zilveren Kruis niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
 **Een factuur die klopt.**
 
@@ -15178,7 +15178,7 @@ Deze verwijzing is gecontroleerd in september 2026. Wat daar staat gaat altijd v
 
 Bedragen en pakketnamen staan er bewust niet bij.
 
-**Waar hetop vastloopt**
+**Waar het op vastloopt**
 
 Sinds 2026 vergoedt Zorg en Zekerheid acnebehandeling pas vanaf zorgprofiel 2, en alleen als een huidtherapeut de behandeling doet. Dat profiel loopt van 0 tot 4 en wordt door de huidtherapeut zelf bepaald; het moet samen met de AGB-code op de factuur staan.
 
@@ -15216,9 +15216,9 @@ Hieronder staat wat Zorg en Zekerheid er zelf over publiceert. Neem het mee als 
 
 - Gaat dit van mijn eigen risico af? Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen zorg uit omdat ze dat door elkaar halen.
 
-**Eén vraag komthiervoor.**
+**Eén vraag komt hiervoor.**
 
-Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook Zorg en Zekerheidniet, en voor het grootste deel van wat wij doen is dat het antwoord.
+Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook Zorg en Zekerheid niet, en voor het grootste deel van wat wij doen is dat het antwoord.
 
 **Een factuur die klopt.**
 
@@ -15258,7 +15258,7 @@ Staat jouw verzekeraar er niet bij? De vier vragen hierboven werken overal, want
 
 **Google-omschrijving:** Wat er gebeurt als je afzegt, te laat bent, of als een behandeling niet door kan gaan. Per situatie wat het kost en waarom de regel er is.
 
-**ALGEMENEVOORWAARDEN**
+**ALGEMENE VOORWAARDEN**
 
 Je komt hier waarschijnlijk omdat er iets aan de hand is. Je moet afzeggen, je bent te laat, of je hebt een bedrag gezien dat je niet verwachtte. Daarom staan hieronder situaties en geen artikelen.
 
@@ -15270,7 +15270,7 @@ Tot 48 uur van tevoren afzeggen kost je niets, en je hoeft geen reden te geven.
 
 Daarna wordt een deel van het tarief in rekening gebracht, omdat de plek dan niet meer op te vullen is. Alle andere regels op deze pagina zijn varianten op die ene.
 
-**Wat een behandelingkost**
+**Wat een behandeling kost**
 
 - Je zegt op tijd af of verzet Tot 48 uur voor je afspraak kun je afzeggen of verzetten, telefonisch of per bericht. Je hoeft geen reden te geven. WAT HET KOST Niets. Je aanbetaling vervalt niet en gaat mee naar de nieuwe afspraak. WAAROM DEZE REGEL Binnen 48 uur lukt het meestal nog om de plek aan iemand anders te geven. Daarbuiten niet, en dat is het enige verschil tussen deze regel en de volgende.
 
@@ -15332,8 +15332,6 @@ Zolang er geen keuze is, laadt er niets. Onbekend telt hier als nee.
 
 Intrekken werkt vanaf nu en niet met terugwerkende kracht: wat er eerder gemeten is, blijft bij die diensten staan. Wil je dat ook verwijderd hebben, neem dan contact met ons op.
 
-**Welke cookieswe gebruiken**
-
 - ALTIJD AAN Noodzakelijk Nodig om de site te laten werken. Hieronder valt het onthouden van de keuze die je op de cookiebalk maakt, want zonder dat zou de vraag bij elk bezoek terugkomen. WANNEER Altijd. Hier is geen toestemming voor nodig en er valt niets te weigeren.
 
 - ALLEEN MET AKKOORD Anonieme statistieken Google Analytics 4, met een verkort IP-adres, en Microsoft Clarity. Daarmee zien we welke pagina's mensen helpen en waar ze vastlopen. Er worden geen advertentieprofielen opgebouwd en er wordt niets doorverkocht. WANNEER Alleen na je akkoord. Zolang dat er niet is, worden deze scripts niet ingeladen; ze staan dus niet uit maar zijn er niet.
@@ -15348,7 +15346,7 @@ Trek je je toestemming later in, dan stopt het laden vanaf dat moment. Wat er in
 
 > knop: Lees verder
 
-**Stel zegewoon.**
+**Stel ze gewoon.**
 
 Heb je een vraag over wat er van je wordt vastgelegd, of wil je gegevens laten verwijderen, stuur dan een bericht. In het privacybeleid staat wat er verder met persoonsgegevens gebeurt en welke rechten je hebt.
 
@@ -15366,7 +15364,7 @@ Dit beleid gaat over dibaclinics.nl.
 
 **HOE WE OMGAAN MET JE GEGEVENS**
 
-Op dibaclinics.nlstaat één formulier, op de contactpagina. Wat je daar invult komt als mail bij ons binnen en verder nergens. Geen nieuwsbrief, geen profiel dat we aanleggen, geen veld dat stiekem iets anders doet.
+Op dibaclinics.nl staat één formulier, op de contactpagina. Wat je daar invult komt als mail bij ons binnen en verder nergens. Geen nieuwsbrief, geen profiel dat we aanleggen, geen veld dat stiekem iets anders doet.
 
 De meeste gegevens van je staan trouwens ergens anders dan op deze site. Hieronder staat waar, en wat daar gebeurt.
 
@@ -15386,7 +15384,7 @@ Drie van de vier zijn niet deze website. Bij elke plek staat wat er ligt en waar
 
 - JE DOSSIER In de kliniek Wat er bij de intake is besproken, wat er gemeten is, welke behandelingen je hebt gehad en hoe je huid reageerde. WAAR HET HEEN GAAT Dit blijft in de kliniek en is de enige plek waar echt gevoelige gegevens liggen. Alleen de mensen die je behandelen kijken erin.
 
-**Hoe lang weje gegevens bewaren**
+**Hoe lang we je gegevens bewaren**
 
 Een dossier van een geneeskundige behandeling moet twintig jaar bewaard blijven, gerekend vanaf de laatste keer dat er iets in veranderde. Dat is geen keuze van ons: het staat sinds 1 januari 2020 in de wet, in artikel 7:454 van het Burgerlijk Wetboek. Daarvoor was het vijftien jaar. Wat niet bij zo een dossier hoort, bewaren we korter, en hieronder staat per gegeven waarom.
 
@@ -15424,7 +15422,7 @@ Je hoeft niet uit te zoeken bij welke partij iets staat. Stel de vraag bij ons, 
 
 > knop: DIEN EEN VERZOEK IN
 
-**Wat we metje gegevens doen**
+**Wat we met je gegevens doen**
 
 Er worden geen advertentieprofielen van je opgebouwd en er wordt niets doorverkocht of geruild. De enige meting op deze site is anonieme statistiek, en die laadt pas nadat je daar akkoord voor geeft; zonder akkoord worden die scripts niet ingeladen.
 
@@ -15446,7 +15444,7 @@ Liever bellen? Dat kan op 010-2038423. Zie ook de algemene voorwaarden.
 
 **Google-omschrijving:** Boek je afspraak bij Diba Clinics rechtstreeks in de agenda. Met wat je vooraf moet weten over de duur, de kosten en afzeggen.
 
-**MAAK EENAFSPRAAK**
+**MAAK EEN AFSPRAAK**
 
 Kies hieronder een behandeling en een moment. Je ziet meteen wat er vrij is en je krijgt de bevestiging direct.
 
@@ -15474,7 +15472,7 @@ Weet je nog niet welke behandeling je nodig hebt, dan begin je met een van deze 
 
 - Behandeling op advies 120 OF 60 MINUTEN In dezelfde afspraak kijken en behandelen, als dat verantwoord is. Ben je nieuw, dan duurt hij twee uur: 30 tot 60 minuten intake en daarna minstens een uur behandelen. Ben je al klant, dan is het een uur zonder nieuwe intake. Je betaalt de behandeling; de intakekosten vervallen.
 
-**Als hetniet doorgaat**
+**Als het niet doorgaat**
 
 Het kan gebeuren. Dit geldt er dan, zodat je het weet voordat je boekt.
 
@@ -15508,7 +15506,7 @@ Niets om het te bespreken.
 
 Verzetten of afzeggen doe je het snelst telefonisch. Alles staat voluit in de algemene voorwaarden.
 
-**Onzeopeningstijden**
+**Onze openingstijden**
 
 Binnen die tijden staat niet elk uur een therapeut vrij. Wat je in de agenda kunt aanklikken is wat er echt open is.
 
@@ -15552,7 +15550,7 @@ HET GESPREK WAARMEE ELKE AFSPRAAK OP ADVIES BEGINT
 
 Intake plus behandeling op advies
 
-120MINUTEN GERESERVEERD
+120 MINUTEN GERESERVEERD
 
 We reserveren 120 minuten, dus twee uur. De intake duurt daarvan 30 tot 60 minuten, afhankelijk van wat er te bespreken valt: je hulpvraag, je medische achtergrond, je huidproducten en eerdere behandelingen. Daarna bekijkt de behandelaar je huid. Er blijft altijd minstens een uur over om te behandelen. Een huidmeting doen we alleen als die iets toevoegt.
 
@@ -15576,9 +15574,9 @@ Je betaalt dan alleen de behandeling; de intakekosten vervallen. Gebeurt er geen
 
 Behandeling op advies
 
-60MINUTEN GERESERVEERD
+60 MINUTEN GERESERVEERD
 
-Je hoeft geen nieuwe intake te boeken, dus deze afspraak duurt 60minuten. De behandelaar pakt je dossier erbij, bespreekt wat er sinds je vorige afspraak is veranderd en beoordeelt je huid zoals die nu is.
+Je hoeft geen nieuwe intake te boeken, dus deze afspraak duurt 60 minuten. De behandelaar pakt je dossier erbij, bespreekt wat er sinds je vorige afspraak is veranderd en beoordeelt je huid zoals die nu is.
 
 Daarna krijg je een behandeladvies. Vooraf hoor je welke behandeling het wordt en wat die kost.
 
@@ -15622,7 +15620,7 @@ Staat jouw hulpvraag er niet tussen? Omschrijf hem kort tijdens het boeken, dan 
 
 - STAP 4 Behandelen als het verantwoord is Past het binnen de gereserveerde tijd en ben je het eens met advies en prijs, dan kan het meteen. Zo niet, dan plannen we het samen in.
 
-**Wat mensenhierover vragen.**
+**Wat mensen hierover vragen.**
 
 **Moet ik vooraf een behandeling kiezen?**
 
@@ -15888,7 +15886,7 @@ MEMBER OF AND REGISTERED WITH
 
 **Google-omschrijving:** Book your appointment at Diba Clinics straight into the diary. With what you should know beforehand about the length, the cost and cancelling.
 
-**BOOK ANAPPOINTMENT**
+**BOOK AN APPOINTMENT**
 
 Choose a treatment and a time below. You see straight away what is free and you get the confirmation immediately.
 
@@ -15918,7 +15916,7 @@ If you do not yet know which treatment you need, you start with one of these two
 
 - Treatment on advice 120 OR 60 MINUTES Looking and treating in the same appointment, if that is responsible. If you are new it takes two hours: 30 to 60 minutes of intake and then at least an hour of treatment. If you are already a client it is one hour without a new intake. You pay for the treatment; the intake fee is waived.
 
-**If itdoes not go ahead**
+**If it does not go ahead**
 
 It happens. This is what applies then, so that you know before you book.
 
@@ -15952,7 +15950,7 @@ Nothing to discuss it.
 
 Rescheduling or cancelling is quickest by phone. Everything is set out in full in the terms and conditions.
 
-**Ouropening hours**
+**Our opening hours**
 
 Within those hours not every slot has a therapist free. What you can click in the diary is what is genuinely open.
 
@@ -15978,7 +15976,7 @@ Within those hours not every slot has a therapist free. What you can click in th
 
 **Google-omschrijving:** What happens if you cancel, arrive late, or if a treatment cannot go ahead. Per situation what it costs and why the rule is there.
 
-**TERMS ANDCONDITIONS**
+**TERMS AND CONDITIONS**
 
 You are probably here because something is up. You have to cancel, you are late, or you have seen an amount you did not expect. So below are situations and not articles.
 
@@ -15990,7 +15988,7 @@ Up to 48 hours beforehand, cancelling costs you nothing, and you do not have to 
 
 After that a part of the rate is charged, because the slot can no longer be filled. Every other rule on this page is a variation on that one.
 
-**What a treatmentcosts**
+**What a treatment costs**
 
 - You cancel or reschedule in time Up to 48 hours before your appointment you can cancel or reschedule, by phone or message. You do not have to give a reason. WHAT IT COSTS Nothing. Your deposit is not lost and moves to the new appointment. WHY THIS RULE Within 48 hours we can usually still give the slot to someone else. Beyond that we cannot, and that is the only difference between this rule and the next.
 
@@ -16078,7 +16076,7 @@ That is why every programme here starts with a measurement and not with a device
 
 THE NORDLYS, AS IT STANDS WITH US
 
-**How deep doeswhich device go**
+**How deep does which device go**
 
 The difference between these devices lies in two things: what they act on and how deep they reach. The second is also the limit of what they can do. A peel does not remove wrinkles because it does not reach them, and below that is there to see rather than to believe.
 
@@ -17426,7 +17424,7 @@ THE CONVERSATION EVERY ADVICE APPOINTMENT STARTS WITH
 
 Intake plus treatment on advice
 
-120MINUTES RESERVED
+120 MINUTES RESERVED
 
 We reserve 120 minutes, so two hours. Of that, the intake takes 30 to 60 minutes, depending on what there is to discuss: your question, your medical background, your skincare products and earlier treatments. Then the therapist looks at your skin. At least an hour always remains to treat. We only do a skin measurement when it adds something.
 
@@ -17450,9 +17448,9 @@ You then pay only for the treatment; the intake fee is waived. If no treatment h
 
 Treatment on advice
 
-60MINUTES RESERVED
+60 MINUTES RESERVED
 
-You do not have to book a new intake, so this appointment takes 60minutes. The therapist takes out your file, discusses what has changed since your last appointment and assesses your skin as it is now.
+You do not have to book a new intake, so this appointment takes 60 minutes. The therapist takes out your file, discusses what has changed since your last appointment and assesses your skin as it is now.
 
 Then you get a treatment recommendation. Beforehand you hear which treatment it will be and what it costs.
 
@@ -17496,7 +17494,7 @@ Is your question not among them? Describe it briefly when booking, so that we kn
 
 - STEP 4 Treating when it is safe If it fits within the reserved time and you agree with the advice and the price, it can happen straight away. If not, we schedule it together.
 
-**What peopleasked about this.**
+**What people asked about this.**
 
 **Do I have to choose a treatment beforehand?**
 
@@ -17680,7 +17678,7 @@ Snoring and skin tags.
 
 - Fibroma removal Removing skin tags, usually in one appointment. We charge the treatment time per quarter of an hour. FROM € 30
 
-**Testingthat we also do**
+**Testing that we also do**
 
 Not every appointment is about your skin. We do this testing as well, and it is here because people ask us for it without looking for a treatment.
 
@@ -21638,7 +21636,7 @@ LED does nothing about the blockage and nothing about the oil. It works on what 
 
 > knop: BOOK A CONSULTATION
 
-**Why this heredoes about it**
+**Why this here does about it**
 
 In a blocked pore a bacterium grows that occurs naturally in the skin. That bacterium makes substances that react to blue light of a certain wavelength; in doing so oxygen is released that damages the bacterium itself.
 
@@ -21646,7 +21644,7 @@ Red light does something else: it penetrates deeper and calms the inflammatory r
 
 What LED does not do is clear the pore. Without a cleanse or a peel the blockage stays and the bacterium returns, and then you are treating the same thing over and over.
 
-**What isgoes differently than usual**
+**What is goes differently than usual**
 
 - Usually straight after, not on its own After a cleanse or a peel, once the pore is clear. Then the light tackles what is still in there rather than what lies on top.
 
@@ -21654,7 +21652,7 @@ What LED does not do is clear the pore. Without a cleanse or a peel the blockage
 
 - Short but often A session takes twenty minutes and there is no recovery time. It works through repetition, so a series with a few days to a week in between.
 
-**What itgives you**
+**What it gives you**
 
 Calmer skin with fewer inflamed spots, and less redness around the spots that are there. It is the quiet step in an acne programme: no recovery time, no irritation, and the effect comes from the repetition.
 
@@ -21678,7 +21676,7 @@ None.
 
 - Certain medication makes the skin light-sensitive; you should mention that before any light goes on.
 
-**What peopleasked about this.**
+**What people asked about this.**
 
 **Can I have LED on its own?**
 
@@ -22274,7 +22272,7 @@ A sun spot is a place where pigment cells have been making too much for years. L
 
 > knop: BOOK A CONSULTATION
 
-**Why this heredoes about it**
+**Why this here does about it**
 
 The Nordlys light is absorbed by the pigment in the spot and not by the lighter skin beside it. So exactly the spot heats up and the rest stays cool; that is what sets an IPL apart from a peel, which takes off the whole top layer.
 
@@ -22282,7 +22280,7 @@ That heat makes the pigment grain break apart and work its way to the surface. I
 
 So this works well on sharply defined spots from the sun, and less on pigment that is diffuse or sits deeper.
 
-**What isgoes differently than usual**
+**What is goes differently than usual**
 
 - Only on untanned skin The light seeks colour. On tanned skin it hits more than the spot, and that risks discolouration. After the sun we wait.
 
@@ -22290,7 +22288,7 @@ So this works well on sharply defined spots from the sun, and less on pigment th
 
 - Three to six sessions With four weeks in between, so that there is time to see what has gone before work resumes.
 
-**What itgives you**
+**What it gives you**
 
 Spots that lighten or disappear, with more even skin overall. In the first week after a session it looks worse than before; that belongs with it and is not a setback.
 
@@ -22314,7 +22312,7 @@ Usually a few hours red.
 
 - On tanned skin it does not go ahead.
 
-**What peopleasked about this.**
+**What people asked about this.**
 
 **Why does the spot get darker first?**
 
@@ -22492,7 +22490,7 @@ A visible vessel is a blood vessel that has become wider than it should be and n
 
 > knop: BOOK A CONSULTATION
 
-**Why this heredoes about it**
+**Why this here does about it**
 
 The Nordlys light is absorbed by the red in the blood, and not by the skin around it. So exactly the vessel heats up and the rest stays cool.
 
@@ -22500,7 +22498,7 @@ That heat makes the wall of the vessel collapse. Blood can no longer pass throug
 
 Straight after the treatment a vessel can be darker instead. That belongs: it is the sign that it has been hit, and it fades in the days after.
 
-**What isgoes differently than usual**
+**What is goes differently than usual**
 
 - A filter for the thickness of the vessel A fine vein on the cheek asks for a different setting than a thicker vessel by the nostril. The therapist chooses the filter accordingly.
 
@@ -22508,7 +22506,7 @@ Straight after the treatment a vessel can be darker instead. That belongs: it is
 
 - Three to six, with four weeks in between Not everything responds at once, and the time in between is needed to see what has gone.
 
-**What itgives you**
+**What it gives you**
 
 Visibly fewer vessels and a calmer colour. What has gone does not come back: that vessel no longer exists. New ones can appear elsewhere, because the disposition that made them does not change.
 
@@ -22532,7 +22530,7 @@ A few hours red, and the treated vessels are darker at first before they fade.
 
 - With a red nose that is thickening and becoming bumpy, a doctor should take a look.
 
-**What peopleasked about this.**
+**What people asked about this.**
 
 **Do the vessels come back?**
 
@@ -22566,7 +22564,7 @@ Rosacea is more than redness: it is skin that overreacts, with flushes, sensitiv
 
 > knop: BOOK A CONSULTATION
 
-**Why this heredoes about it**
+**Why this here does about it**
 
 With rosacea the small blood vessels in the face stand open more often and for longer. Over time they no longer close fully, and then a red background stays even when you are not flushing.
 
@@ -22574,7 +22572,7 @@ The Nordlys light is absorbed by that blood and closes the vessels, after which 
 
 What stays is the tendency to flush. That lies in how the vessels react to heat, alcohol, exertion or stress, and light does nothing about that. Anyone who knows beforehand is not disappointed afterwards.
 
-**What isgoes differently than usual**
+**What is goes differently than usual**
 
 - Starting gently Rosacea skin is easily provoked. The first session at a lower energy, and see what your skin does with it before anything is scaled up.
 
@@ -22582,7 +22580,7 @@ What stays is the tendency to flush. That lies in how the vessels react to heat,
 
 - Maintenance comes with it After the starting series, once or twice a year. Rosacea does not go away; with this you keep the visible redness in check.
 
-**What itgives you**
+**What it gives you**
 
 Less lasting redness and a more even colour, built over three to six sessions. The sensitivity and the flushing stay; those call for knowing what triggers your skin, and that is not a treatment but knowledge.
 
@@ -22606,7 +22604,7 @@ A few hours red, and the treated vessels are darker at first before they fade.
 
 - With a nose that is thickening and becoming bumpy, that belongs with a doctor and not with us.
 
-**What peopleasked about this.**
+**What people asked about this.**
 
 **Will my flushes go away with this?**
 
@@ -22974,7 +22972,7 @@ A peel for acne is not a clean-up. The acid does two things at once: it clears t
 
 > knop: BOOK A CONSULTATION
 
-**Why this heredoes about it**
+**Why this here does about it**
 
 Acne starts with a blockage: the wall of the pore renews too quickly, the loose cells stick together and the oil can no longer get out. What follows in bacteria and inflammation sits behind that blockage.
 
@@ -22982,7 +22980,7 @@ Salicylic acid dissolves in oil and so gets into the pore itself; it loosens the
 
 So with acne it is less a question of stronger or weaker and more of which acid acts where. That is what is established at the intake.
 
-**What isgoes differently than usual**
+**What is goes differently than usual**
 
 - Building up, not full strength at once The first time at a lower strength and a shorter working time. How your skin responds decides the next one.
 
@@ -22990,7 +22988,7 @@ So with acne it is less a question of stronger or weaker and more of which acid 
 
 - A series of four to six With two to four weeks in between, and then maintenance as long as the skin asks for it.
 
-**What itgives you**
+**What it gives you**
 
 Fewer blockages and fewer new spots, usually noticeable from the third session. What a peel does not do is remove existing scars; those call for something else and that comes only once the acne is calm.
 
@@ -23014,7 +23012,7 @@ Two to five days dry and flaky, depending on the strength.
 
 - On freshly tanned skin a peel does not go ahead.
 
-**What peopleasked about this.**
+**What people asked about this.**
 
 **Does my skin get worse first?**
 
@@ -23050,7 +23048,7 @@ Skin that looks tired is often not slack but dull: the top layer renews more slo
 
 > knop: BOOK A CONSULTATION
 
-**Why this heredoes about it**
+**Why this here does about it**
 
 From about thirty it takes longer for a skin cell to reach the surface from below. More dead cells are left lying, and they do not lie neatly. Light falling on them reflects in all directions, and that is what we see as dull.
 
@@ -23058,7 +23056,7 @@ A peel loosens that top layer in one go, so that the new layer beneath comes to 
 
 With repetition more happens. A series of peels also gets the production in the layer beneath going, and then it is not only about glow but about firmness too.
 
-**What isgoes differently than usual**
+**What is goes differently than usual**
 
 - Strength to what your skin can take From a superficial peel with no recovery time to a stronger one that peels for a few days. Which it becomes depends on your skin and on how many days you have.
 
@@ -23066,7 +23064,7 @@ With repetition more happens. A series of peels also gets the production in the 
 
 - Maintenance rather than a course Four to six to begin with, then every few months. It is a maintenance treatment and that is not a shortcoming.
 
-**What itgives you**
+**What it gives you**
 
 Fresher, more even skin that reflects light more calmly, noticeable straight after the first session and firmer after a series. Deep lines and slackness fall outside this.
 
@@ -23090,7 +23088,7 @@ Two to five days dry and flaky, depending on the strength.
 
 - With a sensitive or damaged barrier we start with repairing and not with taking away.
 
-**What peopleasked about this.**
+**What people asked about this.**
 
 **How long does it last?**
 
@@ -23126,7 +23124,7 @@ Pigment lies at different depths, and a peel reaches only one of them. That is t
 
 > knop: BOOK A CONSULTATION
 
-**Why this heredoes about it**
+**Why this here does about it**
 
 A pigment spot is a place where the pigment cells have made too much. With sun damage that pigment usually sits high, in the epidermis, and that layer renews itself continuously.
 
@@ -23134,7 +23132,7 @@ A peel speeds up that renewal. The cells with too much pigment are carried off s
 
 Sun here is not a side issue but half the result. Every exposure sets the pigment cells working again, and then you are removing what comes straight back.
 
-**What isgoes differently than usual**
+**What is goes differently than usual**
 
 - Preparing with products at home Two to four weeks beforehand, slowing what the pigment cells do. Without that preparation the chance of a patchy result is higher.
 
@@ -23142,7 +23140,7 @@ Sun here is not a side issue but half the result. Every exposure sets the pigmen
 
 - Daily protection, not advice but part of it Without protection the pigment comes back, and then the series was money thrown away.
 
-**What itgives you**
+**What it gives you**
 
 More even skin with lighter spots, built over a series. With stubborn or deeper pigment a programme of months is a more realistic route than separate peels; you hear that at the intake, not halfway through.
 
@@ -23166,7 +23164,7 @@ Two to five days dry and flaky, depending on the strength.
 
 - On tanned skin it does not go ahead.
 
-**What peopleasked about this.**
+**What people asked about this.**
 
 **Do the spots come back?**
 
@@ -24046,7 +24044,7 @@ Acne scars are not marks but shapes: the skin is missing connective tissue there
 
 > knop: BOOK A CONSULTATION
 
-**Why this heredoes about it**
+**Why this here does about it**
 
 An acne scar forms because inflammation has cleared away connective tissue and too little has come back in its place. What is left is a pit in which light makes a shadow, and it is that shadow you see in the mirror.
 
@@ -24054,7 +24052,7 @@ The pen places hundreds of channels down into the upper dermis, exactly the laye
 
 With acne scars that is the whole story. It is not about the colour but about the depth: the less difference in height, the less shadow, the less you see the scar.
 
-**What isgoes differently than usual**
+**What is goes differently than usual**
 
 - Deeper than in an ordinary session For texture the work goes deeper than for skin improvement. The therapist sets the depth per area; more is possible on the cheek than on the jawline.
 
@@ -24062,7 +24060,7 @@ With acne scars that is the whole story. It is not about the colour but about th
 
 - A series, not a session Four to six times with four to six weeks in between. That time in between is not waiting but the treatment: it is when the collagen is made.
 
-**What itgives you**
+**What it gives you**
 
 Count on months and on improvement, not on disappearance. Pits become shallower and the skin looks more even; a scar that is no longer there is a promise nobody can keep. What still stands after the series we look at together before deciding whether more makes sense.
 
@@ -24086,7 +24084,7 @@ One to three days red, like a strong sun flush.
 
 - If you are prone to keloid, nothing is prompted before a doctor has taken a look.
 
-**What peopleasked about this.**
+**What people asked about this.**
 
 **Is it possible if I still have acne?**
 
@@ -24126,7 +24124,7 @@ A surgical scar is different tissue from the skin around it: the connective tiss
 
 > knop: BOOK A CONSULTATION
 
-**Why this heredoes about it**
+**Why this here does about it**
 
 In normal skin the collagen fibres lie criss-cross, and that makes the skin supple in every direction. In a scar they lie parallel, because that is how the wound was pulled shut. That tissue is strong but stiff, and it reflects light differently.
 
@@ -24134,7 +24132,7 @@ Microneedling makes thousands of tiny wounds in that stiff tissue that heal agai
 
 That works best once the scar has matured and is no longer changing: usually from six months after the operation, sometimes later.
 
-**What isgoes differently than usual**
+**What is goes differently than usual**
 
 - Not before it is ready A scar that is still red is changing on its own, and prompting it can disturb that. We wait until at least six months after the procedure.
 
@@ -24142,7 +24140,7 @@ That works best once the scar has matured and is no longer changing: usually fro
 
 - More sessions than on ordinary skin Scar tissue responds more slowly. Count on six to eight sessions, with four to six weeks in between.
 
-**What itgives you**
+**What it gives you**
 
 A scar that feels more supple, shines less and stands out less sharply against the skin around it. The line stays visible; what changes is how much it draws the eye.
 
@@ -24166,7 +24164,7 @@ One to three days red, like a strong sun flush.
 
 - With a scar that opens, itches or changes colour, a doctor should look first.
 
-**What peopleasked about this.**
+**What people asked about this.**
 
 **Is it possible on a caesarean scar?**
 
@@ -24206,7 +24204,7 @@ There are two kinds of line and they ask for different things. A fine line is th
 
 > knop: BOOK A CONSULTATION
 
-**Why this heredoes about it**
+**Why this here does about it**
 
 From about twenty-five the skin makes slightly less collagen every year. So the upper dermis becomes thinner and the top layer sits more loosely, and that is what you see as a fine network of lines.
 
@@ -24214,7 +24212,7 @@ Needling gets healing going in exactly that layer. The new collagen makes the sk
 
 That is not filling. Nothing is introduced; the skin makes it itself, which is why the effect builds over weeks and also fades again gradually.
 
-**What isgoes differently than usual**
+**What is goes differently than usual**
 
 - Carefully around the eyes The skin at the eye socket is thinner than the rest of the face. There the work is done at a lower setting, and sometimes not at all.
 
@@ -24222,7 +24220,7 @@ That is not filling. Nothing is introduced; the skin makes it itself, which is w
 
 - Three to six, and then maintenance With four weeks in between. Then once or twice a year to hold on to what has been built.
 
-**What itgives you**
+**What it gives you**
 
 After the series, skin that feels smoother and in which the finest lines stand out less. The best moment to compare is three months after the last session, because then the building is finished.
 
@@ -24246,7 +24244,7 @@ One to three days red, like a strong sun flush.
 
 - On freshly tanned skin we wait, even at a light setting.
 
-**What peopleasked about this.**
+**What people asked about this.**
 
 **Is this an alternative to botox?**
 
@@ -24286,7 +24284,7 @@ A pore cannot close; oil has to get out. What can happen is that the rim around 
 
 > knop: BOOK A CONSULTATION
 
-**Why this heredoes about it**
+**Why this here does about it**
 
 Pores draw the eye when the skin around them is slack. The opening itself is about the same size in everyone; what differs is whether the rim stands taut or has sunk a little. With a sunken rim shadow falls in and then the opening looks bigger than it is.
 
@@ -24294,7 +24292,7 @@ Microneedling gets new collagen going in the upper dermis. That is the tissue ho
 
 So this is a texture treatment and not a cleanse. Emptying a pore helps for a few days; firming the rim lasts longer.
 
-**What isgoes differently than usual**
+**What is goes differently than usual**
 
 - Shallower and across a larger area For texture, coverage counts more than depth. The work goes across the whole area rather than on separate spots, at a setting lighter than for scars.
 
@@ -24302,7 +24300,7 @@ So this is a texture treatment and not a cleanse. Emptying a pore helps for a fe
 
 - Maintenance comes with it After the starting series, a session per quarter holds the result. Collagen breaks down again; that is not failure but how skin works.
 
-**What itgives you**
+**What it gives you**
 
 Skin that looks more even and reflects light more evenly, usually visible from the third session. What does not happen is that pores disappear: if anyone promises that, they are promising something about anatomy that is not true.
 
@@ -24326,7 +24324,7 @@ One to three days red, like a strong sun flush.
 
 - Anyone looking for an immediately visible difference will be disappointed here: this works over months.
 
-**What peopleasked about this.**
+**What people asked about this.**
 
 **Do my pores get smaller?**
 
@@ -24366,7 +24364,7 @@ Stretch marks are tears in the dermis formed from within because the skin was st
 
 > knop: BOOK A CONSULTATION
 
-**Why this heredoes about it**
+**Why this here does about it**
 
 Fresh stretch marks are red or purple: vessels still run through them and the tissue is still at work. In that phase the skin responds best to a prompt, because the healing is still going and you push it one way.
 
@@ -24374,7 +24372,7 @@ White stretch marks have run their course. The tissue is thinner by then and the
 
 In both cases needling gets new collagen going in the layer where the tear sits. With red stretch marks that yields more than with white ones, and you ought to know that difference before starting a series.
 
-**What isgoes differently than usual**
+**What is goes differently than usual**
 
 - Deeper than on the face The skin on the stomach, hips and thighs is thicker. The depth is tuned to that and differs per area.
 
@@ -24382,7 +24380,7 @@ In both cases needling gets new collagen going in the layer where the tear sits.
 
 - Six to eight sessions With four to six weeks in between. On the body, healing goes more slowly than on the face.
 
-**What itgives you**
+**What it gives you**
 
 Less deep stretch marks with a more even surface. With red stretch marks, often less colour difference too. What does not happen is that they disappear: the scar stays, it draws the eye less.
 
@@ -24406,7 +24404,7 @@ One to three days red, like a strong sun flush.
 
 - On freshly tanned skin we wait, on the body too.
 
-**What peopleasked about this.**
+**What people asked about this.**
 
 **Does it work on old, white stretch marks too?**
 
@@ -25348,7 +25346,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 **Google-omschrijving:** Diba Clinics is at Weissenbruchlaan 166 in Rotterdam. Call, message, email or ask your question through the form.
 
-**CONTACT ANDROUTE**
+**CONTACT AND ROUTE**
 
 Call us, send a message or fill in the form below. If you want to book an appointment, the online diary is quickest.
 
@@ -25366,7 +25364,7 @@ Call us, send a message or fill in the form below. If you want to book an appoin
 
 You can call during our opening hours, they are below.
 
-**Ask your questionor drop in**
+**Ask your question or drop in**
 
 Reviews translated from Dutch.
 
@@ -25398,7 +25396,7 @@ Within those hours not every slot has a therapist free. What you can click in th
 
 > knop: VIEW THE DIARY ↗
 
-**Call, messageor email?**
+**Call, message or email?**
 
 If it is about your appointment, calling is quickest: someone looks at the diary with you straight away. For a question about a treatment or the cost, a message is enough. Choose your question below and you see where best to ask it and how soon you have an answer.
 
@@ -25444,7 +25442,7 @@ If you call about this, this is what you hear. It is here so that you know befor
 
 These four are set out in full in the terms and conditions, together with what happens if we have to cancel.
 
-**On theWeissenbruchlaan.**
+**On the Weissenbruchlaan.**
 
 ON THE MAP
 
@@ -25498,8 +25496,6 @@ As long as there is no choice, nothing loads. Unknown counts as no here.
 
 Withdrawal works from now on and not retroactively: what was measured earlier stays with those services. If you want that removed too, get in touch with us.
 
-**Which cookieswe use**
-
 - ALWAYS ON Necessary Needed to make the site work. This includes remembering the choice you make on the cookie bar, because without it the question would come back at every visit. WHEN Always. No consent is needed for this and there is nothing to decline.
 
 - ONLY WITH CONSENT Anonymous statistics Google Analytics 4, with a shortened IP address, and Microsoft Clarity. With those we see which pages help people and where they get stuck. No advertising profiles are built and nothing is sold on. WHEN Only after your consent. As long as that is not given, these scripts are not loaded; so they are not switched off but simply not there.
@@ -25514,7 +25510,7 @@ If you withdraw your consent later, the loading stops from that moment. What was
 
 > knop: Read on
 
-**Justask them.**
+**Just ask them.**
 
 If you have a question about what is recorded about you, or want data removed, send a message. The privacy policy says what else happens with personal data and which rights you have.
 
@@ -25542,7 +25538,7 @@ The laser aims at pigment: it absorbs the light, heats up and damages the root. 
 
 That is what the second wavelength is for.
 
-**Which laserdo you get?**
+**Which laser do you get?**
 
 Choose your skin type and you see which of the two is used, how deep it goes and why it is the right one for you.
 
@@ -25600,7 +25596,7 @@ This page is about the device. Which areas there are, what a session costs and h
 
 **Google-omschrijving:** With acne what counts is where it sits, with pigment which season it is, with scars how old they are. Choose what troubles you and see where we start.
 
-**ALLSKIN CONCERNS**
+**ALL SKIN CONCERNS**
 
 With every concern something else counts: where it sits, which season it is, how old it is or how deep it lies. Pick your concern and read what counts in your case.
 
@@ -26108,7 +26104,7 @@ At the skin consultation we establish whether it is scar tissue or colour. Somet
 
 **Google-omschrijving:** Treating thread veins with IPL and laser. Red vessels on your cheeks or beside your nose, how to recognise them and what a treatment costs.
 
-**COUPEROSETREATED**
+**COUPEROSE TREATED**
 
 Those thin red or purple lines on your cheeks or beside your nose are called couperose. An even red haze is something else and asks for a different approach, even though the two often sit together. The skin therapist assesses under magnification which of the two you have.
 
@@ -26818,7 +26814,7 @@ Does sunlight help?
 
 In some people yes and in others no, and burning always makes it worse. Light therapy exists as a treatment but it belongs with a dermatologist and not with a skin clinic.
 
-**Together withyour GP**
+**Together with your GP**
 
 The diagnosis and the medication go through your GP. Alongside that we work on your skin barrier, with treatments and care that repair it. If your skin is calm at that moment, we can start.
 
@@ -27376,7 +27372,7 @@ Your inner arm is exactly as old as your face. Yet it looks younger.
 
 So everything extra you see on your face was added and did not simply grow along. That is the part a treatment does something about. Put your age in below and see how the two compare.
 
-35years
+35 years
 
 WHAT IS THE SAME
 
@@ -28302,7 +28298,7 @@ With a red scar or red stretch marks this is the moment when it matters most. Wi
 
 **Google-omschrijving:** Treating melasma with peels, care and sun protection. How deep the pigment sits decides what is possible, and we see that start under a UV scan.
 
-**MELASMATREATED**
+**MELASMA TREATED**
 
 We treat melasma with peels, targeted care and sun protection. How deep the pigment sits decides what is possible, and in ordinary light you cannot see that.
 
@@ -28548,7 +28544,7 @@ How often should I check myself?
 
 Once a month is common advice and mostly practical: often enough to notice change, rare enough to keep up. Ask your GP what is sensible in your case.
 
-**It starts withlooking**
+**It starts with looking**
 
 If you come for something else and there is a mole in the area, we cover it and carry on. If you come for the mole itself, it starts with looking.
 
@@ -29228,7 +29224,7 @@ Under fixed light we look at what you are looking at, whether it is pores or som
 
 **Google-omschrijving:** Psoriasis comes from your immune system. What your GP does, and what we can do alongside for your skin barrier.
 
-**PSORIASIS ANDYOUR SKIN**
+**PSORIASIS AND YOUR SKIN**
 
 Psoriasis is a condition of your immune system that shows itself in the skin. The treatment goes through your GP or dermatologist, and alongside that we work on your skin barrier.
 
@@ -29810,7 +29806,7 @@ Photo at the top: Jmarchn, CC BY-SA 3.0, via Wikimedia Commons.
 
 **Google-omschrijving:** Treating stretch marks with microneedling and laser. Red stretch marks respond best; with white ones we work on the texture.
 
-**STRETCH MARKSTREATED**
+**STRETCH MARKS TREATED**
 
 We treat stretch marks with microneedling and laser, which get collagen production going in the torn connective tissue. That way they become flatter and less visible.
 
@@ -29984,7 +29980,7 @@ Not everything fits in a list, and some things happen at the same time. That is 
 
 **Google-omschrijving:** Bags under your eyes: where they come from and what a skin treatment can add with fluid or thin skin.
 
-**BAGS UNDERYOUR EYES**
+**BAGS UNDER YOUR EYES**
 
 Bags come from fluid, a fat pad or shadow from a groove. With fluid and with thin skin around the eyes we can do something, with targeted care and treatments that make the skin firmer.
 
@@ -30336,13 +30332,13 @@ If we treat, you pay only the price of the treatment. The intake is then not cha
 
 Whether that is possible depends on what the measurement shows, on any contraindications, on the time available that day and on what you want. If treating turns out not to be sensible at that moment, we do not do it.
 
-This appointment is called treatment on advice. If you are already a client the intake is not needed again and it takes 60minutes.
+This appointment is called treatment on advice. If you are already a client the intake is not needed again and it takes 60 minutes.
 
 Of those 120 minutes, at least 60 minutes is treatment time.
 
 Bring your skin profile
 
-In 9steps record what you want to change and what your skin can take. Retinol, pregnancy, tanned skin, medication: with those answers your treatment is ready before you walk in.
+In 9 steps record what you want to change and what your skin can take. Retinol, pregnancy, tanned skin, medication: with those answers your treatment is ready before you walk in.
 
 > knop: BUILD YOUR SKIN PROFILE
 
@@ -30448,7 +30444,7 @@ You leave with a measurement that is yours and advice that is allowed to be no. 
 
 **Google-omschrijving:** What a treatment involves and costs, where a concern comes from and what a device can and cannot do. Ordered by the question you are asking.
 
-**EVERYTHING WEEXPLAIN**
+**EVERYTHING WE EXPLAIN**
 
 What a treatment involves and costs, where a concern comes from, what a device can and cannot do, and what a title behind the treatment chair means. It is ordered here by the question you are asking, and not by what we offer.
 
@@ -34564,7 +34560,7 @@ Our skin therapists are in the Dutch Quality Register for Paramedics and members
 
 Below it says per register what it involves and how to check it yourself.
 
-**Six thingsyou can check**
+**Six things you can check**
 
 - OUR SKIN THERAPISTS Dutch Association of Skin Therapists The professional association of skin therapists. Members have to be registered in the Dutch Quality Register for Paramedics; one cannot exist without the other. A professional association writes the code of conduct and the guidelines a skin therapist has to keep to. That is a standard from outside the clinic. WHO WORKS HERE AND WITH WHICH TITLE ›
 
@@ -34578,7 +34574,7 @@ Below it says per register what it involves and how to check it yourself.
 
 - THE CLINIC ZorgkaartNederland The independent rating site of the Dutch Patients Federation. Patients rate care providers there; we cannot place, change or remove those ratings. A rating that does not go through us says more than one that does. We stand there at 9.7, and you check that figure yourself. SEE US ON ZORGKAARTNEDERLAND ↗
 
-**Who is inwhich register**
+**Who is in which register**
 
 At Diba there are skin therapists and beauty therapists. Those are two professions, each with its own association and its own register. That is why there are four names above and not two.
 
@@ -34698,7 +34694,7 @@ If in doubt, call. That is always cheaper than waiting.
 
 WHAT YOU TAKE WITH YOU, AND WHY
 
-**What is allowedwhen again.**
+**What is allowed when again.**
 
 Find your treatment in the columns and your question in the rows. Click a cell and below it you read why that period is there.
 
@@ -34734,7 +34730,7 @@ Click a cell. Then you read here how long you wait, and why.
 
 - Longer than a week
 
-**When youshould call**
+**When you should call**
 
 Usually nothing is wrong. But with these signs you call us, appointment or not: we would rather hear this too early than too late.
 
@@ -34778,7 +34774,7 @@ This schedule is a guideline and not a prescription. If your skin differs from w
 
 **Google-omschrijving:** How a programme at Diba Clinics goes: it starts with a skin analysis, the rates are on the site per session and you also hear what is not possible.
 
-**HOW WEWORK**
+**HOW WE WORK**
 
 Since 2017 our skin therapists and specialists help you with acne, pigment, scars, skin improvement and unwanted hair.
 
@@ -34800,7 +34796,7 @@ You can compare and decide calmly at home, rather than at the desk at the moment
 
 A NEW PRODUCT, LOOKED AT BY US FIRST
 
-**What westand for**
+**What we stand for**
 
 - In Rotterdam since 2017 Diba Clinics started in 2017 as a skin clinic in Rotterdam. Our skin therapists and specialists treat acne, pigment, scars, skin improvement and unwanted hair. WHAT THAT MEANS FOR YOU A team that works with the same skin concerns every day, and equipment they have dialled in through practice.
 
@@ -34810,7 +34806,7 @@ A NEW PRODUCT, LOOKED AT BY US FIRST
 
 - Contracts with health insurers Diba Clinics has contracts with health insurers. Whether your treatment is covered depends on your concern and on your supplementary package. WHAT THAT MEANS FOR YOU At the intake you hear what falls under the cover in your case, and what you pay yourself.
 
-**Start with askin analysis**
+**Start with a skin analysis**
 
 The therapist looks at your skin, measures with the EVE-M and establishes what suits you. You hear straight away how many sessions it involves and what it costs. If you are treated in the same appointment, the intake fee is waived.
 
@@ -34854,7 +34850,7 @@ The reviews are collected by Salonized. We cannot select or remove them, so you 
 
 WHERE THE WORK HAPPENS
 
-**Ourequipment and the team.**
+**Our equipment and the team.**
 
 A laser does not do the work on its own. Which wavelength, which pulse duration and which energy suit your skin type is decided by the skin therapist on the basis of the measurement. Below is what we work with and who works with it.
 
@@ -34928,7 +34924,7 @@ Below it says per brand what we have and what we use it for.
 
 **Google-omschrijving:** The skin concerns with PCOS: unwanted hair growth, acne along the jawline and thinning hair. What we treat and what goes through your doctor.
 
-**PCOS ANDYOUR SKIN**
+**PCOS AND YOUR SKIN**
 
 The diagnosis is made by your GP or gynaecologist. The skin concerns that come with it we treat: unwanted hair growth, acne along the jawline, thinning scalp hair and dark patches in skin folds.
 
@@ -34940,7 +34936,7 @@ Once you know what is going on, we work on the skin concerns that come with it. 
 
 THE ROOM WHERE THE CONVERSATION STARTS
 
-**Who doeswhat.**
+**Who does what.**
 
 Your doctor works on the cause, we work on what you see. The third column says why the two need each other.
 
@@ -34950,7 +34946,7 @@ Your doctor works on the cause, we work on what you see. The third column says w
 
 - NOT HERE Together As long as the cause plays a part, the skin keeps moving with it. So a treatment works best alongside your doctor's care, and you keep the result up with maintenance.
 
-**What we can dowith PCOS**
+**What we can do with PCOS**
 
 With every concern both sides stand equally emphatically. One without the other is a sales pitch.
 
@@ -34962,7 +34958,7 @@ With every concern both sides stand equally emphatically. One without the other 
 
 - Dark, velvety patches in skin folds On the neck, underarms or groin: a darker discolouration that feels soft and does not wash away. It is not dirt and not a pigment spot. WHAT WE DO We do nothing about this, and that is deliberate. WHAT TO COUNT ON Removing it. This discolouration is a signal and not a cosmetic problem, and treating over it only makes the signal invisible.
 
-**Sometimes we send youaway instead.**
+**Sometimes we send you away instead.**
 
 A skin clinic sometimes sees something before a diagnosis exists. The right step then is not to offer a programme but to say where you should be.
 
@@ -34994,7 +34990,7 @@ If something is already running with your GP or gynaecologist, say so at the int
 
 **HOW WE HANDLE YOUR DATA**
 
-Op dibaclinics.nlthere is one form, on the contact page. What you fill in there reaches us as an email and nowhere else. No newsletter, no profile we build, no field that quietly does something else.
+Op dibaclinics.nl there is one form, on the contact page. What you fill in there reaches us as an email and nowhere else. No newsletter, no profile we build, no field that quietly does something else.
 
 Most of your data, by the way, sits somewhere other than this site. Below is where, and what happens there.
 
@@ -35014,7 +35010,7 @@ Three of the four are not this website. With every place it says what sits there
 
 - YOUR FILE At the clinic What was discussed at the intake, what was measured, which treatments you have had and how your skin responded. WHERE IT GOES This stays in the clinic and is the only place where truly sensitive data sits. Only the people treating you look into it.
 
-**How long we keepyour data**
+**How long we keep your data**
 
 A medical treatment file has to be kept for twenty years, counted from the last time anything in it changed. That is not our choice: since 1 January 2020 it is in the law, in article 7:454 of the Dutch Civil Code. Before that it was fifteen years. What does not belong to such a file we keep for less time, and below it says per item why.
 
@@ -35052,7 +35048,7 @@ You do not have to work out which party holds something. Put the question to us 
 
 > knop: SUBMIT A REQUEST
 
-**What we dowith your data**
+**What we do with your data**
 
 No advertising profiles are built of you and nothing is sold on or traded. The only measurement on this site is anonymous statistics, and it loads only after you agree to it; without agreement those scripts are not loaded.
 
@@ -35084,7 +35080,7 @@ We do not collect them and we cannot select or remove them. Below they all stand
 
 THE PEOPLE IT IS ABOUT
 
-**Search for whatyou have yourself.**
+**Search for what you have yourself.**
 
 Sorting by score makes no sense when almost everything is a five, and putting the best at the top ourselves would mean we choose what you see. So you filter yourself: by the concern someone came for, or by how the visit was. With the number on the button, even when that number disappoints.
 
@@ -35226,11 +35222,11 @@ Reviews translated from Dutch.
 
 - Had a lovely fotona treatment with Iris. NANCY 4 MONTHS AGO
 
-**1,417people gave stars only**
+**1,417 people gave stars only**
 
 They count towards the average and that is why they are here, all of them. What they do not do is tell you anything: you do not know what someone came for or what happened. So count them in the score and not in your judgement.
 
-40ratings stand below five stars. Those are on this page too; they have not been filtered out.
+40 ratings stand below five stars. Those are on this page too; they have not been filtered out.
 
 SHOW THE RATINGS WITHOUT TEXT
 
@@ -35394,7 +35390,7 @@ In the order from Salonized: newest first. Page 1 of 18.
 
 - Feta 11 months ago
 
-**Inventedreviews.**
+**Invented reviews.**
 
 The reviews come from the public Salonized page, and it is a snapshot: new ones arrive daily, and they are there before they are here. Check them at the source.
 
@@ -35584,7 +35580,7 @@ Build your skin profile and here are the prices of what suits you, with the reas
 
 > knop: BUILD YOUR SKIN PROFILE
 
-**What a treatmentcosts**
+**What a treatment costs**
 
 Open a treatment and you see how often you have to come, how long the recovery time is and what it does not do. The amount stays visible, closed as well.
 
@@ -35812,7 +35808,7 @@ A package replaces the separate areas it contains; those do not count a second t
 
 NO ASTERISKS There are no footnotes with conditions here and no amounts that are only complete at the desk. What you see here is what a session costs. How many sessions you need you hear at the intake, and that number decides your total more than the rate beside it does.
 
-**What peopleasked about this.**
+**What people asked about this.**
 
 If your question is not here, you get the answer on the phone without an appointment having to come of it.
 
@@ -35872,15 +35868,15 @@ With every device on this site stands the same sentence: two clinics with the sa
 
 That is easily said. Here is whose hand that is.
 
-*Skin therapisten*
+*Skin therapists*
 
-*Orthomolecular skin specialisten*
+*Orthomolecular skin specialists*
 
-*Laser specialisten*
+*Laser specialists*
 
 You do not choose who you see yourself. That follows from your question, and if you have a preference you can simply say so.
 
-**The difference intraining**
+**The difference in training**
 
 Who treats your skin and who looks at what plays a part from within are two different trainings. That way you know who stands beside you for which question.
 
@@ -35912,7 +35908,7 @@ Who treats your skin and who looks at what plays a part from within are two diff
 
 - O PHOTO TO FOLLOW Okan PRACTICE MANAGER Okan keeps the practice running: the calendar, the appointments and everything that goes wrong before you notice. If you call about moving an appointment, an invoice or something that is not right, you end up with him.
 
-A diploma isnot an end point.
+A diploma is not an end point.
 
 Skin therapists can register in the Dutch Quality Register for Paramedics. A voluntary register with a five-year cycle. Anyone who stays in it demonstrates at least 1600 working hours per period, spread over at least 36 months, and 160 points of continuing education.
 
@@ -36102,7 +36098,7 @@ Per insurer it says where in the policy to look and which condition sits in it m
 
 AT THE DESK, AFTERWARDS
 
-**This is how the routeto yes runs.**
+**This is how the route to yes runs.**
 
 With every question it says where you stand, including when the answer falls the other way. Most sites leave that half out, and it is exactly the half that is useful to you.
 
@@ -36112,7 +36108,7 @@ With every question it says where you stand, including when the answer falls the
 
 - THIRD QUESTION Is a referral needed? Many packages only cover with a referral from your GP, and it has to be in place before the treatment starts. IF YES Then you can come directly. Do mention at the intake that you expect cover, so that we check straight away whether everything is in order. IF NO Then arrange it first, before your appointment. Insurers rarely accept a referral sent in afterwards, and that bill then stays with you.
 
-**Together you get itsorted.**
+**Together you get it sorted.**
 
 Cover comes through when both sides do their part. Here is which part is ours and which is yours, so that you know beforehand and not only when the bill arrives.
 
@@ -36132,7 +36128,7 @@ THIS IS WHAT YOU DO
 
 - Submitting the invoice to your insurer afterwards
 
-**The first onesaves money.**
+**The first one saves money.**
 
 People put treatment off on the strength of something that is not true. So that one comes first.
 
@@ -36166,7 +36162,7 @@ This reference was checked in September 2026. What is written there always takes
 
 Amounts and package names are deliberately left out.
 
-**Where itgets stuck**
+**Where it gets stuck**
 
 With some of the packages there is one budget for skin treatments together, including camouflage therapy and hair removal. What you spend on one comes off the other, so ask as well how much of it you have used this year.
 
@@ -36204,9 +36200,9 @@ Below is what Aevitae publishes about it themselves. Take it with you when you c
 
 - Does this come out of my excess? No. Aevitae states that for this cover from the supplementary policy there is no excess and no personal contribution.
 
-**One question comesbefore this.**
+**One question comes before this.**
 
-Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes Aevitae; for most of what we do, that is the answer.
+Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes Aevitae ; for most of what we do, that is the answer.
 
 **An invoice that is right.**
 
@@ -36258,7 +36254,7 @@ This reference was checked in September 2026. What is written there always takes
 
 Amounts and package names are deliberately left out.
 
-**Where itgets stuck**
+**Where it gets stuck**
 
 At a.s.r. the condition is in the policy conditions and not in the cover finder. The finder gives you the amount; whether you are entitled to it depends on a requirement set out in a pdf further along.
 
@@ -36296,9 +36292,9 @@ Below is what a.s.r. publishes about it themselves. Take it with you when you ca
 
 - Does this come out of my excess? With cover from the supplementary insurance, no. The excess belongs to the basic insurance. Many people put care off because they confuse the two.
 
-**One question comesbefore this.**
+**One question comes before this.**
 
-Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes a.s.r.; for most of what we do, that is the answer.
+Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes a.s.r. ; for most of what we do, that is the answer.
 
 **An invoice that is right.**
 
@@ -36350,7 +36346,7 @@ This reference was checked in September 2026. What is written there always takes
 
 Amounts and package names are deliberately left out.
 
-**Where itgets stuck**
+**Where it gets stuck**
 
 Because every treatment has its own page and its own condition, the answer for acne can differ from the one for hair removal. So look at the page for your treatment and not at the general one.
 
@@ -36388,9 +36384,9 @@ Below is what CZ publishes about it themselves. Take it with you when you call a
 
 - Does this come out of my excess? With cover from the supplementary insurance, no. The excess belongs to the basic insurance. Many people put care off because they confuse the two.
 
-**One question comesbefore this.**
+**One question comes before this.**
 
-Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes CZ; for most of what we do, that is the answer.
+Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes CZ ; for most of what we do, that is the answer.
 
 **An invoice that is right.**
 
@@ -36442,7 +36438,7 @@ This reference was checked in September 2026. What is written there always takes
 
 Amounts and package names are deliberately left out.
 
-**Where itgets stuck**
+**Where it gets stuck**
 
 DSW covers acne treatment only on the face and neck. For any other area there is no cover, not even with a supplementary package.
 
@@ -36480,9 +36476,9 @@ Below is what DSW publishes about it themselves. Take it with you when you call 
 
 - Does this come out of my excess? No. DSW says so in as many words: this cover does not count towards your excess, because that belongs to the basic policy and this comes from the supplementary one.
 
-**One question comesbefore this.**
+**One question comes before this.**
 
-Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes DSW; for most of what we do, that is the answer.
+Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes DSW ; for most of what we do, that is the answer.
 
 **An invoice that is right.**
 
@@ -36534,7 +36530,7 @@ This reference was checked in September 2026. What is written there always takes
 
 Amounts and package names are deliberately left out.
 
-**Where itgets stuck**
+**Where it gets stuck**
 
 At Menzis it turns on the contract. If you go to a skin therapist they do not recognise, you pay up front yourself and get back a part at most. So look in their Zorgvinder first and only then at the amount.
 
@@ -36572,9 +36568,9 @@ Below is what Menzis publishes about it themselves. Take it with you when you ca
 
 - Does this come out of my excess? With cover from the supplementary insurance, no. The excess belongs to the basic insurance. Many people put care off because they confuse the two.
 
-**One question comesbefore this.**
+**One question comes before this.**
 
-Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes Menzis; for most of what we do, that is the answer.
+Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes Menzis ; for most of what we do, that is the answer.
 
 **An invoice that is right.**
 
@@ -36626,7 +36622,7 @@ This reference was checked in September 2026. What is written there always takes
 
 Amounts and package names are deliberately left out.
 
-**Where itgets stuck**
+**Where it gets stuck**
 
 ONVZ applies an age limit to acne treatment, and the basic policy does not cover the skin therapist. If you are over that limit, first check whether your package has an exception before you schedule a programme.
 
@@ -36664,9 +36660,9 @@ Below is what ONVZ publishes about it themselves. Take it with you when you call
 
 - Does this come out of my excess? With cover from the supplementary insurance, no. The excess belongs to the basic insurance. Many people put care off because they confuse the two.
 
-**One question comesbefore this.**
+**One question comes before this.**
 
-Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes ONVZ; for most of what we do, that is the answer.
+Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes ONVZ ; for most of what we do, that is the answer.
 
 **An invoice that is right.**
 
@@ -36718,7 +36714,7 @@ This reference was checked in September 2026. What is written there always takes
 
 Amounts and package names are deliberately left out.
 
-**Where itgets stuck**
+**Where it gets stuck**
 
 Salland wants to give permission in writing beforehand, so before the treatment starts, and asks for photos of your face and neck with it. You email that request yourself to their permissions address. If you start without that permission, it is hard to put right afterwards.
 
@@ -36756,9 +36752,9 @@ Below is what Salland publishes about it themselves. Take it with you when you c
 
 - Does this come out of my excess? With cover from the supplementary insurance, no. The excess belongs to the basic insurance. Many people put care off because they confuse the two.
 
-**One question comesbefore this.**
+**One question comes before this.**
 
-Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes Salland; for most of what we do, that is the answer.
+Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes Salland ; for most of what we do, that is the answer.
 
 **An invoice that is right.**
 
@@ -36810,7 +36806,7 @@ This reference was checked in September 2026. What is written there always takes
 
 Amounts and package names are deliberately left out.
 
-**Where itgets stuck**
+**Where it gets stuck**
 
 With VGZ you get a budget per calendar year that you divide across acne, camouflage and hair removal together. What you spend on one comes off the other.
 
@@ -36848,9 +36844,9 @@ Below is what VGZ publishes about it themselves. Take it with you when you call 
 
 - Does this come out of my excess? With cover from the supplementary insurance, no. The excess belongs to the basic insurance. Many people put care off because they confuse the two.
 
-**One question comesbefore this.**
+**One question comes before this.**
 
-Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes VGZ; for most of what we do, that is the answer.
+Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes VGZ ; for most of what we do, that is the answer.
 
 **An invoice that is right.**
 
@@ -36902,7 +36898,7 @@ This reference was checked in September 2026. What is written there always takes
 
 Amounts and package names are deliberately left out.
 
-**Where itgets stuck**
+**Where it gets stuck**
 
 At Zilveren Kruis one maximum applies to acne treatment and hair removal together, and they set requirements for the therapist's registration. So do ask whether we meet that requirement.
 
@@ -36940,9 +36936,9 @@ Below is what Zilveren Kruis publishes about it themselves. Take it with you whe
 
 - Does this come out of my excess? With cover from the supplementary insurance, no. The excess belongs to the basic insurance. Many people put care off because they confuse the two.
 
-**One question comesbefore this.**
+**One question comes before this.**
 
-Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes Zilveren Kruis; for most of what we do, that is the answer.
+Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes Zilveren Kruis ; for most of what we do, that is the answer.
 
 **An invoice that is right.**
 
@@ -36994,7 +36990,7 @@ This reference was checked in September 2026. What is written there always takes
 
 Amounts and package names are deliberately left out.
 
-**Where itgets stuck**
+**Where it gets stuck**
 
 Since 2026 Zorg en Zekerheid only covers acne treatment from care profile 2 upwards, and only when a skin therapist does the treatment. That profile runs from 0 to 4 and is set by the skin therapist; it has to be on the invoice together with the provider code.
 
@@ -37032,9 +37028,9 @@ Below is what Zorg en Zekerheid publishes about it themselves. Take it with you 
 
 - Does this come out of my excess? With cover from the supplementary insurance, no. The excess belongs to the basic insurance. Many people put care off because they confuse the two.
 
-**One question comesbefore this.**
+**One question comes before this.**
 
-Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes Zorg en Zekerheid; for most of what we do, that is the answer.
+Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes Zorg en Zekerheid ; for most of what we do, that is the answer.
 
 **An invoice that is right.**
 
@@ -37108,7 +37104,7 @@ DUTCH QUALITY REGISTER FOR PARAMEDICS
 
 A voluntary register with a five-year cycle. Anyone who stays in it demonstrates at least 1600 working hours per period, spread over at least 36 months, and 160 points of continuing education.
 
-**What your patienttakes away**
+**What your patient takes away**
 
 Nothing is treated on a referral alone. That is not a formality: it is the reason the advice your patient takes away can be honest.
 
@@ -37152,7 +37148,7 @@ Whether and how the referrer is reported back to after the measurement has not b
 
 **WORKING AT DIBA CLINICS**
 
-There are 11of us, of whom 5 are skin therapists. We work with laser, light, needling and peels, and every programme starts with a measurement. That last part is not a slogan but the order things go in here.
+There are 11, of whom 5 are skin therapists. We work with laser, light, needling and peels, and every programme starts with a measurement. That last part is not a slogan but the order things go in here.
 
 - Skin therapist You run a clinic of your own: measuring, drawing up the plan and carrying it out yourself. The equipment is there; what counts is what you do with it. ›
 
@@ -37178,7 +37174,7 @@ Every vacancy asks for a team player with a passion for skin. What a clinic real
 
 BETWEEN TWO APPOINTMENTS
 
-**Two professionsunder one roof.**
+**Two professions under one roof.**
 
 That is not a division on paper. With acne and pigment there is often a nutritional side to the story, and then someone who looks at that joins in. With laser and needling a skin therapist does it. So you regularly work on the same file from a different angle.
 
@@ -37216,7 +37212,7 @@ De laser mikt op pigment: dat neemt het licht op, wordt warm en beschadigt de wo
 
 Daar is die tweede golflengte voor.
 
-**Welke laserkrijg jij?**
+**Welke laser krijg jij?**
 
 Kies je huidtype en je ziet welke van de twee er dan gebruikt wordt, hoe diep die komt en waarom dat bij jou de juiste is.
 
@@ -37512,13 +37508,13 @@ Als we behandelen, betaal je alleen de prijs van de behandeling. De intake wordt
 
 Of dat kan hangt af van wat de meting laat zien, van eventuele contra-indicaties, van de tijd die er die dag is en van wat jij wil. Blijkt behandelen op dat moment niet verstandig, dan doen we het niet.
 
-Deze afspraak heet behandeling op advies. Ben je al klant, dan hoeft de intake niet opnieuw en duurt hij 60minuten.
+Deze afspraak heet behandeling op advies. Ben je al klant, dan hoeft de intake niet opnieuw en duurt hij 60 minuten.
 
 Van die 120 minuten is minstens 60 minuten behandeltijd.
 
 Neem je huidprofiel mee
 
-In 9stappen leg je vast wat je wil veranderen en wat je huid aankan. Retinol, zwangerschap, een gebruinde huid, medicatie: met die antwoorden staat je behandeling al klaar als je binnenkomt.
+In 9 stappen leg je vast wat je wil veranderen en wat je huid aankan. Retinol, zwangerschap, een gebruinde huid, medicatie: met die antwoorden staat je behandeling al klaar als je binnenkomt.
 
 > knop: STEL JE HUIDPROFIEL SAMEN
 
@@ -37622,7 +37618,7 @@ Je gaat weg met een meting die van jou is en een advies dat ook nee mag zijn. Wa
 
 **Google-omschrijving:** Wat een behandeling inhoudt en kost, waar een klacht vandaan komt en wat een apparaat wel en niet kan. Geordend op de vraag die je stelt.
 
-**ALLES WAT WEUITLEGGEN**
+**ALLES WAT WE UITLEGGEN**
 
 Wat een behandeling inhoudt en kost, waar een klacht vandaan komt, wat een apparaat wel en niet kan, en wat een titel achter de behandelstoel betekent. Het staat hier geordend op de vraag die je stelt, en niet op wat wij aanbieden.
 
@@ -41724,7 +41720,7 @@ Onze huidtherapeuten staan in het Kwaliteitsregister Paramedici en zijn lid van 
 
 Hieronder staat per register wat het inhoudt en hoe je het zelf kunt nakijken.
 
-**Zes dingendie je kunt nakijken**
+**Zes dingen die je kunt nakijken**
 
 - ONZE HUIDTHERAPEUTEN Nederlandse Vereniging van Huidtherapeuten De beroepsvereniging van huidtherapeuten. Wie lid is, moet geregistreerd staan in het Kwaliteitsregister Paramedici; het een kan niet zonder het ander. Een beroepsvereniging schrijft de beroepscode en de richtlijnen waaraan een huidtherapeut zich te houden heeft. Dat is een norm van buiten de kliniek. WIE ER WERKT EN MET WELKE TITEL ›
 
@@ -41738,7 +41734,7 @@ Hieronder staat per register wat het inhoudt en hoe je het zelf kunt nakijken.
 
 - DE KLINIEK ZorgkaartNederland De onafhankelijke waarderingssite van Patiëntenfederatie Nederland. Patiënten beoordelen er zorgaanbieders; wij kunnen die waarderingen niet plaatsen, aanpassen of weghalen. Een oordeel dat niet via ons loopt zegt meer dan een oordeel dat dat wel doet. Wij staan er met een 9,7, en dat cijfer kijk je daar zelf na. BEKIJK ONS OP ZORGKAARTNEDERLAND ↗
 
-**Wie staatwaarin**
+**Wie staat waarin**
 
 Bij Diba werken huidtherapeuten en schoonheidsspecialisten. Dat zijn twee vakken, elk met een eigen vereniging en een eigen register. Daarom staan er hierboven vier namen en niet twee.
 
@@ -41854,7 +41850,7 @@ Twijfel je, bel dan. Dat is altijd goedkoper dan afwachten.
 
 WAT JE MEEKRIJGT, EN WAAROM
 
-**Wat magwanneer weer.**
+**Wat mag wanneer weer.**
 
 Zoek je behandeling in de kolommen en je vraag in de rijen. Klik een vakje aan en je leest eronder waarom die termijn er is.
 
@@ -41890,7 +41886,7 @@ Klik op een vakje. Dan lees je hier hoe lang je wacht, en waarom.
 
 - Langer dan een week
 
-**Wanneer jemoet bellen**
+**Wanneer je moet bellen**
 
 Meestal is er niets aan de hand. Maar bij deze signalen bel je ons, ook zonder afspraak: dit horen we liever te vroeg dan te laat.
 
@@ -41984,7 +41980,7 @@ Hieronder staat per merk wat er bij ons staat en waarvoor we het gebruiken.
 
 **Google-omschrijving:** De huidklachten bij PCOS: ongewenste haargroei, acne langs de kaaklijn en dunner wordend haar. Wat wij behandelen en wat via je arts loopt.
 
-**PCOS ENJE HUID**
+**PCOS EN JE HUID**
 
 De diagnose stelt je huisarts of gynaecoloog. De huidklachten die erbij horen behandelen wij: ongewenste haargroei, acne langs de kaaklijn, dunner wordend hoofdhaar en donkere plekken in huidplooien.
 
@@ -41996,7 +41992,7 @@ Weet je eenmaal wat er speelt, dan werken wij aan de huidklachten die erbij hore
 
 DE KAMER WAAR HET GESPREK BEGINT
 
-**Wie doetwat.**
+**Wie doet wat.**
 
 Je arts werkt aan de oorzaak, wij aan wat je ziet. De derde kolom zegt waarom die twee elkaar nodig hebben.
 
@@ -42006,7 +42002,7 @@ Je arts werkt aan de oorzaak, wij aan wat je ziet. De derde kolom zegt waarom di
 
 - NIET HIER Samen Zolang de oorzaak meespeelt, blijft de huid meebewegen. Daarom werkt een behandeling het best naast de begeleiding van je arts, en houd je het resultaat bij met onderhoud.
 
-**Wat we bij PCOSkunnen doen**
+**Wat we bij PCOS kunnen doen**
 
 Bij elke klacht staan allebei de kanten even nadrukkelijk. De ene zonder de andere is een verkooptekst.
 
@@ -42018,7 +42014,7 @@ Bij elke klacht staan allebei de kanten even nadrukkelijk. De ene zonder de ande
 
 - Donkere, fluweelachtige plekken in huidplooien In de hals, oksels of liezen: een donkerdere verkleuring die zacht aanvoelt en niet weggaat met wassen. Het is geen vuil en geen pigmentvlek. WAT WIJ DOEN Hier doen we niets aan, en dat is met opzet. WAAR JE OP MOET REKENEN Wegwerken. Deze verkleuring is een signaal en geen cosmetisch probleem, en er overheen behandelen maakt het signaal alleen onzichtbaar.
 
-**Soms sturen we jejuist weg.**
+**Soms sturen we je juist weg.**
 
 Een huidkliniek ziet soms iets eerder dan er een diagnose bestaat. Dan is de juiste stap niet een traject aanbieden maar zeggen waar je wel moet zijn.
 
@@ -42060,7 +42056,7 @@ Wij verzamelen ze niet en we kunnen ze niet selecteren of verwijderen. Hieronder
 
 DE MENSEN OVER WIE HET GAAT
 
-**Zoek op watjij zelf hebt.**
+**Zoek op wat jij zelf hebt.**
 
 Sorteren op score heeft geen zin als bijna alles vijf is, en zelf de beste bovenaan zetten zou betekenen dat wij kiezen wat je ziet. Dus filter je zelf: op de klacht waarvoor iemand kwam, of op hoe het bezoek was. Met het aantal op de knop, ook als dat tegenvalt.
 
@@ -42200,11 +42196,11 @@ Sorteren op score heeft geen zin als bijna alles vijf is, en zelf de beste boven
 
 - Fijne fotona behandeling gehad bij Iris. NANCY 4 MAANDEN GELEDEN
 
-**1.417mensen gaven alleen sterren**
+**1.417 mensen gaven alleen sterren**
 
 Ze tellen mee voor het gemiddelde en daarom staan ze hier, allemaal. Wat ze niet doen is iets vertellen: je weet niet waarvoor iemand kwam of wat er gebeurde. Reken ze dus mee in het cijfer en niet in je oordeel.
 
-40beoordelingen staan onder de vijf sterren. Ook die staan op deze pagina; ze zijn niet weggefilterd.
+40 beoordelingen staan onder de vijf sterren. Ook die staan op deze pagina; ze zijn niet weggefilterd.
 
 TOON DE BEOORDELINGEN ZONDER TEKST
 
@@ -42368,7 +42364,7 @@ In de volgorde van Salonized: nieuwste eerst. Pagina 1 van 18.
 
 - Feta 11 maanden geleden
 
-**Verzonnenreviews.**
+**Verzonnen reviews.**
 
 De reviews komen van de openbare Salonized-pagina, en het is een momentopname: er komen er dagelijks bij, en die staan daar eerder dan hier. Controleer ze bij de bron.
 
@@ -42557,8 +42553,6 @@ De lijst hieronder is lang. Die van jou is dat niet.
 Stel je huidprofiel samen en hier staan de prijzen van wat bij jou past, met de reden erbij. De volledige lijst blijft er gewoon onder staan; er wordt niets weggefilterd.
 
 > knop: STEL JE HUIDPROFIEL SAMEN
-
-**Wat een behandelingkost**
 
 Klap een behandeling open en je ziet hoe vaak je moet komen, hoe lang de hersteltijd is en wat het niet doet. Het bedrag blijft staan, ook dicht.
 
@@ -42788,7 +42782,7 @@ Een pakket vervangt de losse zones die erin zitten; die tellen dan niet nog een 
 
 GEEN STERRETJES Er staan hier geen voetnoten met voorwaarden en geen bedragen die pas aan de balie compleet worden. Wat je hier ziet is wat een sessie kost. Hoeveel sessies je nodig hebt hoor je tijdens de intake, en dat getal bepaalt je totaal meer dan het tarief hiernaast.
 
-**Wat mensenhierover vragen.**
+**Wat mensen hierover vragen.**
 
 Staat je vraag er niet bij, dan hoor je het antwoord aan de telefoon zonder dat er een afspraak uit hoeft te komen.
 
@@ -42990,7 +42984,7 @@ KWALITEITSREGISTER PARAMEDICI
 
 Vrijwillig register met een cyclus van vijf jaar. Wie erin blijft staan toont per periode minstens 1600 werkuren aan, verspreid over minimaal 36 maanden, en 160 punten bijscholing.
 
-**Wat uw patiëntmeekrijgt**
+**Wat uw patiënt meekrijgt**
 
 Er wordt niet behandeld op een verwijzing alleen. Dat is geen formaliteit: het is de reden dat het advies dat uw patiënt meekrijgt eerlijk kan zijn.
 
@@ -43060,7 +43054,7 @@ Elke vacature vraagt om een teamplayer met passie voor de huid. Wat een kliniek 
 
 TUSSEN TWEE AFSPRAKEN DOOR
 
-**Twee vakkenonder één dak.**
+**Twee vakken onder één dak.**
 
 Dat is geen indeling op papier. Bij acne en pigment zit er vaak een voedingskant aan het verhaal, en dan schuift er iemand aan die daarnaar kijkt. Bij laser en needling doet een huidtherapeut het. Je werkt dus regelmatig aan hetzelfde dossier vanuit een andere hoek.
 
@@ -43081,4 +43075,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_315 pagina's · 20276 tekstblokken · ongeveer 302.970 woorden._
+_315 pagina's · 20273 tekstblokken · ongeveer 303.229 woorden._

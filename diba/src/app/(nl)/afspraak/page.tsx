@@ -110,7 +110,7 @@ export default function AfspraakPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[18ch]">
-              {t("Maak een")}
+              {t("Maak een")}{" "}
               <span className="diba-accent-on-dark">{t("afspraak")}</span>
             </h1>
 
@@ -229,7 +229,7 @@ export default function AfspraakPage() {
           <div>
             <Label>{t("Goed om te weten")}</Label>
             <h2 className="diba-display-m mt-4">
-              {t("Als het")}
+              {t("Als het")}{" "}
               <span className="diba-accent">{t("niet doorgaat")}</span>
             </h2>
             <p className="mt-5 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">
@@ -268,7 +268,7 @@ export default function AfspraakPage() {
           <div>
             <Label>{t("Wanneer we er zijn")}</Label>
             <h2 className="diba-display-m mt-4">
-              {t("Onze")}
+              {t("Onze")}{" "}
               <span className="diba-accent">{t("openingstijden")}</span>
             </h2>
             <p className="mt-5 max-w-[52ch] text-[16px] leading-7 text-[var(--t-body)]">

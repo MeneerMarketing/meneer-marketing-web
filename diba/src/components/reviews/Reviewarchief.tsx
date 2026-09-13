@@ -321,8 +321,7 @@ export default function Reviewarchief({
       >
         <Label>{t("Beoordelingen zonder tekst")}</Label>
         <h3 className="diba-card-title mt-3 text-[var(--t-strong)]">
-          {getal(ZONDER_TEKST)}
-          {t("mensen gaven alleen sterren")}
+          {getal(ZONDER_TEKST)} {t("mensen gaven alleen sterren")}
         </h3>
         <p className="mt-4 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
           {t(
@@ -334,7 +333,7 @@ export default function Reviewarchief({
             t("Alle beoordelingen staan op vijf sterren.")
           ) : (
             <>
-              {getal(ONDER_VIJF)}
+              {getal(ONDER_VIJF)}{" "}
               {t(
                 "beoordelingen staan onder de vijf sterren. Ook die staan op deze pagina; ze zijn niet weggefilterd.",
               )}

@@ -103,8 +103,7 @@ export default function BehandelingenPerWens() {
             <div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-end lg:gap-12">
               <div>
                 <Label>
-                  {behandelingen.length}
-                  {t("behandelingen")}
+                  {behandelingen.length} {t("behandelingen")}
                 </Label>
                 <h3 className="diba-display-s mt-3 max-w-[18ch]">
                   {tc(wens.label)}

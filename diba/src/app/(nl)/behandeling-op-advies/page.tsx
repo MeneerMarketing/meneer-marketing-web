@@ -238,7 +238,7 @@ export default function BehandelingOpAdviesPage() {
                   dienstenlijst in Salonized. Ze staan in ADVIES_MINUTEN, want ze komen op
                   meer plekken terug dan deze kaart. */}
               <p className="diba-label mt-3 text-[var(--t-label)]">
-                {ADVIES_MINUTEN.nieuw}
+                {ADVIES_MINUTEN.nieuw}{" "}
                 {t("minuten gereserveerd")}
               </p>
               <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
@@ -305,14 +305,14 @@ export default function BehandelingOpAdviesPage() {
                 {t("Behandeling op advies")}
               </p>
               <p className="diba-label mt-3 text-[var(--t-label)]">
-                {ADVIES_MINUTEN.bestaand}
+                {ADVIES_MINUTEN.bestaand}{" "}
                 {t("minuten gereserveerd")}
               </p>
               <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
                 {t(
                   "Je hoeft geen nieuwe intake te boeken, dus deze afspraak duurt",
                 )}{" "}
-                {ADVIES_MINUTEN.bestaand}
+                {ADVIES_MINUTEN.bestaand}{" "}
                 {t(
                   "minuten. De behandelaar pakt je dossier erbij, bespreekt wat er sinds je vorige afspraak is veranderd en beoordeelt je huid zoals die nu is.",
                 )}
@@ -435,7 +435,7 @@ export default function BehandelingOpAdviesPage() {
           <div>
             <Label>{t("Veelgestelde vragen")}</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              {t("Wat mensen")}
+              {t("Wat mensen")}{" "}
               <span className="diba-accent">{t("hierover vragen.")}</span>
             </h2>
           </div>

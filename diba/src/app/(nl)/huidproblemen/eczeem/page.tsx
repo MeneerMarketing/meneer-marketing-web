@@ -191,7 +191,7 @@ export default function EczeemPage() {
         <div className="mx-auto">
           <Label>{t("Waar je wel heen gaat")}</Label>
           <h2 className="diba-display-s mt-5 max-w-[22ch]">
-            {t("Samen met")}
+            {t("Samen met")}{" "}
             <span className="diba-accent">{t("je huisarts")}</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">

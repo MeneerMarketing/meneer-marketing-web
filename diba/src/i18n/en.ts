@@ -5522,6 +5522,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Verzorgende behandelingen: reinigen, verzorgen en ontspannen":
     "Care treatments: cleansing, nourishing and relaxing",
   "Orthomoleculair huidspecialist": "Orthomolecular skin specialist",
+  "Orthomoleculair huidspecialisten": "Orthomolecular skin specialists",
   "Een aanvullende opleiding naast de huidtherapie of schoonheidsspecialiste":
     "An additional training alongside skin therapy or beauty therapy",
   "Wat er van binnenuit meespeelt: voeding, hormonen en vertering":
@@ -7832,6 +7833,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
     "That is easily said. Here is whose hand that is.",
   "Waar het team uit bestaat": "Who the team consists of",
   Laserspecialist: "Laser specialist",
+  Laserspecialisten: "Laser specialists",
   "Je kiest niet zelf bij wie je terechtkomt. Dat gaat op je vraag, en als je een voorkeur hebt kun je die gewoon noemen.":
     "You do not choose who you see yourself. That follows from your question, and if you have a preference you can simply say so.",
   "Wat een titel betekent": "What a title means",
@@ -8799,7 +8801,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   /* ── Werken bij ── */
   "Werken bij": "Working at",
   "We zijn met": "There are",
-  ", waarvan": "of us, of whom",
+  ", waarvan": ", of whom",
   "huidtherapeuten. Er wordt gewerkt met laser, licht, needling en peelings, en elk traject begint met een meting. Dat laatste is geen slogan maar de volgorde waarin het hier gaat.":
     "are skin therapists. We work with laser, light, needling and peels, and every programme starts with a measurement. That last part is not a slogan but the order things go in here.",
   "Open vacatures (": "Open vacancies (",

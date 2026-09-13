@@ -154,7 +154,7 @@ export default function ContactPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
-              {t("Contact en")}
+              {t("Contact en")}{" "}
               <span className="diba-accent-on-dark">{t("route")}</span>
             </h1>
 
@@ -218,7 +218,7 @@ export default function ContactPage() {
         <div className="mx-auto">
           <Label>{t("Contact")}</Label>
           <h2 className="diba-display-m mt-4">
-            {t("Stel je vraag")}
+            {t("Stel je vraag")}{" "}
             <span className="diba-accent">{t("of kom langs")}</span>
           </h2>
 
@@ -278,7 +278,7 @@ export default function ContactPage() {
         <div className="mx-auto">
           <Label>{t("Waar je moet zijn")}</Label>
           <h2 className="diba-display-m mt-4">
-            {t("Bellen, appen")}
+            {t("Bellen, appen")}{" "}
             <span className="diba-accent">{t("of mailen?")}</span>
           </h2>
           <p className="mt-6 max-w-[62ch] text-[17px] leading-8 text-[var(--t-body)]">
@@ -362,7 +362,7 @@ export default function ContactPage() {
         <div className="mx-auto">
           <Label>{t("Route")}</Label>
           <h2 className="diba-display-m mt-4">
-            {t("Aan de")}
+            {t("Aan de")}{" "}
             <span className="diba-accent">{t("Weissenbruchlaan.")}</span>
           </h2>
 

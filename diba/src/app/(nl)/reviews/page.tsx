@@ -178,7 +178,7 @@ export default async function ReviewsPage({
               {t("beoordelingen")}
             </Label>
             <h2 className="diba-display-m mt-4">
-              {t("Zoek op wat")}
+              {t("Zoek op wat")}{" "}
               <span className="diba-accent">{t("jij zelf hebt.")}</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">
@@ -204,7 +204,7 @@ export default async function ReviewsPage({
           <div>
             <Label>{t("Wat hier niet staat")}</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              {t("Verzonnen")}
+              {t("Verzonnen")}{" "}
               <span className="diba-accent">{t("reviews.")}</span>
             </h2>
           </div>

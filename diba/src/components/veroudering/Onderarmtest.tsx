@@ -94,8 +94,7 @@ export default function Onderarmtest() {
             {t("Hoe oud ben je?")}
           </label>
           <p className="diba-display-s mt-2 text-[var(--t-strong)] tabular-nums">
-            {leeftijd}
-            {t("jaar")}
+            {leeftijd} {t("jaar")}
           </p>
           <input
             id={`${uid}-leeftijd`}

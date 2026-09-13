@@ -77,7 +77,7 @@ export default function KennisbankPage() {
             <div className="mt-8">
               <Label>{t("Diba kennisbank")}</Label>
               <h1 className="diba-display-l mt-4">
-                {t("Alles wat we")}
+                {t("Alles wat we")}{" "}
                 <span className="diba-accent">{t("uitleggen")}</span>
               </h1>
             </div>

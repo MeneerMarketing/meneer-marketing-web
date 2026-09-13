@@ -93,7 +93,7 @@ export default function VoorwaardenPage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
-              {t("Algemene")}
+              {t("Algemene")}{" "}
               <span className="diba-accent-on-dark">{t("voorwaarden")}</span>
             </h1>
 
@@ -134,7 +134,7 @@ export default function VoorwaardenPage() {
           <div>
             <Label>{t("Acht situaties")}</Label>
             <h2 className="diba-display-m mt-4">
-              {t("Wat een behandeling")}
+              {t("Wat een behandeling")}{" "}
               <span className="diba-accent">{t("kost")}</span>
             </h2>
           </div>

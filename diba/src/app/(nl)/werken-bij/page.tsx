@@ -248,7 +248,7 @@ export default function WerkenBijPage() {
           <div>
             <Label>{t("Waar je mee werkt")}</Label>
             <h2 className="diba-display-m mt-4">
-              {t("Twee vakken")}
+              {t("Twee vakken")}{" "}
               <span className="diba-accent">{t("onder één dak.")}</span>
             </h2>
             <p className="max-w-[62ch] mt-6 text-[17px] leading-8 text-[var(--t-body)]">

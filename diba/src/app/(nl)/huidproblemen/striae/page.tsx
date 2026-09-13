@@ -87,7 +87,7 @@ export default function StriaePage() {
             </nav>
 
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
-              {t("Striae")}
+              {t("Striae")}{" "}
               <span className="diba-accent-on-dark">{t("behandelen")}</span>
             </h1>
 

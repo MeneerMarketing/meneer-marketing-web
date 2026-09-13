@@ -177,7 +177,7 @@ export default async function InsurerPage({ params }: PageProps) {
             <div>
               <Label>{t("Het addertje")}</Label>
               <h2 className="diba-display-m mt-4 max-w-[16ch]">
-                {t("Waar het")}
+                {t("Waar het")}{" "}
                 <span className="diba-accent">{t("op vastloopt")}</span>
               </h2>
             </div>
@@ -321,7 +321,7 @@ export default async function InsurerPage({ params }: PageProps) {
           <div>
             <Label>{t("Voordat je belt")}</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              {t("Eén vraag komt")}
+              {t("Eén vraag komt")}{" "}
               <span className="diba-accent">{t("hiervoor.")}</span>
             </h2>
           </div>
@@ -330,7 +330,7 @@ export default async function InsurerPage({ params }: PageProps) {
               {t(
                 "Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook",
               )}{" "}
-              {insurer.name}
+              {insurer.name}{" "}
               {t(
                 "niet, en voor het grootste deel van wat wij doen is dat het antwoord.",
               )}

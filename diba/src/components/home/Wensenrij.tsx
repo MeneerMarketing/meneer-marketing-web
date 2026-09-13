@@ -78,7 +78,7 @@ export default function Wensenrij({ wensen }: { wensen: readonly HomeWens[] }) {
                 </span>
                 <span className="mt-2 flex-1 text-[15px] leading-7 text-[var(--t-body)] sm:min-h-[2lh]">
                   {t(w.kort)}
-                </span>
+                </span>{" "}
                 <span className="diba-label mt-5 inline-flex items-center gap-1.5 text-[var(--g-700)]">
                   {w.totaal} {t("behandelingen")}
                   <span

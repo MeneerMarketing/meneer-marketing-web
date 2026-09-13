@@ -124,7 +124,7 @@ export default function OnsVerhaalPage() {
             {/* Geen handmatige regelbreuk meer: die stond er voor "Een huidkliniek in /
                 Rotterdam" en duwt deze kortere kop nu onnodig op twee regels. */}
             <h1 className="diba-display-l mt-6 max-w-[21ch]">
-              {t("Hoe wij")}
+              {t("Hoe wij")}{" "}
               <span className="diba-accent-on-dark">{t("werken")}</span>
             </h1>
 
@@ -224,7 +224,7 @@ export default function OnsVerhaalPage() {
           <div>
             <Label>{t("De andere vier")}</Label>
             <h2 className="diba-display-m mt-4">
-              {t("Waar wij")}
+              {t("Waar wij")}{" "}
               <span className="diba-accent">{t("voor staan")}</span>
             </h2>
           </div>
@@ -269,7 +269,7 @@ export default function OnsVerhaalPage() {
           <div>
             <Label>{t("De eerste afspraak")}</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              {t("Begin met een")}
+              {t("Begin met een")}{" "}
               <span className="diba-accent">{t("huidanalyse")}</span>
             </h2>
           </div>
