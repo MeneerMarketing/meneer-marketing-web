@@ -3,7 +3,7 @@
 import Link from "@/components/ui/Taalpad";
 import HeroVideo from "@/components/home/HeroVideo";
 import Button from "@/components/ui/Button";
-import { useT, useTc } from "@/lib/gebruik-taal";
+import { useT, useTaal, useTc } from "@/lib/gebruik-taal";
 import {
   FIGMA_HERO_PORTRAIT,
   FIGMA_HERO_PORTRAIT_ALT,
@@ -13,6 +13,8 @@ import {
   DIBA_PROOF,
   type ProofStripItem,
 } from "@/lib/site";
+import { getal } from "@/lib/getallen";
+import type { Taal } from "@/lib/taal";
 
 /**
  * De binnenkomer van de homepage.
@@ -53,10 +55,8 @@ import {
  * de claim is te dragen: sinds 2017 open, met 3.893 beoordelingen die openbaar staan.
  */
 
-function getal(item: ProofStripItem) {
-  const n = item.isJaartal
-    ? String(item.value)
-    : item.value.toLocaleString("nl-NL");
+function cijfer(item: ProofStripItem, taal: Taal) {
+  const n = item.isJaartal ? String(item.value) : getal(item.value, taal);
   return n + (item.suffix ?? "");
 }
 
@@ -71,6 +71,7 @@ function getal(item: ProofStripItem) {
  */
 function Cijfers({ compact = false }: { compact?: boolean }) {
   const t = useT();
+  const taal = useTaal();
   const tc = useTc();
   return (
     <dl
@@ -79,7 +80,7 @@ function Cijfers({ compact = false }: { compact?: boolean }) {
       }`}
     >
       {DIBA_HOME_PROOF_ITEMS.map((item, i) => {
-        const cijfer = (
+        const waarde = (
           <dd
             className={`leading-tight font-medium text-[var(--g-700)] tabular-nums ${
               compact
@@ -87,7 +88,7 @@ function Cijfers({ compact = false }: { compact?: boolean }) {
                 : "text-[30px] tracking-[-.04em]"
             }`}
           >
-            {getal(item)}
+            {cijfer(item, taal)}
           </dd>
         );
         return (
@@ -108,10 +109,10 @@ function Cijfers({ compact = false }: { compact?: boolean }) {
                 rel="noopener noreferrer"
                 className="block rounded-[var(--r-sm)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
               >
-                {cijfer}
+                {waarde}
               </a>
             ) : (
-              cijfer
+              waarde
             )}
             <dt
               className={`text-[var(--t-muted)] ${

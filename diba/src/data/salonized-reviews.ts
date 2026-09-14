@@ -34,6 +34,9 @@ export const SALONIZED_REVIEWS_URL =
 export const SALONIZED_REVIEW_SUMMARY = {
   rating: 5.0,
   count: 3893,
+  /* De Nederlandse vorm, en alleen te gebruiken in een zin die zelf een sleutel in het
+     woordenboek is. Wat op het scherm komt gaat door `getal(count, taal)`: het Engels
+     schrijft 3,893 en niet 3.893. */
   countFormatted: "3.893",
   sourceLabel: "Salonized",
 } as const;

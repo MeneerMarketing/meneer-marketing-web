@@ -169,9 +169,10 @@ export default function KeloidenPage() {
                 className="flex flex-col rounded-[var(--r-md)] bg-white p-7 sm:p-8"
               >
                 <h3 className="diba-card-title">{tc(stap.kop)}</h3>
-                {/* min-h in lh, zoals elders: gelijke tekstlengte geeft niet altijd
-                    gelijke regels, want dat hangt af van waar de woorden breken. */}
-                <p className="mt-3 lg:min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
+                {/* Laatste blok van de kaart: het raster rekt de kaarten al tot dezelfde
+                    hoogte, dus hier valt niets uit te lijnen. De regel staat uitgelegd in
+                    `huidproblemen/striae/page.tsx`. */}
+                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                   {tc(stap.tekst)}
                 </p>
               </li>
@@ -192,11 +193,13 @@ export default function KeloidenPage() {
             intro="Ze lijken op elkaar en vragen een andere route. Het verschil zit in de vraag of het weefsel binnen de oorspronkelijke wond blijft."
           />
 
-          <ul className="mt-8 sm:mt-12 grid gap-4 lg:grid-cols-2">
+          {/* Zes blokken per kaart, twee kaarten in twee kolommen: subgrid lijnt ze uit.
+              Zie `huidproblemen/striae/page.tsx` voor waarom hier geen `min-h` meer staat. */}
+          <ul className="mt-8 sm:mt-12 grid gap-4 lg:grid-cols-2 lg:gap-y-0">
             {KELOID_SOORTEN.map((s) => (
               <li
                 key={s.id}
-                className="flex flex-col rounded-[var(--r-md)] bg-white p-7 sm:p-9"
+                className="flex flex-col rounded-[var(--r-md)] bg-white p-7 sm:p-9 lg:grid lg:row-span-6 lg:grid-rows-subgrid"
               >
                 <Label>{tc(s.klanttaal)}</Label>
                 <h3 className="diba-card-title-lg mt-3 text-[var(--t-strong)]">
@@ -205,13 +208,13 @@ export default function KeloidenPage() {
                 <p className="diba-label mt-2 text-[var(--t-muted)]">
                   {tc(s.vakterm)}
                 </p>
-                <p className="mt-4 lg:min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
+                <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
                   {tc(s.watHetIs)}
                 </p>
-                <p className="mt-4 lg:min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
+                <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
                   {tc(s.watWijDoen)}
                 </p>
-                <p className="mt-auto border-t border-[var(--g-100)] pt-4 text-[15px] leading-7 text-[var(--t-muted)]">
+                <p className="mt-6 border-t border-[var(--g-100)] pt-4 text-[15px] leading-7 text-[var(--t-muted)]">
                   {tc(s.verwachting)}
                 </p>
               </li>

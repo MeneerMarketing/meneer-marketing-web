@@ -243,12 +243,9 @@ export default function LittekensPage() {
             {VOLGORDE.map((v) => (
               <li key={v.stap} className="bg-white p-6 sm:p-7">
                 <h3 className="diba-card-title">{tc(v.stap)}</h3>
-                {/* min-h in lh: vijf regelhoogtes gereserveerd. Vier kaarten van
-                    exact 132 tekens gaven 5, 5, 5 en 4 regels — het verschil zat op een
-                    woordgrens en niet in de lengte, dus tekens tellen loste het niet op.
-                    Deze maat schaalt mee met de regelhoogte en groeit vanzelf mee als de
-                    tekst op een smal scherm meer regels nodig heeft. */}
-                <p className="mt-3 sm:min-h-[5lh] text-sm leading-6 text-[var(--t-body)]">
+                {/* Laatste blok van de kaart: de kaarten in een rij zijn al even hoog,
+                    want een rasteritem rekt mee. Zie `huidproblemen/striae/page.tsx`. */}
+                <p className="mt-3 text-sm leading-6 text-[var(--t-body)]">
                   {tc(v.tekst)}
                 </p>
               </li>

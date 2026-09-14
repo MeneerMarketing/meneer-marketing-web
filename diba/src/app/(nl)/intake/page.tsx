@@ -71,7 +71,7 @@ function intakeFeiten() {
     { label: "Gereserveerd", waarde: `Max. ${INTAKE_MINUTEN} minuten` },
     {
       label: "Kosten",
-      waarde: nul ? prijsTekst(nul.prijs) : tc("Op aanvraag"),
+      waarde: nul ? prijsTekst(nul.prijs, taalNu()) : tc("Op aanvraag"),
     },
     ...INTAKE_FEITEN_VAST,
   ];
@@ -251,8 +251,7 @@ export default function IntakePage() {
               <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
                 <Label>{tc(COMBINATIE_AFSPRAAK.label)}</Label>
                 <span className="diba-label text-[var(--t-label)]">
-                  {COMBINATIE_AFSPRAAK.minuten}{" "}
-                  {t("minuten")}
+                  {COMBINATIE_AFSPRAAK.minuten} {t("minuten")}
                 </span>
               </div>
               <p className="diba-card-title-lg mt-3 text-[var(--t-strong)]">
@@ -283,8 +282,7 @@ export default function IntakePage() {
                 {t(
                   ". Ben je al klant, dan hoeft de intake niet opnieuw en duurt hij",
                 )}{" "}
-                {ADVIES_MINUTEN.bestaand}{" "}
-                {t("minuten.")}
+                {ADVIES_MINUTEN.bestaand} {t("minuten.")}
               </p>
               <p className="mt-4 border-t border-[var(--g-100)] pt-4 text-[15px] leading-7 text-[var(--t-muted)]">
                 {t("Van die")} {COMBINATIE_AFSPRAAK.minuten}{" "}

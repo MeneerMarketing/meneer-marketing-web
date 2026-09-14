@@ -1,8 +1,8 @@
 "use client";
 
+import { useT, useTaal, useTc } from "@/lib/gebruik-taal";
 import { useState } from "react";
 import { prijsTekst, type Variant } from "@/data/behandelingen";
-import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * De prijs in de hero, als kiezer in plaats van als los getal.
@@ -37,6 +37,7 @@ type Props = {
 export default function Variantkiezer({ varianten, basisprijs }: Props) {
   const t = useT();
   const tc = useTc();
+  const taal = useTaal();
   const [gekozen, setGekozen] = useState(0);
 
   /* Zonder varianten is er niets te kiezen: dan is het gewoon een getal. */
@@ -45,7 +46,7 @@ export default function Variantkiezer({ varianten, basisprijs }: Props) {
       <div className="flex items-baseline justify-between gap-6">
         <span className="diba-label diba-label-on-dark">{t("Per sessie")}</span>
         <span className="diba-card-title text-right tabular-nums">
-          {tc(prijsTekst(basisprijs))}
+          {tc(prijsTekst(basisprijs, taal))}
         </span>
       </div>
     );
@@ -62,7 +63,7 @@ export default function Variantkiezer({ varianten, basisprijs }: Props) {
             : `${t("Per sessie")}, ${varianten.length} ${t("varianten")}`}
         </span>
         <span className="diba-card-title text-right tabular-nums">
-          {tc(prijsTekst(actief.prijs))}
+          {tc(prijsTekst(actief.prijs, taal))}
         </span>
       </div>
 
@@ -91,7 +92,7 @@ export default function Variantkiezer({ varianten, basisprijs }: Props) {
               >
                 <span className="truncate">{tc(v.naam)}</span>
                 <span className="shrink-0 tabular-nums opacity-80">
-                  {tc(prijsTekst(v.prijs))}
+                  {tc(prijsTekst(v.prijs, taal))}
                 </span>
               </button>
             );

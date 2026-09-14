@@ -160,7 +160,11 @@ export default function SiteFooter() {
         <div className="text-center">
           <DibaLogo maat="groot" className="mx-auto" />
           <p className="mx-auto mt-6 max-w-[48ch] text-[15px] leading-7 text-[var(--t-body)]">
-            {t("Huidkliniek in")} {DIBA_SITE.neighborhood}{" "}
+            {/* Geen `{" "}` voor de komma: die zin begint zelf met een komma, dus er stond
+                "Huidkliniek in Rotterdam , sinds 2017" — op elke pagina van de site. De
+                spatiecontrole zag het niet, want die kijkt alleen naar letters die tegen
+                letters aan plakken en niet naar een spatie vóór een leesteken. */}
+            {t("Huidkliniek in")} {DIBA_SITE.neighborhood}
             {t(
               ", sinds 2017. Acne, pigment, littekens, huidverbetering en ongewenste haargroei, door huidtherapeuten die eerst meten en daarna pas behandelen.",
             )}

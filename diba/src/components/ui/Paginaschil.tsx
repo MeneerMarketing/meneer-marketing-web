@@ -1,6 +1,6 @@
 import Paginavulling from "@/components/ui/Paginavulling";
 import { LETTERKLASSEN } from "@/lib/lettertypen";
-import type { Taal } from "@/lib/taal";
+import { TAALCODES, type Taal } from "@/lib/taal";
 
 /**
  * Het html- en body-element van een pagina.
@@ -20,10 +20,7 @@ export default function Paginaschil({
   children,
 }: Readonly<{ taal: Taal; children: React.ReactNode }>) {
   return (
-    <html
-      lang={taal === "en" ? "en-GB" : "nl"}
-      className={`${LETTERKLASSEN} h-full`}
-    >
+    <html lang={TAALCODES[taal].html} className={`${LETTERKLASSEN} h-full`}>
       <body className="flex min-h-full flex-col antialiased">
         <Paginavulling taal={taal}>{children}</Paginavulling>
       </body>

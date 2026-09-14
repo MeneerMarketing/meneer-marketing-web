@@ -223,9 +223,9 @@ export default function AcneLittekensPage() {
                 className="flex flex-col rounded-[var(--r-md)] bg-white p-7 sm:p-8"
               >
                 <h3 className="diba-card-title mt-3">{tc(stap.kop)}</h3>
-                {/* min-h in lh: het aantal regels hangt hier af van waar de woorden breken en niet
-                      van de lengte, dus reserveren we de ruimte in plaats van tekens te tellen. */}
-                <p className="mt-3 lg:min-h-[5lh] text-[15px] leading-7 text-[var(--t-body)]">
+                {/* Laatste blok van de kaart: het raster rekt de kaarten al tot dezelfde
+                    hoogte. Zie `huidproblemen/striae/page.tsx`. */}
+                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                   {tc(stap.tekst)}
                 </p>
               </li>

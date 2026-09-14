@@ -165,9 +165,9 @@ export default function HuidproblemenPage() {
             ].map(([kop, tekst]) => (
               <li key={kop} className="rounded-[var(--r-sm)] bg-white p-5">
                 <h3 className="diba-card-title">{kop}</h3>
-                {/* min-h in lh: het aantal regels hangt hier af van waar de woorden breken, niet
-                    van de lengte. Ruimte reserveren werkt op elke breedte. */}
-                <p className="mt-3 md:min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
+                {/* Laatste blok van de kaart: het raster rekt de kaarten al tot dezelfde
+                    hoogte. Zie `huidproblemen/striae/page.tsx`. */}
+                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                   {tc(tekst)}
                 </p>
               </li>

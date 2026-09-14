@@ -25,5 +25,5 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules", "_figma-import"]
+  "exclude": ["node_modules", "_figma-import", "scratch"]
 }

@@ -5,6 +5,7 @@ import HoofdNav from "@/components/nav/HoofdNav";
 import Topbalk from "@/components/nav/Topbalk";
 import SiteFooter from "@/components/ui/SiteFooter";
 import { figmaHomeShell } from "@/lib/figma-home-layout";
+import { VREEMDE_TALEN } from "@/lib/taal";
 
 type SiteChromeProps = {
   children: React.ReactNode;
@@ -23,8 +24,9 @@ type SiteChromeProps = {
 export default function SiteChrome({ children }: SiteChromeProps) {
   const pathname = usePathname();
 
-  /* De homepage brengt zijn eigen kop mee, in beide talen: /en is dezelfde pagina. */
-  const eigenChrome = pathname === "/" || pathname === "/en";
+  /* De homepage brengt zijn eigen kop mee, in elke taal: /en en /es zijn dezelfde pagina. */
+  const eigenChrome =
+    pathname === "/" || VREEMDE_TALEN.some((t) => pathname === `/${t}`);
 
   if (eigenChrome) {
     return <>{children}</>;

@@ -11,6 +11,7 @@ import {
 import { publicCopy } from "@/lib/copy-flags";
 import { useT, useTc } from "@/lib/gebruik-taal";
 
+import { useTaal } from "@/lib/gebruik-taal";
 /**
  * De huidreis — het hart van de behandelingenpagina.
  *
@@ -65,6 +66,7 @@ function middenVan(id: HuidlaagId): number {
 export default function Huidreis() {
   const tc = useTc();
   const t = useT();
+  const taal = useTaal();
   const [diepte, setDiepte] = useState(18);
   const [sleept, setSleept] = useState(false);
   const vlak = useRef<HTMLDivElement | null>(null);
@@ -259,7 +261,7 @@ export default function Huidreis() {
                     {tc(b.herstel)}
                   </span>
                   <span className="shrink-0 text-[15px] leading-7 font-medium text-[var(--t-strong)] tabular-nums">
-                    {tc(prijsTekst(b.prijs))}
+                    {tc(prijsTekst(b.prijs, taal))}
                   </span>
                   <svg
                     viewBox="0 0 16 16"

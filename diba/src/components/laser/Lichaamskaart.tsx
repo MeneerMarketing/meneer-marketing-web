@@ -23,6 +23,7 @@ import {
 import { formatLaserPrice } from "@/lib/laser-pricing";
 import { useTc, useT } from "@/lib/gebruik-taal";
 
+import { useTaal } from "@/lib/gebruik-taal";
 /**
  * De kaart waarop je je zones aanwijst.
  *
@@ -109,6 +110,7 @@ export default function Lichaamskaart({
 }: Props) {
   const t = useT();
   const tc = useTc();
+  const taal = useTaal();
   const [aanzicht, setAanzicht] = useState<Aanzicht>("voor");
   const [zweef, setZweef] = useState<string | null>(null);
   const sleutel = useId().replace(/:/g, "");
@@ -193,7 +195,7 @@ export default function Lichaamskaart({
     if (!z) return null;
     return {
       naam: z.label,
-      prijs: formatLaserPrice(z.singlePrice),
+      prijs: formatLaserPrice(z.singlePrice, taal),
       staat: staat(id),
     };
   })();
@@ -365,7 +367,7 @@ export default function Lichaamskaart({
                   >
                     {s === "gedekt"
                       ? t("Zit er al in")
-                      : formatLaserPrice(z.singlePrice)}
+                      : formatLaserPrice(z.singlePrice, taal)}
                   </span>
                 </button>
               </li>

@@ -42,7 +42,7 @@ export const metadata: Metadata = zoekmachineVelden({
 
 const intakeBehandeling = behandelingVoorSlug("huidanalyse");
 const intakeCijfer = intakeBehandeling
-  ? prijsCijfer(intakeBehandeling.prijs)
+  ? prijsCijfer(intakeBehandeling.prijs, "nl")
   : "50";
 
 function situatie(id: string): string {

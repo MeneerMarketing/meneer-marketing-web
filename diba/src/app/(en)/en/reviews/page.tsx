@@ -1,25 +1,23 @@
 import type { Metadata } from "next";
 import Pagina from "@/app/(nl)/reviews/page";
 import { metadata as nlMetadata } from "@/app/(nl)/reviews/page";
-import { engelseMetadata } from "@/lib/engelse-metadata";
 import { zetTaal } from "@/lib/taalcontext";
+import { vertaaldeMetadata } from "@/lib/vertaalde-metadata";
 
 /**
- * De Engelse versie van /reviews.
+ * De en versie van /reviews, op het adres /en/reviews.
  *
- * Dezelfde pagina, dezelfde gegevens, alleen een andere taal. Dit bestand is gemaakt
- * door scratch/maak-en-routes.py en hoort niet met de hand aangepast te worden.
- *
- * `noindex` zolang de vertaling niet rond is: een pagina die half Nederlands is hoort
- * niet in Google te staan. Zodra de teksten er staan gaat die regel eraf.
+ * Dezelfde pagina, dezelfde gegevens, alleen een andere taal en een eigen adres.
+ * Dit bestand is gemaakt door scratch/maak-taalroutes.py en hoort niet met de hand
+ * aangepast te worden.
  */
 
 export async function generateMetadata(): Promise<Metadata> {
   zetTaal("en");
-  return engelseMetadata(nlMetadata, "/en/reviews");
+  return vertaaldeMetadata(nlMetadata, "en", "/en/reviews");
 }
 
-export default function EngelsePagina(props: Parameters<typeof Pagina>[0]) {
+export default function VertaaldePagina(props: Parameters<typeof Pagina>[0]) {
   zetTaal("en");
   return <Pagina {...props} />;
 }

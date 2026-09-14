@@ -208,8 +208,9 @@ export default function HuiduitslagPage() {
             {UITSLAG_GEDRAG.map((g) => (
               <li key={g.kop} className="bg-white p-6 sm:p-7">
                 <h3 className="diba-card-title">{tc(g.kop)}</h3>
-                {/* Zes regelhoogtes, zodat de vier kaarten in een rij gelijk blijven. */}
-                <p className="mt-3 md:min-h-[6lh] text-[15px] leading-7 text-[var(--t-body)]">
+                {/* Laatste blok van de kaart: de kaarten in een rij zijn al even hoog,
+                    want een rasteritem rekt mee. Zie `huidproblemen/striae/page.tsx`. */}
+                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                   {tc(g.zin)}
                 </p>
               </li>
@@ -241,9 +242,10 @@ export default function HuiduitslagPage() {
                 <p className="diba-label mt-5 text-[var(--t-muted)]">
                   {t("Waar je heen gaat")}
                 </p>
-                {/* min-h in lh: het aantal regels hangt hier af van waar de woorden breken en niet
-                      van de lengte, dus reserveren we de ruimte in plaats van tekens te tellen. */}
-                <p className="mt-1.5 md:min-h-[3lh] text-[15px] leading-6 text-[var(--t-body)]">
+                {/* Geen reservering: de `grow` hierboven duwt dit blok en de link eronder
+                    al naar de onderkant van de kaart, dus de onderranden liggen gelijk.
+                    Zie `huidproblemen/striae/page.tsx`. */}
+                <p className="mt-1.5 text-[15px] leading-6 text-[var(--t-body)]">
                   {tc(o.waarheen)}
                 </p>
                 {"pad" in o && o.pad ? (

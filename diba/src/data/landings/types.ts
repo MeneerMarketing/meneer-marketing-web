@@ -181,7 +181,16 @@ export function behandeling(slug: string): Behandeling {
   return b;
 }
 
-/** Een bedrag zoals het op de site staat: "€ 170", "€ 1.000". */
+/**
+ * Een bedrag zoals het op de site staat: "€ 170", "€ 1.000".
+ *
+ * Altijd Nederlands, en dat is hier juist de bedoeling. Wat deze functie teruggeeft komt
+ * bijna overal in een Nederlandse zin terecht, en die zin is de sleutel in het
+ * woordenboek. Zou hier op een Engelse pagina "€ 1,000" uitkomen, dan is de sleutel
+ * onvindbaar en valt de héle zin terug op Nederlands. De Engelse vorm van een bedrag hoort
+ * dus in het woordenboek, niet hier. Zie `lib/getallen.ts` voor de bedragen die wél los op
+ * het scherm komen.
+ */
 export function euro(bedrag: number): string {
   return `€ ${bedrag.toLocaleString("nl-NL")}`;
 }

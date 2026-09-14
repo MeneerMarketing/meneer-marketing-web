@@ -48,6 +48,7 @@ const HERSTELFILTERS = [
   { id: "kort", label: "Hooguit een dag" },
 ] as const;
 
+import { useTaal } from "@/lib/gebruik-taal";
 type HerstelFilter = (typeof HERSTELFILTERS)[number]["id"];
 
 /** Ruwe inschatting uit de eigen tekst; alleen om op te filteren. */
@@ -118,6 +119,7 @@ const RANG: Record<MatchOordeel, number> = {
 export default function Behandelingenoverzicht() {
   const t = useT();
   const tc = useTc();
+  const taal = useTaal();
   const { profiel } = useHuidprofiel();
   const [categorie, setCategorie] = useState<CategorieId | "alles">("alles");
   const [herstel, setHerstel] = useState<HerstelFilter>("alles");
@@ -333,7 +335,7 @@ export default function Behandelingenoverzicht() {
                     {tc(b.herstel)}
                   </span>
                   <span className="shrink-0 text-[15px] leading-6 font-medium text-[var(--t-strong)] tabular-nums">
-                    {tc(prijsTekst(b.prijs))}
+                    {tc(prijsTekst(b.prijs, taal))}
                   </span>
                 </span>
               </Link>

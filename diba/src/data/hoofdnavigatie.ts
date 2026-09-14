@@ -105,13 +105,16 @@ export type NavItem = {
  *
  * Zo is er ook maar één bron: past Rojda de omschrijving aan, dan verandert het menu mee
  * en kan het er nooit iets anders beweren dan de pagina eronder.
+ *
+ * HET INKORTEN GEBEURT BIJ HET RENDEREN EN NIET HIER.
+ *
+ * Dit sneed er eerst de eerste zin af en gaf dat stuk door. Zo'n afgesneden stuk staat
+ * nergens als sleutel in het woordenboek, dus stond er in het Engelse megamenu
+ * "Reinigen, exfoliëren en hydrateren" onder een verder Engels menu. De hele zin staat er
+ * wél in, dus geven we die door en knipt `HoofdNav` hem af nádat hij vertaald is.
  */
 function kortZin(slug: string): string | undefined {
-  const b = BEHANDELINGEN.find((x) => x.slug === slug);
-  if (!b) return undefined;
-  const grens = b.kort.indexOf(". ");
-  const zin = grens === -1 ? b.kort : b.kort.slice(0, grens);
-  return zin.endsWith(".") ? zin.slice(0, -1) : zin;
+  return BEHANDELINGEN.find((x) => x.slug === slug)?.kort;
 }
 
 /**

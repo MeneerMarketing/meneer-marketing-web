@@ -1,6 +1,8 @@
 "use client";
 
+import { useT, useTaal, useTc } from "@/lib/gebruik-taal";
 import Link from "@/components/ui/Taalpad";
+import { usePathname } from "next/navigation";
 import { useMemo, useState } from "react";
 import Label from "@/components/ui/Label";
 import {
@@ -12,7 +14,7 @@ import {
 import { publicCopy } from "@/lib/copy-flags";
 import { useOordelen } from "@/lib/huidprofiel-oordeel";
 import type { Match, MatchGrond } from "@/data/huidprofiel";
-import { useTc, useT } from "@/lib/gebruik-taal";
+import { inTaal } from "@/lib/taalpad";
 
 /**
  * De behandelprijzen, met wat je voor dat bedrag krijgt.
@@ -92,6 +94,8 @@ function Regel({
 }) {
   const t = useT();
   const tc = useTc();
+  const taal = useTaal();
+  const pad = usePathname() ?? "/";
   const b = behandeling;
   const heeftDetail =
     Boolean(b.herstel) ||
@@ -177,7 +181,7 @@ function Regel({
                     {t("vanaf")}
                   </span>
                 ) : null}
-                {prijsCijfer(b.prijs)}
+                {prijsCijfer(b.prijs, taal)}
               </>
             ) : (
               t("Na de meting")
@@ -243,7 +247,7 @@ function Regel({
               </p>
               <div className="flex shrink-0 flex-col items-start gap-3 sm:items-end">
                 <a
-                  href={b.prijsElders.href}
+                  href={inTaal(b.prijsElders.href, pad)}
                   className="diba-label inline-flex min-h-11 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-5 text-[var(--on-dark)] transition-colors hover:bg-[var(--g-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
                   {tc(b.prijsElders.knop)}
@@ -251,7 +255,7 @@ function Regel({
                 </a>
                 {b.prijsElders.tweede ? (
                   <a
-                    href={b.prijsElders.tweede.href}
+                    href={inTaal(b.prijsElders.tweede.href, pad)}
                     className="diba-label text-[var(--g-700)] underline underline-offset-4 transition-colors hover:text-[var(--g-800)]"
                   >
                     {tc(b.prijsElders.tweede.tekst)}
@@ -314,7 +318,7 @@ function Regel({
                       {/* Dezelfde breedte als het bedrag in de rij erboven, zodat de
                           bedragen onder elkaar uitkomen in plaats van te zwerven. */}
                       <span className="min-w-[6.5ch] shrink-0 text-right text-[15px] leading-6 text-[var(--t-strong)] tabular-nums">
-                        {prijsCijfer(v.prijs)}
+                        {prijsCijfer(v.prijs, taal)}
                       </span>
                     </li>
                   ))}

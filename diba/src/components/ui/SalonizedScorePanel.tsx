@@ -4,6 +4,8 @@ import {
   SALONIZED_REVIEWS_URL,
   SALONIZED_REVIEW_SUMMARY,
 } from "@/data/salonized-reviews";
+import { getal } from "@/lib/getallen";
+import { taalNu } from "@/lib/taalcontext";
 
 type SalonizedScorePanelProps = {
   className?: string;
@@ -35,7 +37,13 @@ export default function SalonizedScorePanel({
   className = "",
   variant = "hero",
 }: SalonizedScorePanelProps) {
-  const { rating, countFormatted } = SALONIZED_REVIEW_SUMMARY;
+  const { rating, count } = SALONIZED_REVIEW_SUMMARY;
+  const taal = taalNu();
+  const cijfer = getal(rating, taal, {
+    minimumFractionDigits: 1,
+    maximumFractionDigits: 1,
+  });
+  const aantal = getal(count, taal);
 
   if (variant === "compact") {
     return (
@@ -47,8 +55,7 @@ export default function SalonizedScorePanel({
       >
         <Stars size={11} />
         <span>
-          {rating.toFixed(1).replace(".", ",")} uit {countFormatted}{" "}
-          {t("reviews")}
+          {cijfer} {t("uit")} {aantal} {t("reviews")}
         </span>
         <span aria-hidden="true">↗</span>
       </a>
@@ -70,14 +77,14 @@ export default function SalonizedScorePanel({
           </p>
           <p className="mt-3 flex items-baseline gap-3">
             <span className="text-6xl font-medium tracking-[-.08em] text-[var(--g-700)] sm:text-7xl">
-              {rating.toFixed(1).replace(".", ",")}
+              {cijfer}
             </span>
             <Stars size={18} />
           </p>
           <p className="mt-2 text-[15px] text-[var(--t-muted)]">
             {t("Gebaseerd op")}{" "}
             <strong className="font-medium text-[var(--g-900)]">
-              {countFormatted} {t("reviews")}
+              {aantal} {t("reviews")}
             </strong>
           </p>
         </div>

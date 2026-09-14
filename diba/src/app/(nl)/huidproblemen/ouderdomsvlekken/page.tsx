@@ -195,7 +195,7 @@ export default function Pagina() {
             </p>
             <div className="mt-7">
               <Button
-                href="/huidproblemen/huidkanker-naevi"
+                href="/huidproblemen/moedervlekken"
                 variant="primair-op-donker"
               >
                 {t("Naar de ABCDE-check")}

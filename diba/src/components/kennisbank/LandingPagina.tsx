@@ -14,6 +14,7 @@ import Label from "@/components/ui/Label";
 import LeesVerder from "@/components/ui/LeesVerder";
 import { LANDINGS, landingNaam } from "@/data/landings";
 import { euro, TWIJFEL_WHATSAPP, type Landing } from "@/data/landings/types";
+import { euro as bedrag } from "@/lib/getallen";
 import { taalNu } from "@/lib/taalcontext";
 import { t, tc } from "@/lib/vertaal";
 import {
@@ -372,7 +373,7 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
                     </span>
                     <span className="shrink-0 text-[18px] leading-6 font-medium tabular-nums">
                       {r.vanaf ? `${t("vanaf")} ` : ""}
-                      {euro(r.prijs)}
+                      {bedrag(r.prijs, taalNu())}
                     </span>
                   </li>
                 ))}
@@ -599,7 +600,9 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
             </p>
           </LeesVerder>
           <p className="mt-8 text-[14px] leading-6 text-[var(--t-muted)]">
-            {t("Laatst bijgewerkt op")} {gewijzigd}{" "}
+            {/* Geen `{" "}` voor de punt: die zin begint zelf met een punt, dus er stond
+                "bijgewerkt op 11 september 2026 . Tarieven". Zie `npm run spaties`. */}
+            {t("Laatst bijgewerkt op")} {gewijzigd}
             {t(
               ". Tarieven en behandeltijden worden bij elke wijziging nagelopen.",
             )}

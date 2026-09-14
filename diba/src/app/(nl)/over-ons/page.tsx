@@ -14,8 +14,11 @@ import {
   DIBA_SALONIZED_REVIEWS_URL,
   DIBA_SITE,
   DIBA_SITE_URL,
+  metPlus,
 } from "@/lib/site";
 import LeesVerder from "@/components/ui/LeesVerder";
+import { getal } from "@/lib/getallen";
+import { taalNu } from "@/lib/taalcontext";
 import { t, tc } from "@/lib/vertaal";
 
 /**
@@ -72,36 +75,40 @@ export const metadata: Metadata = zoekmachineVelden({
  *
  * [MEDISCHE-CHECK-ROJDA] de uitspraken over wat er te verwachten valt.
  */
-const CIJFERS = [
-  {
-    waarde: String(DIBA_PROOF.activeSince),
-    label: "Actief sinds",
-    zegt: "De kliniek draait sinds 2017, met een team dat elke dag met dezelfde huidklachten werkt.",
-    watJeEraanHebt:
-      "Ervaring met hoe een klacht zich over maanden ontwikkelt, en niet alleen met de behandeling van vandaag.",
-  },
-  {
-    waarde: DIBA_PROOF.helpedClients,
-    label: "Geholpen klanten",
-    zegt: "Genoeg verschillende huiden om te weten hoe verschillend ze reageren.",
-    watJeEraanHebt:
-      "Jouw huid krijgt een eigen meting, want een gemiddelde zegt niets over hoe die van jou zal reageren.",
-  },
-  {
-    waarde: DIBA_PROOF.treatmentsPerformed,
-    label: "Behandelingen",
-    zegt: "Routine op de apparatuur. Wie iets duizend keer heeft gedaan ziet eerder wanneer het anders loopt.",
-    watJeEraanHebt:
-      "De behandelaar merkt sneller wanneer een huid anders reageert dan verwacht, en stelt de aanpak dan bij.",
-  },
-  {
-    waarde: DIBA_PROOF.clientReviews,
-    label: "Klantreviews",
-    zegt: `Gemiddeld een ${DIBA_SALONIZED_RATING.toFixed(1).replace(".", ",")}. Openbaar na te lezen, niet door ons geselecteerd.`,
-    watJeEraanHebt:
-      "Je leest hoe mensen de afspraak zelf ervaren hebben, met de behandeling erbij die ze kregen.",
-  },
-];
+/* Een functie en geen constante: de duizendscheiding hangt van de taal af, en die is
+   bij het laden van de module nog niet bekend. */
+function cijfers() {
+  return [
+    {
+      waarde: String(DIBA_PROOF.activeSince),
+      label: "Actief sinds",
+      zegt: "De kliniek draait sinds 2017, met een team dat elke dag met dezelfde huidklachten werkt.",
+      watJeEraanHebt:
+        "Ervaring met hoe een klacht zich over maanden ontwikkelt, en niet alleen met de behandeling van vandaag.",
+    },
+    {
+      waarde: metPlus(DIBA_PROOF.helpedClients, taalNu()),
+      label: "Geholpen klanten",
+      zegt: "Genoeg verschillende huiden om te weten hoe verschillend ze reageren.",
+      watJeEraanHebt:
+        "Jouw huid krijgt een eigen meting, want een gemiddelde zegt niets over hoe die van jou zal reageren.",
+    },
+    {
+      waarde: metPlus(DIBA_PROOF.treatmentsPerformed, taalNu()),
+      label: "Behandelingen",
+      zegt: "Routine op de apparatuur. Wie iets duizend keer heeft gedaan ziet eerder wanneer het anders loopt.",
+      watJeEraanHebt:
+        "De behandelaar merkt sneller wanneer een huid anders reageert dan verwacht, en stelt de aanpak dan bij.",
+    },
+    {
+      waarde: getal(DIBA_PROOF.clientReviews, taalNu()),
+      label: "Klantreviews",
+      zegt: `Gemiddeld een ${DIBA_SALONIZED_RATING.toFixed(1).replace(".", ",")}. Openbaar na te lezen, niet door ons geselecteerd.`,
+      watJeEraanHebt:
+        "Je leest hoe mensen de afspraak zelf ervaren hebben, met de behandeling erbij die ze kregen.",
+    },
+  ];
+}
 
 export default function OverOnsPage() {
   return (
@@ -201,7 +208,7 @@ export default function OverOnsPage() {
             </div>
 
             <ul className="mt-8 sm:mt-12 grid gap-4 md:grid-cols-2">
-              {CIJFERS.map((c) => (
+              {cijfers().map((c) => (
                 <li
                   key={c.label}
                   className="rounded-[var(--r-lg)] bg-white p-7 sm:p-8"

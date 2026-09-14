@@ -1,25 +1,23 @@
 import type { Metadata } from "next";
 import Pagina from "@/app/(nl)/intake/page";
 import { metadata as nlMetadata } from "@/app/(nl)/intake/page";
-import { engelseMetadata } from "@/lib/engelse-metadata";
 import { zetTaal } from "@/lib/taalcontext";
+import { vertaaldeMetadata } from "@/lib/vertaalde-metadata";
 
 /**
- * De Engelse versie van /intake.
+ * De en versie van /intake, op het adres /en/intake.
  *
- * Dezelfde pagina, dezelfde gegevens, alleen een andere taal. Dit bestand is gemaakt
- * door scratch/maak-en-routes.py en hoort niet met de hand aangepast te worden.
- *
- * `noindex` zolang de vertaling niet rond is: een pagina die half Nederlands is hoort
- * niet in Google te staan. Zodra de teksten er staan gaat die regel eraf.
+ * Dezelfde pagina, dezelfde gegevens, alleen een andere taal en een eigen adres.
+ * Dit bestand is gemaakt door scratch/maak-taalroutes.py en hoort niet met de hand
+ * aangepast te worden.
  */
 
 export async function generateMetadata(): Promise<Metadata> {
   zetTaal("en");
-  return engelseMetadata(nlMetadata, "/en/intake");
+  return vertaaldeMetadata(nlMetadata, "en", "/en/intake");
 }
 
-export default function EngelsePagina() {
+export default function VertaaldePagina() {
   zetTaal("en");
   return <Pagina />;
 }

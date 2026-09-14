@@ -29,6 +29,7 @@ import {
 import { DIBA_WHATSAPP_URL } from "@/lib/site";
 import { useT, useTc } from "@/lib/gebruik-taal";
 
+import { useTaal } from "@/lib/gebruik-taal";
 /**
  * De laserconfigurator.
  *
@@ -76,6 +77,7 @@ const OVER_DE_REEKS = {
 export default function Configurator() {
   const tc = useTc();
   const t = useT();
+  const taal = useTaal();
   /**
    * De keuze komt uit de URL, en dat gebeurt via `useSearchParams` en niet via een effect
    * dat na het monteren alsnog state zet. Die eerste versie werkte wel maar zette twee
@@ -108,7 +110,10 @@ export default function Configurator() {
     window.history.replaceState(null, "", q || window.location.pathname);
   }, [gekozen, huidtype, geslacht]);
 
-  const opbouw = useMemo(() => calculateLaserPrice(gekozen), [gekozen]);
+  const opbouw = useMemo(
+    () => calculateLaserPrice(gekozen, taal),
+    [gekozen, taal],
+  );
   const gedekt = useMemo(() => gedekteZones(gekozen), [gekozen]);
   const advies = useMemo(() => pakketAdvies(gekozen), [gekozen]);
   const pakketten = zonesVoor(geslacht).filter((z) => z.area === "pakket");
@@ -238,7 +243,7 @@ export default function Configurator() {
                           <span className="tabular-nums opacity-70">
                             {dicht
                               ? "zit er al in"
-                              : formatLaserPrice(z.singlePrice)}
+                              : formatLaserPrice(z.singlePrice, taal)}
                           </span>
                         </button>
                       </li>
@@ -294,7 +299,7 @@ export default function Configurator() {
                           : "text-[var(--t-muted)]"
                       }`}
                     >
-                      {formatLaserPrice(p.singlePrice)}
+                      {formatLaserPrice(p.singlePrice, taal)}
                     </span>
                   </button>
                 </li>

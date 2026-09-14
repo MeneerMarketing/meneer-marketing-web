@@ -56,9 +56,10 @@ export const metadata: Metadata = zoekmachineVelden({
     "Kies waar je iets aan wilt doen: acne, pigment, littekens, huidveroudering, glow of haar. Tijdens het huidconsult bepaalt de behandelaar wat bij jouw huid past.",
 });
 
+import { taalNu } from "@/lib/taalcontext";
 const intakeBehandeling = behandelingVoorSlug("huidanalyse");
 const intakeBedrag = intakeBehandeling
-  ? prijsTekst(intakeBehandeling.prijs)
+  ? prijsTekst(intakeBehandeling.prijs, "nl")
   : "een vast bedrag";
 
 /**
@@ -265,7 +266,7 @@ export default function BehandelingenPage() {
                   <p className="diba-card-title text-[var(--t-strong)]">
                     {tc(b.naam)}
                   </p>
-                  <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)] max-md:hidden md:min-h-[3lh]">
+                  <p className="mt-3 grow text-[15px] leading-7 text-[var(--t-body)] max-md:hidden">
                     {tc(b.kort)}
                   </p>
                   <p className="diba-label mt-5 flex min-w-0 items-baseline justify-between gap-3 text-[var(--t-muted)]">
@@ -275,7 +276,7 @@ export default function BehandelingenPage() {
                     <span className="shrink-0 text-[var(--g-700)]">
                       {b.prijs === 0
                         ? tc("Op aanvraag")
-                        : `${t("vanaf")} ${tc(prijsTekst(b.prijs))}`}
+                        : `${t("vanaf")} ${tc(prijsTekst(b.prijs, taalNu()))}`}
                     </span>
                   </p>
                 </Link>

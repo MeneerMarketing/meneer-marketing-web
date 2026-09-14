@@ -13,6 +13,7 @@ import {
 import { eersteZin } from "@/lib/copy-flags";
 import { breadcrumbSchema, faqSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_SITE_URL } from "@/lib/site";
+import { taalNu } from "@/lib/taalcontext";
 import { zoekmachineVelden } from "@/lib/seo";
 import { t, tc } from "@/lib/vertaal";
 
@@ -20,6 +21,7 @@ import { t, tc } from "@/lib/vertaal";
  * Eén behandeling bij één klacht.
  *
  * OKAN, 5 september 2026: SkinPen bij acnelittekens, bij grove poriën, bij fijne lijntjes;
+import { taalNu } from "@/lib/taalcontext";
  * Nordlys bij couperose, bij rosacea, bij pigment; peeling bij acne, bij pigment, voor
  * huidverjonging; LED bij acne. "Verdienen wel een eigen landingspagina."
  *
@@ -211,11 +213,10 @@ export default async function ToepassingPage({
                 <p className="diba-card-title sm:min-h-[2lh] text-[var(--t-strong)]">
                   {tc(s.kop)}
                 </p>
-                {/* Vier regelhoogtes gereserveerd, ook bij drie regels tekst. De drie
-                    kaarten dragen per toepassing verschillend lange zinnen; zonder dit
-                    staat de onderrand scheef, en inkorten tot ze toevallig even lang
-                    zijn laat de opmaak de inhoud sturen. */}
-                <p className="mt-3 sm:min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
+                {/* Laatste blok van de kaart: het raster rekt de kaarten al tot dezelfde
+                    hoogte, dus de onderrand ligt gelijk. Zie
+                    `huidproblemen/striae/page.tsx`. */}
+                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                   {tc(s.zin)}
                 </p>
               </li>
@@ -265,7 +266,9 @@ export default async function ToepassingPage({
                     {t("Vanaf")}
                   </dt>
                   <dd className="text-right text-[15px] leading-7 text-[var(--t-body)] tabular-nums">
-                    {b.prijs > 0 ? tc(prijsTekst(b.prijs)) : t("Na de intake")}
+                    {b.prijs > 0
+                      ? tc(prijsTekst(b.prijs, taalNu()))
+                      : t("Na de intake")}
                   </dd>
                 </div>
               </dl>

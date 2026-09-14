@@ -5,7 +5,8 @@ import Link from "@/components/ui/Taalpad";
 import Label from "@/components/ui/Label";
 import { ONDERARM, PROEF } from "@/data/veroudering";
 import { publicCopy } from "@/lib/copy-flags";
-import { useT, useTc } from "@/lib/gebruik-taal";
+import { useT, useTaal, useTc } from "@/lib/gebruik-taal";
+import { getal } from "@/lib/getallen";
 
 /**
  * De onderarmtest — de uitblinker van de pagina over huidveroudering.
@@ -46,17 +47,18 @@ const MAX = 80;
 export default function Onderarmtest() {
   const tc = useTc();
   const t = useT();
+  const taal = useTaal();
   const [leeftijd, setLeeftijd] = useState(35);
   const uid = useId().replace(/:/g, "");
 
   /* Gemiddeld jaar, dus met schrikkeldagen. Wie het narekent moet gelijk krijgen. */
-  const dagen = Math.round(leeftijd * 365.25).toLocaleString("nl-NL");
+  const dagen = getal(Math.round(leeftijd * 365.25), taal);
 
   const rijen = [
     {
       wat: "Leeftijd",
-      beschut: `${dagen} dagen`,
-      blootgesteld: `${dagen} dagen`,
+      beschut: `${dagen} ${t("dagen")}`,
+      blootgesteld: `${dagen} ${t("dagen")}`,
     },
     ...PROEF.gelijk.map((g) => ({
       wat: g.wat,

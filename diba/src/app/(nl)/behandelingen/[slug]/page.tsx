@@ -28,6 +28,7 @@ import { BESTEMMINGEN } from "@/data/symptoomzoeker";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { zoekmachineVelden } from "@/lib/seo";
 import { DIBA_SITE_URL } from "@/lib/site";
+import { euro } from "@/lib/getallen";
 import { t, tc } from "@/lib/vertaal";
 
 /**
@@ -60,6 +61,7 @@ import { t, tc } from "@/lib/vertaal";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
+import { taalNu } from "@/lib/taalcontext";
 export function generateStaticParams() {
   return BEHANDELINGEN.map((b) => ({ slug: b.slug }));
 }
@@ -91,14 +93,17 @@ export async function generateMetadata({
   if (!b) return {};
   const kort = tc(b.kort);
   const kortZin = /[.!?]$/.test(kort) ? kort : `${kort}.`;
+  /* Deze staart werd in het Nederlands in elkaar gezet en ging daarna niet meer langs het
+     woordenboek: op /en stond er "Vanaf € 170, 60 minuten. Bij Diba Clinics in Rotterdam."
+     onder een verder Engelse omschrijving. Dat is precies de regel die in Google staat. */
   const bedrag =
     b.prijs > 0
-      ? ` ${b.varianten && b.varianten.length > 1 ? "Vanaf" : "Tarief"} € ${b.prijs.toLocaleString("nl-NL")}${
-          b.duurMinuten ? `, ${b.duurMinuten} minuten` : ""
+      ? ` ${b.varianten && b.varianten.length > 1 ? t("Vanaf") : t("Tarief")} ${euro(b.prijs, taalNu())}${
+          b.duurMinuten ? `, ${b.duurMinuten} ${t("minuten")}` : ""
         }.`
       : "";
   const kandidaten = [
-    `${kortZin}${bedrag} Bij Diba Clinics in Rotterdam.`,
+    `${kortZin}${bedrag} ${t("Bij Diba Clinics in Rotterdam.")}`,
     `${kortZin}${bedrag}`,
     kortZin,
   ];
@@ -141,8 +146,8 @@ function basisvragen(b: Behandeling): { vraag: string; antwoord: string }[] {
       vraag: t("Wat kost het?"),
       antwoord:
         b.varianten && b.varianten.length > 1
-          ? `${t("Vanaf")} ${prijsCijfer(b.prijs)} ${t("euro; het bedrag hangt af van de variant die je kiest. Alle varianten staan op de tarievenpagina.")}`
-          : `${prijsCijfer(b.prijs)} ${t("euro per sessie. Alle tarieven staan openbaar op de tarievenpagina.")}`,
+          ? `${t("Vanaf")} ${prijsCijfer(b.prijs, taalNu())} ${t("euro; het bedrag hangt af van de variant die je kiest. Alle varianten staan op de tarievenpagina.")}`
+          : `${prijsCijfer(b.prijs, taalNu())} ${t("euro per sessie. Alle tarieven staan openbaar op de tarievenpagina.")}`,
     });
   }
   return uit;
@@ -623,10 +628,9 @@ export default async function BehandelingPage({ params }: PageProps) {
                     <p className="diba-card-title text-[var(--t-strong)]">
                       {tc(s.kop)}
                     </p>
-                    {/* Drie regelhoogtes gereserveerd. Even lange teksten geven niet
-                        vanzelf even hoge kaarten, want dat hangt af van waar de woorden
-                        breken; in lh schaalt het bovendien mee met de lettergrootte. */}
-                    <p className="mt-3 md:min-h-[3lh] text-[15px] leading-7 text-[var(--t-body)]">
+                    {/* Laatste blok van de kaart: het raster rekt de kaarten al tot
+                        dezelfde hoogte. Zie `huidproblemen/striae/page.tsx`. */}
+                    <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                       {tc(s.zin)}
                     </p>
                   </li>
@@ -846,7 +850,7 @@ export default async function BehandelingPage({ params }: PageProps) {
                       {t(k.label)}
                     </span>
                     {k.zin ? (
-                      <span className="mt-3 flex-1 text-[15px] leading-7 text-[var(--t-body)] sm:min-h-[3lh]">
+                      <span className="mt-3 flex-1 text-[15px] leading-7 text-[var(--t-body)]">
                         {t(k.zin)}
                       </span>
                     ) : null}
@@ -931,10 +935,10 @@ export default async function BehandelingPage({ params }: PageProps) {
                   <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
                     <h3 className="diba-card-title">{tc(v.naam)}</h3>
                     <span className="text-[15px] leading-6 text-[var(--t-muted)] tabular-nums">
-                      {tc(prijsTekst(v.prijs))}
+                      {tc(prijsTekst(v.prijs, taalNu()))}
                     </span>
                   </div>
-                  <p className="mt-3 md:min-h-[3lh] grow text-[15px] leading-7 text-[var(--t-body)]">
+                  <p className="mt-3 grow text-[15px] leading-7 text-[var(--t-body)]">
                     {tc(waarom)}
                   </p>
                   <Link

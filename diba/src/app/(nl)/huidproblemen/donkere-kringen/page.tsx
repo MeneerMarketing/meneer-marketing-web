@@ -180,7 +180,9 @@ export default function DonkereKringenPage() {
                 className="rounded-[var(--r-md)] bg-white p-7 sm:p-8"
               >
                 <h3 className="diba-card-title">{tc(stap.kop)}</h3>
-                <p className="mt-3 md:min-h-[5lh] text-[15px] leading-7 text-[var(--t-body)]">
+                {/* Laatste blok van de kaart: het raster rekt de kaarten al tot dezelfde
+                    hoogte. Zie `huidproblemen/striae/page.tsx`. */}
+                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                   {tc(stap.tekst)}
                 </p>
               </li>
@@ -202,20 +204,24 @@ export default function DonkereKringenPage() {
             intro="De drie oorzaken naast elkaar, met per soort wat je ziet, waar het vandaan komt en wat er in de kliniek aan te doen is."
           />
 
-          <ul className="mt-8 sm:mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-3">
+          {/* Vier blokken per kaart, drie kaarten in drie kolommen: subgrid lijnt het
+              "wij helpen"-regeltje onderaan uit. `gap-y-0` mag hier, want de 1px uit
+              `gap-px` is de scheidslijn tússen de kolommen en die blijft staan; als
+              rijafstand zou hij binnen de kaart een grijze streep trekken. Zie
+              `huidproblemen/striae/page.tsx`. */}
+          <ul className="mt-8 sm:mt-12 grid gap-px overflow-hidden rounded-[var(--r-md)] bg-[var(--g-100)] md:grid-cols-3 md:gap-y-0">
             {(["pigment", "vaten", "schaduw"] as const).map((id) => {
               const u = UITKOMSTEN[id];
               return (
-                <li key={u.id} className="bg-white p-6 sm:p-8">
+                <li
+                  key={u.id}
+                  className="bg-white p-6 sm:p-8 md:grid md:row-span-4 md:grid-rows-subgrid"
+                >
                   <h3 className="diba-card-title">{tc(u.kop)}</h3>
                   <p className="diba-label mt-2 text-[var(--t-muted)]">
                     {tc(u.vakterm)}
                   </p>
-                  {/* min-h in lh, net als op de littekenpagina: twee blokken van 151 tekens
-                      gaven vijf en vier regels, want het verschil zit op een woordgrens en
-                      niet in de lengte. Vijf regelhoogtes gereserveerd, die meegroeien als
-                      de tekst op een smal scherm meer nodig heeft. */}
-                  <p className="mt-4 md:min-h-[5lh] text-[15px] leading-7 text-[var(--t-body)]">
+                  <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
                     {tc(u.watHetIs)}
                   </p>
                   <p

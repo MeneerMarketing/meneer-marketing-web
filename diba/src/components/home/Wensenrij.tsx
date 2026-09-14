@@ -76,7 +76,7 @@ export default function Wensenrij({ wensen }: { wensen: readonly HomeWens[] }) {
                 <span className="diba-card-title text-[var(--t-strong)]">
                   {t(w.label)}
                 </span>
-                <span className="mt-2 flex-1 text-[15px] leading-7 text-[var(--t-body)] sm:min-h-[2lh]">
+                <span className="mt-2 flex-1 text-[15px] leading-7 text-[var(--t-body)]">
                   {t(w.kort)}
                 </span>{" "}
                 <span className="diba-label mt-5 inline-flex items-center gap-1.5 text-[var(--g-700)]">

@@ -24,6 +24,9 @@ const EENHEDEN: readonly (readonly [RegExp, string, string])[] = [
 ];
 
 export function relatieveDatum(nl: string, taal: Taal): string {
+  /* Alleen Engels. De Spaanse kant toont voorlopig de Nederlandse vorm van een
+     reviewdatum; die staat naast een Nederlandse review, dus dat is consequent. Zodra de
+     reviews een Spaanse vertaling krijgen hoort hier een tabel per taal. */
   if (taal !== "en") return nl;
 
   const tekst = nl.toLowerCase();

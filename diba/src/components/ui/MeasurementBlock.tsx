@@ -1,4 +1,6 @@
 import { t, tc } from "@/lib/vertaal";
+import { getal } from "@/lib/getallen";
+import { taalNu } from "@/lib/taalcontext";
 
 export type Metric = {
   label: string;
@@ -12,7 +14,8 @@ export type MeasurementBlockProps = {
   metrics: Metric[];
 };
 
-const nf = new Intl.NumberFormat("nl-NL");
+/** Het getal in de taal van de pagina. */
+const cijfer = (n: number) => getal(n, taalNu());
 
 export default function MeasurementBlock({
   context,
@@ -45,11 +48,11 @@ export default function MeasurementBlock({
                   {tc(m.label)}
                 </dt>
                 <dd className="text-[13px] text-[var(--t-muted)] tabular-nums">
-                  {nf.format(m.baseline)} → {nf.format(m.current)}
+                  {cijfer(m.baseline)} → {cijfer(m.current)}
                   {improved ? (
                     <span className="ml-2 font-medium text-[var(--g-700)]">
                       {deltaPct > 0 ? "+" : ""}
-                      {nf.format(deltaPct)}%
+                      {cijfer(deltaPct)}%
                     </span>
                   ) : null}
                 </dd>

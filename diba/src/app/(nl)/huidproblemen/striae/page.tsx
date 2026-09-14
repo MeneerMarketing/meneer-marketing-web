@@ -33,6 +33,41 @@ import { t, tc } from "@/lib/vertaal";
  *
  * De achtergrond bij de inhoud staat in `src/data/striae.ts`.
  *
+ * KAARTEN DIE OP DEZELFDE HOOGTE BREKEN.
+ *
+ * In de kaarten hieronder stond `min-h-[4lh]`: reserveer vier tekstregels, zodat het blok
+ * eronder in elke kaart op dezelfde hoogte begint. Dat is een getal dat iemand ooit heeft
+ * geteld, en een geteld getal verloopt. De copy werd korter, de reservering bleef staan, en
+ * op 15 september 2026 stonden er in deze twee kaarten vier lege regels. Yasin: "waarom zit
+ * hier zoveel witruimte?"
+ *
+ * Erger nog: het getal kan per taal niet kloppen. Dezelfde zin is in het Engels korter en
+ * in het Spaans langer, dus één reservering is per definitie in minstens twee van de drie
+ * talen het verkeerde getal.
+ *
+ * Nu doet `grid-template-rows: subgrid` het werk. De kaart neemt de rijen van het raster
+ * eromheen over, dus alle kaarten in een rij delen dezelfde rijhoogtes en die hoogtes volgen
+ * uit de langste inhoud die er werkelijk staat. Geen getal om bij te houden, en het klopt
+ * in elke taal vanzelf.
+ *
+ * De regel die daarbij hoort, en die `npm run witruimte` bewaakt:
+ *
+ *   - is het blok het laatste van de kaart, dan hoeft er niets: kaarten in een raster
+ *     rekken al tot dezelfde hoogte, dus de onderrand ligt al gelijk;
+ *   - staat er nog iets ná het blok, dan krijgt dat blok `grow` (dan zakt de rest naar de
+ *     onderrand) of de kaart wordt een subgrid (dan lijnt alles rij voor rij uit);
+ *   - een reservering van drie regels of meer staat er niet meer. Dat is altijd een geteld
+ *     getal over lopende tekst, en dat is het getal dat verloopt.
+ *
+ * Twee reserveringen blijven, en die kunnen niet verlopen. `min-h-[1lh]` op een regel die
+ * leeg kan zijn (het merk op de apparatuurkaarten: de EVE-M heeft er geen) houdt die ene
+ * regel vrij, en `min-h-[2lh]` op een kaartkop houdt er één extra vrij omdat een kop van
+ * een of twee regels is. Meer dan één lege regel kan daar niet uit komen.
+ *
+ * `gap-y-0` hoort bij het subgrid: de rijafstand van het raster wordt daarin de afstand
+ * tússen de blokken van de kaart, en de kaart regelt die zelf al met `mt-*`. Daarom alleen
+ * bij een raster dat op dat breekpunt uit één rij kaarten bestaat.
+ *
  * COPY: concept in de Diba-stem. Medische beweringen zijn gemarkeerd voor Rojda.
  */
 
@@ -164,9 +199,9 @@ export default function StriaePage() {
                 className="flex flex-col rounded-[var(--r-md)] bg-white p-7 sm:p-8"
               >
                 <h3 className="diba-card-title">{tc(stap.kop)}</h3>
-                {/* min-h in lh, zoals elders: gelijke tekstlengte geeft niet altijd
-                    gelijke regels, want dat hangt af van waar de woorden breken. */}
-                <p className="mt-3 lg:min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
+                {/* Laatste blok van de kaart, dus niets uit te lijnen: het raster rekt de
+                    kaarten al tot dezelfde hoogte. Zie het blok bovenin. */}
+                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                   {tc(stap.tekst)}
                 </p>
               </li>
@@ -187,11 +222,14 @@ export default function StriaePage() {
             intro="Striae doorlopen twee fasen. Welke van de twee je hebt, bepaalt wat een behandeling oplevert en hoe snel je erbij moet zijn."
           />
 
-          <ul className="mt-8 sm:mt-12 grid gap-4 lg:grid-cols-2">
+          {/* Zes blokken per kaart, dus `row-span-6`. Subgrid lijnt ze uit; zie het blok
+              bovenin dit bestand. Twee kaarten in twee kolommen is één rij, dus `gap-y-0`
+              kan hier zonder dat er kaartrijen tegen elkaar aan komen te staan. */}
+          <ul className="mt-8 sm:mt-12 grid gap-4 lg:grid-cols-2 lg:gap-y-0">
             {STRIAE_SOORTEN.map((s) => (
               <li
                 key={s.id}
-                className="flex flex-col rounded-[var(--r-md)] bg-white p-7 sm:p-9"
+                className="flex flex-col rounded-[var(--r-md)] bg-white p-7 sm:p-9 lg:grid lg:row-span-6 lg:grid-rows-subgrid"
               >
                 <Label>{tc(s.klanttaal)}</Label>
                 <h3 className="diba-card-title-lg mt-3 text-[var(--t-strong)]">
@@ -200,13 +238,13 @@ export default function StriaePage() {
                 <p className="diba-label mt-2 text-[var(--t-muted)]">
                   {tc(s.vakterm)}
                 </p>
-                <p className="mt-4 lg:min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
+                <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
                   {tc(s.watHetIs)}
                 </p>
-                <p className="mt-4 lg:min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
+                <p className="mt-4 text-[15px] leading-7 text-[var(--t-body)]">
                   {tc(s.watWijDoen)}
                 </p>
-                <p className="mt-auto border-t border-[var(--g-100)] pt-4 text-[15px] leading-7 text-[var(--t-muted)]">
+                <p className="mt-6 border-t border-[var(--g-100)] pt-4 text-[15px] leading-7 text-[var(--t-muted)]">
                   {tc(s.verwachting)}
                 </p>
               </li>

@@ -45,6 +45,7 @@ import { t, tc } from "@/lib/vertaal";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
+import { taalNu } from "@/lib/taalcontext";
 export function generateStaticParams() {
   return APPARATUUR.map((a) => ({ slug: a.slug }));
 }
@@ -223,7 +224,7 @@ export default async function ApparaatPage({ params }: PageProps) {
                           {tc(b.naam)}
                         </span>
                         <span className="shrink-0 text-[14px] leading-6 text-[var(--on-dark-accent)] tabular-nums">
-                          {tc(prijsTekst(b.prijs))}
+                          {tc(prijsTekst(b.prijs, taalNu()))}
                         </span>
                       </Link>
                     </li>
@@ -376,25 +377,27 @@ export default async function ApparaatPage({ params }: PageProps) {
               </p>
             </div>
 
-            <ul className="mt-8 sm:mt-12 grid gap-4 lg:grid-cols-3 lg:items-start">
+            {/* Geen `items-start` en geen `min-h`: de kaarten rekken tot dezelfde hoogte en
+                `grow` hieronder duwt de link naar de onderrand. Zie
+                `huidproblemen/striae/page.tsx`. */}
+            <ul className="mt-8 sm:mt-12 grid gap-4 lg:grid-cols-3">
               {buren.map((v) => (
                 <li
                   key={v.apparaat}
-                  className="rounded-[var(--r-lg)] bg-white p-6 sm:p-7"
+                  className="flex flex-col rounded-[var(--r-lg)] bg-white p-6 sm:p-7"
                 >
                   <Label>{t("Tegenover")}</Label>
                   <p className="diba-card-title mt-2 text-[var(--t-strong)]">
                     {tc(v.ander.naam)}
                   </p>
-                  {/* Vier regelhoogtes gereserveerd, zoals bij de stapkaarten op de
-                      behandelpagina's: even lange teksten geven niet vanzelf even hoge
-                      kaarten, want dat hangt af van waar de woorden breken. */}
-                  <p className="mt-4 lg:min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
+                  <p className="mt-4 grow text-[15px] leading-7 text-[var(--t-body)]">
                     {tc(v.verschil)}
                   </p>
                   <Link
                     href={`/apparatuur/${v.ander.slug}`}
-                    className="diba-label mt-5 inline-flex min-h-11 items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
+                    /* `self-start`: als flexkind zou de link anders over de hele
+                       kaartbreedte rekken en dan loopt de onderstreping door tot de rand. */
+                    className="diba-label mt-5 inline-flex min-h-11 items-center gap-1.5 self-start text-[var(--g-700)] underline underline-offset-4 hover:text-[var(--g-800)]"
                   >
                     {t("Naar de")} {tc(v.ander.naam)}
                     <span aria-hidden="true">›</span>

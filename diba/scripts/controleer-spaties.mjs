@@ -1,5 +1,5 @@
 /**
- * Staan er woorden aan elkaar geplakt?
+ * Staan er woorden aan elkaar geplakt, of staat er juist een spatie te veel?
  *
  * Yasin, 13 september 2026: "ik zie in titels how wework en what westand for enz, ook in
  * het nederlands staat er hoe wijwerken. loop alles goed na."
@@ -28,6 +28,12 @@
  * en letter-tegen-cijfer is fout. Onzichtbare tekst telt niet mee, en een naad waar links
  * en rechts op verschillende regels staan ook niet.
  *
+ * EN DE OMGEKEERDE FOUT. `{" "}` is het gereedschap waarmee je een plakfout repareert, en
+ * het maakt zijn eigen fout: zet je hem voor een zin die zelf met een leesteken begint, dan
+ * krijg je "Rotterdam , sinds 2017". Dat stond in de voettekst, dus op elke pagina van de
+ * site, en op nog vier andere plekken. De tweede meting onderin dit bestand zoekt naar een
+ * spatie vlak voor een leesteken; zie daar waarom dat niet op losse tekstknooppunten kan.
+ *
  *   BASIS=http://localhost:3021 npm run spaties
  *   ALLES=1 BASIS=... npm run spaties      (alle bevindingen, niet de eerste dertig)
  *   BREEDTE=375 BASIS=... npm run spaties  (een regelafbreking die alleen op een
@@ -35,6 +41,7 @@
  */
 
 import { chromium } from "playwright";
+import { alleAdressen } from "./lib/paden.mjs";
 
 const BASIS = process.env.BASIS ?? "http://localhost:3010";
 const ALLES = process.env.ALLES === "1";
@@ -46,12 +53,8 @@ const context = await browser.newContext({
 });
 const pagina = await context.newPage();
 
-await pagina.goto(`${BASIS}/sitemap.xml`, { waitUntil: "domcontentloaded" });
-const xml = await pagina.content();
-const paden = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)]
-  .map((m) => new URL(m[1]).pathname)
-  .filter((p, i, a) => a.indexOf(p) === i)
-  .sort();
+/* Alle talen, ook die nog niet in de sitemap staat. Zie scripts/lib/paden.mjs. */
+const paden = await alleAdressen(BASIS);
 
 const ZOEK = () => {
   const uit = [];
@@ -149,6 +152,49 @@ const ZOEK = () => {
       });
     }
   }
+
+  /* DE ANDERE KANT VAN DEZELFDE FOUT: EEN SPATIE TE VEEL.
+     ────────────────────────────────────────────────────
+
+     Hierboven gaat het om een ontbrekende spatie. Bij het repareren daarvan is `{" "}` het
+     gereedschap, en dat gereedschap maakt zijn eigen fout: staat de zin erachter al met een
+     leesteken te beginnen, dan krijg je "Rotterdam , sinds 2017". Die stond in de voettekst,
+     dus op elke pagina van de site, en de meting hierboven zag hem niet: die kijkt naar
+     letters die tegen letters aan plakken.
+
+     Dit kan niet op losse tekstknooppunten: "Rotterdam", " " en ", sinds 2017" zijn er drie,
+     en de browser voegt ze niet samen. Het moet dus over de tekst van het element eromheen,
+     en alleen over elementen zonder blokken erin — anders plakt `textContent` het eind van
+     de ene alinea aan het begin van de volgende en meet je een naad die op het scherm niet
+     bestaat. */
+  const blok = (e) => {
+    const d = getComputedStyle(e).display;
+    return /^(block|flex|grid|list|table)/.test(d);
+  };
+
+  for (const el of document.querySelectorAll("body *")) {
+    if (el.closest("script, style, svg, noscript")) continue;
+    if (!zichtbaar(el)) continue;
+    if ([...el.querySelectorAll("*")].some(blok)) continue;
+
+    const tekst = el.textContent ?? "";
+    /* Ook de harde spatie ( ), want die staat er in bedragen en telefoonnummers. */
+    /* Een smiley telt niet mee. In de reviews staat "Tot snel weer :)" en dat is geen
+       dubbele punt met een spatie ervoor maar een gezichtje, letterlijk zoals de klant het
+       schreef. Vandaar de uitsluiting van een haakje, een streepje of een D of P erachter. */
+    const m = tekst.match(/.{0,25}[  ][,.;:!?](?![-)(DPp]).{0,15}/);
+    if (!m) continue;
+
+    uit.push({
+      tag: el.tagName.toLowerCase(),
+      klasse: (el.className || "").toString().slice(0, 40),
+      fragment: m[0].replace(/\s+/g, " ").trim(),
+      naad: "spatie|leesteken",
+      links: "",
+      rechts: "",
+    });
+  }
+
   return uit;
 };
 

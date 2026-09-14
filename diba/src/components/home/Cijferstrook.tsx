@@ -1,7 +1,9 @@
 "use client";
 
 import { DIBA_HOME_PROOF_ITEMS } from "@/lib/site";
-import { useT } from "@/lib/gebruik-taal";
+import { useT, useTaal } from "@/lib/gebruik-taal";
+import { getal } from "@/lib/getallen";
+import type { Taal } from "@/lib/taal";
 
 /**
  * De vier cijfers, als strook onder een hero.
@@ -40,12 +42,13 @@ import { useT } from "@/lib/gebruik-taal";
  * maatvoering als in de oude hero, waar dit werkte.
  */
 
-/** Het getal met zijn achtervoegsel, in Nederlandse notatie. */
-function getal(item: (typeof DIBA_HOME_PROOF_ITEMS)[number]): string {
+/** Het getal met zijn achtervoegsel, in de notatie van de taal. */
+function cijfer(
+  item: (typeof DIBA_HOME_PROOF_ITEMS)[number],
+  taal: Taal,
+): string {
   const waarde =
-    typeof item.value === "number"
-      ? item.value.toLocaleString("nl-NL")
-      : item.value;
+    typeof item.value === "number" ? getal(item.value, taal) : item.value;
   return `${waarde}${item.suffix ?? ""}`;
 }
 
@@ -55,13 +58,14 @@ export default function Cijferstrook({
   className?: string;
 }) {
   const t = useT();
+  const taal = useTaal();
   return (
     <div className={`px-5 py-8 sm:px-9 sm:py-10 lg:px-[7.5vw] ${className}`}>
       <dl className="mx-auto grid grid-cols-4">
         {DIBA_HOME_PROOF_ITEMS.map((item, i) => {
-          const cijfer = (
+          const waarde = (
             <dd className="text-[17px] leading-tight font-medium tracking-[-.03em] text-[var(--g-700)] tabular-nums sm:text-[25px] sm:tracking-[-.04em]">
-              {getal(item)}
+              {cijfer(item, taal)}
             </dd>
           );
           return (
@@ -85,10 +89,10 @@ export default function Cijferstrook({
                      vak niet verschuift. */
                   className="-my-1 block rounded-[var(--r-sm)] py-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                 >
-                  {cijfer}
+                  {waarde}
                 </a>
               ) : (
-                cijfer
+                waarde
               )}
               {/* Op een telefoon een punt groter dan het was, maar met minder letterafstand:
                   `diba-label` staat op 0,13em en dan is "BEHANDELD" tachtig pixels breed

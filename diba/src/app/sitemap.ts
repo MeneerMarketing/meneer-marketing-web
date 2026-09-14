@@ -8,7 +8,13 @@ import { BEHANDELINGEN } from "@/data/behandelingen";
 import { TOEPASSINGEN } from "@/data/toepassingen";
 import { LANDINGS } from "@/data/landings";
 import { DIBA_SITE_URL } from "@/lib/site";
-import { anderePad, taalAlternatieven, taalVanPad } from "@/lib/taal";
+import {
+  anderePad,
+  taalAlternatieven,
+  taalVanPad,
+  TAAL_AF,
+  VREEMDE_TALEN,
+} from "@/lib/taal";
 
 /**
  * De sitemap leidt zichzelf af uit de routes.
@@ -90,10 +96,13 @@ function statischeRoutes(): { route: string; bestand: string }[] {
       const bron = readFileSync(pad, "utf8");
       if (/permanentRedirect\(|\bredirect\(/.test(bron)) continue;
 
-      /* Een pagina die zichzelf op noindex zet hoort hier ook niet. Dat zijn de Engelse
-         pagina's waarvan de vertaling nog niet rond is: ze bestaan en ze werken, maar
-         zolang de teksten nog Nederlands zijn melden we ze niet aan bij Google. */
+      /* Een pagina die zichzelf op noindex zet hoort hier ook niet. */
       if (/robots:\s*\{\s*index:\s*false/.test(bron)) continue;
+
+      /* En een taal waarvan de vertaling nog loopt ook niet. De wrappers zetten dat
+         `noindex` niet meer zelf in hun bron maar krijgen het van `vertaaldeMetadata`, dus
+         de regex hierboven ziet het niet; dit leest dezelfde schakelaar. */
+      if (!TAAL_AF[taalVanPad(route)]) continue;
 
       uit.push({
         route,
@@ -115,11 +124,12 @@ function statischeRoutes(): { route: string; bestand: string }[] {
  */
 function gewicht(route: string): number {
   if (route === "/") return 1;
-  /* De Engelse pagina's staan lager dan hun Nederlandse tegenhanger. Niet omdat ze minder
-     af zijn, maar omdat de kliniek in Rotterdam staat en het meeste zoekverkeer Nederlands
-     is. Crawlbudget hoort eerst naar de taal waarin de meeste vragen binnenkomen. */
-  if (route === "/en") return 0.6;
-  if (route.startsWith("/en/")) return 0.5;
+  /* De vertaalde pagina's staan lager dan hun Nederlandse tegenhanger. Niet omdat ze
+     minder af zijn, maar omdat de kliniek in Rotterdam staat en het meeste zoekverkeer
+     Nederlands is. Crawlbudget hoort eerst naar de taal waarin de meeste vragen
+     binnenkomen. */
+  if (taalVanPad(route) !== "nl")
+    return route.split("/").length > 2 ? 0.5 : 0.6;
   if (route.startsWith("/huidproblemen/")) return 0.9;
   if (route === "/huidproblemen" || route === "/behandelingen") return 0.85;
   if (route.startsWith("/behandelingen/")) return 0.8;
@@ -248,16 +258,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     );
   }
 
-  /* Elke Nederlandse pagina heeft een Engelse tegenhanger onder /en, op vier na. Die
+  /* Elke Nederlandse pagina heeft een tegenhanger per vreemde taal, op vier na. Die
      stonden hier alleen als ze een eigen bestand hadden, en dat hebben de pagina's met een
-     slug niet: /en/behandelingen/hydrafacial komt uit de route [slug]. Er stonden daardoor
+     slug niet: /en/treatments/hydrafacial komt uit de route [slug]. Er stonden daardoor
      59 Engelse adressen in de sitemap tegenover 156 Nederlandse, terwijl ze alle 152
      bestaan. Ze delen hun bron met het Nederlands en dus ook hun datum: de tekst komt uit
-     hetzelfde bestand, alleen door het woordenboek. */
+     hetzelfde bestand, alleen door het woordenboek.
+
+     Een taal die nog niet geïndexeerd wordt staat er niet in. Een sitemap is een
+     uitnodiging om te komen kijken, en dat hoort niet te gelden voor pagina's die zelf
+     `noindex` dragen omdat hun vertaling nog loopt. Zie `TAAL_AF` in lib/taal.ts. */
   for (const [route, bron] of [...bronnen]) {
-    if (taalVanPad(route) === "en") continue;
-    const en = anderePad(route, "en");
-    if (en) bronnen.set(en, bron);
+    if (taalVanPad(route) !== "nl") continue;
+    for (const taal of VREEMDE_TALEN) {
+      if (!TAAL_AF[taal]) continue;
+      const ander = anderePad(route, taal);
+      if (ander) bronnen.set(ander, bron);
+    }
   }
 
   const datums = commitdatums();
@@ -268,7 +285,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const laatstGewijzigd = (route: string): Date | undefined => {
     /* De homepage toont stukken van de hele site, dus hij verandert als de site verandert. */
-    if (route === "/" || route === "/en")
+    if (route === "/" || VREEMDE_TALEN.some((t) => route === `/${t}`))
       return nieuwste ? new Date(nieuwste) : undefined;
     const kandidaten = (bronnen.get(route) ?? [])
       .map((b) => datums.get(b) ?? 0)

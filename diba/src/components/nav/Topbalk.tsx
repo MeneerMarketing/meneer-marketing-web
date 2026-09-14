@@ -4,12 +4,13 @@ import Link from "@/components/ui/Taalpad";
 import MijnDiba from "@/components/nav/MijnDiba";
 import Taalkiezer from "@/components/nav/Taalkiezer";
 import { TOPBALK_LINKS } from "@/data/hoofdnavigatie";
-import { useT } from "@/lib/gebruik-taal";
+import { useT, useTaal } from "@/lib/gebruik-taal";
 import {
   DIBA_SALONIZED_RATING,
   DIBA_SALONIZED_REVIEW_COUNT,
   DIBA_SALONIZED_REVIEWS_URL,
 } from "@/lib/site";
+import { getal } from "@/lib/getallen";
 
 /**
  * De topbalk boven het hero-beeld — variant, nog niet in gebruik op de live homepage.
@@ -43,10 +44,12 @@ export type TopbalkProps = {
 
 export default function Topbalk({ opBeeld = false }: TopbalkProps) {
   const t = useT();
-  const cijfer = DIBA_SALONIZED_RATING.toLocaleString("nl-NL", {
+  const taal = useTaal();
+  const cijfer = getal(DIBA_SALONIZED_RATING, taal, {
     minimumFractionDigits: 1,
+    maximumFractionDigits: 1,
   });
-  const aantal = DIBA_SALONIZED_REVIEW_COUNT.toLocaleString("nl-NL");
+  const aantal = getal(DIBA_SALONIZED_REVIEW_COUNT, taal);
 
   return (
     /* Dezelfde container als de hoofdbalk en als elke pagina.

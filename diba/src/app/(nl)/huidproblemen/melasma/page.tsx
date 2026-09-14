@@ -173,7 +173,15 @@ export default function MelasmaPage() {
             intro="Ze lijken op elkaar en vragen een andere aanpak. Het verschil zit in het patroon, de plek en hoe de vlek zich door het jaar heen gedraagt."
           />
 
-          <div className="mt-8 sm:mt-12 grid gap-4 lg:grid-cols-2">
+          {/* Een vergelijking: regel voor regel moeten links en rechts op dezelfde hoogte
+              staan, anders lees je twee losse lijstjes in plaats van een naast-elkaar.
+              Subgrid doet dat, twee lagen diep: de kaart neemt de vijf rijen van het raster
+              over (het label plus vier kenmerken), en de lijst daarbinnen neemt de laatste
+              vier daarvan over. Zo horen kenmerk drie links en kenmerk drie rechts in
+              dezelfde rij en krijgen ze dezelfde hoogte. Hier stond `min-h-[2lh]`, een
+              geteld getal dat in elke taal anders uitvalt; zie
+              `huidproblemen/striae/page.tsx`. */}
+          <div className="mt-8 sm:mt-12 grid gap-4 lg:grid-cols-2 lg:gap-y-0">
             {(
               [
                 { titel: "Melasma", veld: "melasma" },
@@ -182,10 +190,10 @@ export default function MelasmaPage() {
             ).map((kolom) => (
               <div
                 key={kolom.titel}
-                className="rounded-[var(--r-md)] bg-white p-7 sm:p-9"
+                className="rounded-[var(--r-md)] bg-white p-7 sm:p-9 lg:grid lg:row-span-5 lg:grid-rows-subgrid"
               >
                 <Label>{tc(kolom.titel)}</Label>
-                <ul className="mt-6 space-y-5">
+                <ul className="mt-6 space-y-5 lg:grid lg:row-span-4 lg:grid-rows-subgrid">
                   {VERSCHIL.map((v) => (
                     <li
                       key={tc(v.kenmerk)}
@@ -194,9 +202,7 @@ export default function MelasmaPage() {
                       <p className="diba-label text-[var(--t-muted)]">
                         {tc(v.kenmerk)}
                       </p>
-                      {/* Twee regelhoogtes gereserveerd, zodat links en rechts op
-                          dezelfde hoogte blijven staan. */}
-                      <p className="mt-2 lg:min-h-[2lh] text-[15px] leading-7 text-[var(--t-body)]">
+                      <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
                         {tc(v[kolom.veld])}
                       </p>
                     </li>
@@ -213,7 +219,9 @@ export default function MelasmaPage() {
                 className="rounded-[var(--r-md)] bg-white p-7 sm:p-8"
               >
                 <h3 className="diba-card-title">{tc(w.kop)}</h3>
-                <p className="mt-3 md:min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
+                {/* Laatste blok van de kaart: het raster rekt de kaarten al tot dezelfde
+                    hoogte. Zie `huidproblemen/striae/page.tsx`. */}
+                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                   {tc(w.zin)}
                 </p>
               </li>

@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import Button from "@/components/ui/Button";
 import {
@@ -12,6 +13,7 @@ import { bewaarScan } from "@/lib/huidprofiel-opslag";
 import { ArrowRight, ArrowUpRight } from "@/components/ui/Icon";
 import { useReducedMotion } from "@/lib/use-reduced-motion";
 import { useT, useTc } from "@/lib/gebruik-taal";
+import { inTaal } from "@/lib/taalpad";
 
 /**
  * De mini-scan — het interactieve hart van de huidscan-sectie.
@@ -192,6 +194,7 @@ type Fase = "intro" | "vragen" | "scannen" | "resultaat";
 
 export default function MiniHuidscan() {
   const t = useT();
+  const tc = useTc();
   const reduced = useReducedMotion();
   const titelId = useId();
   const [fase, setFase] = useState<Fase>("intro");
@@ -314,11 +317,14 @@ export default function MiniHuidscan() {
         />
       </div>
 
+      {/* Deze regel is alleen voor een schermlezer, en stond daardoor in het Nederlands op
+          de Engelse site: een sjabloontekenreeks gaat niet vanzelf door het woordenboek.
+          Onzichtbare tekst is nog steeds tekst. */}
       <p ref={statusRef} tabIndex={-1} className="sr-only" aria-live="polite">
         {fase === "vragen"
-          ? `Vraag ${stap + 1} van ${VRAGEN.length}: ${VRAGEN[stap].vraag}`
+          ? `${t("Vraag")} ${stap + 1} ${t("van")} ${VRAGEN.length}: ${tc(VRAGEN[stap].vraag)}`
           : fase === "resultaat"
-            ? `Profielschets klaar. Meeste aandacht: ${aandachtspunten.map((a) => a.label).join(" en ")}.`
+            ? `${t("Profielschets klaar. Meeste aandacht:")} ${aandachtspunten.map((a) => tc(a.label)).join(` ${t("en")} `)}.`
             : ""}
       </p>
 
@@ -477,6 +483,7 @@ function Resultaat({
 }) {
   const t = useT();
   const tc = useTc();
+  const pad = usePathname() ?? "/";
   return (
     <div className="grid gap-6">
       {/* Hier stond de radar. Weg (Yasin, 11 september 2026): tweehonderdvijftig pixels
@@ -526,7 +533,7 @@ function Resultaat({
             {t("Plan een huidconsult")}
           </Button>
           <a
-            href="/huidprofiel"
+            href={inTaal("/huidprofiel", pad)}
             className="diba-label inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4"
           >
             {t("Vul je profiel verder aan")}
@@ -534,7 +541,7 @@ function Resultaat({
           </a>
           {focus?.pillar ? (
             <a
-              href={`/huidproblemen/${focus.pillar}`}
+              href={inTaal(`/huidproblemen/${focus.pillar}`, pad)}
               className="diba-label inline-flex items-center gap-1.5 text-[var(--g-700)] underline underline-offset-4"
             >
               {t("Lees over")}{" "}

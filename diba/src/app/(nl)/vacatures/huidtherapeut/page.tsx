@@ -280,9 +280,9 @@ export default function VacatureHuidtherapeutPage() {
                 className="rounded-[var(--r-md)] bg-white p-7 sm:p-8"
               >
                 <h3 className="diba-card-title">{tc(w.kop)}</h3>
-                {/* Vijf regelhoogtes gereserveerd, zodat de vier kaarten even hoog
-                    blijven ook als een zin net omvalt. */}
-                <p className="mt-3 md:min-h-[5lh] text-[15px] leading-7 text-[var(--t-body)]">
+                {/* Laatste blok van de kaart: het raster rekt de kaarten al tot dezelfde
+                    hoogte. Zie `huidproblemen/striae/page.tsx`. */}
+                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                   {tc(w.zin)}
                 </p>
               </li>
@@ -373,7 +373,7 @@ export default function VacatureHuidtherapeutPage() {
                 <p className="diba-card-title text-[var(--t-strong)]">
                   {tc(stap.kop)}
                 </p>
-                <p className="mt-3 md:min-h-[4lh] text-[15px] leading-7 text-[var(--t-body)]">
+                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                   {tc(stap.zin)}
                 </p>
               </li>

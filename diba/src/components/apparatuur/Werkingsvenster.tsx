@@ -4,7 +4,9 @@ import { useEffect, useId, useRef, useState } from "react";
 import { DOELWITTEN, type Apparaat } from "@/data/apparatuur";
 import { HUIDLAGEN, HUIDLAGEN_BRON, LAAGAANDEEL } from "@/data/behandelingen";
 import { publicCopy } from "@/lib/copy-flags";
-import { useT, useTc } from "@/lib/gebruik-taal";
+import { useT, useTaal, useTc } from "@/lib/gebruik-taal";
+import { getal } from "@/lib/getallen";
+import type { Taal } from "@/lib/taal";
 
 /**
  * Het werkingsvenster: een doorsnede van de huid waarin je ziet wat een apparaat doet.
@@ -107,7 +109,7 @@ function wordtGeraakt(i: number, bodem: number): boolean {
  * medische bewering toe: het rekent zichtbaar wat er al staat. Daarom een tilde in de
  * weergave: afgeleid uit een schema, niet gemeten.
  */
-function diepteInMm(y: number): string {
+function diepteInMm(y: number, taal: Taal): string {
   const grenzenMm = HUIDLAGEN.map((l) =>
     Number(l.tot.replace(" mm", "").replace(",", ".")),
   );
@@ -119,14 +121,19 @@ function diepteInMm(y: number): string {
     if (y <= onderY) {
       const deel = (y - bovenY) / (onderY - bovenY);
       const mm = bovenMm + deel * (onderMm - bovenMm);
-      const tekst =
-        mm < 0.1 ? mm.toFixed(2) : mm < 1 ? mm.toFixed(1) : mm.toFixed(1);
-      return tekst.replace(".", ",").replace(/,0$/, "");
+      /* Het Engels schrijft 0.5 en het Nederlands 0,5. Stond hier als vaste `replace`
+         naar de komma, en dat is op /en een ander getal dan bedoeld. */
+      return getal(mm, taal, {
+        minimumFractionDigits: mm < 0.1 ? 2 : 1,
+        maximumFractionDigits: mm < 0.1 ? 2 : 1,
+      }).replace(/[.,]0$/, "");
     }
     bovenY = onderY;
     bovenMm = onderMm;
   }
-  return String(grenzenMm[grenzenMm.length - 1]).replace(".", ",");
+  return getal(grenzenMm[grenzenMm.length - 1], taal, {
+    maximumFractionDigits: 2,
+  });
 }
 
 /** Het midden van laag i in de tekening, als y in de viewBox. */
@@ -302,6 +309,7 @@ type Props = {
 export default function Werkingsvenster({ apparaat, diepte }: Props) {
   const t = useT();
   const tc = useTc();
+  const taal = useTaal();
   const [stap, setStap] = useState(0);
   const [zelfGestuurd, setZelfGestuurd] = useState(false);
   const [rustig, setRustig] = useState(true);
@@ -509,7 +517,7 @@ export default function Werkingsvenster({ apparaat, diepte }: Props) {
                     fill="white"
                     style={{ letterSpacing: "0.02em" }}
                   >
-                    {`${t("Tot hier")}, ~${diepteInMm(bodem)} mm`}
+                    {`${t("Tot hier")}, ~${diepteInMm(bodem, taal)} mm`}
                   </text>
                 </g>
               </g>

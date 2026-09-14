@@ -15,6 +15,7 @@ import {
 import { useHuidprofiel } from "@/lib/huidprofiel-opslag";
 import { useTc, useT } from "@/lib/gebruik-taal";
 
+import { useTaal } from "@/lib/gebruik-taal";
 /**
  * Je huidprofiel, rechtsonder, op elke pagina.
  *
@@ -43,6 +44,7 @@ import { useTc, useT } from "@/lib/gebruik-taal";
 export default function HuidprofielKnop() {
   const t = useT();
   const tc = useTc();
+  const taal = useTaal();
   const { profiel } = useHuidprofiel();
   const [open, setOpen] = useState(false);
   const pad = usePathname();
@@ -183,7 +185,7 @@ export default function HuidprofielKnop() {
                         >
                           {tc(m.behandeling.naam)}
                           <span className="shrink-0 text-[13px] text-[var(--t-muted)] tabular-nums">
-                            {tc(prijsTekst(m.behandeling.prijs))}
+                            {tc(prijsTekst(m.behandeling.prijs, taal))}
                           </span>
                         </Link>
                       </li>

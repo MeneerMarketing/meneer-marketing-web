@@ -1,7 +1,9 @@
 "use client";
 
 import type { ProofStripItem } from "@/lib/site";
-import { useT, useTc } from "@/lib/gebruik-taal";
+import { useT, useTaal, useTc } from "@/lib/gebruik-taal";
+import { getal } from "@/lib/getallen";
+import type { Taal } from "@/lib/taal";
 
 /**
  * De bewijsstrip (DIBA-RULES §8 en §11).
@@ -27,9 +29,9 @@ import { useT, useTc } from "@/lib/gebruik-taal";
  * hield stand tot het reviewaantal ook zonder plusje kwam te staan, en toen verscheen er
  * "3883" op elke pagina in plaats van "3.883". Nu staat het als vlag in de data.
  */
-function formatteer(item: ProofStripItem): string {
+function formatteer(item: ProofStripItem, taal: Taal): string {
   if (item.isJaartal) return String(item.value);
-  return `${item.value.toLocaleString("nl-NL")}${item.suffix ?? ""}`;
+  return `${getal(item.value, taal)}${item.suffix ?? ""}`;
 }
 
 export default function ProofBar({
@@ -41,6 +43,7 @@ export default function ProofBar({
 }) {
   const tc = useTc();
   const t = useT();
+  const taal = useTaal();
   return (
     /* Een haarlijn onder de strip. De verticale lijnen tussen de cellen hielden anders
        zomaar op in het wit, alsof de strip niet af was (Yasin, 7 september 2026). */
@@ -55,7 +58,7 @@ export default function ProofBar({
             className="bg-white py-3 text-center md:py-7"
           >
             <strong className="block text-lg tracking-[-.05em] text-[var(--g-700)] tabular-nums md:text-3xl md:tracking-[-.06em]">
-              {formatteer(item)}
+              {formatteer(item, taal)}
             </strong>
             <span className="diba-label mt-1 block text-[var(--t-muted)] md:mt-2">
               {tc(item.label)}

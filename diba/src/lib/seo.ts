@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { taalAlternatieven, taalVanPad } from "@/lib/taal";
+import { TAAL_AF, taalAlternatieven, taalVanPad, TAALCODES } from "@/lib/taal";
 import { DIBA_SITE, DIBA_SITE_URL } from "@/lib/site";
 
 /**
@@ -109,9 +109,19 @@ export function zoekmachineVelden({
       ...(taalAlternatieven(pad) ? { languages: taalAlternatieven(pad) } : {}),
     },
 
+    /* Een taal die nog niet af is, hoort niet in Google. De vertaalde pagina's krijgen dat
+       van `lib/vertaalde-metadata.ts`, maar twee pagina's bouwen hun velden hier
+       rechtstreeks: de Engelse en de Spaanse homepage. Daardoor stond /es op 15 september
+       2026 als enige Spaanse pagina zonder `noindex`, terwijl de andere drieënzestig hem
+       wel hadden — precies de pagina waar iemand als eerste op uitkomt. Het pad draagt de
+       taal, dus die vraag is hier ook te stellen. Zie `TAAL_AF` in lib/taal.ts. */
+    ...(TAAL_AF[taalVanPad(pad)]
+      ? {}
+      : { robots: { index: false, follow: true } }),
+
     openGraph: {
       type: "website",
-      locale: taalVanPad(pad) === "en" ? "en_GB" : "nl_NL",
+      locale: TAALCODES[taalVanPad(pad)].opengraph,
       siteName: DIBA_SITE.name,
       url: `${DIBA_SITE_URL}${pad === "/" ? "" : pad}`,
       ...(titel ? { title: metMerknaam(titel) } : {}),

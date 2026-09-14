@@ -22,6 +22,7 @@
  * werken.
  */
 import { chromium, devices } from "playwright";
+import { readFileSync } from "node:fs";
 
 const BASIS = process.env.BASIS ?? "http://localhost:3010";
 
@@ -36,6 +37,41 @@ const BASIS = process.env.BASIS ?? "http://localhost:3010";
  * Het staat hier en niet als uitgezette controle, want dan verdwijnt ook het toezicht op
  * de pagina's die de je-vorm wél moeten volgen.
  */
+/**
+ * Het Nederlandse adres van een pagina, welke taal hij ook draagt.
+ *
+ * /en/referrers en /es/derivaciones zijn dezelfde pagina als /verwijzers. De regels
+ * hieronder staan met hun Nederlandse naam, dus moet een vertaald adres eerst terug. De
+ * tabellen komen uit `lib/slugs.ts` met een regex: dat is TypeScript en dit draait op kale
+ * node, maar het blijft daarmee wel één bron.
+ */
+const slugsBron = readFileSync("src/lib/slugs.ts", "utf8");
+const TERUG = new Map();
+for (const m of slugsBron.matchAll(/const NAAR_([A-Z]{2})[\s\S]*?\n};/g)) {
+  const taal = m[1].toLowerCase();
+  const tabel = new Map();
+  for (const p of m[0].matchAll(/^\s*"?([A-Za-z0-9-]+)"?:\s*"([^"]+)",/gm)) {
+    tabel.set(p[2], p[1]);
+  }
+  TERUG.set(taal, tabel);
+}
+
+function nederlandsPad(pad) {
+  const taal = pad.match(/^\/([a-z]{2})(\/|$)/)?.[1];
+  const tabel = taal && TERUG.get(taal);
+  if (!tabel) return pad;
+  const rest = pad.slice(taal.length + 1);
+  if (!rest) return "/";
+  return (
+    "/" +
+    rest
+      .split("/")
+      .filter(Boolean)
+      .map((d) => tabel.get(d) ?? d)
+      .join("/")
+  );
+}
+
 const JURIDISCH = [
   "/algemene-voorwaarden",
   "/privacybeleid",
@@ -187,10 +223,19 @@ for (const pad of paden) {
     problemen.push(`${pad}: vlag in alt-tekst "${vlagInAlt[0]}"`);
   }
 
-  /* De Engelse tegenhanger van een pagina volgt dezelfde uitzondering: /en/verwijzers is
-     dezelfde pagina als /verwijzers, alleen in een andere taal. */
-  const kaalPad = pad.startsWith("/en/") ? pad.slice(3) : pad;
-  if (!JURIDISCH.includes(kaalPad)) {
+  /* De vertaalde tegenhanger van een pagina volgt dezelfde uitzondering: /en/referrers en
+     /es/derivaciones zijn dezelfde pagina als /verwijzers, alleen in een andere taal.
+
+     Het voorvoegsel eraf is genoeg; de slug erachter hoeft niet terugvertaald te worden,
+     want de uitzonderingen gelden per pagina en die staan hieronder toch al met hun
+     Nederlandse naam. Wat wél moet: elke taal, en niet alleen /en. Toen het Spaans erbij
+     kwam meldde deze regel /es/derivaciones als overtreding terwijl /verwijzers de u-vorm
+     juist hóórt te gebruiken. */
+  const kaalPad = nederlandsPad(pad);
+  /* Alleen op het Nederlands. De u-vorm is een regel over de Nederlandse aanspreekvorm;
+     in het Spaans is "u" het woord voor "of" vóór een o- ("marrones u oscuras") en meldde
+     deze regel dus onzin. Het Engels kent het woord helemaal niet. */
+  if (nederlandsPad(pad) === pad && !JURIDISCH.includes(kaalPad)) {
     const u = tekst.match(U_VORM);
     if (u) {
       const regel = tekst
@@ -219,6 +264,52 @@ for (const pad of paden) {
   );
   if (over > 0) {
     problemen.push(`${pad}: ${over}px horizontale overloop op mobiel`);
+  }
+}
+
+/*
+ * De cijfers van §11, op de homepage van elke taal.
+ *
+ * WAAROM DIT EEN EIGEN CONTROLE IS. De regel "alleen deze cijfers" ging tot nu toe over de
+ * bron: staat er geen ander getal in de teksten. Dat dekt niet wat de opmaak ermee doet.
+ * Op 15 september 2026 kreeg `getal()` een standaard van nul decimalen, en daarmee werd het
+ * Zorgkaart-cijfer 9,7 in alle drie de talen een ronde 10. Geen enkele meting zag dat: het
+ * is geen Nederlands woord, geen verkeerde notatie en geen vlag — het is gewoon een ander
+ * cijfer dan wat er hoort te staan.
+ *
+ * Drie pagina's, vier exacte tekenreeksen per taal, geen valse meldingen.
+ */
+const site = readFileSync("src/lib/site.ts", "utf8");
+const uitSite = (naam) =>
+  Number(site.match(new RegExp(naam + "\\s*[:=]\\s*([0-9.]+)"))?.[1]);
+
+const ZORGKAART = uitSite("score");
+const SALONIZED = uitSite("DIBA_SALONIZED_RATING");
+const REVIEWS = uitSite("DIBA_SALONIZED_REVIEW_COUNT");
+
+const HOMES = [
+  { pad: "/", code: "nl-NL" },
+  { pad: "/en", code: "en-GB" },
+  { pad: "/es", code: "es-ES" },
+];
+
+for (const { pad, code } of HOMES) {
+  const res = await page.goto(BASIS + pad, { waitUntil: "domcontentloaded" });
+  if (!res || res.status() >= 400) continue;
+  const tekst = await page.evaluate(() => document.body.innerText);
+  const eendecimaal = new Intl.NumberFormat(code, {
+    minimumFractionDigits: 1,
+    maximumFractionDigits: 1,
+  });
+  const heel = new Intl.NumberFormat(code);
+  for (const verwacht of [
+    eendecimaal.format(ZORGKAART),
+    eendecimaal.format(SALONIZED),
+    heel.format(REVIEWS),
+  ]) {
+    if (!tekst.includes(verwacht)) {
+      problemen.push(`${pad}: cijfer "${verwacht}" staat niet op de pagina`);
+    }
   }
 }
 

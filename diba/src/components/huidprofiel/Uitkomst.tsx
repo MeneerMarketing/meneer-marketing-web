@@ -24,6 +24,7 @@ import {
 import { publicCopy } from "@/lib/copy-flags";
 import { useT, useTc } from "@/lib/gebruik-taal";
 
+import { useTaal } from "@/lib/gebruik-taal";
 /**
  * De uitkomst van het huidprofiel.
  *
@@ -98,6 +99,7 @@ function Regel({ kop, waarde }: { kop: string; waarde: string }) {
 export default function Uitkomst({ profiel }: Props) {
   const tc = useTc();
   const t = useT();
+  const taal = useTaal();
   const stand = compleetheid(profiel);
   const matches = useMemo(() => maakMatches(profiel), [profiel]);
   const past = matches.filter((m) => m.oordeel === "past");
@@ -275,7 +277,7 @@ export default function Uitkomst({ profiel }: Props) {
                       </span>
                     </span>
                     <span className="shrink-0 text-[15px] leading-7 text-[var(--t-muted)] tabular-nums">
-                      {tc(prijsTekst(m.behandeling.prijs))}
+                      {tc(prijsTekst(m.behandeling.prijs, taal))}
                     </span>
                   </span>
 
@@ -488,7 +490,9 @@ export default function Uitkomst({ profiel }: Props) {
             {[
               [
                 "Wat het kost",
-                huidanalyse ? prijsTekst(huidanalyse.prijs) : tc("Op aanvraag"),
+                huidanalyse
+                  ? prijsTekst(huidanalyse.prijs, taal)
+                  : tc("Op aanvraag"),
               ],
               [
                 "Hersteltijd",

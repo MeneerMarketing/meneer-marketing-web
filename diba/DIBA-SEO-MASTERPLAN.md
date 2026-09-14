@@ -402,7 +402,8 @@ bestand gaat wel mee in elke deploy. Nakijken en weghalen.
 
 ### 6c. hreflang, zodra er een tweede taal is (gedaan voor het Engels, 12 september 2026)
 
-De taalkiezer belooft Engels, Spaans en Frans. Zodra de eerste er staat, is hreflang
+De taalkiezer beloofde Engels, Spaans en Frans. Het Frans is er op 15 september 2026 uit
+gehaald: het bestond nergens, geen woordenboek en geen route. Zodra de eerste taal er staat, is hreflang
 verplicht; zonder dat gaan de vertalingen met het Nederlands concurreren in plaats van het
 te versterken. Plan de URL-structuur (`/en/...`) vóór de eerste vertaling en niet erna.
 

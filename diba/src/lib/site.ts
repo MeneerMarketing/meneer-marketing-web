@@ -1,4 +1,6 @@
 /** Canonieke site- en bedrijfsgegevens. Enige bron voor NAP/SEO. */
+import { getal } from "@/lib/getallen";
+import type { Taal } from "@/lib/taal";
 
 export { DIBA_CITAAT } from "./schema";
 
@@ -251,16 +253,22 @@ const AANTAL = {
   behandelingen: 55000,
 } as const;
 
-/** "10.000+" uit 10000. Eén plek waar de vorm wordt bepaald. */
-function metPlus(aantal: number): string {
-  return `${aantal.toLocaleString("nl-NL")}+`;
+/**
+ * "10.000+" uit 10000, en "10,000+" op de Engelse kant.
+ *
+ * Stond hier als vaste tekst, berekend bij het laden van de module. Dat kon niet blijven:
+ * bij het laden is de taal nog niet bekend, en het Engels schrijft de duizendscheiding met
+ * een komma. Op /en stond dus "10.000+", en dat leest een Engelstalige als tien.
+ */
+export function metPlus(aantal: number, taal: Taal): string {
+  return `${getal(aantal, taal)}+`;
 }
 
 export const DIBA_PROOF = {
   activeSince: 2017,
-  helpedClients: metPlus(AANTAL.geholpenKlanten),
-  treatmentsPerformed: metPlus(AANTAL.behandelingen),
-  clientReviews: DIBA_SALONIZED_REVIEW_COUNT.toLocaleString("nl-NL"),
+  helpedClients: AANTAL.geholpenKlanten,
+  treatmentsPerformed: AANTAL.behandelingen,
+  clientReviews: DIBA_SALONIZED_REVIEW_COUNT,
 } as const;
 
 /** Numerieke waarden voor ProofStrip count-up (§11, enige bron) */

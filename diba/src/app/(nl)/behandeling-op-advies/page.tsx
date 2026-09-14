@@ -43,7 +43,9 @@ export const metadata: Metadata = zoekmachineVelden({
 });
 
 const intake = behandelingVoorSlug("huidanalyse");
-const intakeBedrag = intake ? prijsTekst(intake.prijs) : "een vast bedrag";
+const intakeBedrag = intake
+  ? prijsTekst(intake.prijs, "nl")
+  : "een vast bedrag";
 
 /** Waar mensen advies over vragen. In hun woorden, niet in behandelnamen. */
 const HULPVRAGEN = [
@@ -238,8 +240,7 @@ export default function BehandelingOpAdviesPage() {
                   dienstenlijst in Salonized. Ze staan in ADVIES_MINUTEN, want ze komen op
                   meer plekken terug dan deze kaart. */}
               <p className="diba-label mt-3 text-[var(--t-label)]">
-                {ADVIES_MINUTEN.nieuw}{" "}
-                {t("minuten gereserveerd")}
+                {ADVIES_MINUTEN.nieuw} {t("minuten gereserveerd")}
               </p>
               <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
                 {t("We reserveren")} {ADVIES_MINUTEN.nieuw}{" "}
@@ -305,8 +306,7 @@ export default function BehandelingOpAdviesPage() {
                 {t("Behandeling op advies")}
               </p>
               <p className="diba-label mt-3 text-[var(--t-label)]">
-                {ADVIES_MINUTEN.bestaand}{" "}
-                {t("minuten gereserveerd")}
+                {ADVIES_MINUTEN.bestaand} {t("minuten gereserveerd")}
               </p>
               <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
                 {t(

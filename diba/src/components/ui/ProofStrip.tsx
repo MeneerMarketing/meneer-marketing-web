@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { useTc } from "@/lib/gebruik-taal";
+import { useTaal, useTc } from "@/lib/gebruik-taal";
+import { getal } from "@/lib/getallen";
+import type { Taal } from "@/lib/taal";
 
 /**
  * DIBA ProofStrip v3 — VERVANGT v2 (handtekening-batch 3.5, Addendum A3/A11)
@@ -23,9 +25,8 @@ export type ProofItem = {
   label: string;
 };
 
-const nf = new Intl.NumberFormat("nl-NL");
-const fmt = (item: ProofItem, n: number) =>
-  item.label === "Actief sinds" ? String(n) : nf.format(n);
+const fmt = (item: ProofItem, n: number, taal: Taal) =>
+  item.label === "Actief sinds" ? String(n) : getal(n, taal);
 
 function easeOut(t: number) {
   return 1 - Math.pow(1 - t, 3);
@@ -44,6 +45,7 @@ export default function ProofStrip({
   highlightLabel?: string;
 }) {
   const tc = useTc();
+  const taal = useTaal();
   const ref = useRef<HTMLDListElement>(null);
   const [progress, setProgress] = useState(1); // SSR: definitieve waarden
   const started = useRef(false);
@@ -100,7 +102,7 @@ export default function ProofStrip({
                           [font-family:var(--font-display)] font-semibold tracking-[0.02em]
                           [font-variant-numeric:tabular-nums]`}
             >
-              {fmt(item, shown)}
+              {fmt(item, shown, taal)}
               {item.suffix ?? ""}
             </dd>
             <dt

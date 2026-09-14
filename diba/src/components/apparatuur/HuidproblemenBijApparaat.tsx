@@ -3,6 +3,7 @@ import Label from "@/components/ui/Label";
 import type { Apparaat } from "@/data/apparatuur";
 import { BEHANDELINGEN, prijsTekst } from "@/data/behandelingen";
 import { t, tc } from "@/lib/vertaal";
+import { taalNu } from "@/lib/taalcontext";
 
 /**
  * Welke huidklachten we met dit apparaat behandelen.
@@ -91,10 +92,10 @@ export default function HuidproblemenBijApparaat({
                 </Link>
               </h3>
 
-              {/* De behandelingen die hier op dit apparaat voor worden ingezet. Drie
-                  regelhoogtes gereserveerd, zodat de kaarten in een rij gelijk blijven
-                  ook als de ene klacht er twee heeft en de andere een. */}
-              <ul className="mt-4 md:min-h-[3lh] grow space-y-2">
+              {/* De behandelingen die hier op dit apparaat voor worden ingezet. Geen
+                  reservering: `grow` vangt het verschil al op, dus wat hieronder staat ligt
+                  in elke kaart op de onderrand. Zie `huidproblemen/striae/page.tsx`. */}
+              <ul className="mt-4 grow space-y-2">
                 {k.behandelingen.map((b) => (
                   <li
                     key={b.slug}
@@ -107,7 +108,7 @@ export default function HuidproblemenBijApparaat({
                       {tc(b.naam)}
                     </Link>
                     <span className="shrink-0 text-[14px] leading-6 text-[var(--t-muted)] tabular-nums">
-                      {tc(prijsTekst(b.prijs))}
+                      {tc(prijsTekst(b.prijs, taalNu()))}
                     </span>
                   </li>
                 ))}

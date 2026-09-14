@@ -11,6 +11,7 @@
 import { DIBA_OPENINGSTIJDEN } from "@/lib/site";
 import { t, tc } from "@/lib/vertaal";
 import { taalNu } from "@/lib/taalcontext";
+import { TAALCODES, anderePad } from "@/lib/taal";
 
 export const DIBA_CITAAT =
   "Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.";
@@ -71,6 +72,28 @@ export function faqSchema(items: { question: string; answer: string }[]) {
   } as const;
 }
 
+/**
+ * Hetzelfde kruimelpad, maar met de Engelse adressen als de pagina Engels is.
+ *
+ * De kruimels worden op de Nederlandse pagina geschreven en de Engelse route rendert
+ * diezelfde pagina. Zonder deze omzetting stond er in het kruimelpad van
+ * /en/huidproblemen/acne dat de bovenliggende pagina /huidproblemen is: een Nederlands
+ * adres, terwijl de canonical en de hreflang van diezelfde pagina naar /en wijzen. Dat
+ * zijn twee tegengestelde signalen over hetzelfde pad, en Google gelooft er dan geen van
+ * beide.
+ */
+function kruimeladres(url: string): string {
+  const taal = taalNu();
+  if (taal === "nl") return url;
+  const merk = "https://dibaclinics.nl";
+  const heel = url.startsWith(merk);
+  const pad = heel ? url.slice(merk.length) || "/" : url;
+  if (!pad.startsWith("/")) return url;
+  const eigen = anderePad(pad, taal);
+  if (!eigen) return url;
+  return heel ? `${merk}${eigen === "/" ? "" : eigen}` : eigen;
+}
+
 export function breadcrumbSchema(items: { name: string; url: string }[]) {
   return {
     "@context": "https://schema.org",
@@ -79,7 +102,7 @@ export function breadcrumbSchema(items: { name: string; url: string }[]) {
       "@type": "ListItem",
       position: idx + 1,
       name: tc(i.name),
-      item: i.url,
+      item: kruimeladres(i.url),
     })),
   } as const;
 }
@@ -346,7 +369,7 @@ export function medischePaginaSchema(opts: {
     name: tc(opts.naam),
     description: tc(opts.omschrijving),
     url: opts.url,
-    inLanguage: taalNu() === "en" ? "en-GB" : "nl-NL",
+    inLanguage: TAALCODES[taalNu()].html,
     dateModified: opts.gewijzigd,
     isPartOf: { "@id": `${opts.siteUrl}#kliniek` },
     ...(opts.overProcedure ? { about: { "@id": opts.overProcedure } } : {}),

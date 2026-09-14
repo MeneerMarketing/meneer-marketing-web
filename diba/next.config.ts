@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 import { LEGACY_REDIRECTS } from "./src/data/redirects";
+import { EN_SLUG_REDIRECTS } from "./src/data/redirects-en";
+import { OUDE_SITE_REDIRECTS } from "./src/data/redirects-oud";
 
 const nextConfig: NextConfig = {
   /**
@@ -45,8 +47,23 @@ const nextConfig: NextConfig = {
      */
     qualities: [75, 92],
   },
+  /**
+   * De omleidingen, in deze volgorde.
+   *
+   * Next leest ze van boven naar beneden en de eerste die past wint. Dat is hier geen
+   * detail: `redirects-oud.ts` sluit af met een paar hele takken (`/blog/:pad*`), en die
+   * mogen pas aan de beurt komen als de losse adressen erboven niet gepast hebben.
+   *
+   * Omleidingen worden bovendien vóór de routes afgehandeld. Een bron die toevallig ook
+   * een echte pagina van ons is, maakt die pagina dus onbereikbaar. `npm run omleidingen`
+   * loopt de hele lijst na en meldt dat.
+   */
   async redirects() {
-    return LEGACY_REDIRECTS.map((r) => ({
+    return [
+      ...LEGACY_REDIRECTS,
+      ...EN_SLUG_REDIRECTS,
+      ...OUDE_SITE_REDIRECTS,
+    ].map((r) => ({
       source: r.source,
       destination: r.destination,
       permanent: true,

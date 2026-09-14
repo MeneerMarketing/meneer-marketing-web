@@ -6,6 +6,7 @@ import { Whatsapp } from "@/components/ui/Icon";
 import { DIBA_WHATSAPP_URL } from "@/lib/site";
 import { useT } from "@/lib/gebruik-taal";
 import { inTaal } from "@/lib/taalpad";
+import { anderePad, VREEMDE_TALEN } from "@/lib/taal";
 
 /**
  * De actiebalk onderaan het scherm, alleen op een telefoon.
@@ -40,12 +41,14 @@ const HOOGTE = "4.5rem";
  * pagina waar je al bent (Yasin, 12 september 2026). Op /contact geldt hetzelfde voor het
  * formulier: daar ben je al aan het doen waar de balk om vraagt.
  */
-const NIET_OP = new Set([
-  "/afspraak",
-  "/contact",
-  "/en/afspraak",
-  "/en/contact",
-]);
+/* Per taal, want /afspraak heet op de Engelse kant /en/book en op de Spaanse /es/cita.
+   Een vaste lijst met adressen liep daarmee uit de pas zodra de slugs vertaald werden. */
+const NIET_OP = new Set(
+  ["/afspraak", "/contact"].flatMap((pad) => [
+    pad,
+    ...VREEMDE_TALEN.map((taal) => anderePad(pad, taal)),
+  ]),
+);
 
 export default function MobieleActiebalk() {
   const pad = usePathname() ?? "/";

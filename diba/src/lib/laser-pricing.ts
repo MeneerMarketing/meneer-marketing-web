@@ -3,6 +3,9 @@ import {
   type LaserGeslacht,
   type LaserZone,
 } from "@/data/laser-zones";
+import { euro } from "@/lib/getallen";
+import { vertaal } from "@/lib/vertaal";
+import type { Taal } from "@/lib/taal";
 
 /**
  * De rekenkern van de laserconfigurator.
@@ -16,22 +19,15 @@ import {
  * een aanbieding, en dat is precies het soort verwachting dat §7 verbiedt.
  */
 
-const euro = new Intl.NumberFormat("nl-NL", {
-  style: "currency",
-  currency: "EUR",
-  minimumFractionDigits: 0,
-  maximumFractionDigits: 0,
-});
-
 export const PRIJS_ONBEKEND = "Nog niet bekend";
 
 /**
  * Gaf eerder letterlijk "[PRIJS-NODIG]" terug, en dat stond dus als vlag op het scherm bij
  * iedereen die de configurator opende. Vlaggen horen in de broncode, niet in beeld.
  */
-export function formatLaserPrice(value: number): string {
-  if (value === 0) return PRIJS_ONBEKEND;
-  return euro.format(value);
+export function formatLaserPrice(value: number, taal: Taal): string {
+  if (value === 0) return vertaal(PRIJS_ONBEKEND, taal);
+  return euro(value, taal);
 }
 
 export type LaserPriceLine = {
@@ -60,6 +56,7 @@ function zoneById(id: string): LaserZone | undefined {
  */
 export function calculateLaserPrice(
   selectedZoneIds: readonly string[],
+  taal: Taal,
 ): LaserPriceSummary {
   const packages = selectedZoneIds.filter(
     (id) => zoneById(id)?.area === "pakket",
@@ -85,7 +82,7 @@ export function calculateLaserPrice(
         zoneId: id,
         label: z.label,
         amount: z.singlePrice,
-        formatted: formatLaserPrice(z.singlePrice),
+        formatted: formatLaserPrice(z.singlePrice, taal),
       };
     })
     .filter((l): l is LaserPriceLine => l !== null);
@@ -95,7 +92,7 @@ export function calculateLaserPrice(
   return {
     lines,
     subtotal,
-    formattedSubtotal: formatLaserPrice(subtotal),
+    formattedSubtotal: formatLaserPrice(subtotal, taal),
     hasMissingPrices: lines.some((l) => l.amount === 0),
     zoneCount: lines.length,
   };

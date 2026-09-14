@@ -8,7 +8,10 @@ export const LEGACY_REDIRECTS: readonly {
 }[] = [
   { source: "/over", destination: "/over-ons" },
   { source: "/about", destination: "/over-ons" },
-  { source: "/prijs", destination: "/prijzen" },
+  /* Rechtstreeks naar /tarieven en niet via /prijzen. Dat laatste leidt zelf ook door
+     (zie onderaan), en twee sprongen is een verzoek extra waar Google minder van de
+     opgebouwde waarde doorheen geeft. `npm run omleidingen` meldt zulke kettingen. */
+  { source: "/prijs", destination: "/tarieven" },
   /* /afspraak wees hierheen zolang er geen boekpagina was. Sinds 10 september 2026 is die
      er wel: de agenda van Salonized staat daar op onze eigen pagina, dus deze omleiding is
      weg. /boeken blijft wijzen, nu naar diezelfde pagina. */
@@ -82,12 +85,8 @@ export const LEGACY_REDIRECTS: readonly {
   /* De klachtenpagina is uit de site (Yasin, 5 september 2026). De wettelijke uitleg
      staat op /kwaliteit-en-registraties; wie de oude URL heeft komt bij contact uit. */
   { source: "/klachten", destination: "/contact" },
-  /* De vier Engelse pagina's met een eigen adres zijn op 13 september 2026 vervallen: het
-     waren losse kopieën die het woordenboek niet gebruikten, en dus liepen ze uit de pas
-     met het Nederlands. Elk Engels adres is nu het Nederlandse met /en ervoor. Deze
-     omleidingen houden de oude adressen in de lucht. */
-  { source: "/en/prices", destination: "/en/tarieven" },
-  { source: "/en/book", destination: "/en/afspraak" },
-  { source: "/en/treatments", destination: "/en/behandelingen" },
-  { source: "/en/treatments/:slug", destination: "/en/behandelingen/:slug" },
+  /* Hier stonden vier omleidingen van /en/prices, /en/book en /en/treatments naar het
+     Nederlandse adres met /en ervoor. Die zijn op 14 september 2026 vervallen: sindsdien
+     zijn dat juist de goede adressen. De omleidingen de andere kant op staan in
+     `redirects-en.ts`, en die lijst wordt gegenereerd. */
 ] as const;

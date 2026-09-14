@@ -1,7 +1,6 @@
 import NextLink from "next/link";
 import type { ComponentProps } from "react";
-import { inTaal } from "@/lib/taalpad";
-import { taalNu } from "@/lib/taalcontext";
+import { eigenPad } from "@/lib/eigen-pad";
 
 /**
  * Dezelfde taalbewuste link als `Taalpad`, maar voor server components.
@@ -16,9 +15,6 @@ import { taalNu } from "@/lib/taalcontext";
 type Props = ComponentProps<typeof NextLink>;
 
 export default function Link({ href, ...rest }: Props) {
-  const doel =
-    typeof href === "string"
-      ? inTaal(href, taalNu() === "en" ? "/en" : "/")
-      : href;
+  const doel = typeof href === "string" ? eigenPad(href) : href;
   return <NextLink href={doel} {...rest} />;
 }

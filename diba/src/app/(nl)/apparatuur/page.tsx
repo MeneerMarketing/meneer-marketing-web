@@ -37,7 +37,9 @@ import { t, tc } from "@/lib/vertaal";
  * twee en zeg 'en meer'").
  */
 const consult = behandelingVoorSlug("huidanalyse");
-const intakeBedrag = consult ? `${prijsCijfer(consult.prijs)} euro` : "50 euro";
+const intakeBedrag = consult
+  ? `${prijsCijfer(consult.prijs, "nl")} euro`
+  : "50 euro";
 
 function waarvoor(slugs: readonly string[]): string {
   const namen = slugs

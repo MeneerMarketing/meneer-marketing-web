@@ -1,4 +1,4 @@
-import { WOORDENBOEK } from "@/i18n/en";
+import { WOORDENBOEKEN } from "@/i18n";
 import { publicCopy } from "@/lib/copy-flags";
 import { taalNu } from "@/lib/taalcontext";
 import type { Taal } from "@/lib/taal";
@@ -24,19 +24,18 @@ import type { Taal } from "@/lib/taal";
  * komen in plaats van stilletjes de oude Engelse tekst te houden.
  */
 export function t(nl: string): string {
-  if (taalNu() !== "en") return nl;
-  return WOORDENBOEK[nl] ?? nl;
+  return vertaal(nl, taalNu());
 }
 
 /** Dezelfde vertaling, met de taal er expliciet bij. Voor client components. */
 export function vertaal(nl: string, taal: Taal): string {
-  if (taal !== "en") return nl;
-  return WOORDENBOEK[nl] ?? nl;
+  if (taal === "nl") return nl;
+  return WOORDENBOEKEN[taal][nl] ?? nl;
 }
 
-/** Staat deze tekst al in het woordenboek? Voor de voortgangsmeting. */
-export function isVertaald(nl: string): boolean {
-  return Object.prototype.hasOwnProperty.call(WOORDENBOEK, nl);
+/** Staat deze tekst al in het woordenboek van deze taal? Voor de voortgangsmeting. */
+export function isVertaald(nl: string, taal: Taal = "en"): boolean {
+  return Object.prototype.hasOwnProperty.call(WOORDENBOEKEN[taal], nl);
 }
 
 /**

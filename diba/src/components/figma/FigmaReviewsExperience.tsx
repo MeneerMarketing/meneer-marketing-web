@@ -6,7 +6,7 @@ import FigmaReviewCard from "@/components/figma/FigmaReviewCard";
 import FigmaSoftAccent from "@/components/figma/FigmaSoftAccent";
 import Button from "@/components/ui/Button";
 import Label from "@/components/ui/Label";
-import { useT, useTc } from "@/lib/gebruik-taal";
+import { useT, useTaal, useTc } from "@/lib/gebruik-taal";
 import {
   REVIEW_TOPICS,
   reviewCountForTopic,
@@ -18,6 +18,7 @@ import {
   SALONIZED_REVIEWS_URL,
   SALONIZED_REVIEW_SUMMARY,
 } from "@/data/salonized-reviews";
+import { getal } from "@/lib/getallen";
 
 const PAGE_SIZE = 12;
 
@@ -36,6 +37,12 @@ export default function FigmaReviewsExperience({
 }: FigmaReviewsExperienceProps) {
   const tc = useTc();
   const t = useT();
+  const taal = useTaal();
+  const cijfer = getal(SALONIZED_REVIEW_SUMMARY.rating, taal, {
+    minimumFractionDigits: 1,
+    maximumFractionDigits: 1,
+  });
+  const aantal = getal(SALONIZED_REVIEW_SUMMARY.count, taal);
   const [topic, setTopic] = useState<ReviewTopic>("alle");
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [activeFeatured, setActiveFeatured] = useState(0);
@@ -134,11 +141,10 @@ export default function FigmaReviewsExperience({
               <div>
                 <Label opDonker>{t("Live uit Salonized")}</Label>
                 <p className="mt-3 text-[clamp(2.5rem,5vw,4rem)] font-medium leading-none tracking-[-.08em] text-white tabular-nums">
-                  {SALONIZED_REVIEW_SUMMARY.rating.toFixed(1).replace(".", ",")}
+                  {cijfer}
                 </p>
                 <p className="mt-2 text-[15px] text-[var(--on-dark-body)]">
-                  {SALONIZED_REVIEW_SUMMARY.countFormatted}
-                  {t("reviews, echt en openbaar")}
+                  {aantal} {t("reviews, echt en openbaar")}
                 </p>
               </div>
               <div className="flex items-center gap-2">
@@ -249,8 +255,7 @@ export default function FigmaReviewsExperience({
             rel="noopener noreferrer"
             className="font-medium text-[var(--g-700)] underline underline-offset-4"
           >
-            {SALONIZED_REVIEW_SUMMARY.countFormatted}
-            {t("reviews op Salonized")}
+            {aantal} {t("reviews op Salonized")}
           </Link>
           .
         </p>

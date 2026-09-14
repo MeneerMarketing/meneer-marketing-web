@@ -24,6 +24,10 @@
     "uitblok": "node scripts/controleer-uitblok.mjs",
     "vertaalstand": "node scripts/vertaalstand.mjs",
     "spaties": "node scripts/controleer-spaties.mjs",
+    "taallinks": "node scripts/controleer-taallinks.mjs",
+    "vreemdetaal": "node scripts/controleer-vreemdetaal.mjs",
+    "witruimte": "node scripts/controleer-witruimte.mjs",
+    "omleidingen": "node scripts/controleer-omleidingen.mjs",
     "ontdubbel": "py scratch/ontdubbel.py"
   },
   "dependencies": {

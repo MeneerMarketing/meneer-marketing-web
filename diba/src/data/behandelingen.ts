@@ -26,6 +26,10 @@
  *     Hoe diep komt deze behandeling, en wat kost dat aan hersteltijd?
  */
 
+import { euro, getal } from "@/lib/getallen";
+import { vertaal } from "@/lib/vertaal";
+import type { Taal } from "@/lib/taal";
+
 /**
  * De prijzen hieronder zijn de gepubliceerde tarieven van de kliniek zelf. Er staat dus
  * geen voorlopigheidsvlag meer bij; die hoort nu alleen nog bij de laserzones.
@@ -34,19 +38,8 @@
  * staat in `prijsTekst`, en het is belangrijker dan het lijkt: wie € 0 ziet staan denkt
  * aan een aanbieding.
  */
-const getal = new Intl.NumberFormat("nl-NL", {
-  maximumFractionDigits: 0,
-});
-
-const euro = new Intl.NumberFormat("nl-NL", {
-  style: "currency",
-  currency: "EUR",
-  minimumFractionDigits: 0,
-  maximumFractionDigits: 0,
-});
-
-export function prijsTekst(bedrag: number): string {
-  return bedrag === 0 ? "Op aanvraag" : euro.format(bedrag);
+export function prijsTekst(bedrag: number, taal: Taal): string {
+  return bedrag === 0 ? vertaal("Op aanvraag", taal) : euro(bedrag, taal);
 }
 
 /**
@@ -58,8 +51,10 @@ export function prijsTekst(bedrag: number): string {
  * ontbrekend woord. Vandaar twee functies en niet een instelling: de lijsten gebruiken
  * `prijsCijfer`, de zinnen `prijsTekst`.
  */
-export function prijsCijfer(bedrag: number): string {
-  return bedrag === 0 ? "Op aanvraag" : getal.format(bedrag);
+export function prijsCijfer(bedrag: number, taal: Taal): string {
+  return bedrag === 0
+    ? vertaal("Op aanvraag", taal)
+    : getal(bedrag, taal, { maximumFractionDigits: 0 });
 }
 
 /**

@@ -20,6 +20,19 @@
  *
  * Kaarten die met opzet verschillen in vorm, zoals de drie blokken op de homepage waarvan
  * er een een foto is. Die hebben geen tekstblok aan het eind en vallen dus af.
+ *
+ * WAAROM DIT GETAL OP 15 SEPTEMBER 2026 OMHOOG SPRONG.
+ *
+ * Dit meet de hóógte van het laatste tekstblok, en op tientallen plekken stond daar een
+ * `min-h-[3lh]` of hoger op. Zo'n reservering maakte twee regels net zo hoog als drie, dus
+ * deze controle zag overal gelijke rijen terwijl de teksten dat niet waren. Die
+ * reserveringen zijn weg (zie `scripts/controleer-witruimte.mjs`), en daarmee ziet deze
+ * controle weer wat er echt staat.
+ *
+ * Er is dus niets scheef geworden; het was al scheef en werd opgevuld. Aan het beeld
+ * verandert het niets — kaarten in een raster rekken sowieso tot dezelfde hoogte, dus die
+ * regels ruimte stonden ofwel binnen het tekstblok ofwel eronder. Wat deze lijst nu zegt is
+ * een schrijfklus: de kaarten in een rij even lang maken.
  */
 import { chromium } from "playwright";
 import { readFileSync } from "fs";

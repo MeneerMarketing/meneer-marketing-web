@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import DibaLogo from "@/components/ui/DibaLogo";
 import { HOOFDNAV, type NavItem } from "@/data/hoofdnavigatie";
+import { eersteZin } from "@/lib/copy-flags";
 import { useT, useTc } from "@/lib/gebruik-taal";
 import {
   DIBA_OPENINGSTIJDEN,
@@ -447,7 +448,7 @@ function Paneel({
                         </span>
                         {l.zin ? (
                           <span className="block truncate text-[13px] leading-5 text-[var(--t-muted)]">
-                            {t(l.zin)}
+                            {eersteZin(t(l.zin))}
                           </span>
                         ) : null}
                       </Link>
@@ -851,7 +852,7 @@ function MobielPaneel({ onSluit }: { onSluit: () => void }) {
                           </span>
                           {l.zin ? (
                             <span className="mt-0.5 block truncate text-[13px] leading-5 text-[var(--t-muted)]">
-                              {t(l.zin)}
+                              {eersteZin(t(l.zin))}
                             </span>
                           ) : null}
                         </span>

@@ -5,7 +5,12 @@ import { usePathname } from "next/navigation";
 import { useRef } from "react";
 import { onthoudTaal } from "@/components/nav/TaalLink";
 import { useSluitBuiten } from "@/lib/sluit-buiten";
-import { anderePad, taalVanPad, type Taal as Taalcode } from "@/lib/taal";
+import {
+  anderePad,
+  TAAL_AF,
+  taalVanPad,
+  type Taal as Taalcode,
+} from "@/lib/taal";
 
 /**
  * De taalkiezer in de topbalk.
@@ -18,39 +23,46 @@ import { anderePad, taalVanPad, type Taal as Taalcode } from "@/lib/taal";
  * klikte kreeg niets, want er zat geen link onder. De hele vertaling was daarmee alleen
  * te vinden door /en in de adresbalk te typen.
  *
- * Nederlands en Engels zijn nu echte links naar dezelfde pagina in de andere taal.
- * Spaans en Frans staan er zichtbaar bij en zijn nog niet te kiezen; dat is eerlijker dan
- * ze verbergen en later toveren, en het laat meteen zien welke kant het op gaat.
+ * HIER STAAT ALLEEN WAT AF IS.
  *
- * Bij die twee staat "binnenkort" in hun eigen taal en niet in het Nederlands (Yasin,
- * 11 september 2026). Dat is het hele punt van de regel: hij is voor iemand die de
- * Nederlandse site niet leest, en die heeft aan "Straks" niets.
+ * Er stonden vier talen in: twee echte, en Spaans en Frans met "Pronto" en "Bientôt"
+ * erachter. Dat leek eerlijk — laten zien welke kant het op gaat — maar het is het niet.
+ * Een taal die je toont zonder hem te kunnen kiezen is een belofte in een menu, en het
+ * Frans bestond bovendien nergens: geen woordenboek, geen route, geen regel tekst.
+ *
+ * Het Frans is daarom helemaal weg, en het Spaans staat er pas in zodra het af is. Yasin,
+ * 15 september 2026: "franse taal moet er volledig uit en spaans moet uit de language
+ * switcher ook tijdelijk eruit totdat we klaar daarmee zijn."
+ *
+ * De lijst leest daarom `TAAL_AF` uit `lib/taal.ts` en niet een eigen rijtje. Eén
+ * schakelaar bepaalt of een taal in de kiezer staat, in de sitemap, in hreflang en of hij
+ * geïndexeerd wordt; die vier kunnen zo niet uit elkaar lopen.
  *
  * Gebouwd op `details`/`summary` en niet op React-state. Dat werkt met toetsenbord en
  * muis, en zonder JavaScript blijft het openklappen en navigeren gewoon werken; alleen
  * het onthouden van de keuze in het koekje gaat dan niet.
  *
  * De vlagkleuren staan hier hard en niet in het tokenblok. Dat is bewust: het zijn geen
- * merkkleuren maar de kleuren van vier landsvlaggen, en die zijn niet aan onze huisstijl
- * aan te passen.
+ * merkkleuren maar de kleuren van landsvlaggen, en die zijn niet aan onze huisstijl aan te
+ * passen.
  */
 
 type Taal = {
   readonly code: string;
   /** De taal in zijn eigen naam: English, niet Engels. */
   readonly naam: string;
-  /** Gezet voor de talen die de site echt spreekt. */
-  readonly taal?: Taalcode;
-  /** "Binnenkort", in die taal. Staat er alleen bij de talen die er nog niet zijn. */
-  readonly straks?: string;
+  readonly taal: Taalcode;
 };
 
-const TALEN: readonly Taal[] = [
+/** Alle talen die de site kent, in deze volgorde. */
+const ALLE_TALEN = [
   { code: "NL", naam: "Nederlands", taal: "nl" },
   { code: "EN", naam: "English", taal: "en" },
-  { code: "ES", naam: "Español", straks: "Pronto" },
-  { code: "FR", naam: "Français", straks: "Bientôt" },
-];
+  { code: "ES", naam: "Español", taal: "es" },
+] as const satisfies readonly Taal[];
+
+/** Waar je heen kunt: alleen de talen die af zijn. Zie `TAAL_AF`. */
+const TALEN: readonly Taal[] = ALLE_TALEN.filter((t) => TAAL_AF[t.taal]);
 
 function Vlag({ code }: { code: string }) {
   const gedeeld = {
@@ -65,15 +77,6 @@ function Vlag({ code }: { code: string }) {
         <rect width="20" height="14" fill="#fff" />
         <rect width="20" height="4.67" fill="#ae1c28" />
         <rect y="9.33" width="20" height="4.67" fill="#21468b" />
-      </svg>
-    );
-  }
-  if (code === "FR") {
-    return (
-      <svg viewBox="0 0 20 14" {...gedeeld} aria-hidden="true">
-        <rect width="20" height="14" fill="#fff" />
-        <rect width="6.67" height="14" fill="#002395" />
-        <rect x="13.33" width="6.67" height="14" fill="#ed2939" />
       </svg>
     );
   }
@@ -126,7 +129,11 @@ export default function Taalkiezer({ opBeeld = false }: TaalkiezerProps) {
 
   const pad = usePathname() ?? "/";
   const nu = taalVanPad(pad);
-  const huidig = TALEN.find((t) => t.taal === nu) ?? TALEN[0];
+  /* Wat er in de balk staat komt uit `ALLE_TALEN` en niet uit `TALEN`: wie een adres van
+     een taal-in-wording intypt, hoort te zien in welke taal hij staat. Stond dit op de
+     kieslijst, dan zei de balk "NL" boven een Spaanse pagina. Kiezen kan alleen uit de
+     talen die af zijn, en dat is `TALEN` hieronder. */
+  const huidig = ALLE_TALEN.find((t) => t.taal === nu) ?? ALLE_TALEN[0];
 
   return (
     <details ref={paneel} className="group relative">
@@ -195,6 +202,9 @@ export default function Taalkiezer({ opBeeld = false }: TaalkiezerProps) {
             );
           }
 
+          /* Geen doel: deze pagina heeft geen tegenhanger in die taal. De regel blijft
+             staan, grijs en zonder link, zodat de lijst niet van lengte verspringt
+             tussen twee pagina's. Zie `GEEN_VERTALING` in lib/taal.ts. */
           return (
             <li key={t.code}>
               <span
@@ -203,11 +213,6 @@ export default function Taalkiezer({ opBeeld = false }: TaalkiezerProps) {
               >
                 <Vlag code={t.code} />
                 {t.naam}
-                {t.straks ? (
-                  <span className="diba-label ml-auto text-[var(--t-muted)]">
-                    {t.straks}
-                  </span>
-                ) : null}
               </span>
             </li>
           );

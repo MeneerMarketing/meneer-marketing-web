@@ -24,6 +24,7 @@ import { DIBA_SITE_URL, DIBA_WHATSAPP_URL } from "@/lib/site";
 import LeesVerder from "@/components/ui/LeesVerder";
 import { t, tc } from "@/lib/vertaal";
 
+import { taalNu } from "@/lib/taalcontext";
 /**
  * Snurken — een klacht die bij Diba terechtkomt zonder dat het over de huid gaat.
  *
@@ -429,7 +430,10 @@ export default function SnurkenPage() {
                               `${nightlase.duurMinuten} minuten`,
                             ] as const)
                           : null,
-                        ["Per sessie", prijsTekst(nightlase.prijs)] as const,
+                        [
+                          "Per sessie",
+                          prijsTekst(nightlase.prijs, taalNu()),
+                        ] as const,
                       ].filter(Boolean) as readonly (readonly [
                         string,
                         string,

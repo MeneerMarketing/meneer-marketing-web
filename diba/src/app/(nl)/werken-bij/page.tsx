@@ -8,6 +8,7 @@ import {
   TEAM_SAMENSTELLING,
   VAKGEBIEDEN,
 } from "@/data/team";
+import { eigenPad } from "@/lib/eigen-pad";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
 import { DIBA_EMAIL, DIBA_SITE_URL } from "@/lib/site";
 import { zoekmachineVelden } from "@/lib/seo";
@@ -143,10 +144,10 @@ export default function WerkenBijPage() {
               {VACATURES.map((v) => (
                 <li key={v.slug}>
                   <a
-                    href={
+                    href={eigenPad(
                       v.pad ??
-                      `mailto:${DIBA_EMAIL}?subject=${encodeURIComponent(v.onderwerp)}`
-                    }
+                        `mailto:${DIBA_EMAIL}?subject=${encodeURIComponent(v.onderwerp)}`,
+                    )}
                     className="-mx-4 flex min-h-14 items-start justify-between gap-4 rounded-[var(--r-md)] px-4 py-4 transition-colors hover:bg-[var(--g-100)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
                   >
                     <span>
@@ -313,10 +314,10 @@ export default function WerkenBijPage() {
               {VACATURES.map((v, i) => (
                 <a
                   key={v.slug}
-                  href={
+                  href={eigenPad(
                     v.pad ??
-                    `mailto:${DIBA_EMAIL}?subject=${encodeURIComponent(v.onderwerp)}`
-                  }
+                      `mailto:${DIBA_EMAIL}?subject=${encodeURIComponent(v.onderwerp)}`,
+                  )}
                   className={
                     i === 0
                       ? "diba-label inline-flex min-h-12 items-center gap-2 rounded-[var(--r-pill)] bg-[var(--g-700)] px-6 text-white transition-colors hover:bg-[var(--g-800)]"

@@ -208,8 +208,7 @@ export default function CookiePage() {
           <div>
             <Label>{t("Vragen hierover")}</Label>
             <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              {t("Stel ze")}{" "}
-              <span className="diba-accent">{t("gewoon.")}</span>
+              {t("Stel ze")} <span className="diba-accent">{t("gewoon.")}</span>
             </h2>
           </div>
           <div className="max-w-[58ch]">

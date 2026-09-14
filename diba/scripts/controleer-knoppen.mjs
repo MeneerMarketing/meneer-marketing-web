@@ -34,6 +34,7 @@
  *   ALLES=1 BASIS=... npm run knoppen   (alle bevindingen, niet de eerste twintig)
  */
 import { chromium } from "playwright";
+import { alleAdressen } from "./lib/paden.mjs";
 
 const BASIS = process.env.BASIS ?? "http://localhost:3010";
 const ALLES = process.env.ALLES === "1";
@@ -48,12 +49,8 @@ const BREEDTES = [
 const browser = await chromium.launch();
 const pagina = await browser.newPage({ viewport: { width: 375, height: 812 } });
 
-await pagina.goto(`${BASIS}/sitemap.xml`, { waitUntil: "domcontentloaded" });
-const xml = await pagina.content();
-const paden = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)]
-  .map((m) => new URL(m[1]).pathname)
-  .filter((p, i, a) => a.indexOf(p) === i)
-  .sort();
+/* Alle talen, ook die nog niet in de sitemap staat. Zie scripts/lib/paden.mjs. */
+const paden = await alleAdressen(BASIS);
 
 const meet = () => {
   const uit = [];

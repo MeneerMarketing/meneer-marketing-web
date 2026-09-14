@@ -310,7 +310,7 @@ export default function LaserontharingPage() {
                 <p className="diba-card-title text-[var(--t-strong)]">
                   {tc(b.kop)}
                 </p>
-                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)] sm:min-h-[4lh]">
+                <p className="mt-3 text-[15px] leading-7 text-[var(--t-body)]">
                   {tc(b.zin)}
                 </p>
               </li>

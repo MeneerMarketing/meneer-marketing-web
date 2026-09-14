@@ -200,7 +200,11 @@ export default function HuidverkleuringPage() {
             intro="De kleur is de eerste vraag en niet de laatste. Hij wijst de richting aan; wat er in die richting mogelijk is hangt af van dingen die je aan de buitenkant niet ziet."
           />
 
-          <ul className="mt-8 sm:mt-12 grid gap-4 lg:grid-cols-3 lg:items-start">
+          {/* Geen `items-start`: die liet de kaarten hun eigen hoogte houden, waarna een
+              `min-h-[5lh]` ze alsnog gelijk moest trekken. Rasteritems rekken vanzelf tot
+              dezelfde hoogte, en dan is die reservering overbodig. Zie
+              `huidproblemen/striae/page.tsx`. */}
+          <ul className="mt-8 sm:mt-12 grid gap-4 lg:grid-cols-3">
             {KLEUR_ZEGT_NIET.map((n) => (
               <li
                 key={tc(n.kop)}
@@ -209,7 +213,7 @@ export default function HuidverkleuringPage() {
                 <p className="diba-card-title text-[var(--t-strong)]">
                   {tc(n.kop)}
                 </p>
-                <p className="mt-4 lg:min-h-[5lh] text-[16px] leading-7 text-[var(--t-body)]">
+                <p className="mt-4 text-[16px] leading-7 text-[var(--t-body)]">
                   {tc(n.zin)}
                 </p>
               </li>

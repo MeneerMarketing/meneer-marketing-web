@@ -16,6 +16,8 @@ import { zoekmachineVelden } from "@/lib/seo";
 import LeesVerder from "@/components/ui/LeesVerder";
 import MobielInklap from "@/components/ui/MobielInklap";
 import { t, tc } from "@/lib/vertaal";
+import { getal } from "@/lib/getallen";
+import { taalNu } from "@/lib/taalcontext";
 
 /**
  * Reviews.
@@ -80,9 +82,11 @@ export default async function ReviewsPage({
   const pagina = leesPagina(params.pagina);
   const sterrenPagina = leesPagina(params.sterren);
 
-  const gemiddeld = SALONIZED_REVIEW_SUMMARY.rating
-    .toFixed(1)
-    .replace(".", ",");
+  /* Het Engels schrijft 5.0 en het Nederlands 5,0. */
+  const gemiddeld = getal(SALONIZED_REVIEW_SUMMARY.rating, taalNu(), {
+    minimumFractionDigits: 1,
+    maximumFractionDigits: 1,
+  });
 
   return (
     <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)]">
@@ -117,8 +121,10 @@ export default async function ReviewsPage({
             </h1>
 
             <p className="mt-7 max-w-[54ch] text-[17px] leading-8 text-[var(--on-dark-body)]">
-              {SALONIZED_REVIEW_SUMMARY.countFormatted}{" "}
-              {t("reviews op Salonized, gemiddeld een")} {gemiddeld}{" "}
+              {getal(SALONIZED_REVIEW_SUMMARY.count, taalNu())}{" "}
+              {/* Geen `{" "}` voor de punt: die zin begint zelf met een punt, dus er stond
+                  "gemiddeld een 5,0 . Ze zijn na". Zie `npm run spaties`. */}
+              {t("reviews op Salonized, gemiddeld een")} {gemiddeld}
               {t(
                 ". Ze zijn na de afspraak geschreven door mensen die hier zijn geweest, en ze staan er allemaal: met tekst en zonder.",
               )}
@@ -136,7 +142,7 @@ export default async function ReviewsPage({
               {gemiddeld}
             </p>
             <p className="mt-4 text-[17px] leading-7 text-[var(--t-body)]">
-              {t("over")} {SALONIZED_REVIEW_SUMMARY.countFormatted}{" "}
+              {t("over")} {getal(SALONIZED_REVIEW_SUMMARY.count, taalNu())}{" "}
               {t("reviews op")} {SALONIZED_REVIEW_SUMMARY.sourceLabel}
             </p>
             <p className="mt-5 text-[16px] leading-7 text-[var(--t-body)]">
@@ -174,8 +180,7 @@ export default async function ReviewsPage({
         <div className="mx-auto">
           <div>
             <Label>
-              {t("Alle")} {ARCHIEF_TOTAAL.toLocaleString("nl-NL")}{" "}
-              {t("beoordelingen")}
+              {t("Alle")} {getal(ARCHIEF_TOTAAL, taalNu())} {t("beoordelingen")}
             </Label>
             <h2 className="diba-display-m mt-4">
               {t("Zoek op wat")}{" "}

@@ -3,9 +3,8 @@
 import Link from "@/components/ui/Taalpad";
 import Sterren from "@/components/ui/Sterren";
 import { SALONIZED_REVIEWS } from "@/data/salonized-reviews";
-import { useT } from "@/lib/gebruik-taal";
+import { useT, useTaal } from "@/lib/gebruik-taal";
 import { relatieveDatum } from "@/lib/relatieve-datum";
-import { useTaal } from "@/lib/gebruik-taal";
 import { reviewtekst } from "@/lib/reviewtaal";
 import Vertaaldnoot from "@/components/reviews/Vertaaldnoot";
 import {
@@ -13,6 +12,7 @@ import {
   DIBA_SALONIZED_REVIEWS_URL,
   DIBA_SALONIZED_REVIEW_COUNT,
 } from "@/lib/site";
+import { getal } from "@/lib/getallen";
 
 /**
  * De reviews op de homepage, als twee banden die langsschuiven.
@@ -107,8 +107,10 @@ function Band({
 
 export default function Reviewslider() {
   const t = useT();
-  const gemiddeld = DIBA_SALONIZED_RATING.toLocaleString("nl-NL", {
+  const taal = useTaal();
+  const gemiddeld = getal(DIBA_SALONIZED_RATING, taal, {
     minimumFractionDigits: 1,
+    maximumFractionDigits: 1,
   });
 
   return (
@@ -125,8 +127,7 @@ export default function Reviewslider() {
               <span className="pb-2">
                 <Sterren />
                 <span className="diba-label mt-2 block text-[var(--t-muted)]">
-                  {DIBA_SALONIZED_REVIEW_COUNT.toLocaleString("nl-NL")}{" "}
-                  {t("reviews")}
+                  {getal(DIBA_SALONIZED_REVIEW_COUNT, taal)} {t("reviews")}
                 </span>
               </span>
             </div>

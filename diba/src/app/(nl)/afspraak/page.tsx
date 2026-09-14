@@ -42,7 +42,7 @@ export const metadata: Metadata = zoekmachineVelden({
 });
 
 const intake = behandelingVoorSlug("huidanalyse");
-const intakeBedrag = intake ? prijsTekst(intake.prijs) : "50 euro";
+const intakeBedrag = intake ? prijsTekst(intake.prijs, "nl") : "50 euro";
 
 /** Wat je vlak voor het boeken wilt weten. Kort, want de agenda staat eronder. */
 const VOORAF = [

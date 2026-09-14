@@ -1,7 +1,9 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { useT, useTc } from "@/lib/gebruik-taal";
+import { inTaal } from "@/lib/taalpad";
 import {
   DIBA_EMAIL,
   DIBA_REACTIETIJDEN,
@@ -124,6 +126,7 @@ const KANALEN = {
 export default function Ingangkiezer() {
   const tc = useTc();
   const t = useT();
+  const pad = usePathname() ?? "/";
   const [gekozen, setGekozen] = useState<string>(INGANGEN[0].id);
   const ingang = INGANGEN.find((i) => i.id === gekozen) ?? INGANGEN[0];
   const kanaal = KANALEN[ingang.kanaal];
@@ -195,7 +198,7 @@ export default function Ingangkiezer() {
         ) : null}
 
         <a
-          href={kanaal.href}
+          href={inTaal(kanaal.href, pad)}
           {...(kanaal.extern
             ? { target: "_blank", rel: "noopener noreferrer" }
             : {})}

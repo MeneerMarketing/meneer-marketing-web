@@ -1,5 +1,6 @@
 "use client";
 
+import { useT, useTaal, useTc } from "@/lib/gebruik-taal";
 import Link from "@/components/ui/Taalpad";
 import { useMemo } from "react";
 import Label from "@/components/ui/Label";
@@ -12,7 +13,6 @@ import {
 } from "@/data/huidprofiel";
 import { publicCopy } from "@/lib/copy-flags";
 import { useHuidprofiel } from "@/lib/huidprofiel-opslag";
-import { useT, useTc } from "@/lib/gebruik-taal";
 
 /**
  * Wat het bij jou zou kosten.
@@ -43,6 +43,7 @@ import { useT, useTc } from "@/lib/gebruik-taal";
 export default function PrijzenVoorJou() {
   const tc = useTc();
   const t = useT();
+  const taal = useTaal();
   const { profiel } = useHuidprofiel();
 
   const stand = compleetheid(profiel);
@@ -116,7 +117,7 @@ export default function PrijzenVoorJou() {
                     </span>
                   </span>
                   <span className="shrink-0 text-[17px] leading-7 text-[var(--t-strong)] tabular-nums">
-                    {prijsCijfer(m.behandeling.prijs)}
+                    {prijsCijfer(m.behandeling.prijs, taal)}
                   </span>
                 </Link>
               </li>

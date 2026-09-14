@@ -9,6 +9,7 @@ import {
 import Label from "@/components/ui/Label";
 import MobielInklap from "@/components/ui/MobielInklap";
 import { tc, t } from "@/lib/vertaal";
+import { taalNu } from "@/lib/taalcontext";
 
 /**
  * De behandelingen, gegroepeerd op waarvoor je komt.
@@ -39,7 +40,7 @@ function Kaart({ b }: { b: Behandeling }) {
         className="group flex h-full min-w-0 flex-col rounded-[var(--r-lg)] bg-white p-6 transition-colors duration-300 [transition-timing-function:var(--ease-diba)] hover:bg-[var(--g-075)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
       >
         <p className="diba-card-title text-[var(--t-strong)]">{tc(b.naam)}</p>
-        <p className="mt-3 sm:min-h-[3lh] text-[15px] leading-7 text-[var(--t-body)]">
+        <p className="mt-3 grow text-[15px] leading-7 text-[var(--t-body)]">
           {tc(b.kort)}
         </p>
         {/* Hier stond het aantal sessies, maar dat is bij eenenveertig van de
@@ -56,7 +57,7 @@ function Kaart({ b }: { b: Behandeling }) {
           <span className="shrink-0 text-[var(--g-700)]">
             {b.prijs === 0
               ? tc("Op aanvraag")
-              : `${t("vanaf")} ${prijsTekst(b.prijs)}`}
+              : `${t("vanaf")} ${prijsTekst(b.prijs, taalNu())}`}
           </span>
         </p>
       </Link>

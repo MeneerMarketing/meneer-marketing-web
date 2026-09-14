@@ -7483,8 +7483,12 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "hiervoor.": "before this.",
   "Is er een medische reden voor je klacht? Zonder die reden vergoedt geen enkele verzekeraar iets, ook":
     "Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes",
+  /* Begint met een woord en niet met een puntkomma. De naam van de verzekeraar staat er
+     met een spatie voor, zoals het Nederlands vraagt ("ook CZ niet"); een zin die met een
+     leesteken begint gaf dan "and that includes CZ ; for most of". "Either" doet hier wat
+     "niet" in het Nederlands doet. */
   "niet, en voor het grootste deel van wat wij doen is dat het antwoord.":
-    "; for most of what we do, that is the answer.",
+    "either; for most of what we do, that is the answer.",
   "De hele route, met wat er gebeurt als het antwoord nee is":
     "The whole route, with what happens when the answer is no",
   "Wat wij wel kunnen": "What we can do",
@@ -12275,7 +12279,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Fitzpatrick huidtype: welk type heb je":
     "Fitzpatrick skin type: which type do you have",
   "De zes Fitzpatrick-huidtypes, wat je type zegt over laser, IPL en peelings, en hoe je het zelf bepaalt. Uitgelegd door de huidtherapeuten van Diba Clinics.":
-    "The six Fitzpatrick skin types, what your type says about laser, IPL and peels, and how to work it out yourself. Explained by the skin therapists at Diba Clinics.",
+    "The six Fitzpatrick skin types, what yours says about laser, IPL and peels, and how to work it out yourself. Explained by the skin therapists at Diba Clinics.",
   "Hoeveel sessies een huidbehandeling vraagt, waarom er weken tussen zitten en waarom het aantal pas na een meting te zeggen is. Per behandeling op een rij.":
     "How many sessions a skin treatment asks for, why there are weeks in between and why the number can only be given after a measurement. Set out per treatment.",
   "Huidanalyse Rotterdam met de EVE-M":
@@ -12478,7 +12482,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
     "Skin therapist vacancy at Diba Clinics in Rotterdam. Working with the EVE-M, Fotona, Nordlys, SkinPen and peels, in a team of eleven. Part-time or full-time.",
   /* ── Metadata met een bedrag of een aantal erin ── */
   "3.893 reviews op Salonized, gemiddeld een 5,0. Wat dat wel zegt en wat niet, met de quotes zelf erbij.":
-    "3.893 reviews on Salonized, averaging 5,0. What that does and does not say, with the quotes themselves alongside.",
+    "3,893 reviews on Salonized, averaging 5.0. What that does and does not say, with the quotes themselves alongside.",
   "De 11 mensen die bij Diba Clinics werken, met per persoon het vakgebied en of de titel wettelijk beschermd is.":
     "The 11 people who work at Diba Clinics, with each person's field and whether their title is protected by law.",
   "OxyGeneo in Rotterdam bij Diba Clinics. € 150, zestig minuten en geen hersteltijd. Exfoliëren en voeden in één behandeling.":
@@ -12881,4 +12885,1836 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Vanaf € 170": "From € 170",
   "Vanaf € 150": "From € 150",
   "Vanaf € 60": "From € 60",
+
+  /* Golf 13 september 2026: alles wat achter een knop of in een gegevensbestand
+     stond en de browsermeting daarom nooit zag. Zie scratch/mist-tekst.py. */
+  ") +": ") +",
+  "29-1129.00 Therapists, All Other": "29-1129.00 Therapists, All Other",
+  "3 maanden tot een jaar": "3 months to a year",
+  "Aan de kwaliteit van de huid zelf werken we wel: structuur, kleur, stevigheid en fijne lijntjes. Dat is een ander resultaat dan volume terugbrengen, en voor een deel van de mensen die voor fillers komen is het precies wat ze eigenlijk zochten.":
+    "We do work on the quality of the skin itself: texture, colour, firmness and fine lines. That is a different result from restoring volume, and for some of the people who come for fillers it is exactly what they were actually looking for.",
+  "Aanspannen van de diepere lagen langs de kaaklijn, in een reeks. Verwacht scherper, niet strak.":
+    "Tightening the deeper layers along the jawline, in a course. Expect sharper, not tight.",
+  "Aanspannen van de diepere lagen met laser, in een reeks. Wat losgelaten huid is wordt hier niet vastgezet; dat is chirurgie.":
+    "Tightening the deeper layers with laser, in a course. Skin that has let go is not fixed here; that is surgery.",
+  "Aantal sessies volgt tijdens de intake":
+    "The number of sessions follows during the intake",
+  "Aanvullende peelings en injectables": "Additional peels and injectables",
+  "Acht sessies over veertien maanden": "Eight sessions over fourteen months",
+  "Acne, pigment, littekens, couperose, haargroei. Kies waar je last van hebt.":
+    "Acne, pigmentation, scars, thread veins, hair growth. Choose what is bothering you.",
+  "Actieve acne, een kapotte barrière, een geïrriteerde huid of een verse zonvakantie: dan gaat de afspraak niet door. Je gaat naar huis met minder in plaats van meer.":
+    "Active acne, a broken barrier, irritated skin or a fresh sun holiday: then the appointment does not go ahead. You go home with less rather than more.",
+  "Actieve psoriasisplekken behandelen wij niet met huidbeschadigende of intensief exfoliërende behandelingen. Beschadiging kan op die plek juist een nieuwe plek uitlokken.":
+    "We do not treat active psoriasis patches with skin-damaging or intensively exfoliating treatments. Damage can actually trigger a new patch in that spot.",
+  "Al jouw triggers hebben een knop": "All your triggers have a dial",
+  "Al zichtbaar rustiger. Wat opvalt is dat er nog geen porie kleiner is geworden; er is alleen minder om naar te kijken.":
+    "Already visibly calmer. What stands out is that no pore has become smaller yet; there is simply less to look at.",
+  "Alle tarieven per behandeling staan openbaar op de tarievenpagina.":
+    "All rates per treatment are published on the prices page.",
+  "Alleen bij het gezicht; laat de zakjes eerst sluiten.":
+    "Only for the face; let the follicles close first.",
+  "Alleen de hersteltijd zit in de weg": "Only the recovery time is in the way",
+  "Alleen haren in hun groeifase zitten vast aan de wortel die geraakt moet worden. Op elk moment is dat een deel van je haren en niet allemaal. Daarom zijn er meerdere sessies met weken ertussen nodig, en niet omdat het per sessie niet hard genoeg staat.":
+    "Only hairs in their growth phase are attached to the root that has to be reached. At any moment that is some of your hairs and not all of them. That is why several sessions with weeks in between are needed, and not because the setting is not high enough per session.",
+  "Alleen op je borst of decolleté": "Only on your chest or dÃ©colletÃ©",
+  "Alleen op je rug of schouders": "Only on your back or shoulders",
+  "Alles waar je warm en bezweet van wordt.":
+    "Anything that makes you hot and sweaty.",
+  "Alles wat de foto zelf kon veranderen ligt vast. Wat er dan nog verschilt, komt van de huid. Dit is de enige stand waarin een voor-en-na iets bewijst.":
+    "Everything the photo itself could change is held constant. Whatever still differs comes from the skin. This is the only setting in which a before and after proves anything.",
+  "Alles wat door de huid heen gaat om iets op te hangen of weg te snijden is chirurgie, en dat is artsenwerk.":
+    "Anything that goes through the skin to suspend or cut something away is surgery, and that is a doctor's work.",
+  "Alles wat er te doen valt": "Everything there is to do",
+  "Alles wat je aantikte kun je zelf beïnvloeden. Dat is gunstig: bij dit patroon zien we vaak dat gewoontes meer opleveren dan behandelen, en soms is behandelen dan niet eens nodig.":
+    "Everything you ticked is something you can influence yourself. That is favourable: with this pattern we often see that habits achieve more than treatment, and sometimes treatment is not even needed.",
+  "Alles wat we doen, met wat het inhoudt, wat het kost en hoeveel sessies erbij horen.":
+    "Everything we do, with what it involves, what it costs and how many sessions go with it.",
+  "Als de dagvariatie groter is dan het effect dat je wil laten zien, zegt één foto per moment niets.":
+    "If the daily variation is greater than the effect you want to show, one photo per moment says nothing.",
+  "Als de test uitwijst dat het schaduw is, sturen we je weg zonder behandeling. Een huidkliniek verandert de vorm van je oogkas niet en doet er dus beter aan dat te zeggen.":
+    "If the test shows it is shadow, we send you away without treatment. A skin clinic does not change the shape of your eye socket and is better off saying so.",
+  "Als het overal zit, kijken we niet naar losse plekken maar naar de huidbarrière als geheel. Dat verandert de aanpak: rustiger opbouwen, minder tegelijk.":
+    "If it is everywhere, we do not look at individual spots but at the skin barrier as a whole. That changes the approach: building up more gently, less at once.",
+  "Alsnog toestaan": "Allow after all",
+  "Barrière kapot": "A broken barrier",
+  "Begin met de meting. Komt daar niets uit wat behandeling vraagt, dan hoor je dat en heb je vijftig euro besteed in plaats van een traject.":
+    "Start with the measurement. If nothing comes out of it that calls for treatment, you hear that and you have spent fifty euros instead of a whole programme.",
+  "Beginnen bij de kleur": "Starting with the colour",
+  "Behandelaar van Diba Clinics bespreekt de uitkomst van een huidscan met een cliënt":
+    "A Diba Clinics therapist discussing the result of a skin scan with a client",
+  "Behandelen vlak voor een zonvakantie": "Treating just before a sun holiday",
+  "Behandelen zonder dat duidelijk is waarvoor":
+    "Treating without it being clear what for",
+  "Behandeling gericht op littekens en huidtextuur":
+    "Treatment aimed at scars and skin texture",
+  "Beide effecten lijken op precies wat een huidbehandeling zou moeten doen. Daarom zijn ze op een resultaatfoto niet van elkaar te onderscheiden.":
+    "Both effects look like exactly what a skin treatment should do. That is why they cannot be told apart on a result photo.",
+  "Beide foto's op hetzelfde punt in de routine, en bij voorkeur op hetzelfde tijdstip van de dag.":
+    "Both photos at the same point in the routine, and preferably at the same time of day.",
+  "Bekijk alle zones en tarieven": "See all areas and rates",
+  "Bel vandaag je huisarts of de huisartsenpost, en buiten die tijden 112 bij een zieke indruk. Wacht niet tot morgen om te kijken of het overgaat.":
+    "Call your GP or the out-of-hours service today, and outside those hours 112 if the person seems ill. Do not wait until tomorrow to see whether it passes.",
+  "Bellen gaat het snelst, want dan kijkt er meteen iemand in de agenda mee. Ben je te laat om nog te bellen, stuur dan een bericht.":
+    "Calling is quickest, because then someone looks at the diary with you straight away. Too late to call? Send a message.",
+  "Benzoylperoxide maakt de huid gevoeliger. Meld het, dan wordt de sterkte daarop gekozen.":
+    "Benzoyl peroxide makes the skin more sensitive. Mention it, and the strength is chosen accordingly.",
+  "Bewaar deze keuze": "Save this choice",
+  "Bij deze vorm speelt je afweer diep in de huid. Dat komt niet doordat je iets fout doet en het is geen kwestie van beter reinigen.":
+    "With this form your immune system is at work deep in the skin. That is not because you are doing something wrong and it is not a matter of cleansing better.",
+  "Bij dit patroon richten we ons op de bloedvaten zelf, niet op jouw gedrag. Dan wordt de reactie minder heftig terwijl de trigger hetzelfde blijft.":
+    "With this pattern we focus on the blood vessels themselves, not on your behaviour. Then the reaction becomes less severe while the trigger stays the same.",
+  "Bij een actieve opvlamming wachten we. Behandelen in die fase geeft meer roodheid in plaats van minder, ook als je er speciaal voor kwam.":
+    "During an active flare-up we wait. Treating in that phase produces more redness rather than less, even if you came in specially for it.",
+  "Bij een droge huid wordt de voorbereiding thuis belangrijker dan de behandeling zelf.":
+    "With dry skin the preparation at home matters more than the treatment itself.",
+  "Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Dit is het misverstand waar mensen zorg om uitstellen.":
+    "With reimbursement from supplementary insurance, no. The excess belongs with the basic insurance. This is the misunderstanding people put off care over.",
+  "Bij een wit litteken van tien jaar oud, bij diep pigment, bij schaduw onder je ogen: dan rekenen we het voor en raden we het af. Ook als je erom vraagt.":
+    "With a white scar ten years old, with deep pigmentation, with shadow under your eyes: then we do the sums and advise against it. Even if you ask for it.",
+  "Bij elk beeld komt te staan hoeveel mensen zo'n traject deden en hoe dit geval zich daartoe verhoudt.":
+    "Every image comes with how many people did such a programme and how this case compares.",
+  "Bij elk punt staat waarom, want een “niet doen” zonder reden onthoudt niemand.":
+    'Every point comes with a reason, because a "do not" without a reason is one nobody remembers.',
+  "Bij elke behandeling reageert een deel van de mensen beter dan gemiddeld en een deel minder. Wie alleen de bovenkant laat zien, laat de behandeling er beter uitzien dan hij is.":
+    "With every treatment some people respond better than average and some less. Anyone who only shows the top end makes the treatment look better than it is.",
+  "Bij jou zit de hefboom vooral in gewoontes":
+    "For you the leverage lies mainly in habits",
+  "Bij jouw huidtype is de huid gevoeliger voor zon na een behandeling. Dat is geen beperking maar wel een afspraak over wat je erna doet.":
+    "With your skin type the skin is more sensitive to sun after a treatment. That is not a limitation but it is an agreement about what you do afterwards.",
+  "Bij jouw huidtype is er ruimte in de instellingen. Wat er precies gekozen wordt hoor je tijdens de intake.":
+    "With your skin type there is room in the settings. You hear exactly what is chosen during the intake.",
+  "Bij jouw huidtype worden licht en warmte anders opgenomen. Dat sluit niets uit, maar de instellingen luisteren nauwer en dat bepaalt een mens, niet deze pagina.":
+    "With your skin type, light and heat are absorbed differently. That rules nothing out, but the settings are more critical and that is decided by a person, not by this page.",
+  "Bij keloïd verwijzen we door. Bij hypertrofisch kijken we mee, vaak in overleg met je arts.":
+    "With keloid we refer you on. With hypertrophic scars we look at it with you, often in consultation with your doctor.",
+  "Bij koortslip kan een behandeling een uitbraak uitlokken. Daar is medicatie voor, maar dan moet het vooraf besproken zijn.":
+    "With cold sores a treatment can trigger an outbreak. There is medication for that, but it has to be discussed beforehand.",
+  "Bij melasma is beheersing het doel. Wij noemen dat geen mislukking maar de eerlijke uitkomst, en je hoort het vóór je iets betaalt.":
+    "With melasma, control is the goal. We do not call that a failure but the honest outcome, and you hear it before you pay anything.",
+  "Bij melasma is het doel beheersen en niet laten verdwijnen. Iets anders beloven zou makkelijker verkopen en niet uitkomen.":
+    "With melasma the goal is control and not disappearance. Promising anything else would be easier to sell and would not come true.",
+  "Bij neiging tot keloïd kan een prikkel in het bindweefsel juist een dik litteken geven.":
+    "If you are prone to keloids, stimulating the connective tissue can actually produce a thick scar.",
+  "Bij pigment is dit geen wachttijd maar een gewoonte voor de hele periode en daarna.":
+    "With pigmentation this is not a waiting period but a habit for the whole time and afterwards.",
+  "Bij sommige verzekeraars van de huisarts, bij andere van een dermatoloog. Regel dat vóór de eerste afspraak. Een verwijzing achteraf laten opsturen werkt in de praktijk vrijwel nooit.":
+    "With some insurers from your GP, with others from a dermatologist. Arrange that before the first appointment. Having a referral sent afterwards almost never works in practice.",
+  "Bij uitrekken worden doorschijnende bloedvaatjes verder uit elkaar getrokken en verbleekt de kleur. Pigment zit in de huid zelf en verandert niet mee.":
+    "When stretched, translucent blood vessels are pulled further apart and the colour fades. Pigment sits in the skin itself and does not change with it.",
+  "Bij één zone kijken we eerst of er een oorzaak buiten je huid is. Zo niet, dan is dit vaak een kort traject.":
+    "With a single area we first look at whether there is a cause outside your skin. If not, this is often a short programme.",
+  "Bijna altijd wel. De meeste verzekeraars vergoeden alleen als de huidtherapeut in het Kwaliteitsregister Paramedici staat. Vraag ons gerust of dat bij jouw behandelaar zo is; wij weten dat en jij kunt het niet zien.":
+    "Almost always, yes. Most insurers only reimburse if the skin therapist is in the Quality Register for Paramedics. Feel free to ask us whether that is the case for your therapist; we know that and you cannot see it.",
+  "Bijna, en dat is niet genoeg": "Almost, and that is not enough",
+  "Bleke, iets ingezonken strepen die glanzen in het licht.":
+    "Pale, slightly sunken streaks that catch the light.",
+  "Blijft ongeveer gelijk": "Stays roughly the same",
+  "Bloed in de vaatjes, of ontsteking. Rood is bijna altijd iets dat leeft en beweegt, en dat is precies waarom het anders reageert dan bruin.":
+    "Blood in the vessels, or inflammation. Red is almost always something living and moving, and that is exactly why it reacts differently from brown.",
+  "Botox en fillers": "Botox and fillers",
+  "Botox en fillers horen niet bij wat wij doen. Bij een zuivere mimieklijn is dat vaak wél het antwoord, en dan zeggen we dat in plaats van je iets anders aan te bieden dat minder past.":
+    "Botox and fillers are not part of what we do. For a purely expression line that is often the answer, and then we say so rather than offering you something else that suits less well.",
+  "Bouw af voordat je iets nieuws probeert, en zeker voordat je een behandeling boekt. Op een kapotte barrière reageert je huid feller en levert dezelfde behandeling minder op.":
+    "Cut back before you try something new, and certainly before you book a treatment. On a broken barrier your skin reacts more strongly and the same treatment achieves less.",
+  "Bouwt en onderhoudt deze site en doet de marketing. Komt niet in de behandelkamer.":
+    "Builds and maintains this site and does the marketing. Does not come into the treatment room.",
+  "Buik + borstkas": "Stomach + chest",
+  "Bultjes en puskopjes, maar zonder mee-eters. Dat laatste is het onderscheid met acne.":
+    "Bumps and pustules, but without blackheads. That last part is what distinguishes it from acne.",
+  "Bultjes na het scheren": "Bumps after shaving",
+  "Capsaïcine zet dezelfde vaatreactie in gang als warmte.":
+    "Capsaicin sets off the same vascular reaction as heat.",
+  "Chemische peelings": "Chemical peels",
+  "Chloor droogt uit op een verse huid.": "Chlorine dries out fresh skin.",
+  "Chloor en bacteriën in een open huid.":
+    "Chlorine and bacteria in open skin.",
+  "Chloor en zon in combinatie zijn hier de slechtste.":
+    "Chlorine and sun in combination are the worst here.",
+  "Chloor en zout, allebei prikkelend op een verse huid.":
+    "Chlorine and salt, both irritating on fresh skin.",
+  "Chloor in geprikkelde haarzakjes.": "Chlorine in irritated follicles.",
+  "Chloor op een open bovenlaag.": "Chlorine on an open top layer.",
+  "Contact, je eerste afspraak en de nazorg":
+    "Contact, your first appointment and the aftercare",
+  "Controle hoort bij de arts": "Monitoring belongs with a doctor",
+  "Cosmelan, traject van zes maanden": "Cosmelan, a six-month programme",
+  "Couperose is niet hetzelfde als rosacea, ook al lopen ze vaak samen. Je kunt de adertjes hebben zonder de rest.":
+    "Thread veins are not the same as rosacea, even though they often go together. You can have the veins without the rest.",
+  "Crèmes die beloven witte striae weg te halen, doen dat niet. Dat zie je ook terug in de metingen.":
+    "Creams that promise to remove white stretch marks do not do that. You see that in the measurements too.",
+  "Cyclus en overgang beïnvloeden de vaatreactie. Hier ligt de knop bij je arts, niet bij een crème.":
+    "Your cycle and the menopause influence the vascular reaction. Here the dial is with your doctor, not with a cream.",
+  "Dan de onafhankelijke klachtenfunctionaris":
+    "Then the independent complaints officer",
+  "Dan gaat het niet meer om onzuiverheden maar om acne, en daar hoort een andere aanpak bij.":
+    "Then it is no longer about blemishes but about acne, and that calls for a different approach.",
+  "Dan kun je het geschil voorleggen aan de Geschillencommissie Uiterlijke Verzorging. Die doet een bindende uitspraak; je hebt er geen advocaat voor nodig.":
+    "You can then put the dispute to the Disputes Committee for Personal Care. They issue a binding ruling; you do not need a lawyer for it.",
+  "Dan mag je dat ter plekke zeggen, en dan gaat de behandeling niet door. Deze regels staan boven het gesprek in de behandelkamer en niet eronder.":
+    "Then you may say so on the spot, and the treatment does not go ahead. These rules stand above the conversation in the treatment room and not below it.",
+  "Dan speelt vocht mee. Dat is geen aparte oorzaak maar het maakt elk van de andere drie tijdelijk erger, en het verklaart waarom je resultaat lijkt te schommelen.":
+    "Then fluid plays a part. That is not a separate cause but it makes each of the other three temporarily worse, and it explains why your result seems to fluctuate.",
+  "Dat hangt af van de behandeling die bij jouw huid past, en dat stellen we tijdens de intake vast.":
+    "That depends on the treatment that suits your skin, and we establish that during the intake.",
+  "Dat is een ander verhaal met een andere behandeling, en daar is een eigen pagina voor.":
+    "That is a different story with a different treatment, and there is a page of its own for it.",
+  "Dat is geen afwijzing maar een doorverwijzing. Tijdens de intake kijken we mee waar je wel terechtkunt, en dat kost je niets.":
+    "That is not a rejection but a referral. During the intake we help you look at where you can go, and that costs you nothing.",
+  "Dat is pigment aanbrengen. Wij zijn er om het weg te krijgen.":
+    "That is putting pigment in. We are here to get it out.",
+  "Dat kan betekenen dat er bloed buiten de vaatjes zit. In combinatie met ziek zijn, koorts, sufheid, nekpijn of snelle verspreiding is dat een reden om niet af te wachten.":
+    "That can mean there is blood outside the vessels. Combined with feeling ill, fever, drowsiness, neck pain or rapid spreading, that is a reason not to wait.",
+  "Dat kunnen wij niet beoordelen. Alles wat verandert hoort bekeken te worden voordat er iets mee gebeurt.":
+    "We cannot assess that. Anything that changes should be looked at before anything is done with it.",
+  "Dat verandert soms de keuze van de tip of het serum.":
+    "That sometimes changes the choice of tip or serum.",
+  "Dat weten wij niet, en dat is het punt. Alles wat verandert hoort beoordeeld te worden vóórdat er iets mee gebeurt.":
+    "We do not know, and that is the point. Anything that changes should be assessed before anything is done with it.",
+  "Dat zijn aandoeningen met een medische behandeling, en die valt onder de huisarts of dermatoloog.":
+    "Those are conditions with a medical treatment, and that falls under your GP or dermatologist.",
+  "De EVE-M huidscanner": "The EVE-M skin scanner",
+  "De EVE-M legt vast hoe je huid er vandaag uitziet en meet wat eronder zit. Er raakt niets je huid.":
+    "The EVE-M records how your skin looks today and measures what lies beneath. Nothing touches your skin.",
+  "De UV klimt sneller dan mensen denken. Op een heldere dag telt maart al mee.":
+    "UV climbs faster than people think. On a clear day March already counts.",
+  "De aanmaak van collageen is doorgeschoten. Keloïd hoort bij de arts en niet bij ons.":
+    "Collagen production has overshot. Keloid belongs with a doctor and not with us.",
+  "De behandeling duurt korter dan de uitleg erover. Dit is de oogzone tijdens een sessie, zonder montage en zonder muziek.":
+    "The treatment takes less time than explaining it. This is the eye area during a session, without editing and without music.",
+  "De bovenste laag raakt beschadigd en houdt geen vocht meer vast. De huid wordt droger, ruwer en gevoeliger dan hij al was.":
+    "The top layer gets damaged and no longer holds moisture. The skin becomes drier, rougher and more sensitive than it already was.",
+  "De bovenste laag vernieuwt trager en ligt onregelmatiger. Dit is het onderdeel dat het snelst en het zichtbaarst reageert.":
+    "The top layer renews more slowly and lies more irregularly. This is the part that responds fastest and most visibly.",
+  "De bruine tint blijft gewoon staan": "The brown tone simply stays",
+  "De camera leest verschillende lagen uit: pigment, vocht, poriën, structuur.":
+    "The camera reads out different layers: pigmentation, moisture, pores, texture.",
+  "De combinatie die we het vaakst tegenkomen. De lijntjes en de gloed vragen elk om iets anders, en om een volgorde.":
+    "The combination we come across most often. The fine lines and the flush each call for something different, and for an order.",
+  "De contour van je gezicht verandert. Wangen worden platter, de kaaklijn minder scherp.":
+    "The contour of your face changes. Cheeks become flatter, the jawline less sharp.",
+  "De donkere kern is weg, dus de porie oogt meteen kleiner.":
+    "The dark core is gone, so the pore immediately looks smaller.",
+  "De doorsnede hoort bij je aanleg en de huid eromheen staat minder strak. De druppelvorm wijst op dat tweede.":
+    "The diameter goes with your make-up and the skin around it is less taut. The teardrop shape points to the second.",
+  "De eye peel": "The eye peel",
+  "De hele gereedschapskist waarmee de rest van de branche zijn agenda vult, ligt bij ons dicht.":
+    "The whole toolbox the rest of the industry fills its diary with stays shut here.",
+  "De huid bouwt op; schuren breekt dat af.":
+    "The skin is building up; scrubbing breaks that down.",
+  "De huid daar is de dunste van je lichaam. We gaan er trager te werk dan elders, ook als dat betekent dat je meer sessies nodig hebt.":
+    "The skin there is the thinnest on your body. We work more slowly there than elsewhere, even if that means you need more sessions.",
+  "De huid eromheen. Een droge, beschadigde barrière scheurt sneller open en dat lokt nieuwe plekken uit, dus daar valt naast de behandeling van je arts wel degelijk winst te halen. Loopt er iets bij de dermatoloog, zeg dat dan; we stemmen erop af in plaats van eroverheen te werken.":
+    "The skin around it. A dry, damaged barrier splits open more easily and that triggers new patches, so alongside your doctor's treatment there is genuinely something to gain there. If something is running with the dermatologist, say so; we work with it rather than over it.",
+  "De huid heeft op die plek collageen en elasticiteit verloren en vouwt niet meer terug. Dit is waar een huidbehandeling werkt.":
+    "The skin has lost collagen and elasticity in that spot and no longer folds back. This is where a skin treatment works.",
+  "De huid houdt de contour niet meer strak, terwijl er onder nog weinig is veranderd. Dit is de klacht waarmee de meeste mensen hier binnenkomen.":
+    "The skin no longer holds the contour tight, while little has changed underneath. This is the concern most people come in here with.",
+  "De huid is sneller uitgerekt dan hij kon meegroeien. Rood betekent dat het recent is en dat er nog bloedvaten in zitten.":
+    "The skin has been stretched faster than it could grow with it. Red means it is recent and that there are still blood vessels in it.",
+  "De huid ruimt op wat al onder de oppervlakte klaarlag. Dat komt naar buiten en dat ziet er niet beter uit. Bijna iedereen schrikt hier, en bijna iedereen die doorzet is er blij om.":
+    "The skin clears out what was already waiting below the surface. That comes out and it does not look better. Almost everyone is startled here, and almost everyone who carries on is glad they did.",
+  "De huid voelt ruw. Je ziet kleine bultjes zonder rood.":
+    "The skin feels rough. You see small bumps without redness.",
+  "De huid weerkaatst licht anders: minder glans, meer ongelijkheid, make-up blijft slechter zitten.":
+    "The skin reflects light differently: less glow, more unevenness, make-up sits less well.",
+  "De huidanalyse maakt dit concreet. Daarna weten we welke zone het meeste aandacht vraagt.":
+    "The skin analysis makes this concrete. After that we know which area needs the most attention.",
+  "De kennisbank": "The knowledge base",
+  "De kleur komt van bloed dat nog in de vaatjes zit. Dat past bij veel gewone oorzaken, van een allergische reactie tot een virus.":
+    "The colour comes from blood still inside the vessels. That fits many ordinary causes, from an allergic reaction to a virus.",
+  "De kleur trekt weg zolang je rekt": "The colour fades while you stretch",
+  "De koeling hoort bij de puls": "The cooling is part of the pulse",
+  "De laser mikt op pigment. Zit er geen pigment in de haar, dan is er niets om op aan te grijpen en gebeurt er niets. Dat geldt ook voor heel licht blond. Geen instelling ter wereld verandert daar iets aan.":
+    "The laser targets pigment. If there is no pigment in the hair, there is nothing to act on and nothing happens. The same goes for very light blond. No setting in the world changes that.",
+  "De mail komt bij de juiste persoon terecht.":
+    "The email reaches the right person.",
+  "De meting en het advies kunnen wel, en dat is juist voor vertrek nuttig: je weet dan waar je op moet letten in de zon. Terug van vakantie begin je met een vertrekpunt dat er al ligt.":
+    "The measurement and the advice are possible, and that is actually useful before you go: you then know what to watch out for in the sun. Back from holiday you start with a reference point that is already there.",
+  "De meting kan nu gewoon, en behandelingen die niet met licht werken meestal ook. Dan staat je vertrekpunt vast en kun je beginnen zodra je kleur eruit is, in plaats van dan pas aan de wachtlijst te denken.":
+    "The measurement can go ahead now, and so can most treatments that do not use light. Then your starting point is fixed and you can begin as soon as your colour has gone, instead of only then thinking about the waiting list.",
+  "De nafoto komt pas als de huid rustig is, en er staat bij hoeveel weken na de laatste sessie hij gemaakt is.":
+    "The after photo only comes once the skin is calm, and it states how many weeks after the last session it was taken.",
+  "De ontsteking hoort bij de arts. Wat de huid daarnaast nodig heeft, doen wij.":
+    "The inflammation belongs with a doctor. What the skin needs alongside that, we do.",
+  "De oorzaak is druk, warmte en vocht, niet je huidtype. Zonder de oorzaak weg te nemen komt het terug, hoe goed we ook behandelen.":
+    "The cause is pressure, heat and moisture, not your skin type. Without removing the cause it comes back, however well we treat it.",
+  "De opening trekt rond in plaats van uitgerekt, en valt minder op.":
+    "The opening pulls round instead of stretched, and stands out less.",
+  "De piek van het jaar. Dit is het moment waarop pigment het snelst verergert.":
+    "The peak of the year. This is the moment when pigmentation worsens fastest.",
+  "De plaats is kenmerkend. Eczeem zit juist vaker in de plooien, aan de binnenkant.":
+    "The location is characteristic. Eczema more often sits in the folds, on the inside.",
+  "De producten die we voor thuis meegeven":
+    "The products we give you for home",
+  "De romp heeft veel talgklieren, en zweet en wrijving van kleding houden het daar in stand. Vaak speelt sport of een warm beroep mee.":
+    "The torso has a lot of oil glands, and sweat and friction from clothing keep it going there. Sport or a warm job often plays a part.",
+  "De roodheid trekt weg en het litteken wordt bleker. Het weefsel wordt steviger en minder beweeglijk. De vorm ligt nu grotendeels vast.":
+    "The redness fades and the scar becomes paler. The tissue becomes firmer and less mobile. The shape is now largely set.",
+  "De scan legt vast wat er nu is. Wat een behandeling gaat opleveren, kan hij niet zeggen.":
+    "The scan records what is there now. What a treatment will achieve, it cannot say.",
+  "De striae zijn uitgerijpt. Het weefsel mist pigment en is dunner dan de huid eromheen.":
+    "The stretch marks have matured. The tissue lacks pigment and is thinner than the skin around it.",
+  "De tarieven": "The prices",
+  "De tarieven staan al op de tarievenpagina, per sessie en per zone. Wat daar niet staat is hoeveel sessies jij nodig hebt, en dat hoor je na de meting.":
+    "The rates are already on the prices page, per session and per area. What is not there is how many sessions you need, and you hear that after the measurement.",
+  "De twee lijken op elkaar en vragen een andere behandeling. Twijfelen we, dan overleggen we eerst met je huisarts en verwijzen we door voor de diagnose.":
+    "The two look alike and call for different treatment. If we are unsure, we first consult your GP and refer you on for the diagnosis.",
+  "De vlekjes veranderen niet onder het glas. Ze blijven even donker, alsof ze in de huid zitten in plaats van erin te stromen.":
+    "The spots do not change under the glass. They stay just as dark, as if they are in the skin rather than flowing through it.",
+  "De vlekken blijven staan": "The patches stay",
+  "De vlekken verbleken": "The patches fade",
+  "De werkstoffen uit je eigen routine.":
+    "The active ingredients from your own routine.",
+  "De wond is dicht maar de huid is nog aan het opruimen. Rood, soms verheven, vaak gevoelig. Er komen nieuwe bloedvaten bij en er wordt collageen aangelegd zonder ordening.":
+    "The wound is closed but the skin is still clearing up. Red, sometimes raised, often tender. New blood vessels are forming and collagen is being laid down without order.",
+  "De zichtbare gevolgen op je huid: overbeharing, acne en pigment. Wel met een eerlijke verwachting erbij, want zolang de hormonale oorzaak er is komen de klachten terug. Bij ontharing betekent dat onderhoud in plaats van een eindpunt.":
+    "The visible effects on your skin: excess hair, acne and pigmentation. With an honest expectation alongside, because as long as the hormonal cause is there the symptoms come back. With hair removal that means maintenance rather than an end point.",
+  "De zone met de meeste talgklieren. Meestal gaat het hier om talg en verhoorning, niet om hormonen. Dat is het type dat vaak met de minste sessies rustig wordt.":
+    "The area with the most oil glands. Usually this is about oil and keratinisation, not hormones. It is the type that often settles with the fewest sessions.",
+  "Deels verzorging, deels behandeling. Dit is ook de reden dat je poriën op foto's met flits altijd erger lijken dan ze zijn.":
+    "Partly care, partly treatment. This is also why your pores always look worse in photos with flash than they are.",
+  "Deels, maar langzaam: maanden tot meer dan een jaar. Zonlicht maakt het elke keer opnieuw donkerder, dus zonder bescherming schiet het niet op.":
+    "Partly, but slowly: months to more than a year. Sunlight darkens it again every time, so without protection you make little progress.",
+  "Deels. We kunnen niet aan de vaatjes zelf werken op deze plek, wel aan de dikte en stevigheid van de huid erboven. Verwacht minder doorschemeren, geen verdwijnen.":
+    "Partly. We cannot work on the vessels themselves in this spot, but we can on the thickness and firmness of the skin above them. Expect less showing through, not disappearance.",
+  "Denk aan de afgelopen weken. Is het 's ochtends erger dan 's avonds, of duidelijk erger na een korte nacht, na zout eten of na huilen?":
+    "Think back over the past few weeks. Is it worse in the morning than in the evening, or clearly worse after a short night, after salty food or after crying?",
+  "Derde test": "Third test",
+  "Deze combinatie werkt op dezelfde laag en op hetzelfde moment. Los van elkaar kan het prima, samen op één dag is het meestal te veel voor de barrière.":
+    "This combination works on the same layer and at the same moment. Separately it can be fine, together on one day it is usually too much for the barrier.",
+  "Deze foto's zeggen niets": "These photos say nothing",
+  "Deze knop bestaat niet. De doorsnede van een porie hangt samen met de talgklier eronder en ligt grotendeels vast in je aanleg. Geen crème, stoombeurt of laser maakt die opening blijvend nauwer. Wat hierboven staat werkt wel, en samen scheelt dat zichtbaar veel.":
+    "This button does not exist. The diameter of a pore is linked to the oil gland beneath it and is largely fixed in your make-up. No cream, steaming or laser makes that opening permanently narrower. What is above does work, and together it makes a visible difference.",
+  "Deze plek blijft vaak buiten beeld, want je ziet hem zelf nauwelijks. Er zitten veel talgklieren, en zweet plus wrijving houden het in stand.":
+    "This place often stays out of sight, because you can barely see it yourself. There are plenty of oil glands, and sweat plus friction keep it going.",
+  "Deze vaatjes zijn blijvend verwijd. Ze reageren goed op behandeling, maar nieuwe kunnen ontstaan zolang de triggers doorgaan.":
+    "These vessels are permanently dilated. They respond well to treatment, but new ones can appear as long as the triggers continue.",
+  "Deze vorm kunnen wij behandelen. Bij een deel van de mensen is daarnaast medicatie nodig, en die komt van een arts; wij behandelen dan de huid en houden rekening met wat de arts voorschrijft.":
+    "We can treat this form. For some people medication is needed as well, and that comes from a doctor; we then treat the skin and take into account what the doctor has prescribed.",
+  "Dezelfde hoek en afstand": "The same angle and distance",
+  "Dezelfde lamp op dezelfde plek, bij beide foto's. Geen raamlicht, want dat is nooit twee keer hetzelfde.":
+    "The same lamp in the same place, in both photos. No window light, because that is never the same twice.",
+  "Dezelfde lichtrichting": "The same light direction",
+  "Dezelfde omstandigheden": "The same conditions",
+  "Dezelfde staat van de huid": "The same state of the skin",
+  "Dezelfde verhoorning, maar in het gezicht en met meer roodheid eromheen. Het wordt vaak aangezien voor acne of rosacea en is geen van beide.":
+    "The same keratinisation, but on the face and with more redness around it. It is often mistaken for acne or rosacea and is neither.",
+  "Dezelfde verstopping als bij een zwart puntje, maar de porie is aan de bovenkant dicht. Daardoor oxideert er niets en blijft het licht.":
+    "The same blockage as with a blackhead, but the pore is closed at the top. So nothing oxidises and it stays light.",
+  "Diba Clinics": "Diba Clinics",
+  "Direct na een zonvakantie behandelen geeft een grotere kans op nieuwe pigmentvlekken. Dan wachten we, ook als dat je afspraak verzet.":
+    "Treating straight after a sun holiday gives a greater chance of new pigmentation patches. Then we wait, even if that moves your appointment.",
+  "Dit bepaalt mee welke instellingen veilig zijn. Alle huidtypes zijn hier gelijk.":
+    "This helps determine which settings are safe. All skin types are equal here.",
+  "Dit doen wij niet": "We do not do this",
+  "Dit gaat over iets anders dan jij zoekt":
+    "This is about something other than what you are looking for",
+  "Dit gaat over volume of over weefsel dat verwijderd moet worden, en dat is niet wat een apparaat doet. Wij verwijzen dan door.":
+    "This is about volume or about tissue that has to be removed, and that is not what a machine does. We then refer you on.",
+  "Dit haalt de haast eraf en niet de vraag. Uitslag die blijft, terugkomt of gepaard gaat met klachten hoort nog steeds bij je huisarts.":
+    "This takes the urgency away, not the question. A rash that persists, comes back or comes with other symptoms still belongs with your GP.",
+  "Dit heeft niets met alcohol te maken, hoe hardnekkig dat verhaal ook is. Dat vooroordeel zit veel mensen jaren in de weg.":
+    "This has nothing to do with alcohol, however persistent that story is. That prejudice gets in many people's way for years.",
+  "Dit heeft niets te maken met hygiëne. We zien het bij mensen die zich twee keer per dag wassen.":
+    "This has nothing to do with hygiene. We see it in people who wash twice a day.",
+  "Dit hoort bij de aanpak van onzuiverheden en niet bij een naaldprik. Zit er meer, dan is de acnepagina de betere ingang.":
+    "This belongs with tackling blemishes and not with a needle prick. If there is more of it, the acne page is the better way in.",
+  "Dit hoort bij de arts. Er is medicatie voor die goed werkt, en wij werken daarnaast.":
+    "This belongs with a doctor. There is medication for it that works well, and we work alongside it.",
+  "Dit hoort bij de littekenpagina en niet hier, want de aanpak is een andere. We zeggen het liever voordat je aan de verkeerde behandeling begint.":
+    "This belongs on the scars page and not here, because the approach is different. We would rather say it before you start the wrong treatment.",
+  "Dit in één sessie wegwerken lukt niet, ook niet met een sterk apparaat. Reken op een reeks, met tijd ertussen om te zien wat er is veranderd.":
+    "Clearing this in one session is not possible, not even with a powerful machine. Count on a course, with time in between to see what has changed.",
+  "Dit is de grens. Reageert je huid rustig op de proefplek, dan kan de alexandriet op een lagere energie; is er twijfel, dan gaat het naar de Nd:YAG. Die keuze wordt in de kamer gemaakt en niet vooraf op een website.":
+    "This is the borderline. If your skin responds calmly to the test patch, the alexandrite can be used at a lower energy; if there is any doubt, it goes to the Nd:YAG. That choice is made in the room and not in advance on a website.",
+  "Dit is de grootste. Licht dat van opzij scheert legt een schaduw in elke porie, rimpel en oneffenheid. Recht van voren vult diezelfde schaduwen op en dan is de structuur weg.":
+    "This is the biggest one. Light grazing from the side casts a shadow in every pore, wrinkle and irregularity. Straight from the front fills those same shadows in and then the texture is gone.",
+  "Dit is een aandoening van het afweersysteem. De diagnose en de medische behandeling horen bij de huisarts of dermatoloog; waar nodig werken we met hen samen of verwijzen we door. Wat wij wel doen: je huid beoordelen en adviseren over ondersteunende huidverzorging.":
+    "This is a condition of the immune system. The diagnosis and the medical treatment belong with your GP or dermatologist; where needed we work with them or refer you on. What we do do: assess your skin and advise on supporting skincare.",
+  "Dit is een routine die op een rustige huid geen probleem hoeft te zijn en op een geïrriteerde huid net te veel is. Het draait dan minder om wat je gebruikt en meer om hoeveel tegelijk.":
+    "This is a routine that need not be a problem on calm skin and is just too much on irritated skin. It is then less about what you use and more about how much at once.",
+  "Dit is een routine die vraagt om problemen":
+    "This is a routine that is asking for trouble",
+  "Dit is geen fibroom, of het verandert. Weghalen zou betekenen dat er niets meer te beoordelen valt, en dat is een fout die niet te herstellen is.":
+    "This is not a fibroma, or it is changing. Removing it would mean there is nothing left to assess, and that is a mistake you cannot undo.",
+  "Dit is geen gewone zonnevlek. Behandelen zonder dat er eerst naar gekeken is, is hier precies wat er niet moet gebeuren.":
+    "This is not an ordinary sun spot. Treating it before anyone has looked at it is exactly what should not happen here.",
+  "Dit is geen kwestie van een gezichtsbehandeling maar van pigment aanpakken, en dat loopt over maanden. De pigmentpagina legt dat uit.":
+    "This is not a matter of a facial but of tackling pigmentation, and that runs over months. The pigmentation page explains that.",
+  "Dit is geen kwestie van vies of schoon. De bacterie hoort bij je huid; alleen de omstandigheden zijn veranderd.":
+    "This is not a question of dirty or clean. The bacterium belongs to your skin; only the conditions have changed.",
+  "Dit is het beeld waar behandeling het meest oplevert. We meten eerst hoeveel er zichtbaar is, zodat je het verschil later niet hoeft te geloven.":
+    "This is the picture where treatment achieves the most. We first measure how much is visible, so you do not have to take the difference on trust later.",
+  "Dit is het eerlijke maximum. De openingen staan er nog precies zo, en toch zie je ze nauwelijks. Dat is wat wij bedoelen met poriën behandelen.":
+    "This is the honest maximum. The openings are still exactly as they were, and yet you barely see them. That is what we mean by treating pores.",
+  "Dit is het enige punt waar wij iets kunnen betekenen: de barrière ondersteunen zodat hij minder lekt. Wij behandelen het eczeem niet, we maken de omstandigheden minder ongunstig.":
+    "This is the only point where we can do something: supporting the barrier so it leaks less. We do not treat the eczema, we make the conditions less unfavourable.",
+  "Dit is het meest gemaakte misverstand op deze pagina, en het kost mensen sessies aan de verkeerde behandeling.":
+    "This is the most common misunderstanding on this page, and it costs people sessions on the wrong treatment.",
+  "Dit is het moment waarop striae het beste reageren. Wachten tot ze wit zijn is de meest gemaakte fout.":
+    "This is the moment when stretch marks respond best. Waiting until they are white is the most common mistake.",
+  "Dit is iets anders": "This is something else",
+  "Dit is littekenweefsel": "This is scar tissue",
+  "Dit is normaal en geen reden om te stoppen. Blijf van je gezicht af, houd het simpel, en bel ons als je twijfelt. Dat mag ook zonder afspraak.":
+    "This is normal and no reason to stop. Keep your hands off your face, keep it simple, and call us if you are unsure. That is fine without an appointment too.",
+  "Dit is wat ik zelf heb ingevuld, geen meting. Ik weet dat er niets vaststaat tot er gemeten is.":
+    "This is what I filled in myself, not a measurement. I know that nothing is fixed until it has been measured.",
+  "Dit is wél littekenweefsel. Er is bij de ontsteking bindweefsel verloren gegaan en de huid is daar ingezakt. Kleur kan er los van staan; een putje kan gewoon huidkleurig zijn.":
+    "This is scar tissue. Connective tissue was lost during the inflammation and the skin has sunk there. Colour can be separate from it; a pit can be perfectly skin-coloured.",
+  "Dit kan bij jou nu niet": "This is not possible for you right now",
+  "Dit kan, met een kanttekening": "This is possible, with a caveat",
+  "Dit kun je boeken": "You can book this",
+  "Dit past bij je profiel": "This suits your profile",
+  "Dit patroon wijst op een hormonale factor":
+    "This pattern points to a hormonal factor",
+  "Dit raden wij af": "We advise against this",
+  "Dit reageert goed, maar alleen met bescherming erbij. Zonder dat komt het terug en dan heb je betaald voor niets.":
+    "This responds well, but only with protection alongside. Without that it comes back and then you have paid for nothing.",
+  "Dit traject is gemaakt voor 18 jaar en jonger. Voor jou is het gewone acnetraject de juiste.":
+    "This programme is made for 18 and under. For you the regular acne programme is the right one.",
+  "Dit vraagt geduld en een aanpak die op de verhoorning werkt. Uitknijpen lukt niet en laat meestal een vlekje achter.":
+    "This takes patience and an approach that works on the keratinisation. Squeezing does not work and usually leaves a mark.",
+  "Dit vraagt meer hersteltijd dan je aangaf":
+    "This needs more recovery time than you indicated",
+  "Dit vraagt om een ander traject of om een gewoonte. Een gezichtsbehandeling maskeert het hooguit een paar weken.":
+    "This calls for a different programme or for a habit. A facial masks it for a few weeks at most.",
+  "Dit wordt vaak aangezien voor huidveroudering terwijl het net zo goed uitdroging, slaap of medicatie kan zijn. Daarom meten we eerst.":
+    "This is often mistaken for skin ageing while it could just as well be dehydration, sleep or medication. That is why we measure first.",
+  "Dit wordt vrijwel altijd voor schimmel aangezien en dan met het verkeerde middel behandeld. Nagelafwijkingen hangen bovendien samen met een grotere kans op gewrichtsklachten.":
+    "This is almost always mistaken for fungus and then treated with the wrong remedy. Nail changes are also linked to a greater chance of joint problems.",
+  "Dit zijn geen huisregels maar weigeringen. Bij elke regel staat wat hij ons kost, want een belofte zonder prijs is geen belofte. Ze staan hier bij elkaar en ze staan ook los, op de pagina waar ze gelden.":
+    "These are not house rules but refusals. Each rule states what it costs us, because a promise without a price is not a promise. They are gathered here and they also stand on their own, on the page where they apply.",
+  "Dit zijn geen poriën maar littekens van eerdere ontstekingen. Een porie heeft een opening, een kuiltje niet.":
+    "These are not pores but scars from earlier inflammation. A pore has an opening, a pit does not.",
+  "Dode huidcellen laten aan de rand van de porie niet goed los en plakken samen. De opening wordt smaller en sluit uiteindelijk af.":
+    "Dead skin cells do not shed properly at the edge of the pore and stick together. The opening narrows and eventually closes off.",
+  "Doet er iets aan, maar is er niet voor gemaakt":
+    "Does something about it, but is not made for it",
+  "Doet het zeer, voelt het warm aan, en is het in dagen ontstaan in plaats van geleidelijk?":
+    "Does it hurt, does it feel warm, and did it appear in days rather than gradually?",
+  "Door de kapotte barrière komen stoffen naar binnen die er normaal niet doorheen komen, en het afweersysteem reageert daarop.":
+    "Through the broken barrier, substances get in that normally do not, and the immune system reacts to that.",
+  "Doorbloeding en herstel lopen terug bij slaaptekort, roken en te weinig drinken, en dat zie je het eerst aan je gezicht.":
+    "Blood flow and repair drop off with lack of sleep, smoking and drinking too little, and you see that in your face first.",
+  "Doorsturen. Een moedervlek die weg moet, hoort onderzocht te worden en dat kunnen wij niet.":
+    "Referring on. A mole that has to go should be examined and we cannot do that.",
+  "Draadliften en chirurgie": "Thread lifts and surgery",
+  "Drie maanden begeleiding met controles":
+    "Three months of guidance with check-ups",
+  "Drie maanden met aangepaste verzorging":
+    "Three months with adjusted skincare",
+  "Drie oorzaken, één beeld": "Three causes, one picture",
+  "Drie sessies Nordlys IPL over tien weken":
+    "Three Nordlys IPL sessions over ten weeks",
+  "Droge en gevoelige huid": "Dry and sensitive skin",
+  "Droog of uitgedroogd": "Dry or dehydrated",
+  "Droogheid of een doffe huid": "Dryness or dull skin",
+  "Druk de zijkant van een doorzichtig glas stevig op de vlekken en kijk er dwars doorheen. Deze test is geen diagnose en sluit niets uit: een uitslag die wél wegdrukt kan nog steeds ernstig zijn. Hij helpt je alleen inschatten of je vandaag belt of dat het tot een gewone afspraak kan wachten.":
+    "Press the side of a clear glass firmly onto the patches and look straight through it. This test is not a diagnosis and rules nothing out: a rash that does fade can still be serious. It only helps you judge whether you call today or whether it can wait for an ordinary appointment.",
+  "Dunne, permanent zichtbare bloedvaatjes. Ze verdwijnen niet als je erop drukt en gaan van zichzelf niet weg.":
+    "Thin, permanently visible blood vessels. They do not disappear when you press on them and do not go away by themselves.",
+  "Duw de huid met twee vingers omhoog naar je slaap. Moet je meer dan een centimeter verplaatsen om te krijgen wat je wil, dan gaat het hierover.":
+    "Push the skin up towards your temple with two fingers. If you have to move it more than a centimetre to get what you want, this is what it is about.",
+  "Eczeem is een aandoening met een medische behandeling, en die hoort bij je huisarts of een dermatoloog. Wij nemen die rol niet over en gaan er ook geen mening over geven.":
+    "Eczema is a condition with a medical treatment, and that belongs with your GP or a dermatologist. We do not take over that role and we will not give an opinion on it either.",
+  "Eczeem of psoriasis behandelen": "Treating eczema or psoriasis",
+  "Eczeem, psoriasis en onbegrepen uitslag gaan naar de huisarts of de dermatoloog. Die pagina's hebben bij ons niet eens een afspraakknop, en we werken samen met de arts die het wel behandelt.":
+    "Eczema, psoriasis and unexplained rashes go to the GP or the dermatologist. Those pages do not even have a booking button with us, and we work together with the doctor who does treat it.",
+  "Een advies op maat": "Tailored advice",
+  "Een afspraak die soms weken later valt, en een klant die intussen bij een ander terechtkan die niet vraagt.":
+    "An appointment that is sometimes weeks later, and a client who can meanwhile go to someone else who does not ask.",
+  "Een ander mechanisme dan een zonnevlek: hormonaal aangestuurd en veel gevoeliger voor licht en warmte. Verkeerd behandelen maakt het aantoonbaar erger.":
+    "A different mechanism from a sun spot: hormonally driven and far more sensitive to light and heat. Treating it wrongly demonstrably makes it worse.",
+  "Een behandelaar legt bij het scherm van de EVE-M uit wat de opnames laten zien.":
+    "A therapist explaining at the EVE-M screen what the images show.",
+  "Een behandelaar vertelt hoe een acnetraject bij jongeren verloopt.":
+    "A therapist explaining how an acne programme for young people goes.",
+  "Een behandelaar zet met een fijne naald het mengsel rond de oogkas van een client.":
+    "A therapist placing the mixture around a client's eye socket with a fine needle.",
+  "Een cliënt krijgt koffie aangereikt bij Diba Clinics":
+    "A client being handed a coffee at Diba Clinics",
+  "Een cosmetisch arts of plastisch chirurg.":
+    "A cosmetic doctor or plastic surgeon.",
+  "Een deel van de lijst tijdens zwangerschap of borstvoeding":
+    "Part of the list during pregnancy or breastfeeding",
+  "Een deel van de mensen dat binnenkomt gaat weg zonder afspraak. Dat is geen omzet die we mislopen, dat is de bedoeling.":
+    "Some of the people who come in leave without an appointment. That is not revenue we are missing, that is the point.",
+  "Een droge huid en geen verhoorning rond de haarzakjes. Dit lijkt erop en vraagt om iets veel eenvoudigers.":
+    "Dry skin and not keratinisation around the hair follicles. This looks like it and calls for something far simpler.",
+  "Een eerlijk gesprek. Doen de knobbels pijn, blijven ze weken zitten of laten ze littekens achter, dan raden we je aan eerst naar je huisarts te gaan. Soms is ons advies om bij ons nog niet te starten.":
+    "An honest conversation. If the lumps hurt, stay for weeks or leave scars, we advise you to see your GP first. Sometimes our advice is not to start with us yet.",
+  "Een fijne naald, vlak onder de huid rond de oogkas":
+    "A fine needle, just under the skin around the eye socket",
+  "Een geleidelijk dikkere neus met grovere poriën, vooral bij mannen.":
+    "A gradually thicker nose with coarser pores, mainly in men.",
+  "Een gemengd beeld": "A mixed picture",
+  "Een gemengd patroon, het meest voorkomend":
+    "A mixed pattern, the most common one",
+  "Een gerichte keuze": "A targeted choice",
+  "Een gespecialiseerde PMU-studio.": "A specialised PMU studio.",
+  "Een gevorderd stadium waarbij bindweefsel is toegenomen. Dit hoort bij de dermatoloog.":
+    "An advanced stage in which connective tissue has increased. This belongs with the dermatologist.",
+  "Een gezonde huid van vijfentwintig heeft geen serie behandelingen nodig. Wij verkopen die dus niet, ook niet als je erom vraagt: je hebt er op dat moment nog niets aan.":
+    "Healthy skin at twenty-five does not need a series of treatments. So we do not sell them, not even if you ask: at that point they do nothing for you.",
+  "Een gloed is een ander mechanisme dan verwijde vaatjes, en het is ook geen voorstadium daarvan. Behandelen alsof het lijntjes zijn levert weinig op.":
+    "A flush is a different mechanism from dilated vessels, and it is not an early stage of them either. Treating it as if it were fine lines achieves little.",
+  "Een goedaardige woekering van huidcellen. Ondanks het uiterlijk heeft dit niets met zonschade te maken en het is ook geen moedervlek.":
+    "A benign overgrowth of skin cells. Despite its appearance this has nothing to do with sun damage and it is not a mole either.",
+  "Een half jaar wachten in het drukste seizoen, met de kans dat iemand ondertussen ergens anders begint.":
+    "Six months of waiting in the busiest season, with the chance that someone starts somewhere else in the meantime.",
+  "Een huid die net bruin is geworden": "Skin that has just tanned",
+  "Een huid in herstel pigmenteert sneller.":
+    "Skin in recovery pigments more quickly.",
+  "Een huid met te weinig water in de bovenste laag ligt niet glad, en een oneffen oppervlak oogt dof. Los van hoeveel talg je maakt.":
+    "Skin with too little water in the top layer does not lie smooth, and an uneven surface looks dull. Regardless of how much oil you produce.",
+  "Een huidanalyse eerst. Bij verspreide acne is meten belangrijker dan bij een enkele zone, omdat je het verschil anders niet ziet.":
+    "A skin analysis first. With widespread acne, measuring matters more than with a single area, because otherwise you cannot see the difference.",
+  "Een huidkliniek verandert hier niets aan. Wij zeggen dat liever nu dan na een reeks, ook als je hier kwam om iets te boeken.":
+    "A skin clinic changes nothing about this. We would rather say that now than after a course, even if you came here to book something.",
+  "Een huidtherapeut schrijft geen medicijnen voor. Bij zware acne is dat soms precies wat er nodig is, en dan is doorsturen het juiste advies.":
+    "A skin therapist does not prescribe medication. With severe acne that is sometimes exactly what is needed, and then referring you on is the right advice.",
+  "Een kin iets omhoog strakt de kaaklijn. Een halve stap dichterbij met een telefoon maakt de neus groter en de wangen smaller.":
+    "A chin slightly up tightens the jawline. Half a step closer with a phone makes the nose bigger and the cheeks narrower.",
+  "Een klassieke T-zone": "A classic T-zone",
+  "Een kliniek die injectables als hoofdvak heeft, bij voorkeur met een arts die ze zet.":
+    "A clinic whose main trade is injectables, preferably with a doctor who administers them.",
+  "Een korte lens dichtbij vergroot wat het dichtst bij de camera zit. Twee foto's van verschillende afstand zijn twee verschillende gezichten.":
+    "A short lens up close enlarges whatever is nearest the camera. Two photos from different distances are two different faces.",
+  "Een meting die geen verbetering laat zien is even bruikbaar. Dan gaan we iets anders proberen.":
+    "A measurement that shows no improvement is just as useful. Then we try something else.",
+  "Een moedervlek die je stoort halen we weg. Maar verandert er iets aan de vorm, de kleur, de grootte of het gevoel, dan gaat hij eerst langs je huisarts. Wat weg is kan niet meer onderzocht worden, en dat is de enige stap in dit onderwerp die je later niet kunt inhalen.":
+    "A mole that bothers you we remove. But if anything changes in its shape, colour, size or feel, it goes past your GP first. What is gone can no longer be examined, and that is the one step in this subject you cannot catch up on later.",
+  "Een moedervlek die niet verandert halen we wel weg, net als steelwratjes en fibromen. Het gaat hier alleen om plekjes waar iets aan verandert. Twijfel je, laat het dan zien; dat kost je niets.":
+    "A mole that is not changing we do remove, as we do skin tags and fibromas. This is only about spots where something is changing. If you are unsure, show it; that costs you nothing.",
+  "Een moedervlek die stoort halen we weg. Verandert er iets aan de vorm, de kleur of het gevoel, dan gaat hij eerst langs je huisarts: die kan weefsel laten onderzoeken en dat kan achteraf niet meer.":
+    "A mole that bothers you we remove. If anything changes in its shape, colour or feel, it goes past your GP first: they can have tissue examined and that cannot be done afterwards.",
+  "Een moedervlek en geen steelwratje. Die halen wij niet weg, ook niet als hij stoort: beoordelen en verwijderen hoort bij een arts.":
+    "A mole and not a skin tag. We do not remove those, even if it bothers you: assessing and removing belongs with a doctor.",
+  "Een moedervlek of plek die verandert": "A mole or spot that is changing",
+  "Een net behandelde huid is gevoeliger voor zon, en dat is precies de periode waarin je hem niet uit de zon houdt.":
+    "Freshly treated skin is more sensitive to sun, and that is exactly the period when you do not keep it out of the sun.",
+  "Een net verzorgde huid weerkaatst het licht gelijkmatiger en oogt daardoor gladder. Een huid die net gereinigd en gehydrateerd is fotografeert beter dan dezelfde huid aan het eind van de dag.":
+    "Freshly cared-for skin reflects light more evenly and therefore looks smoother. Skin that has just been cleansed and hydrated photographs better than the same skin at the end of the day.",
+  "Een ontstoken haarzakje, meestal door bacteriën. Anders dan een ingegroeid haar gaat dit vaak vanzelf over, maar het kan ook hardnekkig worden.":
+    "An inflamed hair follicle, usually from bacteria. Unlike an ingrown hair this often clears up on its own, but it can also become stubborn.",
+  "Een ontstoken kliertje aan de ooglidrand hoort bij de huisarts, en gaat vaak vanzelf over. Wij prikken daar niet in; de kans op verergering is klein maar de plek is te belangrijk om die kans te nemen.":
+    "An inflamed gland at the edge of the eyelid belongs with your GP, and often clears up on its own. We do not lance it there; the chance of making it worse is small but the spot is too important to take that chance.",
+  "Een ontstoken kliertje aan de ooglidrand. Dit is wat een gerstekorrel medisch gezien is, en het is iets heel anders dan een wit korreltje.":
+    "An inflamed gland at the edge of the eyelid. This is what a stye is medically, and it is something quite different from a small white bump.",
+  "Een organiserende functie. Het behandelen doen de therapeuten; hier kom je terecht voor je afspraak of je factuur.":
+    "An organising role. The treating is done by the therapists; here you come for your appointment or your invoice.",
+  "Een perfect protocol zegt nog steeds niets als je drie geslaagde trajecten publiceert en de rest niet.":
+    "A perfect protocol still says nothing if you publish three successful programmes and not the rest.",
+  "Een plekje dat verandert van vorm, kleur of grootte laat je eerst beoordelen door je huisarts of dermatoloog.":
+    "A spot that changes in shape, colour or size should first be assessed by your GP or dermatologist.",
+  "Een plekje weghalen dat verandert": "Removing a spot that is changing",
+  "Een porie die is volgelopen en waarvan de inhoud aan de lucht is verkleurd. Het donker is geoxideerde talg en geen vuil; poetsen doet er niets aan.":
+    "A pore that has filled up and whose contents have discoloured in the air. The dark colour is oxidised oil and not dirt; scrubbing does nothing to it.",
+  "Een porie vult zich weer, dus eindeloos blijven leeghalen is een abonnement en geen behandeling. We kijken liever naar hoe snel het teruggaat.":
+    "A pore fills up again, so emptying it endlessly is a subscription and not a treatment. We prefer to look at how quickly it goes back.",
+  "Een puskopje is geen teken dat het rijp is om uit te knijpen. Het is een teken dat je afweer al bezig is.":
+    "A white head is not a sign that it is ripe for squeezing. It is a sign that your immune system is already at work.",
+  "Een reeks van drie tot zes, met weken ertussen":
+    "A course of three to six, with weeks in between",
+  "Een vast patroon langs kaaklijn en kin dat opvlamt rond een vaste periode in de maand. Vaak dieper en gevoeliger dan de rest.":
+    "A fixed pattern along the jawline and chin that flares up around a fixed period in the month. Often deeper and more tender than the rest.",
+  "Een veelvoorkomende plek die vaak buiten beeld blijft, omdat hij onder kleding zit. Veel talgklieren, en zweet en wrijving van kleding houden het in stand.":
+    "A common place that often stays out of sight, because it sits under clothing. Plenty of oil glands, and sweat and friction from clothing keep it going.",
+  "Een verstopt talgkliertje in het ooglid dat is ingekapseld. Anders dan een strontje doet het meestal geen pijn, en het blijft langer zitten.":
+    "A blocked oil gland in the eyelid that has become encapsulated. Unlike a stye it usually does not hurt, and it stays longer.",
+  "Een vertrekpunt dat van jou is": "A starting point that is yours",
+  "Een vertrekpunt. Zonder meting van vandaag is over drie maanden niet vast te stellen of er iets veranderd is, behalve op gevoel.":
+    "A starting point. Without a measurement today there is no way to establish in three months whether anything has changed, other than by feel.",
+  "Een vervellende huid is onbeschermd; hier ontstaat pigment.":
+    "Peeling skin is unprotected; this is where pigmentation forms.",
+  "Een volgelopen porie die dicht is gebleven, waardoor de inhoud niet verkleurt. Dit is het beeld dat mensen het langst zelf proberen op te lossen.":
+    "A filled pore that has stayed closed, so the contents do not discolour. This is the picture people try to solve themselves for longest.",
+  "Een vouw die ontstaat doordat een spier de huid samentrekt. De huid zelf is nog intact.":
+    "A fold that appears because a muscle pulls the skin together. The skin itself is still intact.",
+  "Eerlijk rekenen. We laten je zien wat de meting zegt en wat dat in sessies betekent, en dan beslis jij of het je dat waard is.":
+    "Honest arithmetic. We show you what the measurement says and what that means in sessions, and then you decide whether it is worth it to you.",
+  "Eerst de barrière herstellen. Blijft de huid dof, dan microneedling: dat zet de vernieuwing van opperhuid en lederhuid in gang, en daar krijgt een uitgedroogde huid zijn glans van terug.":
+    "First restore the barrier. If the skin stays dull, then microneedling: that gets the renewal of epidermis and dermis going, and that is where dehydrated skin gets its glow back.",
+  "Eerst de oorzaak wegnemen, anders komen er steeds nieuwe bij. Daarna pas naar de kleur kijken.":
+    "First remove the cause, otherwise new ones keep appearing. Only then look at the colour.",
+  "Eerst kijken welke soort": "First look at which type",
+  "Eerst laten bekijken": "Have it looked at first",
+  "Eerst laten beoordelen. Verwijderen kan vaak wel, maar dat gaat anders dan bij een steeltje.":
+    "Have it assessed first. Removal is often possible, but it works differently from a stalked one.",
+  "Eerst met ons": "With us first",
+  "Eerst uitzoeken wat er tegen je huid komt. Daarna kalmeren. Soms is dit op te lossen zonder één behandeling, en dan zeggen we dat ook.":
+    "First working out what comes into contact with your skin. Then calming it down. Sometimes this can be solved without a single treatment, and we say so.",
+  "Eerst vaststellen of het poriën zijn of littekenkuiltjes. Dat lijkt een detail en het is het verschil tussen wel en niet werken.":
+    "First establishing whether they are pores or scar pits. That sounds like a detail and it is the difference between working and not working.",
+  "Eerste terugkeer van vlekken die in de winter waren weggetrokken.":
+    "The first return of patches that had faded in winter.",
+  "Eerste test": "First test",
+  "Elk product hier kan op zichzelf prima zijn. Bij elkaar opgeteld werken ze allemaal op dezelfde barrière, en die kan maar zoveel hebben. Dan is een gevoelige huid geen aanleg maar het resultaat.":
+    "Every product here can be fine on its own. Added together they all work on the same barrier, and that can only take so much. Then sensitive skin is not a predisposition but the result.",
+  "Elk tarief per sessie en per zone, zonder dat je ervoor hoeft te bellen.":
+    "Every rate per session and per area, without having to call for it.",
+  "Elke dag ongeveer hetzelfde": "About the same every day",
+  "Er blijft genoeg over dat wel kan, zoals dermaplaning en een rustige gezichtsbehandeling. Zeg het bij het maken van de afspraak, dan kiezen we daaruit.":
+    "Plenty remains that is possible, such as dermaplaning and a gentle facial. Say so when you book, and we choose from those.",
+  "Er ging iets mis. Probeer het nog eens.":
+    "Something went wrong. Please try again.",
+  "Er is actieve ontsteking, en daar kunnen we wat mee. We behandelen deze vorm met peelings: chemische peelings en kruidenpeels, die de ontsteking remmen en antibacterieel werken. Laser en needling wachten tot de huid rustiger is.":
+    "There is active inflammation, and we can do something about that. We treat this form with peels: chemical peels and herbal peels, which calm the inflammation and work against bacteria. Laser and needling wait until the skin is calmer.",
+  "Er is genoeg veranderd buiten de huid om het verschil te verklaren. Zulke beelden zijn niet per se onwaar; ze zijn alleen geen bewijs.":
+    "Enough has changed outside the skin to explain the difference. Such images are not necessarily untrue; they are simply not proof.",
+  "Er is net geëxfolieerd; nog een keer is te veel.":
+    "It has just been exfoliated; another time is too much.",
+  "Er komt geen naald aan te pas. Het handstuk werkt van binnenuit tegen de binnenkant van de lip en daarna aan de buitenzijde.":
+    "No needle is involved. The handpiece works from the inside against the inner lip and then on the outside.",
+  "Er komt minder bij, en wat er zit geneest sneller. De huid voelt in deze fase vaak eerder rustiger dan hij eruitziet. Dat komt doordat de roodheid het langst blijft.":
+    "Fewer are appearing, and what is there heals faster. In this phase the skin often feels calmer than it looks. That is because the redness lasts longest.",
+  "Er laadt niets buiten wat de site nodig heeft om te werken. Dat blijft zo tot je het zelf verandert.":
+    "Nothing loads beyond what the site needs to work. That stays that way until you change it yourself.",
+  "Er ligt vast hoe je huid er vandaag uitzag. Dat is het vertrekpunt van je behandelplan.":
+    "There is a record of how your skin looked today. That is the starting point of your treatment plan.",
+  "Er valt nog iets te halen, maar minder dan een jaar geleden.":
+    "There is still something to gain, but less than a year ago.",
+  "Er valt nog wat te winnen, vooral in textuur. De kleur volgt uit zichzelf. Verwacht verbetering, geen verdwijning.":
+    "There is still something to gain, especially in texture. The colour follows on its own. Expect improvement, not disappearance.",
+  "Er wordt te weinig huidvet aangemaakt of het gaat te snel verloren. Dit hoort vaak bij aanleg, bij kou en bij ouder worden.":
+    "Too little skin oil is produced or it is lost too quickly. This often goes with predisposition, with cold and with getting older.",
+  "Er zijn net meerdere berichten vanaf dit adres verstuurd. Probeer het over een paar minuten opnieuw, of bel ons.":
+    "Several messages have just been sent from this address. Try again in a few minutes, or call us.",
+  "Er zit geen haar in, of de zone is nu ontstoken. Ontharen doet hier niets, en beginnen zou een reeks verkopen zonder resultaat zijn.":
+    "There is no hair in it, or the area is inflamed right now. Hair removal does nothing here, and starting would mean selling a course without a result.",
+  "Er zit te weinig water in de bovenste laag. Dit is een toestand en geen huidtype: hij kan volgende maand weg zijn.":
+    "There is too little water in the top layer. This is a condition and not a skin type: it can be gone next month.",
+  "Even *stil* gelegen": "Been *quiet* for a while",
+  "Even lang na de behandeling": "Equally long after the treatment",
+  "Eén ding aangepakt": "One thing tackled",
+  "Eén sessie raakt alleen de haren die op dat moment groeien. Dat is nooit alles tegelijk, en daarom is één behandeling geen halve behandeling maar geen behandeling.":
+    "One session only reaches the hairs that are growing at that moment. That is never all of them at once, which is why one treatment is not half a treatment but no treatment.",
+  "Foto's onder vaste belichting en op vaste afstand, plus metingen van kleur, structuur en vocht. Het apparaat doet niets met je huid; het kijkt alleen.":
+    "Photos under fixed lighting and at a fixed distance, plus measurements of colour, texture and moisture. The machine does nothing to your skin; it only looks.",
+  "Fotona 4D, drie sessies over drie maanden":
+    "Fotona 4D, three sessions over three months",
+  "Foundation is letterlijk een laagje dat structuur verbergt. En veel telefoons verzachten de huid uit zichzelf, zonder dat je daarom gevraagd hebt.":
+    "Foundation is literally a layer that hides texture. And many phones soften the skin of their own accord, without you having asked for it.",
+  "Foundation, concealer, alles wat je erop legt.":
+    "Foundation, concealer, anything you put on it.",
+  "Ga hier eerst mee naar je huisarts": "Take this to your GP first",
+  "Ga je binnen een paar weken naar de zon of op wintersport, dan wachten we daarmee. Pigment komt na blootstelling terug en dan heb je voor niets betaald.":
+    "If you are going somewhere sunny or on a skiing holiday within a few weeks, we wait with this. Pigmentation comes back after exposure and then you have paid for nothing.",
+  "Ga voor een raam staan met het daglicht recht in je gezicht, en kijk dan in je telefoon. Vergelijk dat met hoe het eruitziet onder een lamp aan het plafond.":
+    "Stand by a window with the daylight straight on your face, then look at your phone. Compare that with how it looks under a ceiling light.",
+  "Geef de werkstoffen even de tijd om in te trekken.":
+    "Give the active ingredients a moment to absorb.",
+  "Geen actieprijs, geen nog twee plekken deze week, en geen aanbod dat vandaag afloopt. Een behandeling die je vanwege korting kiest, was niet de behandeling die je nodig had.":
+    "No promotional price, no only two slots left this week, and no offer that ends today. A treatment you choose because of a discount was not the treatment you needed.",
+  "Geen enkele crème, peeling of laser tilt weefsel op. Wie dat suggereert rekent op je hoop.":
+    "No cream, peel or laser lifts tissue. Anyone suggesting that is counting on your hope.",
+  "Geen filler en geen volume dat je erin spuit":
+    "No filler and no volume injected into it",
+  "Geen injectables en geen volumeopbouw. Dat zijn geen huidbehandelingen, en wat er over beloofd wordt kan niemand waarmaken.":
+    "No injectables and no volume building. Those are not skin treatments, and nobody can deliver what is promised about them.",
+  "Geen keratosis pilaris maar droogte of ingegroeide haren. Allebei vragen ze om iets eenvoudigers of om een andere pagina.":
+    "Not keratosis pilaris but dryness or ingrown hairs. Both call for something simpler or for a different page.",
+  "Geen litteken maar een vaatreactie: de ontsteking is weg, de doorbloeding is nog verhoogd. Dit is wat de meeste mensen bedoelen als ze acnelittekens zeggen.":
+    "Not a scar but a vascular reaction: the inflammation is gone, the blood flow is still raised. This is what most people mean when they say acne scars.",
+  "Geen make-up, geen filter": "No make-up, no filter",
+  "Geen milium maar een verstopte porie die wél openstaat. Het donker is geoxideerd talg en geen vuil.":
+    "Not a milium but a blocked pore that is open. The dark colour is oxidised oil and not dirt.",
+  "Geen percentages die we niet zelf hebben vastgesteld, geen jaren jonger, en geen aantal sessies dat we niet waar kunnen maken. Staat er een getal op deze site, dan komt het ergens vandaan.":
+    "No percentages we have not established ourselves, no years younger, and no number of sessions we cannot deliver. If there is a number on this site, it comes from somewhere.",
+  "Geen serie die je vooruit betaalt, geen strippenkaart, en geen routine met acht stappen. We spreken een aantal sessies af met een moment waarop we opnieuw kijken.":
+    "No series you pay for in advance, no loyalty card, and no eight-step routine. We agree on a number of sessions with a moment to look again.",
+  "Geen trekkerig gevoel na het wassen, geen schilfers, en make-up blijft zitten zoals je verwacht.":
+    "No tight feeling after washing, no flaking, and make-up sits as you expect.",
+  "Geen voor-en-na met andere belichting, een andere hoek of andere make-up. Bij poriën en kringen is de lamp anders het hele resultaat.":
+    "No before and after with different lighting, a different angle or different make-up. With pores and under-eye circles the lamp is otherwise the entire result.",
+  "Geen voorspelling": "Not a prediction",
+  "Geen wal en geen kring, maar een dal. Door volumeverlies aan de rand van je oogkas valt er schaduw, en die lees je als donker.":
+    "Not a bag and not a circle, but a hollow. Volume loss at the edge of your eye socket casts a shadow, and you read that as dark.",
+  "Geen wal maar een ophoping van vet (lipiden) in de huid van het ooglid. Het hangt vaak samen met een verhoogd cholesterol, en daarom is het ook iets voor je huisarts.":
+    "Not a bag but a build-up of fat (lipids) in the skin of the eyelid. It is often linked to raised cholesterol, which is why it is also something for your GP.",
+  "Geen wal, wel iets wat we behandelen. In het consult stellen we vast of het xanthelasma is en wat er bij jou past; de cholesterolcontrole hoort bij de huisarts.":
+    "Not a bag, but something we do treat. In the consultation we establish whether it is xanthelasma and what suits you; the cholesterol check belongs with your GP.",
+  "Geen zorgopleiding, en dat hoort ook zo: hier wordt niets over jouw huid besloten.":
+    "No healthcare training, and that is as it should be: nothing about your skin is decided here.",
+  "Geldt dit ook als ik er zelf om vraag?":
+    "Does this apply even if I ask for it myself?",
+  "Geleidelijk de bovenlaag laten vernieuwen zodat de poriën weer opengaan, in stappen die je huid aankan.":
+    "Gradually letting the top layer renew so the pores open again, in steps your skin can handle.",
+  "GentleMax Pro": "GentleMax Pro",
+  "Gesproken uitleg over hoe een acnetraject bij jongeren loopt: wat er in de eerste weken gebeurt, en waarom de huid soms eerst onrustiger wordt.":
+    "A spoken explanation of how an acne programme for young people goes: what happens in the first weeks, and why the skin sometimes gets more unsettled first.",
+  "Gezicht, hals": "Face, neck",
+  "Goed moment, met één opmerking: ga je op wintersport of naar de zon, zeg dat dan. Op de piste is de UV hoger dan in juni.":
+    "A good moment, with one note: if you are going skiing or somewhere sunny, say so. On the slopes the UV is higher than in June.",
+  "Goed moment. Vanaf nu wordt de resterende tijd wel korter.":
+    "A good moment. From now on the remaining time does get shorter.",
+  "Google Analytics en Microsoft Clarity laden op deze site. Je kunt dat hieronder meteen terugdraaien.":
+    "Google Analytics and Microsoft Clarity load on this site. You can undo that below straight away.",
+  "Grauwe tint, weinig glans": "A grey tone, little glow",
+  "Grijs, wit en rood haar": "Grey, white and red hair",
+  "Groeit iets, verschiet het van kleur, of heeft het een rafelige rand? Dan gaat het eerst naar de huisarts. Wegbranden maakt niet alleen de plek weg maar ook de mogelijkheid om hem te beoordelen, en dat is een fout die niet te herstellen is.":
+    "Is something growing, changing colour, or does it have a ragged edge? Then it goes to your GP first. Burning it off removes not only the spot but also the possibility of assessing it, and that is a mistake you cannot undo.",
+  "Grover haar verdwijnt merkbaar": "Coarser hair noticeably disappears",
+  "Haar dat op dit moment niet groeit": "Hair that is not growing right now",
+  "Haarfollikels in rustfase bereiken":
+    "Reaching hair follicles in the resting phase",
+  "Harde witte bolletjes": "Hard white bumps",
+  "Harde witte bolletjes die je niet kunt uitdrukken.":
+    "Hard white bumps you cannot squeeze out.",
+  "Heb ik een verwijzing nodig, en van wie?":
+    "Do I need a referral, and from whom?",
+  "Helpt bemiddeling niet: de geschillencommissie":
+    "If mediation does not help: the disputes committee",
+  "Herken je klacht en zie wat eraan te doen is":
+    "Recognise your concern and see what can be done about it",
+  "Herstel op gang brengen in het bindweefsel, met microneedling of laser, in een reeks over maanden. De vorm van het putje bepaalt wat er zin heeft.":
+    "Getting repair going in the connective tissue, with microneedling or laser, in a course over months. The shape of the pit determines what is worth doing.",
+  "Herstel op gang brengen in het bindweefsel, met microneedling of laser, in een reeks over maanden. Resultaat is minder diep, niet weg.":
+    "Getting repair going in the connective tissue, with microneedling or laser, in a course over months. The result is less deep, not gone.",
+  "Het SkinPen-handstuk beweegt in banen over de wang van een client.":
+    "The SkinPen handpiece moving in passes across a client's cheek.",
+  "Het bericht kon niet verstuurd worden.": "The message could not be sent.",
+  "Het bestaat en er zijn plekken die het goed doen. Wij bieden het alleen niet aan, en dan is doorverwijzen eerlijker dan iets erbij verzinnen.":
+    "It exists and there are places that do it well. We simply do not offer it, and then referring you on is more honest than inventing something to add.",
+  "Het beste startmoment. Je hebt vijf maanden met lage UV voor de boeg.":
+    "The best moment to start. You have five months of low UV ahead.",
+  "Het effect van een behandeling op dofheid zakt na verloop van tijd. Dat is normaal en geen reden om steeds dieper te gaan. Wie die trap opgaat houdt een geïrriteerde huid over die juist doffer oogt.":
+    "The effect of a treatment on dullness fades over time. That is normal and no reason to keep going deeper. Anyone who climbs that ladder ends up with irritated skin that looks duller still.",
+  "Het handstuk gaat in banen over de huid. Wat je hoort is het apparaat; wat je ziet is de roodheid die er meteen na de sessie bij hoort en binnen een dag wegtrekt.":
+    "The handpiece moves across the skin in passes. What you hear is the machine; what you see is the redness that comes with it straight after the session and fades within a day.",
+  "Het hele acnetraject naast de medicatie, mits de timing klopt. Veel mensen komen juist ná zo een kuur voor de littekens en de textuur die overblijven, en dat is precies waar wij voor zijn. Tijdens de kuur kijken we mee zonder te behandelen.":
+    "The whole acne programme alongside the medication, provided the timing is right. Many people come precisely after such a course for the scars and the texture that remain, and that is exactly what we are for. During the course we look on without treating.",
+  "Het kan even slechter lijken": "It may look worse for a while",
+  "Het laserhandstuk wordt tegen de binnen- en buitenzijde van de lippen gehouden.":
+    "The laser handpiece being held against the inside and outside of the lips.",
+  "Het litteken is uitgerijpt. De bloedvaten zijn grotendeels verdwenen en het collageen ligt in zijn eindstand. Er verandert van nature bijna niets meer.":
+    "The scar has matured. The blood vessels have largely gone and the collagen is in its final state. Naturally, almost nothing changes any more.",
+  "Het maakt weinig uit waar het licht vandaan komt":
+    "It makes little difference where the light comes from",
+  "Het meeste ligt vast, maar er is nog iets anders dat het verschil kan verklaren. Bij deze foto's kun je niet uitsluiten dat je naar de omstandigheden kijkt.":
+    "Most of it is held constant, but there is still something else that could explain the difference. With these photos you cannot rule out that you are looking at the conditions.",
+  "Het patroon in de tijd wijst op een hormonale factor. Huidbehandeling verbetert het beeld, maar de oorzaak ligt vaak dieper.":
+    "The pattern over time points to a hormonal factor. Skin treatment improves the picture, but the cause often lies deeper.",
+  "Het rood trekt weg onder je vinger en komt daarna langzaam terug.":
+    "The redness fades under your finger and then slowly returns.",
+  "Het venster is gesloten": "The window has closed",
+  "Het venster sluit": "The window is closing",
+  "Het versturen staat nog niet aan.": "Sending is not switched on yet.",
+  "Het vetkussentje achter je oog duwt naar voren doordat het membraan dat het op zijn plek houdt verslapt. Er zit dan niets extra's; het staat alleen op een andere plek.":
+    "The fat pad behind your eye pushes forward because the membrane holding it in place has weakened. There is nothing extra there; it is simply in a different place.",
+  "Het vlak trekt weg terwijl de lijntjes blijven staan. Daar zie je het onderscheid het duidelijkst.":
+    "The flat area fades while the fine lines stay. That is where you see the difference most clearly.",
+  "Hier boeken we vaak binnen enkele weken zichtbare winst. Dat is meteen de reden dat we hier meestal beginnen.":
+    "Here we often achieve visible gains within a few weeks. That is also why we usually start here.",
+  "Hier doet licht niets: het pigment zit in weefsel dat boven de huid uitsteekt. Verwijderen kan wel, maar dat gebeurt eerst na beoordeling.":
+    "Light does nothing here: the pigment sits in tissue that protrudes above the skin. Removal is possible, but only after assessment.",
+  "Hier gaat een eigen traject over, met andere regels en een ander tempo. De melasmapagina legt dat uit.":
+    "This is covered by its own programme, with different rules and a different pace. The melasma page explains that.",
+  "Hier helpt laserontharing niet. Wat wel iets doet is de bovenlaag geleidelijk soepeler maken, en de verwachting daarbij eerlijk houden.":
+    "Laser hair removal does not help here. What does do something is gradually making the top layer smoother, and keeping expectations honest about it.",
+  "Hier is de Nd:YAG niet de voorkeur maar de enige juiste keuze. Een sterk door pigment opgenomen golflengte hoort op deze huid niet thuis.":
+    "Here the Nd:YAG is not the preference but the only right choice. A wavelength strongly absorbed by pigment does not belong on this skin.",
+  "Hier is de volgorde belangrijker dan de techniek":
+    "Here the order matters more than the technique",
+  "Hier is het eerlijke antwoord dat we weinig kunnen beloven. De structuur is deels te verbeteren, de witte kleur vrijwel niet. Volledige verdwijning beloven we hier dus niet.":
+    "Here the honest answer is that we can promise little. The texture can be partly improved, the white colour hardly at all. So we do not promise complete disappearance here.",
+  "Hier is ons antwoord vaak dat de winst beperkt is. We laten dat zien met de meting in plaats van dat je het moet geloven.":
+    "Here our answer is often that the gain is limited. We show that with the measurement instead of asking you to take our word for it.",
+  "Hier kijkt eerst iemand anders": "Someone else looks at this first",
+  "Hier ligt het antwoord niet": "The answer is not here",
+  "Hier ligt het enige punt dat volledig bij jou ligt. Nagels kort, koelen in plaats van krabben, en 's nachts iets tussen je nagels en je huid. Dat klinkt klein en het is de meest onderschatte stap.":
+    "This is the one point that lies entirely with you. Nails short, cooling instead of scratching, and something between your nails and your skin at night. That sounds small and it is the most underrated step.",
+  "Hier ligt het op de grens. De bovenlaag neemt al een deel van de 755 op, en of dat te veel is hangt af van hoe jouw huid op zon reageert. Dat bepalen we bij de intake en niet op deze pagina.":
+    "Here it is borderline. The top layer already takes up part of the 755, and whether that is too much depends on how your skin reacts to sun. We determine that at the intake and not on this page.",
+  "Hier niet mee wachten. Schade aan een gewricht is blijvend, en juist daarom telt het als je er vroeg bij bent. Noem het bij je huisarts, ook als de huidplekken meevallen.":
+    "Do not wait with this. Damage to a joint is permanent, and that is exactly why catching it early counts. Mention it to your GP, even if the skin patches are mild.",
+  "Hier valt het meeste te winnen en het kost bijna niets":
+    "This is where most is to be gained and it costs almost nothing",
+  "Hier valt iets weg te laten": "There is something to leave out here",
+  "Hier valt wel iets te doen. De poriën ontlasten, de verhoorning aanpakken en kijken wat het opnieuw laat vollopen.":
+    "There is something to do here. Relieving the pores, tackling the keratinisation and looking at what makes them fill up again.",
+  "Hier verandert ontharen niets": "Hair removal changes nothing here",
+  "Hier verkopen we niets. We benoemen het, want een behandeling die tegen je gewoontes in werkt is weggegooid geld.":
+    "We are not selling anything here. We name it, because a treatment that works against your habits is money thrown away.",
+  "Hier verkopen wij niets": "We are not selling anything here",
+  "Hier verwijzen we door, omdat de juiste behandeling buiten onze praktijk ligt.":
+    "Here we refer you on, because the right treatment lies outside our practice.",
+  "Hier werken we aan de huid rondom de porie en niet aan de porie zelf. Dat is het verschil tussen minder zichtbaar en kleiner.":
+    "Here we work on the skin around the pore and not on the pore itself. That is the difference between less visible and smaller.",
+  "Hier werken we op de huid rondom en op de glans erop. De opening zelf laten we met rust, want daar valt niets aan te doen.":
+    "Here we work on the surrounding skin and on the shine on it. We leave the opening itself alone, because nothing can be done about that.",
+  "Hier zeggen we nee, en we verwijzen door. Dat is geen onwil: het is het verschil tussen aanspannen en verwijderen.":
+    "Here we say no, and we refer you on. That is not unwillingness: it is the difference between tightening and removing.",
+  "Hier zeggen we nee. Dit is chirurgie en geen huidbehandeling; een cosmetisch arts of oogarts kan er wél iets aan doen.":
+    "Here we say no. This is surgery and not a skin treatment; a cosmetic doctor or eye doctor can do something about it.",
+  "Hier zeggen we nee. Wij behandelen huid, geen volume. We vertellen je wat wél realistisch is en wat je elders zou moeten zoeken.":
+    "Here we say no. We treat skin, not volume. We tell you what is realistic and what you would have to look for elsewhere.",
+  "Hier zijn wij eerlijk: voor een zuivere mimieklijn is een injectable de gangbare route, en dat doen wij niet. Wel kunnen we de huid eromheen steviger maken, waardoor de vouw minder snel blijft staan.":
+    "Here we are honest: for a purely expression line an injectable is the usual route, and we do not do that. What we can do is make the skin around it firmer, so the fold is less likely to stay.",
+  "Hier zijn wij het niet": "This is not for us",
+  "Hier zit de meeste winst, en hier gaat het ook het vaakst mis. Te hard schrobben beschadigt de barrière en maakt het laatste stadium erger.":
+    "This is where most of the gain is, and where it most often goes wrong. Scrubbing too hard damages the barrier and makes the last stage worse.",
+  "Hier zitten de grootste poriën van je gezicht. Meestal mee-eters, minder vaak echte ontsteking.":
+    "This is where the largest pores on your face are. Usually blackheads, less often real inflammation.",
+  "Hiervoor is een injectable of een ingreep de gangbare route, en daar werken wij niet mee. Dan verwijzen we liever door.":
+    "For this an injectable or a procedure is the usual route, and we do not work with those. We would rather refer you on.",
+  "Hitte en vocht maken het vervellen onvoorspelbaar.":
+    "Heat and moisture make the peeling unpredictable.",
+  "Hitte houdt de roodheid langer aan.": "Heat keeps the redness going longer.",
+  "Hitte is bij pigment een bekende aanjager.":
+    "With pigmentation, heat is a known trigger.",
+  "Hitte op een net verwarmde huid.": "Heat on freshly warmed skin.",
+  "Hitte verlengt de roodheid en het risico.":
+    "Heat prolongs the redness and the risk.",
+  "Hitte verwijdt de vaten en dat verlengt de roodheid.":
+    "Heat dilates the vessels and that prolongs the redness.",
+  "Hoe diep de oneffenheid zit. Blijft het bij de bovenlaag, dan is de aanpak een andere dan wanneer het bindweefsel eronder is aangedaan.":
+    "How deep the irregularity sits. If it stays in the top layer, the approach is different from when the connective tissue underneath is affected.",
+  "Hoe dit apparaat": "How this machine",
+  "Hoe een traject": "What a programme",
+  "Hoe je huid op de eerste puls reageert en in welke groeifase je haren zitten. Dat bepaalt de instelling en het interval van je reeks.":
+    "How your skin responds to the first pulse and which growth phase your hairs are in. That determines the setting and the interval of your course.",
+  "Hoe lang speelt dit al?": "How long has this been going on?",
+  "Hoe laserontharing werkt": "How laser hair removal works",
+  "Hoe reageert je huid op de zon?": "How does your skin react to the sun?",
+  "Hoe verleidelijk ook, agressief werken geeft hier vaak meer pigment in plaats van minder. Dat is bij melasma een bekend en pijnlijk patroon.":
+    "Tempting as it is, working aggressively here often produces more pigment rather than less. With melasma that is a known and painful pattern.",
+  "Hoe voelt je huid meestal?": "How does your skin usually feel?",
+  "Hoeveel er nodig is hangt af van hoeveel vaatjes er zichtbaar zijn en hoe diep ze liggen. Dat zien we bij de eerste afspraak, en daarna hoor je een reëel aantal in plaats van een schatting aan de telefoon.":
+    "How much is needed depends on how many vessels are visible and how deep they lie. We see that at the first appointment, and after that you hear a realistic number instead of an estimate over the phone.",
+  "Hoeveel jaar jonger je eruitziet valt niet te meten, dus dat zeggen we ook niet. We laten je zien wat er in kleur en structuur veranderde, met de meting ernaast.":
+    "How many years younger you look cannot be measured, so we do not say it. We show you what changed in colour and texture, with the measurement alongside.",
+  "Hoeveel sessies je nodig hebt hangt af van de zone, je huidtype en je haargroei. Dat hoor je tijdens de intake, en niet ervoor.":
+    "How many sessions you need depends on the area, your skin type and your hair growth. You hear that during the intake, not before.",
+  "Hoeveel stevigheid er onder de lijntjes nog zit. Verslapping vraagt iets anders dan lijntjes in de bovenlaag, en dat onderscheid maak je niet in de spiegel.":
+    "How much firmness is still there under the fine lines. Sagging calls for something different from lines in the top layer, and you cannot tell them apart in the mirror.",
+  "Hoge UV. Pigmentcellen zijn actief en reageren op elke prikkel.":
+    "High UV. Pigment cells are active and respond to every trigger.",
+  "Hormonaal pigment": "Hormonal pigmentation",
+  "Hormonale acne is niet voorbehouden aan tieners. We zien het net zo vaak bij mensen van dertig en veertig.":
+    "Hormonal acne is not just for teenagers. We see it just as often in people in their thirties and forties.",
+  "Hormonen plus UV plus warmte. Zwangerschap en de pil zijn bekende factoren, en zelfs warmte alleen kan het aanwakkeren.":
+    "Hormones plus UV plus heat. Pregnancy and the pill are known factors, and even heat on its own can set it off.",
+  "Houd ons aan": "Hold us to it",
+  "Huidkleurige tot witte bultjes zonder rode rand, vaak op voorhoofd en kaaklijn. Je voelt ze eerder dan je ze ziet.":
+    "Skin-coloured to white bumps without a red rim, often on the forehead and jawline. You feel them before you see them.",
+  "Huidtextuur en poriën": "Skin texture and pores",
+  "Huidtherapeut in opleiding": "Trainee skin therapist",
+  "Huidtherapie en huidverbetering": "Skin therapy and skin improvement",
+  "Huiduitslag is een symptoom met tientallen oorzaken, waarvan een deel spoedeisend is. Daar hoort een arts naar te kijken en niet een huidkliniek.":
+    "A rash is a symptom with dozens of causes, some of them urgent. A doctor should look at that, not a skin clinic.",
+  "Iets omlaag, maar de zomerschade is nu opgebouwd.":
+    "Slightly lower, but the summer damage has now built up.",
+  "In de eerste maanden doen we niets. Behandelen in die fase verstoort de genezing en kan het litteken juist dikker maken. Je krijgt advies mee en een afspraak over drie maanden.":
+    "In the first months we do nothing. Treating in that phase disrupts healing and can actually make the scar thicker. You get advice to take with you and an appointment in three months.",
+  "In deze video legt de behandelaar uit wat er op het scherm verschijnt en wat je eraan hebt. Zet het geluid aan, want het is de uitleg die het punt maakt.":
+    "In this video the therapist explains what appears on the screen and what use it is to you. Turn the sound on, because it is the explanation that makes the point.",
+  "In die afgesloten porie zit geen zuurstof meer. Een bacterie die altijd al op je huid leeft, krijgt daar ineens de ruimte.":
+    "There is no oxygen left in that closed-off pore. A bacterium that always lives on your skin suddenly has room there.",
+  "In overleg": "To be agreed",
+  "Ingegroeide haren, en geen keratosis pilaris. Het onderscheid zit in de plek en in de vraag of er een haar in zit.":
+    "Ingrown hairs, and not keratosis pilaris. The difference lies in the location and in whether there is a hair in it.",
+  "Intake + huidtype + eerste sessie": "Intake + skin type + first session",
+  "Interval wordt ruimer": "The interval becomes longer",
+  "Is de bolling 's avonds net zo groot als 's ochtends, en wordt hij duidelijker als je omhoog kijkt?":
+    "Is the bulge just as big in the evening as in the morning, and does it become clearer when you look up?",
+  "Is de bovenkant donker in plaats van wit, en zie je een opening in de huid?":
+    "Is the top dark rather than white, and can you see an opening in the skin?",
+  "Is de huid glad geworden maar zit de kleur er nog, en wordt het donkerder na de zon?":
+    "Has the skin become smooth but the colour is still there, and does it get darker after sun?",
+  "Is de plek de afgelopen maanden anders geworden: groter, donkerder, ongelijk van kleur, of met een rafelige rand?":
+    "Has the spot changed over the past few months: bigger, darker, uneven in colour, or with a ragged edge?",
+  "Is de plek glad maar bruin of grijsbruin, en wordt hij donkerder na een dag in de zon?":
+    "Is the spot smooth but brown or greyish brown, and does it get darker after a day in the sun?",
+  "Is de tint duidelijk erger na weken van slecht slapen en beter na een vakantie, dan is er geen huidprobleem maar een periode. Wij benoemen dat liever dan dat we er een traject tegenover zetten dat tegen je gewoontes in moet werken.":
+    "If the tone is clearly worse after weeks of bad sleep and better after a holiday, then there is no skin problem but a period. We would rather say that than put a programme against it that has to work against your habits.",
+  "Is het de afgelopen maanden anders geworden: groter, donkerder, ongelijk van kleur, of bloedt het zonder dat je eraan zat?":
+    "Has it changed over the past few months: bigger, darker, uneven in colour, or does it bleed without you touching it?",
+  "Is het duidelijk erger na een slechte week en beter na een vakantie? Verandert het met je slaap en hoeveel je drinkt?":
+    "Is it clearly worse after a bad week and better after a holiday? Does it change with your sleep and how much you drink?",
+  "Is het geen milium en geen mee-eter, dan gaan we niet raden. Dan kijkt eerst iemand anders ernaar, ook als je er speciaal voor gekomen bent.":
+    "If it is not a milium and not a blackhead, we are not going to guess. Then someone else looks at it first, even if you came in specially for it.",
+  "Is het gelijkmatig bruin, rond en scherp begrensd, en zit het er al sinds je jeugd of tienertijd?":
+    "Is it evenly brown, round and sharply bounded, and has it been there since your childhood or teens?",
+  "Is het op dit moment actief, dan werken we eerst aan de barrière en pakken we het gebied zelf aan zodra het rustig is. Een geïrriteerde huid reageert feller en het resultaat is slechter.":
+    "If it is active right now, we work on the barrier first and tackle the area itself once it is calm. Irritated skin reacts more strongly and the result is worse.",
+  "Is het rood en glad, dan is de kans groot dat het over een paar maanden weg is. Dan zeggen we dat, ook als je hier zat om iets te boeken. Blijft het staan, dan kun je altijd terugkomen.":
+    "If it is red and smooth, there is a good chance it will be gone in a few months. Then we say so, even if you came here to book something. If it stays, you can always come back.",
+  "Is het rood, warm en gevoelig, en is het in dagen ontstaan in plaats van in maanden?":
+    "Is it red, warm and tender, and did it appear in days rather than months?",
+  "Is je huid geïrriteerd, dan sturen we je eerst twee weken naar huis met minder in plaats van meer. Dat kost ons een afspraak en het scheelt jou een teleurstelling.":
+    "If your skin is irritated, we first send you home for two weeks with less rather than more. That costs us an appointment and it saves you a disappointment.",
+  "Ja, en bij verschillende regels is dat precies het geval: mensen vragen om een behandeling waarvan wij weten dat hij te weinig oplevert. Het antwoord blijft hetzelfde.":
+    "Yes, and with several rules that is exactly the case: people ask for a treatment we know achieves too little. The answer stays the same.",
+  "Ja, het wisselt sterk": "Yes, it varies a lot",
+  "Ja, voorzichtig. Dit is het enige type dat echt op behandeling reageert. De huid daar is dun en gevoelig, dus we gaan hier langzamer te werk dan elders in het gezicht.":
+    "Yes, carefully. This is the only type that genuinely responds to treatment. The skin there is thin and sensitive, so we work more slowly here than elsewhere on the face.",
+  "Je acne zit in meerdere zones die elk iets anders kunnen betekenen. Dat komt vaak voor en het is geen slecht teken; het betekent alleen dat we beter moeten kijken voordat we iets doen.":
+    "Your acne sits in several areas that can each mean something different. That is common and it is not a bad sign; it only means we have to look more carefully before we do anything.",
+  "Je afweer ruimt op. De roodheid en de zwelling komen van jouw afweerreactie en niet van de bacterie zelf. Daarom is een puistje warm.":
+    "Your immune system is clearing up. The redness and the swelling come from your immune response and not from the bacterium itself. That is why a spot feels warm.",
+  "Je barrière doet wat hij hoort te doen: vet vasthouden en water binnenhouden. Er valt hier weinig te repareren.":
+    "Your barrier is doing what it should: holding on to oil and keeping water in. There is little to repair here.",
+  "Je doel": "Your goal",
+  "Je gaf aan dat het sterk wisselt. Dan speelt vocht mee bovenop wat hierboven staat. Dat is geen aparte oorzaak en ook niets wat wij behandelen, maar het verklaart wel waarom je op sommige dagen denkt dat een behandeling niet werkt.":
+    "You said it varies a lot. Then fluid plays a part on top of what is above. That is not a separate cause and not something we treat, but it does explain why on some days you think a treatment is not working.",
+  "Je gaf aan snel geïrriteerd te zijn. Er wordt dan meestal met een lagere sterkte begonnen.":
+    "You said you get irritated easily. We then usually start at a lower strength.",
+  "Je gaf hierboven iets opvallends aan. Dat betekent niet dat er iets mis is, en het is ook niet aan ons om dat te beoordelen. Het betekent dat iemand met de juiste opleiding en de juiste apparatuur ernaar hoort te kijken.":
+    "You flagged something unusual above. That does not mean anything is wrong, and it is not for us to judge. It means that someone with the right training and the right equipment should look at it.",
+  "Je gaf iets aan waarbij een arts hoort te kijken. Dat gaat vóór alles wat hieronder staat, en het is geen reden tot paniek maar wel om het niet te laten liggen. Bij ziek zijn met uitslag: bel vandaag.":
+    "You flagged something that a doctor should look at. That comes before everything below, and it is no reason to panic but it is a reason not to leave it. If you feel ill with a rash: call today.",
+  "Je gaf op geen enkel punt iets opvallends aan. Dat is nog geen geruststelling, want een zelfcheck kan niet zien wat een arts met een dermatoscoop wel ziet. Blijf kijken, en ga langs zodra er iets verandert.":
+    "You did not flag anything unusual on any point. That is not reassurance yet, because a self-check cannot see what a doctor with a dermatoscope can. Keep looking, and go in as soon as anything changes.",
+  "Je gebruikt niets bijzonders op je huid.":
+    "You do not use anything unusual on your skin.",
+  "Je gebruikt retinol of zuren. Die moet je tijdig pauzeren; hoe lang hoor je tijdens de intake.":
+    "You use retinol or acids. You have to pause those in good time; you hear how long during the intake.",
+  "Je hebt anonieme statistieken geweigerd":
+    "You have declined anonymous statistics",
+  "Je hebt anonieme statistieken toegestaan":
+    "You have allowed anonymous statistics",
+  "Je hebt geen hersteltijd: je moet er meteen weer normaal uitzien. Dat sluit een deel van de lijst uit, en dat is beter dan erachter komen op de dag zelf.":
+    "You have no recovery time: you have to look normal again straight away. That rules out part of the list, and that is better than finding out on the day itself.",
+  "Je hebt net een zuur gehad; nog een is te veel.":
+    "You have just had an acid; another is too much.",
+  "Je hebt nog niet gezegd wat je wil veranderen":
+    "You have not said yet what you want to change",
+  "Je hoeft niet te doen alsof je het snapt. Vraag door tot het klopt; daar is de tijd voor.":
+    "You do not have to pretend you understand. Keep asking until it makes sense; there is time for that.",
+  "Je hoeft niet terug te komen. De meting is van jou, ook als je verder niets doet.":
+    "You do not have to come back. The measurement is yours, even if you do nothing further.",
+  "Je hoeft niets af te spreken. Niet vandaag, en niet aan de balie. Je krijgt het mee en denkt er thuis over na.":
+    "You do not have to book anything. Not today, and not at the desk. You take it with you and think it over at home.",
+  "Je hoeft niets te ondergaan. Er wordt in deze afspraak niet behandeld, ook niet een klein stukje.":
+    "You do not have to undergo anything. Nothing is treated in this appointment, not even a small patch.",
+  "Je hoort dan meteen om hoeveel sessies het gaat en wat het totaal wordt.":
+    "You then hear straight away how many sessions it involves and what the total will be.",
+  "Je huid heeft pigment gemaakt tijdens het genezen. Dit is geen litteken, ook al voelt het zo.":
+    "Your skin produced pigment while healing. This is not a scar, even though it feels like one.",
+  "Je huid is net gereinigd en tijdelijk gevoeliger.":
+    "Your skin has just been cleansed and is temporarily more sensitive.",
+  "Je huisarts of gynaecoloog. Die stelt vast of er sprake van is en wat eraan te doen valt.":
+    "Your GP or gynaecologist. They establish whether it is the case and what can be done about it.",
+  "Je huisarts voor de aandoening zelf.": "Your GP for the condition itself.",
+  "Je huisarts, of via een verwijzing een dermatoloog.":
+    "Your GP, or a dermatologist via a referral.",
+  "Je huisarts. Die beoordeelt en verwijst zo nodig door naar een dermatoloog. Wacht daar niet mee tot een afspraak hier uitkomt.":
+    "Your GP. They assess and refer you to a dermatologist if needed. Do not wait for an appointment here to come up.",
+  "Je huisarts. Loopt er al een traject met isotretinoïne, meld dat hier dan wel: het bepaalt wat er de eerste maanden daarna kan.":
+    "Your GP. If a course of isotretinoin is already running, do mention it here: it determines what is possible in the first months afterwards.",
+  "Je kunt beschermen maar niet vermijden. Bij rosacea is UV zowel trigger als versneller.":
+    "You can protect but not avoid. With rosacea UV is both trigger and accelerator.",
+  "Je kunt een avond en een nacht rood zijn, langer niet.":
+    "You can be red for an evening and a night, no longer.",
+  "Je kunt een paar dagen herstel inplannen. Dat opent de zwaardere behandelingen.":
+    "You can schedule a few days of recovery. That opens up the heavier treatments.",
+  "Je meting blijft bewaard als beginpunt onder vaste belichting. Bij een volgende afspraak leggen we de opnames naast elkaar en zie je wat er veranderd is.":
+    "Your measurement is kept as a starting point under fixed lighting. At a next appointment we put the images side by side and you see what has changed.",
+  "Je meting blijft bewaard als beginpunt. Kom je over een half jaar terug, dan leggen we de nieuwe ernaast en zie je het verschil in plaats van dat je het moet geloven.":
+    "Your measurement is kept as a starting point. If you come back in six months, we put the new one next to it and you see the difference instead of having to take our word for it.",
+  "Je routine doorgelicht": "Your routine reviewed",
+  "Je vergelijkt met je eigen huid van drie maanden geleden, niet met iemand anders.":
+    "You compare with your own skin from three months ago, not with someone else.",
+  "Je vochtwaarde en de staat van je barrière, gemeten in plaats van gevoeld. Een huid die trekkerig aanvoelt is niet altijd een droge huid.":
+    "Your moisture level and the state of your barrier, measured rather than felt. Skin that feels tight is not always dry skin.",
+  "Je weet dat er iets is, maar niet precies wat. Dat is een prima startpunt: uitzoeken wát het is, is het werk van de meting.":
+    "You know something is up, but not exactly what. That is a fine starting point: working out what it is, is the job of the measurement.",
+  "Je weet welke behandelingen bij jouw huid horen en welke niet. Dat scheelt vaak honderden euro's en een paar maanden aan iets dat toch niets ging doen.":
+    "You know which treatments suit your skin and which do not. That often saves hundreds of euros and a few months on something that was never going to do anything.",
+  "Je ziet een verschil, maar niet waarvan":
+    "You see a difference, but not what caused it",
+  "Je ziet textuur alleen doordat er schaduw in zit. Verplaats de lamp en je verplaatst de schaduw, terwijl de huid geen millimeter veranderd is.":
+    "You only see texture because there is shadow in it. Move the lamp and you move the shadow, while the skin has not changed by a millimetre.",
+  "Je zit nergens aan vast": "You are not committing to anything",
+  "Jongerentraject acne": "Youth acne programme",
+  "Jouw eigen vertrekpunt": "Your own starting point",
+  "Jouw plan": "Your plan",
+  "Jouw triggers zijn niet te vermijden": "Your triggers cannot be avoided",
+  "Kaaklijn en wangen": "Jawline and cheeks",
+  "Kaaklijn is een aanwijzing": "The jawline is a clue",
+  "Kan bij jou nu niet": "Not possible for you right now",
+  "Kan niet op een gebruinde huid: het licht wordt dan opgenomen door het pigment in je huid in plaats van door het doel.":
+    "Not possible on tanned skin: the light is then absorbed by the pigment in your skin instead of by the target.",
+  "Kan nog, maar dan wel met zonbescherming vanaf dag één. Anders werken we tegen de zon in.":
+    "Still possible, but with sun protection from day one. Otherwise we are working against the sun.",
+  "Keloïd hoort bij de dermatoloog. Behandelen wij dat, dan is de kans op verergering reëel, en dat risico nemen we niet.":
+    "Keloid belongs with the dermatologist. If we treat it, the chance of making it worse is real, and we do not take that risk.",
+  "Keloïd komt vaker voor bij een donkere huid. Dat hangt samen met aanleg en niet met verzorging.":
+    "Keloid is more common on darker skin. That is linked to predisposition and not to skincare.",
+  "Keratosis pilaris is grotendeels erfelijk en niet te genezen. Wat wij kunnen is de huid soepeler en de roodheid minder maken, met onderhoud erbij. Wie hier een reeks van zes tegenover zet verkoopt hoop en levert een teleurstelling.":
+    "Keratosis pilaris is largely hereditary and cannot be cured. What we can do is make the skin smoother and the redness less, with maintenance alongside. Anyone who puts a course of six against it is selling hope and delivering a disappointment.",
+  "Kies eerst een doel": "Choose a goal first",
+  "Kies eerst wat je wil veranderen.": "Choose what you want to change first.",
+  "Kies wat het dichtst in de buurt komt. Er is geen fout antwoord.":
+    "Choose what comes closest. There is no wrong answer.",
+  "Kijk in de spiegel terwijl je iets voorover buigt, en daarna liggend. Verandert de vorm van je gezicht duidelijk, dan gaat het om verslapping en niet om lijnen.":
+    "Look in the mirror while leaning forward a little, then lying down. If the shape of your face clearly changes, this is about sagging and not about lines.",
+  "Kijk recht vooruit in de spiegel en daarna met je kin iets omhoog. Wordt de lijn dan wel weer scherp, dan gaat het om de huid en nog niet om volume eronder.":
+    "Look straight ahead in the mirror and then with your chin slightly up. If the line becomes sharp again, this is about the skin and not yet about volume underneath.",
+  "Kin en kaaklijn samen is het klassieke beeld. Vaak in golven, vaak rond een vast moment in de maand, vaak diepere plekjes die langer blijven zitten.":
+    "Chin and jawline together is the classic picture. Often in waves, often around a fixed point in the month, often deeper spots that stay longer.",
+  "Kippenvelhuid op armen": "Chicken skin on arms",
+  "Kippenvelhuid: ruwe bultjes op bovenarmen of dijen.":
+    "Chicken skin: rough bumps on upper arms or thighs.",
+  "Kleine bultjes die binnen een dag wegtrekken":
+    "Small bumps that fade within a day",
+  "Kleine indeukingen op de wangen en slapen, meestal onregelmatiger verdeeld dan poriën en zonder opening.":
+    "Small dents on the cheeks and temples, usually more irregularly spread than pores and without an opening.",
+  "Kleur en structuur zijn nog goed te verbeteren. Volume niet, want dat doen wij niet. Een strakke kaaklijn hoort bij volume, en dat is een andere behandeling dan de onze.":
+    "Colour and texture can still be improved well. Volume cannot, because we do not do that. A sharp jawline is about volume, and that is a different treatment from ours.",
+  "Kom je binnen met een huid die overal op reageert, dan beginnen we met rust brengen. Je gaat naar huis met minder in plaats van meer, en over twee weken kijken we opnieuw.":
+    "If you come in with skin that reacts to everything, we start by calming it down. You go home with less rather than more, and in two weeks we look again.",
+  "Kom terug als je huid haar eigen kleur terug heeft. Hoeveel weken dat duurt hoor je tijdens de intake, want dat verschilt per huid.":
+    "Come back when your skin has its own colour again. How many weeks that takes you hear during the intake, because it differs per skin.",
+  "Komen er nog nieuwe ontstoken plekjes bij, dan behandelen we die eerst. Needlen of laseren in actieve acne verergert de ontsteking en kan het litteken vastzetten. Dat kost je maanden in plaats van dat het ze scheelt.":
+    "If new inflamed spots are still appearing, we treat those first. Needling or lasering in active acne worsens the inflammation and can lock the scar in. That costs you months instead of saving them.",
+  "Komen er regelmatig ontstoken plekken bij die zeer doen, en laten ze rode of donkere vlekjes achter?":
+    "Do inflamed spots keep appearing that hurt, and do they leave red or dark marks?",
+  "Komen er regelmatig ontstoken plekken bij, dan is dit de verkeerde pagina en het verkeerde traject. Dan gaat het over acne, met een eigen aanpak en een eigen volgorde.":
+    "If inflamed spots keep appearing, this is the wrong page and the wrong programme. Then it is about acne, with its own approach and its own order.",
+  "Komen we er samen niet uit, dan kun je terecht bij de klachtenfunctionaris van het Centraal Bureau Klachtenmanagement in de Zorg (CBKZ). Die staat los van ons, kiest geen partij, kost je niets en bemiddelt.":
+    "If we cannot work it out together, you can go to the complaints officer of the Central Bureau for Complaints Management in Healthcare (CBKZ). They are independent of us, take no side, cost you nothing and mediate.",
+  "Komt er iets bij, dan komt het erbij. Wat er staat halen we er niet af zonder het te vermelden.":
+    "If something is added, it is added. What is here we do not remove without saying so.",
+  "Komt het in golven en rond een vast moment in de maand? Dan kijken we naar hormonen, niet naar je gezichtsreiniger.":
+    "Does it come in waves and around a fixed point in the month? Then we look at hormones, not at your cleanser.",
+  "Komt het uit je neus, je tong of je kaakstand, dan doet een laser op het gehemelte daar weinig aan. Dan zeggen we dat, ook als je er al voor zat.":
+    "If it comes from your nose, your tongue or your jaw position, a laser on the palate does little about it. Then we say so, even if you were already sitting there for it.",
+  "Kopieer je profiel": "Copy your profile",
+  "Korter dan 3 maanden": "Less than 3 months",
+  "Kou en druk": "Cold and pressure",
+  "Koude CO2": "Cold CO2",
+  "Krabben geeft even opluchting doordat de jeukprikkel wordt overstemd. Daarna komt hij harder terug.":
+    "Scratching brings relief for a moment because it drowns out the itch. Afterwards it comes back harder.",
+  "Kruis aan wat je ziet en voelt, in gewone woorden.":
+    "Tick what you see and feel, in everyday words.",
+  "Kuiltjes, rood of pigment": "Pits, redness or pigmentation",
+  "Kun je een plooi vastpakken die blijft hangen, dan gaat het om weefsel dat verwijderd of verplaatst moet worden. Dat is chirurgie. Een reeks van drie verkopen aan iemand die een lift zoekt is het duurste nee dat wij kunnen uitstellen.":
+    "If you can take hold of a fold that keeps hanging, this is about tissue that has to be removed or repositioned. That is surgery. Selling a course of three to someone looking for a lift is the most expensive no we could put off.",
+  "Kun je het rond een weekend plannen, dan komt er wel iets vrij. Kan dat niet, dan is dat een eerlijk antwoord en geen reden om iets lichters te boeken dat niet gaat werken.":
+    "If you can plan it around a weekend, something will free up. If you cannot, that is an honest answer and not a reason to book something lighter that is not going to work.",
+  "Laag genoeg om te behandelen zonder dat de zon het werk ongedaan maakt.":
+    "Low enough to treat without the sun undoing the work.",
+  "Laagste UV van het jaar.": "The lowest UV of the year.",
+  "Laat de bovenlaag eerst rustig loskomen.":
+    "Let the top layer come loose gently first.",
+  "Laat dit nakijken door je huisarts": "Have this checked by your GP",
+  "Langer dan 3 jaar": "More than 3 years",
+  "Laser op een gebruinde huid": "Laser on tanned skin",
+  "Laserontharing gaat per reeks, niet per keer":
+    "Laser hair removal goes in courses, not per session",
+  "Laserontharing heeft een eigen tarief per zone, in twee lijsten: dames en heren. Van bovenlip tot volledige benen, los of als pakket.":
+    "Laser hair removal has its own rate per area, in two lists: women and men. From upper lip to full legs, individually or as a package.",
+  "Laserontharing onderbenen": "Laser hair removal lower legs",
+  "Lees de reviews": "Read the reviews",
+  "Leg een vinger op je jukbeen en trek de huid onder je oog voorzichtig een klein stukje naar beneden. Niet aan het ooglid zelf trekken. Kijk wat de donkerte doet.":
+    "Put a finger on your cheekbone and carefully pull the skin under your eye down a little. Do not pull on the eyelid itself. Watch what the darkness does.",
+  "Let hier op": "Watch out for this",
+  "Let op het moment": "Watch the timing",
+  "Lichaamsbehandeling met een huidapparaat":
+    "Body treatment with a skin device",
+  "Licht erop": "Light on it",
+  "Licht mikt op het pigment in de haarwortel. Blond, rood of grijs haar bevat daar te weinig van, en dan werkt het niet, hoeveel sessies je ook neemt. Dat stellen we vast voordat je iets afspreekt en niet erna.":
+    "Light targets the pigment in the hair root. Blond, red or grey hair contains too little of it, and then it does not work, however many sessions you take. We establish that before you book anything and not afterwards.",
+  "Licht mikt op pigment. Zit er verse kleur in je huid van zon of zonnebank, dan neemt die het licht op en gaat de energie naar de verkeerde plek.":
+    "Light targets pigment. If there is fresh colour in your skin from sun or a sunbed, that absorbs the light and the energy goes to the wrong place.",
+  "Licht recht van voren": "Light straight from the front",
+  "Licht van boven maakt van elke holte een donkere plek. Verdwijnt de kring bij licht van voren, dan kijk je naar een schaduw en niet naar een kleur.":
+    "Light from above turns every hollow into a dark spot. If the circle disappears with light from the front, you are looking at a shadow and not at a colour.",
+  "Lichtbruine tot donkere plekjes op gezicht, decolleté en handrug. Vaak scherp begrensd.":
+    "Light brown to dark patches on the face, dÃ©colletÃ© and back of the hands. Often sharply bounded.",
+  "Lichtgevoelige medicatie verandert hoe je huid op licht reageert. Neem de naam mee naar de intake.":
+    "Light-sensitising medication changes how your skin reacts to light. Bring the name to the intake.",
+  "Liever niet. Behandelen nu geeft een grote kans dat het pigment terugkomt of donkerder wordt.":
+    "Preferably not. Treating now gives a high chance that the pigmentation comes back or gets darker.",
+  "Lijntjes of verslapping": "Fine lines or sagging",
+  "Link gekopieerd": "Link copied",
+  "Litteken dat doorgroeit": "A scar that keeps growing",
+  "Littekens of oneffen structuur": "Scars or uneven texture",
+  "Maak een afspraak bij je huisarts en noem welke punten je opvielen. Die kan doorverwijzen naar een dermatoloog als dat nodig is.":
+    "Make an appointment with your GP and mention which points stood out to you. They can refer you to a dermatologist if that is needed.",
+  "Maand 4 en verder": "Month 4 and beyond",
+  "Mag weer zodra de huid gesloten is.":
+    "Allowed again as soon as the skin is closed.",
+  "Mechanisch schuren, ook met een washandje.":
+    "Mechanical scrubbing, including with a flannel.",
+  "Medicatie op recept, zoals isotretinoïne":
+    "Prescription medication, such as isotretinoin",
+  "Meer dan huid, dus met een arts erbij. Let vooral op je nagels en je gewrichten.":
+    "More than skin, so with a doctor involved. Pay particular attention to your nails and your joints.",
+  "Meerdere sporen lopen tegelijk. Alles tegelijk aanpakken werkt niet en is duur. We beginnen bij het onderdeel dat het snelst reageert en meten of het klopt.":
+    "Several tracks run at the same time. Tackling everything at once does not work and is expensive. We start with the part that responds fastest and measure whether that holds.",
+  "Meestal binnen een paar uur op een werkdag, en altijd binnen één werkdag.":
+    "Usually within a few hours on a working day, and always within one working day.",
+  "Meestal iets dat door de huid heen schemert, of pigment dat dieper zit dan gewoonlijk. De kleur zegt hier vooral iets over de diepte.":
+    "Usually something showing through the skin, or pigment sitting deeper than usual. Here the colour mainly says something about the depth.",
+  "Meestal raden we het af, of we stellen een korte proef voor met een meetmoment erna. Dan zie je zelf of doorgaan zin heeft.":
+    "Usually we advise against it, or we suggest a short trial with a measurement afterwards. Then you see for yourself whether carrying on is worthwhile.",
+  "Meestal wel, in weken tot maanden. Hoe lichter je huid, hoe langer het zichtbaar blijft.":
+    "Usually yes, in weeks to months. The lighter your skin, the longer it stays visible.",
+  "Melasma verdwijnt niet, het wordt beheerd. Wij zeggen lichter en rustiger, en we zeggen erbij dat het terugkomt zodra de aanjagers weer aanstaan.":
+    "Melasma does not disappear, it is managed. We say lighter and calmer, and we add that it comes back as soon as the triggers are switched on again.",
+  "Mensen vragen er ons geregeld naar en we behandelen het ook. Wat er bij jou past hangt af van hoe groot en hoe diep de plekjes zitten, dus dat bepaalt de behandelaar in het consult. Laat daarnaast je cholesterol nakijken, want daar komt het vaak vandaan.":
+    "People ask us about it regularly and we do treat it. What suits you depends on how large and how deep the patches are, so the therapist decides that in the consultation. Also have your cholesterol checked, because that is often where it comes from.",
+  "Merk je dat we ons hier niet aan houden, zeg het dan tegen degene die je behandelt of laat het ons weten. Een verbond dat je niet kunt aanspreken is een advertentie.":
+    "If you notice we are not sticking to this, say so to whoever is treating you or let us know. A covenant you cannot hold anyone to is an advertisement.",
+  "Met een arts erbij": "With a doctor involved",
+  "Met een rustige huid kunnen we naar textuur en littekens gaan kijken. Eerder heeft dat geen zin en maakt het het beeld vaak slechter.":
+    "With calm skin we can start looking at texture and scars. Earlier there is no point and it often makes the picture worse.",
+  "Met uitleg": "With explanation",
+  "Meteen erna weer de deur uit": "Out the door again straight afterwards",
+  "Meten en uitleggen, niet behandelen":
+    "Measuring and explaining, not treating",
+  "Meten onder vast licht, zonder dat er iets aan je huid gebeurt.":
+    "Measuring under fixed light, without anything happening to your skin.",
+  "Meten vóór behandelen": "Measuring before treating",
+  "Microneedling, want dat brengt de vernieuwing op gang in de laag waar het pigment zit. Zit het dieper of blijft het hardnekkig, dan komen daar peelings of een pigmenttraject bij. Altijd met zonbescherming, anders komt het terug.":
+    "Microneedling, because that gets renewal going in the layer where the pigment sits. If it is deeper or stubborn, peels or a pigmentation programme are added. Always with sun protection, otherwise it comes back.",
+  "Mijn huidprofiel van dibaclinics.nl": "My skin profile from dibaclinics.nl",
+  "Minder nieuwe plekjes": "Fewer new spots",
+  "Minder pigment dan de huid eromheen. Dit is de lastigste categorie, want verloren pigment komt zelden terug en een deel hoort bij de huisarts.":
+    "Less pigment than the skin around it. This is the hardest category, because lost pigment rarely returns and part of it belongs with your GP.",
+  "Minder sessies, meer tussenruimte. En een eerlijk gesprek of littekenbehandeling in jouw geval genoeg oplevert om te doen.":
+    "Fewer sessions, more time in between. And an honest conversation about whether scar treatment gives you enough in your case to be worth doing.",
+  "Minder zichtbaar maken": "Making it less visible",
+  "Minimale UV. De huid herstelt en het pigment trekt langzaam weg.":
+    "Minimal UV. The skin recovers and the pigmentation slowly fades.",
+  "Moet de behandelaar geregistreerd zijn?":
+    "Does the therapist have to be registered?",
+  "Na isotretinoïne moet de huid eerst hersteld zijn. Hoe lang dat duurt bepaalt een arts, niet deze pagina.":
+    "After isotretinoin the skin has to have recovered first. How long that takes is decided by a doctor, not by this page.",
+  "Naar de zoeker": "To the finder",
+  "Naast acne is dit wat we het vaakst behandelen. Een verse plek trekt deels vanzelf weg; wat na maanden blijft staan, reageert goed op behandeling, en zonbescherming houdt het licht.":
+    "Alongside acne this is what we treat most often. A fresh mark partly fades on its own; what is still there after months responds well to treatment, and sun protection keeps it light.",
+  "Nauwelijks UV. Pigment dat in de zomer opkwam is nu op zijn lichtst.":
+    "Barely any UV. Pigmentation that came up in summer is at its lightest now.",
+  "Nauwelijks pigment in de bovenlaag, dus vrijwel alles gaat naar de haarwortel. Dit is de gunstigste uitgangspositie die er is.":
+    "Barely any pigment in the top layer, so virtually everything goes to the hair root. This is the most favourable starting position there is.",
+  "Nederlands weer. De overgang van buiten naar binnen is erger dan de kou zelf.":
+    "Dutch weather. The change from outside to inside is worse than the cold itself.",
+  "Nee, het is vrij constant": "No, it is fairly constant",
+  "Nee. Dit is het slechtste moment van het jaar. Wij zeggen dit ook als je nú wilt beginnen.":
+    "No. This is the worst moment of the year. We say this even if you want to start now.",
+  "Nee. Een putje dat er een jaar zit, zit er over vijf jaar nog. Dit is het enige van de vier waarbij afwachten niets oplevert.":
+    "No. A pit that has been there a year will still be there in five. This is the only one of the four where waiting achieves nothing.",
+  "Nee. Kom terug in september, dan hebben we een eerlijke start.":
+    "No. Come back in September, then we have an honest start.",
+  "Net zo talgrijk als de rug, en vaak buiten beeld omdat het onder kleding zit. Zweet, kleding die schuurt en haren of producten die over je borst vallen houden het in stand.":
+    "Just as oily as the back, and often out of sight because it sits under clothing. Sweat, clothing that rubs and hair or products running over your chest keep it going.",
+  "Niet alleen de beste eruit": "Not just the best one",
+  "Niet de cafeïne maar de temperatuur. Laten afkoelen scheelt al veel.":
+    "Not the caffeine but the temperature. Letting it cool already helps a lot.",
+  "Niet een lijn maar de hele structuur die meegeeft: minder elasticiteit, minder steun, en zwaartekracht die zijn werk doet.":
+    "Not a line but the whole structure giving way: less elasticity, less support, and gravity doing its work.",
+  "Niet laseren zolang het actief is. Zit het er al weken of komt het steeds terug, dan hoort er eerst een huisarts naar te kijken.":
+    "No lasering while it is active. If it has been there for weeks or keeps coming back, a GP should look at it first.",
+  "Niet nu, maar wel straks": "Not now, but later",
+  "Niet vlak voor veel zon. De huid is daarna kwetsbaar, en pigment komt juist terug van wat je dan doet.":
+    "Not just before a lot of sun. The skin is vulnerable afterwards, and pigmentation comes back from exactly what you do then.",
+  "Niets ingrijpends. De barrière herstellen en volhouden; als het daarvan weggaat was het dit.":
+    "Nothing drastic. Restoring the barrier and keeping it up; if it goes away from that, this is what it was.",
+  "Niets zinvols. Een huidbehandeling verandert de vorm van je gezicht niet, en een lichtere huid maakt een schaduw niet ondieper. Dit hoort bij een arts, of bij niets doen.":
+    "Nothing useful. A skin treatment does not change the shape of your face, and lighter skin does not make a shadow shallower. This belongs with a doctor, or with doing nothing.",
+  "Niets. Dit hoort bij je huisarts en gaat vaak vanzelf over met warme kompressen. Wij prikken hier niet in.":
+    "Nothing. This belongs with your GP and often clears up on its own with warm compresses. We do not lance it here.",
+  "Niets. Dit is de stand waarin een behandeling je geld kost zonder dat er iets te winnen valt, en dat zeggen we liever nu.":
+    "Nothing. This is the state in which a treatment costs you money with nothing to gain, and we would rather say that now.",
+  "Nog leeg": "Still empty",
+  "Nog niet bekend": "Not known yet",
+  "Nog niet. Wel een goed moment voor de huidanalyse, zodat we in september kunnen starten.":
+    "Not yet. It is a good moment for the skin analysis, though, so we can start in September.",
+  "Nog niets. Dit gebeurt onder de oppervlakte.":
+    "Nothing yet. This happens below the surface.",
+  "Nog steeds laag. De huid is rustig en reageert voorspelbaar.":
+    "Still low. The skin is calm and responds predictably.",
+  "Nog steeds piek. Vakantie en zon maken het beeld onvoorspelbaar.":
+    "Still peak. Holidays and sun make the picture unpredictable.",
+  "Nu is er nog niets te behandelen, en dat is goed nieuws. Wat je nu doet bepaalt hoe het litteken eruit gaat zien, meer dan welke sessie dan ook.":
+    "There is nothing to treat yet, and that is good news. What you do now determines how the scar will look, more than any session.",
+  "Nu is rust het doel. Alles wat prikkelt verlengt deze fase. Uitknijpen duwt de ontsteking dieper en dat is de kortste route naar een litteken.":
+    "Now the goal is calm. Anything that irritates extends this phase. Squeezing pushes the inflammation deeper and that is the shortest route to a scar.",
+  "Nu open": "Open now",
+  "Nu vergelijk je de huid": "Now you are comparing the skin",
+  "Nu wordt het verschil groot. Dit is ongeveer het punt waarop mensen zeggen dat hun poriën kleiner zijn geworden, terwijl de doorsnede geen millimeter veranderde.":
+    "Now the difference becomes large. This is roughly the point where people say their pores have got smaller, while the diameter has not changed by a millimetre.",
+  "Nu zie je het ook op foto's, niet alleen in de spiegel op een goede dag. Dit is het moment waarop het verschil met de huidanalyse hard wordt in plaats van een gevoel.":
+    "Now you see it in photos too, not only in the mirror on a good day. This is the moment when the difference with the skin analysis becomes hard fact rather than a feeling.",
+  "Of de roodheid van vaatjes komt of van een barrière die van slag is. Dat lijkt op elkaar en vraagt het tegenovergestelde.":
+    "Whether the redness comes from vessels or from a barrier that is off balance. Those look alike and call for the opposite.",
+  "Of je pigment oppervlakkig ligt of dieper in de huid zit. Dat verschil bepaalt of een peeling of microneedling genoeg is of dat er laser aan te pas moet, en het is met het blote oog niet te zien.":
+    "Whether your pigmentation sits superficially or deeper in the skin. That difference determines whether a peel or microneedling is enough or whether laser is needed, and it cannot be seen with the naked eye.",
+  "Of stel je eigen pakket samen": "Or put together your own package",
+  "Omdat een belofte pas iets waard is als hij ergens pijn doet. Iedereen kan opschrijven dat hij eerlijk is; de vraag is wat je ervoor opgeeft.":
+    "Because a promise is only worth something if it hurts somewhere. Anyone can write down that they are honest; the question is what you give up for it.",
+  "Onbeschermd buiten zijn, of de zonnebank.":
+    "Being outside unprotected, or a sunbed.",
+  "Onder de druk van het glas wordt de rode kleur lichter of verdwijnt hij, en zodra je loslaat komt hij terug.":
+    "Under the pressure of the glass the red colour becomes lighter or disappears, and as soon as you let go it comes back.",
+  "Onder de lamp duidelijk donkerder dan bij het raam":
+    "Clearly darker under the lamp than by the window",
+  "Onderhoud, en pas nu littekens": "Maintenance, and only now scars",
+  "Ongeldig verzoek.": "Invalid request.",
+  "Ongeveer twintig minuten in de stoel": "About twenty minutes in the chair",
+  "Ontspan je gezicht helemaal. Is de lijn dan weg? Dan is hij dynamisch.":
+    "Relax your face completely. Is the line then gone? Then it is dynamic.",
+  "Ontspan je gezicht. Staat de lijn er nog steeds? Dan zit het in de huid en niet in de spier.":
+    "Relax your face. Is the line still there? Then it is in the skin and not in the muscle.",
+  "Ontsteking omlaag, met de peeling die bij jouw huid past. Pas als de huid rustiger is kijken we naar textuur en littekens. Die volgorde is niet onderhandelbaar.":
+    "Inflammation down, with the peel that suits your skin. Only once the skin is calmer do we look at texture and scars. That order is not negotiable.",
+  "Ontsteking via de arts": "Inflammation via a doctor",
+  "Onze foto's zijn minder spectaculair dan die van anderen. Dat is precies waarom je ze kunt geloven.":
+    "Our photos are less spectacular than other people's. That is exactly why you can believe them.",
+  "Onze teksten klinken voorzichtiger dan die van de buren. Dat scheelt klanten die op een groot getal afkomen.":
+    "Our texts sound more cautious than the neighbours'. That costs us clients who come for a big number.",
+  "Ook goedaardig, maar een ander weefsel en een andere aanpak. Het wordt vaak voor een moedervlek aangezien en is dat niet.":
+    "Also benign, but different tissue and a different approach. It is often mistaken for a mole and is not one.",
+  "Ook hier niets. Dit hoort bij de huisarts of oogarts, die zo nodig doorverwijst.":
+    "Nothing here either. This belongs with your GP or an eye doctor, who will refer you on if needed.",
+  "Ook niet als het er onschuldig uitziet. Wat wij zeggen zou meewegen in of je belt, en die verantwoordelijkheid nemen we niet.":
+    "Not even if it looks harmless. What we say would weigh into whether you call, and we do not take that responsibility.",
+  "Ook niet als je zeker weet wat het is en er speciaal voor bent gekomen. Wat weg is kan niet meer bekeken worden, en dat is een fout die niet te herstellen valt. Het kost twee minuten om er eerst naar te kijken.":
+    "Not even if you are sure what it is and came in specially for it. What is gone can no longer be examined, and that is a mistake you cannot undo. It takes two minutes to have someone look at it first.",
+  "Ook nu geldt: dit is geen uitslag": "Here too: this is not a diagnosis",
+  "Ook wat niet werkte": "What did not work, too",
+  "Ook zonder huidklacht": "Even without a skin concern",
+  "Op de mail, zodat het schriftelijk staat en er iemand op terugkomt. Een klacht hoort niet tussen de berichten door.":
+    "By email, so it is in writing and someone comes back to it. A complaint does not belong among the messages.",
+  "Op deze leeftijd is een behandeling meestal niet nodig. Dagelijkse bescherming bepaalt hoe je huid er over twintig jaar uitziet, en dat is geen verkooppraatje maar de reden dat je nog geen klant bij ons hoeft te zijn.":
+    "At this age a treatment is usually not needed. Daily protection determines how your skin looks in twenty years, and that is not a sales pitch but the reason you do not have to be a client of ours yet.",
+  "Op deze pagina beginnen we daar niet aan. De acnepagina is dan de betere ingang, met een eigen traject.":
+    "On this page we do not start on that. The acne page is then the better way in, with its own programme.",
+  "Op jouw leeftijd loopt dit via het jongerentraject, dat op dezelfde klacht is gemaakt maar op jouw huid is afgestemd.":
+    "At your age this goes through the youth programme, which is made for the same concern but tuned to your skin.",
+  "Openingen die opvallen op de wangen en neusvleugels, vaak in de vorm van een druppel in plaats van rond.":
+    "Openings that stand out on the cheeks and nostrils, often shaped like a teardrop rather than round.",
+  "Opgebouwde zonschade die zichtbaar wordt. Dit is het duidelijkste bewijs dat het om zon gaat en niet om leeftijd.":
+    "Accumulated sun damage becoming visible. This is the clearest evidence that it is about sun and not about age.",
+  "PCOS behandelen": "Treating PCOS",
+  "PCOS en je huid, per klacht": "PCOS and your skin, by concern",
+  "PCOS is een hormonale aandoening. Wij stellen die diagnose niet, behandelen die niet en nemen de oorzaak niet weg. Wat er op je huid van te zien is kunnen we wel aanpakken, en dat is iets anders.":
+    "PCOS is a hormonal condition. We do not diagnose it, do not treat it and do not remove the cause. What shows on your skin we can tackle, and that is something else.",
+  "Pakket 1: baardlijn, wangen en hals":
+    "Package 1: beard line, cheeks and neck",
+  "Pakket 2: borst en buik": "Package 2: chest and stomach",
+  "Pakket 3: borst, buik en rug": "Package 3: chest, stomach and back",
+  "Pakket 4: borst, buik, rug en schouders":
+    "Package 4: chest, stomach, back and shoulders",
+  "Pakket 5: full body, intieme zone en gezicht":
+    "Package 5: full body, intimate area and face",
+  "Parfum en alcohol in crèmes prikkelen een huid die al overactief reageert. Vaak de stille dader.":
+    "Perfume and alcohol in creams irritate skin that is already overreacting. Often the silent culprit.",
+  "Past bij je profiel": "Suits your profile",
+  "Per 30 minuten": "Per 30 minutes",
+  "Per klacht": "By concern",
+  "Per kwartier": "Per quarter of an hour",
+  "Permanente make-up en tatoeages": "Permanent make-up and tattoos",
+  "Pigment dat na de ontsteking is achtergebleven. Dit is wat er van jarenlang scheren vaak overblijft, en het is geen litteken.":
+    "Pigment left behind after the inflammation. This is what years of shaving often leaves, and it is not a scar.",
+  "Pigment dat na de ontsteking is achtergebleven. Ook dit is geen litteken: de huid is heel, alleen de kleur klopt niet. Komt vaker en heftiger voor bij een donkerder huidtype.":
+    "Pigment left behind after the inflammation. This is not a scar either: the skin is intact, only the colour is off. It happens more often and more strongly with a darker skin type.",
+  "Pigment dat ongelijkmatig verdeeld ligt. Je oog leest een ongelijke tint als vermoeid, ook al is er nergens een vlek aan te wijzen.":
+    "Pigment spread unevenly. Your eye reads an uneven tone as tired, even though there is no patch you can point to.",
+  "Pigment en melasma": "Pigmentation and melasma",
+  "Pigment en melasma behandelen we liever in het najaar. In juni werk je tegen de zon in, en dan betaal je voor een resultaat dat de zomer niet haalt.":
+    "We prefer to treat pigmentation and melasma in the autumn. In June you work against the sun, and then you pay for a result that does not survive the summer.",
+  "Pigment in een open kanaaltje wil je niet.":
+    "You do not want pigmentation in an open channel.",
+  "Plan een skinbooster niet vlak voor iets waar je op de foto moet: rond de ogen kan een blauw plekje langer blijven.":
+    "Do not plan a skinbooster just before something you have to be photographed at: around the eyes a bruise can last longer.",
+  "Plan het erna. Of plan het ruim ervoor, zodat je huid tot rust is voordat je vertrekt.":
+    "Plan it afterwards. Or plan it well in advance, so your skin has settled before you leave.",
+  "Platte bruine vlekken": "Flat brown patches",
+  "Plekjes onder een mondkapje, een helmbandje, een sportbeha, of op de wang waar je telefoon komt. Vaak scherp begrensd langs de rand van dat contact.":
+    "Spots under a face mask, a helmet strap, a sports bra, or on the cheek where your phone sits. Often sharply bounded along the edge of that contact.",
+  "Poriën gaan niet open en dicht. Ze hebben geen spiertje, dus stomen opent ze niet en koud water sluit ze niet.":
+    "Pores do not open and close. They have no muscle, so steaming does not open them and cold water does not close them.",
+  "Poriën reinigen en de verhoorning aanpakken, in stappen. En we kijken naar je haarproducten, want die lopen precies over deze zone.":
+    "Cleansing the pores and tackling the keratinisation, step by step. And we look at your hair products, because those run right across this area.",
+  "Precies op de plek waar iets zat. Vaak roodbruin in het begin, daarna bruiner. Geen kuiltje in de huid.":
+    "Exactly where something was. Often reddish brown at first, then browner. No dip in the skin.",
+  "Prijs per sessie. Hoeveel sessies je nodig hebt hangt af van je huid en hoor je tijdens de intake.":
+    "Price per session. How many sessions you need depends on your skin and you hear that during the intake.",
+  "Prikkels binnen": "Irritants get in",
+  "Probeer twee weken alles weg te laten behalve reinigen en één verzorgend product. Dat is geen advies dat ons iets oplevert en het werkt vaker dan wat dan ook.":
+    "Try leaving everything out for two weeks except cleansing and one caring product. That is not advice that earns us anything and it works more often than anything else.",
+  "Puistjes en ontstekingen": "Spots and inflammation",
+  "Puistjes of onzuiverheden": "Spots or blemishes",
+  "Putjes in het nageloppervlak, gele of oranje vlekjes, of een nagel die aan de rand loslaat.":
+    "Pits in the nail surface, yellow or orange marks, or a nail coming loose at the edge.",
+  "RRS Eyes kuur": "RRS Eyes course",
+  "RRS hyalift": "RRS hyalift",
+  "Regelt de agenda, de afspraken en de gang van zaken in de kliniek.":
+    "Runs the diary, the appointments and how things go in the clinic.",
+  "Reinigen dat bij jouw huid past, en waar nodig een behandeling die de porie leegt. Niet uitknijpen: dat maakt de opening juist wijder.":
+    "Cleansing that suits your skin, and where needed a treatment that empties the pore. Not squeezing: that actually widens the opening.",
+  "Rek de huid zachtjes": "Stretch the skin gently",
+  "Retinol en zuren bovenop een net behandelde huid is dubbelop.":
+    "Retinol and acids on top of freshly treated skin is doubling up.",
+  "Retinol en zuren op een herstellende huid prikken en vertragen.":
+    "Retinol and acids on recovering skin sting and slow it down.",
+  "Rode of witte strepen": "Red or white streaks",
+  "Rode tot paarse strepen, vaak op buik, borsten, dijen of onderrug. Soms licht verheven, soms wat jeukend.":
+    "Red to purple streaks, often on the stomach, breasts, thighs or lower back. Sometimes slightly raised, sometimes a little itchy.",
+  "Rode, warme bultjes met een puskopje laten we eerst tot rust komen. Licht op een ontstoken haarzakje verergert de ontsteking en vergroot de kans op een blijvende vlek. Komt het steeds terug, dan kijkt er eerst een huisarts naar.":
+    "Red, warm bumps with a white head we let settle first. Light on an inflamed follicle worsens the inflammation and increases the chance of a lasting mark. If it keeps coming back, a GP looks at it first.",
+  "Rond het oog nemen we geen risico dat nergens voor nodig is. Dit hoort bij de huisarts, en die verwijst zo nodig door.":
+    "Around the eye we take no risk that serves no purpose. This belongs with your GP, who will refer you on if needed.",
+  "Rood en warm direct erna, de dag erop meestal weg":
+    "Red and warm straight afterwards, usually gone the next day",
+  "Rood, verheven, gevoelig. Dit is wat je in de spiegel ziet.":
+    "Red, raised, tender. This is what you see in the mirror.",
+  "Roodheid die opvlamt": "Redness that flares up",
+  "Roodheid na een warme douche of na het sporten, of een huid die meeloopt met de cyclus: dat verschilt van dag tot dag meer dan sommige behandelingen in maanden doen.":
+    "Redness after a hot shower or after exercise, or skin that follows your cycle: that varies more from day to day than some treatments do in months.",
+  "Roodheid of snel geïrriteerd": "Redness or quick irritation",
+  "Rosacea is een chronische aandoening. Beheersing is het doel en dat noemen wij geen mislukking. Genezing beloven we daarom niet.":
+    "Rosacea is a chronic condition. Control is the goal and we do not call that a failure. So we do not promise a cure.",
+  "Rug, schouders en borst": "Back, shoulders and chest",
+  "Rustig moment, geen sport of hitte vooraf, en de datum staat erbij.":
+    "A calm moment, no exercise or heat beforehand, and the date is stated.",
+  "Rustig, met veel bescherming, en met de verwachting dat het in de zomer terugkomt. We meten per seizoen in plaats van per sessie.":
+    "Gently, with plenty of protection, and with the expectation that it comes back in summer. We measure per season rather than per session.",
+  "Ruw en dof, soms schilferig. Je hebt het gevoel dat er iets bovenop moet en dat een lichte crème niet genoeg is.":
+    "Rough and dull, sometimes flaky. You feel that something needs to go on top and that a light cream is not enough.",
+  "Scan opnieuw doen": "Do the scan again",
+  "Scherp begrensde, iets verheven plekken met zilverwitte schilfers, meestal aan de buitenkant van je gewrichten.":
+    "Sharply bounded, slightly raised patches with silvery white scales, usually on the outside of your joints.",
+  "Schone huid op beide foto's, en geen bewerking behalve bijsnijden.":
+    "Clean skin in both photos, and no editing other than cropping.",
+  "Schuren op een vervellende huid geeft schade en vlekken.":
+    "Scrubbing peeling skin causes damage and marks.",
+  "Schuren op pigment maakt het meestal erger.":
+    "Scrubbing on pigmentation usually makes it worse.",
+  "Slaap en vocht maken hier het meeste verschil van alle drie de typen, want een gevuld vaatnetwerk schemert sterker door.":
+    "Sleep and fluid make the most difference here of all three types, because a full vascular network shows through more strongly.",
+  "Sluit de scan": "Close the scan",
+  "Sollicitatie huidtherapeut": "Application skin therapist",
+  "Sommige ochtenden veel erger": "Some mornings much worse",
+  "Soms is het advies om eerst iets af te bouwen en over twee weken opnieuw te kijken. Wat er bij jouw huid past hoor je zoals het is, zonder extra kosten.":
+    "Sometimes the advice is to cut back on something first and look again in two weeks. You hear what suits your skin as it is, at no extra cost.",
+  "Stad Holland": "Stad Holland",
+  "Stijfheid 's ochtends die langer dan een halfuur duurt, gezwollen vingers of tenen, of pijn in je onderrug die juist beter wordt van bewegen.":
+    "Stiffness in the morning lasting more than half an hour, swollen fingers or toes, or pain in your lower back that actually improves with movement.",
+  "Stoppen met sporten is geen advies dat wij geven. We kijken naar timing en koeling.":
+    "Stopping exercise is not advice we give. We look at timing and cooling.",
+  "Stoppen met wrijven scheelt meer dan mensen denken, en zonbescherming ook op je ooglid houdt het waar het nu is.":
+    "Stopping rubbing makes more difference than people think, and sun protection on your eyelid too keeps it where it is now.",
+  "Striae zijn geen teken dat je iets fout deed. Ze horen bij groei, zwangerschap en spieropbouw, en ze komen ook bij sporters voor.":
+    "Stretch marks are not a sign that you did something wrong. They go with growth, pregnancy and building muscle, and athletes get them too.",
+  "Symmetrisch over wangen, boven de lip en op het voorhoofd. Geen scherpe rand maar een overgang, alsof het uitloopt.":
+    "Symmetrical across the cheeks, above the lip and on the forehead. No sharp edge but a transition, as if it fades out.",
+  "Talgrijke zone. Bij een strakke haargrens kijken we ook naar shampoo, gel en pet of helm.":
+    "An oily area. With a tight hairline we also look at shampoo, gel and a cap or helmet.",
+  "Te veel hersteltijd": "Too much recovery time",
+  "Te veel pigment in de bovenlaag om die veilig over te slaan met de alexandriet. De Nd:YAG gaat er grotendeels langs en komt bij de wortel uit.":
+    "Too much pigment in the top layer to pass it safely with the alexandrite. The Nd:YAG largely goes past it and reaches the root.",
+  "Textuur is nog te verbeteren, kuiltjes deels op te vullen. Kleur is lastig: wit weefsel maakt geen pigment meer aan.":
+    "Texture can still be improved, pits partly filled. Colour is difficult: white tissue no longer produces pigment.",
+  "Tijd en zon, apart bekeken": "Time and sun, looked at separately",
+  "Tijdens openingstijden direct. Staat er niemand vrij, dan bellen we dezelfde dag terug.":
+    "During opening hours straight away. If nobody is free, we call you back the same day.",
+  "Toestemming intrekken": "Withdraw consent",
+  "Traject inclusief producten": "Programme including products",
+  "Trekkerig na het wassen, fijne lijntjes die er 's ochtends erger uitzien dan 's avonds, en toch kan je huid glimmen.":
+    "Tight after washing, fine lines that look worse in the morning than in the evening, and your skin can still shine.",
+  "Tussen mei en augustus behandelen we pigment niet, hoe graag je ook wilt. Het resultaat is dan niet te houden. We meten wel, zodat we in september klaarstaan.":
+    "Between May and August we do not treat pigmentation, however much you want to. The result cannot be kept then. We do measure, so we are ready in September.",
+  "Twee behandelaars van Diba Clinics in gesprek in de kliniek in Rotterdam":
+    "Two Diba Clinics therapists in conversation at the clinic in Rotterdam",
+  "Twee dingen aangepakt": "Two things tackled",
+  "Twee sporen naast elkaar. Eerst de beïnvloedbare triggers eruit halen, daarna meten hoeveel roodheid er overblijft. Dat overblijvende deel is wat we behandelen.":
+    "Two tracks side by side. First removing the triggers you can influence, then measuring how much redness remains. That remaining part is what we treat.",
+  "Twee van de best verkopende categorieën in deze branche staan bij ons niet op de kaart.":
+    "Two of the best-selling categories in this industry are not on our menu.",
+  "Tweede meting met EVE-M. We leggen de twee naast elkaar en stellen het plan bij. Werkt het niet, dan zeggen we dat en stoppen we.":
+    "A second measurement with the EVE-M. We put the two side by side and adjust the plan. If it is not working, we say so and we stop.",
+  "Tweede test": "Second test",
+  "Twijfel je alsnog, of blijft het knagen? Ga dan gewoon. Dat kost een consult en het scheelt maanden piekeren.":
+    "Still unsure, or does it keep nagging? Then just go. That costs a consultation and saves you months of worrying.",
+  "Twijfelachtig. We starten liever met alleen bescherming en meten, en behandelen in het najaar.":
+    "Questionable. We prefer to start with protection only and measure, and treat in the autumn.",
+  "Uitstekend moment. Je hebt vier maanden voordat de zon weer sterker wordt, en dat is genoeg tijd voor een pigmenttraject.":
+    "An excellent moment. You have four months before the sun gets stronger again, and that is enough time for a pigmentation programme.",
+  "Uitstekend moment. Rustig opbouwen kan nu zonder haast.":
+    "An excellent moment. Building up gently is possible now without rushing.",
+  "Uitzoeken wat er tegen je huid komt, en vragen naar je cyclus en je medicatie. Soms is het op te lossen zonder één behandeling, en dan zeggen we dat.":
+    "Working out what comes into contact with your skin, and asking about your cycle and your medication. Sometimes it can be solved without a single treatment, and then we say so.",
+  "Uitzoeken wat jouw prikkels zijn en die vermijden. Bij een vermoeden van allergie hoort daar onderzoek bij, en dat gaat via de huisarts.":
+    "Working out what your triggers are and avoiding them. If an allergy is suspected, testing is part of that, and that goes through your GP.",
+  "Vaak contact en wrijving, maar zeker zo vaak hormonaal. We vragen door naar je telefoon, je kussensloop, of je een mondkapje draagt op werk en naar je cyclus.":
+    "Often contact and friction, but just as often hormonal. We ask about your phone, your pillowcase, whether you wear a face mask at work, and about your cycle.",
+  "Vaak deelt een aantal behandelingen hetzelfde jaarbudget. Vraag niet alleen wat het maximum is maar ook wat je er dit jaar al van gebruikt hebt.":
+    "Often a number of treatments share the same annual budget. Do not just ask what the maximum is but also how much of it you have already used this year.",
+  "Vaak een te volle routine": "Often an overloaded routine",
+  "Vaak niets meteen, en dat is een advies en geen afhouden. Blijft het na maanden staan, dan is licht op de vaatjes de logische stap.":
+    "Often nothing straight away, and that is advice rather than a brush-off. If it is still there after months, light on the vessels is the logical step.",
+  "Vaatjes prikkelen zonder ze te raken.":
+    "Stimulating the vessels without touching them.",
+  "Van alle zones is dit de sterkste aanwijzing voor een hormonale factor.":
+    "Of all the areas, this is the strongest indication of a hormonal factor.",
+  "Van alle zones is dit degene die het vaakst met hormonen te maken heeft. Zeker als het diepere, gevoelige plekjes zijn.":
+    "Of all the areas, this is the one most often connected to hormones. Certainly if they are deeper, tender spots.",
+  "Van jong tot uitgerijpt": "From young to mature",
+  "Vandaag gesloten": "Closed today",
+  "Vast licht en een vaste afstand, elke keer hetzelfde, zodat opnames vergelijkbaar blijven.":
+    "Fixed light and a fixed distance, the same every time, so images stay comparable.",
+  "Vast licht, vaste afstand. De variabelen hierboven liggen allemaal vast.":
+    "Fixed light, fixed distance. All the variables above are held constant.",
+  "Vaste afstand, vaste hoogte, hoofd in dezelfde stand. Bij de huidscan gebeurt dat automatisch.":
+    "Fixed distance, fixed height, head in the same position. With the skin scan that happens automatically.",
+  "Vaste diepte per zone, ingesteld door de behandelaar":
+    "A fixed depth per area, set by the therapist",
+  "Veel kleine vaatjes die tegelijk openstaan, meestal als reactie op warmte, inspanning of iets wat je huid aanzet. Dit hoort eerder bij rosacea dan bij couperose.":
+    "Many small vessels open at the same time, usually in response to heat, exertion or something that sets your skin off. This belongs with rosacea rather than with thread veins.",
+  "Veel lichter of weg": "Much lighter or gone",
+  "Veel mensen noemen dit acne en gaan er agressief op reinigen. Dat droogt de huid uit, waarna er méér talg komt.":
+    "Many people call this acne and start cleansing aggressively. That dries the skin out, after which more oil comes.",
+  "Veel talgklieren, plus zweet en wrijving. Sportbeha, rugzak en een shirt dat niet ademt doen hier meer dan je denkt.":
+    "Plenty of oil glands, plus sweat and friction. A sports bra, a backpack and a shirt that does not breathe do more here than you think.",
+  "Verandering over maanden is met het blote oog niet te beoordelen, in beide richtingen. Zonder huidanalyse kunnen wij niet aantonen dat het werkte en jij niet nagaan of het geld goed besteed was.":
+    "Change over months cannot be judged with the naked eye, in either direction. Without a skin analysis we cannot show that it worked and you cannot check whether the money was well spent.",
+  "Verandering van vorm, kleur, grootte of gevoel hoort beoordeeld te worden door iemand die ook weefsel kan laten onderzoeken. Wij kunnen kijken; we kunnen niet uitsluiten.":
+    "A change in shape, colour, size or feel should be assessed by someone who can also have tissue examined. We can look; we cannot rule things out.",
+  "Verandert dit verbond nog?": "Will this covenant still change?",
+  "Verandert nauwelijks": "Barely changes",
+  "Verbrandt altijd, wordt nooit bruin": "Always burns, never tans",
+  "Verbrandt bijna nooit": "Almost never burns",
+  "Verbrandt niet": "Does not burn",
+  "Verbrandt snel, wordt licht bruin": "Burns easily, tans lightly",
+  "Verbrandt soms, wordt daarna bruin": "Sometimes burns, then tans",
+  "Verbrandt zelden, wordt snel bruin": "Rarely burns, tans easily",
+  "Verdwijnt het bijna als je van onderaf licht op je gezicht laat vallen, of als je met je vinger de huid iets omhoog duwt?":
+    "Does it almost disappear when you let light fall on your face from below, or when you push the skin up slightly with your finger?",
+  "Verdwijnt het grotendeels als je een paar weken goed insmeert, dan was het geen verhoorning. Dan is er niets te behandelen en heb je een tube nodig en geen afspraak.":
+    "If it largely disappears when you moisturise well for a few weeks, it was not keratinisation. Then there is nothing to treat and you need a tube rather than an appointment.",
+  "Vergelijk een foto van tien jaar geleden. Is het gezicht vooral smaller geworden in plaats van dat er iets hangt?":
+    "Compare a photo from ten years ago. Has the face mainly become narrower rather than something hanging?",
+  "Vergelijkbaar moment": "A comparable moment",
+  "Verheven, rode plekjes die gevoelig zijn als je erop drukt. Sommige met een puskopje. Meestal in golven, vaak over wangen en kin.":
+    "Raised, red spots that are tender when you press on them. Some with a white head. Usually in waves, often across cheeks and chin.",
+  "Verhoogd weefsel, vaak roder en steviger dan de huid eromheen. Bij keloïd groeit het over de oorspronkelijke wond heen.":
+    "Raised tissue, often redder and firmer than the skin around it. With keloid it grows beyond the original wound.",
+  "Verhoorning rond de haarzakjes, en geen ingegroeid haar. Onschuldig, vaak erfelijk, en het wordt van ontharen niet minder.":
+    "Keratinisation around the hair follicles, and not an ingrown hair. Harmless, often hereditary, and hair removal does not reduce it.",
+  "Vermoed je een echte allergie, dan hoort dat bij de huisarts of een dermatoloog. Wij kunnen dat niet vaststellen en gaan het dus ook niet proberen.":
+    "If you suspect a real allergy, that belongs with your GP or a dermatologist. We cannot establish that and so we are not going to try.",
+  "Verse kleur in de bovenlaag verandert hoeveel licht die opneemt, en daarmee de veilige instelling. Daarom wordt er bij een pas gebruinde huid uitgesteld in plaats van voorzichtiger ingesteld.":
+    "Fresh colour in the top layer changes how much light it absorbs, and with it the safe setting. That is why with freshly tanned skin we postpone rather than set it more gently.",
+  "Verse kleur in de huid maakt de volgende sessie onveilig.":
+    "Fresh colour in the skin makes the next session unsafe.",
+  "Verslapping en fijne lijnen": "Sagging and fine lines",
+  "Verspreid over je hele huid": "Spread across your whole skin",
+  "Verstopte poriën": "Blocked pores",
+  "Vervalt tijdens zwangerschap en borstvoeding. Dermaplaning en een rustige gezichtsbehandeling kunnen meestal wel.":
+    "Not available during pregnancy and breastfeeding. Dermaplaning and a gentle facial are usually still possible.",
+  "Verwijdt de bloedvaten direct. Rode wijn doet dit bij de meeste mensen het snelst.":
+    "Dilates the blood vessels immediately. Red wine does this fastest for most people.",
+  "Verzette afspraken, gaten in de agenda, en soms een teleurgestelde klant die er klaar voor dacht te zijn.":
+    "Rescheduled appointments, gaps in the diary, and sometimes a disappointed client who thought they were ready.",
+  "Vet aanvullen, niet water. Een waterige gel voelt even lekker en is binnen een uur weg, want er is niets dat hem vasthoudt.":
+    "Top up oil, not water. A watery gel feels good for a moment and is gone within an hour, because there is nothing to hold it.",
+  "Vet, spier en bot verplaatsen zich. Dit is het zuiverste tijdspoor en het minst beïnvloedbaar met huidbehandelingen.":
+    "Fat, muscle and bone shift. This is the purest time track and the least influenced by skin treatments.",
+  "Vetkussens in het gezicht nemen af en verplaatsen, en bot trekt zich terug. Dat is geen huidprobleem, ook al zie je het aan je huid.":
+    "Fat pads in the face reduce and shift, and bone recedes. That is not a skin problem, even though you see it in your skin.",
+  "Vettig, vooral in de T-zone": "Oily, especially in the T-zone",
+  "Vier onderwerpen waarop veel wordt gezocht leveren ons niets op. We schrijven er wel uitgebreid over.":
+    "Four topics that are searched for a lot earn us nothing. We still write about them in detail.",
+  "Vier sessies SkinPen over drie maanden":
+    "Four SkinPen sessions over three months",
+  "Vier sessies microneedling over vijf maanden":
+    "Four microneedling sessions over five months",
+  "Vlak na een behandeling die de huid prikkelt zit er tijdelijk wat vocht in het weefsel. Dat vult fijne lijntjes op, en het verdwijnt binnen een paar dagen.":
+    "Just after a treatment that stimulates the skin there is temporarily some fluid in the tissue. That fills in fine lines, and it disappears within a few days.",
+  "Vlekken door de zon": "Patches from the sun",
+  "Vlekken of een ongelijke kleur": "Patches or an uneven tone",
+  "Vocht in de bovenste laag verandert hoe het oppervlak licht terugkaatst. Dat is een echt effect, maar het houdt uren aan en geen maanden.":
+    "Moisture in the top layer changes how the surface reflects light. That is a real effect, but it lasts hours and not months.",
+  "Voel je met je vingertop dat het boven de huid uitkomt, en is het oppervlak korrelig of wasachtig in plaats van glad?":
+    "Can you feel with your fingertip that it sits above the skin, and is the surface grainy or waxy rather than smooth?",
+  "Voelt de plek helemaal glad aan als je er met je vinger overheen gaat, zonder kuiltje of bobbeltje? En is hij rood en niet bruin?":
+    "Does the spot feel completely smooth when you run your finger over it, with no dip or bump? And is it red rather than brown?",
+  "Voelt het als schuurpapier over een groter vlak, zonder dat er in de bultjes een haar of pus zit? En zit het vooral op je bovenarmen?":
+    "Does it feel like sandpaper over a larger area, without a hair or pus in the bumps? And is it mainly on your upper arms?",
+  "Voelt het ruw zonder dat je losse bultjes voelt, en verdwijnt het grotendeels als je een tijd goed insmeert?":
+    "Does it feel rough without you being able to feel separate bumps, and does it largely disappear if you moisturise properly for a while?",
+  "Voelt je huid in zijlicht of onder je vingers hobbelig, terwijl er in de spiegel weinig te zien is en er geen rood bij zit?":
+    "Does your skin feel bumpy in side light or under your fingers, while there is little to see in the mirror and no redness with it?",
+  "Voelt je huid warm en branderig en is hij op dit moment aan het opvlammen, dan stellen we de behandeling uit. Licht op een geprikkelde huid maakt de roodheid vaker erger dan beter, en dan ben je verder van huis dan toen je binnenkwam.":
+    "If your skin feels hot and burning and is flaring up right now, we postpone the treatment. Light on irritated skin makes redness worse more often than better, and then you are further from home than when you came in.",
+  "Volg wat je in de kliniek meekrijgt; het schema is onderdeel van het traject.":
+    "Follow what you are given at the clinic; the schedule is part of the programme.",
+  "Volume opvullen doen wij niet. De huid steviger maken kan wel, en soms is dat genoeg; is dat het niet, dan zeggen we dat.":
+    "We do not do volume filling. Making the skin firmer is possible, and sometimes that is enough; if it is not, we say so.",
+  "Voor de meeste van dit soort vragen is een bericht genoeg: we kunnen zeggen wat er meespeelt en waar je op moet letten.":
+    "For most questions like this a message is enough: we can say what plays a part and what to watch out for.",
+  "Voor een aantal behandelingen ontbreekt het onderzoek om te kunnen zeggen dat het veilig is. Dan is niet doen de enige verdedigbare keuze.":
+    "For a number of treatments the research to say it is safe is missing. Then not doing it is the only defensible choice.",
+  "Voor iets anders": "For something else",
+  "Voor iets anders dan jij zoekt":
+    "For something other than what you are looking for",
+  "Voor wat jij wil veranderen heeft deze kliniek geen behandeling die er volledig op mikt.":
+    "For what you want to change, this clinic has no treatment that fully targets it.",
+  "Vooruitbetaalde pakketten zijn de zekerste omzet die een kliniek kan hebben. Die zekerheid hebben wij niet.":
+    "Prepaid packages are the surest revenue a clinic can have. We do not have that certainty.",
+  "Voorzichtiger dan op een arm, want gezichtshuid reageert sterker. Eerst de roodheid, dan pas de structuur.":
+    "More carefully than on an arm, because facial skin reacts more strongly. First the redness, only then the texture.",
+  "Vraagt meer hersteltijd dan je aangaf":
+    "Needs more recovery time than you indicated",
+  "Vul het in": "Fill it in",
+  "Vul je naam, een geldig e-mailadres en je vraag in.":
+    "Fill in your name, a valid email address and your question.",
+  "Waar je op let bij een moedervlek": "What to watch for with a mole",
+  "Waar komt dit uit, en hoeveel is er nog over?":
+    "Which budget does this come from, and how much is left?",
+  "Waarom de foto's alleen naast elkaar iets zeggen":
+    "Why the photos only say something side by side",
+  "Waarom geduld hier het grootste deel van het werk is":
+    "Why patience is most of the work here",
+  "Waarom staat bij elke regel wat het jullie kost?":
+    "Why does every rule state what it costs you?",
+  "Wacht met scrubben tot de haren zijn uitgevallen.":
+    "Wait with scrubbing until the hairs have fallen out.",
+  "Wangen: van buitenaf of hormonaal": "Cheeks: from outside or hormonal",
+  "Warm, en te doen zonder verdoving":
+    "Warm, and manageable without anaesthetic",
+  "Warmte is de sterkste trigger die er is. Lauw douchen voelt zuur maar werkt.":
+    "Heat is the strongest trigger there is. A lukewarm shower feels miserable but works.",
+  "Warmte kan pigment aanjagen.": "Heat can drive pigmentation.",
+  "Wat als een behandelaar hiervan afwijkt?":
+    "What if a therapist deviates from this?",
+  "Wat de EVE-M": "What the EVE-M",
+  "Wat de drie soorten licht ieder zichtbaar maken":
+    "What each of the three kinds of light makes visible",
+  "Wat de site aangaf om te bespreken:": "What the site flagged to discuss:",
+  "Wat definitief hier wel en niet betekent":
+    "What permanent does and does not mean here",
+  "Wat eczeem met je huid doet": "What eczema does to your skin",
+  "Wat een behandeling inhoudt, waar een klacht vandaan komt en wat een apparaat kan.":
+    "What a treatment involves, where a concern comes from and what a machine can do.",
+  "Wat er eigenlijk aan de hand is. Je hoeft dat niet zelf te weten voordat je komt; uitzoeken is het werk.":
+    "What is actually going on. You do not have to know that yourself before you come; working it out is the job.",
+  "Wat er in de eerste weken verandert": "What changes in the first weeks",
+  "Wat er is, wordt sterk verminderd. Wat er later nog bij komt, bijvoorbeeld door hormonale verandering, valt daar niet onder. Onderhoud hoort erbij en dat zeggen we liever vooraf dan achteraf.":
+    "What is there is greatly reduced. What comes later, for instance through hormonal change, does not fall under it. Maintenance is part of it and we would rather say that beforehand than afterwards.",
+  "Wat er mogelijk is, wat het realistisch oplevert, hoeveel sessies dat vraagt en wat het kost. Soms is het advies om niets te doen, of om eerst twee weken af te bouwen en dan opnieuw te kijken.":
+    "What is possible, what it realistically achieves, how many sessions that takes and what it costs. Sometimes the advice is to do nothing, or to cut back for two weeks first and then look again.",
+  "Wat er nu is, is grotendeels blijvend. Dat mag je van ons horen.":
+    "What is there now is largely permanent. You deserve to hear that from us.",
+  "Wat er nu past": "What fits right now",
+  "Wat er realistisch mogelijk is": "What is realistically possible",
+  "Wat er tussen de afspraken door gebeurt":
+    "What happens between the appointments",
+  "Wat het apparaat níet doet: kiezen": "What the machine does not do: choose",
+  "Wat je dan op de foto ziet is de zwelling en niet het resultaat. Een nafoto die te vroeg genomen is, laat iets zien wat over een week niet meer bestaat.":
+    "What you then see in the photo is the swelling and not the result. An after photo taken too early shows something that will no longer exist in a week.",
+  "Wat je gebruikt is tussen jou en je arts. Wij zullen nooit adviseren ergens mee te stoppen of te minderen.":
+    "What you use is between you and your doctor. We will never advise you to stop or cut back on anything.",
+  "Wat je smeert of slikt is tussen jou en je arts. We zullen je nooit aanraden ergens mee te stoppen of te minderen.":
+    "What you apply or take is between you and your doctor. We will never advise you to stop or cut back on anything.",
+  "Wat valt jou het eerst op aan je huid?":
+    "What do you notice first about your skin?",
+  "Wat we bij acne wel doen": "What we do do with acne",
+  "Wat we bij verslapping wél doen": "What we do do with sagging",
+  "Wat we doen, waarmee, en wat het kost":
+    "What we do, with what, and what it costs",
+  "Wat we kunnen doen hangt af van welke soort het is. Eerst kijken, dan pas iets.":
+    "What we can do depends on which type it is. First look, only then act.",
+  "Wat we niet kunnen is beslissen. Of iets bij jouw huid past hangt af van wat een meting laat zien, en dat is aan een foto niet te zien.":
+    "What we cannot do is decide. Whether something suits your skin depends on what a measurement shows, and a photo cannot show that.",
+  "Wat weggehaald wordt hoort onderzocht te worden, en dat vraagt een arts en een laboratorium. Cosmetisch weglaseren maakt onderzoek achteraf onmogelijk.":
+    "What is removed should be examined, and that takes a doctor and a laboratory. Cosmetic laser removal makes examination afterwards impossible.",
+  "Wat wij dan doen": "What we do then",
+  "Wat wél helpt is de richting van het licht: recht van voren, niet van bovenaf. Dat verklaart ook waarom je er op de ene foto uitgerust uitziet en op de andere niet.":
+    "What does help is the direction of the light: straight from the front, not from above. That also explains why you look rested in one photo and not in another.",
+  "Water vasthouden en de barrière met rust laten. Dit is het kwadrant waarin mensen het vaakst zelf de oorzaak zijn, met te vaak reinigen en te veel actieve stoffen.":
+    "Holding on to water and leaving the barrier alone. This is the quadrant where people are most often the cause themselves, with cleansing too often and too many active ingredients.",
+  "We beginnen liever in het najaar. Dat kost je een paar maanden wachten en het scheelt een behandeling die tegen de zon in werkt.":
+    "We prefer to start in the autumn. That costs you a few months of waiting and saves you a treatment that works against the sun.",
+  "We beginnen met uitzoeken welke van deze de grootste is. Vaak zijn het één of twee, niet alle vijf. Behandelen houden we achter de hand.":
+    "We start by working out which of these is the biggest. Often it is one or two, not all five. We keep treatment in reserve.",
+  "We beginnen met vragen, niet met behandelen. Wat het patroon in de tijd doet, zegt hier meer dan wat we op de huid zien.":
+    "We start with questions, not with treatment. What the pattern does over time says more here than what we see on the skin.",
+  "We behandelen niet. We vertellen je wat je thuis doet: uit de zon houden, niet trekken, en geduld. Dat kost je niets en levert het meeste op.":
+    "We do not treat. We tell you what to do at home: keep it out of the sun, do not pull on it, and be patient. That costs you nothing and gains you the most.",
+  "We bouwen op in kleine stappen. Als je huid het aankan gaan we iets verder; als hij protesteert stappen we terug.":
+    "We build up in small steps. If your skin can take it we go a bit further; if it protests we step back.",
+  "We kijken naar sport, kleding en haarproducten die langs je nek en borst lopen. Behandelen kan, ook hier met een peeling.":
+    "We look at sport, clothing and hair products that run along your neck and chest. Treatment is possible, here too with a peel.",
+  "We kijken naar sport, kleding en wat er na het zweten met je huid gebeurt, en behandelen rug en borst als één zone. Kruidenpeels en chemische peelings kunnen hier allebei.":
+    "We look at sport, clothing and what happens to your skin after sweating, and treat back and chest as one area. Herbal peels and chemical peels are both possible here.",
+  "We kijken naar sport, kleding en wat er na het zweten met je huid gebeurt. Behandelen kan, maar zonder die gewoontes verandert er weinig.":
+    "We look at sport, clothing and what happens to your skin after sweating. Treatment is possible, but without those habits changing, little changes.",
+  "We kijken naar wat je nu thuis gebruikt en lezen de ingrediëntenlijst, niet de naam op de verpakking. Soms zit daar het hele antwoord al.":
+    "We look at what you use at home and read the ingredient list, not the name on the packaging. Sometimes the whole answer is already in there.",
+  "We lopen de meting met je door en laten zien wat we zien. Ook de dingen waar je zelf niet voor kwam, en de dingen die meevallen.":
+    "We go through the measurement with you and show you what we see. Including the things you did not come for, and the things that turn out fine.",
+  "We maken een korte lijst van wat je aanpast, en meten na zes weken. Werkt dat genoeg, dan hoef je hier niet terug te komen.":
+    "We make a short list of what you adjust, and measure after six weeks. If that works well enough, you do not have to come back here.",
+  "We meten eerst of er genoeg te halen valt om de sessies te rechtvaardigen. Zo niet, dan zeggen we dat.":
+    "We first measure whether there is enough to gain to justify the sessions. If not, we say so.",
+  "We verwijzen door en stemmen af. Behandelen wij dit als acne, dan wordt het erger, dus dat doen we niet.":
+    "We refer you on and coordinate. If we treat this as acne, it gets worse, so we do not.",
+  "We vragen door over je cyclus, de pil en eventuele PCOS. Huidbehandeling helpt het beeld, maar we sturen je ook naar je huisarts als de oorzaak daar ligt.":
+    "We ask about your cycle, the pill and any PCOS. Skin treatment improves the picture, but we also send you to your GP if the cause lies there.",
+  "We vragen door over je cyclus, de pil en eventuele PCOS. Huidzorg en een medisch traject versterken elkaar hier; ligt de oorzaak bij je hormonen, dan raden we je aan dat met je huisarts te bespreken.":
+    "We ask about your cycle, the pill and any PCOS. Skincare and a medical programme reinforce each other here; if the cause lies with your hormones, we advise you to discuss that with your GP.",
+  "We werken langs twee sporen: uitzoeken waardoor de gloed opkomt, en de zichtbare vaatjes gericht aanpakken. Waar we beginnen hangt af van wat jou het meest dwarszit.":
+    "We work along two tracks: finding out what brings the flush on, and tackling the visible vessels directly. Where we start depends on what bothers you most.",
+  "We zoeken eerst uit waardoor het opkomt en kijken daarna pas of licht iets toevoegt. Zolang de aanleiding blijft, komt de gloed terug en dan werkt een apparaat tegen de stroom in.":
+    "We first work out what brings it on and only then look at whether light adds anything. As long as the trigger stays, the flush comes back and a machine is working against the tide.",
+  "Weefsel dat werkelijk is losgelaten en niet alleen minder stevig. Geen apparaat zet dit terug, hoe vaak je ook komt.":
+    "Tissue that has genuinely let go and is not merely less firm. No machine puts this back, however often you come.",
+  "Week 1 – 2": "Week 1 â€“ 2",
+  "Week 3 – 6": "Week 3 â€“ 6",
+  "Week 8 – 12": "Week 8 â€“ 12",
+  "Weinig pigment in de bovenlaag. De alexandriet werkt hier efficiënt en op een rustige energie.":
+    "Little pigment in the top layer. The alexandrite works efficiently here and at a gentle energy.",
+  "Wel te beperken, niet uit te zetten. En de roodheid zelf geeft stress, dus het draait rond.":
+    "It can be limited, not switched off. And the redness itself causes stress, so it goes round in circles.",
+  "Werkt niet op wat jij wil veranderen. Niet minder goed, gewoon iets anders.":
+    "Does not work on what you want to change. Not less well, just something different.",
+  "Wie hier werkt, en wat anderen ervan zeggen":
+    "Who works here, and what others say about it",
+  "Wij beginnen niet in het verkeerde seizoen":
+    "We do not start in the wrong season",
+  "Wij behandelen dit niet en we laseren het zeker niet weg. Je gaat eerst naar de huisarts, ook als het waarschijnlijk niets is.":
+    "We do not treat this and we certainly do not laser it away. You go to your GP first, even if it is probably nothing.",
+  "Wij behandelen huid. Injectables en volumeopbouw doen we niet. Dat is een andere discipline maar een grens: het hoort bij een arts.":
+    "We treat skin. We do not do injectables and volume building. That is a different discipline but also a line: it belongs with a doctor.",
+  "Wij behandelen kleur, geen vermoeidheid. Als je er moe uitziet omdat je moe bent, is dat geen huidprobleem en zeggen we dat gewoon.":
+    "We treat colour, not tiredness. If you look tired because you are tired, that is not a skin problem and we simply say so.",
+  "Wij behandelen niet op een huid die daar niet klaar voor is":
+    "We do not treat skin that is not ready for it",
+  "Wij behandelen niet wat bij een arts hoort":
+    "We do not treat what belongs with a doctor",
+  "Wij beloven het niet en we schrijven het nergens. Wat we wel beloven is dat ze minder opvallen, en dat kunnen we met een foto onder hetzelfde licht laten zien.":
+    "We do not promise it and we do not write it anywhere. What we do promise is that they stand out less, and we can show that with a photo under the same light.",
+  "Wij beloven niets wat we niet kunnen meten":
+    "We promise nothing we cannot measure",
+  "Wij doen niets aan volume en niets aan lichaamsvorm":
+    "We do nothing about volume and nothing about body shape",
+  "Wij halen dit niet weg. Je gaat eerst naar de huisarts, ook als het waarschijnlijk niets is.":
+    "We do not remove this. You go to your GP first, even if it is probably nothing.",
+  "Wij halen niets weg dat verandert":
+    "We do not remove anything that is changing",
+  "Wij tonen geen resultaat dat we niet onder hetzelfde licht hebben gemeten":
+    "We do not show results we have not measured under the same light",
+  "Wij verkopen geen pakketten en geen abonnementen":
+    "We do not sell packages or subscriptions",
+  "Wij verkopen geen routine met acht stappen. Bij een droge huid is weglaten meestal de behandeling, en daar valt weinig aan te verdienen.":
+    "We do not sell an eight-step routine. With dry skin, leaving things out is usually the treatment, and there is little money in that.",
+  "Wij verkopen geen schema waarin nog vier producten bij komen. Bij een gevoelige huid is aftrekken bijna altijd de behandeling.":
+    "We do not sell a plan with four more products added. With sensitive skin, subtracting is almost always the treatment.",
+  "Wij verkopen niets waarvan we weten dat het te weinig oplevert":
+    "We do not sell anything we know achieves too little",
+  "Wij vullen niet op met fillers. Wel kunnen we de huid eromheen steviger maken, en soms is dat genoeg om de schaduw te verzachten.":
+    "We do not fill with fillers. What we can do is make the skin around it firmer, and sometimes that is enough to soften the shadow.",
+  "Wij werken aan de huid zelf: de structuur, de kleur en wat eronder zit. Volume en spierwerking zijn een ander vak.":
+    "We work on the skin itself: the texture, the colour and what lies beneath. Volume and muscle action are a different trade.",
+  "Wij werken niet met injectables in dit gebied. Dat is een keuze en geen tekort: het is een lastige plek waar te veel of te ondiep spuiten jarenlang zichtbaar blijft.":
+    "We do not work with injectables in this area. That is a choice and not a shortcoming: it is a difficult spot where injecting too much or too shallow stays visible for years.",
+  "Wij werken niet met korting, sale of schaarste":
+    "We do not work with discounts, sales or scarcity",
+  "Wisselend per zone": "Varies by area",
+  "Wit, dun en definitief. Bij striae heet dit striae albae. Het weefsel mist pigmentcellen en heeft een andere structuur dan de huid eromheen.":
+    "White, thin and permanent. With stretch marks this is called striae albae. The tissue lacks pigment cells and has a different structure from the skin around it.",
+  "Witte striae en oude littekens verdwijnen niet. Structuur verbeteren kan, kleur terugbrengen niet. Dat zeggen we vóór je iets betaalt.":
+    "White stretch marks and old scars do not disappear. Improving texture is possible, bringing back colour is not. We say that before you pay anything.",
+  "Wordt duidelijk lichter": "Becomes clearly lighter",
+  "Zachte hangende velletjes": "Soft hanging tags",
+  "Ze horen bij een werkende porie en ze komen terug, hoe grondig je ook te werk gaat. Wij verkopen daar geen reeks voor. Wat we wel doen is uitleggen waarom je neus er over drie weken weer zo uitziet, zodat je stopt met een gevecht dat niet te winnen is.":
+    "They are part of a working pore and they come back, however thoroughly you go about it. We do not sell a course for that. What we do is explain why your nose looks like that again in three weeks, so you stop fighting a fight you cannot win.",
+  "Ze namen de tijd om te kijken, en ik hoorde precies wat er wel en niet kon.":
+    "They took the time to look, and I heard exactly what was and was not possible.",
+  "Zeg het tegen je behandelaar, of tegen iemand anders van het team als dat makkelijker is. Het meeste is in een gesprek op te lossen, en dat is ook de eerste stap van de ANBOS-klachtenregeling waar wij onder vallen.":
+    "Tell your therapist, or someone else on the team if that is easier. Most things can be sorted out in a conversation, and that is also the first step of the ANBOS complaints procedure we fall under.",
+  "Zes sessies over vier maanden": "Six sessions over four months",
+  "Zet het in je huidprofiel": "Put it in your skin profile",
+  "Zichtbaar verschil": "A visible difference",
+  "Zie de ABCDE-check": "See the ABCDE check",
+  "Zie de littekenklok": "See the scar clock",
+  "Zie de moedervlekkenpagina": "See the moles page",
+  "Zie de poriënpagina": "See the pores page",
+  "Zie de stapelteller": "See the stacking counter",
+  "Zie de verouderingspagina": "See the skin ageing page",
+  "Zie het zonjaar": "See the sun year",
+  "Zie je een schaduw in de plek als het licht van opzij komt, of voel je een randje met je vingertop?":
+    "Do you see a shadow in the spot when light comes from the side, or can you feel an edge with your fingertip?",
+  "Zie je fijne streepjes die per dag verschillen, en trekt je huid kort na het wassen? Dat kan ook bij een vette huid.":
+    "Do you see fine lines that differ from day to day, and does your skin feel tight shortly after washing? That can happen with oily skin too.",
+  "Zie je in de spiegel geen duidelijke vlekken maar wel een ongelijke tint, en valt het op foto's meer op dan in het echt?":
+    "Do you see no clear patches in the mirror but an uneven tone, and does it show up more in photos than in real life?",
+  "Zijn er ademstops, of ben je overdag ongewoon slaperig, dan sturen we je naar de huisarts voor slaaponderzoek. Snurken zachter maken terwijl er ademstops onder zitten is het alarm uitzetten en het probleem laten staan.":
+    "If there are pauses in breathing, or you are unusually sleepy during the day, we send you to your GP for a sleep study. Making snoring quieter while there are pauses in breathing underneath is switching off the alarm and leaving the problem in place.",
+  "Zijn het fijne streepjes die per dag verschillen, dan is het vocht en geen verlies van structuur. Dat is met verzorging op te lossen en niet met een apparaat.":
+    "If they are fine lines that differ from day to day, it is moisture and not loss of structure. That can be solved with skincare and not with a machine.",
+  "Zijn het gelige, iets verheven plekjes, meestal aan de neuskant van je oogleden, die er 's ochtends en 's avonds hetzelfde bij liggen?":
+    "Are they yellowish, slightly raised patches, usually on the nose side of your eyelids, that look the same morning and evening?",
+  "Zit de bolling er 's ochtends en 's avonds hetzelfde bij, dan gaat het om het vetkussen achter je oog. Daar is een ingreep voor, en die hoort bij een cosmetisch arts of oogarts. Wij zouden je een reeks verkopen die niets verandert.":
+    "If the bulge looks the same morning and evening, it is about the fat pad behind your eye. There is a procedure for that, and it belongs with a cosmetic doctor or eye doctor. We would be selling you a course that changes nothing.",
+  "Zit de roodheid op de wangen of langs de kaaklijn, met minieme bultjes erin, en is dat er al zolang je je kunt herinneren?":
+    "Is the redness on the cheeks or along the jawline, with tiny bumps in it, and has it been there for as long as you can remember?",
+  "Zit het aan beide kanten ongeveer gelijk, met vage randen in plaats van scherpe? En kwam het in een periode van hormonale verandering?":
+    "Is it roughly equal on both sides, with soft edges rather than sharp ones? And did it appear during a time of hormonal change?",
+  "Zit het alleen op je wangen, dan kan het iets zijn dat je huid raakt: telefoon, kussensloop, mondkapje, sportband. Maar net zo vaak speelt er hormonaal iets mee, en dat zie je van buiten niet.":
+    "If it is only on your cheeks, it can be something touching your skin: phone, pillowcase, face mask, sports band. But just as often something hormonal plays a part, and you cannot see that from the outside.",
+  "Zit het in het ooglid zelf in plaats van eronder, voelt het stevig aan, en is het niet of nauwelijks pijnlijk?":
+    "Is it in the eyelid itself rather than under it, does it feel firm, and is it barely or not at all painful?",
+  "Zit het met een breed vlak op de huid in plaats van aan een steeltje, en voelt het oppervlak korrelig of wasachtig?":
+    "Does it sit on the skin with a broad base rather than on a stalk, and is the surface grainy or waxy?",
+  "Zit het onder de laag die zich vernieuwt, dan raden we het af. Je betaalt dan voor sessies waarvan we vooraf weten dat ze weinig gaan doen.":
+    "If it sits below the layer that renews itself, we advise against it. You would be paying for sessions we know in advance will do little.",
+  "Zit je in het rustige kwadrant, dan is ons advies om niets te doen. Dat komt vaker voor dan je denkt.":
+    "If you are in the calm quadrant, our advice is to do nothing. That happens more often than you would think.",
+  "Zitten de bultjes vooral op geschoren zones, en zie je bij fel licht een donkere lus onder het velletje?":
+    "Are the bumps mainly on shaved areas, and in bright light can you see a dark loop under the skin?",
+  "Zitten ze verspreid en niet in elke porie, zijn ze duidelijk donkerder dan de rest, en zitten ze er al maanden op dezelfde plek?":
+    "Are they scattered rather than in every pore, clearly darker than the rest, and have they been in the same place for months?",
+  "Zo goed als alles wat je ziet kan uit de fotografie komen. Dit is de stand waarin de meeste voor-en-na-beelden op internet gemaakt zijn.":
+    "Almost everything you see could come from the photography. This is the setting in which most before and after images on the internet are made.",
+  "Zodra dat voorbij is, verandert deze uitkomst vanzelf. Je hoeft er verder niets voor te doen.":
+    "As soon as that is over, this outcome changes by itself. You do not have to do anything for it.",
+  "Zolang niet duidelijk is wat het is, behandelen we het gebied niet. Ook niet als je voor iets anders komt.":
+    "As long as it is not clear what it is, we do not treat the area. Not even if you are coming for something else.",
+  "Zon, weer, stress, hormonen, inspanning. Dit is de groep waarbij goed advies niet genoeg is, want je kunt je leven niet eromheen bouwen. Precies hier heeft behandelen van de vaatjes zin.":
+    "Sun, weather, stress, hormones, exertion. This is the group where good advice is not enough, because you cannot build your life around it. This is exactly where treating the vessels is worthwhile.",
+  "Zonbescherming is hier geen bijzaak maar de behandeling zelf; zonder dat werkt de rest niet. Daarnaast microneedling, peelings of een pigmenttraject, afhankelijk van hoe diep het zit.":
+    "Sun protection is not a side issue here but the treatment itself; without it the rest does not work. Alongside that, microneedling, peels or a pigmentation programme, depending on how deep it sits.",
+  "Zonder glans werpt de rand geen schaduw meer en verdwijnt het reliëf.":
+    "Without shine the edge no longer casts a shadow and the relief disappears.",
+  "Zonder mee-eters gaat het bijna nooit om acne. Dat is het snelste onderscheid dat je zelf kunt maken.":
+    "Without blackheads it is almost never acne. That is the quickest distinction you can make yourself.",
+  "Zonder meting en zonder doel is elke behandeling een gok, en dan is achteraf niet vast te stellen of er iets is veranderd.":
+    "Without a measurement and without a goal, every treatment is a gamble, and then there is no way afterwards to establish whether anything has changed.",
+  "Zonder uitleg": "Without explanation",
+  "Zonschade en melasma lijken op elkaar en vragen een andere aanpak. Weten we het niet zeker, dan behandelen we nog niet.":
+    "Sun damage and melasma look alike and call for a different approach. If we are not sure, we do not treat yet.",
+  "Zuren op een geprikkelde huid.": "Acids on irritated skin.",
+  "Zweet en warmte in open kanaaltjes geven ontsteking.":
+    "Sweat and heat in open channels cause inflammation.",
+  "Zweet in geprikkelde haarzakjes geeft bultjes.":
+    "Sweat in irritated follicles causes bumps.",
+  "Zweet op een net geopende porie prikkelt.":
+    "Sweat on a freshly opened pore is irritating.",
+  "Zweet prikt op een huid die aan het vervellen is.":
+    "Sweat stings on skin that is peeling.",
+  "Zwellingen die je meer voelt dan ziet. Ze komen niet tot een kopje, ze doen zeer, en ze laten vaker een litteken of een donkere vlek achter.":
+    "Swellings you feel more than you see. They do not come to a head, they hurt, and they more often leave a scar or a dark mark.",
+  "acne mandibulair": "mandibular acne",
+  "acne mechanica": "acne mechanica",
+  "als het gebeurt": "as it happens",
+  "artritis psoriatica": "psoriatic arthritis",
+  "atrofische acnelittekens: ice pick, boxcar, rolling":
+    "atrophic acne scars: ice pick, boxcar, rolling",
+  "bachelor degree": "bachelor degree",
+  "beeld volgt": "image to follow",
+  "dat je borstvoeding geeft": "that you are breastfeeding",
+  "dat je een dag kunt hebben": "that you can have a day",
+  "dat je een paar dagen kunt hebben": "that you can have a few days",
+  "dat je er meteen weer normaal uit moet zien":
+    "that you have to look normal again straight away",
+  "dat je hooguit een dag hebt": "that you have a day at most",
+  "de Fotona 4D": "the Fotona 4D",
+  "de HydraFacial": "the HydraFacial",
+  "de OxyGeneo": "the OxyGeneo",
+  "de behandeling": "the treatment",
+  "de dermaplaning": "the dermaplaning",
+  "de eerste IPL-behandeling": "the first IPL treatment",
+  "de eerste epilatie": "the first epilation",
+  "de eerste microneedling": "the first microneedling",
+  "de eerste peeling": "the first peel",
+  "de eerste skinbooster": "the first skinbooster",
+  "de huidscan": "the skin scan",
+  "de zon die eraan komt": "the sun that is coming",
+  "dehydratie van de hoornlaag": "dehydration of the horny layer",
+  "dermatochalasis, laxiteit in gevorderd stadium":
+    "dermatochalasis, laxity at an advanced stage",
+  "deze vacature": "this vacancy",
+  "diffuse hyperpigmentatie": "diffuse hyperpigmentation",
+  "diffuus erytheem": "diffuse erythema",
+  "dynamische rimpels": "dynamic wrinkles",
+  "een dag": "a day",
+  "een doffe huid": "dull skin",
+  "een droge huid": "dry skin",
+  "een gevoelige huid": "sensitive skin",
+  "een paar dagen": "a few days",
+  "een plaatspagina hoort een tariefblok te hebben":
+    "een plaatspagina hoort een tariefblok te hebben",
+  "een uur": "an hour",
+  "een vast bedrag": "a fixed amount",
+  "er echt uitziet": "really looks like",
+  "er staan tarieven op de pagina, maar geen dienst in het schema":
+    "er staan tarieven op de pagina, maar geen dienst in het schema",
+  "er staat een dienst in het schema, maar er zijn geen tarieven":
+    "er staat een dienst in het schema, maar er zijn geen tarieven",
+  "erytheem met teleangiëctasieën": "erythema with telangiectasia",
+  "exogene factoren": "external factors",
+  "fill={vulling} fillOpacity=": "fill={vulling} fillOpacity=",
+  "gesloten comedo": "closed comedo",
+  "gesloten comedonen": "closed comedones",
+  "hersteltijd die ik heb": "recovery time I have",
+  "het antwoordblok bevat een link; dat gaat het schema in":
+    "het antwoordblok bevat een link; dat gaat het schema in",
+  "hordeolum, in de volksmond strontje of gerstekorrel":
+    "hordeolum, commonly known as a stye",
+  "hypertrofisch litteken, keloïd": "hypertrophic scar, keloid",
+  "in de stoel": "in the chair",
+  "inflammatoire acne": "inflammatory acne",
+  "inflammatoire fase": "inflammatory phase",
+  "je gebruinde huid": "your tanned skin",
+  "je huid in beeld brengt": "maps your skin",
+  "je huidprobleem": "your skin concern",
+  "keratosis pilaris rubra faciei": "keratosis pilaris rubra faciei",
+  "lipidearm, alipide huid": "lipid-poor, alipidic skin",
+  "main a, main button": "main a, main button",
+  "meer dan": "more than",
+  "nodulocystische acne": "nodulocystic acne",
+  "opacity .4s ease": "opacity .4s ease",
+  "open comedo, mee-eter": "open comedo, blackhead",
+  "papulopustuleuze acne": "papulopustular acne",
+  "papulopustuleuze rosacea": "papulopustular rosacea",
+  "plaque psoriasis": "plaque psoriasis",
+  "post-inflammatoir erytheem, PIE": "post-inflammatory erythema, PIE",
+  "post-inflammatoire hyperpigmentatie, PIH":
+    "post-inflammatory hyperpigmentation, PIH",
+  "postinflammatoire hyperpigmentatie": "post-inflammatory hyperpigmentation",
+  "prolaps van het orbitale vetkussen": "prolapse of the orbital fat pad",
+  "seborroïsche keratose": "seborrhoeic keratosis",
+  "striae albae, atrofisch litteken": "striae albae, atrophic scar",
+  "teleangiëctasieën, couperose": "telangiectasia, thread veins",
+  "traandalgroeve, tear trough": "tear trough",
+  "twee uur": "two hours",
+  "uitgerijpt litteken": "mature scar",
+  "van dichtbij": "up close",
+  "verdachte laesie": "suspicious lesion",
+  "verlies van definitie langs de mandibula":
+    "loss of definition along the mandible",
+  "verminderde celvernieuwing": "reduced cell renewal",
+  "verwijde poriën": "enlarged pores",
+  "volumeverlies en verslapping": "volume loss and sagging",
+  "waarvoor ik kom": "what I am coming for",
+  "wat er verder speelt": "what else is going on",
+  "wat ik nu gebruik": "what I use now",
+  "welke behandeling": "which treatment",
+  "zit er al in": "is already included",
+  "| Diba Clinics": "| Diba Clinics",
+  "Profielschets klaar. Meeste aandacht:":
+    "Profile sketch ready. Most attention:",
+  "Bij Diba Clinics in Rotterdam.": "At Diba Clinics in Rotterdam.",
+  uit: "out of",
+  "1.000": "1,000",
+  "€ 1.000": "€ 1,000",
+  "1.100": "1,100",
+  "€ 1.100": "€ 1,100",
+  "1.300": "1,300",
+  "€ 1.300": "€ 1,300",
+  "1.495": "1,495",
+  "€ 1.495": "€ 1,495",
+  "€ 1.000": "€ 1,000",
+  "€ 1.100": "€ 1,100",
+  "€ 1.300": "€ 1,300",
+  "€ 1.495": "€ 1,495",
 };

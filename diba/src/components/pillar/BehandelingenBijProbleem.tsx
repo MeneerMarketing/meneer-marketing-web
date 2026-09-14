@@ -5,6 +5,7 @@ import { apparatenVoorBehandeling } from "@/data/apparatuur";
 import { BEHANDELINGEN, prijsTekst } from "@/data/behandelingen";
 import { t, tc } from "@/lib/vertaal";
 
+import { taalNu } from "@/lib/taalcontext";
 /**
  * Welke behandelingen horen bij dit huidprobleem, en op welk apparaat draaien ze.
  *
@@ -100,13 +101,14 @@ export default function BehandelingenBijProbleem({
                 <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
                   <h3 className="diba-card-title">{tc(b.naam)}</h3>
                   <span className="text-[15px] leading-6 text-[var(--t-muted)] tabular-nums">
-                    {tc(prijsTekst(b.prijs))}
+                    {tc(prijsTekst(b.prijs, taalNu()))}
                   </span>
                 </div>
 
-                {/* Vier regelhoogtes, zodat de kaarten in een rij gelijk blijven ook als
-                    de ene omschrijving net omvalt naar een extra regel. */}
-                <p className="mt-3 grow text-[15px] leading-7 text-[var(--t-body)] max-md:hidden md:min-h-[4lh]">
+                {/* Geen reservering: `grow` vangt het verschil al op, dus de balk met de
+                    links ligt in elke kaart op de onderrand. Zie
+                    `huidproblemen/striae/page.tsx`. */}
+                <p className="mt-3 grow text-[15px] leading-7 text-[var(--t-body)] max-md:hidden">
                   {tc(b.kort)}
                 </p>
 

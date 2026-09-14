@@ -49,7 +49,7 @@ export function homeWensen(): readonly HomeWens[] {
         naam: publicCopy(b.naam),
         apparaat: b.apparaat ? publicCopy(b.apparaat) : undefined,
         prijsLabel:
-          b.prijs === 0 ? "Op aanvraag" : `vanaf ${prijsTekst(b.prijs)}`,
+          b.prijs === 0 ? "Op aanvraag" : `vanaf ${prijsTekst(b.prijs, "nl")}`,
       })),
       totaal: alle.length,
     };
