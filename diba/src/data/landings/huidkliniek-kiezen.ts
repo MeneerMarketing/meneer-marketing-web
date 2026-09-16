@@ -1,3 +1,4 @@
+import { NAGEKEKEN_ROJDA } from "@/data/landings/nagekeken";
 import {
   alsWoord,
   euro,
@@ -38,6 +39,7 @@ export const HUIDKLINIEK_KIEZEN: Landing = {
   slug: "huidkliniek-kiezen",
   soort: "vraag",
   gewijzigd: "2026-09-12",
+  nagekeken: NAGEKEKEN_ROJDA,
   titel: "Hoe kies je een huidkliniek",
   omschrijving:
     "Waar je op let bij een huidkliniek: welke registers je zelf kunt nakijken, wat een intake hoort op te leveren en hoe je een voor-en-nafoto leest.",

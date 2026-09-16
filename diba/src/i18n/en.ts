@@ -6399,6 +6399,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Of vul eerst je huidprofiel in": "Or fill in your skin profile first",
   /* ── Apparatuur: wat op elke pagina terugkomt ── */
   Wat: "What",
+  "Welke gegevens": "Which data",
   Waar: "Where",
   Waarom: "Why",
   "Naar de": "To the",
@@ -7127,7 +7128,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Het eerlijke advies": "The honest advice",
   Later: "Later",
   "Wat je meeneemt": "What you take with you",
-  "We bespreken je huidvraag We vragen waar je last van hebt, hoelang dit al speelt en wat je zelf hebt geprobeerd. Ook bespreken we wat je verwacht en wat je juist niet wilt.":
+  "We bespreken je huidvraag. We vragen waar je last van hebt, hoelang dit al speelt en wat je zelf hebt geprobeerd. Ook bespreken we wat je verwacht en wat je juist niet wilt.":
     "We discuss your skin question. We ask what is bothering you, how long it has been going on and what you have tried yourself. We also discuss what you expect and what you specifically do not want.",
   "Wat je hier niet hoeft": "What you do not have to do here",
   "Je hoeft je niet voor te bereiden op vaktermen. Zeg het in je eigen woorden; wij vertalen.":
@@ -8830,7 +8831,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
     "That you measure before you start, and that you can explain your setting to the client and to a colleague.",
   "Dat je bijhoudt wat er in het vak verandert. Een diploma is een startpunt.":
     "That you keep up with what changes in the field. A diploma is a starting point.",
-  "Advies geven Medewerkers worden niet beoordeeld op de omzet per klant. Een behandeling of product wordt alleen geadviseerd wanneer de behandelaar denkt dat het iets toevoegt.":
+  "Verkopen. Medewerkers worden niet beoordeeld op de omzet per klant. Een behandeling of product wordt alleen geadviseerd wanneer de behandelaar denkt dat het iets toevoegt.":
     "Selling. Staff are not judged on revenue per client. A treatment or product is only recommended when the therapist thinks it adds something.",
   "Alles alleen kunnen. Er zijn twee vakgebieden in huis juist omdat één invalshoek vaak niet genoeg is.":
     "Being able to do everything alone. There are two disciplines in the house precisely because one angle is often not enough.",
@@ -11022,7 +11023,11 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Dezelfde huid ziet er onder ander licht heel anders uit. Daarom zegt bijna geen enkele voor-en-na-foto op internet iets over de behandeling. Dit zijn de zeven vragen waarmee je dat zelf ziet. Ze werken bij elke kliniek, en straks ook bij ons.":
     "The same skin looks very different under different light. That is why almost no before-and-after photo on the internet says anything about the treatment. These are the seven questions that let you see that for yourself. They work at any clinic, and soon at ours too.",
   "Waar je ons aan mag houden": "What you may hold us to",
-  maken: "make",
+  /* "Hoe we resultaatfoto's" + accent "maken": het Nederlands zet het werkwoord achteraan,
+     het Engels niet. Daarom draagt de accentsleutel de hele werkwoordgroep. */
+  "Hoe we resultaatfoto's": "How we",
+  maken: "take result photos",
+  "Klopt die": "Can you trust the",
   "Zeven regels, één per variabele hierboven. Verschijnt er straks een beeld op deze site dat er niet aan voldoet, dan mag je ons daarop aanspreken.":
     "Seven rules, one per variable above. If an image appears on this site that does not meet them, you may call us on it.",
   "Bij elk beeld komen bovendien de gegevens te staan die je nodig hebt om het te wegen: welke behandeling, hoeveel sessies, hoeveel weken ertussen, welk huidtype en hoeveel weken na de laatste sessie de nafoto gemaakt is.":
@@ -12486,35 +12491,35 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "De 11 mensen die bij Diba Clinics werken, met per persoon het vakgebied en of de titel wettelijk beschermd is.":
     "The 11 people who work at Diba Clinics, with each person's field and whether their title is protected by law.",
   "OxyGeneo in Rotterdam bij Diba Clinics. € 150, zestig minuten en geen hersteltijd. Exfoliëren en voeden in één behandeling.":
-    "OxyGeneo in Rotterdam at Diba Clinics. € 150,, sixty minutes and no recovery time. Exfoliating and feeding in one treatment.",
+    "OxyGeneo in Rotterdam at Diba Clinics. € 150, sixty minutes and no recovery time. Exfoliating and feeding in one treatment.",
   "Chemische peeling in Rotterdam bij Diba Clinics. Vier merken in drie sterktes, vanaf € 140. Voor acne, pigment en een doffe huid.":
-    "Chemical peel in Rotterdam at Diba Clinics. Four brands in three strengths, from € 140.. For acne, pigment and dull skin.",
-  "Diba Clinics staat aan de Weissenbruchlaan 166 in Rotterdam, Rotterdam. Bellen, appen, mailen of je vraag stellen via het formulier.":
+    "Chemical peel in Rotterdam at Diba Clinics. Four brands in three strengths, from € 140. For acne, pigment and dull skin.",
+  "Diba Clinics staat aan de Weissenbruchlaan 166 in Rotterdam. Bellen, appen, mailen of je vraag stellen via het formulier.":
     "Diba Clinics is at Weissenbruchlaan 166 in Rotterdam. Call, message, email or ask your question through the form.",
   "Dermaplaning in Rotterdam bij Diba Clinics. € 150, zestig minuten en geen hersteltijd. Zonder zuren, dus ook bij een gevoelige huid.":
-    "Dermaplaning in Rotterdam at Diba Clinics. € 150,, sixty minutes and no recovery time. Without acids, so also for sensitive skin.",
+    "Dermaplaning in Rotterdam at Diba Clinics. € 150, sixty minutes and no recovery time. Without acids, so also for sensitive skin.",
   "Bouw je huidprofiel op in negen stappen. Wat past, wat niet past en wat je tijdens de intake moet melden. Blijft in je eigen browser.":
     "Build your skin profile in nine steps. What fits, what does not and what to mention at the intake. Stays in your own browser.",
   "Elektrische epilatie in Rotterdam: haar voor haar, ook grijs, wit en licht blond haar waar de laser niet op werkt. € 60 per half uur.":
     "Electrolysis in Rotterdam: hair by hair, including grey, white and very light blond hair the laser cannot see. € 60 per half hour.",
   "IPL in Rotterdam met de Nordlys van Candela, voor pigmentvlekken, zonschade, couperose en rosacea. Vanaf € 75, meestal een paar uur rood.":
-    "IPL in Rotterdam with Candela's Nordlys, for pigment spots, sun damage, thread veins and rosacea. From € 75,, usually red for a few hours.",
+    "IPL in Rotterdam with Candela's Nordlys, for pigment spots, sun damage, thread veins and rosacea. From € 75, usually red for a few hours.",
   "Fotona 4D in Rotterdam: vier laserstappen in één sessie van 90 minuten, zonder naalden. € 370 per behandeling, € 995 voor een kuur van drie.":
     "Fotona 4D in Rotterdam: four laser steps in one session of 90 minutes, without needles. € 370 per treatment, € 995 for a course of three.",
   "Skinboosters in Rotterdam met de U225 injector. Vanaf € 130, met kleine bultjes die binnen een dag zakken. Voor vocht, fijne lijnen en pigment.":
-    "Skin boosters in Rotterdam with the U225 injector. From € 130,, with small bumps that settle within a day. For moisture, fine lines and pigment.",
+    "Skin boosters in Rotterdam with the U225 injector. From € 130, with small bumps that settle within a day. For moisture, fine lines and pigment.",
   "Huidanalyse in Rotterdam met de EVE-M. Een losse intake duurt maximaal 30 minuten en kost € 50. Wat er gemeten wordt en welke afspraak je boekt.":
-    "Skin analysis in Rotterdam with the EVE-M. An intake on its own takes at most 30 minutes and costs € 50.. What is measured and which appointment to book.",
+    "Skin analysis in Rotterdam with the EVE-M. An intake on its own takes at most 30 minutes and costs € 50. What is measured and which appointment to book.",
   "Cosmelan en Dermamelan in Rotterdam: zes maanden, een masker in de kliniek en producten thuis. Voor het gezicht € 720 tot € 920, inclusief producten.":
-    "Cosmelan and Dermamelan in Rotterdam: six months, a mask in the clinic and products at home. For the face € 720 to € 920,, products included.",
+    "Cosmelan and Dermamelan in Rotterdam: six months, a mask in the clinic and products at home. For the face € 720 to € 920, products included.",
   "Microneedling in Rotterdam met de SkinPen en de Dermapen 4. Vanaf € 180 per sessie, een tot drie dagen rood. Voor littekens, poriën en huidstructuur.":
     "Microneedling in Rotterdam with the SkinPen and the Dermapen 4. From € 180 per session, one to three days red. For scars, pores and skin texture.",
   "HydraFacial in Rotterdam bij Diba Clinics. Zestig minuten, € 170 tot € 220, geen hersteltijd. Wat het doet, voor wie het past en hoe een afspraak gaat.":
-    "HydraFacial in Rotterdam at Diba Clinics. Sixty minutes, € 170 to € 220,, no recovery time. What it does, who it suits and how an appointment goes.",
+    "HydraFacial in Rotterdam at Diba Clinics. Sixty minutes, € 170 to € 220, no recovery time. What it does, who it suits and how an appointment goes.",
   "Huidtherapeut in Rotterdam bij Diba Clinics. Wat een huidtherapeut doet, wanneer huidtherapie vergoed wordt en hoe je eerste afspraak gaat. Intake € 50.":
-    "Skin therapist in Rotterdam at Diba Clinics. What a skin therapist does, when skin therapy is covered and how your first appointment goes. Intake € 50..",
+    "Skin therapist in Rotterdam at Diba Clinics. What a skin therapist does, when skin therapy is covered and how your first appointment goes. Intake € 50.",
   /* ── Over ons: de omschrijving met de cijfers ── */
-  "Diba Clinics in Rotterdam, Rotterdam. Actief sinds 2017, 11 mensen, 12 apparaten. En wat die cijfers niet zeggen.":
+  "Diba Clinics in Rotterdam. Actief sinds 2017, 11 mensen, 12 apparaten. En wat die cijfers niet zeggen.":
     "Diba Clinics in Rotterdam. Active since 2017, 11 people, 12 devices. And what those numbers do not say.",
   /* ── Metadata: samengestelde titels ── */
   "het apparaat": "the device",
@@ -14717,4 +14722,50 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "€ 1.100": "€ 1,100",
   "€ 1.300": "€ 1,300",
   "€ 1.495": "€ 1,495",
+
+  /* De halve regels achter de behandelnaam in de tabbladtitel. Zie data/titelclaims.ts. */
+  "je huid in kaart": "your skin mapped out",
+  "reinigen, exfoliëren, hydrateren": "cleansing, exfoliation, hydration",
+  "exfoliëren en zuurstof": "exfoliation and oxygen",
+  "donshaartjes weg met een mesje": "vellus hair off with a blade",
+  "van licht tot stevig": "from light to strong",
+  "fijngemalen kruiden, zonder zuur": "ground herbs, no acid",
+  "medisch gecertificeerd": "medically certified",
+  "needling met trillende naaldjes": "needling with vibrating needles",
+  "ín de huid, niet erop": "into the skin, not onto it",
+  "werkzame stoffen rond het oog": "active ingredients around the eye",
+  "vijftien laserbehandelingen": "fifteen laser treatments",
+  "vier laserbehandelingen, één sessie": "four laser treatments in one session",
+  "het 4D-protocol voor mannenhuid": "the 4D protocol for men's skin",
+  "collageen van binnenuit": "collagen from the inside",
+  "fractionele laser voor structuur": "fractional laser for texture",
+  "verstevigt kaaklijn en hals": "firms the jawline and neck",
+  "oppervlakkige laserpeeling": "a superficial laser peel",
+  "laser rond de oogcontour": "laser around the eye contour",
+  "vollere lippen zonder filler": "fuller lips without filler",
+  "wenkbrauwlift zonder naalden": "a brow lift without needles",
+  "laser bij actieve acne": "laser for active acne",
+  "laser op littekens en striae": "laser on scars and stretch marks",
+  "huidvernieuwing met laser": "skin renewal with laser",
+  "laser bij haarverdunning": "laser for thinning hair",
+  "laser tegen snurken": "laser against snoring",
+  "licht op pigmentvlekken": "light on pigment spots",
+  "licht dat de huid rustiger maakt": "light that calms the skin",
+  "traject tegen hyperpigmentatie": "a course against hyperpigmentation",
+  "de intensievere pigmentaanpak": "the more intensive pigment route",
+  "pigment in de intieme zone": "pigment in the intimate area",
+  "peelings voor de intieme zone": "peels for the intimate area",
+  "ook grijs en blond haar": "grey and blond hair too",
+  "de haarwortel uitschakelen": "switching off the hair root",
+  "tegen haaruitval": "against hair loss",
+  "reinigen, verstoppingen weghalen": "cleansing, clearing congestion",
+  "begeleid traject voor acne": "a guided course for acne",
+  "drie maanden voor jongeren": "three months, for teenagers",
+  "na een operatie of keizersnede": "after surgery or a caesarean",
+  "hyaluronzuur en vitamines": "hyaluronic acid and vitamins",
+  "met hals en kaaklijn erbij": "with the neck and jawline included",
+  "een lichte laserpas": "a light laser pass",
+  "een peeling die op de oogcontour mag": "a peel allowed on the eye contour",
+  "steelwratjes weghalen": "removing skin tags",
+  "bloedtest op voeding": "a blood test on food",
 };

@@ -269,11 +269,12 @@ export default function TeamPage() {
                       <p className="diba-label mt-2 text-[var(--t-label)]">
                         {tc(lid.functie)}
                       </p>
-                      {lid.bio ? (
-                        <p className="mt-5 text-[15px] leading-7 text-[var(--t-body)] max-sm:hidden">
-                          {tc(lid.bio)}
-                        </p>
-                      ) : null}
+                      {/* Hier stond `lid.bio`, een alinea per persoon. Tijdelijk weg.
+                          Yasin, 15 september 2026: "die teksten moeten hun zelf allemaal
+                          individueel schrijven voor hun zelf, dat komt later op de site."
+                          De alinea's staan nog in `data/team.ts` zodat ze niet
+                          kwijtraken; ze komen terug zodra iedereen zijn eigen tekst heeft
+                          aangeleverd — dan per persoon, niet als geheel. */}
                     </div>
                   </li>
                 ))}

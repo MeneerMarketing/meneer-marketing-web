@@ -8,13 +8,16 @@
  * self-serving aggregateRating op de LocalBusiness zelf.
  */
 
-import { DIBA_OPENINGSTIJDEN } from "@/lib/site";
+import { DIBA_OPENINGSTIJDEN, DIBA_SITE_URL } from "@/lib/site";
 import { t, tc } from "@/lib/vertaal";
 import { taalNu } from "@/lib/taalcontext";
 import { TAALCODES, anderePad } from "@/lib/taal";
 
-export const DIBA_CITAAT =
-  "Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.";
+/* De zin zelf staat in `lib/citaat.ts`, een blad zonder imports. Hier alleen een
+   doorgeefluik, zodat wie hem uit dit bestand haalde blijft werken. Waarom hij verhuisd is
+   staat daar. */
+import { DIBA_CITAAT } from "@/lib/citaat";
+export { DIBA_CITAAT };
 
 type Nap = {
   name: string;
@@ -28,6 +31,18 @@ export function medicalClinicSchema(opts: {
   nap: Nap;
   url: string; // canonieke site-URL
   sameAs?: string[]; // GBP, Instagram, TikTok
+  /**
+   * Wat het ongeveer kost, als "€20–€920".
+   *
+   * Aanbevolen bij LocalBusiness en het stond er niet (SEO-rapport, 15 september 2026). Geen
+   * "€€" maar de echte bedragen: die staan al openbaar op /tarieven en dat is het punt van
+   * deze kliniek.
+   *
+   * Komt als argument binnen en staat hier niet hard, want dan is het een getal dat naast de
+   * tarieven gaat staan en er ooit van afdwaalt. De aanroeper rekent het uit de
+   * behandelingen zelf; zie `components/ui/KliniekSchema.tsx`.
+   */
+  prijsbereik?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -45,6 +60,24 @@ export function medicalClinicSchema(opts: {
       addressCountry: "NL",
     },
     ...(opts.nap.phone ? { telephone: opts.nap.phone } : {}),
+    ...(opts.prijsbereik ? { priceRange: opts.prijsbereik } : {}),
+    /**
+     * Waar het pand staat.
+     *
+     * Hier stond eerst een uitleg waarom dit veld leeg bleef: een coördinaat van een
+     * geocoder ligt nogal eens op het midden van de straat of van de postcode, en dan staat
+     * er in de structuurdata iets anders dan in het bedrijfsprofiel. Deze twee zijn niet van
+     * een geocoder maar van Yasin, 15 september 2026, afgelezen op het pand zelf. Daarmee
+     * vervalt dat bezwaar.
+     *
+     * Zes decimalen is ongeveer een tiende meter. Meer opschrijven suggereert een
+     * nauwkeurigheid die er niet is.
+     */
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 51.957224,
+      longitude: 4.496572,
+    },
     /* Openingstijden horen hier, niet alleen op de contactpagina: Google toont ze in het
        bedrijfspaneel en bij "nu open". Zonder dit veld stond er niets, en dan vult Google
        het zelf in met wat het ergens anders vindt. Eén bron: DIBA_OPENINGSTIJDEN. */
@@ -85,7 +118,11 @@ export function faqSchema(items: { question: string; answer: string }[]) {
 function kruimeladres(url: string): string {
   const taal = taalNu();
   if (taal === "nl") return url;
-  const merk = "https://dibaclinics.nl";
+  /* Uit `site.ts` en niet nog eens uitgeschreven: toen de basis-URL naar www ging, herkende
+     deze functie zijn eigen adressen niet meer en bleef het kruimelpad op /en en /es
+     Nederlands. Eén bron voor het adres, anders loopt het bij de volgende verhuizing weer
+     stil uit elkaar. */
+  const merk = DIBA_SITE_URL;
   const heel = url.startsWith(merk);
   const pad = heel ? url.slice(merk.length) || "/" : url;
   if (!pad.startsWith("/")) return url;
@@ -354,6 +391,11 @@ export function medischePaginaSchema(opts: {
   omschrijving: string;
   /** Datum in ISO, de dag waarop de inhoud voor het laatst is aangepast. */
   gewijzigd: string;
+  /**
+   * Datum in ISO waarop de pagina voor het eerst online kwam. Uit git, via
+   * `lib/publicatiedatum.ts`; zonder git-geschiedenis blijft het veld weg.
+   */
+  gepubliceerd?: string;
   /** Waar de pagina over gaat, als verwijzing naar het MedicalProcedure op dezelfde pagina. */
   overProcedure?: string;
   /** Alleen invullen na een echte inhoudelijke controle. Zie de toelichting hierboven. */
@@ -371,6 +413,24 @@ export function medischePaginaSchema(opts: {
     url: opts.url,
     inLanguage: TAALCODES[taalNu()].html,
     dateModified: opts.gewijzigd,
+    /* Nooit later dan `dateModified`: Google keurt een publicatie ná de laatste wijziging
+       af. Het gebeurt ook echt — de HydraFacial-pagina draagt 11 september als
+       inhoudsdatum en kwam op 12 september in git. Dan is de inhoudsdatum het vroegste
+       gedocumenteerde moment, en telt die als publicatie. */
+    ...(opts.gepubliceerd
+      ? {
+          datePublished:
+            Date.parse(opts.gepubliceerd) <= Date.parse(opts.gewijzigd)
+              ? opts.gepubliceerd
+              : opts.gewijzigd,
+        }
+      : {}),
+    /* Auteur en uitgever zijn de kliniek, als verwijzing naar het LocalBusiness dat op
+       elke pagina staat. Dat is waar: de teksten worden hier geschreven en hier
+       uitgegeven. Een persoon als auteur zou een tweede bewering zijn, en die staat pas
+       in `reviewedBy` zodra iemand de tekst werkelijk heeft nagekeken — zie hieronder. */
+    author: { "@id": `${opts.siteUrl}#kliniek` },
+    publisher: { "@id": `${opts.siteUrl}#kliniek` },
     isPartOf: { "@id": `${opts.siteUrl}#kliniek` },
     ...(opts.overProcedure ? { about: { "@id": opts.overProcedure } } : {}),
     ...(opts.beeld ? { primaryImageOfPage: opts.beeld } : {}),

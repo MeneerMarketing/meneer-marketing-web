@@ -323,9 +323,19 @@ export default async function ToepassingPage({
         </section>
       ) : null}
 
-      {/* ── De buren ── */}
+      {/* ── De buren ──
+
+          De bovenruimte hangt af van wat erboven staat. Is dat de FAQ, dan is dat een vlak
+          met een eigen kleur en houdt dit blok zijn eigen lucht aan; anders komt die van de
+          witte sectie erboven en zou dubbele lucht een gat trekken. Zonder dat onderscheid
+          plakte het label tegen de rand op twintig pagina's, gevonden met
+          `npm run secties`. */}
       {buren.length > 0 && b ? (
-        <section className="px-5 pb-10 sm:pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
+        <section
+          className={`px-5 pb-10 sm:pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24 ${
+            faq.length > 0 ? "pt-10 sm:pt-16 lg:pt-24" : ""
+          }`}
+        >
           <div className="mx-auto">
             <Label>{t("Hetzelfde apparaat, andere vraag")}</Label>
             <h2 className="diba-display-s mt-3 max-w-[24ch]">

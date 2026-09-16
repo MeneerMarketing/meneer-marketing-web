@@ -70,7 +70,7 @@ export type SalonizedReviewEntry = {
  * hier het bezoek, niet het resultaat van maanden. Voor die onderwerpen staat er dus geen
  * blok op de pagina, en dat blijft zo tot de reviews er wel zijn.
  */
-export const SALONIZED_REVIEWS: readonly SalonizedReviewEntry[] = [
+const UITGELICHT: readonly SalonizedReviewEntry[] = [
   {
     id: "salon-gladys",
     quote:
@@ -1518,3 +1518,113 @@ export const SALONIZED_REVIEWS: readonly SalonizedReviewEntry[] = [
     topics: ["algemeen"],
   },
 ] as const;
+
+/**
+ * Dezelfde review, twee keer.
+ *
+ * WAT YASIN ZAG. Op /laserontharing stonden twee van de drie kaarten met dezelfde tekst:
+ * "Ik heb een hele fijne ervaring gehad bij Demi" naast "... bij Demy", allebei van
+ * Andrijana. 15 september 2026: "ik zie hier 2 x dezelfde review waarom gebeurd dat."
+ *
+ * WAAR HET VANDAAN KOMT. Niet uit de opmaak. Het staat zo op Salonized: een klant die vaker
+ * komt schrijft na elk bezoek ongeveer hetzelfde, en dan staat dat er twee keer, maanden uit
+ * elkaar en met een woord verschil. Vier van zulke stellen zitten in deze lijst. Dat het
+ * juist die twee op het scherm haalde is geen toeval: de keuze in `ReviewsBijOnderwerp`
+ * zoekt drie reviews van gelijke lengte, en twee bijna gelijke teksten zijn bijna even lang.
+ *
+ * WAAROM ER NIETS UIT DE DATA GAAT. Het zijn allebei echte reviews van een echt bezoek, en
+ * het archief op /reviews hoort alles te tonen wat Salonized heeft (zie
+ * `reviews-archief.ts`). Deze lijst is iets anders: een uitgelichte set, en daarin hoort een
+ * verhaal één keer. De ruwe lijst blijft dus zoals hij is opgehaald en de export eroverheen
+ * laat per verhaal de nieuwste staan.
+ *
+ * WAAROM 0,80. Gemeten over alle 7.381 stellen in deze lijst (scratch/gelijkenis-reviews.mjs):
+ * de vier dubbele zitten op 0,99, 0,97, 0,93 en 0,84, en het hoogste stel dat écht twee
+ * verschillende reviews is zit op 0,67. Daartussen is niets. De grens ligt in dat gat, met
+ * ruimte aan beide kanten.
+ */
+
+/** Alleen de letters: hoofdletters, leestekens en accenten zeggen hier niets. */
+function kaal(tekst: string): string {
+  return tekst
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9 ]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/**
+ * Hoeveel lijken twee teksten op elkaar, van 0 tot 1.
+ *
+ * Dice over letterparen. Dat telt niet hoeveel woorden er gelijk zijn maar hoeveel
+ * opeenvolgende lettertweetallen, en daardoor haalt "Demi" tegen "Demy" de gelijkenis
+ * nauwelijks omlaag terwijl twee losse reviews over hetzelfde onderwerp er niet in de buurt
+ * komen.
+ */
+function gelijkenis(a: string, b: string): number {
+  const paren = (t: string) => {
+    const uit = new Map<string, number>();
+    for (let i = 0; i < t.length - 1; i++) {
+      const p = t.slice(i, i + 2);
+      uit.set(p, (uit.get(p) ?? 0) + 1);
+    }
+    return uit;
+  };
+  const pa = paren(a);
+  const pb = paren(b);
+  let gedeeld = 0;
+  for (const [p, n] of pa) gedeeld += Math.min(n, pb.get(p) ?? 0);
+  const totaal = a.length - 1 + (b.length - 1);
+  return totaal > 0 ? (2 * gedeeld) / totaal : 0;
+}
+
+const ZELFDE_VERHAAL = 0.8;
+
+/** Hoe lang geleden, in dagen. Alleen om te bepalen welke van twee de nieuwste is. */
+function dagenGeleden(datum: string | undefined): number {
+  if (!datum) return Number.MAX_SAFE_INTEGER;
+  const tekst = datum.toLowerCase();
+  const aantal = Number(tekst.match(/\d+/)?.[0] ?? 1);
+  if (/\buur\b/.test(tekst)) return aantal / 24;
+  if (/\bdag(en)?\b/.test(tekst)) return aantal;
+  if (/\bweken?\b/.test(tekst)) return aantal * 7;
+  if (/\bmaand(en)?\b/.test(tekst)) return aantal * 30;
+  if (/\bjaar|jaren\b/.test(tekst)) return aantal * 365;
+  return Number.MAX_SAFE_INTEGER;
+}
+
+function ontdubbeld(
+  lijst: readonly SalonizedReviewEntry[],
+): readonly SalonizedReviewEntry[] {
+  const teksten = lijst.map((r) => kaal(r.quote));
+  const weg = new Set<string>();
+
+  for (let i = 0; i < lijst.length; i++) {
+    if (weg.has(lijst[i].id)) continue;
+    for (let j = i + 1; j < lijst.length; j++) {
+      if (weg.has(lijst[j].id)) continue;
+      /* Onder de vijfentwintig letters is gelijkenis niets waard: "Fijn geholpen" lijkt
+         dan op elke andere korte review, en dat zijn wel degelijk losse reviews. */
+      if (teksten[i].length < 25 || teksten[j].length < 25) continue;
+      if (gelijkenis(teksten[i], teksten[j]) < ZELFDE_VERHAAL) continue;
+      const ouder =
+        dagenGeleden(lijst[i].relativeDate) >=
+        dagenGeleden(lijst[j].relativeDate)
+          ? lijst[i]
+          : lijst[j];
+      weg.add(ouder.id);
+    }
+  }
+
+  return lijst.filter((r) => !weg.has(r.id));
+}
+
+/**
+ * De uitgelichte reviews, met elk verhaal één keer.
+ *
+ * Wat eruit valt staat nog gewoon op /reviews: dat toont het hele archief.
+ */
+export const SALONIZED_REVIEWS: readonly SalonizedReviewEntry[] =
+  ontdubbeld(UITGELICHT);

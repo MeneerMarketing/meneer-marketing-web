@@ -1,3 +1,4 @@
+import { NAGEKEKEN_ROJDA } from "@/data/landings/nagekeken";
 import {
   afspraakBlokken,
   behandeling,
@@ -40,6 +41,7 @@ function prijsVan(zone: string): number {
 export const IPL_ROTTERDAM: Landing = {
   slug: "ipl-rotterdam",
   gewijzigd: "2026-09-11",
+  nagekeken: NAGEKEKEN_ROJDA,
   titel: "IPL Rotterdam: pigment en roodheid",
   omschrijving: `IPL in Rotterdam met de Nordlys van Candela, voor pigmentvlekken, zonschade, couperose en rosacea. Vanaf ${euro(IPL_TARIEF.laag)}, meestal een paar uur rood.`,
   kruimel: "IPL",

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import WoordenboekEN from "@/components/i18n/WoordenboekEN";
 import Paginaschil from "@/components/ui/Paginaschil";
 import { basisMetadata } from "@/lib/basis-metadata";
 import { zetTaal } from "@/lib/taalcontext";
@@ -21,5 +22,13 @@ export default function EngelseIndeling({
   children: React.ReactNode;
 }>) {
   zetTaal("en");
-  return <Paginaschil taal="en">{children}</Paginaschil>;
+  /* `WoordenboekEN` wordt hier geïmporteerd en nergens anders: die import is wat het
+     Engelse woordenboek in de chunks van /en zet, en buiten /en houdt. Hij gaat als prop
+     naar de schil, die hem om de hele pagina zet — navigatie en voettekst inbegrepen.
+     Zie components/i18n/Woordenboek.tsx en de toelichting in Paginaschil. */
+  return (
+    <Paginaschil taal="en" woordenboek={WoordenboekEN}>
+      {children}
+    </Paginaschil>
+  );
 }

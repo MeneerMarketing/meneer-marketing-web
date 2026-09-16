@@ -3,7 +3,9 @@ import Link from "@/components/ui/Linktaal";
 import VideoKolom from "@/components/media/VideoKolom";
 import BeeldVignet from "@/components/ui/BeeldVignet";
 import { notFound } from "next/navigation";
-import HuidproblemenBijApparaat from "@/components/apparatuur/HuidproblemenBijApparaat";
+import HuidproblemenBijApparaat, {
+  klachtenVoorApparaat,
+} from "@/components/apparatuur/HuidproblemenBijApparaat";
 import { PillarFaq } from "@/components/pillar/PillarSecties";
 import Label from "@/components/ui/Label";
 import { videoVoor } from "@/data/videos";
@@ -276,7 +278,16 @@ export default async function ApparaatPage({ params }: PageProps) {
           diepte wel het onderscheid met de buurbehandeling is. */}
       <HuidproblemenBijApparaat apparaat={a} />
 
-      <section className="px-5 pb-10 sm:pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24">
+      {/* De bovenruimte hangt af van wat erboven staat. Staat het klachtenblok er, dan is
+          dat ook wit en brengt dát blok de lucht mee; staat het er niet — de EVE-M heeft
+          geen klachten gekoppeld — dan grenst deze sectie aan de donkergroene hero en moet
+          hij zijn eigen lucht meebrengen. Zonder dat plakte "De techniek" daar tegen de
+          rand, gevonden met `npm run secties`. */}
+      <section
+        className={`px-5 pb-10 sm:pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24 ${
+          klachtenVoorApparaat(a).length === 0 ? "pt-10 sm:pt-16 lg:pt-24" : ""
+        }`}
+      >
         <div className="mx-auto">
           {/* De techniek zelf.
 

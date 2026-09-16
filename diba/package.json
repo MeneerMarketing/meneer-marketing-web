@@ -28,6 +28,11 @@
     "vreemdetaal": "node scripts/controleer-vreemdetaal.mjs",
     "witruimte": "node scripts/controleer-witruimte.mjs",
     "omleidingen": "node scripts/controleer-omleidingen.mjs",
+    "reviews": "node scripts/controleer-reviews.mjs",
+    "basisadres": "node scripts/controleer-basisadres.mjs",
+    "titels": "node scripts/controleer-titels.mjs",
+    "secties": "node scripts/controleer-secties.mjs",
+    "seo": "node scripts/controleer-seo.mjs",
     "ontdubbel": "py scratch/ontdubbel.py"
   },
   "dependencies": {

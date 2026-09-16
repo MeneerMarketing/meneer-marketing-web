@@ -71,9 +71,6 @@ export const metadata: Metadata = zoekmachineVelden({
   titel: "Privacybeleid",
   omschrijving:
     "Deze website verzamelt zelf niets. Waar je gegevens wel terechtkomen, wat daar gebeurt en welke rechten je hebt.",
-  extra: {
-    robots: { index: true, follow: true },
-  },
 });
 
 /**
@@ -370,7 +367,7 @@ export default function PrivacyPage() {
               <thead>
                 <tr className="border-b border-[var(--g-100)]">
                   <th scope="col" className="diba-label pr-6 pb-3">
-                    {t("Wat")}
+                    {t("Welke gegevens")}
                   </th>
                   <th scope="col" className="diba-label pr-6 pb-3">
                     {t("Hoe lang")}

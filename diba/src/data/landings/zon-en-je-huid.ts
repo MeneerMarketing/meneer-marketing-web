@@ -1,3 +1,4 @@
+import { NAGEKEKEN_ROJDA } from "@/data/landings/nagekeken";
 import { VRAAG_WAAR, type Landing } from "@/data/landings/types";
 
 /**
@@ -26,6 +27,7 @@ export const ZON_EN_JE_HUID: Landing = {
   slug: "zon-en-je-huid",
   soort: "vraag",
   gewijzigd: "2026-09-12",
+  nagekeken: NAGEKEKEN_ROJDA,
   titel: "Zon, vakantie en je huid",
   omschrijving:
     "Waarom een gebruinde huid niet gelaserd wordt, hoe lang je wacht na de zon, wat er na een behandeling hoort en hoe je een behandeling rond een vakantie plant.",

@@ -1,3 +1,4 @@
+import { NAGEKEKEN_ROJDA } from "@/data/landings/nagekeken";
 import {
   afspraakBlokken,
   behandeling,
@@ -36,6 +37,7 @@ const OGEN_KUUR = variantPrijs("skinboosters", "RRS Eyes kuur");
 export const SKINBOOSTERS_ROTTERDAM: Landing = {
   slug: "skinboosters-rotterdam",
   gewijzigd: "2026-09-11",
+  nagekeken: NAGEKEKEN_ROJDA,
   titel: "Skinboosters Rotterdam",
   omschrijving: `Skinboosters in Rotterdam met de U225 injector. Vanaf ${euro(SB_TARIEF.laag)}, met kleine bultjes die binnen een dag zakken. Voor vocht, fijne lijnen en pigment.`,
   kruimel: "Skinboosters",

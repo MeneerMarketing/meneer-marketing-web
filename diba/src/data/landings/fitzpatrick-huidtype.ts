@@ -1,3 +1,4 @@
+import { NAGEKEKEN_ROJDA } from "@/data/landings/nagekeken";
 import { golflengte, toewijzing } from "@/data/gentlemax";
 import { FITZPATRICK_TYPES, type FitzpatrickId } from "@/data/laser-zones";
 import {
@@ -61,6 +62,7 @@ export const FITZPATRICK_HUIDTYPE: Landing = {
   slug: "fitzpatrick-huidtype",
   soort: "vraag",
   gewijzigd: "2026-09-12",
+  nagekeken: NAGEKEKEN_ROJDA,
   titel: "Fitzpatrick huidtype: welk type heb je",
   omschrijving:
     "De zes Fitzpatrick-huidtypes, wat je type zegt over laser, IPL en peelings, en hoe je het zelf bepaalt. Uitgelegd door de huidtherapeuten van Diba Clinics.",

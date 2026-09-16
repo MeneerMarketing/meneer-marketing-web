@@ -93,8 +93,7 @@ export default function Meeneemkaart() {
       <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2">
         <Label className="text-[var(--g-800)]">{t("Je neemt dit mee")}</Label>
         <p className="text-[14px] leading-6 text-[var(--g-900)] tabular-nums">
-          {stand} van {PROFIEL_ONDERDELEN}
-          {t("ingevuld")}
+          {stand} {t("van")} {PROFIEL_ONDERDELEN} {t("ingevuld")}
         </p>
       </div>
 

@@ -1,3 +1,4 @@
+import { NAGEKEKEN_ROJDA } from "@/data/landings/nagekeken";
 import { INTAKE_MINUTEN } from "@/data/intake";
 import {
   behandeling,
@@ -43,6 +44,7 @@ const DI = behandeling("dermamelan-intimate");
 export const COSMELAN_DERMAMELAN_ROTTERDAM: Landing = {
   slug: "cosmelan-dermamelan-rotterdam",
   gewijzigd: "2026-09-11",
+  nagekeken: NAGEKEKEN_ROJDA,
   titel: "Cosmelan en Dermamelan Rotterdam",
   omschrijving: `Cosmelan en Dermamelan in Rotterdam: zes maanden, een masker in de kliniek en producten thuis. Voor het gezicht ${euro(CO.prijs)} tot ${euro(DM.prijs)}, inclusief producten.`,
   kruimel: "Cosmelan en Dermamelan",

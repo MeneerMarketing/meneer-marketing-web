@@ -156,6 +156,20 @@ export default function Boekingswidget({
 
   return (
     <div>
+      {/* De handdruk met Salonized alvast leggen.
+
+          De agenda komt van twee hosts: het laadscript van static-widget.salonized.com en
+          daarna het venster van widget.salonized.com (gemeten op de live pagina, 15
+          september 2026). Voor allebei moet de browser eerst een DNS-vraag stellen, een
+          TCP-verbinding openen en TLS afhandelen, en dat gebeurt nu pas op het moment dat
+          het script aan de beurt is.
+
+          `preconnect` doet die drie stappen vast terwijl de rest van de pagina nog laadt.
+          Ze staan in dit onderdeel en niet in de indeling van de site: alleen de pagina met
+          de agenda praat met Salonized, en een preconnect naar een host die je niet gebruikt
+          is een verbinding voor niets. Next tilt deze regels vanzelf naar de kop. */}
+      <link rel="preconnect" href="https://static-widget.salonized.com" />
+      <link rel="preconnect" href="https://widget.salonized.com" />
       <div
         ref={vak}
         className="salonized-booking"

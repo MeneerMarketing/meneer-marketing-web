@@ -1,3 +1,4 @@
+import { publicatiedatum } from "@/lib/publicatiedatum";
 import Image from "next/image";
 import Link from "@/components/ui/Linktaal";
 import type { ReactNode } from "react";
@@ -170,10 +171,24 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
           naam,
           omschrijving: kaal(l.antwoord),
           gewijzigd: l.gewijzigd,
+          /* Het databestand heet naar de slug; dat klopt voor alle zeventien. Zonder
+             git-geschiedenis komt er `undefined` uit en blijft datePublished weg. */
+          gepubliceerd: publicatiedatum(`src/data/landings/${l.slug}.ts`),
           ...(l.schema.procedure
             ? { overProcedure: `${url}#behandeling` }
             : {}),
           beeld: `${DIBA_SITE_URL}${l.beeld.src}`,
+          /* Alleen als de data zegt dat een mens de tekst heeft nagekeken; zie
+             `nagekeken` in data/landings/types.ts. Zonder dat blijven de velden leeg. */
+          ...(l.nagekeken
+            ? {
+                nagekekenDoor: {
+                  naam: l.nagekeken.door,
+                  functie: l.nagekeken.functie,
+                },
+                nagekekenOp: l.nagekeken.op,
+              }
+            : {}),
         })}
       />
       {l.schema.procedure ? (

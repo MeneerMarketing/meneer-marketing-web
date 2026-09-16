@@ -116,52 +116,18 @@ function statischeRoutes(): { route: string; bestand: string }[] {
 }
 
 /**
- * Hoe belangrijk een pagina is ten opzichte van de rest van deze site.
+ * GEEN `priority` EN GEEN `changefreq`.
  *
- * Google gebruikt `priority` alleen binnen één domein, om te wegen waar hij zijn
- * crawlbudget aan besteedt. De volgorde volgt waarvoor mensen komen: eerst de klacht
- * waarmee ze zoeken, dan de behandeling, dan de rest.
+ * Hier stonden `gewicht()` en `frequentie()`, die per route een gewicht van 0,3 tot 1 en
+ * een frequentie van weekly tot yearly bepaalden. De toelichting erbij zei dat Google
+ * `priority` gebruikt om zijn crawlbudget te verdelen. Dat is een hardnekkig verhaal dat
+ * nergens op rust: Google negeert allebei de velden, staat zo in Search Central en is
+ * meermaals bevestigd door Mueller. Uit het SEO-rapport van Okan, 15 september 2026.
+ *
+ * Wat wél gelezen wordt is `lastmod`, en die staat er hieronder — uit de git-historie, dus
+ * hij zegt iets. Een veld dat niemand leest naast een veld dat dat wel doet, maakt het
+ * tweede alleen maar moeilijker te vertrouwen.
  */
-function gewicht(route: string): number {
-  if (route === "/") return 1;
-  /* De vertaalde pagina's staan lager dan hun Nederlandse tegenhanger. Niet omdat ze
-     minder af zijn, maar omdat de kliniek in Rotterdam staat en het meeste zoekverkeer
-     Nederlands is. Crawlbudget hoort eerst naar de taal waarin de meeste vragen
-     binnenkomen. */
-  if (taalVanPad(route) !== "nl")
-    return route.split("/").length > 2 ? 0.5 : 0.6;
-  if (route.startsWith("/huidproblemen/")) return 0.9;
-  if (route === "/huidproblemen" || route === "/behandelingen") return 0.85;
-  if (route.startsWith("/behandelingen/")) return 0.8;
-  if (
-    route === "/tarieven" ||
-    route === "/contact" ||
-    route === "/laserontharing"
-  )
-    return 0.8;
-  /* De landingspagina's: waar iemand terechtkomt die "X rotterdam" zoekt. Even zwaar als
-     de behandelpagina's, want het is dezelfde koopvraag met de plaats erbij. */
-  if (route.startsWith("/kennisbank/")) return 0.8;
-  if (route.startsWith("/apparatuur")) return 0.6;
-  if (route.startsWith("/vergoedingen")) return 0.6;
-  /* De juridische pagina's horen erin te staan maar hoeven niet vaak nagelopen. */
-  if (/^\/(privacybeleid|cookiebeleid|algemene-voorwaarden)$/.test(route))
-    return 0.3;
-  return 0.7;
-}
-
-/** Hoe vaak de inhoud verandert. Een prijslijst vaker dan de algemene voorwaarden. */
-function frequentie(route: string): "weekly" | "monthly" | "yearly" {
-  if (route === "/" || route === "/tarieven" || route === "/reviews")
-    return "weekly";
-  if (
-    /^\/(privacybeleid|cookiebeleid|algemene-voorwaarden|klachten|werken-bij)$/.test(
-      route,
-    )
-  )
-    return "yearly";
-  return "monthly";
-}
 
 /**
  * Wanneer een pagina voor het laatst inhoudelijk is veranderd.
@@ -309,8 +275,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return {
       url: heel(route),
       ...(datum ? { lastModified: datum } : {}),
-      changeFrequency: frequentie(route),
-      priority: gewicht(route),
       ...(talen
         ? {
             alternates: {

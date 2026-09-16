@@ -1,3 +1,4 @@
+import { NAGEKEKEN_ROJDA } from "@/data/landings/nagekeken";
 import {
   afspraakBlokken,
   behandeling,
@@ -27,6 +28,7 @@ const OX = behandeling("oxygeneo");
 export const OXYGENEO_ROTTERDAM: Landing = {
   slug: "oxygeneo-rotterdam",
   gewijzigd: "2026-09-11",
+  nagekeken: NAGEKEKEN_ROJDA,
   titel: "OxyGeneo Rotterdam",
   omschrijving: `OxyGeneo in Rotterdam bij Diba Clinics. ${euro(OX.prijs)}, zestig minuten en geen hersteltijd. Exfoliëren en voeden in één behandeling.`,
   kruimel: "OxyGeneo",

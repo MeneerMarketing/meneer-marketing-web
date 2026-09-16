@@ -80,7 +80,7 @@ const VERWACHTING = {
     "Dat je bijhoudt wat er in het vak verandert. Een diploma is een startpunt.",
   ],
   niet: [
-    "Advies geven Medewerkers worden niet beoordeeld op de omzet per klant. Een behandeling of product wordt alleen geadviseerd wanneer de behandelaar denkt dat het iets toevoegt.",
+    "Verkopen. Medewerkers worden niet beoordeeld op de omzet per klant. Een behandeling of product wordt alleen geadviseerd wanneer de behandelaar denkt dat het iets toevoegt.",
     "Alles alleen kunnen. Er zijn twee vakgebieden in huis juist omdat één invalshoek vaak niet genoeg is.",
     "Meteen alle apparatuur beheersen. Inwerken op een nieuw apparaat hoort erbij en daar is tijd voor.",
   ],

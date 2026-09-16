@@ -1,3 +1,4 @@
+import { NAGEKEKEN_ROJDA } from "@/data/landings/nagekeken";
 import {
   afspraakBlokken,
   behandeling,
@@ -39,6 +40,7 @@ const KP = behandeling("kruidenpeel");
 export const CHEMISCHE_PEELING_ROTTERDAM: Landing = {
   slug: "chemische-peeling-rotterdam",
   gewijzigd: "2026-09-11",
+  nagekeken: NAGEKEKEN_ROJDA,
   titel: "Chemische peeling Rotterdam",
   omschrijving: `Chemische peeling in Rotterdam bij Diba Clinics. Vier merken in drie sterktes, vanaf ${euro(PE.prijs)}. Voor acne, pigment en een doffe huid.`,
   kruimel: "Chemische peeling",

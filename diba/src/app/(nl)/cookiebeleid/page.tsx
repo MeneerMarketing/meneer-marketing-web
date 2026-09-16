@@ -55,9 +55,6 @@ export const metadata: Metadata = zoekmachineVelden({
   titel: "Cookiebeleid",
   omschrijving:
     "Welke cookies Diba Clinics gebruikt, wanneer ze laden en hoe je je keuze op elk moment kunt wijzigen. Geen advertentie-tracking.",
-  extra: {
-    robots: { index: true, follow: true },
-  },
 });
 
 const COOKIES = [

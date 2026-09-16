@@ -23,6 +23,7 @@ import {
   type Behandeling,
 } from "@/data/behandelingen";
 import { eersteZin } from "@/lib/copy-flags";
+import { TITELCLAIM } from "@/data/titelclaims";
 import DibaLeafMark from "@/components/ui/DibaLeafMark";
 import { BESTEMMINGEN } from "@/data/symptoomzoeker";
 import { breadcrumbSchema, SchemaMarkup } from "@/lib/schema";
@@ -81,6 +82,12 @@ export function generateStaticParams() {
  * kennisbank ("HydraFacial Rotterdam"). Zet je de plaats ook hier, dan concurreren drie
  * pagina's om dezelfde vraag en kiest Google er zelf een.
  *
+ * Sinds 15 september 2026 staat er wel een halve regel achter die naam. "FRAC3 | Diba
+ * Clinics" was twintig tekens van de zestig die Google toont, en wie niet weet wat FRAC3 is
+ * wist het na dat zoekresultaat nog steeds niet. Die halve regels staan in
+ * `data/titelclaims.ts`, met de afweging erbij; hier staat alleen de ladder die kiest of hij
+ * past.
+ *
  * DE OMSCHRIJVING is de korte zin van de behandeling met het tarief en de duur erachter, en
  * de plaats erbij als dat binnen de lengte past. Het bedrag is wat iemand in de
  * zoekresultaten het eerst zoekt.
@@ -109,9 +116,31 @@ export async function generateMetadata({
   ];
   const omschrijving =
     kandidaten.find((k) => k.length <= 158) ?? kortZin.slice(0, 155);
+  /**
+   * De halve regel achter de naam, als hij past.
+   *
+   * Zie `data/titelclaims.ts` voor waarom er geen plaatsnaam in staat en waarom die regels
+   * met de hand geschreven zijn. De ladder is dezelfde als bij de omschrijving hierboven:
+   * het rijkste dat binnen de maat blijft.
+   *
+   * WAAROM TWEEËNVIJFTIG. Er zijn drie grenzen en dit is de middelste. Onder de vijfenveertig
+   * past de hele titel inclusief " | Diba Clinics" in de zestig tekens die Google toont.
+   * Boven de zestig begint de claim zelf af te breken, en dat is de enige echte grens. Ertussen
+   * valt alleen een stuk van de merknaam weg, en dat kost niets: wie het zoekresultaat leest
+   * weet na de claim al waar hij is. Op vijfenveertig vielen vier claims er met één teken
+   * buiten; die halen het nu, en de langste titel wordt zevenenzestig tekens.
+   *
+   * Gemeten op de vertaalde tekst en niet op de Nederlandse, want Spaans is langer. Een
+   * Spaanse titel die niet past valt terug op de naam alleen, en dat is de goede uitkomst.
+   */
+  const claim = TITELCLAIM[b.slug] ? tc(TITELCLAIM[b.slug]) : "";
+  const naam = tc(b.naam);
+  const metClaim = claim ? `${naam}: ${claim}` : "";
+  const titel = metClaim && metClaim.length <= 52 ? metClaim : naam;
+
   return zoekmachineVelden({
     pad: `/behandelingen/${b.slug}`,
-    titel: b.naam,
+    titel,
     omschrijving,
     ...(b.foto ? { beeld: { url: b.foto.src, alt: b.foto.alt } } : {}),
   });

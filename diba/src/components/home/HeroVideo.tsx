@@ -94,7 +94,29 @@ export default function HeroVideo({
   const tc = useTc();
   const rustig = useSyncExternalStore(luister, lees, () => false);
   const breed = useSyncExternalStore(luisterBreed, leesBreed, () => false);
+  /**
+   * Draait dit al in de browser?
+   *
+   * WAT ER MIS WAS. De server weet niet hoe breed het scherm is, dus `breed` staat daar op
+   * false en de HTML ging de deur uit met de stáánde opname erin. Op een breed scherm begon
+   * de browser die meteen op te halen, en pas bij de hydratie wisselde React naar de
+   * liggende. Gemeten op de live site, 15 september 2026: een desktop haalde
+   * home-hero.mp4 (1,74 MB) én hero-breed.mp4 (5,7 MB) op, samen 7,28 MB, waarvan de
+   * eerste meteen in de prullenbak ging.
+   *
+   * Nu staat er in de HTML nog geen bron. Het posterbeeld staat er wel, dus je ziet
+   * hetzelfde als eerst; de video begint een fractie later, na de hydratie. Dat is de goede
+   * ruil: een halve seconde later beginnen tegen 1,74 megabyte die nergens heen ging.
+   */
+  const gemonteerd = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  );
   const bron = breed && bestandBreed ? bestandBreed : bestand;
+  /* Het posterbeeld gaat wél mee in de HTML, want dat is wat je in het eerste moment ziet.
+     Het staande beeld is het lichtste van de twee (196 kB tegen 156 kB voor het liggende),
+     en op een breed scherm wisselt het na de hydratie alsnog om. */
   const plaat = breed && posterBreed ? posterBreed : poster;
 
   return (
@@ -114,7 +136,7 @@ export default function HeroVideo({
         playsInline
         aria-label={tc(beschrijving)}
       >
-        <source src={bron} type="video/mp4" />
+        {gemonteerd ? <source src={bron} type="video/mp4" /> : null}
       </video>
 
       {/* Rechtsboven. Linksboven zit de plaatsnaam en rechtsonder het zegel, en

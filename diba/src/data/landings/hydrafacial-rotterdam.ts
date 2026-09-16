@@ -1,3 +1,4 @@
+import { NAGEKEKEN_ROJDA } from "@/data/landings/nagekeken";
 import {
   afspraakBlokken,
   behandeling,
@@ -37,6 +38,7 @@ const HF_VARIANTEN = tariefrijen("hydrafacial");
 export const HYDRAFACIAL_ROTTERDAM: Landing = {
   slug: "hydrafacial-rotterdam",
   gewijzigd: "2026-09-11",
+  nagekeken: NAGEKEKEN_ROJDA,
   titel: "HydraFacial Rotterdam",
   omschrijving: `HydraFacial in Rotterdam bij Diba Clinics. Zestig minuten, ${euro(HF_TARIEF.laag)} tot ${euro(HF_TARIEF.hoog)}, geen hersteltijd. Wat het doet, voor wie het past en hoe een afspraak gaat.`,
   kruimel: "HydraFacial",

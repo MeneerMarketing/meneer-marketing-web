@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
 import { DIBA_SITE, DIBA_SITE_URL } from "@/lib/site";
-import {
-  anderePad,
-  TAALCODES,
-  TAAL_AF,
-  type Vreemdetaal,
-} from "@/lib/taal";
+import { anderePad, TAALCODES, TAAL_AF, type Vreemdetaal } from "@/lib/taal";
 import { vertaal } from "@/lib/vertaal";
 
 /**
@@ -74,7 +69,12 @@ export function vertaaldeMetadata(
     ...(basis.description
       ? { description: vert(basis.description) as string }
       : {}),
-    alternates: { ...basis.alternates, canonical: eigen },
+    /* De Nederlandse basis brengt zijn hreflang mee. Op een taal die nog niet af is —
+       en dus `noindex` draagt — hoort die er niet op: zie de toelichting bij `alternates`
+       in lib/seo.ts. Alleen de canonical blijft. */
+    alternates: TAAL_AF[taal]
+      ? { ...basis.alternates, canonical: eigen }
+      : { canonical: eigen },
     ...(TAAL_AF[taal] ? {} : { robots: { index: false, follow: true } }),
     ...(basis.openGraph
       ? {

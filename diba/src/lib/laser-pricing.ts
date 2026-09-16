@@ -4,7 +4,9 @@ import {
   type LaserZone,
 } from "@/data/laser-zones";
 import { euro } from "@/lib/getallen";
-import { vertaal } from "@/lib/vertaal";
+/* Niet `vertaal` uit lib/vertaal: dat sleept beide woordenboeken mee naar de
+   laserconfigurator in de browser. Zie lib/prijswoorden.ts. */
+import { prijswoord } from "@/lib/prijswoorden";
 import type { Taal } from "@/lib/taal";
 
 /**
@@ -26,7 +28,7 @@ export const PRIJS_ONBEKEND = "Nog niet bekend";
  * iedereen die de configurator opende. Vlaggen horen in de broncode, niet in beeld.
  */
 export function formatLaserPrice(value: number, taal: Taal): string {
-  if (value === 0) return vertaal(PRIJS_ONBEKEND, taal);
+  if (value === 0) return prijswoord(PRIJS_ONBEKEND, taal);
   return euro(value, taal);
 }
 

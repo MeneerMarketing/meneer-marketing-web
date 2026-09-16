@@ -28,7 +28,7 @@ export const STAPPEN: readonly Stap[] = [
     tijd: "Eerste minuten",
     naam: "Aankomst en het gesprek",
     watErGebeurt:
-      "We bespreken je huidvraag We vragen waar je last van hebt, hoelang dit al speelt en wat je zelf hebt geprobeerd. Ook bespreken we wat je verwacht en wat je juist niet wilt.",
+      "We bespreken je huidvraag. We vragen waar je last van hebt, hoelang dit al speelt en wat je zelf hebt geprobeerd. Ook bespreken we wat je verwacht en wat je juist niet wilt.",
     nietNodig:
       "Je hoeft je niet voor te bereiden op vaktermen. Zeg het in je eigen woorden; wij vertalen.",
   },

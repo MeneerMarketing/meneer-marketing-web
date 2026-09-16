@@ -27,7 +27,9 @@
  */
 
 import { euro, getal } from "@/lib/getallen";
-import { vertaal } from "@/lib/vertaal";
+/* Niet `vertaal` uit lib/vertaal: dat sleept beide woordenboeken mee, en dit bestand
+   wordt door client components geïmporteerd. Zie lib/prijswoorden.ts. */
+import { prijswoord } from "@/lib/prijswoorden";
 import type { Taal } from "@/lib/taal";
 
 /**
@@ -39,7 +41,7 @@ import type { Taal } from "@/lib/taal";
  * aan een aanbieding.
  */
 export function prijsTekst(bedrag: number, taal: Taal): string {
-  return bedrag === 0 ? vertaal("Op aanvraag", taal) : euro(bedrag, taal);
+  return bedrag === 0 ? prijswoord("Op aanvraag", taal) : euro(bedrag, taal);
 }
 
 /**
@@ -53,7 +55,7 @@ export function prijsTekst(bedrag: number, taal: Taal): string {
  */
 export function prijsCijfer(bedrag: number, taal: Taal): string {
   return bedrag === 0
-    ? vertaal("Op aanvraag", taal)
+    ? prijswoord("Op aanvraag", taal)
     : getal(bedrag, taal, { maximumFractionDigits: 0 });
 }
 

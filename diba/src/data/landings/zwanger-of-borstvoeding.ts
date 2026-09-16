@@ -1,3 +1,4 @@
+import { NAGEKEKEN_ROJDA } from "@/data/landings/nagekeken";
 import {
   INTAKE_PRIJS,
   euro,
@@ -29,6 +30,7 @@ export const ZWANGER_OF_BORSTVOEDING: Landing = {
   slug: "zwanger-of-borstvoeding",
   soort: "vraag",
   gewijzigd: "2026-09-12",
+  nagekeken: NAGEKEKEN_ROJDA,
   titel: "Zwanger of borstvoeding: wat kan wel",
   omschrijving:
     "Welke huidbehandelingen tijdens een zwangerschap en borstvoeding wel kunnen en welke wachten, en waarom pigment in die periode vaak vanzelf verandert.",

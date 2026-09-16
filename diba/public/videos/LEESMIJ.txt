@@ -1,7 +1,12 @@
 Zet hier de mp4-bestanden van de reels.
 
+Alles in deze map gaat mee in elke deploy, ook wat nergens gebruikt wordt. Een
+masterbestand hoort daarom in ../media-bron en niet hier.
+
 In gebruik:
-  home-hero.mp4                 de opname in het beeldvlak van de homepage-hero
+  home-hero.mp4                 de homepage-hero op een telefoon (1,8 MB)
+  hero-breed.mp4                dezelfde hero op een breed scherm (5,8 MB),
+                                en de vergelijkingsstand HeroVariant
 
 Nog aan te leveren (zie src/data/videos.ts):
   rrs-eyes.mp4                  reel DYnF7bGAc91

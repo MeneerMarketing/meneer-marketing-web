@@ -1,3 +1,4 @@
+import { NAGEKEKEN_ROJDA } from "@/data/landings/nagekeken";
 import {
   afspraakBlokken,
   behandeling,
@@ -39,6 +40,7 @@ function prijsVan(naam: string): number {
 export const MICRONEEDLING_ROTTERDAM: Landing = {
   slug: "microneedling-rotterdam",
   gewijzigd: "2026-09-11",
+  nagekeken: NAGEKEKEN_ROJDA,
   titel: "Microneedling Rotterdam: SkinPen en Dermapen",
   omschrijving: `Microneedling in Rotterdam met de SkinPen en de Dermapen 4. Vanaf ${euro(SP.prijs)} per sessie, een tot drie dagen rood. Voor littekens, poriën en huidstructuur.`,
   kruimel: "Microneedling",

@@ -104,9 +104,17 @@ export function zoekmachineVelden({
     /* De canonical. Relatief mag: metadataBase in layout.tsx maakt er een hele URL van.
        De hreflang-verwijzingen staan er alleen bij als de pagina echt in twee talen
        bestaat; zie `lib/taal.ts` voor waarom dat geen detail is. */
+    /* Geen hreflang op een pagina die zelf `noindex` draagt. Een taal die nog niet af is
+       staat op noindex (zie hieronder), en hreflang vanaf zo'n pagina is een tegenstrijdig
+       signaal: "dit is mijn Engelse tegenhanger" over een pagina die Google niet mag
+       opnemen, terwijl die tegenhanger bewust niet terugwijst. `npm run seo` meldde dat
+       312 keer, op elke Spaanse pagina twee keer. Zodra `TAAL_AF` omgaat komt de hreflang
+       vanzelf terug, en wijzen de andere talen dan ook terug. */
     alternates: {
       canonical: pad,
-      ...(taalAlternatieven(pad) ? { languages: taalAlternatieven(pad) } : {}),
+      ...(TAAL_AF[taalVanPad(pad)] && taalAlternatieven(pad)
+        ? { languages: taalAlternatieven(pad) }
+        : {}),
     },
 
     /* Een taal die nog niet af is, hoort niet in Google. De vertaalde pagina's krijgen dat

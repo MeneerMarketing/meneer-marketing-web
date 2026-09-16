@@ -1,6 +1,6 @@
 # Alle teksten van de website
 
-Diba Clinics · gegenereerd op 14 september 2026 · 374 pagina's
+Diba Clinics · gegenereerd op 16 september 2026 · 374 pagina's
 
 Dit document bevat elke tekst die een bezoeker op de site ziet, in de volgorde waarin
 hij op de pagina staat. Het is uit de echte pagina's getrokken en niet uit de broncode,
@@ -218,7 +218,7 @@ Niet altijd. Wanneer een huidscan waarde toevoegt, leggen we uit wat we meten en
 
 Wil je alleen advies, dan duurt de afspraak dertig minuten en kost hij 50 euro. Boek je een behandeling op advies, dan reserveren we twee uur als je nieuw bent en een uur als je al klant bent; het bedrag van de intake vervalt zodra we behandelen.
 
-Huidkliniek in Rotterdam , sinds 2017. Acne, pigment, littekens, huidverbetering en ongewenste haargroei, door huidtherapeuten die eerst meten en daarna pas behandelen.
+Huidkliniek in Rotterdam, sinds 2017. Acne, pigment, littekens, huidverbetering en ongewenste haargroei, door huidtherapeuten die eerst meten en daarna pas behandelen.
 
 - WEISSENBRUCHLAAN 166, ROTTERDAM
 
@@ -500,27 +500,27 @@ Wie je huid behandelt en wie meekijkt naar wat er van binnenuit meespeelt, zijn 
 
 - Laserspecialist Werkt met de laser- en lichtapparatuur: ontharen, en licht dat op kleur of vaatjes mikt. Kiest per huidtype en per zone de instelling. Een vakopleiding op de apparatuur zelf, met een certificering per apparaat. Geen beschermde titel, dus vraag naar de opleiding erachter; onze laserspecialisten werken onder dezelfde protocollen als de huidtherapeuten.
 
-- Andres HUIDTHERAPEUT Andres is huidtherapeut en werkt met de apparatuur waarbij de instelling het verschil maakt. Hij legt uit wat een apparaat doet en waar het ophoudt, en zegt het ook als een behandeling bij jouw huid minder oplevert.
+- Andres HUIDTHERAPEUT
 
-- Iris HUIDTHERAPEUT Iris is huidtherapeut en werkt veel met mensen die eerst ergens anders geweest zijn. Zij begint dan bij wat er al geprobeerd is, want dat scheelt maanden opnieuw uitproberen. Ook als dat betekent dat een eerder advies overeind blijft.
+- Iris HUIDTHERAPEUT
 
-- Griselle HUIDTHERAPEUT Griselle is huidtherapeut en loopt de teksten op deze site na op wat er in de behandelkamer echt gebeurt. Meer dan een van de stukken hier is aangepast omdat zij zei dat het anders ging dan er stond.
+- Griselle HUIDTHERAPEUT
 
-- C FOTO VOLGT Cheyenne HUIDTHERAPEUT Cheyenne is huidtherapeut. Zij neemt de tijd voor de uitleg vooraf, ook als die uitleg langer duurt dan de behandeling zelf. Weet je na afloop niet waarom er iets gedaan is, dan is er iets misgegaan; dat is haar maatstaf.
+- C FOTO VOLGT Cheyenne HUIDTHERAPEUT
 
-- A FOTO VOLGT Anouk HUIDTHERAPEUT Anouk is huidtherapeut. Zij doet veel van de trajecten die over maanden lopen, en dat betekent dat je haar vaker ziet dan een keer. Bij elke controle wordt er gemeten in plaats van geschat, zodat je zelf kunt zien of het schema klopt.
+- A FOTO VOLGT Anouk HUIDTHERAPEUT
 
-- Rojda FOUNDER DIBA CLINICS B.V. EN ORTHOMOLECULAIR HUIDSPECIALIST Als founder bepaalt Rojda wat er in deze kliniek wel en niet gebeurt, en dat tweede is hier het langste lijstje. Zij is degene die de meting uitlegt en die zegt wanneer behandelen geen zin heeft. Kom je met een vraag waar geen behandeling bij hoort, dan hoor je dat van haar.
+- Rojda FOUNDER DIBA CLINICS B.V. EN ORTHOMOLECULAIR HUIDSPECIALIST
 
-- Demi ORTHOMOLECULAIR HUIDSPECIALIST Demi werkt als orthomoleculair huidspecialist en kijkt daarbij naar wat er van binnenuit meespeelt. Bij haar begint een afspraak vaker met vragen dan met een apparaat, en dat is geen omweg: bij een deel van de huidklachten zit de aanjager niet in de huid.
+- Demi ORTHOMOLECULAIR HUIDSPECIALIST
 
-- India HUIDTHERAPEUT IN OPLEIDING EN LASERSPECIALIST India doet de laserbehandelingen en volgt daarnaast de opleiding tot huidtherapeut. Bij laserontharing is zij vaak degene die de zones doorloopt en per keer bijstelt wat er nodig is.
+- India HUIDTHERAPEUT IN OPLEIDING EN LASERSPECIALIST
 
-- E FOTO VOLGT Elaf LASERSPECIALIST Elaf doet de laserbehandelingen: ontharen, en het licht dat op kleur of vaatjes mikt. Ziet zij tijdens een afspraak iets wat bij een huidtherapeut hoort, dan hoor je dat voordat ze verdergaat.
+- E FOTO VOLGT Elaf LASERSPECIALIST
 
-- Y FOTO VOLGT Yasin IT EN MARKETING Yasin bouwt en onderhoudt deze site en doet de marketing. Klopt er iets niet aan wat je hier leest, dan is dat bij hem het snelst gemeld.
+- Y FOTO VOLGT Yasin IT EN MARKETING
 
-- O FOTO VOLGT Okan PRAKTIJKMANAGER Okan houdt de praktijk draaiend: de agenda, de afspraken en alles wat er misgaat voordat je het merkt. Bel je over een afspraak verzetten, een factuur of iets wat niet klopt, dan kom je bij hem uit.
+- O FOTO VOLGT Okan PRAKTIJKMANAGER
 
 Een diploma is geen eindpunt.
 
@@ -824,7 +824,7 @@ Dat is niet om je te overtuigen. Het is zodat we het kunnen zien als iets niet w
 
 - Textuur Oneffenheid, en of er littekens beginnen te ontstaan
 
-**Veelgestelde vragen over acne**
+**Veelgestelde vragen**
 
 Kom ik hier van mijn acne af?
 
@@ -2794,7 +2794,7 @@ Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Ze gaan ove
 
 - “Ik heb een hele fijne ervaring gehad bij Demi. Goed geïnformeerd over hoe het proces (laseren) in zijn werking gaat. Ik ben gerustgesteld en goed geholpen. Jullie hebben er een nieuwe klant bij!” Andrijana Laserontharing bij Demi 4 MAANDEN GELEDEN
 
-- “Ik heb een hele fijne ervaring gehad bij Demy. Goed geïnformeerd over hoe het proces (laseren) in zijn werking gaat. Ik ben gerustgesteld en goed geholpen. Jullie hebben er een nieuwe klant bij!” Andrijana Laserontharing 5 MAANDEN GELEDEN
+- “Inmiddels 3 keer langs geweest voor de diodelaser en ik zie echt 80% verschil! Ook de littekens en vlekjes van mijn huid zijn zwaar verbeterd dankzij de dermapen. Sowieso forever vaste klant!!” Sara Laserontharing MEER DAN 7 JAAR GELEDEN
 
 - “Ik vond de afspraak super! Alles is goed verlopen en bijna uitbehandeld met laseren! Demi is echt een zeer professionele huidspecialist zo dankbaar met haar! Voert haar werk heel nauwkeurig uit.” Monique Laserontharing MEER DAN 3 JAAR GELEDEN
 
@@ -5402,7 +5402,7 @@ In het huidconsult kijken we onder vast licht wat er bij jou aan de hand is. Nee
 
 ### /behandelingen/acne-traject
 
-**Tabbladtitel:** Acnetraject | Diba Clinics
+**Tabbladtitel:** Acnetraject: begeleid traject voor acne | Diba Clinics
 
 **Google-omschrijving:** Een begeleid traject voor acne: behandelingen in de kliniek, producten en controles thuis. Tarief € 570, 60 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -5520,7 +5520,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/acnebehandeling
 
-**Tabbladtitel:** Acnebehandeling | Diba Clinics
+**Tabbladtitel:** Acnebehandeling: reinigen, verstoppingen weghalen | Diba Clinics
 
 **Google-omschrijving:** Eén afspraak voor een onrustige huid: reinigen, verstoppingen weghalen, kalmeren. Los te boeken. Bij Diba Clinics in Rotterdam.
 
@@ -5642,7 +5642,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/cosmelan
 
-**Tabbladtitel:** Cosmelan | Diba Clinics
+**Tabbladtitel:** Cosmelan: traject tegen hyperpigmentatie | Diba Clinics
 
 **Google-omschrijving:** Traject van zes maanden tegen hyperpigmentatie, met een masker in de kliniek en producten thuis. Tarief € 720, 60 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -5788,7 +5788,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/dermamelan
 
-**Tabbladtitel:** Dermamelan | Diba Clinics
+**Tabbladtitel:** Dermamelan: de intensievere pigmentaanpak | Diba Clinics
 
 **Google-omschrijving:** De intensievere pigmentaanpak, meestal bij melasma. Zes maanden, met een strak schema thuis. Tarief € 920, 60 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -5932,7 +5932,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/dermamelan-intimate
 
-**Tabbladtitel:** Dermamelan Intimate | Diba Clinics
+**Tabbladtitel:** Dermamelan Intimate: pigment in de intieme zone | Diba Clinics
 
 **Google-omschrijving:** Pigmentbehandeling voor de intieme zone, met dezelfde opzet als het gezichtstraject. Tarief € 550, 30 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -6026,7 +6026,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/dermapen-4
 
-**Tabbladtitel:** Dermapen 4 | Diba Clinics
+**Tabbladtitel:** Dermapen 4: needling met trillende naaldjes | Diba Clinics
 
 **Google-omschrijving:** Microneedling met trillende naaldjes, die gelijkmatig door de huid komen. Vanaf € 180, 60 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -6202,7 +6202,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/dermaplaning
 
-**Tabbladtitel:** Dermaplaning | Diba Clinics
+**Tabbladtitel:** Dermaplaning: donshaartjes weg met een mesje | Diba Clinics
 
 **Google-omschrijving:** Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid. Tarief € 150, 60 minuten.
 
@@ -6340,7 +6340,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/elektrische-epilatie
 
-**Tabbladtitel:** Elektrische epilatie | Diba Clinics
+**Tabbladtitel:** Elektrische epilatie: ook grijs en blond haar | Diba Clinics
 
 **Google-omschrijving:** Haar voor haar, ook grijs en blond. Voor wat de laser niet ziet zitten. De behandeltijd rekenen we per half uur. Tarief € 60, 30 minuten.
 
@@ -6458,7 +6458,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/eye-peel
 
-**Tabbladtitel:** Eye peel | Diba Clinics
+**Tabbladtitel:** Eye peel: een peeling die op de oogcontour mag | Diba Clinics
 
 **Google-omschrijving:** Een peeling die op de oogcontour mag. Voor fijne lijntjes en een doffe, donkere oogzone. Vanaf € 30, 15 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -6572,7 +6572,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/fibromen
 
-**Tabbladtitel:** Fibromen verwijderen | Diba Clinics
+**Tabbladtitel:** Fibromen verwijderen: steelwratjes weghalen | Diba Clinics
 
 **Google-omschrijving:** Steelwratjes weghalen, meestal in één afspraak. De behandeltijd rekenen we per kwartier. Tarief € 30, 15 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -6690,7 +6690,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/fotona
 
-**Tabbladtitel:** Fotona TimeWalker | Diba Clinics
+**Tabbladtitel:** Fotona TimeWalker: vijftien laserbehandelingen | Diba Clinics
 
 **Google-omschrijving:** Vijftien behandelingen op een apparaat, van een lichte laserpeel tot de complete 4D. Elk met een eigen doel. Vanaf € 150, 60 minuten.
 
@@ -6870,7 +6870,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/fotona-4d
 
-**Tabbladtitel:** Fotona 4D | Diba Clinics
+**Tabbladtitel:** Fotona 4D: vier laserbehandelingen, één sessie | Diba Clinics
 
 **Google-omschrijving:** Vier laserbehandelingen in een sessie. Van binnenuit door de wang tot een afsluitende peeling. Vanaf € 370, 90 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -7044,7 +7044,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/fotona-4d-full
 
-**Tabbladtitel:** Fotona 4D Full Package | Diba Clinics
+**Tabbladtitel:** Fotona 4D Full Package: met hals en kaaklijn erbij | Diba Clinics
 
 **Google-omschrijving:** Het volledige 4D-protocol met de hals en de kaaklijn erbij, in één afspraak. Vanaf € 575, 120 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -7152,7 +7152,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/fotona-4d-men
 
-**Tabbladtitel:** Fotona 4D Men | Diba Clinics
+**Tabbladtitel:** Fotona 4D Men: het 4D-protocol voor mannenhuid | Diba Clinics
 
 **Google-omschrijving:** Hetzelfde protocol van vier, ingesteld op de doorgaans dikkere mannenhuid. Bij Diba Clinics in Rotterdam.
 
@@ -7310,7 +7310,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/fotona-acne-control
 
-**Tabbladtitel:** Fotona Acne Control | Diba Clinics
+**Tabbladtitel:** Fotona Acne Control: laser bij actieve acne | Diba Clinics
 
 **Google-omschrijving:** Laser bij actieve acne, gericht op de ontsteking en de talgklier. Bij Diba Clinics in Rotterdam.
 
@@ -7466,7 +7466,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/fotona-resurfacing
 
-**Tabbladtitel:** Fotona Resurfacing | Diba Clinics
+**Tabbladtitel:** Fotona Resurfacing: huidvernieuwing met laser | Diba Clinics
 
 **Google-omschrijving:** Huidvernieuwing met laser, voor poriën, textuur en een gladdere huid. Bij Diba Clinics in Rotterdam.
 
@@ -7620,7 +7620,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/fotona-scar-repair
 
-**Tabbladtitel:** Fotona Scar Repair | Diba Clinics
+**Tabbladtitel:** Fotona Scar Repair: laser op littekens en striae | Diba Clinics
 
 **Google-omschrijving:** Laser op littekens: acnelittekens, operatielittekens en striae. Tarief € 195, 30 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -7778,7 +7778,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/frac3
 
-**Tabbladtitel:** FRAC3 | Diba Clinics
+**Tabbladtitel:** FRAC3: fractionele laser voor structuur | Diba Clinics
 
 **Google-omschrijving:** Fractionele laser die dieper gaat, voor structuur, poriën en onregelmatigheden. Bij Diba Clinics in Rotterdam.
 
@@ -7928,7 +7928,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/full-face-brushing
 
-**Tabbladtitel:** Full Face Brushing | Diba Clinics
+**Tabbladtitel:** Full Face Brushing: een lichte laserpas | Diba Clinics
 
 **Google-omschrijving:** Een lichte laserpas over het hele gezicht. Frisser vel zonder dat je eruit ligt. Tarief € 170, 60 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -8024,7 +8024,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/hairestart
 
-**Tabbladtitel:** HAIRestart | Diba Clinics
+**Tabbladtitel:** HAIRestart: laser bij haarverdunning | Diba Clinics
 
 **Google-omschrijving:** Laser op de hoofdhuid bij beginnende haarverdunning. Bij Diba Clinics in Rotterdam.
 
@@ -8172,7 +8172,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/happy-intim
 
-**Tabbladtitel:** Happy Intim | Diba Clinics
+**Tabbladtitel:** Happy Intim: peelings voor de intieme zone | Diba Clinics
 
 **Google-omschrijving:** Peelings die pigment in de intieme zone en oksels lichter en egaler maken. Vanaf € 175, 30 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -8326,7 +8326,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/huidanalyse
 
-**Tabbladtitel:** Consult met EVE-M huidanalyse | Diba Clinics
+**Tabbladtitel:** Consult met EVE-M huidanalyse: je huid in kaart | Diba Clinics
 
 **Google-omschrijving:** De meting waar elk traject mee begint. Je huid in kaart, en een behandelplan dat daaruit volgt. Vanaf € 50, 30 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -8442,7 +8442,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/hydrafacial
 
-**Tabbladtitel:** HydraFacial | Diba Clinics
+**Tabbladtitel:** HydraFacial: reinigen, exfoliëren, hydrateren | Diba Clinics
 
 **Google-omschrijving:** Reinigen, exfoliëren en hydrateren. In één doorloop, direct zichtbaar en zonder hersteltijd. Vanaf € 170, 60 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -8594,7 +8594,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/jongeren-acne-traject
 
-**Tabbladtitel:** Jongeren acne traject | Diba Clinics
+**Tabbladtitel:** Jongeren acne traject: drie maanden voor jongeren | Diba Clinics
 
 **Google-omschrijving:** Een begeleid programma van drie maanden, opgezet voor jongeren tot en met achttien jaar. Tarief € 297, 60 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -8708,7 +8708,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/kruidenpeel
 
-**Tabbladtitel:** Kruidenpeel | Diba Clinics
+**Tabbladtitel:** Kruidenpeel: fijngemalen kruiden, zonder zuur | Diba Clinics
 
 **Google-omschrijving:** Een peeling van fijngemalen kruiden, zonder zuur. Remt de ontsteking en werkt antibacterieel. Vanaf € 150, 60 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -8826,7 +8826,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/laserontharing
 
-**Tabbladtitel:** Laserontharing | Diba Clinics
+**Tabbladtitel:** Laserontharing: de haarwortel uitschakelen | Diba Clinics
 
 **Google-omschrijving:** De haarwortel uitschakelen. Per zone of als pakket, voor dames en heren. Tarief € 20, 30 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -8970,7 +8970,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/led-therapie
 
-**Tabbladtitel:** LED-therapie | Diba Clinics
+**Tabbladtitel:** LED-therapie: licht dat de huid rustiger maakt | Diba Clinics
 
 **Google-omschrijving:** Licht dat de huid rustiger maakt. In meerdere golflengtes, zonder naalden of zuren. Tarief € 30, 15 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -9210,7 +9210,7 @@ Alles hierboven geldt voor deze klacht in het algemeen. Wat er bij jou aan de ha
 
 ### /behandelingen/liplase
 
-**Tabbladtitel:** LipLase | Diba Clinics
+**Tabbladtitel:** LipLase: vollere lippen zonder filler | Diba Clinics
 
 **Google-omschrijving:** Vollere en gladdere lippen zonder filler, met laser van binnen en buiten. Vanaf € 150, 45 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -9370,7 +9370,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/littekentherapie
 
-**Tabbladtitel:** Littekentherapie | Diba Clinics
+**Tabbladtitel:** Littekentherapie: na een operatie of keizersnede | Diba Clinics
 
 **Google-omschrijving:** Voor littekens na een operatie of keizersnede. De prijs volgt de lengte van het litteken. Vanaf € 100, 30 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -9496,7 +9496,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/nightlase
 
-**Tabbladtitel:** NightLase | Diba Clinics
+**Tabbladtitel:** NightLase: laser tegen snurken | Diba Clinics
 
 **Google-omschrijving:** Laser tegen snurken. Het zachte gehemelte wordt steviger, zonder operatie of beugel. Bij Diba Clinics in Rotterdam.
 
@@ -9616,7 +9616,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/nordlys-pigment
 
-**Tabbladtitel:** Nordlys IPL bij pigment | Diba Clinics
+**Tabbladtitel:** Nordlys IPL bij pigment: licht op pigmentvlekken | Diba Clinics
 
 **Google-omschrijving:** Licht op pigmentvlekken en zonschade. Het pigment komt eerst naar boven en vervaagt daarna. Vanaf € 75, 30 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -10142,7 +10142,7 @@ Alles hierboven geldt voor deze klacht in het algemeen. Wat er bij jou aan de ha
 
 ### /behandelingen/oxygeneo
 
-**Tabbladtitel:** Oxygeneo glow | Diba Clinics
+**Tabbladtitel:** Oxygeneo glow: exfoliëren en zuurstof | Diba Clinics
 
 **Google-omschrijving:** Exfoliëren en zuurstof in de huid brengen, in één behandeling. Tarief € 150, 60 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -10298,7 +10298,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/peelings
 
-**Tabbladtitel:** Medische peelings | Diba Clinics
+**Tabbladtitel:** Medische peelings: van licht tot stevig | Diba Clinics
 
 **Google-omschrijving:** Van licht tot stevig. De sterkte bepaalt hoe diep het gaat en hoeveel je vervelt. Vanaf € 140, 60 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -10704,7 +10704,7 @@ Alles hierboven geldt voor deze klacht in het algemeen. Wat er bij jou aan de ha
 
 ### /behandelingen/piano
 
-**Tabbladtitel:** PIANO skin tightening | Diba Clinics
+**Tabbladtitel:** PIANO skin tightening: verstevigt kaaklijn en hals | Diba Clinics
 
 **Google-omschrijving:** Diepe, gelijkmatige verwarming voor versteviging van gezicht, kaaklijn en hals. Bij Diba Clinics in Rotterdam.
 
@@ -10856,7 +10856,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/rrs-eyes
 
-**Tabbladtitel:** RRS Eyes | Diba Clinics
+**Tabbladtitel:** RRS Eyes: werkzame stoffen rond het oog | Diba Clinics
 
 **Google-omschrijving:** Werkzame stoffen rond de oogcontour. Voor donkere kringen, fijne lijntjes en een vermoeide blik. Vanaf € 130, 30 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -10992,7 +10992,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/rrs-hyalift
 
-**Tabbladtitel:** RRS Hyalift | Diba Clinics
+**Tabbladtitel:** RRS Hyalift: hyaluronzuur en vitamines | Diba Clinics
 
 **Google-omschrijving:** Hyaluronzuur en vitamines in de huid brengen. Voor stevigheid en vocht, niet voor volume. Vanaf € 175, 60 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -11112,7 +11112,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/skinboosters
 
-**Tabbladtitel:** Skinboosters en mesotherapie | Diba Clinics
+**Tabbladtitel:** Skinboosters en mesotherapie: ín de huid, niet erop | Diba Clinics
 
 **Google-omschrijving:** Werkzame stoffen ín de huid gebracht in plaats van erop, op een vaste diepte per prik. Vanaf € 175, 60 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -11364,7 +11364,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/skinpen
 
-**Tabbladtitel:** SkinPen Microneedling | Diba Clinics
+**Tabbladtitel:** SkinPen Microneedling: medisch gecertificeerd | Diba Clinics
 
 **Google-omschrijving:** Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit. Vanaf € 180, 60 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -11948,7 +11948,7 @@ Alles hierboven geldt voor deze klacht in het algemeen. Wat er bij jou aan de ha
 
 ### /behandelingen/smootheye
 
-**Tabbladtitel:** SmoothEye | Diba Clinics
+**Tabbladtitel:** SmoothEye: laser rond de oogcontour | Diba Clinics
 
 **Google-omschrijving:** Laser rond de oogcontour, voor kraaienpootjes en fijne lijntjes. Vanaf € 150, 60 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -12116,7 +12116,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/smoothliftin
 
-**Tabbladtitel:** SmoothLiftin | Diba Clinics
+**Tabbladtitel:** SmoothLiftin: collageen van binnenuit | Diba Clinics
 
 **Google-omschrijving:** Collageenstimulatie van binnenuit, door het slijmvlies van je wang. Bij Diba Clinics in Rotterdam.
 
@@ -12268,7 +12268,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/superficial-peel
 
-**Tabbladtitel:** SupErficial laserpeel | Diba Clinics
+**Tabbladtitel:** SupErficial laserpeel: oppervlakkige laserpeeling | Diba Clinics
 
 **Google-omschrijving:** Een oppervlakkige laserpeeling voor een gladdere huid en meer glans. Bij Diba Clinics in Rotterdam.
 
@@ -12428,7 +12428,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/vectorlift
 
-**Tabbladtitel:** VectorLift | Diba Clinics
+**Tabbladtitel:** VectorLift: wenkbrauwlift zonder naalden | Diba Clinics
 
 **Google-omschrijving:** Laser wenkbrauwlift en versteviging van het voorhoofd, zonder naalden. Vanaf € 150, 45 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -12592,7 +12592,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/voedingsintolerantietest
 
-**Tabbladtitel:** Voedingsintolerantietest | Diba Clinics
+**Tabbladtitel:** Voedingsintolerantietest: bloedtest op voeding | Diba Clinics
 
 **Google-omschrijving:** Een bloedtest die in kaart brengt op welke voedingsmiddelen je lichaam reageert. Tarief € 300, 30 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -12706,7 +12706,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 ### /behandelingen/xl-hair
 
-**Tabbladtitel:** XL Hair | Diba Clinics
+**Tabbladtitel:** XL Hair: tegen haaruitval | Diba Clinics
 
 **Google-omschrijving:** Tegen haaruitval en dunner wordend haar. Een traject van maanden, afgestemd op je hoofdhuid. Vanaf € 800, 30 minuten. Bij Diba Clinics in Rotterdam.
 
@@ -15394,7 +15394,7 @@ Een dossier van een geneeskundige behandeling moet twintig jaar bewaard blijven,
 
 - Meetgegevens van deze websiteMaximaal veertien maandenAlleen als je de cookiebalk hebt geaccepteerd. Weiger je, dan wordt er niets gemeten en is er dus niets te bewaren.
 
-*WAT*
+*WELKE GEGEVENS*
 
 *HOE LANG*
 
@@ -15856,7 +15856,7 @@ Not always. When a skin scan adds something, we explain what we measure and why.
 
 If you only want advice, the appointment takes thirty minutes and costs 50 euros. If you book a treatment on advice, we reserve two hours if you are new and one hour if you are already a client; the intake fee is waived as soon as we treat.
 
-Skin clinic in Rotterdam , since 2017. Acne, pigmentation, scars, skin improvement and unwanted hair, by skin therapists who measure before they treat.
+Skin clinic in Rotterdam, since 2017. Acne, pigmentation, scars, skin improvement and unwanted hair, by skin therapists who measure before they treat.
 
 - WEISSENBRUCHLAAN 166, ROTTERDAM
 
@@ -17944,7 +17944,7 @@ Below is what Aevitae publishes about it themselves. Take it with you when you c
 
 **One question comes before this.**
 
-Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes Aevitae ; for most of what we do, that is the answer.
+Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes Aevitae either; for most of what we do, that is the answer.
 
 **An invoice that is right.**
 
@@ -18036,7 +18036,7 @@ Below is what a.s.r. publishes about it themselves. Take it with you when you ca
 
 **One question comes before this.**
 
-Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes a.s.r. ; for most of what we do, that is the answer.
+Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes a.s.r. either; for most of what we do, that is the answer.
 
 **An invoice that is right.**
 
@@ -18128,7 +18128,7 @@ Below is what CZ publishes about it themselves. Take it with you when you call a
 
 **One question comes before this.**
 
-Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes CZ ; for most of what we do, that is the answer.
+Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes CZ either; for most of what we do, that is the answer.
 
 **An invoice that is right.**
 
@@ -18220,7 +18220,7 @@ Below is what DSW publishes about it themselves. Take it with you when you call 
 
 **One question comes before this.**
 
-Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes DSW ; for most of what we do, that is the answer.
+Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes DSW either; for most of what we do, that is the answer.
 
 **An invoice that is right.**
 
@@ -18312,7 +18312,7 @@ Below is what Menzis publishes about it themselves. Take it with you when you ca
 
 **One question comes before this.**
 
-Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes Menzis ; for most of what we do, that is the answer.
+Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes Menzis either; for most of what we do, that is the answer.
 
 **An invoice that is right.**
 
@@ -18404,7 +18404,7 @@ Below is what ONVZ publishes about it themselves. Take it with you when you call
 
 **One question comes before this.**
 
-Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes ONVZ ; for most of what we do, that is the answer.
+Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes ONVZ either; for most of what we do, that is the answer.
 
 **An invoice that is right.**
 
@@ -18496,7 +18496,7 @@ Below is what Salland publishes about it themselves. Take it with you when you c
 
 **One question comes before this.**
 
-Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes Salland ; for most of what we do, that is the answer.
+Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes Salland either; for most of what we do, that is the answer.
 
 **An invoice that is right.**
 
@@ -18588,7 +18588,7 @@ Below is what VGZ publishes about it themselves. Take it with you when you call 
 
 **One question comes before this.**
 
-Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes VGZ ; for most of what we do, that is the answer.
+Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes VGZ either; for most of what we do, that is the answer.
 
 **An invoice that is right.**
 
@@ -18680,7 +18680,7 @@ Below is what Zilveren Kruis publishes about it themselves. Take it with you whe
 
 **One question comes before this.**
 
-Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes Zilveren Kruis ; for most of what we do, that is the answer.
+Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes Zilveren Kruis either; for most of what we do, that is the answer.
 
 **An invoice that is right.**
 
@@ -18772,7 +18772,7 @@ Below is what Zorg en Zekerheid publishes about it themselves. Take it with you 
 
 **One question comes before this.**
 
-Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes Zorg en Zekerheid ; for most of what we do, that is the answer.
+Is there a medical reason for your concern? Without that reason no insurer covers anything, and that includes Zorg en Zekerheid either; for most of what we do, that is the answer.
 
 **An invoice that is right.**
 
@@ -19332,7 +19332,7 @@ If you know what you are after but are unsure about the timing or the combinatio
 
 > knop: Read on
 
-Last updated on 11 September 2026 . Rates and treatment times are checked at every change.
+Last updated on 11 September 2026. Rates and treatment times are checked at every change.
 
 **A peel in Rotterdam to book**
 
@@ -19558,7 +19558,7 @@ If you know what you are after but are unsure about the timing or the combinatio
 
 > knop: Read on
 
-Last updated on 12 September 2026 . Rates and treatment times are checked at every change.
+Last updated on 12 September 2026. Rates and treatment times are checked at every change.
 
 **Come by and see for yourself**
 
@@ -19788,7 +19788,7 @@ If you know what you are after but are unsure about the timing or the combinatio
 
 > knop: Read on
 
-Last updated on 11 September 2026 . Rates and treatment times are checked at every change.
+Last updated on 11 September 2026. Rates and treatment times are checked at every change.
 
 **A pigment programme in Rotterdam**
 
@@ -20012,7 +20012,7 @@ If you know what you are after but are unsure about the timing or the combinatio
 
 > knop: Read on
 
-Last updated on 11 September 2026 . Rates and treatment times are checked at every change.
+Last updated on 11 September 2026. Rates and treatment times are checked at every change.
 
 **Dermaplaning in Rotterdam to book**
 
@@ -20224,7 +20224,7 @@ If you know what you are after but are unsure about the timing or the combinatio
 
 > knop: Read on
 
-Last updated on 11 September 2026 . Rates and treatment times are checked at every change.
+Last updated on 11 September 2026. Rates and treatment times are checked at every change.
 
 **Electrolysis in Rotterdam**
 
@@ -20448,7 +20448,7 @@ If you know what you are after but are unsure about the timing or the combinatio
 
 > knop: Read on
 
-Last updated on 12 September 2026 . Rates and treatment times are checked at every change.
+Last updated on 12 September 2026. Rates and treatment times are checked at every change.
 
 **Have your skin type established**
 
@@ -20678,7 +20678,7 @@ If you know what you are after but are unsure about the timing or the combinatio
 
 > knop: Read on
 
-Last updated on 11 September 2026 . Rates and treatment times are checked at every change.
+Last updated on 11 September 2026. Rates and treatment times are checked at every change.
 
 **Fotona 4D in Rotterdam to book**
 
@@ -20920,7 +20920,7 @@ If you know what you are after but are unsure about the timing or the combinatio
 
 > knop: Read on
 
-Last updated on 12 September 2026 . Rates and treatment times are checked at every change.
+Last updated on 12 September 2026. Rates and treatment times are checked at every change.
 
 **A plan with a number attached**
 
@@ -21166,7 +21166,7 @@ If you know what you are after but are unsure about the timing or the combinatio
 
 > knop: Read on
 
-Last updated on 11 September 2026 . Rates and treatment times are checked at every change.
+Last updated on 11 September 2026. Rates and treatment times are checked at every change.
 
 **A HydraFacial in Rotterdam to book**
 
@@ -21402,7 +21402,7 @@ If you know what you are after but are unsure about the timing or the combinatio
 
 > knop: Read on
 
-Last updated on 11 September 2026 . Rates and treatment times are checked at every change.
+Last updated on 11 September 2026. Rates and treatment times are checked at every change.
 
 **IPL in Rotterdam to book**
 
@@ -21638,7 +21638,7 @@ If you know what you are after but are unsure about the timing or the combinatio
 
 > knop: Read on
 
-Last updated on 11 September 2026 . Rates and treatment times are checked at every change.
+Last updated on 11 September 2026. Rates and treatment times are checked at every change.
 
 **Microneedling in Rotterdam to book**
 
@@ -21870,7 +21870,7 @@ If you know what you are after but are unsure about the timing or the combinatio
 
 > knop: Read on
 
-Last updated on 11 September 2026 . Rates and treatment times are checked at every change.
+Last updated on 11 September 2026. Rates and treatment times are checked at every change.
 
 **OxyGeneo in Rotterdam to book**
 
@@ -22104,7 +22104,7 @@ If you know what you are after but are unsure about the timing or the combinatio
 
 > knop: Read on
 
-Last updated on 12 September 2026 . Rates and treatment times are checked at every change.
+Last updated on 12 September 2026. Rates and treatment times are checked at every change.
 
 **Measuring is always possible**
 
@@ -22332,7 +22332,7 @@ If you know what you are after but are unsure about the timing or the combinatio
 
 > knop: Read on
 
-Last updated on 11 September 2026 . Rates and treatment times are checked at every change.
+Last updated on 11 September 2026. Rates and treatment times are checked at every change.
 
 **A skin analysis in Rotterdam to book**
 
@@ -22574,7 +22574,7 @@ If you know what you are after but are unsure about the timing or the combinatio
 
 > knop: Read on
 
-Last updated on 11 September 2026 . Rates and treatment times are checked at every change.
+Last updated on 11 September 2026. Rates and treatment times are checked at every change.
 
 **To a skin therapist in Rotterdam**
 
@@ -22822,7 +22822,7 @@ If you know what you are after but are unsure about the timing or the combinatio
 
 > knop: Read on
 
-Last updated on 11 September 2026 . Rates and treatment times are checked at every change.
+Last updated on 11 September 2026. Rates and treatment times are checked at every change.
 
 **Skin boosters in Rotterdam to book**
 
@@ -23058,7 +23058,7 @@ If you know what you are after but are unsure about the timing or the combinatio
 
 > knop: Read on
 
-Last updated on 12 September 2026 . Rates and treatment times are checked at every change.
+Last updated on 12 September 2026. Rates and treatment times are checked at every change.
 
 **Book it at the right moment**
 
@@ -23124,7 +23124,7 @@ Reviews translated from Dutch.
 
 - “I had a really lovely experience with Demi. Well informed about how the process (lasering) works. I was put at ease and helped well. You've got a new client!” Andrijana Laser hair removal with Demi 4 MONTHS AGO
 
-- “I had a really lovely experience with Demy. Well informed about how the process (lasering) works. I was put at ease and helped well. You've got a new client!” Andrijana Laser hair removal 5 MONTHS AGO
+- “I've been by 3 times now for the diode laser and I genuinely see an 80% difference! The scars and spots on my skin have hugely improved too thanks to the dermapen. A forever regular anyway!!” Sara Laser hair removal OVER 7 YEARS AGO
 
 - “I thought the appointment was great! Everything went well and I'm nearly finished with the lasering! Demi is genuinely a very professional skin specialist, so grateful for her! She does her work very precisely.” Monique Laser hair removal OVER 3 YEARS AGO
 
@@ -23662,7 +23662,7 @@ A medical treatment file has to be kept for twenty years, counted from the last 
 
 - Measurement data from this websiteAt most fourteen monthsOnly if you have accepted the cookie bar. If you decline, nothing is measured and so there is nothing to keep.
 
-*WHAT*
+*WHICH DATA*
 
 *HOW LONG*
 
@@ -23826,7 +23826,7 @@ Whether and how the referrer is reported back to after the measurement has not b
 
 **WHAT CLIENTS WRITE ABOUT US**
 
-3,893 reviews on Salonized, averaging 5.0 . They were written after the appointment by people who have been here, and they are all here: with text and without.
+3,893 reviews on Salonized, averaging 5.0. They were written after the appointment by people who have been here, and they are all here: with text and without.
 
 Feel free to search for the treatment on your mind. Then you read what people with your question wrote about it, and that says more than the average below it.
 
@@ -24426,7 +24426,7 @@ That is not to convince you. It is so that we can see it when something is not w
 
 - Texture Unevenness, and whether scars are starting to form
 
-**Questions about acne**
+**Frequently asked questions**
 
 Will this get rid of my acne?
 
@@ -25734,7 +25734,7 @@ Reviews translated from Dutch.
 
 - “I had a really lovely experience with Demi. Well informed about how the process (lasering) works. I was put at ease and helped well. You've got a new client!” Andrijana Laser hair removal with Demi 4 MONTHS AGO
 
-- “I had a really lovely experience with Demy. Well informed about how the process (lasering) works. I was put at ease and helped well. You've got a new client!” Andrijana Laser hair removal 5 MONTHS AGO
+- “I've been by 3 times now for the diode laser and I genuinely see an 80% difference! The scars and spots on my skin have hugely improved too thanks to the dermapen. A forever regular anyway!!” Sara Laser hair removal OVER 7 YEARS AGO
 
 - “I thought the appointment was great! Everything went well and I'm nearly finished with the lasering! Demi is genuinely a very professional skin specialist, so grateful for her! She does her work very precisely.” Monique Laser hair removal OVER 3 YEARS AGO
 
@@ -29032,27 +29032,27 @@ Who treats your skin and who looks at what plays a part from within are two diff
 
 - Laser specialist Works with the laser and light equipment: hair removal, and light aimed at colour or vessels. Chooses the setting per skin type and per area. A vocational training on the equipment itself, with certification per device. Not a protected title, so ask about the training behind it; our laser specialists work under the same protocols as the skin therapists.
 
-- Andres SKIN THERAPIST Andres is a skin therapist and works with the equipment where the setting makes the difference. He explains what a device does and where it stops, and says so too when a treatment gives less on your skin.
+- Andres SKIN THERAPIST
 
-- Iris SKIN THERAPIST Iris is a skin therapist and works a lot with people who have been somewhere else first. She starts with what has already been tried, because that saves months of trying again. Even when that means an earlier piece of advice still stands.
+- Iris SKIN THERAPIST
 
-- Griselle SKIN THERAPIST Griselle is a skin therapist and checks the texts on this site against what actually happens in the treatment room. More than one of the pieces here was changed because she said it went differently than it was written.
+- Griselle SKIN THERAPIST
 
-- C PHOTO TO FOLLOW Cheyenne SKIN THERAPIST Cheyenne is a skin therapist. She takes the time to explain beforehand, even when that explanation takes longer than the treatment itself. If you do not know afterwards why something was done, something went wrong; that is her measure.
+- C PHOTO TO FOLLOW Cheyenne SKIN THERAPIST
 
-- A PHOTO TO FOLLOW Anouk SKIN THERAPIST Anouk is a skin therapist. She does many of the programmes that run over months, which means you see her more than once. At every check-up things are measured rather than estimated, so that you can see for yourself whether the schedule holds.
+- A PHOTO TO FOLLOW Anouk SKIN THERAPIST
 
-- Rojda FOUNDER OF DIBA CLINICS B.V. AND ORTHOMOLECULAR SKIN SPECIALIST As founder, Rojda decides what does and does not happen in this clinic, and the second is the longer list here. She is the one who explains the measurement and who says when treating makes no sense. If you come with a question that has no treatment attached, you hear that from her.
+- Rojda FOUNDER OF DIBA CLINICS B.V. AND ORTHOMOLECULAR SKIN SPECIALIST
 
-- Demi ORTHOMOLECULAR SKIN SPECIALIST Demi works as an orthomolecular skin specialist and looks at what plays a part from within. With her an appointment more often starts with questions than with a device, and that is not a detour: with some skin concerns the driver is not in the skin.
+- Demi ORTHOMOLECULAR SKIN SPECIALIST
 
-- India SKIN THERAPIST IN TRAINING AND LASER SPECIALIST India does the laser treatments and is also training as a skin therapist. With laser hair removal she is often the one who works through the areas and adjusts what is needed each time.
+- India SKIN THERAPIST IN TRAINING AND LASER SPECIALIST
 
-- E PHOTO TO FOLLOW Elaf LASER SPECIALIST Elaf does the laser treatments: hair removal, and the light aimed at colour or vessels. If she sees something during an appointment that belongs with a skin therapist, you hear that before she carries on.
+- E PHOTO TO FOLLOW Elaf LASER SPECIALIST
 
-- Y PHOTO TO FOLLOW Yasin IT AND MARKETING Yasin builds and maintains this site and does the marketing. If something you read here is not right, he is the quickest person to tell.
+- Y PHOTO TO FOLLOW Yasin IT AND MARKETING
 
-- O PHOTO TO FOLLOW Okan PRACTICE MANAGER Okan keeps the practice running: the calendar, the appointments and everything that goes wrong before you notice. If you call about moving an appointment, an invoice or something that is not right, you end up with him.
+- O PHOTO TO FOLLOW Okan PRACTICE MANAGER
 
 A diploma is not an end point.
 
@@ -29628,7 +29628,7 @@ In the skin consultation we look under fixed lighting at what is going on with y
 
 ### /en/treatments/acne-programme
 
-**Tabbladtitel:** Acne programme | Diba Clinics
+**Tabbladtitel:** Acne programme: a guided course for acne | Diba Clinics
 
 **Google-omschrijving:** A guided programme for acne: treatments at the clinic, products and check-ups at home. Rate € 570, 60 minutes. At Diba Clinics in Rotterdam.
 
@@ -29746,7 +29746,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/acne-treatment
 
-**Tabbladtitel:** Acne treatment | Diba Clinics
+**Tabbladtitel:** Acne treatment: cleansing, clearing congestion | Diba Clinics
 
 **Google-omschrijving:** One appointment for unsettled skin: cleansing, clearing blockages, calming. Bookable on its own. At Diba Clinics in Rotterdam.
 
@@ -29868,7 +29868,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/cosmelan
 
-**Tabbladtitel:** Cosmelan | Diba Clinics
+**Tabbladtitel:** Cosmelan: a course against hyperpigmentation | Diba Clinics
 
 **Google-omschrijving:** A six-month programme against hyperpigmentation, with a mask at the clinic and products at home. Rate € 720, 60 minutes. At Diba Clinics in Rotterdam.
 
@@ -30014,7 +30014,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/dermamelan
 
-**Tabbladtitel:** Dermamelan | Diba Clinics
+**Tabbladtitel:** Dermamelan: the more intensive pigment route | Diba Clinics
 
 **Google-omschrijving:** The more intensive approach to pigmentation, usually for melasma. Six months, with a strict routine at home. Rate € 920, 60 minutes.
 
@@ -30158,7 +30158,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/dermamelan-intimate
 
-**Tabbladtitel:** Dermamelan Intimate | Diba Clinics
+**Tabbladtitel:** Dermamelan Intimate: pigment in the intimate area | Diba Clinics
 
 **Google-omschrijving:** Pigment treatment for the intimate area, set up the same way as the facial programme. Rate € 550, 30 minutes. At Diba Clinics in Rotterdam.
 
@@ -30252,7 +30252,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/dermapen-4
 
-**Tabbladtitel:** Dermapen 4 | Diba Clinics
+**Tabbladtitel:** Dermapen 4: needling with vibrating needles | Diba Clinics
 
 **Google-omschrijving:** Microneedling with vibrating needles that pass through the skin evenly. From € 180, 60 minutes. At Diba Clinics in Rotterdam.
 
@@ -30428,7 +30428,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/dermaplaning
 
-**Tabbladtitel:** Dermaplaning | Diba Clinics
+**Tabbladtitel:** Dermaplaning: vellus hair off with a blade | Diba Clinics
 
 **Google-omschrijving:** Dead skin cells and fine hairs removed with a blade. Works without acids, so it suits sensitive skin too. Rate € 150, 60 minutes.
 
@@ -30566,7 +30566,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/electrolysis
 
-**Tabbladtitel:** Electrolysis | Diba Clinics
+**Tabbladtitel:** Electrolysis: grey and blond hair too | Diba Clinics
 
 **Google-omschrijving:** Hair by hair, grey and blond included. For what the laser cannot see. We charge the treatment time per half hour. Rate € 60, 30 minutes.
 
@@ -30684,7 +30684,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/eye-peel
 
-**Tabbladtitel:** Eye peel | Diba Clinics
+**Tabbladtitel:** Eye peel: a peel allowed on the eye contour | Diba Clinics
 
 **Google-omschrijving:** A peel that is allowed on the eye contour. For fine lines and a dull, dark eye area. From € 30, 15 minutes. At Diba Clinics in Rotterdam.
 
@@ -30798,7 +30798,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/fibromas
 
-**Tabbladtitel:** Fibroma removal | Diba Clinics
+**Tabbladtitel:** Fibroma removal: removing skin tags | Diba Clinics
 
 **Google-omschrijving:** Removing skin tags, usually in one appointment. We charge the treatment time per quarter of an hour. Rate € 30, 15 minutes. At Diba Clinics in Rotterdam.
 
@@ -30916,7 +30916,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/food-intolerance-test
 
-**Tabbladtitel:** Food intolerance test | Diba Clinics
+**Tabbladtitel:** Food intolerance test: a blood test on food | Diba Clinics
 
 **Google-omschrijving:** A blood test that maps which foods your body reacts to. Rate € 300, 30 minutes. At Diba Clinics in Rotterdam.
 
@@ -31030,7 +31030,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/fotona
 
-**Tabbladtitel:** Fotona TimeWalker | Diba Clinics
+**Tabbladtitel:** Fotona TimeWalker: fifteen laser treatments | Diba Clinics
 
 **Google-omschrijving:** Fifteen treatments on one device, from a light laser peel to the complete 4D. Each with its own purpose. From € 150, 60 minutes. At Diba Clinics in Rotterdam.
 
@@ -31210,7 +31210,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/fotona-4d
 
-**Tabbladtitel:** Fotona 4D | Diba Clinics
+**Tabbladtitel:** Fotona 4D: four laser treatments in one session | Diba Clinics
 
 **Google-omschrijving:** Four laser treatments in one session. From the inside through the cheek to a closing peel. From € 370, 90 minutes. At Diba Clinics in Rotterdam.
 
@@ -31492,7 +31492,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/fotona-4d-men
 
-**Tabbladtitel:** Fotona 4D Men | Diba Clinics
+**Tabbladtitel:** Fotona 4D Men: the 4D protocol for men's skin | Diba Clinics
 
 **Google-omschrijving:** The same protocol of four, set for the generally thicker skin of men. At Diba Clinics in Rotterdam.
 
@@ -31650,7 +31650,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/fotona-acne-control
 
-**Tabbladtitel:** Fotona Acne Control | Diba Clinics
+**Tabbladtitel:** Fotona Acne Control: laser for active acne | Diba Clinics
 
 **Google-omschrijving:** Laser for active acne, aimed at the inflammation and the sebaceous gland. At Diba Clinics in Rotterdam.
 
@@ -31806,7 +31806,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/fotona-resurfacing
 
-**Tabbladtitel:** Fotona Resurfacing | Diba Clinics
+**Tabbladtitel:** Fotona Resurfacing: skin renewal with laser | Diba Clinics
 
 **Google-omschrijving:** Skin renewal with laser, for pores, texture and smoother skin. At Diba Clinics in Rotterdam.
 
@@ -31960,7 +31960,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/fotona-scar-repair
 
-**Tabbladtitel:** Fotona Scar Repair | Diba Clinics
+**Tabbladtitel:** Fotona Scar Repair: laser on scars and stretch marks | Diba Clinics
 
 **Google-omschrijving:** Laser on scars: acne scars, surgical scars and stretch marks. Rate € 195, 30 minutes. At Diba Clinics in Rotterdam.
 
@@ -32118,7 +32118,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/frac3
 
-**Tabbladtitel:** FRAC3 | Diba Clinics
+**Tabbladtitel:** FRAC3: fractional laser for texture | Diba Clinics
 
 **Google-omschrijving:** A fractional laser that goes deeper, for texture, pores and irregularities. At Diba Clinics in Rotterdam.
 
@@ -32268,7 +32268,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/full-face-brushing
 
-**Tabbladtitel:** Full Face Brushing | Diba Clinics
+**Tabbladtitel:** Full Face Brushing: a light laser pass | Diba Clinics
 
 **Google-omschrijving:** A light laser pass across the whole face. Fresher skin without taking time out. Rate € 170, 60 minutes. At Diba Clinics in Rotterdam.
 
@@ -32364,7 +32364,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/hairestart
 
-**Tabbladtitel:** HAIRestart | Diba Clinics
+**Tabbladtitel:** HAIRestart: laser for thinning hair | Diba Clinics
 
 **Google-omschrijving:** Laser on the scalp for early hair thinning. At Diba Clinics in Rotterdam.
 
@@ -32512,7 +32512,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/happy-intim
 
-**Tabbladtitel:** Happy Intim | Diba Clinics
+**Tabbladtitel:** Happy Intim: peels for the intimate area | Diba Clinics
 
 **Google-omschrijving:** Peels that make pigment in the intimate area and underarms lighter and more even. From € 175, 30 minutes. At Diba Clinics in Rotterdam.
 
@@ -32666,7 +32666,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/herbal-peel
 
-**Tabbladtitel:** Herbal peel | Diba Clinics
+**Tabbladtitel:** Herbal peel: ground herbs, no acid | Diba Clinics
 
 **Google-omschrijving:** A peel of finely ground herbs, without acid. It calms the inflammation and works against bacteria. From € 150, 60 minutes. At Diba Clinics in Rotterdam.
 
@@ -32784,7 +32784,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/hydrafacial
 
-**Tabbladtitel:** HydraFacial | Diba Clinics
+**Tabbladtitel:** HydraFacial: cleansing, exfoliation, hydration | Diba Clinics
 
 **Google-omschrijving:** Cleansing, exfoliation and hydration. In one pass, visible straight away and with no recovery time. From € 170, 60 minutes. At Diba Clinics in Rotterdam.
 
@@ -32936,7 +32936,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/laser-hair-removal
 
-**Tabbladtitel:** Laser hair removal | Diba Clinics
+**Tabbladtitel:** Laser hair removal: switching off the hair root | Diba Clinics
 
 **Google-omschrijving:** Switching off the hair root. Per area or as a package, for women and men. Rate € 20, 30 minutes. At Diba Clinics in Rotterdam.
 
@@ -33080,7 +33080,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/led-therapy
 
-**Tabbladtitel:** LED therapy | Diba Clinics
+**Tabbladtitel:** LED therapy: light that calms the skin | Diba Clinics
 
 **Google-omschrijving:** Light that calms the skin. In several wavelengths, without needles or acids. Rate € 30, 15 minutes. At Diba Clinics in Rotterdam.
 
@@ -33320,7 +33320,7 @@ Everything above applies to this concern in general. What is going on with you a
 
 ### /en/treatments/liplase
 
-**Tabbladtitel:** LipLase | Diba Clinics
+**Tabbladtitel:** LipLase: fuller lips without filler | Diba Clinics
 
 **Google-omschrijving:** Fuller, smoother lips without filler, with laser from inside and out. From € 150, 45 minutes. At Diba Clinics in Rotterdam.
 
@@ -33480,7 +33480,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/nightlase
 
-**Tabbladtitel:** NightLase | Diba Clinics
+**Tabbladtitel:** NightLase: laser against snoring | Diba Clinics
 
 **Google-omschrijving:** Laser against snoring. The soft palate becomes firmer, with no surgery and no mouthguard. At Diba Clinics in Rotterdam.
 
@@ -33600,7 +33600,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/nordlys-pigmentation
 
-**Tabbladtitel:** Nordlys IPL for pigmentation | Diba Clinics
+**Tabbladtitel:** Nordlys IPL for pigmentation: light on pigment spots | Diba Clinics
 
 **Google-omschrijving:** Light on pigmentation and sun damage. The pigment first comes to the surface and then fades. From € 75, 30 minutes. At Diba Clinics in Rotterdam.
 
@@ -34126,7 +34126,7 @@ Everything above applies to this concern in general. What is going on with you a
 
 ### /en/treatments/oxygeneo
 
-**Tabbladtitel:** OxyGeneo glow | Diba Clinics
+**Tabbladtitel:** OxyGeneo glow: exfoliation and oxygen | Diba Clinics
 
 **Google-omschrijving:** Exfoliating and bringing oxygen into the skin, in one treatment. Rate € 150, 60 minutes. At Diba Clinics in Rotterdam.
 
@@ -34282,7 +34282,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/peels
 
-**Tabbladtitel:** Medical peels | Diba Clinics
+**Tabbladtitel:** Medical peels: from light to strong | Diba Clinics
 
 **Google-omschrijving:** From light to strong. The strength decides how deep it goes and how much you flake. From € 140, 60 minutes. At Diba Clinics in Rotterdam.
 
@@ -34688,7 +34688,7 @@ Everything above applies to this concern in general. What is going on with you a
 
 ### /en/treatments/piano
 
-**Tabbladtitel:** PIANO skin tightening | Diba Clinics
+**Tabbladtitel:** PIANO skin tightening: firms the jawline and neck | Diba Clinics
 
 **Google-omschrijving:** Deep, even heating to firm the face, jawline and neck. At Diba Clinics in Rotterdam.
 
@@ -34840,7 +34840,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/rrs-eyes
 
-**Tabbladtitel:** RRS Eyes | Diba Clinics
+**Tabbladtitel:** RRS Eyes: active ingredients around the eye | Diba Clinics
 
 **Google-omschrijving:** Active ingredients around the eye contour. For dark circles, fine lines and a tired look. From € 130, 30 minutes. At Diba Clinics in Rotterdam.
 
@@ -34976,7 +34976,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/rrs-hyalift
 
-**Tabbladtitel:** RRS Hyalift | Diba Clinics
+**Tabbladtitel:** RRS Hyalift: hyaluronic acid and vitamins | Diba Clinics
 
 **Google-omschrijving:** Bringing hyaluronic acid and vitamins into the skin. For firmness and moisture, not for volume. From € 175, 60 minutes. At Diba Clinics in Rotterdam.
 
@@ -35096,7 +35096,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/scar-therapy
 
-**Tabbladtitel:** Scar therapy | Diba Clinics
+**Tabbladtitel:** Scar therapy: after surgery or a caesarean | Diba Clinics
 
 **Google-omschrijving:** For scars after surgery or a caesarean. The price follows the length of the scar. From € 100, 30 minutes. At Diba Clinics in Rotterdam.
 
@@ -35590,7 +35590,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/skinpen
 
-**Tabbladtitel:** Microneedling with the SkinPen | Diba Clinics
+**Tabbladtitel:** Microneedling with the SkinPen: medically certified | Diba Clinics
 
 **Google-omschrijving:** Medically certified microneedling. It works on the layer where the structure of your skin sits. From € 180, 60 minutes. At Diba Clinics in Rotterdam.
 
@@ -36174,7 +36174,7 @@ Everything above applies to this concern in general. What is going on with you a
 
 ### /en/treatments/smootheye
 
-**Tabbladtitel:** SmoothEye | Diba Clinics
+**Tabbladtitel:** SmoothEye: laser around the eye contour | Diba Clinics
 
 **Google-omschrijving:** Laser around the eye contour, for crow's feet and fine lines. From € 150, 60 minutes. At Diba Clinics in Rotterdam.
 
@@ -36342,7 +36342,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/smoothliftin
 
-**Tabbladtitel:** SmoothLiftin | Diba Clinics
+**Tabbladtitel:** SmoothLiftin: collagen from the inside | Diba Clinics
 
 **Google-omschrijving:** Collagen stimulation from the inside, through the lining of your cheek. At Diba Clinics in Rotterdam.
 
@@ -36494,7 +36494,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/superficial-peel
 
-**Tabbladtitel:** SupErficial laser peel | Diba Clinics
+**Tabbladtitel:** SupErficial laser peel: a superficial laser peel | Diba Clinics
 
 **Google-omschrijving:** A superficial laser peel for smoother skin and more shine. At Diba Clinics in Rotterdam.
 
@@ -36654,7 +36654,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/vectorlift
 
-**Tabbladtitel:** VectorLift | Diba Clinics
+**Tabbladtitel:** VectorLift: a brow lift without needles | Diba Clinics
 
 **Google-omschrijving:** A laser brow lift and firming of the forehead, without needles. From € 150, 45 minutes. At Diba Clinics in Rotterdam.
 
@@ -36818,7 +36818,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/xl-hair
 
-**Tabbladtitel:** XL Hair | Diba Clinics
+**Tabbladtitel:** XL Hair: against hair loss | Diba Clinics
 
 **Google-omschrijving:** Against hair loss and thinning hair. A programme of months, tuned to your scalp. From € 800, 30 minutes. At Diba Clinics in Rotterdam.
 
@@ -36968,7 +36968,7 @@ The therapist looks at your skin, measures with the EVE-M and establishes what s
 
 ### /en/treatments/youth-acne-programme
 
-**Tabbladtitel:** Teen acne programme | Diba Clinics
+**Tabbladtitel:** Teen acne programme: three months, for teenagers | Diba Clinics
 
 **Google-omschrijving:** A guided three-month programme, set up for young people up to and including eighteen. Rate € 297, 60 minutes. At Diba Clinics in Rotterdam.
 
@@ -37378,11 +37378,11 @@ No. Vienes justamente para que te asesoremos. Vemos juntos qué encaja con tu pi
 
 ¿Cuánto cuesta una primera cita?
 
-Alleen een intake met behandeladvies kost 50 euro en duurt dertig minuten. Boek je een behandeling op advies, dan reserveren we twee uur als je nieuw bent en een uur als je al klant bent; het bedrag van de intake vervalt zodra we behandelen.
+Una consulta previa sola con consejo de tratamiento cuesta 50 euros y dura treinta minutos. Si reservas un tratamiento con asesoramiento, reservamos dos horas si es tu primera vez y una hora si ya eres cliente; el importe de la consulta previa no se cobra en cuanto tratamos.
 
 ¿Puedo reservar solo la primera consulta?
 
-Ja, en dat is een van de twee manieren om te beginnen als je nog niet weet wat je nodig hebt. Het huidconsult duurt dertig minuten: meten, uitleg en een plan dat je mee naar huis krijgt. De andere manier is een behandeling op advies, waarin we in dezelfde afspraak ook behandelen als dat kan. Je beslist zelf welke van de twee.
+Sí, y es una de las dos formas de empezar cuando todavía no sabes qué necesitas. La consulta de la piel dura treinta minutos: medir, explicación y un plan que te llevas a casa. La otra forma es un tratamiento con asesoramiento, en el que en la misma cita también tratamos si se puede. Tú decides cuál de las dos.
 
 ¿Siempre hace falta un análisis de piel?
 
@@ -37390,9 +37390,9 @@ No siempre. Cuando un escáner de la piel aporta algo, te explicamos qué medimo
 
 **Pide una primera consulta con nosotros en Rotterdam.**
 
-Wil je alleen advies, dan duurt de afspraak dertig minuten en kost hij 50 euro. Boek je een behandeling op advies, dan reserveren we twee uur als je nieuw bent en een uur als je al klant bent; het bedrag van de intake vervalt zodra we behandelen.
+Si solo quieres consejo, la cita dura treinta minutos y cuesta 50 euros. Si reservas un tratamiento con asesoramiento, reservamos dos horas si es tu primera vez y una hora si ya eres cliente; el importe de la consulta previa no se cobra en cuanto tratamos.
 
-Clínica de la piel en Rotterdam , desde 2017. Acné, pigmentación, cicatrices, mejora de la piel y vello no deseado, por terapeutas de piel que primero miden y solo después tratan.
+Clínica de la piel en Rotterdam, desde 2017. Acné, pigmentación, cicatrices, mejora de la piel y vello no deseado, por terapeutas de piel que primero miden y solo después tratan.
 
 - WEISSENBRUCHLAAN 166, ROTTERDAM
 
@@ -37418,35 +37418,37 @@ MIEMBROS DE Y REGISTRADOS EN
 
 **Google-omschrijving:** Bij welke registers Diba Clinics, de huidtherapeuten en de schoonheidsspecialisten zijn aangesloten, wat die registratie inhoudt en hoe een klacht loopt.
 
-**KWALITEIT EN REGISTRATIES**
+**CALIDAD Y REGISTROS**
 
-Onze huidtherapeuten staan in het Kwaliteitsregister Paramedici en zijn lid van de beroepsvereniging. De kliniek is aangesloten bij ANBOS en gecontracteerd bij alle zorgverzekeraars.
+Nuestras terapeutas de la piel figuran en el Registro de Calidad de Paramédicos y son miembros de la asociación profesional. La clínica está afiliada a ANBOS y tiene contrato con todas las aseguradoras.
 
-Hieronder staat per register wat het inhoudt en hoe je het zelf kunt nakijken.
+Abajo pone por registro lo que implica y cómo puedes comprobarlo tú.
 
-**Seis cosas die je kunt nakijken**
+**Seis cosas que puedes comprobar**
 
-- ONZE HUIDTHERAPEUTEN Nederlandse Vereniging van Huidtherapeuten De beroepsvereniging van huidtherapeuten. Wie lid is, moet geregistreerd staan in het Kwaliteitsregister Paramedici; het een kan niet zonder het ander. Een beroepsvereniging schrijft de beroepscode en de richtlijnen waaraan een huidtherapeut zich te houden heeft. Dat is een norm van buiten de kliniek. WIE ER WERKT EN MET WELKE TITEL ›
+- NUESTRAS TERAPEUTAS DE LA PIEL Asociación Neerlandesa de Terapeutas de la Piel (NVH) La asociación profesional de las terapeutas de la piel. Quien es miembro tiene que estar inscrito en el Registro de Calidad de Paramédicos; lo uno no va sin lo otro. Una asociación profesional escribe el código deontológico y las directrices a las que una terapeuta de la piel tiene que atenerse. Es una norma de fuera de la clínica. QUIÉN TRABAJA AQUÍ Y CON QUÉ TÍTULO ›
 
-- ONZE HUIDTHERAPEUTEN Kwaliteitsregister Paramedici Het register is vrijwillig en de drempel is echt: opnieuw registreren elke vijf jaar, en daarvoor minstens 1600 werkuren over minimaal 36 maanden aantonen plus 160 punten bijscholing. Huidtherapeut is een beschermde titel (artikel 34 van de Wet BIG). De titel zegt dat iemand de opleiding heeft gedaan; het register zegt dat iemand het vak ook echt uitoefent en bijhoudt. VERGOEDING PER VERZEKERAAR ›
+- NUESTRAS TERAPEUTAS DE LA PIEL Registro de Calidad de Paramédicos (Kwaliteitsregister Paramedici) El registro es voluntario y el listón es real: volver a inscribirse cada cinco años, y para ello demostrar al menos 1600 horas de trabajo en un mínimo de 36 meses más 160 puntos de formación continua. Terapeuta de la piel es un título protegido (artículo 34 de la Wet BIG). El título dice que alguien ha hecho la formación; el registro dice que alguien ejerce de verdad la profesión y se mantiene al día. REEMBOLSO POR ASEGURADORA ›
 
-- DE KLINIEK EN ONZE SCHOONHEIDSSPECIALISTEN ANBOS De brancheorganisatie voor schoonheidsspecialisten. Aangesloten salons werken volgens de gedragscode en de hygiënerichtlijnen van de branche, en vallen onder de ANBOS-klachtenregeling. Het deel van ons werk dat niet paramedisch is, valt hieronder. Ook daar hoort een norm bij die iemand anders dan wijzelf heeft opgeschreven, en een klachtroute die niet bij ons ophoudt. HOE EEN KLACHT LOOPT ›
+- LA CLÍNICA Y NUESTRAS ESTETICISTAS ANBOS La organización del sector de las esteticistas. Los salones afiliados trabajan según el código de conducta y las normas de higiene del sector, y están sujetos al procedimiento de reclamaciones de ANBOS. La parte de nuestro trabajo que no es paramédica entra aquí. También ahí hay una norma escrita por alguien que no somos nosotros, y una vía de reclamación que no termina en nosotros. CÓMO VA UNA RECLAMACIÓN ›
 
-- ONZE SCHOONHEIDSSPECIALISTEN SKIN Register Het kwaliteitsregister voor schoonheidsspecialisten. Het registreert mensen, geen salons: elke schoonheidsspecialist staat er op eigen naam in. Schoonheidsspecialist is geen beschermde titel. Het register is de manier om te zien dat iemand het vak geleerd heeft en het bijhoudt. WIE ER WERKT EN MET WELKE TITEL ›
+- NUESTRAS ESTETICISTAS SKIN Register El registro de calidad de las esteticistas. Registra personas, no salones: cada esteticista figura en él con su propio nombre. Esteticista no es un título protegido. El registro es la forma de ver que alguien ha aprendido el oficio y se mantiene al día. QUIÉN TRABAJA AQUÍ Y CON QUÉ TÍTULO ›
 
-- LA CLÍNICA Gecontracteerd bij alle zorgverzekeraars Er is een contract met alle Nederlandse zorgverzekeraars. Dat betekent niet dat alles vergoed wordt: wat je terugkrijgt hangt af van je aanvullende polis en van de indicatie. Het scheelt je het gedoe van voorschieten en declareren op de behandelingen die wél onder je polis vallen. VERGOEDING PER VERZEKERAAR ›
+- LA CLÍNICA Con contrato con todas las aseguradoras Hay contrato con todas las aseguradoras de salud neerlandesas. Eso no significa que todo se reembolse: lo que recuperas depende de tu póliza complementaria y de la indicación. Te ahorra la molestia de adelantar el dinero y reclamar en los tratamientos que sí entran en tu póliza. REEMBOLSO POR ASEGURADORA ›
 
-- LA CLÍNICA ZorgkaartNederland De onafhankelijke waarderingssite van Patiëntenfederatie Nederland. Patiënten beoordelen er zorgaanbieders; wij kunnen die waarderingen niet plaatsen, aanpassen of weghalen. Een oordeel dat niet via ons loopt zegt meer dan een oordeel dat dat wel doet. Wij staan er met een 9,7, en dat cijfer kijk je daar zelf na. BEKIJK ONS OP ZORGKAARTNEDERLAND ↗
+- LA CLÍNICA ZorgkaartNederland La web de valoraciones independiente de la Patiëntenfederatie Nederland, la federación neerlandesa de pacientes. Los pacientes valoran ahí a los proveedores de salud; nosotros no podemos publicar, modificar ni quitar esas valoraciones. Una opinión que no pasa por nosotros dice más que una que sí. Estamos ahí con un 9,7, y esa cifra la compruebas tú allí. MÍRANOS EN ZORGKAARTNEDERLAND ↗
 
-**Wie staat waarin**
+**Quién figura en qué registro**
 
-Bij Diba werken huidtherapeuten en schoonheidsspecialisten. Dat zijn twee vakken, elk met een eigen vereniging en een eigen register. Daarom staan er hierboven vier namen en niet twee.
+En Diba trabajan terapeutas de la piel y esteticistas. Son dos oficios, cada uno con su propia asociación y su propio registro. Por eso arriba hay cuatro nombres y no dos.
 
-Lid van de Nederlandse Vereniging van Huidtherapeuten en geregistreerd in het Kwaliteitsregister Paramedici. Voor NVH-leden is die registratie verplicht.
+*Terapeutas de la piel*
 
-*Schoonheidsspecialisten*
+Miembros de la Asociación Neerlandesa de Terapeutas de la Piel e inscritas en el Registro de Calidad de Paramédicos. Para los miembros de la NVH esa inscripción es obligatoria.
 
-Aangesloten bij ANBOS en op eigen naam geregistreerd in het SKIN Register, het kwaliteitsregister voor schoonheidsspecialisten.
+*Esteticistas*
+
+Afiliadas a ANBOS e inscritas con su propio nombre en el SKIN Register, el registro de calidad de las esteticistas.
 
 ---
 
@@ -37472,7 +37474,7 @@ Kosteloos, en je hoeft geen reden te geven.
 
 Boek je door, dan gaat het bedrag mee naar je volgende behandeling; er staat dan altijd een aanbetaling klaar. Stop je, of wil je online inplannen, dan krijg je hem terug.
 
-> knop: BEL 010-2038423
+> knop: LLAMA 010-2038423
 
 Je bekijkt deze pagina op localhost. Het script van Salonized wijst dan naar hun eigen ontwikkelmachine, dus de agenda blijft hier leeg. Open dezelfde pagina via 127.0.0.1 of op het echte domein om hem te zien.
 
@@ -37488,37 +37490,37 @@ Weet je nog niet welke behandeling je nodig hebt, dan begin je met een van deze 
 
 Het kan gebeuren. Dit geldt er dan, zodat je het weet voordat je boekt.
 
-*Je zegt op tijd af of verzet*
+*Cancelas o cambias la cita a tiempo*
 
-Niets. Je aanbetaling vervalt niet en gaat mee naar de nieuwe afspraak.
+Nada. Tu depósito no se pierde y pasa a la nueva cita.
 
-*Je zegt te laat af of komt niet*
+*Cancelas demasiado tarde o no vienes*
 
-Alleen de aanbetaling. Niet het volledige tarief en ook geen percentage van de gereserveerde behandeling.
+Solo el depósito. Ni la tarifa completa ni un porcentaje del tratamiento reservado.
 
-*Je bent te laat*
+*Llegas tarde*
 
-Bij inkorten geldt de volledige behandelprijs, want de tijd was voor jou gereserveerd. Moet de afspraak verzet worden, dan vervalt de aanbetaling.
+Si se acorta, se aplica el precio completo del tratamiento, porque el tiempo estaba reservado para ti. Si hay que cambiar la cita, se pierde el depósito.
 
-*Wij moeten afzeggen*
+*Nosotros tenemos que cancelar*
 
-Niets. Je aanbetaling blijft staan voor de nieuwe afspraak of je krijgt hem terug.
+Nada. Tu depósito se mantiene para la nueva cita o te lo devolvemos.
 
-*Je koopt een traject vooruit*
+*Compras un programa por adelantado*
 
-Niet gebruikte sessies kun je binnen die termijn inplannen of laten terugbetalen.
+Las sesiones no usadas puedes programarlas dentro de ese plazo o pedir que te las devuelvan.
 
-*Wanneer je betaalt*
+*Cuándo pagas*
 
-Het bedrag dat vooraf op de site stond. Nooit meer dan dat.
+El importe que estaba en la web de antemano. Nunca más que eso.
 
-*Je bent niet tevreden*
+*No estás conforme*
 
-Niets om het te bespreken.
+Nada por hablarlo.
 
-Verzetten of afzeggen doe je het snelst telefonisch. Alles staat voluit in de algemene voorwaarden.
+Verzetten of afzeggen doe je het snelst telefonisch. Alles staat voluit in de condiciones generales.
 
-**Onze openingstijden**
+**Nuestros openingstijden**
 
 Binnen die tijden staat niet elk uur een therapeut vrij. Wat je in de agenda kunt aanklikken is wat er echt open is.
 
@@ -37540,59 +37542,59 @@ Binnen die tijden staat niet elk uur een therapeut vrij. Wat je in de agenda kun
 
 ### /es/condiciones
 
-**Tabbladtitel:** Algemene voorwaarden | Diba Clinics
+**Tabbladtitel:** Condiciones generales | Diba Clinics
 
 **Google-omschrijving:** Wat er gebeurt als je afzegt, te laat bent, of als een behandeling niet door kan gaan. Per situatie wat het kost en waarom de regel er is.
 
-**ALGEMENE VOORWAARDEN**
+**CONDICIONES GENERALES**
 
-Je komt hier waarschijnlijk omdat er iets aan de hand is. Je moet afzeggen, je bent te laat, of je hebt een bedrag gezien dat je niet verwachtte. Daarom staan hieronder situaties en geen artikelen.
+Probablemente estás aquí porque pasa algo. Tienes que cancelar, llegas tarde, o has visto un importe que no esperabas. Por eso abajo hay situaciones y no artículos.
 
-Bij elke situatie staat wat het kost en waarom de regel er is. Dat laatste is het verschil tussen een voorwaarde en een boete.
+En cada situación pone lo que cuesta y por qué existe la regla. Esto último es la diferencia entre una condición y una multa.
 
 > knop: Sigue leyendo
 
-Tot 48 uur van tevoren afzeggen kost je niets, en je hoeft geen reden te geven.
+Hasta 48 horas antes, cancelar no te cuesta nada, y no tienes que dar ningún motivo.
 
-Daarna wordt een deel van het tarief in rekening gebracht, omdat de plek dan niet meer op te vullen is. Alle andere regels op deze pagina zijn varianten op die ene.
+Después se cobra una parte de la tarifa, porque el hueco ya no se puede volver a llenar. Todas las demás reglas de esta página son variantes de esa.
 
-**Wat een behandeling kost**
+**Lo que un tratamiento cuesta**
 
-- Je zegt op tijd af of verzet Tot 48 uur voor je afspraak kun je afzeggen of verzetten, telefonisch of per bericht. Je hoeft geen reden te geven. LO QUE CUESTA Niets. Je aanbetaling vervalt niet en gaat mee naar de nieuwe afspraak. WAAROM DEZE REGEL Binnen 48 uur lukt het meestal nog om de plek aan iemand anders te geven. Daarbuiten niet, en dat is het enige verschil tussen deze regel en de volgende.
+- Cancelas o cambias la cita a tiempo Hasta 48 horas antes de tu cita puedes cancelar o cambiarla, por teléfono o por mensaje. No tienes que dar ningún motivo. LO QUE CUESTA Nada. Tu depósito no se pierde y pasa a la nueva cita. POR QUÉ ESTA REGLA Dentro de 48 horas normalmente aún se puede dar el hueco a otra persona. Después no, y esa es la única diferencia entre esta regla y la siguiente.
 
-- Je zegt te laat af of komt niet Zeg je minder dan 48 uur voor je afspraak af, of kom je zonder bericht niet opdagen, dan vervalt je aanbetaling. Voor een nieuwe afspraak vragen we opnieuw een aanbetaling. LO QUE CUESTA Alleen de aanbetaling. Niet het volledige tarief en ook geen percentage van de gereserveerde behandeling. WAAROM DEZE REGEL De tijd was gereserveerd en de behandelaar stond klaar. Het blijft bij de aanbetaling omdat het doel is dat een plek niet leeg blijft, en niet dat er verdiend wordt aan iemand die er niet was.
+- Cancelas demasiado tarde o no vienes Si cancelas menos de 48 horas antes de tu cita, o no te presentas sin avisar, pierdes el depósito. Para una nueva cita pedimos de nuevo un depósito. LO QUE CUESTA Solo el depósito. Ni la tarifa completa ni un porcentaje del tratamiento reservado. POR QUÉ ESTA REGLA El tiempo estaba reservado y la terapeuta estaba lista. Se queda en el depósito porque el objetivo es que un hueco no quede vacío, y no ganar dinero con alguien que no estuvo.
 
-- Je bent te laat Kom je meer dan 15 minuten te laat, dan past de behandeling misschien niet meer veilig in de gereserveerde tijd. Kan het verantwoord, dan korten we hem in; kan het niet, dan verzetten we de afspraak. LO QUE CUESTA Bij inkorten geldt de volledige behandelprijs, want de tijd was voor jou gereserveerd. Moet de afspraak verzet worden, dan vervalt de aanbetaling. WAAROM DEZE REGEL De afspraak erna schuift anders mee, en dan is iemand anders de dupe van iets waar diegene niets aan kan doen. Half behandelen omdat de klok het zegt is de andere optie, en die is slechter.
+- Llegas tarde Si llegas más de 15 minutos tarde, puede que el tratamiento ya no quepa con seguridad en el tiempo reservado. Si se puede hacer de forma responsable, lo acortamos; si no, cambiamos la cita. LO QUE CUESTA Si se acorta, se aplica el precio completo del tratamiento, porque el tiempo estaba reservado para ti. Si hay que cambiar la cita, se pierde el depósito. POR QUÉ ESTA REGLA Si no, la cita siguiente se retrasa, y entonces otra persona paga por algo en lo que no tuvo parte. Tratar a medias porque lo dice el reloj es la otra opción, y es peor.
 
-- Wij moeten afzeggen Kan een afspraak van onze kant niet doorgaan, dan hoor je dat zo snel als we het zelf weten en zoeken we samen een nieuwe datum. LO QUE CUESTA Niets. Je aanbetaling blijft staan voor de nieuwe afspraak of je krijgt hem terug. WAAROM DEZE REGEL Dezelfde regel als hierboven, maar dan onze kant op. Een voorwaarde die maar één richting op werkt is geen afspraak.
+- Nosotros tenemos que cancelar Si una cita no puede seguir adelante por nuestra parte, lo sabes en cuanto lo sabemos nosotros y buscamos juntos una fecha nueva. LO QUE CUESTA Nada. Tu depósito se mantiene para la nueva cita o te lo devolvemos. POR QUÉ ESTA REGLA La misma regla que arriba, pero en nuestra dirección. Una condición que solo funciona en un sentido no es un acuerdo.
 
-- Je koopt een traject vooruit Vooruitbetaalde sessies blijven 12 maanden geldig vanaf de aankoopdatum. LO QUE CUESTA Niet gebruikte sessies kun je binnen die termijn inplannen of laten terugbetalen. WAAROM DEZE REGEL De tussenpozen hebben invloed op het resultaat, dus een traject is bedoeld om volgens de planning te doorlopen. De termijn ondersteunt dat en is er niet om sessies te laten verlopen.
+- Compras un programa por adelantado Las sesiones pagadas por adelantado siguen siendo válidas 12 meses desde la fecha de compra. LO QUE CUESTA Las sesiones no usadas puedes programarlas dentro de ese plazo o pedir que te las devuelvan. POR QUÉ ESTA REGLA Los intervalos influyen en el resultado, así que un programa está pensado para seguirse según lo planificado. El plazo apoya eso y no está para que caduquen sesiones.
 
-- Wanneer je betaalt Je betaalt direct in de kliniek. De aanbetaling die je bij het maken van de afspraak deed, wordt met het totaalbedrag verrekend. LO QUE CUESTA Het bedrag dat vooraf op de site stond. Nooit meer dan dat. WAAROM DEZE REGEL Alle tarieven staan openbaar, per sessie en per zone. Wat je betaalt is wat er stond, en aan de balie komt er niets bij.
+- Cuándo pagas Pagas directamente en la clínica. El depósito que hiciste al pedir la cita se descuenta del importe total. LO QUE CUESTA El importe que estaba en la web de antemano. Nunca más que eso. POR QUÉ ESTA REGLA Todas las tarifas son públicas, por sesión y por zona. Lo que pagas es lo que ponía, y en recepción no se añade nada.
 
-- Je bent niet tevreden Laat het weten, het liefst zo snel mogelijk. We kijken samen wat er is gebeurd en wat een passende vervolgstap is. LO QUE CUESTA Niets om het te bespreken. WAAROM DEZE REGEL Resultaat garanderen kan niemand eerlijk. Wat we wel doen is onze uitleg, onze afspraken en onze verantwoordelijkheid serieus nemen. Klopt er iets niet aan wat je vooraf is verteld, dan is dat onze fout en handelen we het ook zo af.
+- No estás conforme Dinos, preferiblemente lo antes posible. Miramos juntos qué ha pasado y cuál es el siguiente paso adecuado. LO QUE CUESTA Nada por hablarlo. POR QUÉ ESTA REGLA Garantizar un resultado no lo puede hacer nadie con honestidad. Lo que sí hacemos es tomarnos en serio nuestra explicación, nuestros acuerdos y nuestra responsabilidad. Si algo de lo que te dijeron de antemano no es correcto, es un error nuestro y lo resolvemos como tal.
 
-**Tres cosas que nooit veranderen.**
+**Tres cosas que nunca cambian.**
 
-Dit zijn geen bepalingen maar toezeggingen. Ze staan hier zodat ze ook meetellen wanneer je de voorwaarden erbij pakt.
+No son cláusulas sino compromisos. Están aquí para que cuenten también cuando saques las condiciones.
 
-- De prijs op de site is de prijs Alle tarieven staan openbaar, per sessie en per variant. Er bestaan geen kortingen, actiecodes of tijdelijke aanbiedingen, dus er is ook nooit een moment waarop je te vroeg of te laat was.
+- El precio de la web es el precio Todas las tarifas son públicas, por sesión y por variante. No hay descuentos, códigos promocionales ni ofertas temporales, así que nunca hay un momento en el que llegaste demasiado pronto o demasiado tarde.
 
-- Geen resultaat wordt gegarandeerd Hoe je huid reageert verschilt per persoon. Wat we wel doen is vooraf meten, zodat er achteraf iets te vergelijken valt in plaats van iets te vinden.
+- No se garantiza ningún resultado Cómo reacciona tu piel varía de una persona a otra. Lo que sí hacemos es medir de antemano, para que después haya algo que comparar en lugar de una sensación.
 
-- Nee zeggen mag, van beide kanten Past een behandeling niet bij je huid of bij het moment, dan gaat hij niet door. Dat kan ook op de dag zelf blijken, en dan kost hij je niets.
+- Decir que no está permitido, por las dos partes Si un tratamiento no encaja con tu piel o con el momento, no se hace. Eso también puede verse el mismo día, y entonces no te cuesta nada.
 
-**Wat hier nog niet staat.**
+**Lo que aquí todavía no está.**
 
-Een paragraaf over aansprakelijkheid. Die formulering is juridisch werk en hoort van een jurist te komen, niet van ons. Zolang hij er niet staat, doen we er ook geen halve uitspraak over: dan weet je tenminste dat hij ontbreekt in plaats van dat je iets leest waar je niets aan heeft.
+Un apartado sobre responsabilidad. Esa redacción es trabajo jurídico y debe venir de un jurista, no de nosotros. Mientras no esté, tampoco decimos nada a medias al respecto: así al menos sabes que falta, en lugar de leer algo que no te sirve.
 
-Ook de termijnen en bedragen op deze pagina zijn in deze versie nog een voorstel. Wat er bij je afspraak is afgesproken en op je bevestiging staat, gaat voor op wat hier staat.
+También los plazos y los importes de esta página son todavía una propuesta en esta versión. Lo acordado en tu cita y lo que pone en tu confirmación prevalece sobre lo que está aquí.
 
-Heb je een vraag over deze voorwaarden, stel hem dan gewoon. Diba Clinics is bereikbaar op 010-2038423 en via WhatsApp.
+Si tienes una pregunta sobre estas condiciones, hazla sin más. Diba Clinics se puede contactar en el 010-2038423 y por WhatsApp.
 
-> knop: BEL 010-2038423
+> knop: LLAMA 010-2038423
 
-Zie ook het privacybeleid en het cookiebeleid.
+Consulta también la política de privacidad y la política de cookies.
 
 ---
 
@@ -37608,7 +37610,7 @@ Bel ons, stuur een bericht of vul het formulier hieronder in. Wil je een afspraa
 
 - LLAMAR 010-2038423
 
-- WHATSAPP Stuur een bericht
+- WHATSAPP Envía un mensaje
 
 - E-MAIL info@dibaclinics.nl
 
@@ -37680,21 +37682,21 @@ WANNEER JE ANTWOORD HEBT Meteen. Je kiest zelf een moment en de bevestiging komt
 
 Bel je hierover, dan hoor je dit. Het staat hier zodat je vooraf weet wat het kost in plaats van achteraf.
 
-- Je zegt op tijd af of verzet Tot 48 uur voor je afspraak kun je afzeggen of verzetten, telefonisch of per bericht. Je hoeft geen reden te geven. LO QUE CUESTA Niets. Je aanbetaling vervalt niet en gaat mee naar de nieuwe afspraak. Binnen 48 uur lukt het meestal nog om de plek aan iemand anders te geven. Daarbuiten niet, en dat is het enige verschil tussen deze regel en de volgende.
+- Cancelas o cambias la cita a tiempo Hasta 48 horas antes de tu cita puedes cancelar o cambiarla, por teléfono o por mensaje. No tienes que dar ningún motivo. LO QUE CUESTA Nada. Tu depósito no se pierde y pasa a la nueva cita. Dentro de 48 horas normalmente aún se puede dar el hueco a otra persona. Después no, y esa es la única diferencia entre esta regla y la siguiente.
 
-- Je zegt te laat af of komt niet Zeg je minder dan 48 uur voor je afspraak af, of kom je zonder bericht niet opdagen, dan vervalt je aanbetaling. Voor een nieuwe afspraak vragen we opnieuw een aanbetaling. LO QUE CUESTA Alleen de aanbetaling. Niet het volledige tarief en ook geen percentage van de gereserveerde behandeling. De tijd was gereserveerd en de behandelaar stond klaar. Het blijft bij de aanbetaling omdat het doel is dat een plek niet leeg blijft, en niet dat er verdiend wordt aan iemand die er niet was.
+- Cancelas demasiado tarde o no vienes Si cancelas menos de 48 horas antes de tu cita, o no te presentas sin avisar, pierdes el depósito. Para una nueva cita pedimos de nuevo un depósito. LO QUE CUESTA Solo el depósito. Ni la tarifa completa ni un porcentaje del tratamiento reservado. El tiempo estaba reservado y la terapeuta estaba lista. Se queda en el depósito porque el objetivo es que un hueco no quede vacío, y no ganar dinero con alguien que no estuvo.
 
-- Je bent te laat Kom je meer dan 15 minuten te laat, dan past de behandeling misschien niet meer veilig in de gereserveerde tijd. Kan het verantwoord, dan korten we hem in; kan het niet, dan verzetten we de afspraak. LO QUE CUESTA Bij inkorten geldt de volledige behandelprijs, want de tijd was voor jou gereserveerd. Moet de afspraak verzet worden, dan vervalt de aanbetaling. De afspraak erna schuift anders mee, en dan is iemand anders de dupe van iets waar diegene niets aan kan doen. Half behandelen omdat de klok het zegt is de andere optie, en die is slechter.
+- Llegas tarde Si llegas más de 15 minutos tarde, puede que el tratamiento ya no quepa con seguridad en el tiempo reservado. Si se puede hacer de forma responsable, lo acortamos; si no, cambiamos la cita. LO QUE CUESTA Si se acorta, se aplica el precio completo del tratamiento, porque el tiempo estaba reservado para ti. Si hay que cambiar la cita, se pierde el depósito. Si no, la cita siguiente se retrasa, y entonces otra persona paga por algo en lo que no tuvo parte. Tratar a medias porque lo dice el reloj es la otra opción, y es peor.
 
-- Wij moeten afzeggen Kan een afspraak van onze kant niet doorgaan, dan hoor je dat zo snel als we het zelf weten en zoeken we samen een nieuwe datum. LO QUE CUESTA Niets. Je aanbetaling blijft staan voor de nieuwe afspraak of je krijgt hem terug. Dezelfde regel als hierboven, maar dan onze kant op. Een voorwaarde die maar één richting op werkt is geen afspraak.
+- Nosotros tenemos que cancelar Si una cita no puede seguir adelante por nuestra parte, lo sabes en cuanto lo sabemos nosotros y buscamos juntos una fecha nueva. LO QUE CUESTA Nada. Tu depósito se mantiene para la nueva cita o te lo devolvemos. La misma regla que arriba, pero en nuestra dirección. Una condición que solo funciona en un sentido no es un acuerdo.
 
-- Je koopt een traject vooruit Vooruitbetaalde sessies blijven 12 maanden geldig vanaf de aankoopdatum. LO QUE CUESTA Niet gebruikte sessies kun je binnen die termijn inplannen of laten terugbetalen. De tussenpozen hebben invloed op het resultaat, dus een traject is bedoeld om volgens de planning te doorlopen. De termijn ondersteunt dat en is er niet om sessies te laten verlopen.
+- Compras un programa por adelantado Las sesiones pagadas por adelantado siguen siendo válidas 12 meses desde la fecha de compra. LO QUE CUESTA Las sesiones no usadas puedes programarlas dentro de ese plazo o pedir que te las devuelvan. Los intervalos influyen en el resultado, así que un programa está pensado para seguirse según lo planificado. El plazo apoya eso y no está para que caduquen sesiones.
 
-- Wanneer je betaalt Je betaalt direct in de kliniek. De aanbetaling die je bij het maken van de afspraak deed, wordt met het totaalbedrag verrekend. LO QUE CUESTA Het bedrag dat vooraf op de site stond. Nooit meer dan dat. Alle tarieven staan openbaar, per sessie en per zone. Wat je betaalt is wat er stond, en aan de balie komt er niets bij.
+- Cuándo pagas Pagas directamente en la clínica. El depósito que hiciste al pedir la cita se descuenta del importe total. LO QUE CUESTA El importe que estaba en la web de antemano. Nunca más que eso. Todas las tarifas son públicas, por sesión y por zona. Lo que pagas es lo que ponía, y en recepción no se añade nada.
 
-- Je bent niet tevreden Laat het weten, het liefst zo snel mogelijk. We kijken samen wat er is gebeurd en wat een passende vervolgstap is. LO QUE CUESTA Niets om het te bespreken. Resultaat garanderen kan niemand eerlijk. Wat we wel doen is onze uitleg, onze afspraken en onze verantwoordelijkheid serieus nemen. Klopt er iets niet aan wat je vooraf is verteld, dan is dat onze fout en handelen we het ook zo af.
+- No estás conforme Dinos, preferiblemente lo antes posible. Miramos juntos qué ha pasado y cuál es el siguiente paso adecuado. LO QUE CUESTA Nada por hablarlo. Garantizar un resultado no lo puede hacer nadie con honestidad. Lo que sí hacemos es tomarnos en serio nuestra explicación, nuestros acuerdos y nuestra responsabilidad. Si algo de lo que te dijeron de antemano no es correcto, es un error nuestro y lo resolvemos como tal.
 
-Deze vier staan voluit in de algemene voorwaarden, samen met wat er gebeurt als wij moeten afzeggen.
+Deze vier staan voluit in de condiciones generales, samen met wat er gebeurt als wij moeten afzeggen.
 
 **Aan de Weissenbruchlaan.**
 
@@ -37734,21 +37736,21 @@ BIJ BINNENKOMST
 
 **Google-omschrijving:** Mag ik morgen sporten, wanneer mag die retinol weer? Per behandeling een rooster met vanaf wanneer alles weer mag, en waarom.
 
-**MAG IK MORGEN WEER SPORTEN?**
+**¿MAÑANA PUEDO VOLVER A HACER DEPORTE?**
 
-Dat is de vraag die thuis op de bank gesteld wordt, en niet: hoe verloopt mijn eerste week. Dus staat het hier als rooster: per behandeling vanaf wanneer alles weer mag, met de reden erbij.
+Esa es la pregunta que se hace en casa en el sofá, y no: cómo va mi primera semana. Así que aquí está como horario: por tratamiento, desde cuándo se puede todo otra vez, con el motivo al lado.
 
-De meeste beperkingen duren een dag of korter. Op één na, en die springt er in elke kolom uit.
+La mayoría de las restricciones duran un día o menos. Salvo una, y esa destaca en todas las columnas.
 
-Wat je in de kliniek te horen hebt gekregen. Deze termijnen zijn richtlijnen; hoe snel jouw huid herstelt hangt af van de instelling die is gekozen en van hoe jij erop reageert.
+Lo que te han dicho en la clínica. Estos plazos son orientativos; lo rápido que se recupera tu piel depende de la configuración elegida y de cómo reaccionas tú.
 
-Twijfel je, bel dan. Dat is altijd goedkoper dan afwachten.
+Si dudas, llama. Siempre sale más barato que esperar.
 
-WAT JE MEEKRIJGT, EN WAAROM
+LO QUE TE LLEVAS, Y POR QUÉ
 
-**Wat mag wanneer weer.**
+**Qué se puede y desde cuándo.**
 
-Zoek je behandeling in de kolommen en je vraag in de rijen. Klik een vakje aan en je leest eronder waarom die termijn er is.
+Busca tu tratamiento en las columnas y tu pregunta en las filas. Haz clic en una casilla y debajo lees por qué existe ese plazo.
 
 ↔Schuif het rooster opzij om alles te zien
 
@@ -37772,51 +37774,51 @@ Zoek je behandeling in de kolommen en je vraag in de rijen. Klik een vakje aan e
 
 > knop: Na 3 días
 
-DE REDEN ERBIJ
+EL MOTIVO AL LADO
 
-Klik op een vakje. Dan lees je hier hoe lang je wacht, en waarom.
+Haz clic en una casilla. Entonces lees aquí cuánto esperas, y por qué.
 
-- Een dag of korter
+- Un día o menos
 
-- Tot een week
+- Hasta una semana
 
-- Langer dan een week
+- Más de una semana
 
-**Wanneer je moet bellen**
+**Cuándo tienes que llamar**
 
-Meestal is er niets aan de hand. Maar bij deze signalen bel je ons, ook zonder afspraak: dit horen we liever te vroeg dan te laat.
+Normalmente no pasa nada. Pero con estas señales nos llamas, también sin cita: esto preferimos oírlo demasiado pronto que demasiado tarde.
 
 > knop: 010-2038423
 
-- HydraFacial en gezichtsbehandeling Als de roodheid na een dag niet minder wordt
+- HydraFacial y tratamiento facial Si la rojez no baja después de un día
 
-- Medische peeling Bij blaren, of bij pijn die erger wordt in plaats van minder Als er na een week nog steeds niets is losgekomen en de huid strak blijft
+- Peeling médico Con ampollas, o con un dolor que va a más en lugar de a menos Si después de una semana todavía no se ha desprendido nada y la piel sigue tirante
 
-- Microneedling Bij zwelling die na twee dagen toeneemt Bij plekken die geel worden of gaan lekken Bij koorts, hoe licht ook
+- Microneedling Con una hinchazón que aumenta después de dos días Con zonas que se ponen amarillas o empiezan a supurar Con fiebre, por leve que sea
 
-- Depilación láser Bij blaren of korstjes; dat hoort niet bij een goed ingestelde behandeling Als de roodheid na twee dagen niet weg is Als je merkt dat je huid donkerder wordt op de behandelde plek
+- Depilación láser Con ampollas o costras; eso no forma parte de un tratamiento bien configurado Si la rojez no ha desaparecido después de dos días Si notas que tu piel se oscurece en la zona tratada
 
-- Pigmenttraject Bij nieuwe vlekken op plekken die niet behandeld zijn Als je onverwacht toch in de volle zon bent geweest
+- Programa de pigmento Con manchas nuevas en zonas que no se han tratado Si al final has estado sin querer a pleno sol
 
-**Wat je de eerste uren gaat merken.**
+**Lo que vas a notar las primeras horas.**
 
-Bij elke behandeling hoort iets wat je thuis ziet of voelt. Wie dat vooraf weet schrikt niet, en belt ook niet voor iets wat hoort.
+Cada tratamiento trae algo que ves o sientes en casa. Quien lo sabe de antemano no se asusta, y tampoco llama por algo que es normal.
 
-- HydraFacial en gezichtsbehandeling Je huid voelt schoon en kan licht roze zijn. Bij de meeste mensen is dat binnen een uur weg. DE REGEL DIE TELT Dit is de behandeling met de kortste nazorg van de lijst. Je kunt er direct mee de deur uit.
+- HydraFacial y tratamiento facial Tu piel se nota limpia y puede estar un poco rosada. En la mayoría eso desaparece en una hora. LA REGLA QUE CUENTA Es el tratamiento con los cuidados posteriores más cortos de la lista. Puedes salir por la puerta directamente.
 
-- Medische peeling Strak en warm gevoel, en een rode gloed. Het vervellen begint meestal pas na twee tot drie dagen. DE REGEL DIE TELT Trek er niets af. Wat loslaat, laat je loslaten. Er aan plukken is de snelste manier om een vlek over te houden.
+- Peeling médico Sensación tirante y de calor, y un rubor rojo. La descamación suele empezar solo a los dos o tres días. LA REGLA QUE CUENTA No arranques nada. Lo que se desprende, déjalo desprenderse. Tocarlo es la forma más rápida de quedarte con una mancha.
 
-- Microneedling Rood en warm, als een stevige zonnegloed. Dat zakt in één tot drie dagen weg. De huid kan daarna een paar dagen droog aanvoelen. DE REGEL DIE TELT De eerste vierentwintig uur staan de kanaaltjes nog open. Alles wat je er dan op legt gaat dieper dan je wil, dus houd het bij wat je meekrijgt.
+- Microneedling Roja y caliente, como un buen golpe de sol. Eso baja en uno a tres días. Después la piel puede notarse seca unos días. LA REGLA QUE CUENTA Las primeras veinticuatro horas los canales siguen abiertos. Todo lo que te pongas entonces entra más hondo de lo que quieres, así que quédate con lo que te han dado.
 
-- Depilación láser Rode bultjes rond de haarzakjes, alsof je kippenvel hebt. Meestal binnen een dag weg. Na een tot drie weken vallen de behandelde haren uit; dat lijkt op groei maar dat is het niet. DE REGEL DIE TELT Niet scheren tussendoor is niet nodig: scheren mag en moet zelfs. Wat niet mag is epileren, harsen of pincetten, want dan haal je de wortel weg die de volgende sessie moet raken.
+- Depilación láser Bultitos rojos alrededor de los folículos, como si tuvieras la piel de gallina. Normalmente desaparecen en un día. Al cabo de una a tres semanas los pelos tratados se caen; parece crecimiento pero no lo es. LA REGLA QUE CUENTA No hace falta dejar de afeitarse entre medias: afeitarse se puede e incluso se debe. Lo que no se puede es depilar con pinzas, cera o depiladora, porque así quitas la raíz que la siguiente sesión tiene que alcanzar.
 
-- Pigmenttraject Afhankelijk van wat er gedaan is: roodheid, donkerder wordende vlekjes die later loslaten, of vervelling. DE REGEL DIE TELT Zonbescherming is hier geen advies maar onderdeel van de behandeling. Zonder dat komt het pigment terug, ook na een traject dat verder perfect is verlopen.
+- Programa de pigmento Según lo que se haya hecho: rojez, manchitas que se oscurecen y luego se desprenden, o descamación. LA REGLA QUE CUENTA Aquí la protección solar no es un consejo sino parte del tratamiento. Sin ella el pigmento vuelve, también después de un programa que por lo demás ha ido perfecto.
 
-**Liever één keer te veel gebeld.**
+**Mejor llamar una vez de más.**
 
-Dit rooster is een richtlijn en geen voorschrift. Wijkt jouw huid af van wat hier staat, dan is dat een reden om contact op te nemen en niet om af te wachten tot de volgende afspraak. Een foto meesturen helpt om in te schatten of het kan wachten.
+Este horario es una orientación y no una prescripción. Si tu piel se desvía de lo que pone aquí, es motivo para ponerte en contacto y no para esperar a la siguiente cita. Adjuntar una foto ayuda a valorar si puede esperar.
 
-> knop: BEL 010-2038423
+> knop: LLAMA 010-2038423
 
 ---
 
@@ -37828,11 +37830,11 @@ Dit rooster is een richtlijn en geen voorschrift. Wijkt jouw huid af van wat hie
 
 **DEPILACIÓN LÁSER EN ROTTERDAM**
 
-We werken met de GentleMax Pro, een lasersysteem voor veilige en effectieve ontharing. De tarieven verschillen per behandelgebied; je vindt ze per zone op de tarievenpagina.
+Trabajamos con el GentleMax Pro, un sistema láser para una depilación segura y eficaz. Las tarifas varían según la zona a tratar; las encuentras por zona en la página de tarifas.
 
-Hoeveel behandelingen je nodig hebt verschilt per persoon. Dat hangt af van je huidtype, je haarkleur en haardikte, de zone en de groeifase van de haren. Omdat niet alle haren tegelijk in dezelfde groeifase zitten, zijn er meerdere sessies nodig.
+Cuántos tratamientos necesitas varía de una persona a otra. Depende de tu fototipo, del color y el grosor de tu pelo, de la zona y de la fase de crecimiento de los pelos. Como no todos los pelos están a la vez en la misma fase de crecimiento, hacen falta varias sesiones.
 
-Tijdens het traject beoordelen we de voortgang, en kunnen we steeds beter inschatten hoeveel sessies er voor jou nodig zijn.
+Durante el programa valoramos el progreso, y cada vez podemos estimar mejor cuántas sesiones hacen falta en tu caso.
 
 > knop: Sigue leyendo
 
@@ -37842,67 +37844,67 @@ Tijdens het traject beoordelen we de voortgang, en kunnen we steeds beter inscha
 
 ROTTERDAM
 
-Rustig in de stoel. Scherp in de instelling.
+Tranquilidad en la silla. Precisión en la configuración.
 
-BESCHERMBRIL, VOOR JOU EN VOOR ONS
+GAFAS DE PROTECCIÓN, PARA TI Y PARA NOSOTROS
 
-- GentleMax Pro Een laser die mikt op het pigment in de haarwortel, met koeling zodat de bovenlaag niet meewarmt.
+- GentleMax Pro Un láser que apunta al pigmento de la raíz del pelo, con refrigeración para que la capa superior no se caliente también.
 
-- Prijs vooraf Elke zone staat met zijn tarief op de tarievenpagina. Wat je aan de balie hoort staat er nu al.
+- Precio de antemano Cada zona está con su tarifa en la página de tarifas. Lo que oyes en recepción ya está ahí.
 
-- Huidtype I tot VI De instellingen worden afgestemd op je Fitzpatrick-type en op de zone.
+- Fototipos I a VI La configuración se ajusta a tu tipo de Fitzpatrick y a la zona.
 
-> knop: ALLE TARIEVEN PER ZONE
+> knop: TODAS LAS TARIFAS POR ZONA
 
-> knop: DE LASER DIE WE GEBRUIKEN
+> knop: EL LÁSER QUE USAMOS
 
-**Wat het aantal sessies bepaalt**
+**Lo que decide el número de sesiones**
 
-Niemand kan je vooraf zeggen hoeveel sessies je nodig hebt, en wie dat wel doet raadt. Deze vier dingen bepalen het. Bij de intake maakt de behandelaar een eerste inschatting, en tijdens de reeks wordt die scherper.
+Nadie puede decirte de antemano cuántas sesiones necesitas, y quien lo hace está adivinando. Estas cuatro cosas lo deciden. En la consulta previa la terapeuta hace una primera estimación, y durante la serie se afina.
 
-- Je huidtype We bepalen je huidtype volgens de Fitzpatrick-indeling, van I tot en met VI. Daaruit volgt welke golflengte het meest geschikt is, Alexandrite of Nd:YAG, en met welke instellingen we werken.
+- Que determinen Determinamos tu fototipo según la clasificación de Fitzpatrick, del I al VI. De ahí sale qué longitud de onda es la más adecuada, alejandrita o Nd:YAG, y con qué configuración trabajamos.
 
-- De kleur en dikte van je haar De laser richt zich op het pigment in de haarwortel. Donker en dik haar neemt de energie het best op. Bij witte, grijze en rode haren zit er te weinig geschikt pigment in, en dan werkt laseren meestal niet.
+- El color y el grosor de tu pelo El láser se dirige al pigmento de la raíz del pelo. El pelo oscuro y grueso absorbe mejor la energía. En el pelo blanco, gris y rojo hay demasiado poco pigmento adecuado, y entonces el láser normalmente no funciona.
 
-- De zone De haargroei verschilt per zone. Haar op de bovenlip komt sneller terug dan haar op een onderbeen, dus het aantal sessies en de tijd ertussen verschillen per gebied.
+- La zona El crecimiento del pelo varía según la zona. El pelo del labio superior vuelve antes que el de una pierna, así que el número de sesiones y el tiempo entre ellas varían según la zona.
 
-- Je hormonen Bij een hormonale oorzaak zoals PCOS blijft je lichaam nieuwe haren aanmaken. De bestaande haargroei neemt sterk af, maar onderhoudsbehandelingen blijven dan nodig.
+- Tus hormonas Con una causa hormonal como el SOP tu cuerpo sigue produciendo pelos nuevos. El vello existente disminuye mucho, pero entonces siguen haciendo falta tratamientos de mantenimiento.
 
 **Lo que otros dicen al respecto.**
 
-Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Wat er niet bij staat is een voor-en-na, want bij ontharing verandert vooral het licht op de foto en niet wat je ziet.
+Vienen de Salonized y no las hemos elegido nosotros por su contenido. Lo que no hay es un antes y después, porque en la depilación lo que cambia sobre todo es la luz de la foto y no lo que ves.
 
 - “Ik heb een hele fijne ervaring gehad bij Demi. Goed geïnformeerd over hoe het proces (laseren) in zijn werking gaat. Ik ben gerustgesteld en goed geholpen. Jullie hebben er een nieuwe klant bij!” Andrijana Depilación láser con Demi 4 MAANDEN GELEDEN
 
-- “Ik heb een hele fijne ervaring gehad bij Demy. Goed geïnformeerd over hoe het proces (laseren) in zijn werking gaat. Ik ben gerustgesteld en goed geholpen. Jullie hebben er een nieuwe klant bij!” Andrijana Depilación láser 5 MAANDEN GELEDEN
+- “Inmiddels 3 keer langs geweest voor de diodelaser en ik zie echt 80% verschil! Ook de littekens en vlekjes van mijn huid zijn zwaar verbeterd dankzij de dermapen. Sowieso forever vaste klant!!” Sara Depilación láser MEER DAN 7 JAAR GELEDEN
 
 - “Ik vond de afspraak super! Alles is goed verlopen en bijna uitbehandeld met laseren! Demi is echt een zeer professionele huidspecialist zo dankbaar met haar! Voert haar werk heel nauwkeurig uit.” Monique Depilación láser MEER DAN 3 JAAR GELEDEN
 
 **Preguntas frecuentes**
 
-Hoeveel sessies heb je nodig?
+¿Cuántas sesiones necesitas?
 
-Dat hangt af van de zone, je haartype en je hormoonbalans. Reken op een reeks met weken ertussen, want één sessie raakt alleen de haren die op dat moment groeien. Tijdens de intake hoor je wat er bij jou realistisch is.
+Depende de la zona, de tu tipo de pelo y de tu equilibrio hormonal. Cuenta con una serie con semanas entre medias, porque una sesión solo alcanza los pelos que están creciendo en ese momento. En la consulta previa oyes lo que es realista en tu caso.
 
-Is laser veilig voor een donkere huid?
+¿El láser es seguro para una piel oscura?
 
-De GentleMax Pro werkt op Fitzpatrick I tot en met VI. Je huidtype bepaalt niet óf het kan, maar met welke energie en koeling er gewerkt wordt. Dat wordt per type afgestemd.
+El GentleMax Pro trabaja en los fototipos I a VI de Fitzpatrick. Tu fototipo no decide si se puede, sino con qué energía y qué refrigeración se trabaja. Eso se ajusta por tipo.
 
-Wanneer zie je verschil?
+¿Cuándo se ve la diferencia?
 
-Na de eerste sessies merken de meeste mensen dat het grovere haar minder wordt. Volledige reductie vraagt de hele reeks; tussentijds stoppen levert het resultaat van een halve reeks op en niet de helft van het resultaat.
+Tras las primeras sesiones la mayoría nota que el pelo más grueso disminuye. La reducción completa pide la serie entera; parar a mitad da el resultado de media serie y no la mitad del resultado.
 
-Wat kost laserontharing?
+¿Cuánto cuesta la depilación láser?
 
-Dat hangt af van de zone en van welke tarievenlijst er geldt: voor dezelfde zone verschilt het bedrag tussen dames en heren. Alle tweeënzestig zones staan met hun tarief op de tarievenpagina, dus je weet wat een sessie kost voordat je boekt.
+Depende de la zona y de qué lista de tarifas se aplica: para la misma zona el importe varía entre mujeres y hombres. Las sesenta y dos zonas están con su tarifa en la página de tarifas, así que sabes lo que cuesta una sesión antes de reservar.
 
-**Het aantal sessies hoor je in het consult**
+**El número de sesiones lo oyes en la consulta**
 
-In het consult stelt de behandelaar je huidtype vast, kijkt naar je haar en de zone, en zegt hoeveel sessies er realistisch nodig zijn en wat dat kost. Past het niet, dan hoor je dat ook.
+En la consulta la terapeuta determina tu fototipo, mira tu pelo y la zona, y dice cuántas sesiones hacen falta de forma realista y lo que cuesta. Si no encaja, también lo oyes.
 
 > knop: RESERVA UNA CONSULTA ›
 
-> knop: EERST JE VRAAG STELLEN ↗
+> knop: HACER TU PREGUNTA PRIMERO ↗
 
 ---
 
@@ -37912,75 +37914,75 @@ In het consult stelt de behandelaar je huidtype vast, kijkt naar je haar en de z
 
 **Google-omschrijving:** Voor huisartsen en andere zorgverleners die willen doorverwijzen. Waar de grens ligt, wie de behandeling uitvoert en hoe u verwijst.
 
-**VERWIJZEN NAAR DIBA. WAT U MOET WETEN.**
+**DERIVAR A DIBA. LO QUE DEBE SABER.**
 
-Deze pagina is voor huisartsen, praktijkondersteuners, dermatologen en andere zorgverleners die overwegen een patiënt hierheen te sturen. Hij begint met waar de grens ligt, want dat is de vraag die uw verwijzing bruikbaar maakt.
+Esta página es para médicos de cabecera, enfermería de apoyo, dermatólogos y otros profesionales sanitarios que se plantean enviar aquí a un paciente. Empieza por dónde está el límite, porque esa es la pregunta que hace útil su derivación.
 
-Diba Clinics zit in Rotterdam. Er werken 11 mensen, van wie een deel een wettelijk beschermde titel draagt.
+Diba Clinics está en Rotterdam. Trabajan aquí 11 personas, una parte de ellas con un título protegido por ley.
 
-> knop: VERWIJZING MAILEN
+> knop: ENVIAR UNA DERIVACIÓN POR CORREO
 
-Er zijn twee redenen waarom iets hier niet gebeurt. Ze staan per klacht uitgewerkt op een eigen pagina.
+Hay dos razones por las que algo no se hace aquí. Están desarrolladas por problema en una página propia.
 
-- Dit hoort bij een arts Niet omdat we er geen zin in hebben, maar omdat het buiten het vak van een huidtherapeut valt. Hier stuurt een goede kliniek je weg.
+- Esto corresponde a un médico No porque no nos apetezca, sino porque queda fuera del oficio de una terapeuta de la piel. Aquí una buena clínica te manda a otro sitio.
 
-- Dit kan nu even niet Bijna altijd tijdelijk. Er staat bij hoe lang, zodat je weet wanneer je wél kunt komen.
+- Esto ahora mismo no se puede Casi siempre temporal. Pone cuánto tiempo, para que sepas cuándo sí puedes venir.
 
-WAAR UW PATIENT TERECHTKOMT
+ADÓNDE LLEGA SU PACIENTE
 
-**Eén titel is wettelijk beschermd.**
+**Un título está protegido por ley.**
 
-Voor verwijzers vermelden we duidelijk welke functietitels en registraties van toepassing zijn.
+Para quienes derivan indicamos con claridad qué títulos profesionales y registros se aplican.
 
-Huidtherapeut
+Terapeuta de la piel
 
-Werkt met de apparatuur en de behandelingen: laser, licht, needling, peelings. Beoordeelt wat je huid aankan en stelt de instellingen daarop af.
+Trabaja con los aparatos y los tratamientos: láser, luz, needling, peelings. Valora lo que tu piel aguanta y ajusta la configuración a eso.
 
-Orthomoleculair huidspecialist
+Especialista ortomolecular de la piel
 
-Kijkt naar wat er van binnenuit meespeelt: voeding, hormonen, vertering. Bij acne en pigment is dat vaak de helft van het verhaal.
+Mira lo que influye desde dentro: alimentación, hormonas, digestión. En el acné y el pigmento eso es a menudo la mitad de la historia.
 
-Laserspecialist
+Especialista en láser
 
-Werkt met de laser- en lichtapparatuur: ontharen, en licht dat op kleur of vaatjes mikt. Kiest per huidtype en per zone de instelling.
+Trabaja con los aparatos de láser y luz: depilación, y luz dirigida al color o a los vasos. Elige la configuración por fototipo y por zona.
 
-KWALITEITSREGISTER PARAMEDICI
+REGISTRO DE CALIDAD DE PARAMÉDICOS (KWALITEITSREGISTER PARAMEDICI)
 
-Vrijwillig register met een cyclus van vijf jaar. Wie erin blijft staan toont per periode minstens 1600 werkuren aan, verspreid over minimaal 36 maanden, en 160 punten bijscholing.
+Registro voluntario con un ciclo de cinco años. Quien se mantiene en él demuestra por periodo al menos 1600 horas de trabajo, repartidas en un mínimo de 36 meses, y 160 puntos de formación continua.
 
-**Wat uw patiënt meekrijgt**
+**Lo que su paciente se lleva**
 
-Er wordt niet behandeld op een verwijzing alleen. Dat is geen formaliteit: het is de reden dat het advies dat uw patiënt meekrijgt eerlijk kan zijn.
+No se trata solo con una derivación. No es una formalidad: es el motivo de que el consejo que se lleva su paciente pueda ser honesto.
 
-- Een meting onder vast licht Elke eerste afspraak begint met een objectieve huidanalyse: zelfde licht, zelfde hoek, zelfde instellingen. Die opname blijft het vertrekpunt waar volgende afspraken tegen afgezet worden.
+- Una medición bajo luz fija Cada primera cita empieza con un análisis objetivo de la piel: la misma luz, el mismo ángulo, la misma configuración. Esa captura sigue siendo el punto de partida con el que se comparan las citas siguientes.
 
-- Een plan met een grens erin Wat er kan, hoeveel sessies dat vraagt en wat het niet gaat doen. Bij elke behandeling op deze site staat de grens er even nadrukkelijk bij als de werking.
+- Un plan con un límite dentro Lo que se puede hacer, cuántas sesiones pide y lo que no va a hacer. En cada tratamiento de esta web el límite está tan marcado como el efecto.
 
-- Soms het advies om niets te doen Blijkt uit de meting dat behandelen weinig oplevert of dat het moment verkeerd is, dan hoort uw patiënt dat. Dat gebeurt en het is geen uitzondering.
+- A veces el consejo de no hacer nada Si la medición muestra que tratar aporta poco o que el momento no es el adecuado, su paciente lo oye. Pasa, y no es una excepción.
 
-**Verwijzen gaat per brief of e-mail**
+**La derivación va por carta o correo electrónico**
 
-Een verwijsbrief die u meegeeft of een e-mail is genoeg. Een portaal of formulier is er niet, en dat hoeft ook niet.
+Basta con una carta de derivación que entregue al paciente o un correo electrónico. No hay portal ni formulario, y tampoco hace falta.
 
-- EERSTE STAP Per brief of per e-mail Geef uw patiënt de verwijsbrief mee, of mail hem naar info@dibaclinics.nl. Wat erin staat bepaalt u zelf; een korte omschrijving van de klacht en wat u al heeft geprobeerd helpt het meest.
+- PRIMER PASO Por carta o por correo electrónico Entregue a su paciente la carta de derivación, o envíela a info@dibaclinics.nl. Lo que contiene lo decide usted; una breve descripción del problema y de lo que ya ha probado es lo que más ayuda.
 
-- WAT ER DAN GEBEURT De meting eerst Er wordt niet behandeld op de verwijzing alleen. Eerst de meting, dan pas een plan, en dat plan kan afwijken van wat er in de verwijzing staat.
+- LO QUE PASA ENTONCES Primero la medición No se trata solo con la derivación. Primero la medición, después el plan, y ese plan puede diferir de lo que dice la derivación.
 
-- BIJ TWIJFEL Vraag het eerst Weet u niet zeker of iets hier thuishoort, mail dan uw vraag of bel even. Dat kost u vijf minuten en uw patiënt een afspraak die anders op niets uitloopt.
+- EN CASO DE DUDA Pregunte primero Si tiene dudas de que algo corresponda aquí, envíe su pregunta por correo o llame. Le cuesta cinco minutos y a su paciente le ahorra una cita que de otro modo no llevaría a nada.
 
-Of en hoe er na de meting wordt teruggekoppeld aan de verwijzer is nog niet vastgelegd, en daarom staat er geen belofte over. Belt of mailt u gerust met de vraag; dan hoort u hoe het op dat moment gaat.
+Si se informa a quien deriva después de la medición, y cómo, aún no está fijado, y por eso no hay ninguna promesa al respecto. Llame o escriba sin problema con la pregunta; entonces oirá cómo está en ese momento.
 
 > knop: 010-2038423
 
-**Wat er verder te controleren valt.**
+**Qué más se puede comprobar.**
 
-- Wat wij behandelen Alle behandelingen, met wat ze doen en wat ze kosten.
+- Lo que tratamos Todos los tratamientos, con lo que hacen y lo que cuestan.
 
-- De 12 apparaten Wat er staat, tot welke diepte het komt en wat het niet kan.
+- Los 12 aparatos Lo que tenemos, hasta qué profundidad llega y lo que no puede hacer.
 
-- Vergoeding Waarom de verzekeraar niet de eerste vraag is, en wanneer een verwijzing nodig is.
+- Reembolso Por qué la aseguradora no es la primera pregunta, y cuándo hace falta una derivación.
 
-- El equipo Wie er werkt, met welke titel en wat die titel betekent.
+- El equipo Quién trabaja aquí, con qué título y lo que significa ese título.
 
 ---
 
@@ -37990,71 +37992,71 @@ Of en hoe er na de meting wordt teruggekoppeld aan de verwijzer is nog niet vast
 
 **Google-omschrijving:** Welke apparaten er in de kliniek staan, welke behandelingen erop draaien, tot hoe diep ze komen en wat ze niet kunnen.
 
-**DE APPARATUUR IN ONZE KLINIEK**
+**LOS APARATOS EN NUESTRA CLÍNICA**
 
-Een apparaatnaam zegt minder dan hij lijkt te zeggen. Wat het verschil maakt is wat er vooraf gemeten is en welke instelling daarbij hoort, en niet welk merk er op de kast staat.
+El nombre de un aparato dice menos de lo que parece. Lo que marca la diferencia es lo que se ha medido antes y qué configuración le corresponde, y no qué marca pone en la máquina.
 
-Het is andersom. Een apparaat is gereedschap. Wat telt is de instelling, de hand die het vasthoudt en of het bij jouw huid past. Daarom staat bij elk apparaat hieronder ook wat het níet kan.
+Es al revés. Un aparato es una herramienta. Lo que cuenta es la configuración, la mano que lo sostiene y si encaja con tu piel. Por eso en cada aparato de abajo pone también lo que no puede hacer.
 
 > knop: Sigue leyendo
 
-- METEN EVE-M Legt je huid vast onder licht dat elke keer hetzelfde is, en meet pigment, roodheid, poriën en vocht. Zo is vooruitgang te zien. Consult met EVE-M huidanalyse
+- MEDIR EVE-M Registra tu piel bajo una luz que es la misma cada vez, y mide pigmento, rojez, poros e hidratación. Así el progreso se puede ver. Consulta con análisis de la piel EVE-M
 
-- LASER FOTONA Fotona TimeWalker Een laser die op meerdere dieptes werkt, van een oppervlakkige peel tot diep in de lederhuid. Eén apparaat, een reeks protocollen. Fotona TimeWalker, Fotona 4D en nog 13
+- LÁSER FOTONA Fotona TimeWalker Un láser que trabaja a varias profundidades, desde un peeling superficial hasta lo hondo de la dermis. Un solo aparato, una serie de protocolos. Fotona TimeWalker, Fotona 4D y otros 13
 
-- LASER CANDELA GentleMax Pro De laser voor ontharing. Hij mikt op het pigment in de haarwortel en koelt de huid eromheen, met twee golflengtes voor elk huidtype. Depilación láser
+- LÁSER CANDELA GentleMax Pro El láser para la depilación. Apunta al pigmento de la raíz del pelo y enfría la piel de alrededor, con dos longitudes de onda para cualquier fototipo. Depilación láser
 
-- LUZ CANDELA Nordlys IPL werkt met een bereik aan golflengtes in plaats van één. Daardoor is hij breed inzetbaar en komt hij minder diep dan een laser. Nordlys IPL para la pigmentación en Nordlys IPL para rojeces y vasos
+- LUZ CANDELA Nordlys La IPL trabaja con un rango de longitudes de onda en lugar de una sola. Por eso sirve para muchas cosas y llega menos hondo que un láser. Nordlys IPL para la pigmentación y Nordlys IPL para rojeces y vasos
 
-- LUZ SKIN COMPLETE Precision Photonic System LED-licht in meerdere golflengtes, elk met een eigen diepte in de huid. Zonder naalden, zonder zuren en zonder hersteltijd. Terapia LED
+- LUZ SKIN COMPLETE Precision Photonic System Luz LED en varias longitudes de onda, cada una con su propia profundidad en la piel. Sin agujas, sin ácidos y sin tiempo de recuperación. Terapia LED
 
-- MICRONEEDLING SKINPEN SkinPen CIT Medisch gecertificeerde microneedling: gecontroleerde prikjes op een ingestelde diepte, die de huid aanzetten tot herstel. Microneedling con el SkinPen
+- MICRONEEDLING SKINPEN SkinPen CIT Microneedling con certificación médica: pinchazos controlados a una profundidad ajustada, que impulsan a la piel a repararse. Microneedling con el SkinPen
 
-- MICRONEEDLING DERMAPEN Dermapen 4 Microneedling met trillende naaldjes. Hetzelfde principe als de SkinPen, met een ander motorontwerp en meer prikken per seconde. Dermapen 4
+- MICRONEEDLING DERMAPEN Dermapen 4 Microneedling con agujas que vibran. El mismo principio que el SkinPen, con otro diseño de motor y más pinchazos por segundo. Dermapen 4
 
-- INJECTIE U225 Inyector intradérmico U225 Brengt werkzame stoffen in de huid in plaats van erop. De injector werkt automatisch, dus elke prik komt op dezelfde diepte. Skin boosters y mesoterapia en XL Hair
+- INYECCIÓN U225 Inyector intradérmico U225 Lleva principios activos dentro de la piel en lugar de sobre ella. El inyector trabaja de forma automática, así que cada pinchazo llega a la misma profundidad. Skin boosters y mesoterapia y XL Hair
 
-- OVERIG HYDRAFACIAL Hydrafacial syndeo Reinigen, exfoliëren, poriën leegzuigen en voeden gebeuren in één doorgang, met hetzelfde handstuk en zonder hersteltijd. HydraFacial
+- OTROS HYDRAFACIAL Hydrafacial syndeo Limpiar, exfoliar, vaciar los poros y nutrir ocurre en una sola pasada, con la misma pieza de mano y sin tiempo de recuperación. HydraFacial
 
-- OVERIG POLLOGEN OxyGeneo Een capsule die op de huid met een gel reageert: exfoliëren, voeden en de huid aanzetten tot meer zuurstofopname, in één behandeling. OxyGeneo glow
+- OTROS POLLOGEN OxyGeneo Una cápsula que reacciona con un gel sobre la piel: exfoliar, nutrir e impulsar a la piel a captar más oxígeno, en un solo tratamiento. OxyGeneo glow
 
-- OVERIG DERMAPLANEPRO Dermaplane pro Een chirurgisch mesje onder 45 graden haalt dode cellen en fijne haartjes weg. Geen zuren, dus ook bij een gevoelige huid. Dermaplaning
+- OTROS DERMAPLANEPRO Dermaplane pro Una cuchilla quirúrgica a 45 grados retira las células muertas y el vello fino. Sin ácidos, así que también en una piel sensible. Dermaplaning
 
-- OVERIG SKIN TECH PHARMA, DERMACEUTIC, ADO, MESOESTETIC Líneas de peeling Geen apparaat maar vier merken peelings, in drie niveaus van sterkte. Welke er past, hangt af van je huid op dat moment. Peelings médicos, Cosmelan en nog 2
+- OTROS SKIN TECH PHARMA, DERMACEUTIC, ADO, MESOESTETIC Líneas de peeling No es un aparato sino cuatro marcas de peelings, en tres niveles de intensidad. Cuál encaja depende de tu piel en ese momento. Peelings médicos, Cosmelan y otros 2
 
-Twee klinieken met hetzelfde apparaat geven niet hetzelfde resultaat.
+Dos clínicas con el mismo aparato no dan el mismo resultado.
 
-Het verschil zit in wat er vooraf gemeten is, welke instelling er wordt gekozen en of iemand durft te zeggen dat een behandeling bij jou niet past. Een merknaam zegt daar niets over.
+La diferencia está en lo que se ha medido antes, en qué configuración se elige y en si alguien se atreve a decir que un tratamiento no encaja contigo. Una marca no dice nada de eso.
 
-Daarom begint elk traject hier met een meting en niet met een apparaat.
+Por eso cada programa aquí empieza con una medición y no con un aparato.
 
 > knop: LO QUE PASA EN UNA CONSULTA DE LA PIEL
 
 DE NORDLYS, ZOALS HIJ BIJ ONS STAAT
 
-**Hoe diep komt welk apparaat**
+**Hasta qué profundidad llega cada aparato**
 
 Het verschil tussen deze apparaten zit in twee dingen: waar ze op aangrijpen en tot hoe diep ze komen. Dat tweede is meteen de grens van wat ze kunnen. Een peeling neemt geen rimpels weg omdat hij daar niet komt, en dat is hieronder te zien in plaats van te geloven.
 
-> knop: ALLES 12
+> knop: TODO 12
 
-> knop: METEN 1
+> knop: MEDIR 1
 
-> knop: LICHT EN LASER 4
+> knop: LUZ Y LÁSER 4
 
 > knop: AGUJAS 2
 
-> knop: INJECTIE 1
+> knop: INYECCIÓN 1
 
-> knop: CHEMISCH EN MECHANISCH 3
+> knop: QUÍMICO Y MECÁNICO 3
 
 > knop: SUCCIÓN 1
 
 ↔Schuif de vergelijking opzij om alles te zien
 
-12 APPARATEN
+12 APARATOS
 
-TOT HOE DIEP
+HASTA QUÉ PROFUNDIDAD
 
 - Dermaplane pro Actúa sobre la capa córnea 10
 
@@ -38062,19 +38064,19 @@ TOT HOE DIEP
 
 - Hydrafacial syndeo Actúa sobre la capa córnea 18
 
-- Precision Photonic System Actúa sobre de huid zelf 25
+- Precision Photonic System Actúa sobre la propia piel 25
 
-- Nordlys Actúa sobre bloedvaten 45
+- Nordlys Actúa sobre vasos sanguíneos 45
 
-- Inyector intradérmico U225 Actúa sobre bindweefsel 48
+- Inyector intradérmico U225 Actúa sobre tejido conjuntivo 48
 
-- Dermapen 4 Actúa sobre bindweefsel 52
+- Dermapen 4 Actúa sobre tejido conjuntivo 52
 
-- SkinPen CIT Actúa sobre bindweefsel 55
+- SkinPen CIT Actúa sobre tejido conjuntivo 55
 
 - Líneas de peeling Actúa sobre la capa córnea 59
 
-- EVE-M Kijkt tot hier, verandert niets 60
+- EVE-M Mira hasta aquí, no cambia nada 60
 
 - Fotona TimeWalker Actúa sobre agua 85
 
@@ -38088,23 +38090,23 @@ TOT HOE DIEP
 
 - Dermis profunda 59 hasta 100
 
-Het getal is een verhouding en geen millimeter: hoe diep een apparaat komt hangt af van de instelling en van jouw huid. Waar het om gaat is de volgorde.
+El número es una proporción y no un milímetro: hasta dónde llega un aparato depende de la configuración y de tu piel. Lo que importa es el orden.
 
-> knop: 1 APPARAAT Meten Kijken zonder iets te veranderen.
+> knop: 1 APARATO Medir Mirar sin cambiar nada.
 
-> knop: 4 APPARATEN Licht en laser Energie die door één ding wordt opgenomen. Actúa sobre agua, melanine, bloedvaten, de huid zelf
+> knop: 4 APARATOS Luz y láser Energía que absorbe una sola cosa. Actúa sobre agua, melanine, vasos sanguíneos, la propia piel
 
-> knop: 2 APPARATEN Agujas Herstel uitlokken met kleine kanaaltjes. Actúa sobre bindweefsel
+> knop: 2 APARATOS Agujas Provocar la reparación con pequeños canales. Actúa sobre tejido conjuntivo
 
-> knop: 1 APPARAAT Injectie Stoffen op een vaste diepte brengen. Actúa sobre bindweefsel
+> knop: 1 APARATO Inyección Llevar sustancias a una profundidad fija. Actúa sobre tejido conjuntivo
 
-> knop: 3 APPARATEN Chemisch en mechanisch De bovenlaag laten loslaten. Actúa sobre la capa córnea
+> knop: 3 APARATOS Químico y mecánico Hacer que la capa superior se desprenda. Actúa sobre la capa córnea
 
-> knop: 1 APPARAAT Succión Losmaken en wegtrekken. Actúa sobre la capa córnea
+> knop: 1 APARATO Succión Soltar y retirar. Actúa sobre la capa córnea
 
-**Welk apparaat bij jou past, hoor je in het consult**
+**Qué aparato encaja contigo, lo oyes en la consulta**
 
-Een huidtherapeut kijkt naar je huid, meet mee met de EVE-M en vertelt welke behandeling erbij past, hoe vaak je moet komen en wat het kost. Dertig minuten, 50 euro, en je beslist daarna zelf.
+Una terapeuta de la piel mira tu piel, mide con el EVE-M y te dice qué tratamiento encaja, cada cuánto tienes que venir y lo que cuesta. Treinta minutos, 50 euros, y después decides tú.
 
 > knop: PEDIR CITA
 
@@ -38118,25 +38120,25 @@ Een huidtherapeut kijkt naar je huid, meet mee met de EVE-M en vertelt welke beh
 
 **Google-omschrijving:** Twee lasers in één apparaat: 755 nm en 1064 nm. Welke van de twee je krijgt hangt af van je huidtype, en dat is een veiligheidskeuze en geen detail.
 
-**DOS LÁSERES IN ÉÉN APPARAAT.**
+**DOS LÁSERES EN UN SOLO APARATO.**
 
-Overal lees je dat dit apparaat werkt op huidtype I tot en met VI. Wat er zelden bij staat is waaróm: er zitten twee verschillende golflengtes in, en jouw huidtype bepaalt welke van de twee je krijgt.
+En todas partes lees que este aparato funciona en los fototipos I a VI. Lo que rara vez se añade es por qué: lleva dos longitudes de onda distintas, y tu fototipo decide cuál de las dos te toca.
 
-Dat is geen detail voor techneuten. Het is het verschil tussen een goede behandeling en een brandwond.
+No es un detalle para técnicos. Es la diferencia entre un buen tratamiento y una quemadura.
 
-Hoe raak je een haarwortel zonder de huid eromheen te raken?
+¿Cómo alcanzas la raíz de un pelo sin alcanzar la piel de alrededor?
 
-De laser mikt op pigment: dat neemt het licht op, wordt warm en beschadigt de wortel. Dat werkt alleen als de wortel meer opneemt dan de huid eromheen. Zit er ook pigment in de bovenlaag, dan neemt die mee op, en dan klopt de hele opzet niet meer.
+El láser apunta al pigmento: absorbe la luz, se calienta y daña la raíz. Eso solo funciona si la raíz absorbe más que la piel de alrededor. Si también hay pigmento en la capa superior, esa absorbe también, y entonces todo el planteamiento deja de sostenerse.
 
-Daar is die tweede golflengte voor.
+Para eso está esa segunda longitud de onda.
 
-**Welke laser krijg jij?**
+**¿Qué láser te toca?**
 
-Kies je huidtype en je ziet welke van de twee er dan gebruikt wordt, hoe diep die komt en waarom dat bij jou de juiste is.
+Elige tu fototipo y ves cuál de los dos se usa entonces, hasta dónde llega y por qué es el correcto en tu caso.
 
-KIES JE HUIDTYPE
+ELIGE TU FOTOTIPO
 
-De schaal van Fitzpatrick gaat over hoe je huid op zon reageert, niet over hoe hij eruitziet. Weet je het niet zeker, dan wordt hij bij de intake bepaald.
+La escala de Fitzpatrick trata de cómo reacciona tu piel al sol, no de qué aspecto tiene. Si tienes dudas, se determina en la consulta previa.
 
 > knop: II
 
@@ -38144,41 +38146,41 @@ De schaal van Fitzpatrick gaat over hoe je huid op zon reageert, niet over hoe h
 
 > knop: IV
 
-Licht tot medium
+Clara a media
 
-Er zit weinig pigment in de bovenlaag om onderweg op te nemen, dus de 755 komt tot bij de wortel. Dat is meteen de reden dat hij hier de krachtigste van de twee is.
+Hay poco pigmento en la capa superior que absorba por el camino, así que la 755 llega hasta la raíz. Esa es a la vez la razón de que aquí sea la más potente de las dos.
 
-Schematisch. De verhoudingen kloppen niet op de millimeter.
+Esquemático. Las proporciones no son exactas al milímetro.
 
-BIJ HUIDTYPE III WERKEN WE MET
+CON EL FOTOTIPO III TRABAJAMOS CON
 
 755 nm
 
-Alexandriet
+Alejandrita
 
-Nog steeds voldoende verschil tussen huid en haarwortel. Wel wordt er voorzichtiger ingesteld dan bij type I, en de proefplek is hier geen formaliteit.
+Todavía hay diferencia suficiente entre piel y raíz del pelo. Eso sí, se configura con más cautela que en el tipo I, y la prueba en una zona pequeña aquí no es una formalidad.
 
-- 755 nm Alexandriet Wordt zeer sterk door pigment opgenomen Op een lichte huid is dit de krachtigste van de twee. De haarwortel neemt bijna alles op en de huid eromheen nauwelijks, dus er is minder energie nodig voor hetzelfde effect. DE KEERZIJDE Zit er ook pigment in de bovenlaag van de huid, dan neemt die mee op. Daarom is deze golflengte niet de juiste keuze bij een donkere huid.
+- 755 nm Alejandrita El pigmento la absorbe con mucha fuerza En una piel clara es la más potente de las dos. La raíz del pelo absorbe casi todo y la piel de alrededor apenas nada, así que hace falta menos energía para el mismo efecto. LA OTRA CARA Si también hay pigmento en la capa superior de la piel, esa absorbe también. Por eso esta longitud de onda no es la elección correcta en una piel oscura.
 
-- 1064 nm Nd:YAG Wordt veel minder door pigment opgenomen Het licht gaat grotendeels langs de bovenlaag heen en komt dieper. Daardoor is dit de veilige keuze bij een huid met veel eigen pigment, en meteen ook de betere bij diepliggende haarwortels. DE KEERZIJDE Minder opname betekent minder rendement per puls. Er is meer energie nodig, en dat voelt steviger dan de alexandriet.
+- 1064 nm Nd:YAG El pigmento la absorbe mucho menos La luz pasa en gran parte de largo por la capa superior y llega más hondo. Por eso es la elección segura en una piel con mucho pigmento propio, y a la vez la mejor para raíces profundas. LA OTRA CARA Menos absorción significa menos rendimiento por pulso. Hace falta más energía, y eso se nota más fuerte que la alejandrita.
 
-**De koeling hoort bij de puls.**
+**La refrigeración va con el pulso.**
 
-Vlak voor elke laserpuls gaat er een koelmiddel op de huid. Dat beschermt de bovenlaag op het moment dat de energie erdoorheen gaat, en het maakt de behandeling draaglijker.
+Justo antes de cada pulso láser va un refrigerante sobre la piel. Eso protege la capa superior en el momento en que la energía la atraviesa, y hace el tratamiento más llevadero.
 
-Daarom voelt laserontharing als een korte tik met iets kouds eromheen en niet als een brandende punt. Zonder die koeling zou de energie die de wortel nodig heeft de huid erboven te zwaar belasten.
+Por eso la depilación láser se siente como un toque corto con algo frío alrededor y no como un punto que quema. Sin esa refrigeración, la energía que necesita la raíz cargaría demasiado la piel de encima.
 
 > knop: Sigue leyendo
 
-WAT JE GAAT VOELEN
+LO QUE VAS A SENTIR
 
-Een korte tik met iets kouds eromheen, herhaald over de zone. Hoe het precies aanvoelt verschilt per plek: op een scheenbeen is het scherper dan op een bovenbeen, omdat er minder tussen zit.
+Un toque corto con algo frío alrededor, repetido por toda la zona. Cómo se siente exactamente varía según el sitio: en una espinilla es más agudo que en un muslo, porque hay menos en medio.
 
-**Wat het bij jou kost.**
+**Lo que te cuesta a ti.**
 
-Deze pagina gaat over het apparaat. Welke zones er zijn, wat een sessie kost en hoeveel sessies er in een traject gaan, staat op de behandelpagina. Daar reken je het zelf uit, per zone, zonder dat er een bedrag achterblijft tot aan de balie.
+Esta página trata del aparato. Qué zonas hay, lo que cuesta una sesión y cuántas sesiones lleva un programa está en la página del tratamiento. Ahí lo calculas tú, por zona, sin que quede un importe guardado hasta recepción.
 
-> knop: BEKIJK DE TARIEVEN PER ZONE
+> knop: VER LAS TARIFAS POR ZONA
 
 ---
 
@@ -38188,65 +38190,65 @@ Deze pagina gaat over het apparaat. Welke zones er zijn, wat een sessie kost en 
 
 **Google-omschrijving:** Wat een behandeling inhoudt en kost, waar een klacht vandaan komt en wat een apparaat wel en niet kan. Geordend op de vraag die je stelt.
 
-**ALLES WAT WE UITLEGGEN**
+**TODO LO QUE EXPLICAMOS**
 
-Wat een behandeling inhoudt en kost, waar een klacht vandaan komt, wat een apparaat wel en niet kan, en wat een titel achter de behandelstoel betekent. Het staat hier geordend op de vraag die je stelt, en niet op wat wij aanbieden.
+Lo que un tratamiento implica y cuesta, de dónde viene un problema, lo que un aparato puede y no puede hacer, y lo que significa un título detrás del sillón de tratamiento. Está ordenado aquí por la pregunta que haces, y no por lo que ofrecemos.
 
-> knop: WEET JE NIET HOE HET HEET?
+> knop: ¿NO SABES CÓMO SE LLAMA?
 
-EERST BEGRIJPEN WAAR HET ZIT
+ENTENDER PRIMERO DÓNDE ESTÁ
 
-Wat een behandeling hier inhoudt en kost, voor wie hij past en hoe een afspraak verloopt, en wat een huidtherapeut eigenlijk doet. Dit zijn de pagina's van de kennisbank die over onze kliniek zelf gaan.
+Lo que un tratamiento implica y cuesta aquí, para quién encaja y cómo va una cita, y lo que hace en realidad una terapeuta de la piel. Estas son las guías que tratan de nuestra propia clínica.
 
-- WAT DOET EEN HUIDTHERAPEUT Terapeuta de piel en Rotterdam Wat de titel inhoudt, welke klachten een huidtherapeut behandelt, wanneer huidtherapie vergoed wordt en wie er bij ons in de behandelkamer staan. BEKIJKEN
+- QUÉ HACE UNA TERAPEUTA DE LA PIEL Terapeuta de piel en Rotterdam Lo que implica el título, qué problemas trata una terapeuta de la piel, cuándo el seguro cubre la terapia de la piel y quién está en nuestra sala de tratamiento. VER
 
-- WAT KOST EEN HUIDANALYSE Análisis de piel en Rotterdam Wat de EVE-M meet, waarom dat anders is dan een foto met je telefoon, wat de intake kost en wanneer dat bedrag bij een behandeling vervalt. BEKIJKEN
+- QUÉ CUESTA UN ANÁLISIS DE LA PIEL Análisis de piel en Rotterdam Lo que mide el EVE-M, por qué es distinto de una foto con tu móvil, lo que cuesta la consulta previa y cuándo ese importe no se cobra con un tratamiento. VER
 
-- WAT KOST EEN HYDRAFACIAL HydraFacial en Rotterdam De drie varianten met hun tarief, het verschil tussen HydraFacial en hydradermabrasie, en de vergelijking met de andere gezichtsbehandelingen hier. BEKIJKEN
+- QUÉ CUESTA UN HYDRAFACIAL HydraFacial en Rotterdam Las tres variantes con su tarifa, la diferencia entre HydraFacial e hidrodermoabrasión, y la comparación con los otros tratamientos faciales de aquí. VER
 
-- WAT KOST EEN OXYGENEO OxyGeneo en Rotterdam Wat de belletjes op je huid doen, voor wie het past, hoe lang je er iets van ziet en hoe het zich verhoudt tot een HydraFacial. BEKIJKEN
+- QUÉ CUESTA UN OXYGENEO OxyGeneo en Rotterdam Lo que hacen las burbujas en tu piel, para quién encaja, cuánto tiempo ves algo de ello y cómo se compara con un HydraFacial. VER
 
-- WAT KOST DERMAPLANING Dermaplaning en Rotterdam Wat het mesje weghaalt, waarom het haar niet dikker terugkomt, voor wie het past en hoe het zich verhoudt tot een peeling of een HydraFacial. BEKIJKEN
+- QUÉ CUESTA EL DERMAPLANING Dermaplaning en Rotterdam Lo que retira la cuchilla, por qué el pelo no vuelve más grueso, para quién encaja y cómo se compara con un peeling o un HydraFacial. VER
 
-- WAT KOSTEN SKINBOOSTERS Skin boosters en Rotterdam Wat een skinbooster in je huid brengt, waarom het geen filler is, wat de U225 anders doet dan een spuit en wat een kuur van drie kost. BEKIJKEN
+- QUÉ CUESTAN LOS SKINBOOSTERS Skin boosters en Rotterdam Lo que un skinbooster aporta a tu piel, por qué no es un relleno, lo que el U225 hace distinto de una jeringa y lo que cuesta una cura de tres. VER
 
-- WAT KOST MICRONEEDLING Microneedling en Rotterdam Het verschil tussen de SkinPen en de Dermapen, wat een reeks kost, wat je de dagen erna ziet en wanneer laser het betere antwoord is. BEKIJKEN
+- QUÉ CUESTA EL MICRONEEDLING Microneedling en Rotterdam La diferencia entre el SkinPen y el Dermapen, lo que cuesta una serie, lo que ves los días siguientes y cuándo el láser es la mejor respuesta. VER
 
-- WAT KOST EEN CHEMISCHE PEELING Peeling químico en Rotterdam Welke sterkte bij welke klacht past, de kruidenpeel als peeling zonder zuur, wat je de dagen erna ziet en wanneer je beter even wacht. BEKIJKEN
+- QUÉ CUESTA UN PEELING QUÍMICO Peeling químico en Rotterdam Qué intensidad encaja con qué problema, el peeling de hierbas como peeling sin ácido, lo que ves los días siguientes y cuándo es mejor esperar un poco. VER
 
-- WAT KOST FOTONA 4D Fotona 4D en Rotterdam De vier stappen van het protocol, wat het doet bij verslapping en textuur, het volledige pakket met hals en kaaklijn, en wat een kuur kost. BEKIJKEN
+- QUÉ CUESTA EL FOTONA 4D Fotona 4D en Rotterdam Los cuatro pasos del protocolo, lo que hace con la flacidez y la textura, el paquete completo con cuello y línea de la mandíbula, y lo que cuesta una cura. VER
 
-- WAT KOST EEN IPL-BEHANDELING Tratamiento IPL en Rotterdam Wat IPL doet bij pigment en bij roodheid, waarom het geen laser is, wanneer je beter wacht en wat een behandeling per zone kost. BEKIJKEN
+- QUÉ CUESTA UN TRATAMIENTO CON IPL Tratamiento IPL en Rotterdam Lo que hace la IPL con el pigmento y con la rojez, por qué no es un láser, cuándo es mejor esperar y lo que cuesta un tratamiento por zona. VER
 
-- WAT KOST COSMELAN OF DERMAMELAN Cosmelan y Dermamelan Het verschil tussen Cosmelan en Dermamelan, hoe de zes maanden verlopen, waarom je niet in de zomer begint en wat het traject kost. BEKIJKEN
+- QUÉ CUESTA COSMELAN O DERMAMELAN Cosmelan y Dermamelan La diferencia entre Cosmelan y Dermamelan, cómo van los seis meses, por qué no se empieza en verano y lo que cuesta el programa. VER
 
-- WAT KOST ELEKTRISCHE EPILATIE Electrólisis Waarom de laser grijs en wit haar niet ziet, hoe het haar voor haar gaat, voor welke gebieden het bedoeld is en hoe het samengaat met laser. BEKIJKEN
+- QUÉ CUESTA LA ELECTRÓLISIS Electrólisis Por qué el láser no ve el pelo gris ni el blanco, cómo va pelo a pelo, para qué zonas está pensada y cómo se combina con el láser. VER
 
-Vier vragen die niet over één behandeling gaan maar over allemaal: je huidtype, het aantal sessies, de zon en de zwangerschap.
+Cuatro preguntas que no tratan de un tratamiento sino de todos: tu fototipo, el número de sesiones, el sol y el embarazo.
 
-- QUÉ FOTOTIPO TIENES Qué fototipo tienes De zes types van Fitzpatrick, wat je type betekent voor laser, IPL en peelings, en hoe je het zelf nagaat. BEKIJKEN
+- QUÉ FOTOTIPO TIENES Qué fototipo tienes Los seis tipos de Fitzpatrick, lo que tu tipo significa para el láser, la IPL y los peelings, y cómo lo compruebas tú. VER
 
-- CUÁNTAS SESIONES NECESITAS Cuántas sesiones necesitas Waarom de ene behandeling één keer kan en de andere acht keer vraagt, hoeveel tijd er tussen sessies hoort en wanneer het aantal vaststaat. BEKIJKEN
+- CUÁNTAS SESIONES NECESITAS Cuántas sesiones necesitas Por qué un tratamiento puede ser de una sola vez y otro pide ocho, cuánto tiempo va entre sesiones y cuándo el número queda fijado. VER
 
-- MAG IK IN DE ZON El sol, las vacaciones y tu piel Waarom een gebruinde huid niet gelaserd wordt, hoe lang je wacht na de zon en wat er na een behandeling hoort. BEKIJKEN
+- ¿PUEDO TOMAR EL SOL? El sol, las vacaciones y tu piel Por qué una piel bronceada no se trata con láser, cuánto esperas después del sol y lo que toca después de un tratamiento. VER
 
-- WAT KAN ER TIJDENS ZWANGERSCHAP Embarazo o lactancia Welke behandelingen wachten tot na de borstvoeding, wat er in die maanden wel kan, en waarom pigment vaak vanzelf verandert. BEKIJKEN
+- QUÉ SE PUEDE HACER DURANTE EL EMBARAZO Embarazo o lactancia Qué tratamientos esperan hasta después de la lactancia, lo que sí se puede hacer en esos meses, y por qué el pigmento a menudo cambia por sí solo. VER
 
-Twee ingangen, afhankelijk van of je al een naam hebt voor wat je ziet.
+Dos entradas, según tengas ya o no un nombre para lo que ves.
 
-- IK WEET NIET HOE HET HEET Buscador de síntomas Je klikt aan wat je ziet en waar het zit, en komt uit bij de pagina die erover gaat. BEKIJKEN
+- NO SÉ CÓMO SE LLAMA Buscador de síntomas Marcas lo que ves y dónde está, y llegas a la página que trata de ello. VER
 
-- WAT GEEF IK VOORAF DOOR Tu perfil de piel Negen korte vragen over je huid, je medicatie en je grenzen. De uitkomst neem je mee naar de afspraak. BEKIJKEN
+- QUÉ AVISO DE ANTEMANO Tu perfil de piel Nueve preguntas cortas sobre tu piel, tu medicación y tus límites. El resultado te lo llevas a la cita. VER
 
-Ook bij een andere kliniek. Dit deel is niet geschreven om jou hier te houden.
+También en otra clínica. Esta parte no está escrita para retenerte aquí.
 
-- HOE KIES JE EEN KLINIEK Cómo elegir una clínica de la piel Welke registers je zelf kunt nakijken, wat een intake hoort op te leveren, hoe je een voor-en-nafoto leest en wanneer nee het goede antwoord is. BEKIJKEN
+- CÓMO ELEGIR UNA CLÍNICA Cómo elegir una clínica de la piel Qué registros puedes comprobar tú, lo que una consulta previa debe darte, cómo leer una foto de antes y después y cuándo un no es la respuesta correcta. VER
 
-- WAAR MAG IK JULLIE AAN HOUDEN Calidad y registros Bij welke registers we horen, wat dat inhoudt en hoe je het zelf nakijkt. BEKIJKEN
+- DE QUÉ OS PUEDO PEDIR CUENTAS Calidad y registros A qué registros pertenecemos, lo que eso implica y cómo lo compruebas tú. VER
 
-**29 pagina's, elk met een eigen vraag.**
+**29 páginas, cada una con su propia pregunta.**
 
-Elke pagina begint bij de vraag die er het vaakst over gesteld wordt. Die vraag staat hieronder, zodat je ziet waar je terechtkomt voordat je klikt.
+Cada página empieza por la pregunta que más se hace sobre el tema. Esa pregunta está aquí abajo, para que veas adónde llegas antes de hacer clic.
 
 - Acné ¿En qué parte de la cara está?
 
@@ -38306,11 +38308,11 @@ Elke pagina begint bij de vraag die er het vaakst over gesteld wordt. Die vraag 
 
 - Decoloración de la piel ¿De qué color es?
 
-**Zodat je een gesprek kunt voeren**
+**Para que puedas tener una conversación**
 
-Alles hierboven staat er zodat je een gesprek kunt voeren in plaats van een aanbod te moeten geloven. Ook als dat gesprek ergens anders plaatsvindt.
+Todo lo de arriba está aquí para que puedas tener una conversación en lugar de tener que creerte una oferta. También si esa conversación tiene lugar en otro sitio.
 
-Het register telt nu 20 onderdelen. Het groeit mee met de site: elke nieuwe pagina met een eigen tool hoort hier bij te komen, anders is hij weer onvindbaar.
+El registro tiene ahora 20 entradas. Crece con la web: cada página nueva con una herramienta propia debe entrar aquí, si no vuelve a ser imposible de encontrar.
 
 > knop: RESERVA UNA CONSULTA
 
@@ -38322,107 +38324,107 @@ Het register telt nu 20 onderdelen. Het groeit mee met de site: elke nieuwe pagi
 
 **Google-omschrijving:** Wat er in het huidconsult gebeurt, hoe lang het duurt en wat het kost. Bij behandelen in dezelfde afspraak vervallen de intakekosten.
 
-**WAT ER IN EEN INTAKE GEBEURT**
+**LO QUE PASA EN UNA CONSULTA PREVIA**
 
-De behandelaar bekijkt je huid en meet met de EVE-M onder vaste belichting. Je kijkt mee op het scherm en hoort wat er bij jou mogelijk is, in welke volgorde en over hoeveel sessies.
+La terapeuta mira tu piel y mide con el EVE-M bajo una iluminación fija. Miras con ella en la pantalla y oyes lo que es posible en tu caso, en qué orden y en cuántas sesiones.
 
-Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten. Je beslist in je eigen tijd wat je daarna doet.
+Si te tratan en la misma cita, el coste de la consulta previa no se cobra. Decides con calma lo que haces después.
 
 > knop: RESERVA UNA CONSULTA
 
 > knop: ¿PREFIERES HACER PRIMERO UNA PREGUNTA?
 
-*GERESERVEERD*
+*RESERVADO*
 
-Max. 30 minuten
+Máx. 30 minutos
 
-*KOSTEN*
+*COSTE*
 
 € 50
 
-*VERPLICHTING*
+*COMPROMISO*
 
 Ninguno
 
-*BEHANDELING DEZE AFSPRAAK*
+*TRATAMIENTO EN ESTA CITA*
 
-Nee
+No
 
-HETZELFDE SCHERM, TEGELIJK
+LA MISMA PANTALLA, A LA VEZ
 
-Allebei beginnen ze met dezelfde meting.
+Las dos empiezan con la misma medición.
 
 La consulta de la piel
 
-We reserveren er maximaal 30 minuten voor: het gesprek, de beoordeling van je huid en een advies dat je mee naar huis krijgt. Aan je huid gebeurt deze afspraak nog niets.
+Reservamos como máximo 30 minutos para ello: la conversación, la valoración de tu piel y un consejo que te llevas a casa. En esta cita a tu piel no le pasa nada todavía.
 
-Hij kost 50 euro. Kies je voor de afspraak waarin ook behandeld kan worden, dan vervalt dat bedrag zodra we behandelen.
+Cuesta 50 euros. Si eliges la cita en la que también se puede tratar, ese importe no se cobra en cuanto tratamos.
 
-Meten en meteen beginnen
+Medir y empezar enseguida
 
-Boek je eerste afspraak
+Reserva tu primera cita
 
-Als we behandelen, betaal je alleen de prijs van de behandeling. De intake wordt dan niet apart in rekening gebracht. Als er geen behandeling wordt uitgevoerd, betaal je 50 euro voor de intake.
+Si tratamos, pagas solo el precio del tratamiento. La consulta previa no se cobra entonces aparte. Si no se hace ningún tratamiento, pagas 50 euros por la consulta previa.
 
-Of dat kan hangt af van wat de meting laat zien, van eventuele contra-indicaties, van de tijd die er die dag is en van wat jij wil. Blijkt behandelen op dat moment niet verstandig, dan doen we het niet.
+Si eso es posible depende de lo que muestre la medición, de posibles contraindicaciones, del tiempo que haya ese día y de lo que tú quieras. Si tratar en ese momento no resulta sensato, no lo hacemos.
 
-Deze afspraak heet behandeling op advies. Ben je al klant, dan hoeft de intake niet opnieuw en duurt hij 60 minuten.
+Esta cita se llama tratamiento con asesoramiento. Si ya eres cliente, la consulta previa no hace falta de nuevo y dura 60 minutos.
 
-Van die 120 minuten is minstens 60 minuten behandeltijd.
+De esos 120 minutos, al menos 60 minutos son tiempo de tratamiento.
 
-Neem je huidprofiel mee
+Trae tu perfil de piel
 
-In 9 stappen leg je vast wat je wil veranderen en wat je huid aankan. Retinol, zwangerschap, een gebruinde huid, medicatie: met die antwoorden staat je behandeling al klaar als je binnenkomt.
+In 9 pasos dejas registrado lo que quieres cambiar y lo que tu piel aguanta. Retinol, embarazo, una piel bronceada, medicación: con esas respuestas tu tratamiento ya está preparado cuando entras.
 
-> knop: STEL JE HUIDPROFIEL SAMEN
+> knop: CREA TU PERFIL DE PIEL
 
-**Wat er in dat uur gebeurt**
+**Lo que pasa en esa hora**
 
-De meeste twijfel voor een intake gaat over de vraag of je straks met een pakket de deur uitloopt. Daarom staat het bij elke stap erbij, en niet één keer in de kleine lettertjes.
+La mayor duda antes de una consulta previa es si vas a salir por la puerta con un paquete. Por eso está escrito en cada paso, y no una sola vez en la letra pequeña.
 
-- EERSTE MINUTEN Aankomst en het gesprek
+- PRIMEROS MINUTOS Llegada y conversación
 
-- HET GROOTSTE DEEL De meting met EVE-M
+- LA MAYOR PARTE La medición con el EVE-M
 
-- DESPUÉS Wat er te zien is
+- DESPUÉS Lo que se ve
 
-- AAN HET EIND Het eerlijke advies
+- AL FINAL El consejo honesto
 
-- LATER Wat je meeneemt
+- DESPUÉS Lo que te llevas
 
-We bespreken je huidvraag We vragen waar je last van hebt, hoelang dit al speelt en wat je zelf hebt geprobeerd. Ook bespreken we wat je verwacht en wat je juist niet wilt.
+Hablamos de tu pregunta sobre la piel. Te preguntamos qué te molesta, cuánto tiempo lleva así y qué has probado tú. También hablamos de lo que esperas y de lo que precisamente no quieres.
 
-Je hoeft je niet voor te bereiden op vaktermen. Zeg het in je eigen woorden; wij vertalen.
+No tienes que prepararte con términos técnicos. Dilo con tus palabras; nosotros lo traducimos.
 
-**Wat je meeneemt naar je afspraak**
+**Lo que te llevas a tu cita**
 
-Twee kleine dingen, en ze bepalen of de meting klopt. Het eerste punt links telt het zwaarst: foundation zit tussen de camera en je huid in.
+Dos cosas pequeñas, y deciden si la medición es válida. El primer punto de la izquierda es el que más pesa: la base de maquillaje se interpone entre la cámara y tu piel.
 
 > knop: Toon de lijst
 
-- Kom zonder make-up, of reken erop dat we het eraf halen. Foundation zit tussen de camera en je huid in.
+- Ven sin maquillaje, o cuenta con que te lo quitamos. La base de maquillaje se interpone entre la cámara y tu piel.
 
-- Neem foto's mee waarop te zien is hoe je huid eruitziet wanneer de klacht erger is.
+- Trae fotos en las que se vea cómo está tu piel cuando el problema empeora.
 
-- Neem de producten die je thuis gebruikt mee of maak foto's van de verpakkingen.
+- Trae los productos que usas en casa o haz fotos de los envases.
 
-- Zorg dat je weet welke medicatie, supplementen en anticonceptie je gebruikt.
+- Asegúrate de saber qué medicación, suplementos y anticonceptivos usas.
 
-- Kom je voor pigment of melasma Geen zonvakantie of zonnebank in de weken ervoor. Een verse kleur maakt de meting onbetrouwbaar en behandelen daarna onverstandig.
+- Si vienes por pigmento o melasma Nada de vacaciones al sol ni rayos UVA en las semanas anteriores. Un color reciente hace que la medición no sea fiable y que tratar después no sea sensato.
 
-- Kom je voor acne Stop niet met wat je van je arts gebruikt. We willen juist zien hoe je huid eruitziet mét wat je nu doet.
+- Si vienes por acné No dejes lo que usas por prescripción de tu médico. Queremos ver justo cómo está tu piel con lo que haces ahora.
 
-- Is je huid nu geïrriteerd Laat het ons even weten voor je komt. Uitstellen is dan vaak zinvoller, en dat scheelt je een afspraak die weinig oplevert.
+- Si tu piel está irritada ahora Avísanos antes de venir. Aplazar suele tener entonces más sentido, y te ahorra una cita que aporta poco.
 
-> knop: BEL 010-2038423
+> knop: LLAMA 010-2038423
 
-> knop: APP ONS
+> knop: ESCRÍBENOS POR WHATSAPP
 
-Weet je nog niet waarvoor je komt? Dat hoeft ook niet, en de zoeker helpt je een richting te vinden voordat je hier bent.
+¿Todavía no sabes para qué vienes? Tampoco hace falta, y el buscador te ayuda a encontrar una dirección antes de estar aquí.
 
-**Wat ze zeiden over het consult zelf.**
+**Lo que dijeron sobre la propia consulta.**
 
-Geselecteerd op de behandeling die bij de review staat, niet op wat er in de tekst staat. Op de reviewpagina staan ze allemaal, met uitleg over hoe je zo een cijfer leest.
+Seleccionadas por el tratamiento que figura en la reseña, no por lo que dice el texto. En la página de reseñas están todas, con una explicación de cómo leer una nota así.
 
 - Voor het eerst bij Diba Clinics geweest. Andres heeft een huidscan gedaan bij mij en gekeken, en we hebben daarna gesproken over het plan van aanpak. Hij legde duidelijk uit welke behandeling ik nodig heb en de benodigde producten voor mijn huid. Bedankt Andres voor je vriendelijkheid en tot snel weer! Aydan 4 maanden geleden ESCÁNER DE PIEL Y CONSULTA CON ANDRES
 
@@ -38438,33 +38440,33 @@ Geselecteerd op de behandeling die bij de review staat, niet op wat er in de tek
 
 **Preguntas frecuentes**
 
-Word ik hierna gebeld om alsnog iets af te nemen?
+¿Me llamarán después para que compre algo al final?
 
-Nee. Je hoort van ons als je zelf iets afspreekt of als je een vraag stelt. Er is geen belronde en er is geen aanbod dat verloopt.
+No. Sabes de nosotros cuando eres tú quien concierta algo o hace una pregunta. No hay ronda de llamadas ni ofertas que caducan.
 
-Wat als de uitkomst is dat ik niets moet doen?
+¿Y si el resultado es que no tengo que hacer nada?
 
-Dan zeggen we dat en houdt het daar op. Dat komt vaker voor dan je denkt, en het is de reden dat de meting los staat van de behandeling.
+Entonces lo decimos y ahí se queda. Pasa más a menudo de lo que crees, y es el motivo de que la medición esté separada del tratamiento.
 
-Kan ik meteen een behandeling krijgen?
+¿Me pueden tratar directamente?
 
-Ja. Plan je intake met behandeling, dan reserveren we daar tijd voor en vervallen de intakekosten. We meten eerst, zodat je later kunt nagaan wat het gedaan heeft.
+Sí. Programa tu consulta previa con tratamiento y reservamos tiempo para ello, y el coste de la consulta previa no se cobra. Medimos primero, para que más adelante puedas comprobar lo que ha hecho.
 
-Moet ik voor elke klacht apart komen?
+¿Tengo que venir por separado para cada problema?
 
-Nee. In één afspraak kijken we naar je hele huid, ook naar dingen waar je niet voor kwam. Vaak blijkt dat wat je stoort en wat er speelt niet hetzelfde zijn.
+No. En una sola cita miramos toda tu piel, también cosas por las que no venías. A menudo resulta que lo que te molesta y lo que pasa no son lo mismo.
 
-Wat gebeurt er met mijn foto's?
+¿Qué pasa con mis fotos?
 
-Die blijven in je eigen dossier als beginpunt. Ze worden niet gebruikt op onze site of in advertenties tenzij je daar apart en schriftelijk toestemming voor geeft, en die kun je altijd intrekken.
+Se quedan en tu propio expediente como punto de partida. No se usan en nuestra web ni en publicidad salvo que des permiso aparte y por escrito, y ese permiso siempre puedes retirarlo.
 
-Ik weet niet eens waarvoor ik zou komen.
+Ni siquiera sé para qué vendría.
 
-Dat is een prima reden om te komen. De symptoomzoeker helpt je een richting te vinden, en anders begint het gesprek gewoon met kijken.
+Es una razón perfectamente válida para venir. El buscador de síntomas te ayuda a encontrar una dirección, y si no, la conversación empieza sencillamente mirando.
 
-**Eén afspraak, zonder verplichting**
+**Una cita, sin compromiso**
 
-Je gaat weg met een meting die van jou is en een advies dat ook nee mag zijn. Wat je daarna doet, beslis je thuis.
+Te vas con una medición que es tuya y con un consejo que también puede ser un no. Lo que hagas después lo decides en casa.
 
 > knop: VER LOS PRECIOS
 
@@ -38508,9 +38510,9 @@ EEN NIEUW PRODUCT, EERST ZELF BEKEKEN
 
 - Contratos con aseguradoras de salud Diba Clinics heeft contracten met zorgverzekeraars. Of jouw behandeling vergoed wordt, hangt af van je klacht en van je aanvullende pakket. WAT DAT VOOR JOU BETEKENT Tijdens de intake hoor je wat er in jouw geval onder de vergoeding valt, en wat je zelf betaalt.
 
-**Begin met een análisis de piel**
+**Empieza con un análisis de piel**
 
-De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou past. Je hoort meteen om hoeveel sessies het gaat en wat het kost. Word je in dezelfde afspraak behandeld, dan vervallen de intakekosten.
+La terapeuta mira tu piel, mide con el EVE-M y determina lo que encaja contigo. Oyes enseguida de cuántas sesiones se trata y lo que cuesta. Si te tratan en la misma cita, el coste de la consulta previa no se cobra.
 
 > knop: RESERVA UNA CONSULTA
 
@@ -38522,45 +38524,45 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 **Google-omschrijving:** Bekijk met welke professionele merken en systemen Diba Clinics werkt, waaronder Candela, Fotona, HydraFacial, SkinPen en Dermapen 4.
 
-**LAS MARCAS WAARMEE WE WERKEN**
+**LAS MARCAS CON LOS QUE TRABAJAMOS**
 
-Goede apparatuur is belangrijk, maar bepaalt het resultaat niet in zijn eentje. De behandelaar beoordeelt je huid, kiest de behandeling en stelt het apparaat daarop af. Dezelfde laser doet in twee klinieken niet hetzelfde.
+Un buen equipamiento importa, pero no decide el resultado por sí solo. La terapeuta valora tu piel, elige el tratamiento y ajusta el aparato a eso. El mismo láser no hace lo mismo en dos clínicas.
 
-Hieronder staat per merk wat er bij ons staat en waarvoor we het gebruiken.
+Abajo pone por marca lo que tenemos y para qué lo usamos.
 
-**Wat er in de behandelkamers staat**
+**Lo que hay en las salas de tratamiento**
 
-- Candela Medical TWEE GENTLEMAX PRO-SYSTEMEN EN DE NORDLYS Laserontharing op alle huidtypes, en licht op pigmentvlekken, roodheid en zichtbare vaatjes. Welke van de twee golflengtes of welke filter er past, bepaalt de behandelaar op basis van je huid. ONZE LASERBEHANDELINGEN ›
+- Candela Medical DOS SISTEMAS GENTLEMAX PRO Y EL NORDLYS Depilación láser en todos los fototipos, y luz sobre manchas de pigmento, rojez y vasos visibles. Cuál de las dos longitudes de onda o qué filtro encaja lo decide la terapeuta a partir de tu piel. NUESTROS TRATAMIENTOS CON LÁSER ›
 
-- Fotona TIMEWALKER, MET FOTONA 4D EN NIGHTLASE Eén apparaat voor een reeks behandelingen: verstrakking van binnenuit, fractionele huidvernieuwing, laserpeelings en NightLase tegen snurken. ALLES OP DE FOTONA ›
+- Fotona TIMEWALKER, CON FOTONA 4D Y NIGHTLASE Un solo aparato para una serie de tratamientos: tensado desde dentro, renovación fraccionada de la piel, peelings láser y NightLase contra los ronquidos. TODO EN EL FOTONA ›
 
-- HydraFacial TWEE HYDRAFACIAL SYNDEO-SYSTEMEN Reinigen, exfoliëren en hydrateren in één sessie, met een vacuümkop die de bovenlaag leegtrekt in plaats van dichtsmeert. HYDRAFACIAL ›
+- HydraFacial DOS SISTEMAS HYDRAFACIAL SYNDEO Limpiar, exfoliar e hidratar en una sola sesión, con un cabezal de vacío que vacía la capa superior en lugar de taparla. HYDRAFACIAL ›
 
-- OxyGeneo HET OXYGENEO-SYSTEEM VAN POLLOGEN Exfoliëren, zuurstof aan de huid aanbieden en werkstoffen inbrengen, in dezelfde behandeling. OXYGENEO GLOW ›
+- OxyGeneo EL SISTEMA OXYGENEO DE POLLOGEN Exfoliar, ofrecer oxígeno a la piel y aportar principios activos, en el mismo tratamiento. OXYGENEO GLOW ›
 
-- SkinPen CIT SKINPEN CIT VOOR MEDISCHE MICRONEEDLING Microneedling met een vaste diepte per zone, gericht op acnelittekens, grove poriën en de structuur van de huid. MICRONEEDLING CON EL SKINPEN ›
+- SkinPen CIT SKINPEN CIT PARA MICRONEEDLING MÉDICO Microneedling con una profundidad fija por zona, dirigido a cicatrices de acné, poros dilatados y la textura de la piel. MICRONEEDLING CON EL SKINPEN ›
 
-- DermapenWorld DERMAPEN 4 Het tweede needling-apparaat. Welke van de twee er wordt gebruikt hangt af van wat er met je huid moet gebeuren en niet van wat er vrij is. DERMAPEN 4 ›
+- DermapenWorld DERMAPEN 4 El segundo aparato de needling. Cuál de los dos se usa depende de lo que tenga que pasar con tu piel y no de cuál está libre. DERMAPEN 4 ›
 
-- Skin Complete PRECISION PHOTONIC SYSTEM EN LED-MASKERS LED-lichttherapie op vaste golflengtes, onder andere bij actieve acne en als rustige stap na een intensievere behandeling. TERAPIA LED ›
+- Skin Complete PRECISION PHOTONIC SYSTEM Y MÁSCARAS LED Terapia con luz LED en longitudes de onda fijas, entre otros para el acné activo y como paso tranquilo después de un tratamiento más intensivo. TERAPIA LED ›
 
-- U225 van Needle Concept DE U225 MESOTHERAPIEPEN Werkzame stoffen op een vaste diepte in de huid brengen, met dezelfde hoeveelheid per prik over het hele vlak. SKIN BOOSTERS ›
+- U225 de Needle Concept EL U225, PEN DE MESOTERAPIA Llevar principios activos a una profundidad fija en la piel, con la misma cantidad por pinchazo en toda la zona. SKIN BOOSTERS ›
 
-- Zimmer MedizinSysteme LUCHTKOELING BIJ LASERBEHANDELINGEN Koude lucht op de huid tijdens het laseren. Dat is niet alleen comfort: een gekoelde opperhuid verdraagt meer energie, en dat maakt de behandeling effectiever. DEPILACIÓN LÁSER ›
+- Zimmer MedizinSysteme REFRIGERACIÓN POR AIRE EN LOS TRATAMIENTOS CON LÁSER Aire frío sobre la piel durante el láser. No es solo comodidad: una epidermis refrigerada tolera más energía, y eso hace el tratamiento más eficaz. DEPILACIÓN LÁSER ›
 
-**Wat er op je huid komt en wat je meekrijgt**
+**Lo que va sobre tu piel y lo que te llevas**
 
-- SkinCeuticals PROFESSIONELE HUIDVERZORGING Verzorging tijdens de behandeling en voor thuis, vooral rond antioxidanten en zonbescherming. NAZORG PER BEHANDELING ›
+- SkinCeuticals CUIDADO PROFESIONAL DE LA PIEL Cuidado durante el tratamiento y para casa, sobre todo en torno a antioxidantes y protección solar. CUIDADOS POSTERIORES POR TRATAMIENTO ›
 
-- Mesoestetic PEELINGS EN DE PIGMENTTRAJECTEN COSMELAN EN DERMAMELAN Medische peelings in verschillende sterktes, en de trajecten van maanden tegen hyperpigmentatie en melasma. COSMELAN ›
+- Mesoestetic PEELINGS Y LOS PROGRAMAS DE PIGMENTO COSMELAN Y DERMAMELAN Peelings médicos en distintas intensidades, y los programas de meses contra la hiperpigmentación y el melasma. COSMELAN ›
 
-- Skin Complete LED-MASKER VOOR THUIS, DERMAL MICROCHIP SYSTEM EN MICROCHIP EYE PATCH Thuis verder met wat hier begon: LED-licht, plus een roller en oogpatches met oplosbare microchips die werkstoffen inbrengen. TERAPIA LED ›
+- Skin Complete MÁSCARA LED PARA CASA, DERMAL MICROCHIP SYSTEM Y MICROCHIP EYE PATCH Seguir en casa con lo que empezó aquí: luz LED, más un rodillo y parches para los ojos con microchips solubles que aportan principios activos. TERAPIA LED ›
 
-- RRS ONDER ANDERE RRS HYALIFT EN RRS EYES Mengsels met hyaluronzuur, vitamines en aminozuren die met een fijne naald in de huid worden gebracht. RRS EYES ›
+- RRS ENTRE OTROS, RRS HYALIFT Y RRS EYES Mezclas con ácido hialurónico, vitaminas y aminoácidos que se llevan a la piel con una aguja fina. RRS EYES ›
 
-- XL Hair BEHANDELINGEN VOOR HAAR EN HOOFDHUID Gericht op haaruitval en op de conditie van de hoofdhuid waar dat haar in groeit. XL HAIR ›
+- XL Hair TRATAMIENTOS PARA EL PELO Y EL CUERO CABELLUDO Dirigidos a la caída del pelo y al estado del cuero cabelludo en el que crece ese pelo. XL HAIR ›
 
-> knop: ALLE APPARATUUR, PER APPARAAT
+> knop: TODOS LOS APARATOS, UNO POR UNO
 
 > knop: NUESTROS REGISTROS
 
@@ -38572,61 +38574,61 @@ Hieronder staat per merk wat er bij ons staat en waarvoor we het gebruiken.
 
 **Google-omschrijving:** De huidklachten bij PCOS: ongewenste haargroei, acne langs de kaaklijn en dunner wordend haar. Wat wij behandelen en wat via je arts loopt.
 
-**PCOS EN TU PIEL**
+**EL SOP Y TU PIEL**
 
-De diagnose stelt je huisarts of gynaecoloog. De huidklachten die erbij horen behandelen wij: ongewenste haargroei, acne langs de kaaklijn, dunner wordend hoofdhaar en donkere plekken in huidplooien.
+El diagnóstico lo hace tu médico de cabecera o tu ginecólogo. Los problemas de piel que lo acompañan los tratamos nosotros: vello no deseado, acné en la línea de la mandíbula, pelo que clarea y manchas oscuras en los pliegues de la piel.
 
-Hieronder staat per klacht wat er mogelijk is, waar je op moet rekenen en waar je arts aan zet is.
+Abajo pone por problema lo que es posible, con qué contar y dónde le toca a tu médico.
 
-PCOS wordt vastgesteld door je huisarts of gynaecoloog, met bloedonderzoek en echo.
+El SOP lo diagnostica tu médico de cabecera o tu ginecólogo, con análisis de sangre y ecografía.
 
-Weet je eenmaal wat er speelt, dan werken wij aan de huidklachten die erbij horen. Die twee lopen vaak naast elkaar: je arts kijkt naar de oorzaak, wij naar wat je ziet.
+Una vez sabes lo que pasa, nosotros trabajamos en los problemas de piel que lo acompañan. Las dos cosas suelen ir en paralelo: tu médico mira la causa, nosotros lo que ves.
 
-DE KAMER WAAR HET GESPREK BEGINT
+LA SALA DONDE EMPIEZA LA CONVERSACIÓN
 
-**Wie doet wat.**
+**Quién hace qué.**
 
-Je arts werkt aan de oorzaak, wij aan wat je ziet. De derde kolom zegt waarom die twee elkaar nodig hebben.
+Tu médico trabaja en la causa, nosotros en lo que ves. La tercera columna dice por qué esas dos se necesitan.
 
-- NIET HIER De huisarts of gynaecoloog Vaststellen of er sprake is van PCOS, onderzoek doen, en behandelen wat er onderliggend speelt. Alles wat met hormonen, medicatie en bloedwaardes te maken heeft.
+- AQUÍ NO El médico de cabecera o el ginecólogo Determinar si hay SOP, hacer pruebas y tratar lo que hay debajo. Todo lo que tiene que ver con hormonas, medicación y valores en sangre.
 
-- HIER Wij De huidklachten die je ziet: ongewenste haargroei, acne langs de kaaklijn, dunner wordend hoofdhaar en donkere plekken in huidplooien. Elk met een eigen aanpak.
+- AQUÍ Nosotros Los problemas de piel que ves: vello no deseado, acné en la línea de la mandíbula, pelo que clarea y manchas oscuras en los pliegues de la piel. Cada uno con su propio enfoque.
 
-- NIET HIER Samen Zolang de oorzaak meespeelt, blijft de huid meebewegen. Daarom werkt een behandeling het best naast de begeleiding van je arts, en houd je het resultaat bij met onderhoud.
+- AQUÍ NO Juntos Mientras la causa siga influyendo, la piel sigue moviéndose con ella. Por eso un tratamiento funciona mejor junto al seguimiento de tu médico, y el resultado lo mantienes con mantenimiento.
 
-**Wat we bij PCOS kunnen doen**
+**Lo que en el SOP podemos hacer**
 
-Bij elke klacht staan allebei de kanten even nadrukkelijk. De ene zonder de andere is een verkooptekst.
+En cada problema las dos caras están igual de marcadas. Una sin la otra es un texto de venta.
 
-- Ongewenste haargroei in een mannelijk patroon Grover en donkerder haar op plekken waar je het niet gewend bent: kin, kaaklijn, hals, borst of buik. Vaak het gevolg waar mensen zich het meest voor terugtrekken. ZO WERKT LASERONTHARING › LO QUE HACEMOS Laserontharing werkt hier, en meestal goed. Het haar is grof en donker en dat is precies waar de laser op aangrijpt. WAAR JE OP MOET REKENEN Wij nemen de prikkel niet weg die dat haar laat groeien. Er zullen nieuwe haren blijven komen, dus dit wordt onderhoud en geen eindpunt. Reken op meer sessies dan het standaardtraject en op periodiek terugkomen daarna.
+- Vello no deseado con patrón masculino Pelo más grueso y oscuro en sitios donde no es lo habitual: barbilla, línea de la mandíbula, cuello, pecho o vientre. A menudo la consecuencia por la que la gente más se retrae. ASÍ FUNCIONA LA DEPILACIÓN LÁSER › LO QUE HACEMOS La depilación láser funciona aquí, y normalmente bien. El pelo es grueso y oscuro, y eso es justo sobre lo que actúa el láser. CON QUÉ TIENES QUE CONTAR Nosotros no quitamos el estímulo que hace crecer ese pelo. Seguirán saliendo pelos nuevos, así que esto se convierte en mantenimiento y no en un punto final. Cuenta con más sesiones que el programa estándar y con volver periódicamente después.
 
-- Acne langs de kaaklijn en in de hals Diepere, gevoelige puistjes die langer blijven zitten dan gewone acne, vaak laag in het gezicht en op de hals. Ze komen en gaan met periodes. MEER OVER ACNE › LO QUE HACEMOS De huid rustiger krijgen, ontstoken plekken aanpakken en littekenvorming beperken. Dat is echt werk en het scheelt merkbaar. WAAR JE OP MOET REKENEN De oorzaak wegnemen. Zolang die er is, beweegt je huid mee. Een traject dat in maart aanslaat kan in september weer opspelen, en dat is geen mislukt traject maar een aandoening die er nog is.
+- Acné en la línea de la mandíbula y en el cuello Granos más profundos y sensibles que duran más que el acné normal, a menudo en la parte baja de la cara y en el cuello. Van y vienen por periodos. MÁS SOBRE EL ACNÉ › LO QUE HACEMOS Calmar la piel, tratar los puntos inflamados y limitar la formación de cicatrices. Es trabajo de verdad y se nota. CON QUÉ TIENES QUE CONTAR Quitar la causa. Mientras esté ahí, tu piel se mueve con ella. Un programa que funciona en marzo puede volver a activarse en septiembre, y eso no es un programa fallido sino una enfermedad que sigue ahí.
 
-- Dunner wordend hoofdhaar Minder volume, een breder wordende scheiding, meer haar in de borstel. Anders dan de haargroei elders is dit een verlies en geen overschot. LO QUE HACEMOS Meekijken en vastleggen wat we zien, zodat er over maanden iets te vergelijken valt. WAAR JE OP MOET REKENEN Behandelen. Haarverlies bij PCOS is een hormonale kwestie en daar is bij ons geen behandeling voor. Wie je iets anders vertelt, verkoopt je iets.
+- Pelo de la cabeza que clarea Menos volumen, una raya cada vez más ancha, más pelo en el cepillo. A diferencia del vello en otras zonas, esto es una pérdida y no un exceso. LO QUE HACEMOS Observar y registrar lo que vemos, para que dentro de unos meses haya algo que comparar. CON QUÉ TIENES QUE CONTAR Tratarlo. La caída del pelo en el SOP es una cuestión hormonal y para eso no tenemos tratamiento. Quien te diga otra cosa te está vendiendo algo.
 
-- Donkere, fluweelachtige plekken in huidplooien In de hals, oksels of liezen: een donkerdere verkleuring die zacht aanvoelt en niet weggaat met wassen. Het is geen vuil en geen pigmentvlek. LO QUE HACEMOS Hier doen we niets aan, en dat is met opzet. WAAR JE OP MOET REKENEN Wegwerken. Deze verkleuring is een signaal en geen cosmetisch probleem, en er overheen behandelen maakt het signaal alleen onzichtbaar.
+- Manchas oscuras y aterciopeladas en los pliegues de la piel En el cuello, las axilas o las ingles: una decoloración más oscura que se nota suave y no se va lavando. No es suciedad ni una mancha de pigmento. LO QUE HACEMOS Aquí no hacemos nada, y es a propósito. CON QUÉ TIENES QUE CONTAR Eliminarla. Esta decoloración es una señal y no un problema cosmético, y tratar por encima solo hace invisible la señal.
 
-**Soms sturen we je juist weg.**
+**A veces te mandamos precisamente a otro sitio.**
 
-Een huidkliniek ziet soms iets eerder dan er een diagnose bestaat. Dan is de juiste stap niet een traject aanbieden maar zeggen waar je wel moet zijn.
+Una clínica de la piel a veces ve algo antes de que exista un diagnóstico. El paso correcto entonces no es ofrecer un programa sino decir dónde tienes que ir.
 
-> knop: WAT WE WEL DOEN
+> knop: LO QUE SÍ HACEMOS
 
-- Acne langs de kaaklijn en in de hals Bij pijnlijke knobbels onder de huid of littekens die blijven, hoort een arts mee te kijken. Daar bestaat medicatie voor en die kunnen wij niet geven.
+- Acné en la línea de la mandíbula y en el cuello Con bultos dolorosos bajo la piel o cicatrices que se quedan, debe mirarlo un médico. Para eso existe medicación y nosotros no podemos darla.
 
-- Dunner wordend hoofdhaar Ja. Dit hoort bij de huisarts en zo nodig bij een dermatoloog, en niet bij een huidkliniek.
+- Pelo de la cabeza que clarea Sí. Esto corresponde al médico de cabecera y si hace falta a un dermatólogo, y no a una clínica de la piel.
 
-- Donkere, fluweelachtige plekken in huidplooien Ja, en dit is de belangrijkste van de vier. Deze verkleuring hangt samen met hoe je lichaam met insuline omgaat. Laat het bij je huisarts nakijken, ook als je er verder geen last van hebt.
+- Manchas oscuras y aterciopeladas en los pliegues de la piel Sí, y este es el más importante de los cuatro. Esta decoloración tiene que ver con cómo tu cuerpo maneja la insulina. Haz que lo revise tu médico de cabecera, también si por lo demás no te molesta.
 
-**Dan weten we eerst wat er is.**
+**Entonces sabemos primero lo que hay.**
 
-Een traject begint met een meting, en bij PCOS is dat extra zinvol: je huid beweegt mee met periodes, dus zonder vertrekpunt is later niet te zien of iets werkte of dat het gewoon een rustige maand was.
+Un programa empieza con una medición, y en el SOP eso es especialmente útil: tu piel se mueve por periodos, así que sin punto de partida después no se ve si algo funcionó o si simplemente fue un mes tranquilo.
 
-Loopt er al iets bij je huisarts of gynaecoloog, zeg dat dan bij de intake. Niet omdat wij daar iets mee doen, maar omdat het uitmaakt voor wat wij op welk moment aanraden.
+Si ya hay algo en marcha con tu médico de cabecera o tu ginecólogo, dilo en la consulta previa. No porque nosotros hagamos algo con ello, sino porque importa para lo que aconsejamos y en qué momento.
 
 > knop: Sigue leyendo
 
-> knop: START JE INTAKE
+> knop: EMPIEZA TU CONSULTA PREVIA
 
 ---
 
@@ -38636,37 +38638,37 @@ Loopt er al iets bij je huisarts of gynaecoloog, zeg dat dan bij de intake. Niet
 
 **Google-omschrijving:** Bouw je huidprofiel op in negen stappen. Wat past, wat niet past en wat je tijdens de intake moet melden. Blijft in je eigen browser.
 
-**STEL JE HUIDPROFIEL SAMEN**
+**CREA TU PERFIL DE PIEL**
 
-Negen vragen, twee minuten. Dit weet je daarna:
+Nueve preguntas, dos minutos. Después sabes esto:
 
-- Welke behandelingen bij jouw huid passen
+- Qué tratamientos encajan con tu piel
 
-- Wat nu kan en wat beter nog even wacht
+- Qué se puede hacer ahora y qué es mejor que espere
 
-- Wat je bij de intake moet melden
+- Qué tienes que decir en la consulta previa
 
-Retinol, zwangerschap, een gebruinde huid: je ziet het hier meteen, niet pas aan de balie.
+Retinol, embarazo, una piel bronceada: aquí lo ves enseguida, no en recepción.
 
-> knop: BEGIN BIJ DE EERSTE VRAAG
+> knop: EMPIEZA POR LA PRIMERA PREGUNTA
 
-> knop: ZO WERKT HET HUIDCONSULT
+> knop: ASÍ FUNCIONA LA CONSULTA DE LA PIEL
 
-WAT JIJ INVULT, ZIEN WIJ BIJ DE INTAKE
+LO QUE RELLENAS LO VEMOS EN LA CONSULTA PREVIA
 
-0 DE 9 INGEVULD
+0 DE 9 COMPLETADOS
 
-**Wat je wil bereiken**
+**Lo que quieres conseguir**
 
-Vier vragen over je doel, je huid en hoeveel hersteltijd je hebt. Hiermee kunnen we al ordenen wat er bij je past.
+Cuatro preguntas sobre tu objetivo, tu piel y cuánto tiempo de recuperación tienes. Con ellas ya podemos ordenar lo que encaja contigo.
 
-1 NOG OPEN
+1 PENDIENTE
 
-**Je scan als startpunt.**
+**Tu escaneo como punto de partida.**
 
-Vier vragen over wat je ziet en voelt. Je krijgt je profielschets terug als spinnenweb, waarvan de open buitenrand blijft staan: dat is wat EVE-M er in de kliniek pas echt bij meet.
+Cuatro preguntas sobre lo que ves y sientes. Recibes tu perfil en forma de telaraña, cuyo borde exterior abierto se queda así: eso es lo que el EVE-M mide de verdad además, en la clínica.
 
-Begin hier: vier vragen, ongeveer een minuut. Je krijgt je profielschets terug en twee van de vragen hieronder staan daarna meteen goed.
+Empieza aquí: cuatro preguntas, alrededor de un minuto. Recibes tu perfil y dos de las preguntas de abajo quedan después respondidas al momento.
 
 **Haz el mini escáner**
 
@@ -38674,279 +38676,279 @@ Begin hier: vier vragen, ongeveer een minuut. Je krijgt je profielschets terug e
 
 > knop: EMPIEZA EL MINI ESCÁNER
 
-2 NOG OPEN
+2 PENDIENTE
 
-**Wat wil je veranderen?**
+**¿Qué quieres cambiar?**
 
-Meerdere mag. Je hoeft de vakterm niet te kennen.
+Puedes marcar varias. No hace falta que conozcas el término técnico.
 
-> knop: Puistjes en acne Actieve onzuiverheden, ontstoken plekjes
+> knop: Granos y acné Impurezas activas, puntos inflamados
 
-> knop: Oneffen textuur Putjes, littekens, een huid die niet glad aanvoelt
+> knop: Textura irregular Hoyos, cicatrices, una piel que no se nota lisa
 
-> knop: Vlekken en kleur Bruine plekken, ongelijke tint, pigment
+> knop: Manchas y color Manchas marrones, tono desigual, pigmento
 
-> knop: Roodheid en vaatjes Blijvende rode wangen, zichtbare adertjes
+> knop: Rojez y vasos Mejillas rojas permanentes, venitas visibles
 
-> knop: Líneas finas Beginnende rimpeltjes, verslapping
+> knop: Líneas finas Primeras arrugas, flacidez
 
-> knop: Vello no deseado Haar dat je liever kwijt bent, waar dan ook
+> knop: Vello no deseado Vello del que prefieres librarte, donde sea
 
-> knop: Dunner wordend haar Haaruitval op je hoofd, meer haar in de borstel
+> knop: Pelo que clarea Caída del pelo en la cabeza, más pelo en el cepillo
 
-> knop: Bultjes en steelwratjes Kleine uitsteeksels die je weg wil hebben
+> knop: Bultitos y acrocordones Pequeños salientes que quieres quitarte
 
-> knop: Weet ik niet Er is iets, maar wat precies weet ik niet
+> knop: No lo sé Hay algo, pero no sé exactamente qué
 
-3 NOG OPEN
+3 PENDIENTE
 
-**Hoe oud ben je?**
+**¿Qué edad tienes?**
 
-Alleen omdat er een acnetraject bestaat dat speciaal voor 18 jaar en jonger gemaakt is. Verder doen we niets met dit antwoord.
+Solo porque existe un programa de acné hecho especialmente para 18 años o menos. Aparte de eso no hacemos nada con esta respuesta.
 
-> knop: 18 of jonger Er is een traject dat hier speciaal op gemaakt is
+> knop: 18 o menos Hay un programa hecho especialmente para esto
 
-> knop: Ouder dan 18 Het hele aanbod staat open
+> knop: Más de 18 Toda la oferta está abierta
 
-4 NOG OPEN
+4 PENDIENTE
 
-**Welk huidtype?**
+**¿Qué fototipo?**
 
-Fitzpatrick I tot en met VI. Je type bepaalt niet óf iets kan, maar met welke instellingen.
+Fitzpatrick del I al VI. Tu tipo no decide si algo se puede hacer, sino con qué configuración.
 
-> knop: Type I Zeer licht, verbrandt snel
+> knop: Tipo I Muy clara, se quema rápido
 
-> knop: Type II Licht, verbrandt gemakkelijk
+> knop: Tipo II Clara, se quema con facilidad
 
-> knop: Type III Licht tot medium
+> knop: Tipo III Clara a media
 
-> knop: Type IV Medium tot olijf
+> knop: Tipo IV Media a oliva
 
-> knop: Type V Donker olijf tot bruin
+> knop: Tipo V Oliva oscuro a marrón
 
-> knop: Type VI Donker bruin tot zwart
+> knop: Tipo VI Marrón oscuro a negro
 
-5 NOG OPEN
+5 PENDIENTE
 
-**Hoeveel hersteltijd?**
+**¿Cuánto tiempo de recuperación?**
 
-De vraag die niemand stelt en die vaak het meest bepaalt. Wie maandag moet werken heeft niets aan een behandeling waar je drie dagen rood van bent.
+La pregunta que nadie hace y que a menudo es la que más decide. Quien tiene que trabajar el lunes no gana nada con un tratamiento que te deja tres días de rojez.
 
-> knop: Ninguno Ik moet er meteen weer normaal uitzien
+> knop: Ninguno Tengo que verme normal enseguida
 
-> knop: Een dag Een avond en een nacht rood mag
+> knop: Un día Una tarde y una noche de rojez, vale
 
-> knop: Een paar dagen Ik kan het inplannen rond een weekend
+> knop: Unos días Puedo programarlo alrededor de un fin de semana
 
-**Wat je huid aankan**
+**Lo que tu piel aguanta**
 
-Deze vier gaan over grenzen. Retinol, zwangerschap, een gebruinde huid, neiging tot littekens: dingen die in de praktijk pas aan de balie boven tafel komen, en dan een afspraak kosten.
+Estas cuatro tratan de límites. Retinol, embarazo, una piel bronceada, tendencia a las cicatrices: cosas que en la práctica solo salen en recepción, y entonces cuestan una cita.
 
-6 NOG OPEN
+6 PENDIENTE
 
-**Hoe voelt je huid meestal?**
+**¿Cómo notas tu piel normalmente?**
 
-Dit stuurt vooral de voorbereiding thuis, en dat is bij een droge huid belangrijker dan de behandeling zelf.
+Esto dirige sobre todo la preparación en casa, y en una piel seca eso importa más que el propio tratamiento.
 
-> knop: Seca Trekkerig, soms schilferig
+> knop: Seca Tirante, a veces con descamación
 
-> knop: Grasa Glimt snel, vooral in de T-zone
+> knop: Grasa Brilla enseguida, sobre todo en la zona T
 
-> knop: Gecombineerd Vet in het midden, droog aan de zijkant
+> knop: Mixta Grasa en el centro, seca en los lados
 
-> knop: En equilibrio Geen van beide echt
+> knop: En equilibrio Ninguna de las dos en realidad
 
-7 NOG OPEN
+7 PENDIENTE
 
-**Hoe snel reageert hij?**
+**¿Con qué rapidez reacciona?**
 
-Bij een huid die snel geïrriteerd raakt begint de behandelaar met een lagere sterkte. Dat is een startpunt.
+En una piel que se irrita enseguida la terapeuta empieza con una intensidad más baja. Es un punto de partida.
 
-> knop: Verdraagt veel Ik kan bijna alles gebruiken
+> knop: Aguanta mucho Puedo usar casi de todo
 
-> knop: Soms gevoelig Bij sterke producten wordt het rood
+> knop: A veces sensible Con productos fuertes se pone roja
 
-> knop: Snel geïrriteerd Veel producten prikken of branden
+> knop: Se irrita enseguida Muchos productos pican o escuecen
 
-8 NOG OPEN
+8 PENDIENTE
 
-**Wat gebruik je nu op je huid?**
+**¿Qué usas ahora en tu piel?**
 
-Retinol en zuren moeten voor sommige behandelingen tijdig gepauzeerd worden. Beter nu weten dan aan de balie.
+El retinol y los ácidos hay que pausarlos con tiempo antes de algunos tratamientos. Mejor saberlo ahora que en recepción.
 
-> knop: Retinol o vitamina A Moet je tijdig pauzeren
+> knop: Retinol o vitamina A Hay que pausarlo con tiempo
 
-> knop: Zuren Glycolzuur, salicylzuur, fruitzuren
+> knop: Ácidos Ácido glicólico, ácido salicílico, ácidos de frutas
 
-> knop: Peróxido de benzoílo Vaak bij acne
+> knop: Peróxido de benzoílo Frecuente en el acné
 
-> knop: Vitamine C Meestal geen bezwaar
+> knop: Vitamina C Normalmente sin problema
 
-> knop: Niets bijzonders Alleen reinigen en hydrateren
+> knop: Nada especial Solo limpiar e hidratar
 
-9 NOG OPEN
+9 PENDIENTE
 
-**Speelt er nog iets anders?**
+**¿Hay algo más?**
 
-Zwangerschap, een gebruinde huid of een vakantie op komst bepalen wat er nu kan. De voorgeschiedenis vul je één keer in en blijft staan.
+El embarazo, una piel bronceada o unas vacaciones a la vista deciden lo que se puede hacer ahora. El historial lo rellenas una vez y se queda.
 
-NU AAN DE HAND
+AHORA MISMO
 
-> knop: Ik ben zwanger
+> knop: Estoy embarazada
 
-> knop: Ik geef borstvoeding
+> knop: Doy el pecho
 
-> knop: Mijn huid is nu gebruind Zon of zonnebank
+> knop: Ahora tengo la piel bronceada Sol o rayos UVA
 
-> knop: Binnenkort veel zon Vakantie of wintersport
+> knop: Pronto mucho sol Vacaciones o esquí
 
-> knop: Niets van dit alles
+> knop: Nada de esto
 
-VOORGESCHIEDENIS
+HISTORIAL
 
-> knop: Isotretinoïne gebruikt Nu of in het afgelopen jaar
+> knop: He usado isotretinoína Ahora o en el último año
 
-> knop: Neiging tot keloïd Littekens die dik worden en doorgroeien
+> knop: Tendencia al queloide Cicatrices que se engrosan y siguen creciendo
 
-> knop: Terugkerende koortslip
+> knop: Herpes labial recurrente
 
-> knop: Eerder laser of IPL gehad
+> knop: Láser o IPL anteriormente
 
-> knop: Lichtgevoelige medicatie Sommige antibiotica en kruidenmiddelen
+> knop: Medicación fotosensible Algunos antibióticos y remedios de hierbas
 
-JE UITKOMST
+TU RESULTADO
 
-**Wat dit betekent voor jouw huid.**
+**Lo que esto significa para tu piel.**
 
-Vul hierboven iets in, dan staat hier meteen je profiel, wat erbij past en wat je tijdens de intake moet melden.
+Rellena algo arriba y aquí aparece enseguida tu perfil, lo que encaja y lo que tienes que decir en la consulta previa.
 
-Dit is geen diagnose en geen advies. Het legt naast elkaar wat jij hebt ingevuld en wat een behandeling doet, en zegt waar dat wringt. Wat er bij jou past bepaalt een mens, na de meting. Je profiel blijft in deze browser staan: geen account, geen mailadres, niets dat naar ons toe gaat.
+Esto no es un diagnóstico ni un consejo. Pone una al lado de la otra lo que has rellenado y lo que hace un tratamiento, y dice dónde chocan. Lo que encaja contigo lo decide una persona, después de la medición. Tu perfil se queda en este navegador: sin cuenta, sin correo, nada que llegue a nosotros.
 
 ---
 
 ### /es/politica-de-cookies
 
-**Tabbladtitel:** Cookiebeleid | Diba Clinics
+**Tabbladtitel:** Política de cookies | Diba Clinics
 
 **Google-omschrijving:** Welke cookies Diba Clinics gebruikt, wanneer ze laden en hoe je je keuze op elk moment kunt wijzigen. Geen advertentie-tracking.
 
-**WELKE COOKIES WE GEBRUIKEN**
+**QUÉ COOKIES USAMOS**
 
-De ene soort is nodig om de site te laten werken. De andere is anonieme statistiek, en die laadt alleen als je daar akkoord voor geeft. Advertentie-tracking staat er niet op.
+Un tipo hace falta para que la web funcione. El otro es estadística anónima, y solo se carga si das tu acuerdo. No hay seguimiento publicitario.
 
-Je keuze kun je op elk moment wijzigen, hiernaast. Niet door browsergegevens te wissen, gewoon met een knop.
+Tu elección puedes cambiarla en cualquier momento, aquí al lado. No borrando los datos del navegador, sino con un simple botón.
 
-JOUW KEUZE
+TU ELECCIÓN
 
-Je hebt nog geen keuze gemaakt
+Todavía no has elegido
 
-Zolang er geen keuze is, laadt er niets. Onbekend telt hier als nee.
+Mientras no haya elección, no se carga nada. Aquí lo desconocido cuenta como no.
 
-> knop: Anonieme statistieken toestaan
+> knop: Permitir estadísticas anónimas
 
-Intrekken werkt vanaf nu en niet met terugwerkende kracht: wat er eerder gemeten is, blijft bij die diensten staan. Wil je dat ook verwijderd hebben, neem dan contact met ons op.
+Retirarlo funciona a partir de ahora y no con efecto retroactivo: lo que se midió antes se queda en esos servicios. Si quieres que eso también se borre, ponte en contacto con nosotros.
 
-- ALTIJD AAN Noodzakelijk Nodig om de site te laten werken. Hieronder valt het onthouden van de keuze die je op de cookiebalk maakt, want zonder dat zou de vraag bij elk bezoek terugkomen. WANNEER Altijd. Hier is geen toestemming voor nodig en er valt niets te weigeren.
+- SIEMPRE ACTIVO Necesarias Necesarias para que la web funcione. Aquí entra recordar la elección que haces en la barra de cookies, porque sin eso la pregunta volvería en cada visita. CUÁNDO Siempre. Para esto no hace falta consentimiento y no hay nada que rechazar.
 
-- ALLEEN MET AKKOORD Anonieme statistieken Google Analytics 4, met een verkort IP-adres, en Microsoft Clarity. Daarmee zien we welke pagina's mensen helpen en waar ze vastlopen. Er worden geen advertentieprofielen opgebouwd en er wordt niets doorverkocht. WANNEER Alleen na je akkoord. Zolang dat er niet is, worden deze scripts niet ingeladen; ze staan dus niet uit maar zijn er niet.
+- SOLO CON TU ACUERDO Estadísticas anónimas Google Analytics 4, con la dirección IP acortada, y Microsoft Clarity. Con ellos vemos qué páginas ayudan a la gente y dónde se atasca. No se crean perfiles publicitarios y no se vende nada. CUÁNDO Solo después de tu acuerdo. Mientras no lo haya, estos scripts no se cargan; así que no están apagados, sino que no están.
 
-**Per browser, op dit apparaat.**
+**Por navegador, en este dispositivo.**
 
-Je keuze wordt lokaal in deze browser opgeslagen en gaat niet mee naar onze servers. Gebruik je een ander apparaat of een andere browser, dan wordt de vraag daar opnieuw gesteld, want daar weten we het antwoord niet.
+Tu elección se guarda localmente en este navegador y no viaja a nuestros servidores. Si usas otro dispositivo u otro navegador, la pregunta se hace ahí de nuevo, porque ahí no conocemos la respuesta.
 
-Weiger je, dan verdwijnt de balk ook. Een balk die blijft terugkomen tot je ja zegt is geen keuze maar aandrang.
+Si rechazas, la barra también desaparece. Una barra que vuelve una y otra vez hasta que dices que sí no es una elección sino presión.
 
-Trek je je toestemming later in, dan stopt het laden vanaf dat moment. Wat er in de sessies daarvoor gemeten is, blijft bij die diensten staan; wil je dat ook verwijderd hebben, neem dan contact op.
+Si retiras tu consentimiento más adelante, la carga se detiene desde ese momento. Lo que se midió en las sesiones anteriores se queda en esos servicios; si quieres que eso también se borre, ponte en contacto.
 
 > knop: Sigue leyendo
 
-**Stel ze gewoon.**
+**Hazlas sin más.**
 
-Heb je een vraag over wat er van je wordt vastgelegd, of wil je gegevens laten verwijderen, stuur dan een bericht. In het privacybeleid staat wat er verder met persoonsgegevens gebeurt en welke rechten je hebt.
+Si tienes una pregunta sobre lo que se registra de ti, o quieres que se borren datos, envía un mensaje. En la política de privacidad pone qué más pasa con los datos personales y qué derechos tienes.
 
-> knop: STUUR EEN BERICHT
+> knop: ENVÍA UN MENSAJE
 
-Dit beleid gaat over dibaclinics.nl.
+Esta política trata de dibaclinics.nl.
 
 ---
 
 ### /es/politica-de-privacidad
 
-**Tabbladtitel:** Privacybeleid | Diba Clinics
+**Tabbladtitel:** Política de privacidad | Diba Clinics
 
 **Google-omschrijving:** Deze website verzamelt zelf niets. Waar je gegevens wel terechtkomen, wat daar gebeurt en welke rechten je hebt.
 
-**HOE WE OMGAAN MET JE GEGEVENS**
+**CÓMO TRATAMOS TUS DATOS**
 
-Op dibaclinics.nl staat één formulier, op de contactpagina. Wat je daar invult komt als mail bij ons binnen en verder nergens. Geen nieuwsbrief, geen profiel dat we aanleggen, geen veld dat stiekem iets anders doet.
+Op dibaclinics.nl hay un solo formulario, en la página de contacto. Lo que rellenas ahí nos llega como correo y a ningún otro sitio. Sin boletín, sin perfil que creemos, sin campo que haga otra cosa a escondidas.
 
-De meeste gegevens van je staan trouwens ergens anders dan op deze site. Hieronder staat waar, en wat daar gebeurt.
+La mayoría de tus datos, por cierto, están en otro sitio que no es esta web. Abajo pone dónde, y qué pasa allí.
 
-Vragen over je gegevens gaan naar info@dibaclinics.nl of telefonisch naar 010-2038423. Zet er even bij dat het om een privacyverzoek gaat, dan komt het bij de juiste persoon terecht.
+Las preguntas sobre tus datos van a info@dibaclinics.nl o por teléfono al 010-2038423. Indica que se trata de una solicitud de privacidad, así llega a la persona adecuada.
 
-**Waar je gegevens wel terechtkomen.**
+**Dónde sí acaban tus datos.**
 
-Drie van de vier zijn niet deze website. Bij elke plek staat wat er ligt en waar het heen gaat.
+Tres de los cuatro no son esta web. En cada sitio pone qué hay y adónde va.
 
-- ONS Deze website De keuze die je op de cookiebalk maakt en het huidprofiel als je dat invult. Allebei blijven ze in je eigen browser; dat profiel bestaat uit keuzes uit lijstjes, zonder naam, mailadres of foto. WAAR HET HEEN GAAT Nergens heen. Wis je je browsergegevens, dan is het weg.
+- NUESTRO Esta web La elección que haces en la barra de cookies y el perfil de piel si lo rellenas. Los dos se quedan en tu propio navegador; ese perfil consiste en opciones elegidas de listas, sin nombre, correo ni foto. ADÓNDE VA A ningún sitio. Si borras los datos del navegador, desaparece.
 
-- DEZE WEBSITE Het contactformulier Je naam, je mailadres, je telefoonnummer als je dat invult, het onderwerp dat je kiest en je bericht. Alleen als je dat formulier zelf verstuurt. WAAR HET HEEN GAAT Als mail naar de kliniek, verstuurd door Resend als verwerker. We bewaren het bericht in onze mailbox en zetten het niet in een systeem of een lijst.
+- ESTA WEB El formulario de contacto Tu nombre, tu correo, tu teléfono si lo rellenas, el asunto que eliges y tu mensaje. Solo si envías tú ese formulario. ADÓNDE VA Como correo a la clínica, enviado por Resend como encargado del tratamiento. Guardamos el mensaje en nuestro buzón y no lo metemos en un sistema ni en una lista.
 
-- BOEKINGSSYSTEEM Salonized Je afspraakgegevens en de contactgegevens die je bij het boeken invult. Ook de reviews die je achterlaat, want die worden daar verzameld. WAAR HET HEEN GAAT Naar Salonized als verwerker, voor het plannen van afspraken en het bijhouden van je traject.
+- SISTEMA DE RESERVAS Salonized Los datos de tu cita y los datos de contacto que rellenas al reservar. También las reseñas que dejas, porque se recogen ahí. ADÓNDE VA A Salonized como encargado del tratamiento, para programar citas y hacer el seguimiento de tu programa.
 
-- BERICHTENVERKEER WhatsApp Wat je ons stuurt, inclusief foto's als je die meestuurt bij een vraag over nazorg. WAAR HET HEEN GAAT Via WhatsApp, dat een eigen privacybeleid heeft waar wij niet over gaan. Wil je iets gevoeligs delen, bel dan liever.
+- MENSAJERÍA WhatsApp Lo que nos envías, incluidas fotos si las adjuntas a una pregunta sobre cuidados posteriores. ADÓNDE VA Por WhatsApp, que tiene su propia política de privacidad sobre la que no decidimos nosotros. Si quieres compartir algo delicado, mejor llama.
 
-- JE DOSSIER En la clínica Wat er bij de intake is besproken, wat er gemeten is, welke behandelingen je hebt gehad en hoe je huid reageerde. WAAR HET HEEN GAAT Dit blijft in de kliniek en is de enige plek waar echt gevoelige gegevens liggen. Alleen de mensen die je behandelen kijken erin.
+- TU EXPEDIENTE En la clínica Lo que se habló en la consulta previa, lo que se midió, qué tratamientos has tenido y cómo reaccionó tu piel. ADÓNDE VA Esto se queda en la clínica y es el único sitio donde hay datos realmente sensibles. Solo lo consultan las personas que te tratan.
 
-**Hoe lang we je gegevens bewaren**
+**Cuánto tiempo guardamos tus datos**
 
-Een dossier van een geneeskundige behandeling moet twintig jaar bewaard blijven, gerekend vanaf de laatste keer dat er iets in veranderde. Dat is geen keuze van ons: het staat sinds 1 januari 2020 in de wet, in artikel 7:454 van het Burgerlijk Wetboek. Daarvoor was het vijftien jaar. Wat niet bij zo een dossier hoort, bewaren we korter, en hieronder staat per gegeven waarom.
+Un expediente de un tratamiento médico debe conservarse veinte años, contados desde la última vez que cambió algo en él. No es una elección nuestra: está en la ley desde el 1 de enero de 2020, en el artículo 7:454 del Código Civil neerlandés. Antes eran quince años. Lo que no forma parte de un expediente así lo guardamos menos tiempo, y abajo pone por qué para cada dato.
 
-- Je behandeldossierTwintig jaarWettelijk verplicht op grond van de WGBO (artikel 7:454 BW), gerekend vanaf de laatste wijziging in het dossier. Dit is geen termijn die wij korter mogen maken.
+- Tu expediente de tratamientoVeinte añosObligatorio por ley según la WGBO, la ley neerlandesa del contrato de tratamiento médico (artículo 7:454 del Código Civil), contado desde la última modificación del expediente. No es un plazo que podamos acortar.
 
-- Foto's die bij een behandeling horenTwintig jaarDie horen bij het dossier en vallen onder dezelfde plicht. Foto's die je ons apart hebt toegestaan te gebruiken buiten je dossier, verwijderen wij zodra je die toestemming intrekt.
+- Fotos que forman parte de un tratamientoVeinte añosForman parte del expediente y están sujetas a la misma obligación. Las fotos que nos has permitido aparte usar fuera de tu expediente las borramos en cuanto retiras ese permiso.
 
-- Facturen en administratieZeven jaarDe fiscale bewaarplicht van de Belastingdienst.
+- Facturas y administraciónSiete añosLa obligación fiscal de conservación de la Agencia Tributaria neerlandesa.
 
-- Wat je ons appt of mailtZolang het gesprek loopt, daarna opgeruimdGeen verplichting; wij bewaren het alleen zolang het ergens toe dient.
+- Lo que nos escribes por WhatsApp o por correoMientras dura la conversación, después se borraSin obligación; lo guardamos solo mientras sirve para algo.
 
-- Meetgegevens van deze websiteMaximaal veertien maandenAlleen als je de cookiebalk hebt geaccepteerd. Weiger je, dan wordt er niets gemeten en is er dus niets te bewaren.
+- Datos de medición de esta webComo máximo catorce mesesSolo si has aceptado la barra de cookies. Si la rechazas, no se mide nada y por tanto no hay nada que guardar.
 
-*WAT*
+*QUÉ DATOS*
 
 *CUÁNTO DURA*
 
-*OP GROND WAARVAN*
+*CON QUÉ BASE*
 
-**Zes rechten, ongeacht waar iets ligt.**
+**Seis derechos, esté donde esté cada cosa.**
 
-Je hoeft niet uit te zoeken bij welke partij iets staat. Stel de vraag bij ons, dan zoeken wij het uit.
+No tienes que averiguar qué parte tiene cada cosa. Haznos la pregunta a nosotros y lo averiguamos.
 
-- Inzien Je mag opvragen welke gegevens er van je zijn en wat ermee gebeurt.
+- Acceso Puedes pedir qué datos tuyos existen y qué se hace con ellos.
 
-- Corrigeren Klopt er iets niet, dan laten we het aanpassen.
+- Rectificación Si algo no es correcto, hacemos que se corrija.
 
-- Laten verwijderen Waar de wet dat toelaat. Voor delen van een behandeldossier gelden wettelijke bewaartermijnen; dat leggen we dan uit in plaats van er omheen te praten.
+- Supresión Donde la ley lo permite. Partes de un expediente de tratamiento tienen plazos legales de conservación; eso lo explicamos en lugar de irnos por las ramas.
 
-- Bezwaar maken Tegen een verwerking waar je het niet mee eens bent.
+- Oposición Contra un tratamiento de datos con el que no estés de acuerdo.
 
-- Meenemen Je gegevens in een leesbaar bestand opvragen om ze ergens anders te gebruiken.
+- Portabilidad Pedir tus datos en un archivo legible para usarlos en otro sitio.
 
-- Klagen Kom je er met ons niet uit, dan kun je terecht bij de Autoriteit Persoonsgegevens. Dat recht heb je altijd, ook zonder eerst bij ons te klagen.
+- Reclamación Si con nosotros no llegas a un acuerdo, puedes acudir a la Autoriteit Persoonsgegevens, la autoridad neerlandesa de protección de datos. Ese derecho lo tienes siempre, también sin reclamar primero ante nosotros.
 
-> knop: DIEN EEN VERZOEK IN
+> knop: PRESENTA UNA SOLICITUD
 
-**Wat we met je gegevens doen**
+**Lo que hacemos con tus datos**
 
-Er worden geen advertentieprofielen van je opgebouwd en er wordt niets doorverkocht of geruild. De enige meting op deze site is anonieme statistiek, en die laadt pas nadat je daar akkoord voor geeft; zonder akkoord worden die scripts niet ingeladen.
+No se crean perfiles publicitarios tuyos y no se vende ni se intercambia nada. La única medición en esta web es estadística anónima, y solo se carga después de que des tu acuerdo; sin acuerdo esos scripts no se cargan.
 
-Je huidprofiel wordt bewust niet naar ons gestuurd. Dat is de plek waar de verleiding het grootst is om alvast een mailadres te vragen, en daarom gebeurt het niet.
+Tu perfil de piel no se nos envía a propósito. Es el sitio donde la tentación de pedir ya un correo es mayor, y por eso no se hace.
 
 > knop: Sigue leyendo
 
-> knop: BEHEER JE COOKIEKEUZE
+> knop: GESTIONA TU ELECCIÓN DE COOKIES
 
-Liever bellen? Dat kan op 010-2038423. Zie ook de algemene voorwaarden.
+¿Prefieres llamar? Puedes hacerlo al 010-2038423. Consulta también las condiciones generales.
 
 ---
 
@@ -38976,15 +38978,17 @@ De lijst hieronder is lang. Die van jou is dat niet.
 
 Stel je huidprofiel samen en hier staan de prijzen van wat bij jou past, met de reden erbij. De volledige lijst blijft er gewoon onder staan; er wordt niets weggefilterd.
 
-> knop: STEL JE HUIDPROFIEL SAMEN
+> knop: CREA TU PERFIL DE PIEL
+
+**Lo que un tratamiento cuesta**
 
 Klap een behandeling open en je ziet hoe vaak je moet komen, hoe lang de hersteltijd is en wat het niet doet. Het bedrag blijft staan, ook dicht.
 
 Eerst kijken, nog niets doen.
 
-- Consult met EVE-M huidanalyse De meting waar elk traject mee begint. Je huid in kaart, en een behandelplan dat daaruit volgt. 50
+- Consulta con análisis de la piel EVE-M La medición con la que empieza cada programa. Tu piel registrada, y un plan de tratamiento que sale de ahí. 50
 
-- Consult SkinComplete LED-masker Een uur over LED thuis: je huid bekeken, je doelen besproken en een protocol dat daarbij past. 100
+- Consult SkinComplete LED-masker Una hora sobre el LED en casa: tu piel vista, tus objetivos hablados y un protocolo a medida. 100
 
 Reinigen, hydrateren, oppervlakkig vernieuwen.
 
@@ -39046,7 +39050,7 @@ Mikken op kleur, vaten of structuur.
 
 - Fotona Resurfacing Renovación de la piel con láser, para poros, textura y una piel más lisa. Na de meting
 
-- HAIRestart Laser op de hoofdhuid bij beginnende haarverdunning. Na de meting
+- HAIRestart Láser en el cuero cabelludo cuando el pelo empieza a clarear. Na de meting
 
 - Nordlys IPL para la pigmentación Luz sobre manchas de pigmentación y daño solar. El pigmento sale primero a la superficie y después se difumina. desde75
 
@@ -39076,9 +39080,9 @@ De haarwortel uitschakelen.
 
 Wat er verder in de kliniek gebeurt.
 
-- NightLase Laser tegen snurken. Het zachte gehemelte wordt steviger, zonder operatie of beugel. Na de meting
+- NightLase Láser contra los ronquidos. El paladar blando se vuelve más firme, sin operación ni férula. Na de meting
 
-- XL Hair Tegen haaruitval en dunner wordend haar. Een traject van maanden, afgestemd op je hoofdhuid. desde800
+- XL Hair Contra la caída del pelo y el pelo que clarea. Un programa de meses, ajustado a tu cuero cabelludo. desde800
 
 - Programa de acné Un programa guiado para el acné: tratamientos en la clínica, productos y controles en casa. 570
 
@@ -39206,11 +39210,11 @@ Een pakket vervangt de losse zones die erin zitten; die tellen dan niet nog een 
 
 GEEN STERRETJES Er staan hier geen voetnoten met voorwaarden en geen bedragen die pas aan de balie compleet worden. Wat je hier ziet is wat een sessie kost. Hoeveel sessies je nodig hebt hoor je tijdens de intake, en dat getal bepaalt je totaal meer dan het tarief hiernaast.
 
-**Lo que la gente hierover vragen.**
+**Lo que la gente pregunta sobre esto.**
 
 Staat je vraag er niet bij, dan hoor je het antwoord aan de telefoon zonder dat er een afspraak uit hoeft te komen.
 
-- VERGOEDING PER VERZEKERAAR
+- REEMBOLSO POR ASEGURADORA
 
 - AFZEGGEN, BETALEN EN VERZETTEN
 
@@ -39228,7 +39232,7 @@ Dat hangt af van je aanvullende verzekering en of er een medische indicatie is. 
 
 **Zijn er kortingen, pakketten of acties?**
 
-Alle tarieven staan openbaar, per sessie en per variant. Er bestaan geen kortingen, actiecodes of tijdelijke aanbiedingen, dus er is ook nooit een moment waarop je te vroeg of te laat was.
+Todas las tarifas son públicas, por sesión y por variante. No hay descuentos, códigos promocionales ni ofertas temporales, así que nunca hay un momento en el que llegaste demasiado pronto o demasiado tarde.
 
 **Wat als ik mijn afspraak afzeg?**
 
@@ -39236,13 +39240,13 @@ Tot 48 uur voor je afspraak kun je afzeggen of verzetten, telefonisch of per ber
 
 **Wanneer betaal ik?**
 
-Je betaalt direct in de kliniek. De aanbetaling die je bij het maken van de afspraak deed, wordt met het totaalbedrag verrekend.
+Pagas directamente en la clínica. El depósito que hiciste al pedir la cita se descuenta del importe total.
 
 **Wat als de behandeling niet door kan gaan?**
 
 Je betaalt de behandeling dan niet.
 
-**Het aantal sessies bepaalt je totaal**
+**El número de sesiones bepaalt je totaal**
 
 De bedragen hierboven liggen vast. Wat je in totaal kwijt bent hangt af van hoe vaak je komt, en dat verschilt per huid. Een aantal noemen voordat we gemeten hebben is een gok met jouw geld, dus dat doen we niet.
 
@@ -39526,7 +39530,7 @@ Eso no es para convencerte. Es para que podamos verlo cuando algo no funciona, y
 
 - Textura Irregularidad, y si empiezan a formarse cicatrices
 
-**Preguntas sobre el acné**
+**Preguntas frecuentes**
 
 ¿Me voy a librar del acné aquí?
 
@@ -39996,71 +40000,71 @@ En la consulta de la piel determinamos si es líquido, grasa o sombra. En dos de
 
 **Google-omschrijving:** Kruis aan wat je op je huid ziet, zonder vaktermen, en je komt bij de pagina die erover gaat.
 
-**ZOEK OP WAT JE OP JE HUID ZIET**
+**BUSCA POR LO QUE VES EN TU PIEL**
 
-Je hoeft de naam van je klacht niet te kennen. Kruis aan wat je ziet en voelt, dan brengen we je naar de pagina die erover gaat.
+No hace falta que sepas el nombre de tu problema. Marca lo que ves y sientes, y te llevamos a la página que trata de ello.
 
-Bij twee signalen sturen we je meteen naar de huisarts. Die kijken we als eerste na, zodat je weet waar je aan toe bent.
+Con dos señales te mandamos directamente al médico de cabecera. Esas las comprobamos primero, para que sepas a qué atenerte.
 
 > knop: Sigue leyendo
 
-> knop: BEGIN MET AANKRUISEN
+> knop: EMPIEZA A MARCAR
 
-> knop: OF STEL JE VRAAG GEWOON
+> knop: O HAZ TU PREGUNTA SIN MÁS
 
-**Kruis aan wat er speelt.**
+**Marca lo que te pasa.**
 
-Je mag er meerdere kiezen. Hoe meer je aankruist, hoe scherper de lijst wordt die je terugkrijgt.
+Puedes elegir varias. Cuanto más marques, más precisa es la lista que recibes.
 
-KLEUR EN VLEKKEN
+COLOR Y MANCHAS
 
-- Rood of rode plekken
+- Rojez o zonas rojas
 
-- Zichtbare adertjes of rode lijntjes
+- Venitas visibles o líneas rojas
 
-- Bruine vlekken
+- Manchas marrones
 
-- Witte of lichtere plekken
+- Zonas blancas o más claras
 
-- Donkere kringen onder mijn ogen
+- Ojeras oscuras
 
-BULTJES EN STRUCTUUR
+BULTITOS Y TEXTURA
 
-- Puistjes of mee-eters
+- Granos o puntos negros
 
-- Bultjes zonder puistje
+- Bultitos sin grano
 
-- Glimt snel of grove poriën
+- Brilla enseguida o poros dilatados
 
 - Hoyitos o marcas hundidas
 
-- Strepen of littekens
+- Estrías o cicatrices
 
 - Líneas finas
 
-- Ruw of dof
+- Áspera o apagada
 
-HOE HET AANVOELT
+CÓMO SE NOTA
 
-- Het jeukt
+- Pica
 
-- Droog of trekkerig
+- Seca o tirante
 
-- Schilfers of vellen
+- Escamas o pieles
 
-- Producten prikken of branden
+- Los productos pican o escuecen
 
-DIT VRAGEN WE APART
+ESTO LO PREGUNTAMOS APARTE
 
-- Een plekje dat verandert
+- Una mancha que cambia
 
-- Ik voel me er ziek bij
+- Me siento mal con ello
 
-Kruis aan wat er speelt. Je mag er meerdere kiezen, en de lijst rechts schuift mee. Er staat bewust geen enkele vakterm bij: als je wist hoe het heette, was je hier niet.
+Marca lo que te pasa. Puedes elegir varias, y la lista de la derecha se mueve contigo. A propósito no hay ni un solo término técnico: si supieras cómo se llama, no estarías aquí.
 
-**Dan kijken wij er gewoon naar.**
+**Entonces lo miramos nosotros sin más.**
 
-Niet alles past in een lijst, en sommige dingen spelen tegelijk. Dat is geen probleem: dan begint het met kijken en meten in plaats van met kiezen.
+No todo cabe en una lista, y algunas cosas pasan a la vez. No es ningún problema: entonces se empieza mirando y midiendo en lugar de eligiendo.
 
 > knop: RESERVA UNA CONSULTA
 
@@ -42560,7 +42564,7 @@ Estas vienen de Salonized y no las hemos elegido nosotros por su contenido. Habl
 
 - “Ik heb een hele fijne ervaring gehad bij Demi. Goed geïnformeerd over hoe het proces (laseren) in zijn werking gaat. Ik ben gerustgesteld en goed geholpen. Jullie hebben er een nieuwe klant bij!” Andrijana Depilación láser con Demi 4 MAANDEN GELEDEN
 
-- “Ik heb een hele fijne ervaring gehad bij Demy. Goed geïnformeerd over hoe het proces (laseren) in zijn werking gaat. Ik ben gerustgesteld en goed geholpen. Jullie hebben er een nieuwe klant bij!” Andrijana Depilación láser 5 MAANDEN GELEDEN
+- “Inmiddels 3 keer langs geweest voor de diodelaser en ik zie echt 80% verschil! Ook de littekens en vlekjes van mijn huid zijn zwaar verbeterd dankzij de dermapen. Sowieso forever vaste klant!!” Sara Depilación láser MEER DAN 7 JAAR GELEDEN
 
 - “Ik vond de afspraak super! Alles is goed verlopen en bijna uitbehandeld met laseren! Demi is echt een zeer professionele huidspecialist zo dankbaar met haar! Voert haar werk heel nauwkeurig uit.” Monique Depilación láser MEER DAN 3 JAAR GELEDEN
 
@@ -43762,27 +43766,27 @@ Durante la primera consulta medimos tu rojez, repasamos tus desencadenantes y sa
 
 **Google-omschrijving:** Is er een medische reden voor je klacht, dan is er een route naar vergoeding. Drie vragen op volgorde, en bij elke vraag waar je aan toe bent.
 
-**VERGOEDING DOOR JE ZORGVERZEKERAAR**
+**REEMBOLSO POR TU SEGURO MÉDICO**
 
-Is er een medische reden voor je klacht, dan is er een route. Huidtherapie zit bij de meeste verzekeraars in het aanvullende pakket, en dan gaat het verder over jouw polis: welk pakket je hebt, welk maximum eraan hangt en of je huisarts een verwijzing moet schrijven.
+Si hay una razón médica para tu problema, hay una vía. La terapia de la piel está en la mayoría de las aseguradoras en el paquete complementario, y a partir de ahí se trata de tu póliza: qué paquete tienes, qué máximo lleva y si tu médico de cabecera tiene que escribir una derivación.
 
-Voorwaarden en maxima veranderen per jaar en per pakket. Jouw actuele bedrag staat dus in je eigen polis, en daar klopt het ook echt. Wat hier staat is hoe het werkt, en dat blijft van jaar tot jaar hetzelfde.
+Las condiciones y los máximos cambian cada año y según el paquete. Tu importe actual está por tanto en tu propia póliza, y ahí es donde es correcto de verdad. Lo que está aquí es cómo funciona, y eso sigue igual de un año a otro.
 
 > knop: Sigue leyendo
 
-- Gecontracteerd bij alle zorgverzekeraars Je hoeft niet uit te zoeken of wij bij jouw verzekeraar aangesloten zijn. Dat zijn we, bij allemaal.
+- Con contrato con todas las aseguradoras No tienes que averiguar si estamos concertados con tu aseguradora. Lo estamos, con todas.
 
-- Kwaliteitsregister Paramedici Onze huidtherapeuten staan ingeschreven. Veel aanvullende pakketten stellen dat als eis voor vergoeding.
+- Registro de Calidad de Paramédicos (Kwaliteitsregister Paramedici) Nuestras terapeutas de la piel están inscritas. Muchos paquetes complementarios lo exigen para el reembolso.
 
-- Nederlandse Vereniging van Huidtherapeuten Onze huidtherapeuten zijn lid van de beroepsvereniging. Voor leden is de registratie in het Kwaliteitsregister Paramedici verplicht.
+- Asociación Neerlandesa de Terapeutas de la Piel (NVH) Nuestras terapeutas de la piel son miembros de la asociación profesional. Para los miembros, la inscripción en el Registro de Calidad de Paramédicos es obligatoria.
 
-- Aangesloten bij ANBOS De branchevereniging voor schoonheidsspecialisten, met eisen aan opleiding, hygiëne en klachtafhandeling.
+- Afiliación a ANBOS La asociación del sector de las esteticistas, con requisitos de formación, higiene y gestión de reclamaciones.
 
-- SKIN Register Het kwaliteitsregister voor schoonheidsspecialisten. Onze schoonheidsspecialisten staan er op eigen naam in.
+- SKIN Register El registro de calidad de las esteticistas. Nuestras esteticistas figuran en él con su propio nombre.
 
-**Kies je verzekeraar, zie waar je moet kijken**
+**Elige tu aseguradora, mira dónde tienes que buscar**
 
-Per verzekeraar staat waar in de polis je moet kijken en welke voorwaarde er het vaakst tussen zit. Wat er precies in jouw pakket zit, zie je alleen daar.
+Por aseguradora pone dónde buscar en la póliza y qué condición aparece más a menudo. Lo que hay exactamente en tu paquete solo lo ves ahí.
 
 - CZ
 
@@ -43804,51 +43808,51 @@ Per verzekeraar staat waar in de polis je moet kijken en welke voorwaarde er het
 
 - Aevitae (EUCARE)
 
-> knop: START JE INTAKE
+> knop: EMPIEZA TU CONSULTA PREVIA
 
-AAN DE BALIE, NA AFLOOP
+EN RECEPCIÓN, AL TERMINAR
 
-**Zo loopt de route naar ja.**
+**Así va el camino hacia el sí.**
 
-Bij elke vraag staat waar je aan toe bent, ook als het antwoord de andere kant op valt. Die helft laten de meeste sites weg, en dat is precies de helft waar je iets aan hebt.
+En cada pregunta pone a qué atenerte, también cuando la respuesta cae del otro lado. Esa mitad la omiten la mayoría de las webs, y es justo la mitad que te sirve.
 
-- EERSTE VRAAG Is er een medische reden? Dit is de enige vraag die er echt toe doet, en hij gaat niet over de behandeling maar over de klacht. Dezelfde laser kan in het ene geval medisch zijn en in het andere cosmetisch. BIJ JA Dan valt het onder cosmetische zorg en betaal je het zelf. Dat geldt bij elke kliniek en elke verzekeraar, want zo is het stelsel opgezet. BIJ NEE Dan ga je door naar de tweede vraag. Of er een medische reden is, bepaalt een arts.
+- PRIMERA PREGUNTA ¿Hay una razón médica? Es la única pregunta que importa de verdad, y no trata del tratamiento sino del problema. El mismo láser puede ser médico en un caso y cosmético en otro. SI ES SÍ Entonces entra en la atención cosmética y lo pagas tú. Eso vale en cualquier clínica y con cualquier aseguradora, porque así está montado el sistema. SI ES NO Entonces pasas a la segunda pregunta. Si hay una razón médica lo decide un médico.
 
-- TWEEDE VRAAG Zit het in je aanvullende verzekering? Huidtherapie zit bij de meeste verzekeraars in het aanvullende pakket en niet in de basis. Wat er precies in zit verschilt per verzekeraar én per pakket, en het wijzigt per jaar. BIJ JA Dan betaal je het zelf, en dat kan een prima keuze zijn. Je weet het alleen vooraf, met de prijs erbij. BIJ NEE Kijk dan meteen naar het maximum per jaar en of er een verwijzing van je huisarts nodig is. Dat laatste wordt het vaakst over het hoofd gezien.
+- SEGUNDA PREGUNTA ¿Está en tu seguro complementario? La terapia de la piel está en la mayoría de las aseguradoras en el paquete complementario y no en el básico. Lo que hay exactamente varía según la aseguradora y según el paquete, y cambia cada año. SI ES SÍ Entonces lo pagas tú, y eso puede ser una elección perfectamente buena. Solo que lo sabes de antemano, con el precio incluido. SI ES NO Mira entonces enseguida el máximo anual y si hace falta una derivación de tu médico de cabecera. Esto último es lo que más se pasa por alto.
 
-- DERDE VRAAG Is er een verwijzing nodig? Veel pakketten vergoeden alleen met een verwijzing van je huisarts, en die moet er zijn vóórdat de behandeling begint. BIJ JA Dan kun je rechtstreeks terecht. Meld bij de intake wel dat je een vergoeding verwacht, dan wordt er meteen gekeken of alles klopt. BIJ NEE Regel die dan eerst, vóór je afspraak. Achteraf een verwijzing opsturen accepteren verzekeraars zelden, en die rekening blijft dan staan.
+- TERCERA PREGUNTA ¿Hace falta una derivación? Muchos paquetes solo reembolsan con una derivación de tu médico de cabecera, y tiene que existir antes de que empiece el tratamiento. SI ES SÍ Entonces puedes venir directamente. Eso sí, di en la consulta previa que esperas un reembolso, y enseguida se comprueba que todo esté en orden. SI ES NO Entonces arréglala primero, antes de tu cita. Las aseguradoras rara vez aceptan una derivación enviada después, y esa factura se queda entonces contigo.
 
-**Samen krijg je het rond.**
+**Entre los dos sale adelante.**
 
-Een vergoeding komt rond als beide kanten hun deel doen. Hier staat welk deel van ons is en welk deel van jou, zodat je het vooraf weet en niet pas als de rekening er ligt.
+Un reembolso sale adelante cuando las dos partes hacen su parte. Aquí pone qué parte es nuestra y qué parte es tuya, para que lo sepas de antemano y no cuando llega la factura.
 
-DIT DOEN WIJ
+ESTO LO HACEMOS NOSOTROS
 
-- Vertellen wat een behandeling kost, vooraf en compleet
+- Decirte lo que cuesta un tratamiento, de antemano y completo
 
-- Op je factuur zetten wat er precies gedaan is, zodat je die kunt indienen
+- Poner en tu factura exactamente lo que se ha hecho, para que puedas presentarla
 
-- Bij de intake zeggen als we denken dat er een medische route bestaat die je nog niet gelopen hebt
+- Decirte en la consulta previa si creemos que existe una vía médica que todavía no has recorrido
 
-DIT DOE JIJ
+ESTO LO HACES TÚ
 
-- Je polisvoorwaarden nakijken op huidtherapie, of ons vragen waar je moet zoeken
+- Revisar las condiciones de tu póliza en cuanto a terapia de la piel, o preguntarnos dónde buscar
 
-- Bij je huisarts een verwijzing halen als je pakket die eist
+- Pedir una derivación a tu médico de cabecera si tu paquete la exige
 
-- De factuur na afloop bij je verzekeraar indienen
+- Presentar la factura a tu aseguradora al terminar
 
-**De eerste scheelt geld.**
+**El primero ahorra dinero.**
 
-Mensen stellen behandeling uit op grond van iets wat niet klopt. Daarom staat die bovenaan.
+La gente aplaza el tratamiento por algo que no es cierto. Por eso ese está arriba.
 
-- WAT MENSEN DENKEN Dit gaat van mijn eigen risico af Bij een vergoeding uit je aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Veel mensen stellen behandeling uit omdat ze denken dat ze eerst honderden euro's kwijt zijn, en dat klopt hier niet.
+- LO QUE LA GENTE PIENSA Esto se descuenta de mi franquicia Con un reembolso de tu seguro complementario, no. La franquicia corresponde al seguro básico. Mucha gente aplaza el tratamiento porque cree que primero tiene que gastar cientos de euros, y aquí eso no es así.
 
-- WAT MENSEN DENKEN Mijn verzekeraar vergoedt huidtherapie, dus dit ook Vergoeding hangt aan de klacht en aan wie de behandeling uitvoert, niet aan de naam van de behandeling. Twee mensen met dezelfde afspraak kunnen een verschillend antwoord krijgen.
+- LO QUE LA GENTE PIENSA Mi aseguradora reembolsa la terapia de la piel, así que esto también El reembolso depende del problema y de quién realiza el tratamiento, no del nombre del tratamiento. Dos personas con la misma cita pueden recibir respuestas distintas.
 
-- WAT MENSEN DENKEN Dat regelt de kliniek wel voor me Wij zetten op je factuur wat er precies gedaan is, zodat je die kunt indienen. Wat jouw polis dekt staat alleen in jouw polis, en dat gesprek voer je met je verzekeraar. Weet je niet waar je moet kijken, vraag het ons dan bij de intake.
+- LO QUE LA GENTE PIENSA Eso ya lo arregla la clínica por mí Nosotros ponemos en tu factura exactamente lo que se ha hecho, para que puedas presentarla. Lo que cubre tu póliza solo está en tu póliza, y esa conversación la tienes con tu aseguradora. Si no sabes dónde buscar, pregúntanoslo en la consulta previa.
 
-- WAT MENSEN DENKEN Ik hoor het later wel Een verwijzing of een akkoord telt alleen als het er is vóórdat de behandeling begint. Regel je het van tevoren, dan is het meestal een kwestie van één belletje naar je huisarts.
+- LO QUE LA GENTE PIENSA Ya me enteraré más adelante Una derivación o una aprobación solo cuenta si existe antes de que empiece el tratamiento. Si lo arreglas con antelación, normalmente es cuestión de una llamada a tu médico de cabecera.
 
 ---
 
@@ -43858,23 +43862,23 @@ Mensen stellen behandeling uit op grond van iets wat niet klopt. Daarom staat di
 
 **Google-omschrijving:** 3.893 reviews op Salonized, gemiddeld een 5,0. Wat dat wel zegt en wat niet, met de quotes zelf erbij.
 
-**WAT KLANTEN OVER ONS SCHRIJVEN**
+**LO QUE LOS CLIENTES ESCRIBEN DE NOSOTROS**
 
-3893 reviews op Salonized, gemiddeld een 5,0 . Ze zijn na de afspraak geschreven door mensen die hier zijn geweest, en ze staan er allemaal: met tekst en zonder.
+3893 reseñas en Salonized, con una media de 5,0. Las escribieron después de la cita personas que han estado aquí, y están todas: con texto y sin él.
 
-Zoek gerust op de behandeling die jou bezighoudt. Dan lees je wat mensen met jouw vraag erover schreven, en dat zegt meer dan het gemiddelde eronder.
+Busca sin problema el tratamiento que te interesa. Así lees lo que escribieron sobre él personas con tu misma pregunta, y eso dice más que la media de debajo.
 
-over 3893 reviews op Salonized
+de 3893 reseñas en Salonized
 
-Wij verzamelen ze niet en we kunnen ze niet selecteren of verwijderen. Hieronder staan ze allemaal, overgenomen in de volgorde van de bron.
+No las recogemos nosotros y no podemos seleccionarlas ni borrarlas. Abajo están todas, tomadas en el orden de la fuente.
 
-DE MENSEN OVER WIE HET GAAT
+LAS PERSONAS DE LAS QUE SE TRATA
 
-**Zoek op wat jij zelf hebt.**
+**Busca por lo que tienes tú.**
 
-Sorteren op score heeft geen zin als bijna alles vijf is, en zelf de beste bovenaan zetten zou betekenen dat wij kiezen wat je ziet. Dus filter je zelf: op de klacht waarvoor iemand kwam, of op hoe het bezoek was. Met het aantal op de knop, ook als dat tegenvalt.
+Ordenar por nota no tiene sentido cuando casi todo es un cinco, y poner nosotros las mejores arriba significaría que elegimos lo que ves. Así que filtras tú: por el problema por el que vino alguien, o por cómo fue la visita. Con el número en el botón, también cuando decepciona.
 
-- ALLES 2.472
+- TODO 2.472
 
 - ACNÉ 24
 
@@ -43890,25 +43894,25 @@ Sorteren op score heeft geen zin als bijna alles vijf is, en zelf de beste boven
 
 - CONSULTA DE LA PIEL 31
 
-- UITLEG EN ADVIES 832
+- EXPLICACIÓN Y CONSEJO 832
 
-- VRIENDELIJK 907
+- AMABLE 907
 
-- OP JE GEMAK 518
+- A GUSTO 518
 
-- VAKKUNDIG 524
+- PROFESIONAL 524
 
-- SERVICE EN PLANNING 371
+- SERVICIO Y CITAS 371
 
-- SFEER EN KLINIEK 230
+- AMBIENTE Y CLÍNICA 230
 
-- RESULTAAT 363
+- RESULTADO 363
 
-- KOMT TERUG 1.043
+- VUELVE 1.043
 
-- AANRADER 105
+- RECOMENDABLE 105
 
-- KORT EN GOED 249
+- CORTO Y CLARO 249
 
 2.472 reseñas met tekst, in de volgorde van Salonized: nieuwste eerst. Pagina 1 de 52.
 
@@ -44190,17 +44194,17 @@ De reviews komen van de openbare Salonized-pagina, en het is een momentopname: e
 
 **Google-omschrijving:** Snurken begint zelden in je keel alleen. Eerst kijken waar het geluid vandaan komt, dan pas of NightLase bij jou iets oplevert.
 
-**SNURKEN DAT JE NACHTEN VERSTOORT**
+**RONQUIDOS QUE TE ESTROPEAN LAS NOCHES**
 
-Er bestaat een laserbehandeling die het zachte gehemelte aanspant, en daar zijn wij goed in. Maar hij werkt alleen als het geluid daar ontstaat. Zit het in je neus, je tong of je kaakstand, dan levert hij niets op, en dat hoor je liever nu dan na drie sessies.
+Existe un tratamiento con láser que tensa el paladar blando, y en eso somos buenos. Pero solo funciona si el sonido se origina ahí. Si está en la nariz, en la lengua o en la posición de la mandíbula, no aporta nada, y eso prefieres oírlo ahora que después de tres sesiones.
 
-Daarom begint deze pagina bij de bron en niet bij het apparaat.
+Por eso esta página empieza por el origen y no por el aparato.
 
-> knop: WAAR KOMT JOUW GELUID VANDAAN?
+> knop: ¿DE DÓNDE VIENE TU SONIDO?
 
 > knop: ¿PREFIERES HACER PRIMERO UNA PREGUNTA?
 
-Laser op het zachte gehemelte, zonder snijden of beugel.
+Láser en el paladar blando, sin cortes ni férula.
 
 *CUÁNTO DURA*
 
@@ -44208,133 +44212,133 @@ Laser op het zachte gehemelte, zonder snijden of beugel.
 
 *CON QUÉ FRECUENCIA*
 
-Een reeks van drie, met ongeveer drie weken ertussen.
+Una serie de tres, con unas tres semanas entre medias.
 
 *RECUPERACIÓN*
 
-Je kunt na NightLase normaal eten en praten.
+Después de NightLase puedes comer y hablar con normalidad.
 
-Of dit bij jou werkt hangt af van waar het geluid ontstaat. Dat stellen we tijdens de intake vast.
+Si esto funciona en tu caso depende de dónde se origina el sonido. Eso lo determinamos en la consulta previa.
 
-**Vier plekken waar snurken kan ontstaan**
+**Cuatro sitios donde puede originarse el ronquido**
 
-Dit is een wegwijzer en geen diagnose; het echte antwoord komt uit meekijken achter in je mond. Maar de herkenning hieronder brengt de meeste mensen al bij de juiste deur, en soms is dat niet de onze.
+Esto es una guía y no un diagnóstico; la respuesta de verdad sale de mirar al fondo de tu boca. Pero reconocerse en lo de abajo ya lleva a la mayoría a la puerta correcta, y a veces esa no es la nuestra.
 
-- Het zachte gehemelte AQUÍ NOS TOCA A NOSOTROS WAAR JE HET AAN MERKT Een laag, ratelend geluid met je mond open. Vaak erger op je rug en na een glas wijn. LO QUE SIGNIFICA Het slappe weefsel achter in je mond trilt mee op de luchtstroom. Dit is de meest voorkomende bron en de enige waar een laser iets aan verandert. LO QUE HACEMOS Hier heeft NightLase zin. We kijken eerst mee achter in je mond en spreken daarna een reeks af.
+- El paladar blando AQUÍ NOS TOCA A NOSOTROS EN QUÉ LO NOTAS Un sonido grave y vibrante con la boca abierta. A menudo peor boca arriba y después de una copa de vino. LO QUE SIGNIFICA El tejido flácido del fondo de la boca vibra con el flujo de aire. Es el origen más frecuente y el único en el que un láser cambia algo. LO QUE HACEMOS Aquí NightLase tiene sentido. Primero miramos al fondo de tu boca y después acordamos una serie.
 
-- Je neus HIER NIET WAAR JE HET AAN MERKT Je slaapt met je mond open omdat je neus dicht zit, of je snurkt vooral tijdens een verkoudheid of hooikoortsseizoen. LO QUE SIGNIFICA Een verstopte of scheve neus dwingt je tot ademen door je mond, en dan gaat het gehemelte pas meetrillen. De oorzaak zit dan een stuk eerder. LO QUE HACEMOS Wij beginnen hier niet. Dit hoort bij je huisarts of een KNO-arts, en die kan er vaak meer aan doen dan wij.
+- Tu nariz AQUÍ NO EN QUÉ LO NOTAS Duermes con la boca abierta porque tienes la nariz tapada, o roncas sobre todo durante un resfriado o en la temporada de alergia. LO QUE SIGNIFICA Una nariz tapada o desviada te obliga a respirar por la boca, y solo entonces el paladar empieza a vibrar. La causa está entonces bastante antes. LO QUE HACEMOS Aquí no empezamos nosotros. Esto corresponde a tu médico de cabecera o a un otorrino, y ellos a menudo pueden hacer más que nosotros.
 
-- Je tong HIER NIET WAAR JE HET AAN MERKT Alleen op je rug, met een dieper en onregelmatiger geluid. Op je zij is het vaak weg. LO QUE SIGNIFICA De tong zakt in je slaap naar achteren en vernauwt de luchtweg. Dat is een ander mechanisme dan een trillend gehemelte. LO QUE HACEMOS Hier zeggen we eerlijk dat een laser op het gehemelte weinig verandert. Er zijn andere oplossingen, en die liggen buiten deze kliniek.
+- Tu lengua AQUÍ NO EN QUÉ LO NOTAS Solo boca arriba, con un sonido más grave e irregular. De lado a menudo desaparece. LO QUE SIGNIFICA La lengua se desliza hacia atrás mientras duermes y estrecha la vía respiratoria. Es un mecanismo distinto del de un paladar que vibra. LO QUE HACEMOS Aquí decimos con honestidad que un láser en el paladar cambia poco. Hay otras soluciones, y están fuera de esta clínica.
 
-- Je kaakstand of gebit HIER NIET WAAR JE HET AAN MERKT Je onderkaak staat naar achteren, of je draagt al een beugel of snurkbeugel. LO QUE SIGNIFICA De ruimte achter in je keel is dan kleiner dan gemiddeld, ongeacht hoe strak het gehemelte staat. LO QUE HACEMOS Dit hoort bij de tandarts of orthodontist. Soms combineert het wel met NightLase, en dat bespreken we dan samen.
+- La posición de tu mandíbula o tus dientes AQUÍ NO EN QUÉ LO NOTAS Tu mandíbula inferior está retraída, o ya llevas un aparato o una férula antirronquidos. LO QUE SIGNIFICA El espacio del fondo de la garganta es entonces más pequeño de lo normal, por muy tenso que esté el paladar. LO QUE HACEMOS Esto corresponde al dentista o al ortodoncista. A veces sí se combina con NightLase, y entonces lo hablamos juntos.
 
-**Snurken is niet hetzelfde als apneu.**
+**Roncar no es lo mismo que la apnea.**
 
-Snurken is geluid. Bij slaapapneu stopt je ademhaling tijdens de slaap kortdurend, en dat is een medisch probleem met gevolgen voor je hart en je bloeddruk. Ze komen vaak samen voor.
+Roncar es un sonido. En la apnea del sueño tu respiración se detiene brevemente mientras duermes, y eso es un problema médico con consecuencias para el corazón y la tensión. A menudo van juntos.
 
-Het geluid zachter maken terwijl er ademstops onder zitten is het alarm uitzetten en het probleem laten staan. Daarom vragen we er altijd naar, en daarom staat dit hier en niet onderaan.
+Bajar el sonido mientras debajo hay pausas de respiración es apagar la alarma y dejar el problema en su sitio. Por eso siempre lo preguntamos, y por eso esto está aquí y no al final.
 
 > knop: Sigue leyendo
 
-HERKEN JE HIER IETS VAN?
+¿RECONOCES ALGO DE ESTO?
 
-- Je partner hoort je in je slaap stoppen met ademen
+- Tu pareja te oye dejar de respirar mientras duermes
 
-- Je wordt wakker met het gevoel dat je naar adem hapt
+- Te despiertas con la sensación de que te falta el aire
 
-- Je bent overdag ongewoon slaperig, ook na een volle nacht
+- De día tienes un sueño inusual, incluso después de una noche completa
 
-- Je hebt 's ochtends vaak hoofdpijn
+- Por la mañana tienes dolor de cabeza a menudo
 
-- Je hebt hoge bloeddruk of een hartaandoening
+- Tienes la tensión alta o una enfermedad del corazón
 
-Eén keer ja is genoeg om eerst bij je huisarts te beginnen. Er hoort dan slaaponderzoek bij, en dat regelt een arts en niet wij. Komt daar niets uit, dan kun je altijd nog terugkomen.
+Un solo sí basta para empezar primero por tu médico de cabecera. Entonces toca un estudio del sueño, y eso lo organiza un médico y no nosotros. Si de ahí no sale nada, siempre puedes volver.
 
-**Zo werkt NightLase**
+**Así funciona NightLase**
 
-Als het geluid uit je zachte gehemelte komt, is dit wat we kunnen doen. Geen snijden, geen naalden, en niets dat je 's nachts in moet doen.
+Si el sonido viene de tu paladar blando, esto es lo que podemos hacer. Sin cortes, sin agujas, y nada que tengas que ponerte por la noche.
 
-- PASO 1 Eerst kijken waar het geluid zit Niet elk snurkgeluid komt uit het zachte gehemelte. Dat bepaalt of dit bij jou iets oplevert.
+- PASO 1 Primero mirar dónde está el sonido No todo ronquido viene del paladar blando. Eso decide si esto te aporta algo.
 
-- PASO 2 Pulsen op het gehemelte In een vast patroon over het weefsel, in ongeveer een half uur. Je zit erbij en je bent bij kennis.
+- PASO 2 Pulsos en el paladar En un patrón fijo sobre el tejido, en más o menos media hora. Se hace en la silla, con plena consciencia.
 
-- PASO 3 Drie keer, met weken ertussen Het weefsel trekt tussen de sessies door aan. Na de derde weet je wat het bij jou doet.
+- PASO 3 Tres veces, con semanas entre medias El tejido se tensa entre una sesión y otra. Tras la tercera sabes lo que hace en tu caso.
 
-*HOE LANG JE EROVER DOET*
+*CUÁNTO TIEMPO TE LLEVA*
 
-Een reeks van drie, met ongeveer drie weken ertussen. Het effect bouwt over die reeks op en is niet blijvend; herhalen na verloop van tijd hoort erbij.
+Una serie de tres, con unas tres semanas entre medias. El efecto se construye a lo largo de esa serie y no es permanente; repetir pasado un tiempo forma parte.
 
-*WAT JE ERNA MERKT*
+*LO QUE NOTAS DESPUÉS*
 
-Je kunt na NightLase normaal eten en praten. Sommige mensen voelen tijdelijk een licht schrapend gevoel in de keel.
+Después de NightLase puedes comer y hablar con normalidad. Algunas personas notan un tiempo una ligera sensación de aspereza en la garganta.
 
-NIGHTLASE, AAN HET ZACHTE GEHEMELTE
+NIGHTLASE, EN EL PALADAR BLANDO
 
-**Snurken behandelen we met NightLase**
+**Los ronquidos los tratamos con NightLase**
 
-Laser tegen snurken. Het zachte gehemelte wordt steviger, zonder operatie of beugel.
+Láser contra los ronquidos. El paladar blando se vuelve más firme, sin operación ni férula.
 
 *POR SESIÓN*
 
 A consultar
 
-> knop: ALLES OVER NIGHTLASE
+> knop: TODO SOBRE NIGHTLASE
 
 **Lo que ayuda y lo que desaconsejamos**
 
-Bij snurken zit de waarde vooral in wat er níét gebeurt. De helft van de mensen die hierover belt hoort van ons dat ze ergens anders moeten beginnen.
+En los ronquidos el valor está sobre todo en lo que no pasa. La mitad de la gente que llama por esto oye de nosotros que tiene que empezar en otro sitio.
 
 **ESTO FUNCIONA**
 
-- Eerst kijken waar het geluid vandaan komt, want dat bepaalt of dit bij jou iets oplevert
+- Mirar primero de dónde viene el sonido, porque eso decide si esto te aporta algo
 
-- Doorsturen naar de huisarts als er ook maar één alarmsignaal is, ook als je hier al staat
+- Derivar al médico de cabecera si hay aunque sea una sola señal de alarma, también si ya estás aquí
 
-- NightLase als reeks van drie, met vooraf afgesproken momenten om te kijken of het werkt
+- NightLase como serie de tres, con momentos acordados de antemano para ver si funciona
 
-- Eerlijk zeggen dat het effect niet blijvend is en dat herhalen erbij hoort
+- Decir con honestidad que el efecto no es permanente y que repetir forma parte
 
-- Meewegen wat er verder speelt: gewicht, alcohol voor het slapen, slaaphouding
+- Tener en cuenta lo demás que influye: el peso, el alcohol antes de dormir, la postura al dormir
 
 **ESTO LO DESACONSEJAMOS**
 
-- Beginnen zonder te weten waar het geluid zit. Dan verkoop je een reeks en geen oplossing
+- Empezar sin saber dónde está el sonido. Entonces vendes una serie y no una solución
 
-- Behandelen bij een vermoeden van slaapapneu. Daar hoort eerst slaaponderzoek bij
+- Tratar con una sospecha de apnea del sueño. Ahí toca primero un estudio del sueño
 
-- Beloven dat het snurken helemaal verdwijnt. Minder is realistisch, weg niet altijd
+- Prometer que el ronquido desaparece del todo. Menos es realista, del todo no siempre
 
-- Een neusspray of een beugel verkopen naast de behandeling. Dat is niet ons vak
+- Vender un espray nasal o una férula junto al tratamiento. Eso no es nuestro oficio
 
 **Preguntas frecuentes**
 
-Waar komt het geluid eigenlijk vandaan?
+¿De dónde viene en realidad el sonido?
 
-Van weefsel dat meetrilt op je ademhaling. In je slaap ontspannen de spieren in je keel, waardoor het zachte gehemelte en de huig gaan wapperen op de luchtstroom. Hoe nauwer de doorgang, hoe harder het geluid.
+De tejido que vibra con la respiración. Mientras duermes, los músculos de la garganta se relajan, y el paladar blando y la úvula ondean con el flujo de aire. Cuanto más estrecho el paso, más fuerte el sonido.
 
-Is snurken hetzelfde als slaapapneu?
+¿Roncar es lo mismo que la apnea del sueño?
 
-Nee. Snurken is geluid; slaapapneu is dat je ademhaling tijdens de slaap kortdurend stopt. Ze komen vaak samen voor, en daarom vragen wij er altijd naar. Is er een vermoeden, dan hoort er eerst slaaponderzoek bij en beginnen wij niet.
+No. Roncar es un sonido; la apnea del sueño es que tu respiración se detiene brevemente mientras duermes. A menudo van juntos, y por eso siempre lo preguntamos. Si hay sospecha, primero toca un estudio del sueño y nosotros no empezamos.
 
-Moet ik voor NightLase onder narcose?
+¿Necesito anestesia general para NightLase?
 
-Nee, en er wordt ook niet gesneden. Je zit erbij, je bent bij kennis en je gaat er daarna zelf vandaan.
+No, y tampoco se corta. Se hace en la silla, con plena consciencia, y después te vas por tu propio pie.
 
 ¿Cuántas sesiones necesito?
 
-Meestal drie, met ongeveer drie weken ertussen. Het effect bouwt over die reeks op; na de eerste sessie is er zelden al iets te horen.
+Normalmente tres, con unas tres semanas entre medias. El efecto se construye a lo largo de esa serie; después de la primera sesión rara vez se oye ya algo.
 
-Blijft het weg?
+¿Desaparece para siempre?
 
-Niet vanzelf. Het weefsel geeft na verloop van tijd weer mee, en dan is een herhaling nodig. Definitief noemen we het daarom niet, en je hoort vooraf dat er een herhaling bij hoort.
+Por sí solo no. El tejido vuelve a ceder pasado un tiempo, y entonces hace falta una repetición. Por eso no lo llamamos definitivo, y oyes de antemano que una repetición forma parte.
 
 ¿Cuánto cuesta esto?
 
-Het tarief voor NightLase staat op de tarievenpagina zodra het vastligt.
+La tarifa de NightLase está en la página de tarifas en cuanto quede fijada.
 
 **Pide una primera consulta en Diba Clinics**
 
-In het eerste gesprek kijken we waar het geluid ontstaat en vragen we naar je nachten. Daarna weet je of dit bij jou iets oplevert, en wij ook.
+En la primera conversación miramos dónde se origina el sonido y te preguntamos por tus noches. Después sabes si esto te aporta algo, y nosotros también.
 
 > knop: RESERVA UNA CONSULTA
 
@@ -44346,51 +44350,51 @@ In het eerste gesprek kijken we waar het geluid ontstaat en vragen we naar je na
 
 **Google-omschrijving:** Diba Clinics in Rotterdam, Rotterdam. Actief sinds 2017, 11 mensen, 12 apparaten. En wat die cijfers niet zeggen.
 
-**EEN HUIDKLINIEK IN ROTTERDAM.**
+**UNA CLÍNICA DE LA PIEL EN RÓTERDAM.**
 
-Desde 2017, aan de Weissenbruchlaan 166. Met 11 mensen, 12 apparaten en 46 behandelingen waarvan de prijzen allemaal openbaar zijn.
+Desde 2017, en Weissenbruchlaan 166. Con 11 personas, 12 aparatos y 46 tratamientos cuyos precios son todos públicos.
 
-Onze huidtherapeuten zijn lid van de NVH en staan ingeschreven in het Kwaliteitsregister Paramedici; onze schoonheidsspecialisten zijn aangesloten bij ANBOS en staan in het SKIN Register.
+Nuestras terapeutas de la piel son miembros de la NVH y están inscritas en el Registro de Calidad de Paramédicos; nuestras esteticistas están afiliadas a ANBOS y figuran en el SKIN Register.
 
 > knop: Sigue leyendo
 
-We zitten aan de noordkant van Rotterdam, in een woonwijk en niet in een winkelstraat. Dat is te merken aan het tempo.
+Estamos en el lado norte de Rotterdam, en un barrio residencial y no en una calle comercial. Se nota en el ritmo.
 
 > knop: RUTA Y CONTACTO
 
-**Wat klanten over ons schrijven**
+**Lo que los clientes escriben de nosotros**
 
-Vier getallen die zeggen hoe lang we dit doen en hoe vaak. Bij elk staat wat het voor jouw afspraak betekent.
+Cuatro cifras que dicen cuánto tiempo llevamos haciendo esto y con qué frecuencia. En cada una pone lo que significa para tu cita.
 
-- 2017 ACTIEF SINDS De kliniek draait sinds 2017, met een team dat elke dag met dezelfde huidklachten werkt. Ervaring met hoe een klacht zich over maanden ontwikkelt, en niet alleen met de behandeling van vandaag.
+- 2017 EN ACTIVO DESDE La clínica funciona desde 2017, con un equipo que trabaja cada día con los mismos problemas de piel. Experiencia con cómo evoluciona un problema a lo largo de meses, y no solo con el tratamiento de hoy.
 
-- 10.000+ CLIENTES AYUDADOS Genoeg verschillende huiden om te weten hoe verschillend ze reageren. Jouw huid krijgt een eigen meting, want een gemiddelde zegt niets over hoe die van jou zal reageren.
+- 10.000+ CLIENTES AYUDADOS Suficientes pieles distintas para saber lo distinto que reaccionan. Tu piel recibe su propia medición, porque una media no dice nada de cómo va a reaccionar la tuya.
 
-- 55.000+ TRATAMIENTOS Routine op de apparatuur. Wie iets duizend keer heeft gedaan ziet eerder wanneer het anders loopt. De behandelaar merkt sneller wanneer een huid anders reageert dan verwacht, en stelt de aanpak dan bij.
+- 55.000+ TRATAMIENTOS Rutina con los aparatos. Quien ha hecho algo mil veces ve antes cuándo va de otra manera. La terapeuta nota antes cuándo una piel reacciona distinto de lo esperado, y entonces ajusta el enfoque.
 
-- 3893 RESEÑAS DE CLIENTES Gemiddeld een 5,0. Openbaar na te lezen, niet door ons geselecteerd. Je leest hoe mensen de afspraak zelf ervaren hebben, met de behandeling erbij die ze kregen.
+- 3893 RESEÑAS DE CLIENTES Una media de 5,0. Se puede consultar públicamente, no la seleccionamos nosotros. Lees cómo ha vivido la gente la propia cita, con el tratamiento que recibió al lado.
 
-De reviews worden verzameld door Salonized. Wij kunnen ze niet selecteren of verwijderen, dus je leest ze allemaal.
+Las reseñas las recoge Salonized. No podemos seleccionarlas ni borrarlas, así que las lees todas.
 
-> knop: LEES ZE BIJ DE BRON ↗
+> knop: LÉELAS EN LA FUENTE ↗
 
-WAAR HET WERK GEBEURT
+DONDE SE HACE EL TRABAJO
 
-**Onze apparatuur en het team.**
+**Nuestros aparatos y el equipo.**
 
-Een laser doet het werk niet alleen. Welke golflengte, welke pulsduur en welke energie er bij jouw huidtype horen, bepaalt de huidtherapeut aan de hand van de meting. Hieronder staat waar we mee werken en wie ermee werkt.
+Un láser no hace el trabajo solo. Qué longitud de onda, qué duración de pulso y qué energía corresponden a tu fototipo lo decide la terapeuta de la piel a partir de la medición. Abajo está con qué trabajamos y quién trabaja con ello.
 
-- 12 apparaten Van huidscanner tot alexandrietlaser. Per apparaat staat welke techniek erin zit en waarvoor hij is. BEKIJK DE APPARATUUR ›
+- 12 aparatos Del escáner de piel al láser de alejandrita. En cada aparato pone qué técnica lleva y para qué es. VER LOS APARATOS ›
 
-- 46 tratamientos Allemaal met het tarief per sessie erbij, en per variant. Wat je online ziet, is wat je betaalt. NAAR DE PRIJZEN ›
+- 46 tratamientos Todos con la tarifa por sesión al lado, y por variante. Lo que ves en la web es lo que pagas. A LOS PRECIOS ›
 
-- 11 mensen Huidtherapeuten met een hbo-bachelor en inschrijving in het Kwaliteitsregister Paramedici, plus orthomoleculair huidspecialisten. NAAR HET TEAM ›
+- 11 mensen Terapeutas de la piel con grado universitario e inscripción en el Registro de Calidad de Paramédicos, más especialistas ortomoleculares de la piel. AL EQUIPO ›
 
-**Waar deze kliniek voor staat**
+**Lo que defiende esta clínica**
 
-Waarom er hier eerst gemeten wordt, waarom prijzen openbaar staan en waarom er bij elke behandeling staat wat hij niet kan: dat is een ander verhaal dan een opsomming van wat er in huis is. Het staat op een eigen pagina, in vijf regels waar we ons aan houden.
+Por qué aquí primero se mide, por qué los precios son públicos y por qué en cada tratamiento pone lo que no puede hacer: eso es otra historia que una lista de lo que hay en casa. Está en una página propia, en cinco líneas a las que nos atenemos.
 
-> knop: LEES ONS VERHAAL
+> knop: LEE NUESTRA HISTORIA
 
 ---
 
@@ -44400,73 +44404,73 @@ Waarom er hier eerst gemeten wordt, waarom prijzen openbaar staan en waarom er b
 
 **Google-omschrijving:** De 11 mensen die bij Diba Clinics werken, met per persoon het vakgebied en of de titel wettelijk beschermd is.
 
-**DE MENSEN DIE JE HUID BEHANDELEN**
+**LAS PERSONAS QUE TRATAN TU PIEL**
 
-Bij elk apparaat op deze site staat dezelfde zin: twee klinieken met hetzelfde apparaat geven niet hetzelfde resultaat, want wat telt is de instelling en de hand die het vasthoudt.
+Junto a cada aparato de esta web está la misma frase: dos clínicas con el mismo aparato no dan el mismo resultado, porque lo que cuenta es la configuración y la mano que lo sostiene.
 
-Dat is makkelijk gezegd. Hier staat wiens hand dat is.
+Eso se dice fácil. Aquí está de quién es esa mano.
 
-*Huidtherapeuten*
+*Terapeutas de la piel*
 
-*Orthomoleculair huidspecialisten*
+*Especialistas ortomoleculares de la piel*
 
-*Laserspecialisten*
+*Especialistas en láser*
 
-Je kiest niet zelf bij wie je terechtkomt. Dat gaat op je vraag, en als je een voorkeur hebt kun je die gewoon noemen.
+No eliges tú con quién te toca. Va según tu pregunta, y si tienes una preferencia puedes decirla sin más.
 
-**Het verschil in opleiding**
+**La diferencia de formación**
 
-Wie je huid behandelt en wie meekijkt naar wat er van binnenuit meespeelt, zijn twee verschillende opleidingen. Zo weet je wie er bij welke vraag naast je staat.
+Quien trata tu piel y quien mira lo que influye desde dentro son dos formaciones distintas. Así sabes quién está a tu lado en cada pregunta.
 
-- Huidtherapeut BESCHERMDE TITEL Werkt met de apparatuur en de behandelingen: laser, licht, needling, peelings. Beoordeelt wat je huid aankan en stelt de instellingen daarop af. Hbo-bachelor huidtherapie, aan de Haagse Hogeschool of Hogeschool Utrecht. De titel is beschermd in artikel 34 van de Wet BIG, en onze huidtherapeuten staan ingeschreven in het Kwaliteitsregister Paramedici.
+- Terapeuta de la piel TÍTULO PROTEGIDO Trabaja con los aparatos y los tratamientos: láser, luz, needling, peelings. Valora lo que tu piel aguanta y ajusta la configuración a eso. Grado universitario en terapia de la piel, en la Haagse Hogeschool o la Hogeschool Utrecht. El título está protegido por el artículo 34 de la Wet BIG, la ley neerlandesa de profesiones sanitarias, y nuestras terapeutas de la piel están inscritas en el Registro de Calidad de Paramédicos.
 
-- Orthomoleculair huidspecialist Kijkt naar wat er van binnenuit meespeelt: voeding, hormonen, vertering. Bij acne en pigment is dat vaak de helft van het verhaal. Een aanvullende opleiding naast de huidtherapie of schoonheidsspecialiste, gericht op voeding, hormonen en vertering. De titel staat niet in de Wet BIG, dus vraag altijd naar de opleiding erachter.
+- Especialista ortomolecular de la piel Mira lo que influye desde dentro: alimentación, hormonas, digestión. En el acné y el pigmento eso es a menudo la mitad de la historia. Una formación complementaria junto a la terapia de la piel o la estética, centrada en alimentación, hormonas y digestión. El título no está en la Wet BIG, así que pregunta siempre por la formación que hay detrás.
 
-- Laserspecialist Werkt met de laser- en lichtapparatuur: ontharen, en licht dat op kleur of vaatjes mikt. Kiest per huidtype en per zone de instelling. Een vakopleiding op de apparatuur zelf, met een certificering per apparaat. Geen beschermde titel, dus vraag naar de opleiding erachter; onze laserspecialisten werken onder dezelfde protocollen als de huidtherapeuten.
+- Especialista en láser Trabaja con los aparatos de láser y luz: depilación, y luz dirigida al color o a los vasos. Elige la configuración por fototipo y por zona. Una formación profesional en los propios aparatos, con certificación por aparato. No es un título protegido, así que pregunta por la formación que hay detrás; nuestras especialistas en láser trabajan con los mismos protocolos que las terapeutas de la piel.
 
-- Andres HUIDTHERAPEUT Andres is huidtherapeut en werkt met de apparatuur waarbij de instelling het verschil maakt. Hij legt uit wat een apparaat doet en waar het ophoudt, en zegt het ook als een behandeling bij jouw huid minder oplevert.
+- Andres TERAPEUTA DE LA PIEL
 
-- Iris HUIDTHERAPEUT Iris is huidtherapeut en werkt veel met mensen die eerst ergens anders geweest zijn. Zij begint dan bij wat er al geprobeerd is, want dat scheelt maanden opnieuw uitproberen. Ook als dat betekent dat een eerder advies overeind blijft.
+- Iris TERAPEUTA DE LA PIEL
 
-- Griselle HUIDTHERAPEUT Griselle is huidtherapeut en loopt de teksten op deze site na op wat er in de behandelkamer echt gebeurt. Meer dan een van de stukken hier is aangepast omdat zij zei dat het anders ging dan er stond.
+- Griselle TERAPEUTA DE LA PIEL
 
-- C FOTO VOLGT Cheyenne HUIDTHERAPEUT Cheyenne is huidtherapeut. Zij neemt de tijd voor de uitleg vooraf, ook als die uitleg langer duurt dan de behandeling zelf. Weet je na afloop niet waarom er iets gedaan is, dan is er iets misgegaan; dat is haar maatstaf.
+- C FOTO PENDIENTE Cheyenne TERAPEUTA DE LA PIEL
 
-- A FOTO VOLGT Anouk HUIDTHERAPEUT Anouk is huidtherapeut. Zij doet veel van de trajecten die over maanden lopen, en dat betekent dat je haar vaker ziet dan een keer. Bij elke controle wordt er gemeten in plaats van geschat, zodat je zelf kunt zien of het schema klopt.
+- A FOTO PENDIENTE Anouk TERAPEUTA DE LA PIEL
 
-- Rojda FOUNDER DIBA CLINICS B.V. EN ORTHOMOLECULAIR HUIDSPECIALIST Als founder bepaalt Rojda wat er in deze kliniek wel en niet gebeurt, en dat tweede is hier het langste lijstje. Zij is degene die de meting uitlegt en die zegt wanneer behandelen geen zin heeft. Kom je met een vraag waar geen behandeling bij hoort, dan hoor je dat van haar.
+- Rojda FUNDADORA DE DIBA CLINICS B.V. Y ESPECIALISTA ORTOMOLECULAR DE LA PIEL
 
-- Demi ORTHOMOLECULAIR HUIDSPECIALIST Demi werkt als orthomoleculair huidspecialist en kijkt daarbij naar wat er van binnenuit meespeelt. Bij haar begint een afspraak vaker met vragen dan met een apparaat, en dat is geen omweg: bij een deel van de huidklachten zit de aanjager niet in de huid.
+- Demi ESPECIALISTA ORTOMOLECULAR DE LA PIEL
 
-- India HUIDTHERAPEUT IN OPLEIDING EN LASERSPECIALIST India doet de laserbehandelingen en volgt daarnaast de opleiding tot huidtherapeut. Bij laserontharing is zij vaak degene die de zones doorloopt en per keer bijstelt wat er nodig is.
+- India TERAPEUTA DE LA PIEL EN FORMACIÓN Y ESPECIALISTA EN LÁSER
 
-- E FOTO VOLGT Elaf LASERSPECIALIST Elaf doet de laserbehandelingen: ontharen, en het licht dat op kleur of vaatjes mikt. Ziet zij tijdens een afspraak iets wat bij een huidtherapeut hoort, dan hoor je dat voordat ze verdergaat.
+- E FOTO PENDIENTE Elaf ESPECIALISTA EN LÁSER
 
-- Y FOTO VOLGT Yasin IT EN MARKETING Yasin bouwt en onderhoudt deze site en doet de marketing. Klopt er iets niet aan wat je hier leest, dan is dat bij hem het snelst gemeld.
+- Y FOTO PENDIENTE Yasin INFORMÁTICA Y MARKETING
 
-- O FOTO VOLGT Okan PRAKTIJKMANAGER Okan houdt de praktijk draaiend: de agenda, de afspraken en alles wat er misgaat voordat je het merkt. Bel je over een afspraak verzetten, een factuur of iets wat niet klopt, dan kom je bij hem uit.
+- O FOTO PENDIENTE Okan GERENTE DE LA CLÍNICA
 
-Een diploma is geen eindpunt.
+Un diploma no es un punto final.
 
-Huidtherapeuten kunnen zich inschrijven in het Kwaliteitsregister Paramedici. Vrijwillig register met een cyclus van vijf jaar. Wie erin blijft staan toont per periode minstens 1600 werkuren aan, verspreid over minimaal 36 maanden, en 160 punten bijscholing.
+Las terapeutas de la piel pueden inscribirse en el Registro de Calidad de Paramédicos (Kwaliteitsregister Paramedici). Registro voluntario con un ciclo de cinco años. Quien se mantiene en él demuestra por periodo al menos 1600 horas de trabajo, repartidas en un mínimo de 36 meses, y 160 puntos de formación continua.
 
-Het register is vrijwillig, dus inschrijving zegt iets en het ontbreken ervan zegt weinig. Wie van ons erin staat zetten we erbij zodra we dat per persoon hebben nagelopen; een claim daarover hoort gecontroleerd te zijn en niet aangenomen.
+El registro es voluntario, así que estar inscrito dice algo y no estarlo dice poco. Quiénes de nosotros están en él lo añadiremos en cuanto lo hayamos comprobado por persona; una afirmación así debe estar verificada y no supuesta.
 
 > knop: Sigue leyendo
 
-> knop: HET REGISTER BEKIJKEN ↗
+> knop: VER EL REGISTRO ↗
 
-**Wat klanten schreven over wie hen hielp.**
+**Lo que escribieron los clientes sobre quien les ayudó.**
 
-- Iris HUIDTHERAPEUT 8 reviews noemen deze naam Elke afspraak verloopt erg goed. Iris is heel vriendelijk en professioneel, waardoor ik me altijd op mijn gemak voel. Ze legt alles duidelijk uit, werkt zorgvuldig en neemt de tijd voor je. Tugce, 3 maanden geleden
+- Iris TERAPEUTA DE LA PIEL 8 reseñas mencionan este nombre Elke afspraak verloopt erg goed. Iris is heel vriendelijk en professioneel, waardoor ik me altijd op mijn gemak voel. Ze legt alles duidelijk uit, werkt zorgvuldig en neemt de tijd voor je. Tugce, 3 maanden geleden
 
-- Andres HUIDTHERAPEUT 6 reviews noemen deze naam Ik heb een behandeling gehad van Andres. Een aardig man die zijn werk met liefde doet en goed doet. Tussendoor ook de klant op zijn gemak laat voelen door te praten en te luisteren en vragen of alles goed gaat. Good job!! Edanur, 18 dagen geleden
+- Andres TERAPEUTA DE LA PIEL 6 reseñas mencionan este nombre Ik heb een behandeling gehad van Andres. Een aardig man die zijn werk met liefde doet en goed doet. Tussendoor ook de klant op zijn gemak laat voelen door te praten en te luisteren en vragen of alles goed gaat. Good job!! Edanur, 18 dagen geleden
 
-- Demi ORTHOMOLECULAIR HUIDSPECIALIST 4 reviews noemen deze naam Ik had vandaag een laserafspraak bij Demi. Het ging lekker vlot en ik voel me erg op m'n gemak bij haar. Ik ben erg tevreden met m'n resultaat tot nu toe en ik zie duidelijke vooruitgangen! Erg gastvrij, professioneel en alles ook mooi en netjes ingericht. Jasemine, 2 maanden geleden
+- Demi ESPECIALISTA ORTOMOLECULAR DE LA PIEL 4 reseñas mencionan este nombre Ik had vandaag een laserafspraak bij Demi. Het ging lekker vlot en ik voel me erg op m'n gemak bij haar. Ik ben erg tevreden met m'n resultaat tot nu toe en ik zie duidelijke vooruitgangen! Erg gastvrij, professioneel en alles ook mooi en netjes ingericht. Jasemine, 2 maanden geleden
 
-**We plannen op wat je nodig hebt**
+**Planificamos según lo que necesitas**
 
-Wie je meting doet hangt af van waar je voor komt. Gaat het over acne of pigment, dan zit er vaak een voedingskant aan en schuift er iemand aan die daarnaar kijkt. Gaat het over laser of needling, dan doet een huidtherapeut het. Heb je een voorkeur, zeg het bij het maken van de afspraak; dat kan gewoon.
+Quién hace tu medición depende de para qué vienes. Si se trata de acné o pigmento, a menudo hay una parte de alimentación y se suma alguien que mira eso. Si se trata de láser o needling, lo hace una terapeuta de la piel. Si tienes una preferencia, dilo al pedir la cita; no hay problema.
 
 > knop: RESERVA UNA CONSULTA
 
@@ -44478,51 +44482,51 @@ Wie je meting doet hangt af van waar je voor komt. Gaat het over acne of pigment
 
 **Google-omschrijving:** Twee vacatures: allround schoonheidsspecialist of huidtherapeut, en een open sollicitatie. Waar je mee werkt en wat we van je verwachten.
 
-**WERKEN BIJ DIBA CLINICS**
+**TRABAJAR EN DIBA CLINICS**
 
-We zijn met 11, waarvan 5 huidtherapeuten. Er wordt gewerkt met laser, licht, needling en peelings, en elk traject begint met een meting. Dat laatste is geen slogan maar de volgorde waarin het hier gaat.
+Somos 11, de los que 5 son terapeutas de la piel. Se trabaja con láser, luz, needling y peelings, y cada programa empieza con una medición. Esto último no es un eslogan sino el orden en el que van las cosas aquí.
 
-- Huidtherapeut Je draait een eigen spreekuur: meten, het plan opstellen en het zelf uitvoeren. De apparatuur staat er; wat telt is wat jij ermee doet. ›
+- Terapeuta de la piel Llevas tu propia consulta: medir, elaborar el plan y ejecutarlo tú. Los aparatos están; lo que cuenta es lo que haces con ellos. ›
 
-- Open sollicitatie Staat jouw vak er niet bij en denk je dat het hier past, stuur dan gewoon iets. Er wordt naar gekeken. ›
+- Candidatura espontánea Si tu oficio no está en la lista y crees que encaja aquí, envía algo sin más. Se mira. ›
 
-Solliciteren gaat per mail naar info@dibaclinics.nl. Een cv is genoeg om mee te beginnen; de rest bespreken we.
+Las candidaturas van por correo a info@dibaclinics.nl. Un CV basta para empezar; el resto lo hablamos.
 
-**Wat we van een nieuwe collega vragen**
+**Lo que pedimos a quien se incorpora**
 
-Elke vacature vraagt om een teamplayer met passie voor de huid. Wat een kliniek echt van je verwacht staat er nooit bij, en wat ze níet verwacht al helemaal niet. Op een site waar bij elke behandeling staat wat hij niet kan, hoort dat hier ook te staan.
+Cada vacante pide alguien de equipo con pasión por la piel. Lo que una clínica espera de verdad de ti nunca lo pone, y lo que no espera, menos aún. En una web donde en cada tratamiento pone lo que no puede hacer, eso también tiene que estar aquí.
 
-- Dat je duidelijk zegt wanneer een behandeling niet passend of niet veilig is. Goed advies kan ook betekenen dat je niet behandelt.
+- Que digas con claridad cuándo un tratamiento no es adecuado o no es seguro. Un buen consejo también puede ser no tratar.
 
-- Dat je meet voordat je begint, en dat je je instelling kunt uitleggen aan de klant en aan een collega.
+- Que midas antes de empezar, y que puedas explicar tu configuración al cliente y a quien tienes al lado.
 
-- Dat je bijhoudt wat er in het vak verandert. Een diploma is een startpunt.
+- Que te mantengas al día de lo que cambia en el oficio. Un diploma es un punto de partida.
 
-- Advies geven Medewerkers worden niet beoordeeld op de omzet per klant. Een behandeling of product wordt alleen geadviseerd wanneer de behandelaar denkt dat het iets toevoegt.
+- Vender. El personal no se evalúa por la facturación por cliente. Un tratamiento o un producto solo se aconseja cuando la terapeuta cree que aporta algo.
 
-- Alles alleen kunnen. Er zijn twee vakgebieden in huis juist omdat één invalshoek vaak niet genoeg is.
+- Saber hacerlo todo tú. Hay dos disciplinas en casa justo porque una sola perspectiva a menudo no basta.
 
-- Meteen alle apparatuur beheersen. Inwerken op een nieuw apparaat hoort erbij en daar is tijd voor.
+- Dominar todos los aparatos de inmediato. Formarse en un aparato nuevo forma parte y hay tiempo para ello.
 
-TUSSEN TWEE AFSPRAKEN DOOR
+ENTRE DOS CITAS
 
-**Twee vakken onder één dak.**
+**Dos oficios bajo un mismo techo.**
 
-Dat is geen indeling op papier. Bij acne en pigment zit er vaak een voedingskant aan het verhaal, en dan schuift er iemand aan die daarnaar kijkt. Bij laser en needling doet een huidtherapeut het. Je werkt dus regelmatig aan hetzelfde dossier vanuit een andere hoek.
+No es una división sobre el papel. En el acné y el pigmento a menudo hay una parte de alimentación en la historia, y entonces se suma alguien que mira eso. En el láser y el needling lo hace una terapeuta de la piel. Así que trabajas a menudo en el mismo expediente desde otro ángulo.
 
-- Huidtherapeut Werkt met de apparatuur en de behandelingen: laser, licht, needling, peelings. Beoordeelt wat je huid aankan en stelt de instellingen daarop af.
+- Terapeuta de la piel Trabaja con los aparatos y los tratamientos: láser, luz, needling, peelings. Valora lo que tu piel aguanta y ajusta la configuración a eso.
 
-- Orthomoleculair huidspecialist Kijkt naar wat er van binnenuit meespeelt: voeding, hormonen, vertering. Bij acne en pigment is dat vaak de helft van het verhaal.
+- Especialista ortomolecular de la piel Mira lo que influye desde dentro: alimentación, hormonas, digestión. En el acné y el pigmento eso es a menudo la mitad de la historia.
 
-- Laserspecialist Werkt met de laser- en lichtapparatuur: ontharen, en licht dat op kleur of vaatjes mikt. Kiest per huidtype en per zone de instelling.
+- Especialista en láser Trabaja con los aparatos de láser y luz: depilación, y luz dirigida al color o a los vasos. Elige la configuración por fototipo y por zona.
 
-> knop: BEKIJK DE APPARATUUR
+> knop: VER LOS APARATOS
 
-**Hoe je bij ons solliciteert**
+**Cómo presentarte con nosotros**
 
-Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een uitgebreide motivatiebrief hoeft niet; we bellen liever en stellen onze vragen zelf. Loopt het daarna door, dan kom je een dagdeel meekijken voordat een van beiden iets tekent.
+Stuur je cv naar info@dibaclinics.nl con el puesto en el asunto. No hace falta una carta de motivación extensa; preferimos llamar y hacer nuestras preguntas nosotros. Si sigue adelante, vienes media jornada a ver cómo trabajamos antes de que ninguna de las dos partes firme nada.
 
-> knop: BEKIJK DE VACATURE
+> knop: VER LA VACANTE
 
 ---
 
@@ -44532,123 +44536,123 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 
 **Google-omschrijving:** Weet je niet welke huidbehandeling je nodig hebt? Boek een behandeling op advies. Voor nieuwe klanten met intake en voor bestaande klanten zonder nieuwe intake.
 
-**IK WIL EEN BEHANDELING OP ADVIES**
+**QUIERO UN TRATAMIENTO CON ASESORAMIENTO**
 
-Je weet wat je aan je huid wilt verbeteren, maar niet of daar een peeling, een laserbehandeling, microneedling of iets anders bij past. Dat hoef je niet zelf uit te zoeken.
+Sabes lo que quieres mejorar de tu piel, pero no si encaja un peeling, un tratamiento con láser, microneedling u otra cosa. No tienes que averiguarlo tú.
 
-Vertel waar je last van hebt. De behandelaar bekijkt je huid, bespreekt wat er mogelijk is en geeft een duidelijk advies. Pas als je weet wélke behandeling wordt voorgesteld, waarom en wat het kost, beslis je of je hem laat uitvoeren.
+Cuéntanos qué te molesta. La terapeuta mira tu piel, habla de lo que es posible y te da un consejo claro. Solo cuando sabes qué tratamiento se propone, por qué y lo que cuesta, decides si te lo haces.
 
 > knop: Sigue leyendo
 
-> knop: BOEK EEN BEHANDELING OP ADVIES
+> knop: RESERVA UN TRATAMIENTO CON ASESORAMIENTO
 
-> knop: NIEUW OF AL KLANT?
+> knop: ¿PRIMERA VEZ, O YA CLIENTE?
 
-HET GESPREK WAARMEE ELKE AFSPRAAK OP ADVIES BEGINT
+LA CONVERSACIÓN CON LA QUE EMPIEZA CADA CITA CON ASESORAMIENTO
 
-**Nieuw bij ons of al eens geweest**
+**Primera vez con nosotros o ya has estado**
 
-Intake plus behandeling op advies
+Consulta previa más tratamiento con asesoramiento
 
-120 MINUTEN GERESERVEERD
+120 MINUTOS RESERVADOS
 
-We reserveren 120 minuten, dus twee uur. De intake duurt daarvan 30 hasta 60 minuten, afhankelijk van wat er te bespreken valt: je hulpvraag, je medische achtergrond, je huidproducten en eerdere behandelingen. Daarna bekijkt de behandelaar je huid. Er blijft altijd minstens een uur over om te behandelen. Een huidmeting doen we alleen als die iets toevoegt.
+Reservamos 120 minutos, o sea dos horas. De ellos, la consulta previa dura 30 hasta 60 minutos, según lo que haya que hablar: tu pregunta, tu historial médico, tus productos y tratamientos anteriores. Después la terapeuta mira tu piel. Siempre queda al menos una hora para tratar. Una medición de la piel la hacemos solo si aporta algo.
 
-DAARNA HOOR JE
+DESPUÉS OYES
 
-- welke behandeling we adviseren
+- qué tratamiento aconsejamos
 
-- waarom die bij jouw huid past
+- por qué encaja con tu piel
 
-- wat je ervan kunt verwachten
+- qué puedes esperar de él
 
-- hoeveel behandelingen er nodig kunnen zijn
+- cuántos tratamientos pueden hacer falta
 
-- welke hersteltijd en nazorg erbij horen
+- qué tiempo de recuperación y qué cuidados posteriores conlleva
 
-Is behandelen op dat moment verantwoord, past het binnen de tijd en wil je doorgaan? Dan gebeurt het meestal meteen.
+¿Tratar es responsable en ese momento, cabe en el tiempo y quieres seguir adelante? Entonces normalmente se hace en el acto.
 
-Je betaalt dan alleen de behandeling; de intakekosten vervallen. Gebeurt er geen behandeling, dan kost de intake € 50. De afspraak hoeft de 120 minuten niet vol te maken.
+Entonces pagas solo el tratamiento; el coste de la consulta previa no se cobra. Si no hay tratamiento, la consulta previa cuesta € 50. La cita no tiene que llenar los 120 minutos.
 
-> knop: BOEK ALS NIEUWE KLANT
+> knop: RESERVA SI ES TU PRIMERA VEZ
 
 Tratamiento con asesoramiento
 
-60 MINUTEN GERESERVEERD
+60 MINUTOS RESERVADOS
 
-Je hoeft geen nieuwe intake te boeken, dus deze afspraak duurt 60 minuten. De behandelaar pakt je dossier erbij, bespreekt wat er sinds je vorige afspraak is veranderd en beoordeelt je huid zoals die nu is.
+No tienes que reservar una consulta previa nueva, así que esta cita dura 60 minutos. La terapeuta saca tu expediente, habla de lo que ha cambiado desde tu última cita y valora tu piel tal como está ahora.
 
-Daarna krijg je een behandeladvies. Vooraf hoor je welke behandeling het wordt en wat die kost.
+Después recibes un consejo de tratamiento. De antemano oyes qué tratamiento será y lo que cuesta.
 
-Je betaalt alleen de behandeling die daadwerkelijk gedaan wordt. Er worden geen aparte intakekosten gerekend.
+Pagas solo el tratamiento que se hace de verdad. No se cobra ningún coste de consulta previa aparte.
 
-Gaat het om een volledig nieuwe hulpvraag, of is er aanvullend onderzoek nodig? Dan kan de behandelaar adviseren om de behandeling op een later moment in te plannen.
+¿Se trata de una pregunta completamente nueva, o hace falta más estudio? Entonces la terapeuta puede aconsejar programar el tratamiento para más adelante.
 
-> knop: BOEK ALS BESTAANDE KLANT
+> knop: RESERVA SI YA ERES CLIENTE
 
-**Je hoeft de naam niet te kennen**
+**No hace falta que sepas el nombre**
 
-Het is genoeg als je kunt vertellen wat je stoort, wat je wilt verbeteren en hoeveel hersteltijd voor jou haalbaar is.
+Basta con que puedas contar qué te molesta, qué quieres mejorar y cuánto tiempo de recuperación es viable para ti.
 
-- acne, mee-eters of een onrustige huid
+- acné, puntos negros o una piel inquieta
 
-- pigmentvlekken of een ongelijkmatige teint
+- manchas de pigmento o una tez irregular
 
-- roodheid, rosacea of zichtbare vaatjes
+- rojez, rosácea o vasos visibles
 
-- littekens, grove poriën of een onregelmatige huidstructuur
+- cicatrices, poros dilatados o una textura irregular de la piel
 
-- fijne lijnen, huidverslapping of algemene huidverbetering
+- líneas finas, flacidez o mejora general de la piel
 
-- ongewenste haargroei of ingegroeide haren
+- vello no deseado o pelos encarnados
 
-- haaruitval of klachten aan de hoofdhuid
+- caída del pelo o molestias en el cuero cabelludo
 
-- een combinatie van verschillende huidproblemen
+- una combinación de varios problemas de piel
 
-- een huidwens waarbij je niet weet welke behandeling past
+- un deseo para tu piel sin saber qué tratamiento encaja
 
-Staat jouw hulpvraag er niet tussen? Omschrijf hem kort tijdens het boeken, dan weten we vooraf hoeveel tijd en welke kamer we nodig hebben.
+¿Tu pregunta no está entre ellas? Descríbela brevemente al reservar, así sabemos de antemano cuánto tiempo y qué sala necesitamos.
 
-**Vier stappen van vraag tot behandeling**
+**Cuatro pasos de la pregunta al tratamiento**
 
-- PASO 1 Je vertelt wat je wilt verbeteren Een paar korte vragen vooraf. Je hoeft geen behandeling te kiezen: we willen weten waar je last van hebt en wat je al hebt geprobeerd.
+- PASO 1 Cuentas lo que quieres mejorar Unas preguntas cortas de antemano. No tienes que elegir un tratamiento: queremos saber qué te molesta y qué has probado ya.
 
-- PASO 2 De behandelaar beoordeelt je huid We kijken naar je huid, je hulpvraag en alles wat een veilige behandeling raakt: medicatie, huidproducten, eerdere reacties en zon.
+- PASO 2 La terapeuta valora tu piel Miramos tu piel, tu pregunta y todo lo que afecta a un tratamiento seguro: medicación, productos, reacciones anteriores y sol.
 
-- PASO 3 Je krijgt een duidelijk advies Welke behandeling het beste aansluit, waarom, en welke alternatieven er zijn. Soms is het eerlijkste advies om te wachten of niets te doen.
+- PASO 3 Recibes un consejo claro Qué tratamiento encaja mejor, por qué, y qué alternativas hay. A veces el consejo más honesto es esperar o no hacer nada.
 
-- PASO 4 Behandelen als het verantwoord is Past het binnen de gereserveerde tijd en ben je het eens met advies en prijs, dan kan het meteen. Zo niet, dan plannen we het samen in.
+- PASO 4 Tratar cuando es responsable Si cabe en el tiempo reservado y estás de acuerdo con el consejo y el precio, se puede hacer en el acto. Si no, lo programamos juntos.
 
-**Lo que la gente hierover vragen.**
+**Lo que la gente pregunta sobre esto.**
 
-**Moet ik vooraf een behandeling kiezen?**
+**¿Tengo que elegir un tratamiento de antemano?**
 
-Nee. Deze afspraak is juist bedoeld voor wie niet weet welke behandeling het beste past. Het is genoeg als je kunt vertellen wat je stoort.
+No. Esta cita está pensada justo para quien no sabe qué tratamiento encaja mejor. Basta con que puedas contar qué te molesta.
 
-**Word ik altijd meteen behandeld?**
+**¿Me tratan siempre en el acto?**
 
-Niet automatisch. We behandelen alleen als het op dat moment verantwoord is, als het binnen de gereserveerde tijd past en als jij akkoord bent met het advies en de prijs.
+No automáticamente. Solo tratamos si en ese momento es responsable, si cabe en el tiempo reservado y si estás de acuerdo con el consejo y el precio.
 
-**Bepaalt een huidscanner welke behandeling ik krijg?**
+**¿Un escáner de piel decide qué tratamiento me toca?**
 
-Nee. De behandelaar bepaalt wat passend is op basis van je huid, je hulpvraag en je medische achtergrond. Een huidmeting ondersteunt die beoordeling wanneer dat iets toevoegt.
+No. La terapeuta decide lo que es adecuado a partir de tu piel, tu pregunta y tu historial médico. Una medición de la piel apoya esa valoración cuando aporta algo.
 
-**Kan ik aangeven wat ik zelf wel of niet wil?**
+**¿Puedo decir lo que quiero y lo que no?**
 
-Ja. Het advies komt van de behandelaar, maar de keuze maak je samen. Er wordt niets uitgevoerd zonder jouw toestemming.
+Sí. El consejo viene de la terapeuta, pero la elección se hace juntos. No se hace nada sin tu consentimiento.
 
-**Wat betaal ik?**
+**¿Qué pago?**
 
-Ben je nieuw, dan betaal je de behandeling die wordt uitgevoerd en vervallen de intakekosten. Gebeurt er geen behandeling, dan kost de intake € 50. Ben je al klant, dan betaal je alleen de behandeling die gedaan wordt. De prijs hoor je altijd voordat we beginnen.
+Si es tu primera vez, pagas el tratamiento que se hace y el coste de la consulta previa no se cobra. Si no hay tratamiento, la consulta previa cuesta € 50. Si ya eres cliente, pagas solo el tratamiento que se hace. El precio lo oyes siempre antes de empezar.
 
-**Vertel wat je stoort. De rest zoeken wij uit.**
+**Cuéntanos qué te molesta. Del resto nos encargamos nosotros.**
 
-Het advies komt van de behandelaar, de keuze maak je samen, en er gebeurt niets zonder dat je weet wat het is en wat het kost.
+El consejo viene de la terapeuta, la elección se hace juntos, y no pasa nada sin que sepas qué es y lo que cuesta.
 
-> knop: IK BEN NIEUW BIJ DIBA
+> knop: ES MI PRIMERA VEZ EN DIBA
 
-> knop: IK BEN AL KLANT
+> knop: YA SOY CLIENTE
 
 ---
 
@@ -44658,7 +44662,7 @@ Het advies komt van de behandelaar, de keuze maak je samen, en er gebeurt niets 
 
 **Google-omschrijving:** Kies waar je iets aan wilt doen: acne, pigment, littekens, huidveroudering, glow of haar. Tijdens het huidconsult bepaalt de behandelaar wat bij jouw huid past.
 
-**ONZE TRATAMIENTOS**
+**NUESTROS TRATAMIENTOS**
 
 Je hoeft vooraf niet te weten welke behandeling je nodig hebt. Kies wat je wilt verbeteren. Tijdens het huidconsult beoordeelt de behandelaar welke aanpak bij jouw huid past.
 
@@ -44672,7 +44676,7 @@ Je hoeft vooraf niet te weten welke behandeling je nodig hebt. Kies wat je wilt 
 
 - GLOW
 
-- HAARGROEI
+- VELLO
 
 - CAÍDA DEL CABELLO
 
@@ -44792,15 +44796,15 @@ Pelo que vuelve, pelos encarnados, afeitarse a diario.
 
 Pelo cada vez más fino y una línea del pelo que retrocede.
 
-- HAIRestart Laser op de hoofdhuid bij beginnende haarverdunning. FOTONA 4D TIMEWALKER A CONSULTAR
+- HAIRestart Láser en el cuero cabelludo cuando el pelo empieza a clarear. FOTONA 4D TIMEWALKER A CONSULTAR
 
-- XL Hair Tegen haaruitval en dunner wordend haar. Een traject van maanden, afgestemd op je hoofdhuid. U225 MESOTHERAPIE DESDE € 800
+- XL Hair Contra la caída del pelo y el pelo que clarea. Un programa de meses, ajustado a tu cuero cabelludo. U225 MESOTHERAPIE DESDE € 800
 
 **Overige behandelingen**
 
 Snurken en fibromen.
 
-- NightLase Laser tegen snurken. Het zachte gehemelte wordt steviger, zonder operatie of beugel. FOTONA TIMEWALKER A CONSULTAR
+- NightLase Láser contra los ronquidos. El paladar blando se vuelve más firme, sin operación ni férula. FOTONA TIMEWALKER A CONSULTAR
 
 - Extirpación de fibromas Quitar acrocordones, normalmente en una cita. El tiempo de tratamiento lo cobramos por cuarto de hora. DESDE € 30
 
@@ -44832,7 +44836,7 @@ Sommige behandelingen doen meer naast elkaar dan achter elkaar. Wat er in jouw g
 
 De tarieven van de combinaties staan bij de losse behandelingen op de tarievenpagina.
 
-> knop: NO LO SABES Boek een behandeling op advies Je weet wat je aan je huid wilt verbeteren, maar niet of daar een peeling, een laser of microneedling bij hoort. Vertel wat je stoort; de behandelaar kiest en legt uit waarom. ZO WERKT HET
+> knop: NO LO SABES Reserva un tratamiento con asesoramiento Je weet wat je aan je huid wilt verbeteren, maar niet of daar een peeling, een laser of microneedling bij hoort. Vertel wat je stoort; de behandelaar kiest en legt uit waarom. ZO WERKT HET
 
 **Weet je niet wat bij jouw huid past?**
 
@@ -44870,7 +44874,7 @@ Donde está tu pigmento y de donde salen las células nuevas de la piel.
 
 - Peelings médicos De dos a cinco días seca y descamada, según la concentración. € 140
 
-- Peeling de hierbas Drie tot vijf dagen. Eerst rood en warm, daarna vervelt de huid. Niet aan plukken. € 150
+- Peeling de hierbas De tres a cinco días. Primero roja y caliente, después la piel se descama. No toquetear. € 150
 
 - Microneedling con el SkinPen De uno a tres días roja, como un buen rubor de sol. € 180
 
@@ -44882,9 +44886,9 @@ En nog 29 andere.
 
 Dat filter staat nergens anders, terwijl het vaak het meest bepaalt. Vul je huidprofiel in en de lijst zet bovenaan wat bij je past, met bij de rest waarom niet.
 
-> knop: ALLES 46
+> knop: TODO 46
 
-> knop: METEN 2
+> knop: MEDIR 2
 
 > knop: GEZICHTSBEHANDELINGEN 4
 
@@ -44900,7 +44904,7 @@ Dat filter staat nergens anders, terwijl het vaak het meest bepaalt. Vul je huid
 
 > knop: DEPILACIÓN LÁSER 2
 
-> knop: OVERIG 7
+> knop: OTROS 7
 
 > knop: Alle hersteltijden
 
@@ -44910,11 +44914,11 @@ Dat filter staat nergens anders, terwijl het vaak het meest bepaalt. Vul je huid
 
 De volgorde is diepte: van de buitenste laag naar binnen. Maak je huidprofiel en de lijst schikt zich naar wat bij jou past.
 
-- RAAKT NIETS Consult met EVE-M huidanalyse EVE-M De meting waar elk traject mee begint. Je huid in kaart, en een behandelplan dat daaruit volgt. Je gaat meteen door met je dag. Wil je in dezelfde afspraak behandeld worden, dan reserveren we daar tijd voor. € 50
+- RAAKT NIETS Consulta con análisis de la piel EVE-M EVE-M La medición con la que empieza cada programa. Tu piel registrada, y un plan de tratamiento que sale de ahí. Sigues con tu día enseguida. Si quieres que te traten en la misma cita, reservamos tiempo para ello. € 50
 
-- RAAKT NIETS NightLase Fotona TimeWalker Laser tegen snurken. Het zachte gehemelte wordt steviger, zonder operatie of beugel. Je kunt na NightLase normaal eten en praten. Sommige mensen voelen tijdelijk een licht schrapend gevoel in de keel. A consultar
+- RAAKT NIETS NightLase Fotona TimeWalker Láser contra los ronquidos. El paladar blando se vuelve más firme, sin operación ni férula. Después de NightLase puedes comer y hablar con normalidad. Algunas personas notan un tiempo una ligera sensación de aspereza en la garganta. A consultar
 
-- RAAKT NIETS Consult SkinComplete LED-masker Een uur over LED thuis: je huid bekeken, je doelen besproken en een protocol dat daarbij past. Geen. Dit is een gesprek met een blik op je huid. € 100
+- RAAKT NIETS Consult SkinComplete LED-masker Una hora sobre el LED en casa: tu piel vista, tus objetivos hablados y un protocolo a medida. Ninguno. Es una conversación con una mirada a tu piel. € 100
 
 - RAAKT NIETS Test de intolerancia alimentaria Un análisis de sangre que muestra a qué alimentos reacciona tu cuerpo. Ninguno. € 300
 
@@ -44924,29 +44928,29 @@ De volgorde is diepte: van de buitenste laag naar binnen. Maak je huidprofiel en
 
 - TOT IN DE EPIDERMIS OxyGeneo glow OxyGeneo Exfoliar y llevar oxígeno a la piel, en un solo tratamiento. Ninguno. € 150
 
-- TOT IN DE EPIDERMIS Peeling de hierbas Un peeling de hierbas molidas muy finas, sin ácido. Calma la inflamación y actúa contra las bacterias. Drie tot vijf dagen. Eerst rood en warm, daarna vervelt de huid. Niet aan plukken. € 150
+- TOT IN DE EPIDERMIS Peeling de hierbas Un peeling de hierbas molidas muy finas, sin ácido. Calma la inflamación y actúa contra las bacterias. De tres a cinco días. Primero roja y caliente, después la piel se descama. No toquetear. € 150
 
-- TOT IN DE EPIDERMIS Peeling láser SupErficial Fotona 4D TimeWalker Un peeling láser superficial para una piel más lisa y con más brillo. Een paar uur licht rood. Make-up kan meestal de volgende dag weer. A consultar
+- TOT IN DE EPIDERMIS Peeling láser SupErficial Fotona 4D TimeWalker Un peeling láser superficial para una piel más lisa y con más brillo. Unas horas ligeramente roja. El maquillaje normalmente se puede al día siguiente. A consultar
 
 - TOT IN DE EPIDERMIS Cosmelan Mesoestetic Programa de seis meses contra la hiperpigmentación, con una mascarilla en la clínica y productos en casa. Descamación y rojez los primeros días, y meses de protección solar estricta. € 720
 
 - TOT IN DE EPIDERMIS Dermamelan Mesoestetic El enfoque más intensivo para la pigmentación, normalmente en el melasma. Seis meses, con una rutina estricta en casa. Descamación y rojez los primeros días, y meses de protección solar estricta. € 920
 
-- TOT IN DE EPIDERMIS Dermamelan Intimate Mesoestetic Tratamiento del pigmento para la zona íntima, planteado igual que el programa facial. De huid is de eerste dagen gevoelig en gaat vervellen. Strakke kleding en sport laat je in die periode liever even staan. € 550
+- TOT IN DE EPIDERMIS Dermamelan Intimate Mesoestetic Tratamiento del pigmento para la zona íntima, planteado igual que el programa facial. La piel está sensible los primeros días y empieza a descamarse. La ropa ajustada y el deporte mejor déjalos en ese periodo. € 550
 
-- TOT IN DE EPIDERMIS Happy Intim Happy Intim® Peelings que aclaran y uniforman el pigmento de la zona íntima y de las axilas. Enkele dagen droog en gevoelig. € 175
+- TOT IN DE EPIDERMIS Happy Intim Happy Intim® Peelings que aclaran y uniforman el pigmento de la zona íntima y de las axilas. Unos días seca y sensible. € 175
 
-- TOT IN DE EPIDERMIS Tratamiento de acné Una cita para una piel alterada: limpiar, sacar los tapones, calmar. Se reserva por separado. Een paar uur licht rood. Waar verstoppingen zijn weggehaald kan de huid een dag gevoelig zijn. A consultar
+- TOT IN DE EPIDERMIS Tratamiento de acné Una cita para una piel alterada: limpiar, sacar los tapones, calmar. Se reserva por separado. Unas horas ligeramente roja. Donde se han retirado obstrucciones la piel puede estar sensible un día. A consultar
 
-- TOT IN DE EPIDERMIS Programa de acné Blemiderm Un programa guiado para el acné: tratamientos en la clínica, productos y controles en casa. Wisselt per fase van het traject. € 570
+- TOT IN DE EPIDERMIS Programa de acné Blemiderm Un programa guiado para el acné: tratamientos en la clínica, productos y controles en casa. Varía según la fase del programa. € 570
 
-- TOT IN DE EPIDERMIS Programa de acné juvenil Un programa guiado de tres meses, pensado para jóvenes de hasta dieciocho años. Wisselt per fase van het traject. € 297
+- TOT IN DE EPIDERMIS Programa de acné juvenil Un programa guiado de tres meses, pensado para jóvenes de hasta dieciocho años. Varía según la fase del programa. € 297
 
-- TOT IN DE EPIDERMIS Full Face Brushing Fotona TimeWalker Una pasada suave de láser por toda la cara. Piel más fresca sin tener que quedarte en casa. Een paar uur rood en warm. De dag erna zie je er meestal normaal uit. € 170
+- TOT IN DE EPIDERMIS Full Face Brushing Fotona TimeWalker Una pasada suave de láser por toda la cara. Piel más fresca sin tener que quedarte en casa. Unas horas roja y caliente. Al día siguiente normalmente tienes un aspecto normal. € 170
 
-- TOT IN DE EPIDERMIS Eye peel Mesoestetic Un peeling que se puede usar en el contorno de ojos. Para líneas finas y una zona ocular apagada y oscura. De oogzone is een paar uur rood en kan de dagen erna licht vervellen. Oogmake-up laat je even staan. € 30
+- TOT IN DE EPIDERMIS Eye peel Mesoestetic Un peeling que se puede usar en el contorno de ojos. Para líneas finas y una zona ocular apagada y oscura. El contorno de ojos está rojo unas horas y puede descamarse un poco los días siguientes. El maquillaje de ojos lo dejas un tiempo. € 30
 
-- TOT IN DE EPIDERMIS Extirpación de fibromas Quitar acrocordones, normalmente en una cita. El tiempo de tratamiento lo cobramos por cuarto de hora. Kleine korstjes die in dagen verdwijnen. € 30
+- TOT IN DE EPIDERMIS Extirpación de fibromas Quitar acrocordones, normalmente en una cita. El tiempo de tratamiento lo cobramos por cuarto de hora. Pequeñas costras que desaparecen en días. € 30
 
 - TOT IN DE DERMIS SUPERIOR Peelings médicos Mesoestetic, Dermaceutic, Skin Tech Pharma De suave a fuerte. La concentración decide hasta dónde llega y cuánto se descama la piel. De dos a cinco días seca y descamada, según la concentración. € 140
 
@@ -44956,19 +44960,19 @@ De volgorde is diepte: van de buitenste laag naar binnen. Maak je huidprofiel en
 
 - TOT IN DE DERMIS SUPERIOR Skin boosters y mesoterapia Inyector intradérmico U225 Principios activos puestos dentro de la piel en lugar de encima, a una profundidad fija por pinchazo. Roja un rato y a veces con bultitos, normalmente desaparecidos en un día. € 175
 
-- TOT IN DE DERMIS SUPERIOR RRS Eyes Principios activos alrededor del contorno de ojos. Para ojeras, líneas finas y una mirada cansada. Kleine bultjes die binnen een dag wegtrekken. Blauwe plekjes komen voor rond de ogen. € 130
+- TOT IN DE DERMIS SUPERIOR RRS Eyes Principios activos alrededor del contorno de ojos. Para ojeras, líneas finas y una mirada cansada. Pequeños bultitos que bajan en un día. Alrededor de los ojos pueden salir pequeños moratones. € 130
 
-- TOT IN DE DERMIS SUPERIOR SmoothLiftin Fotona 4D TimeWalker Estimulación de colágeno desde dentro, a través de la mucosa de la mejilla. Geen. Je gaat er direct mee de deur uit en er is aan de buitenkant niets te zien. A consultar
+- TOT IN DE DERMIS SUPERIOR SmoothLiftin Fotona 4D TimeWalker Estimulación de colágeno desde dentro, a través de la mucosa de la mejilla. Ninguno. Sales por la puerta directamente y por fuera no se ve nada. A consultar
 
-- TOT IN DE DERMIS SUPERIOR SmoothEye Fotona 4D TimeWalker Láser alrededor del contorno de ojos, para las patas de gallo y las líneas finas. Een paar uur licht rood rond de ogen. Je gaat er meestal direct mee de deur uit. € 150
+- TOT IN DE DERMIS SUPERIOR SmoothEye Fotona 4D TimeWalker Láser alrededor del contorno de ojos, para las patas de gallo y las líneas finas. Unas horas ligeramente roja alrededor de los ojos. Normalmente sales por la puerta directamente. € 150
 
-- TOT IN DE DERMIS SUPERIOR LipLase Fotona 4D TimeWalker Labios más llenos y lisos sin relleno, con láser por dentro y por fuera. Enkele uren gezwollen lippen, soms tot een dag. € 150
+- TOT IN DE DERMIS SUPERIOR LipLase Fotona 4D TimeWalker Labios más llenos y lisos sin relleno, con láser por dentro y por fuera. Unas horas de labios hinchados, a veces hasta un día. € 150
 
-- TOT IN DE DERMIS SUPERIOR Fotona Acne Control Fotona 4D TimeWalker Láser para el acné activo, dirigido a la inflamación y a la glándula sebácea. Een paar uur rood. Bij actieve ontstekingen kan de huid de eerste dag wat geprikkeld aanvoelen. A consultar
+- TOT IN DE DERMIS SUPERIOR Fotona Acne Control Fotona 4D TimeWalker Láser para el acné activo, dirigido a la inflamación y a la glándula sebácea. Unas horas roja. Con inflamaciones activas la piel puede notarse algo irritada el primer día. A consultar
 
-- TOT IN DE DERMIS SUPERIOR Fotona Resurfacing Fotona 4D TimeWalker Renovación de la piel con láser, para poros, textura y una piel más lisa. Van een paar uur tot enkele dagen, afhankelijk van de gekozen diepte. A consultar
+- TOT IN DE DERMIS SUPERIOR Fotona Resurfacing Fotona 4D TimeWalker Renovación de la piel con láser, para poros, textura y una piel más lisa. De unas horas a unos días, según la profundidad elegida. A consultar
 
-- TOT IN DE DERMIS SUPERIOR HAIRestart Fotona 4D TimeWalker Laser op de hoofdhuid bij beginnende haarverdunning. Geen. Je kunt er direct mee de deur uit en je haar gewoon wassen. A consultar
+- TOT IN DE DERMIS SUPERIOR HAIRestart Fotona 4D TimeWalker Láser en el cuero cabelludo cuando el pelo empieza a clarear. Ninguno. Puedes salir por la puerta directamente y lavarte el pelo con normalidad. A consultar
 
 - TOT IN DE DERMIS SUPERIOR Nordlys IPL para la pigmentación Nordlys Luz sobre manchas de pigmentación y daño solar. El pigmento sale primero a la superficie y después se difumina. Normalmente unas horas roja. € 75
 
@@ -44976,23 +44980,23 @@ De volgorde is diepte: van de buitenste laag naar binnen. Maak je huidprofiel en
 
 - TOT IN DE DERMIS SUPERIOR Electrólisis Pelo a pelo, también los grises y los rubios. Para lo que el láser no ve. El tiempo de tratamiento lo cobramos por media hora. Las zonas tratadas están rojas unas horas y pueden hincharse un poco, parecido a después de la cera. En la mayoría de la gente eso desaparece el mismo día. € 60
 
-- TOT IN DE DERMIS SUPERIOR XL Hair U225 mesotherapie Tegen haaruitval en dunner wordend haar. Een traject van maanden, afgestemd op je hoofdhuid. Kort gevoelige hoofdhuid. € 800
+- TOT IN DE DERMIS SUPERIOR XL Hair U225 mesotherapie Contra la caída del pelo y el pelo que clarea. Un programa de meses, ajustado a tu cuero cabelludo. Cuero cabelludo sensible un rato. € 800
 
-- TOT IN DE DERMIS SUPERIOR Terapia de cicatrices Para cicatrices después de una operación o una cesárea. El precio sigue la longitud de la cicatriz. Wisselt per techniek. € 100
+- TOT IN DE DERMIS SUPERIOR Terapia de cicatrices Para cicatrices después de una operación o una cesárea. El precio sigue la longitud de la cicatriz. Varía según la técnica. € 100
 
-- TOT IN DE DERMIS SUPERIOR RRS Hyalift RRS, met de U225 Llevar ácido hialurónico y vitaminas dentro de la piel. Para firmeza e hidratación, no para volumen. Kleine bultjes die binnen een dag wegtrekken, en soms een blauwe plek. Make-up laat je die dag liever staan. € 175
+- TOT IN DE DERMIS SUPERIOR RRS Hyalift RRS, met de U225 Llevar ácido hialurónico y vitaminas dentro de la piel. Para firmeza e hidratación, no para volumen. Pequeños bultitos que bajan en un día, y a veces un moratón. El maquillaje mejor déjalo ese día. € 175
 
-- TOT IN DE DERMIS PROFUNDA Fotona TimeWalker Fotona 4D TimeWalker Quince tratamientos en un solo equipo, desde un peeling láser suave hasta el 4D completo. Cada uno con su propio objetivo. Van een paar uur rood tot enkele dagen, afhankelijk van de behandeling. € 150
+- TOT IN DE DERMIS PROFUNDA Fotona TimeWalker Fotona 4D TimeWalker Quince tratamientos en un solo equipo, desde un peeling láser suave hasta el 4D completo. Cada uno con su propio objetivo. De unas horas de rojez a unos días, según el tratamiento. € 150
 
 - TOT IN DE DERMIS PROFUNDA Fotona 4D Fotona 4D TimeWalker Cuatro tratamientos láser en una sesión. Desde dentro, a través de la mejilla, hasta un peeling final. De unas horas a un día roja y caliente, como si hubieras estado demasiado tiempo al sol. € 370
 
-- TOT IN DE DERMIS PROFUNDA Fotona 4D Men Fotona 4D TimeWalker El mismo protocolo de cuatro pasos, ajustado a la piel masculina, que suele ser más gruesa. Een paar uur tot een dag rood en warm. Bij een baard let de behandelaar extra op de zones rond de haargroei. A consultar
+- TOT IN DE DERMIS PROFUNDA Fotona 4D Men Fotona 4D TimeWalker El mismo protocolo de cuatro pasos, ajustado a la piel masculina, que suele ser más gruesa. De unas horas a un día roja y caliente. Con barba la terapeuta presta atención extra a las zonas alrededor del vello. A consultar
 
-- TOT IN DE DERMIS PROFUNDA FRAC3 Fotona 4D TimeWalker Láser fraccionado que llega más profundo, para la textura, los poros y las irregularidades. Een tot enkele dagen rood, soms met een fijne korrelige structuur die eraf schilfert. A consultar
+- TOT IN DE DERMIS PROFUNDA FRAC3 Fotona 4D TimeWalker Láser fraccionado que llega más profundo, para la textura, los poros y las irregularidades. De uno a varios días roja, a veces con una textura fina y granulada que se descama. A consultar
 
-- TOT IN DE DERMIS PROFUNDA PIANO skin tightening Fotona 4D TimeWalker Calentamiento profundo y uniforme para reafirmar la cara, la mandíbula y el cuello. Geen tot een paar uur lichte roodheid. Je gaat er meestal direct mee de deur uit. A consultar
+- TOT IN DE DERMIS PROFUNDA PIANO skin tightening Fotona 4D TimeWalker Calentamiento profundo y uniforme para reafirmar la cara, la mandíbula y el cuello. De nada a unas horas de rojez leve. Normalmente sales por la puerta directamente. A consultar
 
-- TOT IN DE DERMIS PROFUNDA VectorLift Fotona 4D TimeWalker Lifting de cejas con láser y reafirmación de la frente, sin agujas. Een paar uur licht rood op het voorhoofd. Je gaat er direct mee de deur uit. € 150
+- TOT IN DE DERMIS PROFUNDA VectorLift Fotona 4D TimeWalker Lifting de cejas con láser y reafirmación de la frente, sin agujas. Unas horas ligeramente roja en la frente. Sales por la puerta directamente. € 150
 
 - TOT IN DE DERMIS PROFUNDA Fotona Scar Repair Fotona 4D TimeWalker Láser sobre cicatrices: cicatrices de acné, cicatrices quirúrgicas y estrías. De uno a unos pocos días roja, según la profundidad y la zona. € 195
 
@@ -45016,109 +45020,109 @@ In het huidconsult kijken we onder vast licht wat er bij jou aan de hand is. Nee
 
 **Google-omschrijving:** Vacature huidtherapeut bij Diba Clinics in Rotterdam. Werken met EVE-M, Fotona, Nordlys, SkinPen en peelings, in een team van elf. Parttime of fulltime.
 
-**VACATURE HUIDTHERAPEUT EN ROTTERDAM**
+**VACANTE DE TERAPEUTA DE LA PIEL EN ROTTERDAM**
 
-Diba Clinics is een huidkliniek in Rotterdam-Noord. We behandelen acne, pigment, littekens, huidverbetering en ongewenste haargroei, en we werken sinds 2017 met een vast team van elf.
+Diba Clinics es una clínica de la piel en Róterdam-Noord. Tratamos acné, pigmento, cicatrices, mejora de la piel y vello no deseado, y desde 2017 trabajamos con un equipo fijo de once personas.
 
-We zoeken een huidtherapeut die zelfstandig een spreekuur draait: meten, een behandelplan opstellen en dat plan zelf uitvoeren op de apparatuur die er staat.
+Buscamos terapeuta de la piel que lleve su propia consulta de forma autónoma: medir, elaborar un plan de tratamiento y ejecutarlo con los aparatos que tenemos.
 
-> knop: SOLLICITEER OP DEZE FUNCTIE
+> knop: SOLICITA ESTE PUESTO
 
-> knop: EERST EEN VRAAG STELLEN
+> knop: HACER UNA PREGUNTA PRIMERO
 
-Liever bellen? Dat kan op 010-2038423.
+¿Prefieres llamar? Puedes hacerlo al 010-2038423.
 
-Huidtherapeut
+Terapeuta de la piel
 
-*DIENSTVERBAND*
+*CONTRATO*
 
-Parttime of fulltime
+Media jornada o jornada completa
 
-*UREN*
+*HORAS*
 
-24 tot 38 uur, in overleg
+De 24 a 38 horas, a convenir
 
-*LOCATIE*
+*UBICACIÓN*
 
-Weissenbruchlaan 166, 3054 LS Rotterdam. Geplaatst op 4 september 2026.
+Weissenbruchlaan 166, 3054 LS Rotterdam. Publicada el 4 september 2026.
 
-**Wat je doet**
+**Lo que haces**
 
-Je draait een eigen spreekuur: je meet, je stelt het plan op en je voert het zelf uit. Vier onderdelen die elke week terugkomen.
+Llevas tu propia consulta: mides, elaboras el plan y lo ejecutas tú. Cuatro partes que se repiten cada semana.
 
-- Meten en beoordelen Elk traject begint met een huidanalyse op de EVE-M. Je beoordeelt wat je ziet, legt het vast onder vaste belichting en bespreekt de uitkomst met de client.
+- Medir y valorar Cada programa empieza con un análisis de la piel en el EVE-M. Valoras lo que ves, lo registras bajo una iluminación fija y hablas del resultado con el cliente.
 
-- Een plan dat klopt Je stelt vast welke behandeling erbij past, in welke volgorde en over hoeveel sessies. Contra-indicaties beoordeel je zelf en je legt uit waarom iets wel of niet kan.
+- Un plan que se sostiene Determinas qué tratamiento encaja, en qué orden y en cuántas sesiones. Las contraindicaciones las valoras tú y explicas por qué algo se puede hacer o no.
 
-- Zelf behandelen Laser, IPL, microneedling, peelings en mesotherapie. Je stelt de apparatuur in op het huidtype en de zone, en je stuurt bij op wat de huid tussentijds doet.
+- Tratar tú Láser, IPL, microneedling, peelings y mesoterapia. Ajustas los aparatos al fototipo y a la zona, y corriges según lo que hace la piel entre medias.
 
-- Het traject bewaken Bij elke controle leg je de opnames naast elkaar. Levert een aanpak te weinig op, dan verander je hem in plaats van hem uit te zitten.
+- Vigilar el programa En cada revisión pones las capturas una al lado de la otra. Si un enfoque rinde poco, lo cambias en lugar de aguantarlo hasta el final.
 
-TUSSEN TWEE AFSPRAKEN DOOR
+ENTRE DOS CITAS
 
-**Wat we vragen en bieden**
+**Lo que pedimos y ofrecemos**
 
-Links de eisen die er echt toe doen, rechts wat daar bij Diba tegenover staat. Beide lijsten zijn even lang, met opzet.
+A la izquierda los requisitos que importan de verdad, a la derecha lo que Diba ofrece a cambio. Las dos listas tienen la misma longitud, a propósito.
 
-- Een afgeronde hbo-bachelor Huidtherapie (Haagse Hogeschool of Hogeschool Utrecht)
+- Un grado universitario terminado en Terapia de la Piel (Haagse Hogeschool o Hogeschool Utrecht)
 
-- Ingeschreven in het Kwaliteitsregister Paramedici, of daar op korte termijn aan kunnen voldoen
+- Inscripción en el Registro de Calidad de Paramédicos, o poder cumplirlo en breve
 
-- Ervaring met laser, IPL of microneedling, of de bereidheid je daarop in te werken
+- Experiencia con láser, IPL o microneedling, o disposición a formarte en ello
 
-- Je kunt uitleggen wat je doet in gewone taal, ook als het antwoord tegenvalt
+- Sabes explicar lo que haces en un lenguaje normal, también cuando la respuesta decepciona
 
-- Beschikbaar op minimaal twee avonden per maand, want woensdag en donderdag lopen door tot 21:00
+- Disponibilidad al menos dos tardes al mes, porque los miércoles y jueves se trabaja hasta las 21:00
 
-- Een vaste plek in een team van elf, met huidtherapeuten en orthomoleculair huidspecialisten naast elkaar
+- Un puesto fijo en un equipo de once, con terapeutas de la piel y especialistas ortomoleculares de la piel codo con codo
 
-- Apparatuur die er staat en werkt: Fotona TimeWalker, Nordlys IPL, GentleMax Pro, SkinPen, Dermapen 4, U225 en de EVE-M
+- Aparatos que están y funcionan: Fotona TimeWalker, Nordlys IPL, GentleMax Pro, SkinPen, Dermapen 4, U225 y el EVE-M
 
-- Tijd voor een intake van een uur, want daar begint elk traject mee
+- Tiempo para una consulta previa de una hora, porque con eso empieza cada programa
 
-- Ruimte voor bij- en nascholing, ook omdat het Kwaliteitsregister die punten vraagt
+- Espacio para la formación continua, también porque el Registro de Calidad pide esos puntos
 
-- Een kliniek in Rotterdam-Noord met parkeergelegenheid in de straat
+- Una clínica en Róterdam-Noord con aparcamiento en la calle
 
-**Van mail tot meeloopdag**
+**Del correo al día de prueba**
 
-Drie stappen, en je weet vooraf wat er komt. Er zit geen assessment in en geen ronde met vijf mensen aan tafel.
+Tres pasos, y sabes de antemano lo que viene. No hay ninguna evaluación ni ninguna ronda con cinco personas a la mesa.
 
-- Je stuurt iets Een mail naar info@dibaclinics.nl met je cv. Een motivatiebrief hoeft niet; een paar regels over waar je nu werkt en wat je zoekt is genoeg.
+- Envías algo Un correo a info@dibaclinics.nl con tu CV. No hace falta carta de motivación; bastan unas líneas sobre dónde trabajas ahora y qué buscas.
 
-- We bellen Binnen een week hoor je iets. Dat gesprek duurt een kwartier en gaat over wat je nu doet en wat je hier zou willen doen.
+- Te llamamos En una semana sabes algo. Esa conversación dura un cuarto de hora y trata de lo que haces ahora y de lo que querrías hacer aquí.
 
-- Je loopt een dag mee Je draait mee in de kliniek, ziet de apparatuur en spreekt het team. Daarna weet je allebei genoeg om iets te vinden.
+- Pasas un día con nosotros Trabajas con nosotros en la clínica, ves los aparatos y hablas con el equipo. Después las dos partes saben lo suficiente para formarse una opinión.
 
 **Preguntas frecuentes**
 
-Kan ik solliciteren als starter?
+¿Puedo presentarme sin experiencia?
 
-Ja. Een diploma huidtherapie is de eis; ervaring met specifieke apparatuur is dat niet. Je wordt ingewerkt op de toestellen die je nog niet kent.
+Sí. El título de terapia de la piel es el requisito; la experiencia con aparatos concretos no lo es. Te formamos en los aparatos que todavía no conoces.
 
-Werk ik met een eigen agenda?
+¿Trabajo con mi propia agenda?
 
-Je draait een eigen spreekuur en ziet je eigen clienten terug bij de controles. De agenda wordt door de praktijkmanager gepland.
+Llevas tu propia consulta y vuelves a ver a tus propios clientes en las revisiones. La agenda la planifica la gerente de la clínica.
 
-Hoeveel uur is er beschikbaar?
+¿Cuántas horas hay disponibles?
 
-24 tot 38 uur, in overleg. Woensdag en donderdag lopen door tot 21:00 en zaterdag tot 18:00, dus avonden en zaterdagen horen bij het rooster.
+De 24 a 38 horas, a convenir. Los miércoles y jueves se trabaja hasta las 21:00 y los sábados hasta las 18:00, así que las tardes y los sábados forman parte del horario.
 
-Zit er een salarisindicatie bij?
+¿Hay una indicación de salario?
 
-Die bespreken we in het eerste gesprek, samen met de uren en de startdatum.
+Lo hablamos en la primera conversación, junto con las horas y la fecha de inicio.
 
-Waar zit de kliniek precies?
+¿Dónde está exactamente la clínica?
 
-Aan de Weissenbruchlaan 166, 3054 LS Rotterdam, in Rotterdam-Noord. Met de auto sta je in de straat en met het openbaar vervoer ben je vanaf Rotterdam Centraal in een klein half uur binnen.
+En Weissenbruchlaan 166, 3054 LS Róterdam, en Róterdam-Noord. En coche aparcas en la calle y en transporte público estás dentro en poco menos de media hora desde Rotterdam Centraal.
 
-**Stuur je cv, de rest bespreken we**
+**Envía tu CV, el resto lo hablamos**
 
-Een motivatiebrief hoeft niet. Een paar regels over waar je nu werkt en wat je zoekt is genoeg, en binnen een week hoor je iets.
+No hace falta carta de motivación. Bastan unas líneas sobre dónde trabajas ahora y qué buscas, y en una semana sabes algo.
 
-> knop: MAIL JE SOLLICITATIE
+> knop: ENVÍA TU CANDIDATURA POR CORREO
 
-> knop: STEL EEN VRAAG VIA WHATSAPP
+> knop: HAZ UNA PREGUNTA POR WHATSAPP
 
 ---
 
@@ -45460,7 +45464,7 @@ De meeste twijfel voor een intake gaat over de vraag of je straks met een pakket
 
 - LATER Wat je meeneemt
 
-We bespreken je huidvraag We vragen waar je last van hebt, hoelang dit al speelt en wat je zelf hebt geprobeerd. Ook bespreken we wat je verwacht en wat je juist niet wilt.
+We bespreken je huidvraag. We vragen waar je last van hebt, hoelang dit al speelt en wat je zelf hebt geprobeerd. Ook bespreken we wat je verwacht en wat je juist niet wilt.
 
 Je hoeft je niet voor te bereiden op vaktermen. Zeg het in je eigen woorden; wij vertalen.
 
@@ -45912,7 +45916,7 @@ Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met
 
 > knop: Lees verder
 
-Laatst bijgewerkt op 11 september 2026 . Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
 
 **Een peeling in Rotterdam plannen**
 
@@ -46142,7 +46146,7 @@ Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met
 
 > knop: Lees verder
 
-Laatst bijgewerkt op 11 september 2026 . Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
 
 **Een pigmenttraject in Rotterdam**
 
@@ -46364,7 +46368,7 @@ Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met
 
 > knop: Lees verder
 
-Laatst bijgewerkt op 11 september 2026 . Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
 
 **Dermaplaning in Rotterdam plannen**
 
@@ -46578,7 +46582,7 @@ Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met
 
 > knop: Lees verder
 
-Laatst bijgewerkt op 11 september 2026 . Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
 
 **Elektrische epilatie in Rotterdam**
 
@@ -46802,7 +46806,7 @@ Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met
 
 > knop: Lees verder
 
-Laatst bijgewerkt op 12 september 2026 . Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+Laatst bijgewerkt op 12 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
 
 **Je huidtype laten bepalen**
 
@@ -47032,7 +47036,7 @@ Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met
 
 > knop: Lees verder
 
-Laatst bijgewerkt op 11 september 2026 . Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
 
 **Fotona 4D in Rotterdam plannen**
 
@@ -47274,7 +47278,7 @@ Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met
 
 > knop: Lees verder
 
-Laatst bijgewerkt op 12 september 2026 . Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+Laatst bijgewerkt op 12 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
 
 **Een plan met een aantal erbij**
 
@@ -47500,7 +47504,7 @@ Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met
 
 > knop: Lees verder
 
-Laatst bijgewerkt op 11 september 2026 . Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
 
 **Een huidanalyse in Rotterdam plannen**
 
@@ -47726,7 +47730,7 @@ Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met
 
 > knop: Lees verder
 
-Laatst bijgewerkt op 12 september 2026 . Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+Laatst bijgewerkt op 12 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
 
 **Kom langs en kijk zelf**
 
@@ -47966,7 +47970,7 @@ Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met
 
 > knop: Lees verder
 
-Laatst bijgewerkt op 11 september 2026 . Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
 
 **Naar een huidtherapeut in Rotterdam**
 
@@ -48210,7 +48214,7 @@ Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met
 
 > knop: Lees verder
 
-Laatst bijgewerkt op 11 september 2026 . Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
 
 **Een HydraFacial in Rotterdam plannen**
 
@@ -48446,7 +48450,7 @@ Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met
 
 > knop: Lees verder
 
-Laatst bijgewerkt op 11 september 2026 . Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
 
 **IPL in Rotterdam plannen**
 
@@ -48680,7 +48684,7 @@ Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met
 
 > knop: Lees verder
 
-Laatst bijgewerkt op 11 september 2026 . Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
 
 **Microneedling in Rotterdam plannen**
 
@@ -48910,7 +48914,7 @@ Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met
 
 > knop: Lees verder
 
-Laatst bijgewerkt op 11 september 2026 . Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
 
 **OxyGeneo in Rotterdam plannen**
 
@@ -49156,7 +49160,7 @@ Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met
 
 > knop: Lees verder
 
-Laatst bijgewerkt op 11 september 2026 . Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+Laatst bijgewerkt op 11 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
 
 **Skinboosters in Rotterdam plannen**
 
@@ -49392,7 +49396,7 @@ Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met
 
 > knop: Lees verder
 
-Laatst bijgewerkt op 12 september 2026 . Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+Laatst bijgewerkt op 12 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
 
 **Plan het op het goede moment**
 
@@ -49626,7 +49630,7 @@ Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met
 
 > knop: Lees verder
 
-Laatst bijgewerkt op 12 september 2026 . Tarieven en behandeltijden worden bij elke wijziging nagelopen.
+Laatst bijgewerkt op 12 september 2026. Tarieven en behandeltijden worden bij elke wijziging nagelopen.
 
 **Meten kan altijd**
 
@@ -49728,7 +49732,7 @@ Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Wat er niet
 
 - “Ik heb een hele fijne ervaring gehad bij Demi. Goed geïnformeerd over hoe het proces (laseren) in zijn werking gaat. Ik ben gerustgesteld en goed geholpen. Jullie hebben er een nieuwe klant bij!” Andrijana Laserontharing bij Demi 4 MAANDEN GELEDEN
 
-- “Ik heb een hele fijne ervaring gehad bij Demy. Goed geïnformeerd over hoe het proces (laseren) in zijn werking gaat. Ik ben gerustgesteld en goed geholpen. Jullie hebben er een nieuwe klant bij!” Andrijana Laserontharing 5 MAANDEN GELEDEN
+- “Inmiddels 3 keer langs geweest voor de diodelaser en ik zie echt 80% verschil! Ook de littekens en vlekjes van mijn huid zijn zwaar verbeterd dankzij de dermapen. Sowieso forever vaste klant!!” Sara Laserontharing MEER DAN 7 JAAR GELEDEN
 
 - “Ik vond de afspraak super! Alles is goed verlopen en bijna uitbehandeld met laseren! Demi is echt een zeer professionele huidspecialist zo dankbaar met haar! Voert haar werk heel nauwkeurig uit.” Monique Laserontharing MEER DAN 3 JAAR GELEDEN
 
@@ -49974,7 +49978,7 @@ Loopt er al iets bij je huisarts of gynaecoloog, zeg dat dan bij de intake. Niet
 
 **WAT KLANTEN OVER ONS SCHRIJVEN**
 
-3.893 reviews op Salonized, gemiddeld een 5,0 . Ze zijn na de afspraak geschreven door mensen die hier zijn geweest, en ze staan er allemaal: met tekst en zonder.
+3.893 reviews op Salonized, gemiddeld een 5,0. Ze zijn na de afspraak geschreven door mensen die hier zijn geweest, en ze staan er allemaal: met tekst en zonder.
 
 Zoek gerust op de behandeling die jou bezighoudt. Dan lees je wat mensen met jouw vraag erover schreven, en dat zegt meer dan het gemiddelde eronder.
 
@@ -50974,7 +50978,7 @@ Elke vacature vraagt om een teamplayer met passie voor de huid. Wat een kliniek 
 
 - Dat je bijhoudt wat er in het vak verandert. Een diploma is een startpunt.
 
-- Advies geven Medewerkers worden niet beoordeeld op de omzet per klant. Een behandeling of product wordt alleen geadviseerd wanneer de behandelaar denkt dat het iets toevoegt.
+- Verkopen. Medewerkers worden niet beoordeeld op de omzet per klant. Een behandeling of product wordt alleen geadviseerd wanneer de behandelaar denkt dat het iets toevoegt.
 
 - Alles alleen kunnen. Er zijn twee vakgebieden in huis juist omdat één invalshoek vaak niet genoeg is.
 
@@ -51003,4 +51007,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_374 pagina's · 24001 tekstblokken · ongeveer 364.442 woorden._
+_374 pagina's · 24003 tekstblokken · ongeveer 364.256 woorden._

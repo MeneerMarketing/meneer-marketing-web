@@ -82,6 +82,32 @@ export type Landing = {
   readonly soort?: "plaats" | "vraag";
   /** De dag waarop de inhoud voor het laatst is aangepast, in ISO. Pagina, schema en sitemap. */
   readonly gewijzigd: string;
+  /**
+   * Wie de medische inhoud van deze pagina heeft nagekeken, en wanneer.
+   *
+   * Dit vult `reviewedBy` en `lastReviewed` op het MedicalWebPage-schema — de twee velden
+   * waarmee Google een medische pagina op een zorgaanbieder terugvoert. `npm run seo`
+   * meldt ze als ontbrekend op alle 51 kennisbankpagina's (17 × 3 talen), en dat is de
+   * grootste E-E-A-T-winst die er nog te halen is.
+   *
+   * Maar het is een bewering over een mens. Vul dit pas als die persoon de tekst
+   * werkelijk heeft gelezen en goedgekeurd, en zet dan de datum van dát moment. Een naam
+   * neerzetten omdat het goed staat in een schema is precies de onwaarheid die een
+   * kliniek zich niet kan veroorloven. Leeg is eerlijk; ingevuld op basis van niets is
+   * dat niet.
+   *
+   * Sinds 15 september 2026 staat het op alle zeventien: Rojda heeft ze gelezen, Yasin
+   * bevestigde dat, en de constante daarvoor staat in `nagekeken.ts`. Een pagina die
+   * daarna inhoudelijk verandert, hoort opnieuw langs haar — en tot die tijd is de
+   * eerlijke stap het veld op die ene pagina weghalen, niet de datum ophogen.
+   */
+  readonly nagekeken?: {
+    readonly door: string;
+    /** "Huidtherapeut en oprichter". Gaat door het woordenboek. */
+    readonly functie: string;
+    /** ISO-datum van de controle. */
+    readonly op: string;
+  };
   /** De tabbladtitel zonder merknaam. Met " | Diba Clinics" erachter maximaal 60 tekens. */
   readonly titel: string;
   /** Maximaal 158 tekens. */

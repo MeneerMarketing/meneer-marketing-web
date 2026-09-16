@@ -1,5 +1,26 @@
-import { DIBA_NAP, DIBA_SITE_URL, DIBA_SOCIALS } from "@/lib/site";
+import {
+  DIBA_GOOGLE_PROFIEL,
+  DIBA_NAP,
+  DIBA_SITE_URL,
+  DIBA_SOCIALS,
+  DIBA_ZORGKAART,
+} from "@/lib/site";
 import { medicalClinicSchema, SchemaMarkup } from "@/lib/schema";
+import { BEHANDELINGEN } from "@/data/behandelingen";
+
+/**
+ * Het tariefbereik, gerekend uit de behandelingen zelf.
+ *
+ * Niet uitgeschreven als "€20–€920": dan staat er een getal dat naast de tarieven leeft en
+ * er stil van afdwaalt zodra er een behandeling bij komt. Nu volgt het de prijslijst.
+ *
+ * Een prijs van nul betekent "op aanvraag" en telt dus niet mee als ondergrens.
+ */
+function prijsbereik(): string | undefined {
+  const bedragen = BEHANDELINGEN.map((b) => b.prijs).filter((p) => p > 0);
+  if (bedragen.length === 0) return undefined;
+  return `€${Math.min(...bedragen)}–€${Math.max(...bedragen)}`;
+}
 
 /**
  * Het JSON-LD over de kliniek zelf.
@@ -21,9 +42,27 @@ export default function KliniekSchema() {
       data={medicalClinicSchema({
         nap: DIBA_NAP,
         url: DIBA_SITE_URL,
-        sameAs: DIBA_SOCIALS.length
-          ? DIBA_SOCIALS.map((kanaal) => kanaal.url)
-          : undefined,
+        /**
+         * Waar dezelfde kliniek nog meer staat.
+         *
+         * Hier stonden alleen de drie eigen kanalen. Het Zorgkaart-profiel ontbrak, en dat
+         * is juist het soort verwijzing waar `sameAs` voor is: een onafhankelijke plek waar
+         * deze kliniek staat, bijgehouden door de Patiëntenfederatie en niet door onszelf.
+         * Daar staat ook de 9,7 die op de homepage genoemd wordt. Zo'n koppeling is hoe
+         * Google een website aan een profiel verbindt — niet door dat cijfer in ons eigen
+         * schema te zetten, want een waardering die de aanbieder over zichzelf meldt telt
+         * niet (zie de kop van `lib/schema.tsx`).
+         *
+         * Het Google-bedrijfsprofiel staat er sinds 15 september 2026 ook in, als de
+         * uitgeschreven Knowledge-Graph-verwijzing; wat die link precies is staat bij
+         * `DIBA_GOOGLE_PROFIEL` in `lib/site.ts`.
+         */
+        sameAs: [
+          ...DIBA_SOCIALS.map((kanaal) => kanaal.url),
+          DIBA_ZORGKAART.url,
+          DIBA_GOOGLE_PROFIEL.url,
+        ].filter(Boolean),
+        prijsbereik: prijsbereik(),
       })}
     />
   );

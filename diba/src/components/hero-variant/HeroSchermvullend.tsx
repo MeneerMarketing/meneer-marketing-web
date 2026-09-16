@@ -80,7 +80,13 @@ export default function HeroSchermvullend() {
             bestand="/videos/home-hero.mp4"
             bestandBreed="/videos/hero-breed.mp4"
             poster={FIGMA_HERO_PORTRAIT}
-            posterBreed={FIGMA_HOME_PORTRAIT_WIDE.src}
+            /* Een eigen bestand en niet `FIGMA_HOME_PORTRAIT_WIDE.src`. Dat is het
+               origineel van 3000 bij 2000 en 927 kB, en een `poster` gaat rauw over de lijn:
+               de beeldoptimalisatie van Next raakt hem niet aan, want dit is geen
+               `next/image`. Op 1920 breed en kwaliteit 72 is hetzelfde beeld 156 kB, en
+               verder zie je er in een seconde niets van. Het origineel blijft staan voor
+               /intake, waar hij wél door de optimalisatie gaat. */
+            posterBreed="/images/shoot/hero-huidscan-poster.jpg"
             beschrijving={FIGMA_HERO_PORTRAIT_ALT}
             eigenKnop={false}
           />

@@ -1,0 +1,23 @@
+Bronbestanden. Deze map gaat NIET mee in de site.
+
+Alles onder /public wordt uitgeleverd aan bezoekers en zit in elke deploy. Een
+masterbestand hoort daar niet: het wordt nooit opgevraagd en weegt wel mee.
+
+Op dit moment staat er niets in. Komt er nieuw bronmateriaal, dan hoort het hier.
+
+WEGGEHAALD
+
+  hero-hydrafacial-origineel.mp4   24,7 MB, op 15 september 2026
+
+    De opname waar public/videos/hero-breed.mp4 uit is gecodeerd (1440 breed,
+    5,8 MB). Hij stond in public/videos en ging bij elke deploy mee zonder dat
+    iemand hem opvroeg. Yasin: "die hydrafacial video mag weg als die niet wordt
+    gebruikt." Dat is zo: sinds DIBA_HERO_VIDEO_SRC naar hero-breed.mp4 wijst,
+    verwijst niets in de code er nog naar.
+
+    Terughalen als er ooit opnieuw gecodeerd moet worden:
+
+        git checkout 997e71aa -- public/videos/hero-hydrafacial.mp4
+
+    De bytes zitten voorgoed in de git-historie, dus weggooien maakt de repo
+    niet kleiner; het haalt hem alleen uit de deploy en uit je werkmap.

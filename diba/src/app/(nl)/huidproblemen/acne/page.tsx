@@ -5,6 +5,7 @@ import ReviewsBijOnderwerp from "@/components/reviews/ReviewsBijOnderwerp";
 import BehandelingenBijProbleem from "@/components/pillar/BehandelingenBijProbleem";
 import AcneOnderDeHuid from "@/components/acne/AcneOnderDeHuid";
 import PillarNav from "@/components/pillar/PillarNav";
+import { PillarFaq } from "@/components/pillar/PillarSecties";
 import AcneTypeKiezer from "@/components/acne/AcneTypeKiezer";
 import AcneZoneKaart from "@/components/acne/AcneZoneKaart";
 import Button from "@/components/ui/Button";
@@ -430,59 +431,14 @@ export default function AcnePage() {
         </div>
       </section>
 
-      {/* ── FAQ ──────────────────────────────────────────────────────── */}
-      <section
-        id="vragen"
-        className="scroll-mt-[var(--anker-offset)] bg-[var(--g-025)] px-5 py-12 sm:py-20 sm:px-9 lg:px-[7.5vw] lg:py-28"
-      >
-        <div className="mx-auto grid gap-10 lg:grid-cols-[0.7fr_1.3fr]">
-          <div>
-            <Label>{t("Goed om te weten")}</Label>
-            <h2 className="diba-display-m mt-4 max-w-[16ch]">
-              {t("Veelgestelde vragen over acne")}
-            </h2>
-          </div>
+      {/* De vragen, en het FAQ-schema dat erbij hoort.
 
-          <div className="space-y-2">
-            {/* Dezelfde vorm als elke andere uitklapvraag op de site: een wit vak op een
-                  zachte ondergrond, opschrift op zestien pixels, tweeënzeventig pixels hoog
-                  als hij dicht is. Yasin, 10 september 2026: "het moet overal gewoon
-                  hetzelfde zijn." Hier stonden regels met haarlijnen en een opschrift van
-                  twintig, dat op een telefoon over twee regels brak. */}
-            {ACNE_FAQ.map((item, i) => (
-              <details
-                key={item.vraag}
-                open={i === 0}
-                className="group rounded-[var(--r-md)] bg-white px-6 py-3"
-              >
-                <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 text-[16px] leading-[1.4] font-medium">
-                  <span>{t(item.vraag)}</span>
-                  <span
-                    className="grid h-8 w-8 shrink-0 place-items-center rounded-[var(--r-pill)] bg-[var(--g-050)] text-[var(--g-700)]"
-                    aria-hidden="true"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      width="14"
-                      height="14"
-                      viewBox="0 0 18 18"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                    >
-                      <path d="M2 9h14" />
-                      <path d="M9 2v14" className="group-open:opacity-0" />
-                    </svg>
-                  </span>
-                </summary>
-                <p className="max-w-[68ch] pt-4 pb-2 text-[15px] leading-7 text-[var(--t-body)]">
-                  {tc(item.antwoord)}
-                </p>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
+          Hier stond dezelfde uitklaplijst met de hand geschreven, en daarmee miste deze
+          pagina als enige klachtpagina zijn FAQPage-schema: dat wordt door `PillarFaq`
+          meegestuurd en niet door de opmaak. Gevonden in het SEO-rapport van Okan,
+          15 september 2026. Precies het gat waarvoor die component gemaakt is: wie de
+          vragen toont, meldt ze ook aan. */}
+      <PillarFaq items={ACNE_FAQ} onderwerp="acne" />
 
       {/* Wat anderen over acne schreven. Elf reviews in het archief noemen acne,
           puistjes of onzuiverheden; deze drie zijn daar de recentste van. */}

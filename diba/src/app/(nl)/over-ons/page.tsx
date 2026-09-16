@@ -55,7 +55,7 @@ export const metadata: Metadata = zoekmachineVelden({
      geen drie keer zoveel kans. Hier staan de feiten over de kliniek; hoe we werken staat
      op /ons-verhaal. */
   titel: "Over Diba Clinics in Rotterdam",
-  omschrijving: `Diba Clinics in ${DIBA_SITE.neighborhood}, ${DIBA_ADDRESS.city}. Actief sinds ${DIBA_PROOF.activeSince}, ${TEAM_AANTAL} mensen, ${APPARATUUR.length} apparaten. En wat die cijfers niet zeggen.`,
+  omschrijving: `Diba Clinics in ${DIBA_ADDRESS.city}. Actief sinds ${DIBA_PROOF.activeSince}, ${TEAM_AANTAL} mensen, ${APPARATUUR.length} apparaten. En wat die cijfers niet zeggen.`,
 });
 
 /**

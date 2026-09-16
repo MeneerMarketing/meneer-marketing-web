@@ -1,3 +1,4 @@
+import { NAGEKEKEN_ROJDA } from "@/data/landings/nagekeken";
 import {
   afspraakBlokken,
   alsWoord,
@@ -44,6 +45,7 @@ const AANTAL = alsWoord(HUIDTHERAPEUTEN.length);
 export const HUIDTHERAPEUT_ROTTERDAM: Landing = {
   slug: "huidtherapeut-rotterdam",
   gewijzigd: "2026-09-11",
+  nagekeken: NAGEKEKEN_ROJDA,
   titel: "Huidtherapeut Rotterdam",
   omschrijving: `Huidtherapeut in Rotterdam bij Diba Clinics. Wat een huidtherapeut doet, wanneer huidtherapie vergoed wordt en hoe je eerste afspraak gaat. Intake ${euro(INTAKE_PRIJS)}.`,
   kruimel: "Huidtherapeut",

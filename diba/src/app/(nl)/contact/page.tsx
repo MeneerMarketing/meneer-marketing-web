@@ -69,7 +69,7 @@ import {
 export const metadata: Metadata = zoekmachineVelden({
   pad: "/contact",
   titel: "Contact en route",
-  omschrijving: `Diba Clinics staat aan de ${DIBA_ADDRESS.street} in ${DIBA_SITE.neighborhood}, ${DIBA_ADDRESS.city}. Bellen, appen, mailen of je vraag stellen via het formulier.`,
+  omschrijving: `Diba Clinics staat aan de ${DIBA_ADDRESS.street} in ${DIBA_ADDRESS.city}. Bellen, appen, mailen of je vraag stellen via het formulier.`,
 });
 
 /** De manieren die geen keuze vragen: ze staan er gewoon. */

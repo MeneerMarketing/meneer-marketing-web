@@ -1,3 +1,4 @@
+import { NAGEKEKEN_ROJDA } from "@/data/landings/nagekeken";
 import {
   afspraakBlokken,
   behandeling,
@@ -27,6 +28,7 @@ const DP = behandeling("dermaplaning");
 export const DERMAPLANING_ROTTERDAM: Landing = {
   slug: "dermaplaning-rotterdam",
   gewijzigd: "2026-09-11",
+  nagekeken: NAGEKEKEN_ROJDA,
   titel: "Dermaplaning Rotterdam",
   omschrijving: `Dermaplaning in Rotterdam bij Diba Clinics. ${euro(DP.prijs)}, zestig minuten en geen hersteltijd. Zonder zuren, dus ook bij een gevoelige huid.`,
   kruimel: "Dermaplaning",

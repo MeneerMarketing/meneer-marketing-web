@@ -26,11 +26,15 @@ import { taalNu } from "@/lib/taalcontext";
  * Dat de klacht de kop is en de behandeling eronder, is met opzet. De bezoeker zoekt op zijn
  * klacht en niet op een merknaam; de merknaam is het antwoord, niet de vraag.
  */
-export default function HuidproblemenBijApparaat({
-  apparaat,
-}: {
-  apparaat: Apparaat;
-}) {
+/**
+ * De klachten waarvoor dit apparaat wordt ingezet, met de behandelingen erbij.
+ *
+ * Los van het onderdeel en geëxporteerd, want de pagina eromheen moet dezelfde vraag kunnen
+ * stellen: staat dit blok er, of niet? Daar hangt namelijk de bovenruimte van de sectie
+ * eronder van af. Twee keer dezelfde afleiding opschrijven is precies hoe die twee na de
+ * volgende wijziging uit elkaar gaan lopen.
+ */
+export function klachtenVoorApparaat(apparaat: Apparaat) {
   const behandelingen = BEHANDELINGEN.filter((b) =>
     apparaat.behandelingen.includes(b.slug),
   );
@@ -57,13 +61,36 @@ export default function HuidproblemenBijApparaat({
     }
   }
 
-  const klachten = [...perKlacht.values()];
+  return [...perKlacht.values()];
+}
+
+export default function HuidproblemenBijApparaat({
+  apparaat,
+}: {
+  apparaat: Apparaat;
+}) {
+  const klachten = klachtenVoorApparaat(apparaat);
   if (klachten.length === 0) return null;
 
+  /**
+   * WAAROM HIER WEL BOVENRUIMTE STAAT EN BIJ DE BUURSECTIE NIET.
+   *
+   * De apparatuurpagina wisselt witte en zachtgroene secties af. Bij zo'n kleurwissel mogen
+   * beide hun eigen lucht meebrengen: je ziet dan geen gat van 192 pixels maar twee blokken
+   * met een naad ertussen. Twee witte secties naast elkaar hebben die naad niet, en daar
+   * zou dubbele lucht wél als een gat lezen. Vandaar dat de witte secties op deze pagina
+   * alleen onderruimte dragen.
+   *
+   * Die redenering klopt overal behalve op de eerste. Boven deze sectie staat de
+   * donkergroene hero, en diens onderruimte zit bínnen dat groene vlak. Er stond dus nul,
+   * en het label plakte tegen de rand (Yasin, 15 september 2026: "tekst zit geplakt aan de
+   * bovenkant van de sectie"). Deze sectie krijgt daarom als enige witte ook bovenruimte,
+   * in dezelfde maat als de rest van de pagina. `npm run secties` bewaakt het.
+   */
   return (
     <section
       id="waarvoor"
-      className="scroll-mt-[var(--anker-offset)] px-5 pb-10 sm:pb-16 sm:px-9 lg:px-[7.5vw] lg:pb-24"
+      className="scroll-mt-[var(--anker-offset)] px-5 pt-10 pb-10 sm:pt-16 sm:pb-16 sm:px-9 lg:px-[7.5vw] lg:pt-24 lg:pb-24"
     >
       <div className="mx-auto">
         <Label>{t("Waarvoor we het inzetten")}</Label>

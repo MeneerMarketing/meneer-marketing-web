@@ -1,3 +1,4 @@
+import { NAGEKEKEN_ROJDA } from "@/data/landings/nagekeken";
 import { ADVIES_MINUTEN } from "@/data/intake";
 import {
   afspraakBlokken,
@@ -38,6 +39,7 @@ const KUUR_FF = variantPrijs("fotona-4d-full", "Kuur van drie");
 export const FOTONA_4D_ROTTERDAM: Landing = {
   slug: "fotona-4d-rotterdam",
   gewijzigd: "2026-09-11",
+  nagekeken: NAGEKEKEN_ROJDA,
   titel: "Fotona 4D Rotterdam",
   omschrijving: `Fotona 4D in Rotterdam: vier laserstappen in één sessie van ${F4.duurMinuten} minuten, zonder naalden. ${euro(F4.prijs)} per behandeling, ${euro(KUUR_4D)} voor een kuur van drie.`,
   kruimel: "Fotona 4D",

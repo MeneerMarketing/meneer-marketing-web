@@ -57,9 +57,6 @@ export const metadata: Metadata = zoekmachineVelden({
   titel: "Algemene voorwaarden",
   omschrijving:
     "Wat er gebeurt als je afzegt, te laat bent, of als een behandeling niet door kan gaan. Per situatie wat het kost en waarom de regel er is.",
-  extra: {
-    robots: { index: true, follow: true },
-  },
 });
 
 export default function VoorwaardenPage() {

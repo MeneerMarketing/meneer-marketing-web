@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import WoordenboekES from "@/components/i18n/WoordenboekES";
 import Paginaschil from "@/components/ui/Paginaschil";
 import { basisMetadata } from "@/lib/basis-metadata";
 import { zetTaal } from "@/lib/taalcontext";
@@ -23,5 +24,12 @@ export default function SpaanseIndeling({
   children: React.ReactNode;
 }>) {
   zetTaal("es");
-  return <Paginaschil taal="es">{children}</Paginaschil>;
+  /* Zie `(en)/layout.tsx`: de import van `WoordenboekES` is wat het Spaanse woordenboek
+     in de chunks van /es zet, en buiten /es houdt. Als prop naar de schil, om de hele
+     pagina heen. */
+  return (
+    <Paginaschil taal="es" woordenboek={WoordenboekES}>
+      {children}
+    </Paginaschil>
+  );
 }

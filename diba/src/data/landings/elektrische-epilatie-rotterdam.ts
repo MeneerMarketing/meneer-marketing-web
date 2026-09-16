@@ -1,3 +1,4 @@
+import { NAGEKEKEN_ROJDA } from "@/data/landings/nagekeken";
 import {
   afspraakBlokken,
   behandeling,
@@ -38,6 +39,7 @@ const HALFUUR = variantPrijs("elektrische-epilatie", "Per 30 minuten");
 export const ELEKTRISCHE_EPILATIE_ROTTERDAM: Landing = {
   slug: "elektrische-epilatie-rotterdam",
   gewijzigd: "2026-09-11",
+  nagekeken: NAGEKEKEN_ROJDA,
   titel: "Elektrische epilatie Rotterdam",
   omschrijving: `Elektrische epilatie in Rotterdam: haar voor haar, ook grijs, wit en licht blond haar waar de laser niet op werkt. ${euro(HALFUUR)} per half uur.`,
   kruimel: "Elektrische epilatie",

@@ -1,3 +1,4 @@
+import { NAGEKEKEN_ROJDA } from "@/data/landings/nagekeken";
 import {
   behandeling,
   euro,
@@ -36,6 +37,7 @@ export const HOEVEEL_SESSIES: Landing = {
   slug: "hoeveel-sessies",
   soort: "vraag",
   gewijzigd: "2026-09-12",
+  nagekeken: NAGEKEKEN_ROJDA,
   titel: "Hoeveel sessies heb je nodig",
   omschrijving:
     "Hoeveel sessies een huidbehandeling vraagt, waarom er weken tussen zitten en waarom het aantal pas na een meting te zeggen is. Per behandeling op een rij.",

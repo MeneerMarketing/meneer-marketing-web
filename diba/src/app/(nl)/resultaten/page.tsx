@@ -125,7 +125,7 @@ export default function ResultatenPage() {
               {/* Zonder nowrap breekt de regel na "voor-en-" en staat "na-foto"
                   eronder. Een koppelteken is een breekpunt voor de browser, maar in
                   een samenstelling als deze leest dat als twee woorden. */}
-              Klopt die{" "}
+              {t("Klopt die")}{" "}
               <span className="whitespace-nowrap">{t("voor-en-na-foto")}</span>{" "}
               <span className="diba-accent">{t("die je net zag?")}</span>
             </h2>
@@ -149,7 +149,7 @@ export default function ResultatenPage() {
             <div className="max-w-[62ch]">
               <Label opDonker>{t("Waar je ons aan mag houden")}</Label>
               <h2 className="diba-display-m mt-4 max-w-[22ch]">
-                Hoe we resultaatfoto&apos;s{" "}
+                {t("Hoe we resultaatfoto's")}{" "}
                 <span className="diba-accent-on-dark">{t("maken")}</span>
               </h2>
               <p className="mt-6 text-[16px] leading-7 text-[var(--on-dark-body)]">

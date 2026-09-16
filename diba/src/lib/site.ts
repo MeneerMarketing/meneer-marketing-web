@@ -2,15 +2,44 @@
 import { getal } from "@/lib/getallen";
 import type { Taal } from "@/lib/taal";
 
-export { DIBA_CITAAT } from "./schema";
+/* Uit `citaat.ts` en niet meer uit `schema.tsx`: die module hangt aan het woordenboek, en
+   dit bestand wordt door client components op elke pagina geïmporteerd. Zie citaat.ts. */
+export { DIBA_CITAAT } from "./citaat";
 
-export const DIBA_SITE_URL = "https://dibaclinics.nl";
+/**
+ * Het adres waar deze site staat. Mét www.
+ *
+ * WAT HIER MIS WAS.
+ *
+ * Dit stond op https://dibaclinics.nl, zonder www, en de site wordt uitgeleverd op
+ * https://www.dibaclinics.nl. Elk adres zonder www stuurt met een 308 door naar www; dat is
+ * goed en dat blijft zo. Maar dit ene getal loopt door alles heen: de canonical, de sitemap,
+ * hreflang, og:url en de verwijzing naar de sitemap in robots.txt. Alle 312 canonicals
+ * wezen dus naar een adres dat doorstuurt, gemeten op de live site (15 september 2026):
+ *
+ *     https://www.dibaclinics.nl/tarieven
+ *       <link rel="canonical" href="https://dibaclinics.nl/tarieven"/>   -> 308 naar www
+ *
+ * Een canonical hoort te wijzen naar het adres dat je uitlevert. Google lost dit meestal
+ * zelf op, maar dan kiest Google en niet wij, en bij hreflang gaat het eerder mis: een
+ * verwijzing naar een adres dat doorstuurt telt in het ergste geval niet.
+ *
+ * WAAROM WWW EN NIET ANDERSOM. Omdat www is wat er staat. De andere kant op repareren zou
+ * betekenen dat elk adres van de site opnieuw verhuist, en daar is geen winst tegenover:
+ * welke van de twee canoniek is maakt voor Google niet uit, dát er één is wel.
+ *
+ * Okan, 15 september 2026: "Laat de developer nu de host-fix doen. Daarmee kloppen canonical,
+ * sitemap, hreflang, og-tags en robots.txt in één keer." `npm run basisadres` bewaakt het.
+ */
+export const DIBA_SITE_URL = "https://www.dibaclinics.nl";
 
 export const DIBA_SITE = {
   name: "Diba Clinics",
   legalName: "Diba Clinics B.V.",
+  /* Zonder www: dit is het domein als naam, niet als adres. Het staat in de
+     bedrijfsgegevens en in het schema, waar een merknaam hoort en geen URL. */
   domain: "dibaclinics.nl",
-  baseUrl: "https://dibaclinics.nl",
+  baseUrl: DIBA_SITE_URL,
   locale: "nl-NL",
   area: "Rotterdam",
   /* Stond op "Hillegersberg". Yasin (3 september 2026): dat leest alsof we in een andere
@@ -117,8 +146,19 @@ export const DIBA_SOCIALS: readonly {
   },
 ].filter((kanaal) => Boolean(kanaal.url));
 
-/** Hero-achtergrondvideo op de homepage (geluidloos, decoratief). */
-export const DIBA_HERO_VIDEO_SRC = "/videos/hero-hydrafacial.mp4";
+/**
+ * Hero-achtergrondvideo op de homepage (geluidloos, decoratief).
+ *
+ * Wijst naar dezelfde opname als de schermvullende hero en niet meer naar het
+ * masterbestand. Dat stond op 24,7 MB in public/videos en ging bij elke deploy mee, terwijl
+ * alleen `HeroVariant` ernaar wees — de vergelijkingsstand van de homepage, die sinds
+ * 11 september 2026 door niemand wordt aangeroepen. De master staat nu in `media-bron/`,
+ * buiten de site; zie de LEESMIJ daar.
+ *
+ * `hero-breed.mp4` is die opname, opnieuw gecodeerd op 1440 breed. Hij wordt toch al
+ * uitgeleverd, dus de vergelijkingsstand blijft werken zonder één byte extra.
+ */
+export const DIBA_HERO_VIDEO_SRC = "/videos/hero-breed.mp4";
 
 /**
  * Openingstijden.
@@ -231,6 +271,28 @@ export const DIBA_ZORGKAART = {
   score: 9.7,
   aantal: 6,
   url: "https://www.zorgkaartnederland.nl/zorginstelling/huidtherapiepraktijk-diba-clinics-rotterdam-10082984",
+} as const;
+
+/**
+ * Het Google-bedrijfsprofiel: de vermelding die Google naast de zoekresultaten toont, met
+ * de reviews, de openingstijden en de kaart.
+ *
+ * Yasin leverde op 15 september 2026 de deellink aan die de knop "Delen" op dat profiel
+ * geeft (share.google). Die link is een verkorting: hij loopt via google.com/share.google
+ * door naar een zoekpagina met `kgmid=/g/11f636pm68`, en dat is waar het om gaat: de vaste
+ * sleutel van deze kliniek in Googles Knowledge Graph. In `sameAs` staat daarom de
+ * uitgeschreven vorm met die sleutel, zonder de sessieparameters die de doorverwijzing
+ * eraan hangt. De sleutel verandert niet; de verkorte link is een omweg ernaartoe.
+ *
+ * Nagekeken op 15 september 2026 met een HEAD-verzoek: 302 naar google.com/share.google,
+ * daar een meta-refresh naar de zoekpagina met dit kgmid en `q=Diba+Clinics`.
+ */
+export const DIBA_GOOGLE_PROFIEL = {
+  /** De sleutel van de kliniek in de Knowledge Graph. */
+  kgmid: "/g/11f636pm68",
+  /** De deellink zoals Google die geeft; loopt door naar `url`. */
+  deellink: "https://share.google/yCDVEYAC8LBusZrWf",
+  url: "https://www.google.com/search?q=Diba+Clinics&kgmid=/g/11f636pm68",
 } as const;
 
 /** Stand Salonized, zie CIJFERS_GECONTROLEERD_OP: 5,0 · 3.893 reviews. */

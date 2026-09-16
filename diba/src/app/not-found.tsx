@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import WoordenboekOpPad from "@/components/i18n/WoordenboekOpPad";
 import Nietgevonden from "@/components/ui/Nietgevonden";
 import Paginavulling from "@/components/ui/Paginavulling";
 import { LETTERKLASSEN } from "@/lib/lettertypen";
@@ -30,9 +31,16 @@ export const metadata: Metadata = {
 export default function NotFound() {
   return (
     <div className={`${LETTERKLASSEN} paginaschil-los antialiased`}>
-      <Paginavulling>
-        <Nietgevonden />
-      </Paginavulling>
+      {/* Deze 404 hangt buiten de taalgroepen, dus hij krijgt zijn woordenboek niet van
+          een indeling. `WoordenboekOpPad` kiest het op het adres en laadt het lui — alleen
+          hier, en alleen wie hier belandt betaalt dat. Hij staat óm `Paginavulling`, want
+          die zet navigatie en voettekst om de inhoud heen en ook die moeten vertaald zijn.
+          Zie components/i18n/Woordenboek.tsx. */}
+      <WoordenboekOpPad>
+        <Paginavulling>
+          <Nietgevonden />
+        </Paginavulling>
+      </WoordenboekOpPad>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import { NAGEKEKEN_ROJDA } from "@/data/landings/nagekeken";
 import { ADVIES_MINUTEN, INTAKE_MINUTEN } from "@/data/intake";
 import {
   behandeling,
@@ -36,6 +37,7 @@ const HA = behandeling("huidanalyse");
 export const HUIDANALYSE_ROTTERDAM: Landing = {
   slug: "huidanalyse-rotterdam",
   gewijzigd: "2026-09-11",
+  nagekeken: NAGEKEKEN_ROJDA,
   titel: "Huidanalyse Rotterdam met de EVE-M",
   omschrijving: `Huidanalyse in Rotterdam met de EVE-M. Een losse intake duurt maximaal ${INTAKE_MINUTEN} minuten en kost ${euro(INTAKE_PRIJS)}. Wat er gemeten wordt en welke afspraak je boekt.`,
   kruimel: "Huidanalyse",
