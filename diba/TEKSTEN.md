@@ -242,7 +242,7 @@ AANGESLOTEN BIJ EN GEREGISTREERD IN
 
 **Tabbladtitel:** Contact en route | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics staat aan de Weissenbruchlaan 166 in Rotterdam, Rotterdam. Bellen, appen, mailen of je vraag stellen via het formulier.
+**Google-omschrijving:** Diba Clinics staat aan de Weissenbruchlaan 166 in Rotterdam. Bellen, appen, mailen of je vraag stellen via het formulier.
 
 **CONTACT EN ROUTE**
 
@@ -420,7 +420,7 @@ De behandelaar bekijkt je huid, meet met de EVE-M en stelt vast wat er bij jou p
 
 **Tabbladtitel:** Over Diba Clinics in Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics in Rotterdam, Rotterdam. Actief sinds 2017, 11 mensen, 12 apparaten. En wat die cijfers niet zeggen.
+**Google-omschrijving:** Diba Clinics in Rotterdam. Actief sinds 2017, 11 mensen, 12 apparaten. En wat die cijfers niet zeggen.
 
 **EEN HUIDKLINIEK IN ROTTERDAM.**
 
@@ -19096,7 +19096,7 @@ The register now holds 20 entries. It grows with the site: every new page with a
 
 **Tabbladtitel:** Chemical peel Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Chemical peel in Rotterdam at Diba Clinics. Four brands in three strengths, from € 140.. For acne, pigment and dull skin.
+**Google-omschrijving:** Chemical peel in Rotterdam at Diba Clinics. Four brands in three strengths, from € 140. For acne, pigment and dull skin.
 
 **CHEMICAL PEEL IN ROTTERDAM**
 
@@ -19572,7 +19572,7 @@ At the skin consultation we measure your skin and discuss what is possible, with
 
 **Tabbladtitel:** Cosmelan and Dermamelan Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Cosmelan and Dermamelan in Rotterdam: six months, a mask in the clinic and products at home. For the face € 720 to € 920,, products included.
+**Google-omschrijving:** Cosmelan and Dermamelan in Rotterdam: six months, a mask in the clinic and products at home. For the face € 720 to € 920, products included.
 
 **COSMELAN AND DERMAMELAN**
 
@@ -19802,7 +19802,7 @@ We measure your skin first and establish which type of pigment it is. Then we di
 
 **Tabbladtitel:** Dermaplaning Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Dermaplaning in Rotterdam at Diba Clinics. € 150,, sixty minutes and no recovery time. Without acids, so also for sensitive skin.
+**Google-omschrijving:** Dermaplaning in Rotterdam at Diba Clinics. € 150, sixty minutes and no recovery time. Without acids, so also for sensitive skin.
 
 **DERMAPLANING IN ROTTERDAM**
 
@@ -20934,7 +20934,7 @@ At the skin consultation we measure your skin and discuss what is needed, with t
 
 **Tabbladtitel:** HydraFacial Rotterdam | Diba Clinics
 
-**Google-omschrijving:** HydraFacial in Rotterdam at Diba Clinics. Sixty minutes, € 170 to € 220,, no recovery time. What it does, who it suits and how an appointment goes.
+**Google-omschrijving:** HydraFacial in Rotterdam at Diba Clinics. Sixty minutes, € 170 to € 220, no recovery time. What it does, who it suits and how an appointment goes.
 
 **HYDRAFACIAL IN ROTTERDAM**
 
@@ -21180,7 +21180,7 @@ We start with a measurement of your skin and then discuss which treatment fits. 
 
 **Tabbladtitel:** IPL Rotterdam: pigment and redness | Diba Clinics
 
-**Google-omschrijving:** IPL in Rotterdam with Candela's Nordlys, for pigment spots, sun damage, thread veins and rosacea. From € 75,, usually red for a few hours.
+**Google-omschrijving:** IPL in Rotterdam with Candela's Nordlys, for pigment spots, sun damage, thread veins and rosacea. From € 75, usually red for a few hours.
 
 **IPL TREATMENT IN ROTTERDAM**
 
@@ -21652,7 +21652,7 @@ We measure your skin and discuss which depth and which pen fit. If treating is s
 
 **Tabbladtitel:** OxyGeneo Rotterdam | Diba Clinics
 
-**Google-omschrijving:** OxyGeneo in Rotterdam at Diba Clinics. € 150,, sixty minutes and no recovery time. Exfoliating and feeding in one treatment.
+**Google-omschrijving:** OxyGeneo in Rotterdam at Diba Clinics. € 150, sixty minutes and no recovery time. Exfoliating and feeding in one treatment.
 
 **OXYGENEO IN ROTTERDAM**
 
@@ -22118,7 +22118,7 @@ At the skin consultation we record how your skin is doing now and discuss what i
 
 **Tabbladtitel:** Skin analysis Rotterdam with the EVE-M | Diba Clinics
 
-**Google-omschrijving:** Skin analysis in Rotterdam with the EVE-M. An intake on its own takes at most 30 minutes and costs € 50.. What is measured and which appointment to book.
+**Google-omschrijving:** Skin analysis in Rotterdam with the EVE-M. An intake on its own takes at most 30 minutes and costs € 50. What is measured and which appointment to book.
 
 **SKIN ANALYSIS IN ROTTERDAM**
 
@@ -22346,7 +22346,7 @@ A measurement of your skin with the EVE-M, and a plan that follows from it. If y
 
 **Tabbladtitel:** Skin therapist Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Skin therapist in Rotterdam at Diba Clinics. What a skin therapist does, when skin therapy is covered and how your first appointment goes. Intake € 50..
+**Google-omschrijving:** Skin therapist in Rotterdam at Diba Clinics. What a skin therapist does, when skin therapy is covered and how your first appointment goes. Intake € 50.
 
 **SKIN THERAPIST IN ROTTERDAM**
 
@@ -22588,7 +22588,7 @@ We start with a measurement of your skin and then discuss what fits. If treating
 
 **Tabbladtitel:** Skin boosters Rotterdam | Diba Clinics
 
-**Google-omschrijving:** Skin boosters in Rotterdam with the U225 injector. From € 130,, with small bumps that settle within a day. For moisture, fine lines and pigment.
+**Google-omschrijving:** Skin boosters in Rotterdam with the U225 injector. From € 130, with small bumps that settle within a day. For moisture, fine lines and pigment.
 
 **SKIN BOOSTERS IN ROTTERDAM**
 
@@ -37218,7 +37218,7 @@ ES
 
 > knop: PEDIR CITA
 
-**LA CLÍNICA DE LA PIEL EN ROTTERDAM**
+**LA CLÍNICA DE LA PIEL EN RÓTERDAM**
 
 Todo primer tratamiento empieza con una medición.
 
@@ -37278,7 +37278,7 @@ Miramos tu piel y hablamos de tu problema. Si un análisis de piel ayuda, medimo
 
 En Diba trabajan terapeutas de piel, especialistas ortomoleculares de la piel y esteticistas. Terapeuta de piel es un título protegido en los Países Bajos: exige una carrera universitaria y estar inscrita en el registro nacional de profesionales paramédicos.
 
-> knop: Lees waarom dat uitmaakt
+> knop: Lee por qué importa
 
 - NVH y el registro de profesionales paramédicos Nuestras terapeutas de piel son miembros de la asociación profesional y figuran en el registro. Muchas pólizas complementarias lo exigen para reembolsar.
 
@@ -37294,7 +37294,7 @@ Eso cambia según el problema y según el tratamiento. Durante la primera consul
 
 **Lo que registramos.**
 
-> knop: Bekijk de drie stappen
+> knop: Ver los tres pasos
 
 - PIGMENTACIÓN Bajo luz UV se ve pigmento que tú no ves.
 
@@ -37328,49 +37328,51 @@ Antes de empezar sabes qué puedes esperar del tratamiento y qué costes lleva. 
 
 > knop: LEE TODAS LAS RESEÑAS
 
-- Ik heb een skin behandeling gehad, en de dame heeft me zo goed geholpen! Ze vertelde alles in stappen uit wat ze deed, en omdat ik een zeer gevoelige huid heb, was ze extra voorzichtig! Helemaal tevreden! GLADYS 6 DAGEN GELEDEN
+Reseñas traducidas del neerlandés.
 
-- Ik ben nu 2 keer bij Diba geweest en beide keren zeer goed geholpen. Ze nemen de tijd voor je, leggen alles goed en je kan alle vragen stellen die je hebt. Ik kom zeker terug bij Diba! NABILA 23 DAGEN GELEDEN
+- Me hice un tratamiento de piel, ¡y la señora me atendió muy bien! Me fue explicando paso a paso todo lo que hacía, y como tengo una piel muy sensible, ¡fue especialmente cuidadosa! ¡Totalmente conforme! GLADYS HACE 6 DÍAS
 
-- Hele fijne ervaring, deskundige huidtherapeut. Het gevoel dat ik eerlijk advies heb gekregen. Fijne Hydrafacial behandeling met uitleg. DUYGU ONGEVEER EEN MAAND GELEDEN
+- Ya he ido 2 veces a Diba y las dos veces me atendieron muy bien. Se toman su tiempo contigo, te explican todo bien y puedes hacer todas las preguntas que tengas. ¡Seguro que vuelvo a Diba! NABILA HACE 23 DÍAS
 
-- Mijn 7de SkinPen-behandeling gehad en wat ben ik blij met het resultaat! Vandaag de before en after foto's bekeken en wat een verschil!!! Ik ben en blijf jullie trouwe klant!! DILAN ONGEVEER EEN MAAND GELEDEN
+- Una experiencia muy agradable, terapeuta de la piel experta. La sensación de haber recibido un consejo honesto. Un tratamiento Hydrafacial agradable y con explicación. DUYGU HACE APROXIMADAMENTE UN MES
 
-- Super fijne afspraak gehad. Andres heeft mij geholpen in het besluit door alle overwegingen mee te nemen. Super veel professionaliteit laten zien! MARTYNA ONGEVEER 2 MAANDEN GELEDEN
+- ¡Mi 7.º tratamiento con SkinPen y qué feliz estoy con el resultado! Hoy hemos visto las fotos del antes y el después, ¡¡¡y vaya diferencia!!! ¡¡Soy y seguiré siendo cliente fiel!! DILAN HACE APROXIMADAMENTE UN MES
 
-- Ik blijf het telkens herhalen, maar ik ben al weer zo fijn geholpen door Iris! Laserbehandeling en geëindigd met een gezichtsbehandeling. Ben zo blij dat ik terecht ben gekomen bij Diba Clinics. DARIFA 2 MAANDEN GELEDEN
+- Una cita muy agradable. Andres me ayudó a decidir teniendo en cuenta todas las consideraciones. ¡Demostró muchísima profesionalidad! MARTYNA HACE APROXIMADAMENTE 2 MESES
 
-- Elke afspraak verloopt erg goed. Iris is heel vriendelijk en professioneel, waardoor ik me altijd op mijn gemak voel. Ze legt alles duidelijk uit, werkt zorgvuldig en neemt de tijd voor je. TUGCE 3 MAANDEN GELEDEN
+- Lo sigo repitiendo, ¡pero Iris me ha vuelto a atender genial! Tratamiento con láser y para terminar un tratamiento facial. Qué feliz estoy de haber llegado a Diba Clinics. DARIFA HACE 2 MESES
 
-- Warme ontvangst en goede uitleg voor en gedurende de behandeling. Aandacht voor mijn gevoel en gemak. Aanrader! LYNETTE ONGEVEER 2 MAANDEN GELEDEN
+- Cada cita va muy bien. Iris es muy amable y profesional, y por eso siempre me siento a gusto. Explica todo con claridad, trabaja con cuidado y se toma su tiempo contigo. TUGCE HACE 3 MESES
 
-- Ik (en mijn huid) zijn altijd weer blij om Iris te zien! Ook heel fijn dat met deze hittegolf de kliniek heerlijk koel was! GULCICEK ONGEVEER EEN MAAND GELEDEN
+- Recibimiento cálido y buenas explicaciones antes y durante el tratamiento. Atención a cómo me sentía y a mi comodidad. ¡Recomendable! LYNETTE HACE APROXIMADAMENTE 2 MESES
 
-- Fijne kliniek. Ik kom hier al jaren voor diverse behandelingen. Eerlijk advies en altijd een mooi resultaat! DANIQUE 3 MAANDEN GELEDEN
+- ¡Mi piel y yo siempre nos alegramos de ver a Iris! ¡También se agradeció mucho que con esta ola de calor la clínica estuviera fresquita! GULCICEK HACE APROXIMADAMENTE UN MES
 
-- I removed fibromas and everything went great! I got good advice and I'm very happy with the result. Will come back! DUNJA 3 MAANDEN GELEDEN
+- Una clínica estupenda. Llevo años viniendo para distintos tratamientos. Consejo honesto y siempre un buen resultado. DANIQUE HACE 3 MESES
 
-- Tevreden met de persoonlijke service en uitleg achter de behandelingen en de producten. Thank you! MINA 3 MAANDEN GELEDEN
+- Me quité unos fibromas ¡y todo fue genial! Recibí un buen consejo y estoy muy feliz con el resultado. ¡Volveré! DUNJA HACE 3 MESES
 
-- Altijd zo zo zo een prettige ervaring! Word altijd goed meegenomen in de stappen en vertrek altijd mega tevreden. MINE 3 MAANDEN GELEDEN
+- Conforme con el servicio personal y la explicación detrás de los tratamientos y los productos. Thank you! MINA HACE 3 MESES
 
-- Laserontharingsbehandeling gehad en ben erg tevreden. De medewerker was ontzettend vriendelijk en professioneel, en stelde me direct op mijn gemak. Zeker een fijne ervaring! LAYLA 3 MAANDEN GELEDEN
+- ¡Siempre una experiencia tan pero tan agradable! Siempre me van guiando bien por los pasos y siempre salgo megaconforme. MINE HACE 3 MESES
 
-- Fijne duidelijke uitleg over de behandeling voordat er gestart wordt. Goede tips krijg je mee voor na de behandeling. UFUK 3 MAANDEN GELEDEN
+- Me hice un tratamiento de depilación láser y estoy muy a gusto. La persona que me atendió fue increíblemente amable y profesional, y me puso a gusto enseguida. ¡Sin duda una experiencia agradable! LAYLA HACE 3 MESES
 
-- Zooo ontzettend goed geholpen, ze gaf met alles aan wat ze deed, super vriendelijk! Wil graag voor de volgende afspraak weer bij haar. LOUBNA 3 MAANDEN GELEDEN
+- Explicación clara y agradable sobre el tratamiento antes de empezar. Te llevas buenos consejos para después del tratamiento. UFUK HACE 3 MESES
 
-- I came for the Fotona treatment with Iris, what a wonderful experience, she is fantastic! Very well run establishment. ANNIKA 4 MAANDEN GELEDEN
+- Me atendieron increíblemente bien, me iba diciendo todo lo que hacía, ¡superamable! Para la próxima cita quiero volver con ella. LOUBNA HACE 3 MESES
 
-- Ik had een behandeling op advies. Iris is super lief en heel bekwaam. Ik voelde me meteen op mijn gemak! Heel tevreden nu al. RAHIME 4 MAANDEN GELEDEN
+- Vine para el tratamiento Fotona con Iris, qué experiencia tan maravillosa, ¡es fantástica! Un centro muy bien llevado. ANNIKA HACE 4 MESES
 
-- Als het om mijn huid gaat dan vertrouw ik niemand, behalve Diba! Al meer dan 7/8 jaar klant. Het voelt zo fijn om om de 2 maanden een gezichtsbehandeling te nemen. Dankjewel lieve Iris en team Diba. YASEMIN 4 MAANDEN GELEDEN
+- Me hice un tratamiento con asesoramiento. Iris es superamable y muy competente. ¡Me sentí a gusto enseguida! Ya muy conforme. RAHIME HACE 4 MESES
 
-- Personeel die weten waar ze over praten, fijne behandeling gehad. Mooie kliniek en vriendelijk personeel! HATICE 4 MAANDEN GELEDEN
+- ¡Cuando se trata de mi piel no confío en nadie más que en Diba! Ya más de 7 u 8 años como cliente. Sienta tan bien hacerse un tratamiento facial cada 2 meses. Gracias, querida Iris y equipo Diba. YASEMIN HACE 4 MESES
+
+- Personal que sabe de lo que habla, un tratamiento muy agradable. ¡Una clínica bonita y personal amable! HATICE HACE 4 MESES
 
 **Lo que la gente pregunta más**
 
-Estas son las preguntas que más se hacen antes de pedir cita. Si la tuya no está, llámanos of escríbenos por WhatsApp.
+Estas son las preguntas que más se hacen antes de pedir cita. Si la tuya no está, llámanos o escríbenos por WhatsApp.
 
 ¿Tengo que saber ya qué tratamiento quiero?
 
@@ -37388,7 +37390,7 @@ Sí, y es una de las dos formas de empezar cuando todavía no sabes qué necesit
 
 No siempre. Cuando un escáner de la piel aporta algo, te explicamos qué medimos y por qué.
 
-**Pide una primera consulta con nosotros en Rotterdam.**
+**Pide una primera consulta con nosotros en Róterdam.**
 
 Si solo quieres consejo, la cita dura treinta minutos y cuesta 50 euros. Si reservas un tratamiento con asesoramiento, reservamos dos horas si es tu primera vez y una hora si ya eres cliente; el importe de la consulta previa no se cobra en cuanto tratamos.
 
@@ -37416,7 +37418,7 @@ MIEMBROS DE Y REGISTRADOS EN
 
 **Tabbladtitel:** Calidad y registros | Diba Clinics
 
-**Google-omschrijving:** Bij welke registers Diba Clinics, de huidtherapeuten en de schoonheidsspecialisten zijn aangesloten, wat die registratie inhoudt en hoe een klacht loopt.
+**Google-omschrijving:** A qué registros están afiliados Diba Clinics, las terapeutas de la piel y las esteticistas, lo que implica ese registro y cómo va una reclamación.
 
 **CALIDAD Y REGISTROS**
 
@@ -37456,39 +37458,41 @@ Afiliadas a ANBOS e inscritas con su propio nombre en el SKIN Register, el regis
 
 **Tabbladtitel:** Pedir cita | Diba Clinics
 
-**Google-omschrijving:** Boek je afspraak bij Diba Clinics rechtstreeks in de agenda. Met wat je vooraf moet weten over de duur, de kosten en afzeggen.
+**Google-omschrijving:** Reserva tu cita en Diba Clinics directamente en la agenda. Con lo que debes saber de antemano sobre la duración, los costes y la cancelación.
 
-**MAAK EEN AFSPRAAK**
+**PIDE UNA CITA**
 
-Kies hieronder een behandeling en een moment. Je ziet meteen wat er vrij is en je krijgt de bevestiging direct.
+Elige abajo un tratamiento y un momento. Ves al instante lo que está libre y recibes la confirmación de inmediato.
 
-*Je bevestiging komt direct*
+*Tu confirmación llega de inmediato*
 
-Je kiest zelf een moment en krijgt de bevestiging meteen in je mail.
+Eliges tú un momento y recibes la confirmación directamente en tu correo.
 
-*Verzetten kan tot 48 uur van tevoren*
+*Cambiar la cita se puede hasta 48 horas antes*
 
-Kosteloos, en je hoeft geen reden te geven.
+Sin coste, y no tienes que dar ningún motivo.
 
-*Je betaalt een aanbetaling*
+*Pagas un depósito*
 
-Boek je door, dan gaat het bedrag mee naar je volgende behandeling; er staat dan altijd een aanbetaling klaar. Stop je, of wil je online inplannen, dan krijg je hem terug.
+Si sigues reservando, el importe pasa a tu siguiente tratamiento; así siempre hay un depósito listo. Si paras, o quieres programar online, te lo devolvemos.
 
 > knop: LLAMA 010-2038423
 
-Je bekijkt deze pagina op localhost. Het script van Salonized wijst dan naar hun eigen ontwikkelmachine, dus de agenda blijft hier leeg. Open dezelfde pagina via 127.0.0.1 of op het echte domein om hem te zien.
+Estás viendo esta página en localhost. El script de Salonized apunta entonces a su propia máquina de desarrollo, así que la agenda se queda vacía aquí. Abre la misma página por 127.0.0.1 o en el dominio real para verla.
 
-**Twee manieren**
+Reseñas traducidas del neerlandés.
 
-Weet je nog niet welke behandeling je nodig hebt, dan begin je met een van deze twee. In allebei kijkt een behandelaar eerst naar je huid.
+**Dos formas**
 
-- Alleen een huidconsult 30 MINUTEN, € 50 Meten, uitleg en een plan dat je meeneemt. Je beslist daarna zelf of en wanneer je verdergaat.
+Si todavía no sabes qué tratamiento necesitas, empiezas con una de estas dos. En las dos, una terapeuta mira primero tu piel.
 
-- Tratamiento con asesoramiento 120 OF 60 MINUTEN In dezelfde afspraak kijken en behandelen, als dat verantwoord is. Ben je nieuw, dan duurt hij twee uur: 30 tot 60 minuten intake en daarna minstens een uur behandelen. Ben je al klant, dan is het een uur zonder nieuwe intake. Je betaalt de behandeling; de intakekosten vervallen.
+- Solo una consulta de la piel 30 MINUTOS, € 50 Medir, explicación y un plan que te llevas. Después decides tú si sigues y cuándo.
 
-**Als het niet doorgaat**
+- Tratamiento con asesoramiento 120 O 60 MINUTOS Mirar y tratar en la misma cita, si es responsable. Si es tu primera vez dura dos horas: de 30 a 60 minutos de consulta previa y después al menos una hora de tratamiento. Si ya eres cliente, es una hora sin nueva consulta previa. Pagas el tratamiento; el coste de la consulta previa no se cobra.
 
-Het kan gebeuren. Dit geldt er dan, zodat je het weet voordat je boekt.
+**Si no se lleva a cabo**
+
+Puede pasar. Esto es lo que vale entonces, para que lo sepas antes de reservar.
 
 *Cancelas o cambias la cita a tiempo*
 
@@ -37518,11 +37522,11 @@ El importe que estaba en la web de antemano. Nunca más que eso.
 
 Nada por hablarlo.
 
-Verzetten of afzeggen doe je het snelst telefonisch. Alles staat voluit in de condiciones generales.
+Cambiar o cancelar la cita es más rápido por teléfono. Todo está completo en las condiciones generales.
 
-**Nuestros openingstijden**
+**Nuestros horario de apertura**
 
-Binnen die tijden staat niet elk uur een therapeut vrij. Wat je in de agenda kunt aanklikken is wat er echt open is.
+Dentro de ese horario no todas las horas hay una terapeuta libre. Lo que puedes marcar en la agenda es lo que de verdad está libre.
 
 - Lunes Cerrado
 
@@ -37544,7 +37548,7 @@ Binnen die tijden staat niet elk uur een therapeut vrij. Wat je in de agenda kun
 
 **Tabbladtitel:** Condiciones generales | Diba Clinics
 
-**Google-omschrijving:** Wat er gebeurt als je afzegt, te laat bent, of als een behandeling niet door kan gaan. Per situatie wat het kost en waarom de regel er is.
+**Google-omschrijving:** Lo que pasa si cancelas, llegas tarde o si un tratamiento no se puede hacer. Por situación lo que cuesta y por qué existe la regla.
 
 **CONDICIONES GENERALES**
 
@@ -37602,35 +37606,37 @@ Consulta también la política de privacidad y la política de cookies.
 
 **Tabbladtitel:** Contacto y cómo llegar | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics staat aan de Weissenbruchlaan 166 in Rotterdam, Rotterdam. Bellen, appen, mailen of je vraag stellen via het formulier.
+**Google-omschrijving:** Diba Clinics está en Weissenbruchlaan 166 en Róterdam. Llama, escribe por WhatsApp, envía un correo o haz tu pregunta por el formulario.
 
-**CONTACT EN ROUTE**
+**CONTACTO Y CÓMO LLEGAR**
 
-Bel ons, stuur een bericht of vul het formulier hieronder in. Wil je een afspraak maken, dan gaat de online agenda het snelst.
+Llámanos, envía un mensaje o rellena el formulario de abajo. Si quieres pedir una cita, la agenda online es lo más rápido.
 
 - LLAMAR 010-2038423
 
 - WHATSAPP Envía un mensaje
 
-- E-MAIL info@dibaclinics.nl
+- CORREO ELECTRÓNICO info@dibaclinics.nl
 
 - INSTAGRAM @dibaclinics
 
 - TIKTOK @dibaclinics.nl
 
-- FACEBOOK Diba Clinics Rotterdam
+- FACEBOOK Diba Clinics Róterdam
 
-Bellen kan tijdens onze openingstijden, die staan hieronder.
+Puedes llamar en nuestro horario de apertura, están aquí abajo.
 
-**Haz tu pregunta of kom langs**
+**Haz tu pregunta o pásate**
 
-Je krijgt antwoord van iemand die in de kliniek staat. Wat er bij jouw huid kan, zien we pas als we hem gezien hebben.
+Reseñas traducidas del neerlandés.
 
-Alleen als je liever gebeld wordt
+Te responde alguien que trabaja en la clínica. Lo que es posible en tu piel lo vemos solo cuando la hemos visto.
 
-> knop: VERSTUUR JE VRAAG
+Solo si prefieres que te llamemos
 
-Binnen twee werkdagen. Voor iets met haast is bellen of appen sneller. Heb je haast, bel 010-2038423 of stuur een WhatsApp-bericht. We gebruiken je gegevens alleen om je vraag te beantwoorden.
+> knop: ENVIAR TU PREGUNTA
+
+En dos días laborables. Para algo urgente, llamar o escribir por WhatsApp es más rápido. Si tienes prisa, llama al 010-2038423 o envía un Mensaje de WhatsApp. Usamos tus datos solo para responder a tu pregunta.
 
 Horario
 
@@ -37648,39 +37654,39 @@ Horario
 
 - Domingo Cerrado
 
-Binnen die tijden staat niet elk uur een therapeut vrij. Wat je in de agenda kunt aanklikken is wat er echt open is. Kom je liever langs zonder afspraak, bel dan eerst.
+Dentro de ese horario no todas las horas hay una terapeuta libre. Lo que puedes marcar en la agenda es lo que de verdad está libre. Si prefieres pasarte sin cita, llama antes.
 
-> knop: BEKIJK DE AGENDA ↗
+> knop: VER LA AGENDA ↗
 
-**Bellen, appen of mailen?**
+**¿Llamar, escribir por WhatsApp o enviar un correo?**
 
-Gaat het over je afspraak, dan is bellen het snelst: er kijkt meteen iemand met je mee in de agenda. Voor een vraag over een behandeling of de kosten is een bericht genoeg. Kies hieronder je vraag, dan zie je waar je die het beste stelt en hoe snel je antwoord hebt.
+Si se trata de tu cita, llamar es lo más rápido: alguien mira la agenda contigo al momento. Para una pregunta sobre un tratamiento o los costes basta con un mensaje. Elige abajo tu pregunta y verás dónde hacerla mejor y cuánto tardas en tener respuesta.
 
-- Ik wil een afspraak maken ›
+- Quiero pedir una cita ›
 
-- Ik wil mijn afspraak verzetten of afzeggen ›
+- Quiero cambiar o cancelar mi cita ›
 
-- Kan deze behandeling bij mijn huid? ›
+- ¿Este tratamiento se puede hacer en mi piel? ›
 
-- Wat gaat dit mij kosten? ›
+- ¿Cuánto me va a costar? ›
 
-- Ik ben ergens niet tevreden over ›
+- No estoy conforme con algo ›
 
-- Ik heb een zakelijke of pers-vraag ›
+- Tengo una consulta comercial o de prensa ›
 
-DAN KOM JE HIER UIT
+ENTONCES ACABAS AQUÍ
 
-Online plannen
+Programar online
 
-Elk traject begint met een meting, dus dat is ook de afspraak die je maakt. Wat daarna volgt hangt af van wat eruit komt.
+Cada programa empieza con una medición, así que esa es también la cita que pides. Lo que sigue depende de lo que salga.
 
-WANNEER JE ANTWOORD HEBT Meteen. Je kiest zelf een moment en de bevestiging komt direct binnen.
+CUÁNDO TIENES RESPUESTA Al momento. Eliges tú un momento y la confirmación llega de inmediato.
 
 > knop: RESERVA UNA CONSULTA
 
-**Afzeggen, verzetten of te laat komen.**
+**Cancelar, cambiar la cita o llegar tarde.**
 
-Bel je hierover, dan hoor je dit. Het staat hier zodat je vooraf weet wat het kost in plaats van achteraf.
+Si llamas por esto, esto es lo que oyes. Está aquí para que sepas de antemano lo que cuesta en lugar de después.
 
 - Cancelas o cambias la cita a tiempo Hasta 48 horas antes de tu cita puedes cancelar o cambiarla, por teléfono o por mensaje. No tienes que dar ningún motivo. LO QUE CUESTA Nada. Tu depósito no se pierde y pasa a la nueva cita. Dentro de 48 horas normalmente aún se puede dar el hueco a otra persona. Después no, y esa es la única diferencia entre esta regla y la siguiente.
 
@@ -37696,45 +37702,45 @@ Bel je hierover, dan hoor je dit. Het staat hier zodat je vooraf weet wat het ko
 
 - No estás conforme Dinos, preferiblemente lo antes posible. Miramos juntos qué ha pasado y cuál es el siguiente paso adecuado. LO QUE CUESTA Nada por hablarlo. Garantizar un resultado no lo puede hacer nadie con honestidad. Lo que sí hacemos es tomarnos en serio nuestra explicación, nuestros acuerdos y nuestra responsabilidad. Si algo de lo que te dijeron de antemano no es correcto, es un error nuestro y lo resolvemos como tal.
 
-Deze vier staan voluit in de condiciones generales, samen met wat er gebeurt als wij moeten afzeggen.
+Estas cuatro están completas en las condiciones generales, junto con lo que pasa si nosotros tenemos que cancelar.
 
-**Aan de Weissenbruchlaan.**
+**En Weissenbruchlaan.**
 
-OP DE KAART
+EN EL MAPA
 
-De kaart komt van Google en zet cookies. Daarom laden we hem pas als je erom vraagt.
+El mapa viene de Google y pone cookies. Por eso solo lo cargamos cuando lo pides.
 
-> knop: TOON DE KAART
+> knop: MOSTRAR EL MAPA
 
-De kliniek zit aan de noordkant van Rotterdam, in een woonwijk. Rustig dus, en je parkeert in de straat in plaats van in een garage.
+La clínica está en el lado norte de Rotterdam, en un barrio residencial. Tranquilo, por tanto, y aparcas en la calle en lugar de en un garaje.
 
-*MET DE AUTO*
+*EN COCHE*
 
-Vanaf de A20 afslag Rotterdam-Centrum en dan noordwaarts via de Straatweg. Reken op een kwartier vanaf de ring, buiten de spits.
+Desde la A20, salida Róterdam-Centrum y luego hacia el norte por la Straatweg. Cuenta con un cuarto de hora desde la ronda, fuera de la hora punta.
 
-*PARKEREN*
+*APARCAR*
 
-Voor en achter de kliniek is ruim plek. Je hoeft dus niet eerst een rondje te rijden en je staat er vlak voor de deur.
+Delante y detrás de la clínica hay sitio de sobra. Así que no tienes que dar vueltas primero y aparcas justo delante de la puerta.
 
-*MET HET OPENBAAR VERVOER*
+*EN TRANSPORTE PÚBLICO*
 
-Station Rotterdam Noord ligt op ruim een kilometer, en vanaf Rotterdam Centraal rijden er trams en bussen richting Hillegersberg.
+La estación Róterdam Noord está a poco más de un kilómetro, y desde Róterdam Centraal salen tranvías y autobuses hacia Hillegersberg.
 
-*OP DE FIETS*
+*EN BICI*
 
-Vanuit het centrum ben je er in ongeveer twintig minuten. Stallen kan niet pal voor de deur; zet hem in de straat.
+Desde el centro llegas en unos veinte minutos. No se puede aparcar justo delante de la puerta; déjala en la calle.
 
-> knop: OPEN IN GOOGLE MAPS ↗
+> knop: ABRIR EN GOOGLE MAPS ↗
 
-BIJ BINNENKOMST
+AL ENTRAR
 
 ---
 
 ### /es/cuidados-posteriores
 
-**Tabbladtitel:** Nazorg: wat mag wanneer weer | Diba Clinics
+**Tabbladtitel:** Cuidados posteriores: qué se puede y desde cuándo | Diba Clinics
 
-**Google-omschrijving:** Mag ik morgen sporten, wanneer mag die retinol weer? Per behandeling een rooster met vanaf wanneer alles weer mag, en waarom.
+**Google-omschrijving:** ¿Puedo hacer deporte mañana, cuándo puedo volver al retinol? Por tratamiento un horario con desde cuándo se puede todo otra vez, y por qué.
 
 **¿MAÑANA PUEDO VOLVER A HACER DEPORTE?**
 
@@ -37752,27 +37758,27 @@ LO QUE TE LLEVAS, Y POR QUÉ
 
 Busca tu tratamiento en las columnas y tu pregunta en las filas. Haz clic en una casilla y debajo lees por qué existe ese plazo.
 
-↔Schuif het rooster opzij om alles te zien
+↔Desliza el horario hacia un lado para verlo todo
 
-> knop: Na 1 dag
+> knop: Tras 1 día
 
-> knop: Na 4 weken
+> knop: Tras 4 semanas
 
-> knop: Na 3 maanden
+> knop: Tras 3 meses
 
-> knop: Na 12 uur
+> knop: Tras 12 horas
 
-> knop: Na 2 días
+> knop: Tras 2 días
 
-> knop: Na 7 días
+> knop: Tras 7 días
 
-> knop: Na 2 weken
+> knop: Tras 2 semanas
 
-> knop: Na 6 uur
+> knop: Tras 6 horas
 
-> knop: Na 5 días
+> knop: Tras 5 días
 
-> knop: Na 3 días
+> knop: Tras 3 días
 
 EL MOTIVO AL LADO
 
@@ -37824,11 +37830,11 @@ Este horario es una orientación y no una prescripción. Si tu piel se desvía d
 
 ### /es/depilacion-laser
 
-**Tabbladtitel:** Laserontharing Rotterdam | GentleMax Pro | Diba Clinics
+**Tabbladtitel:** Depilación láser Róterdam | GentleMax Pro | Diba Clinics
 
-**Google-omschrijving:** Laserontharing met GentleMax Pro in Rotterdam. Bereken je prijs per zone, veilig voor huidtype I tot VI.
+**Google-omschrijving:** Depilación láser con GentleMax Pro en Róterdam. Calcula tu precio por zona, seguro para los fototipos I a VI.
 
-**DEPILACIÓN LÁSER EN ROTTERDAM**
+**DEPILACIÓN LÁSER EN RÓTERDAM**
 
 Trabajamos con el GentleMax Pro, un sistema láser para una depilación segura y eficaz. Las tarifas varían según la zona a tratar; las encuentras por zona en la página de tarifas.
 
@@ -37874,11 +37880,13 @@ Nadie puede decirte de antemano cuántas sesiones necesitas, y quien lo hace est
 
 Vienen de Salonized y no las hemos elegido nosotros por su contenido. Lo que no hay es un antes y después, porque en la depilación lo que cambia sobre todo es la luz de la foto y no lo que ves.
 
-- “Ik heb een hele fijne ervaring gehad bij Demi. Goed geïnformeerd over hoe het proces (laseren) in zijn werking gaat. Ik ben gerustgesteld en goed geholpen. Jullie hebben er een nieuwe klant bij!” Andrijana Depilación láser con Demi 4 MAANDEN GELEDEN
+Reseñas traducidas del neerlandés.
 
-- “Inmiddels 3 keer langs geweest voor de diodelaser en ik zie echt 80% verschil! Ook de littekens en vlekjes van mijn huid zijn zwaar verbeterd dankzij de dermapen. Sowieso forever vaste klant!!” Sara Depilación láser MEER DAN 7 JAAR GELEDEN
+- “He tenido una experiencia muy agradable con Demi. Me informó bien de cómo funciona el proceso (el láser). Me tranquilizó y me atendió bien. ¡Ya me tienen de cliente!” Andrijana Depilación láser con Demi HACE 4 MESES
 
-- “Ik vond de afspraak super! Alles is goed verlopen en bijna uitbehandeld met laseren! Demi is echt een zeer professionele huidspecialist zo dankbaar met haar! Voert haar werk heel nauwkeurig uit.” Monique Depilación láser MEER DAN 3 JAAR GELEDEN
+- “Ya he venido 3 veces para el láser de diodo ¡y de verdad veo un 80 % de diferencia! Las cicatrices y manchitas de mi piel también han mejorado muchísimo gracias al Dermapen. ¡¡Sin duda, cliente para siempre!!” Sara Depilación láser HACE MÁS DE 7 AÑOS
+
+- “¡La cita me pareció genial! Todo fue bien ¡y casi he terminado con el láser! Demi es de verdad una especialista de la piel muy profesional, ¡qué agradecimiento le tengo! Hace su trabajo con mucha precisión.” Monique Depilación láser HACE MÁS DE 3 AÑOS
 
 **Preguntas frecuentes**
 
@@ -37912,7 +37920,7 @@ En la consulta la terapeuta determina tu fototipo, mira tu pelo y la zona, y dic
 
 **Tabbladtitel:** Para profesionales que derivan | Diba Clinics
 
-**Google-omschrijving:** Voor huisartsen en andere zorgverleners die willen doorverwijzen. Waar de grens ligt, wie de behandeling uitvoert en hoe u verwijst.
+**Google-omschrijving:** Para médicos de cabecera y otros profesionales sanitarios que quieren derivar. Dónde está el límite, quién realiza el tratamiento y cómo derivar.
 
 **DERIVAR A DIBA. LO QUE DEBE SABER.**
 
@@ -37988,9 +37996,9 @@ Si se informa a quien deriva después de la medición, y cómo, aún no está fi
 
 ### /es/equipos
 
-**Tabbladtitel:** Apparatuur in onze huidkliniek | Diba Clinics
+**Tabbladtitel:** Aparatos en nuestra clínica de la piel | Diba Clinics
 
-**Google-omschrijving:** Welke apparaten er in de kliniek staan, welke behandelingen erop draaien, tot hoe diep ze komen en wat ze niet kunnen.
+**Google-omschrijving:** Qué aparatos hay en la clínica, qué tratamientos se hacen con ellos, hasta qué profundidad llegan y lo que no pueden hacer.
 
 **LOS APARATOS EN NUESTRA CLÍNICA**
 
@@ -38032,11 +38040,11 @@ Por eso cada programa aquí empieza con una medición y no con un aparato.
 
 > knop: LO QUE PASA EN UNA CONSULTA DE LA PIEL
 
-DE NORDLYS, ZOALS HIJ BIJ ONS STAAT
+EL NORDLYS, TAL COMO ESTÁ EN NUESTRA CLÍNICA
 
 **Hasta qué profundidad llega cada aparato**
 
-Het verschil tussen deze apparaten zit in twee dingen: waar ze op aangrijpen en tot hoe diep ze komen. Dat tweede is meteen de grens van wat ze kunnen. Een peeling neemt geen rimpels weg omdat hij daar niet komt, en dat is hieronder te zien in plaats van te geloven.
+La diferencia entre estos aparatos está en dos cosas: sobre qué actúan y hasta dónde llegan. Lo segundo es a la vez el límite de lo que pueden hacer. Un peeling no quita arrugas porque no llega a ellas, y eso abajo se puede ver en lugar de tener que creerlo.
 
 > knop: TODO 12
 
@@ -38052,7 +38060,7 @@ Het verschil tussen deze apparaten zit in twee dingen: waar ze op aangrijpen en 
 
 > knop: SUCCIÓN 1
 
-↔Schuif de vergelijking opzij om alles te zien
+↔Desliza la comparación hacia un lado para verlo todo
 
 12 APARATOS
 
@@ -38080,7 +38088,7 @@ HASTA QUÉ PROFUNDIDAD
 
 - Fotona TimeWalker Actúa sobre agua 85
 
-- GentleMax Pro Actúa sobre melanine 90
+- GentleMax Pro Actúa sobre melanina 90
 
 - Capa córnea 0 hasta 10
 
@@ -38094,7 +38102,7 @@ El número es una proporción y no un milímetro: hasta dónde llega un aparato 
 
 > knop: 1 APARATO Medir Mirar sin cambiar nada.
 
-> knop: 4 APARATOS Luz y láser Energía que absorbe una sola cosa. Actúa sobre agua, melanine, vasos sanguíneos, la propia piel
+> knop: 4 APARATOS Luz y láser Energía que absorbe una sola cosa. Actúa sobre agua, melanina, vasos sanguíneos, la propia piel
 
 > knop: 2 APARATOS Agujas Provocar la reparación con pequeños canales. Actúa sobre tejido conjuntivo
 
@@ -38116,9 +38124,9 @@ Una terapeuta de la piel mira tu piel, mide con el EVE-M y te dice qué tratamie
 
 ### /es/gentlemax-pro
 
-**Tabbladtitel:** Welke laser past bij jouw huidtype | Diba Clinics
+**Tabbladtitel:** Qué láser encaja con tu fototipo | Diba Clinics
 
-**Google-omschrijving:** Twee lasers in één apparaat: 755 nm en 1064 nm. Welke van de twee je krijgt hangt af van je huidtype, en dat is een veiligheidskeuze en geen detail.
+**Google-omschrijving:** Dos láseres en un solo aparato: 755 nm y 1064 nm. Cuál de los dos te toca depende de tu fototipo, y eso es una elección de seguridad y no un detalle.
 
 **DOS LÁSERES EN UN SOLO APARATO.**
 
@@ -38186,9 +38194,9 @@ Esta página trata del aparato. Qué zonas hay, lo que cuesta una sesión y cuá
 
 ### /es/guias
 
-**Tabbladtitel:** Kennisbank: alles wat we uitleggen | Diba Clinics
+**Tabbladtitel:** Guías: todo lo que explicamos | Diba Clinics
 
-**Google-omschrijving:** Wat een behandeling inhoudt en kost, waar een klacht vandaan komt en wat een apparaat wel en niet kan. Geordend op de vraag die je stelt.
+**Google-omschrijving:** Lo que un tratamiento implica y cuesta, de dónde viene un problema y lo que un aparato puede y no puede hacer. Ordenado por la pregunta que haces.
 
 **TODO LO QUE EXPLICAMOS**
 
@@ -38200,25 +38208,25 @@ ENTENDER PRIMERO DÓNDE ESTÁ
 
 Lo que un tratamiento implica y cuesta aquí, para quién encaja y cómo va una cita, y lo que hace en realidad una terapeuta de la piel. Estas son las guías que tratan de nuestra propia clínica.
 
-- QUÉ HACE UNA TERAPEUTA DE LA PIEL Terapeuta de piel en Rotterdam Lo que implica el título, qué problemas trata una terapeuta de la piel, cuándo el seguro cubre la terapia de la piel y quién está en nuestra sala de tratamiento. VER
+- QUÉ HACE UNA TERAPEUTA DE LA PIEL Terapeuta de piel en Róterdam Lo que implica el título, qué problemas trata una terapeuta de la piel, cuándo el seguro cubre la terapia de la piel y quién está en nuestra sala de tratamiento. VER
 
-- QUÉ CUESTA UN ANÁLISIS DE LA PIEL Análisis de piel en Rotterdam Lo que mide el EVE-M, por qué es distinto de una foto con tu móvil, lo que cuesta la consulta previa y cuándo ese importe no se cobra con un tratamiento. VER
+- QUÉ CUESTA UN ANÁLISIS DE LA PIEL Análisis de piel en Róterdam Lo que mide el EVE-M, por qué es distinto de una foto con tu móvil, lo que cuesta la consulta previa y cuándo ese importe no se cobra con un tratamiento. VER
 
-- QUÉ CUESTA UN HYDRAFACIAL HydraFacial en Rotterdam Las tres variantes con su tarifa, la diferencia entre HydraFacial e hidrodermoabrasión, y la comparación con los otros tratamientos faciales de aquí. VER
+- QUÉ CUESTA UN HYDRAFACIAL HydraFacial en Róterdam Las tres variantes con su tarifa, la diferencia entre HydraFacial e hidrodermoabrasión, y la comparación con los otros tratamientos faciales de aquí. VER
 
-- QUÉ CUESTA UN OXYGENEO OxyGeneo en Rotterdam Lo que hacen las burbujas en tu piel, para quién encaja, cuánto tiempo ves algo de ello y cómo se compara con un HydraFacial. VER
+- QUÉ CUESTA UN OXYGENEO OxyGeneo en Róterdam Lo que hacen las burbujas en tu piel, para quién encaja, cuánto tiempo ves algo de ello y cómo se compara con un HydraFacial. VER
 
-- QUÉ CUESTA EL DERMAPLANING Dermaplaning en Rotterdam Lo que retira la cuchilla, por qué el pelo no vuelve más grueso, para quién encaja y cómo se compara con un peeling o un HydraFacial. VER
+- QUÉ CUESTA EL DERMAPLANING Dermaplaning en Róterdam Lo que retira la cuchilla, por qué el pelo no vuelve más grueso, para quién encaja y cómo se compara con un peeling o un HydraFacial. VER
 
-- QUÉ CUESTAN LOS SKINBOOSTERS Skin boosters en Rotterdam Lo que un skinbooster aporta a tu piel, por qué no es un relleno, lo que el U225 hace distinto de una jeringa y lo que cuesta una cura de tres. VER
+- QUÉ CUESTAN LOS SKINBOOSTERS Skin boosters en Róterdam Lo que un skinbooster aporta a tu piel, por qué no es un relleno, lo que el U225 hace distinto de una jeringa y lo que cuesta una cura de tres. VER
 
-- QUÉ CUESTA EL MICRONEEDLING Microneedling en Rotterdam La diferencia entre el SkinPen y el Dermapen, lo que cuesta una serie, lo que ves los días siguientes y cuándo el láser es la mejor respuesta. VER
+- QUÉ CUESTA EL MICRONEEDLING Microneedling en Róterdam La diferencia entre el SkinPen y el Dermapen, lo que cuesta una serie, lo que ves los días siguientes y cuándo el láser es la mejor respuesta. VER
 
-- QUÉ CUESTA UN PEELING QUÍMICO Peeling químico en Rotterdam Qué intensidad encaja con qué problema, el peeling de hierbas como peeling sin ácido, lo que ves los días siguientes y cuándo es mejor esperar un poco. VER
+- QUÉ CUESTA UN PEELING QUÍMICO Peeling químico en Róterdam Qué intensidad encaja con qué problema, el peeling de hierbas como peeling sin ácido, lo que ves los días siguientes y cuándo es mejor esperar un poco. VER
 
-- QUÉ CUESTA EL FOTONA 4D Fotona 4D en Rotterdam Los cuatro pasos del protocolo, lo que hace con la flacidez y la textura, el paquete completo con cuello y línea de la mandíbula, y lo que cuesta una cura. VER
+- QUÉ CUESTA EL FOTONA 4D Fotona 4D en Róterdam Los cuatro pasos del protocolo, lo que hace con la flacidez y la textura, el paquete completo con cuello y línea de la mandíbula, y lo que cuesta una cura. VER
 
-- QUÉ CUESTA UN TRATAMIENTO CON IPL Tratamiento IPL en Rotterdam Lo que hace la IPL con el pigmento y con la rojez, por qué no es un láser, cuándo es mejor esperar y lo que cuesta un tratamiento por zona. VER
+- QUÉ CUESTA UN TRATAMIENTO CON IPL Tratamiento IPL en Róterdam Lo que hace la IPL con el pigmento y con la rojez, por qué no es un láser, cuándo es mejor esperar y lo que cuesta un tratamiento por zona. VER
 
 - QUÉ CUESTA COSMELAN O DERMAMELAN Cosmelan y Dermamelan La diferencia entre Cosmelan y Dermamelan, cómo van los seis meses, por qué no se empieza en verano y lo que cuesta el programa. VER
 
@@ -38320,9 +38328,9 @@ El registro tiene ahora 20 entradas. Crece con la web: cada página nueva con un
 
 ### /es/intake
 
-**Tabbladtitel:** Het huidconsult: wat er gebeurt | Diba Clinics
+**Tabbladtitel:** La consulta de la piel: lo que pasa | Diba Clinics
 
-**Google-omschrijving:** Wat er in het huidconsult gebeurt, hoe lang het duurt en wat het kost. Bij behandelen in dezelfde afspraak vervallen de intakekosten.
+**Google-omschrijving:** Lo que pasa en la consulta de la piel, cuánto dura y lo que cuesta. Si te tratan en la misma cita, el coste de la consulta previa no se cobra.
 
 **LO QUE PASA EN UNA CONSULTA PREVIA**
 
@@ -38400,7 +38408,7 @@ No tienes que prepararte con términos técnicos. Dilo con tus palabras; nosotro
 
 Dos cosas pequeñas, y deciden si la medición es válida. El primer punto de la izquierda es el que más pesa: la base de maquillaje se interpone entre la cámara y tu piel.
 
-> knop: Toon de lijst
+> knop: Mostrar la lista
 
 - Ven sin maquillaje, o cuenta con que te lo quitamos. La base de maquillaje se interpone entre la cámara y tu piel.
 
@@ -38426,17 +38434,19 @@ Dos cosas pequeñas, y deciden si la medición es válida. El primer punto de la
 
 Seleccionadas por el tratamiento que figura en la reseña, no por lo que dice el texto. En la página de reseñas están todas, con una explicación de cómo leer una nota así.
 
-- Voor het eerst bij Diba Clinics geweest. Andres heeft een huidscan gedaan bij mij en gekeken, en we hebben daarna gesproken over het plan van aanpak. Hij legde duidelijk uit welke behandeling ik nodig heb en de benodigde producten voor mijn huid. Bedankt Andres voor je vriendelijkheid en tot snel weer! Aydan 4 maanden geleden ESCÁNER DE PIEL Y CONSULTA CON ANDRES
+Reseñas traducidas del neerlandés.
 
-- Ik voelde me erg op mijn gemak en je kon merken dat Grissel heel veel kennis heeft. Ze heeft me goed geadviseerd en wat ik ook heel fijn vond, is dat ze me niet meteen allerlei producten of behandelingen opdrong, maar echt de tijd nam om naar mijn huid te kijken en te vertellen wat bij mij past. Sarah 4 maanden geleden CONSULTA CON GRISSEL
+- Primera vez en Diba Clinics. Andres me hizo un escaneo de la piel y lo miró, y después hablamos del plan a seguir. Me explicó con claridad qué tratamiento necesito y los productos necesarios para mi piel. ¡Gracias, Andres, por tu amabilidad y hasta pronto! Aydan Hace 4 meses ESCÁNER DE PIEL Y CONSULTA CON ANDRES
 
-- Zorgvuldig en professioneel advies. Alice 3 maanden geleden CONSULTA EN DIBA CLINICS
+- Me sentí muy a gusto y se notaba que Grissel tiene muchísimos conocimientos. Me aconsejó bien y lo que también me gustó mucho es que no me empujó enseguida a comprar todo tipo de productos o tratamientos, sino que de verdad se tomó el tiempo de mirar mi piel y de decirme qué me encaja. Sarah Hace 4 meses CONSULTA CON GRISSEL
 
-- Uitgebreide en eerlijke informatie gehad. Vriendelijke medewerkers. Meike 23 dagen geleden CONSULTA Y TRATAMIENTO
+- Un consejo cuidadoso y profesional. Alice Hace 3 meses CONSULTA EN DIBA CLINICS
 
-- Super fijne afspraak gehad. Andres heeft mij geholpen in het besluit door alle overwegingen mee te nemen. Super veel professionaliteit laten zien! Martyna Ongeveer 2 maanden geleden CONSULTA Y TRATAMIENTO
+- Recibí información completa y honesta. Personal amable. Meike Hace 23 días CONSULTA Y TRATAMIENTO
 
-- Word altijd goed en lief geholpen! En krijg het beste advies. Fleur 3 maanden geleden ASESORAMIENTO Y TRATAMIENTO
+- Una cita muy agradable. Andres me ayudó a decidir teniendo en cuenta todas las consideraciones. ¡Demostró muchísima profesionalidad! Martyna Hace aproximadamente 2 meses CONSULTA Y TRATAMIENTO
+
+- ¡Siempre me atienden bien y con cariño! Y recibo el mejor consejo. Fleur Hace 3 meses ASESORAMIENTO Y TRATAMIENTO
 
 **Preguntas frecuentes**
 
@@ -38474,41 +38484,41 @@ Te vas con una medición que es tuya y con un consejo que también puede ser un 
 
 ### /es/nuestra-historia
 
-**Tabbladtitel:** Hoe wij werken | Diba Clinics
+**Tabbladtitel:** Cómo trabajamos | Diba Clinics
 
-**Google-omschrijving:** Hoe een traject bij Diba Clinics verloopt: het begint met een huidanalyse, de tarieven staan per sessie op de site en je hoort ook wat er niet kan.
+**Google-omschrijving:** Cómo va un programa en Diba Clinics: empieza con un análisis de la piel, las tarifas están por sesión en la web y también oyes lo que no es posible.
 
-**HOE WIJ WERKEN**
+**CÓMO TRABAJAMOS**
 
-Desde 2017 helpen onze huidtherapeuten en specialisten je met acne, pigment, littekens, huidverbetering en ongewenst haar.
+Desde 2017 nuestras terapeutas de la piel y especialistas te ayudan con acné, pigmento, cicatrices, mejora de la piel y vello no deseado.
 
-Hieronder staat hoe we werken: waar een traject begint, wat het kost en waar onze behandelaars voor staan.
+Abajo está cómo trabajamos: dónde empieza un programa, lo que cuesta y lo que defienden nuestras terapeutas.
 
-Elke afspraak begint met een huidanalyse, en daaruit volgt het behandelplan.
+Cada cita empieza con un análisis de la piel, y de ahí sale el plan de tratamiento.
 
-De prijzen staan per sessie op de site, dus je weet voordat je komt wat het kost. Bij elke behandeling lees je hoeveel sessies erbij horen.
+Los precios están por sesión en la web, así que sabes antes de venir lo que cuesta. En cada tratamiento lees cuántas sesiones conlleva.
 
-**Elke prijs staat op de site**
+**Cada precio está en la web**
 
-Per sessie, per zone, per variant, inclusief de duurste. Je weet voordat je komt waar je aan toe bent.
+Por sesión, por zona, por variante, incluida la más cara. Sabes a qué atenerte antes de venir.
 
-WAT DAT VOOR JOU BETEKENT
+LO QUE ESO SIGNIFICA PARA TI
 
-Je kunt thuis rustig vergelijken en beslissen, in plaats van aan de balie op het moment dat het het lastigst is.
+Puedes comparar y decidir con calma en casa, en lugar de en recepción en el momento en que más cuesta.
 
-> knop: KIJK ZELF, ALLES STAAT ER
+> knop: COMPRUÉBALO, ESTÁ TODO
 
-EEN NIEUW PRODUCT, EERST ZELF BEKEKEN
+UN PRODUCTO NUEVO, PRIMERO PROBADO POR NOSOTROS
 
-**Waar wij voor staan**
+**Lo que defendemos**
 
-- Sinds 2017 in Rotterdam Diba Clinics is in 2017 begonnen als huidkliniek in Rotterdam. Onze huidtherapeuten en specialisten behandelen acne, pigment, littekens, huidverbetering en ongewenst haar. WAT DAT VOOR JOU BETEKENT Een team dat elke dag met dezelfde huidklachten werkt, en apparatuur waar het in de praktijk mee is ingeregeld.
+- En Róterdam desde 2017 Diba Clinics empezó en 2017 como clínica de la piel en Róterdam. Nuestras terapeutas de la piel y especialistas tratan acné, pigmento, cicatrices, mejora de la piel y vello no deseado. LO QUE ESO SIGNIFICA PARA TI Un equipo que trabaja cada día con los mismos problemas de piel, y aparatos ajustados con la práctica.
 
-- Elk traject begint met een huidanalyse De behandelaar bekijkt je huid en meet met de EVE-M wat er onder de oppervlakte speelt: pigment, vocht, poriën en structuur. Daaruit volgt het behandelplan. WAT DAT VOOR JOU BETEKENT Je ziet zelf waar de adviezen vandaan komen, en bij een volgende afspraak leggen we de opnames naast elkaar.
+- Cada programa empieza con un análisis de la piel La terapeuta mira tu piel y mide con el EVE-M lo que pasa bajo la superficie: pigmento, hidratación, poros y textura. De ahí sale el plan de tratamiento. LO QUE ESO SIGNIFICA PARA TI Ves tú de dónde salen los consejos, y en una cita siguiente ponemos las capturas una al lado de la otra.
 
-- Geregistreerd, in allebei de vakken Onze huidtherapeuten zijn lid van de NVH en staan in het Kwaliteitsregister Paramedici. Onze schoonheidsspecialisten zijn aangesloten bij ANBOS en staan in het SKIN Register. WAT DAT VOOR JOU BETEKENT Veel aanvullende pakketten stellen die inschrijving als eis voordat ze een behandeling vergoeden.
+- Con registro, en los dos oficios Nuestras terapeutas de la piel son miembros de la NVH y figuran en el Registro de Calidad de Paramédicos. Nuestras esteticistas están afiliadas a ANBOS y figuran en el SKIN Register. LO QUE ESO SIGNIFICA PARA TI Muchos paquetes complementarios exigen esa inscripción antes de reembolsar un tratamiento.
 
-- Contratos con aseguradoras de salud Diba Clinics heeft contracten met zorgverzekeraars. Of jouw behandeling vergoed wordt, hangt af van je klacht en van je aanvullende pakket. WAT DAT VOOR JOU BETEKENT Tijdens de intake hoor je wat er in jouw geval onder de vergoeding valt, en wat je zelf betaalt.
+- Contratos con aseguradoras de salud Diba Clinics tiene contratos con aseguradoras de salud. Si tu tratamiento se reembolsa depende de tu problema y de tu paquete complementario. LO QUE ESO SIGNIFICA PARA TI En la consulta previa oyes lo que en tu caso entra en el reembolso, y lo que pagas tú.
 
 **Empieza con un análisis de piel**
 
@@ -38520,9 +38530,9 @@ La terapeuta mira tu piel, mide con el EVE-M y determina lo que encaja contigo. 
 
 ### /es/partners
 
-**Tabbladtitel:** Onze merken en apparatuur | Diba Clinics
+**Tabbladtitel:** Nuestras marcas y aparatos | Diba Clinics
 
-**Google-omschrijving:** Bekijk met welke professionele merken en systemen Diba Clinics werkt, waaronder Candela, Fotona, HydraFacial, SkinPen en Dermapen 4.
+**Google-omschrijving:** Mira con qué marcas y sistemas profesionales trabaja Diba Clinics, entre ellos Candela, Fotona, HydraFacial, SkinPen y Dermapen 4.
 
 **LAS MARCAS CON LOS QUE TRABAJAMOS**
 
@@ -38570,9 +38580,9 @@ Abajo pone por marca lo que tenemos y para qué lo usamos.
 
 ### /es/pcos
 
-**Tabbladtitel:** PCOS en huid | Diba Clinics
+**Tabbladtitel:** SOP y piel | Diba Clinics
 
-**Google-omschrijving:** De huidklachten bij PCOS: ongewenste haargroei, acne langs de kaaklijn en dunner wordend haar. Wat wij behandelen en wat via je arts loopt.
+**Google-omschrijving:** Los problemas de piel en el SOP: vello no deseado, acné en la línea de la mandíbula y pelo que clarea. Qué tratamos nosotros y qué va a través de tu médico.
 
 **EL SOP Y TU PIEL**
 
@@ -38636,7 +38646,7 @@ Si ya hay algo en marcha con tu médico de cabecera o tu ginecólogo, dilo en la
 
 **Tabbladtitel:** Tu perfil de piel | Diba Clinics
 
-**Google-omschrijving:** Bouw je huidprofiel op in negen stappen. Wat past, wat niet past en wat je tijdens de intake moet melden. Blijft in je eigen browser.
+**Google-omschrijving:** Crea tu perfil de piel en nueve pasos. Lo que encaja, lo que no encaja y lo que tienes que decir en la consulta previa. Se queda en tu propio navegador.
 
 **CREA TU PERFIL DE PIEL**
 
@@ -38830,7 +38840,7 @@ Esto no es un diagnóstico ni un consejo. Pone una al lado de la otra lo que has
 
 **Tabbladtitel:** Política de cookies | Diba Clinics
 
-**Google-omschrijving:** Welke cookies Diba Clinics gebruikt, wanneer ze laden en hoe je je keuze op elk moment kunt wijzigen. Geen advertentie-tracking.
+**Google-omschrijving:** Qué cookies usa Diba Clinics, cuándo se cargan y cómo puedes cambiar tu elección en cualquier momento. Sin seguimiento publicitario.
 
 **QUÉ COOKIES USAMOS**
 
@@ -38852,7 +38862,7 @@ Retirarlo funciona a partir de ahora y no con efecto retroactivo: lo que se midi
 
 - SOLO CON TU ACUERDO Estadísticas anónimas Google Analytics 4, con la dirección IP acortada, y Microsoft Clarity. Con ellos vemos qué páginas ayudan a la gente y dónde se atasca. No se crean perfiles publicitarios y no se vende nada. CUÁNDO Solo después de tu acuerdo. Mientras no lo haya, estos scripts no se cargan; así que no están apagados, sino que no están.
 
-**Por navegador, en este dispositivo.**
+**Por navegador en este dispositivo.**
 
 Tu elección se guarda localmente en este navegador y no viaja a nuestros servidores. Si usas otro dispositivo u otro navegador, la pregunta se hace ahí de nuevo, porque ahí no conocemos la respuesta.
 
@@ -38876,7 +38886,7 @@ Esta política trata de dibaclinics.nl.
 
 **Tabbladtitel:** Política de privacidad | Diba Clinics
 
-**Google-omschrijving:** Deze website verzamelt zelf niets. Waar je gegevens wel terechtkomen, wat daar gebeurt en welke rechten je hebt.
+**Google-omschrijving:** Esta web no recoge nada por sí misma. Dónde sí acaban tus datos, qué pasa allí y qué derechos tienes.
 
 **CÓMO TRATAMOS TUS DATOS**
 
@@ -38954,43 +38964,45 @@ Tu perfil de piel no se nos envía a propósito. Es el sitio donde la tentación
 
 ### /es/precios
 
-**Tabbladtitel:** Tarieven huidbehandelingen Rotterdam | Diba Clinics
+**Tabbladtitel:** Tarifas tratamientos de la piel Róterdam | Diba Clinics
 
-**Google-omschrijving:** Alle tarieven van Diba Clinics op één pagina, per sessie en per zone. Wat er staat is wat je betaalt, zonder pakketten en zonder acties.
+**Google-omschrijving:** Todas las tarifas de Diba Clinics en una página, por sesión y por zona. Lo que pone es lo que pagas, sin paquetes y sin promociones.
 
-**ALLE TARIEVEN OP ÉÉN PLEK**
+**TODAS LAS TARIFAS EN UN SOLO SITIO**
 
-Elk tarief, per sessie en per zone. Je hoeft er niet voor te bellen.
+Cada tarifa, por sesión y por zona. No tienes que llamar para saberla.
 
-Wat een behandeling kost hoor je liever vooraf dan erna. Wat je hier niet vindt is een pakket met een streep door de oude prijs: er zijn geen kortingen en geen acties, dus er is ook nooit een moment waarop je te vroeg of te laat was.
+Lo que cuesta un tratamiento prefieres oírlo antes que después. Lo que aquí no encuentras es un paquete con el precio antiguo tachado: no hay descuentos ni promociones, así que nunca hay un momento en el que llegaste demasiado pronto o demasiado tarde.
 
 > knop: Sigue leyendo
 
-De intake kost 50 euro
+La consulta previa cuesta 50 euros
 
-Welke behandeling bij je huid past, hoor je tijdens de intake. Tot dat gesprek is elk bedrag een gok, en daarom staat het hier als enige niet in een lijst.
+Qué tratamiento encaja con tu piel lo oyes en la consulta previa. Hasta esa conversación cualquier importe es una suposición, y por eso es el único que aquí no está en una lista.
 
-Word je in dezelfde afspraak behandeld, dan gaat dat bedrag er weer af. Je betaalt dan alleen de behandeling.
+Si te tratan en la misma cita, ese importe se vuelve a descontar. Entonces pagas solo el tratamiento.
 
-> knop: ZO WERKT DE INTAKE
+> knop: ASÍ FUNCIONA LA CONSULTA PREVIA
 
-De lijst hieronder is lang. Die van jou is dat niet.
+La lista de abajo es larga. La tuya no.
 
-Stel je huidprofiel samen en hier staan de prijzen van wat bij jou past, met de reden erbij. De volledige lijst blijft er gewoon onder staan; er wordt niets weggefilterd.
+Crea tu perfil de piel y aquí aparecen los precios de lo que encaja contigo, con el motivo al lado. La lista completa sigue estando debajo; no se filtra nada.
 
 > knop: CREA TU PERFIL DE PIEL
 
 **Lo que un tratamiento cuesta**
 
-Klap een behandeling open en je ziet hoe vaak je moet komen, hoe lang de hersteltijd is en wat het niet doet. Het bedrag blijft staan, ook dicht.
+Despliega un tratamiento y ves cada cuánto tienes que venir, cuánto dura la recuperación y lo que no hace. El importe se queda a la vista, también plegado.
 
-Eerst kijken, nog niets doen.
+Reseñas traducidas del neerlandés.
+
+Primero mirar, todavía sin hacer nada.
 
 - Consulta con análisis de la piel EVE-M La medición con la que empieza cada programa. Tu piel registrada, y un plan de tratamiento que sale de ahí. 50
 
-- Consult SkinComplete LED-masker Una hora sobre el LED en casa: tu piel vista, tus objetivos hablados y un protocolo a medida. 100
+- Consulta máscara LED SkinComplete Una hora sobre el LED en casa: tu piel vista, tus objetivos hablados y un protocolo a medida. 100
 
-Reinigen, hydrateren, oppervlakkig vernieuwen.
+Limpiar, hidratar, renovar en la superficie.
 
 - HydraFacial Limpiar, exfoliar e hidratar. En una sola pasada, visible al momento y sin tiempo de recuperación. desde170
 
@@ -38998,9 +39010,9 @@ Reinigen, hydrateren, oppervlakkig vernieuwen.
 
 - Dermaplaning Células muertas y vello fino fuera con una cuchilla. Funciona sin ácidos, así que también sirve para una piel sensible. 150
 
-- Tratamiento de acné Una cita para una piel alterada: limpiar, sacar los tapones, calmar. Se reserva por separado. Na de meting
+- Tratamiento de acné Una cita para una piel alterada: limpiar, sacar los tapones, calmar. Se reserva por separado. Después de la medición
 
-De bovenlaag sneller laten vernieuwen.
+Hacer que la capa superior se renueve más rápido.
 
 - Peelings médicos De suave a fuerte. La concentración decide hasta dónde llega y cuánto se descama la piel. desde140
 
@@ -39008,13 +39020,13 @@ De bovenlaag sneller laten vernieuwen.
 
 - Eye peel Un peeling que se puede usar en el contorno de ojos. Para líneas finas y una zona ocular apagada y oscura. desde30
 
-Herstel op gang brengen in het bindweefsel.
+Poner en marcha la reparación en el tejido conjuntivo.
 
 - Microneedling con el SkinPen Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel. desde180
 
 - Dermapen 4 Microneedling con agujas vibrantes, que atraviesan la piel de forma uniforme. desde180
 
-Werkzame stoffen op diepte brengen.
+Llevar principios activos en profundidad.
 
 - Skin boosters y mesoterapia Principios activos puestos dentro de la piel en lugar de encima, a una profundidad fija por pinchazo. desde175
 
@@ -39022,21 +39034,21 @@ Werkzame stoffen op diepte brengen.
 
 - RRS Hyalift Llevar ácido hialurónico y vitaminas dentro de la piel. Para firmeza e hidratación, no para volumen. desde175
 
-Mikken op kleur, vaten of structuur.
+Apuntar al color, los vasos o la textura.
 
 - Fotona TimeWalker Quince tratamientos en un solo equipo, desde un peeling láser suave hasta el 4D completo. Cada uno con su propio objetivo. desde150
 
 - Fotona 4D Cuatro tratamientos láser en una sesión. Desde dentro, a través de la mejilla, hasta un peeling final. desde370
 
-- Fotona 4D Men El mismo protocolo de cuatro pasos, ajustado a la piel masculina, que suele ser más gruesa. Na de meting
+- Fotona 4D Men El mismo protocolo de cuatro pasos, ajustado a la piel masculina, que suele ser más gruesa. Después de la medición
 
-- SmoothLiftin Estimulación de colágeno desde dentro, a través de la mucosa de la mejilla. Na de meting
+- SmoothLiftin Estimulación de colágeno desde dentro, a través de la mucosa de la mejilla. Después de la medición
 
-- FRAC3 Láser fraccionado que llega más profundo, para la textura, los poros y las irregularidades. Na de meting
+- FRAC3 Láser fraccionado que llega más profundo, para la textura, los poros y las irregularidades. Después de la medición
 
-- PIANO skin tightening Calentamiento profundo y uniforme para reafirmar la cara, la mandíbula y el cuello. Na de meting
+- PIANO skin tightening Calentamiento profundo y uniforme para reafirmar la cara, la mandíbula y el cuello. Después de la medición
 
-- Peeling láser SupErficial Un peeling láser superficial para una piel más lisa y con más brillo. Na de meting
+- Peeling láser SupErficial Un peeling láser superficial para una piel más lisa y con más brillo. Después de la medición
 
 - SmoothEye Láser alrededor del contorno de ojos, para las patas de gallo y las líneas finas. desde150
 
@@ -39044,13 +39056,13 @@ Mikken op kleur, vaten of structuur.
 
 - VectorLift Lifting de cejas con láser y reafirmación de la frente, sin agujas. desde150
 
-- Fotona Acne Control Láser para el acné activo, dirigido a la inflamación y a la glándula sebácea. Na de meting
+- Fotona Acne Control Láser para el acné activo, dirigido a la inflamación y a la glándula sebácea. Después de la medición
 
 - Fotona Scar Repair Láser sobre cicatrices: cicatrices de acné, cicatrices quirúrgicas y estrías. 195
 
-- Fotona Resurfacing Renovación de la piel con láser, para poros, textura y una piel más lisa. Na de meting
+- Fotona Resurfacing Renovación de la piel con láser, para poros, textura y una piel más lisa. Después de la medición
 
-- HAIRestart Láser en el cuero cabelludo cuando el pelo empieza a clarear. Na de meting
+- HAIRestart Láser en el cuero cabelludo cuando el pelo empieza a clarear. Después de la medición
 
 - Nordlys IPL para la pigmentación Luz sobre manchas de pigmentación y daño solar. El pigmento sale primero a la superficie y después se difumina. desde75
 
@@ -39062,7 +39074,7 @@ Mikken op kleur, vaten of structuur.
 
 - Full Face Brushing Una pasada suave de láser por toda la cara. Piel más fresca sin tener que quedarte en casa. 170
 
-Maanden werk aan hardnekkig pigment.
+Meses de trabajo sobre el pigmento rebelde.
 
 - Cosmelan Programa de seis meses contra la hiperpigmentación, con una mascarilla en la clínica y productos en casa. 720
 
@@ -39072,15 +39084,15 @@ Maanden werk aan hardnekkig pigment.
 
 - Happy Intim Peelings que aclaran y uniforman el pigmento de la zona íntima y de las axilas. desde175
 
-De haarwortel uitschakelen.
+Desactivar la raíz del pelo.
 
 - Electrólisis Pelo a pelo, también los grises y los rubios. Para lo que el láser no ve. El tiempo de tratamiento lo cobramos por media hora. 60
 
 - Depilación láser Desactivar la raíz del pelo. Por zona o como paquete, para mujeres y hombres. desde20
 
-Wat er verder in de kliniek gebeurt.
+Lo demás que pasa en la clínica.
 
-- NightLase Láser contra los ronquidos. El paladar blando se vuelve más firme, sin operación ni férula. Na de meting
+- NightLase Láser contra los ronquidos. El paladar blando se vuelve más firme, sin operación ni férula. Después de la medición
 
 - XL Hair Contra la caída del pelo y el pelo que clarea. Un programa de meses, ajustado a tu cuero cabelludo. desde800
 
@@ -39094,175 +39106,175 @@ Wat er verder in de kliniek gebeurt.
 
 - Test de intolerancia alimentaria Un análisis de sangre que muestra a qué alimentos reacciona tu cuerpo. 300
 
-**Elke zone, met het tarief erbij.**
+**Cada zona, con su tarifa al lado.**
 
-Laserontharing heeft twee tarievenlijsten. Welke geldt voor jou?
+La depilación láser tiene dos listas de tarifas. ¿Cuál se aplica en tu caso?
 
-> knop: DAMES
+> knop: MUJERES
 
-> knop: HEREN
+> knop: HOMBRES
 
-Een pakket vervangt de losse zones die erin zitten; die tellen dan niet nog een keer mee.
+Un paquete sustituye las zonas sueltas que contiene; esas no cuentan entonces una segunda vez.
 
 *TRATAMIENTO*
 
-*PER SESSIE IN EURO’S*
+*POR SESIÓN EN EUROS*
 
-*Pakket A: oksels en bikinilijn groot*
+*Paquete A: axilas y línea del bikini ampliada*
 
-*Pakket B: oksels, gehele armen en bikinilijn groot*
+*Paquete B: axilas, brazos completos y línea del bikini ampliada*
 
 125
 
-*Pakket C: oksels, gehele armen en gehele benen*
+*Paquete C: axilas, brazos completos y piernas completas*
 
-*Pakket D: oksels, gehele benen en bikinilijn groot*
+*Paquete D: axilas, piernas completas y línea del bikini ampliada*
 
-*Pakket E: full body zonder gezicht*
+*Paquete E: cuerpo entero sin la cara*
 
 349
 
-*Gelaat inclusief hals*
+*Cara con cuello*
 
 99
 
 *Frente*
 
-*Tussen de wenkbrauwen*
+*Entrecejo*
 
 *Mejillas*
 
-*Bovenlip*
+*Labio superior*
 
-*Bakkebaard*
+*Patillas*
 
 *Barbilla*
 
 35
 
-*Onderkin*
+*Papada*
 
 45
 
-*Hals*
+*Cuello*
 
-*Nek*
+*Nuca*
 
-*Bovenlip + kin*
+*Labio superior + barbilla*
 
-*Kin + onderkin*
+*Barbilla + papada*
 
-*Wangen + bakkebaard*
+*Mejillas + patillas*
 
-*Onderkin + hals*
+*Papada + cuello*
 
 85
 
-*Gehele gezicht*
+*Cara completa*
 
-*Gehele gelaat*
+*Rostro completo*
 
-*Oksels*
+*Axilas*
 
-*Bovenarmen*
+*Brazos (parte superior)*
 
 90
 
-*Onderarmen*
+*Antebrazos*
 
-*Gehele armen*
+*Brazos completos*
 
-*Buik*
+*Vientre*
 
-*Tussen de borsten*
+*Entre los pechos*
 
-*Rond de tepels*
+*Alrededor de los pezones*
 
-*Borsten*
+*Pechos*
 
-*Navelstrook*
+*Línea del ombligo*
 
-*Schouders*
+*Hombros*
 
-*Onderrug*
+*Zona lumbar*
 
-*Gehele rug*
+*Espalda completa*
 
 160
 
-*Bovenbenen*
+*Muslos*
 
 110
 
-*Onderbenen*
+*Medias piernas*
 
-*Gehele benen*
+*Piernas completas*
 
 200
 
-*Bilnaad*
+*Pliegue interglúteo*
 
-*Bikinilijn klein*
+*Línea del bikini pequeña*
 
-*Bikinilijn groot*
+*Línea del bikini ampliada*
 
-*Bilwangen*
+*Glúteos*
 
-GEEN STERRETJES Er staan hier geen voetnoten met voorwaarden en geen bedragen die pas aan de balie compleet worden. Wat je hier ziet is wat een sessie kost. Hoeveel sessies je nodig hebt hoor je tijdens de intake, en dat getal bepaalt je totaal meer dan het tarief hiernaast.
+SIN ASTERISCOS Aquí no hay notas al pie con condiciones ni importes que solo se completan en recepción. Lo que ves aquí es lo que cuesta una sesión. Cuántas sesiones necesitas lo oyes en la consulta previa, y ese número decide tu total más que la tarifa de al lado.
 
 **Lo que la gente pregunta sobre esto.**
 
-Staat je vraag er niet bij, dan hoor je het antwoord aan de telefoon zonder dat er een afspraak uit hoeft te komen.
+Si tu pregunta no está, oyes la respuesta por teléfono sin que tenga que salir una cita de ello.
 
 - REEMBOLSO POR ASEGURADORA
 
-- AFZEGGEN, BETALEN EN VERZETTEN
+- CANCELAR, PAGAR Y CAMBIAR LA CITA
 
 **¿Cuánto cuesta esto?**
 
 Depende del tratamiento que encaje con tu piel, y eso lo determinamos durante la primera consulta. La consulta cuesta 50 euros; si en esa misma cita te haces un tratamiento, ese importe se descuenta. Ahí mismo sabes de cuántas sesiones hablamos y cuál será el total. Todos los precios por tratamiento están publicados en la página de precios.
 
-**Staat de btw er al bij?**
+**¿El IVA ya está incluido?**
 
-Ja. De bedragen op deze pagina zijn wat je aan de balie betaalt. Er komt niets bij voor materiaal of voor het aanleggen van een dossier.
+Sí. Los importes de esta página son lo que pagas en recepción. No se añade nada por material ni por abrir un expediente.
 
-**Krijg ik dit vergoed?**
+**¿Me lo reembolsan?**
 
-Dat hangt af van je aanvullende verzekering en of er een medische indicatie is. Diba Clinics is gecontracteerd bij alle zorgverzekeraars; op de vergoedingenpagina staat per verzekeraar wat eronder valt.
+Depende de tu seguro complementario y de si hay una indicación médica. Diba Clinics tiene contrato con todas las aseguradoras de salud; en la página de reembolsos pone por aseguradora lo que entra.
 
-**Zijn er kortingen, pakketten of acties?**
+**¿Hay descuentos, paquetes o promociones?**
 
 Todas las tarifas son públicas, por sesión y por variante. No hay descuentos, códigos promocionales ni ofertas temporales, así que nunca hay un momento en el que llegaste demasiado pronto o demasiado tarde.
 
-**Wat als ik mijn afspraak afzeg?**
+**¿Y si cancelo mi cita?**
 
-Tot 48 uur voor je afspraak kun je afzeggen of verzetten, telefonisch of per bericht. Je hoeft geen reden te geven. Zeg je minder dan 48 uur voor je afspraak af, of kom je zonder bericht niet opdagen, dan vervalt je aanbetaling. Voor een nieuwe afspraak vragen we opnieuw een aanbetaling.
+Hasta 48 horas antes de tu cita puedes cancelar o cambiarla, por teléfono o por mensaje. No tienes que dar ningún motivo. Si cancelas menos de 48 horas antes de tu cita, o no te presentas sin avisar, pierdes el depósito. Para una nueva cita pedimos de nuevo un depósito.
 
-**Wanneer betaal ik?**
+**¿Cuándo pago?**
 
 Pagas directamente en la clínica. El depósito que hiciste al pedir la cita se descuenta del importe total.
 
-**Wat als de behandeling niet door kan gaan?**
+**¿Y si el tratamiento no se puede hacer?**
 
-Je betaalt de behandeling dan niet.
+Entonces no pagas el tratamiento.
 
-**El número de sesiones bepaalt je totaal**
+**El número de sesiones decide tu total**
 
-De bedragen hierboven liggen vast. Wat je in totaal kwijt bent hangt af van hoe vaak je komt, en dat verschilt per huid. Een aantal noemen voordat we gemeten hebben is een gok met jouw geld, dus dat doen we niet.
+Los importes de arriba están fijados. Lo que gastas en total depende de cuántas veces vienes, y eso varía según la piel. Decir un número antes de haber medido es apostar con tu dinero, así que no lo hacemos.
 
-Tijdens de intake hoor je om hoeveel sessies het bij jou gaat en wat dat samen wordt. Dat is het eerste moment waarop iemand daar iets zinnigs over kan zeggen.
+En la consulta previa oyes de cuántas sesiones se trata en tu caso y cuánto suma todo. Es el primer momento en que alguien puede decir algo sensato al respecto.
 
 > knop: PIDE UNA PRIMERA CONSULTA
 
-> knop: WAT DE BEHANDELINGEN DOEN
+> knop: LO QUE HACEN LOS TRATAMIENTOS
 
 ---
 
 ### /es/problemas-de-piel
 
-**Tabbladtitel:** Huidproblemen behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Tratar problemas de piel en Róterdam | Diba Clinics
 
-**Google-omschrijving:** Bij acne telt waar het zit, bij pigment welk seizoen het is, bij littekens hoe oud ze zijn. Kies waar je last van hebt en zie waar we mee beginnen.
+**Google-omschrijving:** En el acné cuenta dónde está, en el pigmento qué estación es, en las cicatrices cuánto tiempo tienen. Elige lo que te molesta y ve por dónde empezamos.
 
 **TODOS LOS PROBLEMAS DE PIEL**
 
@@ -39380,9 +39392,9 @@ Cualquier duda sobre la piel empieza con una valoración, de la que también pue
 
 ### /es/problemas-de-piel/acne
 
-**Tabbladtitel:** Acne behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Tratar el acné en Róterdam | Diba Clinics
 
-**Google-omschrijving:** Acne behandelen met peelings, needling en laser. Welke vorm je hebt, wat eraan te doen is en wat een behandeling bij ons kost.
+**Google-omschrijving:** Tratar el acné con peelings, needling y láser. Qué tipo tienes, qué se puede hacer y lo que cuesta un tratamiento con nosotros.
 
 **ACNÉ QUE VUELVE UNA Y OTRA VEZ**
 
@@ -39568,15 +39580,17 @@ Depende del tratamiento que encaje con tu piel, y eso lo determinamos durante la
 
 Estas vienen de Salonized y no las hemos elegido nosotros por su contenido: son las reseñas en las que aparece el acné, los granos o las imperfecciones. Fíjate en el tiempo que se menciona, porque con el acné de eso se trata.
 
-- “De toppers van Diba zijn super vriendelijk! Ik laat mijn huid nooit ergens anders dan Diba behandelen, ben van mijn langdurige acne af.” Busra Visita a Diba Clinics MEER DAN 4 JAAR GELEDEN
+Reseñas traducidas del neerlandés.
 
-- “Ik vind dat de therapeut de tijd had genomen om de onzuiverheden te verwijderen. En ze betrok mij bij het proces van wat de stappen waren.” Malika Visita a Diba Clinics ONGEVEER 6 JAAR GELEDEN
+- “¡Los fenómenos de Diba son superamables! No dejo que nadie más que Diba me trate la piel, me he librado de mi acné de años.” Busra Visita a Diba Clinics HACE MÁS DE 4 AÑOS
 
-- “Had gisteren een dermapen en carbonlaser afspraak. Mijn huid voelt meteen al glad aan en de puistjes verminderen nu al. Daarnaast ook hele lieve dames!” Jenna Microneedling ONGEVEER 7 JAAR GELEDEN
+- “Creo que la terapeuta se tomó el tiempo de quitar las imperfecciones. Y me fue haciendo partícipe de cuáles eran los pasos.” Malika Visita a Diba Clinics HACE APROXIMADAMENTE 6 AÑOS
+
+- “Ayer tuve una cita de Dermapen y láser de carbono. Mi piel ya se nota lisa y los granos ya están disminuyendo. ¡Además, unas señoras encantadoras!” Jenna Microneedling HACE APROXIMADAMENTE 7 AÑOS
 
 **Lo que usamos para esto**
 
-- Peelings médicos € 140 De suave a fuerte. La concentración decide hasta dónde llega y cuánto se descama la piel. PARA ESTE PROBLEMA CON EL LÍNEAS DE PEELING PEELING QUÍMICO EN ROTTERDAM
+- Peelings médicos € 140 De suave a fuerte. La concentración decide hasta dónde llega y cuánto se descama la piel. PARA ESTE PROBLEMA CON EL LÍNEAS DE PEELING PEELING QUÍMICO EN RÓTERDAM
 
 - Peeling de hierbas € 150 Un peeling de hierbas molidas muy finas, sin ácido. Calma la inflamación y actúa contra las bacterias. EN QUÉ CONSISTE
 
@@ -39598,9 +39612,9 @@ Durante la primera consulta medimos tu piel, hablamos del tipo y sabes qué espe
 
 ### /es/problemas-de-piel/acrocordones
 
-**Tabbladtitel:** Steelwratjes laten verwijderen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Quitar acrocordones en Róterdam | Diba Clinics
 
-**Google-omschrijving:** Steelwratjes laten verwijderen, meestal in een afspraak. We rekenen per kwartier en niet per wratje.
+**Google-omschrijving:** Que te quiten acrocordones, normalmente en una cita. Cobramos por cuarto de hora y no por acrocordón.
 
 **ACROCORDONES QUITAR**
 
@@ -39710,15 +39724,15 @@ Con un acrocordón pequeño, normalmente un puntito rojo que se va en semanas. C
 
 Con acrocordones benignos es una cita corta, cobrada por cuarto de hora. Si entre ellos hay algo que haya que valorar, lo sabes antes de empezar.
 
-Foto de arriba: Jmarchn, CC BY-SA 3.0, via Wikimedia Commons.
+Foto de arriba: Jmarchn, CC BY-SA 3.0, vía Wikimedia Commons.
 
 ---
 
 ### /es/problemas-de-piel/arrugas
 
-**Tabbladtitel:** Rimpels behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Tratar las arrugas en Róterdam | Diba Clinics
 
-**Google-omschrijving:** Rimpels en fijne lijntjes behandelen met microneedling, laser en peelings die de aanmaak van collageen op gang brengen.
+**Google-omschrijving:** Tratar arrugas y líneas finas con microneedling, láser y peelings que ponen en marcha la producción de colágeno.
 
 **ARRUGAS Y LÍNEAS FINAS**
 
@@ -39830,15 +39844,15 @@ Cada eje se vuelve a medir en cada control, con la misma iluminación. Así, una
 
 **Lo que usamos para esto**
 
-- Microneedling con el SkinPen € 180 Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel. PARA ESTE PROBLEMA CON EL SKINPEN CIT MICRONEEDLING EN ROTTERDAM
+- Microneedling con el SkinPen € 180 Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel. PARA ESTE PROBLEMA CON EL SKINPEN CIT MICRONEEDLING EN RÓTERDAM
 
 - Dermapen 4 € 180 Microneedling con agujas vibrantes, que atraviesan la piel de forma uniforme. EN QUÉ CONSISTE CON EL DERMAPEN 4
 
-- Skin boosters y mesoterapia € 175 Principios activos puestos dentro de la piel en lugar de encima, a una profundidad fija por pinchazo. EN QUÉ CONSISTE CON EL INYECTOR INTRADÉRMICO U225 SKIN BOOSTERS EN ROTTERDAM
+- Skin boosters y mesoterapia € 175 Principios activos puestos dentro de la piel en lugar de encima, a una profundidad fija por pinchazo. EN QUÉ CONSISTE CON EL INYECTOR INTRADÉRMICO U225 SKIN BOOSTERS EN RÓTERDAM
 
 - RRS Eyes € 130 Principios activos alrededor del contorno de ojos. Para ojeras, líneas finas y una mirada cansada. EN QUÉ CONSISTE
 
-- Fotona TimeWalker € 150 Quince tratamientos en un solo equipo, desde un peeling láser suave hasta el 4D completo. Cada uno con su propio objetivo. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER FOTONA 4D EN ROTTERDAM
+- Fotona TimeWalker € 150 Quince tratamientos en un solo equipo, desde un peeling láser suave hasta el 4D completo. Cada uno con su propio objetivo. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER FOTONA 4D EN RÓTERDAM
 
 - Fotona 4D € 370 Cuatro tratamientos láser en una sesión. Desde dentro, a través de la mejilla, hasta un peeling final. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER
 
@@ -39880,9 +39894,9 @@ En las líneas se trata de meses, y tu propia cara la ves todos los días. El an
 
 ### /es/problemas-de-piel/bolsas-en-los-ojos
 
-**Tabbladtitel:** Wallen onder de ogen: vocht, vet of schaduw | Diba Clinics
+**Tabbladtitel:** Bolsas bajo los ojos: líquido, grasa o sombra | Diba Clinics
 
-**Google-omschrijving:** Wallen onder je ogen: waar ze vandaan komen en wat een huidbehandeling kan toevoegen bij vocht of een dunne huid.
+**Google-omschrijving:** Bolsas bajo los ojos: de dónde vienen y lo que un tratamiento de la piel puede añadir con líquido o una piel fina.
 
 **BOLSAS DEBAJO DE LOS OJOS**
 
@@ -39968,7 +39982,7 @@ La piel de debajo del ojo es la más fina de tu cuerpo. Eso decide tanto lo que 
 
 **Lo que usamos para esto**
 
-- RRS Eyes € 130 Principios activos alrededor del contorno de ojos. Para ojeras, líneas finas y una mirada cansada. EN QUÉ CONSISTE SKIN BOOSTERS EN ROTTERDAM
+- RRS Eyes € 130 Principios activos alrededor del contorno de ojos. Para ojeras, líneas finas y una mirada cansada. EN QUÉ CONSISTE SKIN BOOSTERS EN RÓTERDAM
 
 - SmoothEye € 150 Láser alrededor del contorno de ojos, para las patas de gallo y las líneas finas. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER
 
@@ -39996,9 +40010,9 @@ En la consulta de la piel determinamos si es líquido, grasa o sombra. En dos de
 
 ### /es/problemas-de-piel/buscador-de-sintomas
 
-**Tabbladtitel:** Weet je niet hoe het heet? Begin hier | Diba Clinics
+**Tabbladtitel:** ¿No sabes cómo se llama? Empieza aquí | Diba Clinics
 
-**Google-omschrijving:** Kruis aan wat je op je huid ziet, zonder vaktermen, en je komt bij de pagina die erover gaat.
+**Google-omschrijving:** Marca lo que ves en tu piel, sin términos técnicos, y llegas a la página que trata de ello.
 
 **BUSCA POR LO QUE VES EN TU PIEL**
 
@@ -40072,9 +40086,9 @@ No todo cabe en una lista, y algunas cosas pasan a la vez. No es ningún problem
 
 ### /es/problemas-de-piel/cicatrices
 
-**Tabbladtitel:** Littekens en striae behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Tratar cicatrices y estrías en Róterdam | Diba Clinics
 
-**Google-omschrijving:** Littekens en striae behandelen met microneedling en laser. Rode littekens reageren doorgaans het beste; bij witte richten we ons op de structuur.
+**Google-omschrijving:** Tratar cicatrices y estrías con microneedling y láser. Las cicatrices rojas suelen reaccionar mejor; en las blancas nos centramos en la textura.
 
 **CICATRICES Y ESTRÍAS QUE SIGUEN VIÉNDOSE**
 
@@ -40214,11 +40228,11 @@ Cada eje se vuelve a medir en cada control, con la misma iluminación. Así, una
 
 **Lo que usamos para esto**
 
-- Microneedling con el SkinPen € 180 Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel. PARA ESTE PROBLEMA CON EL SKINPEN CIT MICRONEEDLING EN ROTTERDAM
+- Microneedling con el SkinPen € 180 Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel. PARA ESTE PROBLEMA CON EL SKINPEN CIT MICRONEEDLING EN RÓTERDAM
 
 - Dermapen 4 € 180 Microneedling con agujas vibrantes, que atraviesan la piel de forma uniforme. EN QUÉ CONSISTE CON EL DERMAPEN 4
 
-- Fotona TimeWalker € 150 Quince tratamientos en un solo equipo, desde un peeling láser suave hasta el 4D completo. Cada uno con su propio objetivo. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER FOTONA 4D EN ROTTERDAM
+- Fotona TimeWalker € 150 Quince tratamientos en un solo equipo, desde un peeling láser suave hasta el 4D completo. Cada uno con su propio objetivo. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER FOTONA 4D EN RÓTERDAM
 
 - FRAC3 A consultar Láser fraccionado que llega más profundo, para la textura, los poros y las irregularidades. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER
 
@@ -40230,11 +40244,13 @@ Cada eje se vuelve a medir en cada control, con la misma iluminación. Así, una
 
 Estas vienen de Salonized y no las hemos elegido nosotros por su contenido: son las reseñas en las que se mencionan cicatrices. Hablan de tratamientos de meses, y eso se nota al leerlas.
 
-- “In het algemeen heel tevreden. Kwam de eerste keer binnen met veel Onzuiverheden en littekens en ik kan met positiviteit zeggen dat mijn gezicht er heel egaal uitziet en mooi eruit ziet.” Brayson Visita a Diba Clinics ONGEVEER 6 JAAR GELEDEN
+Reseñas traducidas del neerlandés.
 
-- “Super fijne Hydrafacial behandeling gehad. Heb een hele mooie glow! Ook mijn littekens zijn voor het eerst behandeld dus ik verheug me op de voortgang van dit proces :) Dankjewel lieve Rojda.” Elif HydraFacial BIJNA 4 JAAR GELEDEN
+- “En general muy conforme. La primera vez entré con muchas imperfecciones y cicatrices y puedo decir con positividad que mi cara se ve muy uniforme y bonita.” Brayson Visita a Diba Clinics HACE APROXIMADAMENTE 6 AÑOS
 
-- “Inmiddels 3 keer langs geweest voor de diodelaser en ik zie echt 80% verschil! Ook de littekens en vlekjes van mijn huid zijn zwaar verbeterd dankzij de dermapen. Sowieso forever vaste klant!!” Sara Depilación láser MEER DAN 7 JAAR GELEDEN
+- “Un tratamiento Hydrafacial buenísimo. ¡Tengo un glow precioso! También me han tratado las cicatrices por primera vez, así que tengo ganas de ver cómo avanza este proceso :) Gracias, querida Rojda.” Elif HydraFacial HACE CASI 4 AÑOS
+
+- “Ya he venido 3 veces para el láser de diodo ¡y de verdad veo un 80 % de diferencia! Las cicatrices y manchitas de mi piel también han mejorado muchísimo gracias al Dermapen. ¡¡Sin duda, cliente para siempre!!” Sara Depilación láser HACE MÁS DE 7 AÑOS
 
 **Preguntas frecuentes**
 
@@ -40276,9 +40292,9 @@ Con una cicatriz roja o con estrías rojas, este es el momento en que más se no
 
 ### /es/problemas-de-piel/cicatrices-de-acne
 
-**Tabbladtitel:** Acnelittekens behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Tratar cicatrices de acné en Róterdam | Diba Clinics
 
-**Google-omschrijving:** Acnelittekens behandelen met peelings, microneedling en laser. Het verschil tussen een kuiltje, een rood vlekje en pigment.
+**Google-omschrijving:** Tratar cicatrices de acné con peelings, microneedling y láser. La diferencia entre un hoyo, una marca roja y pigmento.
 
 **LO QUE EL ACNÉ DEJA EN TU PIEL**
 
@@ -40394,11 +40410,11 @@ Cada eje se vuelve a medir en cada control, con la misma iluminación. Así, una
 
 **Lo que usamos para esto**
 
-- Microneedling con el SkinPen € 180 Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel. PARA ESTE PROBLEMA CON EL SKINPEN CIT MICRONEEDLING EN ROTTERDAM
+- Microneedling con el SkinPen € 180 Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel. PARA ESTE PROBLEMA CON EL SKINPEN CIT MICRONEEDLING EN RÓTERDAM
 
 - Dermapen 4 € 180 Microneedling con agujas vibrantes, que atraviesan la piel de forma uniforme. EN QUÉ CONSISTE CON EL DERMAPEN 4
 
-- FRAC3 A consultar Láser fraccionado que llega más profundo, para la textura, los poros y las irregularidades. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER FOTONA 4D EN ROTTERDAM
+- FRAC3 A consultar Láser fraccionado que llega más profundo, para la textura, los poros y las irregularidades. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER FOTONA 4D EN RÓTERDAM
 
 - Fotona Scar Repair € 195 Láser sobre cicatrices: cicatrices de acné, cicatrices quirúrgicas y estrías. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER
 
@@ -40408,11 +40424,13 @@ Cada eje se vuelve a medir en cada control, con la misma iluminación. Así, una
 
 Estas vienen de Salonized y no las hemos elegido nosotros por su contenido: son las reseñas en las que se mencionan cicatrices, casi siempre después de un programa de acné.
 
-- “In het algemeen heel tevreden. Kwam de eerste keer binnen met veel Onzuiverheden en littekens en ik kan met positiviteit zeggen dat mijn gezicht er heel egaal uitziet en mooi eruit ziet.” Brayson Visita a Diba Clinics ONGEVEER 6 JAAR GELEDEN
+Reseñas traducidas del neerlandés.
 
-- “Super fijne Hydrafacial behandeling gehad. Heb een hele mooie glow! Ook mijn littekens zijn voor het eerst behandeld dus ik verheug me op de voortgang van dit proces :) Dankjewel lieve Rojda.” Elif HydraFacial BIJNA 4 JAAR GELEDEN
+- “En general muy conforme. La primera vez entré con muchas imperfecciones y cicatrices y puedo decir con positividad que mi cara se ve muy uniforme y bonita.” Brayson Visita a Diba Clinics HACE APROXIMADAMENTE 6 AÑOS
 
-- “Inmiddels 3 keer langs geweest voor de diodelaser en ik zie echt 80% verschil! Ook de littekens en vlekjes van mijn huid zijn zwaar verbeterd dankzij de dermapen. Sowieso forever vaste klant!!” Sara Depilación láser MEER DAN 7 JAAR GELEDEN
+- “Un tratamiento Hydrafacial buenísimo. ¡Tengo un glow precioso! También me han tratado las cicatrices por primera vez, así que tengo ganas de ver cómo avanza este proceso :) Gracias, querida Rojda.” Elif HydraFacial HACE CASI 4 AÑOS
+
+- “Ya he venido 3 veces para el láser de diodo ¡y de verdad veo un 80 % de diferencia! Las cicatrices y manchitas de mi piel también han mejorado muchísimo gracias al Dermapen. ¡¡Sin duda, cliente para siempre!!” Sara Depilación láser HACE MÁS DE 7 AÑOS
 
 **Preguntas frecuentes**
 
@@ -40440,9 +40458,9 @@ En la consulta de la piel determinamos si es tejido cicatricial o color. A veces
 
 ### /es/problemas-de-piel/cuperosis
 
-**Tabbladtitel:** Couperose behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Tratar la cuperosis en Róterdam | Diba Clinics
 
-**Google-omschrijving:** Couperose behandelen met IPL en laser. Rode vaatjes op je wangen of naast je neus, hoe je ze herkent en wat een behandeling kost.
+**Google-omschrijving:** Tratar la cuperosis con IPL y láser. Vasos rojos en las mejillas o junto a la nariz, cómo reconocerlos y lo que cuesta un tratamiento.
 
 **CUPEROSIS QUE TRATAMOS**
 
@@ -40574,7 +40592,7 @@ Cada eje se vuelve a medir en cada control, con la misma iluminación. Así, una
 
 **Lo que usamos para esto**
 
-- Nordlys IPL para rojeces y vasos € 75 Luz sobre vasos visibles, rosácea y rojez persistente. El vaso se oscurece y luego desaparece. PARA ESTE PROBLEMA CON EL NORDLYS TRATAMIENTO IPL EN ROTTERDAM
+- Nordlys IPL para rojeces y vasos € 75 Luz sobre vasos visibles, rosácea y rojez persistente. El vaso se oscurece y luego desaparece. PARA ESTE PROBLEMA CON EL NORDLYS TRATAMIENTO IPL EN RÓTERDAM
 
 - Terapia LED € 30 Luz que calma la piel. En varias longitudes de onda, sin agujas ni ácidos. EN QUÉ CONSISTE CON EL PRECISION PHOTONIC SYSTEM
 
@@ -40610,9 +40628,9 @@ La consulta de la piel registra lo que se ve ahora. Después sabes cuántas sesi
 
 ### /es/problemas-de-piel/decoloracion-de-la-piel
 
-**Tabbladtitel:** Huidverkleuring: welke kleur is het? | Diba Clinics
+**Tabbladtitel:** Decoloración de la piel: ¿qué color es? | Diba Clinics
 
-**Google-omschrijving:** Bruin, rood of wit: de kleur bepaalt in welke laag de verkleuring zit en welke behandeling erbij hoort.
+**Google-omschrijving:** Marrón, rojo o blanco: el color decide en qué capa está la decoloración y qué tratamiento le corresponde.
 
 **DECOLORACIONES EN TU PIEL**
 
@@ -40698,9 +40716,9 @@ Una cosa cuenta más que el color
 
 **Lo que usamos para esto**
 
-- Nordlys IPL para la pigmentación € 75 Luz sobre manchas de pigmentación y daño solar. El pigmento sale primero a la superficie y después se difumina. EN QUÉ CONSISTE CON EL NORDLYS TRATAMIENTO IPL EN ROTTERDAM
+- Nordlys IPL para la pigmentación € 75 Luz sobre manchas de pigmentación y daño solar. El pigmento sale primero a la superficie y después se difumina. EN QUÉ CONSISTE CON EL NORDLYS TRATAMIENTO IPL EN RÓTERDAM
 
-- Dermamelan Intimate € 550 Tratamiento del pigmento para la zona íntima, planteado igual que el programa facial. EN QUÉ CONSISTE COSMELAN Y DERMAMELAN EN ROTTERDAM
+- Dermamelan Intimate € 550 Tratamiento del pigmento para la zona íntima, planteado igual que el programa facial. EN QUÉ CONSISTE COSMELAN Y DERMAMELAN EN RÓTERDAM
 
 - Happy Intim € 175 Peelings que aclaran y uniforman el pigmento de la zona íntima y de las axilas. EN QUÉ CONSISTE CON EL LÍNEAS DE PEELING
 
@@ -40736,9 +40754,9 @@ Si dudas entre dos colores o hay varios cambios a la vez, deja que valoremos la 
 
 ### /es/problemas-de-piel/eccema
 
-**Tabbladtitel:** Eczeem: een cirkel, geen plek | Diba Clinics
+**Tabbladtitel:** Eccema: un círculo, no una mancha | Diba Clinics
 
-**Google-omschrijving:** Bij eczeem werken we aan je huidbarrière, naast de behandeling van je huisarts. Hoe die kringloop van jeuk en krabben werkt.
+**Google-omschrijving:** En el eccema trabajamos sobre tu barrera cutánea, junto al tratamiento de tu médico de cabecera. Cómo funciona ese círculo de picor y rascado.
 
 **ECCEMA: UN PICOR QUE SIGUE VOLVIENDO**
 
@@ -40786,7 +40804,7 @@ Dos de los cuatro puntos quedan fuera de nuestra puerta, y eso no es modestia si
 
 El eccema se usa a menudo como nombre paraguas para todo lo que está rojo y descamado. Estos tres se le parecen y piden otra cosa.
 
-- Een uitgedroogde huid Tirante y áspera, pero sin el picor que no te deja dormir y sin zonas que vuelvan siempre al mismo sitio. A LA PIEL SECA
+- Una piel deshidratada Tirante y áspera, pero sin el picor que no te deja dormir y sin zonas que vuelvan siempre al mismo sitio. A LA PIEL SECA
 
 - Alergia de contacto La reacción está en un sitio delimitado con una forma clara y empieza de horas a días después del contacto con algo. A LA ERUPCIÓN CUTÁNEA
 
@@ -40822,7 +40840,7 @@ Aplazar al médico de cabecera porque primero quieres probar algo tú suele ser 
 
 **Preguntas frecuentes**
 
-¿Puedo ir a vosotros con eccema?
+¿Puedo acudir a la clínica con eccema?
 
 Para el eccema en sí no, eso va al médico de cabecera. Para la piel de alrededor a veces sí, si está tranquila y quieres tratar otra cosa. Entonces miramos si es sensato y lo decimos cuando no lo es.
 
@@ -40856,9 +40874,9 @@ El diagnóstico y la medicación van por tu médico de cabecera. Lo que tu piel 
 
 ### /es/problemas-de-piel/envejecimiento-cutaneo
 
-**Tabbladtitel:** Huidveroudering behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Tratar el envejecimiento de la piel en Róterdam | Diba Clinics
 
-**Google-omschrijving:** Huidveroudering behandelen met peelings, needling en laser. Het meeste komt door zon en niet door leeftijd, en juist dat is aan te pakken.
+**Google-omschrijving:** Tratar el envejecimiento de la piel con peelings, needling y láser. La mayor parte viene del sol y no de la edad, y justo eso se puede tratar.
 
 **ENVEJECIMIENTO QUE TRATAMOS**
 
@@ -41040,15 +41058,15 @@ Cada eje se vuelve a medir en cada control, con la misma iluminación. Así, una
 
 **Lo que usamos para esto**
 
-- Dermaplaning € 150 Células muertas y vello fino fuera con una cuchilla. Funciona sin ácidos, así que también sirve para una piel sensible. EN QUÉ CONSISTE CON EL DERMAPLANE PRO DERMAPLANING EN ROTTERDAM
+- Dermaplaning € 150 Células muertas y vello fino fuera con una cuchilla. Funciona sin ácidos, así que también sirve para una piel sensible. EN QUÉ CONSISTE CON EL DERMAPLANE PRO DERMAPLANING EN RÓTERDAM
 
-- Microneedling con el SkinPen € 180 Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel. EN QUÉ CONSISTE CON EL SKINPEN CIT MICRONEEDLING EN ROTTERDAM
+- Microneedling con el SkinPen € 180 Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel. EN QUÉ CONSISTE CON EL SKINPEN CIT MICRONEEDLING EN RÓTERDAM
 
 - Dermapen 4 € 180 Microneedling con agujas vibrantes, que atraviesan la piel de forma uniforme. EN QUÉ CONSISTE CON EL DERMAPEN 4
 
-- Skin boosters y mesoterapia € 175 Principios activos puestos dentro de la piel en lugar de encima, a una profundidad fija por pinchazo. EN QUÉ CONSISTE CON EL INYECTOR INTRADÉRMICO U225 SKIN BOOSTERS EN ROTTERDAM
+- Skin boosters y mesoterapia € 175 Principios activos puestos dentro de la piel en lugar de encima, a una profundidad fija por pinchazo. EN QUÉ CONSISTE CON EL INYECTOR INTRADÉRMICO U225 SKIN BOOSTERS EN RÓTERDAM
 
-- Fotona TimeWalker € 150 Quince tratamientos en un solo equipo, desde un peeling láser suave hasta el 4D completo. Cada uno con su propio objetivo. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER FOTONA 4D EN ROTTERDAM
+- Fotona TimeWalker € 150 Quince tratamientos en un solo equipo, desde un peeling láser suave hasta el 4D completo. Cada uno con su propio objetivo. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER FOTONA 4D EN RÓTERDAM
 
 - Fotona 4D € 370 Cuatro tratamientos láser en una sesión. Desde dentro, a través de la mejilla, hasta un peeling final. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER
 
@@ -41070,7 +41088,7 @@ No hay una edad en la que empiece. Sí hay un momento en el que medir tiene sent
 
 En parte. El color y la textura se pueden mejorar bastante, y eso suele ser lo que la gente nota en el espejo. El volumen que se ha ido no vuelve, y preferimos decirlo ahora y no después de cuatro sesiones.
 
-¿Por qué no empezáis directamente con láser?
+¿Por qué no empezar directamente con láser?
 
 Porque primero queremos saber qué estamos mirando. La misma línea puede ser deshidratación o daño solar marcado, y eso pide cosas distintas. La medición te cuesta una cita y normalmente ahorra más.
 
@@ -41094,9 +41112,9 @@ Medimos el color, la textura y las líneas, y te contamos qué parte viene del s
 
 ### /es/problemas-de-piel/erupcion-cutanea
 
-**Tabbladtitel:** Huiduitslag: bel je vandaag of morgen? | Diba Clinics
+**Tabbladtitel:** Erupción cutánea: ¿llamas hoy o mañana? | Diba Clinics
 
-**Google-omschrijving:** Huiduitslag is een symptoom met tientallen oorzaken. Wanneer je vandaag nog belt, en welke soorten het vaakst voorkomen.
+**Google-omschrijving:** Una erupción cutánea es un síntoma con decenas de causas. Cuándo llamar hoy mismo, y qué tipos son los más frecuentes.
 
 **ERUPCIÓN CUTÁNEA, Y CUÁNDO HAY PRISA**
 
@@ -41206,7 +41224,7 @@ Puede ser, sobre todo si la zona tiene la forma de donde estaba el producto. Dej
 
 Porque entonces te pondrías a buscar la foto que más se parece a la tuya, y eso es justo al revés. Una erupción se ve distinta en cada persona, y en una piel oscura a menudo muy distinta de las fotos que encuentras en internet.
 
-¿Puedo ir a vosotros con esto?
+¿Puedo acudir a la clínica con esto?
 
 Con una erupción sin explicar, tu médico de cabecera hace primero el diagnóstico. Una vez que sabes qué es, puedes venir a nosotros para la reparación de tu barrera cutánea, de acuerdo con tu médico.
 
@@ -41224,9 +41242,9 @@ Con una erupción sin explicar, un médico hace primero el diagnóstico. Despué
 
 ### /es/problemas-de-piel/estrias
 
-**Tabbladtitel:** Striae behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Tratar las estrías en Róterdam | Diba Clinics
 
-**Google-omschrijving:** Striae behandelen met microneedling en laser. Rode striae reageren het best, bij witte werken we op de structuur.
+**Google-omschrijving:** Tratar las estrías con microneedling y láser. Las estrías rojas reaccionan mejor; en las blancas trabajamos sobre la textura.
 
 **ESTRÍAS QUE TRATAMOS**
 
@@ -41286,7 +41304,7 @@ En las estrías, el momento cuenta más que la técnica. Quien empieza mientras 
 
 **Lo que usamos para esto**
 
-- Microneedling con el SkinPen € 180 Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel. PARA ESTE PROBLEMA CON EL SKINPEN CIT MICRONEEDLING EN ROTTERDAM
+- Microneedling con el SkinPen € 180 Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel. PARA ESTE PROBLEMA CON EL SKINPEN CIT MICRONEEDLING EN RÓTERDAM
 
 - Dermapen 4 € 180 Microneedling con agujas vibrantes, que atraviesan la piel de forma uniforme. EN QUÉ CONSISTE CON EL DERMAPEN 4
 
@@ -41322,9 +41340,9 @@ La terapeuta valora en qué fase están tus estrías y qué puede dar una serie 
 
 ### /es/problemas-de-piel/flacidez-cutanea
 
-**Tabbladtitel:** Huidverslapping behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Tratar la flacidez de la piel en Róterdam | Diba Clinics
 
-**Google-omschrijving:** Huidverslapping behandelen met needling en laser, die de aanmaak van collageen op gang brengen. Wat er realistisch te winnen valt.
+**Google-omschrijving:** Tratar la flacidez de la piel con needling y láser, que ponen en marcha la producción de colágeno. Lo que de forma realista se puede ganar.
 
 **UNA MANDÍBULA QUE PIERDE FIRMEZA Y UNAS MEJILLAS QUE CAEN**
 
@@ -41436,7 +41454,7 @@ Cada eje se vuelve a medir en cada control, con la misma iluminación. Así, una
 
 **Lo que usamos para esto**
 
-- Fotona TimeWalker € 150 Quince tratamientos en un solo equipo, desde un peeling láser suave hasta el 4D completo. Cada uno con su propio objetivo. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER FOTONA 4D EN ROTTERDAM
+- Fotona TimeWalker € 150 Quince tratamientos en un solo equipo, desde un peeling láser suave hasta el 4D completo. Cada uno con su propio objetivo. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER FOTONA 4D EN RÓTERDAM
 
 - Fotona 4D € 370 Cuatro tratamientos láser en una sesión. Desde dentro, a través de la mejilla, hasta un peeling final. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER
 
@@ -41482,9 +41500,9 @@ En la consulta de la piel la terapeuta mira cuánto vuelve todavía tu piel a su
 
 ### /es/problemas-de-piel/keratosis-pilaris
 
-**Tabbladtitel:** Keratosis pilaris behandelen | Diba Clinics
+**Tabbladtitel:** Tratar la queratosis pilar | Diba Clinics
 
-**Google-omschrijving:** Keratosis pilaris behandelen met peelings en gerichte verzorging die de verhoorning rond het haarzakje oplost.
+**Google-omschrijving:** Tratar la queratosis pilar con peelings y cuidados dirigidos que disuelven la queratina acumulada alrededor del folículo.
 
 **BULTITOS ÁSPEROS EN LOS BRAZOS**
 
@@ -41598,15 +41616,15 @@ Para la mayoría de la gente el resultado más útil es que tiene un nombre, que
 
 > knop: RESERVA UNA CONSULTA
 
-Foto de arriba: Irja, CC BY-SA 2.0, via Wikimedia Commons.
+Foto de arriba: Irja, CC BY-SA 2.0, vía Wikimedia Commons.
 
 ---
 
 ### /es/problemas-de-piel/lunares
 
-**Tabbladtitel:** Moedervlekken weghalen | Diba Clinics
+**Tabbladtitel:** Quitar lunares | Diba Clinics
 
-**Google-omschrijving:** Een moedervlek die stoort kan weg. Wat er eerst gebeurt, waar we op letten en waarom een plekje dat verandert eerst langs een arts gaat.
+**Google-omschrijving:** Un lunar que molesta se puede quitar. Lo que pasa primero, en qué nos fijamos y por qué una mancha que cambia pasa primero por un médico.
 
 **LUNARES QUITADOS**
 
@@ -41628,15 +41646,15 @@ Coagular es retirar con calor, en una intervención corta por lesión. Conseguir
 
 Cinco letras que usan los dermatólogos, más una sexta que en la mayoría de las webs falta. Repásala antes de pedir cita. No da ningún veredicto y no puede descartar nada; te ayuda a decidir si primero tiene que mirarlo un médico.
 
-- A: ASYMMETRIE Dobla la lesión por la mitad mentalmente. ¿Encajan las dos mitades? Las dos mitades se parecen Una mitad es claramente distinta de la otra Un lunar tranquilo crece de forma uniforme desde un punto y por eso suele ser más o menos simétrico.
+- A: ASIMETRÍA Dobla la lesión por la mitad mentalmente. ¿Encajan las dos mitades? Las dos mitades se parecen Una mitad es claramente distinta de la otra Un lunar tranquilo crece de forma uniforme desde un punto y por eso suele ser más o menos simétrico.
 
-- B: BEGRENZING Mira el borde. ¿Es liso y claro, o irregular y difuso? Un borde liso y claro Irregular, anguloso o que se difumina en la piel La transición hacia la piel normal dice algo sobre cómo se comporta la lesión en sus bordes.
+- B: BORDE Mira el borde. ¿Es liso y claro, o irregular y difuso? Un borde liso y claro Irregular, anguloso o que se difumina en la piel La transición hacia la piel normal dice algo sobre cómo se comporta la lesión en sus bordes.
 
 - C: COLOR ¿La lesión tiene un solo color, o varios tonos mezclados? Más o menos el mismo color en todo Varios tonos, o negro, rojo o blanco dentro Tener colores distintos dentro de una misma lesión es uno de los motivos más conocidos para hacerla revisar.
 
-- D: DOORSNEDE ¿La lesión es más grande que la goma de un lápiz, unos seis milímetros? Menor de unos seis milímetros Mayor de unos seis milímetros El tamaño por sí solo dice poco. Cuenta sobre todo junto a los demás puntos, y una lesión pequeña que cambia importa más que una grande que lleva años igual.
+- D: DIÁMETRO ¿La lesión es más grande que la goma de un lápiz, unos seis milímetros? Menor de unos seis milímetros Mayor de unos seis milímetros El tamaño por sí solo dice poco. Cuenta sobre todo junto a los demás puntos, y una lesión pequeña que cambia importa más que una grande que lleva años igual.
 
-- E: EVOLUTIE ¿Ha cambiado algo en los últimos meses en la forma, el color, el tamaño o el tacto? Piensa también en picor, sangrado o una costra que no se va. Que yo sepa, no ha cambiado nada Sí, algo ha cambiado Este es el punto más importante de los cinco. El cambio pesa más que el aspecto de la lesión, incluso cuando los otros cuatro no te enseñan nada raro.
+- E: EVOLUCIÓN ¿Ha cambiado algo en los últimos meses en la forma, el color, el tamaño o el tacto? Piensa también en picor, sangrado o una costra que no se va. Que yo sepa, no ha cambiado nada Sí, algo ha cambiado Este es el punto más importante de los cinco. El cambio pesa más que el aspecto de la lesión, incluso cuando los otros cuatro no te enseñan nada raro.
 
 - EL PATITO FEO Pon esta lesión al lado de tus otros lunares. ¿Se parece al resto, o se sale? Se parece a mis otras lesiones Se aparta claramente del resto Los lunares de una misma persona suelen parecerse. Por eso uno que se sale claramente merece una revisión, aunque por sí solo no parezca nada especial.
 
@@ -41692,7 +41710,7 @@ En las otras páginas aquí van las cosas que no hacemos. Aquí van los tres pas
 
 Porque la gente nos pregunta esto durante un tratamiento, y porque estás tumbada en nuestra camilla con la piel a la vista. Queremos que sepas en qué fijarte y a dónde ir, aunque no seamos nosotros.
 
-¿Me podéis quitar un lunar?
+¿Pueden quitarme un lunar?
 
 No. Ni una lesión sospechosa ni una de la que simplemente quieras librarte. Eso va al médico de cabecera, que puede hacerlo o derivarte.
 
@@ -41724,9 +41742,9 @@ Si vienes por otra cosa y hay un lunar en la zona, lo tapamos y seguimos. Si vie
 
 ### /es/problemas-de-piel/manchas-de-la-edad
 
-**Tabbladtitel:** Ouderdomsvlekken behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Tratar las manchas de la edad en Róterdam | Diba Clinics
 
-**Google-omschrijving:** Ouderdomsvlekken en zonnevlekken weghalen met IPL of laser, meestal in een of twee sessies.
+**Google-omschrijving:** Quitar manchas de la edad y manchas solares con IPL o láser, normalmente en una o dos sesiones.
 
 **MANCHAS DE LA EDAD QUE TRATAMOS**
 
@@ -41838,11 +41856,11 @@ Cada eje se vuelve a medir en cada control, con la misma iluminación. Así, una
 
 **Lo que usamos para esto**
 
-- Peelings médicos € 140 De suave a fuerte. La concentración decide hasta dónde llega y cuánto se descama la piel. EN QUÉ CONSISTE CON EL LÍNEAS DE PEELING PEELING QUÍMICO EN ROTTERDAM
+- Peelings médicos € 140 De suave a fuerte. La concentración decide hasta dónde llega y cuánto se descama la piel. EN QUÉ CONSISTE CON EL LÍNEAS DE PEELING PEELING QUÍMICO EN RÓTERDAM
 
-- Nordlys IPL para la pigmentación € 75 Luz sobre manchas de pigmentación y daño solar. El pigmento sale primero a la superficie y después se difumina. PARA ESTE PROBLEMA CON EL NORDLYS TRATAMIENTO IPL EN ROTTERDAM
+- Nordlys IPL para la pigmentación € 75 Luz sobre manchas de pigmentación y daño solar. El pigmento sale primero a la superficie y después se difumina. PARA ESTE PROBLEMA CON EL NORDLYS TRATAMIENTO IPL EN RÓTERDAM
 
-- Cosmelan € 720 Programa de seis meses contra la hiperpigmentación, con una mascarilla en la clínica y productos en casa. EN QUÉ CONSISTE CON EL LÍNEAS DE PEELING COSMELAN Y DERMAMELAN EN ROTTERDAM
+- Cosmelan € 720 Programa de seis meses contra la hiperpigmentación, con una mascarilla en la clínica y productos en casa. EN QUÉ CONSISTE CON EL LÍNEAS DE PEELING COSMELAN Y DERMAMELAN EN RÓTERDAM
 
 **Preguntas frecuentes**
 
@@ -41876,9 +41894,9 @@ En la consulta de la piel valoramos las manchas y medimos, bajo luz UV, también
 
 ### /es/problemas-de-piel/manchas-de-pigmentacion
 
-**Tabbladtitel:** Pigmentvlekken behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Tratar manchas de pigmento en Róterdam | Diba Clinics
 
-**Google-omschrijving:** Pigmentvlekken behandelen met laser, IPL en peelings. Welke aanpak past, hangt af van het type vlek, je huidtype en het seizoen.
+**Google-omschrijving:** Tratar manchas de pigmento con láser, IPL y peelings. Qué enfoque encaja depende del tipo de mancha, tu fototipo y la estación.
 
 **MANCHAS DE PIGMENTACIÓN QUE TRATAMOS**
 
@@ -42026,15 +42044,15 @@ Cada eje se vuelve a medir en cada control, con la misma iluminación. Así, una
 
 **Lo que usamos para esto**
 
-- Peelings médicos € 140 De suave a fuerte. La concentración decide hasta dónde llega y cuánto se descama la piel. PARA ESTE PROBLEMA CON EL LÍNEAS DE PEELING PEELING QUÍMICO EN ROTTERDAM
+- Peelings médicos € 140 De suave a fuerte. La concentración decide hasta dónde llega y cuánto se descama la piel. PARA ESTE PROBLEMA CON EL LÍNEAS DE PEELING PEELING QUÍMICO EN RÓTERDAM
 
-- Microneedling con el SkinPen € 180 Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel. EN QUÉ CONSISTE CON EL SKINPEN CIT MICRONEEDLING EN ROTTERDAM
+- Microneedling con el SkinPen € 180 Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel. EN QUÉ CONSISTE CON EL SKINPEN CIT MICRONEEDLING EN RÓTERDAM
 
 - Dermapen 4 € 180 Microneedling con agujas vibrantes, que atraviesan la piel de forma uniforme. EN QUÉ CONSISTE CON EL DERMAPEN 4
 
-- Nordlys IPL para la pigmentación € 75 Luz sobre manchas de pigmentación y daño solar. El pigmento sale primero a la superficie y después se difumina. EN QUÉ CONSISTE CON EL NORDLYS TRATAMIENTO IPL EN ROTTERDAM
+- Nordlys IPL para la pigmentación € 75 Luz sobre manchas de pigmentación y daño solar. El pigmento sale primero a la superficie y después se difumina. EN QUÉ CONSISTE CON EL NORDLYS TRATAMIENTO IPL EN RÓTERDAM
 
-- Cosmelan € 720 Programa de seis meses contra la hiperpigmentación, con una mascarilla en la clínica y productos en casa. EN QUÉ CONSISTE CON EL LÍNEAS DE PEELING COSMELAN Y DERMAMELAN EN ROTTERDAM
+- Cosmelan € 720 Programa de seis meses contra la hiperpigmentación, con una mascarilla en la clínica y productos en casa. EN QUÉ CONSISTE CON EL LÍNEAS DE PEELING COSMELAN Y DERMAMELAN EN RÓTERDAM
 
 - Dermamelan € 920 El enfoque más intensivo para la pigmentación, normalmente en el melasma. Seis meses, con una rutina estricta en casa. EN QUÉ CONSISTE CON EL LÍNEAS DE PEELING
 
@@ -42074,9 +42092,9 @@ El análisis de piel se puede hacer todo el año. Así tenemos un punto de parti
 
 ### /es/problemas-de-piel/melasma
 
-**Tabbladtitel:** Melasma behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Tratar el melasma en Róterdam | Diba Clinics
 
-**Google-omschrijving:** Melasma behandelen met peelings, verzorging en zonbescherming. Hoe diep het pigment zit bepaalt wat mogelijk is, en dat zien we onder UV-scan beginnen.
+**Google-omschrijving:** Tratar el melasma con peelings, cuidados y protección solar. La profundidad del pigmento decide lo que es posible, y eso lo vemos empezar bajo el escaneo UV.
 
 **MELASMA QUE TRATAMOS**
 
@@ -42182,9 +42200,9 @@ Cada eje se vuelve a medir en cada control, con la misma iluminación. Así, una
 
 **Lo que usamos para esto**
 
-- Skin boosters y mesoterapia € 175 Principios activos puestos dentro de la piel en lugar de encima, a una profundidad fija por pinchazo. EN QUÉ CONSISTE CON EL INYECTOR INTRADÉRMICO U225 SKIN BOOSTERS EN ROTTERDAM
+- Skin boosters y mesoterapia € 175 Principios activos puestos dentro de la piel en lugar de encima, a una profundidad fija por pinchazo. EN QUÉ CONSISTE CON EL INYECTOR INTRADÉRMICO U225 SKIN BOOSTERS EN RÓTERDAM
 
-- Dermamelan € 920 El enfoque más intensivo para la pigmentación, normalmente en el melasma. Seis meses, con una rutina estricta en casa. EN QUÉ CONSISTE CON EL LÍNEAS DE PEELING COSMELAN Y DERMAMELAN EN ROTTERDAM
+- Dermamelan € 920 El enfoque más intensivo para la pigmentación, normalmente en el melasma. Seis meses, con una rutina estricta en casa. EN QUÉ CONSISTE CON EL LÍNEAS DE PEELING COSMELAN Y DERMAMELAN EN RÓTERDAM
 
 **Preguntas frecuentes**
 
@@ -42220,9 +42238,9 @@ Estimamos la profundidad y registramos tus impulsores. Si está profundo, te lo 
 
 ### /es/problemas-de-piel/milium
 
-**Tabbladtitel:** Gerstekorrels en milia verwijderen | Diba Clinics
+**Tabbladtitel:** Quitar milia y orzuelos | Diba Clinics
 
-**Google-omschrijving:** Milia en gerstekorrels laten weghalen. Een hard wit bolletje is in seconden weg; rood en pijnlijk hoort bij je huisarts.
+**Google-omschrijving:** Que te quiten milia y orzuelos. Una bolita dura y blanca desaparece en segundos; si está rojo y duele, corresponde a tu médico de cabecera.
 
 **MILIUM Y BULTITOS BLANCOS**
 
@@ -42336,9 +42354,9 @@ Con los milia la cita es corta y única. Si resulta ser otra cosa, lo sabes ense
 
 ### /es/problemas-de-piel/ojeras
 
-**Tabbladtitel:** Donkere kringen: welk type heb jij? | Diba Clinics
+**Tabbladtitel:** Ojeras: ¿qué tipo tienes? | Diba Clinics
 
-**Google-omschrijving:** Donkere kringen behandelen: pigment, doorschijnende vaatjes of schaduw. Hoe we vaststellen om welke van de drie het gaat.
+**Google-omschrijving:** Tratar las ojeras: pigmento, vasos que se transparentan o sombra. Cómo determinamos de cuál de las tres se trata.
 
 **OJERAS DEBAJO DE LOS OJOS**
 
@@ -42424,7 +42442,7 @@ Cada eje se vuelve a medir en cada control, con la misma iluminación. Así, una
 
 **Lo que usamos para esto**
 
-- Skin boosters y mesoterapia € 175 Principios activos puestos dentro de la piel en lugar de encima, a una profundidad fija por pinchazo. EN QUÉ CONSISTE CON EL INYECTOR INTRADÉRMICO U225 SKIN BOOSTERS EN ROTTERDAM
+- Skin boosters y mesoterapia € 175 Principios activos puestos dentro de la piel en lugar de encima, a una profundidad fija por pinchazo. EN QUÉ CONSISTE CON EL INYECTOR INTRADÉRMICO U225 SKIN BOOSTERS EN RÓTERDAM
 
 - RRS Eyes € 130 Principios activos alrededor del contorno de ojos. Para ojeras, líneas finas y una mirada cansada. EN QUÉ CONSISTE
 
@@ -42464,9 +42482,9 @@ Miramos con una iluminación fija cuál de los tres es. Si resulta ser sombra, t
 
 ### /es/problemas-de-piel/pelos-encarnados
 
-**Tabbladtitel:** Ingegroeide haren behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Tratar los pelos encarnados en Róterdam | Diba Clinics
 
-**Google-omschrijving:** Ingegroeide haren behandelen met laserontharing. Zit er een haar in het bultje, dan pakt ontharen het bij de wortel aan.
+**Google-omschrijving:** Tratar los pelos encarnados con depilación láser. Si hay un pelo en el bultito, la depilación lo trata en la raíz.
 
 **PELOS ENCARNADOS DESPUÉS DE AFEITAR O DEPILAR CON CERA**
 
@@ -42554,7 +42572,7 @@ Afeitarse al ras, usar pinzas y exfoliar mantienen el problema. Dejar de hacerlo
 
 **Lo que usamos para esto**
 
-- Electrólisis € 60 Pelo a pelo, también los grises y los rubios. Para lo que el láser no ve. El tiempo de tratamiento lo cobramos por media hora. EN QUÉ CONSISTE ELECTRÓLISIS EN ROTTERDAM
+- Electrólisis € 60 Pelo a pelo, también los grises y los rubios. Para lo que el láser no ve. El tiempo de tratamiento lo cobramos por media hora. EN QUÉ CONSISTE ELECTRÓLISIS EN RÓTERDAM
 
 - Depilación láser € 20 Desactivar la raíz del pelo. Por zona o como paquete, para mujeres y hombres. EN QUÉ CONSISTE CON EL GENTLEMAX PRO
 
@@ -42562,11 +42580,13 @@ Afeitarse al ras, usar pinzas y exfoliar mantienen el problema. Dejar de hacerlo
 
 Estas vienen de Salonized y no las hemos elegido nosotros por su contenido. Hablan de depilación láser, porque eso es lo que detiene los pelos encarnados.
 
-- “Ik heb een hele fijne ervaring gehad bij Demi. Goed geïnformeerd over hoe het proces (laseren) in zijn werking gaat. Ik ben gerustgesteld en goed geholpen. Jullie hebben er een nieuwe klant bij!” Andrijana Depilación láser con Demi 4 MAANDEN GELEDEN
+Reseñas traducidas del neerlandés.
 
-- “Inmiddels 3 keer langs geweest voor de diodelaser en ik zie echt 80% verschil! Ook de littekens en vlekjes van mijn huid zijn zwaar verbeterd dankzij de dermapen. Sowieso forever vaste klant!!” Sara Depilación láser MEER DAN 7 JAAR GELEDEN
+- “He tenido una experiencia muy agradable con Demi. Me informó bien de cómo funciona el proceso (el láser). Me tranquilizó y me atendió bien. ¡Ya me tienen de cliente!” Andrijana Depilación láser con Demi HACE 4 MESES
 
-- “Ik vond de afspraak super! Alles is goed verlopen en bijna uitbehandeld met laseren! Demi is echt een zeer professionele huidspecialist zo dankbaar met haar! Voert haar werk heel nauwkeurig uit.” Monique Depilación láser MEER DAN 3 JAAR GELEDEN
+- “Ya he venido 3 veces para el láser de diodo ¡y de verdad veo un 80 % de diferencia! Las cicatrices y manchitas de mi piel también han mejorado muchísimo gracias al Dermapen. ¡¡Sin duda, cliente para siempre!!” Sara Depilación láser HACE MÁS DE 7 AÑOS
+
+- “¡La cita me pareció genial! Todo fue bien ¡y casi he terminado con el láser! Demi es de verdad una especialista de la piel muy profesional, ¡qué agradecimiento le tengo! Hace su trabajo con mucha precisión.” Monique Depilación láser HACE MÁS DE 3 AÑOS
 
 **Preguntas frecuentes**
 
@@ -42596,9 +42616,9 @@ En la primera conversación determinamos si hay pelos de por medio y si tu fotot
 
 ### /es/problemas-de-piel/piel-apagada
 
-**Tabbladtitel:** Doffe huid: waar komt die grauwe tint vandaan | Diba Clinics
+**Tabbladtitel:** Piel apagada: de dónde viene ese tono gris | Diba Clinics
 
-**Google-omschrijving:** Een doffe huid behandelen met peelings, HydraFacial en microneedling. Waar dofheid vandaan komt en wat eraan te doen is.
+**Google-omschrijving:** Tratar una piel apagada con peelings, HydraFacial y microneedling. De dónde viene la falta de luminosidad y qué se puede hacer.
 
 **UNA PIEL APAGADA Y SIN BRILLO**
 
@@ -42710,21 +42730,21 @@ Cada eje se vuelve a medir en cada control, con la misma iluminación. Así, una
 
 **Lo que usamos para esto**
 
-- HydraFacial € 170 Limpiar, exfoliar e hidratar. En una sola pasada, visible al momento y sin tiempo de recuperación. EN QUÉ CONSISTE CON EL HYDRAFACIAL SYNDEO HYDRAFACIAL EN ROTTERDAM
+- HydraFacial € 170 Limpiar, exfoliar e hidratar. En una sola pasada, visible al momento y sin tiempo de recuperación. EN QUÉ CONSISTE CON EL HYDRAFACIAL SYNDEO HYDRAFACIAL EN RÓTERDAM
 
-- OxyGeneo glow € 150 Exfoliar y llevar oxígeno a la piel, en un solo tratamiento. EN QUÉ CONSISTE CON EL OXYGENEO OXYGENEO EN ROTTERDAM
+- OxyGeneo glow € 150 Exfoliar y llevar oxígeno a la piel, en un solo tratamiento. EN QUÉ CONSISTE CON EL OXYGENEO OXYGENEO EN RÓTERDAM
 
-- Dermaplaning € 150 Células muertas y vello fino fuera con una cuchilla. Funciona sin ácidos, así que también sirve para una piel sensible. EN QUÉ CONSISTE CON EL DERMAPLANE PRO DERMAPLANING EN ROTTERDAM
+- Dermaplaning € 150 Células muertas y vello fino fuera con una cuchilla. Funciona sin ácidos, así que también sirve para una piel sensible. EN QUÉ CONSISTE CON EL DERMAPLANE PRO DERMAPLANING EN RÓTERDAM
 
-- Peelings médicos € 140 De suave a fuerte. La concentración decide hasta dónde llega y cuánto se descama la piel. EN QUÉ CONSISTE CON EL LÍNEAS DE PEELING PEELING QUÍMICO EN ROTTERDAM
+- Peelings médicos € 140 De suave a fuerte. La concentración decide hasta dónde llega y cuánto se descama la piel. EN QUÉ CONSISTE CON EL LÍNEAS DE PEELING PEELING QUÍMICO EN RÓTERDAM
 
 - Peeling de hierbas € 150 Un peeling de hierbas molidas muy finas, sin ácido. Calma la inflamación y actúa contra las bacterias. EN QUÉ CONSISTE
 
-- Microneedling con el SkinPen € 180 Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel. EN QUÉ CONSISTE CON EL SKINPEN CIT MICRONEEDLING EN ROTTERDAM
+- Microneedling con el SkinPen € 180 Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel. EN QUÉ CONSISTE CON EL SKINPEN CIT MICRONEEDLING EN RÓTERDAM
 
 - Dermapen 4 € 180 Microneedling con agujas vibrantes, que atraviesan la piel de forma uniforme. EN QUÉ CONSISTE CON EL DERMAPEN 4
 
-- Peeling láser SupErficial A consultar Un peeling láser superficial para una piel más lisa y con más brillo. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER FOTONA 4D EN ROTTERDAM
+- Peeling láser SupErficial A consultar Un peeling láser superficial para una piel más lisa y con más brillo. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER FOTONA 4D EN RÓTERDAM
 
 - Fotona Resurfacing A consultar Renovación de la piel con láser, para poros, textura y una piel más lisa. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER
 
@@ -42760,9 +42780,9 @@ En la consulta de la piel averiguamos cuál de las cuatro es la tuya. Si resulta
 
 ### /es/problemas-de-piel/piel-con-imperfecciones
 
-**Tabbladtitel:** Onzuivere huid en mee-eters | Diba Clinics
+**Tabbladtitel:** Piel con impurezas y puntos negros | Diba Clinics
 
-**Google-omschrijving:** Mee-eters en verstopte poriën behandelen met HydraFacial en peelings. Het verschil tussen normale porie-inhoud en echte mee-eters.
+**Google-omschrijving:** Tratar puntos negros y poros obstruidos con HydraFacial y peelings. La diferencia entre el contenido normal de un poro y verdaderos puntos negros.
 
 **PUNTOS NEGROS Y UNA PIEL CON IMPERFECCIONES**
 
@@ -42848,9 +42868,9 @@ Aquí lo que se gana está más veces en lo que dejas de hacer que en lo que añ
 
 **Lo que usamos para esto**
 
-- HydraFacial € 170 Limpiar, exfoliar e hidratar. En una sola pasada, visible al momento y sin tiempo de recuperación. EN QUÉ CONSISTE CON EL HYDRAFACIAL SYNDEO HYDRAFACIAL EN ROTTERDAM
+- HydraFacial € 170 Limpiar, exfoliar e hidratar. En una sola pasada, visible al momento y sin tiempo de recuperación. EN QUÉ CONSISTE CON EL HYDRAFACIAL SYNDEO HYDRAFACIAL EN RÓTERDAM
 
-- Peelings médicos € 140 De suave a fuerte. La concentración decide hasta dónde llega y cuánto se descama la piel. EN QUÉ CONSISTE CON EL LÍNEAS DE PEELING PEELING QUÍMICO EN ROTTERDAM
+- Peelings médicos € 140 De suave a fuerte. La concentración decide hasta dónde llega y cuánto se descama la piel. EN QUÉ CONSISTE CON EL LÍNEAS DE PEELING PEELING QUÍMICO EN RÓTERDAM
 
 - Peeling de hierbas € 150 Un peeling de hierbas molidas muy finas, sin ácido. Calma la inflamación y actúa contra las bacterias. EN QUÉ CONSISTE
 
@@ -42864,11 +42884,13 @@ Aquí lo que se gana está más veces en lo que dejas de hacer que en lo que añ
 
 Estas vienen de Salonized y no las hemos elegido nosotros por su contenido: son las reseñas en las que aparecen imperfecciones, granos o acné.
 
-- “De toppers van Diba zijn super vriendelijk! Ik laat mijn huid nooit ergens anders dan Diba behandelen, ben van mijn langdurige acne af.” Busra Visita a Diba Clinics MEER DAN 4 JAAR GELEDEN
+Reseñas traducidas del neerlandés.
 
-- “Ik vind dat de therapeut de tijd had genomen om de onzuiverheden te verwijderen. En ze betrok mij bij het proces van wat de stappen waren.” Malika Visita a Diba Clinics ONGEVEER 6 JAAR GELEDEN
+- “¡Los fenómenos de Diba son superamables! No dejo que nadie más que Diba me trate la piel, me he librado de mi acné de años.” Busra Visita a Diba Clinics HACE MÁS DE 4 AÑOS
 
-- “Had gisteren een dermapen en carbonlaser afspraak. Mijn huid voelt meteen al glad aan en de puistjes verminderen nu al. Daarnaast ook hele lieve dames!” Jenna Microneedling ONGEVEER 7 JAAR GELEDEN
+- “Creo que la terapeuta se tomó el tiempo de quitar las imperfecciones. Y me fue haciendo partícipe de cuáles eran los pasos.” Malika Visita a Diba Clinics HACE APROXIMADAMENTE 6 AÑOS
+
+- “Ayer tuve una cita de Dermapen y láser de carbono. Mi piel ya se nota lisa y los granos ya están disminuyendo. ¡Además, unas señoras encantadoras!” Jenna Microneedling HACE APROXIMADAMENTE 7 AÑOS
 
 **Preguntas frecuentes**
 
@@ -42900,9 +42922,9 @@ En la consulta de la piel miramos contigo con lupa. Si resulta que es en gran pa
 
 ### /es/problemas-de-piel/piel-seca
 
-**Tabbladtitel:** Droge of vochtarme huid: het verschil | Diba Clinics
+**Tabbladtitel:** Piel seca o deshidratada: la diferencia | Diba Clinics
 
-**Google-omschrijving:** Een droge of vochtarme huid behandelen met hydraterende behandelingen. Het verschil tussen te weinig vet en te weinig water.
+**Google-omschrijving:** Tratar una piel seca o deshidratada con tratamientos hidratantes. La diferencia entre demasiado poca grasa y demasiado poca agua.
 
 **UNA PIEL SECA O DESHIDRATADA**
 
@@ -43012,13 +43034,13 @@ Cada eje se vuelve a medir en cada control, con la misma iluminación. Así, una
 
 **Lo que usamos para esto**
 
-- HydraFacial € 170 Limpiar, exfoliar e hidratar. En una sola pasada, visible al momento y sin tiempo de recuperación. EN QUÉ CONSISTE CON EL HYDRAFACIAL SYNDEO HYDRAFACIAL EN ROTTERDAM
+- HydraFacial € 170 Limpiar, exfoliar e hidratar. En una sola pasada, visible al momento y sin tiempo de recuperación. EN QUÉ CONSISTE CON EL HYDRAFACIAL SYNDEO HYDRAFACIAL EN RÓTERDAM
 
-- OxyGeneo glow € 150 Exfoliar y llevar oxígeno a la piel, en un solo tratamiento. EN QUÉ CONSISTE CON EL OXYGENEO OXYGENEO EN ROTTERDAM
+- OxyGeneo glow € 150 Exfoliar y llevar oxígeno a la piel, en un solo tratamiento. EN QUÉ CONSISTE CON EL OXYGENEO OXYGENEO EN RÓTERDAM
 
-- Dermaplaning € 150 Células muertas y vello fino fuera con una cuchilla. Funciona sin ácidos, así que también sirve para una piel sensible. EN QUÉ CONSISTE CON EL DERMAPLANE PRO DERMAPLANING EN ROTTERDAM
+- Dermaplaning € 150 Células muertas y vello fino fuera con una cuchilla. Funciona sin ácidos, así que también sirve para una piel sensible. EN QUÉ CONSISTE CON EL DERMAPLANE PRO DERMAPLANING EN RÓTERDAM
 
-- RRS Hyalift € 175 Llevar ácido hialurónico y vitaminas dentro de la piel. Para firmeza e hidratación, no para volumen. EN QUÉ CONSISTE SKIN BOOSTERS EN ROTTERDAM
+- RRS Hyalift € 175 Llevar ácido hialurónico y vitaminas dentro de la piel. Para firmeza e hidratación, no para volumen. EN QUÉ CONSISTE SKIN BOOSTERS EN RÓTERDAM
 
 **Preguntas frecuentes**
 
@@ -43050,9 +43072,9 @@ Medimos la grasa y el agua por separado, y te decimos qué eje se mueve en tu ca
 
 ### /es/problemas-de-piel/piel-sensible
 
-**Tabbladtitel:** Gevoelige huid: type of gevolg? | Diba Clinics
+**Tabbladtitel:** Piel sensible: ¿tipo o consecuencia? | Diba Clinics
 
-**Google-omschrijving:** Een gevoelige huid tot rust brengen met milde behandelingen en een verzorgingsschema dat je huid aankan.
+**Google-omschrijving:** Calmar una piel sensible con tratamientos suaves y un esquema de cuidados que tu piel aguante.
 
 **UNA PIEL QUE REACCIONA ENSEGUIDA**
 
@@ -43198,9 +43220,9 @@ Repasamos tu rutina, medimos cómo está tu barrera y decimos qué puede salir. 
 
 ### /es/problemas-de-piel/poros
 
-**Tabbladtitel:** Poriën: wat er wel en niet aan te doen is | Diba Clinics
+**Tabbladtitel:** Poros: qué se puede hacer y qué no | Diba Clinics
 
-**Google-omschrijving:** Grote poriën minder zichtbaar maken met peelings, microneedling en HydraFacial. Wat de huid eromheen bepaalt.
+**Google-omschrijving:** Hacer los poros grandes menos visibles con peelings, microneedling y HydraFacial. Lo que decide la piel de alrededor.
 
 **POROS DILATADOS EN TU CARA**
 
@@ -43316,17 +43338,17 @@ Cada eje se vuelve a medir en cada control, con la misma iluminación. Así, una
 
 **Lo que usamos para esto**
 
-- HydraFacial € 170 Limpiar, exfoliar e hidratar. En una sola pasada, visible al momento y sin tiempo de recuperación. EN QUÉ CONSISTE CON EL HYDRAFACIAL SYNDEO HYDRAFACIAL EN ROTTERDAM
+- HydraFacial € 170 Limpiar, exfoliar e hidratar. En una sola pasada, visible al momento y sin tiempo de recuperación. EN QUÉ CONSISTE CON EL HYDRAFACIAL SYNDEO HYDRAFACIAL EN RÓTERDAM
 
-- OxyGeneo glow € 150 Exfoliar y llevar oxígeno a la piel, en un solo tratamiento. EN QUÉ CONSISTE CON EL OXYGENEO OXYGENEO EN ROTTERDAM
+- OxyGeneo glow € 150 Exfoliar y llevar oxígeno a la piel, en un solo tratamiento. EN QUÉ CONSISTE CON EL OXYGENEO OXYGENEO EN RÓTERDAM
 
-- Peelings médicos € 140 De suave a fuerte. La concentración decide hasta dónde llega y cuánto se descama la piel. EN QUÉ CONSISTE CON EL LÍNEAS DE PEELING PEELING QUÍMICO EN ROTTERDAM
+- Peelings médicos € 140 De suave a fuerte. La concentración decide hasta dónde llega y cuánto se descama la piel. EN QUÉ CONSISTE CON EL LÍNEAS DE PEELING PEELING QUÍMICO EN RÓTERDAM
 
-- Microneedling con el SkinPen € 180 Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel. PARA ESTE PROBLEMA CON EL SKINPEN CIT MICRONEEDLING EN ROTTERDAM
+- Microneedling con el SkinPen € 180 Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel. PARA ESTE PROBLEMA CON EL SKINPEN CIT MICRONEEDLING EN RÓTERDAM
 
 - Dermapen 4 € 180 Microneedling con agujas vibrantes, que atraviesan la piel de forma uniforme. EN QUÉ CONSISTE CON EL DERMAPEN 4
 
-- FRAC3 A consultar Láser fraccionado que llega más profundo, para la textura, los poros y las irregularidades. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER FOTONA 4D EN ROTTERDAM
+- FRAC3 A consultar Láser fraccionado que llega más profundo, para la textura, los poros y las irregularidades. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER FOTONA 4D EN RÓTERDAM
 
 - Peeling láser SupErficial A consultar Un peeling láser superficial para una piel más lisa y con más brillo. EN QUÉ CONSISTE CON EL FOTONA TIMEWALKER
 
@@ -43368,9 +43390,9 @@ Con luz fija miramos qué estás mirando, si son poros o es otra cosa, y qué se
 
 ### /es/problemas-de-piel/psoriasis
 
-**Tabbladtitel:** Psoriasis: meer dan huid | Diba Clinics
+**Tabbladtitel:** Psoriasis: más que piel | Diba Clinics
 
-**Google-omschrijving:** Psoriasis komt uit je afweersysteem. Wat je huisarts doet, en wat wij daarnaast aan je huidbarrière kunnen doen.
+**Google-omschrijving:** La psoriasis viene de tu sistema inmunitario. Lo que hace tu médico de cabecera, y lo que nosotros podemos hacer además por tu barrera cutánea.
 
 **LA PSORIASIS Y TU PIEL**
 
@@ -43444,7 +43466,7 @@ Haz que valoren a tiempo las molestias articulares. Retrasarlo ahí cuesta un da
 
 No. Es una afección de tu propio sistema inmunitario y no se transmite, ni siquiera por contacto.
 
-¿Qué podéis hacer con la psoriasis?
+¿Qué puede hacer la clínica con la psoriasis?
 
 Con la psoriasis podemos valorar la piel y asesorar sobre cuidados de apoyo. Para el diagnóstico y el tratamiento médico colaboramos con, o derivamos a, tu médico de cabecera o tu dermatólogo cuando hace falta. No tratamos las zonas de psoriasis activa con tratamientos que dañen la piel o exfolien de forma intensa.
 
@@ -43456,7 +43478,7 @@ Mis articulaciones están rígidas por la mañana. ¿Entra en esto?
 
 Puede ser, y es la parte con la que no debes esperar. Una rigidez matutina que dura más de media hora debe comentarse, aunque tus zonas de piel sean pequeñas.
 
-¿Puedo ir a vosotros por otra cosa?
+¿Puedo acudir a la clínica por otra cosa?
 
 Si tu piel está tranquila en ese momento y se trata de otro tema, lo miramos contigo. No tratamos por encima de las zonas y lo decimos cuando no nos parece sensato.
 
@@ -43474,9 +43496,9 @@ La medicación va por tu médico de cabecera o tu dermatólogo. Nosotros miramos
 
 ### /es/problemas-de-piel/queloides
 
-**Tabbladtitel:** Keloid en verdikte littekens in Rotterdam | Diba Clinics
+**Tabbladtitel:** Queloides y cicatrices engrosadas en Róterdam | Diba Clinics
 
-**Google-omschrijving:** Het verschil tussen een keloid en een verdikt litteken, wat wij behandelen en wat via je arts loopt.
+**Google-omschrijving:** La diferencia entre un queloide y una cicatriz engrosada, lo que tratamos nosotros y lo que va a través de tu médico.
 
 **QUELOIDES Y CICATRICES ENGROSADAS**
 
@@ -43566,9 +43588,9 @@ La terapeuta determina si se trata de una cicatriz engrosada o de un queloide, y
 
 ### /es/problemas-de-piel/rosacea
 
-**Tabbladtitel:** Rosacea behandelen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Tratar la rosácea en Róterdam | Diba Clinics
 
-**Google-omschrijving:** Rosacea is te sturen: minder opvlammingen en een rustiger basiskleur. Welke triggers je zelf in de hand hebt en wat een behandeling kan toevoegen.
+**Google-omschrijving:** La rosácea se puede controlar: menos brotes y un color de base más tranquilo. Qué desencadenantes tienes en tu mano y lo que un tratamiento puede añadir.
 
 **ROSÁCEA: UNA PIEL QUE SE ENCIENDE UNA Y OTRA VEZ**
 
@@ -43718,7 +43740,7 @@ Cada eje se vuelve a medir en cada control, con la misma iluminación. Así, una
 
 **Lo que usamos para esto**
 
-- Nordlys IPL para rojeces y vasos € 75 Luz sobre vasos visibles, rosácea y rojez persistente. El vaso se oscurece y luego desaparece. PARA ESTE PROBLEMA CON EL NORDLYS TRATAMIENTO IPL EN ROTTERDAM
+- Nordlys IPL para rojeces y vasos € 75 Luz sobre vasos visibles, rosácea y rojez persistente. El vaso se oscurece y luego desaparece. PARA ESTE PROBLEMA CON EL NORDLYS TRATAMIENTO IPL EN RÓTERDAM
 
 - Terapia LED € 30 Luz que calma la piel. En varias longitudes de onda, sin agujas ni ácidos. EN QUÉ CONSISTE CON EL PRECISION PHOTONIC SYSTEM
 
@@ -43764,7 +43786,7 @@ Durante la primera consulta medimos tu rojez, repasamos tus desencadenantes y sa
 
 **Tabbladtitel:** Reembolso | Diba Clinics
 
-**Google-omschrijving:** Is er een medische reden voor je klacht, dan is er een route naar vergoeding. Drie vragen op volgorde, en bij elke vraag waar je aan toe bent.
+**Google-omschrijving:** Si hay una razón médica para tu problema, hay una vía hacia el reembolso. Tres preguntas en orden, y en cada una a qué atenerte.
 
 **REEMBOLSO POR TU SEGURO MÉDICO**
 
@@ -43858,9 +43880,9 @@ La gente aplaza el tratamiento por algo que no es cierto. Por eso ese está arri
 
 ### /es/reviews
 
-**Tabbladtitel:** Ervaringen van onze klanten | Diba Clinics
+**Tabbladtitel:** Experiencias de nuestros clientes | Diba Clinics
 
-**Google-omschrijving:** 3.893 reviews op Salonized, gemiddeld een 5,0. Wat dat wel zegt en wat niet, met de quotes zelf erbij.
+**Google-omschrijving:** 3.893 reseñas en Salonized, con una media de 5,0. Lo que eso dice y lo que no, con las propias citas al lado.
 
 **LO QUE LOS CLIENTES ESCRIBEN DE NOSOTROS**
 
@@ -43914,285 +43936,287 @@ Ordenar por nota no tiene sentido cuando casi todo es un cinco, y poner nosotros
 
 - CORTO Y CLARO 249
 
-2.472 reseñas met tekst, in de volgorde van Salonized: nieuwste eerst. Pagina 1 de 52.
+2.472 reseñas con texto, en el orden de Salonized: las más nuevas primero. Página 1 de 52.
 
-- Ik voelde me heel erg gehoord, begrepen en werd op mijn gemak gesteld. Ik kijk uit naar de behandelingen en heb alvast productadvies en samples ontvangen om thuis mee aan de slag te gaan! SUHEDA ONGEVEER 12 UUR GELEDEN
+Reseñas traducidas del neerlandés.
 
-- Zoals altijd goed geholpen voor de laser, deze keer door Grisell! MANISHA 9 DAGEN GELEDEN
+- Sentí que me escuchaban y me entendían de verdad, y me hicieron sentir a gusto. Tengo ganas de los tratamientos ¡y ya he recibido consejo de productos y muestras para empezar en casa! SUHEDA HACE APROXIMADAMENTE 12 HORAS
 
-- Heel fijn geholpen vandaag. ANGELA 10 DAGEN GELEDEN
+- ¡Como siempre, me atendieron bien con el láser, esta vez Grisell! MANISHA HACE 9 DÍAS
 
-- Heerlijke behandeling bij Demi gehad. Altijd leuk om weer even bij te kletsen en hoe deskundig Demi met mijn huid omgaat. MERVE 16 DAGEN GELEDEN
+- Hoy me atendieron muy bien. ANGELA HACE 10 DÍAS
 
-- Super lieve behandelaar. Ze was heel lief en rustig en heeft alles duidelijk uitgelegd. Tot snel weer :). LIESBETH 23 DAGEN GELEDEN
+- Un tratamiento delicioso con Demi. Siempre es un placer ponernos al día y ver con qué pericia trata Demi mi piel. MERVE HACE 16 DÍAS
 
-- Geweldige service en een uitstekende ervaring! Na mijn derde full body treatment ben ik nog steeds ontzettend tevreden. Andres is zeer professioneel, vriendelijk en vakkundig. Ik kan deze behandeling van harte aanbevelen aan iedereen die op zoek is naar kwaliteit en een prettige beleving! KARIM 23 DAGEN GELEDEN
+- Una terapeuta superamable. Fue muy cariñosa y tranquila y me explicó todo con claridad. Hasta pronto :). LIESBETH HACE 23 DÍAS
 
-- Ik word altijd super fijn geholpen door Iris maar het zijn allemaal toppers! Ze hebben veel kennis en zijn op de hoogte van de nieuwste ontwikkelingen. Ik kom er nu al jaren en ga altijd zeer tevreden weg! MAAIKE ONGEVEER EEN MAAND GELEDEN
+- ¡Un servicio genial y una experiencia excelente! Después de mi tercer full body treatment sigo muy conforme. Andres es muy profesional, amable y experto. ¡Puedo recomendar este tratamiento de todo corazón a cualquiera que busque calidad y una experiencia agradable! KARIM HACE 23 DÍAS
 
-- Hele fijne gezichtsbehandeling gehad bij Demi! Erg deskundig en vriendelijk. MELISA ONGEVEER EEN MAAND GELEDEN
+- Iris siempre me atiende genial, ¡pero son todos unos fenómenos! Tienen muchos conocimientos y están al día de las novedades. Llevo años viniendo ¡y siempre me voy muy a gusto! MAAIKE HACE APROXIMADAMENTE UN MES
 
-- Ik heb een skin behandeling gehad, en de dame heeft me zo goed geholpen! ze verteld alles in stappen uit wat ze deed, en omdat ik een zeer gevoelige huid heb, was ze extra voorzichtig! Helemaal tevreden! LOUBNA ONGEVEER EEN MAAND GELEDEN
+- ¡Un tratamiento facial muy agradable con Demi! Muy experta y amable. MELISA HACE APROXIMADAMENTE UN MES
 
-- Fijn geholpen en er werd tijd genomen. DIYA ONGEVEER 2 MAANDEN GELEDEN
+- Me hice un tratamiento de piel, ¡y la señora me atendió muy bien! Me fue explicando paso a paso todo lo que hacía, y como tengo una piel muy sensible, ¡fue especialmente cuidadosa! ¡Totalmente conforme! LOUBNA HACE APROXIMADAMENTE UN MES
 
-- Echt een goede, professionele kliniek. ROYA ONGEVEER 2 MAANDEN GELEDEN
+- Me atendieron bien y se tomaron su tiempo. DIYA HACE APROXIMADAMENTE 2 MESES
 
-- Ik heb een behandeling gehad van Andres Een aardig man die zijn werk met liefde doet en goed doet. Tussendoor ook de klant op zijn gemak laat voelen door te praten en te luisteren en vragen of alles goed gaat. Good job!! SORBIR ONGEVEER 2 MAANDEN GELEDEN
+- Una clínica realmente buena y profesional. ROYA HACE APROXIMADAMENTE 2 MESES
 
-- Ik ben nu 2 keer bij Diba geweest en beide keren zeer goed geholpen. Ze nemen de tijd voor je, leggen alles goed en je kan alle vragen stellen die je hebt. Ik kom zeker terug bij Diba! MEIKE ONGEVEER 2 MAANDEN GELEDEN
+- Me hice un tratamiento con Andres. Un hombre amable que hace su trabajo con cariño y lo hace bien. Entre medias también hace que el cliente se sienta a gusto hablando, escuchando y preguntando si todo va bien. Good job!! SORBIR HACE APROXIMADAMENTE 2 MESES
 
-- Uitgebreide en eerlijke informatie gehad - vriendelijke medewerkers. RIA 2 MAANDEN GELEDEN
+- Ya he ido 2 veces a Diba y las dos veces me atendieron muy bien. Se toman su tiempo contigo, te explican todo bien y puedes hacer todas las preguntas que tengas. ¡Seguro que vuelvo a Diba! MEIKE HACE APROXIMADAMENTE 2 MESES
 
-- Zoals altijd super behandeld!! KAJIN 2 MAANDEN GELEDEN
+- Información completa y honesta; personal amable. RIA HACE 2 MESES
 
-- Na een lange tijd heb ik weer een behandeling gehad bij Rojda. Het was weer een fijne ervaring en we hebben gezellig gekletst. Samen met Rojda hebben we gekeken welke behandeling het beste bij mij past. Ik heb genoten van een heerlijke Hydrafacial in combinatie met een peeling. Ik kan er weer helemaal tegenaan Dankjewel, lieve Rojda! YASEMIN 2 MAANDEN GELEDEN
+- ¡¡Como siempre, un trato genial!! KAJIN HACE 2 MESES
 
-- Mijn eerste behandeling na 3 jaar en ben er super tevreden over! ILHAM 2 MAANDEN GELEDEN
+- Después de mucho tiempo volví a hacerme un tratamiento con Rojda. Fue otra vez una experiencia agradable y charlamos de forma amena. Junto con Rojda miramos qué tratamiento me encaja mejor. Disfruté de un Hydrafacial delicioso combinado con un peeling. Puedo volver a la carga. ¡Gracias, querida Rojda! YASEMIN HACE 2 MESES
 
-- Ik (en mijn huid) zijn altijd weer blij om Iris te zien! ook heel fijn dat met deze hittegolf de kliniek heeerlijk koel was! <3. RAHIME 2 MAANDEN GELEDEN
+- ¡Mi primer tratamiento después de 3 años y estoy superconforme! ILHAM HACE 2 MESES
 
-- I had a wonderful experience with Andre. He took the time to explain everything thoroughly, answered all of my questions, and made me feel completely at ease. I also felt that he performed the SkinPen treatment with great precision and care. His professionalism, attention to detail, and expertise gave me a lot of confidence. I had a very positive experience and would highly recommend him to anyone considering skin treatments. MAROULA 3 MAANDEN GELEDEN
+- ¡Mi piel y yo siempre nos alegramos de ver a Iris! ¡También se agradeció mucho que con esta ola de calor la clínica estuviera deliciosamente fresca! <3. RAHIME HACE 2 MESES
 
-- Hele fijne ervaring, deskundige huidtherapeut. Het gevoel dat ik eerlijk advies heb gekregen. Fijne Hydrafacial behandeling met uitleg. DUYGU 3 MAANDEN GELEDEN
+- I had a wonderful experience with Andre. He took the time to explain everything thoroughly, answered all of my questions, and made me feel completely at ease. I also felt that he performed the SkinPen treatment with great precision and care. His professionalism, attention to detail, and expertise gave me a lot of confidence. I had a very positive experience and would highly recommend him to anyone considering skin treatments. MAROULA HACE 3 MESES
 
-- Mijn 7de SkinPen-behandeling gehad en wat ben ik blij met het resultaat! Vandaag de before en after foto’s bekeken en wat een verschil! Ik ben en blijf jullie trouwe klant!! En Grissell ik wil je apart bedanken voor je lieve zorg, aandacht, professionaliteit en gezelligheid. Altijd een fijne afspraak! DILAN 3 MAANDEN GELEDEN
+- Una experiencia muy agradable, terapeuta de la piel experta. La sensación de haber recibido un consejo honesto. Un tratamiento Hydrafacial agradable y con explicación. DUYGU HACE 3 MESES
 
-- Zoals altijd is de deskundigheid en klantvriendelijkheid tip top! Naast de behandeling en resultaat is de dienstverlening ook erg belangrijk, en bij Diba Clinics is dit dankzij de medewerkers heel goed geregeld! AYLIN 3 MAANDEN GELEDEN
+- ¡Mi 7.º tratamiento con SkinPen y qué feliz estoy con el resultado! Hoy hemos visto las fotos del antes y el después, ¡y qué diferencia! ¡¡Soy y seguiré siendo cliente fiel!! Y Grissell, quiero darte las gracias aparte por tu cuidado cariñoso, tu atención, tu profesionalidad y tu buena compañía. ¡Siempre una cita agradable! DILAN HACE 3 MESES
 
-- Super fijne afspraak gehad, ik twijfelde over de behandeling die we konden uitvoeren en Andres heeft mij geholpen in het besluit door alle overwegingen mee te nemen! En verder zoals gewoonlijk lekker gekletst en super veel professionaliteit laten zien! Dankjewel Andres je bent een topper. MARTYNA 3 MAANDEN GELEDEN
+- ¡Como siempre, la profesionalidad y el trato al cliente son de primera! Además del tratamiento y el resultado, el servicio también es muy importante, ¡y en Diba Clinics eso está muy bien organizado gracias al personal! AYLIN HACE 3 MESES
 
-- Weer super geholpen door Andres!! :). SHEELA 3 MAANDEN GELEDEN
+- Una cita superagradable; dudaba sobre el tratamiento que podíamos hacer y Andres me ayudó a decidir teniendo en cuenta todas las consideraciones. Y además, como de costumbre, charlamos de maravilla ¡y demostró muchísima profesionalidad! Gracias, Andres, eres un fenómeno. MARTYNA HACE 3 MESES
 
-> knop: Toon nog 24 reseñas
+- ¡¡Otra vez Andres me atendió genial!! :). SHEELA HACE 3 MESES
 
-- Zoals altijd goed geholpen met de laser! MANISHA 3 MAANDEN GELEDEN
+> knop: Mostrar otras 24 reseñas
 
-- Warme ontvangst en goede uitleg voor en gedurende het behandeling. Aandacht voor mijn gevoel en gemak. Aanrader! LYNETTE 3 MAANDEN GELEDEN
+- ¡Como siempre, me atendieron bien con el láser! MANISHA HACE 3 MESES
 
-- Ik vond de behandeling weer zeer effectief en rustgevend. Altijd blij na een bezoek aan Diba en behandeling van Demi! SEYMA 3 MAANDEN GELEDEN
+- Recibimiento cálido y buenas explicaciones antes y durante el tratamiento. Atención a cómo me sentía y a mi comodidad. ¡Recomendable! LYNETTE HACE 3 MESES
 
-- Ik had vandaag een laserafspraak bij Demi. Het ging voor mijn gevoel lekker vlot en ik voel me erg op m’n gemak bij haar. Ze is erg lief en doet heel erg haar best en we hebben praten altijd gezellig tussendoor. Ik ben verder ook erg tevreden met m’n resultaat tot nu toe en ik zie duidelijke vooruitgangen! Ik ben jullie heel erg dankbaar. Erg gastvrij, professioneel en alles ook mooi en netjes ingericht. JASEMINE 3 MAANDEN GELEDEN
+- El tratamiento me pareció otra vez muy eficaz y relajante. ¡Siempre feliz después de una visita a Diba y un tratamiento de Demi! SEYMA HACE 3 MESES
 
-- Zeer tevreden over de behandeling. Ik werd direct op mijn gemak gesteld en op een professionele en kundige manier geholpen. Er werd duidelijke uitleg gegeven en er was veel aandacht voor mijn comfort tijdens de behandeling. Al met al een zeer prettige ervaring en zeker een aanrader. CHAIMAE 3 MAANDEN GELEDEN
+- Hoy tenía una cita de láser con Demi. A mi parecer fue rápido y me siento muy a gusto con ella. Es muy cariñosa y se esfuerza muchísimo, y siempre charlamos de forma amena entre medias. Además, estoy muy conforme con mi resultado hasta ahora ¡y veo claros avances! Les doy muchísimas gracias. Muy acogedor, profesional y todo bonito y bien cuidado. JASEMINE HACE 3 MESES
 
-- Word altijd professioneel en super vriendelijk geholpen. Aanrader! SUZANNE 3 MAANDEN GELEDEN
+- Muy conforme con el tratamiento. Me hicieron sentir a gusto de inmediato y me atendieron de forma profesional y experta. Se dio una explicación clara y hubo mucha atención a mi comodidad durante el tratamiento. En conjunto, una experiencia muy agradable y sin duda recomendable. CHAIMAE HACE 3 MESES
 
-- Ik blijf het telkens herhalen, maar ik ben al weer zo zo zo fijn geholpen door Iris! laserbehandeling en geëindigd met een gezichtsbehandeling was heel intens was. Ben zo blij dat ik terecht ben gekomen bij Diba clinic. DARIFA 3 MAANDEN GELEDEN
+- Siempre me atienden con profesionalidad y superamabilidad. ¡Recomendable! SUZANNE HACE 3 MESES
 
-- Samen met Andrès mijn behandeling bespreken. Altijd goede advies, en goede behandeling. Naast goede behandeling ook fijne sfeer bij Dibaclinics. KAREN 3 MAANDEN GELEDEN
+- Lo sigo repitiendo, ¡pero Iris me ha vuelto a atender tan tan tan bien! Tratamiento con láser y para terminar un tratamiento facial, que fue muy intenso. Qué feliz estoy de haber llegado a Diba clinic. DARIFA HACE 3 MESES
 
-- Goede instructies en uitleg van de behandelaar. Heel zorgvuldig te werk. Iom behandelaar gekeken wat handig was voor behandeling (gezien zon). Behandeling zelf was te doen, enigzins pijnlijk maar niet buiten de verwachting. Heel tevreden :))). SHANOJA 3 MAANDEN GELEDEN
+- Comentar mi tratamiento junto con Andrès. Siempre buenos consejos y un buen tratamiento. Además de un buen tratamiento, también un ambiente agradable en Dibaclinics. KAREN HACE 3 MESES
 
-- Super tevreden over Grisel! Ondanks dat ik door omstandigheden later was, bleef ze ontzettend geduldig en professioneel. Ze werkte heel netjes en samen met het team zorgde ze ervoor dat ik toch mijn volledige behandeling kon krijgen. Echt heel lief en professioneel! MARIA 4 MAANDEN GELEDEN
+- Buenas instrucciones y explicaciones de la terapeuta. Trabaja con mucho cuidado. Con la terapeuta miramos qué convenía para el tratamiento (teniendo en cuenta el sol). El tratamiento en sí fue llevadero, algo doloroso pero dentro de lo esperado. Muy conforme :))). SHANOJA HACE 3 MESES
 
-- Fijne eerste kennismaking en behandeling gehad. Ik ben benieuwd naar de komende resultaten. FRANSIEN 4 MAANDEN GELEDEN
+- ¡Superconforme con Grisel! A pesar de que por circunstancias llegué tarde, siguió siendo tremendamente paciente y profesional. Trabajó con mucho cuidado y, junto con el equipo, se aseguró de que pudiera recibir igualmente mi tratamiento completo. ¡Realmente muy cariñosa y profesional! MARIA HACE 4 MESES
 
-- Elke afspraak verloopt erg goed. Iris is heel vriendelijk en professioneel, waardoor ik me altijd op mijn gemak voel. Ze legt alles duidelijk uit, werkt zorgvuldig en neemt de tijd voor je. De behandelingen verlopen prettig en ik ben erg tevreden over de service en resultaten tot nu toe. TUGCE 4 MAANDEN GELEDEN
+- Una primera toma de contacto y un tratamiento agradables. Tengo curiosidad por los próximos resultados. FRANSIEN HACE 4 MESES
 
-- Ik heb een hele fijne behandeling gehad bij Demi. Tijdens de hele behandeling legde ze rustig uit wat ze op dat moment deed, wat de volgende stap zou zijn en wat ik eventueel qua ongemak kon verwachten. Dat stelde mij erg gerust en vond ik ontzettend prettig. SELMA 4 MAANDEN GELEDEN
+- Cada cita va muy bien. Iris es muy amable y profesional, y por eso siempre me siento a gusto. Explica todo con claridad, trabaja con cuidado y se toma su tiempo contigo. Los tratamientos son agradables y estoy muy conforme con el servicio y los resultados hasta ahora. TUGCE HACE 4 MESES
 
-- Weer een heerlijke behandeling gehad bij Diba. Voel me altijd zo lekker fris als ik daar weg ga. BERIZ 4 MAANDEN GELEDEN
+- Tuve un tratamiento muy agradable con Demi. Durante todo el tratamiento me explicaba con calma lo que estaba haciendo en ese momento, cuál sería el siguiente paso y qué molestias podía esperar. Eso me tranquilizó mucho y me pareció muy agradable. SELMA HACE 4 MESES
 
-- Fijne kliniek. Ik kom hier al jaren voor diverse behandelingen. Eerlijk advies en altijd een mooi resultaat! DANIQUE 4 MAANDEN GELEDEN
+- Otro tratamiento delicioso en Diba. Siempre salgo de allí con una sensación tan fresca. BERIZ HACE 4 MESES
 
-- Zorgvuldig en professioneel advies. ALICE 4 MAANDEN GELEDEN
+- Una clínica estupenda. Llevo años viniendo para distintos tratamientos. Consejo honesto y siempre un buen resultado. DANIQUE HACE 4 MESES
 
-- I removed fibromas and everything went great! I got good advice and Im very happy with the result. Will come back! DUNJA 4 MAANDEN GELEDEN
+- Un consejo cuidadoso y profesional. ALICE HACE 4 MESES
 
-- Tevreden met de persoonlijke service en uitleg achter de behandelingen en de producten. Thank you! MINA 4 MAANDEN GELEDEN
+- I removed fibromas and everything went great! I got good advice and Im very happy with the result. Will come back! DUNJA HACE 4 MESES
 
-- Super fijn geholpen! MEL 4 MAANDEN GELEDEN
+- Conforme con el servicio personal y la explicación detrás de los tratamientos y los productos. Thank you! MINA HACE 4 MESES
 
-- Kort samengevat is het team heel profesioneel en vriendelijk. Al mijn afspraken verlopen naar wens en ze jullie zijn heel deskundig in jullie vak! AYLIN 4 MAANDEN GELEDEN
+- ¡Me atendieron de forma superagradable! MEL HACE 4 MESES
 
-- Ben bijzonder vriendelijk en deskundig geholpen! ANGELIQUE 4 MAANDEN GELEDEN
+- En resumen, el equipo es muy profesional y amable. Todas mis citas van como quiero ¡y son muy expertos en su oficio! AYLIN HACE 4 MESES
 
-- Gisteren heb ik opnieuw een SkinPen-behandeling gehad bij Melanie, en zoals altijd ging ik met een glimlach de deur uit. Ondanks dat het soms wat pijnlijk is in de behandelstoel, weet Melanie me er altijd op een fijne manier doorheen te begeleiden. NEROUSH 4 MAANDEN GELEDEN
+- ¡Me atendieron de forma especialmente amable y experta! ANGELIQUE HACE 4 MESES
 
-- Altijd zo zo zo een prettige ervaring! Word altijd goed meegenomen in de stappen en vertrek altijd MEGA tevreden. MINE 4 MAANDEN GELEDEN
+- Ayer volví a hacerme un tratamiento con SkinPen con Melanie, y como siempre salí por la puerta con una sonrisa. Aunque a veces sea algo doloroso en el sillón de tratamiento, Melanie siempre sabe acompañarme de una forma agradable. NEROUSH HACE 4 MESES
 
-- Fijne fotona behandeling gehad bij Iris. NANCY 4 MAANDEN GELEDEN
+- ¡Siempre una experiencia tan pero tan agradable! Siempre me van guiando bien por los pasos y siempre salgo MEGAconforme. MINE HACE 4 MESES
 
-**1.417 mensen gaven alleen sterren**
+- Un tratamiento Fotona agradable con Iris. NANCY HACE 4 MESES
 
-Ze tellen mee voor het gemiddelde en daarom staan ze hier, allemaal. Wat ze niet doen is iets vertellen: je weet niet waarvoor iemand kwam of wat er gebeurde. Reken ze dus mee in het cijfer en niet in je oordeel.
+**1.417 personas dieron solo estrellas**
 
-40 beoordelingen staan onder de vijf sterren. Ook die staan op deze pagina; ze zijn niet weggefilterd.
+Cuentan para la media y por eso están aquí, todas. Lo que no hacen es contar algo: no sabes para qué vino alguien ni qué pasó. Así que cuéntalas en la nota y no en tu juicio.
 
-TOON DE BEOORDELINGEN ZONDER TEKST
+40 valoraciones están por debajo de cinco estrellas. Esas también están en esta página; no se han filtrado.
 
-In de volgorde van Salonized: nieuwste eerst. Pagina 1 de 18.
+MOSTRAR LAS VALORACIONES SIN TEXTO
 
-- Eda ongeveer 11 uur geleden
+En el orden de Salonized: las más nuevas primero. Página 1 de 18.
 
-- Amad 13 dagen geleden
+- Eda Hace aproximadamente 11 horas
 
-- Gladys ongeveer een maand geleden
+- Amad Hace 13 días
 
-- Edanur ongeveer 2 maanden geleden
+- Gladys Hace aproximadamente un mes
 
-- Nabila ongeveer 2 maanden geleden
+- Edanur Hace aproximadamente 2 meses
 
-- Avan 2 maanden geleden
+- Nabila Hace aproximadamente 2 meses
 
-- Gulcicek 2 maanden geleden
+- Avan Hace 2 meses
 
-- Zaretou Moudassirou 2 maanden geleden
+- Gulcicek Hace 2 meses
 
-- Ilham 3 maanden geleden
+- Zaretou Moudassirou Hace 2 meses
 
-- Nur 3 maanden geleden
+- Ilham Hace 3 meses
 
-- Buse 3 maanden geleden
+- Nur Hace 3 meses
 
-- Angelina 4 maanden geleden
+- Buse Hace 3 meses
 
-- Emre 4 maanden geleden
+- Angelina Hace 4 meses
 
-- Loubna 4 maanden geleden
+- Emre Hace 4 meses
 
-- Natasja 4 maanden geleden
+- Loubna Hace 4 meses
 
-- Alice 4 maanden geleden
+- Natasja Hace 4 meses
 
-- Sude 5 maanden geleden
+- Alice Hace 4 meses
 
-- Gulcicek 5 maanden geleden
+- Sude Hace 5 meses
 
-- Ferdane 5 maanden geleden
+- Gulcicek Hace 5 meses
 
-- Abdulsalam 5 maanden geleden
+- Ferdane Hace 5 meses
 
-- Larrence 5 maanden geleden
+- Abdulsalam Hace 5 meses
 
-- Sana 5 maanden geleden
+- Larrence Hace 5 meses
 
-- Elmas 5 maanden geleden
+- Sana Hace 5 meses
 
-- Linsey 5 maanden geleden
+- Elmas Hace 5 meses
 
-- Natasja 5 maanden geleden
+- Linsey Hace 5 meses
 
-- Hilal 5 maanden geleden
+- Natasja Hace 5 meses
 
-- Amal 5 maanden geleden
+- Hilal Hace 5 meses
 
-- John 5 maanden geleden
+- Amal Hace 5 meses
 
-- Emre 5 maanden geleden
+- John Hace 5 meses
 
-- Junjie 6 maanden geleden
+- Emre Hace 5 meses
 
-- Aleyna 6 maanden geleden
+- Junjie Hace 6 meses
 
-- Melissa 6 maanden geleden
+- Aleyna Hace 6 meses
 
-- Elif 6 maanden geleden
+- Melissa Hace 6 meses
 
-- Natasja 6 maanden geleden
+- Elif Hace 6 meses
 
-- Fedoua 6 maanden geleden
+- Natasja Hace 6 meses
 
-- Awatif 6 maanden geleden
+- Fedoua Hace 6 meses
 
-- Iris 7 maanden geleden
+- Awatif Hace 6 meses
 
-- Dilara 7 maanden geleden
+- Iris Hace 7 meses
 
-- Busra 7 maanden geleden
+- Dilara Hace 7 meses
 
-- Ani 7 maanden geleden
+- Busra Hace 7 meses
 
-- Loubna 7 maanden geleden
+- Ani Hace 7 meses
 
-- Wendy 7 maanden geleden
+- Loubna Hace 7 meses
 
-- Larrence 7 maanden geleden
+- Wendy Hace 7 meses
 
-- Suad 8 maanden geleden
+- Larrence Hace 7 meses
 
-- Ela 8 maanden geleden
+- Suad Hace 8 meses
 
-- Nujoud 8 maanden geleden
+- Ela Hace 8 meses
 
-- Okan 8 maanden geleden
+- Nujoud Hace 8 meses
 
-- Alycia 8 maanden geleden
+- Okan Hace 8 meses
 
-- Esma 8 maanden geleden
+- Alycia Hace 8 meses
 
-- Ouiam 8 maanden geleden
+- Esma Hace 8 meses
 
-- Safia 8 maanden geleden
+- Ouiam Hace 8 meses
 
-- Bouchra 8 maanden geleden
+- Safia Hace 8 meses
 
-- Lola 9 maanden geleden
+- Bouchra Hace 8 meses
 
-- Busra 9 maanden geleden
+- Lola Hace 9 meses
 
-- Perry 9 maanden geleden
+- Busra Hace 9 meses
 
-- Yasmina 9 maanden geleden
+- Perry Hace 9 meses
 
-- Ferdane 9 maanden geleden
+- Yasmina Hace 9 meses
 
-- Fedoua 9 maanden geleden
+- Ferdane Hace 9 meses
 
-- Parmis 9 maanden geleden
+- Fedoua Hace 9 meses
 
-- Gulcicek 9 maanden geleden
+- Parmis Hace 9 meses
 
-- Selin 10 maanden geleden
+- Gulcicek Hace 9 meses
 
-- Satish 10 maanden geleden
+- Selin Hace 10 meses
 
-- Buse 10 maanden geleden
+- Satish Hace 10 meses
 
-- Sabra 10 maanden geleden
+- Buse Hace 10 meses
 
-- Zehira 10 maanden geleden
+- Sabra Hace 10 meses
 
-- Dilan 10 maanden geleden
+- Zehira Hace 10 meses
 
-- Ceren 10 maanden geleden
+- Dilan Hace 10 meses
 
-- Onurkan 10 maanden geleden
+- Ceren Hace 10 meses
 
-- Wietske 10 maanden geleden
+- Onurkan Hace 10 meses
 
-- Loubna 10 maanden geleden
+- Wietske Hace 10 meses
 
-- Enly 10 maanden geleden
+- Loubna Hace 10 meses
 
-- Albany 10 maanden geleden
+- Enly Hace 10 meses
 
-- Semsida 11 maanden geleden
+- Albany Hace 10 meses
 
-- Wissal 11 maanden geleden
+- Semsida Hace 11 meses
 
-- Yamani 11 maanden geleden
+- Wissal Hace 11 meses
 
-- Jasemine 11 maanden geleden
+- Yamani Hace 11 meses
 
-- Natasja 11 maanden geleden
+- Jasemine Hace 11 meses
 
-- G.i. 11 maanden geleden
+- Natasja Hace 11 meses
 
-- Feta 11 maanden geleden
+- G.i. Hace 11 meses
 
-**Verzonnen reviews.**
+- Feta Hace 11 meses
 
-De reviews komen van de openbare Salonized-pagina, en het is een momentopname: er komen er dagelijks bij, en die staan daar eerder dan hier. Controleer ze bij de bron.
+**Reseñas inventadas.**
+
+Las reseñas vienen de la página pública de Salonized, y es una instantánea: cada día llegan nuevas, y están allí antes que aquí. Compruébalas en la fuente.
 
 ---
 
 ### /es/ronquidos
 
-**Tabbladtitel:** Snurken behandelen met laser in Rotterdam | Diba Clinics
+**Tabbladtitel:** Tratar los ronquidos con láser en Róterdam | Diba Clinics
 
-**Google-omschrijving:** Snurken begint zelden in je keel alleen. Eerst kijken waar het geluid vandaan komt, dan pas of NightLase bij jou iets oplevert.
+**Google-omschrijving:** Los ronquidos rara vez empiezan solo en la garganta. Primero mirar de dónde viene el sonido, y solo después si NightLase te aporta algo.
 
 **RONQUIDOS QUE TE ESTROPEAN LAS NOCHES**
 
@@ -44346,9 +44370,9 @@ En la primera conversación miramos dónde se origina el sonido y te preguntamos
 
 ### /es/sobre-nosotros
 
-**Tabbladtitel:** Over Diba Clinics in Rotterdam | Diba Clinics
+**Tabbladtitel:** Sobre Diba Clinics en Róterdam | Diba Clinics
 
-**Google-omschrijving:** Diba Clinics in Rotterdam, Rotterdam. Actief sinds 2017, 11 mensen, 12 apparaten. En wat die cijfers niet zeggen.
+**Google-omschrijving:** Diba Clinics en Róterdam. En activo desde 2017, 11 personas, 12 aparatos. Y lo que esas cifras no dicen.
 
 **UNA CLÍNICA DE LA PIEL EN RÓTERDAM.**
 
@@ -44388,7 +44412,7 @@ Un láser no hace el trabajo solo. Qué longitud de onda, qué duración de puls
 
 - 46 tratamientos Todos con la tarifa por sesión al lado, y por variante. Lo que ves en la web es lo que pagas. A LOS PRECIOS ›
 
-- 11 mensen Terapeutas de la piel con grado universitario e inscripción en el Registro de Calidad de Paramédicos, más especialistas ortomoleculares de la piel. AL EQUIPO ›
+- 11 personas Terapeutas de la piel con grado universitario e inscripción en el Registro de Calidad de Paramédicos, más especialistas ortomoleculares de la piel. AL EQUIPO ›
 
 **Lo que defiende esta clínica**
 
@@ -44400,9 +44424,9 @@ Por qué aquí primero se mide, por qué los precios son públicos y por qué en
 
 ### /es/team
 
-**Tabbladtitel:** Ons team | Diba Clinics
+**Tabbladtitel:** Nuestro equipo | Diba Clinics
 
-**Google-omschrijving:** De 11 mensen die bij Diba Clinics werken, met per persoon het vakgebied en of de titel wettelijk beschermd is.
+**Google-omschrijving:** Las 11 personas que trabajan en Diba Clinics, con el campo de cada una y si su título está protegido por ley.
 
 **LAS PERSONAS QUE TRATAN TU PIEL**
 
@@ -44462,11 +44486,13 @@ El registro es voluntario, así que estar inscrito dice algo y no estarlo dice p
 
 **Lo que escribieron los clientes sobre quien les ayudó.**
 
-- Iris TERAPEUTA DE LA PIEL 8 reseñas mencionan este nombre Elke afspraak verloopt erg goed. Iris is heel vriendelijk en professioneel, waardoor ik me altijd op mijn gemak voel. Ze legt alles duidelijk uit, werkt zorgvuldig en neemt de tijd voor je. Tugce, 3 maanden geleden
+- Iris TERAPEUTA DE LA PIEL 8 reseñas mencionan este nombre Cada cita va muy bien. Iris es muy amable y profesional, y por eso siempre me siento a gusto. Explica todo con claridad, trabaja con cuidado y se toma su tiempo contigo. Tugce, Hace 3 meses
 
-- Andres TERAPEUTA DE LA PIEL 6 reseñas mencionan este nombre Ik heb een behandeling gehad van Andres. Een aardig man die zijn werk met liefde doet en goed doet. Tussendoor ook de klant op zijn gemak laat voelen door te praten en te luisteren en vragen of alles goed gaat. Good job!! Edanur, 18 dagen geleden
+- Andres TERAPEUTA DE LA PIEL 6 reseñas mencionan este nombre Me hice un tratamiento con Andres. Un hombre amable que hace su trabajo con cariño y lo hace bien. Entre medias también hace que el cliente se sienta a gusto hablando, escuchando y preguntando si todo va bien. Good job!! Edanur, Hace 18 días
 
-- Demi ESPECIALISTA ORTOMOLECULAR DE LA PIEL 4 reseñas mencionan este nombre Ik had vandaag een laserafspraak bij Demi. Het ging lekker vlot en ik voel me erg op m'n gemak bij haar. Ik ben erg tevreden met m'n resultaat tot nu toe en ik zie duidelijke vooruitgangen! Erg gastvrij, professioneel en alles ook mooi en netjes ingericht. Jasemine, 2 maanden geleden
+- Demi ESPECIALISTA ORTOMOLECULAR DE LA PIEL 4 reseñas mencionan este nombre Hoy tenía una cita de láser con Demi. Fue rápido y me siento muy a gusto con ella. Estoy muy feliz con mi resultado hasta ahora ¡y veo claros avances! Muy acogedor, profesional y todo bonito y bien cuidado. Jasemine, Hace 2 meses
+
+Reseñas traducidas del neerlandés.
 
 **Planificamos según lo que necesitas**
 
@@ -44480,7 +44506,7 @@ Quién hace tu medición depende de para qué vienes. Si se trata de acné o pig
 
 **Tabbladtitel:** Trabajar en Diba | Diba Clinics
 
-**Google-omschrijving:** Twee vacatures: allround schoonheidsspecialist of huidtherapeut, en een open sollicitatie. Waar je mee werkt en wat we van je verwachten.
+**Google-omschrijving:** Dos vacantes: esteticista polivalente o terapeuta de la piel, y una candidatura espontánea. Con qué trabajas y lo que esperamos de ti.
 
 **TRABAJAR EN DIBA CLINICS**
 
@@ -44524,7 +44550,7 @@ No es una división sobre el papel. En el acné y el pigmento a menudo hay una p
 
 **Cómo presentarte con nosotros**
 
-Stuur je cv naar info@dibaclinics.nl con el puesto en el asunto. No hace falta una carta de motivación extensa; preferimos llamar y hacer nuestras preguntas nosotros. Si sigue adelante, vienes media jornada a ver cómo trabajamos antes de que ninguna de las dos partes firme nada.
+Envía tu CV a info@dibaclinics.nl con el puesto en el asunto. No hace falta una carta de motivación extensa; preferimos llamar y hacer nuestras preguntas nosotros. Si sigue adelante, vienes media jornada a ver cómo trabajamos antes de que ninguna de las dos partes firme nada.
 
 > knop: VER LA VACANTE
 
@@ -44532,9 +44558,9 @@ Stuur je cv naar info@dibaclinics.nl con el puesto en el asunto. No hace falta u
 
 ### /es/tratamiento-con-asesoramiento
 
-**Tabbladtitel:** Welke huidbehandeling past bij mij? | Diba Clinics
+**Tabbladtitel:** ¿Qué tratamiento de la piel encaja conmigo? | Diba Clinics
 
-**Google-omschrijving:** Weet je niet welke huidbehandeling je nodig hebt? Boek een behandeling op advies. Voor nieuwe klanten met intake en voor bestaande klanten zonder nieuwe intake.
+**Google-omschrijving:** ¿No sabes qué tratamiento de la piel necesitas? Reserva un tratamiento con asesoramiento: con consulta previa la primera vez, sin otra consulta si ya viniste.
 
 **QUIERO UN TRATAMIENTO CON ASESORAMIENTO**
 
@@ -44658,13 +44684,13 @@ El consejo viene de la terapeuta, la elección se hace juntos, y no pasa nada si
 
 ### /es/tratamientos
 
-**Tabbladtitel:** Huidbehandelingen in Rotterdam | Diba Clinics
+**Tabbladtitel:** Tratamientos de la piel en Róterdam | Diba Clinics
 
-**Google-omschrijving:** Kies waar je iets aan wilt doen: acne, pigment, littekens, huidveroudering, glow of haar. Tijdens het huidconsult bepaalt de behandelaar wat bij jouw huid past.
+**Google-omschrijving:** Elige lo que quieres tratar: acné, pigmento, cicatrices, envejecimiento, luminosidad o vello. En la consulta la terapeuta decide qué encaja con tu piel.
 
 **NUESTROS TRATAMIENTOS**
 
-Je hoeft vooraf niet te weten welke behandeling je nodig hebt. Kies wat je wilt verbeteren. Tijdens het huidconsult beoordeelt de behandelaar welke aanpak bij jouw huid past.
+No hace falta que sepas de antemano qué tratamiento necesitas. Elige lo que quieres mejorar. En la consulta de la piel la terapeuta valora qué enfoque encaja con tu piel.
 
 - ACNÉ
 
@@ -44680,15 +44706,15 @@ Je hoeft vooraf niet te weten welke behandeling je nodig hebt. Kies wat je wilt 
 
 - CAÍDA DEL CABELLO
 
-**Alle behandelingen, op wat je wilt bereiken**
+**Todos los tratamientos, según lo que quieres conseguir**
 
-Een behandeling kan onder meerdere kopjes staan. Een medische peeling doet iets bij acne, bij pigment en bij een doffe huid, en welke van die drie het bij jou wordt hangt af van de sterkte die de behandelaar kiest.
+Un tratamiento puede estar bajo varios epígrafes. Un peeling médico hace algo en el acné, en el pigmento y en una piel apagada, y cuál de esos tres es en tu caso depende de la intensidad que elija la terapeuta.
 
 **Acné e imperfecciones**
 
 Granos activos, puntos negros y una piel que sigue reaccionando.
 
-> knop: Toon de 7 tratamientos
+> knop: Mostrar 7 tratamientos
 
 - Peelings médicos De suave a fuerte. La concentración decide hasta dónde llega y cuánto se descama la piel. MESOESTETIC, DERMACEUTIC, SKIN TECH PHARMA DESDE € 140
 
@@ -44708,7 +44734,7 @@ Granos activos, puntos negros y una piel que sigue reaccionando.
 
 Manchas que no se van, rojeces que no bajan, vasos visibles.
 
-> knop: Toon de 10 tratamientos
+> knop: Mostrar 10 tratamientos
 
 - Microneedling con el SkinPen Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel. SKINPEN CIT DESDE € 180
 
@@ -44744,7 +44770,7 @@ Hoyos tras el acné, poros abiertos, una piel que se nota irregular.
 
 Líneas, flacidez y pérdida de firmeza.
 
-> knop: Toon de 14 tratamientos
+> knop: Mostrar 14 tratamientos
 
 - Skin boosters y mesoterapia Principios activos puestos dentro de la piel en lugar de encima, a una profundidad fija por pinchazo. INYECTOR INTRADÉRMICO U225 DESDE € 175
 
@@ -44764,7 +44790,7 @@ Líneas, flacidez y pérdida de firmeza.
 
 - VectorLift Lifting de cejas con láser y reafirmación de la frente, sin agujas. FOTONA 4D TIMEWALKER DESDE € 150
 
-- RRS Hyalift Llevar ácido hialurónico y vitaminas dentro de la piel. Para firmeza e hidratación, no para volumen. RRS, MET DE U225 DESDE € 175
+- RRS Hyalift Llevar ácido hialurónico y vitaminas dentro de la piel. Para firmeza e hidratación, no para volumen. RRS, CON EL U225 DESDE € 175
 
 - Fotona 4D Full Package El protocolo 4D completo, con el cuello y la mandíbula incluidos, en una sola cita. FOTONA 4D TIMEWALKER DESDE € 575
 
@@ -44786,7 +44812,7 @@ Un tratamiento fresco sin tiempo de recuperación, o mantenimiento entre medias.
 
 Pelo que vuelve, pelos encarnados, afeitarse a diario.
 
-> knop: Toon de 2 tratamientos
+> knop: Mostrar 2 tratamientos
 
 - Electrólisis Pelo a pelo, también los grises y los rubios. Para lo que el láser no ve. El tiempo de tratamiento lo cobramos por media hora. DESDE € 60
 
@@ -44798,61 +44824,63 @@ Pelo cada vez más fino y una línea del pelo que retrocede.
 
 - HAIRestart Láser en el cuero cabelludo cuando el pelo empieza a clarear. FOTONA 4D TIMEWALKER A CONSULTAR
 
-- XL Hair Contra la caída del pelo y el pelo que clarea. Un programa de meses, ajustado a tu cuero cabelludo. U225 MESOTHERAPIE DESDE € 800
+- XL Hair Contra la caída del pelo y el pelo que clarea. Un programa de meses, ajustado a tu cuero cabelludo. MESOTERAPIA U225 DESDE € 800
 
-**Overige behandelingen**
+**Otros tratamientos**
 
-Snurken en fibromen.
+Ronquidos y fibromas.
 
 - NightLase Láser contra los ronquidos. El paladar blando se vuelve más firme, sin operación ni férula. FOTONA TIMEWALKER A CONSULTAR
 
 - Extirpación de fibromas Quitar acrocordones, normalmente en una cita. El tiempo de tratamiento lo cobramos por cuarto de hora. DESDE € 30
 
-**Onderzoek dat we ook doen**
+**Pruebas que también hacemos**
 
-Niet elke afspraak gaat over je huid. Dit onderzoek doen we ook, en het staat hier omdat mensen het bij ons aanvragen zonder dat ze een behandeling zoeken.
+No todas las citas tratan de tu piel. Esta prueba también la hacemos, y está aquí porque la gente nos la pide sin buscar un tratamiento.
 
 - Test de intolerancia alimentaria Un análisis de sangre que muestra a qué alimentos reacciona tu cuerpo.
 
-**Waar mensen het vaakst voor komen**
+**Para lo que la gente viene más a menudo**
 
-**Twee behandelingen, één afspraak**
+**Dos tratamientos, una sola cita**
 
-Sommige behandelingen doen meer naast elkaar dan achter elkaar. Wat er in jouw geval kan hangt af van je huid op dat moment; de behandelaar bepaalt tijdens de afspraak of de tweede stap doorgaat.
+Algunos tratamientos hacen más uno junto al otro que uno tras otro. Lo que es posible en tu caso depende de tu piel en ese momento; la terapeuta decide durante la cita si el segundo paso sigue adelante.
 
-- HydraFacial Microneedling con el SkinPen Eerst de huid reinigen en hydrateren, daarna pas prikkelen. Een schone huid is de voorwaarde voor de tweede stap.
+- HydraFacial Microneedling con el SkinPen Primero limpiar e hidratar la piel, y solo después estimularla. Una piel limpia es la condición para el segundo paso.
 
-- HydraFacial Dermapen 4 Dezelfde volgorde, met het andere needling-apparaat. Welke van de twee het wordt hangt af van wat er aan je huid moet gebeuren.
+- HydraFacial Dermapen 4 El mismo orden, con el otro aparato de needling. Cuál de los dos es depende de lo que tenga que pasar con tu piel.
 
-- HydraFacial Peeling láser SupErficial De laserpeeling haalt de bovenlaag weg; de HydraFacial ervoor zorgt dat daar niets meer onder zit.
+- HydraFacial Peeling láser SupErficial El peeling láser retira la capa superior; el HydraFacial previo se encarga de que debajo ya no quede nada.
 
-- HydraFacial Skin boosters y mesoterapia Reinigen en hydrateren, en daarna de werkzame stoffen op diepte brengen in dezelfde afspraak.
+- HydraFacial Skin boosters y mesoterapia Limpiar e hidratar, y después llevar los principios activos en profundidad en la misma cita.
 
-- Peeling láser SupErficial Fotona Resurfacing Een oppervlakkige en een fractionele stap op hetzelfde apparaat, waarbij de tweede dieper komt dan de eerste.
+- Peeling láser SupErficial Fotona Resurfacing Un paso superficial y uno fraccionado en el mismo aparato, en el que el segundo llega más hondo que el primero.
 
-- Peeling láser SupErficial FRAC3 De laserpeel neemt de bovenlaag, Frac3 gaat er in kolommen doorheen naar de diepte. Op de tarievenlijst staat dit als Laserpeel plus Frax.
+- Peeling láser SupErficial FRAC3 El peeling láser retira la capa superior, Frac3 la atraviesa en columnas hacia la profundidad. En la lista de tarifas figura como Peeling láser más Frax.
 
-- Peelings médicos Microneedling con el SkinPen De peeling werkt op de bovenlaag, de needling op het bindweefsel eronder. Twee lagen in een afspraak.
+- Peelings médicos Microneedling con el SkinPen El peeling trabaja sobre la capa superior, el needling sobre el tejido conjuntivo de debajo. Dos capas en una cita.
 
-De tarieven van de combinaties staan bij de losse behandelingen op de tarievenpagina.
+Las tarifas de las combinaciones están junto a los tratamientos sueltos en la página de tarifas.
 
-> knop: NO LO SABES Reserva un tratamiento con asesoramiento Je weet wat je aan je huid wilt verbeteren, maar niet of daar een peeling, een laser of microneedling bij hoort. Vertel wat je stoort; de behandelaar kiest en legt uit waarom. ZO WERKT HET
+Reseñas traducidas del neerlandés.
 
-**Weet je niet wat bij jouw huid past?**
+> knop: NO LO SABES Reserva un tratamiento con asesoramiento Sabes lo que quieres mejorar de tu piel, pero no si eso pide un peeling, un láser o microneedling. Cuéntanos qué te molesta; la terapeuta elige y explica por qué. ASÍ FUNCIONA
 
-Begin met een huidconsult. De behandelaar beoordeelt je huid en gebruikt de EVE-M als aanvullende meting. Het apparaat levert de cijfers; de keuze blijft bij de mens die tegenover je zit.
+**¿No sabes qué encaja con tu piel?**
 
-Het consult kost € 50 en duurt dertig minuten. Wil je in dezelfde afspraak behandeld worden, boek dan een behandeling op advies; dat bedrag gaat er dan weer af.
+Empieza con una consulta de la piel. La terapeuta valora tu piel y usa el EVE-M como medición complementaria. El aparato da las cifras; la elección sigue en manos de la persona que tienes enfrente.
+
+La consulta cuesta € 50 y dura treinta minutos. Si quieres que te traten en la misma cita, reserva un tratamiento con asesoramiento; ese importe se vuelve a descontar entonces.
 
 > knop: Sigue leyendo
 
 > knop: RESERVA UNA CONSULTA
 
-> knop: OF MAAK EERST JE HUIDPROFIEL
+> knop: O CREA PRIMERO TU PERFIL DE PIEL
 
-**Dónde llega bepaalt de rest**
+**Dónde llega decide el resto**
 
-Sleep de sonde door je huid naar beneden. Hoe dieper je komt, hoe minder behandelingen er nog bij zijn. Daar hangt aan vast hoe lang je rood bent en hoe vaak je terug moet. Kiezen doe je er niet mee; begrijpen wel.
+Arrastra la sonda hacia abajo por tu piel. Cuanto más hondo llegas, menos tratamientos quedan. De eso depende cuánto tiempo estás con la piel roja y cada cuánto tienes que volver. No sirve para elegir; sí para entender.
 
 > knop: Capa córnea
 
@@ -44862,11 +44890,11 @@ Sleep de sonde door je huid naar beneden. Hoe dieper je komt, hoe minder behande
 
 > knop: Dermis profunda
 
-JE BENT NU IN DE
+AHORA ESTÁS EN LA
 
 Donde está tu pigmento y de donde salen las células nuevas de la piel.
 
-35 VAN ONZE BEHANDELINGEN KOMEN HIER
+35 DE NUESTROS TRATAMIENTOS LLEGAN AQUÍ
 
 - HydraFacial Normalmente no hay tiempo de recuperación y puedes seguir con tu día después de la cita. € 170
 
@@ -44880,17 +44908,17 @@ Donde está tu pigmento y de donde salen las células nuevas de la piel.
 
 - Dermapen 4 De uno a tres días roja. € 180
 
-En nog 29 andere.
+Y otros 29 más.
 
-**Hoeveel hersteltijd heb je eigenlijk?**
+**¿Cuánto tiempo de recuperación tienes en realidad?**
 
-Dat filter staat nergens anders, terwijl het vaak het meest bepaalt. Vul je huidprofiel in en de lijst zet bovenaan wat bij je past, met bij de rest waarom niet.
+Ese filtro no está en ningún otro sitio, y a menudo es el que más decide. Rellena tu perfil de piel y la lista pone arriba lo que encaja contigo, y en el resto por qué no.
 
 > knop: TODO 46
 
 > knop: MEDIR 2
 
-> knop: GEZICHTSBEHANDELINGEN 4
+> knop: TRATAMIENTOS FACIALES 4
 
 > knop: PEELINGS 3
 
@@ -44898,129 +44926,129 @@ Dat filter staat nergens anders, terwijl het vaak het meest bepaalt. Vul je huid
 
 > knop: SKIN BOOSTERS 3
 
-> knop: LASER EN LICHT 19
+> knop: LÁSER Y LUZ 19
 
-> knop: PIGMENTTRAJECTEN 4
+> knop: PROGRAMAS DE PIGMENTO 4
 
 > knop: DEPILACIÓN LÁSER 2
 
 > knop: OTROS 7
 
-> knop: Alle hersteltijden
+> knop: Todos los tiempos de recuperación
 
-> knop: Geen hersteltijd
+> knop: Sin tiempo de recuperación
 
-> knop: Hooguit een dag
+> knop: Como mucho un día
 
-De volgorde is diepte: van de buitenste laag naar binnen. Maak je huidprofiel en de lijst schikt zich naar wat bij jou past.
+El orden es la profundidad: de la capa más externa hacia dentro. Crea tu perfil de piel y la lista se ordena según lo que encaja contigo.
 
-- RAAKT NIETS Consulta con análisis de la piel EVE-M EVE-M La medición con la que empieza cada programa. Tu piel registrada, y un plan de tratamiento que sale de ahí. Sigues con tu día enseguida. Si quieres que te traten en la misma cita, reservamos tiempo para ello. € 50
+- NO ALCANZA NADA Consulta con análisis de la piel EVE-M EVE-M La medición con la que empieza cada programa. Tu piel registrada, y un plan de tratamiento que sale de ahí. Sigues con tu día enseguida. Si quieres que te traten en la misma cita, reservamos tiempo para ello. € 50
 
-- RAAKT NIETS NightLase Fotona TimeWalker Láser contra los ronquidos. El paladar blando se vuelve más firme, sin operación ni férula. Después de NightLase puedes comer y hablar con normalidad. Algunas personas notan un tiempo una ligera sensación de aspereza en la garganta. A consultar
+- NO ALCANZA NADA NightLase Fotona TimeWalker Láser contra los ronquidos. El paladar blando se vuelve más firme, sin operación ni férula. Después de NightLase puedes comer y hablar con normalidad. Algunas personas notan un tiempo una ligera sensación de aspereza en la garganta. A consultar
 
-- RAAKT NIETS Consult SkinComplete LED-masker Una hora sobre el LED en casa: tu piel vista, tus objetivos hablados y un protocolo a medida. Ninguno. Es una conversación con una mirada a tu piel. € 100
+- NO ALCANZA NADA Consulta máscara LED SkinComplete Una hora sobre el LED en casa: tu piel vista, tus objetivos hablados y un protocolo a medida. Ninguno. Es una conversación con una mirada a tu piel. € 100
 
-- RAAKT NIETS Test de intolerancia alimentaria Un análisis de sangre que muestra a qué alimentos reacciona tu cuerpo. Ninguno. € 300
+- NO ALCANZA NADA Test de intolerancia alimentaria Un análisis de sangre que muestra a qué alimentos reacciona tu cuerpo. Ninguno. € 300
 
-- TOT IN DE CAPA CÓRNEA Dermaplaning Células muertas y vello fino fuera con una cuchilla. Funciona sin ácidos, así que también sirve para una piel sensible. Ninguno. € 150
+- HASTA LA CAPA CÓRNEA Dermaplaning Células muertas y vello fino fuera con una cuchilla. Funciona sin ácidos, así que también sirve para una piel sensible. Ninguno. € 150
 
-- TOT IN DE EPIDERMIS HydraFacial HydraFacial Limpiar, exfoliar e hidratar. En una sola pasada, visible al momento y sin tiempo de recuperación. Normalmente no hay tiempo de recuperación y puedes seguir con tu día después de la cita. € 170
+- HASTA LA EPIDERMIS HydraFacial HydraFacial Limpiar, exfoliar e hidratar. En una sola pasada, visible al momento y sin tiempo de recuperación. Normalmente no hay tiempo de recuperación y puedes seguir con tu día después de la cita. € 170
 
-- TOT IN DE EPIDERMIS OxyGeneo glow OxyGeneo Exfoliar y llevar oxígeno a la piel, en un solo tratamiento. Ninguno. € 150
+- HASTA LA EPIDERMIS OxyGeneo glow OxyGeneo Exfoliar y llevar oxígeno a la piel, en un solo tratamiento. Ninguno. € 150
 
-- TOT IN DE EPIDERMIS Peeling de hierbas Un peeling de hierbas molidas muy finas, sin ácido. Calma la inflamación y actúa contra las bacterias. De tres a cinco días. Primero roja y caliente, después la piel se descama. No toquetear. € 150
+- HASTA LA EPIDERMIS Peeling de hierbas Un peeling de hierbas molidas muy finas, sin ácido. Calma la inflamación y actúa contra las bacterias. De tres a cinco días. Primero roja y caliente, después la piel se descama. No toquetear. € 150
 
-- TOT IN DE EPIDERMIS Peeling láser SupErficial Fotona 4D TimeWalker Un peeling láser superficial para una piel más lisa y con más brillo. Unas horas ligeramente roja. El maquillaje normalmente se puede al día siguiente. A consultar
+- HASTA LA EPIDERMIS Peeling láser SupErficial Fotona 4D TimeWalker Un peeling láser superficial para una piel más lisa y con más brillo. Unas horas ligeramente roja. El maquillaje normalmente se puede al día siguiente. A consultar
 
-- TOT IN DE EPIDERMIS Cosmelan Mesoestetic Programa de seis meses contra la hiperpigmentación, con una mascarilla en la clínica y productos en casa. Descamación y rojez los primeros días, y meses de protección solar estricta. € 720
+- HASTA LA EPIDERMIS Cosmelan Mesoestetic Programa de seis meses contra la hiperpigmentación, con una mascarilla en la clínica y productos en casa. Descamación y rojez los primeros días, y meses de protección solar estricta. € 720
 
-- TOT IN DE EPIDERMIS Dermamelan Mesoestetic El enfoque más intensivo para la pigmentación, normalmente en el melasma. Seis meses, con una rutina estricta en casa. Descamación y rojez los primeros días, y meses de protección solar estricta. € 920
+- HASTA LA EPIDERMIS Dermamelan Mesoestetic El enfoque más intensivo para la pigmentación, normalmente en el melasma. Seis meses, con una rutina estricta en casa. Descamación y rojez los primeros días, y meses de protección solar estricta. € 920
 
-- TOT IN DE EPIDERMIS Dermamelan Intimate Mesoestetic Tratamiento del pigmento para la zona íntima, planteado igual que el programa facial. La piel está sensible los primeros días y empieza a descamarse. La ropa ajustada y el deporte mejor déjalos en ese periodo. € 550
+- HASTA LA EPIDERMIS Dermamelan Intimate Mesoestetic Tratamiento del pigmento para la zona íntima, planteado igual que el programa facial. La piel está sensible los primeros días y empieza a descamarse. La ropa ajustada y el deporte mejor déjalos en ese periodo. € 550
 
-- TOT IN DE EPIDERMIS Happy Intim Happy Intim® Peelings que aclaran y uniforman el pigmento de la zona íntima y de las axilas. Unos días seca y sensible. € 175
+- HASTA LA EPIDERMIS Happy Intim Happy Intim® Peelings que aclaran y uniforman el pigmento de la zona íntima y de las axilas. Unos días seca y sensible. € 175
 
-- TOT IN DE EPIDERMIS Tratamiento de acné Una cita para una piel alterada: limpiar, sacar los tapones, calmar. Se reserva por separado. Unas horas ligeramente roja. Donde se han retirado obstrucciones la piel puede estar sensible un día. A consultar
+- HASTA LA EPIDERMIS Tratamiento de acné Una cita para una piel alterada: limpiar, sacar los tapones, calmar. Se reserva por separado. Unas horas ligeramente roja. Donde se han retirado obstrucciones la piel puede estar sensible un día. A consultar
 
-- TOT IN DE EPIDERMIS Programa de acné Blemiderm Un programa guiado para el acné: tratamientos en la clínica, productos y controles en casa. Varía según la fase del programa. € 570
+- HASTA LA EPIDERMIS Programa de acné Blemiderm Un programa guiado para el acné: tratamientos en la clínica, productos y controles en casa. Varía según la fase del programa. € 570
 
-- TOT IN DE EPIDERMIS Programa de acné juvenil Un programa guiado de tres meses, pensado para jóvenes de hasta dieciocho años. Varía según la fase del programa. € 297
+- HASTA LA EPIDERMIS Programa de acné juvenil Un programa guiado de tres meses, pensado para jóvenes de hasta dieciocho años. Varía según la fase del programa. € 297
 
-- TOT IN DE EPIDERMIS Full Face Brushing Fotona TimeWalker Una pasada suave de láser por toda la cara. Piel más fresca sin tener que quedarte en casa. Unas horas roja y caliente. Al día siguiente normalmente tienes un aspecto normal. € 170
+- HASTA LA EPIDERMIS Full Face Brushing Fotona TimeWalker Una pasada suave de láser por toda la cara. Piel más fresca sin tener que quedarte en casa. Unas horas roja y caliente. Al día siguiente normalmente tienes un aspecto normal. € 170
 
-- TOT IN DE EPIDERMIS Eye peel Mesoestetic Un peeling que se puede usar en el contorno de ojos. Para líneas finas y una zona ocular apagada y oscura. El contorno de ojos está rojo unas horas y puede descamarse un poco los días siguientes. El maquillaje de ojos lo dejas un tiempo. € 30
+- HASTA LA EPIDERMIS Eye peel Mesoestetic Un peeling que se puede usar en el contorno de ojos. Para líneas finas y una zona ocular apagada y oscura. El contorno de ojos está rojo unas horas y puede descamarse un poco los días siguientes. El maquillaje de ojos lo dejas un tiempo. € 30
 
-- TOT IN DE EPIDERMIS Extirpación de fibromas Quitar acrocordones, normalmente en una cita. El tiempo de tratamiento lo cobramos por cuarto de hora. Pequeñas costras que desaparecen en días. € 30
+- HASTA LA EPIDERMIS Extirpación de fibromas Quitar acrocordones, normalmente en una cita. El tiempo de tratamiento lo cobramos por cuarto de hora. Pequeñas costras que desaparecen en días. € 30
 
-- TOT IN DE DERMIS SUPERIOR Peelings médicos Mesoestetic, Dermaceutic, Skin Tech Pharma De suave a fuerte. La concentración decide hasta dónde llega y cuánto se descama la piel. De dos a cinco días seca y descamada, según la concentración. € 140
+- HASTA LA DERMIS SUPERIOR Peelings médicos Mesoestetic, Dermaceutic, Skin Tech Pharma De suave a fuerte. La concentración decide hasta dónde llega y cuánto se descama la piel. De dos a cinco días seca y descamada, según la concentración. € 140
 
-- TOT IN DE DERMIS SUPERIOR Microneedling con el SkinPen SkinPen CIT Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel. De uno a tres días roja, como un buen rubor de sol. € 180
+- HASTA LA DERMIS SUPERIOR Microneedling con el SkinPen SkinPen CIT Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel. De uno a tres días roja, como un buen rubor de sol. € 180
 
-- TOT IN DE DERMIS SUPERIOR Dermapen 4 Dermapen 4 Microneedling con agujas vibrantes, que atraviesan la piel de forma uniforme. De uno a tres días roja. € 180
+- HASTA LA DERMIS SUPERIOR Dermapen 4 Dermapen 4 Microneedling con agujas vibrantes, que atraviesan la piel de forma uniforme. De uno a tres días roja. € 180
 
-- TOT IN DE DERMIS SUPERIOR Skin boosters y mesoterapia Inyector intradérmico U225 Principios activos puestos dentro de la piel en lugar de encima, a una profundidad fija por pinchazo. Roja un rato y a veces con bultitos, normalmente desaparecidos en un día. € 175
+- HASTA LA DERMIS SUPERIOR Skin boosters y mesoterapia Inyector intradérmico U225 Principios activos puestos dentro de la piel en lugar de encima, a una profundidad fija por pinchazo. Roja un rato y a veces con bultitos, normalmente desaparecidos en un día. € 175
 
-- TOT IN DE DERMIS SUPERIOR RRS Eyes Principios activos alrededor del contorno de ojos. Para ojeras, líneas finas y una mirada cansada. Pequeños bultitos que bajan en un día. Alrededor de los ojos pueden salir pequeños moratones. € 130
+- HASTA LA DERMIS SUPERIOR RRS Eyes Principios activos alrededor del contorno de ojos. Para ojeras, líneas finas y una mirada cansada. Pequeños bultitos que bajan en un día. Alrededor de los ojos pueden salir pequeños moratones. € 130
 
-- TOT IN DE DERMIS SUPERIOR SmoothLiftin Fotona 4D TimeWalker Estimulación de colágeno desde dentro, a través de la mucosa de la mejilla. Ninguno. Sales por la puerta directamente y por fuera no se ve nada. A consultar
+- HASTA LA DERMIS SUPERIOR SmoothLiftin Fotona 4D TimeWalker Estimulación de colágeno desde dentro, a través de la mucosa de la mejilla. Ninguno. Sales por la puerta directamente y por fuera no se ve nada. A consultar
 
-- TOT IN DE DERMIS SUPERIOR SmoothEye Fotona 4D TimeWalker Láser alrededor del contorno de ojos, para las patas de gallo y las líneas finas. Unas horas ligeramente roja alrededor de los ojos. Normalmente sales por la puerta directamente. € 150
+- HASTA LA DERMIS SUPERIOR SmoothEye Fotona 4D TimeWalker Láser alrededor del contorno de ojos, para las patas de gallo y las líneas finas. Unas horas ligeramente roja alrededor de los ojos. Normalmente sales por la puerta directamente. € 150
 
-- TOT IN DE DERMIS SUPERIOR LipLase Fotona 4D TimeWalker Labios más llenos y lisos sin relleno, con láser por dentro y por fuera. Unas horas de labios hinchados, a veces hasta un día. € 150
+- HASTA LA DERMIS SUPERIOR LipLase Fotona 4D TimeWalker Labios más llenos y lisos sin relleno, con láser por dentro y por fuera. Unas horas de labios hinchados, a veces hasta un día. € 150
 
-- TOT IN DE DERMIS SUPERIOR Fotona Acne Control Fotona 4D TimeWalker Láser para el acné activo, dirigido a la inflamación y a la glándula sebácea. Unas horas roja. Con inflamaciones activas la piel puede notarse algo irritada el primer día. A consultar
+- HASTA LA DERMIS SUPERIOR Fotona Acne Control Fotona 4D TimeWalker Láser para el acné activo, dirigido a la inflamación y a la glándula sebácea. Unas horas roja. Con inflamaciones activas la piel puede notarse algo irritada el primer día. A consultar
 
-- TOT IN DE DERMIS SUPERIOR Fotona Resurfacing Fotona 4D TimeWalker Renovación de la piel con láser, para poros, textura y una piel más lisa. De unas horas a unos días, según la profundidad elegida. A consultar
+- HASTA LA DERMIS SUPERIOR Fotona Resurfacing Fotona 4D TimeWalker Renovación de la piel con láser, para poros, textura y una piel más lisa. De unas horas a unos días, según la profundidad elegida. A consultar
 
-- TOT IN DE DERMIS SUPERIOR HAIRestart Fotona 4D TimeWalker Láser en el cuero cabelludo cuando el pelo empieza a clarear. Ninguno. Puedes salir por la puerta directamente y lavarte el pelo con normalidad. A consultar
+- HASTA LA DERMIS SUPERIOR HAIRestart Fotona 4D TimeWalker Láser en el cuero cabelludo cuando el pelo empieza a clarear. Ninguno. Puedes salir por la puerta directamente y lavarte el pelo con normalidad. A consultar
 
-- TOT IN DE DERMIS SUPERIOR Nordlys IPL para la pigmentación Nordlys Luz sobre manchas de pigmentación y daño solar. El pigmento sale primero a la superficie y después se difumina. Normalmente unas horas roja. € 75
+- HASTA LA DERMIS SUPERIOR Nordlys IPL para la pigmentación Nordlys Luz sobre manchas de pigmentación y daño solar. El pigmento sale primero a la superficie y después se difumina. Normalmente unas horas roja. € 75
 
-- TOT IN DE DERMIS SUPERIOR Nordlys IPL para rojeces y vasos Nordlys Luz sobre vasos visibles, rosácea y rojez persistente. El vaso se oscurece y luego desaparece. Unas horas roja, y los vasos tratados están primero más oscuros antes de desaparecer. € 75
+- HASTA LA DERMIS SUPERIOR Nordlys IPL para rojeces y vasos Nordlys Luz sobre vasos visibles, rosácea y rojez persistente. El vaso se oscurece y luego desaparece. Unas horas roja, y los vasos tratados están primero más oscuros antes de desaparecer. € 75
 
-- TOT IN DE DERMIS SUPERIOR Electrólisis Pelo a pelo, también los grises y los rubios. Para lo que el láser no ve. El tiempo de tratamiento lo cobramos por media hora. Las zonas tratadas están rojas unas horas y pueden hincharse un poco, parecido a después de la cera. En la mayoría de la gente eso desaparece el mismo día. € 60
+- HASTA LA DERMIS SUPERIOR Electrólisis Pelo a pelo, también los grises y los rubios. Para lo que el láser no ve. El tiempo de tratamiento lo cobramos por media hora. Las zonas tratadas están rojas unas horas y pueden hincharse un poco, parecido a después de la cera. En la mayoría de la gente eso desaparece el mismo día. € 60
 
-- TOT IN DE DERMIS SUPERIOR XL Hair U225 mesotherapie Contra la caída del pelo y el pelo que clarea. Un programa de meses, ajustado a tu cuero cabelludo. Cuero cabelludo sensible un rato. € 800
+- HASTA LA DERMIS SUPERIOR XL Hair Mesoterapia U225 Contra la caída del pelo y el pelo que clarea. Un programa de meses, ajustado a tu cuero cabelludo. Cuero cabelludo sensible un rato. € 800
 
-- TOT IN DE DERMIS SUPERIOR Terapia de cicatrices Para cicatrices después de una operación o una cesárea. El precio sigue la longitud de la cicatriz. Varía según la técnica. € 100
+- HASTA LA DERMIS SUPERIOR Terapia de cicatrices Para cicatrices después de una operación o una cesárea. El precio sigue la longitud de la cicatriz. Varía según la técnica. € 100
 
-- TOT IN DE DERMIS SUPERIOR RRS Hyalift RRS, met de U225 Llevar ácido hialurónico y vitaminas dentro de la piel. Para firmeza e hidratación, no para volumen. Pequeños bultitos que bajan en un día, y a veces un moratón. El maquillaje mejor déjalo ese día. € 175
+- HASTA LA DERMIS SUPERIOR RRS Hyalift RRS, con el U225 Llevar ácido hialurónico y vitaminas dentro de la piel. Para firmeza e hidratación, no para volumen. Pequeños bultitos que bajan en un día, y a veces un moratón. El maquillaje mejor déjalo ese día. € 175
 
-- TOT IN DE DERMIS PROFUNDA Fotona TimeWalker Fotona 4D TimeWalker Quince tratamientos en un solo equipo, desde un peeling láser suave hasta el 4D completo. Cada uno con su propio objetivo. De unas horas de rojez a unos días, según el tratamiento. € 150
+- HASTA LA DERMIS PROFUNDA Fotona TimeWalker Fotona 4D TimeWalker Quince tratamientos en un solo equipo, desde un peeling láser suave hasta el 4D completo. Cada uno con su propio objetivo. De unas horas de rojez a unos días, según el tratamiento. € 150
 
-- TOT IN DE DERMIS PROFUNDA Fotona 4D Fotona 4D TimeWalker Cuatro tratamientos láser en una sesión. Desde dentro, a través de la mejilla, hasta un peeling final. De unas horas a un día roja y caliente, como si hubieras estado demasiado tiempo al sol. € 370
+- HASTA LA DERMIS PROFUNDA Fotona 4D Fotona 4D TimeWalker Cuatro tratamientos láser en una sesión. Desde dentro, a través de la mejilla, hasta un peeling final. De unas horas a un día roja y caliente, como si hubieras estado demasiado tiempo al sol. € 370
 
-- TOT IN DE DERMIS PROFUNDA Fotona 4D Men Fotona 4D TimeWalker El mismo protocolo de cuatro pasos, ajustado a la piel masculina, que suele ser más gruesa. De unas horas a un día roja y caliente. Con barba la terapeuta presta atención extra a las zonas alrededor del vello. A consultar
+- HASTA LA DERMIS PROFUNDA Fotona 4D Men Fotona 4D TimeWalker El mismo protocolo de cuatro pasos, ajustado a la piel masculina, que suele ser más gruesa. De unas horas a un día roja y caliente. Con barba la terapeuta presta atención extra a las zonas alrededor del vello. A consultar
 
-- TOT IN DE DERMIS PROFUNDA FRAC3 Fotona 4D TimeWalker Láser fraccionado que llega más profundo, para la textura, los poros y las irregularidades. De uno a varios días roja, a veces con una textura fina y granulada que se descama. A consultar
+- HASTA LA DERMIS PROFUNDA FRAC3 Fotona 4D TimeWalker Láser fraccionado que llega más profundo, para la textura, los poros y las irregularidades. De uno a varios días roja, a veces con una textura fina y granulada que se descama. A consultar
 
-- TOT IN DE DERMIS PROFUNDA PIANO skin tightening Fotona 4D TimeWalker Calentamiento profundo y uniforme para reafirmar la cara, la mandíbula y el cuello. De nada a unas horas de rojez leve. Normalmente sales por la puerta directamente. A consultar
+- HASTA LA DERMIS PROFUNDA PIANO skin tightening Fotona 4D TimeWalker Calentamiento profundo y uniforme para reafirmar la cara, la mandíbula y el cuello. De nada a unas horas de rojez leve. Normalmente sales por la puerta directamente. A consultar
 
-- TOT IN DE DERMIS PROFUNDA VectorLift Fotona 4D TimeWalker Lifting de cejas con láser y reafirmación de la frente, sin agujas. Unas horas ligeramente roja en la frente. Sales por la puerta directamente. € 150
+- HASTA LA DERMIS PROFUNDA VectorLift Fotona 4D TimeWalker Lifting de cejas con láser y reafirmación de la frente, sin agujas. Unas horas ligeramente roja en la frente. Sales por la puerta directamente. € 150
 
-- TOT IN DE DERMIS PROFUNDA Fotona Scar Repair Fotona 4D TimeWalker Láser sobre cicatrices: cicatrices de acné, cicatrices quirúrgicas y estrías. De uno a unos pocos días roja, según la profundidad y la zona. € 195
+- HASTA LA DERMIS PROFUNDA Fotona Scar Repair Fotona 4D TimeWalker Láser sobre cicatrices: cicatrices de acné, cicatrices quirúrgicas y estrías. De uno a unos pocos días roja, según la profundidad y la zona. € 195
 
-- TOT IN DE DERMIS PROFUNDA Terapia LED Precision Photonic System Luz que calma la piel. En varias longitudes de onda, sin agujas ni ácidos. Ninguno. € 30
+- HASTA LA DERMIS PROFUNDA Terapia LED Precision Photonic System Luz que calma la piel. En varias longitudes de onda, sin agujas ni ácidos. Ninguno. € 30
 
-- TOT IN DE DERMIS PROFUNDA Depilación láser GentleMax Pro Desactivar la raíz del pelo. Por zona o como paquete, para mujeres y hombres. Unas horas roja, a veces con bultitos alrededor de los folículos. € 20
+- HASTA LA DERMIS PROFUNDA Depilación láser GentleMax Pro Desactivar la raíz del pelo. Por zona o como paquete, para mujeres y hombres. Unas horas roja, a veces con bultitos alrededor de los folículos. € 20
 
-- TOT IN DE DERMIS PROFUNDA Fotona 4D Full Package Fotona 4D TimeWalker El protocolo 4D completo, con el cuello y la mandíbula incluidos, en una sola cita. Roja y caliente de unas horas a un día; con el paso final de peeling la piel puede notarse áspera unos días. € 575
+- HASTA LA DERMIS PROFUNDA Fotona 4D Full Package Fotona 4D TimeWalker El protocolo 4D completo, con el cuello y la mandíbula incluidos, en una sola cita. Roja y caliente de unas horas a un día; con el paso final de peeling la piel puede notarse áspera unos días. € 575
 
-**Zo kies je een behandeling**
+**Así eliges un tratamiento**
 
-In het huidconsult kijken we onder vast licht wat er bij jou aan de hand is. Neem je huidprofiel mee: dan hoef je het gesprek niet bij nul te beginnen.
+En la consulta de la piel miramos bajo luz fija lo que te pasa. Trae tu perfil de piel: así la conversación no tiene que empezar desde cero.
 
-> knop: OF BEGIN BIJ JE HUIDPROBLEEM
+> knop: O EMPIEZA POR TU PROBLEMA DE PIEL
 
 ---
 
 ### /es/vacantes/terapeuta-de-piel
 
-**Tabbladtitel:** Vacature huidtherapeut Rotterdam | Diba Clinics
+**Tabbladtitel:** Vacante de terapeuta de la piel Róterdam | Diba Clinics
 
-**Google-omschrijving:** Vacature huidtherapeut bij Diba Clinics in Rotterdam. Werken met EVE-M, Fotona, Nordlys, SkinPen en peelings, in een team van elf. Parttime of fulltime.
+**Google-omschrijving:** Vacante de terapeuta de la piel en Diba Clinics, Róterdam. Con EVE-M, Fotona, Nordlys, SkinPen y peelings, en un equipo de once. Media jornada o completa.
 
-**VACANTE DE TERAPEUTA DE LA PIEL EN ROTTERDAM**
+**VACANTE DE TERAPEUTA DE LA PIEL EN RÓTERDAM**
 
 Diba Clinics es una clínica de la piel en Róterdam-Noord. Tratamos acné, pigmento, cicatrices, mejora de la piel y vello no deseado, y desde 2017 trabajamos con un equipo fijo de once personas.
 
@@ -45114,7 +45142,7 @@ Lo hablamos en la primera conversación, junto con las horas y la fecha de inici
 
 ¿Dónde está exactamente la clínica?
 
-En Weissenbruchlaan 166, 3054 LS Róterdam, en Róterdam-Noord. En coche aparcas en la calle y en transporte público estás dentro en poco menos de media hora desde Rotterdam Centraal.
+En Weissenbruchlaan 166, 3054 LS Róterdam, en Róterdam-Noord. En coche aparcas en la calle y en transporte público estás dentro en poco menos de media hora desde Róterdam Centraal.
 
 **Envía tu CV, el resto lo hablamos**
 
@@ -51007,4 +51035,4 @@ Stuur je cv naar info@dibaclinics.nl met de functie in de onderwerpregel. Een ui
 ---
 
 
-_374 pagina's · 24003 tekstblokken · ongeveer 364.256 woorden._
+_374 pagina's · 24017 tekstblokken · ongeveer 364.392 woorden._

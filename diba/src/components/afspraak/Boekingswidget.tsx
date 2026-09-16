@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
-import { useT } from "@/lib/gebruik-taal";
+import { useT, useTaal } from "@/lib/gebruik-taal";
 import {
   DIBA_SALONIZED_BOOKING_URL,
   DIBA_SALONIZED_WIDGET_COMPANY,
@@ -91,14 +91,14 @@ const HOOGTE = 880;
 const HOOGTE_MOBIEL = 620;
 const BREEDTE = 1080;
 
-export default function Boekingswidget({
-  /* De taal van het paneel. Salonized zet zijn eigen knoppen en stappen daarop; de
-     namen van de diensten komen uit hun agenda en blijven Nederlands. */
-  taal = "nl",
-}: {
-  readonly taal?: "nl" | "en";
-}) {
+export default function Boekingswidget() {
   const t = useT();
+  /* De taal van het paneel volgt de taal van de pagina. Salonized zet zijn eigen knoppen en
+     stappen daarop (het laadscript kent nl, en, de, fr, es, pt en meer); de namen van de
+     diensten komen uit hun agenda en blijven Nederlands. Tot 16 september 2026 stond hier
+     een prop met "nl" als standaard die nergens werd meegegeven, dus ook de Engelse en de
+     Spaanse pagina kregen een Nederlands paneel. */
+  const taal = useTaal();
   const vak = useRef<HTMLDivElement>(null);
   const [mislukt, setMislukt] = useState(false);
   /* Het adres van de pagina verandert nooit tijdens een bezoek, dus een abonnement dat

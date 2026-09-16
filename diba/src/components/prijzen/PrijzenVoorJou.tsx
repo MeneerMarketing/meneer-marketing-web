@@ -1,6 +1,7 @@
 "use client";
 
 import { useT, useTaal, useTc } from "@/lib/gebruik-taal";
+import { vul } from "@/lib/vul";
 import Link from "@/components/ui/Taalpad";
 import { useMemo } from "react";
 import Label from "@/components/ui/Label";
@@ -10,6 +11,7 @@ import {
   maakMatches,
   PROFIEL_ONDERDELEN,
   waaromNiets,
+  redenTekst,
 } from "@/data/huidprofiel";
 import { publicCopy } from "@/lib/copy-flags";
 import { useHuidprofiel } from "@/lib/huidprofiel-opslag";
@@ -83,8 +85,7 @@ export default function PrijzenVoorJou() {
       <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2">
         <Label>{t("Wat kost dit voor jou")}</Label>
         <p className="text-[14px] leading-6 text-[var(--t-muted)] tabular-nums">
-          {stand} van {PROFIEL_ONDERDELEN}
-          {t("vragen ingevuld")}
+          {vul(t("{0} van {1} vragen ingevuld"), stand, PROFIEL_ONDERDELEN)}
         </p>
       </div>
 
@@ -113,7 +114,7 @@ export default function PrijzenVoorJou() {
                       {tc(m.behandeling.naam)}
                     </span>
                     <span className="text-[14px] leading-6 text-[var(--t-muted)]">
-                      {tc(m.reden)}
+                      {redenTekst(m.reden, t, tc)}
                     </span>
                   </span>
                   <span className="shrink-0 text-[17px] leading-7 text-[var(--t-strong)] tabular-nums">
@@ -148,11 +149,12 @@ export default function PrijzenVoorJou() {
             {tc(geenMatch.kop)}
           </p>
           <p className="mt-3 max-w-[62ch] text-[16px] leading-7 text-[var(--g-900)]">
-            {tc(geenMatch.zin)}
+            {redenTekst(geenMatch.zin, t, tc)}
           </p>
           {geenMatch.danWel.length > 0 ? (
             <p className="mt-4 max-w-[62ch] text-[15px] leading-7 text-[var(--g-900)]">
-              {t("Wat er dan wel past:")} {geenMatch.danWel.join(", ")}.
+              {t("Wat er dan wel past:")}{" "}
+              {geenMatch.danWel.map((n) => tc(n)).join(", ")}.
             </p>
           ) : null}
 

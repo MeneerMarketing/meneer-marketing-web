@@ -184,7 +184,7 @@ export default function Nietgevonden() {
           >
             {DIBA_TELEFOON}
           </a>{" "}
-          of stel je vraag via{" "}
+          {t("of stel je vraag via")}{" "}
           <a
             href={DIBA_WHATSAPP_URL}
             target="_blank"

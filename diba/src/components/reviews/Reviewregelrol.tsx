@@ -46,6 +46,7 @@ export type Regelreview = {
   readonly id: string;
   readonly quote: string;
   readonly quoteEn?: string;
+  readonly quoteEs?: string;
   readonly name: string;
   readonly stars: number;
   readonly relativeDate?: string;
@@ -92,7 +93,9 @@ export default function Reviewregelrol({
           >
             <Sterren aantal={r.stars} maat="sm" />
             <blockquote className="min-w-0 text-[15px] leading-7 text-[var(--t-body)]">
-              &ldquo;{reviewtekst(r.quote, r.quoteEn, taal)}&rdquo;
+              &ldquo;
+              {reviewtekst(r.quote, { en: r.quoteEn, es: r.quoteEs }, taal)}
+              &rdquo;
             </blockquote>
             <figcaption className="diba-label flex flex-wrap items-baseline gap-x-3 text-[var(--t-muted)]">
               <span>

@@ -154,7 +154,7 @@ export default function Reviewmuur() {
           <li key={r.id} className="rounded-[var(--r-lg)] bg-white p-7 sm:p-8">
             <Sterren />
             <blockquote className="mt-5 text-[16px] leading-7 text-[var(--t-strong)]">
-              {reviewtekst(r.quote, r.quoteEn, taal)}
+              {reviewtekst(r.quote, { en: r.quoteEn, es: r.quoteEs }, taal)}
             </blockquote>
             <div className="mt-6 flex flex-wrap items-baseline gap-x-3 gap-y-1">
               <span className="text-[15px] leading-6 font-medium text-[var(--t-strong)]">

@@ -93,7 +93,7 @@ export default function VacatureHuidtherapeutPage() {
     <main className="figma-home bg-[var(--g-010)] text-[var(--t-strong)]">
       <SchemaMarkup
         data={jobPostingSchema({
-          functie: v.functie,
+          functie: tc(v.functie),
           beschrijvingHtml: vacatureBeschrijvingHtml(v),
           kenmerk: vacatureKenmerk(v),
           geplaatst: v.geplaatst,
@@ -124,9 +124,9 @@ export default function VacatureHuidtherapeutPage() {
             "Mesotherapie",
             "Acnebehandeling",
             "Pigmentbehandeling",
-          ],
-          branche: "Huidtherapie en huidverbetering",
-          urenPerWeek: v.urenPerWeek,
+          ].map((s) => tc(s)),
+          branche: tc("Huidtherapie en huidverbetering"),
+          urenPerWeek: tc(v.urenPerWeek),
         })}
       />
       <SchemaMarkup

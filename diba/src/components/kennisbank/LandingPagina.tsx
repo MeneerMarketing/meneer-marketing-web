@@ -18,6 +18,7 @@ import { euro, TWIJFEL_WHATSAPP, type Landing } from "@/data/landings/types";
 import { euro as bedrag } from "@/lib/getallen";
 import { taalNu } from "@/lib/taalcontext";
 import { t, tc } from "@/lib/vertaal";
+import { eigenPad } from "@/lib/eigen-pad";
 import {
   behandelingSchema,
   breadcrumbSchema,
@@ -104,7 +105,9 @@ const SECTIE =
 
 export default function LandingPagina({ landing: l }: { landing: Landing }) {
   const pad = `/kennisbank/${l.slug}`;
-  const url = `${DIBA_SITE_URL}${pad}`;
+  /* Het adres van deze taalversie. De structuurdata van de Engelse en de Spaanse pagina wees
+     naar het Nederlandse adres (WebPage, Service), terwijl het kruimelpad al vertaalde. */
+  const url = `${DIBA_SITE_URL}${eigenPad(pad)}`;
   const naam = landingNaam(l);
   /* De datum volgt de taal van de pagina: 11 september wordt 11 September. */
   const gewijzigd = new Date(l.gewijzigd).toLocaleDateString(
@@ -210,8 +213,8 @@ export default function LandingPagina({ landing: l }: { landing: Landing }) {
       {l.schema.dienst && tarief ? (
         <SchemaMarkup
           data={dienstSchema({
-            naam: l.schema.dienst.naam,
-            soort: l.schema.dienst.soort,
+            naam: tc(l.schema.dienst.naam),
+            soort: tc(l.schema.dienst.soort),
             omschrijving: kaal(l.antwoord),
             url,
             siteUrl: DIBA_SITE_URL,

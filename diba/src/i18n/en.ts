@@ -11183,9 +11183,6 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Doe de scan bij stap 1, dan staat je spinnenweb hier.":
     "Do the scan at step 1 and your web appears here.",
   "Je huid, zoals jij hem beschrijft": "Your skin, as you describe it",
-  "Je hebt": "You have",
-  "vragen ingevuld. Elke vraag die je nog beantwoordt maakt deze uitkomst preciezer.":
-    "questions filled in. Every further question you answer makes this outcome more precise.",
   "Dit zijn dingen die in de praktijk pas aan de balie boven tafel komen, en dan een afspraak kosten. Nu weet je het vooraf.":
     "These are things that in practice only come up at the desk, and then cost you an appointment. Now you know beforehand.",
   "Beste match": "Best match",
@@ -11197,11 +11194,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
     "Add what you want to change and the list appears here.",
   "Daarnaast doet er één iets aan je doel zonder dat hij daarvoor gemaakt is.":
     "Besides that, one of them does something for your goal without being made for it.",
-  "Daarnaast doen er": "Besides that,",
-  "iets aan je doel zonder dat ze daarvoor gemaakt zijn.":
-    "do something for your goal without being made for it.",
   "Die staan op de behandelingenpagina.": "Those are on the treatments page.",
-  losse: "separate",
   "Hier stond eerder alleen een aantal. Wat er wegvalt en waardoor is net zo bruikbaar als wat er overblijft, want meestal is het één antwoord van jou dat de halve lijst wegneemt.":
     "This used to show only a number. What drops out and why is just as useful as what is left, because usually one answer of yours removes half the list.",
   "Alle behandelingen, geordend op je profiel":
@@ -11282,7 +11275,6 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Stel je huidprofiel samen en hier staan de prijzen van wat bij jou past, met de reden erbij. De volledige lijst blijft er gewoon onder staan; er wordt niets weggefilterd.":
     "Build your skin profile and here are the prices of what suits you, with the reason beside it. The full list simply stays below; nothing is filtered out.",
   "Wat kost dit voor jou": "What this costs you",
-  "vragen ingevuld": "questions filled in",
   "Dit is wat er op grond van je profiel bij je past, met het tarief erbij. De volledige lijst staat er gewoon onder; er is niets weggefilterd. Wat bij jou afviel, staat daar aangemerkt.":
     "This is what suits you on the basis of your profile, with the rate beside it. The full list is simply below; nothing has been filtered out. What did not apply to you is marked there.",
   "Prijs volgt uit de meting": "Price follows from the measurement",
@@ -11768,7 +11760,6 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   /* ── Nagekomen bij het bedraden ── */
   "Tot in de": "Down into the",
   naast: "alongside",
-  Of: "Or",
   review: "review",
   "reviews waarin": "reviews in which",
   ". Dat is te weinig om iets uit af te leiden, en daarom staat het aantal op de knop en niet in de kleine letters.":
@@ -12923,7 +12914,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Alleen de hersteltijd zit in de weg": "Only the recovery time is in the way",
   "Alleen haren in hun groeifase zitten vast aan de wortel die geraakt moet worden. Op elk moment is dat een deel van je haren en niet allemaal. Daarom zijn er meerdere sessies met weken ertussen nodig, en niet omdat het per sessie niet hard genoeg staat.":
     "Only hairs in their growth phase are attached to the root that has to be reached. At any moment that is some of your hairs and not all of them. That is why several sessions with weeks in between are needed, and not because the setting is not high enough per session.",
-  "Alleen op je borst of decolleté": "Only on your chest or dÃ©colletÃ©",
+  "Alleen op je borst of decolleté": "Only on your chest or décolleté",
   "Alleen op je rug of schouders": "Only on your back or shoulders",
   "Alles waar je warm en bezweet van wordt.":
     "Anything that makes you hot and sweaty.",
@@ -13930,7 +13921,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Licht van boven maakt van elke holte een donkere plek. Verdwijnt de kring bij licht van voren, dan kijk je naar een schaduw en niet naar een kleur.":
     "Light from above turns every hollow into a dark spot. If the circle disappears with light from the front, you are looking at a shadow and not at a colour.",
   "Lichtbruine tot donkere plekjes op gezicht, decolleté en handrug. Vaak scherp begrensd.":
-    "Light brown to dark patches on the face, dÃ©colletÃ© and back of the hands. Often sharply bounded.",
+    "Light brown to dark patches on the face, décolleté and back of the hands. Often sharply bounded.",
   "Lichtgevoelige medicatie verandert hoe je huid op licht reageert. Neem de naam mee naar de intake.":
     "Light-sensitising medication changes how your skin reacts to light. Bring the name to the intake.",
   "Liever niet. Behandelen nu geeft een grote kans dat het pigment terugkomt of donkerder wordt.":
@@ -14473,9 +14464,9 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
     "We first work out what brings it on and only then look at whether light adds anything. As long as the trigger stays, the flush comes back and a machine is working against the tide.",
   "Weefsel dat werkelijk is losgelaten en niet alleen minder stevig. Geen apparaat zet dit terug, hoe vaak je ook komt.":
     "Tissue that has genuinely let go and is not merely less firm. No machine puts this back, however often you come.",
-  "Week 1 – 2": "Week 1 â€“ 2",
-  "Week 3 – 6": "Week 3 â€“ 6",
-  "Week 8 – 12": "Week 8 â€“ 12",
+  "Week 1 – 2": "Week 1 – 2",
+  "Week 3 – 6": "Week 3 – 6",
+  "Week 8 – 12": "Week 8 – 12",
   "Weinig pigment in de bovenlaag. De alexandriet werkt hier efficiënt en op een rustige energie.":
     "Little pigment in the top layer. The alexandrite works efficiently here and at a gentle energy.",
   "Wel te beperken, niet uit te zetten. En de roodheid zelf geeft stress, dus het draait rond.":
@@ -14769,4 +14760,54 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "een peeling die op de oogcontour mag": "a peel allowed on the eye contour",
   "steelwratjes weghalen": "removing skin tags",
   "bloedtest op voeding": "a blood test on food",
+  "Diba Clinics, huidkliniek in Rotterdam":
+    "Diba Clinics, skin clinic in Rotterdam",
+  "Schematisch stuk huid met poriën.": "A schematic piece of skin with pores.",
+  "Deze schakelaar doet het niet. Lees waarom.":
+    "This switch does not work. Read why.",
+  "Vraagt meer hersteltijd dan je aangaf. Je gaf aan {0}, en hiervoor moet je rekenen op {1}.":
+    "Needs more recovery time than you indicated. You said {0}, and for this you should count on {1}.",
+  "Hiervoor is deze behandeling gemaakt: {lijst}.":
+    "This treatment was made for this: {lijst}.",
+  "Doet iets aan {lijst}, maar daar is het niet voor gemaakt.":
+    "Does something for {lijst}, but that is not what it was made for.",
+  "Er is nu niets dat volledig past, en dat ligt aan één ding: {lijst}. Dat is een moment en geen eigenschap.":
+    "Right now nothing fits completely, and that comes down to one thing: {lijst}. That is a moment, not a trait.",
+  "Voor wat jij wil veranderen bestaat er wel iets, maar niet binnen de ruimte die je opgaf: je gaf aan {0}.":
+    "For what you want to change there is something, but not within the room you gave: you said {0}.",
+  "je zwangerschap": "your pregnancy",
+  niets: "nothing",
+  "Meld dit tijdens de intake": "Mention this during the intake",
+  "Dit nu niet": "Not this for now",
+  "{0} van de {1}": "{0} of {1}",
+  "Je hebt {0} van de {1} vragen ingevuld. Elke vraag die je nog beantwoordt maakt deze uitkomst preciezer.":
+    "You have filled in {0} of {1} questions. Every further question you answer makes this outcome more precise.",
+  "Daarnaast doen er {0} iets aan je doel zonder dat ze daarvoor gemaakt zijn.":
+    "Besides that, {0} do something for your goal without being made for it.",
+  "1 reden, niet {0} losse": "1 reason, not {0} separate ones",
+  "{0} redenen, niet {1} losse": "{0} reasons, not {1} separate ones",
+  "1 behandeling": "1 treatment",
+  "{0} behandelingen": "{0} treatments",
+  "{0} van {1} vragen ingevuld": "{0} of {1} questions filled in",
+  "Je wil iets doen aan {lijst}.": "You want to do something about {lijst}.",
+  "Je huid is {0} en {1}.": "Your skin is {0} and {1}.",
+  "Je huid is {0}.": "Your skin is {0}.",
+  "Je huid {0}.": "Your skin {0}.",
+  "Je schat jezelf in op Fitzpatrick {0}.":
+    "You place yourself at Fitzpatrick {0}.",
+  "Je gebruikt nu {lijst}.": "You currently use {lijst}.",
+  "Je hebt {0} van de {1} zones uit {2} aangewezen.":
+    "You have selected {0} of the {1} zones from {2}.",
+  "Wat er nog bij zou komen: {0}.": "What would still be added: {0}.",
+  "Of dat gunstiger uitkomt hangt af van de definitieve tarieven.":
+    "Whether that works out better depends on the final rates.",
+  Hydratatie: "Hydration",
+  "of stel je vraag via": "or ask your question via",
+  Huidtherapie: "Skin therapy",
+  Mesotherapie: "Mesotherapy",
+  Pigmentbehandeling: "Pigmentation treatment",
+  Huidbehandeling: "Skin treatment",
+  Ontharing: "Hair removal",
+  "Heb je er eerder antwoord op nodig, bel dan":
+    "If you need an answer sooner, call",
 };

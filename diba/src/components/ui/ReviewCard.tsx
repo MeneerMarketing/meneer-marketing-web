@@ -21,8 +21,9 @@ import { reviewtekst } from "@/lib/reviewtaal";
 
 export type ReviewCardProps = {
   quote: string;
-  /** De Engelse vertaling van de quote. Zie `lib/reviewtaal.ts`. */
+  /** De Engelse en Spaanse vertaling van de quote. Zie `lib/reviewtaal.ts`. */
   quoteEn?: string;
+  quoteEs?: string;
   name: string;
   treatment: string;
   /** 1 t/m 5 */
@@ -50,6 +51,7 @@ function Star({ filled }: { filled: boolean }) {
 export default function ReviewCard({
   quote,
   quoteEn,
+  quoteEs,
   name,
   treatment,
   stars,
@@ -62,7 +64,7 @@ export default function ReviewCard({
     <figure className="rounded-[var(--r-lg)] bg-white p-6 shadow-[var(--shadow-float)] sm:p-8">
       <blockquote>
         <p className="text-[17px] leading-8 text-[var(--g-900)] md:text-[18px]">
-          &ldquo;{reviewtekst(quote, quoteEn, taal)}&rdquo;
+          &ldquo;{reviewtekst(quote, { en: quoteEn, es: quoteEs }, taal)}&rdquo;
         </p>
       </blockquote>
       <figcaption className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2">

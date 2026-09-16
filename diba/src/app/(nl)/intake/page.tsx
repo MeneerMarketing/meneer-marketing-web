@@ -442,7 +442,11 @@ export default function IntakePage() {
                   }`}
                 >
                   <blockquote className="text-[16px] leading-7 text-[var(--t-strong)]">
-                    {reviewtekst(r.quote, r.quoteEn, taalNu())}
+                    {reviewtekst(
+                      r.quote,
+                      { en: r.quoteEn, es: r.quoteEs },
+                      taalNu(),
+                    )}
                   </blockquote>
                   <div className="mt-5 flex flex-wrap items-baseline gap-x-3 gap-y-1">
                     <span className="text-[15px] leading-6 font-medium text-[var(--t-strong)]">

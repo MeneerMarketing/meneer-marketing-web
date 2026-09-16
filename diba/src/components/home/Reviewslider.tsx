@@ -39,11 +39,13 @@ import { getal } from "@/lib/getallen";
 function Kaart({
   quote,
   quoteEn,
+  quoteEs,
   naam,
   wanneer,
 }: {
   quote: string;
   quoteEn?: string;
+  quoteEs?: string;
   naam: string;
   wanneer?: string;
 }) {
@@ -53,7 +55,7 @@ function Kaart({
     <li className="flex w-[300px] shrink-0 flex-col rounded-[var(--r-md)] bg-white p-6 sm:w-[340px]">
       <Sterren />
       <p className="mt-4 line-clamp-4 grow text-[15px] leading-7 text-[var(--g-900)]">
-        {reviewtekst(quote, quoteEn, taal)}
+        {reviewtekst(quote, { en: quoteEn, es: quoteEs }, taal)}
       </p>
       <p className="diba-label mt-5 flex items-baseline justify-between gap-3 text-[var(--t-muted)]">
         <span className="truncate">{naam}</span>
@@ -97,6 +99,7 @@ function Band({
           key={`${r.id}-${i}`}
           quote={r.quote}
           quoteEn={r.quoteEn}
+          quoteEs={r.quoteEs}
           naam={r.name}
           wanneer={r.relativeDate}
         />

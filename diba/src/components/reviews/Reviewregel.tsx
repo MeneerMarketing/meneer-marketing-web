@@ -65,6 +65,7 @@ export default function Reviewregel({
         id: r.id,
         quote: r.quote,
         quoteEn: r.quoteEn,
+        quoteEs: r.quoteEs,
         name: r.name,
         stars: r.stars,
         relativeDate: r.relativeDate,

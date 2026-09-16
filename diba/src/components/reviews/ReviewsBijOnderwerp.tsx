@@ -77,6 +77,7 @@ export default function ReviewsBijOnderwerp({
               <ReviewCard
                 quote={r.quote}
                 quoteEn={r.quoteEn}
+                quoteEs={r.quoteEs}
                 name={r.name}
                 treatment={r.treatment}
                 stars={r.stars}

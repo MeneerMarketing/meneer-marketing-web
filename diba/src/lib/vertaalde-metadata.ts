@@ -25,7 +25,7 @@ import { vertaal } from "@/lib/vertaal";
  *
  * Zolang een taal half af is. Een pagina die een taal belooft die hij niet spreekt hoort
  * niet in Google. Dat staat per taal in `TAAL_AF` (lib/taal.ts): het Engels is
- * sinds 13 september 2026 rond en staat op true, het Spaans wordt in golven gevuld. Staat
+ * sinds 13 september 2026 rond en staat op true, het Spaans sinds 16 september 2026. Staat
  * een taal op true, dan erft elke pagina de robots-instelling van zijn Nederlandse
  * tegenhanger — staat die op `noindex` (de voorwaarden, het cookiebeleid), dan geldt dat
  * vanzelf ook hier.
@@ -53,6 +53,18 @@ export function vertaaldeMetadata(
      letterlijk "/en/treatments/[slug]". Zolang de vertaalde kant op `noindex` stond viel
      dat niet op; als canonical van een pagina die wél geïndexeerd wordt is het een adres
      dat niet bestaat. De Nederlandse canonical is wél ingevuld, dus die omzetten. */
+  /* Het deelbeeld draagt een alt-tekst ("Fotona-laserbehandeling met oogbescherming") en
+     die kwam er tot 16 september 2026 in het Nederlands doorheen, terwijl dezelfde zin als
+     zichtbare alt wél vertaald werd. Open Graph en Twitter accepteren een enkel beeld, een
+     adres als tekst of een lijst; alleen een beeld met een alt heeft iets te vertalen. */
+  const vertBeelden = (v: unknown): unknown => {
+    if (Array.isArray(v)) return v.map(vertBeelden);
+    if (v && typeof v === "object" && "alt" in v) {
+      return { ...v, alt: vert((v as { alt?: unknown }).alt) };
+    }
+    return v;
+  };
+
   const nl =
     typeof basis.alternates?.canonical === "string"
       ? basis.alternates.canonical
@@ -88,6 +100,9 @@ export function vertaaldeMetadata(
             ...("description" in basis.openGraph && basis.openGraph.description
               ? { description: vert(basis.openGraph.description) as string }
               : {}),
+            ...("images" in basis.openGraph && basis.openGraph.images
+              ? { images: vertBeelden(basis.openGraph.images) }
+              : {}),
           } as Metadata["openGraph"],
         }
       : {}),
@@ -100,6 +115,9 @@ export function vertaaldeMetadata(
               : {}),
             ...("description" in basis.twitter && basis.twitter.description
               ? { description: vert(basis.twitter.description) as string }
+              : {}),
+            ...("images" in basis.twitter && basis.twitter.images
+              ? { images: vertBeelden(basis.twitter.images) }
               : {}),
           } as Metadata["twitter"],
         }

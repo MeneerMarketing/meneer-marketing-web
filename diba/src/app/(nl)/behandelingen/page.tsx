@@ -270,7 +270,10 @@ export default function BehandelingenPage() {
                     {tc(b.kort)}
                   </p>
                   <p className="diba-label mt-5 flex min-w-0 items-baseline justify-between gap-3 text-[var(--t-muted)]">
-                    <span className="min-w-0 truncate" title={b.apparaat}>
+                    <span
+                      className="min-w-0 truncate"
+                      title={b.apparaat ? tc(b.apparaat) : undefined}
+                    >
                       {tc(b.apparaat ?? "")}
                     </span>
                     <span className="shrink-0 text-[var(--g-700)]">
@@ -320,7 +323,7 @@ export default function BehandelingenPage() {
               if (delen.length < 2) return null;
               return {
                 sleutel: c.delen.join("-"),
-                naam: delen.map((b) => b!.naam).join(" en "),
+                naam: delen.map((b) => tc(b!.naam)).join(` ${t("en")} `),
                 inhoud: (
                   <div className="flex h-full flex-col rounded-[var(--r-lg)] bg-white p-6">
                     {/* De twee namen onder elkaar met een plus ertussen, in plaats van

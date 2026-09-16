@@ -124,7 +124,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Het apparaat waar we mee werken": "El equipo con el que trabajamos",
   "Wie wij zijn": "Quiénes somos",
   "Over ons": "Sobre nosotros",
-  "De kliniek in Rotterdam": "La clínica en Rotterdam",
+  "De kliniek in Rotterdam": "La clínica en Róterdam",
   "Ons verhaal": "Nuestra historia",
   "Hoe we werken, en waarom zo": "Cómo trabajamos, y por qué así",
   "Het team": "El equipo",
@@ -164,7 +164,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Aangesloten bij en geregistreerd in": "Miembros de y registrados en",
   "Website door": "Web hecha por",
   "Dé huidkliniek": "La clínica de la piel",
-  "in Rotterdam": "en Rotterdam",
+  "in Rotterdam": "en Róterdam",
   Sinds: "Desde",
   "Elke eerste behandeling begint met een meting.":
     "Todo primer tratamiento empieza con una medición.",
@@ -316,7 +316,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
     "Limpiar, exfoliar e hidratar. En una sola pasada, visible al momento y sin tiempo de recuperación.",
   "Wat een HydraFacial bij ons kost, met welk apparaat we werken en hoe een eerste afspraak verloopt, staat op":
     "Cuánto cuesta aquí un HydraFacial, con qué equipo trabajamos y cómo va una primera cita, está en",
-  "HydraFacial in Rotterdam": "HydraFacial en Rotterdam",
+  "HydraFacial in Rotterdam": "HydraFacial en Róterdam",
   "Een apparaat dat in één behandeling reinigt, de bovenste laag losmaakt, poriën leegzuigt en er daarna werkzame stoffen in brengt. Het werkt op de bovenste lagen, en juist daarom zie je het resultaat direct en heb je geen hersteltijd.":
     "Un equipo que en un solo tratamiento limpia, suelta la capa superior, vacía los poros por succión y después mete principios activos. Trabaja sobre las capas superiores, y justo por eso ves el resultado al momento y no tienes tiempo de recuperación.",
   "HydraFacial, tijdens de behandeling": "HydraFacial, durante el tratamiento",
@@ -434,7 +434,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Het voorstel": "La propuesta",
   "Je hoort welke behandeling past en wat die gaat kosten.":
     "Sabes qué tratamiento encaja y cuánto va a costar.",
-  "Diba Clinics in Rotterdam": "Diba Clinics en Rotterdam",
+  "Diba Clinics in Rotterdam": "Diba Clinics en Róterdam",
   "De behandelaars": "Las terapeutas",
   "Behandeld door huidtherapeuten": "Te tratan terapeutas de piel",
   "Bij Diba werken huidtherapeuten, orthomoleculair huidspecialisten en schoonheidsspecialisten. Huidtherapeut is een beschermde titel: daarvoor volg je een hbo-opleiding en sta je ingeschreven in het Kwaliteitsregister Paramedici.":
@@ -509,7 +509,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
     "No siempre. Cuando un escáner de la piel aporta algo, te explicamos qué medimos y por qué.",
   "Jouw eerste afspraak": "Tu primera cita",
   "Plan een intake": "Pide una primera consulta",
-  "bij ons in Rotterdam.": "con nosotros en Rotterdam.",
+  "bij ons in Rotterdam.": "con nosotros en Róterdam.",
   "Nog niet zeker? Stel je vraag":
     "¿Todavía no lo tienes claro? Haz tu pregunta",
   "Jouw profielschets": "Tu esbozo de perfil",
@@ -709,7 +709,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
     "De suave a fuerte. La concentración decide hasta dónde llega y cuánto se descama la piel.",
   "Met de": "Con el",
   Peelinglijnen: "Líneas de peeling",
-  "Chemische peeling in Rotterdam": "Peeling químico en Rotterdam",
+  "Chemische peeling in Rotterdam": "Peeling químico en Róterdam",
   Kruidenpeel: "Peeling de hierbas",
   "Een peeling van fijngemalen kruiden, zonder zuur. Remt de ontsteking en werkt antibacterieel.":
     "Un peeling de hierbas molidas muy finas, sin ácido. Calma la inflamación y actúa contra las bacterias.",
@@ -776,10 +776,10 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
     "Microneedling con agujas vibrantes, que atraviesan la piel de forma uniforme.",
   "Medisch gecertificeerd microneedlen. Werkt op de laag waar de structuur van je huid zit.":
     "Microneedling con certificación médica. Actúa sobre la capa donde está la estructura de tu piel.",
-  "Microneedling in Rotterdam": "Microneedling en Rotterdam",
-  "Fotona 4D in Rotterdam": "Fotona 4D en Rotterdam",
-  "Skinboosters in Rotterdam": "Skin boosters en Rotterdam",
-  "IPL-behandeling in Rotterdam": "Tratamiento IPL en Rotterdam",
+  "Microneedling in Rotterdam": "Microneedling en Róterdam",
+  "Fotona 4D in Rotterdam": "Fotona 4D en Róterdam",
+  "Skinboosters in Rotterdam": "Skin boosters en Róterdam",
+  "IPL-behandeling in Rotterdam": "Tratamiento IPL en Róterdam",
   "Wat kost dit?": "¿Cuánto cuesta esto?",
   "Vastgelegd in beeld": "Registrado en imágenes",
   "Zo gaat het bij ons": "Así lo hacemos aquí",
@@ -1065,7 +1065,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
     "Luz sobre manchas de pigmentación y daño solar. El pigmento sale primero a la superficie y después se difumina.",
   "Traject van zes maanden tegen hyperpigmentatie, met een masker in de kliniek en producten thuis.":
     "Programa de seis meses contra la hiperpigmentación, con una mascarilla en la clínica y productos en casa.",
-  "Cosmelan en Dermamelan in Rotterdam": "Cosmelan y Dermamelan en Rotterdam",
+  "Cosmelan en Dermamelan in Rotterdam": "Cosmelan y Dermamelan en Róterdam",
   "De intensievere pigmentaanpak, meestal bij melasma. Zes maanden, met een strak schema thuis.":
     "El enfoque más intensivo para la pigmentación, normalmente en el melasma. Seis meses, con una rutina estricta en casa.",
   "Gaan mijn pigmentvlekken helemaal weg?":
@@ -2356,7 +2356,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   Dermaplaning: "Dermaplaning",
   "Dode huidcellen en donshaartjes weg met een mesje. Werkt zonder zuren, dus ook bij een gevoelige huid.":
     "Células muertas y vello fino fuera con una cuchilla. Funciona sin ácidos, así que también sirve para una piel sensible.",
-  "Dermaplaning in Rotterdam": "Dermaplaning en Rotterdam",
+  "Dermaplaning in Rotterdam": "Dermaplaning en Róterdam",
   "Fotona 4D Men": "Fotona 4D Men",
   "Hetzelfde protocol van vier, ingesteld op de doorgaans dikkere mannenhuid.":
     "El mismo protocolo de cuatro pasos, ajustado a la piel masculina, que suele ser más gruesa.",
@@ -2378,7 +2378,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Deels. Kleur en structuur zijn goed te verbeteren, en dat is meestal wat mensen in de spiegel opvalt. Wat weg is aan volume komt niet terug, en dat zeggen we liever nu dan na vier sessies.":
     "En parte. El color y la textura se pueden mejorar bastante, y eso suele ser lo que la gente nota en el espejo. El volumen que se ha ido no vuelve, y preferimos decirlo ahora y no después de cuatro sesiones.",
   "Waarom beginnen jullie niet meteen met laser?":
-    "¿Por qué no empezáis directamente con láser?",
+    "¿Por qué no empezar directamente con láser?",
   "Omdat we eerst willen weten waar we naar kijken. Dezelfde lijn kan uitdroging zijn of ingesleten zonschade, en dat vraagt iets anders. De meting kost je één afspraak en bespaart meestal meer.":
     "Porque primero queremos saber qué estamos mirando. La misma línea puede ser deshidratación o daño solar marcado, y eso pide cosas distintas. La medición te cuesta una cita y normalmente ahorra más.",
   "Mijn huid is donker. Geldt dit ook voor mij?":
@@ -2657,7 +2657,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Oxygeneo glow": "OxyGeneo glow",
   "Exfoliëren en zuurstof in de huid brengen, in één behandeling.":
     "Exfoliar y llevar oxígeno a la piel, en un solo tratamiento.",
-  "OxyGeneo in Rotterdam": "OxyGeneo en Rotterdam",
+  "OxyGeneo in Rotterdam": "OxyGeneo en Róterdam",
   "SupErficial laserpeel": "Peeling láser SupErficial",
   "Een oppervlakkige laserpeeling voor een gladdere huid en meer glans.":
     "Un peeling láser superficial para una piel más lisa y con más brillo.",
@@ -3275,7 +3275,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
     "Prometer que se irá cada pelo. Los pelos claros y grises apenas responden a la luz",
   "Haar voor haar, ook grijs en blond. Voor wat de laser niet ziet zitten. De behandeltijd rekenen we per half uur.":
     "Pelo a pelo, también los grises y los rubios. Para lo que el láser no ve. El tiempo de tratamiento lo cobramos por media hora.",
-  "Elektrische epilatie in Rotterdam": "Electrólisis en Rotterdam",
+  "Elektrische epilatie in Rotterdam": "Electrólisis en Róterdam",
   "De haarwortel uitschakelen. Per zone of als pakket, voor dames en heren.":
     "Desactivar la raíz del pelo. Por zona o como paquete, para mujeres y hombres.",
   "Deze komen uit Salonized en zijn niet door ons uitgekozen op inhoud. Ze gaan over laserontharing, want dat is wat ingroei stopt.":
@@ -3447,7 +3447,8 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
     "Quitarte alimentos por tu cuenta sospechando de una alergia. Eso te cuesta nutrientes y rara vez da una respuesta.",
   "Een cosmetische behandeling boeken op actief eczeem. Daar wordt het erger van en wij doen het dus niet.":
     "Reservar un tratamiento estético sobre un eccema activo. Eso lo empeora, así que no lo hacemos.",
-  "Kan ik met eczeem bij jullie terecht?": "¿Puedo ir a vosotros con eccema?",
+  "Kan ik met eczeem bij jullie terecht?":
+    "¿Puedo acudir a la clínica con eccema?",
   "Voor het eczeem zelf niet, dat gaat naar de huisarts. Voor de huid eromheen soms wel, als die rustig is en je iets anders wilt aanpakken. We kijken dan of het verstandig is en zeggen het als het dat niet is.":
     "Para el eccema en sí no, eso va al médico de cabecera. Para la piel de alrededor a veces sí, si está tranquila y quieres tratar otra cosa. Entonces miramos si es sensato y lo decimos cuando no lo es.",
   "Gaat eczeem ooit over?": "¿El eccema se va alguna vez?",
@@ -3530,7 +3531,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Nee. Het is een aandoening van je eigen afweersysteem en niet overdraagbaar, ook niet bij aanraking.":
     "No. Es una afección de tu propio sistema inmunitario y no se transmite, ni siquiera por contacto.",
   "Wat kunnen jullie bij psoriasis wel doen?":
-    "¿Qué podéis hacer con la psoriasis?",
+    "¿Qué puede hacer la clínica con la psoriasis?",
   "Bij psoriasis kunnen wij de huid beoordelen en adviseren over ondersteunende huidverzorging. Voor de diagnose en medische behandeling werken we waar nodig samen met of verwijzen we naar de huisarts of dermatoloog. Actieve psoriasisplekken behandelen wij niet met huidbeschadigende of intensief exfoliërende behandelingen.":
     "Con la psoriasis podemos valorar la piel y asesorar sobre cuidados de apoyo. Para el diagnóstico y el tratamiento médico colaboramos con, o derivamos a, tu médico de cabecera o tu dermatólogo cuando hace falta. No tratamos las zonas de psoriasis activa con tratamientos que dañen la piel o exfolien de forma intensa.",
   "Ik heb alleen putjes in mijn nagels. Telt dat?":
@@ -3542,7 +3543,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Dat kan, en het is het onderdeel waarmee je niet moet wachten. Ochtendstijfheid die langer dan een halfuur duurt hoort besproken te worden, ook als je huidplekken klein zijn.":
     "Puede ser, y es la parte con la que no debes esperar. Una rigidez matutina que dura más de media hora debe comentarse, aunque tus zonas de piel sean pequeñas.",
   "Kan ik bij jullie wel voor iets anders terecht?":
-    "¿Puedo ir a vosotros por otra cosa?",
+    "¿Puedo acudir a la clínica por otra cosa?",
   "Als je huid op dat moment rustig is en het gaat om een ander onderwerp, dan kijken we mee. We behandelen niet over plekken heen en we zeggen het als we het niet verstandig vinden.":
     "Si tu piel está tranquila en ese momento y se trata de otro tema, lo miramos contigo. No tratamos por encima de las zonas y lo decimos cuando no nos parece sensato.",
   "Wanneer je bij": "Cuándo te corresponde",
@@ -3663,7 +3664,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
     "¿Por qué no hay aquí una lista de fotos?",
   "Omdat je daarmee gaat zoeken naar de foto die het meest op jou lijkt, en dat is precies de verkeerde manier. Uitslag ziet er bij iedereen anders uit, en op een donkere huid vaak heel anders dan op de foto's die je online vindt.":
     "Porque entonces te pondrías a buscar la foto que más se parece a la tuya, y eso es justo al revés. Una erupción se ve distinta en cada persona, y en una piel oscura a menudo muy distinta de las fotos que encuentras en internet.",
-  "Kan ik hiervoor bij jullie terecht?": "¿Puedo ir a vosotros con esto?",
+  "Kan ik hiervoor bij jullie terecht?": "¿Puedo acudir a la clínica con esto?",
   "Bij onbegrepen uitslag stelt je huisarts eerst de diagnose. Weet je eenmaal wat het is, dan kun je bij ons terecht voor het herstel van je huidbarrière, in overleg met je arts.":
     "Con una erupción sin explicar, tu médico de cabecera hace primero el diagnóstico. Una vez que sabes qué es, puedes venir a nosotros para la reparación de tu barrera cutánea, de acuerdo con tu médico.",
   "Naar je huisarts.": "A tu médico de cabecera.",
@@ -3865,7 +3866,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Omdat mensen ons dit vragen tijdens een behandeling, en omdat je bij ons op de behandelstoel ligt met je huid in beeld. Wij willen dat je weet waar je op let en waar je heen moet, ook al zijn wij het niet.":
     "Porque la gente nos pregunta esto durante un tratamiento, y porque estás tumbada en nuestra camilla con la piel a la vista. Queremos que sepas en qué fijarte y a dónde ir, aunque no seamos nosotros.",
   "Kan ik bij jullie een moedervlek laten weghalen?":
-    "¿Me podéis quitar un lunar?",
+    "¿Pueden quitarme un lunar?",
   "Nee. Niet bij een verdacht plekje en ook niet bij eentje waar je alleen maar vanaf wilt. Dat gaat naar de huisarts, die kan het zelf doen of doorverwijzen.":
     "No. Ni una lesión sospechosa ni una de la que simplemente quieras librarte. Eso va al médico de cabecera, que puede hacerlo o derivarte.",
   "Ik heb een behandeling gepland en er zit een moedervlek in het gebied.":
@@ -3979,7 +3980,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Waar we zitten": "Dónde estamos",
   "Meer uitgezocht": "Más explicado",
   "Ook uitgezocht": "También explicado",
-  "Ook bij ons in Rotterdam": "También con nosotros en Rotterdam",
+  "Ook bij ons in Rotterdam": "También con nosotros en Róterdam",
   "Plan een afspraak": "Pide una cita",
   "Bekijk de tarieven": "Ver los precios",
   "Alle tarieven van de kliniek": "Todos los precios de la clínica",
@@ -4010,9 +4011,9 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Twijfel je": "¿Dudas?",
   "Weet je al wel wat je zoekt maar twijfel je over het moment of de combinatie met iets anders, stel je vraag dan via WhatsApp. Daar zit een behandelaar aan de andere kant en geen formulier.":
     "Si ya sabes lo que buscas pero dudas del momento o de la combinación con otra cosa, haz tu pregunta por WhatsApp. Ahí hay una terapeuta al otro lado y no un formulario.",
-  "Waar in Rotterdam zitten jullie?": "¿Dónde estáis en Rotterdam?",
+  "Waar in Rotterdam zitten jullie?": "¿Dónde está la clínica en Róterdam?",
   "Aan de Weissenbruchlaan 166 in Rotterdam, aan de noordkant van de stad in een woonwijk. Je parkeert in de straat. De route en de openingstijden staan op onze contactpagina.":
-    "En Weissenbruchlaan 166 en Rotterdam, en el lado norte de la ciudad, en un barrio residencial. Se aparca en la calle. La ruta y el horario están en nuestra página de contacto.",
+    "En Weissenbruchlaan 166 en Róterdam, en el lado norte de la ciudad, en un barrio residencial. Se aparca en la calle. La ruta y el horario están en nuestra página de contacto.",
   "Laatst bijgewerkt op": "Última actualización el",
   ". Tarieven en behandeltijden worden bij elke wijziging nagelopen.":
     ". Los precios y los tiempos de tratamiento se revisan en cada cambio.",
@@ -4040,12 +4041,12 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Zon, vakantie en je huid": "El sol, las vacaciones y tu piel",
   "Hoe kies je een huidkliniek": "Cómo elegir una clínica de la piel",
   "Hoeveel sessies heb je nodig": "Cuántas sesiones necesitas",
-  "Huidtherapeut in Rotterdam": "Terapeuta de piel en Rotterdam",
-  "Huidanalyse in Rotterdam": "Análisis de piel en Rotterdam",
+  "Huidtherapeut in Rotterdam": "Terapeuta de piel en Róterdam",
+  "Huidanalyse in Rotterdam": "Análisis de piel en Róterdam",
   "Cosmelan en Dermamelan": "Cosmelan y Dermamelan",
   "HydraFacial in": "HydraFacial en",
   "Een HydraFacial is een gezichtsbehandeling waarbij één mondstuk tegelijk reinigt, de bovenste huidlaag losmaakt, poriën leegzuigt en er werkzame stoffen in brengt. Bij Diba Clinics aan de Weissenbruchlaan in Rotterdam duurt de behandeling 60 minuten, kost hij 170 tot 220 euro en is er geen hersteltijd.":
-    "Un HydraFacial es un tratamiento facial en el que un solo cabezal limpia, suelta la capa superior de la piel, vacía los poros y mete principios activos, todo a la vez. En Diba Clinics, en Weissenbruchlaan en Rotterdam, el tratamiento dura 60 minutos, cuesta de 170 a 220 euros y no tiene tiempo de recuperación.",
+    "Un HydraFacial es un tratamiento facial en el que un solo cabezal limpia, suelta la capa superior de la piel, vacía los poros y mete principios activos, todo a la vez. En Diba Clinics, en Weissenbruchlaan en Róterdam, el tratamiento dura 60 minutos, cuesta de 170 a 220 euros y no tiene tiempo de recuperación.",
   "60 minuten": "60 minutos",
   "€ 170 tot € 220": "€ 170 a € 220",
   Geen: "Ninguno",
@@ -4135,7 +4136,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Reviews van klanten die hier voor een gezichtsbehandeling waren. Ze komen rechtstreeks uit onze agenda en staan er zoals ze geschreven zijn.":
     "Reseñas de clientes que estuvieron aquí para un tratamiento facial. Vienen directamente de nuestra agenda y están tal como se escribieron.",
   "Wat kost een HydraFacial in Rotterdam?":
-    "¿Cuánto cuesta un HydraFacial en Rotterdam?",
+    "¿Cuánto cuesta un HydraFacial en Róterdam?",
   "Bij Diba Clinics kost een HydraFacial € 170 voor de Signature, € 190 voor de Deluxe en € 220 voor de Platinum. Een behandeling duurt 60 minuten. Kom je voor het eerst, dan boek je een behandeling op advies: die begint met een intake, en de intakekosten van € 50 vervallen zodra we in dezelfde afspraak behandelen.":
     "En Diba Clinics un HydraFacial cuesta € 170 el Signature, € 190 el Deluxe y € 220 el Platinum. El tratamiento dura 60 minutos. Si vienes por primera vez, reservas un tratamiento con asesoramiento: ese empieza con una primera consulta, y la tarifa de € 50 se anula en cuanto tratamos en esa misma cita.",
   "Hoe lang duurt een HydraFacial?": "¿Cuánto dura un HydraFacial?",
@@ -4172,12 +4173,12 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "juiste behandeling": "tratamiento adecuado?",
   "Dat hoef je ook niet te weten voordat je komt. Boek een behandeling op advies: we meten je huid, bespreken wat er speelt en zeggen welke behandeling daarbij past. Blijkt een HydraFacial niet het beste antwoord op jouw vraag, dan hoor je dat en doen we die dag iets anders of niets.":
     "Tampoco hace falta que lo sepas antes de venir. Reserva un tratamiento con asesoramiento: medimos tu piel, hablamos de lo que hay y decimos qué tratamiento encaja. Si un HydraFacial resulta no ser la mejor respuesta a tu pregunta, lo sabes y ese día hacemos otra cosa, o nada.",
-  "Een HydraFacial in Rotterdam": "Un HydraFacial en Rotterdam",
+  "Een HydraFacial in Rotterdam": "Un HydraFacial en Róterdam",
   "We beginnen met een meting van je huid en bespreken daarna welke behandeling erbij past. Is dat een HydraFacial, dan kan die vaak in dezelfde afspraak.":
     "Empezamos con una medición de tu piel y después hablamos de qué tratamiento encaja. Si es un HydraFacial, muchas veces se puede hacer en esa misma cita.",
   "Microneedling in": "Microneedling en",
   "Microneedling is een behandeling waarbij fijne naalden heel veel kleine kanaaltjes in de huid maken, zodat je huid zelf nieuw collageen gaat aanmaken. Bij Diba Clinics in Rotterdam werken we met de SkinPen en de Dermapen 4. Een behandeling van het gezicht kost € 180 en duurt 60 minuten, en daarna ben je een tot drie dagen rood.":
-    "El microneedling es un tratamiento en el que unas agujas finas hacen muchísimos canales pequeños en la piel, para que tu piel produzca colágeno nuevo por sí misma. En Diba Clinics en Rotterdam trabajamos con el SkinPen y el Dermapen 4. Un tratamiento de la cara cuesta € 180 y dura 60 minutos, y después estás de uno a tres días roja.",
+    "El microneedling es un tratamiento en el que unas agujas finas hacen muchísimos canales pequeños en la piel, para que tu piel produzca colágeno nuevo por sí misma. En Diba Clinics en Róterdam trabajamos con el SkinPen y el Dermapen 4. Un tratamiento de la cara cuesta € 180 y dura 60 minutos, y después estás de uno a tres días roja.",
   "Vanaf € 180": "Desde € 180",
   "1 tot 3 dagen rood": "De 1 a 3 días roja",
   Reeks: "Serie",
@@ -4267,7 +4268,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Reviews van klanten die hier kwamen voor littekens. Ze komen rechtstreeks uit onze agenda en staan er zoals ze geschreven zijn.":
     "Reseñas de clientes que vinieron aquí por cicatrices. Vienen directamente de nuestra agenda y están tal como se escribieron.",
   "Wat kost microneedling in Rotterdam?":
-    "¿Cuánto cuesta el microneedling en Rotterdam?",
+    "¿Cuánto cuesta el microneedling en Róterdam?",
   "Bij Diba Clinics kost microneedling € 180 voor het gezicht en € 255 voor de rug. Met de hals erbij is het € 210, en met hals en decolleté € 240. Dat is per sessie, en microneedling werkt in een reeks van drie tot zes. Kom je voor het eerst, dan begint je afspraak met een intake; die kost € 50 en vervalt als we in dezelfde afspraak behandelen.":
     "En Diba Clinics el microneedling cuesta € 180 para la cara y € 255 para la espalda. Con el cuello incluido son € 210, y con cuello y escote € 240. Eso es por sesión, y el microneedling funciona en una serie de tres a seis. Si vienes por primera vez, tu cita empieza con una primera consulta; esa cuesta € 50 y se anula si tratamos en esa misma cita.",
   "Doet microneedling pijn?": "¿Duele el microneedling?",
@@ -4305,7 +4306,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Chemische peeling": "Peeling químico",
   "Chemische peeling in": "Peeling químico en",
   "Een chemische peeling is een behandeling waarbij een zuur de verbinding tussen de buitenste huidcellen losmaakt, zodat die laag sneller wordt vervangen. Bij Diba Clinics in Rotterdam werken we met vier merken in drie sterktes. Een peeling kost vanaf € 140 en duurt 60 minuten; afhankelijk van de sterkte ben je daarna twee tot vijf dagen droog en schilferig.":
-    "Un peeling químico es un tratamiento en el que un ácido suelta la unión entre las células exteriores de la piel, para que esa capa se reemplace más rápido. En Diba Clinics en Rotterdam trabajamos con cuatro marcas en tres concentraciones. Un peeling cuesta desde € 140 y dura 60 minutos; según la concentración, después estás de dos a cinco días seca y descamada.",
+    "Un peeling químico es un tratamiento en el que un ácido suelta la unión entre las células exteriores de la piel, para que esa capa se reemplace más rápido. En Diba Clinics en Róterdam trabajamos con cuatro marcas en tres concentraciones. Un peeling cuesta desde € 140 y dura 60 minutos; según la concentración, después estás de dos a cinco días seca y descamada.",
   "Vanaf € 140": "Desde € 140",
   "2 tot 5 dagen": "De 2 a 5 días",
   Sterktes: "Concentraciones",
@@ -4405,7 +4406,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Reviews van klanten die hier voor acne kwamen, waarbij peelings vaak een deel van de behandeling zijn. Ze komen rechtstreeks uit onze agenda en staan er zoals ze geschreven zijn.":
     "Reseñas de clientes que vinieron aquí por acné, donde los peelings suelen formar parte del tratamiento. Vienen directamente de nuestra agenda y están tal como se escribieron.",
   "Wat kost een chemische peeling in Rotterdam?":
-    "¿Cuánto cuesta un peeling químico en Rotterdam?",
+    "¿Cuánto cuesta un peeling químico en Róterdam?",
   "Bij Diba Clinics kost een Mesoestetic-peeling € 140 en een TCA-peeling van Dermaceutic € 180. Een kruidenpeel kost € 150 voor het gezicht. Er zijn ook kuren van drie, waarvan sommige met producten voor thuis. Kom je voor het eerst, dan begint je afspraak met een intake van € 50, die vervalt als we in dezelfde afspraak behandelen.":
     "En Diba Clinics un peeling Mesoestetic cuesta € 140 y un peeling de TCA de Dermaceutic € 180. Un peeling de hierbas cuesta € 150 para la cara. También hay curas de tres, algunas con productos para casa. Si vienes por primera vez, tu cita empieza con una primera consulta de € 50, que se anula si tratamos en esa misma cita.",
   "Wat is het verschil tussen een chemische en een medische peeling?":
@@ -4440,12 +4441,12 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "je nodig hebt": "necesitas?",
   "Dat hoef je ook niet te weten voordat je komt. We meten je huid, kijken wat er speelt en kiezen de sterkte die daarbij past. Is een peeling niet het goede antwoord, dan hoor je dat.":
     "Tampoco hace falta que lo sepas antes de venir. Medimos tu piel, miramos qué hay y elegimos la concentración que encaja. Si un peeling no es la respuesta correcta, te lo decimos.",
-  "Een peeling in Rotterdam": "Un peeling en Rotterdam",
+  "Een peeling in Rotterdam": "Un peeling en Róterdam",
   "We meten je huid en kiezen daarna de peeling en de sterkte die erbij passen. Is behandelen verstandig, dan kan dat vaak in dezelfde afspraak.":
     "Medimos tu piel y después elegimos el peeling y la concentración que encajan. Si tratar es sensato, muchas veces se puede hacer en esa misma cita.",
   "OxyGeneo in": "OxyGeneo en",
   "OxyGeneo is een gezichtsbehandeling waarbij een capsule op de huid met een gel reageert: de bovenste laag wordt losgemaakt, werkzame stoffen gaan erin, en de huid krijgt een prikkel om meer zuurstofrijk bloed naar het oppervlak te sturen. Bij Diba Clinics in Rotterdam duurt de behandeling 60 minuten, kost hij € 150 en is er geen hersteltijd.":
-    "OxyGeneo es un tratamiento facial en el que una cápsula reacciona con un gel sobre la piel: la capa superior se suelta, entran principios activos, y la piel recibe un estímulo para mandar más sangre rica en oxígeno a la superficie. En Diba Clinics en Rotterdam el tratamiento dura 60 minutos, cuesta € 150 y no tiene tiempo de recuperación.",
+    "OxyGeneo es un tratamiento facial en el que una cápsula reacciona con un gel sobre la piel: la capa superior se suelta, entran principios activos, y la piel recibe un estímulo para mandar más sangre rica en oxígeno a la superficie. En Diba Clinics en Róterdam el tratamiento dura 60 minutos, cuesta € 150 y no tiene tiempo de recuperación.",
   "OxyGeneo, Pollogen": "OxyGeneo, Pollogen",
   "In de stoel": "En la camilla",
   "Wat OxyGeneo": "Lo que el OxyGeneo",
@@ -4511,7 +4512,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
     "Un ácido suelta la capa superior y llega más profundo. Más efecto sobre la decoloración, y más reacción de tu piel.",
   "De behandelaar beoordeelt vooraf of je huid er rustig genoeg voor is, en kiest de gel op wat je huid op dat moment nodig heeft.":
     "La terapeuta valora antes si tu piel está lo bastante tranquila para ello, y elige el gel según lo que tu piel necesite en ese momento.",
-  "Wat kost OxyGeneo in Rotterdam?": "¿Cuánto cuesta el OxyGeneo en Rotterdam?",
+  "Wat kost OxyGeneo in Rotterdam?": "¿Cuánto cuesta el OxyGeneo en Róterdam?",
   "Bij Diba Clinics kost een OxyGeneo-behandeling € 150 en duurt hij 60 minuten. Kom je voor het eerst, dan begint je afspraak met een intake van € 50, die vervalt als we in dezelfde afspraak behandelen.":
     "En Diba Clinics un tratamiento de OxyGeneo cuesta € 150 y dura 60 minutos. Si vienes por primera vez, tu cita empieza con una primera consulta de € 50, que se anula si tratamos en esa misma cita.",
   "Wat zijn die belletjes op mijn huid?":
@@ -4545,7 +4546,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
     "Primero miramos tu piel y después decimos si el OxyGeneo encaja. Si es así, el tratamiento se puede hacer muchas veces en esa misma cita.",
   "Dermaplaning in": "Dermaplaning en",
   "Dermaplaning is een behandeling waarbij een chirurgisch mesje onder een vaste hoek dode huidcellen en donshaartjes van je gezicht haalt. Er komen geen zuren aan te pas. Bij Diba Clinics in Rotterdam duurt een behandeling 60 minuten en kost hij € 150; je huid is meteen glad en je hebt geen hersteltijd.":
-    "El dermaplaning es un tratamiento en el que una cuchilla quirúrgica, sujeta a un ángulo fijo, retira células muertas y vello fino de tu cara. No intervienen ácidos. En Diba Clinics en Rotterdam el tratamiento dura 60 minutos y cuesta € 150; tu piel queda lisa al momento y no tienes tiempo de recuperación.",
+    "El dermaplaning es un tratamiento en el que una cuchilla quirúrgica, sujeta a un ángulo fijo, retira células muertas y vello fino de tu cara. No intervienen ácidos. En Diba Clinics en Róterdam el tratamiento dura 60 minutos y cuesta € 150; tu piel queda lisa al momento y no tienes tiempo de recuperación.",
   Werkwijze: "Cómo se hace",
   "Mesje, geen zuur": "Cuchilla, sin ácido",
   "Het haar": "El vello",
@@ -4614,7 +4615,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "De behandelaar beoordeelt eerst of je huid rustig genoeg is, want bij een actieve ontsteking gaat het mesje er niet overheen.":
     "La terapeuta valora primero si tu piel está lo bastante tranquila, porque la cuchilla no pasa por encima de una inflamación activa.",
   "Wat kost dermaplaning in Rotterdam?":
-    "¿Cuánto cuesta el dermaplaning en Rotterdam?",
+    "¿Cuánto cuesta el dermaplaning en Róterdam?",
   "Bij Diba Clinics kost dermaplaning € 150 en duurt een behandeling 60 minuten. Kom je voor het eerst, dan begint je afspraak met een intake van € 50, die vervalt als we in dezelfde afspraak behandelen.":
     "En Diba Clinics el dermaplaning cuesta € 150 y un tratamiento dura 60 minutos. Si vienes por primera vez, tu cita empieza con una primera consulta de € 50, que se anula si tratamos en esa misma cita.",
   "Groeit mijn haar dikker terug na dermaplaning?":
@@ -4650,7 +4651,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
     "Primero miramos tu piel y después decimos si el dermaplaning encaja. Si es así, el tratamiento se puede hacer muchas veces en esa misma cita.",
   "IPL-behandeling in": "Tratamiento IPL en",
   "IPL is een behandeling met intens gepulst licht dat pigment en kleine vaatjes in de huid opzoekt, zodat vlekken vervagen en roodheid wegtrekt. Bij Diba Clinics in Rotterdam werken we met de Nordlys van Candela. Een behandeling duurt 30 minuten en kost € 75 voor de neus tot € 250 voor het hele gelaat, en je bent meestal een paar uur rood.":
-    "El IPL es un tratamiento con luz pulsada intensa que busca el pigmento y los vasos pequeños de la piel, para que las manchas se difuminen y la rojez desaparezca. En Diba Clinics en Rotterdam trabajamos con el Nordlys de Candela. Un tratamiento dura 30 minutos y cuesta de € 75 para la nariz hasta € 250 para toda la cara, y normalmente estás unas horas roja.",
+    "El IPL es un tratamiento con luz pulsada intensa que busca el pigmento y los vasos pequeños de la piel, para que las manchas se difuminen y la rojez desaparezca. En Diba Clinics en Róterdam trabajamos con el Nordlys de Candela. Un tratamiento dura 30 minutos y cuesta de € 75 para la nariz hasta € 250 para toda la cara, y normalmente estás unas horas roja.",
   "30 minuten": "30 minutos",
   "€ 75 tot € 250": "€ 75 a € 250",
   "Een paar uur rood": "Unas horas roja",
@@ -4737,7 +4738,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "IPL wordt bij ons gedaan door een huidtherapeut of een laserspecialist. Die kiest per zone het handstuk en de instelling, en past die aan op je huidtype.":
     "El IPL lo hace aquí una terapeuta de piel o una especialista en láser. Ella elige el cabezal y el ajuste por zona, y los adapta a tu fototipo.",
   "Wat kost een IPL-behandeling in Rotterdam?":
-    "¿Cuánto cuesta un tratamiento IPL en Rotterdam?",
+    "¿Cuánto cuesta un tratamiento IPL en Róterdam?",
   "Bij Diba Clinics kost IPL € 75 voor de neus, € 150 voor de wangen en € 250 voor het hele gelaat; wangen, neus en kin samen kosten € 200. Dat geldt voor pigment en voor roodheid. Kom je voor het eerst, dan begint je afspraak met een intake van € 50, die vervalt als we in dezelfde afspraak behandelen.":
     "En Diba Clinics el IPL cuesta € 75 para la nariz, € 150 para las mejillas y € 250 para toda la cara; mejillas, nariz y barbilla juntas cuestan € 200. Eso vale para el pigmento y para la rojez. Si vienes por primera vez, tu cita empieza con una primera consulta de € 50, que se anula si tratamos en esa misma cita.",
   "Is IPL hetzelfde als laser?": "¿El IPL es lo mismo que el láser?",
@@ -4768,14 +4769,14 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "pigment of roodheid": "pigmento o rojez?",
   "Dat hoef je ook niet te weten voordat je komt. De meting laat zien wat het is en hoe diep het zit, en daarna hoor je of IPL het goede antwoord is. Is het melasma, dan kiezen we iets anders.":
     "Tampoco hace falta que lo sepas antes de venir. La medición enseña qué es y a qué profundidad está, y después sabes si el IPL es la respuesta correcta. Si es melasma, elegimos otra cosa.",
-  "IPL in Rotterdam": "IPL en Rotterdam",
+  "IPL in Rotterdam": "IPL en Róterdam",
   "We meten je huid en bepalen of het pigment of roodheid is, en hoe diep het zit. Past IPL, dan kan de eerste behandeling vaak in dezelfde afspraak.":
     "Medimos tu piel y determinamos si es pigmento o rojez, y a qué profundidad está. Si el IPL encaja, el primer tratamiento se puede hacer muchas veces en esa misma cita.",
   Elektrische: "Electrólisis",
   epilatie: "depilatoria",
   "Elektrische epilatie": "Electrólisis",
   "Elektrische epilatie is een ontharingsmethode waarbij een dun naaldje langs de haar de wortel bereikt en die met een korte stroomstoot uitschakelt, haar voor haar. Omdat kleur er niet toe doet, werkt het ook op grijs, wit en licht blond haar waar de laser niet op reageert. Bij Diba Clinics in Rotterdam kost het € 60 per half uur behandeltijd.":
-    "La electrólisis es un método de depilación en el que una aguja fina sigue el pelo hasta la raíz y la desactiva con un impulso corto de corriente, pelo a pelo. Como el color no importa, funciona también en el pelo gris, blanco y rubio muy claro al que el láser no responde. En Diba Clinics en Rotterdam cuesta € 60 por media hora de tratamiento.",
+    "La electrólisis es un método de depilación en el que una aguja fina sigue el pelo hasta la raíz y la desactiva con un impulso corto de corriente, pelo a pelo. Como el color no importa, funciona también en el pelo gris, blanco y rubio muy claro al que el láser no responde. En Diba Clinics en Róterdam cuesta € 60 por media hora de tratamiento.",
   "€ 60 per half uur": "€ 60 por media hora",
   Haarkleur: "Color del pelo",
   "Elke kleur": "Cualquier color",
@@ -4853,7 +4854,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "De behandelaar kijkt eerst of een deel van je haar nog op laser reageert, want dan is dat de snellere weg. Wat overblijft, doet de behandelaar haar voor haar.":
     "La terapeuta mira primero si una parte de tu pelo todavía responde al láser, porque esa es la vía más rápida. Lo que quede, la terapeuta lo hace pelo a pelo.",
   "Wat kost elektrische epilatie in Rotterdam?":
-    "¿Cuánto cuesta la electrólisis en Rotterdam?",
+    "¿Cuánto cuesta la electrólisis en Róterdam?",
   "Bij Diba Clinics kost elektrische epilatie € 60 per half uur behandeltijd, zoals het ook in de agenda staat. Hoeveel tijd je nodig hebt, hangt af van het gebied en het aantal haren. Kom je voor het eerst, dan begint je afspraak met een intake van € 50, die vervalt als we in dezelfde afspraak behandelen.":
     "En Diba Clinics la electrólisis cuesta € 60 por media hora de tratamiento, tal como figura en la agenda. Cuánto tiempo necesitas depende de la zona y del número de pelos. Si vienes por primera vez, tu cita empieza con una primera consulta de € 50, que se anula si tratamos en esa misma cita.",
   "Waarom werkt de laser niet op grijs haar?":
@@ -4891,7 +4892,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
     "Primero miramos tu pelo y tu piel, y después decimos si encaja el láser, la electrólisis o las dos. Si encaja la electrólisis, la primera sesión se puede hacer muchas veces en esa misma cita.",
   "Fotona 4D in": "Fotona 4D en",
   "Fotona 4D is een laserbehandeling in vier stappen in één sessie: eerst van binnenuit door de wang, daarna op diepte in de huid, en tot slot een lichte laserpeeling. Samen werken ze op verslapping, textuur en kleur, zonder naalden. Bij Diba Clinics in Rotterdam duurt een behandeling 90 minuten en kost hij € 370.":
-    "Fotona 4D es un tratamiento láser en cuatro pasos en una sola sesión: primero desde dentro a través de la mejilla, después en profundidad en la piel, y por último un peeling láser suave. Juntos actúan sobre la flacidez, la textura y el color, sin agujas. En Diba Clinics en Rotterdam un tratamiento dura 90 minutos y cuesta € 370.",
+    "Fotona 4D es un tratamiento láser en cuatro pasos en una sola sesión: primero desde dentro a través de la mejilla, después en profundidad en la piel, y por último un peeling láser suave. Juntos actúan sobre la flacidez, la textura y el color, sin agujas. En Diba Clinics en Róterdam un tratamiento dura 90 minutos y cuesta € 370.",
   "90 minuten": "90 minutos",
   "€ 370 per sessie": "€ 370 por sesión",
   "Uren tot een dag": "De horas a un día",
@@ -4988,7 +4989,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Fotona 4D wordt bij ons gedaan door een huidtherapeut of een laserspecialist. Die stelt het apparaat per stap en per zone in, en past de warmte aan op wat jij tijdens de sessie aangeeft.":
     "El Fotona 4D lo hace aquí una terapeuta de piel o una especialista en láser. Ella ajusta el equipo por paso y por zona, y adapta el calor a lo que tú digas durante la sesión.",
   "Wat kost Fotona 4D in Rotterdam?":
-    "¿Cuánto cuesta el Fotona 4D en Rotterdam?",
+    "¿Cuánto cuesta el Fotona 4D en Róterdam?",
   "Bij Diba Clinics kost Fotona 4D € 370 per behandeling en € 995 voor een kuur van drie. Het volledige pakket met hals en kaaklijn kost € 575, of € 1.495 als kuur van drie. Kom je voor het eerst, dan begint je afspraak met een intake van € 50.":
     "En Diba Clinics el Fotona 4D cuesta € 370 por tratamiento y € 995 una cura de tres. El paquete completo con cuello y mandíbula cuesta € 575, o € 1.495 como cura de tres. Si vienes por primera vez, tu cita empieza con una primera consulta de € 50.",
   "Waarom heet het 4D?": "¿Por qué se llama 4D?",
@@ -5024,7 +5025,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   Skinboosters: "Skin boosters",
   "Skinboosters in": "Skin boosters en",
   "Een skinbooster is een behandeling waarbij werkzame stoffen, zoals hyaluronzuur en vitamines, met heel fijne prikjes ín de huid worden gebracht in plaats van erop. Bij Diba Clinics in Rotterdam gebeurt dat met de U225, die elke prik op dezelfde diepte zet. Een losse behandeling kost € 180 en een kuur van drie € 500.":
-    "Un skin booster es un tratamiento en el que principios activos, como el ácido hialurónico y las vitaminas, se llevan dentro de la piel con pinchazos muy finos en vez de ponerse encima. En Diba Clinics en Rotterdam eso se hace con el U225, que coloca cada pinchazo a la misma profundidad. Un tratamiento suelto cuesta € 180 y una cura de tres € 500.",
+    "Un skin booster es un tratamiento en el que principios activos, como el ácido hialurónico y las vitaminas, se llevan dentro de la piel con pinchazos muy finos en vez de ponerse encima. En Diba Clinics en Róterdam eso se hace con el U225, que coloca cada pinchazo a la misma profundidad. Un tratamiento suelto cuesta € 180 y una cura de tres € 500.",
   "Vanaf € 130": "Desde € 130",
   "Bultjes, een dag": "Bultitos, un día",
   Kuur: "Cura",
@@ -5103,7 +5104,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "De behandelaar kiest het mengsel en de diepte, en stelt de U225 per zone in: rond de ogen anders dan op de wang.":
     "La terapeuta elige la mezcla y la profundidad, y ajusta el U225 por zona: de otra manera alrededor de los ojos que en la mejilla.",
   "Wat kosten skinboosters in Rotterdam?":
-    "¿Cuánto cuestan los skin boosters en Rotterdam?",
+    "¿Cuánto cuestan los skin boosters en Róterdam?",
   "Bij Diba Clinics kost een losse skinbooster € 180 en een kuur van drie € 500. De RRS Hyalift-booster kost € 175, en de booster voor de ogen, RRS Eyes, € 130 per keer of € 350 voor een kuur van drie. Kom je voor het eerst, dan begint je afspraak met een intake van € 50, die vervalt als we in dezelfde afspraak behandelen.":
     "En Diba Clinics un skin booster suelto cuesta € 180 y una cura de tres € 500. El booster RRS Hyalift cuesta € 175, y el booster para los ojos, RRS Eyes, € 130 cada vez o € 350 una cura de tres. Si vienes por primera vez, tu cita empieza con una primera consulta de € 50, que se anula si tratamos en esa misma cita.",
   "Wat is het verschil tussen een skinbooster en een filler?":
@@ -5139,7 +5140,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
     "Miramos tu piel y después elegimos la mezcla que encaja. Si tratar es sensato, la primera sesión se puede hacer muchas veces en esa misma cita.",
   "Cosmelan en": "Cosmelan y",
   "Cosmelan en Dermamelan zijn trajecten van ongeveer zes maanden tegen hardnekkig pigment: een masker in de kliniek, en daarna een vaste routine met producten thuis. Dermamelan is de sterkste van de twee en wordt vaker bij melasma ingezet. Bij Diba Clinics in Rotterdam kost Cosmelan € 720 en Dermamelan € 920, inclusief de producten.":
-    "Cosmelan y Dermamelan son programas de unos seis meses contra el pigmento persistente: una mascarilla en la clínica, y después una rutina fija con productos en casa. El Dermamelan es el más fuerte de los dos y se usa más a menudo en el melasma. En Diba Clinics en Rotterdam el Cosmelan cuesta € 720 y el Dermamelan € 920, productos incluidos.",
+    "Cosmelan y Dermamelan son programas de unos seis meses contra el pigmento persistente: una mascarilla en la clínica, y después una rutina fija con productos en casa. El Dermamelan es el más fuerte de los dos y se usa más a menudo en el melasma. En Diba Clinics en Róterdam el Cosmelan cuesta € 720 y el Dermamelan € 920, productos incluidos.",
   "Zes maanden": "Seis meses",
   "€ 720 tot € 920": "€ 720 a € 920",
 
@@ -5861,7 +5862,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Liever niet. Een net behandelde huid hoort een tijd uit de zon, en dat lukt op vakantie zelden. Plan de behandeling erna, of ruim ervoor zodat je huid tot rust is. De meting en het advies kunnen wel, en die zijn juist voor vertrek nuttig.":
     "Mejor no. Una piel recién tratada debe quedarse un tiempo fuera del sol, y en vacaciones eso rara vez sale. Programa el tratamiento para después, o bastante antes para que tu piel esté tranquila. La medición y el consejo sí se pueden hacer, y son justo útiles antes de irte.",
   "Waarom starten jullie geen pigmenttraject in de zomer?":
-    "¿Por qué no empezáis un programa de pigmento en verano?",
+    "¿Por qué no se empieza un programa de pigmento en verano?",
   "Omdat een traject als Cosmelan of Dermamelan maanden duurt en je huid in die tijd extra gevoelig is voor UV. In de zomerse maanden werkt de zon de behandeling tegen, en dan betaal je voor een resultaat dat meteen weer terugloopt. We starten daarom buiten de maanden mei tot en met augustus.":
     "Porque un programa como Cosmelan o Dermamelan dura meses y en ese tiempo tu piel es especialmente sensible a los rayos UV. En los meses de verano el sol trabaja en contra del tratamiento, y entonces pagas por un resultado que retrocede enseguida. Por eso empezamos fuera de los meses de mayo a agosto.",
   "Ik ben van nature donker. Geldt dit ook voor mij?":
@@ -6152,7 +6153,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Ja, de GentleMax Pro werkt op type I tot en met VI. Je type bepaalt niet of het kan, maar met welke golflengte, welke energie en welke koeling er gewerkt wordt. Bij de donkere types gaat dat met de Nd:YAG en met een proefplek vooraf.":
     "Sí, el GentleMax Pro funciona en los tipos I a VI. Tu tipo no decide si se puede, sino con qué longitud de onda, qué energía y qué refrigeración se trabaja. En los tipos oscuros se hace con la Nd:YAG y con una prueba previa en una zona pequeña.",
   "Waarom vragen jullie naar mijn huidtype voordat ik kom?":
-    "¿Por qué me preguntáis por mi fototipo antes de venir?",
+    "¿Por qué me preguntan por mi fototipo antes de venir?",
   "Omdat het bepaalt wat er op de dag zelf mogelijk is. Staat je type al in je huidprofiel, dan hoeft dat gesprek niet meer aan de balie te beginnen en is de intake korter. Het blijft een startpunt: wat je huid werkelijk doet, blijkt uit de proefplek.":
     "Porque decide lo que es posible el mismo día. Si tu tipo ya está en tu perfil de piel, esa conversación no tiene que empezar en recepción y la consulta previa es más corta. Sigue siendo un punto de partida: lo que tu piel hace de verdad se ve en la prueba en una zona pequeña.",
   "Verandert mijn huidtype in de zomer?": "¿Mi fototipo cambia en verano?",
@@ -7969,7 +7970,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
     "Lo hablamos en la primera conversación, junto con las horas y la fecha de inicio.",
   "Waar zit de kliniek precies?": "¿Dónde está exactamente la clínica?",
   "Aan de Weissenbruchlaan 166, 3054 LS Rotterdam, in Rotterdam-Noord. Met de auto sta je in de straat en met het openbaar vervoer ben je vanaf Rotterdam Centraal in een klein half uur binnen.":
-    "En Weissenbruchlaan 166, 3054 LS Róterdam, en Róterdam-Noord. En coche aparcas en la calle y en transporte público estás dentro en poco menos de media hora desde Rotterdam Centraal.",
+    "En Weissenbruchlaan 166, 3054 LS Róterdam, en Róterdam-Noord. En coche aparcas en la calle y en transporte público estás dentro en poco menos de media hora desde Róterdam Centraal.",
   "Stuur je cv, de rest": "Envía tu CV, el resto",
   "bespreken we": "lo hablamos",
   "Een motivatiebrief hoeft niet. Een paar regels over waar je nu werkt en wat je zoekt is genoeg, en binnen een week hoor je iets.":
@@ -8767,7 +8768,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Alleen na je akkoord. Zolang dat er niet is, worden deze scripts niet ingeladen; ze staan dus niet uit maar zijn er niet.":
     "Solo después de tu acuerdo. Mientras no lo haya, estos scripts no se cargan; así que no están apagados, sino que no están.",
   "Hoe je keuze bewaard wordt": "Cómo se guarda tu elección",
-  "Per browser,": "Por navegador,",
+  "Per browser,": "Por navegador",
   "op dit apparaat.": "en este dispositivo.",
   "Je keuze wordt lokaal in deze browser opgeslagen en gaat niet mee naar onze servers. Gebruik je een ander apparaat of een andere browser, dan wordt de vraag daar opnieuw gesteld, want daar weten we het antwoord niet.":
     "Tu elección se guarda localmente en este navegador y no viaja a nuestros servidores. Si usas otro dispositivo u otro navegador, la pregunta se hace ahí de nuevo, porque ahí no conocemos la respuesta.",
@@ -10371,345 +10372,598 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
     "En la misma cita puede entrar ácido hialurónico en los canales. Eso hace que la piel se note más llena al momento mientras la reconstrucción se pone en marcha.",
   "Omdat het aantal minder uitmaakt dan de tijd. Wie er twintig kleine heeft, betaalt anders het twintigvoudige voor hetzelfde kwartier werk.":
     "Porque el número importa menos que el tiempo. Quien tiene veinte pequeños pagaría si no veinte veces por el mismo cuarto de hora de trabajo.",
-  "Een fijn adertje op de wang vraagt een andere instelling dan een dikker vaatje bij de neusvleugel. De behandelaar kiest het filter daarop.": "Una venita fina en la mejilla pide otra configuración que un vaso más grueso junto a la aleta de la nariz. La terapeuta elige el filtro según eso.",
-  "Bij diepe, scherp begrensde putjes (ijspriemlittekens) komt needling vaak niet ver genoeg; dan is een fractionele laser een reëlere route.": "En hoyos profundos y de bordes marcados (cicatrices en pica de hielo) el needling a menudo no llega lo bastante lejos; entonces un láser fraccionado es una vía más realista.",
-  "Een litteken dat nog rood is verandert nog uit zichzelf, en prikkelen kan dat verstoren. We wachten tot minstens zes maanden na de ingreep.": "Una cicatriz que todavía está roja sigue cambiando por sí sola, y estimularla puede alterar eso. Esperamos al menos seis meses después de la intervención.",
-  "Wat een intolerantietest wel en niet kan zeggen hoor je in dat gesprek, en ook als het antwoord is dat je er in jouw geval weinig aan hebt.": "Lo que una prueba de intolerancias puede y no puede decir lo oyes en esa conversación, también si la respuesta es que en tu caso te sirve de poco.",
-  "Erna is je huid rustig en een paar uur licht rood. Je gaat met een advies naar huis over wat je de dagen erna wel en niet op je gezicht doet.": "Después tu piel está tranquila y unas horas ligeramente roja. Te vas a casa con un consejo sobre lo que sí y lo que no te pones en la cara los días siguientes.",
-  "Het is een behandeling zoals elke andere en de deur gaat dicht. Wat er wél anders is: je bepaalt zelf hoeveel je vertelt over waarom je komt.": "Es un tratamiento como cualquier otro y la puerta se cierra. Lo que sí es distinto: tú decides cuánto cuentas sobre por qué vienes.",
-  "Een sessie duurt twintig minuten en er is geen hersteltijd. Het werkt door herhaling, dus een reeks met een paar dagen tot een week ertussen.": "Una sesión dura veinte minutos y no hay tiempo de recuperación. Funciona por repetición, así que una serie con unos días a una semana entre medias.",
-  "Dat verschilt per persoon. Het gaat om opgebouwd collageen, en dat neemt na verloop van tijd weer af; de meeste mensen komen periodiek terug.": "Eso varía de una persona a otra. Se trata del colágeno construido, y ese vuelve a disminuir con el tiempo; la mayoría vuelve periódicamente.",
-  "Vier tot zes keer met vier tot zes weken ertussen. Die tussentijd is geen wachten maar de behandeling: daarin wordt het collageen aangemaakt.": "De cuatro a seis veces con cuatro a seis semanas entre medias. Ese tiempo intermedio no es esperar sino el tratamiento: ahí es cuando se produce el colágeno.",
-  "Ja. SmoothLiftin, FRAC3, PIANO en SupErficial hebben elk een eigen pagina en zijn los te boeken. Welke bij jou past hoor je tijdens de intake.": "Sí. SmoothLiftin, FRAC3, PIANO y SupErficial tienen cada uno su propia página y se pueden reservar sueltos. Cuál encaja contigo lo oyes en la consulta previa.",
-  "Elke puls voelt als een kort, scherp tikje. Op littekenweefsel voel je vaak minder dan op de huid eromheen, want de zenuwen lopen daar anders.": "Cada pulso se siente como un toque corto y agudo. En el tejido cicatricial a menudo sientes menos que en la piel de alrededor, porque los nervios van ahí de otra manera.",
-  "Daarom is dit een structuurbehandeling en geen reiniging. Een porie leeghalen helpt voor een paar dagen; de rand verstevigen houdt langer aan.": "Por eso es un tratamiento de textura y no una limpieza. Vaciar un poro ayuda unos días; reafirmar el borde dura más.",
-  "Na een paar dagen ga je vervellen. We spreken daarom vooraf af wanneer je begint, zodat het niet samenvalt met een vakantie of een drukke week.": "A los pocos días empiezas a descamarte. Por eso acordamos de antemano cuándo empiezas, para que no coincida con unas vacaciones o una semana ajetreada.",
-  "Elke puls voelt als een korte warme tik. Hoe dieper de instelling, hoe duidelijker je het merkt; de behandelaar vraagt tussendoor hoe het gaat.": "Cada pulso se siente como un toque corto y caliente. Cuanto más honda la configuración, más claro lo notas; la terapeuta pregunta entre medias cómo va.",
-  "Het traject van drie maanden staat als één bedrag op de tarievenpagina, inclusief de controles en de producten. Er komt niets bij aan de balie.": "El programa de tres meses figura como un solo importe en la página de tarifas, con las revisiones y los productos incluidos. En recepción no se añade nada.",
-  "Direct erna zijn je lippen wat gezwollen en voelen ze warm. Dat trekt binnen enkele uren weg; bij sommige mensen duurt het tot de volgende dag.": "Justo después tus labios están algo hinchados y se notan calientes. Eso baja en unas horas; en algunas personas dura hasta el día siguiente.",
-  "Een vouw tussen de wenkbrauwen of een lachrimpel die door spierbeweging ontstaat, gaat hier niet weg. Daarvoor werken wij niet met injectables.": "Un pliegue entre las cejas o una arruga de la sonrisa que surge por movimiento muscular no se va con esto. Para eso no trabajamos con inyectables.",
-  "Dat verschilt per verzekeraar en per polis. Op de vergoedingenpagina staat wat er per verzekeraar bekend is; je eigen polis is daarbij leidend.": "Eso varía según la aseguradora y la póliza. En la página de reembolsos pone lo que se sabe por aseguradora; tu propia póliza es la que manda.",
-  "Tussen de afspraken door verzorg je je huid zelf, met de producten en het schema die je meekrijgt. Dat bepaalt voor een groot deel het resultaat.": "Entre las citas cuidas tu piel tú, con los productos y el esquema que te dan. Eso decide en gran parte el resultado.",
-  "Er blijft een klein korstje achter dat er binnen een week tot tien dagen afgaat. Eraan zitten is de enige manier om er een litteken van te maken.": "Queda una pequeña costra que se cae en una semana o diez días. Tocarla es la única forma de convertirla en cicatriz.",
-  "Erna ben je rood en warm. In de dagen die volgen kan de huid fijn korrelig aanvoelen en licht schilferen; dat is de oude bovenlaag die eraf komt.": "Después tienes la piel roja y caliente. En los días siguientes la piel puede notarse finamente granulada y descamarse un poco; es la vieja capa superior que se va.",
-  "Erna is de zone een paar uur rood en warm. Sauna, sport en zon laat je die dag even, en zonbescherming hoort daarna bij het traject en niet erna.": "Después la zona está roja y caliente unas horas. La sauna, el deporte y el sol los dejas ese día, y la protección solar forma parte del programa después, no viene después de él.",
-  "Ja, en vaak is dat de beste route: de arts pakt de bultjes en de ontsteking aan, wij de zichtbare roodheid. We stemmen af wat er wanneer gebeurt.": "Sí, y a menudo es el mejor camino: el médico trata los bultitos y la inflamación, nosotros la rojez visible. Acordamos qué pasa y cuándo.",
-  "Kort en gericht. Het steelwratje wordt verdoofd met een crème of een prikje en daarna verwijderd; het geheel duurt per plekje ongeveer een minuut.": "Corto y preciso. El acrocordón se anestesia con una crema o un pinchazo y después se quita; todo junto dura alrededor de un minuto por mancha.",
-  "Dat kan, in de eerste weken. Wat er dan naar boven komt zat er al; het wordt alleen sneller zichtbaar. Het hoort bij het verloop en het gaat over.": "Puede pasar, en las primeras semanas. Lo que sube entonces ya estaba ahí; solo se hace visible antes. Forma parte de la evolución y se pasa.",
-  "Voor structuur wordt er dieper gewerkt dan bij een huidverbetering. De behandelaar zet de diepte per zone; op de wang kan meer dan op de kaaklijn.": "Para la textura se trabaja más hondo que en una mejora de la piel. La terapeuta fija la profundidad por zona; en la mejilla se puede más que en la línea de la mandíbula.",
-  "Omdat er vier behandelingen in een sessie op elkaar volgen, elk op een andere diepte. Van het slijmvlies aan de binnenkant tot de bovenste huidlaag.": "Porque en una sesión van cuatro tratamientos uno tras otro, cada uno a otra profundidad. Desde la mucosa del interior hasta la capa superior de la piel.",
-  "Bij een peeling doet een middel het werk en bepaalt de inwerktijd de diepte. Hier doet licht het werk en stelt de behandelaar de diepte per zone in.": "En un peeling un producto hace el trabajo y el tiempo de actuación decide la profundidad. Aquí la luz hace el trabajo y la terapeuta ajusta la profundidad por zona.",
-  "Niet op de plekken waar het actief is. We beginnen dan met de acne zelf; zodra de huid rustig is, is er iets om aan te werken dat ook rustig blijft.": "No en los sitios donde está activo. Entonces empezamos por el propio acné; en cuanto la piel está tranquila, hay algo en lo que trabajar que también se queda tranquilo.",
-  "Erna is er aan de buitenkant niets te zien. Je kunt gewoon eten en drinken; sommige mensen vinden het de eerste uren wat droog aanvoelen in de mond.": "Después por fuera no se ve nada. Puedes comer y beber con normalidad; algunas personas notan la boca algo seca las primeras horas.",
-  "Vaak wel, als het litteken volgroeid is en rustig. De behandelaar beoordeelt het eerst; bij twijfel over het type litteken overleggen we met je arts.": "A menudo sí, si la cicatriz ha madurado y está tranquila. La terapeuta la valora primero; si hay dudas sobre el tipo de cicatriz, lo consultamos con tu médico.",
-  "Meteen na de behandeling kan een vaatje juist donkerder zijn. Dat hoort erbij: het is het teken dat het geraakt is, en het trekt in de dagen erna weg.": "Justo después del tratamiento un vaso puede estar incluso más oscuro. Es normal: es la señal de que se ha alcanzado, y desaparece en los días siguientes.",
-  "Bij de controles kijken we samen naar de meting van de vorige keer. Niet om te beoordelen of je je best hebt gedaan, maar om te zien of het plan klopt.": "En las revisiones miramos juntos la medición de la vez anterior. No para juzgar si te has esforzado, sino para ver si el plan se sostiene.",
-  "Na een paar weken. Collageenopbouw kost tijd, dus wat je vlak na de eerste sessie ziet is herstel. Daarom leggen we vooraf vast hoe je huid erbij staat.": "Al cabo de unas semanas. Producir colágeno lleva tiempo, así que lo que ves justo después de la primera sesión es recuperación. Por eso registramos de antemano cómo está tu piel.",
-  "Het principe is hetzelfde en het apparaat is anders. Welke van de twee bij je past hangt af van je huid en de zone, en dat bepalen we tijdens de intake.": "El principio es el mismo y el aparato es distinto. Cuál de los dos encaja contigo depende de tu piel y de la zona, y eso lo decidimos en la consulta previa.",
-  "Deze behandeling werkt op je gehemelte en niet op je huid. Je mond blijft open met een spreider en de laser gaat er in drie of vier doorgangen overheen.": "Este tratamiento trabaja sobre tu paladar y no sobre tu piel. La boca se mantiene abierta con un separador y el láser pasa por encima en tres o cuatro pasadas.",
-  "Dat is geen opvullen. Er wordt niets ingebracht; de huid maakt het zelf, en daarom bouwt het effect op over weken en verdwijnt het ook weer geleidelijk.": "Eso no es rellenar. No se introduce nada; la piel lo produce ella misma, y por eso el efecto se construye a lo largo de semanas y también vuelve a desaparecer poco a poco.",
-  "De weken daarna doe jij het werk. Je krijgt producten mee met een schema, en dat schema volgen bepaalt de uitkomst meer dan wat er in de kliniek gebeurt.": "Las semanas siguientes el trabajo lo haces tú. Te llevas productos con un esquema, y seguir ese esquema decide el resultado más que lo que pasa en la clínica.",
-  "Zelden. Acne heeft een verloop en vraagt om een traject met behandelingen, producten en controles. Deze laser is daar een stap in en geen vervanging van.": "Rara vez. El acné tiene una evolución y pide un programa con tratamientos, productos y revisiones. Este láser es un paso dentro de él y no un sustituto.",
-  "Daarom is het bij acne minder een kwestie van sterker of zwakker en meer van welk zuur waar aangrijpt. Dat is wat er tijdens de intake vastgesteld wordt.": "Por eso en el acné es menos cuestión de más fuerte o más suave y más de qué ácido actúa dónde. Eso es lo que se determina en la consulta previa.",
-  "In de eerste weken kan de huid onrustiger worden doordat verstoppingen naar de oppervlakte komen. Dat is geen verslechtering; het is wat er al onder zat.": "En las primeras semanas la piel puede alterarse más porque las obstrucciones salen a la superficie. No es un empeoramiento; es lo que ya había debajo.",
-  "Omdat het geen prijzen voor één behandeling zijn maar voor verschillende. Een laserpeel is iets anders dan een volledige 4D, en dat staat per regel apart.": "Porque no son precios de un solo tratamiento sino de varios. Un peeling láser es otra cosa que un 4D completo, y eso figura en una línea aparte.",
-  "De reactie is meteen te zien: een pigmentvlek komt tijdelijk scherper naar voren en wordt donkerder. Dat hoort erbij en betekent niet dat het erger wordt.": "La reacción se ve al momento: una mancha de pigmento resalta temporalmente con más nitidez y se oscurece. Es normal y no significa que empeore.",
-  "Hyalift is een van de mengsels die we als skinbooster gebruiken. De werkwijze is dezelfde; het verschil zit in wat er in de spuit zit en waar dat op mikt.": "Hyalift es una de las mezclas que usamos como skinbooster. El método es el mismo; la diferencia está en lo que lleva la jeringa y a qué apunta.",
-  "De diepte wordt per zone bijgesteld. Rond je ogen en op je voorhoofd gaat hij ondieper dan op je wangen, en dat merk je: hoe dieper, hoe meer druk je voelt.": "La profundidad se ajusta por zona. Alrededor de los ojos y en la frente va menos hondo que en las mejillas, y lo notas: cuanto más hondo, más presión sientes.",
-  "Elke flits voelt als een kort tikje met een elastiekje. Er gaat een koele gel op en je krijgt een bril op, want je ziet het licht ook door je oogleden heen.": "Cada destello se siente como un toque corto con una goma elástica. Se pone un gel frío y te ponen unas gafas, porque la luz la ves también a través de los párpados.",
-  "Erna is je huid rood en warm, en in de dagen die volgen komt de oude bovenlaag eraf. Niet krabben en niet schrobben; dat is precies waar een vlek van blijft.": "Después tu piel está roja y caliente, y en los días siguientes la vieja capa superior se desprende. No rascar y no frotar; eso es justo lo que deja una mancha.",
-  "Bij herhaling gebeurt er meer. Een reeks peelings zet ook de aanmaak in de laag eronder aan, en dan gaat het niet alleen over glans maar ook over stevigheid.": "Con la repetición pasa más. Una serie de peelings también activa la producción en la capa de debajo, y entonces no se trata solo de luminosidad sino también de firmeza.",
-  "Het voelt als een reeks korte prikjes. Rond de ogen is de huid dunner dan op de wang, dus daar merk je het duidelijker dan bij een behandeling op je gezicht.": "Se siente como una serie de pinchazos cortos. Alrededor de los ojos la piel es más fina que en la mejilla, así que ahí lo notas más claro que en un tratamiento en la cara.",
-  "Ja, elk traject begint hiermee. De meting is het vertrekpunt waar we het resultaat later mee vergelijken, zodat je over drie maanden ziet wat er veranderd is.": "Sí, cada programa empieza con esto. La medición es el punto de partida con el que después comparamos el resultado, para que dentro de tres meses veas lo que ha cambiado.",
-  "Bij een chemische peeling doet een middel het werk en bepaalt de inwerktijd de diepte. Hier doet licht het werk en stelt de behandelaar de diepte per puls in.": "En un peeling químico un producto hace el trabajo y el tiempo de actuación decide la profundidad. Aquí la luz hace el trabajo y la terapeuta ajusta la profundidad pulso a pulso.",
-  "Dit is geen huidbehandeling. Er wordt een klein beetje bloed afgenomen en dat gaat naar een laboratorium; in de kliniek zelf ben je binnen een kwartier klaar.": "Esto no es un tratamiento de la piel. Se saca un poco de sangre y va a un laboratorio; en la propia clínica terminas en un cuarto de hora.",
-  "Erna ben je een paar uur rood. Het pigment dat naar boven komt vervaagt in de dagen erna. Zonbescherming is hier geen advies maar onderdeel van de behandeling.": "Después estás unas horas con la piel roja. El pigmento que sube se difumina en los días siguientes. Aquí la protección solar no es un consejo sino parte del tratamiento.",
-  "Van een oppervlakkige peeling zonder hersteltijd tot een stevigere die een paar dagen vervelt. Wat het wordt hangt af van je huid en van hoeveel dagen je hebt.": "Desde un peeling superficial sin tiempo de recuperación hasta uno más intenso que descama unos días. Cuál sea depende de tu piel y de cuántos días tienes.",
-  "Vlak erna zie je kleine bultjes op de plek van elke prik. Die zakken doorgaans binnen een dag. Blauwe plekjes kunnen, vooral rond de ogen, en die duren langer.": "Justo después ves pequeños bultitos en el sitio de cada pinchazo. Normalmente bajan en un día. Puede haber pequeños moratones, sobre todo alrededor de los ojos, y esos duran más.",
-  "De behandelaar bekijkt eerst wat er zit: verstoppingen, ontstekingen of allebei. Dat bepaalt wat er die afspraak gebeurt en wat er juist met rust gelaten wordt.": "La terapeuta mira primero lo que hay: obstrucciones, inflamaciones o las dos cosas. Eso decide lo que pasa en esa cita y lo que justo se deja en paz.",
-  "Het licht van de Nordlys wordt opgenomen door het rood in het bloed, en niet door de huid eromheen. Daardoor warmt precies het vaatje op en blijft de rest koel.": "La luz del Nordlys la absorbe el rojo de la sangre, y no la piel de alrededor. Así se calienta justo el vaso y el resto se queda frío.",
-  "Zolang er actieve ontstekingen zijn wordt er niet op littekens gewerkt. Prikkelen van een ontstoken huid maakt de kans op nieuwe littekens groter, niet kleiner.": "Mientras haya inflamaciones activas no se trabaja sobre las cicatrices. Estimular una piel inflamada hace más probable que salgan cicatrices nuevas, no menos.",
-  "Bij een keloïd of bij aanleg daarvoor wordt er niet geprikkeld voordat een arts of dermatoloog heeft meegekeken: een te stevige prikkel maakt een keloïd groter.": "Con un queloide o tendencia a formarlos no se estimula antes de que lo haya mirado un médico o dermatólogo: un estímulo demasiado fuerte hace un queloide más grande.",
-  "Nee. Bij een filler wordt er iets ingebracht en is het volume er meteen. Hier bouwt je eigen weefsel op, dus het verschil is subtieler en het komt over de reeks.": "No. Con un relleno se introduce algo y el volumen está al momento. Aquí se construye tu propio tejido, así que la diferencia es más sutil y llega a lo largo de la serie.",
-  "Een litteken dat soepeler aanvoelt, minder glanst en minder scherp afsteekt tegen de huid eromheen. De lijn blijft zichtbaar; wat verandert is hoeveel hij opvalt.": "Una cicatriz que se nota más flexible, brilla menos y contrasta menos con la piel de alrededor. La línea sigue visible; lo que cambia es cuánto llama la atención.",
-  "Je krijgt een beschermbril op en de behandelaar gaat met korte pulsen over de aangedane zones. Op ontstoken plekken voel je het duidelijker dan op de rustige huid.": "Te ponen gafas de protección y la terapeuta pasa con pulsos cortos por las zonas afectadas. En los puntos inflamados lo sientes más claro que en la piel tranquila.",
-  "Zon is hier geen bijzaak maar de helft van het resultaat. Elke blootstelling zet de pigmentcellen weer aan het werk, en dan haal je weg wat er meteen weer bij komt.": "Aquí el sol no es un detalle sino la mitad del resultado. Cada exposición vuelve a poner a trabajar a las células de pigmento, y entonces quitas lo que vuelve a salir enseguida.",
-  "Meestal vier tot zes, met vier tot zes weken ertussen. Hoeveel het er bij jou worden hangt af van hoe diep de littekens zitten en hoe je huid op de eerste reageert.": "Normalmente de cuatro a seis, con cuatro a seis semanas entre medias. Cuántas son en tu caso depende de lo hondas que estén las cicatrices y de cómo reacciona tu piel a la primera.",
-  "Dat de energie in eilandjes de huid in gaat in plaats van als een vlak. Het weefsel dat ertussen intact blijft, helpt het herstel op gang en dat scheelt hersteltijd.": "Que la energía entra en la piel en islas en lugar de como una superficie plana. El tejido que queda intacto entre medias pone en marcha la recuperación y eso ahorra tiempo de recuperación.",
-  "Daarna zie je ons met vaste tussenpozen. Elke afspraak is deels behandeling en deels controle, en bij elke controle wordt er opnieuw gemeten onder dezelfde belichting.": "Después nos ves a intervalos fijos. Cada cita es en parte tratamiento y en parte revisión, y en cada revisión se vuelve a medir bajo la misma iluminación.",
-  "Soms wel en minder dan bij een jong litteken. Een oud litteken is uitgerijpt en reageert daardoor rustiger. Wat er in jouw geval te verwachten is hoor je na de meting.": "A veces sí, y menos que en una cicatriz joven. Una cicatriz antigua ha madurado y por eso reacciona con más calma. Lo que cabe esperar en tu caso lo oyes después de la medición.",
-  "Hetzelfde verloop als bij de SkinPen: verdovende crème, een half uur wachten, en dan de pen in banen over de zone. De Dermapen werkt sneller, dus een vlak is eerder af.": "El mismo desarrollo que con el SkinPen: crema anestésica, media hora de espera, y después el pen en pasadas por la zona. El Dermapen trabaja más rápido, así que una zona se termina antes.",
-  "Bij een oppervlakkige peeling niet; je bent een paar uur rood. Bij een stevigere vervel je een paar dagen, en dan plannen we het liever niet vlak voor iets belangrijks.": "Con un peeling superficial no; estás unas horas con la piel roja. Con uno más intenso te descamas unos días, y entonces preferimos no programarlo justo antes de algo importante.",
-  "Vlak erna is je gezicht opvallend glad en neemt het crème makkelijker op. De donshaartjes komen terug zoals ze waren, dus wie het bevalt komt ongeveer maandelijks terug.": "Justo después tu cara está llamativamente lisa y absorbe mejor la crema. El vello fino vuelve como era, así que a quien le gusta vuelve más o menos cada mes.",
-  "Bij structuur telt de dekking meer dan de diepte. Er wordt over de hele zone gewerkt in plaats van op losse plekken, met een instelling die lichter is dan bij littekens.": "En la textura cuenta más la cobertura que la profundidad. Se trabaja toda la zona en lugar de puntos sueltos, con una configuración más suave que para cicatrices.",
-  "Na afloop staan er kleine bultjes op de plek van elke prik. Dat hoort erbij en het is de vloeistof die nog niet is opgenomen; binnen een paar uur tot een dag zijn ze weg.": "Al terminar hay pequeños bultitos en el sitio de cada pinchazo. Es normal y es el líquido que todavía no se ha absorbido; en unas horas o un día desaparecen.",
-  "Meestal niet. Kringen komen van pigment, van doorschijnende vaatjes of van schaduw, en dat vraagt een andere aanpak. Wat het bij jou is stellen we tijdens de intake vast.": "Normalmente no. Las ojeras vienen del pigmento, de vasos que se transparentan o de la sombra, y eso pide otro enfoque. Cuál es en tu caso lo determinamos en la consulta previa.",
-  "Je krijgt een beschermbril op die de hele behandeling op blijft. De eerste stap gebeurt in je mond: er komt een handstuk tegen de binnenkant van je wang en dat voelt warm.": "Te ponen gafas de protección que se quedan puestas todo el tratamiento. El primer paso ocurre en tu boca: una pieza de mano va contra la parte interior de la mejilla y se nota caliente.",
-  "Een litteken dat nog aan het genezen is laten we eerst met rust. Daarna geldt: hoe jonger, hoe meer er te winnen valt, maar ook bij oude littekens is er vaak iets te doen.": "Una cicatriz que todavía cura la dejamos primero en paz. Después vale: cuanto más joven, más se puede ganar, pero también en cicatrices antiguas a menudo hay algo que hacer.",
-  "Erna is je huid roze en voelt hij zacht aan. Je kunt meteen door met je dag; er is niets waar je rekening mee hoeft te houden behalve zonbescherming, en die geldt sowieso.": "Después tu piel está rosada y se nota suave. Puedes seguir con tu día enseguida; no hay nada que tener en cuenta salvo la protección solar, y esa vale de todos modos.",
-  "Bij acnelittekens is dat het hele verhaal. Het gaat niet om de kleur maar om de diepte: hoe minder verschil in hoogte, hoe minder schaduw, hoe minder je het litteken ziet.": "En las cicatrices de acné eso es toda la historia. No se trata del color sino de la profundidad: cuanta menos diferencia de altura, menos sombra, y menos ves la cicatriz.",
-  "Het slijmvlies ligt vlak tegen het weefsel van je middengezicht aan. De warmte komt daardoor bij de laag waar collageen zit, zonder dat de buitenste huidlaag geraakt wordt.": "La mucosa está pegada al tejido de la parte media de tu cara. Así el calor llega a la capa donde está el colágeno, sin tocar la capa exterior de la piel.",
-  "Drie tot zes maanden, met een controle om de vier tot zes weken. Waar je in die marge valt hangt af van het type acne en van hoe je huid reageert, en dat hoor je na de meting.": "De tres a seis meses, con una revisión cada cuatro a seis semanas. En qué punto de ese margen caes depende del tipo de acné y de cómo reacciona tu piel, y eso lo oyes después de la medición.",
-  "De behandelde vlek niet, maar de pigmentcellen die hem maakten zitten er nog. Zonder dagelijkse bescherming komen er nieuwe, en dan heb je hetzelfde geld twee keer uitgegeven.": "La mancha tratada no, pero las células de pigmento que la hicieron siguen ahí. Sin protección diaria salen nuevas, y entonces has gastado el mismo dinero dos veces.",
-  "Needling brengt precies in die laag herstel op gang. Het nieuwe collageen maakt de huid iets dikker en steviger, en een dikkere huid vouwt minder makkelijk in kleine lijntjes.": "El needling pone en marcha la reparación justo en esa capa. El colágeno nuevo hace la piel un poco más gruesa y firme, y una piel más gruesa se pliega con menos facilidad en líneas pequeñas.",
-  "Dat hangt af van de zones die we behandelen en dat stellen we tijdens de intake vast. De intake kost € 50 en dat bedrag gaat eraf zodra je in dezelfde afspraak behandeld wordt.": "Depende de las zonas que tratemos y eso lo determinamos en la consulta previa. La consulta previa cuesta € 50 y ese importe se descuenta en cuanto te tratan en la misma cita.",
-  "Dat hangt af van de diepte. Licht uitgevoerd ben je een paar uur rood; dieper reken je op enkele dagen. Dat spreken we vooraf af, zodat het niet samenvalt met iets belangrijks.": "Depende de la profundidad. Hecho suave estás unas horas con la piel roja; más hondo, cuenta con unos días. Eso lo acordamos de antemano, para que no coincida con algo importante.",
-  "Elke puls voelt als een kort, scherp tikje, alsof er een elastiekje tegen je huid schiet. Op de wang is dat goed te doen; boven de lip en langs de neus merk je het duidelijker.": "Cada pulso se siente como un toque corto y agudo, como si una goma elástica chasqueara contra tu piel. En la mejilla se lleva bien; encima del labio y junto a la nariz lo notas más claro.",
-  "Wat LED niet doet is de porie vrijmaken. Zonder reiniging of een peeling blijft de verstopping zitten en komt de bacterie terug, en dan behandel je elke keer opnieuw hetzelfde.": "Lo que el LED no hace es liberar el poro. Sin una limpieza o un peeling la obstrucción se queda y la bacteria vuelve, y entonces tratas cada vez lo mismo.",
-  "Een frissere, gelijkmatiger huid die het licht rustiger weerkaatst, direct na de eerste sessie merkbaar en na een reeks steviger. Diepe lijnen en verslapping vallen hier buiten.": "Una piel más fresca y uniforme que refleja la luz con más calma, perceptible justo después de la primera sesión y más firme tras una serie. Las líneas profundas y la flacidez quedan fuera.",
-  "Een test die in kaart brengt op welke voedingsmiddelen je lichaam reageert. Het is geen huidbehandeling, maar de uitslag geeft soms een verklaring voor wat er op je huid gebeurt.": "Una prueba que identifica a qué alimentos reacciona tu cuerpo. No es un tratamiento de la piel, pero el resultado a veces explica lo que pasa en tu piel.",
-  "De eerste dagen ziet je huid er frisser uit door de zwelling; dat is nog geen resultaat. Wat blijft begint na een week of vier op te bouwen en loopt tot ongeveer drie maanden door.": "Los primeros días tu piel se ve más fresca por la hinchazón; eso todavía no es resultado. Lo que se queda empieza a construirse a las cuatro semanas más o menos y sigue hasta unos tres meses.",
-  "De eerste afspraak gaat vooral over kijken en meten. Hoe oud een litteken is en hoe het aanvoelt bepaalt wat er mogelijk is, en dat is een gesprek dat je niet in vijf minuten voert.": "La primera cita va sobre todo de mirar y medir. La edad de una cicatriz y cómo se nota deciden lo que es posible, y esa es una conversación que no se tiene en cinco minutos.",
-  "De glans van één peeling houdt weken aan. Wat een reeks opbouwt aan stevigheid houdt maanden, en daarna vraagt het onderhoud. Dat is geen verkooptruc maar hoe huidvernieuwing werkt.": "La luminosidad de un solo peeling dura semanas. La firmeza que construye una serie dura meses, y después pide mantenimiento. No es un truco de venta sino cómo funciona la renovación de la piel.",
-  "Een pigmentvlek is een plek waar de pigmentcellen te veel hebben aangemaakt. Bij zonschade zit dat pigment meestal hoog, in de opperhuid, en die laag vernieuwt zichzelf voortdurend.": "Una mancha de pigmento es un sitio donde las células de pigmento han producido demasiado. En el daño solar ese pigmento suele estar arriba, en la epidermis, y esa capa se renueva continuamente.",
-  "Wat je voelt is een oplopende warmte die net voor het ongemakkelijke stopt. De behandelaar vraagt tijdens de sessie hoe warm het aanvoelt en stelt het apparaat op jouw antwoord bij.": "Lo que sientes es un calor que sube y se detiene justo antes de lo incómodo. La terapeuta pregunta durante la sesión cuánto calor notas y ajusta el aparato según tu respuesta.",
-  "Meestal drie tot zes, met vier tot zes weken ertussen. Bij een lang of jong litteken loopt dat op; bij een oud en smal litteken blijft het aan de onderkant. Dat hoor je na de meting.": "Normalmente de tres a seis, con cuatro a seis semanas entre medias. En una cicatriz larga o joven sube; en una antigua y estrecha se queda en la parte baja. Eso lo oyes después de la medición.",
-  "Elke puls voelt als een warm tikje, met een koude stoot er direct omheen. Op je bovenlip en langs je bikinilijn voel je meer dan op je benen; dat is overal zo en het gaat snel voorbij.": "Cada pulso se siente como un toque caliente, con un golpe de frío justo alrededor. En el labio superior y en la línea del bikini sientes más que en las piernas; es así en todas partes y pasa rápido.",
-  "Dat kan, maar dan haal je er weinig uit. Het licht werkt op de bacterie en op de ontsteking; als de porie verstopt blijft komt het steeds terug. Het is bedoeld als stap in een traject.": "Se puede, pero entonces le sacas poco. La luz trabaja sobre la bacteria y sobre la inflamación; si el poro sigue obstruido, vuelve una y otra vez. Está pensado como paso dentro de un programa.",
-  "Het licht van de Nordlys wordt door dat bloed opgenomen en maakt de vaatjes dicht, waarna het lichaam ze opruimt. Daardoor zakt de vaste roodheid: de laag die er altijd was, verdwijnt.": "La luz del Nordlys la absorbe esa sangre y cierra los vasos, y después el cuerpo los elimina. Así baja la rojez fija: la capa que siempre estuvo ahí desaparece.",
-  "Je ligt achterover met je mond open en het handstuk gaat tegen de binnenkant van je wang. Wat je voelt is warmte die oploopt, en de behandelaar vraagt tussendoor hoe warm het aanvoelt.": "Te recuestas con la boca abierta y la pieza de mano va contra la parte interior de tu mejilla. Lo que sientes es un calor que sube, y la terapeuta pregunta entre medias cuánto calor notas.",
-  "Nee. Het licht sluit vaatjes die permanent open staan; de neiging om op te vliegen zit in hoe je vaten reageren en die blijft. Wat wel verandert is de rode ondergrond die er altijd was.": "No. La luz cierra vasos que están permanentemente abiertos; la tendencia a los sofocos está en cómo reaccionan tus vasos y esa se queda. Lo que sí cambia es el fondo rojo que siempre estuvo ahí.",
-  "Rood licht doet iets anders: het dringt dieper door en remt de ontstekingsreactie eromheen. Bij acne worden ze daarom vaak na elkaar gegeven, blauw op de bacterie en rood op de roodheid.": "La luz roja hace otra cosa: penetra más hondo y frena la reacción inflamatoria de alrededor. En el acné por eso a menudo se dan una tras otra, azul sobre la bacteria y rojo sobre la rojez.",
-  "Vlekken die lichter worden of verdwijnen, met een gelijkmatiger huid als geheel. De eerste week na een sessie ziet het er slechter uit dan ervoor; dat hoort erbij en is geen tegenvaller.": "Manchas que se aclaran o desaparecen, con una piel más uniforme en conjunto. La primera semana después de una sesión se ve peor que antes; es normal y no es un contratiempo.",
-  "Dat hangt af van het aantal sessies dat bij jou past, en dat stellen we tijdens de intake vast. De intake kost € 50 en dat bedrag gaat eraf zodra je in dezelfde afspraak behandeld wordt.": "Depende del número de sesiones que encaja en tu caso, y eso lo determinamos en la consulta previa. La consulta previa cuesta € 50 y ese importe se descuenta en cuanto te tratan en la misma cita.",
-  "Door hormonen, leeftijd of scheren kan de huid in het intieme gebied donkerder worden. Happy Intim werkt met chemische peelings die het pigment daar verlichten en de textuur egaler maken.": "Por las hormonas, la edad o el afeitado la piel de la zona íntima puede oscurecerse. Happy Intim trabaja con peelings químicos que aclaran el pigmento ahí y uniformizan la textura.",
-  "Na de reeks een huid die gladder aanvoelt en waarin de fijnste lijntjes minder opvallen. Het beste moment om te vergelijken is drie maanden na de laatste sessie, want dan is de opbouw af.": "Tras la serie, una piel que se nota más lisa y en la que las líneas más finas llaman menos la atención. El mejor momento para comparar es tres meses después de la última sesión, porque entonces la reconstrucción ha terminado.",
-  "Zichtbaar minder vaatjes en een rustiger kleur. Wat weg is komt niet terug: dat vaatje bestaat niet meer. Wel kunnen er elders nieuwe ontstaan, want de aanleg die ze maakte verandert niet.": "Visiblemente menos vasos y un color más tranquilo. Lo que se ha ido no vuelve: ese vaso ya no existe. Sí pueden surgir otros nuevos en otro sitio, porque la predisposición que los hizo no cambia.",
-  "De behandeling zelf hangt af van wat eruit komt, en dat verschilt per litteken. Wat overal geldt is dat het een reeks is en geen losse sessie, met tussenpozen die het weefsel de tijd geven.": "El tratamiento en sí depende de lo que salga de ahí, y eso varía según la cicatriz. Lo que vale en todos los casos es que es una serie y no una sesión suelta, con intervalos que dan tiempo al tejido.",
-  "Minder diepe striae met een gelijkmatiger oppervlak. Bij rode striae vaak ook minder kleurverschil. Wat er niet gebeurt is dat ze verdwijnen: het litteken blijft zitten, het valt minder op.": "Estrías menos profundas con una superficie más uniforme. En las estrías rojas a menudo también menos diferencia de color. Lo que no pasa es que desaparezcan: la cicatriz se queda, llama menos la atención.",
-  "Er gaat een koele gel op en daarna komt het handstuk op je huid. Elke flits voelt als een kort tikje met een elastiekje, en je ziet hem ook door je oogleden heen; daarom gaat er een bril op.": "Se pone un gel frío y después la pieza de mano llega a tu piel. Cada destello se siente como un toque corto con una goma elástica, y lo ves también a través de los párpados; por eso te ponen unas gafas.",
-  "Acne op jonge leeftijd kan zwaar zijn voor je zelfvertrouwen. Hiervoor is een medisch onderbouwd programma van drie maanden met begeleiding, opgezet voor jongeren van achttien jaar en jonger.": "El acné a edad temprana puede ser duro para la confianza en uno mismo. Para esto hay un programa de tres meses con base médica y seguimiento, pensado para jóvenes de dieciocho años o menos.",
-  "Het traject begint met een meting en een gesprek, niet met een behandeling. Wat daaruit komt bepaalt de volgorde, en die volgorde is de kern: ontsteking eerst, littekens later, nooit tegelijk.": "El programa empieza con una medición y una conversación, no con un tratamiento. Lo que sale de ahí decide el orden, y ese orden es la clave: primero la inflamación, después las cicatrices, nunca a la vez.",
-  "Als je onbeschermd in de zon komt, ja. De pigmentcellen zijn er nog en die doen weer wat ze deden. Dagelijkse bescherming is hier geen tip maar het verschil tussen resultaat en geen resultaat.": "Si te pones al sol sin protección, sí. Las células de pigmento siguen ahí y vuelven a hacer lo que hacían. Aquí la protección diaria no es un consejo sino la diferencia entre resultado y ningún resultado.",
-  "Zestig euro per half uur behandeltijd, zoals het ook in de agenda staat. Hoeveel tijd je nodig hebt hangt af van het gebied en van hoeveel haren er staan; dat stellen we tijdens de intake vast.": "Sesenta euros por media hora de tratamiento, tal como figura también en la agenda. Cuánto tiempo necesitas depende de la zona y de cuántos pelos hay; eso lo determinamos en la consulta previa.",
-  "De zone wordt geschoren als dat nog niet gebeurd is, want de laser moet bij de wortel kunnen en niet bij het haar erboven. Daarna gaat er een bril op en werkt de behandelaar de zone in banen af.": "La zona se afeita si aún no se ha hecho, porque el láser tiene que llegar a la raíz y no al pelo de encima. Después te ponen unas gafas y la terapeuta recorre la zona en pasadas.",
-  "Injecties in de hoofdhuid, met een injector die de diepte gelijk houdt. Het is een reeks prikjes die snel achter elkaar gaan; de hoofdhuid is gevoelig, en dat merk je vooral in de eerste minuut.": "Inyecciones en el cuero cabelludo, con un inyector que mantiene constante la profundidad. Es una serie de pinchazos rápidos seguidos; el cuero cabelludo es sensible, y eso lo notas sobre todo en el primer minuto.",
-  "Wat erna komt hangt af van de sterkte. Bij een lichte peeling is je huid een dag wat rood en droog. Bij een sterkere ga je vervellen, en dan is de belangrijkste afspraak dat je er niet aan plukt.": "Lo que viene después depende de la intensidad. Con un peeling suave tu piel está un día algo roja y seca. Con uno más intenso te descamas, y entonces la regla más importante es que no toquetees.",
-  "Bij rosacea staan de kleine bloedvaten in het gezicht vaker en langer open. Op den duur gaan ze niet meer helemaal dicht, en dan blijft er een rode ondergrond staan ook als je geen opvlieger hebt.": "En la rosácea los pequeños vasos sanguíneos de la cara se abren más a menudo y durante más tiempo. Con el tiempo ya no se cierran del todo, y entonces queda un fondo rojo también cuando no tienes un sofoco.",
-  "Microneedling brengt in de bovenste lederhuid nieuw collageen op gang. Dat is het weefsel dat die rand overeind houdt, en als het aantrekt wordt de opening minder diep en vangt hij minder schaduw.": "El microneedling pone en marcha colágeno nuevo en la dermis superior. Ese es el tejido que sostiene ese borde, y cuando se tensa la abertura se vuelve menos honda y capta menos sombra.",
-  "Littekens van een operatie reageren anders dan littekens van acne: ze zijn langer, dieper en vaak jonger. De behandeling en het aantal sessies hangen af van hoe oud het litteken is en waar het zit.": "Las cicatrices de una operación reaccionan distinto de las cicatrices de acné: son más largas, más profundas y a menudo más jóvenes. El tratamiento y el número de sesiones dependen de la edad de la cicatriz y de dónde está.",
-  "Dit is een injectiebehandeling, dus er zijn prikjes. De injector zet ze snel achter elkaar en op een gelijke diepte, wat het gelijkmatiger maakt dan met de hand. Verdovende crème vooraf hoort erbij.": "Es un tratamiento con inyecciones, así que hay pinchazos. El inyector los coloca rápido uno tras otro y a la misma profundidad, lo que lo hace más uniforme que a mano. La crema anestésica previa forma parte.",
-  "Wat blijft is de neiging tot opvliegen. Die zit in hoe de vaten reageren op warmte, alcohol, inspanning of spanning, en daar doet licht niets aan. Wie dat vooraf weet, is achteraf niet teleurgesteld.": "Lo que se queda es la tendencia a los sofocos. Está en cómo reaccionan los vasos al calor, el alcohol, el esfuerzo o la tensión, y la luz no hace nada con eso. Quien lo sabe de antemano no se decepciona después.",
-  "De eerste afspraak duurt kort. Er gaat een masker op je gezicht dat je zelf mee naar huis neemt en er thuis afhaalt, na het aantal uren dat je meekrijgt. Dat aantal is geen richtlijn maar een afspraak.": "La primera cita es corta. Se pone una mascarilla en tu cara que te llevas a casa y te quitas allí, después del número de horas que te indican. Ese número no es una orientación sino un acuerdo.",
-  "Door die warmte klapt de wand van het vaatje dicht. Het bloed kan er niet meer doorheen en het lichaam breekt het in de weken erna af. Wat je daarna ziet is gewone huid, want dat vaatje is er niet meer.": "Con ese calor la pared del vaso se colapsa. La sangre ya no puede pasar y el cuerpo lo degrada en las semanas siguientes. Lo que ves después es piel normal, porque ese vaso ya no está.",
-  "De behandelde vaatjes niet; die zijn opgeruimd. Wel kunnen er nieuwe ontstaan, want wat ze veroorzaakte verandert niet. Bij de meeste mensen betekent dat een sessie per jaar of twee om het bij te houden.": "Los vasos tratados no; esos se han eliminado. Sí pueden surgir otros nuevos, porque lo que los causó no cambia. Para la mayoría eso significa una sesión cada uno o dos años para mantenerlo.",
-  "Daarna werkt de behandelaar aan de buitenkant. De verwarmende stand loopt op tot net voor het ongemakkelijke, en zij vraagt tijdens de sessie hoe warm het aanvoelt. De laatste stap voelt als korte tikjes.": "Después la terapeuta trabaja por fuera. El modo de calentamiento sube hasta justo antes de lo incómodo, y durante la sesión te pregunta cuánto calor notas. El último paso se siente como toques cortos.",
-  "Een gezichtsbehandeling die de bovenste laag losmaakt en tegelijk werkzame stoffen inbrengt, waarbij er in de huid zelf zuurstof vrijkomt. Het werkt op de bovenste lagen, met resultaat dat je meteen ziet.": "Un tratamiento facial que suelta la capa superior y a la vez aporta principios activos, mientras en la propia piel se libera oxígeno. Trabaja sobre las capas superiores, con un resultado que ves al momento.",
-  "Needling brengt in beide gevallen nieuw collageen op gang in de laag waar de scheur zit. Bij rode striae levert dat meer op dan bij witte, en dat verschil hoor je te weten voordat je aan een reeks begint.": "El needling pone en marcha colágeno nuevo en los dos casos en la capa donde está el desgarro. En las estrías rojas eso rinde más que en las blancas, y esa diferencia conviene saberla antes de empezar una serie.",
-  "Een behandeling in een gebied waar je je kwetsbaar voelt, en daar wordt naar gehandeld. Je hoort vooraf precies wat er gebeurt en wat je aan- of uithoudt, en je kunt op elk moment zeggen dat het genoeg is.": "Un tratamiento en una zona en la que te sientes vulnerable, y se actúa en consecuencia. De antemano oyes exactamente lo que pasa y lo que te dejas puesto o te quitas, y en cualquier momento puedes decir que es suficiente.",
-  "Hetzelfde traject, ingericht op een leven met school, sport en een bijbaan. De afspraken zijn korter en de thuisroutine is met opzet klein gehouden: drie stappen die je ook volhoudt als je te laat opstaat.": "El mismo programa, organizado para una vida con instituto, deporte y un trabajillo. Las citas son más cortas y la rutina en casa se ha mantenido pequeña a propósito: tres pasos que sigues también cuando te levantas tarde.",
-  "Omdat het pigment uiteen is gevallen en naar de oppervlakte werkt. Na een dag of vijf tot tien schilfert het weg. Krabben of scrubben in die periode is de enige manier om er een vlek van te maken die blijft.": "Porque el pigmento se ha roto y va subiendo a la superficie. Al cabo de unos cinco a diez días se descama. Rascar o frotar en ese periodo es la única forma de convertirlo en una mancha que se queda.",
-  "Acne begint met een verstopping: de wand van de porie vernieuwt te snel, de losse cellen plakken samen en de talg kan er niet meer uit. Wat daarna volgt aan bacterie en ontsteking zit áchter die verstopping.": "El acné empieza con una obstrucción: la pared del poro se renueva demasiado rápido, las células sueltas se pegan entre sí y el sebo ya no puede salir. Lo que sigue en bacterias e inflamación está detrás de esa obstrucción.",
-  "Een klein handstuk gaat over je huid terwijl er een gel op ligt. De twee reageren met elkaar en dat bruist licht: je hoort het meer dan dat je het voelt. Het is een van de rustigste behandelingen die we doen.": "Una pieza de mano pequeña pasa por tu piel mientras hay un gel encima. Los dos reaccionan entre sí y eso burbujea un poco: lo oyes más de lo que lo sientes. Es uno de los tratamientos más tranquilos que hacemos.",
-  "Verse striae zijn rood of paars: er lopen nog vaatjes doorheen en het weefsel is nog bezig. In die fase reageert de huid het best op een prikkel, want het herstel is nog aan de gang en je duwt het een kant op.": "Las estrías recientes son rojas o moradas: todavía pasan vasos por ellas y el tejido sigue en marcha. En esa fase la piel reacciona mejor a un estímulo, porque la reparación aún está en curso y la empujas en una dirección.",
-  "In het tarief zitten de behandelingen in de kliniek, de controles en de producten voor thuis. Wat er niet in zit zijn losse behandelingen die je er tussendoor wilt, en die staan dan gewoon op de tarievenpagina.": "En la tarifa entran los tratamientos en la clínica, las revisiones y los productos para casa. Lo que no entra son tratamientos sueltos que quieras entre medias, y esos están sin más en la página de tarifas.",
-  "Daar is dit geen behandeling voor. Zijn er ademstops gemeld, of ben je overdag ongewoon slaperig, dan hoort daar eerst slaaponderzoek bij via je huisarts. Weet je wat er speelt, dan kijken we wat we kunnen doen.": "Para eso esto no es un tratamiento. Si se han observado pausas de respiración, o tienes un sueño inusual de día, primero toca un estudio del sueño a través de tu médico de cabecera. Cuando sepas lo que pasa, vemos lo que podemos hacer.",
-  "Minder verstoppingen en minder nieuwe puistjes, meestal merkbaar vanaf de derde sessie. Wat een peeling niet doet is bestaande littekens weghalen; die vragen om iets anders en dat komt pas als de acne rustig is.": "Menos obstrucciones y menos granos nuevos, normalmente perceptible a partir de la tercera sesión. Lo que un peeling no hace es quitar las cicatrices que ya hay; esas piden otra cosa y eso llega solo cuando el acné está tranquilo.",
-  "Minder goed dan op rode. De structuur kan verbeteren waardoor ze minder opvallen, maar de kleur komt niet terug. Tijdens de intake kijken we welke van de twee je hebt, want dat bepaalt of het de moeite waard is.": "Menos bien que en las rojas. La textura puede mejorar, con lo que llaman menos la atención, pero el color no vuelve. En la consulta previa miramos cuáles de las dos tienes, porque eso decide si merece la pena.",
-  "Een rustigere huid met minder ontstoken plekjes, en minder roodheid rond de puistjes die er zijn. Het is de rustige stap in een acnetraject: geen hersteltijd, geen prikkeling, en het effect komt uit de herhaling.": "Una piel más tranquila con menos puntos inflamados, y menos rojez alrededor de los granos que hay. Es el paso tranquilo de un programa de acné: sin tiempo de recuperación, sin irritación, y el efecto viene de la repetición.",
-  "Je huid wordt strak getrokken en het mesje gaat er onder een vaste hoek overheen, in korte halen. Het geluid is het gekste eraan: een zacht schrapen dat je in je kaak voelt meer dan op je huid. Pijn doet het niet.": "Tu piel se tensa y la cuchilla pasa por encima en un ángulo fijo, en trazos cortos. El sonido es lo más raro: un raspado suave que notas más en la mandíbula que en la piel. Doler no duele.",
-  "Minder blijvende roodheid en een gelijkmatiger kleur, opgebouwd over drie tot zes sessies. De gevoeligheid en de opvliegers blijven; die vragen om weten wat je huid triggert, en dat is geen behandeling maar kennis.": "Menos rojez permanente y un color más uniforme, construido a lo largo de tres a seis sesiones. La sensibilidad y los sofocos se quedan; esos piden saber qué desencadena tu piel, y eso no es un tratamiento sino conocimiento.",
-  "Een huid die egaler oogt en licht gelijkmatiger weerkaatst, meestal vanaf de derde sessie zichtbaar. Wat niet gebeurt is dat poriën verdwijnen: als iemand dat belooft, belooft hij iets over anatomie dat niet klopt.": "Una piel que se ve más uniforme y refleja la luz de forma más regular, normalmente visible a partir de la tercera sesión. Lo que no pasa es que los poros desaparezcan: si alguien lo promete, promete algo sobre anatomía que no es cierto.",
-  "Een HydraFacial haalt eruit wat erin zit en dat zie je meteen; het houdt dagen tot weken aan. Needling verandert de huid eromheen en dat duurt maanden. De twee bijten elkaar niet, ze werken op verschillende dingen.": "Un HydraFacial saca lo que hay dentro y eso lo ves al momento; dura de días a semanas. El needling cambia la piel de alrededor y eso lleva meses. Los dos no se estorban, trabajan sobre cosas distintas.",
-  "Een gelijkmatiger huid met lichtere vlekken, opgebouwd over een reeks. Bij hardnekkig of dieper pigment is een traject van maanden een reëlere route dan losse peelings; dat hoor je tijdens de intake, niet halverwege.": "Una piel más uniforme con manchas más claras, construida a lo largo de una serie. En pigmento rebelde o más hondo, un programa de meses es una vía más realista que peelings sueltos; eso lo oyes en la consulta previa, no a mitad de camino.",
-  "XL Hair stimuleert de haarzakjes en verbetert de doorbloeding van de hoofdhuid om de natuurlijke haargroei te ondersteunen. Het traject wordt afgestemd op je haarconditie en hoofdhuid, en loopt over meerdere maanden.": "XL Hair estimula los folículos y mejora la circulación del cuero cabelludo para apoyar el crecimiento natural del pelo. El programa se ajusta al estado de tu pelo y tu cuero cabelludo, y dura varios meses.",
-  "Je ligt achterover en de behandelaar zet met een fijne naald een reeks kleine depots onder en naast je oog. Elke prik voelt als een korte tik; het gebied rond de ogen is gevoeliger dan de wang, dus daar merk je het meer.": "Te recuestas y la terapeuta coloca con una aguja fina una serie de pequeños depósitos debajo y al lado de tu ojo. Cada pinchazo se siente como un toque corto; la zona alrededor de los ojos es más sensible que la mejilla, así que ahí lo notas más.",
-  "Een acnelitteken ontstaat doordat een ontsteking bindweefsel heeft opgeruimd en er te weinig voor is teruggekomen. Wat overblijft is een putje waarin het licht een schaduw maakt, en juist die schaduw zie je in de spiegel.": "Una cicatriz de acné surge porque una inflamación ha eliminado tejido conjuntivo y ha vuelto demasiado poco en su lugar. Lo que queda es un hoyo en el que la luz hace una sombra, y justo esa sombra es lo que ves en el espejo.",
-  "Je krijgt een beschermbril op en die blijft de hele behandeling op. Wat je voelt hangt af van de modus: bij de verwarmende stand is het een oplopende warmte die net voor het ongemakkelijke stopt, bij de andere korte tikjes.": "Te ponen gafas de protección y se quedan puestas todo el tratamiento. Lo que sientes depende del modo: en el modo de calentamiento es un calor que sube y se detiene justo antes de lo incómodo, en el otro, toques cortos.",
-  "Door die warmte valt de pigmentkorrel uiteen en werkt hij naar de oppervlakte. In de dagen erna wordt de vlek eerst donkerder en korreliger, daarna schilfert hij weg. Dat donkerder worden is het teken dat het gewerkt heeft.": "Con ese calor el grano de pigmento se rompe y va subiendo a la superficie. En los días siguientes la mancha primero se oscurece y se vuelve granulada, después se descama. Ese oscurecimiento es la señal de que ha funcionado.",
-  "Vanaf een jaar of vijfentwintig maakt de huid ieder jaar iets minder collageen aan. De bovenste lederhuid wordt daardoor dunner en de bovenlaag komt losser te liggen, en dat is wat je als een fijn netwerk van lijntjes ziet.": "A partir de los veinticinco años más o menos la piel produce cada año un poco menos de colágeno. La dermis superior se vuelve por eso más fina y la capa superior queda más suelta, y eso es lo que ves como una fina red de líneas.",
-  "Microneedling maakt in dat stugge weefsel duizenden kleine wondjes die opnieuw genezen. Bij die tweede genezing ligt het nieuwe collageen minder strak in één richting, en wordt het litteken soepeler en minder scherp begrensd.": "El microneedling hace en ese tejido rígido miles de pequeñas heridas que vuelven a curar. En esa segunda curación el colágeno nuevo queda menos tenso en una sola dirección, y la cicatriz se vuelve más flexible y con bordes menos marcados.",
-  "In een verstopte porie groeit een bacterie die van nature in de huid voorkomt. Die bacterie maakt stoffen aan die op blauw licht van een bepaalde golflengte reageren; daarbij komt zuurstof vrij die de bacterie zelf beschadigt.": "En un poro obstruido crece una bacteria que está de forma natural en la piel. Esa bacteria produce sustancias que reaccionan a la luz azul de una longitud de onda determinada; al hacerlo se libera oxígeno que daña a la propia bacteria.",
-  "Een peeling maakt die bovenlaag in één keer los, waardoor de nieuwe laag eronder gelijkmatiger komt te liggen. Dat is direct zichtbaar en het is ook de reden dat het effect tijdelijk is: de huid gaat gewoon door met vertragen.": "Un peeling suelta esa capa superior de una vez, con lo que la capa nueva de debajo queda más uniforme. Eso se ve al momento y es también la razón de que el efecto sea temporal: la piel sigue sin más ralentizándose.",
-  "Een peeling versnelt die vernieuwing. De cellen met te veel pigment worden sneller afgevoerd en de nieuwe die eronder liggen hebben er minder in. Daarom werkt het op oppervlakkig pigment en niet op pigment dat in de lederhuid zit.": "Un peeling acelera esa renovación. Las células con demasiado pigmento se eliminan antes y las nuevas de debajo tienen menos. Por eso funciona sobre el pigmento superficial y no sobre el pigmento que está en la dermis.",
-  "Nee, het werkt op iets anders. Botox ontspant een spier en haalt daarmee een vouw weg; needling verandert de kwaliteit van de huid zelf. Bij een spiervouw doet needling weinig, bij een dunne huid met fijne lijntjes doet botox weinig.": "No, trabaja sobre otra cosa. El bótox relaja un músculo y con eso quita un pliegue; el needling cambia la calidad de la propia piel. En un pliegue muscular el needling hace poco, en una piel fina con líneas finas el bótox hace poco.",
-  "Vanaf een jaar of dertig duurt het langer voordat een huidcel van onderaf de oppervlakte bereikt. Er blijven meer dode cellen liggen, en die liggen niet netjes. Licht dat daarop valt weerkaatst alle kanten op, en dat zien wij als dof.": "A partir de los treinta años más o menos, una célula de la piel tarda más en llegar desde abajo a la superficie. Se quedan más células muertas, y no quedan ordenadas. La luz que cae sobre ellas se refleja en todas direcciones, y eso lo vemos como apagado.",
-  "Dit is één afspraak die weghaalt wat er nu zit. Het traject duurt maanden, met producten voor thuis en controles, en pakt aan waarom het terugkomt. Wie twijfelt begint hier; tijdens de afspraak hoor je of het traject bij jou zin heeft.": "Esto es una sola cita que quita lo que hay ahora. El programa dura meses, con productos para casa y revisiones, y trata por qué vuelve. Quien duda empieza aquí; durante la cita oyes si el programa tiene sentido en tu caso.",
-  "Je gezicht komt in een houder zodat de afstand en de hoek elke keer hetzelfde zijn. De opnames zijn in een paar minuten klaar: gewoon licht, gepolariseerd licht en UV, achter elkaar door. Je merkt er niets van, want er raakt niets je huid.": "Tu cara se apoya en un soporte para que la distancia y el ángulo sean cada vez los mismos. Las capturas están listas en unos minutos: luz normal, luz polarizada y UV, una tras otra. No notas nada, porque nada toca tu piel.",
-  "Witte striae zijn uitgewerkt. Het weefsel is dan dunner en er zit weinig pigment in, en dat komt niet meer terug. Wat wel kan is dat de structuur verbetert: de striae worden minder diep en de rand minder scherp, waardoor ze minder opvallen.": "Las estrías blancas ya han hecho su recorrido. El tejido es entonces más fino y tiene poco pigmento, y eso no vuelve. Lo que sí puede pasar es que la textura mejore: las estrías se vuelven menos profundas y el borde menos marcado, con lo que llaman menos la atención.",
-  "Dat hangt af van waar de kleur vandaan komt. Bij pigment en bij een dunne huid met doorschijnende vaatjes valt er iets te doen; komt de donkerte van schaduw door je botstructuur, dan verandert er weinig. Dat stellen we vast tijdens de intake.": "Depende de dónde viene el color. Con pigmento y con una piel fina con vasos que se transparentan hay algo que hacer; si la oscuridad viene de la sombra de tu estructura ósea, cambia poco. Eso lo determinamos en la consulta previa.",
-  "Bij normale huid liggen de collageenvezels door elkaar heen, en dat maakt de huid soepel in elke richting. In een litteken liggen ze evenwijdig, want zo is de wond dichtgetrokken. Dat weefsel is sterk maar stug, en het reflecteert licht anders.": "En una piel normal las fibras de colágeno están entrecruzadas, y eso hace la piel flexible en todas direcciones. En una cicatriz están en paralelo, porque así se cerró la herida. Ese tejido es fuerte pero rígido, y refleja la luz de otra manera.",
-  "Het licht van de Nordlys wordt opgenomen door het pigment in de vlek en niet door de lichtere huid ernaast. Daardoor warmt precies de vlek op en blijft de rest koel; dat is wat een IPL onderscheidt van een peeling, die de hele bovenlaag afhaalt.": "La luz del Nordlys la absorbe el pigmento de la mancha y no la piel más clara de al lado. Así se calienta justo la mancha y el resto se queda frío; eso es lo que distingue a una IPL de un peeling, que retira toda la capa superior.",
-  "Poriën vallen op als de huid eromheen slap is. Het gaatje zelf is bij iedereen ongeveer even groot; wat verschilt is of de rand strak staat of iets is ingezakt. Bij een ingezakte rand valt er schaduw in en dan lijkt de opening groter dan hij is.": "Los poros llaman la atención cuando la piel de alrededor está flácida. La abertura en sí es más o menos igual de grande en todo el mundo; lo que varía es si el borde está tenso o se ha hundido un poco. Con un borde hundido entra sombra y entonces la abertura parece más grande de lo que es.",
-  "We bekijken je huid en bespreken wat je ermee wilt. Daaruit volgt een LED-protocol voor thuis: welke stand, hoe lang en hoe vaak, met het SkinComplete-masker. Schaf je het masker aan, dan krijg je er begeleiding bij zodat je eruit haalt wat erin zit.": "Miramos tu piel y hablamos de lo que quieres conseguir. De ahí sale un protocolo LED para casa: qué modo, cuánto tiempo y con qué frecuencia, con la máscara SkinComplete. Si compras la máscara, recibes seguimiento para que le saques todo lo que tiene.",
-  "Daarna een grondige reiniging, het vakkundig leegmaken van verstopte poriën en een kalmerend masker of een lichte peeling om af te sluiten. Zelf uitdrukken thuis is de manier om er littekens van te maken; hier gebeurt het steriel en met de juiste druk.": "Después una limpieza a fondo, el vaciado experto de los poros obstruidos y una mascarilla calmante o un peeling suave para terminar. Apretarlos tú en casa es la manera de convertirlos en cicatrices; aquí se hace de forma estéril y con la presión correcta.",
-  "De rest van het uur gaat over wat eruit komt. Je kijkt mee op het scherm en hoort waar de waardes vandaan komen, wat opvalt en wat het betekent. Aan het eind ligt er een voorstel: welke behandelingen erbij passen, in welke volgorde en over hoeveel tijd.": "El resto de la hora va sobre lo que sale. Miras en la pantalla y oyes de dónde vienen los valores, qué destaca y qué significa. Al final hay una propuesta: qué tratamientos encajan, en qué orden y en cuánto tiempo.",
-  "De vloeistof gaat met een kwastje in lagen op je huid. Binnen een halve minuut begint het te prikken of te tintelen, en dat loopt op naarmate er lagen bij komen. De behandelaar kijkt naar je huid én naar de klok; dat samen bepaalt wanneer het eraf gaat.": "El líquido se aplica en capas sobre tu piel con un pincel. En medio minuto empieza a picar u hormiguear, y eso sube según se añaden capas. La terapeuta mira tu piel y el reloj; las dos cosas juntas deciden cuándo se retira.",
-  "Dat hangt af van hoe diep het pigment zit en hoe hardnekkig het is. Een peeling is lichter en losser te doen; Cosmelan is een traject van maanden en pakt aan waar losse peelings op stuklopen. De behandelaar stelt tijdens de intake vast welke van de twee past.": "Depende de lo hondo que esté el pigmento y de lo rebelde que sea. Un peeling es más suave y se puede hacer suelto; Cosmelan es un programa de meses y trata lo que hace fracasar a los peelings sueltos. La terapeuta determina en la consulta previa cuál de los dos encaja.",
-  "Het handstuk gaat in strijkende banen over het hele gezicht met een lage energie. Het blijft aan de oppervlakte: de bovenste laag wordt geprikkeld om sneller te vernieuwen, zonder dat er iets wordt weggehaald. Dat maakt het een onderhoudsbehandeling en geen ingreep.": "La pieza de mano pasa en líneas suaves por toda la cara con una energía baja. Se queda en la superficie: la capa superior se estimula para renovarse más rápido, sin retirar nada. Eso lo convierte en un tratamiento de mantenimiento y no en una intervención.",
-  "Reken op maanden en op verbetering, niet op verdwijnen. Putjes worden ondieper en de huid oogt gelijkmatiger; een litteken dat er niet meer is, is een belofte die niemand kan waarmaken. Wat er ná de reeks nog staat, bekijken we samen voor we besluiten of er meer zin heeft.": "Cuenta con meses y con mejora, no con desaparición. Los hoyos se vuelven menos hondos y la piel se ve más uniforme; una cicatriz que ya no está es una promesa que nadie puede cumplir. Lo que todavía quede después de la serie lo miramos juntos antes de decidir si más tiene sentido.",
-  "Dezelfde opzet, andere sterkte en een ander doel. Cosmelan is de lichtere van de twee en wordt vaker gekozen bij zonschade en losse pigmentvlekken; Dermamelan is intensiever en wordt vaker ingezet bij melasma. Welke van de twee bij jou past, stelt de behandelaar tijdens de intake vast.": "El mismo planteamiento, otra intensidad y otro objetivo. Cosmelan es el más suave de los dos y se elige más a menudo para daño solar y manchas de pigmento sueltas; Dermamelan es más intensivo y se usa más para el melasma. Cuál de los dos encaja contigo lo determina la terapeuta en la consulta previa.",
-  "Dode huidcellen en donshaartjes worden verwijderd met een chirurgisch mesje, onder een hoek van 45 graden. Er komen geen zuren aan te pas, waardoor het ook kan bij een gevoelige, droge of allergische huid en tijdens de zwangerschap. Het is pijnloos en het resultaat is meteen zichtbaar.": "Las células muertas y el vello fino se retiran con una cuchilla quirúrgica, en un ángulo de 45 grados. No intervienen ácidos, con lo que también se puede en una piel sensible, seca o alérgica y durante el embarazo. No duele y el resultado se ve al momento.",
-  "De huid in de lies- en bikinizone kan donkerder kleuren door wrijving, ontharing, hormonen en ontsteking. Dit traject werkt volgens hetzelfde principe als Dermamelan voor het gezicht, met een formule die op deze zone is afgestemd: een behandeling in de kliniek en daarna een routine thuis.": "La piel de la zona de la ingle y del bikini puede oscurecerse por el roce, la depilación, las hormonas y la inflamación. Este programa funciona con el mismo principio que Dermamelan para la cara, con una fórmula ajustada a esta zona: un tratamiento en la clínica y después una rutina en casa.",
-  "De laser mikt op het pigment in de haarwortel, en die zit diep. Wat de energie opneemt warmt op, de rest niet. Daarom werkt de laser gericht, en daarom stelt de behandelaar hem in op jouw huidtype. Eén sessie raakt alleen de haren die op dat moment groeien, en dat is nooit alles tegelijk.": "El láser apunta al pigmento de la raíz del pelo, y esa está honda. Lo que absorbe la energía se calienta, el resto no. Por eso el láser trabaja con precisión, y por eso la terapeuta lo ajusta a tu fototipo. Una sesión solo alcanza los pelos que crecen en ese momento, y eso nunca son todos a la vez.",
-  "Het zachte gehemelte en het weefsel achter in je mond worden in een reeks pulsen gecontroleerd verwarmd. Daardoor trekt het weefsel samen en gaat het minder meetrillen op de luchtstroom, en juist die trilling is het geluid dat snurken heet. Er wordt niet gesneden en er blijft niets achter.": "El paladar blando y el tejido del fondo de tu boca se calientan de forma controlada en una serie de pulsos. Así el tejido se contrae y vibra menos con el flujo de aire, y justo esa vibración es el sonido que se llama ronquido. No se corta nada y no queda nada dentro.",
-  "Een peeling werkt op de bovenlaag; RRS Eyes brengt werkzame stoffen met een naald ónder de huid. Bij een doffe kleur en fijne lijntjes ligt de peeling voor de hand, bij donkere kringen en een vermoeide oogzone eerder RRS Eyes. Bij een pigmentwal zetten we ze vaak allebei in, in dezelfde reeks.": "Un peeling trabaja sobre la capa superior; RRS Eyes lleva principios activos con una aguja debajo de la piel. Con un color apagado y líneas finas lo lógico es el peeling, con ojeras y un contorno de ojos cansado más bien RRS Eyes. Con una ojera pigmentada a menudo usamos los dos, en la misma serie.",
-  "Salicylzuur lost op in vet en komt daardoor de porie zelf in; het maakt de prop losser waar hij zit. Glycolzuur werkt op de bovenlaag en zorgt dat losse cellen sneller loslaten. Bij een vette huid met veel mee-eters ligt het eerste voor de hand, bij een doffe huid met verstoppingen het tweede.": "El ácido salicílico se disuelve en la grasa y por eso entra en el propio poro; afloja el tapón donde está. El ácido glicólico trabaja sobre la capa superior y hace que las células sueltas se desprendan antes. En una piel grasa con muchos puntos negros lo lógico es el primero, en una piel apagada con obstrucciones el segundo.",
-  "Een peeling maakt de verbinding tussen de buitenste huidcellen los, zodat die laag sneller wordt vervangen dan hij uit zichzelf zou doen. Hoe ver dat gaat hangt af van het middel en de sterkte: de kliniek werkt met peelings van Skin Tech Pharma, Dermaceutic, ADO en Mesoestetic, in drie niveaus.": "Un peeling suelta la unión entre las células más externas de la piel, para que esa capa se sustituya más rápido de lo que haría por sí sola. Hasta dónde llega depende del producto y de la intensidad: la clínica trabaja con peelings de Skin Tech Pharma, Dermaceutic, ADO y Mesoestetic, en tres niveles.",
-  "PIANO is een lange, trage puls die het weefsel over een groot oppervlak gelijkmatig verwarmt in plaats van punt voor punt. Daardoor komt de warmte dieper en blijft de bovenste huidlaag koel. Bestaand collageen trekt samen en de aanmaak van nieuw collageen komt op gang, wat de huid steviger maakt.": "PIANO es un pulso largo y lento que calienta el tejido de forma uniforme en una superficie grande en lugar de punto por punto. Así el calor llega más hondo y la capa superior de la piel se queda fría. El colágeno existente se contrae y se pone en marcha la producción de colágeno nuevo, lo que hace la piel más firme.",
-  "De pen zet honderden kanaaltjes tot in de bovenste lederhuid, precies de laag waar dat bindweefsel zit. Het lichaam herstelt die kanaaltjes met nieuw collageen, en dat vult de bodem van het putje op. Niet ineens: de opbouw loopt over weken tot maanden door, en daarom zie je na de eerste sessie nog niets.": "El pen coloca cientos de canales hasta la dermis superior, justo la capa donde está ese tejido conjuntivo. El cuerpo repara esos canales con colágeno nuevo, y eso rellena el fondo del hoyo. No de golpe: la reconstrucción sigue durante semanas o meses, y por eso después de la primera sesión todavía no ves nada.",
-  "De mannenhuid is gemiddeld dikker, bevat meer collageen en heeft meer talgklieren en haarfollikels. Daardoor reageert hij anders op warmte en vraagt hij andere instellingen dan de standaardinstelling. Fotona 4D Men doorloopt dezelfde vier stappen, maar met een aangepast energieniveau en een aangepaste opbouw.": "La piel masculina es de media más gruesa, contiene más colágeno y tiene más glándulas sebáceas y folículos. Por eso reacciona de otra manera al calor y pide otra configuración que la estándar. Fotona 4D Men recorre los mismos cuatro pasos, pero con un nivel de energía y una progresión adaptados.",
-  "De huid rond je ogen is de dunste van je gezicht en verslapt daardoor als eerste. SmoothEye verwarmt die zone met een lange, trage puls waarbij de bovenste laag koel blijft. Bestaand collageen trekt samen en er komt nieuwe aanmaak op gang, wat de fijne lijntjes minder scherp maakt en het ooglid iets steviger.": "La piel alrededor de tus ojos es la más fina de tu cara y por eso se descuelga la primera. SmoothEye calienta esa zona con un pulso largo y lento en el que la capa superior se queda fría. El colágeno existente se contrae y se pone en marcha producción nueva, lo que hace las líneas finas menos marcadas y el párpado algo más firme.",
-  "VectorLift verwarmt het weefsel van je voorhoofd en de zone boven je wenkbrauw in vaste banen. Doordat collageen samentrekt en er nieuwe aanmaak op gang komt, komt de wenkbrauw iets omhoog te liggen en wordt het voorhoofd steviger. Het gaat om millimeters en om je eigen weefsel, niet om een chirurgische lift.": "VectorLift calienta el tejido de tu frente y la zona por encima de la ceja en líneas fijas. Como el colágeno se contrae y se pone en marcha producción nueva, la ceja queda un poco más alta y la frente más firme. Se trata de milímetros y de tu propio tejido, no de un lifting quirúrgico.",
-  "De huid rond het oog is dunner dan de rest van het gezicht, en de meeste peelings zijn daar te sterk voor. Dit is een formule die daar wel op mag: hij werkt op de bovenlaag rond de oogkas en pakt fijne lijntjes, een doffe kleur en oppervlakkige verkleuring aan. De sterkte en de inwerktijd worden per huid gekozen.": "La piel alrededor del ojo es más fina que el resto de la cara, y la mayoría de los peelings son demasiado fuertes para ella. Esta es una fórmula que sí puede ir ahí: trabaja sobre la capa superior alrededor de la cuenca del ojo y trata líneas finas, un color apagado y una decoloración superficial. La intensidad y el tiempo de actuación se eligen según la piel.",
-  "Een microneedlingapparaat dat met minuscule, trillende naaldjes microscopisch kleine kanaaltjes in de huid maakt om het natuurlijke herstelproces te stimuleren. Dat stimuleert de collageenaanmaak, waardoor de huid steviger, gladder en egaler wordt. Werkt op fijne lijntjes, acnelittekens, grove poriën en een doffe huid.": "Un aparato de microneedling que con agujas minúsculas y vibrantes hace canales microscópicos en la piel para estimular el proceso natural de reparación. Eso estimula la producción de colágeno, con lo que la piel se vuelve más firme, más lisa y más uniforme. Trabaja sobre líneas finas, cicatrices de acné, poros dilatados y una piel apagada.",
-  "HAIRestart werkt op de hoofdhuid met warmte die de doorbloeding en de activiteit rond de haarzakjes stimuleert. Het richt zich op zakjes die er nog zijn maar minder actief; waar het zakje verdwenen is, valt er niets meer te starten. Daarom telt het moment: hoe eerder er naar gekeken wordt, hoe meer er te behouden valt.": "HAIRestart trabaja sobre el cuero cabelludo con calor que estimula la circulación y la actividad alrededor de los folículos. Se centra en folículos que todavía están pero menos activos; donde el folículo ha desaparecido, ya no hay nada que activar. Por eso cuenta el momento: cuanto antes se mire, más se puede conservar.",
-  "Fotona 4D behandelt het gezicht in vier stappen op vier diepten. In het volledige pakket blijft het daar niet bij: de hals en de kaaklijn horen erbij, en juist daar valt verslapping het eerst op terwijl het gezicht er nog strak uitziet. Het is dezelfde reeks stappen, over een groter gebied en dus in een langere afspraak.": "Fotona 4D trata la cara en cuatro pasos a cuatro profundidades. En el paquete completo no se queda ahí: se incluyen el cuello y la línea de la mandíbula, y es justo ahí donde la flacidez se nota primero mientras la cara todavía se ve tersa. Es la misma serie de pasos, en una zona más grande y por tanto en una cita más larga.",
-  "Dermamelan werkt als Cosmelan maar sterker, en wordt vaker ingezet bij melasma: pigment dat op hormonen en warmte reageert en dat na elke zomer terug kan komen. Het masker remt de pigmentaanmaak; de maanden erna houden de producten thuis dat vast. Dat laatste deel is bij melasma het verschil tussen resultaat en teleurstelling.": "Dermamelan funciona como Cosmelan pero más fuerte, y se usa más a menudo para el melasma: pigmento que reacciona a las hormonas y al calor y que puede volver después de cada verano. La mascarilla frena la producción de pigmento; en los meses siguientes los productos en casa lo mantienen. En el melasma esa última parte es la diferencia entre resultado y decepción.",
-  "IPL werkt met een bereik van golflengtes en een filter dat het grofste eruit haalt. Bij pigment zoekt dat licht het donkere op: de vlek neemt de energie op, wordt korrelig en werkt naar de oppervlakte, waar hij in de dagen erna vervaagt. Het komt minder diep dan een laser, en dat is precies wat oppervlakkig pigment nodig heeft.": "La IPL trabaja con un rango de longitudes de onda y un filtro que quita la parte más gruesa. En el pigmento esa luz busca lo oscuro: la mancha absorbe la energía, se vuelve granulada y sube a la superficie, donde se difumina en los días siguientes. Llega menos hondo que un láser, y eso es justo lo que el pigmento superficial necesita.",
-  "Een traject in plaats van losse behandelingen, omdat acne over weken verandert en niet op een moment ontstaat. Het begint met een meting en een schema voor thuis; daarna volgen behandelingen in de kliniek met om de vier tot zes weken een controle waarin het schema wordt bijgesteld. Het eindigt met afbouwen naar wat je zelf volhoudt.": "Un programa en lugar de tratamientos sueltos, porque el acné cambia a lo largo de semanas y no surge en un momento. Empieza con una medición y un esquema para casa; después siguen tratamientos en la clínica con una revisión cada cuatro a seis semanas en la que se ajusta el esquema. Termina reduciendo hasta lo que mantienes tú.",
-  "Bij actieve acne mikt de laser op twee dingen tegelijk: de ontsteking in de huid en de talgklier die hem voedt. De warmte remt de activiteit van de klier en werkt op de bacterie die bij acne een rol speelt. Het is geen vervanging van een acnetraject maar een stap erbinnen, want acne heeft een verloop en vraagt om meer dan een sessie.": "En el acné activo el láser apunta a dos cosas a la vez: la inflamación en la piel y la glándula sebácea que la alimenta. El calor frena la actividad de la glándula y actúa sobre la bacteria que interviene en el acné. No sustituye un programa de acné sino que es un paso dentro de él, porque el acné tiene una evolución y pide más que una sesión.",
-  "Met heel fijne prikjes wordt een mengsel van hyaluronzuur, vitamines en aminozuren vlak onder de huid gebracht, verdeeld over het hele vlak in plaats van op een plek. Het gaat niet om opvullen: het doel is dat de huid zelf vochtiger en steviger aanvoelt. Er wordt met de U225 gewerkt, die de diepte en de hoeveelheid per prik gelijk houdt.": "Con pinchazos muy finos se lleva una mezcla de ácido hialurónico, vitaminas y aminoácidos justo debajo de la piel, repartida por toda la zona en lugar de en un punto. No se trata de rellenar: el objetivo es que la propia piel se note más hidratada y más firme. Se trabaja con el U225, que mantiene iguales la profundidad y la cantidad en cada pinchazo.",
-  "Bij SmoothLiftin werkt de laser vanaf de binnenkant van je mond. Het slijmvlies van de wang ligt vlak tegen het weefsel rond je mond en je nasolabiale plooien aan, en van die kant is die zone te bereiken zonder dat de buitenste huidlaag wordt geraakt. De warmte trekt bestaand collageen samen en zet de aanmaak van nieuw collageen in gang.": "En SmoothLiftin el láser trabaja desde el interior de tu boca. La mucosa de la mejilla está pegada al tejido alrededor de tu boca y de tus pliegues nasolabiales, y desde ese lado esa zona se alcanza sin tocar la capa exterior de la piel. El calor contrae el colágeno existente y pone en marcha la producción de colágeno nuevo.",
-  "Een litteken is weefsel dat anders is opgebouwd dan de huid eromheen: strakker, met vezels die in een andere richting lopen. De laser brengt in dat weefsel gecontroleerde warmte aan, waarna het herstel de vezels opnieuw ordent. Daardoor wordt het litteken vlakker en minder rood, en sluit het beter aan bij de huid eromheen. Weg gaat het niet.": "Una cicatriz es tejido construido de otra manera que la piel de alrededor: más tenso, con fibras que van en otra dirección. El láser aporta calor controlado a ese tejido, y después la reparación reordena las fibras. Así la cicatriz se vuelve más plana y menos roja, y se integra mejor con la piel de alrededor. Desaparecer no desaparece.",
-  "Resurfacing haalt gecontroleerd een deel van de bovenste huidlaag weg en verwarmt de laag eronder. De huid vernieuwt zich daarna sneller dan hij uit zichzelf zou doen, en dat maakt poriën minder opvallend en de structuur gelijkmatiger. Hoe diep dat gaat bepaalt de behandelaar per zone, en die diepte bepaalt ook hoeveel hersteltijd je nodig hebt.": "El resurfacing retira de forma controlada una parte de la capa superior de la piel y calienta la capa de debajo. La piel se renueva después más rápido de lo que haría por sí sola, y eso hace los poros menos visibles y la textura más uniforme. Hasta dónde llega lo decide la terapeuta por zona, y esa profundidad decide también cuánto tiempo de recuperación necesitas.",
-  "LipLase verwarmt het weefsel van je lippen en de rand eromheen, zowel van de binnenkant als van buiten. De warmte zet de aanmaak van collageen in gang, waardoor de lip wat voller wordt en de lijntjes eromheen minder scherp. Het gaat om je eigen weefsel dat opbouwt, dus het verschil is subtieler dan bij een filler en het bouwt zich op over de reeks.": "LipLase calienta el tejido de tus labios y el borde de alrededor, tanto desde dentro como desde fuera. El calor pone en marcha la producción de colágeno, con lo que el labio queda algo más lleno y las líneas de alrededor menos marcadas. Es tu propio tejido el que se reconstruye, así que la diferencia es más sutil que con un relleno y se construye a lo largo de la serie.",
-  "Bij roodheid mikt het licht op het bloed in de vaatjes onder de huid. Dat warmt op, waardoor het vaatje dichtklapt en door het lichaam wordt opgeruimd. Wat je in de spiegel ziet is dan geen vaatje meer maar gewone huid. Bij rosacea gaat het minder om één vaatje en meer om een gebied dat structureel rood staat; dan werkt het licht over het hele vlak.": "En la rojez la luz apunta a la sangre de los vasos bajo la piel. Esa se calienta, con lo que el vaso se colapsa y el cuerpo lo elimina. Lo que ves entonces en el espejo ya no es un vaso sino piel normal. En la rosácea se trata menos de un solo vaso y más de una zona que está roja de forma estructural; entonces la luz trabaja sobre toda la superficie.",
-  "Wij werken met de kruidenpeeling van ADO. De kruiden worden in de huid gemasseerd. De fijne plantendeeltjes prikkelen de huid, waardoor de bovenlaag in de dagen erna loslaat en zich vernieuwt. De kruiden zelf werken ontstekingsremmend en antibacterieel, en daarom zetten we deze peeling juist in bij ontstoken acne, waar een zuurpeeling soms te veel is.": "Trabajamos con el peeling de hierbas de ADO. Las hierbas se masajean en la piel. Las finas partículas vegetales estimulan la piel, con lo que la capa superior se desprende y se renueva en los días siguientes. Las propias hierbas son antiinflamatorias y antibacterianas, y por eso usamos este peeling precisamente en el acné inflamado, donde un peeling con ácido a veces es demasiado.",
-  "De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het blote oog niet altijd te zien is: beginnende pigmentatie, vochttekort, poriestructuur en tekenen van huidveroudering. Verschillende huidlagen worden geanalyseerd. Daarna volgt advies en een behandelplan, en de meting wordt herhaald om voortgang objectief zichtbaar te maken.": "El EVE-M registra el estado de tu piel y hace visible lo que a simple vista no siempre se ve: pigmentación incipiente, falta de hidratación, estructura de los poros y signos de envejecimiento de la piel. Se analizan distintas capas de la piel. Después siguen un consejo y un plan de tratamiento, y la medición se repite para hacer el progreso visible de forma objetiva.",
-  "Bij mesotherapie worden werkzame stoffen in de huid gebracht in plaats van erop. RRS Eyes is een mengsel dat op de oogcontour is afgestemd, met onder meer hyaluronzuur, vitaminen en aminozuren, en wordt in kleine depots onder en naast het oog gezet. De huid daar is dun, dus de behandelaar werkt met minder volume en op een geringere diepte dan op de wang.": "En la mesoterapia los principios activos se llevan dentro de la piel en lugar de sobre ella. RRS Eyes es una mezcla ajustada al contorno de ojos, con entre otras cosas ácido hialurónico, vitaminas y aminoácidos, y se coloca en pequeños depósitos debajo y al lado del ojo. La piel ahí es fina, así que la terapeuta trabaja con menos volumen y a menor profundidad que en la mejilla.",
-  "SupErficial haalt met korte pulsen een dunne laag van de hoornlaag af. Dat is dezelfde gedachte als bij een chemische peeling, maar dan met licht in plaats van met zuur: er komt geen middel op je huid dat moet inwerken en de diepte is per puls te sturen. De huid eronder komt sneller aan de beurt, wat hem gladder maakt en het licht beter laat weerkaatsen.": "SupErficial retira con pulsos cortos una capa fina de la capa córnea. Es la misma idea que un peeling químico, pero con luz en lugar de ácido: no va sobre tu piel ningún producto que tenga que actuar y la profundidad se controla pulso a pulso. La piel de debajo llega antes a su turno, lo que la deja más lisa y hace que refleje mejor la luz.",
-  "Bij mesotherapie worden werkzame stoffen direct in de huid gebracht in plaats van erop. De behandelaar werkt met de U225, die elke prik op dezelfde diepte zet. Daardoor komt het middel gelijkmatig over het gebied. Er zijn verschillende skinboosters: voor fijne lijnen, en een depigmentatiebooster voor gezicht, hals en décolleté bij hyperpigmentatie, zonneschade en melasma.": "En la mesoterapia los principios activos se llevan directamente dentro de la piel en lugar de sobre ella. La terapeuta trabaja con el U225, que coloca cada pinchazo a la misma profundidad. Así el producto se reparte de forma uniforme por la zona. Hay distintos skinboosters: para líneas finas, y un booster despigmentante para cara, cuello y escote en hiperpigmentación, daño solar y melasma.",
-  "Cosmelan begint met twee weken voorbereiding thuis, daarna gaat het masker in de kliniek op en volgt een vaste routine van maanden. Het remt de aanmaak van pigment in plaats van alleen weg te halen wat er zit, en daarom loopt het zo lang door. Zon, hormonen en genen bepalen mee waarom pigment ontstaat; het thuiswerk is daarom geen bijzaak maar het grootste deel van het traject.": "Cosmelan empieza con dos semanas de preparación en casa, después se pone la mascarilla en la clínica y sigue una rutina fija de meses. Frena la producción de pigmento en lugar de solo quitar lo que hay, y por eso dura tanto. El sol, las hormonas y los genes influyen en por qué surge el pigmento; por eso el trabajo en casa no es un detalle sino la mayor parte del programa.",
-  "FRAC3 werkt fractioneel: de energie gaat niet als een vlak over de huid maar in eilandjes, waardoor er intact weefsel tussen blijft staan dat het herstel op gang helpt. De pulsen zoeken vanzelf de plekken op waar meer pigment of meer bloed zit, dus de onregelmatigheden krijgen meer energie dan de rustige huid eromheen. Daarmee komt het bij structuur, poriën, roodheid en ongelijke kleur.": "FRAC3 trabaja de forma fraccionada: la energía no va por la piel como una superficie plana sino en islas, con lo que entre medias queda tejido intacto que ayuda a poner en marcha la reparación. Los pulsos buscan por sí solos los sitios donde hay más pigmento o más sangre, así que las irregularidades reciben más energía que la piel tranquila de alrededor. Así llega a la textura, los poros, la rojez y el color irregular.",
-  "Een enkele behandeling voor een huid met puistjes en verstoppingen, zonder dat je aan een traject begint. De verstopte poriën worden vakkundig leeggemaakt, de huid wordt gereinigd en gekalmeerd, en je krijgt advies mee voor de dagen erna. Het haalt weg wat er nu zit; het verandert niet waarom het terugkomt. Daarvoor is het acnetraject, en of dat bij jou zin heeft hoor je tijdens deze afspraak.": "Un tratamiento suelto para una piel con granos y obstrucciones, sin que empieces un programa. Los poros obstruidos se vacían con pericia, la piel se limpia y se calma, y te llevas un consejo para los días siguientes. Quita lo que hay ahora; no cambia por qué vuelve. Para eso está el programa de acné, y si tiene sentido en tu caso lo oyes en esta cita.",
-  "Fotona 4D is geen losse behandeling maar een protocol van vier lagen die in dezelfde sessie op elkaar volgen. Het begint van binnenuit met SmoothLiftin door de wangslijmvlies, daarna gaat FRAC3 op de diepte, PIANO verwarmt het weefsel vlak en gelijkmatig, en SupErficial sluit af met een lichte laserpeeling. Elke stap raakt een andere diepte, en samen pakken ze verslapping, textuur en kleur in een keer aan.": "Fotona 4D no es un tratamiento suelto sino un protocolo de cuatro capas que van una tras otra en la misma sesión. Empieza desde dentro con SmoothLiftin a través de la mucosa de la mejilla, después FRAC3 va a la profundidad, PIANO calienta el tejido de forma plana y uniforme, y SupErficial termina con un peeling láser suave. Cada paso llega a otra profundidad, y juntos tratan la flacidez, la textura y el color de una vez.",
-  "De laser mikt op het pigment in de haarwortel. Zit daar geen pigment, dan is er niets om op te mikken; dat is waarom grijs, wit en heel licht blond haar niet op laser reageert. Bij elektrische epilatie gaat er een dun naaldje langs de haar het haarkanaal in en krijgt de wortel zelf een korte stroomstoot. Kleur doet er dan niet toe. Het gaat haar voor haar, dus het is trager dan laser en het is bedoeld voor kleine gebieden.": "El láser apunta al pigmento de la raíz del pelo. Si ahí no hay pigmento, no hay nada a lo que apuntar; por eso el pelo gris, blanco y rubio muy claro no reacciona al láser. En la electrólisis una aguja fina entra en el canal del pelo junto al pelo y la propia raíz recibe una breve descarga de corriente. Entonces el color no importa. Va pelo a pelo, así que es más lento que el láser y está pensado para zonas pequeñas.",
-  "De Fotona TimeWalker is geen behandeling maar een platform: twee lasertypen in een kast, waarmee vijftien verschillende behandelingen te doen zijn. Wat je krijgt hangt af van de instelling, de puls en de zone, en dat maakt het verschil tussen een lichte peeling en een complete gezichtsbehandeling. Fotona 4D is daarvan de bekendste: vier behandelingen in een sessie, van binnenuit door de wang tot een afsluitende peeling. Hieronder staat welke er zijn en waar elk voor bedoeld is.": "El Fotona TimeWalker no es un tratamiento sino una plataforma: dos tipos de láser en una máquina, con los que se pueden hacer quince tratamientos distintos. Lo que recibes depende de la configuración, el pulso y la zona, y eso marca la diferencia entre un peeling suave y un tratamiento facial completo. Fotona 4D es el más conocido de ellos: cuatro tratamientos en una sesión, desde dentro a través de la mejilla hasta un peeling final. Abajo está cuáles hay y para qué sirve cada uno.",
+  "Een fijn adertje op de wang vraagt een andere instelling dan een dikker vaatje bij de neusvleugel. De behandelaar kiest het filter daarop.":
+    "Una venita fina en la mejilla pide otra configuración que un vaso más grueso junto a la aleta de la nariz. La terapeuta elige el filtro según eso.",
+  "Bij diepe, scherp begrensde putjes (ijspriemlittekens) komt needling vaak niet ver genoeg; dan is een fractionele laser een reëlere route.":
+    "En hoyos profundos y de bordes marcados (cicatrices en pica de hielo) el needling a menudo no llega lo bastante lejos; entonces un láser fraccionado es una vía más realista.",
+  "Een litteken dat nog rood is verandert nog uit zichzelf, en prikkelen kan dat verstoren. We wachten tot minstens zes maanden na de ingreep.":
+    "Una cicatriz que todavía está roja sigue cambiando por sí sola, y estimularla puede alterar eso. Esperamos al menos seis meses después de la intervención.",
+  "Wat een intolerantietest wel en niet kan zeggen hoor je in dat gesprek, en ook als het antwoord is dat je er in jouw geval weinig aan hebt.":
+    "Lo que una prueba de intolerancias puede y no puede decir lo oyes en esa conversación, también si la respuesta es que en tu caso te sirve de poco.",
+  "Erna is je huid rustig en een paar uur licht rood. Je gaat met een advies naar huis over wat je de dagen erna wel en niet op je gezicht doet.":
+    "Después tu piel está tranquila y unas horas ligeramente roja. Te vas a casa con un consejo sobre lo que sí y lo que no te pones en la cara los días siguientes.",
+  "Het is een behandeling zoals elke andere en de deur gaat dicht. Wat er wél anders is: je bepaalt zelf hoeveel je vertelt over waarom je komt.":
+    "Es un tratamiento como cualquier otro y la puerta se cierra. Lo que sí es distinto: tú decides cuánto cuentas sobre por qué vienes.",
+  "Een sessie duurt twintig minuten en er is geen hersteltijd. Het werkt door herhaling, dus een reeks met een paar dagen tot een week ertussen.":
+    "Una sesión dura veinte minutos y no hay tiempo de recuperación. Funciona por repetición, así que una serie con unos días a una semana entre medias.",
+  "Dat verschilt per persoon. Het gaat om opgebouwd collageen, en dat neemt na verloop van tijd weer af; de meeste mensen komen periodiek terug.":
+    "Eso varía de una persona a otra. Se trata del colágeno construido, y ese vuelve a disminuir con el tiempo; la mayoría vuelve periódicamente.",
+  "Vier tot zes keer met vier tot zes weken ertussen. Die tussentijd is geen wachten maar de behandeling: daarin wordt het collageen aangemaakt.":
+    "De cuatro a seis veces con cuatro a seis semanas entre medias. Ese tiempo intermedio no es esperar sino el tratamiento: ahí es cuando se produce el colágeno.",
+  "Ja. SmoothLiftin, FRAC3, PIANO en SupErficial hebben elk een eigen pagina en zijn los te boeken. Welke bij jou past hoor je tijdens de intake.":
+    "Sí. SmoothLiftin, FRAC3, PIANO y SupErficial tienen cada uno su propia página y se pueden reservar sueltos. Cuál encaja contigo lo oyes en la consulta previa.",
+  "Elke puls voelt als een kort, scherp tikje. Op littekenweefsel voel je vaak minder dan op de huid eromheen, want de zenuwen lopen daar anders.":
+    "Cada pulso se siente como un toque corto y agudo. En el tejido cicatricial a menudo sientes menos que en la piel de alrededor, porque los nervios van ahí de otra manera.",
+  "Daarom is dit een structuurbehandeling en geen reiniging. Een porie leeghalen helpt voor een paar dagen; de rand verstevigen houdt langer aan.":
+    "Por eso es un tratamiento de textura y no una limpieza. Vaciar un poro ayuda unos días; reafirmar el borde dura más.",
+  "Na een paar dagen ga je vervellen. We spreken daarom vooraf af wanneer je begint, zodat het niet samenvalt met een vakantie of een drukke week.":
+    "A los pocos días empiezas a descamarte. Por eso acordamos de antemano cuándo empiezas, para que no coincida con unas vacaciones o una semana ajetreada.",
+  "Elke puls voelt als een korte warme tik. Hoe dieper de instelling, hoe duidelijker je het merkt; de behandelaar vraagt tussendoor hoe het gaat.":
+    "Cada pulso se siente como un toque corto y caliente. Cuanto más honda la configuración, más claro lo notas; la terapeuta pregunta entre medias cómo va.",
+  "Het traject van drie maanden staat als één bedrag op de tarievenpagina, inclusief de controles en de producten. Er komt niets bij aan de balie.":
+    "El programa de tres meses figura como un solo importe en la página de tarifas, con las revisiones y los productos incluidos. En recepción no se añade nada.",
+  "Direct erna zijn je lippen wat gezwollen en voelen ze warm. Dat trekt binnen enkele uren weg; bij sommige mensen duurt het tot de volgende dag.":
+    "Justo después tus labios están algo hinchados y se notan calientes. Eso baja en unas horas; en algunas personas dura hasta el día siguiente.",
+  "Een vouw tussen de wenkbrauwen of een lachrimpel die door spierbeweging ontstaat, gaat hier niet weg. Daarvoor werken wij niet met injectables.":
+    "Un pliegue entre las cejas o una arruga de la sonrisa que surge por movimiento muscular no se va con esto. Para eso no trabajamos con inyectables.",
+  "Dat verschilt per verzekeraar en per polis. Op de vergoedingenpagina staat wat er per verzekeraar bekend is; je eigen polis is daarbij leidend.":
+    "Eso varía según la aseguradora y la póliza. En la página de reembolsos pone lo que se sabe por aseguradora; tu propia póliza es la que manda.",
+  "Tussen de afspraken door verzorg je je huid zelf, met de producten en het schema die je meekrijgt. Dat bepaalt voor een groot deel het resultaat.":
+    "Entre las citas cuidas tu piel tú, con los productos y el esquema que te dan. Eso decide en gran parte el resultado.",
+  "Er blijft een klein korstje achter dat er binnen een week tot tien dagen afgaat. Eraan zitten is de enige manier om er een litteken van te maken.":
+    "Queda una pequeña costra que se cae en una semana o diez días. Tocarla es la única forma de convertirla en cicatriz.",
+  "Erna ben je rood en warm. In de dagen die volgen kan de huid fijn korrelig aanvoelen en licht schilferen; dat is de oude bovenlaag die eraf komt.":
+    "Después tienes la piel roja y caliente. En los días siguientes la piel puede notarse finamente granulada y descamarse un poco; es la vieja capa superior que se va.",
+  "Erna is de zone een paar uur rood en warm. Sauna, sport en zon laat je die dag even, en zonbescherming hoort daarna bij het traject en niet erna.":
+    "Después la zona está roja y caliente unas horas. La sauna, el deporte y el sol los dejas ese día, y la protección solar forma parte del programa después, no viene después de él.",
+  "Ja, en vaak is dat de beste route: de arts pakt de bultjes en de ontsteking aan, wij de zichtbare roodheid. We stemmen af wat er wanneer gebeurt.":
+    "Sí, y a menudo es el mejor camino: el médico trata los bultitos y la inflamación, nosotros la rojez visible. Acordamos qué pasa y cuándo.",
+  "Kort en gericht. Het steelwratje wordt verdoofd met een crème of een prikje en daarna verwijderd; het geheel duurt per plekje ongeveer een minuut.":
+    "Corto y preciso. El acrocordón se anestesia con una crema o un pinchazo y después se quita; todo junto dura alrededor de un minuto por mancha.",
+  "Dat kan, in de eerste weken. Wat er dan naar boven komt zat er al; het wordt alleen sneller zichtbaar. Het hoort bij het verloop en het gaat over.":
+    "Puede pasar, en las primeras semanas. Lo que sube entonces ya estaba ahí; solo se hace visible antes. Forma parte de la evolución y se pasa.",
+  "Voor structuur wordt er dieper gewerkt dan bij een huidverbetering. De behandelaar zet de diepte per zone; op de wang kan meer dan op de kaaklijn.":
+    "Para la textura se trabaja más hondo que en una mejora de la piel. La terapeuta fija la profundidad por zona; en la mejilla se puede más que en la línea de la mandíbula.",
+  "Omdat er vier behandelingen in een sessie op elkaar volgen, elk op een andere diepte. Van het slijmvlies aan de binnenkant tot de bovenste huidlaag.":
+    "Porque en una sesión van cuatro tratamientos uno tras otro, cada uno a otra profundidad. Desde la mucosa del interior hasta la capa superior de la piel.",
+  "Bij een peeling doet een middel het werk en bepaalt de inwerktijd de diepte. Hier doet licht het werk en stelt de behandelaar de diepte per zone in.":
+    "En un peeling un producto hace el trabajo y el tiempo de actuación decide la profundidad. Aquí la luz hace el trabajo y la terapeuta ajusta la profundidad por zona.",
+  "Niet op de plekken waar het actief is. We beginnen dan met de acne zelf; zodra de huid rustig is, is er iets om aan te werken dat ook rustig blijft.":
+    "No en los sitios donde está activo. Entonces empezamos por el propio acné; en cuanto la piel está tranquila, hay algo en lo que trabajar que también se queda tranquilo.",
+  "Erna is er aan de buitenkant niets te zien. Je kunt gewoon eten en drinken; sommige mensen vinden het de eerste uren wat droog aanvoelen in de mond.":
+    "Después por fuera no se ve nada. Puedes comer y beber con normalidad; algunas personas notan la boca algo seca las primeras horas.",
+  "Vaak wel, als het litteken volgroeid is en rustig. De behandelaar beoordeelt het eerst; bij twijfel over het type litteken overleggen we met je arts.":
+    "A menudo sí, si la cicatriz ha madurado y está tranquila. La terapeuta la valora primero; si hay dudas sobre el tipo de cicatriz, lo consultamos con tu médico.",
+  "Meteen na de behandeling kan een vaatje juist donkerder zijn. Dat hoort erbij: het is het teken dat het geraakt is, en het trekt in de dagen erna weg.":
+    "Justo después del tratamiento un vaso puede estar incluso más oscuro. Es normal: es la señal de que se ha alcanzado, y desaparece en los días siguientes.",
+  "Bij de controles kijken we samen naar de meting van de vorige keer. Niet om te beoordelen of je je best hebt gedaan, maar om te zien of het plan klopt.":
+    "En las revisiones miramos juntos la medición de la vez anterior. No para juzgar si te has esforzado, sino para ver si el plan se sostiene.",
+  "Na een paar weken. Collageenopbouw kost tijd, dus wat je vlak na de eerste sessie ziet is herstel. Daarom leggen we vooraf vast hoe je huid erbij staat.":
+    "Al cabo de unas semanas. Producir colágeno lleva tiempo, así que lo que ves justo después de la primera sesión es recuperación. Por eso registramos de antemano cómo está tu piel.",
+  "Het principe is hetzelfde en het apparaat is anders. Welke van de twee bij je past hangt af van je huid en de zone, en dat bepalen we tijdens de intake.":
+    "El principio es el mismo y el aparato es distinto. Cuál de los dos encaja contigo depende de tu piel y de la zona, y eso lo decidimos en la consulta previa.",
+  "Deze behandeling werkt op je gehemelte en niet op je huid. Je mond blijft open met een spreider en de laser gaat er in drie of vier doorgangen overheen.":
+    "Este tratamiento trabaja sobre tu paladar y no sobre tu piel. La boca se mantiene abierta con un separador y el láser pasa por encima en tres o cuatro pasadas.",
+  "Dat is geen opvullen. Er wordt niets ingebracht; de huid maakt het zelf, en daarom bouwt het effect op over weken en verdwijnt het ook weer geleidelijk.":
+    "Eso no es rellenar. No se introduce nada; la piel lo produce ella misma, y por eso el efecto se construye a lo largo de semanas y también vuelve a desaparecer poco a poco.",
+  "De weken daarna doe jij het werk. Je krijgt producten mee met een schema, en dat schema volgen bepaalt de uitkomst meer dan wat er in de kliniek gebeurt.":
+    "Las semanas siguientes el trabajo lo haces tú. Te llevas productos con un esquema, y seguir ese esquema decide el resultado más que lo que pasa en la clínica.",
+  "Zelden. Acne heeft een verloop en vraagt om een traject met behandelingen, producten en controles. Deze laser is daar een stap in en geen vervanging van.":
+    "Rara vez. El acné tiene una evolución y pide un programa con tratamientos, productos y revisiones. Este láser es un paso dentro de él y no un sustituto.",
+  "Daarom is het bij acne minder een kwestie van sterker of zwakker en meer van welk zuur waar aangrijpt. Dat is wat er tijdens de intake vastgesteld wordt.":
+    "Por eso en el acné es menos cuestión de más fuerte o más suave y más de qué ácido actúa dónde. Eso es lo que se determina en la consulta previa.",
+  "In de eerste weken kan de huid onrustiger worden doordat verstoppingen naar de oppervlakte komen. Dat is geen verslechtering; het is wat er al onder zat.":
+    "En las primeras semanas la piel puede alterarse más porque las obstrucciones salen a la superficie. No es un empeoramiento; es lo que ya había debajo.",
+  "Omdat het geen prijzen voor één behandeling zijn maar voor verschillende. Een laserpeel is iets anders dan een volledige 4D, en dat staat per regel apart.":
+    "Porque no son precios de un solo tratamiento sino de varios. Un peeling láser es otra cosa que un 4D completo, y eso figura en una línea aparte.",
+  "De reactie is meteen te zien: een pigmentvlek komt tijdelijk scherper naar voren en wordt donkerder. Dat hoort erbij en betekent niet dat het erger wordt.":
+    "La reacción se ve al momento: una mancha de pigmento resalta temporalmente con más nitidez y se oscurece. Es normal y no significa que empeore.",
+  "Hyalift is een van de mengsels die we als skinbooster gebruiken. De werkwijze is dezelfde; het verschil zit in wat er in de spuit zit en waar dat op mikt.":
+    "Hyalift es una de las mezclas que usamos como skinbooster. El método es el mismo; la diferencia está en lo que lleva la jeringa y a qué apunta.",
+  "De diepte wordt per zone bijgesteld. Rond je ogen en op je voorhoofd gaat hij ondieper dan op je wangen, en dat merk je: hoe dieper, hoe meer druk je voelt.":
+    "La profundidad se ajusta por zona. Alrededor de los ojos y en la frente va menos hondo que en las mejillas, y lo notas: cuanto más hondo, más presión sientes.",
+  "Elke flits voelt als een kort tikje met een elastiekje. Er gaat een koele gel op en je krijgt een bril op, want je ziet het licht ook door je oogleden heen.":
+    "Cada destello se siente como un toque corto con una goma elástica. Se pone un gel frío y te ponen unas gafas, porque la luz la ves también a través de los párpados.",
+  "Erna is je huid rood en warm, en in de dagen die volgen komt de oude bovenlaag eraf. Niet krabben en niet schrobben; dat is precies waar een vlek van blijft.":
+    "Después tu piel está roja y caliente, y en los días siguientes la vieja capa superior se desprende. No rascar y no frotar; eso es justo lo que deja una mancha.",
+  "Bij herhaling gebeurt er meer. Een reeks peelings zet ook de aanmaak in de laag eronder aan, en dan gaat het niet alleen over glans maar ook over stevigheid.":
+    "Con la repetición pasa más. Una serie de peelings también activa la producción en la capa de debajo, y entonces no se trata solo de luminosidad sino también de firmeza.",
+  "Het voelt als een reeks korte prikjes. Rond de ogen is de huid dunner dan op de wang, dus daar merk je het duidelijker dan bij een behandeling op je gezicht.":
+    "Se siente como una serie de pinchazos cortos. Alrededor de los ojos la piel es más fina que en la mejilla, así que ahí lo notas más claro que en un tratamiento en la cara.",
+  "Ja, elk traject begint hiermee. De meting is het vertrekpunt waar we het resultaat later mee vergelijken, zodat je over drie maanden ziet wat er veranderd is.":
+    "Sí, cada programa empieza con esto. La medición es el punto de partida con el que después comparamos el resultado, para que dentro de tres meses veas lo que ha cambiado.",
+  "Bij een chemische peeling doet een middel het werk en bepaalt de inwerktijd de diepte. Hier doet licht het werk en stelt de behandelaar de diepte per puls in.":
+    "En un peeling químico un producto hace el trabajo y el tiempo de actuación decide la profundidad. Aquí la luz hace el trabajo y la terapeuta ajusta la profundidad pulso a pulso.",
+  "Dit is geen huidbehandeling. Er wordt een klein beetje bloed afgenomen en dat gaat naar een laboratorium; in de kliniek zelf ben je binnen een kwartier klaar.":
+    "Esto no es un tratamiento de la piel. Se saca un poco de sangre y va a un laboratorio; en la propia clínica terminas en un cuarto de hora.",
+  "Erna ben je een paar uur rood. Het pigment dat naar boven komt vervaagt in de dagen erna. Zonbescherming is hier geen advies maar onderdeel van de behandeling.":
+    "Después estás unas horas con la piel roja. El pigmento que sube se difumina en los días siguientes. Aquí la protección solar no es un consejo sino parte del tratamiento.",
+  "Van een oppervlakkige peeling zonder hersteltijd tot een stevigere die een paar dagen vervelt. Wat het wordt hangt af van je huid en van hoeveel dagen je hebt.":
+    "Desde un peeling superficial sin tiempo de recuperación hasta uno más intenso que descama unos días. Cuál sea depende de tu piel y de cuántos días tienes.",
+  "Vlak erna zie je kleine bultjes op de plek van elke prik. Die zakken doorgaans binnen een dag. Blauwe plekjes kunnen, vooral rond de ogen, en die duren langer.":
+    "Justo después ves pequeños bultitos en el sitio de cada pinchazo. Normalmente bajan en un día. Puede haber pequeños moratones, sobre todo alrededor de los ojos, y esos duran más.",
+  "De behandelaar bekijkt eerst wat er zit: verstoppingen, ontstekingen of allebei. Dat bepaalt wat er die afspraak gebeurt en wat er juist met rust gelaten wordt.":
+    "La terapeuta mira primero lo que hay: obstrucciones, inflamaciones o las dos cosas. Eso decide lo que pasa en esa cita y lo que justo se deja en paz.",
+  "Het licht van de Nordlys wordt opgenomen door het rood in het bloed, en niet door de huid eromheen. Daardoor warmt precies het vaatje op en blijft de rest koel.":
+    "La luz del Nordlys la absorbe el rojo de la sangre, y no la piel de alrededor. Así se calienta justo el vaso y el resto se queda frío.",
+  "Zolang er actieve ontstekingen zijn wordt er niet op littekens gewerkt. Prikkelen van een ontstoken huid maakt de kans op nieuwe littekens groter, niet kleiner.":
+    "Mientras haya inflamaciones activas no se trabaja sobre las cicatrices. Estimular una piel inflamada hace más probable que salgan cicatrices nuevas, no menos.",
+  "Bij een keloïd of bij aanleg daarvoor wordt er niet geprikkeld voordat een arts of dermatoloog heeft meegekeken: een te stevige prikkel maakt een keloïd groter.":
+    "Con un queloide o tendencia a formarlos no se estimula antes de que lo haya mirado un médico o dermatólogo: un estímulo demasiado fuerte hace un queloide más grande.",
+  "Nee. Bij een filler wordt er iets ingebracht en is het volume er meteen. Hier bouwt je eigen weefsel op, dus het verschil is subtieler en het komt over de reeks.":
+    "No. Con un relleno se introduce algo y el volumen está al momento. Aquí se construye tu propio tejido, así que la diferencia es más sutil y llega a lo largo de la serie.",
+  "Een litteken dat soepeler aanvoelt, minder glanst en minder scherp afsteekt tegen de huid eromheen. De lijn blijft zichtbaar; wat verandert is hoeveel hij opvalt.":
+    "Una cicatriz que se nota más flexible, brilla menos y contrasta menos con la piel de alrededor. La línea sigue visible; lo que cambia es cuánto llama la atención.",
+  "Je krijgt een beschermbril op en de behandelaar gaat met korte pulsen over de aangedane zones. Op ontstoken plekken voel je het duidelijker dan op de rustige huid.":
+    "Te ponen gafas de protección y la terapeuta pasa con pulsos cortos por las zonas afectadas. En los puntos inflamados lo sientes más claro que en la piel tranquila.",
+  "Zon is hier geen bijzaak maar de helft van het resultaat. Elke blootstelling zet de pigmentcellen weer aan het werk, en dan haal je weg wat er meteen weer bij komt.":
+    "Aquí el sol no es un detalle sino la mitad del resultado. Cada exposición vuelve a poner a trabajar a las células de pigmento, y entonces quitas lo que vuelve a salir enseguida.",
+  "Meestal vier tot zes, met vier tot zes weken ertussen. Hoeveel het er bij jou worden hangt af van hoe diep de littekens zitten en hoe je huid op de eerste reageert.":
+    "Normalmente de cuatro a seis, con cuatro a seis semanas entre medias. Cuántas son en tu caso depende de lo hondas que estén las cicatrices y de cómo reacciona tu piel a la primera.",
+  "Dat de energie in eilandjes de huid in gaat in plaats van als een vlak. Het weefsel dat ertussen intact blijft, helpt het herstel op gang en dat scheelt hersteltijd.":
+    "Que la energía entra en la piel en islas en lugar de como una superficie plana. El tejido que queda intacto entre medias pone en marcha la recuperación y eso ahorra tiempo de recuperación.",
+  "Daarna zie je ons met vaste tussenpozen. Elke afspraak is deels behandeling en deels controle, en bij elke controle wordt er opnieuw gemeten onder dezelfde belichting.":
+    "Después nos ves a intervalos fijos. Cada cita es en parte tratamiento y en parte revisión, y en cada revisión se vuelve a medir bajo la misma iluminación.",
+  "Soms wel en minder dan bij een jong litteken. Een oud litteken is uitgerijpt en reageert daardoor rustiger. Wat er in jouw geval te verwachten is hoor je na de meting.":
+    "A veces sí, y menos que en una cicatriz joven. Una cicatriz antigua ha madurado y por eso reacciona con más calma. Lo que cabe esperar en tu caso lo oyes después de la medición.",
+  "Hetzelfde verloop als bij de SkinPen: verdovende crème, een half uur wachten, en dan de pen in banen over de zone. De Dermapen werkt sneller, dus een vlak is eerder af.":
+    "El mismo desarrollo que con el SkinPen: crema anestésica, media hora de espera, y después el pen en pasadas por la zona. El Dermapen trabaja más rápido, así que una zona se termina antes.",
+  "Bij een oppervlakkige peeling niet; je bent een paar uur rood. Bij een stevigere vervel je een paar dagen, en dan plannen we het liever niet vlak voor iets belangrijks.":
+    "Con un peeling superficial no; estás unas horas con la piel roja. Con uno más intenso te descamas unos días, y entonces preferimos no programarlo justo antes de algo importante.",
+  "Vlak erna is je gezicht opvallend glad en neemt het crème makkelijker op. De donshaartjes komen terug zoals ze waren, dus wie het bevalt komt ongeveer maandelijks terug.":
+    "Justo después tu cara está llamativamente lisa y absorbe mejor la crema. El vello fino vuelve como era, así que a quien le gusta vuelve más o menos cada mes.",
+  "Bij structuur telt de dekking meer dan de diepte. Er wordt over de hele zone gewerkt in plaats van op losse plekken, met een instelling die lichter is dan bij littekens.":
+    "En la textura cuenta más la cobertura que la profundidad. Se trabaja toda la zona en lugar de puntos sueltos, con una configuración más suave que para cicatrices.",
+  "Na afloop staan er kleine bultjes op de plek van elke prik. Dat hoort erbij en het is de vloeistof die nog niet is opgenomen; binnen een paar uur tot een dag zijn ze weg.":
+    "Al terminar hay pequeños bultitos en el sitio de cada pinchazo. Es normal y es el líquido que todavía no se ha absorbido; en unas horas o un día desaparecen.",
+  "Meestal niet. Kringen komen van pigment, van doorschijnende vaatjes of van schaduw, en dat vraagt een andere aanpak. Wat het bij jou is stellen we tijdens de intake vast.":
+    "Normalmente no. Las ojeras vienen del pigmento, de vasos que se transparentan o de la sombra, y eso pide otro enfoque. Cuál es en tu caso lo determinamos en la consulta previa.",
+  "Je krijgt een beschermbril op die de hele behandeling op blijft. De eerste stap gebeurt in je mond: er komt een handstuk tegen de binnenkant van je wang en dat voelt warm.":
+    "Te ponen gafas de protección que se quedan puestas todo el tratamiento. El primer paso ocurre en tu boca: una pieza de mano va contra la parte interior de la mejilla y se nota caliente.",
+  "Een litteken dat nog aan het genezen is laten we eerst met rust. Daarna geldt: hoe jonger, hoe meer er te winnen valt, maar ook bij oude littekens is er vaak iets te doen.":
+    "Una cicatriz que todavía cura la dejamos primero en paz. Después vale: cuanto más joven, más se puede ganar, pero también en cicatrices antiguas a menudo hay algo que hacer.",
+  "Erna is je huid roze en voelt hij zacht aan. Je kunt meteen door met je dag; er is niets waar je rekening mee hoeft te houden behalve zonbescherming, en die geldt sowieso.":
+    "Después tu piel está rosada y se nota suave. Puedes seguir con tu día enseguida; no hay nada que tener en cuenta salvo la protección solar, y esa vale de todos modos.",
+  "Bij acnelittekens is dat het hele verhaal. Het gaat niet om de kleur maar om de diepte: hoe minder verschil in hoogte, hoe minder schaduw, hoe minder je het litteken ziet.":
+    "En las cicatrices de acné eso es toda la historia. No se trata del color sino de la profundidad: cuanta menos diferencia de altura, menos sombra, y menos ves la cicatriz.",
+  "Het slijmvlies ligt vlak tegen het weefsel van je middengezicht aan. De warmte komt daardoor bij de laag waar collageen zit, zonder dat de buitenste huidlaag geraakt wordt.":
+    "La mucosa está pegada al tejido de la parte media de tu cara. Así el calor llega a la capa donde está el colágeno, sin tocar la capa exterior de la piel.",
+  "Drie tot zes maanden, met een controle om de vier tot zes weken. Waar je in die marge valt hangt af van het type acne en van hoe je huid reageert, en dat hoor je na de meting.":
+    "De tres a seis meses, con una revisión cada cuatro a seis semanas. En qué punto de ese margen caes depende del tipo de acné y de cómo reacciona tu piel, y eso lo oyes después de la medición.",
+  "De behandelde vlek niet, maar de pigmentcellen die hem maakten zitten er nog. Zonder dagelijkse bescherming komen er nieuwe, en dan heb je hetzelfde geld twee keer uitgegeven.":
+    "La mancha tratada no, pero las células de pigmento que la hicieron siguen ahí. Sin protección diaria salen nuevas, y entonces has gastado el mismo dinero dos veces.",
+  "Needling brengt precies in die laag herstel op gang. Het nieuwe collageen maakt de huid iets dikker en steviger, en een dikkere huid vouwt minder makkelijk in kleine lijntjes.":
+    "El needling pone en marcha la reparación justo en esa capa. El colágeno nuevo hace la piel un poco más gruesa y firme, y una piel más gruesa se pliega con menos facilidad en líneas pequeñas.",
+  "Dat hangt af van de zones die we behandelen en dat stellen we tijdens de intake vast. De intake kost € 50 en dat bedrag gaat eraf zodra je in dezelfde afspraak behandeld wordt.":
+    "Depende de las zonas que tratemos y eso lo determinamos en la consulta previa. La consulta previa cuesta € 50 y ese importe se descuenta en cuanto te tratan en la misma cita.",
+  "Dat hangt af van de diepte. Licht uitgevoerd ben je een paar uur rood; dieper reken je op enkele dagen. Dat spreken we vooraf af, zodat het niet samenvalt met iets belangrijks.":
+    "Depende de la profundidad. Hecho suave estás unas horas con la piel roja; más hondo, cuenta con unos días. Eso lo acordamos de antemano, para que no coincida con algo importante.",
+  "Elke puls voelt als een kort, scherp tikje, alsof er een elastiekje tegen je huid schiet. Op de wang is dat goed te doen; boven de lip en langs de neus merk je het duidelijker.":
+    "Cada pulso se siente como un toque corto y agudo, como si una goma elástica chasqueara contra tu piel. En la mejilla se lleva bien; encima del labio y junto a la nariz lo notas más claro.",
+  "Wat LED niet doet is de porie vrijmaken. Zonder reiniging of een peeling blijft de verstopping zitten en komt de bacterie terug, en dan behandel je elke keer opnieuw hetzelfde.":
+    "Lo que el LED no hace es liberar el poro. Sin una limpieza o un peeling la obstrucción se queda y la bacteria vuelve, y entonces tratas cada vez lo mismo.",
+  "Een frissere, gelijkmatiger huid die het licht rustiger weerkaatst, direct na de eerste sessie merkbaar en na een reeks steviger. Diepe lijnen en verslapping vallen hier buiten.":
+    "Una piel más fresca y uniforme que refleja la luz con más calma, perceptible justo después de la primera sesión y más firme tras una serie. Las líneas profundas y la flacidez quedan fuera.",
+  "Een test die in kaart brengt op welke voedingsmiddelen je lichaam reageert. Het is geen huidbehandeling, maar de uitslag geeft soms een verklaring voor wat er op je huid gebeurt.":
+    "Una prueba que identifica a qué alimentos reacciona tu cuerpo. No es un tratamiento de la piel, pero el resultado a veces explica lo que pasa en tu piel.",
+  "De eerste dagen ziet je huid er frisser uit door de zwelling; dat is nog geen resultaat. Wat blijft begint na een week of vier op te bouwen en loopt tot ongeveer drie maanden door.":
+    "Los primeros días tu piel se ve más fresca por la hinchazón; eso todavía no es resultado. Lo que se queda empieza a construirse a las cuatro semanas más o menos y sigue hasta unos tres meses.",
+  "De eerste afspraak gaat vooral over kijken en meten. Hoe oud een litteken is en hoe het aanvoelt bepaalt wat er mogelijk is, en dat is een gesprek dat je niet in vijf minuten voert.":
+    "La primera cita va sobre todo de mirar y medir. La edad de una cicatriz y cómo se nota deciden lo que es posible, y esa es una conversación que no se tiene en cinco minutos.",
+  "De glans van één peeling houdt weken aan. Wat een reeks opbouwt aan stevigheid houdt maanden, en daarna vraagt het onderhoud. Dat is geen verkooptruc maar hoe huidvernieuwing werkt.":
+    "La luminosidad de un solo peeling dura semanas. La firmeza que construye una serie dura meses, y después pide mantenimiento. No es un truco de venta sino cómo funciona la renovación de la piel.",
+  "Een pigmentvlek is een plek waar de pigmentcellen te veel hebben aangemaakt. Bij zonschade zit dat pigment meestal hoog, in de opperhuid, en die laag vernieuwt zichzelf voortdurend.":
+    "Una mancha de pigmento es un sitio donde las células de pigmento han producido demasiado. En el daño solar ese pigmento suele estar arriba, en la epidermis, y esa capa se renueva continuamente.",
+  "Wat je voelt is een oplopende warmte die net voor het ongemakkelijke stopt. De behandelaar vraagt tijdens de sessie hoe warm het aanvoelt en stelt het apparaat op jouw antwoord bij.":
+    "Lo que sientes es un calor que sube y se detiene justo antes de lo incómodo. La terapeuta pregunta durante la sesión cuánto calor notas y ajusta el aparato según tu respuesta.",
+  "Meestal drie tot zes, met vier tot zes weken ertussen. Bij een lang of jong litteken loopt dat op; bij een oud en smal litteken blijft het aan de onderkant. Dat hoor je na de meting.":
+    "Normalmente de tres a seis, con cuatro a seis semanas entre medias. En una cicatriz larga o joven sube; en una antigua y estrecha se queda en la parte baja. Eso lo oyes después de la medición.",
+  "Elke puls voelt als een warm tikje, met een koude stoot er direct omheen. Op je bovenlip en langs je bikinilijn voel je meer dan op je benen; dat is overal zo en het gaat snel voorbij.":
+    "Cada pulso se siente como un toque caliente, con un golpe de frío justo alrededor. En el labio superior y en la línea del bikini sientes más que en las piernas; es así en todas partes y pasa rápido.",
+  "Dat kan, maar dan haal je er weinig uit. Het licht werkt op de bacterie en op de ontsteking; als de porie verstopt blijft komt het steeds terug. Het is bedoeld als stap in een traject.":
+    "Se puede, pero entonces le sacas poco. La luz trabaja sobre la bacteria y sobre la inflamación; si el poro sigue obstruido, vuelve una y otra vez. Está pensado como paso dentro de un programa.",
+  "Het licht van de Nordlys wordt door dat bloed opgenomen en maakt de vaatjes dicht, waarna het lichaam ze opruimt. Daardoor zakt de vaste roodheid: de laag die er altijd was, verdwijnt.":
+    "La luz del Nordlys la absorbe esa sangre y cierra los vasos, y después el cuerpo los elimina. Así baja la rojez fija: la capa que siempre estuvo ahí desaparece.",
+  "Je ligt achterover met je mond open en het handstuk gaat tegen de binnenkant van je wang. Wat je voelt is warmte die oploopt, en de behandelaar vraagt tussendoor hoe warm het aanvoelt.":
+    "Te recuestas con la boca abierta y la pieza de mano va contra la parte interior de tu mejilla. Lo que sientes es un calor que sube, y la terapeuta pregunta entre medias cuánto calor notas.",
+  "Nee. Het licht sluit vaatjes die permanent open staan; de neiging om op te vliegen zit in hoe je vaten reageren en die blijft. Wat wel verandert is de rode ondergrond die er altijd was.":
+    "No. La luz cierra vasos que están permanentemente abiertos; la tendencia a los sofocos está en cómo reaccionan tus vasos y esa se queda. Lo que sí cambia es el fondo rojo que siempre estuvo ahí.",
+  "Rood licht doet iets anders: het dringt dieper door en remt de ontstekingsreactie eromheen. Bij acne worden ze daarom vaak na elkaar gegeven, blauw op de bacterie en rood op de roodheid.":
+    "La luz roja hace otra cosa: penetra más hondo y frena la reacción inflamatoria de alrededor. En el acné por eso a menudo se dan una tras otra, azul sobre la bacteria y rojo sobre la rojez.",
+  "Vlekken die lichter worden of verdwijnen, met een gelijkmatiger huid als geheel. De eerste week na een sessie ziet het er slechter uit dan ervoor; dat hoort erbij en is geen tegenvaller.":
+    "Manchas que se aclaran o desaparecen, con una piel más uniforme en conjunto. La primera semana después de una sesión se ve peor que antes; es normal y no es un contratiempo.",
+  "Dat hangt af van het aantal sessies dat bij jou past, en dat stellen we tijdens de intake vast. De intake kost € 50 en dat bedrag gaat eraf zodra je in dezelfde afspraak behandeld wordt.":
+    "Depende del número de sesiones que encaja en tu caso, y eso lo determinamos en la consulta previa. La consulta previa cuesta € 50 y ese importe se descuenta en cuanto te tratan en la misma cita.",
+  "Door hormonen, leeftijd of scheren kan de huid in het intieme gebied donkerder worden. Happy Intim werkt met chemische peelings die het pigment daar verlichten en de textuur egaler maken.":
+    "Por las hormonas, la edad o el afeitado la piel de la zona íntima puede oscurecerse. Happy Intim trabaja con peelings químicos que aclaran el pigmento ahí y uniformizan la textura.",
+  "Na de reeks een huid die gladder aanvoelt en waarin de fijnste lijntjes minder opvallen. Het beste moment om te vergelijken is drie maanden na de laatste sessie, want dan is de opbouw af.":
+    "Tras la serie, una piel que se nota más lisa y en la que las líneas más finas llaman menos la atención. El mejor momento para comparar es tres meses después de la última sesión, porque entonces la reconstrucción ha terminado.",
+  "Zichtbaar minder vaatjes en een rustiger kleur. Wat weg is komt niet terug: dat vaatje bestaat niet meer. Wel kunnen er elders nieuwe ontstaan, want de aanleg die ze maakte verandert niet.":
+    "Visiblemente menos vasos y un color más tranquilo. Lo que se ha ido no vuelve: ese vaso ya no existe. Sí pueden surgir otros nuevos en otro sitio, porque la predisposición que los hizo no cambia.",
+  "De behandeling zelf hangt af van wat eruit komt, en dat verschilt per litteken. Wat overal geldt is dat het een reeks is en geen losse sessie, met tussenpozen die het weefsel de tijd geven.":
+    "El tratamiento en sí depende de lo que salga de ahí, y eso varía según la cicatriz. Lo que vale en todos los casos es que es una serie y no una sesión suelta, con intervalos que dan tiempo al tejido.",
+  "Minder diepe striae met een gelijkmatiger oppervlak. Bij rode striae vaak ook minder kleurverschil. Wat er niet gebeurt is dat ze verdwijnen: het litteken blijft zitten, het valt minder op.":
+    "Estrías menos profundas con una superficie más uniforme. En las estrías rojas a menudo también menos diferencia de color. Lo que no pasa es que desaparezcan: la cicatriz se queda, llama menos la atención.",
+  "Er gaat een koele gel op en daarna komt het handstuk op je huid. Elke flits voelt als een kort tikje met een elastiekje, en je ziet hem ook door je oogleden heen; daarom gaat er een bril op.":
+    "Se pone un gel frío y después la pieza de mano llega a tu piel. Cada destello se siente como un toque corto con una goma elástica, y lo ves también a través de los párpados; por eso te ponen unas gafas.",
+  "Acne op jonge leeftijd kan zwaar zijn voor je zelfvertrouwen. Hiervoor is een medisch onderbouwd programma van drie maanden met begeleiding, opgezet voor jongeren van achttien jaar en jonger.":
+    "El acné a edad temprana puede ser duro para la confianza en uno mismo. Para esto hay un programa de tres meses con base médica y seguimiento, pensado para jóvenes de dieciocho años o menos.",
+  "Het traject begint met een meting en een gesprek, niet met een behandeling. Wat daaruit komt bepaalt de volgorde, en die volgorde is de kern: ontsteking eerst, littekens later, nooit tegelijk.":
+    "El programa empieza con una medición y una conversación, no con un tratamiento. Lo que sale de ahí decide el orden, y ese orden es la clave: primero la inflamación, después las cicatrices, nunca a la vez.",
+  "Als je onbeschermd in de zon komt, ja. De pigmentcellen zijn er nog en die doen weer wat ze deden. Dagelijkse bescherming is hier geen tip maar het verschil tussen resultaat en geen resultaat.":
+    "Si te pones al sol sin protección, sí. Las células de pigmento siguen ahí y vuelven a hacer lo que hacían. Aquí la protección diaria no es un consejo sino la diferencia entre resultado y ningún resultado.",
+  "Zestig euro per half uur behandeltijd, zoals het ook in de agenda staat. Hoeveel tijd je nodig hebt hangt af van het gebied en van hoeveel haren er staan; dat stellen we tijdens de intake vast.":
+    "Sesenta euros por media hora de tratamiento, tal como figura también en la agenda. Cuánto tiempo necesitas depende de la zona y de cuántos pelos hay; eso lo determinamos en la consulta previa.",
+  "De zone wordt geschoren als dat nog niet gebeurd is, want de laser moet bij de wortel kunnen en niet bij het haar erboven. Daarna gaat er een bril op en werkt de behandelaar de zone in banen af.":
+    "La zona se afeita si aún no se ha hecho, porque el láser tiene que llegar a la raíz y no al pelo de encima. Después te ponen unas gafas y la terapeuta recorre la zona en pasadas.",
+  "Injecties in de hoofdhuid, met een injector die de diepte gelijk houdt. Het is een reeks prikjes die snel achter elkaar gaan; de hoofdhuid is gevoelig, en dat merk je vooral in de eerste minuut.":
+    "Inyecciones en el cuero cabelludo, con un inyector que mantiene constante la profundidad. Es una serie de pinchazos rápidos seguidos; el cuero cabelludo es sensible, y eso lo notas sobre todo en el primer minuto.",
+  "Wat erna komt hangt af van de sterkte. Bij een lichte peeling is je huid een dag wat rood en droog. Bij een sterkere ga je vervellen, en dan is de belangrijkste afspraak dat je er niet aan plukt.":
+    "Lo que viene después depende de la intensidad. Con un peeling suave tu piel está un día algo roja y seca. Con uno más intenso te descamas, y entonces la regla más importante es que no toquetees.",
+  "Bij rosacea staan de kleine bloedvaten in het gezicht vaker en langer open. Op den duur gaan ze niet meer helemaal dicht, en dan blijft er een rode ondergrond staan ook als je geen opvlieger hebt.":
+    "En la rosácea los pequeños vasos sanguíneos de la cara se abren más a menudo y durante más tiempo. Con el tiempo ya no se cierran del todo, y entonces queda un fondo rojo también cuando no tienes un sofoco.",
+  "Microneedling brengt in de bovenste lederhuid nieuw collageen op gang. Dat is het weefsel dat die rand overeind houdt, en als het aantrekt wordt de opening minder diep en vangt hij minder schaduw.":
+    "El microneedling pone en marcha colágeno nuevo en la dermis superior. Ese es el tejido que sostiene ese borde, y cuando se tensa la abertura se vuelve menos honda y capta menos sombra.",
+  "Littekens van een operatie reageren anders dan littekens van acne: ze zijn langer, dieper en vaak jonger. De behandeling en het aantal sessies hangen af van hoe oud het litteken is en waar het zit.":
+    "Las cicatrices de una operación reaccionan distinto de las cicatrices de acné: son más largas, más profundas y a menudo más jóvenes. El tratamiento y el número de sesiones dependen de la edad de la cicatriz y de dónde está.",
+  "Dit is een injectiebehandeling, dus er zijn prikjes. De injector zet ze snel achter elkaar en op een gelijke diepte, wat het gelijkmatiger maakt dan met de hand. Verdovende crème vooraf hoort erbij.":
+    "Es un tratamiento con inyecciones, así que hay pinchazos. El inyector los coloca rápido uno tras otro y a la misma profundidad, lo que lo hace más uniforme que a mano. La crema anestésica previa forma parte.",
+  "Wat blijft is de neiging tot opvliegen. Die zit in hoe de vaten reageren op warmte, alcohol, inspanning of spanning, en daar doet licht niets aan. Wie dat vooraf weet, is achteraf niet teleurgesteld.":
+    "Lo que se queda es la tendencia a los sofocos. Está en cómo reaccionan los vasos al calor, el alcohol, el esfuerzo o la tensión, y la luz no hace nada con eso. Quien lo sabe de antemano no se decepciona después.",
+  "De eerste afspraak duurt kort. Er gaat een masker op je gezicht dat je zelf mee naar huis neemt en er thuis afhaalt, na het aantal uren dat je meekrijgt. Dat aantal is geen richtlijn maar een afspraak.":
+    "La primera cita es corta. Se pone una mascarilla en tu cara que te llevas a casa y te quitas allí, después del número de horas que te indican. Ese número no es una orientación sino un acuerdo.",
+  "Door die warmte klapt de wand van het vaatje dicht. Het bloed kan er niet meer doorheen en het lichaam breekt het in de weken erna af. Wat je daarna ziet is gewone huid, want dat vaatje is er niet meer.":
+    "Con ese calor la pared del vaso se colapsa. La sangre ya no puede pasar y el cuerpo lo degrada en las semanas siguientes. Lo que ves después es piel normal, porque ese vaso ya no está.",
+  "De behandelde vaatjes niet; die zijn opgeruimd. Wel kunnen er nieuwe ontstaan, want wat ze veroorzaakte verandert niet. Bij de meeste mensen betekent dat een sessie per jaar of twee om het bij te houden.":
+    "Los vasos tratados no; esos se han eliminado. Sí pueden surgir otros nuevos, porque lo que los causó no cambia. Para la mayoría eso significa una sesión cada uno o dos años para mantenerlo.",
+  "Daarna werkt de behandelaar aan de buitenkant. De verwarmende stand loopt op tot net voor het ongemakkelijke, en zij vraagt tijdens de sessie hoe warm het aanvoelt. De laatste stap voelt als korte tikjes.":
+    "Después la terapeuta trabaja por fuera. El modo de calentamiento sube hasta justo antes de lo incómodo, y durante la sesión te pregunta cuánto calor notas. El último paso se siente como toques cortos.",
+  "Een gezichtsbehandeling die de bovenste laag losmaakt en tegelijk werkzame stoffen inbrengt, waarbij er in de huid zelf zuurstof vrijkomt. Het werkt op de bovenste lagen, met resultaat dat je meteen ziet.":
+    "Un tratamiento facial que suelta la capa superior y a la vez aporta principios activos, mientras en la propia piel se libera oxígeno. Trabaja sobre las capas superiores, con un resultado que ves al momento.",
+  "Needling brengt in beide gevallen nieuw collageen op gang in de laag waar de scheur zit. Bij rode striae levert dat meer op dan bij witte, en dat verschil hoor je te weten voordat je aan een reeks begint.":
+    "El needling pone en marcha colágeno nuevo en los dos casos en la capa donde está el desgarro. En las estrías rojas eso rinde más que en las blancas, y esa diferencia conviene saberla antes de empezar una serie.",
+  "Een behandeling in een gebied waar je je kwetsbaar voelt, en daar wordt naar gehandeld. Je hoort vooraf precies wat er gebeurt en wat je aan- of uithoudt, en je kunt op elk moment zeggen dat het genoeg is.":
+    "Un tratamiento en una zona en la que te sientes vulnerable, y se actúa en consecuencia. De antemano oyes exactamente lo que pasa y lo que te dejas puesto o te quitas, y en cualquier momento puedes decir que es suficiente.",
+  "Hetzelfde traject, ingericht op een leven met school, sport en een bijbaan. De afspraken zijn korter en de thuisroutine is met opzet klein gehouden: drie stappen die je ook volhoudt als je te laat opstaat.":
+    "El mismo programa, organizado para una vida con instituto, deporte y un trabajillo. Las citas son más cortas y la rutina en casa se ha mantenido pequeña a propósito: tres pasos que sigues también cuando te levantas tarde.",
+  "Omdat het pigment uiteen is gevallen en naar de oppervlakte werkt. Na een dag of vijf tot tien schilfert het weg. Krabben of scrubben in die periode is de enige manier om er een vlek van te maken die blijft.":
+    "Porque el pigmento se ha roto y va subiendo a la superficie. Al cabo de unos cinco a diez días se descama. Rascar o frotar en ese periodo es la única forma de convertirlo en una mancha que se queda.",
+  "Acne begint met een verstopping: de wand van de porie vernieuwt te snel, de losse cellen plakken samen en de talg kan er niet meer uit. Wat daarna volgt aan bacterie en ontsteking zit áchter die verstopping.":
+    "El acné empieza con una obstrucción: la pared del poro se renueva demasiado rápido, las células sueltas se pegan entre sí y el sebo ya no puede salir. Lo que sigue en bacterias e inflamación está detrás de esa obstrucción.",
+  "Een klein handstuk gaat over je huid terwijl er een gel op ligt. De twee reageren met elkaar en dat bruist licht: je hoort het meer dan dat je het voelt. Het is een van de rustigste behandelingen die we doen.":
+    "Una pieza de mano pequeña pasa por tu piel mientras hay un gel encima. Los dos reaccionan entre sí y eso burbujea un poco: lo oyes más de lo que lo sientes. Es uno de los tratamientos más tranquilos que hacemos.",
+  "Verse striae zijn rood of paars: er lopen nog vaatjes doorheen en het weefsel is nog bezig. In die fase reageert de huid het best op een prikkel, want het herstel is nog aan de gang en je duwt het een kant op.":
+    "Las estrías recientes son rojas o moradas: todavía pasan vasos por ellas y el tejido sigue en marcha. En esa fase la piel reacciona mejor a un estímulo, porque la reparación aún está en curso y la empujas en una dirección.",
+  "In het tarief zitten de behandelingen in de kliniek, de controles en de producten voor thuis. Wat er niet in zit zijn losse behandelingen die je er tussendoor wilt, en die staan dan gewoon op de tarievenpagina.":
+    "En la tarifa entran los tratamientos en la clínica, las revisiones y los productos para casa. Lo que no entra son tratamientos sueltos que quieras entre medias, y esos están sin más en la página de tarifas.",
+  "Daar is dit geen behandeling voor. Zijn er ademstops gemeld, of ben je overdag ongewoon slaperig, dan hoort daar eerst slaaponderzoek bij via je huisarts. Weet je wat er speelt, dan kijken we wat we kunnen doen.":
+    "Para eso esto no es un tratamiento. Si se han observado pausas de respiración, o tienes un sueño inusual de día, primero toca un estudio del sueño a través de tu médico de cabecera. Cuando sepas lo que pasa, vemos lo que podemos hacer.",
+  "Minder verstoppingen en minder nieuwe puistjes, meestal merkbaar vanaf de derde sessie. Wat een peeling niet doet is bestaande littekens weghalen; die vragen om iets anders en dat komt pas als de acne rustig is.":
+    "Menos obstrucciones y menos granos nuevos, normalmente perceptible a partir de la tercera sesión. Lo que un peeling no hace es quitar las cicatrices que ya hay; esas piden otra cosa y eso llega solo cuando el acné está tranquilo.",
+  "Minder goed dan op rode. De structuur kan verbeteren waardoor ze minder opvallen, maar de kleur komt niet terug. Tijdens de intake kijken we welke van de twee je hebt, want dat bepaalt of het de moeite waard is.":
+    "Menos bien que en las rojas. La textura puede mejorar, con lo que llaman menos la atención, pero el color no vuelve. En la consulta previa miramos cuáles de las dos tienes, porque eso decide si merece la pena.",
+  "Een rustigere huid met minder ontstoken plekjes, en minder roodheid rond de puistjes die er zijn. Het is de rustige stap in een acnetraject: geen hersteltijd, geen prikkeling, en het effect komt uit de herhaling.":
+    "Una piel más tranquila con menos puntos inflamados, y menos rojez alrededor de los granos que hay. Es el paso tranquilo de un programa de acné: sin tiempo de recuperación, sin irritación, y el efecto viene de la repetición.",
+  "Je huid wordt strak getrokken en het mesje gaat er onder een vaste hoek overheen, in korte halen. Het geluid is het gekste eraan: een zacht schrapen dat je in je kaak voelt meer dan op je huid. Pijn doet het niet.":
+    "Tu piel se tensa y la cuchilla pasa por encima en un ángulo fijo, en trazos cortos. El sonido es lo más raro: un raspado suave que notas más en la mandíbula que en la piel. Doler no duele.",
+  "Minder blijvende roodheid en een gelijkmatiger kleur, opgebouwd over drie tot zes sessies. De gevoeligheid en de opvliegers blijven; die vragen om weten wat je huid triggert, en dat is geen behandeling maar kennis.":
+    "Menos rojez permanente y un color más uniforme, construido a lo largo de tres a seis sesiones. La sensibilidad y los sofocos se quedan; esos piden saber qué desencadena tu piel, y eso no es un tratamiento sino conocimiento.",
+  "Een huid die egaler oogt en licht gelijkmatiger weerkaatst, meestal vanaf de derde sessie zichtbaar. Wat niet gebeurt is dat poriën verdwijnen: als iemand dat belooft, belooft hij iets over anatomie dat niet klopt.":
+    "Una piel que se ve más uniforme y refleja la luz de forma más regular, normalmente visible a partir de la tercera sesión. Lo que no pasa es que los poros desaparezcan: si alguien lo promete, promete algo sobre anatomía que no es cierto.",
+  "Een HydraFacial haalt eruit wat erin zit en dat zie je meteen; het houdt dagen tot weken aan. Needling verandert de huid eromheen en dat duurt maanden. De twee bijten elkaar niet, ze werken op verschillende dingen.":
+    "Un HydraFacial saca lo que hay dentro y eso lo ves al momento; dura de días a semanas. El needling cambia la piel de alrededor y eso lleva meses. Los dos no se estorban, trabajan sobre cosas distintas.",
+  "Een gelijkmatiger huid met lichtere vlekken, opgebouwd over een reeks. Bij hardnekkig of dieper pigment is een traject van maanden een reëlere route dan losse peelings; dat hoor je tijdens de intake, niet halverwege.":
+    "Una piel más uniforme con manchas más claras, construida a lo largo de una serie. En pigmento rebelde o más hondo, un programa de meses es una vía más realista que peelings sueltos; eso lo oyes en la consulta previa, no a mitad de camino.",
+  "XL Hair stimuleert de haarzakjes en verbetert de doorbloeding van de hoofdhuid om de natuurlijke haargroei te ondersteunen. Het traject wordt afgestemd op je haarconditie en hoofdhuid, en loopt over meerdere maanden.":
+    "XL Hair estimula los folículos y mejora la circulación del cuero cabelludo para apoyar el crecimiento natural del pelo. El programa se ajusta al estado de tu pelo y tu cuero cabelludo, y dura varios meses.",
+  "Je ligt achterover en de behandelaar zet met een fijne naald een reeks kleine depots onder en naast je oog. Elke prik voelt als een korte tik; het gebied rond de ogen is gevoeliger dan de wang, dus daar merk je het meer.":
+    "Te recuestas y la terapeuta coloca con una aguja fina una serie de pequeños depósitos debajo y al lado de tu ojo. Cada pinchazo se siente como un toque corto; la zona alrededor de los ojos es más sensible que la mejilla, así que ahí lo notas más.",
+  "Een acnelitteken ontstaat doordat een ontsteking bindweefsel heeft opgeruimd en er te weinig voor is teruggekomen. Wat overblijft is een putje waarin het licht een schaduw maakt, en juist die schaduw zie je in de spiegel.":
+    "Una cicatriz de acné surge porque una inflamación ha eliminado tejido conjuntivo y ha vuelto demasiado poco en su lugar. Lo que queda es un hoyo en el que la luz hace una sombra, y justo esa sombra es lo que ves en el espejo.",
+  "Je krijgt een beschermbril op en die blijft de hele behandeling op. Wat je voelt hangt af van de modus: bij de verwarmende stand is het een oplopende warmte die net voor het ongemakkelijke stopt, bij de andere korte tikjes.":
+    "Te ponen gafas de protección y se quedan puestas todo el tratamiento. Lo que sientes depende del modo: en el modo de calentamiento es un calor que sube y se detiene justo antes de lo incómodo, en el otro, toques cortos.",
+  "Door die warmte valt de pigmentkorrel uiteen en werkt hij naar de oppervlakte. In de dagen erna wordt de vlek eerst donkerder en korreliger, daarna schilfert hij weg. Dat donkerder worden is het teken dat het gewerkt heeft.":
+    "Con ese calor el grano de pigmento se rompe y va subiendo a la superficie. En los días siguientes la mancha primero se oscurece y se vuelve granulada, después se descama. Ese oscurecimiento es la señal de que ha funcionado.",
+  "Vanaf een jaar of vijfentwintig maakt de huid ieder jaar iets minder collageen aan. De bovenste lederhuid wordt daardoor dunner en de bovenlaag komt losser te liggen, en dat is wat je als een fijn netwerk van lijntjes ziet.":
+    "A partir de los veinticinco años más o menos la piel produce cada año un poco menos de colágeno. La dermis superior se vuelve por eso más fina y la capa superior queda más suelta, y eso es lo que ves como una fina red de líneas.",
+  "Microneedling maakt in dat stugge weefsel duizenden kleine wondjes die opnieuw genezen. Bij die tweede genezing ligt het nieuwe collageen minder strak in één richting, en wordt het litteken soepeler en minder scherp begrensd.":
+    "El microneedling hace en ese tejido rígido miles de pequeñas heridas que vuelven a curar. En esa segunda curación el colágeno nuevo queda menos tenso en una sola dirección, y la cicatriz se vuelve más flexible y con bordes menos marcados.",
+  "In een verstopte porie groeit een bacterie die van nature in de huid voorkomt. Die bacterie maakt stoffen aan die op blauw licht van een bepaalde golflengte reageren; daarbij komt zuurstof vrij die de bacterie zelf beschadigt.":
+    "En un poro obstruido crece una bacteria que está de forma natural en la piel. Esa bacteria produce sustancias que reaccionan a la luz azul de una longitud de onda determinada; al hacerlo se libera oxígeno que daña a la propia bacteria.",
+  "Een peeling maakt die bovenlaag in één keer los, waardoor de nieuwe laag eronder gelijkmatiger komt te liggen. Dat is direct zichtbaar en het is ook de reden dat het effect tijdelijk is: de huid gaat gewoon door met vertragen.":
+    "Un peeling suelta esa capa superior de una vez, con lo que la capa nueva de debajo queda más uniforme. Eso se ve al momento y es también la razón de que el efecto sea temporal: la piel sigue sin más ralentizándose.",
+  "Een peeling versnelt die vernieuwing. De cellen met te veel pigment worden sneller afgevoerd en de nieuwe die eronder liggen hebben er minder in. Daarom werkt het op oppervlakkig pigment en niet op pigment dat in de lederhuid zit.":
+    "Un peeling acelera esa renovación. Las células con demasiado pigmento se eliminan antes y las nuevas de debajo tienen menos. Por eso funciona sobre el pigmento superficial y no sobre el pigmento que está en la dermis.",
+  "Nee, het werkt op iets anders. Botox ontspant een spier en haalt daarmee een vouw weg; needling verandert de kwaliteit van de huid zelf. Bij een spiervouw doet needling weinig, bij een dunne huid met fijne lijntjes doet botox weinig.":
+    "No, trabaja sobre otra cosa. El bótox relaja un músculo y con eso quita un pliegue; el needling cambia la calidad de la propia piel. En un pliegue muscular el needling hace poco, en una piel fina con líneas finas el bótox hace poco.",
+  "Vanaf een jaar of dertig duurt het langer voordat een huidcel van onderaf de oppervlakte bereikt. Er blijven meer dode cellen liggen, en die liggen niet netjes. Licht dat daarop valt weerkaatst alle kanten op, en dat zien wij als dof.":
+    "A partir de los treinta años más o menos, una célula de la piel tarda más en llegar desde abajo a la superficie. Se quedan más células muertas, y no quedan ordenadas. La luz que cae sobre ellas se refleja en todas direcciones, y eso lo vemos como apagado.",
+  "Dit is één afspraak die weghaalt wat er nu zit. Het traject duurt maanden, met producten voor thuis en controles, en pakt aan waarom het terugkomt. Wie twijfelt begint hier; tijdens de afspraak hoor je of het traject bij jou zin heeft.":
+    "Esto es una sola cita que quita lo que hay ahora. El programa dura meses, con productos para casa y revisiones, y trata por qué vuelve. Quien duda empieza aquí; durante la cita oyes si el programa tiene sentido en tu caso.",
+  "Je gezicht komt in een houder zodat de afstand en de hoek elke keer hetzelfde zijn. De opnames zijn in een paar minuten klaar: gewoon licht, gepolariseerd licht en UV, achter elkaar door. Je merkt er niets van, want er raakt niets je huid.":
+    "Tu cara se apoya en un soporte para que la distancia y el ángulo sean cada vez los mismos. Las capturas están listas en unos minutos: luz normal, luz polarizada y UV, una tras otra. No notas nada, porque nada toca tu piel.",
+  "Witte striae zijn uitgewerkt. Het weefsel is dan dunner en er zit weinig pigment in, en dat komt niet meer terug. Wat wel kan is dat de structuur verbetert: de striae worden minder diep en de rand minder scherp, waardoor ze minder opvallen.":
+    "Las estrías blancas ya han hecho su recorrido. El tejido es entonces más fino y tiene poco pigmento, y eso no vuelve. Lo que sí puede pasar es que la textura mejore: las estrías se vuelven menos profundas y el borde menos marcado, con lo que llaman menos la atención.",
+  "Dat hangt af van waar de kleur vandaan komt. Bij pigment en bij een dunne huid met doorschijnende vaatjes valt er iets te doen; komt de donkerte van schaduw door je botstructuur, dan verandert er weinig. Dat stellen we vast tijdens de intake.":
+    "Depende de dónde viene el color. Con pigmento y con una piel fina con vasos que se transparentan hay algo que hacer; si la oscuridad viene de la sombra de tu estructura ósea, cambia poco. Eso lo determinamos en la consulta previa.",
+  "Bij normale huid liggen de collageenvezels door elkaar heen, en dat maakt de huid soepel in elke richting. In een litteken liggen ze evenwijdig, want zo is de wond dichtgetrokken. Dat weefsel is sterk maar stug, en het reflecteert licht anders.":
+    "En una piel normal las fibras de colágeno están entrecruzadas, y eso hace la piel flexible en todas direcciones. En una cicatriz están en paralelo, porque así se cerró la herida. Ese tejido es fuerte pero rígido, y refleja la luz de otra manera.",
+  "Het licht van de Nordlys wordt opgenomen door het pigment in de vlek en niet door de lichtere huid ernaast. Daardoor warmt precies de vlek op en blijft de rest koel; dat is wat een IPL onderscheidt van een peeling, die de hele bovenlaag afhaalt.":
+    "La luz del Nordlys la absorbe el pigmento de la mancha y no la piel más clara de al lado. Así se calienta justo la mancha y el resto se queda frío; eso es lo que distingue a una IPL de un peeling, que retira toda la capa superior.",
+  "Poriën vallen op als de huid eromheen slap is. Het gaatje zelf is bij iedereen ongeveer even groot; wat verschilt is of de rand strak staat of iets is ingezakt. Bij een ingezakte rand valt er schaduw in en dan lijkt de opening groter dan hij is.":
+    "Los poros llaman la atención cuando la piel de alrededor está flácida. La abertura en sí es más o menos igual de grande en todo el mundo; lo que varía es si el borde está tenso o se ha hundido un poco. Con un borde hundido entra sombra y entonces la abertura parece más grande de lo que es.",
+  "We bekijken je huid en bespreken wat je ermee wilt. Daaruit volgt een LED-protocol voor thuis: welke stand, hoe lang en hoe vaak, met het SkinComplete-masker. Schaf je het masker aan, dan krijg je er begeleiding bij zodat je eruit haalt wat erin zit.":
+    "Miramos tu piel y hablamos de lo que quieres conseguir. De ahí sale un protocolo LED para casa: qué modo, cuánto tiempo y con qué frecuencia, con la máscara SkinComplete. Si compras la máscara, recibes seguimiento para que le saques todo lo que tiene.",
+  "Daarna een grondige reiniging, het vakkundig leegmaken van verstopte poriën en een kalmerend masker of een lichte peeling om af te sluiten. Zelf uitdrukken thuis is de manier om er littekens van te maken; hier gebeurt het steriel en met de juiste druk.":
+    "Después una limpieza a fondo, el vaciado experto de los poros obstruidos y una mascarilla calmante o un peeling suave para terminar. Apretarlos tú en casa es la manera de convertirlos en cicatrices; aquí se hace de forma estéril y con la presión correcta.",
+  "De rest van het uur gaat over wat eruit komt. Je kijkt mee op het scherm en hoort waar de waardes vandaan komen, wat opvalt en wat het betekent. Aan het eind ligt er een voorstel: welke behandelingen erbij passen, in welke volgorde en over hoeveel tijd.":
+    "El resto de la hora va sobre lo que sale. Miras en la pantalla y oyes de dónde vienen los valores, qué destaca y qué significa. Al final hay una propuesta: qué tratamientos encajan, en qué orden y en cuánto tiempo.",
+  "De vloeistof gaat met een kwastje in lagen op je huid. Binnen een halve minuut begint het te prikken of te tintelen, en dat loopt op naarmate er lagen bij komen. De behandelaar kijkt naar je huid én naar de klok; dat samen bepaalt wanneer het eraf gaat.":
+    "El líquido se aplica en capas sobre tu piel con un pincel. En medio minuto empieza a picar u hormiguear, y eso sube según se añaden capas. La terapeuta mira tu piel y el reloj; las dos cosas juntas deciden cuándo se retira.",
+  "Dat hangt af van hoe diep het pigment zit en hoe hardnekkig het is. Een peeling is lichter en losser te doen; Cosmelan is een traject van maanden en pakt aan waar losse peelings op stuklopen. De behandelaar stelt tijdens de intake vast welke van de twee past.":
+    "Depende de lo hondo que esté el pigmento y de lo rebelde que sea. Un peeling es más suave y se puede hacer suelto; Cosmelan es un programa de meses y trata lo que hace fracasar a los peelings sueltos. La terapeuta determina en la consulta previa cuál de los dos encaja.",
+  "Het handstuk gaat in strijkende banen over het hele gezicht met een lage energie. Het blijft aan de oppervlakte: de bovenste laag wordt geprikkeld om sneller te vernieuwen, zonder dat er iets wordt weggehaald. Dat maakt het een onderhoudsbehandeling en geen ingreep.":
+    "La pieza de mano pasa en líneas suaves por toda la cara con una energía baja. Se queda en la superficie: la capa superior se estimula para renovarse más rápido, sin retirar nada. Eso lo convierte en un tratamiento de mantenimiento y no en una intervención.",
+  "Reken op maanden en op verbetering, niet op verdwijnen. Putjes worden ondieper en de huid oogt gelijkmatiger; een litteken dat er niet meer is, is een belofte die niemand kan waarmaken. Wat er ná de reeks nog staat, bekijken we samen voor we besluiten of er meer zin heeft.":
+    "Cuenta con meses y con mejora, no con desaparición. Los hoyos se vuelven menos hondos y la piel se ve más uniforme; una cicatriz que ya no está es una promesa que nadie puede cumplir. Lo que todavía quede después de la serie lo miramos juntos antes de decidir si más tiene sentido.",
+  "Dezelfde opzet, andere sterkte en een ander doel. Cosmelan is de lichtere van de twee en wordt vaker gekozen bij zonschade en losse pigmentvlekken; Dermamelan is intensiever en wordt vaker ingezet bij melasma. Welke van de twee bij jou past, stelt de behandelaar tijdens de intake vast.":
+    "El mismo planteamiento, otra intensidad y otro objetivo. Cosmelan es el más suave de los dos y se elige más a menudo para daño solar y manchas de pigmento sueltas; Dermamelan es más intensivo y se usa más para el melasma. Cuál de los dos encaja contigo lo determina la terapeuta en la consulta previa.",
+  "Dode huidcellen en donshaartjes worden verwijderd met een chirurgisch mesje, onder een hoek van 45 graden. Er komen geen zuren aan te pas, waardoor het ook kan bij een gevoelige, droge of allergische huid en tijdens de zwangerschap. Het is pijnloos en het resultaat is meteen zichtbaar.":
+    "Las células muertas y el vello fino se retiran con una cuchilla quirúrgica, en un ángulo de 45 grados. No intervienen ácidos, con lo que también se puede en una piel sensible, seca o alérgica y durante el embarazo. No duele y el resultado se ve al momento.",
+  "De huid in de lies- en bikinizone kan donkerder kleuren door wrijving, ontharing, hormonen en ontsteking. Dit traject werkt volgens hetzelfde principe als Dermamelan voor het gezicht, met een formule die op deze zone is afgestemd: een behandeling in de kliniek en daarna een routine thuis.":
+    "La piel de la zona de la ingle y del bikini puede oscurecerse por el roce, la depilación, las hormonas y la inflamación. Este programa funciona con el mismo principio que Dermamelan para la cara, con una fórmula ajustada a esta zona: un tratamiento en la clínica y después una rutina en casa.",
+  "De laser mikt op het pigment in de haarwortel, en die zit diep. Wat de energie opneemt warmt op, de rest niet. Daarom werkt de laser gericht, en daarom stelt de behandelaar hem in op jouw huidtype. Eén sessie raakt alleen de haren die op dat moment groeien, en dat is nooit alles tegelijk.":
+    "El láser apunta al pigmento de la raíz del pelo, y esa está honda. Lo que absorbe la energía se calienta, el resto no. Por eso el láser trabaja con precisión, y por eso la terapeuta lo ajusta a tu fototipo. Una sesión solo alcanza los pelos que crecen en ese momento, y eso nunca son todos a la vez.",
+  "Het zachte gehemelte en het weefsel achter in je mond worden in een reeks pulsen gecontroleerd verwarmd. Daardoor trekt het weefsel samen en gaat het minder meetrillen op de luchtstroom, en juist die trilling is het geluid dat snurken heet. Er wordt niet gesneden en er blijft niets achter.":
+    "El paladar blando y el tejido del fondo de tu boca se calientan de forma controlada en una serie de pulsos. Así el tejido se contrae y vibra menos con el flujo de aire, y justo esa vibración es el sonido que se llama ronquido. No se corta nada y no queda nada dentro.",
+  "Een peeling werkt op de bovenlaag; RRS Eyes brengt werkzame stoffen met een naald ónder de huid. Bij een doffe kleur en fijne lijntjes ligt de peeling voor de hand, bij donkere kringen en een vermoeide oogzone eerder RRS Eyes. Bij een pigmentwal zetten we ze vaak allebei in, in dezelfde reeks.":
+    "Un peeling trabaja sobre la capa superior; RRS Eyes lleva principios activos con una aguja debajo de la piel. Con un color apagado y líneas finas lo lógico es el peeling, con ojeras y un contorno de ojos cansado más bien RRS Eyes. Con una ojera pigmentada a menudo usamos los dos, en la misma serie.",
+  "Salicylzuur lost op in vet en komt daardoor de porie zelf in; het maakt de prop losser waar hij zit. Glycolzuur werkt op de bovenlaag en zorgt dat losse cellen sneller loslaten. Bij een vette huid met veel mee-eters ligt het eerste voor de hand, bij een doffe huid met verstoppingen het tweede.":
+    "El ácido salicílico se disuelve en la grasa y por eso entra en el propio poro; afloja el tapón donde está. El ácido glicólico trabaja sobre la capa superior y hace que las células sueltas se desprendan antes. En una piel grasa con muchos puntos negros lo lógico es el primero, en una piel apagada con obstrucciones el segundo.",
+  "Een peeling maakt de verbinding tussen de buitenste huidcellen los, zodat die laag sneller wordt vervangen dan hij uit zichzelf zou doen. Hoe ver dat gaat hangt af van het middel en de sterkte: de kliniek werkt met peelings van Skin Tech Pharma, Dermaceutic, ADO en Mesoestetic, in drie niveaus.":
+    "Un peeling suelta la unión entre las células más externas de la piel, para que esa capa se sustituya más rápido de lo que haría por sí sola. Hasta dónde llega depende del producto y de la intensidad: la clínica trabaja con peelings de Skin Tech Pharma, Dermaceutic, ADO y Mesoestetic, en tres niveles.",
+  "PIANO is een lange, trage puls die het weefsel over een groot oppervlak gelijkmatig verwarmt in plaats van punt voor punt. Daardoor komt de warmte dieper en blijft de bovenste huidlaag koel. Bestaand collageen trekt samen en de aanmaak van nieuw collageen komt op gang, wat de huid steviger maakt.":
+    "PIANO es un pulso largo y lento que calienta el tejido de forma uniforme en una superficie grande en lugar de punto por punto. Así el calor llega más hondo y la capa superior de la piel se queda fría. El colágeno existente se contrae y se pone en marcha la producción de colágeno nuevo, lo que hace la piel más firme.",
+  "De pen zet honderden kanaaltjes tot in de bovenste lederhuid, precies de laag waar dat bindweefsel zit. Het lichaam herstelt die kanaaltjes met nieuw collageen, en dat vult de bodem van het putje op. Niet ineens: de opbouw loopt over weken tot maanden door, en daarom zie je na de eerste sessie nog niets.":
+    "El pen coloca cientos de canales hasta la dermis superior, justo la capa donde está ese tejido conjuntivo. El cuerpo repara esos canales con colágeno nuevo, y eso rellena el fondo del hoyo. No de golpe: la reconstrucción sigue durante semanas o meses, y por eso después de la primera sesión todavía no ves nada.",
+  "De mannenhuid is gemiddeld dikker, bevat meer collageen en heeft meer talgklieren en haarfollikels. Daardoor reageert hij anders op warmte en vraagt hij andere instellingen dan de standaardinstelling. Fotona 4D Men doorloopt dezelfde vier stappen, maar met een aangepast energieniveau en een aangepaste opbouw.":
+    "La piel masculina es de media más gruesa, contiene más colágeno y tiene más glándulas sebáceas y folículos. Por eso reacciona de otra manera al calor y pide otra configuración que la estándar. Fotona 4D Men recorre los mismos cuatro pasos, pero con un nivel de energía y una progresión adaptados.",
+  "De huid rond je ogen is de dunste van je gezicht en verslapt daardoor als eerste. SmoothEye verwarmt die zone met een lange, trage puls waarbij de bovenste laag koel blijft. Bestaand collageen trekt samen en er komt nieuwe aanmaak op gang, wat de fijne lijntjes minder scherp maakt en het ooglid iets steviger.":
+    "La piel alrededor de tus ojos es la más fina de tu cara y por eso se descuelga la primera. SmoothEye calienta esa zona con un pulso largo y lento en el que la capa superior se queda fría. El colágeno existente se contrae y se pone en marcha producción nueva, lo que hace las líneas finas menos marcadas y el párpado algo más firme.",
+  "VectorLift verwarmt het weefsel van je voorhoofd en de zone boven je wenkbrauw in vaste banen. Doordat collageen samentrekt en er nieuwe aanmaak op gang komt, komt de wenkbrauw iets omhoog te liggen en wordt het voorhoofd steviger. Het gaat om millimeters en om je eigen weefsel, niet om een chirurgische lift.":
+    "VectorLift calienta el tejido de tu frente y la zona por encima de la ceja en líneas fijas. Como el colágeno se contrae y se pone en marcha producción nueva, la ceja queda un poco más alta y la frente más firme. Se trata de milímetros y de tu propio tejido, no de un lifting quirúrgico.",
+  "De huid rond het oog is dunner dan de rest van het gezicht, en de meeste peelings zijn daar te sterk voor. Dit is een formule die daar wel op mag: hij werkt op de bovenlaag rond de oogkas en pakt fijne lijntjes, een doffe kleur en oppervlakkige verkleuring aan. De sterkte en de inwerktijd worden per huid gekozen.":
+    "La piel alrededor del ojo es más fina que el resto de la cara, y la mayoría de los peelings son demasiado fuertes para ella. Esta es una fórmula que sí puede ir ahí: trabaja sobre la capa superior alrededor de la cuenca del ojo y trata líneas finas, un color apagado y una decoloración superficial. La intensidad y el tiempo de actuación se eligen según la piel.",
+  "Een microneedlingapparaat dat met minuscule, trillende naaldjes microscopisch kleine kanaaltjes in de huid maakt om het natuurlijke herstelproces te stimuleren. Dat stimuleert de collageenaanmaak, waardoor de huid steviger, gladder en egaler wordt. Werkt op fijne lijntjes, acnelittekens, grove poriën en een doffe huid.":
+    "Un aparato de microneedling que con agujas minúsculas y vibrantes hace canales microscópicos en la piel para estimular el proceso natural de reparación. Eso estimula la producción de colágeno, con lo que la piel se vuelve más firme, más lisa y más uniforme. Trabaja sobre líneas finas, cicatrices de acné, poros dilatados y una piel apagada.",
+  "HAIRestart werkt op de hoofdhuid met warmte die de doorbloeding en de activiteit rond de haarzakjes stimuleert. Het richt zich op zakjes die er nog zijn maar minder actief; waar het zakje verdwenen is, valt er niets meer te starten. Daarom telt het moment: hoe eerder er naar gekeken wordt, hoe meer er te behouden valt.":
+    "HAIRestart trabaja sobre el cuero cabelludo con calor que estimula la circulación y la actividad alrededor de los folículos. Se centra en folículos que todavía están pero menos activos; donde el folículo ha desaparecido, ya no hay nada que activar. Por eso cuenta el momento: cuanto antes se mire, más se puede conservar.",
+  "Fotona 4D behandelt het gezicht in vier stappen op vier diepten. In het volledige pakket blijft het daar niet bij: de hals en de kaaklijn horen erbij, en juist daar valt verslapping het eerst op terwijl het gezicht er nog strak uitziet. Het is dezelfde reeks stappen, over een groter gebied en dus in een langere afspraak.":
+    "Fotona 4D trata la cara en cuatro pasos a cuatro profundidades. En el paquete completo no se queda ahí: se incluyen el cuello y la línea de la mandíbula, y es justo ahí donde la flacidez se nota primero mientras la cara todavía se ve tersa. Es la misma serie de pasos, en una zona más grande y por tanto en una cita más larga.",
+  "Dermamelan werkt als Cosmelan maar sterker, en wordt vaker ingezet bij melasma: pigment dat op hormonen en warmte reageert en dat na elke zomer terug kan komen. Het masker remt de pigmentaanmaak; de maanden erna houden de producten thuis dat vast. Dat laatste deel is bij melasma het verschil tussen resultaat en teleurstelling.":
+    "Dermamelan funciona como Cosmelan pero más fuerte, y se usa más a menudo para el melasma: pigmento que reacciona a las hormonas y al calor y que puede volver después de cada verano. La mascarilla frena la producción de pigmento; en los meses siguientes los productos en casa lo mantienen. En el melasma esa última parte es la diferencia entre resultado y decepción.",
+  "IPL werkt met een bereik van golflengtes en een filter dat het grofste eruit haalt. Bij pigment zoekt dat licht het donkere op: de vlek neemt de energie op, wordt korrelig en werkt naar de oppervlakte, waar hij in de dagen erna vervaagt. Het komt minder diep dan een laser, en dat is precies wat oppervlakkig pigment nodig heeft.":
+    "La IPL trabaja con un rango de longitudes de onda y un filtro que quita la parte más gruesa. En el pigmento esa luz busca lo oscuro: la mancha absorbe la energía, se vuelve granulada y sube a la superficie, donde se difumina en los días siguientes. Llega menos hondo que un láser, y eso es justo lo que el pigmento superficial necesita.",
+  "Een traject in plaats van losse behandelingen, omdat acne over weken verandert en niet op een moment ontstaat. Het begint met een meting en een schema voor thuis; daarna volgen behandelingen in de kliniek met om de vier tot zes weken een controle waarin het schema wordt bijgesteld. Het eindigt met afbouwen naar wat je zelf volhoudt.":
+    "Un programa en lugar de tratamientos sueltos, porque el acné cambia a lo largo de semanas y no surge en un momento. Empieza con una medición y un esquema para casa; después siguen tratamientos en la clínica con una revisión cada cuatro a seis semanas en la que se ajusta el esquema. Termina reduciendo hasta lo que mantienes tú.",
+  "Bij actieve acne mikt de laser op twee dingen tegelijk: de ontsteking in de huid en de talgklier die hem voedt. De warmte remt de activiteit van de klier en werkt op de bacterie die bij acne een rol speelt. Het is geen vervanging van een acnetraject maar een stap erbinnen, want acne heeft een verloop en vraagt om meer dan een sessie.":
+    "En el acné activo el láser apunta a dos cosas a la vez: la inflamación en la piel y la glándula sebácea que la alimenta. El calor frena la actividad de la glándula y actúa sobre la bacteria que interviene en el acné. No sustituye un programa de acné sino que es un paso dentro de él, porque el acné tiene una evolución y pide más que una sesión.",
+  "Met heel fijne prikjes wordt een mengsel van hyaluronzuur, vitamines en aminozuren vlak onder de huid gebracht, verdeeld over het hele vlak in plaats van op een plek. Het gaat niet om opvullen: het doel is dat de huid zelf vochtiger en steviger aanvoelt. Er wordt met de U225 gewerkt, die de diepte en de hoeveelheid per prik gelijk houdt.":
+    "Con pinchazos muy finos se lleva una mezcla de ácido hialurónico, vitaminas y aminoácidos justo debajo de la piel, repartida por toda la zona en lugar de en un punto. No se trata de rellenar: el objetivo es que la propia piel se note más hidratada y más firme. Se trabaja con el U225, que mantiene iguales la profundidad y la cantidad en cada pinchazo.",
+  "Bij SmoothLiftin werkt de laser vanaf de binnenkant van je mond. Het slijmvlies van de wang ligt vlak tegen het weefsel rond je mond en je nasolabiale plooien aan, en van die kant is die zone te bereiken zonder dat de buitenste huidlaag wordt geraakt. De warmte trekt bestaand collageen samen en zet de aanmaak van nieuw collageen in gang.":
+    "En SmoothLiftin el láser trabaja desde el interior de tu boca. La mucosa de la mejilla está pegada al tejido alrededor de tu boca y de tus pliegues nasolabiales, y desde ese lado esa zona se alcanza sin tocar la capa exterior de la piel. El calor contrae el colágeno existente y pone en marcha la producción de colágeno nuevo.",
+  "Een litteken is weefsel dat anders is opgebouwd dan de huid eromheen: strakker, met vezels die in een andere richting lopen. De laser brengt in dat weefsel gecontroleerde warmte aan, waarna het herstel de vezels opnieuw ordent. Daardoor wordt het litteken vlakker en minder rood, en sluit het beter aan bij de huid eromheen. Weg gaat het niet.":
+    "Una cicatriz es tejido construido de otra manera que la piel de alrededor: más tenso, con fibras que van en otra dirección. El láser aporta calor controlado a ese tejido, y después la reparación reordena las fibras. Así la cicatriz se vuelve más plana y menos roja, y se integra mejor con la piel de alrededor. Desaparecer no desaparece.",
+  "Resurfacing haalt gecontroleerd een deel van de bovenste huidlaag weg en verwarmt de laag eronder. De huid vernieuwt zich daarna sneller dan hij uit zichzelf zou doen, en dat maakt poriën minder opvallend en de structuur gelijkmatiger. Hoe diep dat gaat bepaalt de behandelaar per zone, en die diepte bepaalt ook hoeveel hersteltijd je nodig hebt.":
+    "El resurfacing retira de forma controlada una parte de la capa superior de la piel y calienta la capa de debajo. La piel se renueva después más rápido de lo que haría por sí sola, y eso hace los poros menos visibles y la textura más uniforme. Hasta dónde llega lo decide la terapeuta por zona, y esa profundidad decide también cuánto tiempo de recuperación necesitas.",
+  "LipLase verwarmt het weefsel van je lippen en de rand eromheen, zowel van de binnenkant als van buiten. De warmte zet de aanmaak van collageen in gang, waardoor de lip wat voller wordt en de lijntjes eromheen minder scherp. Het gaat om je eigen weefsel dat opbouwt, dus het verschil is subtieler dan bij een filler en het bouwt zich op over de reeks.":
+    "LipLase calienta el tejido de tus labios y el borde de alrededor, tanto desde dentro como desde fuera. El calor pone en marcha la producción de colágeno, con lo que el labio queda algo más lleno y las líneas de alrededor menos marcadas. Es tu propio tejido el que se reconstruye, así que la diferencia es más sutil que con un relleno y se construye a lo largo de la serie.",
+  "Bij roodheid mikt het licht op het bloed in de vaatjes onder de huid. Dat warmt op, waardoor het vaatje dichtklapt en door het lichaam wordt opgeruimd. Wat je in de spiegel ziet is dan geen vaatje meer maar gewone huid. Bij rosacea gaat het minder om één vaatje en meer om een gebied dat structureel rood staat; dan werkt het licht over het hele vlak.":
+    "En la rojez la luz apunta a la sangre de los vasos bajo la piel. Esa se calienta, con lo que el vaso se colapsa y el cuerpo lo elimina. Lo que ves entonces en el espejo ya no es un vaso sino piel normal. En la rosácea se trata menos de un solo vaso y más de una zona que está roja de forma estructural; entonces la luz trabaja sobre toda la superficie.",
+  "Wij werken met de kruidenpeeling van ADO. De kruiden worden in de huid gemasseerd. De fijne plantendeeltjes prikkelen de huid, waardoor de bovenlaag in de dagen erna loslaat en zich vernieuwt. De kruiden zelf werken ontstekingsremmend en antibacterieel, en daarom zetten we deze peeling juist in bij ontstoken acne, waar een zuurpeeling soms te veel is.":
+    "Trabajamos con el peeling de hierbas de ADO. Las hierbas se masajean en la piel. Las finas partículas vegetales estimulan la piel, con lo que la capa superior se desprende y se renueva en los días siguientes. Las propias hierbas son antiinflamatorias y antibacterianas, y por eso usamos este peeling precisamente en el acné inflamado, donde un peeling con ácido a veces es demasiado.",
+  "De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het blote oog niet altijd te zien is: beginnende pigmentatie, vochttekort, poriestructuur en tekenen van huidveroudering. Verschillende huidlagen worden geanalyseerd. Daarna volgt advies en een behandelplan, en de meting wordt herhaald om voortgang objectief zichtbaar te maken.":
+    "El EVE-M registra el estado de tu piel y hace visible lo que a simple vista no siempre se ve: pigmentación incipiente, falta de hidratación, estructura de los poros y signos de envejecimiento de la piel. Se analizan distintas capas de la piel. Después siguen un consejo y un plan de tratamiento, y la medición se repite para hacer el progreso visible de forma objetiva.",
+  "Bij mesotherapie worden werkzame stoffen in de huid gebracht in plaats van erop. RRS Eyes is een mengsel dat op de oogcontour is afgestemd, met onder meer hyaluronzuur, vitaminen en aminozuren, en wordt in kleine depots onder en naast het oog gezet. De huid daar is dun, dus de behandelaar werkt met minder volume en op een geringere diepte dan op de wang.":
+    "En la mesoterapia los principios activos se llevan dentro de la piel en lugar de sobre ella. RRS Eyes es una mezcla ajustada al contorno de ojos, con entre otras cosas ácido hialurónico, vitaminas y aminoácidos, y se coloca en pequeños depósitos debajo y al lado del ojo. La piel ahí es fina, así que la terapeuta trabaja con menos volumen y a menor profundidad que en la mejilla.",
+  "SupErficial haalt met korte pulsen een dunne laag van de hoornlaag af. Dat is dezelfde gedachte als bij een chemische peeling, maar dan met licht in plaats van met zuur: er komt geen middel op je huid dat moet inwerken en de diepte is per puls te sturen. De huid eronder komt sneller aan de beurt, wat hem gladder maakt en het licht beter laat weerkaatsen.":
+    "SupErficial retira con pulsos cortos una capa fina de la capa córnea. Es la misma idea que un peeling químico, pero con luz en lugar de ácido: no va sobre tu piel ningún producto que tenga que actuar y la profundidad se controla pulso a pulso. La piel de debajo llega antes a su turno, lo que la deja más lisa y hace que refleje mejor la luz.",
+  "Bij mesotherapie worden werkzame stoffen direct in de huid gebracht in plaats van erop. De behandelaar werkt met de U225, die elke prik op dezelfde diepte zet. Daardoor komt het middel gelijkmatig over het gebied. Er zijn verschillende skinboosters: voor fijne lijnen, en een depigmentatiebooster voor gezicht, hals en décolleté bij hyperpigmentatie, zonneschade en melasma.":
+    "En la mesoterapia los principios activos se llevan directamente dentro de la piel en lugar de sobre ella. La terapeuta trabaja con el U225, que coloca cada pinchazo a la misma profundidad. Así el producto se reparte de forma uniforme por la zona. Hay distintos skinboosters: para líneas finas, y un booster despigmentante para cara, cuello y escote en hiperpigmentación, daño solar y melasma.",
+  "Cosmelan begint met twee weken voorbereiding thuis, daarna gaat het masker in de kliniek op en volgt een vaste routine van maanden. Het remt de aanmaak van pigment in plaats van alleen weg te halen wat er zit, en daarom loopt het zo lang door. Zon, hormonen en genen bepalen mee waarom pigment ontstaat; het thuiswerk is daarom geen bijzaak maar het grootste deel van het traject.":
+    "Cosmelan empieza con dos semanas de preparación en casa, después se pone la mascarilla en la clínica y sigue una rutina fija de meses. Frena la producción de pigmento en lugar de solo quitar lo que hay, y por eso dura tanto. El sol, las hormonas y los genes influyen en por qué surge el pigmento; por eso el trabajo en casa no es un detalle sino la mayor parte del programa.",
+  "FRAC3 werkt fractioneel: de energie gaat niet als een vlak over de huid maar in eilandjes, waardoor er intact weefsel tussen blijft staan dat het herstel op gang helpt. De pulsen zoeken vanzelf de plekken op waar meer pigment of meer bloed zit, dus de onregelmatigheden krijgen meer energie dan de rustige huid eromheen. Daarmee komt het bij structuur, poriën, roodheid en ongelijke kleur.":
+    "FRAC3 trabaja de forma fraccionada: la energía no va por la piel como una superficie plana sino en islas, con lo que entre medias queda tejido intacto que ayuda a poner en marcha la reparación. Los pulsos buscan por sí solos los sitios donde hay más pigmento o más sangre, así que las irregularidades reciben más energía que la piel tranquila de alrededor. Así llega a la textura, los poros, la rojez y el color irregular.",
+  "Een enkele behandeling voor een huid met puistjes en verstoppingen, zonder dat je aan een traject begint. De verstopte poriën worden vakkundig leeggemaakt, de huid wordt gereinigd en gekalmeerd, en je krijgt advies mee voor de dagen erna. Het haalt weg wat er nu zit; het verandert niet waarom het terugkomt. Daarvoor is het acnetraject, en of dat bij jou zin heeft hoor je tijdens deze afspraak.":
+    "Un tratamiento suelto para una piel con granos y obstrucciones, sin que empieces un programa. Los poros obstruidos se vacían con pericia, la piel se limpia y se calma, y te llevas un consejo para los días siguientes. Quita lo que hay ahora; no cambia por qué vuelve. Para eso está el programa de acné, y si tiene sentido en tu caso lo oyes en esta cita.",
+  "Fotona 4D is geen losse behandeling maar een protocol van vier lagen die in dezelfde sessie op elkaar volgen. Het begint van binnenuit met SmoothLiftin door de wangslijmvlies, daarna gaat FRAC3 op de diepte, PIANO verwarmt het weefsel vlak en gelijkmatig, en SupErficial sluit af met een lichte laserpeeling. Elke stap raakt een andere diepte, en samen pakken ze verslapping, textuur en kleur in een keer aan.":
+    "Fotona 4D no es un tratamiento suelto sino un protocolo de cuatro capas que van una tras otra en la misma sesión. Empieza desde dentro con SmoothLiftin a través de la mucosa de la mejilla, después FRAC3 va a la profundidad, PIANO calienta el tejido de forma plana y uniforme, y SupErficial termina con un peeling láser suave. Cada paso llega a otra profundidad, y juntos tratan la flacidez, la textura y el color de una vez.",
+  "De laser mikt op het pigment in de haarwortel. Zit daar geen pigment, dan is er niets om op te mikken; dat is waarom grijs, wit en heel licht blond haar niet op laser reageert. Bij elektrische epilatie gaat er een dun naaldje langs de haar het haarkanaal in en krijgt de wortel zelf een korte stroomstoot. Kleur doet er dan niet toe. Het gaat haar voor haar, dus het is trager dan laser en het is bedoeld voor kleine gebieden.":
+    "El láser apunta al pigmento de la raíz del pelo. Si ahí no hay pigmento, no hay nada a lo que apuntar; por eso el pelo gris, blanco y rubio muy claro no reacciona al láser. En la electrólisis una aguja fina entra en el canal del pelo junto al pelo y la propia raíz recibe una breve descarga de corriente. Entonces el color no importa. Va pelo a pelo, así que es más lento que el láser y está pensado para zonas pequeñas.",
+  "De Fotona TimeWalker is geen behandeling maar een platform: twee lasertypen in een kast, waarmee vijftien verschillende behandelingen te doen zijn. Wat je krijgt hangt af van de instelling, de puls en de zone, en dat maakt het verschil tussen een lichte peeling en een complete gezichtsbehandeling. Fotona 4D is daarvan de bekendste: vier behandelingen in een sessie, van binnenuit door de wang tot een afsluitende peeling. Hieronder staat welke er zijn en waar elk voor bedoeld is.":
+    "El Fotona TimeWalker no es un tratamiento sino una plataforma: dos tipos de láser en una máquina, con los que se pueden hacer quince tratamientos distintos. Lo que recibes depende de la configuración, el pulso y la zona, y eso marca la diferencia entre un peeling suave y un tratamiento facial completo. Fotona 4D es el más conocido de ellos: cuatro tratamientos en una sesión, desde dentro a través de la mejilla hasta un peeling final. Abajo está cuáles hay y para qué sirve cada uno.",
   "met tekst": "con texto",
   "waarin acne voorkomt": "que mencionan el acné",
   "waarin littekens voorkomen": "que mencionan cicatrices",
   "waarin pigment voorkomt": "que mencionan el pigmento",
   "waarin roodheid voorkomt": "que mencionan la rojez",
   "waarin laserontharing voorkomt": "que mencionan la depilación láser",
-  "waarin huidveroudering voorkomt": "que mencionan el envejecimiento de la piel",
-  "waarin een gezichtsbehandeling voorkomt": "que mencionan un tratamiento facial",
+  "waarin huidveroudering voorkomt":
+    "que mencionan el envejecimiento de la piel",
+  "waarin een gezichtsbehandeling voorkomt":
+    "que mencionan un tratamiento facial",
   "waarin het huidconsult voorkomt": "que mencionan la consulta de la piel",
-  "waarin de uitleg of het advies wordt genoemd": "que mencionan la explicación o el consejo",
-  "die noemen hoe vriendelijk het personeel was": "que mencionan lo amable que fue el personal",
-  "over tijd, geduld en je op je gemak voelen": "sobre el tiempo, la paciencia y sentirse a gusto",
-  "die het vakmanschap of de zorgvuldigheid noemen": "que mencionan la profesionalidad o el cuidado",
-  "over de service en het plannen van afspraken": "sobre el servicio y la planificación de citas",
-  "over de sfeer, de ruimte en de kliniek zelf": "sobre el ambiente, el espacio y la propia clínica",
-  "die een resultaat op de huid noemen": "que mencionan un resultado en la piel",
-  "van mensen die al vaker kwamen of terugkomen": "de personas que ya habían venido antes o vuelven",
+  "waarin de uitleg of het advies wordt genoemd":
+    "que mencionan la explicación o el consejo",
+  "die noemen hoe vriendelijk het personeel was":
+    "que mencionan lo amable que fue el personal",
+  "over tijd, geduld en je op je gemak voelen":
+    "sobre el tiempo, la paciencia y sentirse a gusto",
+  "die het vakmanschap of de zorgvuldigheid noemen":
+    "que mencionan la profesionalidad o el cuidado",
+  "over de service en het plannen van afspraken":
+    "sobre el servicio y la planificación de citas",
+  "over de sfeer, de ruimte en de kliniek zelf":
+    "sobre el ambiente, el espacio y la propia clínica",
+  "die een resultaat op de huid noemen":
+    "que mencionan un resultado en la piel",
+  "van mensen die al vaker kwamen of terugkomen":
+    "de personas que ya habían venido antes o vuelven",
   "die Diba aanraden aan anderen": "que recomiendan Diba a otros",
-  "die tevreden zijn zonder een onderwerp te noemen": "que están satisfechas sin nombrar un tema",
-  ", in de volgorde van Salonized: nieuwste eerst. Pagina": ", en el orden de Salonized: las más nuevas primero. Página",
-  "In de volgorde van Salonized: nieuwste eerst. Pagina": "En el orden de Salonized: las más nuevas primero. Página",
+  "die tevreden zijn zonder een onderwerp te noemen":
+    "que están satisfechas sin nombrar un tema",
+  ", in de volgorde van Salonized: nieuwste eerst. Pagina":
+    ", en el orden de Salonized: las más nuevas primero. Página",
+  "In de volgorde van Salonized: nieuwste eerst. Pagina":
+    "En el orden de Salonized: las más nuevas primero. Página",
   "Toon nog": "Mostrar otras",
   "Meer reviews": "Más reseñas",
   "Meer beoordelingen zonder tekst": "Más valoraciones sin texto",
-  "Alle beoordelingen staan op vijf sterren.": "Todas las valoraciones son de cinco estrellas.",
-  "beoordelingen staan onder de vijf sterren. Ook die staan op deze pagina; ze zijn niet weggefilterd.": "valoraciones están por debajo de cinco estrellas. Esas también están en esta página; no se han filtrado.",
+  "Alle beoordelingen staan op vijf sterren.":
+    "Todas las valoraciones son de cinco estrellas.",
+  "beoordelingen staan onder de vijf sterren. Ook die staan op deze pagina; ze zijn niet weggefilterd.":
+    "valoraciones están por debajo de cinco estrellas. Esas también están en esta página; no se han filtrado.",
   "Verkeerd uitgekomen": "Camino equivocado",
   "Deze link hoort bij": "Este enlace corresponde a",
   "de oude site": "la web antigua",
-  "Onze site is opnieuw gebouwd, en dit adres hoorde bij de vorige versie. Wat erop stond is er meestal nog wel, alleen op een andere plek. Hieronder de kortste weg ernaartoe.": "Nuestra web se ha construido de nuevo, y esta dirección era de la versión anterior. Lo que había en ella normalmente sigue estando, solo que en otro sitio. Abajo, el camino más corto hasta allí.",
+  "Onze site is opnieuw gebouwd, en dit adres hoorde bij de vorige versie. Wat erop stond is er meestal nog wel, alleen op een andere plek. Hieronder de kortste weg ernaartoe.":
+    "Nuestra web se ha construido de nuevo, y esta dirección era de la versión anterior. Lo que había en ella normalmente sigue estando, solo que en otro sitio. Abajo, el camino más corto hasta allí.",
   "Kom je er niet uit, bel dan": "Si no lo encuentras, llama al",
   "Maak een": "Pide una",
-  "afspraak": "cita",
-  "Kies hieronder een behandeling en een moment. Je ziet meteen wat er vrij is en je krijgt de bevestiging direct.": "Elige abajo un tratamiento y un momento. Ves al instante lo que está libre y recibes la confirmación de inmediato.",
+  afspraak: "cita",
+  "Kies hieronder een behandeling en een moment. Je ziet meteen wat er vrij is en je krijgt de bevestiging direct.":
+    "Elige abajo un tratamiento y un momento. Ves al instante lo que está libre y recibes la confirmación de inmediato.",
   "Voor je boekt": "Antes de reservar",
   "Als je twijfelt": "Si dudas",
   "Twee manieren": "Dos formas",
-  "Weet je nog niet welke behandeling je nodig hebt, dan begin je met een van deze twee. In allebei kijkt een behandelaar eerst naar je huid.": "Si todavía no sabes qué tratamiento necesitas, empiezas con una de estas dos. En las dos, una terapeuta mira primero tu piel.",
-  "Meer over de behandeling op advies": "Más sobre el tratamiento con asesoramiento",
+  "Weet je nog niet welke behandeling je nodig hebt, dan begin je met een van deze twee. In allebei kijkt een behandelaar eerst naar je huid.":
+    "Si todavía no sabes qué tratamiento necesitas, empiezas con una de estas dos. En las dos, una terapeuta mira primero tu piel.",
+  "Meer over de behandeling op advies":
+    "Más sobre el tratamiento con asesoramiento",
   "Als het": "Si",
   "niet doorgaat": "no se lleva a cabo",
-  "Het kan gebeuren. Dit geldt er dan, zodat je het weet voordat je boekt.": "Puede pasar. Esto es lo que vale entonces, para que lo sepas antes de reservar.",
-  "Verzetten of afzeggen doe je het snelst telefonisch. Alles staat voluit in de": "Cambiar o cancelar la cita es más rápido por teléfono. Todo está completo en las",
+  "Het kan gebeuren. Dit geldt er dan, zodat je het weet voordat je boekt.":
+    "Puede pasar. Esto es lo que vale entonces, para que lo sepas antes de reservar.",
+  "Verzetten of afzeggen doe je het snelst telefonisch. Alles staat voluit in de":
+    "Cambiar o cancelar la cita es más rápido por teléfono. Todo está completo en las",
   "Wanneer we er zijn": "Cuándo estamos",
-  "openingstijden": "horario de apertura",
-  "Binnen die tijden staat niet elk uur een therapeut vrij. Wat je in de agenda kunt aanklikken is wat er echt open is.": "Dentro de ese horario no todas las horas hay una terapeuta libre. Lo que puedes marcar en la agenda es lo que de verdad está libre.",
+  openingstijden: "horario de apertura",
+  "Binnen die tijden staat niet elk uur een therapeut vrij. Wat je in de agenda kunt aanklikken is wat er echt open is.":
+    "Dentro de ese horario no todas las horas hay una terapeuta libre. Lo que puedes marcar en la agenda es lo que de verdad está libre.",
   "Boek op advies": "Reserva con asesoramiento",
   "Nieuw of klant?": "¿Primera vez o ya cliente?",
   "Ik ben nieuw": "Es mi primera vez",
-  "Het verschil tussen deze apparaten zit in twee dingen: waar ze op aangrijpen en tot hoe diep ze komen. Dat tweede is meteen de grens van wat ze kunnen. Een peeling neemt geen rimpels weg omdat hij daar niet komt, en dat is hieronder te zien in plaats van te geloven.": "La diferencia entre estos aparatos está en dos cosas: sobre qué actúan y hasta dónde llegan. Lo segundo es a la vez el límite de lo que pueden hacer. Un peeling no quita arrugas porque no llega a ellas, y eso abajo se puede ver en lugar de tener que creerlo.",
-  "Je hoeft vooraf niet te weten welke behandeling je nodig hebt. Kies wat je wilt verbeteren. Tijdens het huidconsult beoordeelt de behandelaar welke aanpak bij jouw huid past.": "No hace falta que sepas de antemano qué tratamiento necesitas. Elige lo que quieres mejorar. En la consulta de la piel la terapeuta valora qué enfoque encaja con tu piel.",
+  "Het verschil tussen deze apparaten zit in twee dingen: waar ze op aangrijpen en tot hoe diep ze komen. Dat tweede is meteen de grens van wat ze kunnen. Een peeling neemt geen rimpels weg omdat hij daar niet komt, en dat is hieronder te zien in plaats van te geloven.":
+    "La diferencia entre estos aparatos está en dos cosas: sobre qué actúan y hasta dónde llegan. Lo segundo es a la vez el límite de lo que pueden hacer. Un peeling no quita arrugas porque no llega a ellas, y eso abajo se puede ver en lugar de tener que creerlo.",
+  "Je hoeft vooraf niet te weten welke behandeling je nodig hebt. Kies wat je wilt verbeteren. Tijdens het huidconsult beoordeelt de behandelaar welke aanpak bij jouw huid past.":
+    "No hace falta que sepas de antemano qué tratamiento necesitas. Elige lo que quieres mejorar. En la consulta de la piel la terapeuta valora qué enfoque encaja con tu piel.",
   "Waar wil je iets aan doen": "Qué quieres tratar",
   "Alle behandelingen,": "Todos los tratamientos,",
   "op wat je wilt bereiken": "según lo que quieres conseguir",
-  "Een behandeling kan onder meerdere kopjes staan. Een medische peeling doet iets bij acne, bij pigment en bij een doffe huid, en welke van die drie het bij jou wordt hangt af van de sterkte die de behandelaar kiest.": "Un tratamiento puede estar bajo varios epígrafes. Un peeling médico hace algo en el acné, en el pigmento y en una piel apagada, y cuál de esos tres es en tu caso depende de la intensidad que elija la terapeuta.",
+  "Een behandeling kan onder meerdere kopjes staan. Een medische peeling doet iets bij acne, bij pigment en bij een doffe huid, en welke van die drie het bij jou wordt hangt af van de sterkte die de behandelaar kiest.":
+    "Un tratamiento puede estar bajo varios epígrafes. Un peeling médico hace algo en el acné, en el pigmento y en una piel apagada, y cuál de esos tres es en tu caso depende de la intensidad que elija la terapeuta.",
   "Onderzoek en gezondheid": "Pruebas y salud",
-  "Onderzoek": "Pruebas",
+  Onderzoek: "Pruebas",
   "dat we ook doen": "que también hacemos",
-  "Niet elke afspraak gaat over je huid. Dit onderzoek doen we ook, en het staat hier omdat mensen het bij ons aanvragen zonder dat ze een behandeling zoeken.": "No todas las citas tratan de tu piel. Esta prueba también la hacemos, y está aquí porque la gente nos la pide sin buscar un tratamiento.",
+  "Niet elke afspraak gaat over je huid. Dit onderzoek doen we ook, en het staat hier omdat mensen het bij ons aanvragen zonder dat ze een behandeling zoeken.":
+    "No todas las citas tratan de tu piel. Esta prueba también la hacemos, y está aquí porque la gente nos la pide sin buscar un tratamiento.",
   "Waar mensen het vaakst": "Para lo que la gente",
   "voor komen": "viene más a menudo",
   "Vaak samen": "A menudo juntos",
   "Twee behandelingen,": "Dos tratamientos,",
   "één afspraak": "una sola cita",
-  "Sommige behandelingen doen meer naast elkaar dan achter elkaar. Wat er in jouw geval kan hangt af van je huid op dat moment; de behandelaar bepaalt tijdens de afspraak of de tweede stap doorgaat.": "Algunos tratamientos hacen más uno junto al otro que uno tras otro. Lo que es posible en tu caso depende de tu piel en ese momento; la terapeuta decide durante la cita si el segundo paso sigue adelante.",
-  "De tarieven van de combinaties staan bij de losse behandelingen op de": "Las tarifas de las combinaciones están junto a los tratamientos sueltos en la",
-  "tarievenpagina": "página de tarifas",
-  "Je weet wat je aan je huid wilt verbeteren, maar niet of daar een peeling, een laser of microneedling bij hoort. Vertel wat je stoort; de behandelaar kiest en legt uit waarom.": "Sabes lo que quieres mejorar de tu piel, pero no si eso pide un peeling, un láser o microneedling. Cuéntanos qué te molesta; la terapeuta elige y explica por qué.",
+  "Sommige behandelingen doen meer naast elkaar dan achter elkaar. Wat er in jouw geval kan hangt af van je huid op dat moment; de behandelaar bepaalt tijdens de afspraak of de tweede stap doorgaat.":
+    "Algunos tratamientos hacen más uno junto al otro que uno tras otro. Lo que es posible en tu caso depende de tu piel en ese momento; la terapeuta decide durante la cita si el segundo paso sigue adelante.",
+  "De tarieven van de combinaties staan bij de losse behandelingen op de":
+    "Las tarifas de las combinaciones están junto a los tratamientos sueltos en la",
+  tarievenpagina: "página de tarifas",
+  "Je weet wat je aan je huid wilt verbeteren, maar niet of daar een peeling, een laser of microneedling bij hoort. Vertel wat je stoort; de behandelaar kiest en legt uit waarom.":
+    "Sabes lo que quieres mejorar de tu piel, pero no si eso pide un peeling, un láser o microneedling. Cuéntanos qué te molesta; la terapeuta elige y explica por qué.",
   "Zo werkt het": "Así funciona",
   "Weet je niet wat bij": "¿No sabes qué encaja",
   "jouw huid past?": "con tu piel?",
-  "Begin met een huidconsult. De behandelaar beoordeelt je huid en gebruikt de EVE-M als aanvullende meting. Het apparaat levert de cijfers; de keuze blijft bij de mens die tegenover je zit.": "Empieza con una consulta de la piel. La terapeuta valora tu piel y usa el EVE-M como medición complementaria. El aparato da las cifras; la elección sigue en manos de la persona que tienes enfrente.",
+  "Begin met een huidconsult. De behandelaar beoordeelt je huid en gebruikt de EVE-M als aanvullende meting. Het apparaat levert de cijfers; de keuze blijft bij de mens die tegenover je zit.":
+    "Empieza con una consulta de la piel. La terapeuta valora tu piel y usa el EVE-M como medición complementaria. El aparato da las cifras; la elección sigue en manos de la persona que tienes enfrente.",
   "Het consult kost": "La consulta cuesta",
-  "Huidprofiel": "Perfil de piel",
+  Huidprofiel: "Perfil de piel",
   "Of maak eerst je huidprofiel": "O crea primero tu perfil de piel",
   "bepaalt de rest": "decide el resto",
-  "Sleep de sonde door je huid naar beneden. Hoe dieper je komt, hoe minder behandelingen er nog bij zijn. Daar hangt aan vast hoe lang je rood bent en hoe vaak je terug moet. Kiezen doe je er niet mee; begrijpen wel.": "Arrastra la sonda hacia abajo por tu piel. Cuanto más hondo llegas, menos tratamientos quedan. De eso depende cuánto tiempo estás con la piel roja y cada cuánto tienes que volver. No sirve para elegir; sí para entender.",
+  "Sleep de sonde door je huid naar beneden. Hoe dieper je komt, hoe minder behandelingen er nog bij zijn. Daar hangt aan vast hoe lang je rood bent en hoe vaak je terug moet. Kiezen doe je er niet mee; begrijpen wel.":
+    "Arrastra la sonda hacia abajo por tu piel. Cuanto más hondo llegas, menos tratamientos quedan. De eso depende cuánto tiempo estás con la piel roja y cada cuánto tienes que volver. No sirve para elegir; sí para entender.",
   "Of filter zelf": "O filtra tú",
   "Hoeveel hersteltijd": "¿Cuánto tiempo de recuperación",
   "heb je eigenlijk?": "tienes en realidad?",
-  "Dat filter staat nergens anders, terwijl het vaak het meest bepaalt. Vul je huidprofiel in en de lijst zet bovenaan wat bij je past, met bij de rest waarom niet.": "Ese filtro no está en ningún otro sitio, y a menudo es el que más decide. Rellena tu perfil de piel y la lista pone arriba lo que encaja contigo, y en el resto por qué no.",
+  "Dat filter staat nergens anders, terwijl het vaak het meest bepaalt. Vul je huidprofiel in en de lijst zet bovenaan wat bij je past, met bij de rest waarom niet.":
+    "Ese filtro no está en ningún otro sitio, y a menudo es el que más decide. Rellena tu perfil de piel y la lista pone arriba lo que encaja contigo, y en el resto por qué no.",
   "Zo kies je": "Así eliges",
   "een behandeling": "un tratamiento",
-  "In het huidconsult kijken we onder vast licht wat er bij jou aan de hand is. Neem je huidprofiel mee: dan hoef je het gesprek niet bij nul te beginnen.": "En la consulta de la piel miramos bajo luz fija lo que te pasa. Trae tu perfil de piel: así la conversación no tiene que empezar desde cero.",
-  "Huidprobleem": "Problema de piel",
+  "In het huidconsult kijken we onder vast licht wat er bij jou aan de hand is. Neem je huidprofiel mee: dan hoef je het gesprek niet bij nul te beginnen.":
+    "En la consulta de la piel miramos bajo luz fija lo que te pasa. Trae tu perfil de piel: así la conversación no tiene que empezar desde cero.",
+  Huidprobleem: "Problema de piel",
   "Of begin bij je huidprobleem": "O empieza por tu problema de piel",
   "Contact en": "Contacto y",
-  "route": "cómo llegar",
-  "Bel ons, stuur een bericht of vul het formulier hieronder in. Wil je een afspraak maken, dan gaat de online agenda het snelst.": "Llámanos, envía un mensaje o rellena el formulario de abajo. Si quieres pedir una cita, la agenda online es lo más rápido.",
-  "Direct": "Directo",
+  route: "cómo llegar",
+  "Bel ons, stuur een bericht of vul het formulier hieronder in. Wil je een afspraak maken, dan gaat de online agenda het snelst.":
+    "Llámanos, envía un mensaje o rellena el formulario de abajo. Si quieres pedir una cita, la agenda online es lo más rápido.",
+  Direct: "Directo",
   "Bellen kan tijdens onze": "Puedes llamar en nuestro",
   "of kom langs": "o pásate",
-  "Binnen die tijden staat niet elk uur een therapeut vrij. Wat je in de agenda kunt aanklikken is wat er echt open is. Kom je liever langs zonder afspraak, bel dan eerst.": "Dentro de ese horario no todas las horas hay una terapeuta libre. Lo que puedes marcar en la agenda es lo que de verdad está libre. Si prefieres pasarte sin cita, llama antes.",
+  "Binnen die tijden staat niet elk uur een therapeut vrij. Wat je in de agenda kunt aanklikken is wat er echt open is. Kom je liever langs zonder afspraak, bel dan eerst.":
+    "Dentro de ese horario no todas las horas hay una terapeuta libre. Lo que puedes marcar en la agenda es lo que de verdad está libre. Si prefieres pasarte sin cita, llama antes.",
   "Bekijk de agenda": "Ver la agenda",
   "Waar je moet zijn": "Dónde estamos",
   "Bellen, appen": "¿Llamar, escribir por WhatsApp",
   "of mailen?": "o enviar un correo?",
-  "Gaat het over je afspraak, dan is bellen het snelst: er kijkt meteen iemand met je mee in de agenda. Voor een vraag over een behandeling of de kosten is een bericht genoeg. Kies hieronder je vraag, dan zie je waar je die het beste stelt en hoe snel je antwoord hebt.": "Si se trata de tu cita, llamar es lo más rápido: alguien mira la agenda contigo al momento. Para una pregunta sobre un tratamiento o los costes basta con un mensaje. Elige abajo tu pregunta y verás dónde hacerla mejor y cuánto tardas en tener respuesta.",
+  "Gaat het over je afspraak, dan is bellen het snelst: er kijkt meteen iemand met je mee in de agenda. Voor een vraag over een behandeling of de kosten is een bericht genoeg. Kies hieronder je vraag, dan zie je waar je die het beste stelt en hoe snel je antwoord hebt.":
+    "Si se trata de tu cita, llamar es lo más rápido: alguien mira la agenda contigo al momento. Para una pregunta sobre un tratamiento o los costes basta con un mensaje. Elige abajo tu pregunta y verás dónde hacerla mejor y cuánto tardas en tener respuesta.",
   "Afzeggen, verzetten": "Cancelar, cambiar la cita",
   "of te laat komen.": "o llegar tarde.",
-  "Bel je hierover, dan hoor je dit. Het staat hier zodat je vooraf weet wat het kost in plaats van achteraf.": "Si llamas por esto, esto es lo que oyes. Está aquí para que sepas de antemano lo que cuesta en lugar de después.",
+  "Bel je hierover, dan hoor je dit. Het staat hier zodat je vooraf weet wat het kost in plaats van achteraf.":
+    "Si llamas por esto, esto es lo que oyes. Está aquí para que sepas de antemano lo que cuesta en lugar de después.",
   "Deze vier staan voluit in de": "Estas cuatro están completas en las",
-  "Route": "Cómo llegar",
+  Route: "Cómo llegar",
   "Aan de": "En",
   "Weissenbruchlaan.": "Weissenbruchlaan.",
   "De kliniek zit aan de noordkant van": "La clínica está en el lado norte de",
   "Open in Google Maps": "Abrir en Google Maps",
   "Plan meteen je huidconsult": "Programa ya tu consulta de la piel",
   "in een": "en una",
-  "Begin": "Empieza",
+  Begin: "Empieza",
   "Alle tarieven": "Todas las tarifas",
   "De laser": "El láser",
-  "Samenstellen": "Configurar",
+  Samenstellen: "Configurar",
   "Stel je eigen": "Configura tu propio",
   "behandeling samen": "tratamiento",
-  "De meeste twijfel over laserontharing gaat niet over of het werkt, maar over waar een zone begint en ophoudt en wat je straks aan de balie hoort. Daarom wijs je het hier aan in plaats van dat je het opzoekt.": "La mayor duda sobre la depilación láser no es si funciona, sino dónde empieza y termina una zona y lo que vas a oír después en recepción. Por eso aquí lo señalas en lugar de buscarlo.",
-  "Je zit nergens aan vast. Dit is een berekening en geen boeking.": "No te comprometes a nada. Esto es un cálculo y no una reserva.",
+  "De meeste twijfel over laserontharing gaat niet over of het werkt, maar over waar een zone begint en ophoudt en wat je straks aan de balie hoort. Daarom wijs je het hier aan in plaats van dat je het opzoekt.":
+    "La mayor duda sobre la depilación láser no es si funciona, sino dónde empieza y termina una zona y lo que vas a oír después en recepción. Por eso aquí lo señalas en lugar de buscarlo.",
+  "Je zit nergens aan vast. Dit is een berekening en geen boeking.":
+    "No te comprometes a nada. Esto es un cálculo y no una reserva.",
   "Voordat je begint": "Antes de empezar",
-  "Dit is de prijs per sessie, niet van je traject": "Este es el precio por sesión, no el de tu programa",
-  "De tarieven hieronder staan zo op de prijslijst van de kliniek. Wat er niet op staat is hoeveel sessies jij nodig hebt, en dat is nou juist het getal waar je totaal van afhangt. Dat hoor je tijdens de intake, na de meting.": "Las tarifas de abajo están tal cual en la lista de precios de la clínica. Lo que no pone es cuántas sesiones necesitas tú, y ese es justo el número del que depende tu total. Eso lo oyes en la consulta previa, después de la medición.",
-  "Een deel van de bedragen is nog niet door de kliniek vastgesteld.": "Una parte de los importes todavía no la ha fijado la clínica.",
-  "Als je twijfelt, kun je via WhatsApp een vraag stellen of een intake plannen.": "Si dudas, puedes hacer una pregunta por WhatsApp o programar una consulta previa.",
+  "Dit is de prijs per sessie, niet van je traject":
+    "Este es el precio por sesión, no el de tu programa",
+  "De tarieven hieronder staan zo op de prijslijst van de kliniek. Wat er niet op staat is hoeveel sessies jij nodig hebt, en dat is nou juist het getal waar je totaal van afhangt. Dat hoor je tijdens de intake, na de meting.":
+    "Las tarifas de abajo están tal cual en la lista de precios de la clínica. Lo que no pone es cuántas sesiones necesitas tú, y ese es justo el número del que depende tu total. Eso lo oyes en la consulta previa, después de la medición.",
+  "Een deel van de bedragen is nog niet door de kliniek vastgesteld.":
+    "Una parte de los importes todavía no la ha fijado la clínica.",
+  "Als je twijfelt, kun je via WhatsApp een vraag stellen of een intake plannen.":
+    "Si dudas, puedes hacer una pregunta por WhatsApp o programar una consulta previa.",
   "Configurator wordt geladen.": "El configurador se está cargando.",
   "Wat hierna": "Lo que después",
   "nog gecontroleerd wordt": "todavía se comprueba",
-  "Wat je hier samenstelt is een plan op papier. In het huidconsult kijken we of het klopt: je huidtype, je haargroei en of laseren bij jou zin heeft. Soms is het antwoord nee, en dan hoor je dat voordat je iets betaalt.": "Lo que configuras aquí es un plan sobre el papel. En la consulta de la piel miramos si se sostiene: tu fototipo, tu vello y si el láser tiene sentido en tu caso. A veces la respuesta es no, y entonces lo oyes antes de pagar nada.",
+  "Wat je hier samenstelt is een plan op papier. In het huidconsult kijken we of het klopt: je huidtype, je haargroei en of laseren bij jou zin heeft. Soms is het antwoord nee, en dan hoor je dat voordat je iets betaalt.":
+    "Lo que configuras aquí es un plan sobre el papel. En la consulta de la piel miramos si se sostiene: tu fototipo, tu vello y si el láser tiene sentido en tu caso. A veces la respuesta es no, y entonces lo oyes antes de pagar nada.",
   "Wat er tijdens de intake gebeurt": "Lo que pasa en la consulta previa",
   "Hoe wij": "Cómo",
-  "werken": "trabajamos",
-  "helpen onze huidtherapeuten en specialisten je met acne, pigment, littekens, huidverbetering en ongewenst haar.": "nuestras terapeutas de la piel y especialistas te ayudan con acné, pigmento, cicatrices, mejora de la piel y vello no deseado.",
-  "Hieronder staat hoe we werken: waar een traject begint, wat het kost en waar onze behandelaars voor staan.": "Abajo está cómo trabajamos: dónde empieza un programa, lo que cuesta y lo que defienden nuestras terapeutas.",
+  werken: "trabajamos",
+  "helpen onze huidtherapeuten en specialisten je met acne, pigment, littekens, huidverbetering en ongewenst haar.":
+    "nuestras terapeutas de la piel y especialistas te ayudan con acné, pigmento, cicatrices, mejora de la piel y vello no deseado.",
+  "Hieronder staat hoe we werken: waar een traject begint, wat het kost en waar onze behandelaars voor staan.":
+    "Abajo está cómo trabajamos: dónde empieza un programa, lo que cuesta y lo que defienden nuestras terapeutas.",
   "Waar je dit terugziet": "Dónde lo ves reflejado",
-  "Elke afspraak begint met een huidanalyse, en daaruit volgt het behandelplan.": "Cada cita empieza con un análisis de la piel, y de ahí sale el plan de tratamiento.",
-  "De prijzen staan per sessie op de site, dus je weet voordat je komt wat het kost. Bij elke behandeling lees je hoeveel sessies erbij horen.": "Los precios están por sesión en la web, así que sabes antes de venir lo que cuesta. En cada tratamiento lees cuántas sesiones conlleva.",
+  "Elke afspraak begint met een huidanalyse, en daaruit volgt het behandelplan.":
+    "Cada cita empieza con un análisis de la piel, y de ahí sale el plan de tratamiento.",
+  "De prijzen staan per sessie op de site, dus je weet voordat je komt wat het kost. Bij elke behandeling lees je hoeveel sessies erbij horen.":
+    "Los precios están por sesión en la web, así que sabes antes de venir lo que cuesta. En cada tratamiento lees cuántas sesiones conlleva.",
   "Vooraf duidelijk": "Claro de antemano",
   "Wat dat voor jou betekent": "Lo que eso significa para ti",
   "Kijk zelf, alles staat er": "Compruébalo, está todo",
@@ -10717,243 +10971,318 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Waar wij": "Lo que",
   "voor staan": "defendemos",
   "Wie we zijn, in cijfers": "Quiénes somos, en cifras",
-  "Resultaten": "Resultados",
+  Resultaten: "Resultados",
   "Hier staan nog geen": "Aquí todavía no hay",
   "De kern in één zin": "La esencia en una frase",
-  "Verplaats de lamp en je verplaatst elke schaduw, terwijl de huid geen millimeter veranderd is.": "Mueve la lámpara y mueves cada sombra, mientras la piel no ha cambiado ni un milímetro.",
-  "Textuur zie je alleen doordat er schaduw in zit. Dat is de reden dat licht op deze lijst dubbel weegt, en dat klinische fotografie er protocollen voor kent.": "La textura solo la ves porque hay sombra en ella. Por eso la luz cuenta el doble en esta lista, y por eso la fotografía clínica tiene protocolos para ello.",
+  "Verplaats de lamp en je verplaatst elke schaduw, terwijl de huid geen millimeter veranderd is.":
+    "Mueve la lámpara y mueves cada sombra, mientras la piel no ha cambiado ni un milímetro.",
+  "Textuur zie je alleen doordat er schaduw in zit. Dat is de reden dat licht op deze lijst dubbel weegt, en dat klinische fotografie er protocollen voor kent.":
+    "La textura solo la ves porque hay sombra en ella. Por eso la luz cuenta el doble en esta lista, y por eso la fotografía clínica tiene protocolos para ello.",
   "Zeven vragen": "Siete preguntas",
   "voor-en-na-foto": "foto de antes y después",
   "die je net zag?": "que acabas de ver?",
-  "Dezelfde huid ziet er onder ander licht heel anders uit. Daarom zegt bijna geen enkele voor-en-na-foto op internet iets over de behandeling. Dit zijn de zeven vragen waarmee je dat zelf ziet. Ze werken bij elke kliniek, en straks ook bij ons.": "La misma piel se ve muy distinta bajo otra luz. Por eso casi ninguna foto de antes y después de internet dice algo sobre el tratamiento. Estas son las siete preguntas con las que lo ves tú. Funcionan en cualquier clínica, y pronto también en la nuestra.",
+  "Dezelfde huid ziet er onder ander licht heel anders uit. Daarom zegt bijna geen enkele voor-en-na-foto op internet iets over de behandeling. Dit zijn de zeven vragen waarmee je dat zelf ziet. Ze werken bij elke kliniek, en straks ook bij ons.":
+    "La misma piel se ve muy distinta bajo otra luz. Por eso casi ninguna foto de antes y después de internet dice algo sobre el tratamiento. Estas son las siete preguntas con las que lo ves tú. Funcionan en cualquier clínica, y pronto también en la nuestra.",
   "Waar je ons aan mag houden": "Lo que puedes exigirnos",
   "Hoe we resultaatfoto's": "Cómo",
-  "maken": "hacemos las fotos de resultados",
+  maken: "hacemos las fotos de resultados",
   "Klopt die": "¿Es fiable la",
-  "Zeven regels, één per variabele hierboven. Verschijnt er straks een beeld op deze site dat er niet aan voldoet, dan mag je ons daarop aanspreken.": "Siete reglas, una por cada variable de arriba. Si más adelante aparece en esta web una imagen que no las cumple, puedes reclamárnoslo.",
-  "Bij elk beeld komen bovendien de gegevens te staan die je nodig hebt om het te wegen: welke behandeling, hoeveel sessies, hoeveel weken ertussen, welk huidtype en hoeveel weken na de laatste sessie de nafoto gemaakt is.": "Con cada imagen figurarán además los datos que necesitas para valorarla: qué tratamiento, cuántas sesiones, cuántas semanas entre medias, qué fototipo y cuántas semanas después de la última sesión se hizo la foto de después.",
+  "Zeven regels, één per variabele hierboven. Verschijnt er straks een beeld op deze site dat er niet aan voldoet, dan mag je ons daarop aanspreken.":
+    "Siete reglas, una por cada variable de arriba. Si más adelante aparece en esta web una imagen que no las cumple, puedes reclamárnoslo.",
+  "Bij elk beeld komen bovendien de gegevens te staan die je nodig hebt om het te wegen: welke behandeling, hoeveel sessies, hoeveel weken ertussen, welk huidtype en hoeveel weken na de laatste sessie de nafoto gemaakt is.":
+    "Con cada imagen figurarán además los datos que necesitas para valorarla: qué tratamiento, cuántas sesiones, cuántas semanas entre medias, qué fototipo y cuántas semanas después de la última sesión se hizo la foto de después.",
   "Wat wel meetbaar is": "Lo que sí se puede medir",
   "Meten onder": "Medir bajo",
   "hetzelfde licht": "la misma luz",
-  "De EVE-M gebruikt vaste opnameomstandigheden. Daardoor is een latere meting beter vergelijkbaar dan een losse telefoonfoto onder ander licht.": "El EVE-M usa condiciones de captura fijas. Por eso una medición posterior se compara mejor que una foto suelta con el móvil bajo otra luz.",
-  "Wat er dan uit komt zijn geen mooie plaatjes maar waardes: pigment, vocht, poriestructuur, tekenen van veroudering. Jouw eigen vertrekpunt, en het enige eerlijke vergelijkingsmateriaal dat er bestaat.": "Lo que sale de ahí no son imágenes bonitas sino valores: pigmento, hidratación, estructura de los poros, signos de envejecimiento. Tu propio punto de partida, y el único material de comparación honesto que existe.",
+  "De EVE-M gebruikt vaste opnameomstandigheden. Daardoor is een latere meting beter vergelijkbaar dan een losse telefoonfoto onder ander licht.":
+    "El EVE-M usa condiciones de captura fijas. Por eso una medición posterior se compara mejor que una foto suelta con el móvil bajo otra luz.",
+  "Wat er dan uit komt zijn geen mooie plaatjes maar waardes: pigment, vocht, poriestructuur, tekenen van veroudering. Jouw eigen vertrekpunt, en het enige eerlijke vergelijkingsmateriaal dat er bestaat.":
+    "Lo que sale de ahí no son imágenes bonitas sino valores: pigmento, hidratación, estructura de los poros, signos de envejecimiento. Tu propio punto de partida, y el único material de comparación honesto que existe.",
   "Zo werkt de huidscan": "Así funciona el escaneo de la piel",
   "Wat hier komt te staan": "Lo que aparecerá aquí",
   "Zodra ze er zijn,": "En cuanto existan,",
   "staan ze hieronder.": "estarán aquí abajo.",
-  "Ben je klant en wil je dat jouw beelden meedoen, dan hoor je van tevoren waar ze te zien zullen zijn en kun je die toestemming op elk moment weer intrekken.": "Si eres cliente y quieres que tus imágenes participen, sabes de antemano dónde se verán y puedes retirar ese permiso en cualquier momento.",
+  "Ben je klant en wil je dat jouw beelden meedoen, dan hoor je van tevoren waar ze te zien zullen zijn en kun je die toestemming op elk moment weer intrekken.":
+    "Si eres cliente y quieres que tus imágenes participen, sabes de antemano dónde se verán y puedes retirar ese permiso en cualquier momento.",
   "Neem contact op": "Ponte en contacto",
   "Wat klanten schrijven": "Lo que escriben los clientes",
   "De vergelijkingen": "Las comparaciones",
-  "Schuif over een beeld om het verschil te zien. Bij elk paar staat wat ervoor nodig was.": "Desliza sobre una imagen para ver la diferencia. En cada par pone lo que hizo falta.",
+  "Schuif over een beeld om het verschil te zien. Bij elk paar staat wat ervoor nodig was.":
+    "Desliza sobre una imagen para ver la diferencia. En cada par pone lo que hizo falta.",
   "Wat hier niet staat": "Lo que aquí no está",
-  "Verzonnen": "Reseñas",
+  Verzonnen: "Reseñas",
   "reviews.": "inventadas.",
-  "De reviews komen van de openbare Salonized-pagina, en het is een momentopname: er komen er dagelijks bij, en die staan daar eerder dan hier.": "Las reseñas vienen de la página pública de Salonized, y es una instantánea: cada día llegan nuevas, y están allí antes que aquí.",
+  "De reviews komen van de openbare Salonized-pagina, en het is een momentopname: er komen er dagelijks bij, en die staan daar eerder dan hier.":
+    "Las reseñas vienen de la página pública de Salonized, y es una instantánea: cada día llegan nuevas, y están allí antes que aquí.",
   "Controleer ze bij de bron": "Compruébalas en la fuente",
   "op één plek": "en un solo sitio",
-  "Elk tarief, per sessie en per zone. Je hoeft er niet voor te bellen.": "Cada tarifa, por sesión y por zona. No tienes que llamar para saberla.",
-  "Wat een behandeling kost hoor je liever vooraf dan erna. Wat je hier niet vindt is een pakket met een streep door de oude prijs: er zijn geen kortingen en geen acties, dus er is ook nooit een moment waarop je te vroeg of te laat was.": "Lo que cuesta un tratamiento prefieres oírlo antes que después. Lo que aquí no encuentras es un paquete con el precio antiguo tachado: no hay descuentos ni promociones, así que nunca hay un momento en el que llegaste demasiado pronto o demasiado tarde.",
+  "Elk tarief, per sessie en per zone. Je hoeft er niet voor te bellen.":
+    "Cada tarifa, por sesión y por zona. No tienes que llamar para saberla.",
+  "Wat een behandeling kost hoor je liever vooraf dan erna. Wat je hier niet vindt is een pakket met een streep door de oude prijs: er zijn geen kortingen en geen acties, dus er is ook nooit een moment waarop je te vroeg of te laat was.":
+    "Lo que cuesta un tratamiento prefieres oírlo antes que después. Lo que aquí no encuentras es un paquete con el precio antiguo tachado: no hay descuentos ni promociones, así que nunca hay un momento en el que llegaste demasiado pronto o demasiado tarde.",
   "Waar een prijs begint": "Dónde empieza un precio",
   "De intake kost": "La consulta previa cuesta",
-  "euro": "euros",
-  "Welke behandeling bij je huid past, hoor je tijdens de intake. Tot dat gesprek is elk bedrag een gok, en daarom staat het hier als enige niet in een lijst.": "Qué tratamiento encaja con tu piel lo oyes en la consulta previa. Hasta esa conversación cualquier importe es una suposición, y por eso es el único que aquí no está en una lista.",
-  "Word je in dezelfde afspraak behandeld, dan gaat dat bedrag er weer af. Je betaalt dan alleen de behandeling.": "Si te tratan en la misma cita, ese importe se vuelve a descontar. Entonces pagas solo el tratamiento.",
+  euro: "euros",
+  "Welke behandeling bij je huid past, hoor je tijdens de intake. Tot dat gesprek is elk bedrag een gok, en daarom staat het hier als enige niet in een lijst.":
+    "Qué tratamiento encaja con tu piel lo oyes en la consulta previa. Hasta esa conversación cualquier importe es una suposición, y por eso es el único que aquí no está en una lista.",
+  "Word je in dezelfde afspraak behandeld, dan gaat dat bedrag er weer af. Je betaalt dan alleen de behandeling.":
+    "Si te tratan en la misma cita, ese importe se vuelve a descontar. Entonces pagas solo el tratamiento.",
   "Zo werkt de intake": "Así funciona la consulta previa",
-  "Klap een behandeling open en je ziet hoe vaak je moet komen, hoe lang de hersteltijd is en wat het niet doet. Het bedrag blijft staan, ook dicht.": "Despliega un tratamiento y ves cada cuánto tienes que venir, cuánto dura la recuperación y lo que no hace. El importe se queda a la vista, también plegado.",
+  "Klap een behandeling open en je ziet hoe vaak je moet komen, hoe lang de hersteltijd is en wat het niet doet. Het bedrag blijft staan, ook dicht.":
+    "Despliega un tratamiento y ves cada cuánto tienes que venir, cuánto dura la recuperación y lo que no hace. El importe se queda a la vista, también plegado.",
   "Laserontharing per zone": "Depilación láser por zona",
   "Elke zone,": "Cada zona,",
   "met het tarief erbij.": "con su tarifa al lado.",
   "Vragen over prijzen": "Preguntas sobre precios",
-  "Staat je vraag er niet bij, dan hoor je het antwoord aan de telefoon zonder dat er een afspraak uit hoeft te komen.": "Si tu pregunta no está, oyes la respuesta por teléfono sin que tenga que salir una cita de ello.",
+  "Staat je vraag er niet bij, dan hoor je het antwoord aan de telefoon zonder dat er een afspraak uit hoeft te komen.":
+    "Si tu pregunta no está, oyes la respuesta por teléfono sin que tenga que salir una cita de ello.",
   "Afzeggen, betalen en verzetten": "Cancelar, pagar y cambiar la cita",
   "Wat het totaal bepaalt": "Lo que decide el total",
   "bepaalt je totaal": "decide tu total",
-  "De bedragen hierboven liggen vast. Wat je in totaal kwijt bent hangt af van hoe vaak je komt, en dat verschilt per huid. Een aantal noemen voordat we gemeten hebben is een gok met jouw geld, dus dat doen we niet.": "Los importes de arriba están fijados. Lo que gastas en total depende de cuántas veces vienes, y eso varía según la piel. Decir un número antes de haber medido es apostar con tu dinero, así que no lo hacemos.",
-  "Tijdens de intake hoor je om hoeveel sessies het bij jou gaat en wat dat samen wordt. Dat is het eerste moment waarop iemand daar iets zinnigs over kan zeggen.": "En la consulta previa oyes de cuántas sesiones se trata en tu caso y cuánto suma todo. Es el primer momento en que alguien puede decir algo sensato al respecto.",
+  "De bedragen hierboven liggen vast. Wat je in totaal kwijt bent hangt af van hoe vaak je komt, en dat verschilt per huid. Een aantal noemen voordat we gemeten hebben is een gok met jouw geld, dus dat doen we niet.":
+    "Los importes de arriba están fijados. Lo que gastas en total depende de cuántas veces vienes, y eso varía según la piel. Decir un número antes de haber medido es apostar con tu dinero, así que no lo hacemos.",
+  "Tijdens de intake hoor je om hoeveel sessies het bij jou gaat en wat dat samen wordt. Dat is het eerste moment waarop iemand daar iets zinnigs over kan zeggen.":
+    "En la consulta previa oyes de cuántas sesiones se trata en tu caso y cuánto suma todo. Es el primer momento en que alguien puede decir algo sensato al respecto.",
   "Wat de behandelingen doen": "Lo que hacen los tratamientos",
   "Mail je cv": "Envía tu CV por correo",
   "Stuur je cv naar": "Envía tu CV a",
-  "Wissen": "Borrar",
-  "Je bekijkt deze pagina op localhost. Het script van Salonized wijst dan naar hun eigen ontwikkelmachine, dus de agenda blijft hier leeg. Open dezelfde pagina via 127.0.0.1 of op het echte domein om hem te zien.": "Estás viendo esta página en localhost. El script de Salonized apunta entonces a su propia máquina de desarrollo, así que la agenda se queda vacía aquí. Abre la misma página por 127.0.0.1 o en el dominio real para verla.",
-  "De agenda laadt hier niet. Dat ligt meestal aan een adblocker of aan het netwerk waar je op zit. Bellen kan ook: 010-2038423.": "La agenda no se carga aquí. Normalmente es por un bloqueador de anuncios o por la red en la que estás. También puedes llamar: 010-2038423.",
+  Wissen: "Borrar",
+  "Je bekijkt deze pagina op localhost. Het script van Salonized wijst dan naar hun eigen ontwikkelmachine, dus de agenda blijft hier leeg. Open dezelfde pagina via 127.0.0.1 of op het echte domein om hem te zien.":
+    "Estás viendo esta página en localhost. El script de Salonized apunta entonces a su propia máquina de desarrollo, así que la agenda se queda vacía aquí. Abre la misma página por 127.0.0.1 o en el dominio real para verla.",
+  "De agenda laadt hier niet. Dat ligt meestal aan een adblocker of aan het netwerk waar je op zit. Bellen kan ook: 010-2038423.":
+    "La agenda no se carga aquí. Normalmente es por un bloqueador de anuncios o por la red en la que estás. También puedes llamar: 010-2038423.",
   "Open de agenda in een nieuw venster": "Abrir la agenda en una ventana nueva",
-  "De volgorde volgt je huidprofiel: bovenaan wat past, onderaan wat over iets anders gaat. Waar de reden per behandeling verschilt, staat hij op de kaart.": "El orden sigue tu perfil de piel: arriba lo que encaja, abajo lo que trata de otra cosa. Donde el motivo varía según el tratamiento, está en la tarjeta.",
+  "De volgorde volgt je huidprofiel: bovenaan wat past, onderaan wat over iets anders gaat. Waar de reden per behandeling verschilt, staat hij op de kaart.":
+    "El orden sigue tu perfil de piel: arriba lo que encaja, abajo lo que trata de otra cosa. Donde el motivo varía según el tratamiento, está en la tarjeta.",
   "Profiel aanvullen": "Completar el perfil",
-  "De volgorde is diepte: van de buitenste laag naar binnen.": "El orden es la profundidad: de la capa más externa hacia dentro.",
+  "De volgorde is diepte: van de buitenste laag naar binnen.":
+    "El orden es la profundidad: de la capa más externa hacia dentro.",
   "Maak je huidprofiel": "Crea tu perfil de piel",
-  "en de lijst schikt zich naar wat bij jou past.": "y la lista se ordena según lo que encaja contigo.",
+  "en de lijst schikt zich naar wat bij jou past.":
+    "y la lista se ordena según lo que encaja contigo.",
   "Let op:": "Atención:",
-  "Geen behandelingen met deze combinatie van filters. Zet de hersteltijd wat ruimer.": "No hay tratamientos con esta combinación de filtros. Da un poco más de margen al tiempo de recuperación.",
+  "Geen behandelingen met deze combinatie van filters. Zet de hersteltijd wat ruimer.":
+    "No hay tratamientos con esta combinación de filtros. Da un poco más de margen al tiempo de recuperación.",
   "Eerst lezen wat het is": "Leer primero qué es",
   "Je bent nu in de": "Ahora estás en la",
   "En nog": "Y otros",
   "andere.": "más.",
-  "Zo diep gaan wij niet. Wat hier zit hoort bij een arts, of bij niemand.": "Tan hondo no llegamos. Lo que hay aquí corresponde a un médico, o a nadie.",
-  "Je huidige keuze wordt opgehaald uit deze browser.": "Tu elección actual se recupera de este navegador.",
+  "Zo diep gaan wij niet. Wat hier zit hoort bij een arts, of bij niemand.":
+    "Tan hondo no llegamos. Lo que hay aquí corresponde a un médico, o a nadie.",
+  "Je huidige keuze wordt opgehaald uit deze browser.":
+    "Tu elección actual se recupera de este navegador.",
   "Je bericht is verstuurd.": "Tu mensaje se ha enviado.",
   "Nog een vraag stellen": "Hacer otra pregunta",
-  "Je krijgt antwoord van iemand die in de kliniek staat. Wat er bij jouw huid kan, zien we pas als we hem gezien hebben.": "Te responde alguien que trabaja en la clínica. Lo que es posible en tu piel lo vemos solo cuando la hemos visto.",
+  "Je krijgt antwoord van iemand die in de kliniek staat. Wat er bij jouw huid kan, zien we pas als we hem gezien hebben.":
+    "Te responde alguien que trabaja en la clínica. Lo que es posible en tu piel lo vemos solo cuando la hemos visto.",
   "Laat dit veld leeg": "Deja este campo vacío",
-  "Het versturen lukt nu niet. Je vraag is niet weg: hij staat klaar in een mail die je zelf verstuurt.": "Ahora mismo no se puede enviar. Tu pregunta no se ha perdido: está lista en un correo que envías tú.",
+  "Het versturen lukt nu niet. Je vraag is niet weg: hij staat klaar in een mail die je zelf verstuurt.":
+    "Ahora mismo no se puede enviar. Tu pregunta no se ha perdido: está lista en un correo que envías tú.",
   "Open het bericht in je mail": "Abrir el mensaje en tu correo",
   "WhatsApp-bericht": "Mensaje de WhatsApp",
   "Dan kom je hier uit": "Entonces acabas aquí",
   "Wanneer je antwoord hebt": "Cuándo tienes respuesta",
   "Op de kaart": "En el mapa",
-  "De kaart komt van Google en zet cookies. Daarom laden we hem pas als je erom vraagt.": "El mapa viene de Google y pone cookies. Por eso solo lo cargamos cuando lo pides.",
+  "De kaart komt van Google en zet cookies. Daarom laden we hem pas als je erom vraagt.":
+    "El mapa viene de Google y pone cookies. Por eso solo lo cargamos cuando lo pides.",
   "Toon de kaart": "Mostrar el mapa",
   "Of open Maps": "O abrir Maps",
-  "Hier houdt het op. Zit je echt in dit vak, dan kost een behandeling je geld zonder dat er iets te winnen valt, en dan zeggen we dat liever nu.": "Aquí se acaba. Si de verdad estás en esta casilla, un tratamiento te cuesta dinero sin que haya nada que ganar, y eso preferimos decirlo ahora.",
+  "Hier houdt het op. Zit je echt in dit vak, dan kost een behandeling je geld zonder dat er iets te winnen valt, en dan zeggen we dat liever nu.":
+    "Aquí se acaba. Si de verdad estás en esta casilla, un tratamiento te cuesta dinero sin que haya nada que ganar, y eso preferimos decirlo ahora.",
   "Jouw huid in kaart.": "Tu piel, registrada.",
-  "De opnames laten pigment, roodheid, poriegrootte, vochtgehalte en huidstructuur zien, in gewoon licht en onder UV-licht. Je ziet ze op het scherm en de behandelaar bespreekt ze met je.": "Las capturas muestran pigmento, rojez, tamaño de los poros, nivel de hidratación y textura de la piel, con luz normal y bajo luz UV. Las ves en la pantalla y la terapeuta las comenta contigo.",
-  "Onderwerp": "Asunto",
+  "De opnames laten pigment, roodheid, poriegrootte, vochtgehalte en huidstructuur zien, in gewoon licht en onder UV-licht. Je ziet ze op het scherm en de behandelaar bespreekt ze met je.":
+    "Las capturas muestran pigmento, rojez, tamaño de los poros, nivel de hidratación y textura de la piel, con luz normal y bajo luz UV. Las ves en la pantalla y la terapeuta las comenta contigo.",
+  Onderwerp: "Asunto",
   "Live uit Salonized": "En directo desde Salonized",
   "reviews, echt en openbaar": "reseñas, reales y públicas",
   "Meer highlights": "Más destacadas",
   "op deze pagina": "en esta página",
   "Volledige lijst op Salonized": "Lista completa en Salonized",
-  "Nog geen gelabelde reviews voor dit onderwerp. Bekijk alle": "Todavía no hay reseñas etiquetadas para este tema. Ver todas las",
+  "Nog geen gelabelde reviews voor dit onderwerp. Bekijk alle":
+    "Todavía no hay reseñas etiquetadas para este tema. Ver todas las",
   "reviews op Salonized": "reseñas en Salonized",
   "Dit zijn": "Estas son",
   "Bekijk ze allemaal": "Verlas todas",
   "Bespreek dit met ons": "Háblalo con nosotros",
   "Waar wil je hulp bij?": "¿Con qué quieres ayuda?",
-  "Kies waar je voor komt. Je ziet meteen welke behandelingen erbij horen en wat ze kosten; klik door voor het hele verhaal.": "Elige para qué vienes. Ves al momento qué tratamientos van con ello y lo que cuestan; sigue el enlace para la historia completa.",
+  "Kies waar je voor komt. Je ziet meteen welke behandelingen erbij horen en wat ze kosten; klik door voor het hele verhaal.":
+    "Elige para qué vienes. Ves al momento qué tratamientos van con ello y lo que cuestan; sigue el enlace para la historia completa.",
   "Laat meekijken naar je routine": "Que revisen tu rutina",
   "Begin opnieuw": "Empezar de nuevo",
   "We meten je huid": "Medimos tu piel",
   "voordat we adviseren": "antes de aconsejar",
   "voordat we iets voorstellen": "antes de proponer nada",
-  "We meten je huid onder vast licht. Je hoort direct wat er mogelijk is, en wanneer wachten je meer oplevert.": "Medimos tu piel bajo luz fija. Oyes al momento lo que es posible, y cuándo esperar te aporta más.",
-  "Kom met je klacht, dan zoeken wij de behandeling erbij. We luisteren, meten je huid en leggen uit wat er in jouw geval mogelijk is. Alle prijzen staan vooraf online.": "Ven con tu problema y nosotros buscamos el tratamiento. Escuchamos, medimos tu piel y explicamos lo que es posible en tu caso. Todos los precios están online de antemano.",
+  "We meten je huid onder vast licht. Je hoort direct wat er mogelijk is, en wanneer wachten je meer oplevert.":
+    "Medimos tu piel bajo luz fija. Oyes al momento lo que es posible, y cuándo esperar te aporta más.",
+  "Kom met je klacht, dan zoeken wij de behandeling erbij. We luisteren, meten je huid en leggen uit wat er in jouw geval mogelijk is. Alle prijzen staan vooraf online.":
+    "Ven con tu problema y nosotros buscamos el tratamiento. Escuchamos, medimos tu piel y explicamos lo que es posible en tu caso. Todos los precios están online de antemano.",
   "Plan intake": "Programar consulta previa",
   "Plan een eerste afspraak": "Programa una primera cita",
-  "De medische inhoud op deze site wordt nagekeken door": "El contenido médico de esta web lo revisa",
+  "De medische inhoud op deze site wordt nagekeken door":
+    "El contenido médico de esta web lo revisa",
   "Nog vast te leggen": "Pendiente de fijar",
-  "Onze huidtherapeuten helpen je met acne, pigment, roodheid, littekens, huidveroudering en ongewenst haar. Tijdens de intake hoor je wat er bij jou mogelijk is.": "Nuestras terapeutas de la piel te ayudan con acné, pigmento, rojez, cicatrices, envejecimiento de la piel y vello no deseado. En la consulta previa oyes lo que es posible en tu caso.",
-  "Weet je nog niet welke behandeling past?": "¿Todavía no sabes qué tratamiento encaja?",
+  "Onze huidtherapeuten helpen je met acne, pigment, roodheid, littekens, huidveroudering en ongewenst haar. Tijdens de intake hoor je wat er bij jou mogelijk is.":
+    "Nuestras terapeutas de la piel te ayudan con acné, pigmento, rojez, cicatrices, envejecimiento de la piel y vello no deseado. En la consulta previa oyes lo que es posible en tu caso.",
+  "Weet je nog niet welke behandeling past?":
+    "¿Todavía no sabes qué tratamiento encaja?",
   "Alles wissen": "Borrar todo",
-  "Ingevuld": "Completado",
+  Ingevuld: "Completado",
   "Op je huidprofiel aanpassen": "Ajustar a tu perfil de piel",
-  "Doe de scan bij stap 1, dan staat je spinnenweb hier.": "Haz el escaneo en el paso 1 y tu telaraña aparece aquí.",
+  "Doe de scan bij stap 1, dan staat je spinnenweb hier.":
+    "Haz el escaneo en el paso 1 y tu telaraña aparece aquí.",
   "Je huid, zoals jij hem beschrijft": "Tu piel, tal como la describes",
-  "Je hebt": "Has completado",
-  "vragen ingevuld. Elke vraag die je nog beantwoordt maakt deze uitkomst preciezer.": "preguntas. Cada pregunta que respondas además hace este resultado más preciso.",
-  "Dit zijn dingen die in de praktijk pas aan de balie boven tafel komen, en dan een afspraak kosten. Nu weet je het vooraf.": "Son cosas que en la práctica solo salen en recepción, y entonces cuestan una cita. Ahora lo sabes de antemano.",
+  "Dit zijn dingen die in de praktijk pas aan de balie boven tafel komen, en dan een afspraak kosten. Nu weet je het vooraf.":
+    "Son cosas que en la práctica solo salen en recepción, y entonces cuestan una cita. Ahora lo sabes de antemano.",
   "Beste match": "Mejor opción",
   "Herstel:": "Recuperación:",
   "Eerst bespreken": "Hablarlo primero",
   "Wat er dan wel past": "Lo que sí encaja entonces",
-  "Vul aan wat je wil veranderen, dan komt hier de lijst.": "Añade lo que quieres cambiar y aquí aparece la lista.",
-  "Daarnaast doet er één iets aan je doel zonder dat hij daarvoor gemaakt is.": "Además, uno hace algo por tu objetivo sin estar hecho para eso.",
-  "Daarnaast doen er": "Además, hay",
-  "iets aan je doel zonder dat ze daarvoor gemaakt zijn.": "que hacen algo por tu objetivo sin estar hechos para eso.",
+  "Vul aan wat je wil veranderen, dan komt hier de lijst.":
+    "Añade lo que quieres cambiar y aquí aparece la lista.",
+  "Daarnaast doet er één iets aan je doel zonder dat hij daarvoor gemaakt is.":
+    "Además, uno hace algo por tu objetivo sin estar hecho para eso.",
   "Die staan op de behandelingenpagina.": "Están en la página de tratamientos.",
-  "losse": "sueltos",
-  "Hier stond eerder alleen een aantal. Wat er wegvalt en waardoor is net zo bruikbaar als wat er overblijft, want meestal is het één antwoord van jou dat de halve lijst wegneemt.": "Aquí antes solo había un número. Lo que se descarta y por qué es tan útil como lo que queda, porque normalmente es una sola respuesta tuya la que quita media lista.",
-  "Alle behandelingen, geordend op je profiel": "Todos los tratamientos, ordenados según tu perfil",
+  "Hier stond eerder alleen een aantal. Wat er wegvalt en waardoor is net zo bruikbaar als wat er overblijft, want meestal is het één antwoord van jou dat de halve lijst wegneemt.":
+    "Aquí antes solo había un número. Lo que se descarta y por qué es tan útil como lo que queda, porque normalmente es una sola respuesta tuya la que quita media lista.",
+  "Alle behandelingen, geordend op je profiel":
+    "Todos los tratamientos, ordenados según tu perfil",
   "Eerlijk gezegd": "Sinceramente",
   "Dit weten we": "Esto todavía",
   "nog niet.": "no lo sabemos.",
-  "Alles hierboven komt uit jouw antwoorden. Dat is genoeg om te ordenen en niet genoeg om te beslissen. Wat er hiernaast staat is met het blote oog niet vast te stellen, ook niet door ons.": "Todo lo de arriba sale de tus respuestas. Es suficiente para ordenar y no suficiente para decidir. Lo que está aquí al lado no se puede determinar a simple vista, tampoco nosotros.",
+  "Alles hierboven komt uit jouw antwoorden. Dat is genoeg om te ordenen en niet genoeg om te beslissen. Wat er hiernaast staat is met het blote oog niet vast te stellen, ook niet door ons.":
+    "Todo lo de arriba sale de tus respuestas. Es suficiente para ordenar y no suficiente para decidir. Lo que está aquí al lado no se puede determinar a simple vista, tampoco nosotros.",
   "Het huidconsult.": "La consulta de la piel.",
   "Meten, niet behandelen.": "Medir, no tratar.",
-  "Er gebeurt niets met je huid. Er wordt gekeken, gemeten en uitgelegd, en je gaat naar huis met wat er uit de meting kwam en wat dat betekent voor je doel. Ook als dat betekent dat we je iets afraden.": "A tu piel no le pasa nada. Se mira, se mide y se explica, y te vas a casa con lo que salió de la medición y lo que eso significa para tu objetivo. También si eso significa que te desaconsejamos algo.",
+  "Er gebeurt niets met je huid. Er wordt gekeken, gemeten en uitgelegd, en je gaat naar huis met wat er uit de meting kwam en wat dat betekent voor je doel. Ook als dat betekent dat we je iets afraden.":
+    "A tu piel no le pasa nada. Se mira, se mide y se explica, y te vas a casa con lo que salió de la medición y lo que eso significa para tu objetivo. También si eso significa que te desaconsejamos algo.",
   "Wat er precies gebeurt": "Lo que pasa exactamente",
   "Je neemt dit mee": "Esto te lo llevas",
   "Bekijk wat je meestuurt": "Ver lo que envías",
   "Daarna plakken in je bericht": "Después pégalo en tu mensaje",
-  "Aanvullen": "Completar",
-  "Kopiëren lukte niet in deze browser": "No se ha podido copiar en este navegador",
-  "Selecteer de tekst hieronder en kopieer hem met de hand.": "Selecciona el texto de abajo y cópialo a mano.",
+  Aanvullen: "Completar",
+  "Kopiëren lukte niet in deze browser":
+    "No se ha podido copiar en este navegador",
+  "Selecteer de tekst hieronder en kopieer hem met de hand.":
+    "Selecciona el texto de abajo y cópialo a mano.",
   "Welke prijslijst": "Qué lista de precios",
-  "De kliniek hanteert twee tarievenlijsten. Voor dezelfde zone verschilt het bedrag, en niet elke zone staat op beide lijsten.": "La clínica usa dos listas de tarifas. Para la misma zona el importe varía, y no todas las zonas están en las dos listas.",
+  "De kliniek hanteert twee tarievenlijsten. Voor dezelfde zone verschilt het bedrag, en niet elke zone staat op beide lijsten.":
+    "La clínica usa dos listas de tarifas. Para la misma zona el importe varía, y no todas las zonas están en las dos listas.",
   "Verder op de tarievenlijst": "Más abajo en la lista de tarifas",
-  "Niet elke regel heeft een eigen plek op de tekening. Deze staan wel op de lijst en zijn hier net zo goed te kiezen.": "No todas las líneas tienen un sitio propio en el dibujo. Estas sí están en la lista y se pueden elegir aquí igualmente.",
+  "Niet elke regel heeft een eigen plek op de tekening. Deze staan wel op de lijst en zijn hier net zo goed te kiezen.":
+    "No todas las líneas tienen un sitio propio en el dibujo. Estas sí están en la lista y se pueden elegir aquí igualmente.",
   "Of kies een pakket": "O elige un paquete",
-  "Een pakket vervangt de losse zones die erin zitten. Die blijven aangewezen staan op de tekening, maar tellen niet nog een keer mee.": "Un paquete sustituye las zonas sueltas que contiene. Esas siguen marcadas en el dibujo, pero no cuentan una segunda vez.",
+  "Een pakket vervangt de losse zones die erin zitten. Die blijven aangewezen staan op de tekening, maar tellen niet nog een keer mee.":
+    "Un paquete sustituye las zonas sueltas que contiene. Esas siguen marcadas en el dibujo, pero no cuentan una segunda vez.",
   "Zes huidtypes": "Seis fototipos",
   "en alle zes te behandelen": "y los seis se pueden tratar",
-  "De GentleMax Pro werkt op Fitzpatrick I tot en met VI. Je type bepaalt niet óf het kan, maar met welke instellingen. Weet je het niet, laat het dan open; we bepalen het tijdens de intake.": "El GentleMax Pro trabaja en los fototipos I a VI de Fitzpatrick. Tu tipo no decide si se puede, sino con qué configuración. Si no lo sabes, déjalo abierto; lo determinamos en la consulta previa.",
+  "De GentleMax Pro werkt op Fitzpatrick I tot en met VI. Je type bepaalt niet óf het kan, maar met welke instellingen. Weet je het niet, laat het dan open; we bepalen het tijdens de intake.":
+    "El GentleMax Pro trabaja en los fototipos I a VI de Fitzpatrick. Tu tipo no decide si se puede, sino con qué configuración. Si no lo sabes, déjalo abierto; lo determinamos en la consulta previa.",
   "Wat je moet weten": "Lo que debes saber",
   "Je opbouw": "Tu selección",
-  "Deze bedragen zijn voorlopig en nog niet door de kliniek vastgesteld.": "Estos importes son provisionales y todavía no los ha fijado la clínica.",
-  "Nog niets aangewezen. Kies links een zone op de tekening of in de lijst ernaast.": "Todavía no hay nada marcado. Elige a la izquierda una zona en el dibujo o en la lista de al lado.",
+  "Deze bedragen zijn voorlopig en nog niet door de kliniek vastgesteld.":
+    "Estos importes son provisionales y todavía no los ha fijado la clínica.",
+  "Nog niets aangewezen. Kies links een zone op de tekening of in de lijst ernaast.":
+    "Todavía no hay nada marcado. Elige a la izquierda una zona en el dibujo o en la lista de al lado.",
   "Zit al in je pakket:": "Ya está en tu paquete:",
   "Huidtype Fitzpatrick": "Fototipo de Fitzpatrick",
   "Vraag stellen": "Hacer una pregunta",
-  "Opnieuw": "De nuevo",
-  "Je keuze staat in de adresbalk. Sla die op of stuur hem door, dan staat alles er nog als je terugkomt.": "Tu elección está en la barra de direcciones. Guárdala o reenvíala, y todo sigue ahí cuando vuelvas.",
-  "Zones": "Zonas",
+  Opnieuw: "De nuevo",
+  "Je keuze staat in de adresbalk. Sla die op of stuur hem door, dan staat alles er nog als je terugkomt.":
+    "Tu elección está en la barra de direcciones. Guárdala o reenvíala, y todo sigue ahí cuando vuelvas.",
+  Zones: "Zonas",
   "Stel je zones samen.": "Configura tus zonas.",
-  "In de configurator zie je meteen wat je opbouw wordt, inclusief wat een pakket vervangt. Hieronder staat wat er in dit gebied valt.": "En el configurador ves al momento cómo queda tu selección, incluido lo que sustituye un paquete. Abajo está lo que entra en esta zona.",
+  "In de configurator zie je meteen wat je opbouw wordt, inclusief wat een pakket vervangt. Hieronder staat wat er in dit gebied valt.":
+    "En el configurador ves al momento cómo queda tu selección, incluido lo que sustituye un paquete. Abajo está lo que entra en esta zona.",
   "Traject in beeld": "El programa a la vista",
-  "Voor laserontharing zijn meestal meerdere sessies nodig": "Para la depilación láser normalmente hacen falta varias sesiones",
-  "Sessie": "Sesión",
-  "Beweeg over het lichaam of kies hiernaast.": "Mueve el cursor sobre el cuerpo o elige al lado.",
+  "Voor laserontharing zijn meestal meerdere sessies nodig":
+    "Para la depilación láser normalmente hacen falta varias sesiones",
+  Sessie: "Sesión",
+  "Beweeg over het lichaam of kies hiernaast.":
+    "Mueve el cursor sobre el cuerpo o elige al lado.",
   "Check opnieuw doen": "Repetir la comprobación",
-  "We zeggen dit ook aan de telefoon. Je mag wel nu al de huidanalyse doen, dan staan we in september klaar met een vertrekpunt.": "Esto también lo decimos por teléfono. Sí puedes hacer ya el análisis de la piel, y así en septiembre estamos listos con un punto de partida.",
+  "We zeggen dit ook aan de telefoon. Je mag wel nu al de huidanalyse doen, dan staan we in september klaar met een vertrekpunt.":
+    "Esto también lo decimos por teléfono. Sí puedes hacer ya el análisis de la piel, y así en septiembre estamos listos con un punto de partida.",
   "Varianten en tarieven": "Variantes y tarifas",
-  "Laserontharing heeft twee tarievenlijsten. Welke geldt voor jou?": "La depilación láser tiene dos listas de tarifas. ¿Cuál se aplica en tu caso?",
-  "De bedragen hieronder zijn voorlopig en nog niet door de kliniek vastgesteld. Wat er wel al klopt is de indeling: welke behandelingen er zijn, welke zones er bestaan en wat een pakket vervangt.": "Los importes de abajo son provisionales y todavía no los ha fijado la clínica. Lo que sí es correcto ya es la estructura: qué tratamientos hay, qué zonas existen y lo que sustituye un paquete.",
-  "lijsten": "listas",
-  "Er staat nog niets onder deze categorie.": "Todavía no hay nada en esta categoría.",
+  "Laserontharing heeft twee tarievenlijsten. Welke geldt voor jou?":
+    "La depilación láser tiene dos listas de tarifas. ¿Cuál se aplica en tu caso?",
+  "De bedragen hieronder zijn voorlopig en nog niet door de kliniek vastgesteld. Wat er wel al klopt is de indeling: welke behandelingen er zijn, welke zones er bestaan en wat een pakket vervangt.":
+    "Los importes de abajo son provisionales y todavía no los ha fijado la clínica. Lo que sí es correcto ya es la estructura: qué tratamientos hay, qué zonas existen y lo que sustituye un paquete.",
+  lijsten: "listas",
+  "Er staat nog niets onder deze categorie.":
+    "Todavía no hay nada en esta categoría.",
   "Geen sterretjes": "Sin asteriscos",
-  "Er staan hier geen voetnoten met voorwaarden en geen bedragen die pas aan de balie compleet worden. Wat je hier ziet is wat een sessie kost. Hoeveel sessies je nodig hebt hoor je tijdens de intake, en dat getal bepaalt je totaal meer dan het tarief hiernaast.": "Aquí no hay notas al pie con condiciones ni importes que solo se completan en recepción. Lo que ves aquí es lo que cuesta una sesión. Cuántas sesiones necesitas lo oyes en la consulta previa, y ese número decide tu total más que la tarifa de al lado.",
+  "Er staan hier geen voetnoten met voorwaarden en geen bedragen die pas aan de balie compleet worden. Wat je hier ziet is wat een sessie kost. Hoeveel sessies je nodig hebt hoor je tijdens de intake, en dat getal bepaalt je totaal meer dan het tarief hiernaast.":
+    "Aquí no hay notas al pie con condiciones ni importes que solo se completan en recepción. Lo que ves aquí es lo que cuesta una sesión. Cuántas sesiones necesitas lo oyes en la consulta previa, y ese número decide tu total más que la tarifa de al lado.",
   "Wat kost dit voor mij": "Cuánto me cuesta esto",
-  "De lijst hieronder is lang. Die van jou is dat niet.": "La lista de abajo es larga. La tuya no.",
-  "Stel je huidprofiel samen en hier staan de prijzen van wat bij jou past, met de reden erbij. De volledige lijst blijft er gewoon onder staan; er wordt niets weggefilterd.": "Crea tu perfil de piel y aquí aparecen los precios de lo que encaja contigo, con el motivo al lado. La lista completa sigue estando debajo; no se filtra nada.",
+  "De lijst hieronder is lang. Die van jou is dat niet.":
+    "La lista de abajo es larga. La tuya no.",
+  "Stel je huidprofiel samen en hier staan de prijzen van wat bij jou past, met de reden erbij. De volledige lijst blijft er gewoon onder staan; er wordt niets weggefilterd.":
+    "Crea tu perfil de piel y aquí aparecen los precios de lo que encaja contigo, con el motivo al lado. La lista completa sigue estando debajo; no se filtra nada.",
   "Wat kost dit voor jou": "Cuánto te cuesta esto",
-  "vragen ingevuld": "preguntas completadas",
-  "Dit is wat er op grond van je profiel bij je past, met het tarief erbij. De volledige lijst staat er gewoon onder; er is niets weggefilterd. Wat bij jou afviel, staat daar aangemerkt.": "Esto es lo que encaja contigo según tu perfil, con la tarifa al lado. La lista completa está sin más debajo; no se ha filtrado nada. Lo que en tu caso se descartó, está marcado allí.",
+  "Dit is wat er op grond van je profiel bij je past, met het tarief erbij. De volledige lijst staat er gewoon onder; er is niets weggefilterd. Wat bij jou afviel, staat daar aangemerkt.":
+    "Esto es lo que encaja contigo según tu perfil, con la tarifa al lado. La lista completa está sin más debajo; no se ha filtrado nada. Lo que en tu caso se descartó, está marcado allí.",
   "Prijs volgt uit de meting": "El precio sale de la medición",
   "Wat er dan wel past:": "Lo que sí encaja entonces:",
-  "De volledige lijst staat er gewoon onder; er is niets weggefilterd. Wat bij jou afviel, staat daar aangemerkt.": "La lista completa está sin más debajo; no se ha filtrado nada. Lo que en tu caso se descartó, está marcado allí.",
-  "Vul aan wat je wil veranderen, dan staan hier de tarieven die daarbij horen.": "Añade lo que quieres cambiar y aquí aparecen las tarifas correspondientes.",
-  "Je profiel blijft in deze browser staan.": "Tu perfil se queda en este navegador.",
+  "De volledige lijst staat er gewoon onder; er is niets weggefilterd. Wat bij jou afviel, staat daar aangemerkt.":
+    "La lista completa está sin más debajo; no se ha filtrado nada. Lo que en tu caso se descartó, está marcado allí.",
+  "Vul aan wat je wil veranderen, dan staan hier de tarieven die daarbij horen.":
+    "Añade lo que quieres cambiar y aquí aparecen las tarifas correspondientes.",
+  "Je profiel blijft in deze browser staan.":
+    "Tu perfil se queda en este navegador.",
   "Hier niet mee wachten": "Con esto no esperes",
   "Weegt het zwaarst": "Lo que más pesa",
-  "Voor": "Antes",
+  Voor: "Antes",
   "Nog geen beeld": "Todavía sin imagen",
-  "Schuif tussen de opname vooraf en de opname achteraf": "Desliza entre la captura de antes y la de después",
-  "Volgende": "Siguiente",
-  "Hier schreef nog niemand over. Dat is geen gebrek van de kliniek maar van de reviews: mensen beoordelen het bezoek, niet elk onderwerp.": "Sobre esto todavía no ha escrito nadie. No es una carencia de la clínica sino de las reseñas: la gente valora la visita, no cada tema.",
+  "Schuif tussen de opname vooraf en de opname achteraf":
+    "Desliza entre la captura de antes y la de después",
+  Volgende: "Siguiente",
+  "Hier schreef nog niemand over. Dat is geen gebrek van de kliniek maar van de reviews: mensen beoordelen het bezoek, niet elk onderwerp.":
+    "Sobre esto todavía no ha escrito nadie. No es una carencia de la clínica sino de las reseñas: la gente valora la visita, no cada tema.",
   "Beoordelingen zonder tekst": "Valoraciones sin texto",
   "mensen gaven alleen sterren": "personas dieron solo estrellas",
-  "Ze tellen mee voor het gemiddelde en daarom staan ze hier, allemaal. Wat ze niet doen is iets vertellen: je weet niet waarvoor iemand kwam of wat er gebeurde. Reken ze dus mee in het cijfer en niet in je oordeel.": "Cuentan para la media y por eso están aquí, todas. Lo que no hacen es contar algo: no sabes para qué vino alguien ni qué pasó. Así que cuéntalas en la nota y no en tu juicio.",
+  "Ze tellen mee voor het gemiddelde en daarom staan ze hier, allemaal. Wat ze niet doen is iets vertellen: je weet niet waarvoor iemand kwam of wat er gebeurde. Reken ze dus mee in het cijfer en niet in je oordeel.":
+    "Cuentan para la media y por eso están aquí, todas. Lo que no hacen es contar algo: no sabes para qué vino alguien ni qué pasó. Así que cuéntalas en la nota y no en tu juicio.",
   "Toon de beoordelingen zonder tekst": "Mostrar las valoraciones sin texto",
-  "reviews die we van Salonized hebben overgenomen, in de volgorde waarin ze daar staan.": "reseñas que hemos tomado de Salonized, en el orden en que están allí.",
+  "reviews die we van Salonized hebben overgenomen, in de volgorde waarin ze daar staan.":
+    "reseñas que hemos tomado de Salonized, en el orden en que están allí.",
   "ter sprake komt.": "se menciona.",
-  "Je hebt ze allemaal aangetikt. Dat komt voor, en het betekent niet dat je er slechter aan toe bent dan iemand met twee.": "Las has marcado todas. Pasa, y no significa que estés peor que alguien con dos.",
+  "Je hebt ze allemaal aangetikt. Dat komt voor, en het betekent niet dat je er slechter aan toe bent dan iemand met twee.":
+    "Las has marcado todas. Pasa, y no significa que estés peor que alguien con dos.",
   "Dit gaat voor": "Esto tiene prioridad",
-  "Twijfel je nog? Stel je vraag via WhatsApp. Je krijgt antwoord van een mens.": "¿Todavía dudas? Haz tu pregunta por WhatsApp. Te responde una persona.",
+  "Twijfel je nog? Stel je vraag via WhatsApp. Je krijgt antwoord van een mens.":
+    "¿Todavía dudas? Haz tu pregunta por WhatsApp. Te responde una persona.",
   "Vraag stellen ↗": "Hacer una pregunta ↗",
-  "Cookies om de site te laten werken en om te meten hoe hij gebruikt wordt. In het": "Cookies para que la web funcione y para medir cómo se usa. En la",
+  "Cookies om de site te laten werken en om te meten hoe hij gebruikt wordt. In het":
+    "Cookies para que la web funcione y para medir cómo se usa. En la",
   "staat precies wat er laadt.": "pone exactamente lo que se carga.",
   "Alleen noodzakelijk": "Solo las necesarias",
-  "Akkoord": "Aceptar",
+  Akkoord: "Aceptar",
   "van 100": "de 100",
-  "Dit is wat jij ons vertelde, nog niet wat we gemeten hebben. De open buitenrand is precies dat verschil.": "Esto es lo que tú nos contaste, todavía no lo que hemos medido. El borde exterior abierto es justo esa diferencia.",
+  "Dit is wat jij ons vertelde, nog niet wat we gemeten hebben. De open buitenrand is precies dat verschil.":
+    "Esto es lo que tú nos contaste, todavía no lo que hemos medido. El borde exterior abierto es justo esa diferencia.",
   "Past hierbij": "Encaja con esto",
   "Je huidprofiel is opgebouwd uit": "Tu perfil de piel se compone de",
-  "onderdelen die je zelf hebt aangegeven in de mini-scan.": "elementos que has indicado tú en el miniescaneo.",
+  "onderdelen die je zelf hebt aangegeven in de mini-scan.":
+    "elementos que has indicado tú en el miniescaneo.",
   "Wij meten": "Nosotros medimos",
   "Gemeten met EVE-M huidanalyse": "Medido con el análisis de la piel EVE-M",
-  "Vraag": "Pregunta",
+  Vraag: "Pregunta",
   "Waar jouw aandacht naartoe gaat.": "Adónde va tu atención.",
-  "Dit is wat jij ons vertelt, niet wat we gemeten hebben.": "Esto es lo que tú nos cuentas, no lo que hemos medido.",
-  "De huidanalyse met EVE-M legt hydratatie, pigment, poriën en structuur objectief vast. Dan pas weten we het echt.": "El análisis de la piel con el EVE-M registra de forma objetiva hidratación, pigmento, poros y textura. Solo entonces lo sabemos de verdad.",
+  "Dit is wat jij ons vertelt, niet wat we gemeten hebben.":
+    "Esto es lo que tú nos cuentas, no lo que hemos medido.",
+  "De huidanalyse met EVE-M legt hydratatie, pigment, poriën en structuur objectief vast. Dan pas weten we het echt.":
+    "El análisis de la piel con el EVE-M registra de forma objetiva hidratación, pigmento, poros y textura. Solo entonces lo sabemos de verdad.",
   "Vul je profiel verder aan": "Completa más tu perfil",
-  "Je schets is bewaard op dit apparaat. Ga je naar de behandelingen, dan staat wat bij je profiel past bovenaan.": "Tu esbozo está guardado en este dispositivo. Si vas a los tratamientos, lo que encaja con tu perfil está arriba.",
+  "Je schets is bewaard op dit apparaat. Ga je naar de behandelingen, dan staat wat bij je profiel past bovenaan.":
+    "Tu esbozo está guardado en este dispositivo. Si vas a los tratamientos, lo que encaja con tu perfil está arriba.",
   "Opnieuw invullen": "Rellenar de nuevo",
   "Snel een afspraak maken": "Pedir cita rápido",
-  "Traject": "Programa",
+  Traject: "Programa",
   "n.v.t.": "n/a",
   "per maand": "al mes",
   "Gebaseerd op": "Basado en",
   "Alle reviews op Salonized ↗": "Todas las reseñas en Salonized ↗",
-  "Schuif": "Desliza",
+  Schuif: "Desliza",
   "opzij om alles te zien": "hacia un lado para verlo todo",
   "Bedoelde je dit": "¿Buscabas esto?",
   "Alle tarieven op één plek": "Todas las tarifas en un solo sitio",
@@ -11052,765 +11381,3286 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Elke prijs staat op de site": "Cada precio está en la web",
   "De behandeling zelf staat op": "El propio tratamiento está en",
   ". De behandeling zelf staat op": ". El propio tratamiento está en",
-  ". De twee behandelingen staan apart bij": ". Los dos tratamientos están por separado en",
+  ". De twee behandelingen staan apart bij":
+    ". Los dos tratamientos están por separado en",
   "Geldt er een leeftijdsgrens?": "¿Hay un límite de edad?",
   "Acnelittekens en grove poriën": "Cicatrices de acné y poros dilatados",
   "Maakt roodheid en rosacea rustiger": "Calma la rojez y la rosácea",
   "Geregistreerd, in allebei de vakken": "Con registro, en los dos oficios",
-  "Een nieuw product, eerst zelf bekeken": "Un producto nuevo, primero probado por nosotros",
-  "Elk traject begint met een huidanalyse": "Cada programa empieza con un análisis de la piel",
-  "Hoe het apparaat werkt staat op de pagina over de": "Cómo funciona el aparato está en la página sobre el",
-  "Doet hetzelfde: kanaaltjes maken zodat je huid zelf herstelt. Het verschil zit in het apparaat en niet in het principe, en welke van de twee past hangt af van je huid en de zone.": "Hace lo mismo: crear canales para que tu piel se repare por sí sola. La diferencia está en el aparato y no en el principio, y cuál de los dos encaja depende de tu piel y de la zona.",
-  "Een team dat elke dag met dezelfde huidklachten werkt, en apparatuur waar het in de praktijk mee is ingeregeld.": "Un equipo que trabaja cada día con los mismos problemas de piel, y aparatos ajustados con la práctica.",
-  "Je kunt thuis rustig vergelijken en beslissen, in plaats van aan de balie op het moment dat het het lastigst is.": "Puedes comparar y decidir con calma en casa, en lugar de en recepción en el momento en que más cuesta.",
-  "Je ziet zelf waar de adviezen vandaan komen, en bij een volgende afspraak leggen we de opnames naast elkaar.": "Ves tú de dónde salen los consejos, y en una cita siguiente ponemos las capturas una al lado de la otra.",
-  "Per sessie, per zone, per variant, inclusief de duurste. Je weet voordat je komt waar je aan toe bent.": "Por sesión, por zona, por variante, incluida la más cara. Sabes a qué atenerte antes de venir.",
-  "De behandelaar bekijkt je huid en meet met de EVE-M wat er onder de oppervlakte speelt: pigment, vocht, poriën en structuur. Daaruit volgt het behandelplan.": "La terapeuta mira tu piel y mide con el EVE-M lo que pasa bajo la superficie: pigmento, hidratación, poros y textura. De ahí sale el plan de tratamiento.",
-  "Diba Clinics is in 2017 begonnen als huidkliniek in Rotterdam. Onze huidtherapeuten en specialisten behandelen acne, pigment, littekens, huidverbetering en ongewenst haar.": "Diba Clinics empezó en 2017 como clínica de la piel en Róterdam. Nuestras terapeutas de la piel y especialistas tratan acné, pigmento, cicatrices, mejora de la piel y vello no deseado.",
-  "Onze huidtherapeuten zijn lid van de NVH en staan in het Kwaliteitsregister Paramedici. Onze schoonheidsspecialisten zijn aangesloten bij ANBOS en staan in het SKIN Register.": "Nuestras terapeutas de la piel son miembros de la NVH y figuran en el Registro de Calidad de Paramédicos. Nuestras esteticistas están afiliadas a ANBOS y figuran en el SKIN Register.",
-  "Open de vergoedingenzoeker en zoek op acnebehandeling; die staat los van camouflageles.": "Abre el buscador de reembolsos y busca tratamiento del acné; está separado de las clases de camuflaje.",
-  "Zoek de behandeling op in de vergoedingenvinder. Dat geeft je het overzicht per verzekering.": "Busca el tratamiento en el buscador de reembolsos. Eso te da el resumen por póliza.",
-  "Kies je aanvullende pakket. Daar staat wat je terugkrijgt en vanaf welk zorgprofiel dat geldt.": "Elige tu paquete complementario. Ahí pone lo que recuperas y desde qué perfil asistencial se aplica.",
-  "Open de pagina huidbehandelingen; VGZ zet acne, camouflagetherapie en ontharen daar bij elkaar.": "Abre la página de tratamientos de la piel; VGZ pone ahí juntos acné, terapia de camuflaje y depilación.",
-  "Tijdens de intake hoor je wat er in jouw geval onder de vergoeding valt, en wat je zelf betaalt.": "En la consulta previa oyes lo que en tu caso entra en el reembolso, y lo que pagas tú.",
-  "Veel aanvullende pakketten stellen die inschrijving als eis voordat ze een behandeling vergoeden.": "Muchos paquetes complementarios exigen esa inscripción antes de reembolsar un tratamiento.",
-  "ONVZ zet zijn vergoedingen per jaar en per pakket op een eigen pagina, met een lijst van A tot Z.": "ONVZ pone sus reembolsos por año y por paquete en una página propia, con una lista de la A a la Z.",
-  "Log in op Mijn CZ of gebruik de app; je eigen bedrag staat er pas als CZ weet welk pakket je hebt.": "Entra en Mijn CZ o usa la app; tu propio importe solo aparece cuando CZ sabe qué paquete tienes.",
-  "Kijk of jouw pakket erbij staat, want de hoogte hangt af van welke aanvullende verzekering je hebt.": "Mira si tu paquete aparece, porque la cuantía depende de qué seguro complementario tienes.",
-  "Kijk in de Zorgvinder of je behandelaar gecontracteerd is. Dat bepaalt of je zelf moet voorschieten.": "Mira en el Zorgvinder si tu terapeuta tiene contrato. Eso decide si tienes que adelantar el dinero.",
-  "a.s.r. heeft een vergoedingenvinder waarin je op behandeling zoekt, plus de polisvoorwaarden als pdf.": "a.s.r. tiene un buscador de reembolsos en el que buscas por tratamiento, más las condiciones de la póliza en pdf.",
-  "Let op dat tweede getal: het budget is gedeeld, dus wat je aan het een besteedt gaat van het ander af.": "Fíjate en esa segunda cifra: el presupuesto es compartido, así que lo que gastas en una cosa se descuenta de la otra.",
-  "Kijk of de zone waarvoor je komt het gezicht of de hals is; daarbuiten vergoedt DSW deze behandeling niet.": "Mira si la zona por la que vienes es la cara o el cuello; fuera de eso DSW no reembolsa este tratamiento.",
-  "Open de pagina over acnetherapie; camouflagetherapie en epilatie staan er los naast, met eigen voorwaarden.": "Abre la página sobre terapia del acné; la terapia de camuflaje y la depilación están aparte al lado, con condiciones propias.",
-  "Menzis werkt met vergoedingenwijzers: pdf-overzichten per jaar waarin per zorgsoort staat wat je pakket doet.": "Menzis trabaja con guías de reembolso: resúmenes en pdf por año en los que pone por tipo de atención lo que hace tu paquete.",
-  "Log in op Mijn Aevitae. Daar staat het bedrag dat bij jouw pakket hoort; op de algemene pagina staat het niet.": "Entra en Mijn Aevitae. Ahí está el importe que corresponde a tu paquete; en la página general no está.",
-  "Ga je via de aanvullende verzekering, houd dan rekening met een eigen bijdrage per behandeling naast het maximum.": "Si vas por el seguro complementario, cuenta con una aportación propia por tratamiento además del máximo.",
-  "Log in op Mijn VGZ met je DigiD. Daar staat wat er in jouw pakket zit en wat je er dit jaar al van gebruikt hebt.": "Entra en Mijn VGZ con tu DigiD. Ahí pone lo que hay en tu paquete y lo que ya has usado este año.",
-  "Ga naar de pagina acnebehandeling; camouflageproducten staan bij DSW op een aparte pagina met een eigen voorwaarde.": "Ve a la página de tratamiento del acné; en DSW los productos de camuflaje están en una página aparte con una condición propia.",
-  "Kies onderaan je eigen aanvullende verzekering. Zonder die keuze staat er geen bedrag, ook niet als je bent ingelogd.": "Elige abajo tu propio seguro complementario. Sin esa elección no aparece ningún importe, tampoco si has iniciado sesión.",
-  "Let op de leeftijdsgrens. Bij acnebehandeling loopt de vergoeding tot 21 jaar, met uitzondering van het hoogste pakket.": "Fíjate en el límite de edad. En el tratamiento del acné el reembolso llega hasta los 21 años, con excepción del paquete más alto.",
-  "Vraag ons om je zorgprofiel en onze AGB-code voordat je declareert. Staan die niet op de factuur, dan wijzen ze hem af.": "Pídenos tu perfil asistencial y nuestro código AGB antes de reclamar. Si no están en la factura, la rechazan.",
-  "Vraag er meteen bij of je budget gedeeld is met camouflage en ontharing, en hoeveel je er dit jaar al van gebruikt hebt.": "Pregunta a la vez si tu presupuesto es compartido con camuflaje y depilación, y cuánto has usado ya este año.",
-  "Ga daarna naar de polisvoorwaarden als pdf, want de voorwaarde over de beroepsvereniging staat daar en niet in de vinder.": "Después ve a las condiciones de la póliza en pdf, porque la condición sobre la asociación profesional está ahí y no en el buscador.",
-  "Weet je niet zeker of je behandelaar aan die eis voldoet, bel ons dan; wij weten bij welke vereniging we zijn aangesloten.": "Si tienes dudas de que tu terapeuta cumpla ese requisito, llámanos; nosotros sabemos a qué asociación estamos afiliados.",
-  "Staat er een voorwaarde bij over de behandelaar, bel ons dan even. Wij weten of we eraan voldoen en jij kunt dat niet zien.": "Si hay una condición sobre la terapeuta, llámanos. Nosotros sabemos si la cumplimos y tú no puedes verlo.",
-  "Vraag ons om de AGB-code en de beroepsvereniging van je behandelaar voordat je declareert. Dan hoeft de factuur niet terug.": "Pídenos el código AGB y la asociación profesional de tu terapeuta antes de reclamar. Así la factura no tiene que volver.",
-  "Zoek de behandeling op in de vergoedingenwijzer van het lopende jaar; Menzis werkt met pdf-overzichten per jaar en per pakket.": "Busca el tratamiento en la guía de reembolsos del año en curso; Menzis trabaja con resúmenes en pdf por año y por paquete.",
-  "Zoek de behandeling in de A-tot-Z-lijst van het jaar en het pakket dat jij hebt; ONVZ zet elke combinatie op een eigen pagina.": "Busca el tratamiento en la lista de la A a la Z del año y del paquete que tienes; ONVZ pone cada combinación en una página propia.",
-  "Bewaar het antwoord. Declareer je zonder die toestemming, dan volgt bijna zeker een afwijzing en achteraf regelen lukt zelden.": "Guarda la respuesta. Si reclamas sin ese permiso, casi seguro sigue un rechazo, y arreglarlo después rara vez funciona.",
-  "Nee. Aevitae schrijft dat er bij deze vergoeding uit de aanvullende verzekering geen eigen risico en geen eigen bijdrage geldt.": "No. Aevitae escribe que en este reembolso del seguro complementario no se aplica franquicia ni aportación propia.",
-  "Ga naar de pagina van jouw behandeling, dus acnebehandeling of gezichtsontharing, en niet naar de algemene pagina huidbehandelingen.": "Ve a la página de tu tratamiento, es decir, tratamiento del acné o depilación facial, y no a la página general de tratamientos de la piel.",
-  "Kijk of er een voorschrift van een huidarts nodig is. ONVZ koppelt de behandeling bij de huidtherapeut aan de behandeling bij de arts.": "Mira si hace falta una prescripción de un dermatólogo. ONVZ vincula el tratamiento con la terapeuta de la piel al tratamiento con el médico.",
-  "Zoek de pagina van jouw behandeling en controleer bovenaan het jaartal; oude jaargangen blijven online staan en zien er hetzelfde uit.": "Busca la página de tu tratamiento y comprueba arriba el año; las ediciones antiguas siguen online y tienen el mismo aspecto.",
-  "VGZ zet acne, ontharen en camouflagetherapie onder één noemer huidbehandelingen. Inloggen met DigiD laat zien wat er in jouw pakket zit.": "VGZ pone acné, depilación y terapia de camuflaje bajo un mismo epígrafe, tratamientos de la piel. Entrar con DigiD muestra lo que hay en tu paquete.",
-  "Diba Clinics heeft contracten met zorgverzekeraars. Of jouw behandeling vergoed wordt, hangt af van je klacht en van je aanvullende pakket.": "Diba Clinics tiene contratos con aseguradoras de salud. Si tu tratamiento se reembolsa depende de tu problema y de tu paquete complementario.",
-  "Een huidtherapeut die lid is van de Nederlandse Vereniging van Huidtherapeuten, of een schoonheidsspecialist met het diploma Beauty Care-B.": "Una terapeuta de la piel miembro de la Asociación Neerlandesa de Terapeutas de la Piel, o una esteticista con el diploma Beauty Care-B.",
-  "DSW vergoedt acnebehandeling alleen in het gezicht en de hals. Voor een andere zone is er geen vergoeding, ook niet met een aanvullend pakket.": "DSW reembolsa el tratamiento del acné solo en la cara y el cuello. Para otra zona no hay reembolso, tampoco con un paquete complementario.",
-  "Open de pagina gezichtsverzorging van het lopende jaar; Salland zet het jaartal in het adres, dus let op dat je niet in een oud overzicht kijkt.": "Abre la página de cuidado facial del año en curso; Salland pone el año en la dirección, así que fíjate en no estar mirando un resumen antiguo.",
-  "Regel de toestemming voor je eerste behandeling. Je mailt zelf een verzoek met foto's van gezicht en hals naar het adres dat op die pagina staat.": "Consigue el permiso antes de tu primer tratamiento. Envías tú por correo una solicitud con fotos de la cara y el cuello a la dirección que figura en esa página.",
-  "Zilveren Kruis heeft een aparte pagina per onderwerp en per jaartal. Let op dat je naar het huidige jaar kijkt; oude jaargangen blijven online staan.": "Zilveren Kruis tiene una página aparte por tema y por año. Fíjate en mirar el año actual; las ediciones antiguas siguen online.",
-  "Bij VGZ krijg je een budget per kalenderjaar dat je over acne, camouflage en ontharen samen verdeelt. Wat je aan het een besteedt, gaat van het ander af.": "En VGZ recibes un presupuesto por año natural que repartes entre acné, camuflaje y depilación. Lo que gastas en una cosa se descuenta de la otra.",
-  "Dat verschilt per verzekering. a.s.r. zet de maxima in een apart overzicht naast de vergoedingenvinder, dus kijk daar en niet alleen bij de behandeling zelf.": "Eso varía según la póliza. a.s.r. pone los máximos en un resumen aparte junto al buscador de reembolsos, así que mira ahí y no solo en el propio tratamiento.",
-  "Nee. DSW zet het er letterlijk bij: deze vergoeding telt niet mee voor je eigen risico, want dat hoort bij de basisverzekering en dit komt uit de aanvullende.": "No. DSW lo dice literalmente: este reembolso no cuenta para tu franquicia, porque esa corresponde al seguro básico y esto sale del complementario.",
-  "Ja. Zilveren Kruis hanteert één maximum voor acnebehandeling en epilatie samen. Doe je allebei, kijk dan hoeveel je dit jaar al van dat maximum hebt gebruikt.": "Sí. Zilveren Kruis aplica un solo máximo para el tratamiento del acné y la depilación juntos. Si haces los dos, mira cuánto de ese máximo has usado ya este año.",
-  "Nee. DSW schrijft dat je voor deze behandeling geen verwijzing en geen toestemming vooraf nodig hebt. De voorwaarde zit bij de behandelaar en niet bij je huisarts.": "No. DSW escribe que para este tratamiento no necesitas derivación ni permiso previo. La condición está en la terapeuta y no en tu médico de cabecera.",
-  "Bij Salland staat het onder gezichtsverzorging: acne, littekens, huidvlekken en overbeharing bij elkaar op één pagina. HollandZorg loopt onder dezelfde voorwaarden.": "En Salland está bajo cuidado facial: acné, cicatrices, manchas en la piel y exceso de vello, juntos en una sola página. HollandZorg va con las mismas condiciones.",
-  "CZ heeft per behandeling een eigen pagina: huidbehandelingen, acnebehandeling en gezichtsontharing staan los van elkaar. Je eigen bedrag zie je pas als je inlogt of de app gebruikt.": "CZ tiene una página propia por tratamiento: tratamientos de la piel, tratamiento del acné y depilación facial están separados. Tu propio importe lo ves solo al entrar o usar la app.",
-  "Een huidtherapeut mag alle zorg uit deze vergoeding leveren. Een schoonheidsspecialist alleen de acnebehandeling, en dan met kernlidmaatschap van ANBOS en de specialisatie acne erbij.": "Una terapeuta de la piel puede prestar toda la atención de este reembolso. Una esteticista solo el tratamiento del acné, y entonces con afiliación básica a ANBOS y la especialización en acné además.",
-  "Bij Zilveren Kruis geldt één maximum voor acnebehandeling en ontharing samen, en ze stellen eisen aan de registratie van de behandelaar. Vraag dus ook even of wij aan die eis voldoen.": "En Zilveren Kruis se aplica un solo máximo para el tratamiento del acné y la depilación juntos, y ponen requisitos al registro de la terapeuta. Así que pregunta también si nosotros cumplimos ese requisito.",
-  "Nee, je kunt zonder verwijzing naar een huidtherapeut, mits die voldoet aan de eisen van het Kwaliteitsregister Paramedici. Dat register is openbaar en je kunt er zelf op naam zoeken.": "No, puedes ir sin derivación a una terapeuta de la piel, siempre que cumpla los requisitos del Registro de Calidad de Paramédicos. Ese registro es público y puedes buscar en él por nombre.",
-  "Nee, een verwijzing van je huisarts vraagt Salland niet. Wat ze wel vragen is hun eigen toestemming vooraf, en dat is iets anders: die regel je bij de verzekeraar en niet bij de dokter.": "No, Salland no pide una derivación de tu médico de cabecera. Lo que sí piden es su propio permiso previo, y eso es otra cosa: lo consigues con la aseguradora y no con el médico.",
-  "Acnebehandeling en camouflage staan bij DSW op aparte pagina's met een eigen maximum. Kijk dus op de pagina van de behandeling waarvoor je komt, en ga niet af op wat je bij de andere las.": "El tratamiento del acné y el camuflaje están en DSW en páginas aparte con un máximo propio. Así que mira la página del tratamiento por el que vienes, y no te guíes por lo que leíste en la otra.",
-  "Bij a.s.r. staat de voorwaarde in de polisvoorwaarden en niet in de vergoedingenvinder. De vinder geeft je het bedrag; of je er recht op hebt hangt af van een eis die een pdf verderop staat.": "En a.s.r. la condición está en las condiciones de la póliza y no en el buscador de reembolsos. El buscador te da el importe; si tienes derecho a él depende de un requisito que está en un pdf más adelante.",
-  "Loopt het via de dermatoloog, dan verwijst je huisarts je door. Voor de huidtherapeut uit de aanvullende verzekering noemt VGZ die eis niet apart; controleer het in je eigen polisvoorwaarden.": "Si va por el dermatólogo, tu médico de cabecera te deriva. Para la terapeuta de la piel del seguro complementario VGZ no menciona ese requisito aparte; compruébalo en tus propias condiciones de póliza.",
-  "CZ noemt op de algemene pagina geen registratie-eis, maar de voorwaarde staat per behandeling in de polisvoorwaarden. Vraag er dus naar bij de behandeling die jij wil, en niet in het algemeen.": "CZ no menciona en la página general ningún requisito de registro, pero la condición está por tratamiento en las condiciones de la póliza. Así que pregunta por el tratamiento que quieres, y no en general.",
-  "VGZ noemt op de pagina over huidbehandelingen geen aparte registratie-eis voor de huidtherapeut. Wat er wel staat is dat een verwijzing van je huisarts nodig is als het via de dermatoloog loopt.": "VGZ no menciona en la página de tratamientos de la piel ningún requisito de registro aparte para la terapeuta de la piel. Lo que sí pone es que hace falta una derivación de tu médico de cabecera si va por el dermatólogo.",
-  "Een huidtherapeut die voldoet aan de eisen van het Kwaliteitsregister Paramedici. Een verwijzing is dan niet nodig. Behandelingen door een schoonheidsspecialist vergoeden ze sinds 2026 niet meer.": "Una terapeuta de la piel que cumple los requisitos del Registro de Calidad de Paramédicos. Entonces no hace falta derivación. Los tratamientos por una esteticista ya no los reembolsan desde 2026.",
-  "Omdat elke behandeling een eigen pagina en een eigen voorwaarde heeft, kan het antwoord voor acne anders zijn dan voor ontharing. Kijk dus op de pagina van jouw behandeling en niet op de algemene.": "Como cada tratamiento tiene su propia página y su propia condición, la respuesta para el acné puede ser distinta de la de la depilación. Así que mira la página de tu tratamiento y no la general.",
-  "Om vooraf te beoordelen of het om zorg gaat en niet om verzorging. Dat oordeel vormen ze voordat je begint, en daarom werkt achteraf declareren hier slechter dan bij de meeste andere verzekeraars.": "Para valorar de antemano si se trata de atención sanitaria y no de cuidado estético. Ese juicio lo forman antes de que empieces, y por eso reclamar después funciona aquí peor que en la mayoría de las otras aseguradoras.",
-  "ONVZ koppelt de behandeling bij de huidtherapeut aan de arts: de huidarts schrijft haar voor, en je blijft zo nodig ook daar onder behandeling. De basisverzekering vergoedt de huidtherapeut zelf niet.": "ONVZ vincula el tratamiento con la terapeuta de la piel al médico: el dermatólogo lo prescribe, y si hace falta sigues también en tratamiento allí. El seguro básico no reembolsa a la propia terapeuta de la piel.",
-  "Bij een deel van de pakketten wel: huidbehandelingen, camouflagetherapie en ontharing komen dan uit één budget. Vraag daarom niet alleen wat je krijgt, maar ook wat je er dit jaar al van hebt gebruikt.": "En una parte de los paquetes sí: los tratamientos de la piel, la terapia de camuflaje y la depilación salen entonces de un mismo presupuesto. Por eso pregunta no solo lo que recibes, sino también cuánto has usado ya este año.",
-  "Dat staat in de polisvoorwaarden en niet in de vergoedingenvinder, net als de eis over de beroepsvereniging. Vraag er bij het bellen expliciet naar; de vinder geeft je het bedrag en niet de voorwaarde.": "Eso está en las condiciones de la póliza y no en el buscador de reembolsos, igual que el requisito sobre la asociación profesional. Pregúntalo explícitamente al llamar; el buscador te da el importe y no la condición.",
-  "Ja. Het maximum uit de aanvullende verzekering geldt voor acnebehandeling en camouflagetherapie samen, producten inbegrepen. Reken er ook op dat er per behandeling een eigen bijdrage geldt naast dat maximum.": "Sí. El máximo del seguro complementario se aplica al tratamiento del acné y la terapia de camuflaje juntos, productos incluidos. Cuenta también con una aportación propia por tratamiento además de ese máximo.",
-  "Nee. Aevitae vraagt voor deze vergoeding geen verwijzing. De voorwaarde zit bij de behandelaar: een huidtherapeut die lid is van de beroepsvereniging, of een schoonheidsspecialist met het diploma Beauty Care-B.": "No. Aevitae no pide derivación para este reembolso. La condición está en la terapeuta: una terapeuta de la piel miembro de la asociación profesional, o una esteticista con el diploma Beauty Care-B.",
-  "Aevitae voert de verzekering uit voor EUCARE; op je pas staat vaak die tweede naam. Acnetherapie heeft er een eigen pagina, en wat jij terugkrijgt staat in Mijn Aevitae, want dat verschilt per aanvullend pakket.": "Aevitae gestiona el seguro para EUCARE; en tu tarjeta a menudo aparece ese segundo nombre. La terapia del acné tiene ahí una página propia, y lo que recuperas está en Mijn Aevitae, porque varía según el paquete complementario.",
-  "De behandelaar moet een huidtherapeut zijn die is aangesloten bij de Nederlandse Vereniging van Huidtherapeuten, met een eigen AGB-code in het register van Vektis. Een schoonheidsspecialist voldoet daar niet aan.": "La terapeuta tiene que ser una terapeuta de la piel afiliada a la Asociación Neerlandesa de Terapeutas de la Piel, con un código AGB propio en el registro de Vektis. Una esteticista no cumple eso.",
-  "Ja, en dat is bij ONVZ de voorwaarde die het vaakst in de weg zit. Bij acnebehandeling loopt de vergoeding tot 21 jaar; alleen het hoogste pakket vergoedt ook daarna. Controleer dit voordat je een traject inplant.": "Sí, y en ONVZ esa es la condición que más a menudo se interpone. En el tratamiento del acné el reembolso llega hasta los 21 años; solo el paquete más alto reembolsa también después. Compruébalo antes de programar un programa.",
-  "CZ zet acne, camouflagetherapie en gezichtsontharing elk op een eigen pagina met een eigen voorwaarde. Vraag daarom per behandeling na wat er nog over is; het antwoord voor acne hoeft niet te gelden voor ontharing.": "CZ pone acné, terapia de camuflaje y depilación facial cada uno en una página propia con una condición propia. Por eso pregunta por tratamiento lo que queda; la respuesta para el acné no tiene por qué valer para la depilación.",
-  "Bij Menzis draait het om het contract. Ga je naar een huidtherapeut die zij niet erkennen, dan schiet je zelf voor en krijg je hooguit een deel terug. Kijk dus eerst in hun Zorgvinder en pas daarna naar het bedrag.": "En Menzis todo gira en torno al contrato. Si vas a una terapeuta de la piel que ellos no reconocen, adelantas el dinero tú y recuperas como mucho una parte. Así que mira primero en su Zorgvinder y solo después el importe.",
-  "Zorg en Zekerheid heeft een vergoedingenzoeker. Typ daar acnebehandeling en kies je pakket. Wat je terugkrijgt hangt bij hen niet alleen van je pakket af, maar ook van het zorgprofiel dat de huidtherapeut vaststelt.": "Zorg en Zekerheid tiene un buscador de reembolsos. Escribe ahí tratamiento del acné y elige tu paquete. Lo que recuperas depende en su caso no solo de tu paquete, sino también del perfil asistencial que determina la terapeuta de la piel.",
-  "Een indeling van 0 tot 4 die zegt hoe uitgebreid de acne is. De huidtherapeut stelt hem vast bij de eerste afspraak. Sinds 2026 vergoedt Zorg en Zekerheid pas vanaf profiel 2, dus dit bepaalt of je iets terugkrijgt.": "Una clasificación de 0 a 4 que dice lo extenso que es el acné. La terapeuta de la piel lo determina en la primera cita. Desde 2026 Zorg en Zekerheid solo reembolsa a partir del perfil 2, así que esto decide si recuperas algo.",
-  "a.s.r. koppelt het recht op vergoeding aan de beroepsvereniging: de behandelaar moet aangesloten zijn bij een vereniging die zij erkennen. Welke dat zijn staat in de polisvoorwaarden en niet in de vergoedingenvinder.": "a.s.r. vincula el derecho al reembolso a la asociación profesional: la terapeuta tiene que estar afiliada a una asociación que ellos reconozcan. Cuáles son está en las condiciones de la póliza y no en el buscador de reembolsos.",
-  "DSW zet acnebehandeling en camouflage op twee losse pagina's. Je kiest daar je aanvullende verzekering, en pas dan verschijnt het bedrag dat bij jouw pakket hoort. Stad Holland en inTwente lopen via dezelfde pagina's.": "DSW pone el tratamiento del acné y el camuflaje en dos páginas separadas. Ahí eliges tu seguro complementario, y solo entonces aparece el importe que corresponde a tu paquete. Stad Holland e inTwente van por las mismas páginas.",
-  "Dat hangt af van waar het uit komt. Uit de basisverzekering wil Menzis een schriftelijke verwijzing van je huisarts of een medisch specialist. Komt het uit je aanvullende verzekering, dan is die verwijzing niet nodig.": "Depende de dónde sale. Del seguro básico Menzis quiere una derivación por escrito de tu médico de cabecera o de un especialista. Si sale de tu seguro complementario, esa derivación no hace falta.",
-  "Menzis werkt met contracten. Je gaat naar een huidtherapeut die zij erkennen, en welke dat zijn staat in hun Zorgvinder. Bij een gecontracteerde behandelaar gaat de rekening rechtstreeks naar Menzis in plaats van naar jou.": "Menzis trabaja con contratos. Vas a una terapeuta de la piel que ellos reconocen, y cuáles son está en su Zorgvinder. Con una terapeuta con contrato la factura va directamente a Menzis en lugar de a ti.",
-  "Ja. VGZ zet acne, camouflagetherapie en ontharen onder één noemer huidbehandelingen met één budget per kalenderjaar. Wat je aan het een besteedt gaat van het ander af, dus vraag ook wat je er dit jaar al van gebruikt hebt.": "Sí. VGZ pone acné, terapia de camuflaje y depilación bajo un mismo epígrafe, tratamientos de la piel, con un presupuesto por año natural. Lo que gastas en una cosa se descuenta de la otra, así que pregunta también cuánto has usado ya este año.",
-  "ONVZ hanteert bij acnebehandeling een leeftijdsgrens, en de basisverzekering vergoedt de huidtherapeut niet. Ben je ouder dan die grens, controleer dan eerst of jouw pakket een uitzondering kent voordat je een traject inplant.": "ONVZ aplica un límite de edad al tratamiento del acné, y el seguro básico no reembolsa a la terapeuta de la piel. Si superas ese límite, comprueba primero si tu paquete tiene una excepción antes de programar un programa.",
-  "Vanaf 1 januari 2026 wil ONVZ dat de huidtherapeut in het Kwaliteitsregister Paramedici staat. Voor dit jaar accepteren ze daarnaast nog een inschrijving bij de NVH, om behandelaars de tijd te geven die registratie rond te krijgen.": "Desde el 1 de enero de 2026 ONVZ quiere que la terapeuta de la piel figure en el Registro de Calidad de Paramédicos. Para este año aceptan además todavía una inscripción en la NVH, para dar tiempo a las terapeutas a completar ese registro.",
-  "Op de recente pagina's van Zilveren Kruis staat dat je rechtstreeks naar een zorgverlener kunt. Oudere jaargangen noemden nog een verwijzing van de huisarts of specialist, dus controleer het jaartal bovenaan de pagina die je leest.": "En las páginas recientes de Zilveren Kruis pone que puedes ir directamente a un profesional sanitario. Las ediciones antiguas todavía mencionaban una derivación del médico de cabecera o del especialista, así que comprueba el año arriba de la página que lees.",
-  "Bij een deel van de pakketten is er één budget voor huidbehandelingen samen, inclusief camouflagetherapie en ontharing. Wat je aan het een besteedt gaat van het ander af, dus vraag er ook bij wat je er dit jaar al van gebruikt hebt.": "En una parte de los paquetes hay un solo presupuesto para los tratamientos de la piel en conjunto, incluidas la terapia de camuflaje y la depilación. Lo que gastas en una cosa se descuenta de la otra, así que pregunta también cuánto has usado ya este año.",
-  "Voor een behandeling bij de dermatoloog wel, en die loopt dan via de basisverzekering met eigen risico. Voor de huidtherapeut noemt CZ geen verwijzing op de algemene pagina; kijk op de pagina van jouw behandeling, want daar staan de voorwaarden.": "Para un tratamiento con el dermatólogo sí, y ese va entonces por el seguro básico con franquicia. Para la terapeuta de la piel CZ no menciona derivación en la página general; mira la página de tu tratamiento, porque ahí están las condiciones.",
-  "Sinds 2026 vergoedt Zorg en Zekerheid acnebehandeling pas vanaf zorgprofiel 2, en alleen als een huidtherapeut de behandeling doet. Dat profiel loopt van 0 tot 4 en wordt door de huidtherapeut zelf bepaald; het moet samen met de AGB-code op de factuur staan.": "Desde 2026 Zorg en Zekerheid reembolsa el tratamiento del acné solo a partir del perfil asistencial 2, y solo si lo hace una terapeuta de la piel. Ese perfil va de 0 a 4 y lo determina la propia terapeuta de la piel; tiene que figurar en la factura junto con el código AGB.",
-  "Salland wil vooraf schriftelijk toestemming geven, dus voordat de behandeling begint, en vraagt daarbij foto's van je gezicht en hals. Dat verzoek mail je zelf naar hun toestemmingsadres. Begin je zonder die toestemming, dan is het achteraf moeilijk recht te zetten.": "Salland quiere dar el permiso por escrito de antemano, es decir, antes de que empiece el tratamiento, y pide para ello fotos de tu cara y tu cuello. Esa solicitud la envías tú por correo a su dirección de permisos. Si empiezas sin ese permiso, después es difícil de arreglar.",
-  "Zilveren Kruis stelt de scherpste eis van deze zes. De huidtherapeut moet kwaliteitsgeregistreerd staan in het Kwaliteitsregister Paramedici én een geldige persoonlijke AGB-code hebben, en die code en de beroepsvereniging moeten op de factuur staan. Ontbreekt dat, dan wijzen ze af op de factuur en niet op de behandeling.": "Zilveren Kruis pone el requisito más estricto de estas seis. La terapeuta de la piel tiene que estar registrada en el Registro de Calidad de Paramédicos y tener un código AGB personal válido, y ese código y la asociación profesional tienen que figurar en la factura. Si falta, rechazan por la factura y no por el tratamiento.",
-  "De kliniek werkt met peelings van Skin Tech Pharma, Dermaceutic, ADO en Mesoestetic, in drie niveaus. Welke er gekozen wordt hangt af van hoe je huid er op dat moment voor staat. De inwerktijd wordt daarop afgemeten: te lang is niet beter maar schadelijker.": "La clínica trabaja con peelings de Skin Tech Pharma, Dermaceutic, ADO y Mesoestetic, en tres niveles. Cuál se elige depende de cómo está tu piel en ese momento. El tiempo de actuación se mide según eso: más tiempo no es mejor sino más dañino.",
-  "LED werkt anders dan een laser of IPL. Die verwarmen een doelwit in de huid, pigment of een vaatje of water, en het resultaat komt uit het herstel dat daarop volgt. LED verwarmt niets: het licht wordt door de huid opgenomen en doet zijn werk in de cel zelf.": "El LED funciona de otra manera que un láser o la IPL. Esos calientan un objetivo en la piel, pigmento o un vaso o agua, y el resultado sale de la reparación que sigue. El LED no calienta nada: la luz la absorbe la piel y hace su trabajo en la propia célula.",
-  "Welke band er uit komt hangt af van de applicator. De fabrikant levert er meerdere, van 530 tot 750 nanometer voor pigment tot 645 tot 950 nanometer voor haargroei. Elke band is gekozen rond wat hij moet raken: hemoglobine in een vaatje, melanine in een vlek.": "Qué banda sale depende del aplicador. El fabricante suministra varios, desde 530 a 750 nanómetros para pigmento hasta 645 a 950 nanómetros para el vello. Cada banda está elegida en torno a lo que tiene que alcanzar: hemoglobina en un vaso, melanina en una mancha.",
-  "De TimeWalker draagt twee lasers in één kast. Een Er:YAG op 2940 nanometer, die vrijwel volledig door water wordt opgenomen en daardoor aan de oppervlakte blijft. En een Nd:YAG op 1064 nanometer, die veel minder door water wordt tegengehouden en dus dieper komt.": "El TimeWalker lleva dos láseres en una sola máquina. Un Er:YAG a 2940 nanómetros, que el agua absorbe casi por completo y que por eso se queda en la superficie. Y un Nd:YAG a 1064 nanómetros, que el agua frena mucho menos y que por tanto llega más hondo.",
-  "De pulsduur is instelbaar van een kwart milliseconde tot honderd milliseconden, en de spotgrootte van 6 tot 18 millimeter. Dat zijn de twee knoppen die ertoe doen: een dikke, donkere haar vraagt iets anders dan een fijne, en een grote spot komt dieper dan een kleine.": "La duración del pulso se ajusta desde un cuarto de milisegundo hasta cien milisegundos, y el tamaño del spot de 6 a 18 milímetros. Esos son los dos mandos que importan: un pelo grueso y oscuro pide otra cosa que uno fino, y un spot grande llega más hondo que uno pequeño.",
-  "Fruitzuren blijven in de hoornlaag en spoelen er na een paar minuten weer af. Salicylzuur lost op in vet en komt daardoor de porie in, waar water-oplosbare zuren niet komen. Sterkere mengsels gaan tot in de opperhuid en soms daaronder, en die vragen voorbereiding en hersteltijd.": "Los ácidos de frutas se quedan en la capa córnea y se aclaran a los pocos minutos. El ácido salicílico se disuelve en la grasa y por eso entra en el poro, adonde los ácidos solubles en agua no llegan. Las mezclas más fuertes llegan hasta la epidermis y a veces por debajo, y esas piden preparación y tiempo de recuperación.",
-  "De Gentle-serie van Candela werkt met een alexandrietlaser op 755 nanometer. Die golflengte wordt sterk opgenomen door melanine, het pigment dat een haar zijn kleur geeft. Daardoor loopt de energie langs de haarschacht naar de wortel en blijft de huid eromheen relatief onberoerd.": "La serie Gentle de Candela trabaja con un láser de alejandrita a 755 nanómetros. Esa longitud de onda la absorbe con fuerza la melanina, el pigmento que da su color a un pelo. Así la energía baja por el tallo del pelo hasta la raíz y la piel de alrededor queda relativamente intacta.",
-  "Dode huidcellen en donshaartjes worden verwijderd met een chirurgisch mesje onder een hoek van 45 graden. Er komen geen zuren aan te pas, waardoor het ook kan bij een gevoelige, droge of allergische huid en tijdens de zwangerschap. Het is pijnloos en het resultaat is meteen zichtbaar.": "Las células muertas y el vello fino se retiran con una cuchilla quirúrgica en un ángulo de 45 grados. No intervienen ácidos, con lo que también se puede en una piel sensible, seca o alérgica y durante el embarazo. No duele y el resultado se ve al momento.",
-  "De alexandriet op 755 nanometer wordt sterk opgenomen door het pigment in een haar, en dat maakt hem gericht op de haarwortel. De Nordlys werkt met een band in plaats van één golflengte en is daardoor breder maar minder precies op haar. Welke je krijgt hangt af van je huidtype en de zone.": "La alejandrita a 755 nanómetros la absorbe con fuerza el pigmento de un pelo, y eso la hace precisa sobre la raíz. El Nordlys trabaja con una banda en lugar de una sola longitud de onda y por eso es más amplio pero menos preciso sobre el pelo. Cuál te toca depende de tu fototipo y de la zona.",
-  "Het LED-systeem van Skin Complete waar wij mee werken. Het licht wordt door de huid opgenomen en ondersteunt daar het herstel; de behandelaar kiest de golflengte en de tijd op basis van de huidanalyse. Meestal aansluitend op een andere behandeling, en bij roodheid of rosacea ook als losse reeks.": "El sistema LED de Skin Complete con el que trabajamos. La luz la absorbe la piel y ahí apoya la reparación; la terapeuta elige la longitud de onda y el tiempo a partir del análisis de la piel. Normalmente a continuación de otro tratamiento, y en rojez o rosácea también como serie suelta.",
-  "Bij mesotherapie worden werkzame stoffen direct in de huid gebracht. De U225 doet dat automatisch en regelmatig; de naald zit los van de spuit gemonteerd, wat de precisie van de toediening verbetert. Er zijn verschillende skinboosters, ook een depigmentatiebooster voor gezicht, hals en décolleté.": "En la mesoterapia los principios activos se llevan directamente dentro de la piel. El U225 lo hace de forma automática y uniforme; la aguja va montada separada de la jeringa, lo que mejora la precisión de la aplicación. Hay distintos skinboosters, también un booster despigmentante para cara, cuello y escote.",
-  "De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het blote oog niet altijd te zien is: beginnende pigmentatie, vochttekort, poriestructuur en tekenen van huidveroudering. Verschillende huidlagen worden geanalyseerd, en door de meting te herhalen wordt voortgang objectief zichtbaar.": "El EVE-M registra el estado de tu piel y hace visible lo que a simple vista no siempre se ve: pigmentación incipiente, falta de hidratación, estructura de los poros y signos de envejecimiento de la piel. Se analizan distintas capas de la piel, y al repetir la medición el progreso se hace visible de forma objetiva.",
-  "Het handstuk beweegt een capsule met een gel over de huid. Die twee reageren met elkaar en er ontstaan kleine CO2-belletjes op de huid. De huid reageert daarop door meer zuurstofrijk bloed naar de plek te sturen, terwijl de capsule de buitenste laag losmaakt en de stoffen uit de gel inbrengt. Het blijft aan de oppervlakte.": "La pieza de mano mueve una cápsula con un gel por la piel. Los dos reaccionan entre sí y se forman pequeñas burbujas de CO2 en la piel. La piel reacciona enviando más sangre rica en oxígeno a la zona, mientras la cápsula suelta la capa más externa y aporta las sustancias del gel. Se queda en la superficie.",
-  "Het bijzondere zit in de manier waarop Fotona de Er:YAG aanstuurt. In SMOOTH-modus komt de energie in een reeks trage pulsen in plaats van één harde, waardoor het weefsel opwarmt zonder dat de opperhuid wordt weggenomen. Dat is het verschil tussen verdampen en verwarmen, en het is de reden dat er bij deze modus geen open huid ontstaat.": "Lo especial está en la forma en que Fotona maneja el Er:YAG. En el modo SMOOTH la energía llega en una serie de pulsos lentos en lugar de uno solo fuerte, con lo que el tejido se calienta sin que se retire la epidermis. Esa es la diferencia entre vaporizar y calentar, y es la razón de que en este modo no quede piel abierta.",
-  "De Nordlys van Candela is geen laser maar IPL: intens gepulst licht. Een laser zendt één golflengte uit, IPL een band. Candela noemt zijn variant Selective Waveband Technology: twee filters knippen boven- en onderkant van het spectrum weg, zodat er een smallere band overblijft dan bij gewone IPL, met pulsen korter dan een milliseconde.": "El Nordlys de Candela no es un láser sino IPL: luz pulsada intensa. Un láser emite una sola longitud de onda, la IPL una banda. Candela llama a su variante Selective Waveband Technology: dos filtros recortan la parte alta y la baja del espectro, de modo que queda una banda más estrecha que en la IPL normal, con pulsos de menos de un milisegundo.",
-  "Wat dit apparaat onderscheidt is de koeling. Candela spuit met de Dynamic Cooling Device een stoot cryogeen op de huid, milliseconden voor en na de puls. De opperhuid koelt daardoor terug terwijl de haarwortel de warmte vasthoudt. Dat is de reden dat er met deze laser hogere energie mogelijk is dan zonder die koeling verantwoord zou zijn.": "Lo que distingue a este aparato es la refrigeración. Con el Dynamic Cooling Device, Candela lanza un chorro de criógeno sobre la piel, milisegundos antes y después del pulso. Así la epidermis vuelve a enfriarse mientras la raíz del pelo retiene el calor. Por eso con este láser es posible más energía de la que sería responsable sin esa refrigeración.",
-  "Het werkzame deel is het mondstuk, niet de kast. In de tip zit een spiraalvormig kanaal waar tegelijk onderdruk op staat en vloeistof doorheen loopt. Die twee samen maken een wervelende beweging over de huid: losgemaakte cellen en poriëninhoud gaan mee naar buiten, door een zijkanaal naar een opvangbak, terwijl er via hetzelfde kanaal serum naar binnen gaat.": "La parte que trabaja es la punta, no la máquina. En la punta hay un canal en espiral sobre el que a la vez hay succión y pasa líquido. Esos dos juntos crean un movimiento en remolino sobre la piel: las células soltadas y el contenido de los poros salen hacia fuera, por un canal lateral a un depósito, mientras por el mismo canal entra sérum.",
-  "De kleuren die in de vakliteratuur het meest onderzocht zijn liggen rond 415 nanometer (blauw), 633 nanometer (rood) en 830 nanometer (nabij-infrarood). Blauw blijft in de bovenste lagen en wordt ingezet bij onzuiverheden. Rood komt tot in de lederhuid, waar het bindweefsel zit. Nabij-infrarood komt het verst, omdat die golflengte het minst door de huid wordt tegengehouden.": "Los colores más estudiados en la literatura especializada están en torno a 415 nanómetros (azul), 633 nanómetros (rojo) y 830 nanómetros (infrarrojo cercano). El azul se queda en las capas superiores y se usa para impurezas. El rojo llega hasta la dermis, donde está el tejido conjuntivo. El infrarrojo cercano es el que más lejos llega, porque esa longitud de onda es la que menos frena la piel.",
-  "Bij welke registers wij horen en hoe je dat nakijkt staat op [kwaliteit en registraties](/kwaliteit-en-registraties). Wie hier werkt en met welke titel staat bij [het team](/team).": "A qué registros pertenecemos y cómo comprobarlo está en [calidad y registros](/kwaliteit-en-registraties). Quién trabaja aquí y con qué título está en [el equipo](/team).",
-  "De [SkinPen](/apparatuur/skinpen-cit) heeft veertien naalden en werkt iets bedaarder. De [Dermapen 4](/apparatuur/dermapen-4) haalt tot 1920 prikken per seconde en werkt een vlak daardoor sneller af, met voorgeprogrammeerde standen, waaronder een instelling voor littekens op de maximale diepte. De diepte is bij allebei in te stellen van 0,25 tot 3 millimeter.": "El [SkinPen](/apparatuur/skinpen-cit) tiene catorce agujas y trabaja algo más pausado. El [Dermapen 4](/apparatuur/dermapen-4) alcanza hasta 1920 pinchazos por segundo y por eso cubre una zona más rápido, con modos preprogramados, entre ellos un ajuste para cicatrices a la máxima profundidad. En los dos la profundidad se ajusta de 0,25 a 3 milímetros.",
-  "De behandeling zelf staat op [de behandelpagina](/behandelingen/fotona-4d), en welke behandelingen er nog meer op dit apparaat draaien bij [de Fotona TimeWalker](/behandelingen/fotona). Wat een kuur aan tijd vraagt staat bij [het aantal sessies](/kennisbank/hoeveel-sessies).": "El propio tratamiento está en [la página del tratamiento](/behandelingen/fotona-4d), y qué otros tratamientos se hacen en este aparato en [el Fotona TimeWalker](/behandelingen/fotona). Lo que una cura pide en tiempo está en [el número de sesiones](/kennisbank/hoeveel-sessies).",
-  "Er is ook een volledig pakket, [Fotona 4D Full Package](/behandelingen/fotona-4d-full), waarin de hals en de kaaklijn meegaan. Daar valt verslapping vaak het eerst op, terwijl het gezicht er nog strak uitziet. En er is [Fotona 4D Men](/behandelingen/fotona-4d-men), met instellingen voor de doorgaans dikkere mannenhuid.": "También hay un paquete completo, [Fotona 4D Full Package](/behandelingen/fotona-4d-full), en el que se incluyen el cuello y la línea de la mandíbula. Ahí la flacidez suele notarse primero, mientras la cara todavía se ve tersa. Y está [Fotona 4D Men](/behandelingen/fotona-4d-men), con configuración para la piel masculina, normalmente más gruesa.",
-  "Heeft je haar wel kleur, dan is [laserontharing](/laserontharing) sneller en voordeliger. Bij haargroei door PCOS staat meer op [de pagina over PCOS](/pcos). De behandeling zelf staat op [de behandelpagina](/behandelingen/elektrische-epilatie).": "Si tu pelo sí tiene color, la [depilación láser](/laserontharing) es más rápida y más económica. Sobre el vello por SOP hay más en [la página sobre el SOP](/pcos). El propio tratamiento está en [la página del tratamiento](/behandelingen/elektrische-epilatie).",
-  "Het aantal per behandeling staat ook op de behandelpagina zelf, bij [alle behandelingen](/behandelingen). Hoe een eerste afspraak verloopt staat bij [het huidconsult](/intake).": "El número por tratamiento está también en la propia página del tratamiento, en [todos los tratamientos](/behandelingen). Cómo va una primera cita está en [la consulta de la piel](/intake).",
-  "Het begint van binnenuit met [SmoothLiftin](/behandelingen/smoothliftin): een handstuk tegen de binnenkant van je wang, dat het weefsel verwarmt waar je van buitenaf niet bij komt. Daarna werkt [FRAC3](/behandelingen/frac3) op diepte op onregelmatigheden, en verwarmt [PIANO](/behandelingen/piano) het weefsel vlak en gelijkmatig. [SupErficial](/behandelingen/superficial-peel) sluit af met een lichte laserpeeling van de bovenste laag.": "Empieza desde dentro con [SmoothLiftin](/behandelingen/smoothliftin): una pieza de mano contra la parte interior de tu mejilla, que calienta el tejido adonde no se llega desde fuera. Después [FRAC3](/behandelingen/frac3) trabaja en profundidad sobre las irregularidades, y [PIANO](/behandelingen/piano) calienta el tejido de forma plana y uniforme. [SupErficial](/behandelingen/superficial-peel) termina con un peeling láser suave de la capa superior.",
-  "Hoe de injector werkt staat bij de [U225](/apparatuur/u225). De behandeling zelf staat op [de behandelpagina](/behandelingen/skinboosters), en de booster voor de ogen bij [RRS Eyes](/behandelingen/rrs-eyes).": "Cómo funciona el inyector está en el [U225](/apparatuur/u225). El propio tratamiento está en [la página del tratamiento](/behandelingen/skinboosters), y el booster para los ojos en [RRS Eyes](/behandelingen/rrs-eyes).",
-  "Hoe het apparaat werkt staat bij de [OxyGeneo van Pollogen](/apparatuur/oxygeneo). De behandeling zelf staat op [de behandelpagina](/behandelingen/oxygeneo).": "Cómo funciona el aparato está en el [OxyGeneo de Pollogen](/apparatuur/oxygeneo). El propio tratamiento está en [la página del tratamiento](/behandelingen/oxygeneo).",
-  "Hoe het apparaat werkt staat op de pagina over de [EVE-M](/apparatuur/eve-m). Wat er in de rest van de intake gebeurt, staat bij [het huidconsult](/intake).": "Cómo funciona el aparato está en la página sobre el [EVE-M](/apparatuur/eve-m). Lo que pasa en el resto de la consulta previa está en [la consulta de la piel](/intake).",
-  "Hoe het mesje en de hoek precies werken staat bij de [Dermaplane Pro](/apparatuur/dermaplane-pro). De behandeling zelf, los van de plaats, staat op [de behandelpagina](/behandelingen/dermaplaning).": "Cómo funcionan exactamente la cuchilla y el ángulo está en el [Dermaplane Pro](/apparatuur/dermaplane-pro). El propio tratamiento, al margen del lugar, está en [la página del tratamiento](/behandelingen/dermaplaning).",
-  "Hoe het mondstuk precies is opgebouwd en waarom de tips verschillen, staat op de pagina over de [HydraFacial Syndeo](/apparatuur/hydrafacial-syndeo). De behandeling zelf, los van de plaats, staat op [de behandelpagina](/behandelingen/hydrafacial). Of een gezichtsbehandeling tijdens een zwangerschap kan, staat bij [zwanger of borstvoeding](/kennisbank/zwanger-of-borstvoeding).": "Cómo está construida exactamente la punta y por qué las puntas difieren está en la página sobre el [HydraFacial Syndeo](/apparatuur/hydrafacial-syndeo). El propio tratamiento, al margen del lugar, está en [la página del tratamiento](/behandelingen/hydrafacial). Si un tratamiento facial se puede hacer durante el embarazo está en [embarazo o lactancia](/kennisbank/zwanger-of-borstvoeding).",
-  "Huidtherapie zit niet in de basisverzekering, maar bij de meeste verzekeraars wel in het aanvullende pakket. Dan moet er een medische reden zijn, en vaak een verwijzing van je huisarts vóór de eerste behandeling. Hoe dat per stap zit, staat op [de pagina over vergoedingen](/vergoedingen).": "La terapia de la piel no está en el seguro básico, pero en la mayoría de las aseguradoras sí en el paquete complementario. Entonces tiene que haber una razón médica, y a menudo una derivación de tu médico de cabecera antes del primer tratamiento. Cómo va eso paso a paso está en [la página sobre reembolsos](/vergoedingen).",
-  "Per klacht staat het apart uitgewerkt: IPL bij [zonnevlekken](/behandelingen/nordlys-pigment/zonnevlekken), bij [couperose](/behandelingen/nordlys-roodheid/couperose) en bij [rosacea](/behandelingen/nordlys-roodheid/rosacea). Begin je liever bij de klacht, kijk dan bij [pigmentvlekken](/huidproblemen/pigmentvlekken). Welke rol je huidtype hierbij speelt staat bij [het Fitzpatrick-huidtype](/kennisbank/fitzpatrick-huidtype).": "Por problema está desarrollado aparte: IPL para [manchas solares](/behandelingen/nordlys-pigment/zonnevlekken), para [cuperosis](/behandelingen/nordlys-roodheid/couperose) y para [rosácea](/behandelingen/nordlys-roodheid/rosacea). Si prefieres empezar por el problema, mira en [manchas de pigmento](/huidproblemen/pigmentvlekken). Qué papel juega aquí tu fototipo está en [el fototipo de Fitzpatrick](/kennisbank/fitzpatrick-huidtype).",
-  "Per klacht staat het apart uitgewerkt: een peeling bij [acne](/behandelingen/peelings/acne), bij [pigmentvlekken](/behandelingen/peelings/pigment) en voor [huidverjonging](/behandelingen/peelings/huidverjonging). Wat de zon rond een peeling doet staat bij [zon en je huid](/kennisbank/zon-en-je-huid), en wat er tijdens een zwangerschap kan bij [zwanger of borstvoeding](/kennisbank/zwanger-of-borstvoeding).": "Por problema está desarrollado aparte: un peeling para el [acné](/behandelingen/peelings/acne), para [manchas de pigmento](/behandelingen/peelings/pigment) y para [rejuvenecer la piel](/behandelingen/peelings/huidverjonging). Lo que hace el sol en torno a un peeling está en [el sol y tu piel](/kennisbank/zon-en-je-huid), y lo que se puede hacer durante el embarazo en [embarazo o lactancia](/kennisbank/zwanger-of-borstvoeding).",
-  "Voor een huid met ontstoken acne is een zuur soms te veel. Daarvoor is er de [kruidenpeel van ADO](/behandelingen/kruidenpeel): fijngemalen kruiden zonder zuur, die ontstekingsremmend en antibacterieel werken. De huid is daarna drie tot vijf dagen rood en vervelt.": "Para una piel con acné inflamado un ácido a veces es demasiado. Para eso está el [peeling de hierbas de ADO](/behandelingen/kruidenpeel): hierbas finamente molidas sin ácido, que actúan como antiinflamatorio y antibacteriano. Después la piel está roja y se descama de tres a cinco días.",
-  "Wat microneedling bij een bepaalde klacht doet, staat apart uitgewerkt: bij [acnelittekens](/behandelingen/skinpen/acnelittekens), bij [grove poriën](/behandelingen/skinpen/grove-porien), bij [fijne lijntjes](/behandelingen/skinpen/fijne-lijntjes), bij [littekens na een operatie](/behandelingen/skinpen/chirurgische-littekens) en bij [striae](/behandelingen/skinpen/striae). Waarom er weken tussen de sessies zitten staat bij [het aantal sessies](/kennisbank/hoeveel-sessies).": "Lo que hace el microneedling en un problema concreto está desarrollado aparte: en [cicatrices de acné](/behandelingen/skinpen/acnelittekens), en [poros dilatados](/behandelingen/skinpen/grove-porien), en [líneas finas](/behandelingen/skinpen/fijne-lijntjes), en [cicatrices tras una operación](/behandelingen/skinpen/chirurgische-littekens) y en [estrías](/behandelingen/skinpen/striae). Por qué hay semanas entre las sesiones está en [el número de sesiones](/kennisbank/hoeveel-sessies).",
-  "Wat pigment in deze periode doet staat bij [melasma](/huidproblemen/melasma). Hoe het met striae na een zwangerschap zit staat bij [striae](/huidproblemen/striae).": "Lo que hace el pigmento en este periodo está en [melasma](/huidproblemen/melasma). Cómo funcionan las estrías después de un embarazo está en [estrías](/huidproblemen/striae).",
-  "Wat pigment is en welk type je hebt, staat bij [pigmentvlekken](/huidproblemen/pigmentvlekken) en bij [melasma](/huidproblemen/melasma). De twee behandelingen staan apart bij [Cosmelan](/behandelingen/cosmelan) en [Dermamelan](/behandelingen/dermamelan). Waarom een traject niet in de zomer begint staat bij [zon en je huid](/kennisbank/zon-en-je-huid).": "Qué es el pigmento y qué tipo tienes está en [manchas de pigmento](/huidproblemen/pigmentvlekken) y en [melasma](/huidproblemen/melasma). Los dos tratamientos están por separado en [Cosmelan](/behandelingen/cosmelan) y [Dermamelan](/behandelingen/dermamelan). Por qué un programa no empieza en verano está en [el sol y tu piel](/kennisbank/zon-en-je-huid).",
-  "Wat zonbescherming bij pigment precies doet staat bij [melasma](/huidproblemen/melasma) en bij [pigmentvlekken](/huidproblemen/pigmentvlekken). Welke rol je huidtype speelt staat bij [het Fitzpatrick-huidtype](/kennisbank/fitzpatrick-huidtype).": "Lo que hace exactamente la protección solar en el pigmento está en [melasma](/huidproblemen/melasma) y en [manchas de pigmento](/huidproblemen/pigmentvlekken). Qué papel juega tu fototipo está en [el fototipo de Fitzpatrick](/kennisbank/fitzpatrick-huidtype).",
-  "We werken met peelings van [Skin Tech Pharma, Dermaceutic, ADO en Mesoestetic](/apparatuur/peelinglijnen), in drie niveaus. De lichtste werken op de bovenlaag en laten je meestal niet zichtbaar vervellen. De sterkste, zoals de TCA-peeling van Dermaceutic in 12 tot 20 procent, gaan dieper en vragen voorbereiding en hersteltijd.": "Trabajamos con peelings de [Skin Tech Pharma, Dermaceutic, ADO y Mesoestetic](/apparatuur/peelinglijnen), en tres niveles. Los más suaves trabajan sobre la capa superior y normalmente no te hacen descamar de forma visible. Los más fuertes, como el peeling de TCA de Dermaceutic al 12 a 20 por ciento, llegan más hondo y piden preparación y tiempo de recuperación.",
-  "Welk type je hebt kun je zelf vastleggen in [je huidprofiel](/huidprofiel), zodat het al bekend is voordat je binnenkomt. Welke van de twee golflengtes bij jouw type hoort, kun je nakijken bij [de laserkiezer](/gentlemax-pro). Wat er tijdens een meting verder langskomt staat bij [de huidanalyse](/kennisbank/huidanalyse-rotterdam).": "Qué tipo tienes puedes registrarlo tú en [tu perfil de piel](/huidprofiel), para que ya se sepa antes de que entres. Cuál de las dos longitudes de onda corresponde a tu tipo puedes comprobarlo en [el selector de láser](/gentlemax-pro). Qué más sale durante una medición está en [el análisis de la piel](/kennisbank/huidanalyse-rotterdam).",
-  "Welke klachten we behandelen staat per klacht in het [overzicht van huidproblemen](/huidproblemen). Welke behandelingen we daarvoor inzetten, met tarief en hersteltijd, staat bij [de behandelingen](/behandelingen). Moet je nog kiezen waar je heen gaat, dan staat bij [hoe je een huidkliniek kiest](/kennisbank/huidkliniek-kiezen) waar je zelf op kunt letten.": "Qué problemas tratamos está por problema en el [resumen de problemas de piel](/huidproblemen). Qué tratamientos usamos para ellos, con tarifa y tiempo de recuperación, está en [los tratamientos](/behandelingen). Si todavía tienes que elegir adónde ir, en [cómo elegir una clínica de la piel](/kennisbank/huidkliniek-kiezen) pone en qué puedes fijarte tú.",
-  "Wij werken met de [Nordlys van Candela](/apparatuur/nordlys-ipl). Candela noemt zijn variant Selective Waveband Technology: twee filters knippen de boven- en onderkant van het spectrum weg, zodat er een smallere band overblijft dan bij gewone IPL, met pulsen korter dan een milliseconde.": "Trabajamos con el [Nordlys de Candela](/apparatuur/nordlys-ipl). Candela llama a su variante Selective Waveband Technology: dos filtros recortan la parte alta y la baja del espectro, de modo que queda una banda más estrecha que en la IPL normal, con pulsos de menos de un milisegundo.",
-  "Wil je van de haartjes af in plaats van ze bij te houden, dan is dit de verkeerde behandeling. Voor donker haar is dat [laserontharing](/laserontharing); voor licht, grijs of wit haar dat de laser niet ziet, is dat [elektrische epilatie](/kennisbank/elektrische-epilatie-rotterdam).": "Si quieres librarte del vello en lugar de mantenerlo a raya, este es el tratamiento equivocado. Para el pelo oscuro eso es la [depilación láser](/laserontharing); para el pelo claro, gris o blanco que el láser no ve, es la [electrólisis](/kennisbank/elektrische-epilatie-rotterdam).",
+  "Een nieuw product, eerst zelf bekeken":
+    "Un producto nuevo, primero probado por nosotros",
+  "Elk traject begint met een huidanalyse":
+    "Cada programa empieza con un análisis de la piel",
+  "Hoe het apparaat werkt staat op de pagina over de":
+    "Cómo funciona el aparato está en la página sobre el",
+  "Doet hetzelfde: kanaaltjes maken zodat je huid zelf herstelt. Het verschil zit in het apparaat en niet in het principe, en welke van de twee past hangt af van je huid en de zone.":
+    "Hace lo mismo: crear canales para que tu piel se repare por sí sola. La diferencia está en el aparato y no en el principio, y cuál de los dos encaja depende de tu piel y de la zona.",
+  "Een team dat elke dag met dezelfde huidklachten werkt, en apparatuur waar het in de praktijk mee is ingeregeld.":
+    "Un equipo que trabaja cada día con los mismos problemas de piel, y aparatos ajustados con la práctica.",
+  "Je kunt thuis rustig vergelijken en beslissen, in plaats van aan de balie op het moment dat het het lastigst is.":
+    "Puedes comparar y decidir con calma en casa, en lugar de en recepción en el momento en que más cuesta.",
+  "Je ziet zelf waar de adviezen vandaan komen, en bij een volgende afspraak leggen we de opnames naast elkaar.":
+    "Ves tú de dónde salen los consejos, y en una cita siguiente ponemos las capturas una al lado de la otra.",
+  "Per sessie, per zone, per variant, inclusief de duurste. Je weet voordat je komt waar je aan toe bent.":
+    "Por sesión, por zona, por variante, incluida la más cara. Sabes a qué atenerte antes de venir.",
+  "De behandelaar bekijkt je huid en meet met de EVE-M wat er onder de oppervlakte speelt: pigment, vocht, poriën en structuur. Daaruit volgt het behandelplan.":
+    "La terapeuta mira tu piel y mide con el EVE-M lo que pasa bajo la superficie: pigmento, hidratación, poros y textura. De ahí sale el plan de tratamiento.",
+  "Diba Clinics is in 2017 begonnen als huidkliniek in Rotterdam. Onze huidtherapeuten en specialisten behandelen acne, pigment, littekens, huidverbetering en ongewenst haar.":
+    "Diba Clinics empezó en 2017 como clínica de la piel en Róterdam. Nuestras terapeutas de la piel y especialistas tratan acné, pigmento, cicatrices, mejora de la piel y vello no deseado.",
+  "Onze huidtherapeuten zijn lid van de NVH en staan in het Kwaliteitsregister Paramedici. Onze schoonheidsspecialisten zijn aangesloten bij ANBOS en staan in het SKIN Register.":
+    "Nuestras terapeutas de la piel son miembros de la NVH y figuran en el Registro de Calidad de Paramédicos. Nuestras esteticistas están afiliadas a ANBOS y figuran en el SKIN Register.",
+  "Open de vergoedingenzoeker en zoek op acnebehandeling; die staat los van camouflageles.":
+    "Abre el buscador de reembolsos y busca tratamiento del acné; está separado de las clases de camuflaje.",
+  "Zoek de behandeling op in de vergoedingenvinder. Dat geeft je het overzicht per verzekering.":
+    "Busca el tratamiento en el buscador de reembolsos. Eso te da el resumen por póliza.",
+  "Kies je aanvullende pakket. Daar staat wat je terugkrijgt en vanaf welk zorgprofiel dat geldt.":
+    "Elige tu paquete complementario. Ahí pone lo que recuperas y desde qué perfil asistencial se aplica.",
+  "Open de pagina huidbehandelingen; VGZ zet acne, camouflagetherapie en ontharen daar bij elkaar.":
+    "Abre la página de tratamientos de la piel; VGZ pone ahí juntos acné, terapia de camuflaje y depilación.",
+  "Tijdens de intake hoor je wat er in jouw geval onder de vergoeding valt, en wat je zelf betaalt.":
+    "En la consulta previa oyes lo que en tu caso entra en el reembolso, y lo que pagas tú.",
+  "Veel aanvullende pakketten stellen die inschrijving als eis voordat ze een behandeling vergoeden.":
+    "Muchos paquetes complementarios exigen esa inscripción antes de reembolsar un tratamiento.",
+  "ONVZ zet zijn vergoedingen per jaar en per pakket op een eigen pagina, met een lijst van A tot Z.":
+    "ONVZ pone sus reembolsos por año y por paquete en una página propia, con una lista de la A a la Z.",
+  "Log in op Mijn CZ of gebruik de app; je eigen bedrag staat er pas als CZ weet welk pakket je hebt.":
+    "Entra en Mijn CZ o usa la app; tu propio importe solo aparece cuando CZ sabe qué paquete tienes.",
+  "Kijk of jouw pakket erbij staat, want de hoogte hangt af van welke aanvullende verzekering je hebt.":
+    "Mira si tu paquete aparece, porque la cuantía depende de qué seguro complementario tienes.",
+  "Kijk in de Zorgvinder of je behandelaar gecontracteerd is. Dat bepaalt of je zelf moet voorschieten.":
+    "Mira en el Zorgvinder si tu terapeuta tiene contrato. Eso decide si tienes que adelantar el dinero.",
+  "a.s.r. heeft een vergoedingenvinder waarin je op behandeling zoekt, plus de polisvoorwaarden als pdf.":
+    "a.s.r. tiene un buscador de reembolsos en el que buscas por tratamiento, más las condiciones de la póliza en pdf.",
+  "Let op dat tweede getal: het budget is gedeeld, dus wat je aan het een besteedt gaat van het ander af.":
+    "Fíjate en esa segunda cifra: el presupuesto es compartido, así que lo que gastas en una cosa se descuenta de la otra.",
+  "Kijk of de zone waarvoor je komt het gezicht of de hals is; daarbuiten vergoedt DSW deze behandeling niet.":
+    "Mira si la zona por la que vienes es la cara o el cuello; fuera de eso DSW no reembolsa este tratamiento.",
+  "Open de pagina over acnetherapie; camouflagetherapie en epilatie staan er los naast, met eigen voorwaarden.":
+    "Abre la página sobre terapia del acné; la terapia de camuflaje y la depilación están aparte al lado, con condiciones propias.",
+  "Menzis werkt met vergoedingenwijzers: pdf-overzichten per jaar waarin per zorgsoort staat wat je pakket doet.":
+    "Menzis trabaja con guías de reembolso: resúmenes en pdf por año en los que pone por tipo de atención lo que hace tu paquete.",
+  "Log in op Mijn Aevitae. Daar staat het bedrag dat bij jouw pakket hoort; op de algemene pagina staat het niet.":
+    "Entra en Mijn Aevitae. Ahí está el importe que corresponde a tu paquete; en la página general no está.",
+  "Ga je via de aanvullende verzekering, houd dan rekening met een eigen bijdrage per behandeling naast het maximum.":
+    "Si vas por el seguro complementario, cuenta con una aportación propia por tratamiento además del máximo.",
+  "Log in op Mijn VGZ met je DigiD. Daar staat wat er in jouw pakket zit en wat je er dit jaar al van gebruikt hebt.":
+    "Entra en Mijn VGZ con tu DigiD. Ahí pone lo que hay en tu paquete y lo que ya has usado este año.",
+  "Ga naar de pagina acnebehandeling; camouflageproducten staan bij DSW op een aparte pagina met een eigen voorwaarde.":
+    "Ve a la página de tratamiento del acné; en DSW los productos de camuflaje están en una página aparte con una condición propia.",
+  "Kies onderaan je eigen aanvullende verzekering. Zonder die keuze staat er geen bedrag, ook niet als je bent ingelogd.":
+    "Elige abajo tu propio seguro complementario. Sin esa elección no aparece ningún importe, tampoco si has iniciado sesión.",
+  "Let op de leeftijdsgrens. Bij acnebehandeling loopt de vergoeding tot 21 jaar, met uitzondering van het hoogste pakket.":
+    "Fíjate en el límite de edad. En el tratamiento del acné el reembolso llega hasta los 21 años, con excepción del paquete más alto.",
+  "Vraag ons om je zorgprofiel en onze AGB-code voordat je declareert. Staan die niet op de factuur, dan wijzen ze hem af.":
+    "Pídenos tu perfil asistencial y nuestro código AGB antes de reclamar. Si no están en la factura, la rechazan.",
+  "Vraag er meteen bij of je budget gedeeld is met camouflage en ontharing, en hoeveel je er dit jaar al van gebruikt hebt.":
+    "Pregunta a la vez si tu presupuesto es compartido con camuflaje y depilación, y cuánto has usado ya este año.",
+  "Ga daarna naar de polisvoorwaarden als pdf, want de voorwaarde over de beroepsvereniging staat daar en niet in de vinder.":
+    "Después ve a las condiciones de la póliza en pdf, porque la condición sobre la asociación profesional está ahí y no en el buscador.",
+  "Weet je niet zeker of je behandelaar aan die eis voldoet, bel ons dan; wij weten bij welke vereniging we zijn aangesloten.":
+    "Si tienes dudas de que tu terapeuta cumpla ese requisito, llámanos; nosotros sabemos a qué asociación estamos afiliados.",
+  "Staat er een voorwaarde bij over de behandelaar, bel ons dan even. Wij weten of we eraan voldoen en jij kunt dat niet zien.":
+    "Si hay una condición sobre la terapeuta, llámanos. Nosotros sabemos si la cumplimos y tú no puedes verlo.",
+  "Vraag ons om de AGB-code en de beroepsvereniging van je behandelaar voordat je declareert. Dan hoeft de factuur niet terug.":
+    "Pídenos el código AGB y la asociación profesional de tu terapeuta antes de reclamar. Así la factura no tiene que volver.",
+  "Zoek de behandeling op in de vergoedingenwijzer van het lopende jaar; Menzis werkt met pdf-overzichten per jaar en per pakket.":
+    "Busca el tratamiento en la guía de reembolsos del año en curso; Menzis trabaja con resúmenes en pdf por año y por paquete.",
+  "Zoek de behandeling in de A-tot-Z-lijst van het jaar en het pakket dat jij hebt; ONVZ zet elke combinatie op een eigen pagina.":
+    "Busca el tratamiento en la lista de la A a la Z del año y del paquete que tienes; ONVZ pone cada combinación en una página propia.",
+  "Bewaar het antwoord. Declareer je zonder die toestemming, dan volgt bijna zeker een afwijzing en achteraf regelen lukt zelden.":
+    "Guarda la respuesta. Si reclamas sin ese permiso, casi seguro sigue un rechazo, y arreglarlo después rara vez funciona.",
+  "Nee. Aevitae schrijft dat er bij deze vergoeding uit de aanvullende verzekering geen eigen risico en geen eigen bijdrage geldt.":
+    "No. Aevitae escribe que en este reembolso del seguro complementario no se aplica franquicia ni aportación propia.",
+  "Ga naar de pagina van jouw behandeling, dus acnebehandeling of gezichtsontharing, en niet naar de algemene pagina huidbehandelingen.":
+    "Ve a la página de tu tratamiento, es decir, tratamiento del acné o depilación facial, y no a la página general de tratamientos de la piel.",
+  "Kijk of er een voorschrift van een huidarts nodig is. ONVZ koppelt de behandeling bij de huidtherapeut aan de behandeling bij de arts.":
+    "Mira si hace falta una prescripción de un dermatólogo. ONVZ vincula el tratamiento con la terapeuta de la piel al tratamiento con el médico.",
+  "Zoek de pagina van jouw behandeling en controleer bovenaan het jaartal; oude jaargangen blijven online staan en zien er hetzelfde uit.":
+    "Busca la página de tu tratamiento y comprueba arriba el año; las ediciones antiguas siguen online y tienen el mismo aspecto.",
+  "VGZ zet acne, ontharen en camouflagetherapie onder één noemer huidbehandelingen. Inloggen met DigiD laat zien wat er in jouw pakket zit.":
+    "VGZ pone acné, depilación y terapia de camuflaje bajo un mismo epígrafe, tratamientos de la piel. Entrar con DigiD muestra lo que hay en tu paquete.",
+  "Diba Clinics heeft contracten met zorgverzekeraars. Of jouw behandeling vergoed wordt, hangt af van je klacht en van je aanvullende pakket.":
+    "Diba Clinics tiene contratos con aseguradoras de salud. Si tu tratamiento se reembolsa depende de tu problema y de tu paquete complementario.",
+  "Een huidtherapeut die lid is van de Nederlandse Vereniging van Huidtherapeuten, of een schoonheidsspecialist met het diploma Beauty Care-B.":
+    "Una terapeuta de la piel miembro de la Asociación Neerlandesa de Terapeutas de la Piel, o una esteticista con el diploma Beauty Care-B.",
+  "DSW vergoedt acnebehandeling alleen in het gezicht en de hals. Voor een andere zone is er geen vergoeding, ook niet met een aanvullend pakket.":
+    "DSW reembolsa el tratamiento del acné solo en la cara y el cuello. Para otra zona no hay reembolso, tampoco con un paquete complementario.",
+  "Open de pagina gezichtsverzorging van het lopende jaar; Salland zet het jaartal in het adres, dus let op dat je niet in een oud overzicht kijkt.":
+    "Abre la página de cuidado facial del año en curso; Salland pone el año en la dirección, así que fíjate en no estar mirando un resumen antiguo.",
+  "Regel de toestemming voor je eerste behandeling. Je mailt zelf een verzoek met foto's van gezicht en hals naar het adres dat op die pagina staat.":
+    "Consigue el permiso antes de tu primer tratamiento. Envías tú por correo una solicitud con fotos de la cara y el cuello a la dirección que figura en esa página.",
+  "Zilveren Kruis heeft een aparte pagina per onderwerp en per jaartal. Let op dat je naar het huidige jaar kijkt; oude jaargangen blijven online staan.":
+    "Zilveren Kruis tiene una página aparte por tema y por año. Fíjate en mirar el año actual; las ediciones antiguas siguen online.",
+  "Bij VGZ krijg je een budget per kalenderjaar dat je over acne, camouflage en ontharen samen verdeelt. Wat je aan het een besteedt, gaat van het ander af.":
+    "En VGZ recibes un presupuesto por año natural que repartes entre acné, camuflaje y depilación. Lo que gastas en una cosa se descuenta de la otra.",
+  "Dat verschilt per verzekering. a.s.r. zet de maxima in een apart overzicht naast de vergoedingenvinder, dus kijk daar en niet alleen bij de behandeling zelf.":
+    "Eso varía según la póliza. a.s.r. pone los máximos en un resumen aparte junto al buscador de reembolsos, así que mira ahí y no solo en el propio tratamiento.",
+  "Nee. DSW zet het er letterlijk bij: deze vergoeding telt niet mee voor je eigen risico, want dat hoort bij de basisverzekering en dit komt uit de aanvullende.":
+    "No. DSW lo dice literalmente: este reembolso no cuenta para tu franquicia, porque esa corresponde al seguro básico y esto sale del complementario.",
+  "Ja. Zilveren Kruis hanteert één maximum voor acnebehandeling en epilatie samen. Doe je allebei, kijk dan hoeveel je dit jaar al van dat maximum hebt gebruikt.":
+    "Sí. Zilveren Kruis aplica un solo máximo para el tratamiento del acné y la depilación juntos. Si haces los dos, mira cuánto de ese máximo has usado ya este año.",
+  "Nee. DSW schrijft dat je voor deze behandeling geen verwijzing en geen toestemming vooraf nodig hebt. De voorwaarde zit bij de behandelaar en niet bij je huisarts.":
+    "No. DSW escribe que para este tratamiento no necesitas derivación ni permiso previo. La condición está en la terapeuta y no en tu médico de cabecera.",
+  "Bij Salland staat het onder gezichtsverzorging: acne, littekens, huidvlekken en overbeharing bij elkaar op één pagina. HollandZorg loopt onder dezelfde voorwaarden.":
+    "En Salland está bajo cuidado facial: acné, cicatrices, manchas en la piel y exceso de vello, juntos en una sola página. HollandZorg va con las mismas condiciones.",
+  "CZ heeft per behandeling een eigen pagina: huidbehandelingen, acnebehandeling en gezichtsontharing staan los van elkaar. Je eigen bedrag zie je pas als je inlogt of de app gebruikt.":
+    "CZ tiene una página propia por tratamiento: tratamientos de la piel, tratamiento del acné y depilación facial están separados. Tu propio importe lo ves solo al entrar o usar la app.",
+  "Een huidtherapeut mag alle zorg uit deze vergoeding leveren. Een schoonheidsspecialist alleen de acnebehandeling, en dan met kernlidmaatschap van ANBOS en de specialisatie acne erbij.":
+    "Una terapeuta de la piel puede prestar toda la atención de este reembolso. Una esteticista solo el tratamiento del acné, y entonces con afiliación básica a ANBOS y la especialización en acné además.",
+  "Bij Zilveren Kruis geldt één maximum voor acnebehandeling en ontharing samen, en ze stellen eisen aan de registratie van de behandelaar. Vraag dus ook even of wij aan die eis voldoen.":
+    "En Zilveren Kruis se aplica un solo máximo para el tratamiento del acné y la depilación juntos, y ponen requisitos al registro de la terapeuta. Así que pregunta también si nosotros cumplimos ese requisito.",
+  "Nee, je kunt zonder verwijzing naar een huidtherapeut, mits die voldoet aan de eisen van het Kwaliteitsregister Paramedici. Dat register is openbaar en je kunt er zelf op naam zoeken.":
+    "No, puedes ir sin derivación a una terapeuta de la piel, siempre que cumpla los requisitos del Registro de Calidad de Paramédicos. Ese registro es público y puedes buscar en él por nombre.",
+  "Nee, een verwijzing van je huisarts vraagt Salland niet. Wat ze wel vragen is hun eigen toestemming vooraf, en dat is iets anders: die regel je bij de verzekeraar en niet bij de dokter.":
+    "No, Salland no pide una derivación de tu médico de cabecera. Lo que sí piden es su propio permiso previo, y eso es otra cosa: lo consigues con la aseguradora y no con el médico.",
+  "Acnebehandeling en camouflage staan bij DSW op aparte pagina's met een eigen maximum. Kijk dus op de pagina van de behandeling waarvoor je komt, en ga niet af op wat je bij de andere las.":
+    "El tratamiento del acné y el camuflaje están en DSW en páginas aparte con un máximo propio. Así que mira la página del tratamiento por el que vienes, y no te guíes por lo que leíste en la otra.",
+  "Bij a.s.r. staat de voorwaarde in de polisvoorwaarden en niet in de vergoedingenvinder. De vinder geeft je het bedrag; of je er recht op hebt hangt af van een eis die een pdf verderop staat.":
+    "En a.s.r. la condición está en las condiciones de la póliza y no en el buscador de reembolsos. El buscador te da el importe; si tienes derecho a él depende de un requisito que está en un pdf más adelante.",
+  "Loopt het via de dermatoloog, dan verwijst je huisarts je door. Voor de huidtherapeut uit de aanvullende verzekering noemt VGZ die eis niet apart; controleer het in je eigen polisvoorwaarden.":
+    "Si va por el dermatólogo, tu médico de cabecera te deriva. Para la terapeuta de la piel del seguro complementario VGZ no menciona ese requisito aparte; compruébalo en tus propias condiciones de póliza.",
+  "CZ noemt op de algemene pagina geen registratie-eis, maar de voorwaarde staat per behandeling in de polisvoorwaarden. Vraag er dus naar bij de behandeling die jij wil, en niet in het algemeen.":
+    "CZ no menciona en la página general ningún requisito de registro, pero la condición está por tratamiento en las condiciones de la póliza. Así que pregunta por el tratamiento que quieres, y no en general.",
+  "VGZ noemt op de pagina over huidbehandelingen geen aparte registratie-eis voor de huidtherapeut. Wat er wel staat is dat een verwijzing van je huisarts nodig is als het via de dermatoloog loopt.":
+    "VGZ no menciona en la página de tratamientos de la piel ningún requisito de registro aparte para la terapeuta de la piel. Lo que sí pone es que hace falta una derivación de tu médico de cabecera si va por el dermatólogo.",
+  "Een huidtherapeut die voldoet aan de eisen van het Kwaliteitsregister Paramedici. Een verwijzing is dan niet nodig. Behandelingen door een schoonheidsspecialist vergoeden ze sinds 2026 niet meer.":
+    "Una terapeuta de la piel que cumple los requisitos del Registro de Calidad de Paramédicos. Entonces no hace falta derivación. Los tratamientos por una esteticista ya no los reembolsan desde 2026.",
+  "Omdat elke behandeling een eigen pagina en een eigen voorwaarde heeft, kan het antwoord voor acne anders zijn dan voor ontharing. Kijk dus op de pagina van jouw behandeling en niet op de algemene.":
+    "Como cada tratamiento tiene su propia página y su propia condición, la respuesta para el acné puede ser distinta de la de la depilación. Así que mira la página de tu tratamiento y no la general.",
+  "Om vooraf te beoordelen of het om zorg gaat en niet om verzorging. Dat oordeel vormen ze voordat je begint, en daarom werkt achteraf declareren hier slechter dan bij de meeste andere verzekeraars.":
+    "Para valorar de antemano si se trata de atención sanitaria y no de cuidado estético. Ese juicio lo forman antes de que empieces, y por eso reclamar después funciona aquí peor que en la mayoría de las otras aseguradoras.",
+  "ONVZ koppelt de behandeling bij de huidtherapeut aan de arts: de huidarts schrijft haar voor, en je blijft zo nodig ook daar onder behandeling. De basisverzekering vergoedt de huidtherapeut zelf niet.":
+    "ONVZ vincula el tratamiento con la terapeuta de la piel al médico: el dermatólogo lo prescribe, y si hace falta sigues también en tratamiento allí. El seguro básico no reembolsa a la propia terapeuta de la piel.",
+  "Bij een deel van de pakketten wel: huidbehandelingen, camouflagetherapie en ontharing komen dan uit één budget. Vraag daarom niet alleen wat je krijgt, maar ook wat je er dit jaar al van hebt gebruikt.":
+    "En una parte de los paquetes sí: los tratamientos de la piel, la terapia de camuflaje y la depilación salen entonces de un mismo presupuesto. Por eso pregunta no solo lo que recibes, sino también cuánto has usado ya este año.",
+  "Dat staat in de polisvoorwaarden en niet in de vergoedingenvinder, net als de eis over de beroepsvereniging. Vraag er bij het bellen expliciet naar; de vinder geeft je het bedrag en niet de voorwaarde.":
+    "Eso está en las condiciones de la póliza y no en el buscador de reembolsos, igual que el requisito sobre la asociación profesional. Pregúntalo explícitamente al llamar; el buscador te da el importe y no la condición.",
+  "Ja. Het maximum uit de aanvullende verzekering geldt voor acnebehandeling en camouflagetherapie samen, producten inbegrepen. Reken er ook op dat er per behandeling een eigen bijdrage geldt naast dat maximum.":
+    "Sí. El máximo del seguro complementario se aplica al tratamiento del acné y la terapia de camuflaje juntos, productos incluidos. Cuenta también con una aportación propia por tratamiento además de ese máximo.",
+  "Nee. Aevitae vraagt voor deze vergoeding geen verwijzing. De voorwaarde zit bij de behandelaar: een huidtherapeut die lid is van de beroepsvereniging, of een schoonheidsspecialist met het diploma Beauty Care-B.":
+    "No. Aevitae no pide derivación para este reembolso. La condición está en la terapeuta: una terapeuta de la piel miembro de la asociación profesional, o una esteticista con el diploma Beauty Care-B.",
+  "Aevitae voert de verzekering uit voor EUCARE; op je pas staat vaak die tweede naam. Acnetherapie heeft er een eigen pagina, en wat jij terugkrijgt staat in Mijn Aevitae, want dat verschilt per aanvullend pakket.":
+    "Aevitae gestiona el seguro para EUCARE; en tu tarjeta a menudo aparece ese segundo nombre. La terapia del acné tiene ahí una página propia, y lo que recuperas está en Mijn Aevitae, porque varía según el paquete complementario.",
+  "De behandelaar moet een huidtherapeut zijn die is aangesloten bij de Nederlandse Vereniging van Huidtherapeuten, met een eigen AGB-code in het register van Vektis. Een schoonheidsspecialist voldoet daar niet aan.":
+    "La terapeuta tiene que ser una terapeuta de la piel afiliada a la Asociación Neerlandesa de Terapeutas de la Piel, con un código AGB propio en el registro de Vektis. Una esteticista no cumple eso.",
+  "Ja, en dat is bij ONVZ de voorwaarde die het vaakst in de weg zit. Bij acnebehandeling loopt de vergoeding tot 21 jaar; alleen het hoogste pakket vergoedt ook daarna. Controleer dit voordat je een traject inplant.":
+    "Sí, y en ONVZ esa es la condición que más a menudo se interpone. En el tratamiento del acné el reembolso llega hasta los 21 años; solo el paquete más alto reembolsa también después. Compruébalo antes de programar un programa.",
+  "CZ zet acne, camouflagetherapie en gezichtsontharing elk op een eigen pagina met een eigen voorwaarde. Vraag daarom per behandeling na wat er nog over is; het antwoord voor acne hoeft niet te gelden voor ontharing.":
+    "CZ pone acné, terapia de camuflaje y depilación facial cada uno en una página propia con una condición propia. Por eso pregunta por tratamiento lo que queda; la respuesta para el acné no tiene por qué valer para la depilación.",
+  "Bij Menzis draait het om het contract. Ga je naar een huidtherapeut die zij niet erkennen, dan schiet je zelf voor en krijg je hooguit een deel terug. Kijk dus eerst in hun Zorgvinder en pas daarna naar het bedrag.":
+    "En Menzis todo gira en torno al contrato. Si vas a una terapeuta de la piel que ellos no reconocen, adelantas el dinero tú y recuperas como mucho una parte. Así que mira primero en su Zorgvinder y solo después el importe.",
+  "Zorg en Zekerheid heeft een vergoedingenzoeker. Typ daar acnebehandeling en kies je pakket. Wat je terugkrijgt hangt bij hen niet alleen van je pakket af, maar ook van het zorgprofiel dat de huidtherapeut vaststelt.":
+    "Zorg en Zekerheid tiene un buscador de reembolsos. Escribe ahí tratamiento del acné y elige tu paquete. Lo que recuperas depende en su caso no solo de tu paquete, sino también del perfil asistencial que determina la terapeuta de la piel.",
+  "Een indeling van 0 tot 4 die zegt hoe uitgebreid de acne is. De huidtherapeut stelt hem vast bij de eerste afspraak. Sinds 2026 vergoedt Zorg en Zekerheid pas vanaf profiel 2, dus dit bepaalt of je iets terugkrijgt.":
+    "Una clasificación de 0 a 4 que dice lo extenso que es el acné. La terapeuta de la piel lo determina en la primera cita. Desde 2026 Zorg en Zekerheid solo reembolsa a partir del perfil 2, así que esto decide si recuperas algo.",
+  "a.s.r. koppelt het recht op vergoeding aan de beroepsvereniging: de behandelaar moet aangesloten zijn bij een vereniging die zij erkennen. Welke dat zijn staat in de polisvoorwaarden en niet in de vergoedingenvinder.":
+    "a.s.r. vincula el derecho al reembolso a la asociación profesional: la terapeuta tiene que estar afiliada a una asociación que ellos reconozcan. Cuáles son está en las condiciones de la póliza y no en el buscador de reembolsos.",
+  "DSW zet acnebehandeling en camouflage op twee losse pagina's. Je kiest daar je aanvullende verzekering, en pas dan verschijnt het bedrag dat bij jouw pakket hoort. Stad Holland en inTwente lopen via dezelfde pagina's.":
+    "DSW pone el tratamiento del acné y el camuflaje en dos páginas separadas. Ahí eliges tu seguro complementario, y solo entonces aparece el importe que corresponde a tu paquete. Stad Holland e inTwente van por las mismas páginas.",
+  "Dat hangt af van waar het uit komt. Uit de basisverzekering wil Menzis een schriftelijke verwijzing van je huisarts of een medisch specialist. Komt het uit je aanvullende verzekering, dan is die verwijzing niet nodig.":
+    "Depende de dónde sale. Del seguro básico Menzis quiere una derivación por escrito de tu médico de cabecera o de un especialista. Si sale de tu seguro complementario, esa derivación no hace falta.",
+  "Menzis werkt met contracten. Je gaat naar een huidtherapeut die zij erkennen, en welke dat zijn staat in hun Zorgvinder. Bij een gecontracteerde behandelaar gaat de rekening rechtstreeks naar Menzis in plaats van naar jou.":
+    "Menzis trabaja con contratos. Vas a una terapeuta de la piel que ellos reconocen, y cuáles son está en su Zorgvinder. Con una terapeuta con contrato la factura va directamente a Menzis en lugar de a ti.",
+  "Ja. VGZ zet acne, camouflagetherapie en ontharen onder één noemer huidbehandelingen met één budget per kalenderjaar. Wat je aan het een besteedt gaat van het ander af, dus vraag ook wat je er dit jaar al van gebruikt hebt.":
+    "Sí. VGZ pone acné, terapia de camuflaje y depilación bajo un mismo epígrafe, tratamientos de la piel, con un presupuesto por año natural. Lo que gastas en una cosa se descuenta de la otra, así que pregunta también cuánto has usado ya este año.",
+  "ONVZ hanteert bij acnebehandeling een leeftijdsgrens, en de basisverzekering vergoedt de huidtherapeut niet. Ben je ouder dan die grens, controleer dan eerst of jouw pakket een uitzondering kent voordat je een traject inplant.":
+    "ONVZ aplica un límite de edad al tratamiento del acné, y el seguro básico no reembolsa a la terapeuta de la piel. Si superas ese límite, comprueba primero si tu paquete tiene una excepción antes de programar un programa.",
+  "Vanaf 1 januari 2026 wil ONVZ dat de huidtherapeut in het Kwaliteitsregister Paramedici staat. Voor dit jaar accepteren ze daarnaast nog een inschrijving bij de NVH, om behandelaars de tijd te geven die registratie rond te krijgen.":
+    "Desde el 1 de enero de 2026 ONVZ quiere que la terapeuta de la piel figure en el Registro de Calidad de Paramédicos. Para este año aceptan además todavía una inscripción en la NVH, para dar tiempo a las terapeutas a completar ese registro.",
+  "Op de recente pagina's van Zilveren Kruis staat dat je rechtstreeks naar een zorgverlener kunt. Oudere jaargangen noemden nog een verwijzing van de huisarts of specialist, dus controleer het jaartal bovenaan de pagina die je leest.":
+    "En las páginas recientes de Zilveren Kruis pone que puedes ir directamente a un profesional sanitario. Las ediciones antiguas todavía mencionaban una derivación del médico de cabecera o del especialista, así que comprueba el año arriba de la página que lees.",
+  "Bij een deel van de pakketten is er één budget voor huidbehandelingen samen, inclusief camouflagetherapie en ontharing. Wat je aan het een besteedt gaat van het ander af, dus vraag er ook bij wat je er dit jaar al van gebruikt hebt.":
+    "En una parte de los paquetes hay un solo presupuesto para los tratamientos de la piel en conjunto, incluidas la terapia de camuflaje y la depilación. Lo que gastas en una cosa se descuenta de la otra, así que pregunta también cuánto has usado ya este año.",
+  "Voor een behandeling bij de dermatoloog wel, en die loopt dan via de basisverzekering met eigen risico. Voor de huidtherapeut noemt CZ geen verwijzing op de algemene pagina; kijk op de pagina van jouw behandeling, want daar staan de voorwaarden.":
+    "Para un tratamiento con el dermatólogo sí, y ese va entonces por el seguro básico con franquicia. Para la terapeuta de la piel CZ no menciona derivación en la página general; mira la página de tu tratamiento, porque ahí están las condiciones.",
+  "Sinds 2026 vergoedt Zorg en Zekerheid acnebehandeling pas vanaf zorgprofiel 2, en alleen als een huidtherapeut de behandeling doet. Dat profiel loopt van 0 tot 4 en wordt door de huidtherapeut zelf bepaald; het moet samen met de AGB-code op de factuur staan.":
+    "Desde 2026 Zorg en Zekerheid reembolsa el tratamiento del acné solo a partir del perfil asistencial 2, y solo si lo hace una terapeuta de la piel. Ese perfil va de 0 a 4 y lo determina la propia terapeuta de la piel; tiene que figurar en la factura junto con el código AGB.",
+  "Salland wil vooraf schriftelijk toestemming geven, dus voordat de behandeling begint, en vraagt daarbij foto's van je gezicht en hals. Dat verzoek mail je zelf naar hun toestemmingsadres. Begin je zonder die toestemming, dan is het achteraf moeilijk recht te zetten.":
+    "Salland quiere dar el permiso por escrito de antemano, es decir, antes de que empiece el tratamiento, y pide para ello fotos de tu cara y tu cuello. Esa solicitud la envías tú por correo a su dirección de permisos. Si empiezas sin ese permiso, después es difícil de arreglar.",
+  "Zilveren Kruis stelt de scherpste eis van deze zes. De huidtherapeut moet kwaliteitsgeregistreerd staan in het Kwaliteitsregister Paramedici én een geldige persoonlijke AGB-code hebben, en die code en de beroepsvereniging moeten op de factuur staan. Ontbreekt dat, dan wijzen ze af op de factuur en niet op de behandeling.":
+    "Zilveren Kruis pone el requisito más estricto de estas seis. La terapeuta de la piel tiene que estar registrada en el Registro de Calidad de Paramédicos y tener un código AGB personal válido, y ese código y la asociación profesional tienen que figurar en la factura. Si falta, rechazan por la factura y no por el tratamiento.",
+  "De kliniek werkt met peelings van Skin Tech Pharma, Dermaceutic, ADO en Mesoestetic, in drie niveaus. Welke er gekozen wordt hangt af van hoe je huid er op dat moment voor staat. De inwerktijd wordt daarop afgemeten: te lang is niet beter maar schadelijker.":
+    "La clínica trabaja con peelings de Skin Tech Pharma, Dermaceutic, ADO y Mesoestetic, en tres niveles. Cuál se elige depende de cómo está tu piel en ese momento. El tiempo de actuación se mide según eso: más tiempo no es mejor sino más dañino.",
+  "LED werkt anders dan een laser of IPL. Die verwarmen een doelwit in de huid, pigment of een vaatje of water, en het resultaat komt uit het herstel dat daarop volgt. LED verwarmt niets: het licht wordt door de huid opgenomen en doet zijn werk in de cel zelf.":
+    "El LED funciona de otra manera que un láser o la IPL. Esos calientan un objetivo en la piel, pigmento o un vaso o agua, y el resultado sale de la reparación que sigue. El LED no calienta nada: la luz la absorbe la piel y hace su trabajo en la propia célula.",
+  "Welke band er uit komt hangt af van de applicator. De fabrikant levert er meerdere, van 530 tot 750 nanometer voor pigment tot 645 tot 950 nanometer voor haargroei. Elke band is gekozen rond wat hij moet raken: hemoglobine in een vaatje, melanine in een vlek.":
+    "Qué banda sale depende del aplicador. El fabricante suministra varios, desde 530 a 750 nanómetros para pigmento hasta 645 a 950 nanómetros para el vello. Cada banda está elegida en torno a lo que tiene que alcanzar: hemoglobina en un vaso, melanina en una mancha.",
+  "De TimeWalker draagt twee lasers in één kast. Een Er:YAG op 2940 nanometer, die vrijwel volledig door water wordt opgenomen en daardoor aan de oppervlakte blijft. En een Nd:YAG op 1064 nanometer, die veel minder door water wordt tegengehouden en dus dieper komt.":
+    "El TimeWalker lleva dos láseres en una sola máquina. Un Er:YAG a 2940 nanómetros, que el agua absorbe casi por completo y que por eso se queda en la superficie. Y un Nd:YAG a 1064 nanómetros, que el agua frena mucho menos y que por tanto llega más hondo.",
+  "De pulsduur is instelbaar van een kwart milliseconde tot honderd milliseconden, en de spotgrootte van 6 tot 18 millimeter. Dat zijn de twee knoppen die ertoe doen: een dikke, donkere haar vraagt iets anders dan een fijne, en een grote spot komt dieper dan een kleine.":
+    "La duración del pulso se ajusta desde un cuarto de milisegundo hasta cien milisegundos, y el tamaño del spot de 6 a 18 milímetros. Esos son los dos mandos que importan: un pelo grueso y oscuro pide otra cosa que uno fino, y un spot grande llega más hondo que uno pequeño.",
+  "Fruitzuren blijven in de hoornlaag en spoelen er na een paar minuten weer af. Salicylzuur lost op in vet en komt daardoor de porie in, waar water-oplosbare zuren niet komen. Sterkere mengsels gaan tot in de opperhuid en soms daaronder, en die vragen voorbereiding en hersteltijd.":
+    "Los ácidos de frutas se quedan en la capa córnea y se aclaran a los pocos minutos. El ácido salicílico se disuelve en la grasa y por eso entra en el poro, adonde los ácidos solubles en agua no llegan. Las mezclas más fuertes llegan hasta la epidermis y a veces por debajo, y esas piden preparación y tiempo de recuperación.",
+  "De Gentle-serie van Candela werkt met een alexandrietlaser op 755 nanometer. Die golflengte wordt sterk opgenomen door melanine, het pigment dat een haar zijn kleur geeft. Daardoor loopt de energie langs de haarschacht naar de wortel en blijft de huid eromheen relatief onberoerd.":
+    "La serie Gentle de Candela trabaja con un láser de alejandrita a 755 nanómetros. Esa longitud de onda la absorbe con fuerza la melanina, el pigmento que da su color a un pelo. Así la energía baja por el tallo del pelo hasta la raíz y la piel de alrededor queda relativamente intacta.",
+  "Dode huidcellen en donshaartjes worden verwijderd met een chirurgisch mesje onder een hoek van 45 graden. Er komen geen zuren aan te pas, waardoor het ook kan bij een gevoelige, droge of allergische huid en tijdens de zwangerschap. Het is pijnloos en het resultaat is meteen zichtbaar.":
+    "Las células muertas y el vello fino se retiran con una cuchilla quirúrgica en un ángulo de 45 grados. No intervienen ácidos, con lo que también se puede en una piel sensible, seca o alérgica y durante el embarazo. No duele y el resultado se ve al momento.",
+  "De alexandriet op 755 nanometer wordt sterk opgenomen door het pigment in een haar, en dat maakt hem gericht op de haarwortel. De Nordlys werkt met een band in plaats van één golflengte en is daardoor breder maar minder precies op haar. Welke je krijgt hangt af van je huidtype en de zone.":
+    "La alejandrita a 755 nanómetros la absorbe con fuerza el pigmento de un pelo, y eso la hace precisa sobre la raíz. El Nordlys trabaja con una banda en lugar de una sola longitud de onda y por eso es más amplio pero menos preciso sobre el pelo. Cuál te toca depende de tu fototipo y de la zona.",
+  "Het LED-systeem van Skin Complete waar wij mee werken. Het licht wordt door de huid opgenomen en ondersteunt daar het herstel; de behandelaar kiest de golflengte en de tijd op basis van de huidanalyse. Meestal aansluitend op een andere behandeling, en bij roodheid of rosacea ook als losse reeks.":
+    "El sistema LED de Skin Complete con el que trabajamos. La luz la absorbe la piel y ahí apoya la reparación; la terapeuta elige la longitud de onda y el tiempo a partir del análisis de la piel. Normalmente a continuación de otro tratamiento, y en rojez o rosácea también como serie suelta.",
+  "Bij mesotherapie worden werkzame stoffen direct in de huid gebracht. De U225 doet dat automatisch en regelmatig; de naald zit los van de spuit gemonteerd, wat de precisie van de toediening verbetert. Er zijn verschillende skinboosters, ook een depigmentatiebooster voor gezicht, hals en décolleté.":
+    "En la mesoterapia los principios activos se llevan directamente dentro de la piel. El U225 lo hace de forma automática y uniforme; la aguja va montada separada de la jeringa, lo que mejora la precisión de la aplicación. Hay distintos skinboosters, también un booster despigmentante para cara, cuello y escote.",
+  "De EVE-M brengt de conditie van je huid in kaart en maakt zichtbaar wat met het blote oog niet altijd te zien is: beginnende pigmentatie, vochttekort, poriestructuur en tekenen van huidveroudering. Verschillende huidlagen worden geanalyseerd, en door de meting te herhalen wordt voortgang objectief zichtbaar.":
+    "El EVE-M registra el estado de tu piel y hace visible lo que a simple vista no siempre se ve: pigmentación incipiente, falta de hidratación, estructura de los poros y signos de envejecimiento de la piel. Se analizan distintas capas de la piel, y al repetir la medición el progreso se hace visible de forma objetiva.",
+  "Het handstuk beweegt een capsule met een gel over de huid. Die twee reageren met elkaar en er ontstaan kleine CO2-belletjes op de huid. De huid reageert daarop door meer zuurstofrijk bloed naar de plek te sturen, terwijl de capsule de buitenste laag losmaakt en de stoffen uit de gel inbrengt. Het blijft aan de oppervlakte.":
+    "La pieza de mano mueve una cápsula con un gel por la piel. Los dos reaccionan entre sí y se forman pequeñas burbujas de CO2 en la piel. La piel reacciona enviando más sangre rica en oxígeno a la zona, mientras la cápsula suelta la capa más externa y aporta las sustancias del gel. Se queda en la superficie.",
+  "Het bijzondere zit in de manier waarop Fotona de Er:YAG aanstuurt. In SMOOTH-modus komt de energie in een reeks trage pulsen in plaats van één harde, waardoor het weefsel opwarmt zonder dat de opperhuid wordt weggenomen. Dat is het verschil tussen verdampen en verwarmen, en het is de reden dat er bij deze modus geen open huid ontstaat.":
+    "Lo especial está en la forma en que Fotona maneja el Er:YAG. En el modo SMOOTH la energía llega en una serie de pulsos lentos en lugar de uno solo fuerte, con lo que el tejido se calienta sin que se retire la epidermis. Esa es la diferencia entre vaporizar y calentar, y es la razón de que en este modo no quede piel abierta.",
+  "De Nordlys van Candela is geen laser maar IPL: intens gepulst licht. Een laser zendt één golflengte uit, IPL een band. Candela noemt zijn variant Selective Waveband Technology: twee filters knippen boven- en onderkant van het spectrum weg, zodat er een smallere band overblijft dan bij gewone IPL, met pulsen korter dan een milliseconde.":
+    "El Nordlys de Candela no es un láser sino IPL: luz pulsada intensa. Un láser emite una sola longitud de onda, la IPL una banda. Candela llama a su variante Selective Waveband Technology: dos filtros recortan la parte alta y la baja del espectro, de modo que queda una banda más estrecha que en la IPL normal, con pulsos de menos de un milisegundo.",
+  "Wat dit apparaat onderscheidt is de koeling. Candela spuit met de Dynamic Cooling Device een stoot cryogeen op de huid, milliseconden voor en na de puls. De opperhuid koelt daardoor terug terwijl de haarwortel de warmte vasthoudt. Dat is de reden dat er met deze laser hogere energie mogelijk is dan zonder die koeling verantwoord zou zijn.":
+    "Lo que distingue a este aparato es la refrigeración. Con el Dynamic Cooling Device, Candela lanza un chorro de criógeno sobre la piel, milisegundos antes y después del pulso. Así la epidermis vuelve a enfriarse mientras la raíz del pelo retiene el calor. Por eso con este láser es posible más energía de la que sería responsable sin esa refrigeración.",
+  "Het werkzame deel is het mondstuk, niet de kast. In de tip zit een spiraalvormig kanaal waar tegelijk onderdruk op staat en vloeistof doorheen loopt. Die twee samen maken een wervelende beweging over de huid: losgemaakte cellen en poriëninhoud gaan mee naar buiten, door een zijkanaal naar een opvangbak, terwijl er via hetzelfde kanaal serum naar binnen gaat.":
+    "La parte que trabaja es la punta, no la máquina. En la punta hay un canal en espiral sobre el que a la vez hay succión y pasa líquido. Esos dos juntos crean un movimiento en remolino sobre la piel: las células soltadas y el contenido de los poros salen hacia fuera, por un canal lateral a un depósito, mientras por el mismo canal entra sérum.",
+  "De kleuren die in de vakliteratuur het meest onderzocht zijn liggen rond 415 nanometer (blauw), 633 nanometer (rood) en 830 nanometer (nabij-infrarood). Blauw blijft in de bovenste lagen en wordt ingezet bij onzuiverheden. Rood komt tot in de lederhuid, waar het bindweefsel zit. Nabij-infrarood komt het verst, omdat die golflengte het minst door de huid wordt tegengehouden.":
+    "Los colores más estudiados en la literatura especializada están en torno a 415 nanómetros (azul), 633 nanómetros (rojo) y 830 nanómetros (infrarrojo cercano). El azul se queda en las capas superiores y se usa para impurezas. El rojo llega hasta la dermis, donde está el tejido conjuntivo. El infrarrojo cercano es el que más lejos llega, porque esa longitud de onda es la que menos frena la piel.",
+  "Bij welke registers wij horen en hoe je dat nakijkt staat op [kwaliteit en registraties](/kwaliteit-en-registraties). Wie hier werkt en met welke titel staat bij [het team](/team).":
+    "A qué registros pertenecemos y cómo comprobarlo está en [calidad y registros](/kwaliteit-en-registraties). Quién trabaja aquí y con qué título está en [el equipo](/team).",
+  "De [SkinPen](/apparatuur/skinpen-cit) heeft veertien naalden en werkt iets bedaarder. De [Dermapen 4](/apparatuur/dermapen-4) haalt tot 1920 prikken per seconde en werkt een vlak daardoor sneller af, met voorgeprogrammeerde standen, waaronder een instelling voor littekens op de maximale diepte. De diepte is bij allebei in te stellen van 0,25 tot 3 millimeter.":
+    "El [SkinPen](/apparatuur/skinpen-cit) tiene catorce agujas y trabaja algo más pausado. El [Dermapen 4](/apparatuur/dermapen-4) alcanza hasta 1920 pinchazos por segundo y por eso cubre una zona más rápido, con modos preprogramados, entre ellos un ajuste para cicatrices a la máxima profundidad. En los dos la profundidad se ajusta de 0,25 a 3 milímetros.",
+  "De behandeling zelf staat op [de behandelpagina](/behandelingen/fotona-4d), en welke behandelingen er nog meer op dit apparaat draaien bij [de Fotona TimeWalker](/behandelingen/fotona). Wat een kuur aan tijd vraagt staat bij [het aantal sessies](/kennisbank/hoeveel-sessies).":
+    "El propio tratamiento está en [la página del tratamiento](/behandelingen/fotona-4d), y qué otros tratamientos se hacen en este aparato en [el Fotona TimeWalker](/behandelingen/fotona). Lo que una cura pide en tiempo está en [el número de sesiones](/kennisbank/hoeveel-sessies).",
+  "Er is ook een volledig pakket, [Fotona 4D Full Package](/behandelingen/fotona-4d-full), waarin de hals en de kaaklijn meegaan. Daar valt verslapping vaak het eerst op, terwijl het gezicht er nog strak uitziet. En er is [Fotona 4D Men](/behandelingen/fotona-4d-men), met instellingen voor de doorgaans dikkere mannenhuid.":
+    "También hay un paquete completo, [Fotona 4D Full Package](/behandelingen/fotona-4d-full), en el que se incluyen el cuello y la línea de la mandíbula. Ahí la flacidez suele notarse primero, mientras la cara todavía se ve tersa. Y está [Fotona 4D Men](/behandelingen/fotona-4d-men), con configuración para la piel masculina, normalmente más gruesa.",
+  "Heeft je haar wel kleur, dan is [laserontharing](/laserontharing) sneller en voordeliger. Bij haargroei door PCOS staat meer op [de pagina over PCOS](/pcos). De behandeling zelf staat op [de behandelpagina](/behandelingen/elektrische-epilatie).":
+    "Si tu pelo sí tiene color, la [depilación láser](/laserontharing) es más rápida y más económica. Sobre el vello por SOP hay más en [la página sobre el SOP](/pcos). El propio tratamiento está en [la página del tratamiento](/behandelingen/elektrische-epilatie).",
+  "Het aantal per behandeling staat ook op de behandelpagina zelf, bij [alle behandelingen](/behandelingen). Hoe een eerste afspraak verloopt staat bij [het huidconsult](/intake).":
+    "El número por tratamiento está también en la propia página del tratamiento, en [todos los tratamientos](/behandelingen). Cómo va una primera cita está en [la consulta de la piel](/intake).",
+  "Het begint van binnenuit met [SmoothLiftin](/behandelingen/smoothliftin): een handstuk tegen de binnenkant van je wang, dat het weefsel verwarmt waar je van buitenaf niet bij komt. Daarna werkt [FRAC3](/behandelingen/frac3) op diepte op onregelmatigheden, en verwarmt [PIANO](/behandelingen/piano) het weefsel vlak en gelijkmatig. [SupErficial](/behandelingen/superficial-peel) sluit af met een lichte laserpeeling van de bovenste laag.":
+    "Empieza desde dentro con [SmoothLiftin](/behandelingen/smoothliftin): una pieza de mano contra la parte interior de tu mejilla, que calienta el tejido adonde no se llega desde fuera. Después [FRAC3](/behandelingen/frac3) trabaja en profundidad sobre las irregularidades, y [PIANO](/behandelingen/piano) calienta el tejido de forma plana y uniforme. [SupErficial](/behandelingen/superficial-peel) termina con un peeling láser suave de la capa superior.",
+  "Hoe de injector werkt staat bij de [U225](/apparatuur/u225). De behandeling zelf staat op [de behandelpagina](/behandelingen/skinboosters), en de booster voor de ogen bij [RRS Eyes](/behandelingen/rrs-eyes).":
+    "Cómo funciona el inyector está en el [U225](/apparatuur/u225). El propio tratamiento está en [la página del tratamiento](/behandelingen/skinboosters), y el booster para los ojos en [RRS Eyes](/behandelingen/rrs-eyes).",
+  "Hoe het apparaat werkt staat bij de [OxyGeneo van Pollogen](/apparatuur/oxygeneo). De behandeling zelf staat op [de behandelpagina](/behandelingen/oxygeneo).":
+    "Cómo funciona el aparato está en el [OxyGeneo de Pollogen](/apparatuur/oxygeneo). El propio tratamiento está en [la página del tratamiento](/behandelingen/oxygeneo).",
+  "Hoe het apparaat werkt staat op de pagina over de [EVE-M](/apparatuur/eve-m). Wat er in de rest van de intake gebeurt, staat bij [het huidconsult](/intake).":
+    "Cómo funciona el aparato está en la página sobre el [EVE-M](/apparatuur/eve-m). Lo que pasa en el resto de la consulta previa está en [la consulta de la piel](/intake).",
+  "Hoe het mesje en de hoek precies werken staat bij de [Dermaplane Pro](/apparatuur/dermaplane-pro). De behandeling zelf, los van de plaats, staat op [de behandelpagina](/behandelingen/dermaplaning).":
+    "Cómo funcionan exactamente la cuchilla y el ángulo está en el [Dermaplane Pro](/apparatuur/dermaplane-pro). El propio tratamiento, al margen del lugar, está en [la página del tratamiento](/behandelingen/dermaplaning).",
+  "Hoe het mondstuk precies is opgebouwd en waarom de tips verschillen, staat op de pagina over de [HydraFacial Syndeo](/apparatuur/hydrafacial-syndeo). De behandeling zelf, los van de plaats, staat op [de behandelpagina](/behandelingen/hydrafacial). Of een gezichtsbehandeling tijdens een zwangerschap kan, staat bij [zwanger of borstvoeding](/kennisbank/zwanger-of-borstvoeding).":
+    "Cómo está construida exactamente la punta y por qué las puntas difieren está en la página sobre el [HydraFacial Syndeo](/apparatuur/hydrafacial-syndeo). El propio tratamiento, al margen del lugar, está en [la página del tratamiento](/behandelingen/hydrafacial). Si un tratamiento facial se puede hacer durante el embarazo está en [embarazo o lactancia](/kennisbank/zwanger-of-borstvoeding).",
+  "Huidtherapie zit niet in de basisverzekering, maar bij de meeste verzekeraars wel in het aanvullende pakket. Dan moet er een medische reden zijn, en vaak een verwijzing van je huisarts vóór de eerste behandeling. Hoe dat per stap zit, staat op [de pagina over vergoedingen](/vergoedingen).":
+    "La terapia de la piel no está en el seguro básico, pero en la mayoría de las aseguradoras sí en el paquete complementario. Entonces tiene que haber una razón médica, y a menudo una derivación de tu médico de cabecera antes del primer tratamiento. Cómo va eso paso a paso está en [la página sobre reembolsos](/vergoedingen).",
+  "Per klacht staat het apart uitgewerkt: IPL bij [zonnevlekken](/behandelingen/nordlys-pigment/zonnevlekken), bij [couperose](/behandelingen/nordlys-roodheid/couperose) en bij [rosacea](/behandelingen/nordlys-roodheid/rosacea). Begin je liever bij de klacht, kijk dan bij [pigmentvlekken](/huidproblemen/pigmentvlekken). Welke rol je huidtype hierbij speelt staat bij [het Fitzpatrick-huidtype](/kennisbank/fitzpatrick-huidtype).":
+    "Por problema está desarrollado aparte: IPL para [manchas solares](/behandelingen/nordlys-pigment/zonnevlekken), para [cuperosis](/behandelingen/nordlys-roodheid/couperose) y para [rosácea](/behandelingen/nordlys-roodheid/rosacea). Si prefieres empezar por el problema, mira en [manchas de pigmento](/huidproblemen/pigmentvlekken). Qué papel juega aquí tu fototipo está en [el fototipo de Fitzpatrick](/kennisbank/fitzpatrick-huidtype).",
+  "Per klacht staat het apart uitgewerkt: een peeling bij [acne](/behandelingen/peelings/acne), bij [pigmentvlekken](/behandelingen/peelings/pigment) en voor [huidverjonging](/behandelingen/peelings/huidverjonging). Wat de zon rond een peeling doet staat bij [zon en je huid](/kennisbank/zon-en-je-huid), en wat er tijdens een zwangerschap kan bij [zwanger of borstvoeding](/kennisbank/zwanger-of-borstvoeding).":
+    "Por problema está desarrollado aparte: un peeling para el [acné](/behandelingen/peelings/acne), para [manchas de pigmento](/behandelingen/peelings/pigment) y para [rejuvenecer la piel](/behandelingen/peelings/huidverjonging). Lo que hace el sol en torno a un peeling está en [el sol y tu piel](/kennisbank/zon-en-je-huid), y lo que se puede hacer durante el embarazo en [embarazo o lactancia](/kennisbank/zwanger-of-borstvoeding).",
+  "Voor een huid met ontstoken acne is een zuur soms te veel. Daarvoor is er de [kruidenpeel van ADO](/behandelingen/kruidenpeel): fijngemalen kruiden zonder zuur, die ontstekingsremmend en antibacterieel werken. De huid is daarna drie tot vijf dagen rood en vervelt.":
+    "Para una piel con acné inflamado un ácido a veces es demasiado. Para eso está el [peeling de hierbas de ADO](/behandelingen/kruidenpeel): hierbas finamente molidas sin ácido, que actúan como antiinflamatorio y antibacteriano. Después la piel está roja y se descama de tres a cinco días.",
+  "Wat microneedling bij een bepaalde klacht doet, staat apart uitgewerkt: bij [acnelittekens](/behandelingen/skinpen/acnelittekens), bij [grove poriën](/behandelingen/skinpen/grove-porien), bij [fijne lijntjes](/behandelingen/skinpen/fijne-lijntjes), bij [littekens na een operatie](/behandelingen/skinpen/chirurgische-littekens) en bij [striae](/behandelingen/skinpen/striae). Waarom er weken tussen de sessies zitten staat bij [het aantal sessies](/kennisbank/hoeveel-sessies).":
+    "Lo que hace el microneedling en un problema concreto está desarrollado aparte: en [cicatrices de acné](/behandelingen/skinpen/acnelittekens), en [poros dilatados](/behandelingen/skinpen/grove-porien), en [líneas finas](/behandelingen/skinpen/fijne-lijntjes), en [cicatrices tras una operación](/behandelingen/skinpen/chirurgische-littekens) y en [estrías](/behandelingen/skinpen/striae). Por qué hay semanas entre las sesiones está en [el número de sesiones](/kennisbank/hoeveel-sessies).",
+  "Wat pigment in deze periode doet staat bij [melasma](/huidproblemen/melasma). Hoe het met striae na een zwangerschap zit staat bij [striae](/huidproblemen/striae).":
+    "Lo que hace el pigmento en este periodo está en [melasma](/huidproblemen/melasma). Cómo funcionan las estrías después de un embarazo está en [estrías](/huidproblemen/striae).",
+  "Wat pigment is en welk type je hebt, staat bij [pigmentvlekken](/huidproblemen/pigmentvlekken) en bij [melasma](/huidproblemen/melasma). De twee behandelingen staan apart bij [Cosmelan](/behandelingen/cosmelan) en [Dermamelan](/behandelingen/dermamelan). Waarom een traject niet in de zomer begint staat bij [zon en je huid](/kennisbank/zon-en-je-huid).":
+    "Qué es el pigmento y qué tipo tienes está en [manchas de pigmento](/huidproblemen/pigmentvlekken) y en [melasma](/huidproblemen/melasma). Los dos tratamientos están por separado en [Cosmelan](/behandelingen/cosmelan) y [Dermamelan](/behandelingen/dermamelan). Por qué un programa no empieza en verano está en [el sol y tu piel](/kennisbank/zon-en-je-huid).",
+  "Wat zonbescherming bij pigment precies doet staat bij [melasma](/huidproblemen/melasma) en bij [pigmentvlekken](/huidproblemen/pigmentvlekken). Welke rol je huidtype speelt staat bij [het Fitzpatrick-huidtype](/kennisbank/fitzpatrick-huidtype).":
+    "Lo que hace exactamente la protección solar en el pigmento está en [melasma](/huidproblemen/melasma) y en [manchas de pigmento](/huidproblemen/pigmentvlekken). Qué papel juega tu fototipo está en [el fototipo de Fitzpatrick](/kennisbank/fitzpatrick-huidtype).",
+  "We werken met peelings van [Skin Tech Pharma, Dermaceutic, ADO en Mesoestetic](/apparatuur/peelinglijnen), in drie niveaus. De lichtste werken op de bovenlaag en laten je meestal niet zichtbaar vervellen. De sterkste, zoals de TCA-peeling van Dermaceutic in 12 tot 20 procent, gaan dieper en vragen voorbereiding en hersteltijd.":
+    "Trabajamos con peelings de [Skin Tech Pharma, Dermaceutic, ADO y Mesoestetic](/apparatuur/peelinglijnen), en tres niveles. Los más suaves trabajan sobre la capa superior y normalmente no te hacen descamar de forma visible. Los más fuertes, como el peeling de TCA de Dermaceutic al 12 a 20 por ciento, llegan más hondo y piden preparación y tiempo de recuperación.",
+  "Welk type je hebt kun je zelf vastleggen in [je huidprofiel](/huidprofiel), zodat het al bekend is voordat je binnenkomt. Welke van de twee golflengtes bij jouw type hoort, kun je nakijken bij [de laserkiezer](/gentlemax-pro). Wat er tijdens een meting verder langskomt staat bij [de huidanalyse](/kennisbank/huidanalyse-rotterdam).":
+    "Qué tipo tienes puedes registrarlo tú en [tu perfil de piel](/huidprofiel), para que ya se sepa antes de que entres. Cuál de las dos longitudes de onda corresponde a tu tipo puedes comprobarlo en [el selector de láser](/gentlemax-pro). Qué más sale durante una medición está en [el análisis de la piel](/kennisbank/huidanalyse-rotterdam).",
+  "Welke klachten we behandelen staat per klacht in het [overzicht van huidproblemen](/huidproblemen). Welke behandelingen we daarvoor inzetten, met tarief en hersteltijd, staat bij [de behandelingen](/behandelingen). Moet je nog kiezen waar je heen gaat, dan staat bij [hoe je een huidkliniek kiest](/kennisbank/huidkliniek-kiezen) waar je zelf op kunt letten.":
+    "Qué problemas tratamos está por problema en el [resumen de problemas de piel](/huidproblemen). Qué tratamientos usamos para ellos, con tarifa y tiempo de recuperación, está en [los tratamientos](/behandelingen). Si todavía tienes que elegir adónde ir, en [cómo elegir una clínica de la piel](/kennisbank/huidkliniek-kiezen) pone en qué puedes fijarte tú.",
+  "Wij werken met de [Nordlys van Candela](/apparatuur/nordlys-ipl). Candela noemt zijn variant Selective Waveband Technology: twee filters knippen de boven- en onderkant van het spectrum weg, zodat er een smallere band overblijft dan bij gewone IPL, met pulsen korter dan een milliseconde.":
+    "Trabajamos con el [Nordlys de Candela](/apparatuur/nordlys-ipl). Candela llama a su variante Selective Waveband Technology: dos filtros recortan la parte alta y la baja del espectro, de modo que queda una banda más estrecha que en la IPL normal, con pulsos de menos de un milisegundo.",
+  "Wil je van de haartjes af in plaats van ze bij te houden, dan is dit de verkeerde behandeling. Voor donker haar is dat [laserontharing](/laserontharing); voor licht, grijs of wit haar dat de laser niet ziet, is dat [elektrische epilatie](/kennisbank/elektrische-epilatie-rotterdam).":
+    "Si quieres librarte del vello en lugar de mantenerlo a raya, este es el tratamiento equivocado. Para el pelo oscuro eso es la [depilación láser](/laserontharing); para el pelo claro, gris o blanco que el láser no ve, es la [electrólisis](/kennisbank/elektrische-epilatie-rotterdam).",
   "Na de intake": "Después de la consulta previa",
   "review noemt deze naam": "reseña menciona este nombre",
   "tijdens de behandeling": "durante el tratamiento",
-  "Melanine": "Melanina",
+  Melanine: "Melanina",
   "Meet en fotografeert": "Mide y fotografía",
   "Geen specifiek doelwit": "Sin objetivo específico",
-  "Microneedling": "Microneedling",
-  "wij werken met apparatuur en producten van": "trabajamos con aparatos y productos de",
+  Microneedling: "Microneedling",
+  "wij werken met apparatuur en producten van":
+    "trabajamos con aparatos y productos de",
   "officiële partner": "partner oficial",
   "partner van Candela": "partner de Candela",
-  "Wij werken met twee GentleMax Pro-systemen": "Trabajamos con dos sistemas GentleMax Pro",
-  "Asymmetrie": "Asimetría",
-  "Begrenzing": "Borde",
-  "Doorsnede": "Diámetro",
-  "Evolutie": "Evolución",
-  "of": "o",
+  "Wij werken met twee GentleMax Pro-systemen":
+    "Trabajamos con dos sistemas GentleMax Pro",
+  Asymmetrie: "Asimetría",
+  Begrenzing: "Borde",
+  Doorsnede: "Diámetro",
+  Evolutie: "Evolución",
+  of: "o",
   "Tot in de": "Hasta la",
-  "naast": "junto a",
-  "Of": "O",
-  "review": "reseña",
+  naast: "junto a",
+  review: "reseña",
   "reviews waarin": "reseñas en las que",
-  ". Dat is te weinig om iets uit af te leiden, en daarom staat het aantal op de knop en niet in de kleine letters.": ". Eso es demasiado poco para deducir algo, y por eso el número está en el botón y no en la letra pequeña.",
-  "Weissenbruchlaan 166, 3054 LS Rotterdam": "Weissenbruchlaan 166, 3054 LS Rotterdam",
+  ". Dat is te weinig om iets uit af te leiden, en daarom staat het aantal op de knop en niet in de kleine letters.":
+    ". Eso es demasiado poco para deducir algo, y por eso el número está en el botón y no en la letra pequeña.",
+  "Weissenbruchlaan 166, 3054 LS Rotterdam":
+    "Weissenbruchlaan 166, 3054 LS Róterdam",
   "3054 LS": "3054 LS",
   "info@dibaclinics.nl": "info@dibaclinics.nl",
   "dibaclinics.nl": "dibaclinics.nl",
-  "VGZ": "VGZ",
-  "DSW": "DSW",
-  "ONVZ": "ONVZ",
-  "Menzis": "Menzis",
+  VGZ: "VGZ",
+  DSW: "DSW",
+  ONVZ: "ONVZ",
+  Menzis: "Menzis",
   "a.s.r.": "a.s.r.",
-  "Salland": "Salland",
-  "Aevitae": "Aevitae",
+  Salland: "Salland",
+  Aevitae: "Aevitae",
   "Zilveren Kruis": "Zilveren Kruis",
   "Zorg en Zekerheid": "Zorg en Zekerheid",
-  "ZorgkaartNederland": "ZorgkaartNederland",
+  ZorgkaartNederland: "ZorgkaartNederland",
   "Stad Holland, inTwente": "Stad Holland, inTwente",
-  "FRAC3": "FRAC3",
-  "NightLase": "NightLase",
-  "HAIRestart": "HAIRestart",
+  FRAC3: "FRAC3",
+  NightLase: "NightLase",
+  HAIRestart: "HAIRestart",
   "XL Hair": "XL Hair",
   "Skin Complete": "Skin Complete",
   "Candela Medical": "Candela Medical",
-  "DermaplanePro": "DermaplanePro",
-  "Skin Tech Pharma, Dermaceutic, ADO, Mesoestetic": "Skin Tech Pharma, Dermaceutic, ADO, Mesoestetic",
-  "Precision Photonic System, Skin Complete": "Precision Photonic System, Skin Complete",
+  DermaplanePro: "DermaplanePro",
+  "Skin Tech Pharma, Dermaceutic, ADO, Mesoestetic":
+    "Skin Tech Pharma, Dermaceutic, ADO, Mesoestetic",
+  "Precision Photonic System, Skin Complete":
+    "Precision Photonic System, Skin Complete",
   "XL Hair, U225 mesotherapie": "XL Hair, mesoterapia U225",
-  "Irja, CC BY-SA 2.0, via Wikimedia Commons": "Irja, CC BY-SA 2.0, vía Wikimedia Commons",
-  "Jmarchn, CC BY-SA 3.0, via Wikimedia Commons": "Jmarchn, CC BY-SA 3.0, vía Wikimedia Commons",
+  "Irja, CC BY-SA 2.0, via Wikimedia Commons":
+    "Irja, CC BY-SA 2.0, vía Wikimedia Commons",
+  "Jmarchn, CC BY-SA 3.0, via Wikimedia Commons":
+    "Jmarchn, CC BY-SA 3.0, vía Wikimedia Commons",
   "Make-up": "Maquillaje",
-  "mensen": "personas",
-  "keloiden": "queloides",
-  "aantoont": "demuestra",
-  "Buikwandcorrectie": "Abdominoplastia",
-  "Keizersnedelitteken": "Cicatriz de cesárea",
-  "operatielittekens": "cicatrices quirúrgicas",
-  "aangetikt": "marcados",
-  "Na": "Tras",
-  "uur": "horas",
-  "dag": "día",
-  "weken": "semanas",
-  "maanden": "meses",
+  mensen: "personas",
+  keloiden: "queloides",
+  aantoont: "demuestra",
+  Buikwandcorrectie: "Abdominoplastia",
+  Keizersnedelitteken: "Cicatriz de cesárea",
+  operatielittekens: "cicatrices quirúrgicas",
+  aangetikt: "marcados",
+  Na: "Tras",
+  uur: "horas",
+  dag: "día",
+  weken: "semanas",
+  maanden: "meses",
   "Meteen weer": "Enseguida",
-  ". Daar zit een behandelaar aan de andere kant en geen formulier.": ". Ahí hay una terapeuta al otro lado y no un formulario.",
+  ". Daar zit een behandelaar aan de andere kant en geen formulier.":
+    ". Ahí hay una terapeuta al otro lado y no un formulario.",
   "Alleen de huidanalyse doen": "Hacer solo el análisis de la piel",
   "Hier valt iets te doen": "Aquí hay algo que hacer",
-  "Van de vier beelden op deze pagina is dit het enige waarbij er weefsel verloren is gegaan, en het enige waarbij afwachten niets oplevert.": "De las cuatro imágenes de esta página, esta es la única en la que se ha perdido tejido, y la única en la que esperar no aporta nada.",
-  "Een porie die is volgelopen en dicht is gebleven of verkleurd. Dat is te ontlasten, in stappen die je huid aankan.": "Un poro que se ha llenado y se ha quedado cerrado o descolorido. Eso se puede aliviar, en pasos que tu piel aguante.",
+  "Van de vier beelden op deze pagina is dit het enige waarbij er weefsel verloren is gegaan, en het enige waarbij afwachten niets oplevert.":
+    "De las cuatro imágenes de esta página, esta es la única en la que se ha perdido tejido, y la única en la que esperar no aporta nada.",
+  "Een porie die is volgelopen en dicht is gebleven of verkleurd. Dat is te ontlasten, in stappen die je huid aankan.":
+    "Un poro que se ha llenado y se ha quedado cerrado o descolorido. Eso se puede aliviar, en pasos que tu piel aguante.",
   "Neem dit mee naar de intake": "Llévate esto a la consulta previa",
-  "Je stuurt zelf. Kies een stap om verder te kijken.": "Tú diriges. Elige un paso para seguir mirando.",
+  "Je stuurt zelf. Kies een stap om verder te kijken.":
+    "Tú diriges. Elige un paso para seguir mirando.",
   "Raakt niets": "No alcanza nada",
   "Hier komt niets van ons": "Aquí no llega nada nuestro",
-  "Eén van onze behandelingen komt hier": "Uno de nuestros tratamientos llega aquí",
+  "Eén van onze behandelingen komt hier":
+    "Uno de nuestros tratamientos llega aquí",
   "Eén combinatie valt op": "Una combinación destaca",
   "Je profiel is klaar": "Tu perfil está listo",
-  "Dit zijn de dingen die anders pas aan de balie boven tafel komen. Stuur ze mee als je boekt, dan is de afspraak meteen de juiste.": "Estas son las cosas que si no solo salen en recepción. Envíalas al reservar, y la cita es la correcta desde el principio.",
-  "Er zit op grond van je antwoorden niets in de weg. Stuur je profiel mee als je boekt, dan hoeft het niet nog een keer uitgevraagd te worden.": "Según tus respuestas no hay nada que se interponga. Envía tu perfil al reservar, y así no hay que preguntarlo otra vez.",
-  "De tekst staat op je klembord. Er is niets verstuurd: dat doe jij zelf, als je wil.": "El texto está en tu portapapeles. No se ha enviado nada: eso lo haces tú, si quieres.",
-  "Je profiel blijft in deze browser staan en gaat uit zichzelf nergens heen. Kopiëren zet het op je klembord, meer niet.": "Tu perfil se queda en este navegador y no va a ningún sitio por sí solo. Copiar lo pone en tu portapapeles, nada más.",
-  "Wijs een zone aan, dan staat het bedrag hier.": "Señala una zona y aquí aparece el importe.",
-  "Voor een deel van je keuze is nog geen tarief bekend. De opbouw klopt al wel.": "Para una parte de tu selección todavía no se conoce la tarifa. La composición ya es correcta.",
-  "Prijs per sessie. Het aantal sessies hoor je tijdens de intake.": "Precio por sesión. El número de sesiones lo oyes en la consulta previa.",
-  "Kijk waar de 755 stopt. Het pigment in de bovenlaag neemt hem op, dus er komt niets bij de wortel aan en de warmte blijft achter in de huid. Daarom werken we bij dit huidtype met de 1064.": "Mira dónde se detiene la 755. El pigmento de la capa superior la absorbe, así que no llega nada a la raíz y el calor se queda en la piel. Por eso en este fototipo trabajamos con la 1064.",
-  "Er zit weinig pigment in de bovenlaag om onderweg op te nemen, dus de 755 komt tot bij de wortel. Dat is de golflengte die het pigment in de haar het sterkst opneemt.": "Hay poco pigmento en la capa superior que la absorba por el camino, así que la 755 llega hasta la raíz. Es la longitud de onda que el pigmento del pelo absorbe con más fuerza.",
+  "Dit zijn de dingen die anders pas aan de balie boven tafel komen. Stuur ze mee als je boekt, dan is de afspraak meteen de juiste.":
+    "Estas son las cosas que si no solo salen en recepción. Envíalas al reservar, y la cita es la correcta desde el principio.",
+  "Er zit op grond van je antwoorden niets in de weg. Stuur je profiel mee als je boekt, dan hoeft het niet nog een keer uitgevraagd te worden.":
+    "Según tus respuestas no hay nada que se interponga. Envía tu perfil al reservar, y así no hay que preguntarlo otra vez.",
+  "De tekst staat op je klembord. Er is niets verstuurd: dat doe jij zelf, als je wil.":
+    "El texto está en tu portapapeles. No se ha enviado nada: eso lo haces tú, si quieres.",
+  "Je profiel blijft in deze browser staan en gaat uit zichzelf nergens heen. Kopiëren zet het op je klembord, meer niet.":
+    "Tu perfil se queda en este navegador y no va a ningún sitio por sí solo. Copiar lo pone en tu portapapeles, nada más.",
+  "Wijs een zone aan, dan staat het bedrag hier.":
+    "Señala una zona y aquí aparece el importe.",
+  "Voor een deel van je keuze is nog geen tarief bekend. De opbouw klopt al wel.":
+    "Para una parte de tu selección todavía no se conoce la tarifa. La composición ya es correcta.",
+  "Prijs per sessie. Het aantal sessies hoor je tijdens de intake.":
+    "Precio por sesión. El número de sesiones lo oyes en la consulta previa.",
+  "Kijk waar de 755 stopt. Het pigment in de bovenlaag neemt hem op, dus er komt niets bij de wortel aan en de warmte blijft achter in de huid. Daarom werken we bij dit huidtype met de 1064.":
+    "Mira dónde se detiene la 755. El pigmento de la capa superior la absorbe, así que no llega nada a la raíz y el calor se queda en la piel. Por eso en este fototipo trabajamos con la 1064.",
+  "Er zit weinig pigment in de bovenlaag om onderweg op te nemen, dus de 755 komt tot bij de wortel. Dat is de golflengte die het pigment in de haar het sterkst opneemt.":
+    "Hay poco pigmento en la capa superior que la absorba por el camino, así que la 755 llega hasta la raíz. Es la longitud de onda que el pigmento del pelo absorbe con más fuerza.",
   "Allebei, dat hangt af van jou": "Las dos, depende de ti",
   "Zit al in je keuze": "Ya está en tu selección",
   "Zit er al in": "Ya incluido",
   "Laat het eerlijk narekenen": "Deja que lo calculemos con honestidad",
   "Eigen opname, zonder geluid": "Grabación propia, sin sonido",
-  "Eigen opname, met geluid en ondertiteling": "Grabación propia, con sonido y subtítulos",
+  "Eigen opname, met geluid en ondertiteling":
+    "Grabación propia, con sonido y subtítulos",
   "Geen van de punten viel op": "Ninguno de los puntos destacó",
-  "Profiel aanvullen voor een preciezer antwoord": "Completar el perfil para una respuesta más precisa",
+  "Profiel aanvullen voor een preciezer antwoord":
+    "Completar el perfil para una respuesta más precisa",
   "Je huidprofiel bijwerken": "Actualizar tu perfil de piel",
   "Eén pagina past hierbij": "Una página encaja con esto",
-  "Een egale, platte vlek op een plek die veel zon heeft gehad. Dit is het beeld waar een behandeling op aangrijpt.": "Una mancha plana y uniforme en un sitio que ha recibido mucho sol. Esta es la imagen sobre la que actúa un tratamiento.",
-  "Goedaardig, aan een steeltje, en onveranderd. Meestal in een afspraak klaar, en in hetzelfde kwartier meerdere.": "Benigno, con un pequeño tallo, y sin cambios. Normalmente listo en una cita, y varios en el mismo cuarto de hora.",
-  "beantwoord": "respondidas",
-  "aangepakt": "tratados",
-  "Keloiden": "Queloides",
-  "Kijk waar de 755 stopt. Het pigment in de bovenlaag neemt hem op, dus er komt niets bij de wortel aan en de warmte blijft achter in de huid. Daarom werken we hier met de 1064.": "Mira dónde se detiene la 755. El pigmento de la capa superior la absorbe, así que no llega nada a la raíz y el calor se queda en la piel. Por eso aquí trabajamos con la 1064.",
-  "Wordt er in dezelfde afspraak behandeld, dan vervallen de intakekosten en betaal je alleen de behandeling. Gaat de behandeling niet door, dan kost de intake € 50. Een losse intake zonder behandeling duurt maximaal 30 minuten en kost altijd € 50.": "Si te tratan en la misma cita, el coste de la consulta previa no se cobra y pagas solo el tratamiento. Si el tratamiento no se lleva a cabo, la consulta previa cuesta € 50. Una consulta previa suelta sin tratamiento dura como máximo 30 minutos y cuesta siempre € 50.",
+  "Een egale, platte vlek op een plek die veel zon heeft gehad. Dit is het beeld waar een behandeling op aangrijpt.":
+    "Una mancha plana y uniforme en un sitio que ha recibido mucho sol. Esta es la imagen sobre la que actúa un tratamiento.",
+  "Goedaardig, aan een steeltje, en onveranderd. Meestal in een afspraak klaar, en in hetzelfde kwartier meerdere.":
+    "Benigno, con un pequeño tallo, y sin cambios. Normalmente listo en una cita, y varios en el mismo cuarto de hora.",
+  beantwoord: "respondidas",
+  aangepakt: "tratados",
+  Keloiden: "Queloides",
+  "Kijk waar de 755 stopt. Het pigment in de bovenlaag neemt hem op, dus er komt niets bij de wortel aan en de warmte blijft achter in de huid. Daarom werken we hier met de 1064.":
+    "Mira dónde se detiene la 755. El pigmento de la capa superior la absorbe, así que no llega nada a la raíz y el calor se queda en la piel. Por eso aquí trabajamos con la 1064.",
+  "Wordt er in dezelfde afspraak behandeld, dan vervallen de intakekosten en betaal je alleen de behandeling. Gaat de behandeling niet door, dan kost de intake € 50. Een losse intake zonder behandeling duurt maximaal 30 minuten en kost altijd € 50.":
+    "Si te tratan en la misma cita, el coste de la consulta previa no se cobra y pagas solo el tratamiento. Si el tratamiento no se lleva a cabo, la consulta previa cuesta € 50. Una consulta previa suelta sin tratamiento dura como máximo 30 minutos y cuesta siempre € 50.",
   ", tijdens de behandeling": ", durante el tratamiento",
-  "De Nordlys, zoals hij bij ons staat": "El Nordlys, tal como está en nuestra clínica",
-  "Gezichtsbehandelingen": "Tratamientos faciales",
-  "Peelings": "Peelings",
+  "De Nordlys, zoals hij bij ons staat":
+    "El Nordlys, tal como está en nuestra clínica",
+  Gezichtsbehandelingen: "Tratamientos faciales",
+  Peelings: "Peelings",
   "Laser en licht": "Láser y luz",
-  "Pigmenttrajecten": "Programas de pigmento",
+  Pigmenttrajecten: "Programas de pigmento",
   "Overige behandelingen": "Otros tratamientos",
   "Eerst kijken, nog niets doen.": "Primero mirar, todavía sin hacer nada.",
-  "Reinigen, hydrateren, oppervlakkig vernieuwen.": "Limpiar, hidratar, renovar en la superficie.",
-  "De bovenlaag sneller laten vernieuwen.": "Hacer que la capa superior se renueve más rápido.",
-  "Herstel op gang brengen in het bindweefsel.": "Poner en marcha la reparación en el tejido conjuntivo.",
-  "Werkzame stoffen op diepte brengen.": "Llevar principios activos en profundidad.",
-  "Mikken op kleur, vaten of structuur.": "Apuntar al color, los vasos o la textura.",
-  "Maanden werk aan hardnekkig pigment.": "Meses de trabajo sobre el pigmento rebelde.",
+  "Reinigen, hydrateren, oppervlakkig vernieuwen.":
+    "Limpiar, hidratar, renovar en la superficie.",
+  "De bovenlaag sneller laten vernieuwen.":
+    "Hacer que la capa superior se renueve más rápido.",
+  "Herstel op gang brengen in het bindweefsel.":
+    "Poner en marcha la reparación en el tejido conjuntivo.",
+  "Werkzame stoffen op diepte brengen.":
+    "Llevar principios activos en profundidad.",
+  "Mikken op kleur, vaten of structuur.":
+    "Apuntar al color, los vasos o la textura.",
+  "Maanden werk aan hardnekkig pigment.":
+    "Meses de trabajo sobre el pigmento rebelde.",
   "De haarwortel uitschakelen.": "Desactivar la raíz del pelo.",
   "Wat er verder in de kliniek gebeurt.": "Lo demás que pasa en la clínica.",
   "Snurken en fibromen.": "Ronquidos y fibromas.",
   "Na de meting": "Después de la medición",
-  "Dames": "Mujeres",
-  "Heren": "Hombres",
+  Dames: "Mujeres",
+  Heren: "Hombres",
   "tarieven in": "tarifas en",
   "Laserontharing dames, pakketten": "Depilación láser mujeres, paquetes",
   "Laserontharing dames, gelaat": "Depilación láser mujeres, cara",
-  "Laserontharing dames, bovenlichaam": "Depilación láser mujeres, parte superior del cuerpo",
-  "Laserontharing dames, onderlichaam": "Depilación láser mujeres, parte inferior del cuerpo",
+  "Laserontharing dames, bovenlichaam":
+    "Depilación láser mujeres, parte superior del cuerpo",
+  "Laserontharing dames, onderlichaam":
+    "Depilación láser mujeres, parte inferior del cuerpo",
   "Laserontharing heren, pakketten": "Depilación láser hombres, paquetes",
   "Laserontharing heren, gelaat": "Depilación láser hombres, cara",
-  "Laserontharing heren, bovenlichaam": "Depilación láser hombres, parte superior del cuerpo",
-  "Laserontharing heren, onderlichaam": "Depilación láser hombres, parte inferior del cuerpo",
-  "Een pakket vervangt de losse zones die erin zitten; die tellen dan niet nog een keer mee.": "Un paquete sustituye las zonas sueltas que contiene; esas no cuentan entonces una segunda vez.",
+  "Laserontharing heren, bovenlichaam":
+    "Depilación láser hombres, parte superior del cuerpo",
+  "Laserontharing heren, onderlichaam":
+    "Depilación láser hombres, parte inferior del cuerpo",
+  "Een pakket vervangt de losse zones die erin zitten; die tellen dan niet nog een keer mee.":
+    "Un paquete sustituye las zonas sueltas que contiene; esas no cuentan entonces una segunda vez.",
   "Per sessie in euro’s": "Por sesión en euros",
-  "Pakket A: oksels en bikinilijn groot": "Paquete A: axilas y línea del bikini ampliada",
-  "Pakket B: oksels, gehele armen en bikinilijn groot": "Paquete B: axilas, brazos completos y línea del bikini ampliada",
-  "Pakket C: oksels, gehele armen en gehele benen": "Paquete C: axilas, brazos completos y piernas completas",
-  "Pakket D: oksels, gehele benen en bikinilijn groot": "Paquete D: axilas, piernas completas y línea del bikini ampliada",
+  "Pakket A: oksels en bikinilijn groot":
+    "Paquete A: axilas y línea del bikini ampliada",
+  "Pakket B: oksels, gehele armen en bikinilijn groot":
+    "Paquete B: axilas, brazos completos y línea del bikini ampliada",
+  "Pakket C: oksels, gehele armen en gehele benen":
+    "Paquete C: axilas, brazos completos y piernas completas",
+  "Pakket D: oksels, gehele benen en bikinilijn groot":
+    "Paquete D: axilas, piernas completas y línea del bikini ampliada",
   "Pakket E: full body zonder gezicht": "Paquete E: cuerpo entero sin la cara",
   "Gelaat inclusief hals": "Cara con cuello",
   "Tussen de wenkbrauwen": "Entrecejo",
-  "Bovenlip": "Labio superior",
-  "Bakkebaard": "Patillas",
-  "Onderkin": "Papada",
-  "Hals": "Cuello",
-  "Nek": "Nuca",
+  Bovenlip: "Labio superior",
+  Bakkebaard: "Patillas",
+  Onderkin: "Papada",
+  Hals: "Cuello",
+  Nek: "Nuca",
   "Bovenlip + kin": "Labio superior + barbilla",
   "Kin + onderkin": "Barbilla + papada",
   "Wangen + bakkebaard": "Mejillas + patillas",
   "Onderkin + hals": "Papada + cuello",
   "Gehele gezicht": "Cara completa",
   "Gehele gelaat": "Rostro completo",
-  "Oksels": "Axilas",
-  "Bovenarmen": "Brazos (parte superior)",
-  "Onderarmen": "Antebrazos",
+  Oksels: "Axilas",
+  Bovenarmen: "Brazos (parte superior)",
+  Onderarmen: "Antebrazos",
   "Gehele armen": "Brazos completos",
-  "Buik": "Vientre",
+  Buik: "Vientre",
   "Tussen de borsten": "Entre los pechos",
   "Rond de tepels": "Alrededor de los pezones",
-  "Borsten": "Pechos",
-  "Navelstrook": "Línea del ombligo",
-  "Schouders": "Hombros",
-  "Onderrug": "Zona lumbar",
+  Borsten: "Pechos",
+  Navelstrook: "Línea del ombligo",
+  Schouders: "Hombros",
+  Onderrug: "Zona lumbar",
   "Gehele rug": "Espalda completa",
-  "Bovenbenen": "Muslos",
-  "Onderbenen": "Medias piernas",
+  Bovenbenen: "Muslos",
+  Onderbenen: "Medias piernas",
   "Gehele benen": "Piernas completas",
-  "Bilnaad": "Pliegue interglúteo",
+  Bilnaad: "Pliegue interglúteo",
   "Bikinilijn klein": "Línea del bikini pequeña",
   "Bikinilijn groot": "Línea del bikini ampliada",
-  "Bilwangen": "Glúteos",
-  "Oren": "Orejas",
-  "Borst": "Pecho",
-  "Billen": "Nalgas",
-  "Handen": "Manos",
-  "Voeten": "Pies",
-  "Tenen": "Dedos de los pies",
-  "Vingers": "Dedos de las manos",
+  Bilwangen: "Glúteos",
+  Oren: "Orejas",
+  Borst: "Pecho",
+  Billen: "Nalgas",
+  Handen: "Manos",
+  Voeten: "Pies",
+  Tenen: "Dedos de los pies",
+  Vingers: "Dedos de las manos",
   "Staat de btw er al bij?": "¿El IVA ya está incluido?",
-  "Ja. De bedragen op deze pagina zijn wat je aan de balie betaalt. Er komt niets bij voor materiaal of voor het aanleggen van een dossier.": "Sí. Los importes de esta página son lo que pagas en recepción. No se añade nada por material ni por abrir un expediente.",
+  "Ja. De bedragen op deze pagina zijn wat je aan de balie betaalt. Er komt niets bij voor materiaal of voor het aanleggen van een dossier.":
+    "Sí. Los importes de esta página son lo que pagas en recepción. No se añade nada por material ni por abrir un expediente.",
   "Krijg ik dit vergoed?": "¿Me lo reembolsan?",
-  "Dat hangt af van je aanvullende verzekering en of er een medische indicatie is. Diba Clinics is gecontracteerd bij alle zorgverzekeraars; op de vergoedingenpagina staat per verzekeraar wat eronder valt.": "Depende de tu seguro complementario y de si hay una indicación médica. Diba Clinics tiene contrato con todas las aseguradoras de salud; en la página de reembolsos pone por aseguradora lo que entra.",
-  "Zijn er kortingen, pakketten of acties?": "¿Hay descuentos, paquetes o promociones?",
+  "Dat hangt af van je aanvullende verzekering en of er een medische indicatie is. Diba Clinics is gecontracteerd bij alle zorgverzekeraars; op de vergoedingenpagina staat per verzekeraar wat eronder valt.":
+    "Depende de tu seguro complementario y de si hay una indicación médica. Diba Clinics tiene contrato con todas las aseguradoras de salud; en la página de reembolsos pone por aseguradora lo que entra.",
+  "Zijn er kortingen, pakketten of acties?":
+    "¿Hay descuentos, paquetes o promociones?",
   "Wat als ik mijn afspraak afzeg?": "¿Y si cancelo mi cita?",
-  "Tot 48 uur voor je afspraak kun je afzeggen of verzetten, telefonisch of per bericht. Je hoeft geen reden te geven. Zeg je minder dan 48 uur voor je afspraak af, of kom je zonder bericht niet opdagen, dan vervalt je aanbetaling. Voor een nieuwe afspraak vragen we opnieuw een aanbetaling.": "Hasta 48 horas antes de tu cita puedes cancelar o cambiarla, por teléfono o por mensaje. No tienes que dar ningún motivo. Si cancelas menos de 48 horas antes de tu cita, o no te presentas sin avisar, pierdes el depósito. Para una nueva cita pedimos de nuevo un depósito.",
+  "Tot 48 uur voor je afspraak kun je afzeggen of verzetten, telefonisch of per bericht. Je hoeft geen reden te geven. Zeg je minder dan 48 uur voor je afspraak af, of kom je zonder bericht niet opdagen, dan vervalt je aanbetaling. Voor een nieuwe afspraak vragen we opnieuw een aanbetaling.":
+    "Hasta 48 horas antes de tu cita puedes cancelar o cambiarla, por teléfono o por mensaje. No tienes que dar ningún motivo. Si cancelas menos de 48 horas antes de tu cita, o no te presentas sin avisar, pierdes el depósito. Para una nueva cita pedimos de nuevo un depósito.",
   "Wanneer betaal ik?": "¿Cuándo pago?",
-  "Wat als de behandeling niet door kan gaan?": "¿Y si el tratamiento no se puede hacer?",
+  "Wat als de behandeling niet door kan gaan?":
+    "¿Y si el tratamiento no se puede hacer?",
   "Je betaalt de behandeling dan niet.": "Entonces no pagas el tratamiento.",
   "E-mail": "Correo electrónico",
   "E-mailadres": "Dirección de correo electrónico",
-  "Naam": "Nombre",
-  "Telefoon": "Teléfono",
+  Naam: "Nombre",
+  Telefoon: "Teléfono",
   "Alleen als je liever gebeld wordt": "Solo si prefieres que te llamemos",
   "Waar gaat je vraag over": "De qué trata tu pregunta",
-  "Een afspraak maken, verzetten of afzeggen": "Pedir, cambiar o cancelar una cita",
+  "Een afspraak maken, verzetten of afzeggen":
+    "Pedir, cambiar o cancelar una cita",
   "Een vraag over een behandeling": "Una pregunta sobre un tratamiento",
-  "Een vraag over de kosten of vergoeding": "Una pregunta sobre los costes o el reembolso",
+  "Een vraag over de kosten of vergoeding":
+    "Una pregunta sobre los costes o el reembolso",
   "Iets anders": "Otra cosa",
   "Je vraag": "Tu pregunta",
   "Verstuur je vraag": "Enviar tu pregunta",
-  "Binnen twee werkdagen. Voor iets met haast is bellen of appen sneller.": "En dos días laborables. Para algo urgente, llamar o escribir por WhatsApp es más rápido.",
+  "Binnen twee werkdagen. Voor iets met haast is bellen of appen sneller.":
+    "En dos días laborables. Para algo urgente, llamar o escribir por WhatsApp es más rápido.",
   "Heb je haast, bel": "Si tienes prisa, llama al",
   "of stuur een": "o envía un",
-  ". We gebruiken je gegevens alleen om je vraag te beantwoorden.": ". Usamos tus datos solo para responder a tu pregunta.",
+  ". We gebruiken je gegevens alleen om je vraag te beantwoorden.":
+    ". Usamos tus datos solo para responder a tu pregunta.",
   "10:00 tot 18:00": "10:00 a 18:00",
   "10:00 tot 21:00": "10:00 a 21:00",
   "Ik wil een afspraak maken": "Quiero pedir una cita",
-  "Ik wil mijn afspraak verzetten of afzeggen": "Quiero cambiar o cancelar mi cita",
-  "Kan deze behandeling bij mijn huid?": "¿Este tratamiento se puede hacer en mi piel?",
+  "Ik wil mijn afspraak verzetten of afzeggen":
+    "Quiero cambiar o cancelar mi cita",
+  "Kan deze behandeling bij mijn huid?":
+    "¿Este tratamiento se puede hacer en mi piel?",
   "Wat gaat dit mij kosten?": "¿Cuánto me va a costar?",
   "Ik ben ergens niet tevreden over": "No estoy conforme con algo",
-  "Ik heb een zakelijke of pers-vraag": "Tengo una consulta comercial o de prensa",
+  "Ik heb een zakelijke of pers-vraag":
+    "Tengo una consulta comercial o de prensa",
   "Online plannen": "Programar online",
-  "Elk traject begint met een meting, dus dat is ook de afspraak die je maakt. Wat daarna volgt hangt af van wat eruit komt.": "Cada programa empieza con una medición, así que esa es también la cita que pides. Lo que sigue depende de lo que salga.",
-  "Meteen. Je kiest zelf een moment en de bevestiging komt direct binnen.": "Al momento. Eliges tú un momento y la confirmación llega de inmediato.",
-  ", samen met wat er gebeurt als wij moeten afzeggen.": ", junto con lo que pasa si nosotros tenemos que cancelar.",
+  "Elk traject begint met een meting, dus dat is ook de afspraak die je maakt. Wat daarna volgt hangt af van wat eruit komt.":
+    "Cada programa empieza con una medición, así que esa es también la cita que pides. Lo que sigue depende de lo que salga.",
+  "Meteen. Je kiest zelf een moment en de bevestiging komt direct binnen.":
+    "Al momento. Eliges tú un momento y la confirmación llega de inmediato.",
+  ", samen met wat er gebeurt als wij moeten afzeggen.":
+    ", junto con lo que pasa si nosotros tenemos que cancelar.",
   ", die staan hieronder.": ", están aquí abajo.",
-  "Diba Clinics Rotterdam": "Diba Clinics Rotterdam",
+  "Diba Clinics Rotterdam": "Diba Clinics Róterdam",
   "Met de auto": "En coche",
-  "Vanaf de A20 afslag Rotterdam-Centrum en dan noordwaarts via de Straatweg. Reken op een kwartier vanaf de ring, buiten de spits.": "Desde la A20, salida Rotterdam-Centrum y luego hacia el norte por la Straatweg. Cuenta con un cuarto de hora desde la ronda, fuera de la hora punta.",
-  "Parkeren": "Aparcar",
-  "Voor en achter de kliniek is ruim plek. Je hoeft dus niet eerst een rondje te rijden en je staat er vlak voor de deur.": "Delante y detrás de la clínica hay sitio de sobra. Así que no tienes que dar vueltas primero y aparcas justo delante de la puerta.",
+  "Vanaf de A20 afslag Rotterdam-Centrum en dan noordwaarts via de Straatweg. Reken op een kwartier vanaf de ring, buiten de spits.":
+    "Desde la A20, salida Róterdam-Centrum y luego hacia el norte por la Straatweg. Cuenta con un cuarto de hora desde la ronda, fuera de la hora punta.",
+  Parkeren: "Aparcar",
+  "Voor en achter de kliniek is ruim plek. Je hoeft dus niet eerst een rondje te rijden en je staat er vlak voor de deur.":
+    "Delante y detrás de la clínica hay sitio de sobra. Así que no tienes que dar vueltas primero y aparcas justo delante de la puerta.",
   "Met het openbaar vervoer": "En transporte público",
-  "Station Rotterdam Noord ligt op ruim een kilometer, en vanaf Rotterdam Centraal rijden er trams en bussen richting Hillegersberg.": "La estación Rotterdam Noord está a poco más de un kilómetro, y desde Rotterdam Centraal salen tranvías y autobuses hacia Hillegersberg.",
+  "Station Rotterdam Noord ligt op ruim een kilometer, en vanaf Rotterdam Centraal rijden er trams en bussen richting Hillegersberg.":
+    "La estación Róterdam Noord está a poco más de un kilómetro, y desde Róterdam Centraal salen tranvías y autobuses hacia Hillegersberg.",
   "Op de fiets": "En bici",
-  "Vanuit het centrum ben je er in ongeveer twintig minuten. Stallen kan niet pal voor de deur; zet hem in de straat.": "Desde el centro llegas en unos veinte minutos. No se puede aparcar justo delante de la puerta; déjala en la calle.",
+  "Vanuit het centrum ben je er in ongeveer twintig minuten. Stallen kan niet pal voor de deur; zet hem in de straat.":
+    "Desde el centro llegas en unos veinte minutos. No se puede aparcar justo delante de la puerta; déjala en la calle.",
   "Bij binnenkomst": "Al entrar",
-  ", in een woonwijk. Rustig dus, en je parkeert in de straat in plaats van in een garage.": ", en un barrio residencial. Tranquilo, por tanto, y aparcas en la calle en lugar de en un garaje.",
+  ", in een woonwijk. Rustig dus, en je parkeert in de straat in plaats van in een garage.":
+    ", en un barrio residencial. Tranquilo, por tanto, y aparcas en la calle en lugar de en un garaje.",
   "Je bevestiging komt direct": "Tu confirmación llega de inmediato",
-  "Je kiest zelf een moment en krijgt de bevestiging meteen in je mail.": "Eliges tú un momento y recibes la confirmación directamente en tu correo.",
-  "Verzetten kan tot 48 uur van tevoren": "Cambiar la cita se puede hasta 48 horas antes",
-  "Kosteloos, en je hoeft geen reden te geven.": "Sin coste, y no tienes que dar ningún motivo.",
+  "Je kiest zelf een moment en krijgt de bevestiging meteen in je mail.":
+    "Eliges tú un momento y recibes la confirmación directamente en tu correo.",
+  "Verzetten kan tot 48 uur van tevoren":
+    "Cambiar la cita se puede hasta 48 horas antes",
+  "Kosteloos, en je hoeft geen reden te geven.":
+    "Sin coste, y no tienes que dar ningún motivo.",
   "Je betaalt een aanbetaling": "Pagas un depósito",
-  "Boek je door, dan gaat het bedrag mee naar je volgende behandeling; er staat dan altijd een aanbetaling klaar. Stop je, of wil je online inplannen, dan krijg je hem terug.": "Si sigues reservando, el importe pasa a tu siguiente tratamiento; así siempre hay un depósito listo. Si paras, o quieres programar online, te lo devolvemos.",
+  "Boek je door, dan gaat het bedrag mee naar je volgende behandeling; er staat dan altijd een aanbetaling klaar. Stop je, of wil je online inplannen, dan krijg je hem terug.":
+    "Si sigues reservando, el importe pasa a tu siguiente tratamiento; así siempre hay un depósito listo. Si paras, o quieres programar online, te lo devolvemos.",
   "Alleen een huidconsult": "Solo una consulta de la piel",
   "30 minuten, € 50": "30 minutos, € 50",
-  "Meten, uitleg en een plan dat je meeneemt. Je beslist daarna zelf of en wanneer je verdergaat.": "Medir, explicación y un plan que te llevas. Después decides tú si sigues y cuándo.",
+  "Meten, uitleg en een plan dat je meeneemt. Je beslist daarna zelf of en wanneer je verdergaat.":
+    "Medir, explicación y un plan que te llevas. Después decides tú si sigues y cuándo.",
   "120 of 60 minuten": "120 o 60 minutos",
-  "In dezelfde afspraak kijken en behandelen, als dat verantwoord is. Ben je nieuw, dan duurt hij twee uur: 30 tot 60 minuten intake en daarna minstens een uur behandelen. Ben je al klant, dan is het een uur zonder nieuwe intake. Je betaalt de behandeling; de intakekosten vervallen.": "Mirar y tratar en la misma cita, si es responsable. Si es tu primera vez dura dos horas: de 30 a 60 minutos de consulta previa y después al menos una hora de tratamiento. Si ya eres cliente, es una hora sin nueva consulta previa. Pagas el tratamiento; el coste de la consulta previa no se cobra.",
+  "In dezelfde afspraak kijken en behandelen, als dat verantwoord is. Ben je nieuw, dan duurt hij twee uur: 30 tot 60 minuten intake en daarna minstens een uur behandelen. Ben je al klant, dan is het een uur zonder nieuwe intake. Je betaalt de behandeling; de intakekosten vervallen.":
+    "Mirar y tratar en la misma cita, si es responsable. Si es tu primera vez dura dos horas: de 30 a 60 minutos de consulta previa y después al menos una hora de tratamiento. Si ya eres cliente, es una hora sin nueva consulta previa. Pagas el tratamiento; el coste de la consulta previa no se cobra.",
   "Alle hersteltijden": "Todos los tiempos de recuperación",
   "Geen hersteltijd": "Sin tiempo de recuperación",
   "Hooguit een dag": "Como mucho un día",
-  "en duurt dertig minuten. Wil je in dezelfde afspraak behandeld worden, boek dan een behandeling op advies; dat bedrag gaat er dan weer af.": "y dura treinta minutos. Si quieres que te traten en la misma cita, reserva un tratamiento con asesoramiento; ese importe se vuelve a descontar entonces.",
-  "Eerst de huid reinigen en hydrateren, daarna pas prikkelen. Een schone huid is de voorwaarde voor de tweede stap.": "Primero limpiar e hidratar la piel, y solo después estimularla. Una piel limpia es la condición para el segundo paso.",
-  "Dezelfde volgorde, met het andere needling-apparaat. Welke van de twee het wordt hangt af van wat er aan je huid moet gebeuren.": "El mismo orden, con el otro aparato de needling. Cuál de los dos es depende de lo que tenga que pasar con tu piel.",
-  "De laserpeeling haalt de bovenlaag weg; de HydraFacial ervoor zorgt dat daar niets meer onder zit.": "El peeling láser retira la capa superior; el HydraFacial previo se encarga de que debajo ya no quede nada.",
-  "Reinigen en hydrateren, en daarna de werkzame stoffen op diepte brengen in dezelfde afspraak.": "Limpiar e hidratar, y después llevar los principios activos en profundidad en la misma cita.",
-  "Een oppervlakkige en een fractionele stap op hetzelfde apparaat, waarbij de tweede dieper komt dan de eerste.": "Un paso superficial y uno fraccionado en el mismo aparato, en el que el segundo llega más hondo que el primero.",
-  "De laserpeel neemt de bovenlaag, Frac3 gaat er in kolommen doorheen naar de diepte. Op de tarievenlijst staat dit als Laserpeel plus Frax.": "El peeling láser retira la capa superior, Frac3 la atraviesa en columnas hacia la profundidad. En la lista de tarifas figura como Peeling láser más Frax.",
-  "De peeling werkt op de bovenlaag, de needling op het bindweefsel eronder. Twee lagen in een afspraak.": "El peeling trabaja sobre la capa superior, el needling sobre el tejido conjuntivo de debajo. Dos capas en una cita.",
+  "en duurt dertig minuten. Wil je in dezelfde afspraak behandeld worden, boek dan een behandeling op advies; dat bedrag gaat er dan weer af.":
+    "y dura treinta minutos. Si quieres que te traten en la misma cita, reserva un tratamiento con asesoramiento; ese importe se vuelve a descontar entonces.",
+  "Eerst de huid reinigen en hydrateren, daarna pas prikkelen. Een schone huid is de voorwaarde voor de tweede stap.":
+    "Primero limpiar e hidratar la piel, y solo después estimularla. Una piel limpia es la condición para el segundo paso.",
+  "Dezelfde volgorde, met het andere needling-apparaat. Welke van de twee het wordt hangt af van wat er aan je huid moet gebeuren.":
+    "El mismo orden, con el otro aparato de needling. Cuál de los dos es depende de lo que tenga que pasar con tu piel.",
+  "De laserpeeling haalt de bovenlaag weg; de HydraFacial ervoor zorgt dat daar niets meer onder zit.":
+    "El peeling láser retira la capa superior; el HydraFacial previo se encarga de que debajo ya no quede nada.",
+  "Reinigen en hydrateren, en daarna de werkzame stoffen op diepte brengen in dezelfde afspraak.":
+    "Limpiar e hidratar, y después llevar los principios activos en profundidad en la misma cita.",
+  "Een oppervlakkige en een fractionele stap op hetzelfde apparaat, waarbij de tweede dieper komt dan de eerste.":
+    "Un paso superficial y uno fraccionado en el mismo aparato, en el que el segundo llega más hondo que el primero.",
+  "De laserpeel neemt de bovenlaag, Frac3 gaat er in kolommen doorheen naar de diepte. Op de tarievenlijst staat dit als Laserpeel plus Frax.":
+    "El peeling láser retira la capa superior, Frac3 la atraviesa en columnas hacia la profundidad. En la lista de tarifas figura como Peeling láser más Frax.",
+  "De peeling werkt op de bovenlaag, de needling op het bindweefsel eronder. Twee lagen in een afspraak.":
+    "El peeling trabaja sobre la capa superior, el needling sobre el tejido conjuntivo de debajo. Dos capas en una cita.",
   "Consult SkinComplete LED-masker": "Consulta máscara LED SkinComplete",
   "RRS, met de U225": "RRS, con el U225",
   "U225 mesotherapie": "Mesoterapia U225",
   "van onze behandelingen komen hier": "de nuestros tratamientos llegan aquí",
   "Bezig met versturen…": "Enviando…",
-  "Boek je afspraak bij Diba Clinics rechtstreeks in de agenda. Met wat je vooraf moet weten over de duur, de kosten en afzeggen.": "Reserva tu cita en Diba Clinics directamente en la agenda. Con lo que debes saber de antemano sobre la duración, los costes y la cancelación.",
-  "Wat er gebeurt als je afzegt, te laat bent, of als een behandeling niet door kan gaan. Per situatie wat het kost en waarom de regel er is.": "Lo que pasa si cancelas, llegas tarde o si un tratamiento no se puede hacer. Por situación lo que cuesta y por qué existe la regla.",
+  "Boek je afspraak bij Diba Clinics rechtstreeks in de agenda. Met wat je vooraf moet weten over de duur, de kosten en afzeggen.":
+    "Reserva tu cita en Diba Clinics directamente en la agenda. Con lo que debes saber de antemano sobre la duración, los costes y la cancelación.",
+  "Wat er gebeurt als je afzegt, te laat bent, of als een behandeling niet door kan gaan. Per situatie wat het kost en waarom de regel er is.":
+    "Lo que pasa si cancelas, llegas tarde o si un tratamiento no se puede hacer. Por situación lo que cuesta y por qué existe la regla.",
   "Apparatuur in onze huidkliniek": "Aparatos en nuestra clínica de la piel",
-  "Welke apparaten er in de kliniek staan, welke behandelingen erop draaien, tot hoe diep ze komen en wat ze niet kunnen.": "Qué aparatos hay en la clínica, qué tratamientos se hacen con ellos, hasta qué profundidad llegan y lo que no pueden hacer.",
-  "Welke huidbehandeling past bij mij?": "¿Qué tratamiento de la piel encaja conmigo?",
-  "Weet je niet welke huidbehandeling je nodig hebt? Boek een behandeling op advies. Voor nieuwe klanten met intake en voor bestaande klanten zonder nieuwe intake.": "¿No sabes qué tratamiento de la piel necesitas? Reserva un tratamiento con asesoramiento. Para clientes nuevos con consulta previa y para clientes existentes sin nueva consulta previa.",
+  "Welke apparaten er in de kliniek staan, welke behandelingen erop draaien, tot hoe diep ze komen en wat ze niet kunnen.":
+    "Qué aparatos hay en la clínica, qué tratamientos se hacen con ellos, hasta qué profundidad llegan y lo que no pueden hacer.",
+  "Welke huidbehandeling past bij mij?":
+    "¿Qué tratamiento de la piel encaja conmigo?",
+  "Weet je niet welke huidbehandeling je nodig hebt? Boek een behandeling op advies. Voor nieuwe klanten met intake en voor bestaande klanten zonder nieuwe intake.":
+    "¿No sabes qué tratamiento de la piel necesitas? Reserva un tratamiento con asesoramiento: con consulta previa la primera vez, sin otra consulta si ya viniste.",
   "Huidbehandelingen in Rotterdam": "Tratamientos de la piel en Róterdam",
-  "Kies waar je iets aan wilt doen: acne, pigment, littekens, huidveroudering, glow of haar. Tijdens het huidconsult bepaalt de behandelaar wat bij jouw huid past.": "Elige lo que quieres tratar: acné, pigmento, cicatrices, envejecimiento de la piel, luminosidad o vello. En la consulta de la piel la terapeuta decide lo que encaja con tu piel.",
-  "Welke cookies Diba Clinics gebruikt, wanneer ze laden en hoe je je keuze op elk moment kunt wijzigen. Geen advertentie-tracking.": "Qué cookies usa Diba Clinics, cuándo se cargan y cómo puedes cambiar tu elección en cualquier momento. Sin seguimiento publicitario.",
+  "Kies waar je iets aan wilt doen: acne, pigment, littekens, huidveroudering, glow of haar. Tijdens het huidconsult bepaalt de behandelaar wat bij jouw huid past.":
+    "Elige lo que quieres tratar: acné, pigmento, cicatrices, envejecimiento, luminosidad o vello. En la consulta la terapeuta decide qué encaja con tu piel.",
+  "Welke cookies Diba Clinics gebruikt, wanneer ze laden en hoe je je keuze op elk moment kunt wijzigen. Geen advertentie-tracking.":
+    "Qué cookies usa Diba Clinics, cuándo se cargan y cómo puedes cambiar tu elección en cualquier momento. Sin seguimiento publicitario.",
   "Welke laser past bij jouw huidtype": "Qué láser encaja con tu fototipo",
-  "Twee lasers in één apparaat: 755 nm en 1064 nm. Welke van de twee je krijgt hangt af van je huidtype, en dat is een veiligheidskeuze en geen detail.": "Dos láseres en un solo aparato: 755 nm y 1064 nm. Cuál de los dos te toca depende de tu fototipo, y eso es una elección de seguridad y no un detalle.",
-  "Acnelittekens behandelen in Rotterdam": "Tratar cicatrices de acné en Róterdam",
-  "Acnelittekens behandelen met peelings, microneedling en laser. Het verschil tussen een kuiltje, een rood vlekje en pigment.": "Tratar cicatrices de acné con peelings, microneedling y láser. La diferencia entre un hoyo, una marca roja y pigmento.",
+  "Twee lasers in één apparaat: 755 nm en 1064 nm. Welke van de twee je krijgt hangt af van je huidtype, en dat is een veiligheidskeuze en geen detail.":
+    "Dos láseres en un solo aparato: 755 nm y 1064 nm. Cuál de los dos te toca depende de tu fototipo, y eso es una elección de seguridad y no un detalle.",
+  "Acnelittekens behandelen in Rotterdam":
+    "Tratar cicatrices de acné en Róterdam",
+  "Acnelittekens behandelen met peelings, microneedling en laser. Het verschil tussen een kuiltje, een rood vlekje en pigment.":
+    "Tratar cicatrices de acné con peelings, microneedling y láser. La diferencia entre un hoyo, una marca roja y pigmento.",
   "Acne behandelen in Rotterdam": "Tratar el acné en Róterdam",
-  "Acne behandelen met peelings, needling en laser. Welke vorm je hebt, wat eraan te doen is en wat een behandeling bij ons kost.": "Tratar el acné con peelings, needling y láser. Qué tipo tienes, qué se puede hacer y lo que cuesta un tratamiento con nosotros.",
+  "Acne behandelen met peelings, needling en laser. Welke vorm je hebt, wat eraan te doen is en wat een behandeling bij ons kost.":
+    "Tratar el acné con peelings, needling y láser. Qué tipo tienes, qué se puede hacer y lo que cuesta un tratamiento con nosotros.",
   "Couperose behandelen in Rotterdam": "Tratar la cuperosis en Róterdam",
-  "Couperose behandelen met IPL en laser. Rode vaatjes op je wangen of naast je neus, hoe je ze herkent en wat een behandeling kost.": "Tratar la cuperosis con IPL y láser. Vasos rojos en las mejillas o junto a la nariz, cómo reconocerlos y lo que cuesta un tratamiento.",
-  "Doffe huid: waar komt die grauwe tint vandaan": "Piel apagada: de dónde viene ese tono gris",
-  "Een doffe huid behandelen met peelings, HydraFacial en microneedling. Waar dofheid vandaan komt en wat eraan te doen is.": "Tratar una piel apagada con peelings, HydraFacial y microneedling. De dónde viene la falta de luminosidad y qué se puede hacer.",
+  "Couperose behandelen met IPL en laser. Rode vaatjes op je wangen of naast je neus, hoe je ze herkent en wat een behandeling kost.":
+    "Tratar la cuperosis con IPL y láser. Vasos rojos en las mejillas o junto a la nariz, cómo reconocerlos y lo que cuesta un tratamiento.",
+  "Doffe huid: waar komt die grauwe tint vandaan":
+    "Piel apagada: de dónde viene ese tono gris",
+  "Een doffe huid behandelen met peelings, HydraFacial en microneedling. Waar dofheid vandaan komt en wat eraan te doen is.":
+    "Tratar una piel apagada con peelings, HydraFacial y microneedling. De dónde viene la falta de luminosidad y qué se puede hacer.",
   "Donkere kringen: welk type heb jij?": "Ojeras: ¿qué tipo tienes?",
-  "Donkere kringen behandelen: pigment, doorschijnende vaatjes of schaduw. Hoe we vaststellen om welke van de drie het gaat.": "Tratar las ojeras: pigmento, vasos que se transparentan o sombra. Cómo determinamos de cuál de las tres se trata.",
-  "Droge of vochtarme huid: het verschil": "Piel seca o deshidratada: la diferencia",
-  "Een droge of vochtarme huid behandelen met hydraterende behandelingen. Het verschil tussen te weinig vet en te weinig water.": "Tratar una piel seca o deshidratada con tratamientos hidratantes. La diferencia entre demasiado poca grasa y demasiado poca agua.",
+  "Donkere kringen behandelen: pigment, doorschijnende vaatjes of schaduw. Hoe we vaststellen om welke van de drie het gaat.":
+    "Tratar las ojeras: pigmento, vasos que se transparentan o sombra. Cómo determinamos de cuál de las tres se trata.",
+  "Droge of vochtarme huid: het verschil":
+    "Piel seca o deshidratada: la diferencia",
+  "Een droge of vochtarme huid behandelen met hydraterende behandelingen. Het verschil tussen te weinig vet en te weinig water.":
+    "Tratar una piel seca o deshidratada con tratamientos hidratantes. La diferencia entre demasiado poca grasa y demasiado poca agua.",
   "Eczeem: een cirkel, geen plek": "Eccema: un círculo, no una mancha",
-  "Bij eczeem werken we aan je huidbarrière, naast de behandeling van je huisarts. Hoe die kringloop van jeuk en krabben werkt.": "En el eccema trabajamos sobre tu barrera cutánea, junto al tratamiento de tu médico de cabecera. Cómo funciona ese círculo de picor y rascado.",
+  "Bij eczeem werken we aan je huidbarrière, naast de behandeling van je huisarts. Hoe die kringloop van jeuk en krabben werkt.":
+    "En el eccema trabajamos sobre tu barrera cutánea, junto al tratamiento de tu médico de cabecera. Cómo funciona ese círculo de picor y rascado.",
   "Gerstekorrels en milia verwijderen": "Quitar milia y orzuelos",
-  "Milia en gerstekorrels laten weghalen. Een hard wit bolletje is in seconden weg; rood en pijnlijk hoort bij je huisarts.": "Que te quiten milia y orzuelos. Una bolita dura y blanca desaparece en segundos; si está rojo y duele, corresponde a tu médico de cabecera.",
+  "Milia en gerstekorrels laten weghalen. Een hard wit bolletje is in seconden weg; rood en pijnlijk hoort bij je huisarts.":
+    "Que te quiten milia y orzuelos. Una bolita dura y blanca desaparece en segundos; si está rojo y duele, corresponde a tu médico de cabecera.",
   "Gevoelige huid: type of gevolg?": "Piel sensible: ¿tipo o consecuencia?",
-  "Een gevoelige huid tot rust brengen met milde behandelingen en een verzorgingsschema dat je huid aankan.": "Calmar una piel sensible con tratamientos suaves y un esquema de cuidados que tu piel aguante.",
-  "Huiduitslag: bel je vandaag of morgen?": "Erupción cutánea: ¿llamas hoy o mañana?",
-  "Huiduitslag is een symptoom met tientallen oorzaken. Wanneer je vandaag nog belt, en welke soorten het vaakst voorkomen.": "Una erupción cutánea es un síntoma con decenas de causas. Cuándo llamar hoy mismo, y qué tipos son los más frecuentes.",
-  "Huidverkleuring: welke kleur is het?": "Decoloración de la piel: ¿qué color es?",
-  "Bruin, rood of wit: de kleur bepaalt in welke laag de verkleuring zit en welke behandeling erbij hoort.": "Marrón, rojo o blanco: el color decide en qué capa está la decoloración y qué tratamiento le corresponde.",
-  "Huidveroudering behandelen in Rotterdam": "Tratar el envejecimiento de la piel en Róterdam",
-  "Huidveroudering behandelen met peelings, needling en laser. Het meeste komt door zon en niet door leeftijd, en juist dat is aan te pakken.": "Tratar el envejecimiento de la piel con peelings, needling y láser. La mayor parte viene del sol y no de la edad, y justo eso se puede tratar.",
-  "Huidverslapping behandelen in Rotterdam": "Tratar la flacidez de la piel en Róterdam",
-  "Huidverslapping behandelen met needling en laser, die de aanmaak van collageen op gang brengen. Wat er realistisch te winnen valt.": "Tratar la flacidez de la piel con needling y láser, que ponen en marcha la producción de colágeno. Lo que de forma realista se puede ganar.",
-  "Ingegroeide haren behandelen in Rotterdam": "Tratar los pelos encarnados en Róterdam",
-  "Ingegroeide haren behandelen met laserontharing. Zit er een haar in het bultje, dan pakt ontharen het bij de wortel aan.": "Tratar los pelos encarnados con depilación láser. Si hay un pelo en el bultito, la depilación lo trata en la raíz.",
-  "Keloid en verdikte littekens in Rotterdam": "Queloides y cicatrices engrosadas en Róterdam",
-  "Het verschil tussen een keloid en een verdikt litteken, wat wij behandelen en wat via je arts loopt.": "La diferencia entre un queloide y una cicatriz engrosada, lo que tratamos nosotros y lo que va a través de tu médico.",
+  "Een gevoelige huid tot rust brengen met milde behandelingen en een verzorgingsschema dat je huid aankan.":
+    "Calmar una piel sensible con tratamientos suaves y un esquema de cuidados que tu piel aguante.",
+  "Huiduitslag: bel je vandaag of morgen?":
+    "Erupción cutánea: ¿llamas hoy o mañana?",
+  "Huiduitslag is een symptoom met tientallen oorzaken. Wanneer je vandaag nog belt, en welke soorten het vaakst voorkomen.":
+    "Una erupción cutánea es un síntoma con decenas de causas. Cuándo llamar hoy mismo, y qué tipos son los más frecuentes.",
+  "Huidverkleuring: welke kleur is het?":
+    "Decoloración de la piel: ¿qué color es?",
+  "Bruin, rood of wit: de kleur bepaalt in welke laag de verkleuring zit en welke behandeling erbij hoort.":
+    "Marrón, rojo o blanco: el color decide en qué capa está la decoloración y qué tratamiento le corresponde.",
+  "Huidveroudering behandelen in Rotterdam":
+    "Tratar el envejecimiento de la piel en Róterdam",
+  "Huidveroudering behandelen met peelings, needling en laser. Het meeste komt door zon en niet door leeftijd, en juist dat is aan te pakken.":
+    "Tratar el envejecimiento de la piel con peelings, needling y láser. La mayor parte viene del sol y no de la edad, y justo eso se puede tratar.",
+  "Huidverslapping behandelen in Rotterdam":
+    "Tratar la flacidez de la piel en Róterdam",
+  "Huidverslapping behandelen met needling en laser, die de aanmaak van collageen op gang brengen. Wat er realistisch te winnen valt.":
+    "Tratar la flacidez de la piel con needling y láser, que ponen en marcha la producción de colágeno. Lo que de forma realista se puede ganar.",
+  "Ingegroeide haren behandelen in Rotterdam":
+    "Tratar los pelos encarnados en Róterdam",
+  "Ingegroeide haren behandelen met laserontharing. Zit er een haar in het bultje, dan pakt ontharen het bij de wortel aan.":
+    "Tratar los pelos encarnados con depilación láser. Si hay un pelo en el bultito, la depilación lo trata en la raíz.",
+  "Keloid en verdikte littekens in Rotterdam":
+    "Queloides y cicatrices engrosadas en Róterdam",
+  "Het verschil tussen een keloid en een verdikt litteken, wat wij behandelen en wat via je arts loopt.":
+    "La diferencia entre un queloide y una cicatriz engrosada, lo que tratamos nosotros y lo que va a través de tu médico.",
   "Keratosis pilaris behandelen": "Tratar la queratosis pilar",
-  "Keratosis pilaris behandelen met peelings en gerichte verzorging die de verhoorning rond het haarzakje oplost.": "Tratar la queratosis pilar con peelings y cuidados dirigidos que disuelven la queratina acumulada alrededor del folículo.",
-  "Littekens en striae behandelen in Rotterdam": "Tratar cicatrices y estrías en Róterdam",
-  "Littekens en striae behandelen met microneedling en laser. Rode littekens reageren doorgaans het beste; bij witte richten we ons op de structuur.": "Tratar cicatrices y estrías con microneedling y láser. Las cicatrices rojas suelen reaccionar mejor; en las blancas nos centramos en la textura.",
+  "Keratosis pilaris behandelen met peelings en gerichte verzorging die de verhoorning rond het haarzakje oplost.":
+    "Tratar la queratosis pilar con peelings y cuidados dirigidos que disuelven la queratina acumulada alrededor del folículo.",
+  "Littekens en striae behandelen in Rotterdam":
+    "Tratar cicatrices y estrías en Róterdam",
+  "Littekens en striae behandelen met microneedling en laser. Rode littekens reageren doorgaans het beste; bij witte richten we ons op de structuur.":
+    "Tratar cicatrices y estrías con microneedling y láser. Las cicatrices rojas suelen reaccionar mejor; en las blancas nos centramos en la textura.",
   "Melasma behandelen in Rotterdam": "Tratar el melasma en Róterdam",
-  "Melasma behandelen met peelings, verzorging en zonbescherming. Hoe diep het pigment zit bepaalt wat mogelijk is, en dat zien we onder UV-scan beginnen.": "Tratar el melasma con peelings, cuidados y protección solar. La profundidad del pigmento decide lo que es posible, y eso lo vemos empezar bajo el escaneo UV.",
+  "Melasma behandelen met peelings, verzorging en zonbescherming. Hoe diep het pigment zit bepaalt wat mogelijk is, en dat zien we onder UV-scan beginnen.":
+    "Tratar el melasma con peelings, cuidados y protección solar. La profundidad del pigmento decide lo que es posible, y eso lo vemos empezar bajo el escaneo UV.",
   "Moedervlekken weghalen": "Quitar lunares",
-  "Een moedervlek die stoort kan weg. Wat er eerst gebeurt, waar we op letten en waarom een plekje dat verandert eerst langs een arts gaat.": "Un lunar que molesta se puede quitar. Lo que pasa primero, en qué nos fijamos y por qué una mancha que cambia pasa primero por un médico.",
+  "Een moedervlek die stoort kan weg. Wat er eerst gebeurt, waar we op letten en waarom een plekje dat verandert eerst langs een arts gaat.":
+    "Un lunar que molesta se puede quitar. Lo que pasa primero, en qué nos fijamos y por qué una mancha que cambia pasa primero por un médico.",
   "Onzuivere huid en mee-eters": "Piel con impurezas y puntos negros",
-  "Mee-eters en verstopte poriën behandelen met HydraFacial en peelings. Het verschil tussen normale porie-inhoud en echte mee-eters.": "Tratar puntos negros y poros obstruidos con HydraFacial y peelings. La diferencia entre el contenido normal de un poro y verdaderos puntos negros.",
-  "Ouderdomsvlekken behandelen in Rotterdam": "Tratar las manchas de la edad en Róterdam",
-  "Ouderdomsvlekken en zonnevlekken weghalen met IPL of laser, meestal in een of twee sessies.": "Quitar manchas de la edad y manchas solares con IPL o láser, normalmente en una o dos sesiones.",
-  "Huidproblemen behandelen in Rotterdam": "Tratar problemas de piel en Róterdam",
-  "Bij acne telt waar het zit, bij pigment welk seizoen het is, bij littekens hoe oud ze zijn. Kies waar je last van hebt en zie waar we mee beginnen.": "En el acné cuenta dónde está, en el pigmento qué estación es, en las cicatrices cuánto tiempo tienen. Elige lo que te molesta y ve por dónde empezamos.",
-  "Pigmentvlekken behandelen in Rotterdam": "Tratar manchas de pigmento en Róterdam",
-  "Pigmentvlekken behandelen met laser, IPL en peelings. Welke aanpak past, hangt af van het type vlek, je huidtype en het seizoen.": "Tratar manchas de pigmento con láser, IPL y peelings. Qué enfoque encaja depende del tipo de mancha, tu fototipo y la estación.",
-  "Poriën: wat er wel en niet aan te doen is": "Poros: qué se puede hacer y qué no",
-  "Grote poriën minder zichtbaar maken met peelings, microneedling en HydraFacial. Wat de huid eromheen bepaalt.": "Hacer los poros grandes menos visibles con peelings, microneedling y HydraFacial. Lo que decide la piel de alrededor.",
+  "Mee-eters en verstopte poriën behandelen met HydraFacial en peelings. Het verschil tussen normale porie-inhoud en echte mee-eters.":
+    "Tratar puntos negros y poros obstruidos con HydraFacial y peelings. La diferencia entre el contenido normal de un poro y verdaderos puntos negros.",
+  "Ouderdomsvlekken behandelen in Rotterdam":
+    "Tratar las manchas de la edad en Róterdam",
+  "Ouderdomsvlekken en zonnevlekken weghalen met IPL of laser, meestal in een of twee sessies.":
+    "Quitar manchas de la edad y manchas solares con IPL o láser, normalmente en una o dos sesiones.",
+  "Huidproblemen behandelen in Rotterdam":
+    "Tratar problemas de piel en Róterdam",
+  "Bij acne telt waar het zit, bij pigment welk seizoen het is, bij littekens hoe oud ze zijn. Kies waar je last van hebt en zie waar we mee beginnen.":
+    "En el acné cuenta dónde está, en el pigmento qué estación es, en las cicatrices cuánto tiempo tienen. Elige lo que te molesta y ve por dónde empezamos.",
+  "Pigmentvlekken behandelen in Rotterdam":
+    "Tratar manchas de pigmento en Róterdam",
+  "Pigmentvlekken behandelen met laser, IPL en peelings. Welke aanpak past, hangt af van het type vlek, je huidtype en het seizoen.":
+    "Tratar manchas de pigmento con láser, IPL y peelings. Qué enfoque encaja depende del tipo de mancha, tu fototipo y la estación.",
+  "Poriën: wat er wel en niet aan te doen is":
+    "Poros: qué se puede hacer y qué no",
+  "Grote poriën minder zichtbaar maken met peelings, microneedling en HydraFacial. Wat de huid eromheen bepaalt.":
+    "Hacer los poros grandes menos visibles con peelings, microneedling y HydraFacial. Lo que decide la piel de alrededor.",
   "Psoriasis: meer dan huid": "Psoriasis: más que piel",
-  "Psoriasis komt uit je afweersysteem. Wat je huisarts doet, en wat wij daarnaast aan je huidbarrière kunnen doen.": "La psoriasis viene de tu sistema inmunitario. Lo que hace tu médico de cabecera, y lo que nosotros podemos hacer además por tu barrera cutánea.",
+  "Psoriasis komt uit je afweersysteem. Wat je huisarts doet, en wat wij daarnaast aan je huidbarrière kunnen doen.":
+    "La psoriasis viene de tu sistema inmunitario. Lo que hace tu médico de cabecera, y lo que nosotros podemos hacer además por tu barrera cutánea.",
   "Rimpels behandelen in Rotterdam": "Tratar las arrugas en Róterdam",
-  "Rimpels en fijne lijntjes behandelen met microneedling, laser en peelings die de aanmaak van collageen op gang brengen.": "Tratar arrugas y líneas finas con microneedling, láser y peelings que ponen en marcha la producción de colágeno.",
+  "Rimpels en fijne lijntjes behandelen met microneedling, laser en peelings die de aanmaak van collageen op gang brengen.":
+    "Tratar arrugas y líneas finas con microneedling, láser y peelings que ponen en marcha la producción de colágeno.",
   "Rosacea behandelen in Rotterdam": "Tratar la rosácea en Róterdam",
-  "Rosacea is te sturen: minder opvlammingen en een rustiger basiskleur. Welke triggers je zelf in de hand hebt en wat een behandeling kan toevoegen.": "La rosácea se puede controlar: menos brotes y un color de base más tranquilo. Qué desencadenantes tienes en tu mano y lo que un tratamiento puede añadir.",
-  "Steelwratjes laten verwijderen in Rotterdam": "Quitar acrocordones en Róterdam",
-  "Steelwratjes laten verwijderen, meestal in een afspraak. We rekenen per kwartier en niet per wratje.": "Que te quiten acrocordones, normalmente en una cita. Cobramos por cuarto de hora y no por acrocordón.",
+  "Rosacea is te sturen: minder opvlammingen en een rustiger basiskleur. Welke triggers je zelf in de hand hebt en wat een behandeling kan toevoegen.":
+    "La rosácea se puede controlar: menos brotes y un color de base más tranquilo. Qué desencadenantes tienes en tu mano y lo que un tratamiento puede añadir.",
+  "Steelwratjes laten verwijderen in Rotterdam":
+    "Quitar acrocordones en Róterdam",
+  "Steelwratjes laten verwijderen, meestal in een afspraak. We rekenen per kwartier en niet per wratje.":
+    "Que te quiten acrocordones, normalmente en una cita. Cobramos por cuarto de hora y no por acrocordón.",
   "Striae behandelen in Rotterdam": "Tratar las estrías en Róterdam",
-  "Striae behandelen met microneedling en laser. Rode striae reageren het best, bij witte werken we op de structuur.": "Tratar las estrías con microneedling y láser. Las estrías rojas reaccionan mejor; en las blancas trabajamos sobre la textura.",
-  "Weet je niet hoe het heet? Begin hier": "¿No sabes cómo se llama? Empieza aquí",
-  "Kruis aan wat je op je huid ziet, zonder vaktermen, en je komt bij de pagina die erover gaat.": "Marca lo que ves en tu piel, sin términos técnicos, y llegas a la página que trata de ello.",
-  "Wallen onder de ogen: vocht, vet of schaduw": "Bolsas bajo los ojos: líquido, grasa o sombra",
-  "Wallen onder je ogen: waar ze vandaan komen en wat een huidbehandeling kan toevoegen bij vocht of een dunne huid.": "Bolsas bajo los ojos: de dónde vienen y lo que un tratamiento de la piel puede añadir con líquido o una piel fina.",
+  "Striae behandelen met microneedling en laser. Rode striae reageren het best, bij witte werken we op de structuur.":
+    "Tratar las estrías con microneedling y láser. Las estrías rojas reaccionan mejor; en las blancas trabajamos sobre la textura.",
+  "Weet je niet hoe het heet? Begin hier":
+    "¿No sabes cómo se llama? Empieza aquí",
+  "Kruis aan wat je op je huid ziet, zonder vaktermen, en je komt bij de pagina die erover gaat.":
+    "Marca lo que ves en tu piel, sin términos técnicos, y llegas a la página que trata de ello.",
+  "Wallen onder de ogen: vocht, vet of schaduw":
+    "Bolsas bajo los ojos: líquido, grasa o sombra",
+  "Wallen onder je ogen: waar ze vandaan komen en wat een huidbehandeling kan toevoegen bij vocht of een dunne huid.":
+    "Bolsas bajo los ojos: de dónde vienen y lo que un tratamiento de la piel puede añadir con líquido o una piel fina.",
   "Het huidconsult: wat er gebeurt": "La consulta de la piel: lo que pasa",
   "Kennisbank: alles wat we uitleggen": "Guías: todo lo que explicamos",
-  "Wat een behandeling inhoudt en kost, waar een klacht vandaan komt en wat een apparaat wel en niet kan. Geordend op de vraag die je stelt.": "Lo que un tratamiento implica y cuesta, de dónde viene un problema y lo que un aparato puede y no puede hacer. Ordenado por la pregunta que haces.",
-  "Bij welke registers Diba Clinics, de huidtherapeuten en de schoonheidsspecialisten zijn aangesloten, wat die registratie inhoudt en hoe een klacht loopt.": "A qué registros están afiliados Diba Clinics, las terapeutas de la piel y las esteticistas, lo que implica ese registro y cómo va una reclamación.",
+  "Wat een behandeling inhoudt en kost, waar een klacht vandaan komt en wat een apparaat wel en niet kan. Geordend op de vraag die je stelt.":
+    "Lo que un tratamiento implica y cuesta, de dónde viene un problema y lo que un aparato puede y no puede hacer. Ordenado por la pregunta que haces.",
+  "Bij welke registers Diba Clinics, de huidtherapeuten en de schoonheidsspecialisten zijn aangesloten, wat die registratie inhoudt en hoe een klacht loopt.":
+    "A qué registros están afiliados Diba Clinics, las terapeutas de la piel y las esteticistas, lo que implica ese registro y cómo va una reclamación.",
   "Stel je laserbehandeling samen": "Configura tu tratamiento con láser",
-  "Wijs je zones aan, zie wat er in een pakket zit en wat er los overblijft. Geen bedrag dat je pas aan de balie hoort.": "Señala tus zonas, ve lo que entra en un paquete y lo que queda suelto. Ningún importe que solo oigas en recepción.",
-  "Laserontharing Rotterdam | GentleMax Pro": "Depilación láser Róterdam | GentleMax Pro",
-  "Laserontharing met GentleMax Pro in Rotterdam. Bereken je prijs per zone, veilig voor huidtype I tot VI.": "Depilación láser con GentleMax Pro en Róterdam. Calcula tu precio por zona, seguro para los fototipos I a VI.",
-  "Nazorg: wat mag wanneer weer": "Cuidados posteriores: qué se puede y desde cuándo",
-  "Mag ik morgen sporten, wanneer mag die retinol weer? Per behandeling een rooster met vanaf wanneer alles weer mag, en waarom.": "¿Puedo hacer deporte mañana, cuándo puedo volver al retinol? Por tratamiento un horario con desde cuándo se puede todo otra vez, y por qué.",
-  "Deze link hoort bij de oude site": "Este enlace corresponde a la web antigua",
+  "Wijs je zones aan, zie wat er in een pakket zit en wat er los overblijft. Geen bedrag dat je pas aan de balie hoort.":
+    "Señala tus zonas, ve lo que entra en un paquete y lo que queda suelto. Ningún importe que solo oigas en recepción.",
+  "Laserontharing Rotterdam | GentleMax Pro":
+    "Depilación láser Róterdam | GentleMax Pro",
+  "Laserontharing met GentleMax Pro in Rotterdam. Bereken je prijs per zone, veilig voor huidtype I tot VI.":
+    "Depilación láser con GentleMax Pro en Róterdam. Calcula tu precio por zona, seguro para los fototipos I a VI.",
+  "Nazorg: wat mag wanneer weer":
+    "Cuidados posteriores: qué se puede y desde cuándo",
+  "Mag ik morgen sporten, wanneer mag die retinol weer? Per behandeling een rooster met vanaf wanneer alles weer mag, en waarom.":
+    "¿Puedo hacer deporte mañana, cuándo puedo volver al retinol? Por tratamiento un horario con desde cuándo se puede todo otra vez, y por qué.",
+  "Deze link hoort bij de oude site":
+    "Este enlace corresponde a la web antigua",
   "Hoe wij werken": "Cómo trabajamos",
-  "Hoe een traject bij Diba Clinics verloopt: het begint met een huidanalyse, de tarieven staan per sessie op de site en je hoort ook wat er niet kan.": "Cómo va un programa en Diba Clinics: empieza con un análisis de la piel, las tarifas están por sesión en la web y también oyes lo que no es posible.",
+  "Hoe een traject bij Diba Clinics verloopt: het begint met een huidanalyse, de tarieven staan per sessie op de site en je hoort ook wat er niet kan.":
+    "Cómo va un programa en Diba Clinics: empieza con un análisis de la piel, las tarifas están por sesión en la web y también oyes lo que no es posible.",
   "Over Diba Clinics in Rotterdam": "Sobre Diba Clinics en Róterdam",
-  "Huidkliniek in Rotterdam. We meten je huid, leggen uit wat er in jouw geval mogelijk is en wat het oplevert. Prijzen vooraf online.": "Clínica de la piel en Róterdam. Medimos tu piel, explicamos lo que es posible en tu caso y lo que aporta. Precios online de antemano.",
+  "Huidkliniek in Rotterdam. We meten je huid, leggen uit wat er in jouw geval mogelijk is en wat het oplevert. Prijzen vooraf online.":
+    "Clínica de la piel en Róterdam. Medimos tu piel, explicamos lo que es posible en tu caso y lo que aporta. Precios online de antemano.",
   "Onze merken en apparatuur": "Nuestras marcas y aparatos",
-  "Bekijk met welke professionele merken en systemen Diba Clinics werkt, waaronder Candela, Fotona, HydraFacial, SkinPen en Dermapen 4.": "Mira con qué marcas y sistemas profesionales trabaja Diba Clinics, entre ellos Candela, Fotona, HydraFacial, SkinPen y Dermapen 4.",
+  "Bekijk met welke professionele merken en systemen Diba Clinics werkt, waaronder Candela, Fotona, HydraFacial, SkinPen en Dermapen 4.":
+    "Mira con qué marcas y sistemas profesionales trabaja Diba Clinics, entre ellos Candela, Fotona, HydraFacial, SkinPen y Dermapen 4.",
   "PCOS en huid": "SOP y piel",
-  "De huidklachten bij PCOS: ongewenste haargroei, acne langs de kaaklijn en dunner wordend haar. Wat wij behandelen en wat via je arts loopt.": "Los problemas de piel en el SOP: vello no deseado, acné en la línea de la mandíbula y pelo que clarea. Lo que tratamos nosotros y lo que va a través de tu médico.",
-  "Deze website verzamelt zelf niets. Waar je gegevens wel terechtkomen, wat daar gebeurt en welke rechten je hebt.": "Esta web no recoge nada por sí misma. Dónde sí acaban tus datos, qué pasa allí y qué derechos tienes.",
-  "Dezelfde huid ziet er onder ander licht anders uit. Zeven vragen waarmee je zelf ziet of een voor-en-na-foto iets zegt over de behandeling.": "La misma piel se ve distinta bajo otra luz. Siete preguntas con las que ves tú si una foto de antes y después dice algo sobre el tratamiento.",
+  "De huidklachten bij PCOS: ongewenste haargroei, acne langs de kaaklijn en dunner wordend haar. Wat wij behandelen en wat via je arts loopt.":
+    "Los problemas de piel en el SOP: vello no deseado, acné en la línea de la mandíbula y pelo que clarea. Qué tratamos nosotros y qué va a través de tu médico.",
+  "Deze website verzamelt zelf niets. Waar je gegevens wel terechtkomen, wat daar gebeurt en welke rechten je hebt.":
+    "Esta web no recoge nada por sí misma. Dónde sí acaban tus datos, qué pasa allí y qué derechos tienes.",
+  "Dezelfde huid ziet er onder ander licht anders uit. Zeven vragen waarmee je zelf ziet of een voor-en-na-foto iets zegt over de behandeling.":
+    "La misma piel se ve distinta bajo otra luz. Siete preguntas con las que ves tú si una foto de antes y después dice algo sobre el tratamiento.",
   "Ervaringen van onze klanten": "Experiencias de nuestros clientes",
-  "Snurken behandelen met laser in Rotterdam": "Tratar los ronquidos con láser en Róterdam",
-  "Snurken begint zelden in je keel alleen. Eerst kijken waar het geluid vandaan komt, dan pas of NightLase bij jou iets oplevert.": "Los ronquidos rara vez empiezan solo en la garganta. Primero mirar de dónde viene el sonido, y solo después si NightLase te aporta algo.",
-  "Tarieven huidbehandelingen Rotterdam": "Tarifas tratamientos de la piel Róterdam",
-  "Alle tarieven van Diba Clinics op één pagina, per sessie en per zone. Wat er staat is wat je betaalt, zonder pakketten en zonder acties.": "Todas las tarifas de Diba Clinics en una página, por sesión y por zona. Lo que pone es lo que pagas, sin paquetes y sin promociones.",
+  "Snurken behandelen met laser in Rotterdam":
+    "Tratar los ronquidos con láser en Róterdam",
+  "Snurken begint zelden in je keel alleen. Eerst kijken waar het geluid vandaan komt, dan pas of NightLase bij jou iets oplevert.":
+    "Los ronquidos rara vez empiezan solo en la garganta. Primero mirar de dónde viene el sonido, y solo después si NightLase te aporta algo.",
+  "Tarieven huidbehandelingen Rotterdam":
+    "Tarifas tratamientos de la piel Róterdam",
+  "Alle tarieven van Diba Clinics op één pagina, per sessie en per zone. Wat er staat is wat je betaalt, zonder pakketten en zonder acties.":
+    "Todas las tarifas de Diba Clinics en una página, por sesión y por zona. Lo que pone es lo que pagas, sin paquetes y sin promociones.",
   "Ons team": "Nuestro equipo",
-  "Is er een medische reden voor je klacht, dan is er een route naar vergoeding. Drie vragen op volgorde, en bij elke vraag waar je aan toe bent.": "Si hay una razón médica para tu problema, hay una vía hacia el reembolso. Tres preguntas en orden, y en cada una a qué atenerte.",
-  "Voor huisartsen en andere zorgverleners die willen doorverwijzen. Waar de grens ligt, wie de behandeling uitvoert en hoe u verwijst.": "Para médicos de cabecera y otros profesionales sanitarios que quieren derivar. Dónde está el límite, quién realiza el tratamiento y cómo derivar.",
-  "Twee vacatures: allround schoonheidsspecialist of huidtherapeut, en een open sollicitatie. Waar je mee werkt en wat we van je verwachten.": "Dos vacantes: esteticista polivalente o terapeuta de la piel, y una candidatura espontánea. Con qué trabajas y lo que esperamos de ti.",
+  "Is er een medische reden voor je klacht, dan is er een route naar vergoeding. Drie vragen op volgorde, en bij elke vraag waar je aan toe bent.":
+    "Si hay una razón médica para tu problema, hay una vía hacia el reembolso. Tres preguntas en orden, y en cada una a qué atenerte.",
+  "Voor huisartsen en andere zorgverleners die willen doorverwijzen. Waar de grens ligt, wie de behandeling uitvoert en hoe u verwijst.":
+    "Para médicos de cabecera y otros profesionales sanitarios que quieren derivar. Dónde está el límite, quién realiza el tratamiento y cómo derivar.",
+  "Twee vacatures: allround schoonheidsspecialist of huidtherapeut, en een open sollicitatie. Waar je mee werkt en wat we van je verwachten.":
+    "Dos vacantes: esteticista polivalente o terapeuta de la piel, y una candidatura espontánea. Con qué trabajas y lo que esperamos de ti.",
   "Chemische peeling Rotterdam": "Peeling químico Róterdam",
   "Cosmelan en Dermamelan Rotterdam": "Cosmelan y Dermamelan Róterdam",
   "Dermaplaning Rotterdam": "Dermaplaning Róterdam",
   "Elektrische epilatie Rotterdam": "Electrólisis Róterdam",
-  "Fitzpatrick huidtype: welk type heb je": "Fototipo de Fitzpatrick: qué tipo tienes",
-  "De zes Fitzpatrick-huidtypes, wat je type zegt over laser, IPL en peelings, en hoe je het zelf bepaalt. Uitgelegd door de huidtherapeuten van Diba Clinics.": "Los seis fototipos de Fitzpatrick, lo que el tuyo dice sobre láser, IPL y peelings, y cómo determinarlo tú. Explicado por las terapeutas de la piel de Diba Clinics.",
-  "Hoeveel sessies een huidbehandeling vraagt, waarom er weken tussen zitten en waarom het aantal pas na een meting te zeggen is. Per behandeling op een rij.": "Cuántas sesiones pide un tratamiento de la piel, por qué hay semanas entre medias y por qué el número solo se puede decir después de una medición. Por tratamiento, uno a uno.",
-  "Huidanalyse Rotterdam met de EVE-M": "Análisis de la piel Róterdam con el EVE-M",
-  "Waar je op let bij een huidkliniek: welke registers je zelf kunt nakijken, wat een intake hoort op te leveren en hoe je een voor-en-nafoto leest.": "En qué fijarte en una clínica de la piel: qué registros puedes comprobar tú, lo que una consulta previa debe darte y cómo leer una foto de antes y después.",
+  "Fitzpatrick huidtype: welk type heb je":
+    "Fototipo de Fitzpatrick: qué tipo tienes",
+  "De zes Fitzpatrick-huidtypes, wat je type zegt over laser, IPL en peelings, en hoe je het zelf bepaalt. Uitgelegd door de huidtherapeuten van Diba Clinics.":
+    "Los seis fototipos de Fitzpatrick, qué dice el tuyo sobre láser, IPL y peelings, y cómo determinarlo tú. Explicado por las terapeutas de Diba Clinics.",
+  "Hoeveel sessies een huidbehandeling vraagt, waarom er weken tussen zitten en waarom het aantal pas na een meting te zeggen is. Per behandeling op een rij.":
+    "Cuántas sesiones pide un tratamiento de la piel, por qué hay semanas entre medias y por qué el número solo se sabe tras medir. Tratamiento por tratamiento.",
+  "Huidanalyse Rotterdam met de EVE-M":
+    "Análisis de la piel Róterdam con el EVE-M",
+  "Waar je op let bij een huidkliniek: welke registers je zelf kunt nakijken, wat een intake hoort op te leveren en hoe je een voor-en-nafoto leest.":
+    "En qué fijarte en una clínica de la piel: qué registros puedes comprobar tú, lo que una consulta previa debe darte y cómo leer una foto de antes y después.",
   "Huidtherapeut Rotterdam": "Terapeuta de la piel Róterdam",
   "HydraFacial Rotterdam": "HydraFacial Róterdam",
   "IPL Rotterdam: pigment en roodheid": "IPL Róterdam: pigmento y rojez",
-  "Microneedling Rotterdam: SkinPen en Dermapen": "Microneedling Róterdam: SkinPen y Dermapen",
+  "Microneedling Rotterdam: SkinPen en Dermapen":
+    "Microneedling Róterdam: SkinPen y Dermapen",
   "Skinboosters Rotterdam": "Skinboosters Róterdam",
-  "Waarom een gebruinde huid niet gelaserd wordt, hoe lang je wacht na de zon, wat er na een behandeling hoort en hoe je een behandeling rond een vakantie plant.": "Por qué una piel bronceada no se trata con láser, cuánto esperas después del sol, lo que toca después de un tratamiento y cómo planificar un tratamiento en torno a unas vacaciones.",
-  "Zwanger of borstvoeding: wat kan wel": "Embarazo o lactancia: qué sí se puede",
-  "Welke huidbehandelingen tijdens een zwangerschap en borstvoeding wel kunnen en welke wachten, en waarom pigment in die periode vaak vanzelf verandert.": "Qué tratamientos de la piel sí se pueden hacer durante el embarazo y la lactancia y cuáles esperan, y por qué el pigmento en ese periodo a menudo cambia por sí solo.",
-  "Acne: eerst begrijpen, dan *behandelen*": "Acné: primero entender, después *tratar*",
-  "Acnelittekens: eerst begrijpen, dan *behandelen*": "Cicatrices de acné: primero entender, después *tratar*",
-  "Onzuivere huid: eerst begrijpen, dan *behandelen*": "Piel con impurezas: primero entender, después *tratar*",
-  "Pigmentvlekken: eerst begrijpen, dan *behandelen*": "Manchas de pigmento: primero entender, después *tratar*",
-  "Rosacea en couperose: eerst begrijpen, dan *behandelen*": "Rosácea y cuperosis: primero entender, después *tratar*",
-  "Couperose: eerst begrijpen, dan *behandelen*": "Cuperosis: primero entender, después *tratar*",
-  "Huidveroudering: eerst begrijpen, dan *behandelen*": "Envejecimiento de la piel: primero entender, después *tratar*",
-  "Rimpels en fijne lijntjes: eerst begrijpen, dan *behandelen*": "Arrugas y líneas finas: primero entender, después *tratar*",
-  "Huidverslapping: eerst begrijpen, dan *behandelen*": "Flacidez de la piel: primero entender, después *tratar*",
-  "Littekens en striae: eerst begrijpen, dan *behandelen*": "Cicatrices y estrías: primero entender, después *tratar*",
-  "Striae: eerst begrijpen, dan *behandelen*": "Estrías: primero entender, después *tratar*",
-  "Grove poriën: eerst begrijpen, dan *behandelen*": "Poros dilatados: primero entender, después *tratar*",
-  "Ingegroeide haren: eerst begrijpen, dan *behandelen*": "Pelos encarnados: primero entender, después *tratar*",
-  "Keratosis pilaris: eerst begrijpen, dan *behandelen*": "Queratosis pilar: primero entender, después *tratar*",
-  "Steelwratjes: eerst begrijpen, dan *behandelen*": "Acrocordones: primero entender, después *tratar*",
-  "Droge huid: eerst begrijpen, dan *behandelen*": "Piel seca: primero entender, después *tratar*",
-  "Doffe huid: eerst begrijpen, dan *behandelen*": "Piel apagada: primero entender, después *tratar*",
-  "Gevoelige huid: eerst begrijpen, dan *behandelen*": "Piel sensible: primero entender, después *tratar*",
-  "Melasma: eerst begrijpen, dan *behandelen*": "Melasma: primero entender, después *tratar*",
-  "Ouderdomsvlekken: eerst begrijpen, dan *behandelen*": "Manchas de la edad: primero entender, después *tratar*",
-  "Gerstekorrels en milia: eerst begrijpen, dan *behandelen*": "Orzuelos y milia: primero entender, después *tratar*",
-  "Donkere kringen: eerst begrijpen, dan *behandelen*": "Ojeras: primero entender, después *tratar*",
-  "Wallen: eerst begrijpen, dan *behandelen*": "Bolsas: primero entender, después *tratar*",
-  "Huiduitslag: eerst begrijpen, dan *behandelen*": "Erupción cutánea: primero entender, después *tratar*",
-  "Eczeem: eerst begrijpen, dan *behandelen*": "Eccema: primero entender, después *tratar*",
-  "Psoriasis: eerst begrijpen, dan *behandelen*": "Psoriasis: primero entender, después *tratar*",
-  "Keloiden: eerst begrijpen, dan *behandelen*": "Queloides: primero entender, después *tratar*",
-  "Moedervlekken controleren: eerst begrijpen, dan *behandelen*": "Revisar lunares: primero entender, después *tratar*",
-  "Huidverkleuring: eerst begrijpen, dan *behandelen*": "Decoloración de la piel: primero entender, después *tratar*",
-  "Iets anders aan je huid: eerst begrijpen, dan *behandelen*": "Otra cosa en tu piel: primero entender, después *tratar*",
-  "Geen littekenbehandeling op een actieve huid": "Sin tratamiento de cicatrices en una piel activa",
-  "Geen reeks voor iets dat vanzelf weggaat": "Sin serie para algo que se va por sí solo",
-  "We wachten tot je huid rustig is": "Esperamos hasta que tu piel esté tranquila",
-  "Een aantal sessies noemen we pas na de meting": "Un número de sesiones solo lo decimos después de la medición",
+  "Waarom een gebruinde huid niet gelaserd wordt, hoe lang je wacht na de zon, wat er na een behandeling hoort en hoe je een behandeling rond een vakantie plant.":
+    "Por qué una piel bronceada no se trata con láser, cuánto esperas tras el sol, qué toca tras un tratamiento y cómo planificarlo en torno a unas vacaciones.",
+  "Zwanger of borstvoeding: wat kan wel":
+    "Embarazo o lactancia: qué sí se puede",
+  "Welke huidbehandelingen tijdens een zwangerschap en borstvoeding wel kunnen en welke wachten, en waarom pigment in die periode vaak vanzelf verandert.":
+    "Qué tratamientos de la piel se pueden hacer durante el embarazo y la lactancia, cuáles esperan, y por qué el pigmento en ese periodo suele cambiar solo.",
+  "Acne: eerst begrijpen, dan *behandelen*":
+    "Acné: primero entender, después *tratar*",
+  "Acnelittekens: eerst begrijpen, dan *behandelen*":
+    "Cicatrices de acné: primero entender, después *tratar*",
+  "Onzuivere huid: eerst begrijpen, dan *behandelen*":
+    "Piel con impurezas: primero entender, después *tratar*",
+  "Pigmentvlekken: eerst begrijpen, dan *behandelen*":
+    "Manchas de pigmento: primero entender, después *tratar*",
+  "Rosacea en couperose: eerst begrijpen, dan *behandelen*":
+    "Rosácea y cuperosis: primero entender, después *tratar*",
+  "Couperose: eerst begrijpen, dan *behandelen*":
+    "Cuperosis: primero entender, después *tratar*",
+  "Huidveroudering: eerst begrijpen, dan *behandelen*":
+    "Envejecimiento de la piel: primero entender, después *tratar*",
+  "Rimpels en fijne lijntjes: eerst begrijpen, dan *behandelen*":
+    "Arrugas y líneas finas: primero entender, después *tratar*",
+  "Huidverslapping: eerst begrijpen, dan *behandelen*":
+    "Flacidez de la piel: primero entender, después *tratar*",
+  "Littekens en striae: eerst begrijpen, dan *behandelen*":
+    "Cicatrices y estrías: primero entender, después *tratar*",
+  "Striae: eerst begrijpen, dan *behandelen*":
+    "Estrías: primero entender, después *tratar*",
+  "Grove poriën: eerst begrijpen, dan *behandelen*":
+    "Poros dilatados: primero entender, después *tratar*",
+  "Ingegroeide haren: eerst begrijpen, dan *behandelen*":
+    "Pelos encarnados: primero entender, después *tratar*",
+  "Keratosis pilaris: eerst begrijpen, dan *behandelen*":
+    "Queratosis pilar: primero entender, después *tratar*",
+  "Steelwratjes: eerst begrijpen, dan *behandelen*":
+    "Acrocordones: primero entender, después *tratar*",
+  "Droge huid: eerst begrijpen, dan *behandelen*":
+    "Piel seca: primero entender, después *tratar*",
+  "Doffe huid: eerst begrijpen, dan *behandelen*":
+    "Piel apagada: primero entender, después *tratar*",
+  "Gevoelige huid: eerst begrijpen, dan *behandelen*":
+    "Piel sensible: primero entender, después *tratar*",
+  "Melasma: eerst begrijpen, dan *behandelen*":
+    "Melasma: primero entender, después *tratar*",
+  "Ouderdomsvlekken: eerst begrijpen, dan *behandelen*":
+    "Manchas de la edad: primero entender, después *tratar*",
+  "Gerstekorrels en milia: eerst begrijpen, dan *behandelen*":
+    "Orzuelos y milia: primero entender, después *tratar*",
+  "Donkere kringen: eerst begrijpen, dan *behandelen*":
+    "Ojeras: primero entender, después *tratar*",
+  "Wallen: eerst begrijpen, dan *behandelen*":
+    "Bolsas: primero entender, después *tratar*",
+  "Huiduitslag: eerst begrijpen, dan *behandelen*":
+    "Erupción cutánea: primero entender, después *tratar*",
+  "Eczeem: eerst begrijpen, dan *behandelen*":
+    "Eccema: primero entender, después *tratar*",
+  "Psoriasis: eerst begrijpen, dan *behandelen*":
+    "Psoriasis: primero entender, después *tratar*",
+  "Keloiden: eerst begrijpen, dan *behandelen*":
+    "Queloides: primero entender, después *tratar*",
+  "Moedervlekken controleren: eerst begrijpen, dan *behandelen*":
+    "Revisar lunares: primero entender, después *tratar*",
+  "Huidverkleuring: eerst begrijpen, dan *behandelen*":
+    "Decoloración de la piel: primero entender, después *tratar*",
+  "Iets anders aan je huid: eerst begrijpen, dan *behandelen*":
+    "Otra cosa en tu piel: primero entender, después *tratar*",
+  "Geen littekenbehandeling op een actieve huid":
+    "Sin tratamiento de cicatrices en una piel activa",
+  "Geen reeks voor iets dat vanzelf weggaat":
+    "Sin serie para algo que se va por sí solo",
+  "We wachten tot je huid rustig is":
+    "Esperamos hasta que tu piel esté tranquila",
+  "Een aantal sessies noemen we pas na de meting":
+    "Un número de sesiones solo lo decimos después de la medición",
   "Geen reeks tegen een slechte maand": "Sin serie contra un mes malo",
-  "Geen sterkere peeling omdat het effect wegtrok": "Sin peeling más fuerte porque el efecto se fue",
-  "Geen behandeling op een kapotte barrière": "Sin tratamiento sobre una barrera dañada",
+  "Geen sterkere peeling omdat het effect wegtrok":
+    "Sin peeling más fuerte porque el efecto se fue",
+  "Geen behandeling op een kapotte barrière":
+    "Sin tratamiento sobre una barrera dañada",
   "Geen productlijst van een meter": "Sin lista de productos de un metro",
-  "Geen behandeling als je in balans zit": "Sin tratamiento si estás en equilibrio",
+  "Geen behandeling als je in balans zit":
+    "Sin tratamiento si estás en equilibrio",
   "Wij behandelen geen eczeem": "No tratamos el eccema",
   "Geen behandeling op actieve plekken": "Sin tratamiento sobre zonas activas",
   "Geen uitspraken over jouw medicatie": "Sin afirmaciones sobre tu medicación",
-  "Niets rond het oog dat rood of pijnlijk is": "Nada alrededor del ojo que esté rojo o duela",
-  "Geen behandeling van iets dat we niet herkennen": "Sin tratamiento de algo que no reconocemos",
-  "Geen behandeling op een geïrriteerde huid": "Sin tratamiento sobre una piel irritada",
+  "Niets rond het oog dat rood of pijnlijk is":
+    "Nada alrededor del ojo que esté rojo o duela",
+  "Geen behandeling van iets dat we niet herkennen":
+    "Sin tratamiento de algo que no reconocemos",
+  "Geen behandeling op een geïrriteerde huid":
+    "Sin tratamiento sobre una piel irritada",
   "Geen routine van acht stappen": "Sin rutina de ocho pasos",
   "Geen allergietesten": "Sin pruebas de alergia",
   "Wij stellen geen diagnose bij uitslag": "No diagnosticamos una erupción",
   "Wij geven geen geruststelling": "No ofrecemos falsas tranquilidades",
-  "Geen behandeling op onbegrepen uitslag": "Sin tratamiento sobre una erupción sin explicar",
-  "Geen apparaat tegen huid die is losgelaten": "Sin aparato contra una piel que se ha descolgado",
+  "Geen behandeling op onbegrepen uitslag":
+    "Sin tratamiento sobre una erupción sin explicar",
+  "Geen apparaat tegen huid die is losgelaten":
+    "Sin aparato contra una piel que se ha descolgado",
   "Geen traject zonder meting vooraf": "Sin programa sin medición previa",
-  "Geen laser op wat nu ontstoken is": "Sin láser sobre lo que ahora está inflamado",
-  "Geen traject als je haar er niet geschikt voor is": "Sin programa si tu pelo no es adecuado para ello",
-  "Geen kuur met een belofte van gladde huid": "Sin cura con promesa de piel lisa",
-  "Geen behandeling als het gewoon droogte is": "Sin tratamiento si simplemente es sequedad",
+  "Geen laser op wat nu ontstoken is":
+    "Sin láser sobre lo que ahora está inflamado",
+  "Geen traject als je haar er niet geschikt voor is":
+    "Sin programa si tu pelo no es adecuado para ello",
+  "Geen kuur met een belofte van gladde huid":
+    "Sin cura con promesa de piel lisa",
+  "Geen behandeling als het gewoon droogte is":
+    "Sin tratamiento si simplemente es sequedad",
   "Geen behandeling bij schaduw": "Sin tratamiento para la sombra",
-  "Geen agressieve technieken onder het oog": "Sin técnicas agresivas bajo el ojo",
+  "Geen agressieve technieken onder het oog":
+    "Sin técnicas agresivas bajo el ojo",
   "Geen belofte van uitgerust": "Sin promesa de aspecto descansado",
-  "Geen behandeling op een vers litteken": "Sin tratamiento sobre una cicatriz reciente",
+  "Geen behandeling op een vers litteken":
+    "Sin tratamiento sobre una cicatriz reciente",
   "Geen belofte bij witte striae": "Sin promesa en las estrías blancas",
   "Geen keloïd bij ons": "Queloides, no con nosotros",
   "Geen belofte van weg": "Sin promesa de que desaparezca",
   "Geen behandeling in de zomer": "Sin tratamiento en verano",
   "Geen zware laser op melasma": "Sin láser intenso sobre el melasma",
-  "Geen behandeling bij diep pigment": "Sin tratamiento para el pigmento profundo",
-  "Geen behandeling tegen talgfilamenten": "Sin tratamiento contra los filamentos sebáceos",
-  "Geen onzuiverheidstraject bij echte acne": "Sin programa de impurezas para un acné de verdad",
-  "Geen laser op een plek die verandert": "Sin láser sobre una mancha que cambia",
-  "Geen pigmentbehandeling zonder afspraken over zon": "Sin tratamiento de pigmento sin acuerdos sobre el sol",
-  "Geen pigmentbehandeling in de zomer": "Sin tratamiento de pigmento en verano",
-  "Geen belofte dat melasma weggaat": "Sin promesa de que el melasma desaparezca",
+  "Geen behandeling bij diep pigment":
+    "Sin tratamiento para el pigmento profundo",
+  "Geen behandeling tegen talgfilamenten":
+    "Sin tratamiento contra los filamentos sebáceos",
+  "Geen onzuiverheidstraject bij echte acne":
+    "Sin programa de impurezas para un acné de verdad",
+  "Geen laser op een plek die verandert":
+    "Sin láser sobre una mancha que cambia",
+  "Geen pigmentbehandeling zonder afspraken over zon":
+    "Sin tratamiento de pigmento sin acuerdos sobre el sol",
+  "Geen pigmentbehandeling in de zomer":
+    "Sin tratamiento de pigmento en verano",
+  "Geen belofte dat melasma weggaat":
+    "Sin promesa de que el melasma desaparezca",
   "Geen behandeling zonder onderscheid": "Sin tratamiento sin distinguir",
   "Geen kleinere poriën": "Sin poros más pequeños",
   "Geen abonnement op leegmaken": "Sin suscripción a vaciarlos",
-  "Geen medische behandeling van psoriasis": "Sin tratamiento médico de la psoriasis",
-  "Geen huidbeschadigende behandeling op actieve plekken": "Sin tratamientos que dañen la piel en zonas activas",
-  "Geen injectables, ook niet als je erom vraagt": "Sin inyectables, tampoco si los pides",
+  "Geen medische behandeling van psoriasis":
+    "Sin tratamiento médico de la psoriasis",
+  "Geen huidbeschadigende behandeling op actieve plekken":
+    "Sin tratamientos que dañen la piel en zonas activas",
+  "Geen injectables, ook niet als je erom vraagt":
+    "Sin inyectables, tampoco si los pides",
   "Geen reeks voor een droge huid": "Sin serie para una piel seca",
   "Geen belofte dat het weggaat": "Sin promesa de que desaparezca",
   "Geen acnebehandeling op rosacea": "Sin tratamiento de acné sobre la rosácea",
   "Geen behandeling tijdens een opvlamming": "Sin tratamiento durante un brote",
-  "Geen behandeling bij een vermoeden van slaapapneu": "Sin tratamiento con sospecha de apnea del sueño",
-  "Geen reeks als het geluid ergens anders zit": "Sin serie si el sonido está en otro sitio",
-  "Niets weghalen dat niet beoordeeld is": "No quitamos nada que no se haya valorado",
+  "Geen behandeling bij een vermoeden van slaapapneu":
+    "Sin tratamiento con sospecha de apnea del sueño",
+  "Geen reeks als het geluid ergens anders zit":
+    "Sin serie si el sonido está en otro sitio",
+  "Niets weghalen dat niet beoordeeld is":
+    "No quitamos nada que no se haya valorado",
   "Niets weghalen dat verandert": "No quitamos nada que cambia",
   "Geen jaren terug": "Sin quitar años",
   "Geen volume": "Sin volumen",
-  "Geen preventieve pakketten op je twintigste": "Sin paquetes preventivos a los veinte",
-  "Geen behandeling in een huid die net veel zon had": "Sin tratamiento en una piel que acaba de recibir mucho sol",
-  "Geen behandeling voor uitgezakt vet": "Sin tratamiento para la grasa descolgada",
+  "Geen preventieve pakketten op je twintigste":
+    "Sin paquetes preventivos a los veinte",
+  "Geen behandeling in een huid die net veel zon had":
+    "Sin tratamiento en una piel que acaba de recibir mucho sol",
+  "Geen behandeling voor uitgezakt vet":
+    "Sin tratamiento para la grasa descolgada",
   "Geen fillers in de traandal": "Sin rellenos en el surco lagrimal",
-  "Wat er in het huidconsult gebeurt, hoe lang het duurt en wat het kost. Bij behandelen in dezelfde afspraak vervallen de intakekosten.": "Lo que pasa en la consulta de la piel, cuánto dura y lo que cuesta. Si te tratan en la misma cita, el coste de la consulta previa no se cobra.",
-  "Microneedling met de SkinPen of Dermapen 4 bij acnelittekens in Rotterdam. Wat het doet bij putjes, wat niet bij vlekken, en hoeveel sessies het kost.": "Microneedling con el SkinPen o el Dermapen 4 para cicatrices de acné en Róterdam. Lo que hace en los hoyos, lo que no hace en las manchas, y cuántas sesiones cuesta.",
-  "Microneedling bij grove poriën en een ongelijkmatige huidstructuur. Wat er wel verandert, wat niet, en waarom poriën niet kleiner worden.": "Microneedling para poros dilatados y una textura irregular de la piel. Lo que sí cambia, lo que no, y por qué los poros no se hacen más pequeños.",
-  "Microneedling bij fijne lijntjes. Waarom het op oppervlakkige lijnen werkt en op een diepe vouw niet, en hoe lang het duurt.": "Microneedling para líneas finas. Por qué funciona en las líneas superficiales y no en un pliegue profundo, y cuánto dura.",
-  "Microneedling bij littekens na een operatie of keizersnede. Wanneer je kunt beginnen, wat er verandert en wanneer een arts eerst meekijkt.": "Microneedling para cicatrices tras una operación o una cesárea. Cuándo puedes empezar, qué cambia y cuándo primero lo mira un médico.",
-  "Microneedling bij striae. Waarom rode striae beter reageren dan witte, en wat er wel en niet verandert.": "Microneedling para estrías. Por qué las estrías rojas reaccionan mejor que las blancas, y lo que cambia y lo que no.",
-  "Medische peelings bij acne in Rotterdam. Welk zuur waarvoor werkt, waarom je huid eerst onrustiger kan worden, en hoe vaak.": "Peelings médicos para el acné en Róterdam. Qué ácido funciona para qué, por qué tu piel puede alterarse primero, y con qué frecuencia.",
-  "Medische peelings bij pigmentvlekken. Waarom zon het resultaat bepaalt, wanneer een peeling wel werkt en wanneer een traject beter past.": "Peelings médicos para manchas de pigmento. Por qué el sol decide el resultado, cuándo un peeling sí funciona y cuándo encaja mejor un programa.",
-  "Medische peelings voor huidverjonging. Wat een peeling doet aan een doffe, ongelijkmatige huid en waar de grens ligt.": "Peelings médicos para rejuvenecer la piel. Lo que un peeling hace en una piel apagada e irregular y dónde está el límite.",
-  "LED-lichttherapie bij acne. Wat blauw licht doet met de bacterie, waarom het geen losse behandeling is en hoe vaak het moet.": "Terapia de luz LED para el acné. Lo que hace la luz azul con la bacteria, por qué no es un tratamiento suelto y con qué frecuencia hace falta.",
-  "Nordlys IPL bij couperose en zichtbare vaatjes. Wat er met een vaatje gebeurt, hoeveel sessies het vraagt en waarom er nieuwe bij kunnen komen.": "Nordlys IPL para cuperosis y vasos visibles. Lo que pasa con un vaso, cuántas sesiones pide y por qué pueden salir nuevos.",
-  "Nordlys IPL bij rosacea. Wat licht doet aan de blijvende roodheid, wat het niet doet aan de opvliegers, en wanneer een arts erbij hoort.": "Nordlys IPL para la rosácea. Lo que la luz hace con la rojez permanente, lo que no hace con los sofocos, y cuándo hace falta un médico.",
-  "Nordlys IPL bij zonnevlekken en ouderdomsvlekken. Waarom de vlek eerst donkerder wordt, hoeveel sessies het vraagt en wanneer het niet kan.": "Nordlys IPL para manchas solares y manchas de la edad. Por qué la mancha primero se oscurece, cuántas sesiones pide y cuándo no se puede.",
-  "Vacature huidtherapeut bij Diba Clinics in Rotterdam. Werken met EVE-M, Fotona, Nordlys, SkinPen en peelings, in een team van elf. Parttime of fulltime.": "Vacante de terapeuta de la piel en Diba Clinics en Róterdam. Trabajar con el EVE-M, Fotona, Nordlys, SkinPen y peelings, en un equipo de once. Media jornada o jornada completa.",
-  "3.893 reviews op Salonized, gemiddeld een 5,0. Wat dat wel zegt en wat niet, met de quotes zelf erbij.": "3.893 reseñas en Salonized, con una media de 5,0. Lo que eso dice y lo que no, con las propias citas al lado.",
-  "De 11 mensen die bij Diba Clinics werken, met per persoon het vakgebied en of de titel wettelijk beschermd is.": "Las 11 personas que trabajan en Diba Clinics, con el campo de cada una y si su título está protegido por ley.",
-  "OxyGeneo in Rotterdam bij Diba Clinics. € 150, zestig minuten en geen hersteltijd. Exfoliëren en voeden in één behandeling.": "OxyGeneo en Róterdam en Diba Clinics. € 150, sesenta minutos y sin tiempo de recuperación. Exfoliar y nutrir en un solo tratamiento.",
-  "Chemische peeling in Rotterdam bij Diba Clinics. Vier merken in drie sterktes, vanaf € 140. Voor acne, pigment en een doffe huid.": "Peeling químico en Róterdam en Diba Clinics. Cuatro marcas en tres intensidades, desde € 140. Para acné, pigmento y una piel apagada.",
-  "Diba Clinics staat aan de Weissenbruchlaan 166 in Rotterdam. Bellen, appen, mailen of je vraag stellen via het formulier.": "Diba Clinics está en Weissenbruchlaan 166 en Róterdam. Llama, escribe por WhatsApp, envía un correo o haz tu pregunta por el formulario.",
-  "Dermaplaning in Rotterdam bij Diba Clinics. € 150, zestig minuten en geen hersteltijd. Zonder zuren, dus ook bij een gevoelige huid.": "Dermaplaning en Róterdam en Diba Clinics. € 150, sesenta minutos y sin tiempo de recuperación. Sin ácidos, así que también para una piel sensible.",
-  "Bouw je huidprofiel op in negen stappen. Wat past, wat niet past en wat je tijdens de intake moet melden. Blijft in je eigen browser.": "Crea tu perfil de piel en nueve pasos. Lo que encaja, lo que no encaja y lo que tienes que decir en la consulta previa. Se queda en tu propio navegador.",
-  "Elektrische epilatie in Rotterdam: haar voor haar, ook grijs, wit en licht blond haar waar de laser niet op werkt. € 60 per half uur.": "Electrólisis en Róterdam: pelo a pelo, también pelo gris, blanco y rubio claro sobre el que el láser no funciona. € 60 por media hora.",
-  "IPL in Rotterdam met de Nordlys van Candela, voor pigmentvlekken, zonschade, couperose en rosacea. Vanaf € 75, meestal een paar uur rood.": "IPL en Róterdam con el Nordlys de Candela, para manchas de pigmento, daño solar, cuperosis y rosácea. Desde € 75, normalmente unas horas de rojez.",
-  "Fotona 4D in Rotterdam: vier laserstappen in één sessie van 90 minuten, zonder naalden. € 370 per behandeling, € 995 voor een kuur van drie.": "Fotona 4D en Róterdam: cuatro pasos de láser en una sesión de 90 minutos, sin agujas. € 370 por tratamiento, € 995 por una cura de tres.",
-  "Skinboosters in Rotterdam met de U225 injector. Vanaf € 130, met kleine bultjes die binnen een dag zakken. Voor vocht, fijne lijnen en pigment.": "Skinboosters en Róterdam con el inyector U225. Desde € 130, con pequeños bultitos que bajan en un día. Para hidratación, líneas finas y pigmento.",
-  "Huidanalyse in Rotterdam met de EVE-M. Een losse intake duurt maximaal 30 minuten en kost € 50. Wat er gemeten wordt en welke afspraak je boekt.": "Análisis de la piel en Róterdam con el EVE-M. Una consulta previa suelta dura como máximo 30 minutos y cuesta € 50. Lo que se mide y qué cita reservas.",
-  "Cosmelan en Dermamelan in Rotterdam: zes maanden, een masker in de kliniek en producten thuis. Voor het gezicht € 720 tot € 920, inclusief producten.": "Cosmelan y Dermamelan en Róterdam: seis meses, una mascarilla en la clínica y productos en casa. Para la cara de € 720 a € 920, productos incluidos.",
-  "Microneedling in Rotterdam met de SkinPen en de Dermapen 4. Vanaf € 180 per sessie, een tot drie dagen rood. Voor littekens, poriën en huidstructuur.": "Microneedling en Róterdam con el SkinPen y el Dermapen 4. Desde € 180 por sesión, de uno a tres días de rojez. Para cicatrices, poros y textura de la piel.",
-  "HydraFacial in Rotterdam bij Diba Clinics. Zestig minuten, € 170 tot € 220, geen hersteltijd. Wat het doet, voor wie het past en hoe een afspraak gaat.": "HydraFacial en Róterdam en Diba Clinics. Sesenta minutos, de € 170 a € 220, sin tiempo de recuperación. Lo que hace, para quién encaja y cómo va una cita.",
-  "Huidtherapeut in Rotterdam bij Diba Clinics. Wat een huidtherapeut doet, wanneer huidtherapie vergoed wordt en hoe je eerste afspraak gaat. Intake € 50.": "Terapeuta de la piel en Róterdam en Diba Clinics. Lo que hace una terapeuta de la piel, cuándo se reembolsa la terapia de la piel y cómo va tu primera cita. Consulta previa € 50.",
-  "Diba Clinics in Rotterdam. Actief sinds 2017, 11 mensen, 12 apparaten. En wat die cijfers niet zeggen.": "Diba Clinics en Róterdam. En activo desde 2017, 11 personas, 12 aparatos. Y lo que esas cifras no dicen.",
+  "Wat er in het huidconsult gebeurt, hoe lang het duurt en wat het kost. Bij behandelen in dezelfde afspraak vervallen de intakekosten.":
+    "Lo que pasa en la consulta de la piel, cuánto dura y lo que cuesta. Si te tratan en la misma cita, el coste de la consulta previa no se cobra.",
+  "Microneedling met de SkinPen of Dermapen 4 bij acnelittekens in Rotterdam. Wat het doet bij putjes, wat niet bij vlekken, en hoeveel sessies het kost.":
+    "Microneedling con SkinPen o Dermapen 4 para cicatrices de acné en Róterdam. Qué hace en los hoyos, qué no hace en las manchas y cuántas sesiones pide.",
+  "Microneedling bij grove poriën en een ongelijkmatige huidstructuur. Wat er wel verandert, wat niet, en waarom poriën niet kleiner worden.":
+    "Microneedling para poros dilatados y una textura irregular de la piel. Lo que sí cambia, lo que no, y por qué los poros no se hacen más pequeños.",
+  "Microneedling bij fijne lijntjes. Waarom het op oppervlakkige lijnen werkt en op een diepe vouw niet, en hoe lang het duurt.":
+    "Microneedling para líneas finas. Por qué funciona en las líneas superficiales y no en un pliegue profundo, y cuánto dura.",
+  "Microneedling bij littekens na een operatie of keizersnede. Wanneer je kunt beginnen, wat er verandert en wanneer een arts eerst meekijkt.":
+    "Microneedling para cicatrices tras una operación o una cesárea. Cuándo puedes empezar, qué cambia y cuándo primero lo mira un médico.",
+  "Microneedling bij striae. Waarom rode striae beter reageren dan witte, en wat er wel en niet verandert.":
+    "Microneedling para estrías. Por qué las estrías rojas reaccionan mejor que las blancas, y lo que cambia y lo que no.",
+  "Medische peelings bij acne in Rotterdam. Welk zuur waarvoor werkt, waarom je huid eerst onrustiger kan worden, en hoe vaak.":
+    "Peelings médicos para el acné en Róterdam. Qué ácido funciona para qué, por qué tu piel puede alterarse primero, y con qué frecuencia.",
+  "Medische peelings bij pigmentvlekken. Waarom zon het resultaat bepaalt, wanneer een peeling wel werkt en wanneer een traject beter past.":
+    "Peelings médicos para manchas de pigmento. Por qué el sol decide el resultado, cuándo un peeling sí funciona y cuándo encaja mejor un programa.",
+  "Medische peelings voor huidverjonging. Wat een peeling doet aan een doffe, ongelijkmatige huid en waar de grens ligt.":
+    "Peelings médicos para rejuvenecer la piel. Lo que un peeling hace en una piel apagada e irregular y dónde está el límite.",
+  "LED-lichttherapie bij acne. Wat blauw licht doet met de bacterie, waarom het geen losse behandeling is en hoe vaak het moet.":
+    "Terapia de luz LED para el acné. Lo que hace la luz azul con la bacteria, por qué no es un tratamiento suelto y con qué frecuencia hace falta.",
+  "Nordlys IPL bij couperose en zichtbare vaatjes. Wat er met een vaatje gebeurt, hoeveel sessies het vraagt en waarom er nieuwe bij kunnen komen.":
+    "Nordlys IPL para cuperosis y vasos visibles. Lo que pasa con un vaso, cuántas sesiones pide y por qué pueden salir nuevos.",
+  "Nordlys IPL bij rosacea. Wat licht doet aan de blijvende roodheid, wat het niet doet aan de opvliegers, en wanneer een arts erbij hoort.":
+    "Nordlys IPL para la rosácea. Lo que la luz hace con la rojez permanente, lo que no hace con los sofocos, y cuándo hace falta un médico.",
+  "Nordlys IPL bij zonnevlekken en ouderdomsvlekken. Waarom de vlek eerst donkerder wordt, hoeveel sessies het vraagt en wanneer het niet kan.":
+    "Nordlys IPL para manchas solares y manchas de la edad. Por qué la mancha primero se oscurece, cuántas sesiones pide y cuándo no se puede.",
+  "Vacature huidtherapeut bij Diba Clinics in Rotterdam. Werken met EVE-M, Fotona, Nordlys, SkinPen en peelings, in een team van elf. Parttime of fulltime.":
+    "Vacante de terapeuta de la piel en Diba Clinics, Róterdam. Con EVE-M, Fotona, Nordlys, SkinPen y peelings, en un equipo de once. Media jornada o completa.",
+  "3.893 reviews op Salonized, gemiddeld een 5,0. Wat dat wel zegt en wat niet, met de quotes zelf erbij.":
+    "3.893 reseñas en Salonized, con una media de 5,0. Lo que eso dice y lo que no, con las propias citas al lado.",
+  "De 11 mensen die bij Diba Clinics werken, met per persoon het vakgebied en of de titel wettelijk beschermd is.":
+    "Las 11 personas que trabajan en Diba Clinics, con el campo de cada una y si su título está protegido por ley.",
+  "OxyGeneo in Rotterdam bij Diba Clinics. € 150, zestig minuten en geen hersteltijd. Exfoliëren en voeden in één behandeling.":
+    "OxyGeneo en Róterdam en Diba Clinics. € 150, sesenta minutos y sin tiempo de recuperación. Exfoliar y nutrir en un solo tratamiento.",
+  "Chemische peeling in Rotterdam bij Diba Clinics. Vier merken in drie sterktes, vanaf € 140. Voor acne, pigment en een doffe huid.":
+    "Peeling químico en Róterdam en Diba Clinics. Cuatro marcas en tres intensidades, desde € 140. Para acné, pigmento y una piel apagada.",
+  "Diba Clinics staat aan de Weissenbruchlaan 166 in Rotterdam. Bellen, appen, mailen of je vraag stellen via het formulier.":
+    "Diba Clinics está en Weissenbruchlaan 166 en Róterdam. Llama, escribe por WhatsApp, envía un correo o haz tu pregunta por el formulario.",
+  "Dermaplaning in Rotterdam bij Diba Clinics. € 150, zestig minuten en geen hersteltijd. Zonder zuren, dus ook bij een gevoelige huid.":
+    "Dermaplaning en Róterdam en Diba Clinics. € 150, sesenta minutos y sin tiempo de recuperación. Sin ácidos, así que también para una piel sensible.",
+  "Bouw je huidprofiel op in negen stappen. Wat past, wat niet past en wat je tijdens de intake moet melden. Blijft in je eigen browser.":
+    "Crea tu perfil de piel en nueve pasos. Lo que encaja, lo que no encaja y lo que tienes que decir en la consulta previa. Se queda en tu propio navegador.",
+  "Elektrische epilatie in Rotterdam: haar voor haar, ook grijs, wit en licht blond haar waar de laser niet op werkt. € 60 per half uur.":
+    "Electrólisis en Róterdam: pelo a pelo, también pelo gris, blanco y rubio claro sobre el que el láser no funciona. € 60 por media hora.",
+  "IPL in Rotterdam met de Nordlys van Candela, voor pigmentvlekken, zonschade, couperose en rosacea. Vanaf € 75, meestal een paar uur rood.":
+    "IPL en Róterdam con el Nordlys de Candela, para manchas de pigmento, daño solar, cuperosis y rosácea. Desde € 75, normalmente unas horas de rojez.",
+  "Fotona 4D in Rotterdam: vier laserstappen in één sessie van 90 minuten, zonder naalden. € 370 per behandeling, € 995 voor een kuur van drie.":
+    "Fotona 4D en Róterdam: cuatro pasos de láser en una sesión de 90 minutos, sin agujas. € 370 por tratamiento, € 995 por una cura de tres.",
+  "Skinboosters in Rotterdam met de U225 injector. Vanaf € 130, met kleine bultjes die binnen een dag zakken. Voor vocht, fijne lijnen en pigment.":
+    "Skinboosters en Róterdam con el inyector U225. Desde € 130, con pequeños bultitos que bajan en un día. Para hidratación, líneas finas y pigmento.",
+  "Huidanalyse in Rotterdam met de EVE-M. Een losse intake duurt maximaal 30 minuten en kost € 50. Wat er gemeten wordt en welke afspraak je boekt.":
+    "Análisis de la piel en Róterdam con el EVE-M. Una consulta previa suelta dura como máximo 30 minutos y cuesta € 50. Lo que se mide y qué cita reservas.",
+  "Cosmelan en Dermamelan in Rotterdam: zes maanden, een masker in de kliniek en producten thuis. Voor het gezicht € 720 tot € 920, inclusief producten.":
+    "Cosmelan y Dermamelan en Róterdam: seis meses, una mascarilla en la clínica y productos en casa. Para la cara de € 720 a € 920, productos incluidos.",
+  "Microneedling in Rotterdam met de SkinPen en de Dermapen 4. Vanaf € 180 per sessie, een tot drie dagen rood. Voor littekens, poriën en huidstructuur.":
+    "Microneedling en Róterdam con el SkinPen y el Dermapen 4. Desde € 180 por sesión, de uno a tres días de rojez. Para cicatrices, poros y textura de la piel.",
+  "HydraFacial in Rotterdam bij Diba Clinics. Zestig minuten, € 170 tot € 220, geen hersteltijd. Wat het doet, voor wie het past en hoe een afspraak gaat.":
+    "HydraFacial en Róterdam en Diba Clinics. Sesenta minutos, de € 170 a € 220, sin tiempo de recuperación. Lo que hace, para quién encaja y cómo va una cita.",
+  "Huidtherapeut in Rotterdam bij Diba Clinics. Wat een huidtherapeut doet, wanneer huidtherapie vergoed wordt en hoe je eerste afspraak gaat. Intake € 50.":
+    "Terapeuta de la piel en Róterdam en Diba Clinics. Qué hace una terapeuta de la piel, cuándo se reembolsa y cómo va tu primera cita. Consulta previa € 50.",
+  "Diba Clinics in Rotterdam. Actief sinds 2017, 11 mensen, 12 apparaten. En wat die cijfers niet zeggen.":
+    "Diba Clinics en Róterdam. En activo desde 2017, 11 personas, 12 aparatos. Y lo que esas cifras no dicen.",
   "het apparaat": "el aparato",
   "Waar je bij": "Dónde encuentras en",
-  "vindt wat jouw polis vergoedt, en welke voorwaarde daar het vaakst in de weg zit. Wij kunnen je polis niet zien.": "lo que reembolsa tu póliza, y qué condición se interpone más a menudo. Nosotros no podemos ver tu póliza.",
-  "Vacature huidtherapeut Rotterdam": "Vacante de terapeuta de la piel Róterdam",
+  "vindt wat jouw polis vergoedt, en welke voorwaarde daar het vaakst in de weg zit. Wij kunnen je polis niet zien.":
+    "lo que reembolsa tu póliza, y qué condición se interpone más a menudo. Nosotros no podemos ver tu póliza.",
+  "Vacature huidtherapeut Rotterdam":
+    "Vacante de terapeuta de la piel Róterdam",
   "Vergoeding bij": "Reembolso en",
   "SBB, erkend leerbedrijf": "SBB, empresa de formación reconocida",
-  "Dermaplaning met een chirurgisch mesje over de wang": "Dermaplaning con una cuchilla quirúrgica por la mejilla",
-  "Behandelaar plaatst een cliënt in de EVE-M huidscanner": "Una terapeuta coloca a un cliente en el escáner de piel EVE-M",
-  "De Nordlys van Candela met de handstukken in de houder": "El Nordlys de Candela con las piezas de mano en el soporte",
-  "Het OxyGeneo-apparaat van Pollogen in de behandelkamer": "El aparato OxyGeneo de Pollogen en la sala de tratamiento",
-  "Het bedieningsscherm van de Fotona met het behandelmenu": "La pantalla de control del Fotona con el menú de tratamientos",
-  "Een flacon Dermaceutic TCA naast een cliënt op de behandelbank": "Un frasco de Dermaceutic TCA junto a un cliente en la camilla",
-  "Een peeling wordt met een wattenstaafje op het voorhoofd aangebracht": "Un peeling se aplica en la frente con un bastoncillo de algodón",
-  "Fotona-laserbehandeling met oogbescherming voor cliënt en behandelaar": "Tratamiento con láser Fotona con protección ocular para cliente y terapeuta",
-  "Behandeling van acne en onzuiverheden": "Tratamiento del acné y las impurezas",
-  "Fotona-laserbehandeling met oogbescherming": "Tratamiento con láser Fotona con protección ocular",
-  "Het U225-mesotherapiepistool op de hoofdhuid": "La pistola de mesoterapia U225 en el cuero cabelludo",
-  "Behandelgel op de huid met het handstuk erop": "Gel de tratamiento sobre la piel con la pieza de mano encima",
-  "Een skinbooster wordt onder het oog ingebracht": "Un skinbooster se aplica bajo el ojo",
-  "Het Dermapen-handstuk in gebruik bij een cliënt": "La pieza de mano del Dermapen en uso con un cliente",
-  "Laserontharing met beschermbrillen bij Diba Clinics": "Depilación láser con gafas de protección en Diba Clinics",
-  "Het SkinPen-handstuk op het voorhoofd van een cliënt": "La pieza de mano del SkinPen en la frente de un cliente",
-  "Het Cosmelan-masker wordt op het gezicht aangebracht": "La mascarilla Cosmelan se aplica en la cara",
-  "Ampullen en injector klaargelegd voor de behandeling": "Ampollas e inyector preparados para el tratamiento",
-  "Andres behandelt de huid van een cliënt met de Dermapen 4": "Andres trata la piel de un cliente con el Dermapen 4",
-  "Behandelaar werkt met de Nordlys aan de huid van een cliënt": "Una terapeuta trabaja con el Nordlys sobre la piel de un cliente",
-  "Twee behandelaars van Diba Clinics naast elkaar in de kliniek": "Dos terapeutas de Diba Clinics una junto a la otra en la clínica",
-  "Dermaplaning: het mesje schraapt onder een vaste hoek over de wang": "Dermaplaning: la cuchilla raspa la mejilla en un ángulo fijo",
-  "Laserontharing met beschermbril, uitgevoerd door een huidtherapeut": "Depilación láser con gafas de protección, realizada por una terapeuta de la piel",
-  "Cliënt in de EVE-M huidscanner, met de opname op het scherm ernaast": "Cliente en el escáner de piel EVE-M, con la captura en la pantalla de al lado",
-  "Cliënt en behandelaar aan tafel in de intakeruimte, met een kop koffie": "Cliente y terapeuta a la mesa en la sala de consulta, con una taza de café",
-  "Het HydraFacial-handstuk op de huid, met het apparaat op de achtergrond": "La pieza de mano del HydraFacial sobre la piel, con el aparato al fondo",
-  "Behandelaar bedient het Precision Photonic System boven het gezicht van een client": "Una terapeuta maneja el Precision Photonic System sobre la cara de un cliente",
-  "Behandelaar legt aan de hand van een doorsnedemodel van de huid uit wat er waar zit": "Una terapeuta explica con un modelo de corte transversal de la piel qué hay en cada capa",
-  "Het laserhandstuk wordt achter in de mond gebracht tijdens een NightLase-behandeling": "La pieza de mano del láser se lleva al fondo de la boca durante un tratamiento NightLase",
+  "Dermaplaning met een chirurgisch mesje over de wang":
+    "Dermaplaning con una cuchilla quirúrgica por la mejilla",
+  "Behandelaar plaatst een cliënt in de EVE-M huidscanner":
+    "Una terapeuta coloca a un cliente en el escáner de piel EVE-M",
+  "De Nordlys van Candela met de handstukken in de houder":
+    "El Nordlys de Candela con las piezas de mano en el soporte",
+  "Het OxyGeneo-apparaat van Pollogen in de behandelkamer":
+    "El aparato OxyGeneo de Pollogen en la sala de tratamiento",
+  "Het bedieningsscherm van de Fotona met het behandelmenu":
+    "La pantalla de control del Fotona con el menú de tratamientos",
+  "Een flacon Dermaceutic TCA naast een cliënt op de behandelbank":
+    "Un frasco de Dermaceutic TCA junto a un cliente en la camilla",
+  "Een peeling wordt met een wattenstaafje op het voorhoofd aangebracht":
+    "Un peeling se aplica en la frente con un bastoncillo de algodón",
+  "Fotona-laserbehandeling met oogbescherming voor cliënt en behandelaar":
+    "Tratamiento con láser Fotona con protección ocular para cliente y terapeuta",
+  "Behandeling van acne en onzuiverheden":
+    "Tratamiento del acné y las impurezas",
+  "Fotona-laserbehandeling met oogbescherming":
+    "Tratamiento con láser Fotona con protección ocular",
+  "Het U225-mesotherapiepistool op de hoofdhuid":
+    "La pistola de mesoterapia U225 en el cuero cabelludo",
+  "Behandelgel op de huid met het handstuk erop":
+    "Gel de tratamiento sobre la piel con la pieza de mano encima",
+  "Een skinbooster wordt onder het oog ingebracht":
+    "Un skinbooster se aplica bajo el ojo",
+  "Het Dermapen-handstuk in gebruik bij een cliënt":
+    "La pieza de mano del Dermapen en uso con un cliente",
+  "Laserontharing met beschermbrillen bij Diba Clinics":
+    "Depilación láser con gafas de protección en Diba Clinics",
+  "Het SkinPen-handstuk op het voorhoofd van een cliënt":
+    "La pieza de mano del SkinPen en la frente de un cliente",
+  "Het Cosmelan-masker wordt op het gezicht aangebracht":
+    "La mascarilla Cosmelan se aplica en la cara",
+  "Ampullen en injector klaargelegd voor de behandeling":
+    "Ampollas e inyector preparados para el tratamiento",
+  "Andres behandelt de huid van een cliënt met de Dermapen 4":
+    "Andres trata la piel de un cliente con el Dermapen 4",
+  "Behandelaar werkt met de Nordlys aan de huid van een cliënt":
+    "Una terapeuta trabaja con el Nordlys sobre la piel de un cliente",
+  "Twee behandelaars van Diba Clinics naast elkaar in de kliniek":
+    "Dos terapeutas de Diba Clinics una junto a la otra en la clínica",
+  "Dermaplaning: het mesje schraapt onder een vaste hoek over de wang":
+    "Dermaplaning: la cuchilla raspa la mejilla en un ángulo fijo",
+  "Laserontharing met beschermbril, uitgevoerd door een huidtherapeut":
+    "Depilación láser con gafas de protección, realizada por una terapeuta de la piel",
+  "Cliënt in de EVE-M huidscanner, met de opname op het scherm ernaast":
+    "Cliente en el escáner de piel EVE-M, con la captura en la pantalla de al lado",
+  "Cliënt en behandelaar aan tafel in de intakeruimte, met een kop koffie":
+    "Cliente y terapeuta a la mesa en la sala de consulta, con una taza de café",
+  "Het HydraFacial-handstuk op de huid, met het apparaat op de achtergrond":
+    "La pieza de mano del HydraFacial sobre la piel, con el aparato al fondo",
+  "Behandelaar bedient het Precision Photonic System boven het gezicht van een client":
+    "Una terapeuta maneja el Precision Photonic System sobre la cara de un cliente",
+  "Behandelaar legt aan de hand van een doorsnedemodel van de huid uit wat er waar zit":
+    "Una terapeuta explica con un modelo de corte transversal de la piel qué hay en cada capa",
+  "Het laserhandstuk wordt achter in de mond gebracht tijdens een NightLase-behandeling":
+    "La pieza de mano del láser se lleva al fondo de la boca durante un tratamiento NightLase",
   "Een behandeling bij actieve acne": "Un tratamiento para el acné activo",
-  "De OxyGeneo-kop werkt over de huid": "El cabezal del OxyGeneo trabaja sobre la piel",
-  "Laserontharing met oogbescherming op": "Depilación láser con protección ocular puesta",
-  "Een RRS Eyes-injectie bij de ooghoek": "Una inyección de RRS Eyes en el rabillo del ojo",
-  "De opname van de huidscan op het scherm": "La captura del escaneo de la piel en la pantalla",
-  "Gezichtsbehandeling in de behandelkamer": "Tratamiento facial en la sala de tratamiento",
-  "Een Fotona-behandeling langs de kaaklijn": "Un tratamiento Fotona a lo largo de la línea de la mandíbula",
-  "Nordlys IPL-behandeling met beschermbril": "Tratamiento Nordlys IPL con gafas de protección",
-  "Behandelaar werkt aan pigment en melasma": "Una terapeuta trabaja sobre pigmento y melasma",
-  "Het handstuk van de Dermapen 4 op de huid": "La pieza de mano del Dermapen 4 sobre la piel",
-  "XL Hair-behandeling voor haar en hoofdhuid": "Tratamiento XL Hair para el pelo y el cuero cabelludo",
-  "Een fibroom wordt verwijderd naast de neus": "Se quita un fibroma junto a la nariz",
-  "Het HydraFacial-mondstuk gaat over de wang": "La punta del HydraFacial pasa por la mejilla",
-  "Twee behandelaars met koffie in de kliniek": "Dos terapeutas con café en la clínica",
-  "Het masker wordt op het gezicht aangebracht": "La mascarilla se aplica en la cara",
-  "Microneedling met de SkinPen bij een cliënt": "Microneedling con el SkinPen en un cliente",
-  "Huidverstevigende behandeling in de kliniek": "Tratamiento reafirmante de la piel en la clínica",
-  "HydraFacial-behandeling in de behandelkamer": "Tratamiento HydraFacial en la sala de tratamiento",
-  "Laserontharing met beschermbril en huidkoeling": "Depilación láser con gafas de protección y refrigeración de la piel",
-  "Laserontharing van de oksel met beschermbrillen": "Depilación láser de la axila con gafas de protección",
-  "Behandeling met de Nordlys, met beschermbril op": "Tratamiento con el Nordlys, con gafas de protección puestas",
-  "Microneedling met de SkinPen in de behandelkamer": "Microneedling con el SkinPen en la sala de tratamiento",
-  "Een peeling wordt aangebracht in de behandelkamer": "Un peeling se aplica en la sala de tratamiento",
-  "Een fibroom wordt met een fijn handstuk weggenomen": "Se quita un fibroma con una pieza de mano fina",
-  "HydraFacial Syndeo op het voorhoofd van een cliënt": "HydraFacial Syndeo en la frente de un cliente",
-  "Behandelaar met de Nordlys in de gang van de kliniek": "Una terapeuta con el Nordlys en el pasillo de la clínica",
-  "Steelwratjes: meerdere zachte huidflapjes in de hals": "Acrocordones: varios colgajos blandos de piel en el cuello",
-  "RRS Eyes: injectie met een fijne naald onder het oog": "RRS Eyes: inyección con una aguja fina bajo el ojo",
-  "HydraFacial-behandeling in uitvoering bij Diba Clinics": "Tratamiento HydraFacial en curso en Diba Clinics",
-  "Een flacon peeling boven een client op de behandelbank": "Un frasco de peeling sobre un cliente en la camilla",
-  "De XL Hair-behandeling wordt toegelicht bij een cliënt": "Se explica el tratamiento XL Hair a un cliente",
-  "Keratosis pilaris: kleine ruwe bultjes op een bovenarm": "Queratosis pilar: pequeños bultitos ásperos en un brazo",
-  "HydraFacial-behandeling met de Syndeo in de behandelkamer": "Tratamiento HydraFacial con el Syndeo en la sala de tratamiento",
-  "Producten uit het jongerentraject bij een client met acne": "Productos del programa juvenil junto a un cliente con acné",
-  "Microneedling met een pen op het voorhoofd van een cliënt": "Microneedling con un pen en la frente de un cliente",
-  "Cliënt tijdens een behandeling gericht op huidveroudering": "Cliente durante un tratamiento dirigido al envejecimiento de la piel",
-  "Behandelaar in gesprek met een client in de behandelkamer": "Una terapeuta conversa con un cliente en la sala de tratamiento",
-  "Behandelaar van Diba Clinics zit klaar in de behandelkamer": "Una terapeuta de Diba Clinics lista en la sala de tratamiento",
-  "Behandelaar en cliënt in een behandelkamer van Diba Clinics": "Terapeuta y cliente en una sala de tratamiento de Diba Clinics",
-  "Behandelaar geeft een verzorgingsproduct mee aan een client": "Una terapeuta entrega un producto de cuidado a un cliente",
-  "Behandelaar en client in een behandelkamer van Diba Clinics": "Terapeuta y cliente en una sala de tratamiento de Diba Clinics",
-  "Cliënt en behandelaar in gesprek aan tafel, met koffie erbij": "Cliente y terapeuta conversando a la mesa, con café",
-  "Laserontharing: behandelaar en cliënt dragen een beschermbril": "Depilación láser: terapeuta y cliente llevan gafas de protección",
-  "Fotona-laserbehandeling van striae op de huid van het lichaam": "Tratamiento con láser Fotona de estrías en la piel del cuerpo",
-  "Twee behandelaars bekijken samen een verpakking in de kliniek": "Dos terapeutas miran juntas un envase en la clínica",
-  "Laserontharing van de kaaklijn bij een man, met oogbescherming": "Depilación láser de la línea de la mandíbula en un hombre, con protección ocular",
-  "IPL-behandeling van vaatjes met de Nordlys, met oogbescherming": "Tratamiento IPL de vasos con el Nordlys, con protección ocular",
-  "Microneedling met de SkinPen bij een cliënt in de behandelstoel": "Microneedling con el SkinPen en un cliente en el sillón de tratamiento",
-  "Handen met handschoenen voeren een precieze huidbehandeling uit": "Manos con guantes realizan un tratamiento preciso de la piel",
-  "LED-therapie met rood licht op het gezicht, in de behandelkamer": "Terapia LED con luz roja en la cara, en la sala de tratamiento",
-  "Fotona-laserbehandeling in de behandelkamer, met oogbescherming": "Tratamiento con láser Fotona en la sala de tratamiento, con protección ocular",
-  "Huid met acne wordt van dichtbij beoordeeld door een behandelaar": "Una terapeuta valora de cerca una piel con acné",
-  "De balie van Diba Clinics met het productschap op de achtergrond": "La recepción de Diba Clinics con la estantería de productos al fondo",
-  "Behandelaar werkt aan de huid van een client in de behandelkamer": "Una terapeuta trabaja sobre la piel de un cliente en la sala de tratamiento",
-  "Een huidtherapeut werkt met de Nordlys aan pigment in het gezicht": "Una terapeuta de la piel trabaja con el Nordlys sobre pigmento en la cara",
-  "Een client krijgt koffie aangereikt bij binnenkomst in de kliniek": "A un cliente le ofrecen café al entrar en la clínica",
-  "Behandelaar bekijkt de uitkomst van een huidprofiel op een tablet": "Una terapeuta mira el resultado de un perfil de piel en una tableta",
-  "Behandelaar bespreekt de uitkomst van een huidscan met een client": "Una terapeuta comenta el resultado de un escaneo de la piel con un cliente",
-  "Laserontharing van de baardlijn, met oogbescherming voor de cliënt": "Depilación láser de la línea de la barba, con protección ocular para el cliente",
-  "Een behandelaar werkt met een fijn naaldje vlak naast de wenkbrauw": "Una terapeuta trabaja con una aguja fina justo al lado de la ceja",
-  "Na een peeling: de huid is rood en wordt met een ventilator gekoeld": "Después de un peeling: la piel está roja y se enfría con un ventilador",
-  "Cliënt zit voor de huidscanner in de kliniek, klaar voor een meting": "Cliente ante el escáner de piel en la clínica, a punto para una medición",
-  "Behandelaar werkt met de Dermapen over het voorhoofd van een cliënt": "Una terapeuta trabaja con el Dermapen por la frente de un cliente",
-  "Handstuk van de laser op de huid van een arm tijdens een behandeling": "Pieza de mano del láser sobre la piel de un brazo durante un tratamiento",
-  "Huidtherapeut behandelt een client met de Nordlys in de behandelkamer": "Una terapeuta de la piel trata a un cliente con el Nordlys en la sala de tratamiento",
-  "Masker wordt met een handstuk ingewerkt op het gezicht van een cliënt": "Una mascarilla se trabaja con una pieza de mano en la cara de un cliente",
-  "Huidtherapeut brengt een kalmerend product aan na het reinigen bij acne": "Una terapeuta de la piel aplica un producto calmante tras la limpieza en un acné",
-  "Twee behandelaars van Diba Clinics met koffie in de gang van de kliniek": "Dos terapeutas de Diba Clinics con café en el pasillo de la clínica",
-  "Behandeling met de Nordlys in de behandelkamer, met het apparaat ernaast": "Tratamiento con el Nordlys en la sala de tratamiento, con el aparato al lado",
-  "Microneedling met de SkinPen bij een cliënt van Diba Clinics in Rotterdam": "Microneedling con el SkinPen en un cliente de Diba Clinics en Róterdam",
-  "Het handstuk van de HydraFacial Syndeo, met het apparaat op de achtergrond": "La pieza de mano del HydraFacial Syndeo, con el aparato al fondo",
-  "Huidtherapeut brengt een verzorgingsproduct aan tijdens een acnebehandeling": "Una terapeuta de la piel aplica un producto de cuidado durante un tratamiento del acné",
-  "De behandelaar zet een depot onder het oog tijdens een RRS Eyes-behandeling": "La terapeuta coloca un depósito bajo el ojo durante un tratamiento RRS Eyes",
-  "Cliënt zwaait bij het verlaten van de kliniek, met een tas van Diba Clinics": "Cliente saluda con la mano al salir de la clínica, con una bolsa de Diba Clinics",
-  "Twee huidtherapeuten met koffie in de kliniek van Diba Clinics in Rotterdam": "Dos terapeutas de la piel con café en la clínica de Diba Clinics en Róterdam",
-  "Een behandelaar laat een cliënt de uitslag van de huidscan zien op een tablet": "Una terapeuta muestra a un cliente el resultado del escaneo de la piel en una tableta",
-  "Laserbril en reinigingsdoekjes klaargelegd op een handdoek in de behandelkamer": "Gafas láser y toallitas de limpieza preparadas sobre una toalla en la sala de tratamiento",
-  "Overzicht van een behandelkamer bij Diba Clinics met een behandelaar aan het werk": "Vista de una sala de tratamiento de Diba Clinics con una terapeuta trabajando",
-  "Behandelaar houdt twee peelings vast naast een jongere met acne in de behandelstoel": "Una terapeuta sostiene dos peelings junto a un joven con acné en el sillón de tratamiento",
-  "Laserbehandeling in de behandelkamer, met oogbescherming voor behandelaar en cliënt": "Tratamiento con láser en la sala de tratamiento, con protección ocular para terapeuta y cliente",
-  "Een TCA-peeling wordt met een wattenstaafje aangebracht tijdens een pigmentbehandeling": "Un peeling de TCA se aplica con un bastoncillo de algodón durante un tratamiento de pigmento",
-  "Behandelaar brengt gel aan bij een cliënt met beschermbril, naast het Nordlys-apparaat": "Una terapeuta aplica gel a un cliente con gafas de protección, junto al aparato Nordlys",
-  "Jonge cliënt met acne op de behandelbank, met de peelingproducten die bij zijn behandeling horen": "Cliente joven con acné en la camilla, con los productos de peeling que corresponden a su tratamiento",
-  "Het HydraFacial-mondstuk gaat over de wang tijdens een behandeling bij Diba Clinics in Rotterdam": "La punta del HydraFacial pasa por la mejilla durante un tratamiento en Diba Clinics en Róterdam",
+  "De OxyGeneo-kop werkt over de huid":
+    "El cabezal del OxyGeneo trabaja sobre la piel",
+  "Laserontharing met oogbescherming op":
+    "Depilación láser con protección ocular puesta",
+  "Een RRS Eyes-injectie bij de ooghoek":
+    "Una inyección de RRS Eyes en el rabillo del ojo",
+  "De opname van de huidscan op het scherm":
+    "La captura del escaneo de la piel en la pantalla",
+  "Gezichtsbehandeling in de behandelkamer":
+    "Tratamiento facial en la sala de tratamiento",
+  "Een Fotona-behandeling langs de kaaklijn":
+    "Un tratamiento Fotona a lo largo de la línea de la mandíbula",
+  "Nordlys IPL-behandeling met beschermbril":
+    "Tratamiento Nordlys IPL con gafas de protección",
+  "Behandelaar werkt aan pigment en melasma":
+    "Una terapeuta trabaja sobre pigmento y melasma",
+  "Het handstuk van de Dermapen 4 op de huid":
+    "La pieza de mano del Dermapen 4 sobre la piel",
+  "XL Hair-behandeling voor haar en hoofdhuid":
+    "Tratamiento XL Hair para el pelo y el cuero cabelludo",
+  "Een fibroom wordt verwijderd naast de neus":
+    "Se quita un fibroma junto a la nariz",
+  "Het HydraFacial-mondstuk gaat over de wang":
+    "La punta del HydraFacial pasa por la mejilla",
+  "Twee behandelaars met koffie in de kliniek":
+    "Dos terapeutas con café en la clínica",
+  "Het masker wordt op het gezicht aangebracht":
+    "La mascarilla se aplica en la cara",
+  "Microneedling met de SkinPen bij een cliënt":
+    "Microneedling con el SkinPen en un cliente",
+  "Huidverstevigende behandeling in de kliniek":
+    "Tratamiento reafirmante de la piel en la clínica",
+  "HydraFacial-behandeling in de behandelkamer":
+    "Tratamiento HydraFacial en la sala de tratamiento",
+  "Laserontharing met beschermbril en huidkoeling":
+    "Depilación láser con gafas de protección y refrigeración de la piel",
+  "Laserontharing van de oksel met beschermbrillen":
+    "Depilación láser de la axila con gafas de protección",
+  "Behandeling met de Nordlys, met beschermbril op":
+    "Tratamiento con el Nordlys, con gafas de protección puestas",
+  "Microneedling met de SkinPen in de behandelkamer":
+    "Microneedling con el SkinPen en la sala de tratamiento",
+  "Een peeling wordt aangebracht in de behandelkamer":
+    "Un peeling se aplica en la sala de tratamiento",
+  "Een fibroom wordt met een fijn handstuk weggenomen":
+    "Se quita un fibroma con una pieza de mano fina",
+  "HydraFacial Syndeo op het voorhoofd van een cliënt":
+    "HydraFacial Syndeo en la frente de un cliente",
+  "Behandelaar met de Nordlys in de gang van de kliniek":
+    "Una terapeuta con el Nordlys en el pasillo de la clínica",
+  "Steelwratjes: meerdere zachte huidflapjes in de hals":
+    "Acrocordones: varios colgajos blandos de piel en el cuello",
+  "RRS Eyes: injectie met een fijne naald onder het oog":
+    "RRS Eyes: inyección con una aguja fina bajo el ojo",
+  "HydraFacial-behandeling in uitvoering bij Diba Clinics":
+    "Tratamiento HydraFacial en curso en Diba Clinics",
+  "Een flacon peeling boven een client op de behandelbank":
+    "Un frasco de peeling sobre un cliente en la camilla",
+  "De XL Hair-behandeling wordt toegelicht bij een cliënt":
+    "Se explica el tratamiento XL Hair a un cliente",
+  "Keratosis pilaris: kleine ruwe bultjes op een bovenarm":
+    "Queratosis pilar: pequeños bultitos ásperos en un brazo",
+  "HydraFacial-behandeling met de Syndeo in de behandelkamer":
+    "Tratamiento HydraFacial con el Syndeo en la sala de tratamiento",
+  "Producten uit het jongerentraject bij een client met acne":
+    "Productos del programa juvenil junto a un cliente con acné",
+  "Microneedling met een pen op het voorhoofd van een cliënt":
+    "Microneedling con un pen en la frente de un cliente",
+  "Cliënt tijdens een behandeling gericht op huidveroudering":
+    "Cliente durante un tratamiento dirigido al envejecimiento de la piel",
+  "Behandelaar in gesprek met een client in de behandelkamer":
+    "Una terapeuta conversa con un cliente en la sala de tratamiento",
+  "Behandelaar van Diba Clinics zit klaar in de behandelkamer":
+    "Una terapeuta de Diba Clinics lista en la sala de tratamiento",
+  "Behandelaar en cliënt in een behandelkamer van Diba Clinics":
+    "Terapeuta y cliente en una sala de tratamiento de Diba Clinics",
+  "Behandelaar geeft een verzorgingsproduct mee aan een client":
+    "Una terapeuta entrega un producto de cuidado a un cliente",
+  "Behandelaar en client in een behandelkamer van Diba Clinics":
+    "Terapeuta y cliente en una sala de tratamiento de Diba Clinics",
+  "Cliënt en behandelaar in gesprek aan tafel, met koffie erbij":
+    "Cliente y terapeuta conversando a la mesa, con café",
+  "Laserontharing: behandelaar en cliënt dragen een beschermbril":
+    "Depilación láser: terapeuta y cliente llevan gafas de protección",
+  "Fotona-laserbehandeling van striae op de huid van het lichaam":
+    "Tratamiento con láser Fotona de estrías en la piel del cuerpo",
+  "Twee behandelaars bekijken samen een verpakking in de kliniek":
+    "Dos terapeutas miran juntas un envase en la clínica",
+  "Laserontharing van de kaaklijn bij een man, met oogbescherming":
+    "Depilación láser de la línea de la mandíbula en un hombre, con protección ocular",
+  "IPL-behandeling van vaatjes met de Nordlys, met oogbescherming":
+    "Tratamiento IPL de vasos con el Nordlys, con protección ocular",
+  "Microneedling met de SkinPen bij een cliënt in de behandelstoel":
+    "Microneedling con el SkinPen en un cliente en el sillón de tratamiento",
+  "Handen met handschoenen voeren een precieze huidbehandeling uit":
+    "Manos con guantes realizan un tratamiento preciso de la piel",
+  "LED-therapie met rood licht op het gezicht, in de behandelkamer":
+    "Terapia LED con luz roja en la cara, en la sala de tratamiento",
+  "Fotona-laserbehandeling in de behandelkamer, met oogbescherming":
+    "Tratamiento con láser Fotona en la sala de tratamiento, con protección ocular",
+  "Huid met acne wordt van dichtbij beoordeeld door een behandelaar":
+    "Una terapeuta valora de cerca una piel con acné",
+  "De balie van Diba Clinics met het productschap op de achtergrond":
+    "La recepción de Diba Clinics con la estantería de productos al fondo",
+  "Behandelaar werkt aan de huid van een client in de behandelkamer":
+    "Una terapeuta trabaja sobre la piel de un cliente en la sala de tratamiento",
+  "Een huidtherapeut werkt met de Nordlys aan pigment in het gezicht":
+    "Una terapeuta de la piel trabaja con el Nordlys sobre pigmento en la cara",
+  "Een client krijgt koffie aangereikt bij binnenkomst in de kliniek":
+    "A un cliente le ofrecen café al entrar en la clínica",
+  "Behandelaar bekijkt de uitkomst van een huidprofiel op een tablet":
+    "Una terapeuta mira el resultado de un perfil de piel en una tableta",
+  "Behandelaar bespreekt de uitkomst van een huidscan met een client":
+    "Una terapeuta comenta el resultado de un escaneo de la piel con un cliente",
+  "Laserontharing van de baardlijn, met oogbescherming voor de cliënt":
+    "Depilación láser de la línea de la barba, con protección ocular para el cliente",
+  "Een behandelaar werkt met een fijn naaldje vlak naast de wenkbrauw":
+    "Una terapeuta trabaja con una aguja fina justo al lado de la ceja",
+  "Na een peeling: de huid is rood en wordt met een ventilator gekoeld":
+    "Después de un peeling: la piel está roja y se enfría con un ventilador",
+  "Cliënt zit voor de huidscanner in de kliniek, klaar voor een meting":
+    "Cliente ante el escáner de piel en la clínica, a punto para una medición",
+  "Behandelaar werkt met de Dermapen over het voorhoofd van een cliënt":
+    "Una terapeuta trabaja con el Dermapen por la frente de un cliente",
+  "Handstuk van de laser op de huid van een arm tijdens een behandeling":
+    "Pieza de mano del láser sobre la piel de un brazo durante un tratamiento",
+  "Huidtherapeut behandelt een client met de Nordlys in de behandelkamer":
+    "Una terapeuta de la piel trata a un cliente con el Nordlys en la sala de tratamiento",
+  "Masker wordt met een handstuk ingewerkt op het gezicht van een cliënt":
+    "Una mascarilla se trabaja con una pieza de mano en la cara de un cliente",
+  "Huidtherapeut brengt een kalmerend product aan na het reinigen bij acne":
+    "Una terapeuta de la piel aplica un producto calmante tras la limpieza en un acné",
+  "Twee behandelaars van Diba Clinics met koffie in de gang van de kliniek":
+    "Dos terapeutas de Diba Clinics con café en el pasillo de la clínica",
+  "Behandeling met de Nordlys in de behandelkamer, met het apparaat ernaast":
+    "Tratamiento con el Nordlys en la sala de tratamiento, con el aparato al lado",
+  "Microneedling met de SkinPen bij een cliënt van Diba Clinics in Rotterdam":
+    "Microneedling con el SkinPen en un cliente de Diba Clinics en Róterdam",
+  "Het handstuk van de HydraFacial Syndeo, met het apparaat op de achtergrond":
+    "La pieza de mano del HydraFacial Syndeo, con el aparato al fondo",
+  "Huidtherapeut brengt een verzorgingsproduct aan tijdens een acnebehandeling":
+    "Una terapeuta de la piel aplica un producto de cuidado durante un tratamiento del acné",
+  "De behandelaar zet een depot onder het oog tijdens een RRS Eyes-behandeling":
+    "La terapeuta coloca un depósito bajo el ojo durante un tratamiento RRS Eyes",
+  "Cliënt zwaait bij het verlaten van de kliniek, met een tas van Diba Clinics":
+    "Cliente saluda con la mano al salir de la clínica, con una bolsa de Diba Clinics",
+  "Twee huidtherapeuten met koffie in de kliniek van Diba Clinics in Rotterdam":
+    "Dos terapeutas de la piel con café en la clínica de Diba Clinics en Róterdam",
+  "Een behandelaar laat een cliënt de uitslag van de huidscan zien op een tablet":
+    "Una terapeuta muestra a un cliente el resultado del escaneo de la piel en una tableta",
+  "Laserbril en reinigingsdoekjes klaargelegd op een handdoek in de behandelkamer":
+    "Gafas láser y toallitas de limpieza preparadas sobre una toalla en la sala de tratamiento",
+  "Overzicht van een behandelkamer bij Diba Clinics met een behandelaar aan het werk":
+    "Vista de una sala de tratamiento de Diba Clinics con una terapeuta trabajando",
+  "Behandelaar houdt twee peelings vast naast een jongere met acne in de behandelstoel":
+    "Una terapeuta sostiene dos peelings junto a un joven con acné en el sillón de tratamiento",
+  "Laserbehandeling in de behandelkamer, met oogbescherming voor behandelaar en cliënt":
+    "Tratamiento con láser en la sala de tratamiento, con protección ocular para terapeuta y cliente",
+  "Een TCA-peeling wordt met een wattenstaafje aangebracht tijdens een pigmentbehandeling":
+    "Un peeling de TCA se aplica con un bastoncillo de algodón durante un tratamiento de pigmento",
+  "Behandelaar brengt gel aan bij een cliënt met beschermbril, naast het Nordlys-apparaat":
+    "Una terapeuta aplica gel a un cliente con gafas de protección, junto al aparato Nordlys",
+  "Jonge cliënt met acne op de behandelbank, met de peelingproducten die bij zijn behandeling horen":
+    "Cliente joven con acné en la camilla, con los productos de peeling que corresponden a su tratamiento",
+  "Het HydraFacial-mondstuk gaat over de wang tijdens een behandeling bij Diba Clinics in Rotterdam":
+    "La punta del HydraFacial pasa por la mejilla durante un tratamiento en Diba Clinics en Róterdam",
   "Menu openen": "Abrir menú",
-  "Broodkruimels": "Ruta de navegación",
+  Broodkruimels: "Ruta de navegación",
+  Sluiten: "Cerrar",
+  "Kies een variant": "Elige una variante",
+  "Kies het beeld dat het dichtst bij jouw huid komt":
+    "Elige la imagen que más se parece a tu piel",
+  "Kies waar je hulp bij zoekt": "Elige con qué buscas ayuda",
+  "Kies een gebied": "Elige una zona",
+  "Soort behandeling": "Tipo de tratamiento",
+  "Filter op mechaniek": "Filtrar por mecanismo",
+  "Filter reviews op onderwerp": "Filtrar reseñas por tema",
+  "Review-onderwerp": "Tema de la reseña",
+  "Uitgelichte review": "Reseña destacada",
+  Review: "Reseña",
+  "Reviews waarin een naam valt": "Reseñas en las que aparece un nombre",
+  "Naar een groep": "A un grupo",
+  "Naar een prijslijst": "A una lista de precios",
+  "Tarievenlijst laserontharing": "Lista de tarifas de depilación láser",
+  Prijslijst: "Lista de precios",
+  Categorieën: "Categorías",
+  Aanzicht: "Vista",
+  Levensfase: "Etapa de la vida",
+  "Beschikbare triggers": "Desencadenantes disponibles",
+  "Kleur van de verkleuring": "Color de la decoloración",
+  "Zones van het gezicht, aan te tikken": "Zonas de la cara, se pueden marcar",
+  "De plekken waar psoriasis zich laat zien":
+    "Los sitios donde se muestra la psoriasis",
+  "Maanden van het jaar, met de UV-belasting in Nederland":
+    "Meses del año, con la carga UV en los Países Bajos",
+  "Zet jezelf in de matrix. Gebruik de pijltjestoetsen; de uitkomst staat rechts.":
+    "Colócate en la matriz. Usa las teclas de flecha; el resultado está a la derecha.",
+  "Fases in het acnetraject": "Fases del programa de acné",
+  "Veelgekozen combinaties": "Combinaciones muy elegidas",
+  "Uitleg per klacht": "Explicación por problema",
+  Cookievoorkeuren: "Preferencias de cookies",
+  "Diba Clinics home": "Diba Clinics inicio",
+  "Huidprofiel sluiten": "Cerrar perfil de piel",
+  "Video afspelen met geluid": "Reproducir vídeo con sonido",
+  "Naar Iris": "Ir a Iris",
+  "Naar Demi": "Ir a Demi",
+  "Naar Andres": "Ir a Andres",
+  "5 van de vijf sterren": "5 de cinco estrellas",
+  "4 van de vijf sterren": "4 de cinco estrellas",
+  "Doorsnede van de huid met de werking van":
+    "Corte transversal de la piel con el efecto de",
+  "Doorsnede van de huid bij stadium":
+    "Corte transversal de la piel en la fase",
+  "Doorsnede van de huid. Bij huidtype":
+    "Corte transversal de la piel. En el fototipo",
+  "wordt gewerkt met": "se trabaja con",
+  nanometer: "nanómetros",
+  "Silhouet met het gebied": "Silueta con la zona",
+  "opgelicht.": "resaltada.",
+  "Ruimte om iets te veranderen bij": "Margen para cambiar algo en",
+  "Diba Clinics is een huidkliniek in Rotterdam. Je krijgt eerlijk advies over huidverbetering, laserontharing en wat er in jouw situatie mogelijk is.":
+    "Diba Clinics es una clínica de la piel en Róterdam. Recibes un consejo honesto sobre mejora de la piel, depilación láser y lo que es posible en tu situación.",
+  "Beeld pauzeren": "Pausar el vídeo",
+  "Beeld afspelen": "Reproducir el vídeo",
+  "Video pauzeren": "Pausar vídeo",
+  "Video afspelen": "Reproducir vídeo",
+  "Behandelaar van Diba Clinics voert een IPL-behandeling uit bij een cliënt met beschermbril":
+    "Una terapeuta de Diba Clinics realiza un tratamiento IPL a un cliente con gafas de protección",
+  "IPL-behandeling": "Tratamiento IPL",
+  "Huidanalyse met de EVE-M": "Análisis de la piel con el EVE-M",
+  "van de vijf sterren": "de cinco estrellas",
+  "De sollicitatie": "La candidatura",
+  "Reageren kan via": "Puedes responder por",
+  "Stel een vraag": "Haz una pregunta",
+  "Start de scan": "Iniciar el escaneo",
+  "Welke lijn": "Qué línea",
+  "ABCDE-check": "Regla ABCDE",
+  "het rooster": "el horario",
+  "de vergelijking": "la comparación",
+  "Naar de bron": "A la fuente",
+  "Toon de lijst": "Mostrar la lista",
+  "Toon de": "Mostrar",
+  "Bekijk de drie stappen": "Ver los tres pasos",
+  "Lees waarom dat uitmaakt": "Lee por qué importa",
+  "3 mnd": "3 meses",
+  "1 jaar": "1 año",
+  "3 jaar": "3 años",
+  "5 jaar+": "5 años+",
+  "Meneer Marketing": "Meneer Marketing",
+  "Weissenbruchlaan 166": "Weissenbruchlaan 166",
+  "Fotona TimeWalker": "Fotona TimeWalker",
+  "Fotona 4D TimeWalker": "Fotona 4D TimeWalker",
+  "Fotona TimeWalker, Fotona": "Fotona TimeWalker, Fotona",
+  "Dermapen 4": "Dermapen 4",
+  "Dermapen 4, Dermapen": "Dermapen 4, Dermapen",
+  "SkinPen CIT": "SkinPen CIT",
+  "SkinPen CIT, SkinPen": "SkinPen CIT, SkinPen",
+  "Hydrafacial syndeo": "Hydrafacial syndeo",
+  "Hydrafacial syndeo, HydraFacial": "Hydrafacial syndeo, HydraFacial",
+  "HydraFacial Syndeo": "HydraFacial Syndeo",
+  "Precision Photonic System": "Precision Photonic System",
+  "Dermaplane pro": "Dermaplane pro",
+  "Dermaplane pro, DermaplanePro": "Dermaplane pro, DermaplanePro",
+  U225: "U225",
+  PIANO: "PIANO",
+  "Nd:YAG": "Nd:YAG",
+  RRS: "RRS",
+  "G.i.": "G.i.",
+  III: "III",
+  EUCARE: "EUCARE",
+  HollandZorg: "HollandZorg",
+  "Happy Intim®": "Happy Intim®",
+  "@dibaclinics": "@dibaclinics",
+  "@dibaclinics.nl": "@dibaclinics.nl",
+  microneedling: "microneedling",
+  DermapenWorld: "DermapenWorld",
+  SkinCeuticals: "SkinCeuticals",
+  "Diba Clinics B.V.": "Diba Clinics B.V.",
+  "Cosmelan, Mesoestetic": "Cosmelan, Mesoestetic",
+  "Dermamelan, Mesoestetic": "Dermamelan, Mesoestetic",
+  "GentleMax Pro, Candela": "GentleMax Pro, Candela",
+  "Mesoestetic, Dermaceutic, Skin Tech Pharma":
+    "Mesoestetic, Dermaceutic, Skin Tech Pharma",
+  Cosmelan: "Cosmelan",
+  Dermamelan: "Dermamelan",
+  HydraFacial: "HydraFacial",
+  "OxyGeneo Rotterdam": "OxyGeneo Róterdam",
+  "Fotona 4D Rotterdam": "Fotona 4D Róterdam",
+  "Vanaf € 75": "Desde € 75",
+  "Vanaf € 170": "Desde € 170",
+  "Vanaf € 150": "Desde € 150",
+  "Vanaf € 60": "Desde € 60",
+  ") +": ") +",
+  "29-1129.00 Therapists, All Other": "29-1129.00 Therapists, All Other",
+  "3 maanden tot een jaar": "De 3 meses a un año",
+  "Aan de kwaliteit van de huid zelf werken we wel: structuur, kleur, stevigheid en fijne lijntjes. Dat is een ander resultaat dan volume terugbrengen, en voor een deel van de mensen die voor fillers komen is het precies wat ze eigenlijk zochten.":
+    "En la calidad de la propia piel sí trabajamos: textura, color, firmeza y líneas finas. Es un resultado distinto de devolver volumen, y para una parte de la gente que viene por rellenos es justo lo que en realidad buscaba.",
+  "Aanspannen van de diepere lagen langs de kaaklijn, in een reeks. Verwacht scherper, niet strak.":
+    "Tensar las capas más profundas a lo largo de la línea de la mandíbula, en serie. Espera más definido, no tirante.",
+  "Aanspannen van de diepere lagen met laser, in een reeks. Wat losgelaten huid is wordt hier niet vastgezet; dat is chirurgie.":
+    "Tensar las capas más profundas con láser, en serie. La piel que se ha descolgado no se fija aquí; eso es cirugía.",
+  "Aantal sessies volgt tijdens de intake":
+    "El número de sesiones sale en la consulta previa",
+  "Aanvullende peelings en injectables":
+    "Peelings complementarios e inyectables",
+  "Acht sessies over veertien maanden": "Ocho sesiones en catorce meses",
+  "Acne, pigment, littekens, couperose, haargroei. Kies waar je last van hebt.":
+    "Acné, pigmento, cicatrices, cuperosis, vello. Elige lo que te molesta.",
+  "Actieve acne, een kapotte barrière, een geïrriteerde huid of een verse zonvakantie: dan gaat de afspraak niet door. Je gaat naar huis met minder in plaats van meer.":
+    "Acné activo, una barrera dañada, una piel irritada o unas vacaciones al sol recientes: entonces la cita no se hace. Te vas a casa con menos en lugar de con más.",
+  "Actieve psoriasisplekken behandelen wij niet met huidbeschadigende of intensief exfoliërende behandelingen. Beschadiging kan op die plek juist een nieuwe plek uitlokken.":
+    "Las placas activas de psoriasis no las tratamos con tratamientos que dañan la piel o exfolian de forma intensa. Un daño puede provocar justo una placa nueva en ese sitio.",
+  "Al jouw triggers hebben een knop":
+    "Todos tus desencadenantes tienen un mando",
+  "Al zichtbaar rustiger. Wat opvalt is dat er nog geen porie kleiner is geworden; er is alleen minder om naar te kijken.":
+    "Ya visiblemente más tranquila. Lo que destaca es que todavía ningún poro se ha hecho más pequeño; solo hay menos que mirar.",
+  "Alle tarieven per behandeling staan openbaar op de tarievenpagina.":
+    "Todas las tarifas por tratamiento están publicadas en la página de tarifas.",
+  "Alleen bij het gezicht; laat de zakjes eerst sluiten.":
+    "Solo en la cara; deja que los folículos se cierren primero.",
+  "Alleen de hersteltijd zit in de weg":
+    "Solo el tiempo de recuperación se interpone",
+  "Alleen haren in hun groeifase zitten vast aan de wortel die geraakt moet worden. Op elk moment is dat een deel van je haren en niet allemaal. Daarom zijn er meerdere sessies met weken ertussen nodig, en niet omdat het per sessie niet hard genoeg staat.":
+    "Solo los pelos en fase de crecimiento están unidos a la raíz que hay que alcanzar. En cada momento eso es una parte de tus pelos y no todos. Por eso hacen falta varias sesiones con semanas entre medias, y no porque por sesión no esté lo bastante fuerte.",
+  "Alleen op je borst of decolleté": "Solo en el pecho o el escote",
+  "Alleen op je rug of schouders": "Solo en la espalda o los hombros",
+  "Alles waar je warm en bezweet van wordt.":
+    "Todo lo que te hace entrar en calor y sudar.",
+  "Alles wat de foto zelf kon veranderen ligt vast. Wat er dan nog verschilt, komt van de huid. Dit is de enige stand waarin een voor-en-na iets bewijst.":
+    "Todo lo que la propia foto podía cambiar está fijado. Lo que entonces todavía difiere viene de la piel. Es la única situación en la que un antes y después demuestra algo.",
+  "Alles wat door de huid heen gaat om iets op te hangen of weg te snijden is chirurgie, en dat is artsenwerk.":
+    "Todo lo que atraviesa la piel para sujetar o cortar algo es cirugía, y eso es trabajo de médicos.",
+  "Alles wat er te doen valt": "Todo lo que se puede hacer",
+  "Alles wat je aantikte kun je zelf beïnvloeden. Dat is gunstig: bij dit patroon zien we vaak dat gewoontes meer opleveren dan behandelen, en soms is behandelen dan niet eens nodig.":
+    "Todo lo que has marcado puedes influirlo tú. Eso es favorable: en este patrón vemos a menudo que los hábitos rinden más que tratar, y a veces tratar ni siquiera hace falta.",
+  "Alles wat we doen, met wat het inhoudt, wat het kost en hoeveel sessies erbij horen.":
+    "Todo lo que hacemos, con lo que implica, lo que cuesta y cuántas sesiones conlleva.",
+  "Als de dagvariatie groter is dan het effect dat je wil laten zien, zegt één foto per moment niets.":
+    "Si la variación diaria es mayor que el efecto que quieres mostrar, una sola foto por momento no dice nada.",
+  "Als de test uitwijst dat het schaduw is, sturen we je weg zonder behandeling. Een huidkliniek verandert de vorm van je oogkas niet en doet er dus beter aan dat te zeggen.":
+    "Si la prueba muestra que es sombra, te mandamos a casa sin tratamiento. Una clínica de la piel no cambia la forma de tu cuenca del ojo y por eso hace mejor en decirlo.",
+  "Als het overal zit, kijken we niet naar losse plekken maar naar de huidbarrière als geheel. Dat verandert de aanpak: rustiger opbouwen, minder tegelijk.":
+    "Si está por todas partes, no miramos zonas sueltas sino la barrera cutánea en conjunto. Eso cambia el enfoque: ir subiendo con más calma, menos a la vez.",
+  "Alsnog toestaan": "Permitir después de todo",
+  "Barrière kapot": "Barrera dañada",
+  "Begin met de meting. Komt daar niets uit wat behandeling vraagt, dan hoor je dat en heb je vijftig euro besteed in plaats van een traject.":
+    "Empieza con la medición. Si de ahí no sale nada que pida tratamiento, lo oyes y has gastado cincuenta euros en lugar de un programa.",
+  "Beginnen bij de kleur": "Empezar por el color",
+  "Behandelaar van Diba Clinics bespreekt de uitkomst van een huidscan met een cliënt":
+    "Una terapeuta de Diba Clinics comenta el resultado de un escaneo de la piel con un cliente",
+  "Behandelen vlak voor een zonvakantie":
+    "Tratar justo antes de unas vacaciones al sol",
+  "Behandelen zonder dat duidelijk is waarvoor":
+    "Tratar sin que esté claro para qué",
+  "Behandeling gericht op littekens en huidtextuur":
+    "Tratamiento dirigido a cicatrices y textura de la piel",
+  "Beide effecten lijken op precies wat een huidbehandeling zou moeten doen. Daarom zijn ze op een resultaatfoto niet van elkaar te onderscheiden.":
+    "Los dos efectos se parecen justo a lo que debería hacer un tratamiento de la piel. Por eso no se pueden distinguir en una foto de resultado.",
+  "Beide foto's op hetzelfde punt in de routine, en bij voorkeur op hetzelfde tijdstip van de dag.":
+    "Las dos fotos en el mismo punto de la rutina, y preferiblemente a la misma hora del día.",
+  "Bekijk alle zones en tarieven": "Ver todas las zonas y tarifas",
+  "Bel vandaag je huisarts of de huisartsenpost, en buiten die tijden 112 bij een zieke indruk. Wacht niet tot morgen om te kijken of het overgaat.":
+    "Llama hoy a tu médico de cabecera o al servicio de urgencias de atención primaria, y fuera de ese horario al 112 si la persona parece enferma. No esperes a mañana para ver si se pasa.",
+  "Bellen gaat het snelst, want dan kijkt er meteen iemand in de agenda mee. Ben je te laat om nog te bellen, stuur dan een bericht.":
+    "Llamar es lo más rápido, porque entonces alguien mira la agenda contigo al momento. Si es demasiado tarde para llamar, envía un mensaje.",
+  "Benzoylperoxide maakt de huid gevoeliger. Meld het, dan wordt de sterkte daarop gekozen.":
+    "El peróxido de benzoilo hace la piel más sensible. Dilo, y la intensidad se elige en función de eso.",
+  "Bewaar deze keuze": "Guardar esta elección",
+  "Bij deze vorm speelt je afweer diep in de huid. Dat komt niet doordat je iets fout doet en het is geen kwestie van beter reinigen.":
+    "En esta forma tu sistema inmunitario actúa en lo profundo de la piel. No es porque hagas algo mal y no es cuestión de limpiar mejor.",
+  "Bij dit patroon richten we ons op de bloedvaten zelf, niet op jouw gedrag. Dan wordt de reactie minder heftig terwijl de trigger hetzelfde blijft.":
+    "En este patrón nos centramos en los propios vasos sanguíneos, no en tu comportamiento. Así la reacción se vuelve menos intensa mientras el desencadenante sigue igual.",
+  "Bij een actieve opvlamming wachten we. Behandelen in die fase geeft meer roodheid in plaats van minder, ook als je er speciaal voor kwam.":
+    "Durante un brote activo esperamos. Tratar en esa fase da más rojez en lugar de menos, también si viniste especialmente para eso.",
+  "Bij een droge huid wordt de voorbereiding thuis belangrijker dan de behandeling zelf.":
+    "En una piel seca la preparación en casa importa más que el propio tratamiento.",
+  "Bij een vergoeding uit de aanvullende verzekering niet. Het eigen risico hoort bij de basisverzekering. Dit is het misverstand waar mensen zorg om uitstellen.":
+    "Con un reembolso del seguro complementario, no. La franquicia corresponde al seguro básico. Este es el malentendido por el que la gente aplaza la atención.",
+  "Bij een wit litteken van tien jaar oud, bij diep pigment, bij schaduw onder je ogen: dan rekenen we het voor en raden we het af. Ook als je erom vraagt.":
+    "Con una cicatriz blanca de diez años, con pigmento profundo, con sombra bajo los ojos: entonces hacemos las cuentas y lo desaconsejamos. También si lo pides.",
+  "Bij elk beeld komt te staan hoeveel mensen zo'n traject deden en hoe dit geval zich daartoe verhoudt.":
+    "En cada imagen figurará cuántas personas hicieron un programa así y cómo se compara este caso con ellas.",
+  "Bij elke behandeling reageert een deel van de mensen beter dan gemiddeld en een deel minder. Wie alleen de bovenkant laat zien, laat de behandeling er beter uitzien dan hij is.":
+    "En cada tratamiento una parte de la gente reacciona mejor que la media y otra parte peor. Quien solo enseña la parte de arriba hace que el tratamiento parezca mejor de lo que es.",
+  "Bij jou zit de hefboom vooral in gewoontes":
+    "En tu caso la palanca está sobre todo en los hábitos",
+  "Bij jouw huidtype is de huid gevoeliger voor zon na een behandeling. Dat is geen beperking maar wel een afspraak over wat je erna doet.":
+    "Con tu fototipo la piel es más sensible al sol después de un tratamiento. No es una limitación, pero sí un acuerdo sobre lo que haces después.",
+  "Bij jouw huidtype is er ruimte in de instellingen. Wat er precies gekozen wordt hoor je tijdens de intake.":
+    "Con tu fototipo hay margen en la configuración. Lo que se elige exactamente lo oyes en la consulta previa.",
+  "Bij jouw huidtype worden licht en warmte anders opgenomen. Dat sluit niets uit, maar de instellingen luisteren nauwer en dat bepaalt een mens, niet deze pagina.":
+    "Con tu fototipo la luz y el calor se absorben de otra manera. Eso no descarta nada, pero la configuración es más delicada y eso lo decide una persona, no esta página.",
+  "Bij keloïd verwijzen we door. Bij hypertrofisch kijken we mee, vaak in overleg met je arts.":
+    "Con queloide derivamos. Con una cicatriz hipertrófica lo miramos contigo, a menudo en consulta con tu médico.",
+  "Bij koortslip kan een behandeling een uitbraak uitlokken. Daar is medicatie voor, maar dan moet het vooraf besproken zijn.":
+    "Con herpes labial un tratamiento puede provocar un brote. Para eso hay medicación, pero tiene que hablarse de antemano.",
+  "Bij melasma is beheersing het doel. Wij noemen dat geen mislukking maar de eerlijke uitkomst, en je hoort het vóór je iets betaalt.":
+    "En el melasma el objetivo es el control. No lo llamamos un fracaso sino el resultado honesto, y lo oyes antes de pagar nada.",
+  "Bij melasma is het doel beheersen en niet laten verdwijnen. Iets anders beloven zou makkelijker verkopen en niet uitkomen.":
+    "En el melasma el objetivo es controlar y no hacer desaparecer. Prometer otra cosa vendería más fácil y no se cumpliría.",
+  "Bij neiging tot keloïd kan een prikkel in het bindweefsel juist een dik litteken geven.":
+    "Con tendencia al queloide, un estímulo en el tejido conjuntivo puede dar justo una cicatriz gruesa.",
+  "Bij pigment is dit geen wachttijd maar een gewoonte voor de hele periode en daarna.":
+    "En el pigmento esto no es un tiempo de espera sino un hábito para todo el periodo y después.",
+  "Bij sommige verzekeraars van de huisarts, bij andere van een dermatoloog. Regel dat vóór de eerste afspraak. Een verwijzing achteraf laten opsturen werkt in de praktijk vrijwel nooit.":
+    "En algunas aseguradoras del médico de cabecera, en otras de un dermatólogo. Arréglalo antes de la primera cita. Enviar una derivación después casi nunca funciona en la práctica.",
+  "Bij uitrekken worden doorschijnende bloedvaatjes verder uit elkaar getrokken en verbleekt de kleur. Pigment zit in de huid zelf en verandert niet mee.":
+    "Al estirar, los vasos sanguíneos que se transparentan se separan más y el color palidece. El pigmento está en la propia piel y no cambia con ello.",
+  "Bij één zone kijken we eerst of er een oorzaak buiten je huid is. Zo niet, dan is dit vaak een kort traject.":
+    "Con una sola zona miramos primero si hay una causa fuera de tu piel. Si no, esto suele ser un programa corto.",
+  "Bijna altijd wel. De meeste verzekeraars vergoeden alleen als de huidtherapeut in het Kwaliteitsregister Paramedici staat. Vraag ons gerust of dat bij jouw behandelaar zo is; wij weten dat en jij kunt het niet zien.":
+    "Casi siempre sí. La mayoría de las aseguradoras solo reembolsan si la terapeuta de la piel figura en el Registro de Calidad de Paramédicos. Pregúntanos sin problema si es así con tu terapeuta; nosotros lo sabemos y tú no puedes verlo.",
+  "Bijna, en dat is niet genoeg": "Casi, y eso no basta",
+  "Bleke, iets ingezonken strepen die glanzen in het licht.":
+    "Estrías pálidas, ligeramente hundidas, que brillan con la luz.",
+  "Blijft ongeveer gelijk": "Se mantiene más o menos igual",
+  "Bloed in de vaatjes, of ontsteking. Rood is bijna altijd iets dat leeft en beweegt, en dat is precies waarom het anders reageert dan bruin.":
+    "Sangre en los vasos, o inflamación. Lo rojo es casi siempre algo que vive y se mueve, y eso es justo por lo que reacciona de otra manera que lo marrón.",
+  "Botox en fillers": "Bótox y rellenos",
+  "Botox en fillers horen niet bij wat wij doen. Bij een zuivere mimieklijn is dat vaak wél het antwoord, en dan zeggen we dat in plaats van je iets anders aan te bieden dat minder past.":
+    "El bótox y los rellenos no forman parte de lo que hacemos. En una línea puramente de expresión a menudo sí son la respuesta, y entonces lo decimos en lugar de ofrecerte otra cosa que encaja menos.",
+  "Bouw af voordat je iets nieuws probeert, en zeker voordat je een behandeling boekt. Op een kapotte barrière reageert je huid feller en levert dezelfde behandeling minder op.":
+    "Reduce antes de probar algo nuevo, y desde luego antes de reservar un tratamiento. Sobre una barrera dañada tu piel reacciona con más fuerza y el mismo tratamiento rinde menos.",
+  "Bouwt en onderhoudt deze site en doet de marketing. Komt niet in de behandelkamer.":
+    "Construye y mantiene esta web y se encarga del marketing. No entra en la sala de tratamiento.",
+  "Buik + borstkas": "Vientre + pecho",
+  "Bultjes en puskopjes, maar zonder mee-eters. Dat laatste is het onderscheid met acne.":
+    "Bultitos y pústulas, pero sin puntos negros. Eso último es lo que lo distingue del acné.",
+  "Bultjes na het scheren": "Bultitos después de afeitarse",
+  "Capsaïcine zet dezelfde vaatreactie in gang als warmte.":
+    "La capsaicina pone en marcha la misma reacción vascular que el calor.",
+  "Chemische peelings": "Peelings químicos",
+  "Chloor droogt uit op een verse huid.":
+    "El cloro reseca una piel recién tratada.",
+  "Chloor en bacteriën in een open huid.":
+    "Cloro y bacterias en una piel abierta.",
+  "Chloor en zon in combinatie zijn hier de slechtste.":
+    "Cloro y sol combinados son aquí lo peor.",
+  "Chloor en zout, allebei prikkelend op een verse huid.":
+    "Cloro y sal, los dos irritantes sobre una piel recién tratada.",
+  "Chloor in geprikkelde haarzakjes.": "Cloro en folículos irritados.",
+  "Chloor op een open bovenlaag.": "Cloro sobre una capa superior abierta.",
+  "Contact, je eerste afspraak en de nazorg":
+    "Contacto, tu primera cita y los cuidados posteriores",
+  "Controle hoort bij de arts": "El control corresponde al médico",
+  "Cosmelan, traject van zes maanden": "Cosmelan, programa de seis meses",
+  "Couperose is niet hetzelfde als rosacea, ook al lopen ze vaak samen. Je kunt de adertjes hebben zonder de rest.":
+    "La cuperosis no es lo mismo que la rosácea, aunque a menudo van juntas. Puedes tener las venitas sin lo demás.",
+  "Crèmes die beloven witte striae weg te halen, doen dat niet. Dat zie je ook terug in de metingen.":
+    "Las cremas que prometen quitar las estrías blancas no lo hacen. Eso también se ve en las mediciones.",
+  "Cyclus en overgang beïnvloeden de vaatreactie. Hier ligt de knop bij je arts, niet bij een crème.":
+    "El ciclo y la menopausia influyen en la reacción vascular. Aquí el mando está en tu médico, no en una crema.",
+  "Dan de onafhankelijke klachtenfunctionaris":
+    "Después, la persona independiente encargada de reclamaciones",
+  "Dan gaat het niet meer om onzuiverheden maar om acne, en daar hoort een andere aanpak bij.":
+    "Entonces ya no se trata de impurezas sino de acné, y eso pide otro enfoque.",
+  "Dan kun je het geschil voorleggen aan de Geschillencommissie Uiterlijke Verzorging. Die doet een bindende uitspraak; je hebt er geen advocaat voor nodig.":
+    "Entonces puedes llevar la disputa a la Geschillencommissie Uiterlijke Verzorging, la comisión de disputas del sector de la estética. Emite una resolución vinculante; no necesitas abogado.",
+  "Dan mag je dat ter plekke zeggen, en dan gaat de behandeling niet door. Deze regels staan boven het gesprek in de behandelkamer en niet eronder.":
+    "Entonces puedes decirlo allí mismo, y el tratamiento no se hace. Estas reglas están por encima de la conversación en la sala de tratamiento y no por debajo.",
+  "Dan speelt vocht mee. Dat is geen aparte oorzaak maar het maakt elk van de andere drie tijdelijk erger, en het verklaart waarom je resultaat lijkt te schommelen.":
+    "Entonces influye el líquido. No es una causa aparte, pero empeora temporalmente cada una de las otras tres, y explica por qué tu resultado parece oscilar.",
+  "Dat hangt af van de behandeling die bij jouw huid past, en dat stellen we tijdens de intake vast.":
+    "Depende del tratamiento que encaja con tu piel, y eso lo determinamos en la consulta previa.",
+  "Dat is een ander verhaal met een andere behandeling, en daar is een eigen pagina voor.":
+    "Eso es otra historia con otro tratamiento, y tiene una página propia.",
+  "Dat is geen afwijzing maar een doorverwijzing. Tijdens de intake kijken we mee waar je wel terechtkunt, en dat kost je niets.":
+    "No es un rechazo sino una derivación. En la consulta previa miramos contigo adónde sí puedes ir, y eso no te cuesta nada.",
+  "Dat is pigment aanbrengen. Wij zijn er om het weg te krijgen.":
+    "Eso es poner pigmento. Nosotros estamos para quitarlo.",
+  "Dat kan betekenen dat er bloed buiten de vaatjes zit. In combinatie met ziek zijn, koorts, sufheid, nekpijn of snelle verspreiding is dat een reden om niet af te wachten.":
+    "Puede significar que hay sangre fuera de los vasos. En combinación con sentirse enfermo, fiebre, somnolencia, dolor de cuello o extensión rápida, es motivo para no esperar.",
+  "Dat kunnen wij niet beoordelen. Alles wat verandert hoort bekeken te worden voordat er iets mee gebeurt.":
+    "Eso no podemos valorarlo nosotros. Todo lo que cambia debe examinarse antes de hacer nada con ello.",
+  "Dat verandert soms de keuze van de tip of het serum.":
+    "Eso a veces cambia la elección de la punta o del sérum.",
+  "Dat weten wij niet, en dat is het punt. Alles wat verandert hoort beoordeeld te worden vóórdat er iets mee gebeurt.":
+    "Eso no lo sabemos, y esa es la cuestión. Todo lo que cambia debe valorarse antes de hacer nada con ello.",
+  "Dat zijn aandoeningen met een medische behandeling, en die valt onder de huisarts of dermatoloog.":
+    "Son enfermedades con un tratamiento médico, y eso corresponde al médico de cabecera o al dermatólogo.",
+  "De EVE-M huidscanner": "El escáner de piel EVE-M",
+  "De EVE-M legt vast hoe je huid er vandaag uitziet en meet wat eronder zit. Er raakt niets je huid.":
+    "El EVE-M registra cómo está tu piel hoy y mide lo que hay debajo. Nada toca tu piel.",
+  "De UV klimt sneller dan mensen denken. Op een heldere dag telt maart al mee.":
+    "El UV sube más rápido de lo que la gente piensa. En un día despejado marzo ya cuenta.",
+  "De aanmaak van collageen is doorgeschoten. Keloïd hoort bij de arts en niet bij ons.":
+    "La producción de colágeno se ha desbocado. El queloide corresponde al médico y no a nosotros.",
+  "De behandeling duurt korter dan de uitleg erover. Dit is de oogzone tijdens een sessie, zonder montage en zonder muziek.":
+    "El tratamiento dura menos que la explicación. Este es el contorno de ojos durante una sesión, sin montaje y sin música.",
+  "De bovenste laag raakt beschadigd en houdt geen vocht meer vast. De huid wordt droger, ruwer en gevoeliger dan hij al was.":
+    "La capa superior se daña y ya no retiene la hidratación. La piel se vuelve más seca, más áspera y más sensible de lo que ya era.",
+  "De bovenste laag vernieuwt trager en ligt onregelmatiger. Dit is het onderdeel dat het snelst en het zichtbaarst reageert.":
+    "La capa superior se renueva más despacio y queda más irregular. Es la parte que reacciona más rápido y de forma más visible.",
+  "De bruine tint blijft gewoon staan": "El tono marrón se queda sin más",
+  "De camera leest verschillende lagen uit: pigment, vocht, poriën, structuur.":
+    "La cámara lee distintas capas: pigmento, hidratación, poros, textura.",
+  "De combinatie die we het vaakst tegenkomen. De lijntjes en de gloed vragen elk om iets anders, en om een volgorde.":
+    "La combinación que más nos encontramos. Las líneas y el rubor piden cada uno algo distinto, y un orden.",
+  "De contour van je gezicht verandert. Wangen worden platter, de kaaklijn minder scherp.":
+    "El contorno de tu cara cambia. Las mejillas se aplanan, la línea de la mandíbula se vuelve menos definida.",
+  "De donkere kern is weg, dus de porie oogt meteen kleiner.":
+    "El núcleo oscuro ya no está, así que el poro parece más pequeño al momento.",
+  "De doorsnede hoort bij je aanleg en de huid eromheen staat minder strak. De druppelvorm wijst op dat tweede.":
+    "El diámetro va con tu constitución y la piel de alrededor está menos tensa. La forma de gota apunta a lo segundo.",
+  "De eye peel": "El eye peel",
+  "De hele gereedschapskist waarmee de rest van de branche zijn agenda vult, ligt bij ons dicht.":
+    "Toda la caja de herramientas con la que el resto del sector llena su agenda está cerrada en nuestra clínica.",
+  "De huid bouwt op; schuren breekt dat af.":
+    "La piel se está reconstruyendo; frotar lo deshace.",
+  "De huid daar is de dunste van je lichaam. We gaan er trager te werk dan elders, ook als dat betekent dat je meer sessies nodig hebt.":
+    "La piel de ahí es la más fina de tu cuerpo. Ahí vamos más despacio que en otras zonas, también si eso significa que necesitas más sesiones.",
+  "De huid eromheen. Een droge, beschadigde barrière scheurt sneller open en dat lokt nieuwe plekken uit, dus daar valt naast de behandeling van je arts wel degelijk winst te halen. Loopt er iets bij de dermatoloog, zeg dat dan; we stemmen erop af in plaats van eroverheen te werken.":
+    "La piel de alrededor. Una barrera seca y dañada se abre con más facilidad y eso provoca placas nuevas, así que junto al tratamiento de tu médico ahí sí hay algo que ganar. Si hay algo en marcha con el dermatólogo, dilo; nos ajustamos a ello en lugar de pasar por encima.",
+  "De huid heeft op die plek collageen en elasticiteit verloren en vouwt niet meer terug. Dit is waar een huidbehandeling werkt.":
+    "La piel ha perdido ahí colágeno y elasticidad y ya no vuelve a su sitio. Aquí es donde funciona un tratamiento de la piel.",
+  "De huid houdt de contour niet meer strak, terwijl er onder nog weinig is veranderd. Dit is de klacht waarmee de meeste mensen hier binnenkomen.":
+    "La piel ya no mantiene el contorno tenso, mientras debajo ha cambiado poco. Es el problema con el que más gente entra aquí.",
+  "De huid is sneller uitgerekt dan hij kon meegroeien. Rood betekent dat het recent is en dat er nog bloedvaten in zitten.":
+    "La piel se ha estirado más rápido de lo que podía crecer. Rojo significa que es reciente y que todavía hay vasos sanguíneos dentro.",
+  "De huid ruimt op wat al onder de oppervlakte klaarlag. Dat komt naar buiten en dat ziet er niet beter uit. Bijna iedereen schrikt hier, en bijna iedereen die doorzet is er blij om.":
+    "La piel elimina lo que ya esperaba bajo la superficie. Eso sale, y no tiene mejor aspecto. Casi todo el mundo se asusta aquí, y casi todo el que sigue se alegra.",
+  "De huid voelt ruw. Je ziet kleine bultjes zonder rood.":
+    "La piel se nota áspera. Ves bultitos pequeños sin rojez.",
+  "De huid weerkaatst licht anders: minder glans, meer ongelijkheid, make-up blijft slechter zitten.":
+    "La piel refleja la luz de otra manera: menos luminosidad, más irregularidad, el maquillaje se asienta peor.",
+  "De huidanalyse maakt dit concreet. Daarna weten we welke zone het meeste aandacht vraagt.":
+    "El análisis de la piel lo hace concreto. Después sabemos qué zona pide más atención.",
+  "De kennisbank": "Las guías",
+  "De kleur komt van bloed dat nog in de vaatjes zit. Dat past bij veel gewone oorzaken, van een allergische reactie tot een virus.":
+    "El color viene de sangre que todavía está en los vasos. Eso encaja con muchas causas corrientes, desde una reacción alérgica hasta un virus.",
+  "De kleur trekt weg zolang je rekt": "El color desaparece mientras estiras",
+  "De koeling hoort bij de puls": "La refrigeración forma parte del pulso",
+  "De laser mikt op pigment. Zit er geen pigment in de haar, dan is er niets om op aan te grijpen en gebeurt er niets. Dat geldt ook voor heel licht blond. Geen instelling ter wereld verandert daar iets aan.":
+    "El láser apunta al pigmento. Si en el pelo no hay pigmento, no hay nada sobre lo que actuar y no pasa nada. Eso vale también para el rubio muy claro. Ninguna configuración del mundo cambia eso.",
+  "De mail komt bij de juiste persoon terecht.":
+    "El correo llega a la persona adecuada.",
+  "De meting en het advies kunnen wel, en dat is juist voor vertrek nuttig: je weet dan waar je op moet letten in de zon. Terug van vakantie begin je met een vertrekpunt dat er al ligt.":
+    "La medición y el consejo sí se pueden hacer, y justo antes de irte son útiles: así sabes en qué fijarte al sol. Al volver de vacaciones empiezas con un punto de partida que ya está.",
+  "De meting kan nu gewoon, en behandelingen die niet met licht werken meestal ook. Dan staat je vertrekpunt vast en kun je beginnen zodra je kleur eruit is, in plaats van dan pas aan de wachtlijst te denken.":
+    "La medición se puede hacer ahora sin problema, y los tratamientos que no trabajan con luz normalmente también. Así tu punto de partida queda fijado y puedes empezar en cuanto se te haya ido el color, en lugar de pensar solo entonces en la lista de espera.",
+  "De nafoto komt pas als de huid rustig is, en er staat bij hoeveel weken na de laatste sessie hij gemaakt is.":
+    "La foto de después llega solo cuando la piel está tranquila, y pone cuántas semanas después de la última sesión se hizo.",
+  "De ontsteking hoort bij de arts. Wat de huid daarnaast nodig heeft, doen wij.":
+    "La inflamación corresponde al médico. Lo que la piel necesita además, lo hacemos nosotros.",
+  "De oorzaak is druk, warmte en vocht, niet je huidtype. Zonder de oorzaak weg te nemen komt het terug, hoe goed we ook behandelen.":
+    "La causa es la presión, el calor y la humedad, no tu tipo de piel. Sin quitar la causa vuelve, por bien que tratemos.",
+  "De opening trekt rond in plaats van uitgerekt, en valt minder op.":
+    "La abertura se redondea en lugar de estirarse, y llama menos la atención.",
+  "De piek van het jaar. Dit is het moment waarop pigment het snelst verergert.":
+    "El pico del año. Es el momento en que el pigmento empeora más rápido.",
+  "De plaats is kenmerkend. Eczeem zit juist vaker in de plooien, aan de binnenkant.":
+    "La localización es característica. El eccema está más bien en los pliegues, en la parte interior.",
+  "De producten die we voor thuis meegeven":
+    "Los productos que te damos para casa",
+  "De romp heeft veel talgklieren, en zweet en wrijving van kleding houden het daar in stand. Vaak speelt sport of een warm beroep mee.":
+    "El tronco tiene muchas glándulas sebáceas, y el sudor y el roce de la ropa lo mantienen ahí. A menudo influye el deporte o un trabajo con calor.",
+  "De roodheid trekt weg en het litteken wordt bleker. Het weefsel wordt steviger en minder beweeglijk. De vorm ligt nu grotendeels vast.":
+    "La rojez desaparece y la cicatriz se vuelve más pálida. El tejido se vuelve más firme y menos móvil. La forma ahora está en gran parte fijada.",
+  "De scan legt vast wat er nu is. Wat een behandeling gaat opleveren, kan hij niet zeggen.":
+    "El escaneo registra lo que hay ahora. Lo que va a aportar un tratamiento no lo puede decir.",
+  "De striae zijn uitgerijpt. Het weefsel mist pigment en is dunner dan de huid eromheen.":
+    "Las estrías han madurado. Al tejido le falta pigmento y es más fino que la piel de alrededor.",
+  "De tarieven": "Las tarifas",
+  "De tarieven staan al op de tarievenpagina, per sessie en per zone. Wat daar niet staat is hoeveel sessies jij nodig hebt, en dat hoor je na de meting.":
+    "Las tarifas ya están en la página de tarifas, por sesión y por zona. Lo que no está ahí es cuántas sesiones necesitas tú, y eso lo oyes después de la medición.",
+  "De twee lijken op elkaar en vragen een andere behandeling. Twijfelen we, dan overleggen we eerst met je huisarts en verwijzen we door voor de diagnose.":
+    "Las dos se parecen y piden un tratamiento distinto. Si dudamos, consultamos primero con tu médico de cabecera y derivamos para el diagnóstico.",
+  "De vlekjes veranderen niet onder het glas. Ze blijven even donker, alsof ze in de huid zitten in plaats van erin te stromen.":
+    "Las manchitas no cambian bajo el cristal. Siguen igual de oscuras, como si estuvieran en la piel en lugar de fluir por ella.",
+  "De vlekken blijven staan": "Las manchas se quedan",
+  "De vlekken verbleken": "Las manchas palidecen",
+  "De werkstoffen uit je eigen routine.":
+    "Los principios activos de tu propia rutina.",
+  "De wond is dicht maar de huid is nog aan het opruimen. Rood, soms verheven, vaak gevoelig. Er komen nieuwe bloedvaten bij en er wordt collageen aangelegd zonder ordening.":
+    "La herida está cerrada pero la piel todavía está limpiando. Roja, a veces elevada, a menudo sensible. Se forman vasos sanguíneos nuevos y se deposita colágeno sin orden.",
+  "De zichtbare gevolgen op je huid: overbeharing, acne en pigment. Wel met een eerlijke verwachting erbij, want zolang de hormonale oorzaak er is komen de klachten terug. Bij ontharing betekent dat onderhoud in plaats van een eindpunt.":
+    "Las consecuencias visibles en tu piel: exceso de vello, acné y pigmento. Eso sí, con una expectativa honesta, porque mientras exista la causa hormonal los problemas vuelven. En la depilación eso significa mantenimiento en lugar de un punto final.",
+  "De zone met de meeste talgklieren. Meestal gaat het hier om talg en verhoorning, niet om hormonen. Dat is het type dat vaak met de minste sessies rustig wordt.":
+    "La zona con más glándulas sebáceas. Normalmente aquí se trata de sebo y queratinización, no de hormonas. Es el tipo que a menudo se calma con menos sesiones.",
+  "Deels verzorging, deels behandeling. Dit is ook de reden dat je poriën op foto's met flits altijd erger lijken dan ze zijn.":
+    "En parte cuidado, en parte tratamiento. Es también la razón de que en las fotos con flash tus poros parezcan siempre peores de lo que son.",
+  "Deels, maar langzaam: maanden tot meer dan een jaar. Zonlicht maakt het elke keer opnieuw donkerder, dus zonder bescherming schiet het niet op.":
+    "En parte, pero despacio: de meses a más de un año. La luz del sol lo oscurece de nuevo cada vez, así que sin protección no se avanza.",
+  "Deels. We kunnen niet aan de vaatjes zelf werken op deze plek, wel aan de dikte en stevigheid van de huid erboven. Verwacht minder doorschemeren, geen verdwijnen.":
+    "En parte. No podemos trabajar sobre los propios vasos en este sitio, pero sí sobre el grosor y la firmeza de la piel de encima. Espera que se transparente menos, no que desaparezca.",
+  "Denk aan de afgelopen weken. Is het 's ochtends erger dan 's avonds, of duidelijk erger na een korte nacht, na zout eten of na huilen?":
+    "Piensa en las últimas semanas. ¿Es peor por la mañana que por la noche, o claramente peor después de una noche corta, de comer salado o de llorar?",
+  "Derde test": "Tercera prueba",
+  "Deze combinatie werkt op dezelfde laag en op hetzelfde moment. Los van elkaar kan het prima, samen op één dag is het meestal te veel voor de barrière.":
+    "Esta combinación trabaja sobre la misma capa y en el mismo momento. Por separado puede ir bien, juntos en un mismo día suele ser demasiado para la barrera.",
+  "Deze foto's zeggen niets": "Estas fotos no dicen nada",
+  "Deze knop bestaat niet. De doorsnede van een porie hangt samen met de talgklier eronder en ligt grotendeels vast in je aanleg. Geen crème, stoombeurt of laser maakt die opening blijvend nauwer. Wat hierboven staat werkt wel, en samen scheelt dat zichtbaar veel.":
+    "Este botón no existe. El diámetro de un poro va ligado a la glándula sebácea de debajo y está fijado en gran parte en tu constitución. Ninguna crema, vaporización o láser estrecha esa abertura de forma permanente. Lo de arriba sí funciona, y en conjunto marca una diferencia visible.",
+  "Deze plek blijft vaak buiten beeld, want je ziet hem zelf nauwelijks. Er zitten veel talgklieren, en zweet plus wrijving houden het in stand.":
+    "Este sitio a menudo queda fuera de la vista, porque apenas lo ves tú. Hay muchas glándulas sebáceas, y el sudor más el roce lo mantienen.",
+  "Deze vaatjes zijn blijvend verwijd. Ze reageren goed op behandeling, maar nieuwe kunnen ontstaan zolang de triggers doorgaan.":
+    "Estos vasos están dilatados de forma permanente. Reaccionan bien al tratamiento, pero pueden surgir nuevos mientras los desencadenantes sigan.",
+  "Deze vorm kunnen wij behandelen. Bij een deel van de mensen is daarnaast medicatie nodig, en die komt van een arts; wij behandelen dan de huid en houden rekening met wat de arts voorschrijft.":
+    "Esta forma sí podemos tratarla. En una parte de la gente hace falta además medicación, y esa viene de un médico; entonces tratamos la piel y tenemos en cuenta lo que prescribe el médico.",
+  "Dezelfde hoek en afstand": "El mismo ángulo y la misma distancia",
+  "Dezelfde lamp op dezelfde plek, bij beide foto's. Geen raamlicht, want dat is nooit twee keer hetzelfde.":
+    "La misma lámpara en el mismo sitio, en las dos fotos. Sin luz de ventana, porque esa nunca es dos veces igual.",
+  "Dezelfde lichtrichting": "La misma dirección de la luz",
+  "Dezelfde omstandigheden": "Las mismas condiciones",
+  "Dezelfde staat van de huid": "El mismo estado de la piel",
+  "Dezelfde verhoorning, maar in het gezicht en met meer roodheid eromheen. Het wordt vaak aangezien voor acne of rosacea en is geen van beide.":
+    "La misma queratinización, pero en la cara y con más rojez alrededor. A menudo se confunde con acné o rosácea y no es ninguna de las dos.",
+  "Dezelfde verstopping als bij een zwart puntje, maar de porie is aan de bovenkant dicht. Daardoor oxideert er niets en blijft het licht.":
+    "La misma obstrucción que en un punto negro, pero el poro está cerrado por arriba. Por eso nada se oxida y se queda claro.",
+  "Diba Clinics": "Diba Clinics",
+  "Direct na een zonvakantie behandelen geeft een grotere kans op nieuwe pigmentvlekken. Dan wachten we, ook als dat je afspraak verzet.":
+    "Tratar justo después de unas vacaciones al sol da más probabilidad de manchas de pigmento nuevas. Entonces esperamos, también si eso cambia tu cita.",
+  "Dit bepaalt mee welke instellingen veilig zijn. Alle huidtypes zijn hier gelijk.":
+    "Esto ayuda a determinar qué configuración es segura. Aquí todos los fototipos son iguales.",
+  "Dit doen wij niet": "Esto no lo hacemos",
+  "Dit gaat over iets anders dan jij zoekt":
+    "Esto trata de otra cosa que la que buscas",
+  "Dit gaat over volume of over weefsel dat verwijderd moet worden, en dat is niet wat een apparaat doet. Wij verwijzen dan door.":
+    "Esto trata de volumen o de tejido que hay que retirar, y eso no es lo que hace un aparato. Entonces derivamos.",
+  "Dit haalt de haast eraf en niet de vraag. Uitslag die blijft, terugkomt of gepaard gaat met klachten hoort nog steeds bij je huisarts.":
+    "Esto quita la urgencia, no la pregunta. Una erupción que se queda, vuelve o va acompañada de molestias sigue correspondiendo a tu médico de cabecera.",
+  "Dit heeft niets met alcohol te maken, hoe hardnekkig dat verhaal ook is. Dat vooroordeel zit veel mensen jaren in de weg.":
+    "Esto no tiene nada que ver con el alcohol, por persistente que sea esa historia. Ese prejuicio se interpone durante años en el camino de mucha gente.",
+  "Dit heeft niets te maken met hygiëne. We zien het bij mensen die zich twee keer per dag wassen.":
+    "Esto no tiene nada que ver con la higiene. Lo vemos en personas que se lavan dos veces al día.",
+  "Dit hoort bij de aanpak van onzuiverheden en niet bij een naaldprik. Zit er meer, dan is de acnepagina de betere ingang.":
+    "Esto corresponde al enfoque de las impurezas y no a un pinchazo con aguja. Si hay más, la página del acné es la mejor entrada.",
+  "Dit hoort bij de arts. Er is medicatie voor die goed werkt, en wij werken daarnaast.":
+    "Esto corresponde al médico. Hay medicación para ello que funciona bien, y nosotros trabajamos al lado.",
+  "Dit hoort bij de littekenpagina en niet hier, want de aanpak is een andere. We zeggen het liever voordat je aan de verkeerde behandeling begint.":
+    "Esto corresponde a la página de cicatrices y no a esta, porque el enfoque es otro. Preferimos decirlo antes de que empieces el tratamiento equivocado.",
+  "Dit in één sessie wegwerken lukt niet, ook niet met een sterk apparaat. Reken op een reeks, met tijd ertussen om te zien wat er is veranderd.":
+    "Quitar esto en una sola sesión no es posible, tampoco con un aparato potente. Cuenta con una serie, con tiempo entre medias para ver lo que ha cambiado.",
+  "Dit is de grens. Reageert je huid rustig op de proefplek, dan kan de alexandriet op een lagere energie; is er twijfel, dan gaat het naar de Nd:YAG. Die keuze wordt in de kamer gemaakt en niet vooraf op een website.":
+    "Este es el límite. Si tu piel reacciona con calma en la prueba en una zona pequeña, la alejandrita se puede usar a menor energía; si hay duda, se pasa a la Nd:YAG. Esa decisión se toma en la sala y no de antemano en una web.",
+  "Dit is de grootste. Licht dat van opzij scheert legt een schaduw in elke porie, rimpel en oneffenheid. Recht van voren vult diezelfde schaduwen op en dan is de structuur weg.":
+    "Esta es la mayor. La luz que roza de lado deja una sombra en cada poro, arruga e irregularidad. De frente rellena esas mismas sombras y entonces la textura desaparece.",
+  "Dit is een aandoening van het afweersysteem. De diagnose en de medische behandeling horen bij de huisarts of dermatoloog; waar nodig werken we met hen samen of verwijzen we door. Wat wij wel doen: je huid beoordelen en adviseren over ondersteunende huidverzorging.":
+    "Es una enfermedad del sistema inmunitario. El diagnóstico y el tratamiento médico corresponden al médico de cabecera o al dermatólogo; cuando hace falta trabajamos con ellos o derivamos. Lo que sí hacemos: valorar tu piel y aconsejar sobre un cuidado de apoyo.",
+  "Dit is een routine die op een rustige huid geen probleem hoeft te zijn en op een geïrriteerde huid net te veel is. Het draait dan minder om wat je gebruikt en meer om hoeveel tegelijk.":
+    "Es una rutina que en una piel tranquila no tiene por qué ser un problema y en una piel irritada es justo demasiado. Entonces se trata menos de lo que usas y más de cuánto a la vez.",
+  "Dit is een routine die vraagt om problemen":
+    "Es una rutina que busca problemas",
+  "Dit is geen fibroom, of het verandert. Weghalen zou betekenen dat er niets meer te beoordelen valt, en dat is een fout die niet te herstellen is.":
+    "Esto no es un fibroma, o está cambiando. Quitarlo significaría que ya no queda nada que valorar, y ese es un error que no se puede deshacer.",
+  "Dit is geen gewone zonnevlek. Behandelen zonder dat er eerst naar gekeken is, is hier precies wat er niet moet gebeuren.":
+    "Esto no es una mancha solar normal. Tratarla sin que antes la haya mirado alguien es justo lo que aquí no debe pasar.",
+  "Dit is geen kwestie van een gezichtsbehandeling maar van pigment aanpakken, en dat loopt over maanden. De pigmentpagina legt dat uit.":
+    "Esto no es cuestión de un tratamiento facial sino de tratar el pigmento, y eso lleva meses. La página de pigmento lo explica.",
+  "Dit is geen kwestie van vies of schoon. De bacterie hoort bij je huid; alleen de omstandigheden zijn veranderd.":
+    "Esto no es cuestión de sucio o limpio. La bacteria forma parte de tu piel; solo han cambiado las condiciones.",
+  "Dit is het beeld waar behandeling het meest oplevert. We meten eerst hoeveel er zichtbaar is, zodat je het verschil later niet hoeft te geloven.":
+    "Esta es la imagen en la que el tratamiento rinde más. Primero medimos cuánto se ve, para que después no tengas que creerte la diferencia.",
+  "Dit is het eerlijke maximum. De openingen staan er nog precies zo, en toch zie je ze nauwelijks. Dat is wat wij bedoelen met poriën behandelen.":
+    "Este es el máximo honesto. Las aberturas siguen exactamente igual, y aun así apenas las ves. Eso es lo que entendemos por tratar los poros.",
+  "Dit is het enige punt waar wij iets kunnen betekenen: de barrière ondersteunen zodat hij minder lekt. Wij behandelen het eczeem niet, we maken de omstandigheden minder ongunstig.":
+    "Este es el único punto en el que podemos aportar algo: apoyar la barrera para que filtre menos. No tratamos el eccema, hacemos las condiciones menos desfavorables.",
+  "Dit is het meest gemaakte misverstand op deze pagina, en het kost mensen sessies aan de verkeerde behandeling.":
+    "Es el malentendido más frecuente de esta página, y cuesta a la gente sesiones en el tratamiento equivocado.",
+  "Dit is het moment waarop striae het beste reageren. Wachten tot ze wit zijn is de meest gemaakte fout.":
+    "Este es el momento en que las estrías reaccionan mejor. Esperar hasta que estén blancas es el error más frecuente.",
+  "Dit is iets anders": "Esto es otra cosa",
+  "Dit is littekenweefsel": "Esto es tejido cicatricial",
+  "Dit is normaal en geen reden om te stoppen. Blijf van je gezicht af, houd het simpel, en bel ons als je twijfelt. Dat mag ook zonder afspraak.":
+    "Esto es normal y no es motivo para parar. No te toques la cara, mantenlo sencillo, y llámanos si dudas. También se puede sin cita.",
+  "Dit is wat ik zelf heb ingevuld, geen meting. Ik weet dat er niets vaststaat tot er gemeten is.":
+    "Esto es lo que he rellenado yo, no una medición. Sé que nada está fijado hasta que se haya medido.",
+  "Dit is wél littekenweefsel. Er is bij de ontsteking bindweefsel verloren gegaan en de huid is daar ingezakt. Kleur kan er los van staan; een putje kan gewoon huidkleurig zijn.":
+    "Esto sí es tejido cicatricial. Durante la inflamación se perdió tejido conjuntivo y la piel se ha hundido ahí. El color puede ir aparte; un hoyo puede ser perfectamente del color de la piel.",
+  "Dit kan bij jou nu niet": "Esto ahora no es posible en tu caso",
+  "Dit kan, met een kanttekening": "Esto se puede, con un matiz",
+  "Dit kun je boeken": "Esto puedes reservarlo",
+  "Dit past bij je profiel": "Esto encaja con tu perfil",
+  "Dit patroon wijst op een hormonale factor":
+    "Este patrón apunta a un factor hormonal",
+  "Dit raden wij af": "Esto lo desaconsejamos",
+  "Dit reageert goed, maar alleen met bescherming erbij. Zonder dat komt het terug en dan heb je betaald voor niets.":
+    "Esto reacciona bien, pero solo con protección. Sin ella vuelve y entonces has pagado para nada.",
+  "Dit traject is gemaakt voor 18 jaar en jonger. Voor jou is het gewone acnetraject de juiste.":
+    "Este programa está hecho para 18 años o menos. Para ti el programa de acné normal es el correcto.",
+  "Dit vraagt geduld en een aanpak die op de verhoorning werkt. Uitknijpen lukt niet en laat meestal een vlekje achter.":
+    "Esto pide paciencia y un enfoque que trabaje sobre la queratinización. Apretar no funciona y normalmente deja una marca.",
+  "Dit vraagt meer hersteltijd dan je aangaf":
+    "Esto pide más tiempo de recuperación del que indicaste",
+  "Dit vraagt om een ander traject of om een gewoonte. Een gezichtsbehandeling maskeert het hooguit een paar weken.":
+    "Esto pide otro programa o un hábito. Un tratamiento facial como mucho lo disimula unas semanas.",
+  "Dit wordt vaak aangezien voor huidveroudering terwijl het net zo goed uitdroging, slaap of medicatie kan zijn. Daarom meten we eerst.":
+    "Esto se confunde a menudo con envejecimiento de la piel cuando igualmente puede ser deshidratación, sueño o medicación. Por eso medimos primero.",
+  "Dit wordt vrijwel altijd voor schimmel aangezien en dan met het verkeerde middel behandeld. Nagelafwijkingen hangen bovendien samen met een grotere kans op gewrichtsklachten.":
+    "Esto se confunde casi siempre con un hongo y entonces se trata con el producto equivocado. Las alteraciones de las uñas van además ligadas a una mayor probabilidad de molestias articulares.",
+  "Dit zijn geen huisregels maar weigeringen. Bij elke regel staat wat hij ons kost, want een belofte zonder prijs is geen belofte. Ze staan hier bij elkaar en ze staan ook los, op de pagina waar ze gelden.":
+    "No son normas de la casa sino negativas. En cada regla pone lo que nos cuesta, porque una promesa sin precio no es una promesa. Están aquí juntas y también sueltas, en la página donde se aplican.",
+  "Dit zijn geen poriën maar littekens van eerdere ontstekingen. Een porie heeft een opening, een kuiltje niet.":
+    "Esto no son poros sino cicatrices de inflamaciones anteriores. Un poro tiene una abertura, un hoyo no.",
+  "Dode huidcellen laten aan de rand van de porie niet goed los en plakken samen. De opening wordt smaller en sluit uiteindelijk af.":
+    "Las células muertas no se desprenden bien en el borde del poro y se pegan entre sí. La abertura se estrecha y al final se cierra.",
+  "Doet er iets aan, maar is er niet voor gemaakt":
+    "Hace algo al respecto, pero no está hecho para eso",
+  "Doet het zeer, voelt het warm aan, en is het in dagen ontstaan in plaats van geleidelijk?":
+    "¿Duele, se nota caliente, y ha aparecido en días en lugar de poco a poco?",
+  "Door de kapotte barrière komen stoffen naar binnen die er normaal niet doorheen komen, en het afweersysteem reageert daarop.":
+    "Por la barrera dañada entran sustancias que normalmente no pasan, y el sistema inmunitario reacciona a ellas.",
+  "Doorbloeding en herstel lopen terug bij slaaptekort, roken en te weinig drinken, en dat zie je het eerst aan je gezicht.":
+    "La circulación y la reparación bajan con la falta de sueño, el tabaco y beber demasiado poco, y eso se ve primero en la cara.",
+  "Doorsturen. Een moedervlek die weg moet, hoort onderzocht te worden en dat kunnen wij niet.":
+    "Derivar. Un lunar que tiene que quitarse debe examinarse y eso no podemos hacerlo nosotros.",
+  "Draadliften en chirurgie": "Hilos tensores y cirugía",
+  "Drie maanden begeleiding met controles":
+    "Tres meses de seguimiento con revisiones",
+  "Drie maanden met aangepaste verzorging":
+    "Tres meses con un cuidado adaptado",
+  "Drie oorzaken, één beeld": "Tres causas, una sola imagen",
+  "Drie sessies Nordlys IPL over tien weken":
+    "Tres sesiones de Nordlys IPL en diez semanas",
+  "Droge en gevoelige huid": "Piel seca y sensible",
+  "Droog of uitgedroogd": "Seca o deshidratada",
+  "Droogheid of een doffe huid": "Sequedad o una piel apagada",
+  "Druk de zijkant van een doorzichtig glas stevig op de vlekken en kijk er dwars doorheen. Deze test is geen diagnose en sluit niets uit: een uitslag die wél wegdrukt kan nog steeds ernstig zijn. Hij helpt je alleen inschatten of je vandaag belt of dat het tot een gewone afspraak kan wachten.":
+    "Aprieta con firmeza el lateral de un vaso transparente sobre las manchas y mira a través. Esta prueba no es un diagnóstico y no descarta nada: una erupción que sí desaparece al presionar puede seguir siendo grave. Solo te ayuda a valorar si llamas hoy o si puede esperar a una cita normal.",
+  "Dunne, permanent zichtbare bloedvaatjes. Ze verdwijnen niet als je erop drukt en gaan van zichzelf niet weg.":
+    "Vasos sanguíneos finos y visibles de forma permanente. No desaparecen al presionarlos y no se van por sí solos.",
+  "Duw de huid met twee vingers omhoog naar je slaap. Moet je meer dan een centimeter verplaatsen om te krijgen wat je wil, dan gaat het hierover.":
+    "Empuja la piel hacia arriba con dos dedos hacia la sien. Si tienes que desplazarla más de un centímetro para conseguir lo que quieres, se trata de esto.",
+  "Eczeem is een aandoening met een medische behandeling, en die hoort bij je huisarts of een dermatoloog. Wij nemen die rol niet over en gaan er ook geen mening over geven.":
+    "El eccema es una enfermedad con un tratamiento médico, y eso corresponde a tu médico de cabecera o a un dermatólogo. Nosotros no asumimos ese papel y tampoco vamos a opinar sobre ello.",
+  "Eczeem of psoriasis behandelen": "Tratar el eccema o la psoriasis",
+  "Eczeem, psoriasis en onbegrepen uitslag gaan naar de huisarts of de dermatoloog. Die pagina's hebben bij ons niet eens een afspraakknop, en we werken samen met de arts die het wel behandelt.":
+    "El eccema, la psoriasis y las erupciones sin explicar van al médico de cabecera o al dermatólogo. Esas páginas ni siquiera tienen botón de cita en nuestra web, y colaboramos con el médico que sí lo trata.",
+  "Een advies op maat": "Un consejo a medida",
+  "Een afspraak die soms weken later valt, en een klant die intussen bij een ander terechtkan die niet vraagt.":
+    "Una cita que a veces cae semanas después, y un cliente que mientras tanto puede ir a otro que no pregunta.",
+  "Een ander mechanisme dan een zonnevlek: hormonaal aangestuurd en veel gevoeliger voor licht en warmte. Verkeerd behandelen maakt het aantoonbaar erger.":
+    "Un mecanismo distinto del de una mancha solar: regulado por hormonas y mucho más sensible a la luz y al calor. Tratarlo mal lo empeora de forma demostrable.",
+  "Een behandelaar legt bij het scherm van de EVE-M uit wat de opnames laten zien.":
+    "Una terapeuta explica en la pantalla del EVE-M lo que muestran las capturas.",
+  "Een behandelaar vertelt hoe een acnetraject bij jongeren verloopt.":
+    "Una terapeuta explica cómo transcurre un programa de acné en jóvenes.",
+  "Een behandelaar zet met een fijne naald het mengsel rond de oogkas van een client.":
+    "Una terapeuta aplica con una aguja fina la mezcla alrededor de la cuenca del ojo de un cliente.",
+  "Een cliënt krijgt koffie aangereikt bij Diba Clinics":
+    "A un cliente le ofrecen café en Diba Clinics",
+  "Een cosmetisch arts of plastisch chirurg.":
+    "Un médico estético o un cirujano plástico.",
+  "Een deel van de lijst tijdens zwangerschap of borstvoeding":
+    "Una parte de la lista durante el embarazo o la lactancia",
+  "Een deel van de mensen dat binnenkomt gaat weg zonder afspraak. Dat is geen omzet die we mislopen, dat is de bedoeling.":
+    "Una parte de la gente que entra se va sin cita. Eso no es facturación que perdemos, es justo lo que pretendemos.",
+  "Een droge huid en geen verhoorning rond de haarzakjes. Dit lijkt erop en vraagt om iets veel eenvoudigers.":
+    "Una piel seca y sin queratinización alrededor de los folículos. Se parece a eso y pide algo mucho más sencillo.",
+  "Een eerlijk gesprek. Doen de knobbels pijn, blijven ze weken zitten of laten ze littekens achter, dan raden we je aan eerst naar je huisarts te gaan. Soms is ons advies om bij ons nog niet te starten.":
+    "Una conversación honesta. Si los bultos duelen, se quedan semanas o dejan cicatrices, te aconsejamos ir primero a tu médico de cabecera. A veces nuestro consejo es no empezar todavía con nosotros.",
+  "Een fijne naald, vlak onder de huid rond de oogkas":
+    "Una aguja fina, justo bajo la piel alrededor de la cuenca del ojo",
+  "Een geleidelijk dikkere neus met grovere poriën, vooral bij mannen.":
+    "Una nariz cada vez más gruesa con poros más gruesos, sobre todo en hombres.",
+  "Een gemengd beeld": "Una imagen mixta",
+  "Een gemengd patroon, het meest voorkomend":
+    "Un patrón mixto, el más frecuente",
+  "Een gerichte keuze": "Una elección dirigida",
+  "Een gespecialiseerde PMU-studio.":
+    "Un estudio especializado en micropigmentación (PMU).",
+  "Een gevorderd stadium waarbij bindweefsel is toegenomen. Dit hoort bij de dermatoloog.":
+    "Un estadio avanzado en el que ha aumentado el tejido conjuntivo. Esto corresponde al dermatólogo.",
+  "Een gezonde huid van vijfentwintig heeft geen serie behandelingen nodig. Wij verkopen die dus niet, ook niet als je erom vraagt: je hebt er op dat moment nog niets aan.":
+    "Una piel sana de veinticinco años no necesita una serie de tratamientos. Así que no la vendemos, tampoco si la pides: en ese momento todavía no te sirve de nada.",
+  "Een gloed is een ander mechanisme dan verwijde vaatjes, en het is ook geen voorstadium daarvan. Behandelen alsof het lijntjes zijn levert weinig op.":
+    "Un rubor es un mecanismo distinto de los vasos dilatados, y tampoco es una fase previa de ellos. Tratarlo como si fueran líneas aporta poco.",
+  "Een goedaardige woekering van huidcellen. Ondanks het uiterlijk heeft dit niets met zonschade te maken en het is ook geen moedervlek.":
+    "Una proliferación benigna de células de la piel. A pesar de su aspecto no tiene nada que ver con el daño solar y tampoco es un lunar.",
+  "Een half jaar wachten in het drukste seizoen, met de kans dat iemand ondertussen ergens anders begint.":
+    "Medio año de espera en plena temporada alta, con la posibilidad de que alguien empiece mientras tanto en otro sitio.",
+  "Een huid die net bruin is geworden": "Una piel que acaba de broncearse",
+  "Een huid in herstel pigmenteert sneller.":
+    "Una piel en recuperación pigmenta más rápido.",
+  "Een huid met te weinig water in de bovenste laag ligt niet glad, en een oneffen oppervlak oogt dof. Los van hoeveel talg je maakt.":
+    "Una piel con muy poca agua en la capa superior no queda lisa, y una superficie irregular se ve apagada. Independientemente de cuánto sebo produzcas.",
+  "Een huidanalyse eerst. Bij verspreide acne is meten belangrijker dan bij een enkele zone, omdat je het verschil anders niet ziet.":
+    "Primero un análisis de la piel. Con acné extendido medir importa más que con una sola zona, porque si no, no ves la diferencia.",
+  "Een huidkliniek verandert hier niets aan. Wij zeggen dat liever nu dan na een reeks, ook als je hier kwam om iets te boeken.":
+    "Una clínica de la piel no cambia nada de esto. Preferimos decirlo ahora que después de una serie, también si viniste aquí a reservar algo.",
+  "Een huidtherapeut schrijft geen medicijnen voor. Bij zware acne is dat soms precies wat er nodig is, en dan is doorsturen het juiste advies.":
+    "Una terapeuta de la piel no receta medicamentos. Con acné grave a veces es justo lo que hace falta, y entonces derivar es el consejo correcto.",
+  "Een kin iets omhoog strakt de kaaklijn. Een halve stap dichterbij met een telefoon maakt de neus groter en de wangen smaller.":
+    "Una barbilla un poco hacia arriba tensa la línea de la mandíbula. Medio paso más cerca con un teléfono agranda la nariz y estrecha las mejillas.",
+  "Een klassieke T-zone": "Una zona T clásica",
+  "Een kliniek die injectables als hoofdvak heeft, bij voorkeur met een arts die ze zet.":
+    "Una clínica cuya especialidad principal son los inyectables, preferiblemente con un médico que los ponga.",
+  "Een korte lens dichtbij vergroot wat het dichtst bij de camera zit. Twee foto's van verschillende afstand zijn twee verschillende gezichten.":
+    "Un objetivo corto de cerca agranda lo que está más cerca de la cámara. Dos fotos desde distinta distancia son dos caras distintas.",
+  "Een meting die geen verbetering laat zien is even bruikbaar. Dan gaan we iets anders proberen.":
+    "Una medición que no muestra mejora es igual de útil. Entonces probamos otra cosa.",
+  "Een moedervlek die je stoort halen we weg. Maar verandert er iets aan de vorm, de kleur, de grootte of het gevoel, dan gaat hij eerst langs je huisarts. Wat weg is kan niet meer onderzocht worden, en dat is de enige stap in dit onderwerp die je later niet kunt inhalen.":
+    "Un lunar que te molesta lo quitamos. Pero si cambia algo en la forma, el color, el tamaño o la sensación, pasa primero por tu médico de cabecera. Lo que ya no está no se puede examinar, y ese es el único paso de este tema que no puedes recuperar después.",
+  "Een moedervlek die niet verandert halen we wel weg, net als steelwratjes en fibromen. Het gaat hier alleen om plekjes waar iets aan verandert. Twijfel je, laat het dan zien; dat kost je niets.":
+    "Un lunar que no cambia sí lo quitamos, igual que los acrocordones y los fibromas. Aquí se trata solo de manchitas en las que algo cambia. Si dudas, enséñalo; no te cuesta nada.",
+  "Een moedervlek die stoort halen we weg. Verandert er iets aan de vorm, de kleur of het gevoel, dan gaat hij eerst langs je huisarts: die kan weefsel laten onderzoeken en dat kan achteraf niet meer.":
+    "Un lunar que molesta lo quitamos. Si cambia algo en la forma, el color o la sensación, pasa primero por tu médico de cabecera: puede mandar examinar el tejido y eso después ya no se puede.",
+  "Een moedervlek en geen steelwratje. Die halen wij niet weg, ook niet als hij stoort: beoordelen en verwijderen hoort bij een arts.":
+    "Un lunar y no un acrocordón. Esos no los quitamos, tampoco si molesta: valorar y quitar corresponde a un médico.",
+  "Een moedervlek of plek die verandert": "Un lunar o una mancha que cambia",
+  "Een net behandelde huid is gevoeliger voor zon, en dat is precies de periode waarin je hem niet uit de zon houdt.":
+    "Una piel recién tratada es más sensible al sol, y ese es justo el periodo en el que no la mantienes fuera del sol.",
+  "Een net verzorgde huid weerkaatst het licht gelijkmatiger en oogt daardoor gladder. Een huid die net gereinigd en gehydrateerd is fotografeert beter dan dezelfde huid aan het eind van de dag.":
+    "Una piel recién cuidada refleja la luz de forma más uniforme y por eso se ve más lisa. Una piel recién limpiada e hidratada sale mejor en la foto que la misma piel al final del día.",
+  "Een ontstoken haarzakje, meestal door bacteriën. Anders dan een ingegroeid haar gaat dit vaak vanzelf over, maar het kan ook hardnekkig worden.":
+    "Un folículo inflamado, normalmente por bacterias. A diferencia de un pelo encarnado, esto suele pasarse solo, pero también puede volverse persistente.",
+  "Een ontstoken kliertje aan de ooglidrand hoort bij de huisarts, en gaat vaak vanzelf over. Wij prikken daar niet in; de kans op verergering is klein maar de plek is te belangrijk om die kans te nemen.":
+    "Una glandulita inflamada en el borde del párpado corresponde al médico de cabecera, y suele pasarse sola. Nosotros ahí no pinchamos; la probabilidad de que empeore es pequeña pero el sitio es demasiado importante para correr ese riesgo.",
+  "Een ontstoken kliertje aan de ooglidrand. Dit is wat een gerstekorrel medisch gezien is, en het is iets heel anders dan een wit korreltje.":
+    "Una glandulita inflamada en el borde del párpado. Eso es lo que es un orzuelo desde el punto de vista médico, y es algo muy distinto de una bolita blanca.",
+  "Een organiserende functie. Het behandelen doen de therapeuten; hier kom je terecht voor je afspraak of je factuur.":
+    "Una función organizativa. Los tratamientos los hace el equipo de terapeutas; aquí acudes para tu cita o tu factura.",
+  "Een perfect protocol zegt nog steeds niets als je drie geslaagde trajecten publiceert en de rest niet.":
+    "Un protocolo perfecto sigue sin decir nada si publicas tres programas que salieron bien y el resto no.",
+  "Een plekje dat verandert van vorm, kleur of grootte laat je eerst beoordelen door je huisarts of dermatoloog.":
+    "Una manchita que cambia de forma, color o tamaño la haces valorar primero por tu médico de cabecera o dermatólogo.",
+  "Een plekje weghalen dat verandert": "Quitar una manchita que cambia",
+  "Een porie die is volgelopen en waarvan de inhoud aan de lucht is verkleurd. Het donker is geoxideerde talg en geen vuil; poetsen doet er niets aan.":
+    "Un poro que se ha llenado y cuyo contenido se ha oscurecido en contacto con el aire. Lo oscuro es sebo oxidado y no suciedad; frotar no le hace nada.",
+  "Een porie vult zich weer, dus eindeloos blijven leeghalen is een abonnement en geen behandeling. We kijken liever naar hoe snel het teruggaat.":
+    "Un poro se vuelve a llenar, así que vaciarlo sin fin es una suscripción y no un tratamiento. Preferimos fijarnos en lo rápido que vuelve.",
+  "Een puskopje is geen teken dat het rijp is om uit te knijpen. Het is een teken dat je afweer al bezig is.":
+    "Una cabeza de pus no es señal de que el grano esté maduro para apretarlo. Es señal de que tus defensas ya están trabajando.",
+  "Een reeks van drie tot zes, met weken ertussen":
+    "Una serie de tres a seis, con semanas entre medias",
+  "Een vast patroon langs kaaklijn en kin dat opvlamt rond een vaste periode in de maand. Vaak dieper en gevoeliger dan de rest.":
+    "Un patrón fijo a lo largo de la línea de la mandíbula y la barbilla que brota en torno a un periodo fijo del mes. A menudo más profundo y más sensible que el resto.",
+  "Een veelvoorkomende plek die vaak buiten beeld blijft, omdat hij onder kleding zit. Veel talgklieren, en zweet en wrijving van kleding houden het in stand.":
+    "Un sitio frecuente que suele quedar fuera de la vista, porque está bajo la ropa. Muchas glándulas sebáceas, y el sudor y el roce de la ropa lo mantienen.",
+  "Een verstopt talgkliertje in het ooglid dat is ingekapseld. Anders dan een strontje doet het meestal geen pijn, en het blijft langer zitten.":
+    "Una glandulita sebácea obstruida en el párpado que se ha encapsulado. A diferencia de un orzuelo, normalmente no duele, y se queda más tiempo.",
+  "Een vertrekpunt dat van jou is": "Un punto de partida que es tuyo",
+  "Een vertrekpunt. Zonder meting van vandaag is over drie maanden niet vast te stellen of er iets veranderd is, behalve op gevoel.":
+    "Un punto de partida. Sin una medición de hoy, dentro de tres meses no se puede determinar si ha cambiado algo, salvo por sensación.",
+  "Een vervellende huid is onbeschermd; hier ontstaat pigment.":
+    "Una piel que se pela está desprotegida; aquí se forma pigmento.",
+  "Een volgelopen porie die dicht is gebleven, waardoor de inhoud niet verkleurt. Dit is het beeld dat mensen het langst zelf proberen op te lossen.":
+    "Un poro lleno que se ha quedado cerrado, por lo que el contenido no se oscurece. Es la imagen que la gente intenta resolver por su cuenta durante más tiempo.",
+  "Een vouw die ontstaat doordat een spier de huid samentrekt. De huid zelf is nog intact.":
+    "Un pliegue que aparece porque un músculo contrae la piel. La piel en sí sigue intacta.",
+  "Eerlijk rekenen. We laten je zien wat de meting zegt en wat dat in sessies betekent, en dan beslis jij of het je dat waard is.":
+    "Cuentas honestas. Te enseñamos lo que dice la medición y lo que eso significa en sesiones, y entonces decides tú si te merece la pena.",
+  "Eerst de barrière herstellen. Blijft de huid dof, dan microneedling: dat zet de vernieuwing van opperhuid en lederhuid in gang, en daar krijgt een uitgedroogde huid zijn glans van terug.":
+    "Primero reparar la barrera. Si la piel sigue apagada, entonces microneedling: eso pone en marcha la renovación de la epidermis y la dermis, y de ahí recupera su luminosidad una piel deshidratada.",
+  "Eerst de oorzaak wegnemen, anders komen er steeds nieuwe bij. Daarna pas naar de kleur kijken.":
+    "Primero quitar la causa, si no siguen apareciendo más. Solo después mirar el color.",
+  "Eerst kijken welke soort": "Primero ver de qué tipo es",
+  "Eerst laten bekijken": "Primero que lo miren",
+  "Eerst laten beoordelen. Verwijderen kan vaak wel, maar dat gaat anders dan bij een steeltje.":
+    "Primero que lo valoren. Quitarlo suele ser posible, pero se hace de otra manera que con un acrocordón.",
+  "Eerst met ons": "Primero con nosotros",
+  "Eerst uitzoeken wat er tegen je huid komt. Daarna kalmeren. Soms is dit op te lossen zonder één behandeling, en dan zeggen we dat ook.":
+    "Primero averiguar qué entra en contacto con tu piel. Después calmarla. A veces esto se resuelve sin un solo tratamiento, y entonces también lo decimos.",
+  "Eerst vaststellen of het poriën zijn of littekenkuiltjes. Dat lijkt een detail en het is het verschil tussen wel en niet werken.":
+    "Primero determinar si son poros u hoyos de cicatriz. Parece un detalle y es la diferencia entre que funcione o no.",
+  "Eerste terugkeer van vlekken die in de winter waren weggetrokken.":
+    "Primera reaparición de manchas que en invierno se habían atenuado.",
+  "Eerste test": "Primera prueba",
+  "Elk product hier kan op zichzelf prima zijn. Bij elkaar opgeteld werken ze allemaal op dezelfde barrière, en die kan maar zoveel hebben. Dan is een gevoelige huid geen aanleg maar het resultaat.":
+    "Cada producto de aquí puede estar bien por sí solo. Sumados, todos actúan sobre la misma barrera, y esa solo aguanta hasta cierto punto. Entonces una piel sensible no es constitución sino el resultado.",
+  "Elk tarief per sessie en per zone, zonder dat je ervoor hoeft te bellen.":
+    "Cada tarifa por sesión y por zona, sin que tengas que llamar para saberla.",
+  "Elke dag ongeveer hetzelfde": "Cada día más o menos igual",
+  "Er blijft genoeg over dat wel kan, zoals dermaplaning en een rustige gezichtsbehandeling. Zeg het bij het maken van de afspraak, dan kiezen we daaruit.":
+    "Queda bastante que sí se puede, como el dermaplaning y un tratamiento facial suave. Dilo al pedir la cita, y elegimos entre esas opciones.",
+  "Er ging iets mis. Probeer het nog eens.":
+    "Algo ha salido mal. Inténtalo otra vez.",
+  "Er is actieve ontsteking, en daar kunnen we wat mee. We behandelen deze vorm met peelings: chemische peelings en kruidenpeels, die de ontsteking remmen en antibacterieel werken. Laser en needling wachten tot de huid rustiger is.":
+    "Hay inflamación activa, y con eso podemos hacer algo. Tratamos esta forma con peelings: peelings químicos y peelings de hierbas, que frenan la inflamación y actúan contra las bacterias. El láser y el microneedling esperan hasta que la piel esté más tranquila.",
+  "Er is genoeg veranderd buiten de huid om het verschil te verklaren. Zulke beelden zijn niet per se onwaar; ze zijn alleen geen bewijs.":
+    "Ha cambiado bastante fuera de la piel como para explicar la diferencia. Esas imágenes no son necesariamente falsas; solo que no son una prueba.",
+  "Er is net geëxfolieerd; nog een keer is te veel.":
+    "Se acaba de exfoliar; otra vez es demasiado.",
+  "Er komt geen naald aan te pas. Het handstuk werkt van binnenuit tegen de binnenkant van de lip en daarna aan de buitenzijde.":
+    "No interviene ninguna aguja. La pieza de mano trabaja desde dentro contra la parte interior del labio y después por fuera.",
+  "Er komt minder bij, en wat er zit geneest sneller. De huid voelt in deze fase vaak eerder rustiger dan hij eruitziet. Dat komt doordat de roodheid het langst blijft.":
+    "Salen menos, y lo que hay cura más rápido. En esta fase la piel a menudo se nota más tranquila de lo que parece. Es porque la rojez es lo que más dura.",
+  "Er laadt niets buiten wat de site nodig heeft om te werken. Dat blijft zo tot je het zelf verandert.":
+    "No se carga nada más allá de lo que la web necesita para funcionar. Así seguirá hasta que tú lo cambies.",
+  "Er ligt vast hoe je huid er vandaag uitzag. Dat is het vertrekpunt van je behandelplan.":
+    "Queda registrado cómo estaba tu piel hoy. Ese es el punto de partida de tu plan de tratamiento.",
+  "Er valt nog iets te halen, maar minder dan een jaar geleden.":
+    "Todavía hay algo que ganar, pero menos que hace un año.",
+  "Er valt nog wat te winnen, vooral in textuur. De kleur volgt uit zichzelf. Verwacht verbetering, geen verdwijning.":
+    "Todavía hay algo que ganar, sobre todo en textura. El color viene solo. Espera mejora, no desaparición.",
+  "Er wordt te weinig huidvet aangemaakt of het gaat te snel verloren. Dit hoort vaak bij aanleg, bij kou en bij ouder worden.":
+    "Se produce muy poco sebo o se pierde demasiado rápido. Esto suele ir con la constitución, con el frío y con hacerse mayor.",
+  "Er zijn net meerdere berichten vanaf dit adres verstuurd. Probeer het over een paar minuten opnieuw, of bel ons.":
+    "Se acaban de enviar varios mensajes desde esta dirección. Inténtalo de nuevo dentro de unos minutos, o llámanos.",
+  "Er zit geen haar in, of de zone is nu ontstoken. Ontharen doet hier niets, en beginnen zou een reeks verkopen zonder resultaat zijn.":
+    "No hay pelo dentro, o la zona está ahora inflamada. Depilar aquí no hace nada, y empezar sería vender una serie sin resultado.",
+  "Er zit te weinig water in de bovenste laag. Dit is een toestand en geen huidtype: hij kan volgende maand weg zijn.":
+    "Hay muy poca agua en la capa superior. Es un estado y no un tipo de piel: el mes que viene puede haber desaparecido.",
+  "Even *stil* gelegen": "Un tiempo *en calma*",
+  "Even lang na de behandeling": "El mismo tiempo después del tratamiento",
+  "Eén ding aangepakt": "Una sola cosa abordada",
+  "Eén sessie raakt alleen de haren die op dat moment groeien. Dat is nooit alles tegelijk, en daarom is één behandeling geen halve behandeling maar geen behandeling.":
+    "Una sesión solo alcanza los pelos que crecen en ese momento. Eso nunca son todos a la vez, y por eso un solo tratamiento no es medio tratamiento sino ningún tratamiento.",
+  "Foto's onder vaste belichting en op vaste afstand, plus metingen van kleur, structuur en vocht. Het apparaat doet niets met je huid; het kijkt alleen.":
+    "Fotos con iluminación fija y a distancia fija, más mediciones de color, textura e hidratación. El aparato no le hace nada a tu piel; solo mira.",
+  "Fotona 4D, drie sessies over drie maanden":
+    "Fotona 4D, tres sesiones en tres meses",
+  "Foundation is letterlijk een laagje dat structuur verbergt. En veel telefoons verzachten de huid uit zichzelf, zonder dat je daarom gevraagd hebt.":
+    "La base de maquillaje es literalmente una capa que oculta la textura. Y muchos teléfonos suavizan la piel por su cuenta, sin que lo hayas pedido.",
+  "Foundation, concealer, alles wat je erop legt.":
+    "Base de maquillaje, corrector, todo lo que te pones encima.",
+  "Ga hier eerst mee naar je huisarts":
+    "Con esto ve primero a tu médico de cabecera",
+  "Ga je binnen een paar weken naar de zon of op wintersport, dan wachten we daarmee. Pigment komt na blootstelling terug en dan heb je voor niets betaald.":
+    "Si en unas semanas te vas al sol o a esquiar, con esto esperamos. El pigmento vuelve después de la exposición y entonces has pagado para nada.",
+  "Ga voor een raam staan met het daglicht recht in je gezicht, en kijk dan in je telefoon. Vergelijk dat met hoe het eruitziet onder een lamp aan het plafond.":
+    "Ponte delante de una ventana con la luz del día de frente en la cara, y mírate entonces en el teléfono. Compáralo con cómo se ve bajo una lámpara del techo.",
+  "Geef de werkstoffen even de tijd om in te trekken.":
+    "Dale a los principios activos un momento para absorberse.",
+  "Geen actieprijs, geen nog twee plekken deze week, en geen aanbod dat vandaag afloopt. Een behandeling die je vanwege korting kiest, was niet de behandeling die je nodig had.":
+    "Sin precio de promoción, sin «solo quedan dos plazas esta semana» y sin oferta que termina hoy. Un tratamiento que eliges por el descuento no era el tratamiento que necesitabas.",
+  "Geen enkele crème, peeling of laser tilt weefsel op. Wie dat suggereert rekent op je hoop.":
+    "Ninguna crema, peeling o láser levanta tejido. Quien lo sugiere cuenta con tu esperanza.",
+  "Geen filler en geen volume dat je erin spuit":
+    "Sin relleno y sin volumen inyectado",
+  "Geen injectables en geen volumeopbouw. Dat zijn geen huidbehandelingen, en wat er over beloofd wordt kan niemand waarmaken.":
+    "Sin inyectables y sin aumento de volumen. No son tratamientos de la piel, y lo que se promete sobre ellos nadie puede cumplirlo.",
+  "Geen keratosis pilaris maar droogte of ingegroeide haren. Allebei vragen ze om iets eenvoudigers of om een andere pagina.":
+    "No es queratosis pilaris sino sequedad o pelos encarnados. Los dos piden algo más sencillo o bien otra página.",
+  "Geen litteken maar een vaatreactie: de ontsteking is weg, de doorbloeding is nog verhoogd. Dit is wat de meeste mensen bedoelen als ze acnelittekens zeggen.":
+    "No es una cicatriz sino una reacción vascular: la inflamación se ha ido, la circulación sigue aumentada. Esto es lo que la mayoría de la gente quiere decir cuando habla de cicatrices de acné.",
+  "Geen make-up, geen filter": "Sin maquillaje, sin filtro",
+  "Geen milium maar een verstopte porie die wél openstaat. Het donker is geoxideerd talg en geen vuil.":
+    "No es un milium sino un poro obstruido que sí está abierto. Lo oscuro es sebo oxidado y no suciedad.",
+  "Geen percentages die we niet zelf hebben vastgesteld, geen jaren jonger, en geen aantal sessies dat we niet waar kunnen maken. Staat er een getal op deze site, dan komt het ergens vandaan.":
+    "Sin porcentajes que no hayamos comprobado nosotros, sin «años más joven» y sin un número de sesiones que no podamos cumplir. Si en esta web hay una cifra, viene de algún sitio.",
+  "Geen serie die je vooruit betaalt, geen strippenkaart, en geen routine met acht stappen. We spreken een aantal sessies af met een moment waarop we opnieuw kijken.":
+    "Sin una serie que pagas por adelantado, sin bono de sesiones y sin una rutina de ocho pasos. Acordamos un número de sesiones con un momento en el que volvemos a mirar.",
+  "Geen trekkerig gevoel na het wassen, geen schilfers, en make-up blijft zitten zoals je verwacht.":
+    "Sin sensación de tirantez después de lavarte, sin escamas, y el maquillaje se queda como esperas.",
+  "Geen voor-en-na met andere belichting, een andere hoek of andere make-up. Bij poriën en kringen is de lamp anders het hele resultaat.":
+    "Sin antes y después con otra iluminación, otro ángulo u otro maquillaje. En poros y ojeras, si no, la lámpara es todo el resultado.",
+  "Geen voorspelling": "No es una predicción",
+  "Geen wal en geen kring, maar een dal. Door volumeverlies aan de rand van je oogkas valt er schaduw, en die lees je als donker.":
+    "Ni bolsa ni ojera, sino un surco. Por la pérdida de volumen en el borde de la cuenca del ojo cae una sombra, y esa la lees como oscuridad.",
+  "Geen wal maar een ophoping van vet (lipiden) in de huid van het ooglid. Het hangt vaak samen met een verhoogd cholesterol, en daarom is het ook iets voor je huisarts.":
+    "No es una bolsa sino una acumulación de grasa (lípidos) en la piel del párpado. Suele estar relacionada con un colesterol alto, y por eso es también algo para tu médico de cabecera.",
+  "Geen wal, wel iets wat we behandelen. In het consult stellen we vast of het xanthelasma is en wat er bij jou past; de cholesterolcontrole hoort bij de huisarts.":
+    "No es una bolsa, pero sí algo que tratamos. En la consulta determinamos si es xantelasma y qué te encaja; el control del colesterol corresponde al médico de cabecera.",
+  "Geen zorgopleiding, en dat hoort ook zo: hier wordt niets over jouw huid besloten.":
+    "Sin formación sanitaria, y así debe ser: aquí no se decide nada sobre tu piel.",
+  "Geldt dit ook als ik er zelf om vraag?": "¿Esto vale también si lo pido yo?",
+  "Geleidelijk de bovenlaag laten vernieuwen zodat de poriën weer opengaan, in stappen die je huid aankan.":
+    "Dejar que la capa superior se renueve poco a poco para que los poros se vuelvan a abrir, en pasos que tu piel aguante.",
+  "GentleMax Pro": "GentleMax Pro",
+  "Gesproken uitleg over hoe een acnetraject bij jongeren loopt: wat er in de eerste weken gebeurt, en waarom de huid soms eerst onrustiger wordt.":
+    "Explicación hablada de cómo va un programa de acné en jóvenes: qué pasa en las primeras semanas y por qué la piel a veces se altera más al principio.",
+  "Gezicht, hals": "Cara, cuello",
+  "Goed moment, met één opmerking: ga je op wintersport of naar de zon, zeg dat dan. Op de piste is de UV hoger dan in juni.":
+    "Buen momento, con una observación: si te vas a esquiar o al sol, dilo. En las pistas el UV es más alto que en junio.",
+  "Goed moment. Vanaf nu wordt de resterende tijd wel korter.":
+    "Buen momento. A partir de ahora el tiempo que queda sí se acorta.",
+  "Google Analytics en Microsoft Clarity laden op deze site. Je kunt dat hieronder meteen terugdraaien.":
+    "Google Analytics y Microsoft Clarity se cargan en esta web. Puedes revertirlo aquí abajo ahora mismo.",
+  "Grauwe tint, weinig glans": "Tono grisáceo, poca luminosidad",
+  "Grijs, wit en rood haar": "Pelo gris, blanco y rojo",
+  "Groeit iets, verschiet het van kleur, of heeft het een rafelige rand? Dan gaat het eerst naar de huisarts. Wegbranden maakt niet alleen de plek weg maar ook de mogelijkheid om hem te beoordelen, en dat is een fout die niet te herstellen is.":
+    "¿Crece algo, cambia de color o tiene un borde irregular? Entonces va primero al médico de cabecera. Quemarlo no solo elimina la mancha sino también la posibilidad de valorarla, y ese es un error que no se puede reparar.",
+  "Grover haar verdwijnt merkbaar":
+    "El pelo más grueso desaparece de forma apreciable",
+  "Haar dat op dit moment niet groeit": "Pelo que en este momento no crece",
+  "Haarfollikels in rustfase bereiken": "Alcanzar folículos en fase de reposo",
+  "Harde witte bolletjes": "Bolitas blancas duras",
+  "Harde witte bolletjes die je niet kunt uitdrukken.":
+    "Bolitas blancas duras que no puedes apretar.",
+  "Heb ik een verwijzing nodig, en van wie?":
+    "¿Necesito una derivación, y de quién?",
+  "Helpt bemiddeling niet: de geschillencommissie":
+    "Si la mediación no ayuda: la comisión de disputas",
+  "Herken je klacht en zie wat eraan te doen is":
+    "Reconoce tu problema y mira qué se puede hacer",
+  "Herstel op gang brengen in het bindweefsel, met microneedling of laser, in een reeks over maanden. De vorm van het putje bepaalt wat er zin heeft.":
+    "Poner en marcha la reparación en el tejido conjuntivo, con microneedling o láser, en una serie a lo largo de meses. La forma del hoyo determina qué tiene sentido.",
+  "Herstel op gang brengen in het bindweefsel, met microneedling of laser, in een reeks over maanden. Resultaat is minder diep, niet weg.":
+    "Poner en marcha la reparación en el tejido conjuntivo, con microneedling o láser, en una serie a lo largo de meses. El resultado es menos profundo, no desaparecido.",
+  "Het SkinPen-handstuk beweegt in banen over de wang van een client.":
+    "La pieza de mano del SkinPen se mueve en líneas por la mejilla de un cliente.",
+  "Het bericht kon niet verstuurd worden.":
+    "El mensaje no se ha podido enviar.",
+  "Het bestaat en er zijn plekken die het goed doen. Wij bieden het alleen niet aan, en dan is doorverwijzen eerlijker dan iets erbij verzinnen.":
+    "Existe y hay sitios que lo hacen bien. Solo que nosotros no lo ofrecemos, y entonces derivar es más honesto que inventarse algo.",
+  "Het beste startmoment. Je hebt vijf maanden met lage UV voor de boeg.":
+    "El mejor momento para empezar. Tienes por delante cinco meses con UV bajo.",
+  "Het effect van een behandeling op dofheid zakt na verloop van tijd. Dat is normaal en geen reden om steeds dieper te gaan. Wie die trap opgaat houdt een geïrriteerde huid over die juist doffer oogt.":
+    "El efecto de un tratamiento sobre la piel apagada baja con el tiempo. Es normal y no es motivo para ir cada vez más profundo. Quien sube esa escalera acaba con una piel irritada que se ve justo más apagada.",
+  "Het handstuk gaat in banen over de huid. Wat je hoort is het apparaat; wat je ziet is de roodheid die er meteen na de sessie bij hoort en binnen een dag wegtrekt.":
+    "La pieza de mano pasa en líneas por la piel. Lo que oyes es el aparato; lo que ves es la rojez que va con ello justo después de la sesión y que desaparece en un día.",
+  "Het hele acnetraject naast de medicatie, mits de timing klopt. Veel mensen komen juist ná zo een kuur voor de littekens en de textuur die overblijven, en dat is precies waar wij voor zijn. Tijdens de kuur kijken we mee zonder te behandelen.":
+    "Todo el programa de acné junto a la medicación, siempre que el momento sea el adecuado. Mucha gente viene justo después de una cura así por las cicatrices y la textura que quedan, y para eso estamos exactamente. Durante la cura hacemos seguimiento sin tratar.",
+  "Het kan even slechter lijken": "Puede parecer peor durante un tiempo",
+  "Het laserhandstuk wordt tegen de binnen- en buitenzijde van de lippen gehouden.":
+    "La pieza de mano del láser se apoya contra la parte interior y exterior de los labios.",
+  "Het litteken is uitgerijpt. De bloedvaten zijn grotendeels verdwenen en het collageen ligt in zijn eindstand. Er verandert van nature bijna niets meer.":
+    "La cicatriz ha madurado. Los vasos sanguíneos han desaparecido en gran parte y el colágeno está en su posición final. De forma natural ya casi no cambia nada.",
+  "Het maakt weinig uit waar het licht vandaan komt":
+    "Importa poco de dónde viene la luz",
+  "Het meeste ligt vast, maar er is nog iets anders dat het verschil kan verklaren. Bij deze foto's kun je niet uitsluiten dat je naar de omstandigheden kijkt.":
+    "Casi todo está fijado, pero todavía hay otra cosa que puede explicar la diferencia. Con estas fotos no puedes descartar que estés mirando las condiciones.",
+  "Het patroon in de tijd wijst op een hormonale factor. Huidbehandeling verbetert het beeld, maar de oorzaak ligt vaak dieper.":
+    "El patrón en el tiempo apunta a un factor hormonal. El tratamiento de la piel mejora la imagen, pero la causa suele estar más profunda.",
+  "Het rood trekt weg onder je vinger en komt daarna langzaam terug.":
+    "El rojo desaparece bajo tu dedo y después vuelve despacio.",
+  "Het venster is gesloten": "La ventana se ha cerrado",
+  "Het venster sluit": "La ventana se cierra",
+  "Het versturen staat nog niet aan.": "El envío todavía no está activado.",
+  "Het vetkussentje achter je oog duwt naar voren doordat het membraan dat het op zijn plek houdt verslapt. Er zit dan niets extra's; het staat alleen op een andere plek.":
+    "La almohadilla de grasa de detrás del ojo empuja hacia delante porque la membrana que la sujeta en su sitio se afloja. No hay nada de más; solo está en otro sitio.",
+  "Het vlak trekt weg terwijl de lijntjes blijven staan. Daar zie je het onderscheid het duidelijkst.":
+    "El área plana palidece mientras las líneas siguen ahí. Ahí es donde ves la diferencia con más claridad.",
+  "Hier boeken we vaak binnen enkele weken zichtbare winst. Dat is meteen de reden dat we hier meestal beginnen.":
+    "Aquí solemos conseguir una mejora visible en pocas semanas. Es también la razón de que normalmente empecemos por aquí.",
+  "Hier doet licht niets: het pigment zit in weefsel dat boven de huid uitsteekt. Verwijderen kan wel, maar dat gebeurt eerst na beoordeling.":
+    "Aquí la luz no hace nada: el pigmento está en tejido que sobresale de la piel. Quitarlo sí se puede, pero solo después de una valoración.",
+  "Hier gaat een eigen traject over, met andere regels en een ander tempo. De melasmapagina legt dat uit.":
+    "De esto se ocupa un programa propio, con otras reglas y otro ritmo. La página del melasma lo explica.",
+  "Hier helpt laserontharing niet. Wat wel iets doet is de bovenlaag geleidelijk soepeler maken, en de verwachting daarbij eerlijk houden.":
+    "Aquí la depilación láser no ayuda. Lo que sí hace algo es suavizar poco a poco la capa superior, y mantener honesta la expectativa al respecto.",
+  "Hier is de Nd:YAG niet de voorkeur maar de enige juiste keuze. Een sterk door pigment opgenomen golflengte hoort op deze huid niet thuis.":
+    "Aquí la Nd:YAG no es la preferencia sino la única elección correcta. Una longitud de onda que el pigmento absorbe con fuerza no tiene cabida en esta piel.",
+  "Hier is de volgorde belangrijker dan de techniek":
+    "Aquí el orden importa más que la técnica",
+  "Hier is het eerlijke antwoord dat we weinig kunnen beloven. De structuur is deels te verbeteren, de witte kleur vrijwel niet. Volledige verdwijning beloven we hier dus niet.":
+    "Aquí la respuesta honesta es que podemos prometer poco. La textura se puede mejorar en parte, el color blanco casi nada. Así que aquí no prometemos una desaparición completa.",
+  "Hier is ons antwoord vaak dat de winst beperkt is. We laten dat zien met de meting in plaats van dat je het moet geloven.":
+    "Aquí nuestra respuesta suele ser que la ganancia es limitada. Lo enseñamos con la medición en lugar de pedirte que te lo creas.",
+  "Hier kijkt eerst iemand anders": "Aquí primero lo mira otra persona",
+  "Hier ligt het antwoord niet": "Aquí no está la respuesta",
+  "Hier ligt het enige punt dat volledig bij jou ligt. Nagels kort, koelen in plaats van krabben, en 's nachts iets tussen je nagels en je huid. Dat klinkt klein en het is de meest onderschatte stap.":
+    "Aquí está el único punto que depende por completo de ti. Uñas cortas, enfriar en lugar de rascar, y por la noche algo entre las uñas y la piel. Suena a poco y es el paso más subestimado.",
+  "Hier ligt het op de grens. De bovenlaag neemt al een deel van de 755 op, en of dat te veel is hangt af van hoe jouw huid op zon reageert. Dat bepalen we bij de intake en niet op deze pagina.":
+    "Aquí está en el límite. La capa superior ya absorbe una parte de los 755, y si eso es demasiado depende de cómo reacciona tu piel al sol. Eso lo determinamos en la consulta previa y no en esta página.",
+  "Hier niet mee wachten. Schade aan een gewricht is blijvend, en juist daarom telt het als je er vroeg bij bent. Noem het bij je huisarts, ook als de huidplekken meevallen.":
+    "Con esto no esperes. El daño en una articulación es permanente, y justo por eso cuenta que lo cojas a tiempo. Coméntalo a tu médico de cabecera, también si las placas de la piel son leves.",
+  "Hier valt het meeste te winnen en het kost bijna niets":
+    "Aquí es donde más se puede ganar y casi no cuesta nada",
+  "Hier valt iets weg te laten": "Aquí hay algo que dejar fuera",
+  "Hier valt wel iets te doen. De poriën ontlasten, de verhoorning aanpakken en kijken wat het opnieuw laat vollopen.":
+    "Aquí sí hay algo que hacer. Aliviar los poros, abordar la queratinización y ver qué los vuelve a llenar.",
+  "Hier verandert ontharen niets": "Aquí depilar no cambia nada",
+  "Hier verkopen we niets. We benoemen het, want een behandeling die tegen je gewoontes in werkt is weggegooid geld.":
+    "Aquí no vendemos nada. Lo señalamos, porque un tratamiento que va en contra de tus hábitos es dinero tirado.",
+  "Hier verkopen wij niets": "Aquí no vendemos nada",
+  "Hier verwijzen we door, omdat de juiste behandeling buiten onze praktijk ligt.":
+    "Aquí derivamos, porque el tratamiento correcto está fuera de nuestra clínica.",
+  "Hier werken we aan de huid rondom de porie en niet aan de porie zelf. Dat is het verschil tussen minder zichtbaar en kleiner.":
+    "Aquí trabajamos sobre la piel alrededor del poro y no sobre el propio poro. Esa es la diferencia entre menos visible y más pequeño.",
+  "Hier werken we op de huid rondom en op de glans erop. De opening zelf laten we met rust, want daar valt niets aan te doen.":
+    "Aquí trabajamos sobre la piel de alrededor y sobre el brillo que hay encima. La propia abertura la dejamos en paz, porque ahí no hay nada que hacer.",
+  "Hier zeggen we nee, en we verwijzen door. Dat is geen onwil: het is het verschil tussen aanspannen en verwijderen.":
+    "Aquí decimos que no, y derivamos. No es falta de voluntad: es la diferencia entre tensar y quitar.",
+  "Hier zeggen we nee. Dit is chirurgie en geen huidbehandeling; een cosmetisch arts of oogarts kan er wél iets aan doen.":
+    "Aquí decimos que no. Esto es cirugía y no un tratamiento de la piel; un médico estético o un oftalmólogo sí pueden hacer algo.",
+  "Hier zeggen we nee. Wij behandelen huid, geen volume. We vertellen je wat wél realistisch is en wat je elders zou moeten zoeken.":
+    "Aquí decimos que no. Tratamos piel, no volumen. Te contamos qué sí es realista y qué tendrías que buscar en otro sitio.",
+  "Hier zijn wij eerlijk: voor een zuivere mimieklijn is een injectable de gangbare route, en dat doen wij niet. Wel kunnen we de huid eromheen steviger maken, waardoor de vouw minder snel blijft staan.":
+    "Aquí somos honestos: para una línea de expresión pura, un inyectable es la vía habitual, y eso no lo hacemos. Lo que sí podemos es hacer más firme la piel de alrededor, para que el pliegue tarde más en quedarse marcado.",
+  "Hier zijn wij het niet": "Aquí no somos nosotros",
+  "Hier zit de meeste winst, en hier gaat het ook het vaakst mis. Te hard schrobben beschadigt de barrière en maakt het laatste stadium erger.":
+    "Aquí está la mayor parte de la ganancia, y aquí es también donde más a menudo sale mal. Frotar demasiado fuerte daña la barrera y empeora la última fase.",
+  "Hier zitten de grootste poriën van je gezicht. Meestal mee-eters, minder vaak echte ontsteking.":
+    "Aquí están los poros más grandes de tu cara. Normalmente puntos negros, con menos frecuencia inflamación de verdad.",
+  "Hiervoor is een injectable of een ingreep de gangbare route, en daar werken wij niet mee. Dan verwijzen we liever door.":
+    "Para esto la vía habitual es un inyectable o una intervención, y con eso no trabajamos. Entonces preferimos derivar.",
+  "Hitte en vocht maken het vervellen onvoorspelbaar.":
+    "El calor y la humedad hacen imprevisible la descamación.",
+  "Hitte houdt de roodheid langer aan.":
+    "El calor mantiene la rojez más tiempo.",
+  "Hitte is bij pigment een bekende aanjager.":
+    "En el pigmento, el calor es un desencadenante conocido.",
+  "Hitte op een net verwarmde huid.": "Calor sobre una piel recién calentada.",
+  "Hitte verlengt de roodheid en het risico.":
+    "El calor prolonga la rojez y el riesgo.",
+  "Hitte verwijdt de vaten en dat verlengt de roodheid.":
+    "El calor dilata los vasos y eso prolonga la rojez.",
+  "Hoe diep de oneffenheid zit. Blijft het bij de bovenlaag, dan is de aanpak een andere dan wanneer het bindweefsel eronder is aangedaan.":
+    "A qué profundidad está la irregularidad. Si se queda en la capa superior, el enfoque es otro que cuando el tejido conjuntivo de debajo está afectado.",
+  "Hoe dit apparaat": "Cómo este aparato",
+  "Hoe een traject": "Cómo es un programa",
+  "Hoe je huid op de eerste puls reageert en in welke groeifase je haren zitten. Dat bepaalt de instelling en het interval van je reeks.":
+    "Cómo reacciona tu piel al primer pulso y en qué fase de crecimiento están tus pelos. Eso determina la configuración y el intervalo de tu serie.",
+  "Hoe lang speelt dit al?": "¿Desde cuándo pasa esto?",
+  "Hoe laserontharing werkt": "Cómo funciona la depilación láser",
+  "Hoe reageert je huid op de zon?": "¿Cómo reacciona tu piel al sol?",
+  "Hoe verleidelijk ook, agressief werken geeft hier vaak meer pigment in plaats van minder. Dat is bij melasma een bekend en pijnlijk patroon.":
+    "Por tentador que sea, trabajar de forma agresiva aquí suele dar más pigmento en lugar de menos. En el melasma es un patrón conocido y doloroso.",
+  "Hoe voelt je huid meestal?": "¿Cómo se nota tu piel normalmente?",
+  "Hoeveel er nodig is hangt af van hoeveel vaatjes er zichtbaar zijn en hoe diep ze liggen. Dat zien we bij de eerste afspraak, en daarna hoor je een reëel aantal in plaats van een schatting aan de telefoon.":
+    "Cuánto hace falta depende de cuántos vasos se ven y a qué profundidad están. Eso lo vemos en la primera cita, y después oyes un número real en lugar de una estimación por teléfono.",
+  "Hoeveel jaar jonger je eruitziet valt niet te meten, dus dat zeggen we ook niet. We laten je zien wat er in kleur en structuur veranderde, met de meting ernaast.":
+    "Cuántos años más joven pareces no se puede medir, así que tampoco lo decimos. Te enseñamos qué cambió en color y textura, con la medición al lado.",
+  "Hoeveel sessies je nodig hebt hangt af van de zone, je huidtype en je haargroei. Dat hoor je tijdens de intake, en niet ervoor.":
+    "Cuántas sesiones necesitas depende de la zona, tu tipo de piel y tu crecimiento del vello. Eso lo oyes durante la consulta previa, y no antes.",
+  "Hoeveel stevigheid er onder de lijntjes nog zit. Verslapping vraagt iets anders dan lijntjes in de bovenlaag, en dat onderscheid maak je niet in de spiegel.":
+    "Cuánta firmeza queda todavía bajo las líneas. La flacidez pide algo distinto que las líneas en la capa superior, y esa distinción no la haces en el espejo.",
+  "Hoge UV. Pigmentcellen zijn actief en reageren op elke prikkel.":
+    "UV alto. Las células de pigmento están activas y reaccionan a cualquier estímulo.",
+  "Hormonaal pigment": "Pigmento hormonal",
+  "Hormonale acne is niet voorbehouden aan tieners. We zien het net zo vaak bij mensen van dertig en veertig.":
+    "El acné hormonal no está reservado a los adolescentes. Lo vemos igual de a menudo en personas de treinta y cuarenta años.",
+  "Hormonen plus UV plus warmte. Zwangerschap en de pil zijn bekende factoren, en zelfs warmte alleen kan het aanwakkeren.":
+    "Hormonas más UV más calor. El embarazo y la píldora son factores conocidos, e incluso el calor por sí solo puede avivarlo.",
+  "Houd ons aan": "Exígenoslo",
+  "Huidkleurige tot witte bultjes zonder rode rand, vaak op voorhoofd en kaaklijn. Je voelt ze eerder dan je ze ziet.":
+    "Bultitos del color de la piel a blancos sin borde rojo, a menudo en la frente y la línea de la mandíbula. Los notas antes de verlos.",
+  "Huidtextuur en poriën": "Textura de la piel y poros",
+  "Huidtherapeut in opleiding": "Terapeuta de la piel en formación",
+  "Huidtherapie en huidverbetering": "Terapia de la piel y mejora de la piel",
+  "Huiduitslag is een symptoom met tientallen oorzaken, waarvan een deel spoedeisend is. Daar hoort een arts naar te kijken en niet een huidkliniek.":
+    "Una erupción es un síntoma con decenas de causas, de las que una parte es urgente. Eso lo tiene que mirar un médico y no una clínica de la piel.",
+  "Iets omlaag, maar de zomerschade is nu opgebouwd.":
+    "Algo más bajo, pero el daño del verano ya se ha acumulado.",
+  "In de eerste maanden doen we niets. Behandelen in die fase verstoort de genezing en kan het litteken juist dikker maken. Je krijgt advies mee en een afspraak over drie maanden.":
+    "En los primeros meses no hacemos nada. Tratar en esa fase altera la curación y puede hacer la cicatriz justo más gruesa. Te llevas un consejo y una cita dentro de tres meses.",
+  "In deze video legt de behandelaar uit wat er op het scherm verschijnt en wat je eraan hebt. Zet het geluid aan, want het is de uitleg die het punt maakt.":
+    "En este vídeo la terapeuta explica qué aparece en la pantalla y qué te aporta. Activa el sonido, porque es la explicación la que marca la diferencia.",
+  "In die afgesloten porie zit geen zuurstof meer. Een bacterie die altijd al op je huid leeft, krijgt daar ineens de ruimte.":
+    "En ese poro cerrado ya no queda oxígeno. Una bacteria que siempre ha vivido en tu piel encuentra ahí de repente espacio.",
+  "In overleg": "A convenir",
+  "Ingegroeide haren, en geen keratosis pilaris. Het onderscheid zit in de plek en in de vraag of er een haar in zit.":
+    "Pelos encarnados, y no queratosis pilaris. La diferencia está en el sitio y en si hay un pelo dentro.",
+  "Intake + huidtype + eerste sessie":
+    "Consulta previa + fototipo + primera sesión",
+  "Interval wordt ruimer": "El intervalo se alarga",
+  "Is de bolling 's avonds net zo groot als 's ochtends, en wordt hij duidelijker als je omhoog kijkt?":
+    "¿El abultamiento es por la noche igual de grande que por la mañana, y se ve más claro cuando miras hacia arriba?",
+  "Is de bovenkant donker in plaats van wit, en zie je een opening in de huid?":
+    "¿La parte de arriba es oscura en lugar de blanca, y ves una abertura en la piel?",
+  "Is de huid glad geworden maar zit de kleur er nog, en wordt het donkerder na de zon?":
+    "¿La piel se ha vuelto lisa pero el color sigue ahí, y se oscurece después del sol?",
+  "Is de plek de afgelopen maanden anders geworden: groter, donkerder, ongelijk van kleur, of met een rafelige rand?":
+    "¿La mancha ha cambiado en los últimos meses: más grande, más oscura, de color desigual o con un borde irregular?",
+  "Is de plek glad maar bruin of grijsbruin, en wordt hij donkerder na een dag in de zon?":
+    "¿La mancha es lisa pero marrón o marrón grisácea, y se oscurece después de un día al sol?",
+  "Is de tint duidelijk erger na weken van slecht slapen en beter na een vakantie, dan is er geen huidprobleem maar een periode. Wij benoemen dat liever dan dat we er een traject tegenover zetten dat tegen je gewoontes in moet werken.":
+    "Si el tono es claramente peor tras semanas de dormir mal y mejor tras unas vacaciones, no hay un problema de piel sino un periodo. Preferimos decirlo antes que ponerle enfrente un programa que tiene que trabajar en contra de tus hábitos.",
+  "Is het de afgelopen maanden anders geworden: groter, donkerder, ongelijk van kleur, of bloedt het zonder dat je eraan zat?":
+    "¿Ha cambiado en los últimos meses: más grande, más oscuro, de color desigual, o sangra sin que lo hayas tocado?",
+  "Is het duidelijk erger na een slechte week en beter na een vakantie? Verandert het met je slaap en hoeveel je drinkt?":
+    "¿Es claramente peor después de una mala semana y mejor después de unas vacaciones? ¿Cambia con tu sueño y con cuánto bebes?",
+  "Is het geen milium en geen mee-eter, dan gaan we niet raden. Dan kijkt eerst iemand anders ernaar, ook als je er speciaal voor gekomen bent.":
+    "Si no es un milium ni un punto negro, no vamos a adivinar. Entonces primero lo mira otra persona, también si has venido especialmente para eso.",
+  "Is het gelijkmatig bruin, rond en scherp begrensd, en zit het er al sinds je jeugd of tienertijd?":
+    "¿Es de un marrón uniforme, redondo y bien delimitado, y está ahí desde tu infancia o adolescencia?",
+  "Is het op dit moment actief, dan werken we eerst aan de barrière en pakken we het gebied zelf aan zodra het rustig is. Een geïrriteerde huid reageert feller en het resultaat is slechter.":
+    "Si en este momento está activo, primero trabajamos sobre la barrera y abordamos la zona en sí en cuanto esté tranquila. Una piel irritada reacciona con más fuerza y el resultado es peor.",
+  "Is het rood en glad, dan is de kans groot dat het over een paar maanden weg is. Dan zeggen we dat, ook als je hier zat om iets te boeken. Blijft het staan, dan kun je altijd terugkomen.":
+    "Si está rojo y liso, hay muchas probabilidades de que en unos meses haya desaparecido. Entonces lo decimos, también si estabas aquí para reservar algo. Si se queda, siempre puedes volver.",
+  "Is het rood, warm en gevoelig, en is het in dagen ontstaan in plaats van in maanden?":
+    "¿Está rojo, caliente y sensible, y ha aparecido en días en lugar de en meses?",
+  "Is je huid geïrriteerd, dan sturen we je eerst twee weken naar huis met minder in plaats van meer. Dat kost ons een afspraak en het scheelt jou een teleurstelling.":
+    "Si tu piel está irritada, primero te mandamos dos semanas a casa con menos en lugar de más. A nosotros nos cuesta una cita y a ti te ahorra una decepción.",
+  "Ja, en bij verschillende regels is dat precies het geval: mensen vragen om een behandeling waarvan wij weten dat hij te weinig oplevert. Het antwoord blijft hetzelfde.":
+    "Sí, y en varias reglas es exactamente el caso: la gente pide un tratamiento del que sabemos que aporta demasiado poco. La respuesta sigue siendo la misma.",
+  "Ja, het wisselt sterk": "Sí, varía mucho",
+  "Ja, voorzichtig. Dit is het enige type dat echt op behandeling reageert. De huid daar is dun en gevoelig, dus we gaan hier langzamer te werk dan elders in het gezicht.":
+    "Sí, con cuidado. Es el único tipo que de verdad responde al tratamiento. La piel de ahí es fina y sensible, así que aquí vamos más despacio que en el resto de la cara.",
+  "Je acne zit in meerdere zones die elk iets anders kunnen betekenen. Dat komt vaak voor en het is geen slecht teken; het betekent alleen dat we beter moeten kijken voordat we iets doen.":
+    "Tu acné está en varias zonas que pueden significar cada una algo distinto. Es frecuente y no es mala señal; solo significa que tenemos que mirar mejor antes de hacer nada.",
+  "Je afweer ruimt op. De roodheid en de zwelling komen van jouw afweerreactie en niet van de bacterie zelf. Daarom is een puistje warm.":
+    "Tus defensas están limpiando. La rojez y la hinchazón vienen de tu reacción inmunitaria y no de la propia bacteria. Por eso un grano está caliente.",
+  "Je barrière doet wat hij hoort te doen: vet vasthouden en water binnenhouden. Er valt hier weinig te repareren.":
+    "Tu barrera hace lo que debe: retener grasa y mantener el agua dentro. Aquí hay poco que reparar.",
+  "Je doel": "Tu objetivo",
+  "Je gaf aan dat het sterk wisselt. Dan speelt vocht mee bovenop wat hierboven staat. Dat is geen aparte oorzaak en ook niets wat wij behandelen, maar het verklaart wel waarom je op sommige dagen denkt dat een behandeling niet werkt.":
+    "Indicaste que varía mucho. Entonces el líquido influye por encima de lo que pone arriba. No es una causa aparte y tampoco es algo que tratemos, pero sí explica por qué algunos días piensas que un tratamiento no funciona.",
+  "Je gaf aan snel geïrriteerd te zijn. Er wordt dan meestal met een lagere sterkte begonnen.":
+    "Indicaste que te irritas con facilidad. Entonces normalmente se empieza con una intensidad más baja.",
+  "Je gaf hierboven iets opvallends aan. Dat betekent niet dat er iets mis is, en het is ook niet aan ons om dat te beoordelen. Het betekent dat iemand met de juiste opleiding en de juiste apparatuur ernaar hoort te kijken.":
+    "Arriba indicaste algo llamativo. Eso no significa que haya algo mal, y tampoco nos corresponde a nosotros valorarlo. Significa que alguien con la formación adecuada y el equipo adecuado debe mirarlo.",
+  "Je gaf iets aan waarbij een arts hoort te kijken. Dat gaat vóór alles wat hieronder staat, en het is geen reden tot paniek maar wel om het niet te laten liggen. Bij ziek zijn met uitslag: bel vandaag.":
+    "Indicaste algo que debe mirar un médico. Eso va antes que todo lo que pone abajo, y no es motivo de pánico pero sí para no dejarlo estar. Si te encuentras mal con una erupción: llama hoy.",
+  "Je gaf op geen enkel punt iets opvallends aan. Dat is nog geen geruststelling, want een zelfcheck kan niet zien wat een arts met een dermatoscoop wel ziet. Blijf kijken, en ga langs zodra er iets verandert.":
+    "No indicaste nada llamativo en ningún punto. Eso todavía no es una tranquilidad, porque un autoexamen no puede ver lo que sí ve un médico con un dermatoscopio. Sigue mirando, y acude en cuanto cambie algo.",
+  "Je gebruikt niets bijzonders op je huid.":
+    "No usas nada especial en la piel.",
+  "Je gebruikt retinol of zuren. Die moet je tijdig pauzeren; hoe lang hoor je tijdens de intake.":
+    "Usas retinol o ácidos. Tienes que pausarlos a tiempo; cuánto tiempo lo oyes en la consulta previa.",
+  "Je hebt anonieme statistieken geweigerd":
+    "Has rechazado las estadísticas anónimas",
+  "Je hebt anonieme statistieken toegestaan":
+    "Has permitido las estadísticas anónimas",
+  "Je hebt geen hersteltijd: je moet er meteen weer normaal uitzien. Dat sluit een deel van de lijst uit, en dat is beter dan erachter komen op de dag zelf.":
+    "No tienes tiempo de recuperación: tienes que volver a tener un aspecto normal enseguida. Eso descarta una parte de la lista, y es mejor que descubrirlo el mismo día.",
+  "Je hebt net een zuur gehad; nog een is te veel.":
+    "Acabas de recibir un ácido; otro es demasiado.",
+  "Je hebt nog niet gezegd wat je wil veranderen":
+    "Todavía no has dicho qué quieres cambiar",
+  "Je hoeft niet te doen alsof je het snapt. Vraag door tot het klopt; daar is de tijd voor.":
+    "No tienes que hacer como que lo entiendes. Pregunta hasta que te cuadre; para eso hay tiempo.",
+  "Je hoeft niet terug te komen. De meting is van jou, ook als je verder niets doet.":
+    "No tienes que volver. La medición es tuya, también si no haces nada más.",
+  "Je hoeft niets af te spreken. Niet vandaag, en niet aan de balie. Je krijgt het mee en denkt er thuis over na.":
+    "No tienes que concertar nada. Ni hoy, ni en el mostrador. Te lo llevas y lo piensas en casa.",
+  "Je hoeft niets te ondergaan. Er wordt in deze afspraak niet behandeld, ook niet een klein stukje.":
+    "No tienes que someterte a nada. En esta cita no se trata, ni siquiera un trocito.",
+  "Je hoort dan meteen om hoeveel sessies het gaat en wat het totaal wordt.":
+    "Entonces oyes enseguida de cuántas sesiones se trata y cuál será el total.",
+  "Je huid heeft pigment gemaakt tijdens het genezen. Dit is geen litteken, ook al voelt het zo.":
+    "Tu piel ha producido pigmento mientras curaba. No es una cicatriz, aunque lo parezca.",
+  "Je huid is net gereinigd en tijdelijk gevoeliger.":
+    "Tu piel acaba de limpiarse y está temporalmente más sensible.",
+  "Je huisarts of gynaecoloog. Die stelt vast of er sprake van is en wat eraan te doen valt.":
+    "Tu médico de cabecera o tu ginecólogo. Determina si es el caso y qué se puede hacer.",
+  "Je huisarts voor de aandoening zelf.":
+    "Tu médico de cabecera para la afección en sí.",
+  "Je huisarts, of via een verwijzing een dermatoloog.":
+    "Tu médico de cabecera, o mediante una derivación un dermatólogo.",
+  "Je huisarts. Die beoordeelt en verwijst zo nodig door naar een dermatoloog. Wacht daar niet mee tot een afspraak hier uitkomt.":
+    "Tu médico de cabecera. Valora y, si hace falta, deriva a un dermatólogo. No esperes para eso a que salga una cita aquí.",
+  "Je huisarts. Loopt er al een traject met isotretinoïne, meld dat hier dan wel: het bepaalt wat er de eerste maanden daarna kan.":
+    "Tu médico de cabecera. Si ya hay en marcha un tratamiento con isotretinoína, dilo aquí: determina lo que se puede hacer en los primeros meses después.",
+  "Je kunt beschermen maar niet vermijden. Bij rosacea is UV zowel trigger als versneller.":
+    "Puedes proteger pero no evitar. En la rosácea el UV es a la vez desencadenante y acelerador.",
+  "Je kunt een avond en een nacht rood zijn, langer niet.":
+    "Puedes tener la piel roja una tarde y una noche, no más.",
+  "Je kunt een paar dagen herstel inplannen. Dat opent de zwaardere behandelingen.":
+    "Puedes planificar unos días de recuperación. Eso abre la puerta a los tratamientos más intensos.",
+  "Je meting blijft bewaard als beginpunt onder vaste belichting. Bij een volgende afspraak leggen we de opnames naast elkaar en zie je wat er veranderd is.":
+    "Tu medición se guarda como punto de partida bajo iluminación fija. En una próxima cita ponemos las capturas una junto a otra y ves qué ha cambiado.",
+  "Je meting blijft bewaard als beginpunt. Kom je over een half jaar terug, dan leggen we de nieuwe ernaast en zie je het verschil in plaats van dat je het moet geloven.":
+    "Tu medición se guarda como punto de partida. Si vuelves dentro de medio año, ponemos la nueva al lado y ves la diferencia en lugar de tener que creértela.",
+  "Je routine doorgelicht": "Tu rutina a examen",
+  "Je vergelijkt met je eigen huid van drie maanden geleden, niet met iemand anders.":
+    "Te comparas con tu propia piel de hace tres meses, no con la de otra persona.",
+  "Je vochtwaarde en de staat van je barrière, gemeten in plaats van gevoeld. Een huid die trekkerig aanvoelt is niet altijd een droge huid.":
+    "Tu nivel de hidratación y el estado de tu barrera, medidos en lugar de sentidos. Una piel que se nota tirante no siempre es una piel seca.",
+  "Je weet dat er iets is, maar niet precies wat. Dat is een prima startpunt: uitzoeken wát het is, is het werk van de meting.":
+    "Sabes que hay algo, pero no exactamente qué. Es un punto de partida estupendo: averiguar qué es, es el trabajo de la medición.",
+  "Je weet welke behandelingen bij jouw huid horen en welke niet. Dat scheelt vaak honderden euro's en een paar maanden aan iets dat toch niets ging doen.":
+    "Sabes qué tratamientos van con tu piel y cuáles no. Eso a menudo ahorra cientos de euros y unos meses en algo que de todos modos no iba a hacer nada.",
+  "Je ziet een verschil, maar niet waarvan":
+    "Ves una diferencia, pero no de qué viene",
+  "Je ziet textuur alleen doordat er schaduw in zit. Verplaats de lamp en je verplaatst de schaduw, terwijl de huid geen millimeter veranderd is.":
+    "Solo ves la textura porque hay sombra en ella. Mueve la lámpara y mueves la sombra, mientras la piel no ha cambiado ni un milímetro.",
+  "Je zit nergens aan vast": "No te comprometes a nada",
+  "Jongerentraject acne": "Programa juvenil de acné",
+  "Jouw eigen vertrekpunt": "Tu propio punto de partida",
+  "Jouw plan": "Tu plan",
+  "Jouw triggers zijn niet te vermijden":
+    "Tus desencadenantes no se pueden evitar",
+  "Kaaklijn en wangen": "Línea de la mandíbula y mejillas",
+  "Kaaklijn is een aanwijzing": "La línea de la mandíbula es una pista",
+  "Kan bij jou nu niet": "Ahora no es posible en tu caso",
+  "Kan niet op een gebruinde huid: het licht wordt dan opgenomen door het pigment in je huid in plaats van door het doel.":
+    "No es posible sobre una piel bronceada: la luz la absorbe entonces el pigmento de tu piel en lugar del objetivo.",
+  "Kan nog, maar dan wel met zonbescherming vanaf dag één. Anders werken we tegen de zon in.":
+    "Todavía se puede, pero con protección solar desde el primer día. Si no, trabajamos en contra del sol.",
+  "Keloïd hoort bij de dermatoloog. Behandelen wij dat, dan is de kans op verergering reëel, en dat risico nemen we niet.":
+    "El queloide corresponde al dermatólogo. Si lo tratamos nosotros, la probabilidad de empeorarlo es real, y ese riesgo no lo corremos.",
+  "Keloïd komt vaker voor bij een donkere huid. Dat hangt samen met aanleg en niet met verzorging.":
+    "El queloide es más frecuente en una piel oscura. Tiene que ver con la constitución y no con el cuidado.",
+  "Keratosis pilaris is grotendeels erfelijk en niet te genezen. Wat wij kunnen is de huid soepeler en de roodheid minder maken, met onderhoud erbij. Wie hier een reeks van zes tegenover zet verkoopt hoop en levert een teleurstelling.":
+    "La queratosis pilaris es en gran parte hereditaria y no se cura. Lo que podemos es hacer la piel más suave y reducir la rojez, con mantenimiento. Quien le pone enfrente una serie de seis vende esperanza y entrega una decepción.",
+  "Kies eerst een doel": "Elige primero un objetivo",
+  "Kies eerst wat je wil veranderen.": "Elige primero qué quieres cambiar.",
+  "Kies wat het dichtst in de buurt komt. Er is geen fout antwoord.":
+    "Elige lo que más se acerque. No hay respuesta equivocada.",
+  "Kijk in de spiegel terwijl je iets voorover buigt, en daarna liggend. Verandert de vorm van je gezicht duidelijk, dan gaat het om verslapping en niet om lijnen.":
+    "Mírate en el espejo mientras te inclinas un poco hacia delante, y después acostándote. Si la forma de tu cara cambia claramente, se trata de flacidez y no de líneas.",
+  "Kijk recht vooruit in de spiegel en daarna met je kin iets omhoog. Wordt de lijn dan wel weer scherp, dan gaat het om de huid en nog niet om volume eronder.":
+    "Mírate de frente en el espejo y después con la barbilla un poco hacia arriba. Si la línea entonces vuelve a verse definida, se trata de la piel y todavía no del volumen de debajo.",
+  "Kin en kaaklijn samen is het klassieke beeld. Vaak in golven, vaak rond een vast moment in de maand, vaak diepere plekjes die langer blijven zitten.":
+    "Barbilla y línea de la mandíbula juntas es la imagen clásica. A menudo en oleadas, a menudo en torno a un momento fijo del mes, a menudo granos más profundos que se quedan más tiempo.",
+  "Kippenvelhuid op armen": "Piel de gallina en los brazos",
+  "Kippenvelhuid: ruwe bultjes op bovenarmen of dijen.":
+    "Piel de gallina: bultitos ásperos en la parte alta de los brazos o en los muslos.",
+  "Kleine bultjes die binnen een dag wegtrekken":
+    "Bultitos pequeños que desaparecen en un día",
+  "Kleine indeukingen op de wangen en slapen, meestal onregelmatiger verdeeld dan poriën en zonder opening.":
+    "Pequeños hundimientos en las mejillas y las sienes, normalmente repartidos de forma más irregular que los poros y sin abertura.",
+  "Kleur en structuur zijn nog goed te verbeteren. Volume niet, want dat doen wij niet. Een strakke kaaklijn hoort bij volume, en dat is een andere behandeling dan de onze.":
+    "El color y la textura todavía se pueden mejorar bien. El volumen no, porque eso no lo hacemos. Una línea de la mandíbula definida es cosa de volumen, y ese es un tratamiento distinto del nuestro.",
+  "Kom je binnen met een huid die overal op reageert, dan beginnen we met rust brengen. Je gaat naar huis met minder in plaats van meer, en over twee weken kijken we opnieuw.":
+    "Si entras con una piel que reacciona a todo, empezamos por calmarla. Te vas a casa con menos en lugar de más, y dentro de dos semanas volvemos a mirar.",
+  "Kom terug als je huid haar eigen kleur terug heeft. Hoeveel weken dat duurt hoor je tijdens de intake, want dat verschilt per huid.":
+    "Vuelve cuando tu piel haya recuperado su propio color. Cuántas semanas tarda lo oyes en la consulta previa, porque varía según la piel.",
+  "Komen er nog nieuwe ontstoken plekjes bij, dan behandelen we die eerst. Needlen of laseren in actieve acne verergert de ontsteking en kan het litteken vastzetten. Dat kost je maanden in plaats van dat het ze scheelt.":
+    "Si siguen saliendo granos inflamados nuevos, tratamos eso primero. Hacer needling o láser en un acné activo agrava la inflamación y puede fijar la cicatriz. Eso te cuesta meses en lugar de ahorrártelos.",
+  "Komen er regelmatig ontstoken plekken bij die zeer doen, en laten ze rode of donkere vlekjes achter?":
+    "¿Salen con regularidad granos inflamados que duelen, y dejan manchitas rojas u oscuras?",
+  "Komen er regelmatig ontstoken plekken bij, dan is dit de verkeerde pagina en het verkeerde traject. Dan gaat het over acne, met een eigen aanpak en een eigen volgorde.":
+    "Si salen con regularidad granos inflamados, esta es la página equivocada y el programa equivocado. Entonces se trata de acné, con su propio enfoque y su propio orden.",
+  "Komen we er samen niet uit, dan kun je terecht bij de klachtenfunctionaris van het Centraal Bureau Klachtenmanagement in de Zorg (CBKZ). Die staat los van ons, kiest geen partij, kost je niets en bemiddelt.":
+    "Si entre nosotros no lo resolvemos, puedes acudir a la persona encargada de reclamaciones del Centraal Bureau Klachtenmanagement in de Zorg (CBKZ), la oficina central de gestión de reclamaciones en la sanidad. Es independiente de nosotros, no toma partido, no te cuesta nada y media.",
+  "Komt er iets bij, dan komt het erbij. Wat er staat halen we er niet af zonder het te vermelden.":
+    "Si se añade algo, se añade. Lo que está aquí no lo quitamos sin decirlo.",
+  "Komt het in golven en rond een vast moment in de maand? Dan kijken we naar hormonen, niet naar je gezichtsreiniger.":
+    "¿Viene en oleadas y en torno a un momento fijo del mes? Entonces miramos a las hormonas, no a tu limpiador facial.",
+  "Komt het uit je neus, je tong of je kaakstand, dan doet een laser op het gehemelte daar weinig aan. Dan zeggen we dat, ook als je er al voor zat.":
+    "Si viene de la nariz, la lengua o la posición de la mandíbula, un láser en el paladar hace poco al respecto. Entonces lo decimos, también si ya estabas aquí para eso.",
+  "Kopieer je profiel": "Copia tu perfil",
+  "Korter dan 3 maanden": "Menos de 3 meses",
+  "Kou en druk": "Frío y presión",
+  "Koude CO2": "CO2 frío",
+  "Krabben geeft even opluchting doordat de jeukprikkel wordt overstemd. Daarna komt hij harder terug.":
+    "Rascarse alivia un momento porque el estímulo del picor queda tapado. Después vuelve con más fuerza.",
+  "Kruis aan wat je ziet en voelt, in gewone woorden.":
+    "Marca lo que ves y notas, con palabras corrientes.",
+  "Kuiltjes, rood of pigment": "Hoyos, rojez o pigmento",
+  "Kun je een plooi vastpakken die blijft hangen, dan gaat het om weefsel dat verwijderd of verplaatst moet worden. Dat is chirurgie. Een reeks van drie verkopen aan iemand die een lift zoekt is het duurste nee dat wij kunnen uitstellen.":
+    "Si puedes coger un pliegue que se queda colgando, se trata de tejido que hay que retirar o recolocar. Eso es cirugía. Vender una serie de tres a alguien que busca un lifting es el no más caro que podríamos aplazar.",
+  "Kun je het rond een weekend plannen, dan komt er wel iets vrij. Kan dat niet, dan is dat een eerlijk antwoord en geen reden om iets lichters te boeken dat niet gaat werken.":
+    "Si puedes planificarlo en torno a un fin de semana, sí se libera algo. Si no puedes, es una respuesta honesta y no un motivo para reservar algo más suave que no va a funcionar.",
+  "Laag genoeg om te behandelen zonder dat de zon het werk ongedaan maakt.":
+    "Lo bastante bajo para tratar sin que el sol deshaga el trabajo.",
+  "Laagste UV van het jaar.": "El UV más bajo del año.",
+  "Laat de bovenlaag eerst rustig loskomen.":
+    "Deja primero que la capa superior se desprenda con calma.",
+  "Laat dit nakijken door je huisarts":
+    "Haz que lo revise tu médico de cabecera",
+  "Langer dan 3 jaar": "Más de 3 años",
+  "Laser op een gebruinde huid": "Láser sobre una piel bronceada",
+  "Laserontharing gaat per reeks, niet per keer":
+    "La depilación láser va por series, no por sesiones sueltas",
+  "Laserontharing heeft een eigen tarief per zone, in twee lijsten: dames en heren. Van bovenlip tot volledige benen, los of als pakket.":
+    "La depilación láser tiene su propia tarifa por zona, en dos listas: mujeres y hombres. Del labio superior a las piernas completas, suelto o en paquete.",
+  "Laserontharing onderbenen": "Depilación láser de medias piernas",
+  "Lees de reviews": "Lee las reseñas",
+  "Leg een vinger op je jukbeen en trek de huid onder je oog voorzichtig een klein stukje naar beneden. Niet aan het ooglid zelf trekken. Kijk wat de donkerte doet.":
+    "Pon un dedo en el pómulo y tira con cuidado de la piel de debajo del ojo un poco hacia abajo. No tires del propio párpado. Mira qué hace la oscuridad.",
+  "Let hier op": "Fíjate en esto",
+  "Let op het moment": "Fíjate en el momento",
+  "Lichaamsbehandeling met een huidapparaat":
+    "Tratamiento corporal con un aparato para la piel",
+  "Licht erop": "Luz encima",
+  "Licht mikt op het pigment in de haarwortel. Blond, rood of grijs haar bevat daar te weinig van, en dan werkt het niet, hoeveel sessies je ook neemt. Dat stellen we vast voordat je iets afspreekt en niet erna.":
+    "La luz apunta al pigmento de la raíz del pelo. El pelo rubio, rojo o gris contiene demasiado poco, y entonces no funciona, por muchas sesiones que hagas. Eso lo determinamos antes de que reserves nada y no después.",
+  "Licht mikt op pigment. Zit er verse kleur in je huid van zon of zonnebank, dan neemt die het licht op en gaat de energie naar de verkeerde plek.":
+    "La luz apunta al pigmento. Si en tu piel hay color reciente del sol o de la cabina de rayos, ese color absorbe la luz y la energía va al sitio equivocado.",
+  "Licht recht van voren": "Luz de frente",
+  "Licht van boven maakt van elke holte een donkere plek. Verdwijnt de kring bij licht van voren, dan kijk je naar een schaduw en niet naar een kleur.":
+    "La luz desde arriba convierte cada hueco en una zona oscura. Si la ojera desaparece con luz de frente, estás mirando una sombra y no un color.",
+  "Lichtbruine tot donkere plekjes op gezicht, decolleté en handrug. Vaak scherp begrensd.":
+    "Manchitas de marrón claro a oscuro en la cara, el escote y el dorso de las manos. A menudo bien delimitadas.",
+  "Lichtgevoelige medicatie verandert hoe je huid op licht reageert. Neem de naam mee naar de intake.":
+    "La medicación fotosensibilizante cambia cómo reacciona tu piel a la luz. Trae el nombre a la consulta previa.",
+  "Liever niet. Behandelen nu geeft een grote kans dat het pigment terugkomt of donkerder wordt.":
+    "Mejor no. Tratar ahora da muchas probabilidades de que el pigmento vuelva o se oscurezca.",
+  "Lijntjes of verslapping": "Líneas o flacidez",
+  "Link gekopieerd": "Enlace copiado",
+  "Litteken dat doorgroeit": "Cicatriz que sigue creciendo",
+  "Littekens of oneffen structuur": "Cicatrices o textura irregular",
+  "Maak een afspraak bij je huisarts en noem welke punten je opvielen. Die kan doorverwijzen naar een dermatoloog als dat nodig is.":
+    "Pide cita con tu médico de cabecera y menciona qué puntos te llamaron la atención. Puede derivarte a un dermatólogo si hace falta.",
+  "Maand 4 en verder": "Mes 4 en adelante",
+  "Mag weer zodra de huid gesloten is.":
+    "Se puede otra vez en cuanto la piel esté cerrada.",
+  "Mechanisch schuren, ook met een washandje.":
+    "Frotar de forma mecánica, también con una manopla.",
+  "Medicatie op recept, zoals isotretinoïne":
+    "Medicación con receta, como la isotretinoína",
+  "Meer dan huid, dus met een arts erbij. Let vooral op je nagels en je gewrichten.":
+    "Más que piel, así que con un médico. Fíjate sobre todo en las uñas y las articulaciones.",
+  "Meerdere sporen lopen tegelijk. Alles tegelijk aanpakken werkt niet en is duur. We beginnen bij het onderdeel dat het snelst reageert en meten of het klopt.":
+    "Varias vías corren a la vez. Abordarlo todo a la vez no funciona y es caro. Empezamos por la parte que responde más rápido y medimos si va bien.",
+  "Meestal binnen een paar uur op een werkdag, en altijd binnen één werkdag.":
+    "Normalmente en unas horas en un día laborable, y siempre dentro de un día laborable.",
+  "Meestal iets dat door de huid heen schemert, of pigment dat dieper zit dan gewoonlijk. De kleur zegt hier vooral iets over de diepte.":
+    "Normalmente algo que se transparenta a través de la piel, o pigmento que está más profundo de lo habitual. Aquí el color dice sobre todo algo de la profundidad.",
+  "Meestal raden we het af, of we stellen een korte proef voor met een meetmoment erna. Dan zie je zelf of doorgaan zin heeft.":
+    "Normalmente lo desaconsejamos, o proponemos una prueba corta con una medición después. Entonces ves tú si seguir tiene sentido.",
+  "Meestal wel, in weken tot maanden. Hoe lichter je huid, hoe langer het zichtbaar blijft.":
+    "Normalmente sí, en semanas a meses. Cuanto más clara es tu piel, más tiempo sigue visible.",
+  "Melasma verdwijnt niet, het wordt beheerd. Wij zeggen lichter en rustiger, en we zeggen erbij dat het terugkomt zodra de aanjagers weer aanstaan.":
+    "El melasma no desaparece, se controla. Nosotros decimos más claro y más tranquilo, y añadimos que vuelve en cuanto los desencadenantes se activan otra vez.",
+  "Mensen vragen er ons geregeld naar en we behandelen het ook. Wat er bij jou past hangt af van hoe groot en hoe diep de plekjes zitten, dus dat bepaalt de behandelaar in het consult. Laat daarnaast je cholesterol nakijken, want daar komt het vaak vandaan.":
+    "La gente nos lo pregunta con regularidad y también lo tratamos. Lo que te encaja depende de lo grandes y profundas que sean las placas, así que eso lo determina la terapeuta en la consulta. Hazte revisar además el colesterol, porque a menudo viene de ahí.",
+  "Merk je dat we ons hier niet aan houden, zeg het dan tegen degene die je behandelt of laat het ons weten. Een verbond dat je niet kunt aanspreken is een advertentie.":
+    "Si notas que no cumplimos esto, díselo a quien te esté tratando o háznoslo saber. Un compromiso que no se puede exigir es un anuncio.",
+  "Met een arts erbij": "Con un médico",
+  "Met een rustige huid kunnen we naar textuur en littekens gaan kijken. Eerder heeft dat geen zin en maakt het het beeld vaak slechter.":
+    "Con una piel tranquila podemos pasar a mirar la textura y las cicatrices. Antes no tiene sentido y a menudo empeora la imagen.",
+  "Met uitleg": "Con explicación",
+  "Meteen erna weer de deur uit": "Nada más terminar, otra vez a la calle",
+  "Meten en uitleggen, niet behandelen": "Medir y explicar, no tratar",
+  "Meten onder vast licht, zonder dat er iets aan je huid gebeurt.":
+    "Medir bajo luz fija, sin que a tu piel le pase nada.",
+  "Meten vóór behandelen": "Medir antes de tratar",
+  "Microneedling, want dat brengt de vernieuwing op gang in de laag waar het pigment zit. Zit het dieper of blijft het hardnekkig, dan komen daar peelings of een pigmenttraject bij. Altijd met zonbescherming, anders komt het terug.":
+    "Microneedling, porque pone en marcha la renovación en la capa donde está el pigmento. Si está más profundo o se resiste, se añaden peelings o un programa de pigmento. Siempre con protección solar, si no vuelve.",
+  "Mijn huidprofiel van dibaclinics.nl": "Mi perfil de piel de dibaclinics.nl",
+  "Minder nieuwe plekjes": "Menos granos nuevos",
+  "Minder pigment dan de huid eromheen. Dit is de lastigste categorie, want verloren pigment komt zelden terug en een deel hoort bij de huisarts.":
+    "Menos pigmento que la piel de alrededor. Es la categoría más difícil, porque el pigmento perdido rara vez vuelve y una parte corresponde al médico de cabecera.",
+  "Minder sessies, meer tussenruimte. En een eerlijk gesprek of littekenbehandeling in jouw geval genoeg oplevert om te doen.":
+    "Menos sesiones, más espacio entre ellas. Y una conversación honesta sobre si el tratamiento de cicatrices aporta lo suficiente en tu caso como para hacerlo.",
+  "Minder zichtbaar maken": "Hacerlo menos visible",
+  "Minimale UV. De huid herstelt en het pigment trekt langzaam weg.":
+    "UV mínimo. La piel se recupera y el pigmento se va despacio.",
+  "Moet de behandelaar geregistreerd zijn?":
+    "¿La terapeuta tiene que estar registrada?",
+  "Na isotretinoïne moet de huid eerst hersteld zijn. Hoe lang dat duurt bepaalt een arts, niet deze pagina.":
+    "Después de la isotretinoína la piel primero tiene que haberse recuperado. Cuánto tarda lo decide un médico, no esta página.",
+  "Naar de zoeker": "Al buscador",
+  "Naast acne is dit wat we het vaakst behandelen. Een verse plek trekt deels vanzelf weg; wat na maanden blijft staan, reageert goed op behandeling, en zonbescherming houdt het licht.":
+    "Junto al acné, esto es lo que más tratamos. Una marca reciente se va en parte sola; lo que sigue ahí después de meses responde bien al tratamiento, y la protección solar lo mantiene claro.",
+  "Nauwelijks UV. Pigment dat in de zomer opkwam is nu op zijn lichtst.":
+    "Apenas UV. El pigmento que salió en verano está ahora en su punto más claro.",
+  "Nauwelijks pigment in de bovenlaag, dus vrijwel alles gaat naar de haarwortel. Dit is de gunstigste uitgangspositie die er is.":
+    "Apenas pigmento en la capa superior, así que casi todo va a la raíz del pelo. Es la posición de partida más favorable que hay.",
+  "Nederlands weer. De overgang van buiten naar binnen is erger dan de kou zelf.":
+    "Tiempo holandés. El cambio de fuera a dentro es peor que el propio frío.",
+  "Nee, het is vrij constant": "No, es bastante constante",
+  "Nee. Dit is het slechtste moment van het jaar. Wij zeggen dit ook als je nú wilt beginnen.":
+    "No. Es el peor momento del año. Lo decimos también si quieres empezar ahora mismo.",
+  "Nee. Een putje dat er een jaar zit, zit er over vijf jaar nog. Dit is het enige van de vier waarbij afwachten niets oplevert.":
+    "No. Un hoyo que lleva un año ahí seguirá ahí dentro de cinco. Es el único de los cuatro en el que esperar no aporta nada.",
+  "Nee. Kom terug in september, dan hebben we een eerlijke start.":
+    "No. Vuelve en septiembre, entonces tenemos un comienzo honesto.",
+  "Net zo talgrijk als de rug, en vaak buiten beeld omdat het onder kleding zit. Zweet, kleding die schuurt en haren of producten die over je borst vallen houden het in stand.":
+    "Tan rica en sebo como la espalda, y a menudo fuera de la vista porque está bajo la ropa. El sudor, la ropa que roza y el pelo o los productos que caen sobre el pecho lo mantienen.",
+  "Niet alleen de beste eruit": "No solo la mejor",
+  "Niet de cafeïne maar de temperatuur. Laten afkoelen scheelt al veel.":
+    "No la cafeína sino la temperatura. Dejar que se enfríe ya ayuda mucho.",
+  "Niet een lijn maar de hele structuur die meegeeft: minder elasticiteit, minder steun, en zwaartekracht die zijn werk doet.":
+    "No una línea sino toda la estructura que cede: menos elasticidad, menos sujeción, y la gravedad haciendo su trabajo.",
+  "Niet laseren zolang het actief is. Zit het er al weken of komt het steeds terug, dan hoort er eerst een huisarts naar te kijken.":
+    "Nada de láser mientras esté activo. Si lleva semanas o vuelve una y otra vez, primero tiene que mirarlo un médico de cabecera.",
+  "Niet nu, maar wel straks": "Ahora no, pero más adelante sí",
+  "Niet vlak voor veel zon. De huid is daarna kwetsbaar, en pigment komt juist terug van wat je dan doet.":
+    "No justo antes de mucho sol. La piel queda vulnerable después, y el pigmento vuelve justo por lo que haces entonces.",
+  "Niets ingrijpends. De barrière herstellen en volhouden; als het daarvan weggaat was het dit.":
+    "Nada drástico. Reparar la barrera y mantenerlo; si con eso se va, era esto.",
+  "Niets zinvols. Een huidbehandeling verandert de vorm van je gezicht niet, en een lichtere huid maakt een schaduw niet ondieper. Dit hoort bij een arts, of bij niets doen.":
+    "Nada que tenga sentido. Un tratamiento de la piel no cambia la forma de tu cara, y una piel más clara no hace una sombra menos profunda. Esto corresponde a un médico, o a no hacer nada.",
+  "Niets. Dit hoort bij je huisarts en gaat vaak vanzelf over met warme kompressen. Wij prikken hier niet in.":
+    "Nada. Esto corresponde a tu médico de cabecera y suele pasarse solo con compresas calientes. Aquí no lo pinchamos.",
+  "Niets. Dit is de stand waarin een behandeling je geld kost zonder dat er iets te winnen valt, en dat zeggen we liever nu.":
+    "Nada. Es la situación en la que un tratamiento te cuesta dinero sin que haya nada que ganar, y eso preferimos decirlo ahora.",
+  "Nog leeg": "Todavía vacío",
+  "Nog niet. Wel een goed moment voor de huidanalyse, zodat we in september kunnen starten.":
+    "Todavía no. Sí es un buen momento para el análisis de la piel, para poder empezar en septiembre.",
+  "Nog niets. Dit gebeurt onder de oppervlakte.":
+    "Todavía nada. Esto ocurre bajo la superficie.",
+  "Nog steeds laag. De huid is rustig en reageert voorspelbaar.":
+    "Sigue bajo. La piel está tranquila y reacciona de forma previsible.",
+  "Nog steeds piek. Vakantie en zon maken het beeld onvoorspelbaar.":
+    "Sigue en el pico. Las vacaciones y el sol hacen imprevisible la imagen.",
+  "Nu is er nog niets te behandelen, en dat is goed nieuws. Wat je nu doet bepaalt hoe het litteken eruit gaat zien, meer dan welke sessie dan ook.":
+    "Ahora todavía no hay nada que tratar, y eso es una buena noticia. Lo que hagas ahora determina cómo va a quedar la cicatriz, más que cualquier sesión.",
+  "Nu is rust het doel. Alles wat prikkelt verlengt deze fase. Uitknijpen duwt de ontsteking dieper en dat is de kortste route naar een litteken.":
+    "Ahora el objetivo es la calma. Todo lo que irrita alarga esta fase. Apretar empuja la inflamación más adentro y ese es el camino más corto hacia una cicatriz.",
+  "Nu open": "Abierto ahora",
+  "Nu vergelijk je de huid": "Ahora comparas la piel",
+  "Nu wordt het verschil groot. Dit is ongeveer het punt waarop mensen zeggen dat hun poriën kleiner zijn geworden, terwijl de doorsnede geen millimeter veranderde.":
+    "Ahora la diferencia se hace grande. Este es más o menos el punto en el que la gente dice que sus poros se han hecho más pequeños, mientras el diámetro no ha cambiado ni un milímetro.",
+  "Nu zie je het ook op foto's, niet alleen in de spiegel op een goede dag. Dit is het moment waarop het verschil met de huidanalyse hard wordt in plaats van een gevoel.":
+    "Ahora lo ves también en las fotos, no solo en el espejo en un buen día. Es el momento en que la diferencia con el análisis de la piel se convierte en un hecho en lugar de una sensación.",
+  "Of de roodheid van vaatjes komt of van een barrière die van slag is. Dat lijkt op elkaar en vraagt het tegenovergestelde.":
+    "Si la rojez viene de los vasos o de una barrera descompensada. Se parecen y piden lo contrario.",
+  "Of je pigment oppervlakkig ligt of dieper in de huid zit. Dat verschil bepaalt of een peeling of microneedling genoeg is of dat er laser aan te pas moet, en het is met het blote oog niet te zien.":
+    "Si tu pigmento está superficial o más profundo en la piel. Esa diferencia determina si basta con un peeling o microneedling o si hace falta láser, y a simple vista no se ve.",
+  "Of stel je eigen pakket samen": "O compón tu propio paquete",
+  "Omdat een belofte pas iets waard is als hij ergens pijn doet. Iedereen kan opschrijven dat hij eerlijk is; de vraag is wat je ervoor opgeeft.":
+    "Porque una promesa solo vale algo si duele en algún sitio. Cualquiera puede escribir que es honesto; la cuestión es a qué renuncias por ello.",
+  "Onbeschermd buiten zijn, of de zonnebank.":
+    "Estar al aire libre sin protección, o la cabina de rayos.",
+  "Onder de druk van het glas wordt de rode kleur lichter of verdwijnt hij, en zodra je loslaat komt hij terug.":
+    "Bajo la presión del cristal el color rojo se aclara o desaparece, y en cuanto sueltas vuelve.",
+  "Onder de lamp duidelijk donkerder dan bij het raam":
+    "Bajo la lámpara claramente más oscuro que junto a la ventana",
+  "Onderhoud, en pas nu littekens":
+    "Mantenimiento, y solo ahora las cicatrices",
+  "Ongeldig verzoek.": "Solicitud no válida.",
+  "Ongeveer twintig minuten in de stoel": "Unos veinte minutos en el sillón",
+  "Ontspan je gezicht helemaal. Is de lijn dan weg? Dan is hij dynamisch.":
+    "Relaja la cara del todo. ¿Entonces la línea desaparece? Entonces es dinámica.",
+  "Ontspan je gezicht. Staat de lijn er nog steeds? Dan zit het in de huid en niet in de spier.":
+    "Relaja la cara. ¿La línea sigue ahí? Entonces está en la piel y no en el músculo.",
+  "Ontsteking omlaag, met de peeling die bij jouw huid past. Pas als de huid rustiger is kijken we naar textuur en littekens. Die volgorde is niet onderhandelbaar.":
+    "Bajar la inflamación, con el peeling que encaja con tu piel. Solo cuando la piel está más tranquila miramos la textura y las cicatrices. Ese orden no es negociable.",
+  "Ontsteking via de arts": "La inflamación a través del médico",
+  "Onze foto's zijn minder spectaculair dan die van anderen. Dat is precies waarom je ze kunt geloven.":
+    "Nuestras fotos son menos espectaculares que las de otros. Justo por eso puedes creerlas.",
+  "Onze teksten klinken voorzichtiger dan die van de buren. Dat scheelt klanten die op een groot getal afkomen.":
+    "Nuestros textos suenan más prudentes que los de los vecinos. Eso nos cuesta clientes que vienen atraídos por una cifra grande.",
+  "Ook goedaardig, maar een ander weefsel en een andere aanpak. Het wordt vaak voor een moedervlek aangezien en is dat niet.":
+    "También benigno, pero otro tejido y otro enfoque. A menudo se toma por un lunar y no lo es.",
+  "Ook hier niets. Dit hoort bij de huisarts of oogarts, die zo nodig doorverwijst.":
+    "Aquí tampoco nada. Esto corresponde al médico de cabecera o al oftalmólogo, que deriva si hace falta.",
+  "Ook niet als het er onschuldig uitziet. Wat wij zeggen zou meewegen in of je belt, en die verantwoordelijkheid nemen we niet.":
+    "Tampoco si parece inofensivo. Lo que dijéramos pesaría en si llamas o no, y esa responsabilidad no la asumimos.",
+  "Ook niet als je zeker weet wat het is en er speciaal voor bent gekomen. Wat weg is kan niet meer bekeken worden, en dat is een fout die niet te herstellen valt. Het kost twee minuten om er eerst naar te kijken.":
+    "Tampoco si sabes con seguridad qué es y has venido especialmente para eso. Lo que ya no está no se puede examinar, y ese es un error que no se puede reparar. Mirarlo primero cuesta dos minutos.",
+  "Ook nu geldt: dit is geen uitslag":
+    "También ahora vale: esto no es un diagnóstico",
+  "Ook wat niet werkte": "También lo que no funcionó",
+  "Ook zonder huidklacht": "También sin un problema de piel",
+  "Op de mail, zodat het schriftelijk staat en er iemand op terugkomt. Een klacht hoort niet tussen de berichten door.":
+    "Por correo electrónico, para que quede por escrito y alguien lo retome. Una reclamación no va entre los mensajes.",
+  "Op deze leeftijd is een behandeling meestal niet nodig. Dagelijkse bescherming bepaalt hoe je huid er over twintig jaar uitziet, en dat is geen verkooppraatje maar de reden dat je nog geen klant bij ons hoeft te zijn.":
+    "A esta edad normalmente no hace falta un tratamiento. La protección diaria determina cómo estará tu piel dentro de veinte años, y eso no es un argumento de venta sino la razón de que todavía no tengas que ser cliente de esta clínica.",
+  "Op deze pagina beginnen we daar niet aan. De acnepagina is dan de betere ingang, met een eigen traject.":
+    "En esta página no empezamos con eso. La página del acné es entonces la mejor entrada, con un programa propio.",
+  "Op jouw leeftijd loopt dit via het jongerentraject, dat op dezelfde klacht is gemaakt maar op jouw huid is afgestemd.":
+    "A tu edad esto va a través del programa juvenil, que está hecho para el mismo problema pero ajustado a tu piel.",
+  "Openingen die opvallen op de wangen en neusvleugels, vaak in de vorm van een druppel in plaats van rond.":
+    "Aberturas que llaman la atención en las mejillas y las aletas de la nariz, a menudo en forma de gota en lugar de redondas.",
+  "Opgebouwde zonschade die zichtbaar wordt. Dit is het duidelijkste bewijs dat het om zon gaat en niet om leeftijd.":
+    "Daño solar acumulado que se hace visible. Es la prueba más clara de que se trata del sol y no de la edad.",
+  "PCOS behandelen": "Tratar el SOP",
+  "PCOS en je huid, per klacht": "El SOP y tu piel, por problema",
+  "PCOS is een hormonale aandoening. Wij stellen die diagnose niet, behandelen die niet en nemen de oorzaak niet weg. Wat er op je huid van te zien is kunnen we wel aanpakken, en dat is iets anders.":
+    "El SOP es una afección hormonal. Nosotros no hacemos ese diagnóstico, no lo tratamos y no quitamos la causa. Lo que se ve de ello en tu piel sí podemos abordarlo, y eso es otra cosa.",
+  "Pakket 1: baardlijn, wangen en hals":
+    "Paquete 1: línea de la barba, mejillas y cuello",
+  "Pakket 2: borst en buik": "Paquete 2: pecho y vientre",
+  "Pakket 3: borst, buik en rug": "Paquete 3: pecho, vientre y espalda",
+  "Pakket 4: borst, buik, rug en schouders":
+    "Paquete 4: pecho, vientre, espalda y hombros",
+  "Pakket 5: full body, intieme zone en gezicht":
+    "Paquete 5: cuerpo completo, zona íntima y cara",
+  "Parfum en alcohol in crèmes prikkelen een huid die al overactief reageert. Vaak de stille dader.":
+    "El perfume y el alcohol de las cremas irritan una piel que ya reacciona de más. A menudo el culpable silencioso.",
+  "Past bij je profiel": "Encaja con tu perfil",
+  "Per 30 minuten": "Por 30 minutos",
+  "Per klacht": "Por problema",
+  "Per kwartier": "Por cuarto de hora",
+  "Permanente make-up en tatoeages": "Maquillaje permanente y tatuajes",
+  "Pigment dat na de ontsteking is achtergebleven. Dit is wat er van jarenlang scheren vaak overblijft, en het is geen litteken.":
+    "Pigmento que ha quedado después de la inflamación. Esto es lo que suele quedar de años de afeitado, y no es una cicatriz.",
+  "Pigment dat na de ontsteking is achtergebleven. Ook dit is geen litteken: de huid is heel, alleen de kleur klopt niet. Komt vaker en heftiger voor bij een donkerder huidtype.":
+    "Pigmento que ha quedado después de la inflamación. Esto tampoco es una cicatriz: la piel está entera, solo el color no es el que debería. Es más frecuente y más intenso en un fototipo más oscuro.",
+  "Pigment dat ongelijkmatig verdeeld ligt. Je oog leest een ongelijke tint als vermoeid, ook al is er nergens een vlek aan te wijzen.":
+    "Pigmento repartido de forma desigual. Tu ojo lee un tono desigual como cansancio, aunque no haya ninguna mancha que señalar.",
+  "Pigment en melasma": "Pigmento y melasma",
+  "Pigment en melasma behandelen we liever in het najaar. In juni werk je tegen de zon in, en dan betaal je voor een resultaat dat de zomer niet haalt.":
+    "El pigmento y el melasma preferimos tratarlos en otoño. En junio trabajas en contra del sol, y entonces pagas por un resultado que no sobrevive al verano.",
+  "Pigment in een open kanaaltje wil je niet.":
+    "Pigmento en un canal abierto no lo quieres.",
+  "Plan een skinbooster niet vlak voor iets waar je op de foto moet: rond de ogen kan een blauw plekje langer blijven.":
+    "No programes un skin booster justo antes de algo en lo que tengas que salir en fotos: alrededor de los ojos un moratón puede durar más.",
+  "Plan het erna. Of plan het ruim ervoor, zodat je huid tot rust is voordat je vertrekt.":
+    "Prográmalo para después. O prográmalo con bastante antelación, para que tu piel esté tranquila antes de irte.",
+  "Platte bruine vlekken": "Manchas marrones planas",
+  "Plekjes onder een mondkapje, een helmbandje, een sportbeha, of op de wang waar je telefoon komt. Vaak scherp begrensd langs de rand van dat contact.":
+    "Granos bajo una mascarilla, la correa de un casco, un sujetador deportivo o en la mejilla donde apoyas el teléfono. A menudo bien delimitados a lo largo del borde de ese contacto.",
+  "Poriën gaan niet open en dicht. Ze hebben geen spiertje, dus stomen opent ze niet en koud water sluit ze niet.":
+    "Los poros no se abren y se cierran. No tienen músculo, así que el vapor no los abre y el agua fría no los cierra.",
+  "Poriën reinigen en de verhoorning aanpakken, in stappen. En we kijken naar je haarproducten, want die lopen precies over deze zone.":
+    "Limpiar los poros y abordar la queratinización, por pasos. Y miramos tus productos para el pelo, porque pasan justo por esta zona.",
+  "Precies op de plek waar iets zat. Vaak roodbruin in het begin, daarna bruiner. Geen kuiltje in de huid.":
+    "Justo en el sitio donde había algo. A menudo marrón rojizo al principio, después más marrón. Sin hundimiento en la piel.",
+  "Prijs per sessie. Hoeveel sessies je nodig hebt hangt af van je huid en hoor je tijdens de intake.":
+    "Precio por sesión. Cuántas sesiones necesitas depende de tu piel y lo oyes en la consulta previa.",
+  "Prikkels binnen": "Los irritantes entran",
+  "Probeer twee weken alles weg te laten behalve reinigen en één verzorgend product. Dat is geen advies dat ons iets oplevert en het werkt vaker dan wat dan ook.":
+    "Prueba a dejarlo todo durante dos semanas salvo limpiar y un único producto de cuidado. No es un consejo que nos aporte nada y funciona más a menudo que cualquier otra cosa.",
+  "Puistjes en ontstekingen": "Granos e inflamaciones",
+  "Puistjes of onzuiverheden": "Granos o imperfecciones",
+  "Putjes in het nageloppervlak, gele of oranje vlekjes, of een nagel die aan de rand loslaat.":
+    "Hoyitos en la superficie de la uña, manchitas amarillas o naranjas, o una uña que se despega por el borde.",
+  "RRS Eyes kuur": "Cura RRS Eyes",
+  "RRS hyalift": "RRS hyalift",
+  "Regelt de agenda, de afspraken en de gang van zaken in de kliniek.":
+    "Lleva la agenda, las citas y la marcha de las cosas en la clínica.",
+  "Reinigen dat bij jouw huid past, en waar nodig een behandeling die de porie leegt. Niet uitknijpen: dat maakt de opening juist wijder.":
+    "Una limpieza que encaje con tu piel y, donde haga falta, un tratamiento que vacíe el poro. Sin apretar: eso justo ensancha la abertura.",
+  "Rek de huid zachtjes": "Estira la piel con suavidad",
+  "Retinol en zuren bovenop een net behandelde huid is dubbelop.":
+    "Retinol y ácidos encima de una piel recién tratada es duplicar.",
+  "Retinol en zuren op een herstellende huid prikken en vertragen.":
+    "El retinol y los ácidos sobre una piel en recuperación escuecen y la frenan.",
+  "Rode of witte strepen": "Estrías rojas o blancas",
+  "Rode tot paarse strepen, vaak op buik, borsten, dijen of onderrug. Soms licht verheven, soms wat jeukend.":
+    "Estrías de rojas a moradas, a menudo en el vientre, los pechos, los muslos o la zona lumbar. A veces ligeramente elevadas, a veces con algo de picor.",
+  "Rode, warme bultjes met een puskopje laten we eerst tot rust komen. Licht op een ontstoken haarzakje verergert de ontsteking en vergroot de kans op een blijvende vlek. Komt het steeds terug, dan kijkt er eerst een huisarts naar.":
+    "Los bultitos rojos y calientes con cabeza de pus primero los dejamos calmarse. La luz sobre un folículo inflamado agrava la inflamación y aumenta la probabilidad de una marca permanente. Si vuelve una y otra vez, primero lo mira un médico de cabecera.",
+  "Rond het oog nemen we geen risico dat nergens voor nodig is. Dit hoort bij de huisarts, en die verwijst zo nodig door.":
+    "Alrededor del ojo no corremos ningún riesgo que no haga falta. Esto corresponde al médico de cabecera, que deriva si hace falta.",
+  "Rood en warm direct erna, de dag erop meestal weg":
+    "Rojo y caliente justo después, al día siguiente normalmente ya no",
+  "Rood, verheven, gevoelig. Dit is wat je in de spiegel ziet.":
+    "Rojo, elevado, sensible. Esto es lo que ves en el espejo.",
+  "Roodheid die opvlamt": "Rojez que se enciende",
+  "Roodheid na een warme douche of na het sporten, of een huid die meeloopt met de cyclus: dat verschilt van dag tot dag meer dan sommige behandelingen in maanden doen.":
+    "Rojez después de una ducha caliente o de hacer deporte, o una piel que sigue el ciclo: eso varía de un día a otro más de lo que algunos tratamientos consiguen en meses.",
+  "Roodheid of snel geïrriteerd": "Rojez o irritación fácil",
+  "Rosacea is een chronische aandoening. Beheersing is het doel en dat noemen wij geen mislukking. Genezing beloven we daarom niet.":
+    "La rosácea es una afección crónica. El control es el objetivo y eso no lo llamamos un fracaso. Por eso no prometemos una curación.",
+  "Rug, schouders en borst": "Espalda, hombros y pecho",
+  "Rustig moment, geen sport of hitte vooraf, en de datum staat erbij.":
+    "Un momento tranquilo, sin deporte ni calor antes, y con la fecha indicada.",
+  "Rustig, met veel bescherming, en met de verwachting dat het in de zomer terugkomt. We meten per seizoen in plaats van per sessie.":
+    "Con calma, con mucha protección, y con la expectativa de que en verano vuelva. Medimos por temporada en lugar de por sesión.",
+  "Ruw en dof, soms schilferig. Je hebt het gevoel dat er iets bovenop moet en dat een lichte crème niet genoeg is.":
+    "Áspera y apagada, a veces con escamas. Tienes la sensación de que hace falta algo encima y de que una crema ligera no basta.",
+  "Scan opnieuw doen": "Repetir el escaneo",
+  "Scherp begrensde, iets verheven plekken met zilverwitte schilfers, meestal aan de buitenkant van je gewrichten.":
+    "Placas bien delimitadas, ligeramente elevadas, con escamas blanco plateadas, normalmente en la parte exterior de las articulaciones.",
+  "Schone huid op beide foto's, en geen bewerking behalve bijsnijden.":
+    "Piel limpia en las dos fotos, y ningún retoque salvo el recorte.",
+  "Schuren op een vervellende huid geeft schade en vlekken.":
+    "Frotar una piel que se está pelando provoca daño y manchas.",
+  "Schuren op pigment maakt het meestal erger.":
+    "Frotar sobre el pigmento normalmente lo empeora.",
+  "Slaap en vocht maken hier het meeste verschil van alle drie de typen, want een gevuld vaatnetwerk schemert sterker door.":
+    "El sueño y el líquido marcan aquí la mayor diferencia de los tres tipos, porque una red vascular llena se transparenta con más fuerza.",
+  "Sluit de scan": "Cerrar el escaneo",
+  "Sollicitatie huidtherapeut": "Candidatura para terapeuta de la piel",
+  "Sommige ochtenden veel erger": "Algunas mañanas mucho peor",
+  "Soms is het advies om eerst iets af te bouwen en over twee weken opnieuw te kijken. Wat er bij jouw huid past hoor je zoals het is, zonder extra kosten.":
+    "A veces el consejo es reducir algo primero y volver a mirar dentro de dos semanas. Lo que encaja con tu piel lo oyes tal como es, sin coste adicional.",
+  "Stad Holland": "Stad Holland",
+  "Stijfheid 's ochtends die langer dan een halfuur duurt, gezwollen vingers of tenen, of pijn in je onderrug die juist beter wordt van bewegen.":
+    "Rigidez por la mañana que dura más de media hora, dedos de las manos o de los pies hinchados, o dolor en la zona lumbar que justo mejora al moverte.",
+  "Stoppen met sporten is geen advies dat wij geven. We kijken naar timing en koeling.":
+    "Dejar el deporte no es un consejo que demos. Miramos el momento y la refrigeración.",
+  "Stoppen met wrijven scheelt meer dan mensen denken, en zonbescherming ook op je ooglid houdt het waar het nu is.":
+    "Dejar de frotar ayuda más de lo que la gente piensa, y la protección solar también en el párpado lo mantiene donde está ahora.",
+  "Striae zijn geen teken dat je iets fout deed. Ze horen bij groei, zwangerschap en spieropbouw, en ze komen ook bij sporters voor.":
+    "Las estrías no son señal de que hicieras algo mal. Van con el crecimiento, el embarazo y el desarrollo muscular, y también salen en deportistas.",
+  "Symmetrisch over wangen, boven de lip en op het voorhoofd. Geen scherpe rand maar een overgang, alsof het uitloopt.":
+    "Simétrico en las mejillas, encima del labio y en la frente. Sin borde definido sino una transición, como si se difuminara.",
+  "Talgrijke zone. Bij een strakke haargrens kijken we ook naar shampoo, gel en pet of helm.":
+    "Zona rica en sebo. Con una línea del pelo marcada miramos también el champú, el gel y la gorra o el casco.",
+  "Te veel hersteltijd": "Demasiado tiempo de recuperación",
+  "Te veel pigment in de bovenlaag om die veilig over te slaan met de alexandriet. De Nd:YAG gaat er grotendeels langs en komt bij de wortel uit.":
+    "Demasiado pigmento en la capa superior para pasarla con seguridad con la alejandrita. La Nd:YAG la atraviesa en gran parte y llega a la raíz.",
+  "Textuur is nog te verbeteren, kuiltjes deels op te vullen. Kleur is lastig: wit weefsel maakt geen pigment meer aan.":
+    "La textura todavía se puede mejorar, los hoyos rellenar en parte. El color es difícil: el tejido blanco ya no produce pigmento.",
+  "Tijd en zon, apart bekeken": "Tiempo y sol, vistos por separado",
+  "Tijdens openingstijden direct. Staat er niemand vrij, dan bellen we dezelfde dag terug.":
+    "En horario de apertura, al momento. Si no hay nadie libre, te devolvemos la llamada el mismo día.",
+  "Toestemming intrekken": "Retirar el consentimiento",
+  "Traject inclusief producten": "Programa con productos incluidos",
+  "Trekkerig na het wassen, fijne lijntjes die er 's ochtends erger uitzien dan 's avonds, en toch kan je huid glimmen.":
+    "Tirante después de lavarte, líneas finas que por la mañana se ven peor que por la noche, y aun así tu piel puede brillar.",
+  "Tussen mei en augustus behandelen we pigment niet, hoe graag je ook wilt. Het resultaat is dan niet te houden. We meten wel, zodat we in september klaarstaan.":
+    "Entre mayo y agosto no tratamos el pigmento, por mucho que quieras. El resultado entonces no se puede mantener. Sí medimos, para estar a punto en septiembre.",
+  "Twee behandelaars van Diba Clinics in gesprek in de kliniek in Rotterdam":
+    "Dos terapeutas de Diba Clinics conversando en la clínica de Róterdam",
+  "Twee dingen aangepakt": "Dos cosas abordadas",
+  "Twee sporen naast elkaar. Eerst de beïnvloedbare triggers eruit halen, daarna meten hoeveel roodheid er overblijft. Dat overblijvende deel is wat we behandelen.":
+    "Dos vías en paralelo. Primero quitar los desencadenantes en los que puedes influir, después medir cuánta rojez queda. Esa parte que queda es lo que tratamos.",
+  "Twee van de best verkopende categorieën in deze branche staan bij ons niet op de kaart.":
+    "Dos de las categorías que más se venden en este sector no están en nuestra carta.",
+  "Tweede meting met EVE-M. We leggen de twee naast elkaar en stellen het plan bij. Werkt het niet, dan zeggen we dat en stoppen we.":
+    "Segunda medición con el EVE-M. Ponemos las dos una junto a otra y ajustamos el plan. Si no funciona, lo decimos y paramos.",
+  "Tweede test": "Segunda prueba",
+  "Twijfel je alsnog, of blijft het knagen? Ga dan gewoon. Dat kost een consult en het scheelt maanden piekeren.":
+    "¿Sigues dudando, o te sigue rondando? Entonces ve sin más. Cuesta una consulta y te ahorra meses de darle vueltas.",
+  "Twijfelachtig. We starten liever met alleen bescherming en meten, en behandelen in het najaar.":
+    "Dudoso. Preferimos empezar solo con protección y medir, y tratar en otoño.",
+  "Uitstekend moment. Je hebt vier maanden voordat de zon weer sterker wordt, en dat is genoeg tijd voor een pigmenttraject.":
+    "Momento excelente. Tienes cuatro meses antes de que el sol vuelva a ser más fuerte, y eso es tiempo suficiente para un programa de pigmento.",
+  "Uitstekend moment. Rustig opbouwen kan nu zonder haast.":
+    "Momento excelente. Ahora se puede ir subiendo con calma y sin prisa.",
+  "Uitzoeken wat er tegen je huid komt, en vragen naar je cyclus en je medicatie. Soms is het op te lossen zonder één behandeling, en dan zeggen we dat.":
+    "Averiguar qué entra en contacto con tu piel, y preguntar por tu ciclo y tu medicación. A veces se resuelve sin un solo tratamiento, y entonces lo decimos.",
+  "Uitzoeken wat jouw prikkels zijn en die vermijden. Bij een vermoeden van allergie hoort daar onderzoek bij, en dat gaat via de huisarts.":
+    "Averiguar cuáles son tus desencadenantes y evitarlos. Si se sospecha una alergia, eso incluye pruebas, y eso va a través del médico de cabecera.",
+  "Vaak contact en wrijving, maar zeker zo vaak hormonaal. We vragen door naar je telefoon, je kussensloop, of je een mondkapje draagt op werk en naar je cyclus.":
+    "A menudo contacto y roce, pero igual de a menudo hormonal. Preguntamos por tu teléfono, tu funda de almohada, si llevas mascarilla en el trabajo y por tu ciclo.",
+  "Vaak deelt een aantal behandelingen hetzelfde jaarbudget. Vraag niet alleen wat het maximum is maar ook wat je er dit jaar al van gebruikt hebt.":
+    "A menudo varios tratamientos comparten el mismo presupuesto anual. No preguntes solo cuál es el máximo sino también cuánto has usado ya este año.",
+  "Vaak een te volle routine": "A menudo una rutina demasiado cargada",
+  "Vaak niets meteen, en dat is een advies en geen afhouden. Blijft het na maanden staan, dan is licht op de vaatjes de logische stap.":
+    "A menudo nada de inmediato, y eso es un consejo y no una evasiva. Si después de meses sigue ahí, la luz sobre los vasos es el paso lógico.",
+  "Vaatjes prikkelen zonder ze te raken.": "Estimular los vasos sin tocarlos.",
+  "Van alle zones is dit de sterkste aanwijzing voor een hormonale factor.":
+    "De todas las zonas, esta es el indicio más fuerte de un factor hormonal.",
+  "Van alle zones is dit degene die het vaakst met hormonen te maken heeft. Zeker als het diepere, gevoelige plekjes zijn.":
+    "De todas las zonas, esta es la que más a menudo tiene que ver con las hormonas. Sobre todo si son granos más profundos y sensibles.",
+  "Van jong tot uitgerijpt": "De reciente a madura",
+  "Vandaag gesloten": "Hoy cerrado",
+  "Vast licht en een vaste afstand, elke keer hetzelfde, zodat opnames vergelijkbaar blijven.":
+    "Luz fija y distancia fija, cada vez igual, para que las capturas sigan siendo comparables.",
+  "Vast licht, vaste afstand. De variabelen hierboven liggen allemaal vast.":
+    "Luz fija, distancia fija. Las variables de arriba están todas fijadas.",
+  "Vaste afstand, vaste hoogte, hoofd in dezelfde stand. Bij de huidscan gebeurt dat automatisch.":
+    "Distancia fija, altura fija, cabeza en la misma posición. En el escaneo de la piel eso ocurre automáticamente.",
+  "Vaste diepte per zone, ingesteld door de behandelaar":
+    "Profundidad fija por zona, ajustada por la terapeuta",
+  "Veel kleine vaatjes die tegelijk openstaan, meestal als reactie op warmte, inspanning of iets wat je huid aanzet. Dit hoort eerder bij rosacea dan bij couperose.":
+    "Muchos vasos pequeños abiertos a la vez, normalmente como reacción al calor, al esfuerzo o a algo que activa tu piel. Esto encaja más con la rosácea que con la cuperosis.",
+  "Veel lichter of weg": "Mucho más claro o desaparecido",
+  "Veel mensen noemen dit acne en gaan er agressief op reinigen. Dat droogt de huid uit, waarna er méér talg komt.":
+    "Mucha gente llama a esto acné y empieza a limpiarse de forma agresiva. Eso reseca la piel, y después viene más sebo.",
+  "Veel talgklieren, plus zweet en wrijving. Sportbeha, rugzak en een shirt dat niet ademt doen hier meer dan je denkt.":
+    "Muchas glándulas sebáceas, más sudor y roce. Un sujetador deportivo, una mochila y una camiseta que no transpira hacen aquí más de lo que piensas.",
+  "Verandering over maanden is met het blote oog niet te beoordelen, in beide richtingen. Zonder huidanalyse kunnen wij niet aantonen dat het werkte en jij niet nagaan of het geld goed besteed was.":
+    "Un cambio a lo largo de meses no se puede valorar a simple vista, en ninguna de las dos direcciones. Sin análisis de la piel nosotros no podemos demostrar que funcionó y tú no puedes comprobar si el dinero estuvo bien gastado.",
+  "Verandering van vorm, kleur, grootte of gevoel hoort beoordeeld te worden door iemand die ook weefsel kan laten onderzoeken. Wij kunnen kijken; we kunnen niet uitsluiten.":
+    "Un cambio de forma, color, tamaño o sensación debe valorarlo alguien que también pueda mandar examinar el tejido. Nosotros podemos mirar; no podemos descartar.",
+  "Verandert dit verbond nog?": "¿Va a cambiar todavía este compromiso?",
+  "Verandert nauwelijks": "Apenas cambia",
+  "Verbrandt altijd, wordt nooit bruin": "Se quema siempre, nunca se broncea",
+  "Verbrandt bijna nooit": "Casi nunca se quema",
+  "Verbrandt niet": "No se quema",
+  "Verbrandt snel, wordt licht bruin":
+    "Se quema con facilidad, se broncea un poco",
+  "Verbrandt soms, wordt daarna bruin": "A veces se quema, después se broncea",
+  "Verbrandt zelden, wordt snel bruin": "Rara vez se quema, se broncea rápido",
+  "Verdwijnt het bijna als je van onderaf licht op je gezicht laat vallen, of als je met je vinger de huid iets omhoog duwt?":
+    "¿Casi desaparece si dejas que la luz caiga sobre tu cara desde abajo, o si empujas la piel un poco hacia arriba con el dedo?",
+  "Verdwijnt het grotendeels als je een paar weken goed insmeert, dan was het geen verhoorning. Dan is er niets te behandelen en heb je een tube nodig en geen afspraak.":
+    "Si desaparece en gran parte cuando te hidratas bien durante unas semanas, no era queratinización. Entonces no hay nada que tratar y necesitas un tubo de crema y no una cita.",
+  "Vergelijk een foto van tien jaar geleden. Is het gezicht vooral smaller geworden in plaats van dat er iets hangt?":
+    "Compara una foto de hace diez años. ¿La cara sobre todo se ha vuelto más estrecha, en lugar de que algo cuelgue?",
+  "Vergelijkbaar moment": "Un momento comparable",
+  "Verheven, rode plekjes die gevoelig zijn als je erop drukt. Sommige met een puskopje. Meestal in golven, vaak over wangen en kin.":
+    "Granos rojos y elevados que duelen al presionarlos. Algunos con cabeza de pus. Normalmente en oleadas, a menudo por las mejillas y la barbilla.",
+  "Verhoogd weefsel, vaak roder en steviger dan de huid eromheen. Bij keloïd groeit het over de oorspronkelijke wond heen.":
+    "Tejido elevado, a menudo más rojo y más firme que la piel de alrededor. En el queloide crece más allá de la herida original.",
+  "Verhoorning rond de haarzakjes, en geen ingegroeid haar. Onschuldig, vaak erfelijk, en het wordt van ontharen niet minder.":
+    "Queratinización alrededor de los folículos, y no un pelo encarnado. Inofensiva, a menudo hereditaria, y con la depilación no disminuye.",
+  "Vermoed je een echte allergie, dan hoort dat bij de huisarts of een dermatoloog. Wij kunnen dat niet vaststellen en gaan het dus ook niet proberen.":
+    "Si sospechas una alergia de verdad, eso corresponde al médico de cabecera o a un dermatólogo. Nosotros no podemos determinarlo y por tanto tampoco vamos a intentarlo.",
+  "Verse kleur in de bovenlaag verandert hoeveel licht die opneemt, en daarmee de veilige instelling. Daarom wordt er bij een pas gebruinde huid uitgesteld in plaats van voorzichtiger ingesteld.":
+    "El color reciente en la capa superior cambia cuánta luz absorbe, y con ello la configuración segura. Por eso con una piel recién bronceada se aplaza en lugar de configurar con más cuidado.",
+  "Verse kleur in de huid maakt de volgende sessie onveilig.":
+    "El color reciente en la piel hace insegura la siguiente sesión.",
+  "Verslapping en fijne lijnen": "Flacidez y líneas finas",
+  "Verspreid over je hele huid": "Repartido por toda la piel",
+  "Verstopte poriën": "Poros obstruidos",
+  "Vervalt tijdens zwangerschap en borstvoeding. Dermaplaning en een rustige gezichtsbehandeling kunnen meestal wel.":
+    "No se hace durante el embarazo y la lactancia. El dermaplaning y un tratamiento facial suave normalmente sí se pueden.",
+  "Verwijdt de bloedvaten direct. Rode wijn doet dit bij de meeste mensen het snelst.":
+    "Dilata los vasos sanguíneos al momento. El vino tinto es lo que lo hace más rápido en la mayoría de la gente.",
+  "Verzette afspraken, gaten in de agenda, en soms een teleurgestelde klant die er klaar voor dacht te zijn.":
+    "Citas cambiadas, huecos en la agenda, y a veces un cliente decepcionado que creía estar a punto.",
+  "Vet aanvullen, niet water. Een waterige gel voelt even lekker en is binnen een uur weg, want er is niets dat hem vasthoudt.":
+    "Reponer grasa, no agua. Un gel acuoso se nota bien un momento y en una hora ha desaparecido, porque no hay nada que lo retenga.",
+  "Vet, spier en bot verplaatsen zich. Dit is het zuiverste tijdspoor en het minst beïnvloedbaar met huidbehandelingen.":
+    "La grasa, el músculo y el hueso se desplazan. Es la vía del tiempo más pura y la menos influenciable con tratamientos de la piel.",
+  "Vetkussens in het gezicht nemen af en verplaatsen, en bot trekt zich terug. Dat is geen huidprobleem, ook al zie je het aan je huid.":
+    "Las almohadillas de grasa de la cara disminuyen y se desplazan, y el hueso se retrae. No es un problema de piel, aunque lo veas en tu piel.",
+  "Vettig, vooral in de T-zone": "Grasa, sobre todo en la zona T",
+  "Vier onderwerpen waarop veel wordt gezocht leveren ons niets op. We schrijven er wel uitgebreid over.":
+    "Cuatro temas muy buscados no nos aportan nada. Aun así escribimos sobre ellos con detalle.",
+  "Vier sessies SkinPen over drie maanden":
+    "Cuatro sesiones de SkinPen en tres meses",
+  "Vier sessies microneedling over vijf maanden":
+    "Cuatro sesiones de microneedling en cinco meses",
+  "Vlak na een behandeling die de huid prikkelt zit er tijdelijk wat vocht in het weefsel. Dat vult fijne lijntjes op, en het verdwijnt binnen een paar dagen.":
+    "Justo después de un tratamiento que estimula la piel hay temporalmente algo de líquido en el tejido. Eso rellena las líneas finas, y desaparece en unos días.",
+  "Vlekken door de zon": "Manchas por el sol",
+  "Vlekken of een ongelijke kleur": "Manchas o un color desigual",
+  "Vocht in de bovenste laag verandert hoe het oppervlak licht terugkaatst. Dat is een echt effect, maar het houdt uren aan en geen maanden.":
+    "La hidratación en la capa superior cambia cómo la superficie refleja la luz. Es un efecto real, pero dura horas y no meses.",
+  "Voel je met je vingertop dat het boven de huid uitkomt, en is het oppervlak korrelig of wasachtig in plaats van glad?":
+    "¿Notas con la yema del dedo que sobresale de la piel, y la superficie es granulosa o cérea en lugar de lisa?",
+  "Voelt de plek helemaal glad aan als je er met je vinger overheen gaat, zonder kuiltje of bobbeltje? En is hij rood en niet bruin?":
+    "¿La mancha se nota completamente lisa al pasar el dedo por encima, sin hoyo ni bultito? ¿Y es roja y no marrón?",
+  "Voelt het als schuurpapier over een groter vlak, zonder dat er in de bultjes een haar of pus zit? En zit het vooral op je bovenarmen?":
+    "¿Se nota como papel de lija sobre una zona más amplia, sin que en los bultitos haya un pelo o pus? ¿Y está sobre todo en la parte alta de los brazos?",
+  "Voelt het ruw zonder dat je losse bultjes voelt, en verdwijnt het grotendeels als je een tijd goed insmeert?":
+    "¿Se nota áspera sin que notes bultitos sueltos, y desaparece en gran parte si te hidratas bien durante un tiempo?",
+  "Voelt je huid in zijlicht of onder je vingers hobbelig, terwijl er in de spiegel weinig te zien is en er geen rood bij zit?":
+    "¿Tu piel se nota irregular con luz lateral o bajo los dedos, mientras en el espejo hay poco que ver y no hay rojez?",
+  "Voelt je huid warm en branderig en is hij op dit moment aan het opvlammen, dan stellen we de behandeling uit. Licht op een geprikkelde huid maakt de roodheid vaker erger dan beter, en dan ben je verder van huis dan toen je binnenkwam.":
+    "Si tu piel se nota caliente y con escozor y en este momento está en un brote, aplazamos el tratamiento. La luz sobre una piel irritada empeora la rojez más veces de las que la mejora, y entonces sales peor de lo que entraste.",
+  "Volg wat je in de kliniek meekrijgt; het schema is onderdeel van het traject.":
+    "Sigue lo que te dan en la clínica; la pauta forma parte del programa.",
+  "Volume opvullen doen wij niet. De huid steviger maken kan wel, en soms is dat genoeg; is dat het niet, dan zeggen we dat.":
+    "Rellenar volumen no lo hacemos. Hacer la piel más firme sí, y a veces basta; si no basta, lo decimos.",
+  "Voor de meeste van dit soort vragen is een bericht genoeg: we kunnen zeggen wat er meespeelt en waar je op moet letten.":
+    "Para la mayoría de este tipo de preguntas basta con un mensaje: podemos decir qué influye y en qué debes fijarte.",
+  "Voor een aantal behandelingen ontbreekt het onderzoek om te kunnen zeggen dat het veilig is. Dan is niet doen de enige verdedigbare keuze.":
+    "Para algunos tratamientos falta la investigación para poder decir que son seguros. Entonces no hacerlo es la única elección defendible.",
+  "Voor iets anders": "Para otra cosa",
+  "Voor iets anders dan jij zoekt": "Para otra cosa distinta de la que buscas",
+  "Voor wat jij wil veranderen heeft deze kliniek geen behandeling die er volledig op mikt.":
+    "Para lo que tú quieres cambiar, esta clínica no tiene un tratamiento que apunte por completo a ello.",
+  "Vooruitbetaalde pakketten zijn de zekerste omzet die een kliniek kan hebben. Die zekerheid hebben wij niet.":
+    "Los paquetes pagados por adelantado son la facturación más segura que puede tener una clínica. Esa seguridad nosotros no la tenemos.",
+  "Voorzichtiger dan op een arm, want gezichtshuid reageert sterker. Eerst de roodheid, dan pas de structuur.":
+    "Con más cuidado que en un brazo, porque la piel de la cara reacciona con más fuerza. Primero la rojez, solo después la textura.",
+  "Vraagt meer hersteltijd dan je aangaf":
+    "Pide más tiempo de recuperación del que indicaste",
+  "Vul het in": "Rellénalo",
+  "Vul je naam, een geldig e-mailadres en je vraag in.":
+    "Rellena tu nombre, una dirección de correo válida y tu pregunta.",
+  "Waar je op let bij een moedervlek": "En qué fijarte en un lunar",
+  "Waar komt dit uit, en hoeveel is er nog over?":
+    "¿De qué presupuesto sale esto, y cuánto queda todavía?",
+  "Waarom de foto's alleen naast elkaar iets zeggen":
+    "Por qué las fotos solo dicen algo una junto a otra",
+  "Waarom geduld hier het grootste deel van het werk is":
+    "Por qué aquí la paciencia es la mayor parte del trabajo",
+  "Waarom staat bij elke regel wat het jullie kost?":
+    "¿Por qué en cada regla pone lo que le cuesta a la clínica?",
+  "Wacht met scrubben tot de haren zijn uitgevallen.":
+    "Espera para exfoliar hasta que los pelos se hayan caído.",
+  "Wangen: van buitenaf of hormonaal": "Mejillas: desde fuera u hormonal",
+  "Warm, en te doen zonder verdoving": "Caliente, y llevadero sin anestesia",
+  "Warmte is de sterkste trigger die er is. Lauw douchen voelt zuur maar werkt.":
+    "El calor es el desencadenante más fuerte que hay. Ducharse con agua tibia fastidia pero funciona.",
+  "Warmte kan pigment aanjagen.": "El calor puede avivar el pigmento.",
+  "Wat als een behandelaar hiervan afwijkt?":
+    "¿Qué pasa si una terapeuta se desvía de esto?",
+  "Wat de EVE-M": "Lo que el EVE-M",
+  "Wat de drie soorten licht ieder zichtbaar maken":
+    "Lo que cada uno de los tres tipos de luz hace visible",
+  "Wat de site aangaf om te bespreken:": "Lo que la web señaló para comentar:",
+  "Wat definitief hier wel en niet betekent":
+    "Lo que definitivo significa aquí y lo que no",
+  "Wat eczeem met je huid doet": "Lo que el eccema hace con tu piel",
+  "Wat een behandeling inhoudt, waar een klacht vandaan komt en wat een apparaat kan.":
+    "Lo que implica un tratamiento, de dónde viene un problema y lo que puede hacer un aparato.",
+  "Wat er eigenlijk aan de hand is. Je hoeft dat niet zelf te weten voordat je komt; uitzoeken is het werk.":
+    "Lo que pasa en realidad. No hace falta que lo sepas antes de venir; averiguarlo es el trabajo.",
+  "Wat er in de eerste weken verandert":
+    "Lo que cambia en las primeras semanas",
+  "Wat er is, wordt sterk verminderd. Wat er later nog bij komt, bijvoorbeeld door hormonale verandering, valt daar niet onder. Onderhoud hoort erbij en dat zeggen we liever vooraf dan achteraf.":
+    "Lo que hay se reduce mucho. Lo que aparezca más adelante, por ejemplo por un cambio hormonal, no entra ahí. El mantenimiento forma parte y preferimos decirlo antes que después.",
+  "Wat er mogelijk is, wat het realistisch oplevert, hoeveel sessies dat vraagt en wat het kost. Soms is het advies om niets te doen, of om eerst twee weken af te bouwen en dan opnieuw te kijken.":
+    "Lo que es posible, lo que aporta de forma realista, cuántas sesiones pide y lo que cuesta. A veces el consejo es no hacer nada, o primero reducir durante dos semanas y volver a mirar después.",
+  "Wat er nu is, is grotendeels blijvend. Dat mag je van ons horen.":
+    "Lo que hay ahora es en gran parte permanente. Eso mereces oírlo de nosotros.",
+  "Wat er nu past": "Lo que encaja ahora",
+  "Wat er realistisch mogelijk is": "Lo que es posible de forma realista",
+  "Wat er tussen de afspraken door gebeurt": "Lo que pasa entre las citas",
+  "Wat het apparaat níet doet: kiezen": "Lo que el aparato no hace: elegir",
+  "Wat je dan op de foto ziet is de zwelling en niet het resultaat. Een nafoto die te vroeg genomen is, laat iets zien wat over een week niet meer bestaat.":
+    "Lo que ves entonces en la foto es la hinchazón y no el resultado. Una foto de después tomada demasiado pronto muestra algo que dentro de una semana ya no existe.",
+  "Wat je gebruikt is tussen jou en je arts. Wij zullen nooit adviseren ergens mee te stoppen of te minderen.":
+    "Lo que usas es cosa entre tú y tu médico. Nunca vamos a aconsejar dejar o reducir nada.",
+  "Wat je smeert of slikt is tussen jou en je arts. We zullen je nooit aanraden ergens mee te stoppen of te minderen.":
+    "Lo que te pones o tomas es cosa entre tú y tu médico. Nunca te vamos a recomendar dejar o reducir nada.",
+  "Wat valt jou het eerst op aan je huid?":
+    "¿Qué es lo primero que notas en tu piel?",
+  "Wat we bij acne wel doen": "Lo que sí hacemos en el acné",
+  "Wat we bij verslapping wél doen": "Lo que sí hacemos en la flacidez",
+  "Wat we doen, waarmee, en wat het kost":
+    "Lo que hacemos, con qué, y lo que cuesta",
+  "Wat we kunnen doen hangt af van welke soort het is. Eerst kijken, dan pas iets.":
+    "Lo que podemos hacer depende del tipo que sea. Primero mirar, solo después actuar.",
+  "Wat we niet kunnen is beslissen. Of iets bij jouw huid past hangt af van wat een meting laat zien, en dat is aan een foto niet te zien.":
+    "Lo que no podemos es decidir. Si algo encaja con tu piel depende de lo que muestre una medición, y eso en una foto no se ve.",
+  "Wat weggehaald wordt hoort onderzocht te worden, en dat vraagt een arts en een laboratorium. Cosmetisch weglaseren maakt onderzoek achteraf onmogelijk.":
+    "Lo que se quita debe examinarse, y eso requiere un médico y un laboratorio. Quitarlo con láser por motivos estéticos hace imposible examinarlo después.",
+  "Wat wij dan doen": "Lo que hacemos entonces",
+  "Wat wél helpt is de richting van het licht: recht van voren, niet van bovenaf. Dat verklaart ook waarom je er op de ene foto uitgerust uitziet en op de andere niet.":
+    "Lo que sí ayuda es la dirección de la luz: de frente, no desde arriba. Eso explica también por qué en una foto se te ve con cara de descanso y en otra no.",
+  "Water vasthouden en de barrière met rust laten. Dit is het kwadrant waarin mensen het vaakst zelf de oorzaak zijn, met te vaak reinigen en te veel actieve stoffen.":
+    "Retener el agua y dejar la barrera en paz. Es el cuadrante en el que la gente es con más frecuencia la causa, por limpiarse demasiado a menudo y usar demasiados activos.",
+  "We beginnen liever in het najaar. Dat kost je een paar maanden wachten en het scheelt een behandeling die tegen de zon in werkt.":
+    "Preferimos empezar en otoño. Te cuesta unos meses de espera y te ahorra un tratamiento que trabaja en contra del sol.",
+  "We beginnen met uitzoeken welke van deze de grootste is. Vaak zijn het één of twee, niet alle vijf. Behandelen houden we achter de hand.":
+    "Empezamos por averiguar cuál de estas es la mayor. A menudo son una o dos, no las cinco. Tratar lo dejamos en reserva.",
+  "We beginnen met vragen, niet met behandelen. Wat het patroon in de tijd doet, zegt hier meer dan wat we op de huid zien.":
+    "Empezamos con preguntas, no con tratamiento. Lo que hace el patrón en el tiempo dice aquí más que lo que vemos en la piel.",
+  "We behandelen niet. We vertellen je wat je thuis doet: uit de zon houden, niet trekken, en geduld. Dat kost je niets en levert het meeste op.":
+    "No tratamos. Te decimos qué hacer en casa: mantenerlo fuera del sol, no tirar de ello, y paciencia. No te cuesta nada y es lo que más aporta.",
+  "We bouwen op in kleine stappen. Als je huid het aankan gaan we iets verder; als hij protesteert stappen we terug.":
+    "Vamos subiendo en pasos pequeños. Si tu piel lo aguanta, avanzamos un poco más; si protesta, damos un paso atrás.",
+  "We kijken naar sport, kleding en haarproducten die langs je nek en borst lopen. Behandelen kan, ook hier met een peeling.":
+    "Miramos el deporte, la ropa y los productos para el pelo que pasan por el cuello y el pecho. Tratar se puede, también aquí con un peeling.",
+  "We kijken naar sport, kleding en wat er na het zweten met je huid gebeurt, en behandelen rug en borst als één zone. Kruidenpeels en chemische peelings kunnen hier allebei.":
+    "Miramos el deporte, la ropa y lo que pasa con tu piel después de sudar, y tratamos la espalda y el pecho como una sola zona. Aquí se pueden tanto los peelings de hierbas como los químicos.",
+  "We kijken naar sport, kleding en wat er na het zweten met je huid gebeurt. Behandelen kan, maar zonder die gewoontes verandert er weinig.":
+    "Miramos el deporte, la ropa y lo que pasa con tu piel después de sudar. Tratar se puede, pero sin cambiar esos hábitos cambia poco.",
+  "We kijken naar wat je nu thuis gebruikt en lezen de ingrediëntenlijst, niet de naam op de verpakking. Soms zit daar het hele antwoord al.":
+    "Miramos lo que usas ahora en casa y leemos la lista de ingredientes, no el nombre del envase. A veces ahí está ya toda la respuesta.",
+  "We lopen de meting met je door en laten zien wat we zien. Ook de dingen waar je zelf niet voor kwam, en de dingen die meevallen.":
+    "Repasamos la medición contigo y te enseñamos lo que vemos. También las cosas por las que no viniste, y las que están mejor de lo que pensabas.",
+  "We maken een korte lijst van wat je aanpast, en meten na zes weken. Werkt dat genoeg, dan hoef je hier niet terug te komen.":
+    "Hacemos una lista corta de lo que cambias, y medimos a las seis semanas. Si eso funciona lo suficiente, no tienes que volver aquí.",
+  "We meten eerst of er genoeg te halen valt om de sessies te rechtvaardigen. Zo niet, dan zeggen we dat.":
+    "Primero medimos si hay bastante que ganar para justificar las sesiones. Si no, lo decimos.",
+  "We verwijzen door en stemmen af. Behandelen wij dit als acne, dan wordt het erger, dus dat doen we niet.":
+    "Derivamos y nos coordinamos. Si tratamos esto como acné, empeora, así que no lo hacemos.",
+  "We vragen door over je cyclus, de pil en eventuele PCOS. Huidbehandeling helpt het beeld, maar we sturen je ook naar je huisarts als de oorzaak daar ligt.":
+    "Preguntamos por tu ciclo, la píldora y un posible SOP. El tratamiento de la piel mejora la imagen, pero también te mandamos a tu médico de cabecera si la causa está ahí.",
+  "We vragen door over je cyclus, de pil en eventuele PCOS. Huidzorg en een medisch traject versterken elkaar hier; ligt de oorzaak bij je hormonen, dan raden we je aan dat met je huisarts te bespreken.":
+    "Preguntamos por tu ciclo, la píldora y un posible SOP. Aquí el cuidado de la piel y un tratamiento médico se refuerzan entre sí; si la causa está en tus hormonas, te aconsejamos hablarlo con tu médico de cabecera.",
+  "We werken langs twee sporen: uitzoeken waardoor de gloed opkomt, en de zichtbare vaatjes gericht aanpakken. Waar we beginnen hangt af van wat jou het meest dwarszit.":
+    "Trabajamos por dos vías: averiguar por qué aparece el rubor, y abordar de forma dirigida los vasos visibles. Por dónde empezamos depende de lo que más te moleste.",
+  "We zoeken eerst uit waardoor het opkomt en kijken daarna pas of licht iets toevoegt. Zolang de aanleiding blijft, komt de gloed terug en dan werkt een apparaat tegen de stroom in.":
+    "Primero averiguamos por qué aparece y solo después miramos si la luz añade algo. Mientras el motivo siga, el rubor vuelve y entonces un aparato trabaja contra corriente.",
+  "Weefsel dat werkelijk is losgelaten en niet alleen minder stevig. Geen apparaat zet dit terug, hoe vaak je ook komt.":
+    "Tejido que de verdad se ha soltado y no solo está menos firme. Ningún aparato lo devuelve a su sitio, por muchas veces que vengas.",
+  "Week 1 – 2": "Semana 1 – 2",
+  "Week 3 – 6": "Semana 3 – 6",
+  "Week 8 – 12": "Semana 8 – 12",
+  "Weinig pigment in de bovenlaag. De alexandriet werkt hier efficiënt en op een rustige energie.":
+    "Poco pigmento en la capa superior. La alejandrita trabaja aquí de forma eficiente y con una energía moderada.",
+  "Wel te beperken, niet uit te zetten. En de roodheid zelf geeft stress, dus het draait rond.":
+    "Se puede limitar, no apagar. Y la propia rojez genera estrés, así que es un círculo.",
+  "Werkt niet op wat jij wil veranderen. Niet minder goed, gewoon iets anders.":
+    "No actúa sobre lo que tú quieres cambiar. No peor, simplemente otra cosa.",
+  "Wie hier werkt, en wat anderen ervan zeggen":
+    "Quién trabaja aquí, y lo que dicen otros",
+  "Wij beginnen niet in het verkeerde seizoen":
+    "No empezamos en la temporada equivocada",
+  "Wij behandelen dit niet en we laseren het zeker niet weg. Je gaat eerst naar de huisarts, ook als het waarschijnlijk niets is.":
+    "Esto no lo tratamos y desde luego no lo quitamos con láser. Vas primero al médico de cabecera, también si probablemente no es nada.",
+  "Wij behandelen huid. Injectables en volumeopbouw doen we niet. Dat is een andere discipline maar een grens: het hoort bij een arts.":
+    "Nosotros tratamos piel. Inyectables y aumento de volumen no hacemos. Es otra disciplina pero también un límite: corresponde a un médico.",
+  "Wij behandelen kleur, geen vermoeidheid. Als je er moe uitziet omdat je moe bent, is dat geen huidprobleem en zeggen we dat gewoon.":
+    "Nosotros tratamos el color, no el cansancio. Si tienes cara de cansancio porque realmente lo tienes, no es un problema de piel y lo decimos sin más.",
+  "Wij behandelen niet op een huid die daar niet klaar voor is":
+    "No tratamos una piel que no está preparada para ello",
+  "Wij behandelen niet wat bij een arts hoort":
+    "No tratamos lo que corresponde a un médico",
+  "Wij beloven het niet en we schrijven het nergens. Wat we wel beloven is dat ze minder opvallen, en dat kunnen we met een foto onder hetzelfde licht laten zien.":
+    "No lo prometemos y no lo escribimos en ningún sitio. Lo que sí prometemos es que llaman menos la atención, y eso podemos enseñarlo con una foto bajo la misma luz.",
+  "Wij beloven niets wat we niet kunnen meten":
+    "No prometemos nada que no podamos medir",
+  "Wij doen niets aan volume en niets aan lichaamsvorm":
+    "No hacemos nada con el volumen ni con la forma del cuerpo",
+  "Wij halen dit niet weg. Je gaat eerst naar de huisarts, ook als het waarschijnlijk niets is.":
+    "Esto no lo quitamos. Vas primero al médico de cabecera, también si probablemente no es nada.",
+  "Wij halen niets weg dat verandert": "No quitamos nada que esté cambiando",
+  "Wij tonen geen resultaat dat we niet onder hetzelfde licht hebben gemeten":
+    "No mostramos ningún resultado que no hayamos medido bajo la misma luz",
+  "Wij verkopen geen pakketten en geen abonnementen":
+    "No vendemos paquetes ni suscripciones",
+  "Wij verkopen geen routine met acht stappen. Bij een droge huid is weglaten meestal de behandeling, en daar valt weinig aan te verdienen.":
+    "No vendemos una rutina de ocho pasos. En una piel seca, quitar cosas suele ser el tratamiento, y con eso se gana poco dinero.",
+  "Wij verkopen geen schema waarin nog vier producten bij komen. Bij een gevoelige huid is aftrekken bijna altijd de behandeling.":
+    "No vendemos una pauta a la que se añaden cuatro productos más. En una piel sensible, restar es casi siempre el tratamiento.",
+  "Wij verkopen niets waarvan we weten dat het te weinig oplevert":
+    "No vendemos nada de lo que sabemos que aporta demasiado poco",
+  "Wij vullen niet op met fillers. Wel kunnen we de huid eromheen steviger maken, en soms is dat genoeg om de schaduw te verzachten.":
+    "No ponemos rellenos. Lo que sí podemos es hacer más firme la piel de alrededor, y a veces eso basta para suavizar la sombra.",
+  "Wij werken aan de huid zelf: de structuur, de kleur en wat eronder zit. Volume en spierwerking zijn een ander vak.":
+    "Trabajamos sobre la propia piel: la textura, el color y lo que hay debajo. El volumen y la acción muscular son otro oficio.",
+  "Wij werken niet met injectables in dit gebied. Dat is een keuze en geen tekort: het is een lastige plek waar te veel of te ondiep spuiten jarenlang zichtbaar blijft.":
+    "No trabajamos con inyectables en esta zona. Es una elección y no una carencia: es un sitio difícil donde inyectar demasiado o demasiado superficial se queda visible durante años.",
+  "Wij werken niet met korting, sale of schaarste":
+    "No trabajamos con descuentos, rebajas ni escasez",
+  "Wisselend per zone": "Variable según la zona",
+  "Wit, dun en definitief. Bij striae heet dit striae albae. Het weefsel mist pigmentcellen en heeft een andere structuur dan de huid eromheen.":
+    "Blanca, fina y definitiva. En las estrías esto se llama striae albae. Al tejido le faltan células de pigmento y tiene otra estructura que la piel de alrededor.",
+  "Witte striae en oude littekens verdwijnen niet. Structuur verbeteren kan, kleur terugbrengen niet. Dat zeggen we vóór je iets betaalt.":
+    "Las estrías blancas y las cicatrices antiguas no desaparecen. Mejorar la textura se puede, devolver el color no. Eso lo decimos antes de que pagues nada.",
+  "Wordt duidelijk lichter": "Se aclara claramente",
+  "Zachte hangende velletjes": "Pellejitos blandos que cuelgan",
+  "Ze horen bij een werkende porie en ze komen terug, hoe grondig je ook te werk gaat. Wij verkopen daar geen reeks voor. Wat we wel doen is uitleggen waarom je neus er over drie weken weer zo uitziet, zodat je stopt met een gevecht dat niet te winnen is.":
+    "Forman parte de un poro que funciona y vuelven, por a fondo que lo hagas. Nosotros no vendemos una serie para eso. Lo que sí hacemos es explicar por qué tu nariz vuelve a tener ese aspecto en tres semanas, para que dejes una lucha que no se puede ganar.",
+  "Ze namen de tijd om te kijken, en ik hoorde precies wat er wel en niet kon.":
+    "Se tomaron el tiempo de mirar, y oí exactamente lo que se podía y lo que no.",
+  "Zeg het tegen je behandelaar, of tegen iemand anders van het team als dat makkelijker is. Het meeste is in een gesprek op te lossen, en dat is ook de eerste stap van de ANBOS-klachtenregeling waar wij onder vallen.":
+    "Díselo a tu terapeuta, o a otra persona del equipo si te resulta más fácil. La mayoría de las cosas se resuelven en una conversación, y ese es también el primer paso del procedimiento de reclamaciones de ANBOS al que estamos adheridos.",
+  "Zes sessies over vier maanden": "Seis sesiones en cuatro meses",
+  "Zet het in je huidprofiel": "Ponlo en tu perfil de piel",
+  "Zichtbaar verschil": "Diferencia visible",
+  "Zie de ABCDE-check": "Ver la comprobación ABCDE",
+  "Zie de littekenklok": "Ver el reloj de la cicatriz",
+  "Zie de moedervlekkenpagina": "Ver la página de lunares",
+  "Zie de poriënpagina": "Ver la página de poros",
+  "Zie de stapelteller": "Ver el contador de acumulación",
+  "Zie de verouderingspagina": "Ver la página de envejecimiento de la piel",
+  "Zie het zonjaar": "Ver el año solar",
+  "Zie je een schaduw in de plek als het licht van opzij komt, of voel je een randje met je vingertop?":
+    "¿Ves una sombra en la mancha cuando la luz viene de lado, o notas un bordecito con la yema del dedo?",
+  "Zie je fijne streepjes die per dag verschillen, en trekt je huid kort na het wassen? Dat kan ook bij een vette huid.":
+    "¿Ves rayitas finas que varían según el día, y tu piel tira poco después de lavarla? Eso también puede pasar en una piel grasa.",
+  "Zie je in de spiegel geen duidelijke vlekken maar wel een ongelijke tint, en valt het op foto's meer op dan in het echt?":
+    "¿En el espejo no ves manchas claras pero sí un tono desigual, y se nota más en las fotos que en la realidad?",
+  "Zijn er ademstops, of ben je overdag ongewoon slaperig, dan sturen we je naar de huisarts voor slaaponderzoek. Snurken zachter maken terwijl er ademstops onder zitten is het alarm uitzetten en het probleem laten staan.":
+    "Si hay pausas en la respiración, o durante el día tienes un sueño inusual, te mandamos al médico de cabecera para un estudio del sueño. Hacer más suave el ronquido mientras debajo hay pausas en la respiración es apagar la alarma y dejar el problema.",
+  "Zijn het fijne streepjes die per dag verschillen, dan is het vocht en geen verlies van structuur. Dat is met verzorging op te lossen en niet met een apparaat.":
+    "Si son rayitas finas que varían según el día, es hidratación y no pérdida de estructura. Eso se resuelve con cuidado y no con un aparato.",
+  "Zijn het gelige, iets verheven plekjes, meestal aan de neuskant van je oogleden, die er 's ochtends en 's avonds hetzelfde bij liggen?":
+    "¿Son manchitas amarillentas, ligeramente elevadas, normalmente en el lado de la nariz de los párpados, que están igual por la mañana y por la noche?",
+  "Zit de bolling er 's ochtends en 's avonds hetzelfde bij, dan gaat het om het vetkussen achter je oog. Daar is een ingreep voor, en die hoort bij een cosmetisch arts of oogarts. Wij zouden je een reeks verkopen die niets verandert.":
+    "Si el abultamiento está igual por la mañana y por la noche, se trata de la almohadilla de grasa de detrás del ojo. Para eso hay una intervención, y corresponde a un médico estético o a un oftalmólogo. Nosotros te venderíamos una serie que no cambia nada.",
+  "Zit de roodheid op de wangen of langs de kaaklijn, met minieme bultjes erin, en is dat er al zolang je je kunt herinneren?":
+    "¿La rojez está en las mejillas o a lo largo de la línea de la mandíbula, con bultitos mínimos dentro, y lleva ahí desde que tienes memoria?",
+  "Zit het aan beide kanten ongeveer gelijk, met vage randen in plaats van scherpe? En kwam het in een periode van hormonale verandering?":
+    "¿Está más o menos igual en los dos lados, con bordes difusos en lugar de definidos? ¿Y apareció en un periodo de cambio hormonal?",
+  "Zit het alleen op je wangen, dan kan het iets zijn dat je huid raakt: telefoon, kussensloop, mondkapje, sportband. Maar net zo vaak speelt er hormonaal iets mee, en dat zie je van buiten niet.":
+    "Si está solo en las mejillas, puede ser algo que toca tu piel: teléfono, funda de almohada, mascarilla, cinta deportiva. Pero igual de a menudo influye algo hormonal, y eso desde fuera no se ve.",
+  "Zit het in het ooglid zelf in plaats van eronder, voelt het stevig aan, en is het niet of nauwelijks pijnlijk?":
+    "¿Está en el propio párpado en lugar de debajo, se nota firme, y duele poco o nada?",
+  "Zit het met een breed vlak op de huid in plaats van aan een steeltje, en voelt het oppervlak korrelig of wasachtig?":
+    "¿Se apoya en la piel con una base ancha en lugar de con un pedúnculo, y la superficie se nota granulosa o cérea?",
+  "Zit het onder de laag die zich vernieuwt, dan raden we het af. Je betaalt dan voor sessies waarvan we vooraf weten dat ze weinig gaan doen.":
+    "Si está por debajo de la capa que se renueva, lo desaconsejamos. Entonces pagarías por sesiones de las que sabemos de antemano que van a hacer poco.",
+  "Zit je in het rustige kwadrant, dan is ons advies om niets te doen. Dat komt vaker voor dan je denkt.":
+    "Si estás en el cuadrante tranquilo, nuestro consejo es no hacer nada. Pasa más a menudo de lo que piensas.",
+  "Zitten de bultjes vooral op geschoren zones, en zie je bij fel licht een donkere lus onder het velletje?":
+    "¿Los bultitos están sobre todo en zonas afeitadas, y con luz intensa ves un bucle oscuro bajo la pielecita?",
+  "Zitten ze verspreid en niet in elke porie, zijn ze duidelijk donkerder dan de rest, en zitten ze er al maanden op dezelfde plek?":
+    "¿Están repartidos y no en cada poro, son claramente más oscuros que el resto, y llevan meses en el mismo sitio?",
+  "Zo goed als alles wat je ziet kan uit de fotografie komen. Dit is de stand waarin de meeste voor-en-na-beelden op internet gemaakt zijn.":
+    "Casi todo lo que ves puede venir de la fotografía. Es la situación en la que se han hecho la mayoría de las imágenes de antes y después de internet.",
+  "Zodra dat voorbij is, verandert deze uitkomst vanzelf. Je hoeft er verder niets voor te doen.":
+    "En cuanto eso pase, este resultado cambia por sí solo. No tienes que hacer nada más.",
+  "Zolang niet duidelijk is wat het is, behandelen we het gebied niet. Ook niet als je voor iets anders komt.":
+    "Mientras no esté claro qué es, no tratamos la zona. Tampoco si vienes por otra cosa.",
+  "Zon, weer, stress, hormonen, inspanning. Dit is de groep waarbij goed advies niet genoeg is, want je kunt je leven niet eromheen bouwen. Precies hier heeft behandelen van de vaatjes zin.":
+    "Sol, tiempo, estrés, hormonas, esfuerzo. Es el grupo en el que un buen consejo no basta, porque no puedes construir tu vida alrededor de eso. Justo aquí tiene sentido tratar los vasos.",
+  "Zonbescherming is hier geen bijzaak maar de behandeling zelf; zonder dat werkt de rest niet. Daarnaast microneedling, peelings of een pigmenttraject, afhankelijk van hoe diep het zit.":
+    "La protección solar aquí no es un detalle sino el propio tratamiento; sin ella lo demás no funciona. Además, microneedling, peelings o un programa de pigmento, según la profundidad a la que esté.",
+  "Zonder glans werpt de rand geen schaduw meer en verdwijnt het reliëf.":
+    "Sin brillo el borde ya no proyecta sombra y el relieve desaparece.",
+  "Zonder mee-eters gaat het bijna nooit om acne. Dat is het snelste onderscheid dat je zelf kunt maken.":
+    "Sin puntos negros casi nunca se trata de acné. Es la distinción más rápida que puedes hacer por tu cuenta.",
+  "Zonder meting en zonder doel is elke behandeling een gok, en dan is achteraf niet vast te stellen of er iets is veranderd.":
+    "Sin medición y sin objetivo cada tratamiento es una apuesta, y entonces después no se puede determinar si ha cambiado algo.",
+  "Zonder uitleg": "Sin explicación",
+  "Zonschade en melasma lijken op elkaar en vragen een andere aanpak. Weten we het niet zeker, dan behandelen we nog niet.":
+    "El daño solar y el melasma se parecen y piden un enfoque distinto. Si no estamos seguros, todavía no tratamos.",
+  "Zuren op een geprikkelde huid.": "Ácidos sobre una piel irritada.",
+  "Zweet en warmte in open kanaaltjes geven ontsteking.":
+    "El sudor y el calor en canales abiertos provocan inflamación.",
+  "Zweet in geprikkelde haarzakjes geeft bultjes.":
+    "El sudor en folículos irritados provoca bultitos.",
+  "Zweet op een net geopende porie prikkelt.":
+    "El sudor sobre un poro recién abierto irrita.",
+  "Zweet prikt op een huid die aan het vervellen is.":
+    "El sudor escuece en una piel que se está pelando.",
+  "Zwellingen die je meer voelt dan ziet. Ze komen niet tot een kopje, ze doen zeer, en ze laten vaker een litteken of een donkere vlek achter.":
+    "Hinchazones que notas más de lo que ves. No llegan a formar cabeza, duelen, y dejan con más frecuencia una cicatriz o una mancha oscura.",
+  "acne mandibulair": "acné mandibular",
+  "acne mechanica": "acné mecánica",
+  "als het gebeurt": "cuando ocurre",
+  "artritis psoriatica": "artritis psoriásica",
+  "atrofische acnelittekens: ice pick, boxcar, rolling":
+    "cicatrices de acné atróficas: ice pick, boxcar, rolling",
+  "bachelor degree": "grado universitario",
+  "beeld volgt": "imagen pendiente",
+  "dat je borstvoeding geeft": "que estás dando el pecho",
+  "dat je een dag kunt hebben": "que puedes tener un día",
+  "dat je een paar dagen kunt hebben": "que puedes tener unos días",
+  "dat je er meteen weer normaal uit moet zien":
+    "que tienes que volver a tener un aspecto normal enseguida",
+  "dat je hooguit een dag hebt": "que tienes como mucho un día",
+  "de Fotona 4D": "el Fotona 4D",
+  "de HydraFacial": "el HydraFacial",
+  "de OxyGeneo": "el OxyGeneo",
+  "de behandeling": "el tratamiento",
+  "de dermaplaning": "el dermaplaning",
+  "de eerste IPL-behandeling": "el primer tratamiento IPL",
+  "de eerste epilatie": "la primera depilación",
+  "de eerste microneedling": "el primer microneedling",
+  "de eerste peeling": "el primer peeling",
+  "de eerste skinbooster": "el primer skin booster",
+  "de huidscan": "el escaneo de la piel",
+  "de zon die eraan komt": "el sol que se acerca",
+  "dehydratie van de hoornlaag": "deshidratación de la capa córnea",
+  "dermatochalasis, laxiteit in gevorderd stadium":
+    "dermatocalasia, laxitud en estadio avanzado",
+  "deze vacature": "esta vacante",
+  "diffuse hyperpigmentatie": "hiperpigmentación difusa",
+  "diffuus erytheem": "eritema difuso",
+  "dynamische rimpels": "arrugas dinámicas",
+  "een dag": "un día",
+  "een doffe huid": "una piel apagada",
+  "een droge huid": "una piel seca",
+  "een gevoelige huid": "una piel sensible",
+  "een paar dagen": "unos días",
+  "een plaatspagina hoort een tariefblok te hebben":
+    "een plaatspagina hoort een tariefblok te hebben",
+  "een uur": "una hora",
+  "een vast bedrag": "un importe fijo",
+  "er echt uitziet": "es en realidad",
+  "er staan tarieven op de pagina, maar geen dienst in het schema":
+    "er staan tarieven op de pagina, maar geen dienst in het schema",
+  "er staat een dienst in het schema, maar er zijn geen tarieven":
+    "er staat een dienst in het schema, maar er zijn geen tarieven",
+  "erytheem met teleangiëctasieën": "eritema con telangiectasias",
+  "exogene factoren": "factores exógenos",
+  "fill={vulling} fillOpacity=": "fill={vulling} fillOpacity=",
+  "gesloten comedo": "comedón cerrado",
+  "gesloten comedonen": "comedones cerrados",
+  "hersteltijd die ik heb": "tiempo de recuperación que tengo",
+  "het antwoordblok bevat een link; dat gaat het schema in":
+    "het antwoordblok bevat een link; dat gaat het schema in",
+  "hordeolum, in de volksmond strontje of gerstekorrel":
+    "hordeolum, en lenguaje corriente orzuelo",
+  "hypertrofisch litteken, keloïd": "cicatriz hipertrófica, queloide",
+  "in de stoel": "en el sillón",
+  "inflammatoire acne": "acné inflamatorio",
+  "inflammatoire fase": "fase inflamatoria",
+  "je gebruinde huid": "tu piel bronceada",
+  "je huid in beeld brengt": "registra tu piel",
+  "je huidprobleem": "tu problema de piel",
+  "keratosis pilaris rubra faciei": "keratosis pilaris rubra faciei",
+  "lipidearm, alipide huid": "piel pobre en lípidos, alípica",
+  "main a, main button": "main a, main button",
+  "meer dan": "más de",
+  "nodulocystische acne": "acné noduloquístico",
+  "opacity .4s ease": "opacity .4s ease",
+  "open comedo, mee-eter": "comedón abierto, punto negro",
+  "papulopustuleuze acne": "acné papulopustuloso",
+  "papulopustuleuze rosacea": "rosácea papulopustulosa",
+  "plaque psoriasis": "psoriasis en placas",
+  "post-inflammatoir erytheem, PIE": "eritema postinflamatorio, PIE",
+  "post-inflammatoire hyperpigmentatie, PIH":
+    "hiperpigmentación postinflamatoria, PIH",
+  "postinflammatoire hyperpigmentatie": "hiperpigmentación postinflamatoria",
+  "prolaps van het orbitale vetkussen": "prolapso de la bolsa grasa orbitaria",
+  "seborroïsche keratose": "queratosis seborreica",
+  "striae albae, atrofisch litteken": "striae albae, cicatriz atrófica",
+  "teleangiëctasieën, couperose": "telangiectasias, cuperosis",
+  "traandalgroeve, tear trough": "surco lagrimal, tear trough",
+  "twee uur": "dos horas",
+  "uitgerijpt litteken": "cicatriz madura",
+  "van dichtbij": "de cerca",
+  "verdachte laesie": "lesión sospechosa",
+  "verlies van definitie langs de mandibula":
+    "pérdida de definición a lo largo de la mandíbula",
+  "verminderde celvernieuwing": "renovación celular reducida",
+  "verwijde poriën": "poros dilatados",
+  "volumeverlies en verslapping": "pérdida de volumen y flacidez",
+  "waarvoor ik kom": "para qué vengo",
+  "wat er verder speelt": "qué más influye",
+  "wat ik nu gebruik": "lo que uso ahora",
+  "welke behandeling": "qué tratamiento",
+  "zit er al in": "ya está incluido",
+  "| Diba Clinics": "| Diba Clinics",
+  "Profielschets klaar. Meeste aandacht:":
+    "Esbozo del perfil listo. Mayor atención:",
+  "Bij Diba Clinics in Rotterdam.": "En Diba Clinics en Róterdam.",
+  uit: "de",
+  "1.000": "1.000",
+  "€ 1.000": "€ 1.000",
+  "1.100": "1.100",
+  "€ 1.100": "€ 1.100",
+  "1.300": "1.300",
+  "€ 1.300": "€ 1.300",
+  "1.495": "1.495",
+  "€ 1.495": "€ 1.495",
+  "€ 1.000": "€ 1.000",
+  "€ 1.100": "€ 1.100",
+  "€ 1.300": "€ 1.300",
+  "€ 1.495": "€ 1.495",
+  "Diba Clinics, huidkliniek in Rotterdam":
+    "Diba Clinics, clínica de la piel en Róterdam",
+  "Schematisch stuk huid met poriën.": "Trozo de piel esquemático con poros.",
+  "Deze schakelaar doet het niet. Lees waarom.":
+    "Este interruptor no funciona. Lee por qué.",
+  "Vraagt meer hersteltijd dan je aangaf. Je gaf aan {0}, en hiervoor moet je rekenen op {1}.":
+    "Pide más tiempo de recuperación del que indicaste. Indicaste {0}, y para esto tienes que contar con {1}.",
+  "Hiervoor is deze behandeling gemaakt: {lijst}.":
+    "Para esto está hecho este tratamiento: {lijst}.",
+  "Doet iets aan {lijst}, maar daar is het niet voor gemaakt.":
+    "Hace algo por {lijst}, pero no está hecho para eso.",
+  "Er is nu niets dat volledig past, en dat ligt aan één ding: {lijst}. Dat is een moment en geen eigenschap.":
+    "Ahora mismo no hay nada que encaje del todo, y eso se debe a una sola cosa: {lijst}. Es un momento y no una característica.",
+  "Voor wat jij wil veranderen bestaat er wel iets, maar niet binnen de ruimte die je opgaf: je gaf aan {0}.":
+    "Para lo que quieres cambiar sí existe algo, pero no dentro del margen que indicaste: indicaste {0}.",
+  "je zwangerschap": "tu embarazo",
+  niets: "nada",
+  "Meld dit tijdens de intake": "Menciona esto en la consulta previa",
+  "Dit nu niet": "Esto ahora no",
+  "{0} van de {1}": "{0} de {1}",
+  "Je hebt {0} van de {1} vragen ingevuld. Elke vraag die je nog beantwoordt maakt deze uitkomst preciezer.":
+    "Has completado {0} de {1} preguntas. Cada pregunta que respondas además hace este resultado más preciso.",
+  "Daarnaast doen er {0} iets aan je doel zonder dat ze daarvoor gemaakt zijn.":
+    "Además, hay {0} que hacen algo por tu objetivo sin estar hechos para eso.",
+  "1 reden, niet {0} losse": "1 motivo, no {0} sueltos",
+  "{0} redenen, niet {1} losse": "{0} motivos, no {1} sueltos",
+  "1 behandeling": "1 tratamiento",
+  "{0} behandelingen": "{0} tratamientos",
+  "{0} van {1} vragen ingevuld": "{0} de {1} preguntas completadas",
+  "Je wil iets doen aan {lijst}.": "Quieres hacer algo por {lijst}.",
+  "Je huid is {0} en {1}.": "Tu piel es {0} y {1}.",
+  "Je huid is {0}.": "Tu piel es {0}.",
+  "Je huid {0}.": "Tu piel {0}.",
+  "Je schat jezelf in op Fitzpatrick {0}.": "Te sitúas en Fitzpatrick {0}.",
+  "Je gebruikt nu {lijst}.": "Ahora usas {lijst}.",
+  "Je hebt {0} van de {1} zones uit {2} aangewezen.":
+    "Has marcado {0} de las {1} zonas de {2}.",
+  "Wat er nog bij zou komen: {0}.": "Lo que aún se añadiría: {0}.",
+  "Of dat gunstiger uitkomt hangt af van de definitieve tarieven.":
+    "Si eso sale más a cuenta depende de las tarifas definitivas.",
+  Hydratatie: "Hidratación",
+  "of stel je vraag via": "o haz tu pregunta por",
+  Huidtherapie: "Terapia de la piel",
+  Mesotherapie: "Mesoterapia",
+  Pigmentbehandeling: "Tratamiento de la pigmentación",
+  Huidbehandeling: "Tratamiento de la piel",
+  Ontharing: "Depilación",
+  "Heb je er eerder antwoord op nodig, bel dan":
+    "Si necesitas una respuesta antes, llama al",
 };

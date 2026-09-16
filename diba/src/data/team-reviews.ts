@@ -36,6 +36,7 @@ export type TeamReview = {
   readonly id: string;
   readonly quote: string;
   readonly quoteEn?: string;
+  readonly quoteEs?: string;
   readonly name: string;
   readonly treatment: string;
   readonly relativeDate?: string;
@@ -56,6 +57,7 @@ export function reviewsVoorTeamlid(teamNaam: string): readonly TeamReview[] {
     id: r.id,
     quote: r.quote,
     quoteEn: r.quoteEn,
+    quoteEs: r.quoteEs,
     name: r.name,
     treatment: r.treatment,
     relativeDate: r.relativeDate,

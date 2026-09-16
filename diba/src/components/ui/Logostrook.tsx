@@ -51,7 +51,7 @@ export default function Logostrook({ className = "" }: { className?: string }) {
             href={l.url}
             target="_blank"
             rel="noopener noreferrer"
-            title={l.naam}
+            title={tc(l.naam)}
             /* Een vak van vaste hoogte en minstens even breed, met het logo in het
                midden: daardoor hangen alle merken aan dezelfde lijn en is het aanraakdoel
                overal even groot. De ondergrens in de breedte is er ook voor het moment

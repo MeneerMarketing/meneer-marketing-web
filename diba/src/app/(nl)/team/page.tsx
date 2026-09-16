@@ -360,7 +360,7 @@ export default function TeamPage() {
                     <blockquote className="mt-5 flex-1 text-[15px] leading-7 text-[var(--t-body)]">
                       {reviewtekst(
                         reviews[0].quote,
-                        reviews[0].quoteEn,
+                        { en: reviews[0].quoteEn, es: reviews[0].quoteEs },
                         taalNu(),
                       )}
                     </blockquote>

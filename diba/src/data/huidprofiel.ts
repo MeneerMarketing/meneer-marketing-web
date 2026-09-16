@@ -643,12 +643,68 @@ export type MatchGrond =
   /** Je hebt nog geen doel gekozen, dus valt er niets te zeggen. */
   | "geen-doel";
 
+/**
+ * Een zin die uit delen bestaat die elk apart door het woordenboek moeten.
+ *
+ * "Hiervoor is deze behandeling gemaakt: puistjes en acne." bestaat uit een vaste zin en
+ * een lijst die per profiel anders is. Als één string kan zo'n zin nooit in het woordenboek
+ * staan (er zijn tientallen combinaties), en tot 16 september 2026 bleef hij daardoor op de
+ * Engelse en de Spaanse kant Nederlands. Nu draagt de zin gaten: `{lijst}` voor de delen
+ * met komma's en een laatste "en" ertussen, `{0}` en `{1}` voor losse delen. De sjabloon en elk deel zijn wel
+ * gewone sleutels. `redenTekst` zet het in de taal van de pagina in elkaar.
+ */
+export type Samengesteld = {
+  /** De Nederlandse zin met de gaten erin; die staat zo in en.ts en es.ts. */
+  readonly zin: string;
+  /** Vult `{lijst}`: elk deel door het woordenboek, met komma's en voor het laatste deel "en". */
+  readonly lijst?: readonly string[];
+  /** Vult `{0}`, `{1}`, … , elk deel door het woordenboek. */
+  readonly delen?: readonly string[];
+  /** Elk deel (lijst en delen) met een kleine beginletter, midden in een zin. */
+  readonly kleineLetters?: boolean;
+};
+
+export type Reden = string | Samengesteld;
+
+/** De reden als tekst, in de taal van `t` en `tc` (server: lib/vertaal, browser: de haken). */
+export function redenTekst(
+  reden: Reden,
+  t: (nl: string) => string,
+  tc: (nl: string) => string,
+): string {
+  if (typeof reden === "string") return tc(reden);
+  /* Alleen de eerste letter klein. Met een gewone toLowerCase() werd "Vitamine C" tot
+     "vitamine c": die hoofdletter is geen opmaak maar de naam van de stof. */
+  const deel = (d: string) => {
+    const v = tc(d);
+    return reden.kleineLetters ? v.charAt(0).toLowerCase() + v.slice(1) : v;
+  };
+  let uit = t(reden.zin);
+  if (reden.lijst) {
+    /* "a, b en c": komma's, en alleen voor het laatste deel het woord "en". */
+    const delen = reden.lijst.map(deel);
+    const lijst =
+      delen.length > 1
+        ? delen.slice(0, -1).join(", ") +
+          " " +
+          t("en") +
+          " " +
+          delen.slice(-1).join("")
+        : delen.join("");
+    uit = uit.replace("{lijst}", lijst);
+  }
+  (reden.delen ?? []).forEach((d, i) => {
+    uit = uit.replace("{" + i + "}", deel(d));
+  });
+  return uit;
+}
+
 export type Match = {
   readonly behandeling: Behandeling;
   readonly oordeel: MatchOordeel;
   readonly grond: MatchGrond;
   /** Waarom. Bij "past-niet" is dit de belangrijkste regel op de pagina. */
-  readonly reden: string;
+  readonly reden: Reden;
   /** Kan wel, maar moet besproken worden. Blokkeert niets. */
   readonly letOp: readonly string[];
 };
@@ -712,7 +768,10 @@ export function maakMatches(p: Huidprofiel): readonly Match[] {
           behandeling: b,
           oordeel: "past-niet",
           grond: "herstel",
-          reden: `Vraagt meer hersteltijd dan je aangaf. Je gaf aan ${gaf}, en hiervoor moet je rekenen op ${moet}.`,
+          reden: {
+            zin: "Vraagt meer hersteltijd dan je aangaf. Je gaf aan {0}, en hiervoor moet je rekenen op {1}.",
+            delen: [gaf, moet],
+          },
           letOp,
         };
       }
@@ -723,27 +782,35 @@ export function maakMatches(p: Huidprofiel): readonly Match[] {
       const raak = p.doelen.filter((d) => doelen[d] === "vol");
       const zijdelings = p.doelen.filter((d) => doelen[d] === "deels");
 
+      /* De doelen gaan met hun hoofdletter mee en worden pas bij het samenstellen klein:
+         het woordenboek kent "Puistjes en acne", niet "puistjes en acne". */
       if (raak.length > 0) {
-        const namen = raak.map((d) =>
-          DOELEN.find((x) => x.id === d)!.label.toLowerCase(),
-        );
+        const namen = raak.map((d) => DOELEN.find((x) => x.id === d)!.label);
         return {
           behandeling: b,
           oordeel: "past",
           grond: "raak",
-          reden: `Hiervoor is deze behandeling gemaakt: ${namen.join(" en ")}.`,
+          reden: {
+            zin: "Hiervoor is deze behandeling gemaakt: {lijst}.",
+            lijst: namen,
+            kleineLetters: true,
+          },
           letOp,
         };
       }
       if (zijdelings.length > 0) {
-        const namen = zijdelings.map((d) =>
-          DOELEN.find((x) => x.id === d)!.label.toLowerCase(),
+        const namen = zijdelings.map(
+          (d) => DOELEN.find((x) => x.id === d)!.label,
         );
         return {
           behandeling: b,
           oordeel: "deels",
           grond: "zijdelings",
-          reden: `Doet iets aan ${namen.join(" en ")}, maar daar is het niet voor gemaakt.`,
+          reden: {
+            zin: "Doet iets aan {lijst}, maar daar is het niet voor gemaakt.",
+            lijst: namen,
+            kleineLetters: true,
+          },
           letOp,
         };
       }
@@ -788,7 +855,7 @@ export function maakMatches(p: Huidprofiel): readonly Match[] {
 export type GeenMatch = {
   readonly soort: "tijdelijk" | "hersteltijd" | "niets-in-aanbod";
   readonly kop: string;
-  readonly zin: string;
+  readonly zin: Reden;
   /** Wat er zou veranderen. Zonder dit is het alsnog een leeg scherm. */
   readonly wat: string;
   /** Wat er dan wel zou passen. Concreet, want een belofte zonder naam is vaag. */
@@ -827,7 +894,10 @@ export function waaromNiets(p: Huidprofiel): GeenMatch | null {
       return {
         soort: "tijdelijk",
         kop: "Niet nu, maar wel straks",
-        zin: `Er is nu niets dat volledig past, en dat ligt aan één ding: ${labels.join(" en ")}. Dat is een moment en geen eigenschap.`,
+        zin: {
+          zin: "Er is nu niets dat volledig past, en dat ligt aan één ding: {lijst}. Dat is een moment en geen eigenschap.",
+          lijst: labels,
+        },
         wat: "Zodra dat voorbij is, verandert deze uitkomst vanzelf. Je hoeft er verder niets voor te doen.",
         danWel: zonder,
       };
@@ -847,7 +917,10 @@ export function waaromNiets(p: Huidprofiel): GeenMatch | null {
       return {
         soort: "hersteltijd",
         kop: "Alleen de hersteltijd zit in de weg",
-        zin: `Voor wat jij wil veranderen bestaat er wel iets, maar niet binnen de ruimte die je opgaf: je gaf aan ${gaf}.`,
+        zin: {
+          zin: "Voor wat jij wil veranderen bestaat er wel iets, maar niet binnen de ruimte die je opgaf: je gaf aan {0}.",
+          delen: [gaf],
+        },
         wat: "Kun je het rond een weekend plannen, dan komt er wel iets vrij. Kan dat niet, dan is dat een eerlijk antwoord en geen reden om iets lichters te boeken dat niet gaat werken.",
         danWel: zonder,
       };
@@ -885,24 +958,6 @@ export function meldPunten(p: Huidprofiel): readonly string[] {
  * instellingen bepalen. [MEDISCHE-CHECK-ROJDA]
  */
 /* ══ De uitkomst ══════════════════════════════════════════════════════════ */
-
-/**
- * Alleen de eerste letter klein.
- *
- * Met een gewone toLowerCase() werd "Vitamine C" tot "vitamine c" en "Retinol of
- * vitamine A" tot "vitamine a". Die hoofdletters zijn geen opmaak maar de naam van de
- * stof, en een kliniek die die verkeerd schrijft leest als een kliniek die niet oplet.
- */
-function kleinBegin(s: string): string {
-  return s.charAt(0).toLowerCase() + s.slice(1);
-}
-
-/** "a, b en c": een opsomming die als Nederlands leest en niet als een array. */
-function opsomming(delen: readonly string[]): string {
-  if (delen.length === 0) return "";
-  if (delen.length === 1) return delen[0];
-  return delen.slice(0, -1).join(", ") + " en " + delen[delen.length - 1];
-}
 
 function labelVan<T extends { readonly id: string; readonly label: string }>(
   tabel: readonly T[],
@@ -956,7 +1011,7 @@ export function intakeTekst(p: Huidprofiel): string {
   const regels: string[] = ["Mijn huidprofiel van dibaclinics.nl", ""];
 
   const doelen = p.doelen
-    .map((d) => DOELEN.find((x) => x.id === d)?.label)
+    .map((d): string | undefined => DOELEN.find((x) => x.id === d)?.label)
     .filter(Boolean);
   if (doelen.length > 0) regels.push(`Waarvoor ik kom: ${doelen.join(", ")}`);
 
@@ -984,7 +1039,7 @@ export function intakeTekst(p: Huidprofiel): string {
 
   const gebruikt = p.gebruikt
     .filter((g) => g !== "niets")
-    .map((g) => GEBRUIK.find((x) => x.id === g)?.label)
+    .map((g): string | undefined => GEBRUIK.find((x) => x.id === g)?.label)
     .filter(Boolean);
   if (gebruikt.length > 0) {
     regels.push(`Wat ik nu gebruik: ${gebruikt.join(", ")}`);
@@ -1047,15 +1102,12 @@ export function nogOpen(p: Huidprofiel): readonly string[] {
   return open;
 }
 
-export function profielSamenvatting(p: Huidprofiel): readonly string[] {
-  const zinnen: string[] = [];
+export function profielSamenvatting(p: Huidprofiel): readonly Reden[] {
+  const zinnen: Reden[] = [];
 
   const doelen = p.doelen
     .filter((d) => d !== "onbekend")
-    .map((d) => {
-      const l = DOELEN.find((x) => x.id === d)?.label;
-      return l ? kleinBegin(l) : undefined;
-    })
+    .map((d): string | undefined => DOELEN.find((x) => x.id === d)?.label)
     .filter((l): l is string => Boolean(l));
 
   if (p.doelen.includes("onbekend") && doelen.length === 0) {
@@ -1063,23 +1115,40 @@ export function profielSamenvatting(p: Huidprofiel): readonly string[] {
       "Je weet dat er iets is, maar niet precies wat. Dat is een prima startpunt: uitzoeken wát het is, is het werk van de meting.",
     );
   } else if (doelen.length > 0) {
-    zinnen.push(`Je wil iets doen aan ${opsomming(doelen)}.`);
+    zinnen.push({
+      zin: "Je wil iets doen aan {lijst}.",
+      lijst: doelen,
+      kleineLetters: true,
+    });
   }
 
   const conditie = labelVan(HUIDCONDITIES, p.conditie);
   const gevoelig = labelVan(GEVOELIGHEID, p.gevoeligheid);
   if (conditie && gevoelig) {
-    zinnen.push(
-      `Je huid is ${kleinBegin(conditie)} en ${kleinBegin(gevoelig)}.`,
-    );
+    zinnen.push({
+      zin: "Je huid is {0} en {1}.",
+      delen: [conditie, gevoelig],
+      kleineLetters: true,
+    });
   } else if (conditie) {
-    zinnen.push(`Je huid is ${kleinBegin(conditie)}.`);
+    zinnen.push({
+      zin: "Je huid is {0}.",
+      delen: [conditie],
+      kleineLetters: true,
+    });
   } else if (gevoelig) {
-    zinnen.push(`Je huid ${kleinBegin(gevoelig)}.`);
+    zinnen.push({
+      zin: "Je huid {0}.",
+      delen: [gevoelig],
+      kleineLetters: true,
+    });
   }
 
   if (p.huidtype) {
-    zinnen.push(`Je schat jezelf in op Fitzpatrick ${p.huidtype}.`);
+    zinnen.push({
+      zin: "Je schat jezelf in op Fitzpatrick {0}.",
+      delen: [p.huidtype],
+    });
   }
 
   /* Hersteltijd staat er apart, want die stuurt meer weg dan mensen verwachten. */
@@ -1097,13 +1166,14 @@ export function profielSamenvatting(p: Huidprofiel): readonly string[] {
 
   const gebruikt = p.gebruikt
     .filter((g) => g !== "niets")
-    .map((g) => {
-      const l = GEBRUIK.find((x) => x.id === g)?.label;
-      return l ? kleinBegin(l) : undefined;
-    })
+    .map((g): string | undefined => GEBRUIK.find((x) => x.id === g)?.label)
     .filter((l): l is string => Boolean(l));
   if (gebruikt.length > 0) {
-    zinnen.push(`Je gebruikt nu ${opsomming(gebruikt)}.`);
+    zinnen.push({
+      zin: "Je gebruikt nu {lijst}.",
+      lijst: gebruikt,
+      kleineLetters: true,
+    });
   } else if (p.gebruikt.includes("niets")) {
     zinnen.push("Je gebruikt niets bijzonders op je huid.");
   }

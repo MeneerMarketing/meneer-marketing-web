@@ -51,7 +51,10 @@ function Kaart({ b }: { b: Behandeling }) {
             publicCopy haalt de redactievlaggen eruit; die staan in de data omdat Rojda en
             Okan nog dingen nakijken, en zonder deze functie staan ze in beeld. */}
         <p className="diba-label mt-5 flex min-w-0 items-baseline justify-between gap-3 text-[var(--t-muted)]">
-          <span className="min-w-0 truncate" title={b.apparaat}>
+          <span
+            className="min-w-0 truncate"
+            title={b.apparaat ? tc(b.apparaat) : undefined}
+          >
             {tc(b.apparaat ?? "")}
           </span>
           <span className="shrink-0 text-[var(--g-700)]">

@@ -16,6 +16,7 @@ import {
   profielIsLeeg,
   type MatchGrond,
   type MatchOordeel,
+  redenTekst,
 } from "@/data/huidprofiel";
 import { publicCopy } from "@/lib/copy-flags";
 import { useHuidprofiel } from "@/lib/huidprofiel-opslag";
@@ -284,7 +285,7 @@ export default function Behandelingenoverzicht() {
                     <span
                       className={`diba-label rounded-[var(--r-pill)] px-2.5 py-1 ${BADGE[match.grond].stijl}`}
                     >
-                      {BADGE[match.grond].tekst}
+                      {t(BADGE[match.grond].tekst)}
                     </span>
                   ) : null}
                 </span>
@@ -321,7 +322,9 @@ export default function Behandelingenoverzicht() {
                         : "bg-[var(--g-025)] text-[var(--t-body)]"
                     }`}
                   >
-                    {ALGEMEEN[match.grond] ? null : match.reden}
+                    {ALGEMEEN[match.grond]
+                      ? null
+                      : redenTekst(match.reden, t, tc)}
                     {match.letOp.length > 0 ? (
                       <span className="mt-2 block font-medium text-[var(--t-strong)]">
                         {t("Let op:")} {match.letOp[0]}

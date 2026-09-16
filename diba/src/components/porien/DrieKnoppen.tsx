@@ -107,7 +107,7 @@ export default function DrieKnoppen() {
             viewBox="0 0 520 300"
             className="block max-h-[40vw] w-full sm:max-h-none"
             role="img"
-            aria-label={`Schematisch stuk huid met poriën. ${tc(uitkomst.kop)}.`}
+            aria-label={`${t("Schematisch stuk huid met poriën.")} ${tc(uitkomst.kop)}.`}
           >
             <defs>
               {/* De glans is een lichtbaan die schuin over de huid valt, geen witte
@@ -261,7 +261,7 @@ export default function DrieKnoppen() {
             type="button"
             aria-expanded={uitlegOpen}
             aria-controls={uitlegId}
-            aria-label={`${tc(VIERDE_KNOP.label)}. Deze schakelaar doet het niet. Lees waarom.`}
+            aria-label={`${tc(VIERDE_KNOP.label)}. ${t("Deze schakelaar doet het niet. Lees waarom.")}`}
             onClick={() => setUitlegOpen(true)}
             className="w-full cursor-help rounded-[var(--r-sm)] border border-dashed border-[var(--g-200)] p-5 text-left transition-colors hover:border-[var(--g-300)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--g-700)]"
           >

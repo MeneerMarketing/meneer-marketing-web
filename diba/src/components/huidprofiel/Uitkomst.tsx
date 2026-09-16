@@ -17,12 +17,15 @@ import {
   nogNietGemeten,
   profielSamenvatting,
   PROFIEL_ONDERDELEN,
+  redenTekst,
   waaromNiets,
   type Huidprofiel,
   type Match,
+  type Reden,
 } from "@/data/huidprofiel";
 import { publicCopy } from "@/lib/copy-flags";
 import { useT, useTc } from "@/lib/gebruik-taal";
+import { vul } from "@/lib/vul";
 
 import { useTaal } from "@/lib/gebruik-taal";
 /**
@@ -68,10 +71,14 @@ type Afvalgroep = {
   readonly eerste: string;
 };
 
-function groepeer(matches: readonly Match[]): readonly Afvalgroep[] {
+function groepeer(
+  matches: readonly Match[],
+  tekst: (reden: Reden) => string,
+): readonly Afvalgroep[] {
   const kaart = new Map<string, { namen: string[]; eerste: string }>();
   for (const m of matches) {
-    const r = publicCopy(m.reden);
+    /* Gegroepeerd op de zin zoals hij op de pagina komt, dus al vertaald. */
+    const r = tekst(m.reden);
     const bestaand = kaart.get(r);
     if (bestaand) bestaand.namen.push(m.behandeling.naam);
     else
@@ -105,7 +112,10 @@ export default function Uitkomst({ profiel }: Props) {
   const past = matches.filter((m) => m.oordeel === "past");
   const deels = matches.filter((m) => m.oordeel === "deels");
   const kanNiet = matches.filter((m) => m.oordeel === "past-niet");
-  const groepen = useMemo(() => groepeer(kanNiet), [kanNiet]);
+  const groepen = useMemo(
+    () => groepeer(kanNiet, (r) => redenTekst(r, t, tc)),
+    [kanNiet, t, tc],
+  );
   const geenMatch = useMemo(() => waaromNiets(profiel), [profiel]);
   const melden = meldPunten(profiel);
   const samenvatting = profielSamenvatting(profiel);
@@ -119,7 +129,7 @@ export default function Uitkomst({ profiel }: Props) {
     regels.push({
       kop: "Je doel",
       waarde: profiel.doelen
-        .map((d) => DOELEN.find((x) => x.id === d)?.label ?? d)
+        .map((d) => tc(DOELEN.find((x) => x.id === d)?.label ?? d))
         .join(", "),
     });
   }
@@ -189,14 +199,16 @@ export default function Uitkomst({ profiel }: Props) {
               {t("Je huid, zoals jij hem beschrijft")}
             </p>
             <div className="mt-5 space-y-3">
-              {samenvatting.map((z) => (
-                <p
-                  key={z}
-                  className="max-w-[58ch] text-[17px] leading-8 text-[var(--t-body)]"
-                >
-                  {tc(z)}
-                </p>
-              ))}
+              {samenvatting
+                .map((z) => redenTekst(z, t, tc))
+                .map((zin) => (
+                  <p
+                    key={zin}
+                    className="max-w-[58ch] text-[17px] leading-8 text-[var(--t-body)]"
+                  >
+                    {zin}
+                  </p>
+                ))}
             </div>
 
             {regels.length > 0 ? (
@@ -209,9 +221,12 @@ export default function Uitkomst({ profiel }: Props) {
 
             {stand < PROFIEL_ONDERDELEN ? (
               <p className="mt-6 text-[14px] leading-6 text-[var(--t-muted)]">
-                {t("Je hebt")} {stand} van de {PROFIEL_ONDERDELEN}{" "}
-                {t(
-                  "vragen ingevuld. Elke vraag die je nog beantwoordt maakt deze uitkomst preciezer.",
+                {vul(
+                  t(
+                    "Je hebt {0} van de {1} vragen ingevuld. Elke vraag die je nog beantwoordt maakt deze uitkomst preciezer.",
+                  ),
+                  stand,
+                  PROFIEL_ONDERDELEN,
                 )}
               </p>
             ) : null}
@@ -223,7 +238,7 @@ export default function Uitkomst({ profiel }: Props) {
       {melden.length > 0 ? (
         <div className="rounded-[var(--r-lg)] bg-[var(--g-050)] p-7 sm:p-9 lg:p-11">
           <p className="diba-label text-[var(--t-label)]">
-            Meld dit tijdens de intake ({melden.length})
+            {t("Meld dit tijdens de intake")} ({melden.length})
           </p>
           <p className="mt-3 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
             {t(
@@ -248,11 +263,11 @@ export default function Uitkomst({ profiel }: Props) {
       <div className="rounded-[var(--r-lg)] bg-white p-7 sm:p-9 lg:p-11">
         <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2">
           <p className="diba-label text-[var(--t-label)]">
-            {past.length > 0 ? "Dit kun je boeken" : "Wat er nu past"}
+            {past.length > 0 ? t("Dit kun je boeken") : t("Wat er nu past")}
           </p>
           {past.length > 0 ? (
             <p className="text-[14px] leading-6 text-[var(--t-muted)] tabular-nums">
-              {past.length} van de {matches.length}
+              {vul(t("{0} van de {1}"), past.length, matches.length)}
             </p>
           ) : null}
         </div>
@@ -282,7 +297,7 @@ export default function Uitkomst({ profiel }: Props) {
                   </span>
 
                   <span className="mt-2 block max-w-[62ch] text-[15px] leading-7 text-[var(--t-body)]">
-                    {tc(m.reden)}
+                    {redenTekst(m.reden, t, tc)}
                   </span>
 
                   <span className="mt-3 flex flex-wrap gap-x-5 gap-y-1 text-[13px] leading-6 text-[var(--t-muted)]">
@@ -302,7 +317,9 @@ export default function Uitkomst({ profiel }: Props) {
                       <span className="diba-label block text-[var(--t-label)]">
                         {t("Eerst bespreken")}
                       </span>
-                      <span className="mt-1 block">{m.letOp.join(". ")}</span>
+                      <span className="mt-1 block">
+                        {m.letOp.map((l) => tc(l)).join(". ")}
+                      </span>
                     </span>
                   ) : null}
                 </Link>
@@ -318,7 +335,7 @@ export default function Uitkomst({ profiel }: Props) {
               {tc(geenMatch.kop)}
             </p>
             <p className="mt-3 max-w-[62ch] text-[16px] leading-7 text-[var(--g-900)]">
-              {tc(geenMatch.zin)}
+              {redenTekst(geenMatch.zin, t, tc)}
             </p>
             <p className="mt-4 max-w-[62ch] text-[15px] leading-7 text-[var(--g-900)]">
               {tc(geenMatch.wat)}
@@ -329,7 +346,7 @@ export default function Uitkomst({ profiel }: Props) {
                   {t("Wat er dan wel past")}
                 </p>
                 <p className="mt-2 text-[15px] leading-7 text-[var(--t-body)]">
-                  {geenMatch.danWel.join(", ")}
+                  {geenMatch.danWel.map((n) => tc(n)).join(", ")}
                 </p>
               </div>
             ) : null}
@@ -350,8 +367,12 @@ export default function Uitkomst({ profiel }: Props) {
               </>
             ) : (
               <>
-                {t("Daarnaast doen er")} {deels.length}{" "}
-                {t("iets aan je doel zonder dat ze daarvoor gemaakt zijn.")}
+                {vul(
+                  t(
+                    "Daarnaast doen er {0} iets aan je doel zonder dat ze daarvoor gemaakt zijn.",
+                  ),
+                  deels.length,
+                )}
               </>
             )}{" "}
             {t("Die staan op de behandelingenpagina.")}
@@ -364,12 +385,16 @@ export default function Uitkomst({ profiel }: Props) {
         <div className="rounded-[var(--r-lg)] bg-white p-7 sm:p-9 lg:p-11">
           <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2">
             <p className="diba-label text-[var(--t-label)]">
-              Dit nu niet ({kanNiet.length})
+              {t("Dit nu niet")} ({kanNiet.length})
             </p>
             <p className="text-[14px] leading-6 text-[var(--t-muted)]">
-              {groepen.length} {groepen.length === 1 ? "reden" : "redenen"},
-              niet {kanNiet.length}
-              {t("losse")}
+              {groepen.length === 1
+                ? vul(t("1 reden, niet {0} losse"), kanNiet.length)
+                : vul(
+                    t("{0} redenen, niet {1} losse"),
+                    groepen.length,
+                    kanNiet.length,
+                  )}
             </p>
           </div>
           <p className="mt-3 max-w-[62ch] text-[16px] leading-7 text-[var(--t-body)]">
@@ -381,16 +406,17 @@ export default function Uitkomst({ profiel }: Props) {
           <ul className="mt-7 space-y-3">
             {groepen.map((g) => (
               <li
-                key={tc(g.reden)}
+                key={g.reden}
                 className="rounded-[var(--r-md)] bg-[var(--g-025)] p-5 sm:p-6"
               >
                 <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
                   <p className="max-w-[62ch] text-[16px] leading-7 font-medium text-[var(--t-strong)]">
-                    {tc(g.reden)}
+                    {g.reden}
                   </p>
                   <p className="shrink-0 text-[14px] leading-7 text-[var(--t-muted)] tabular-nums">
-                    {g.namen.length}{" "}
-                    {g.namen.length === 1 ? "behandeling" : "behandelingen"}
+                    {g.namen.length === 1
+                      ? t("1 behandeling")
+                      : vul(t("{0} behandelingen"), g.namen.length)}
                   </p>
                 </div>
                 <ul className="mt-4 flex flex-wrap gap-2">
@@ -399,7 +425,7 @@ export default function Uitkomst({ profiel }: Props) {
                       key={n}
                       className="rounded-[var(--r-pill)] bg-white px-4 py-2 text-[14px] leading-5 text-[var(--t-body)]"
                     >
-                      {n}
+                      {tc(n)}
                     </li>
                   ))}
                 </ul>
@@ -424,7 +450,7 @@ export default function Uitkomst({ profiel }: Props) {
               {t("Eerlijk gezegd")}
             </p>
             <p className="diba-display-s mt-4 max-w-[16ch]">
-              {t("Dit weten we")}
+              {t("Dit weten we")}{" "}
               <span className="diba-accent-on-dark">{t("nog niet.")}</span>
             </p>
             <p className="mt-6 max-w-[46ch] text-[16px] leading-7 text-[var(--on-dark-body)]">

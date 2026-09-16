@@ -2,6 +2,7 @@
 
 import Link from "@/components/ui/Taalpad";
 import { publicCopy } from "@/lib/copy-flags";
+import { redenTekst } from "@/data/huidprofiel";
 import { useOordelen } from "@/lib/huidprofiel-oordeel";
 import { useT, useTc } from "@/lib/gebruik-taal";
 
@@ -72,9 +73,9 @@ export default function ProfielOordeel({ slug }: { slug: string }) {
   const koptint = HARD ? "text-[var(--warn-text)]" : "text-[var(--t-label)]";
   return (
     <div className={`mt-8 rounded-[var(--r-md)] p-6 sm:p-7 ${vlak}`}>
-      <p className={`diba-label ${koptint}`}>{kop}</p>
+      <p className={`diba-label ${koptint}`}>{t(kop)}</p>
       <p className="mt-2 max-w-[64ch] text-[16px] leading-7 text-[var(--t-body)]">
-        {tc(match.reden)}
+        {redenTekst(match.reden, t, tc)}
       </p>
 
       {match.letOp.length > 0 ? (

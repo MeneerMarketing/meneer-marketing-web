@@ -137,7 +137,11 @@ export default function FigmaReviewCard({
         </div>
         <blockquote>
           <p className="max-w-3xl text-[clamp(1.35rem,2.8vw,2rem)] leading-[1.2] tracking-[-.04em] text-white text-balance">
-            {reviewtekst(review.quote, review.quoteEn, taal)}
+            {reviewtekst(
+              review.quote,
+              { en: review.quoteEn, es: review.quoteEs },
+              taal,
+            )}
           </p>
         </blockquote>
         <AuthorRow review={review} onDark />
@@ -158,7 +162,11 @@ export default function FigmaReviewCard({
         </div>
         <blockquote className="mt-6 flex-1">
           <p className="diba-card-title text-[var(--t-strong)]">
-            {reviewtekst(review.quote, review.quoteEn, taal)}
+            {reviewtekst(
+              review.quote,
+              { en: review.quoteEn, es: review.quoteEs },
+              taal,
+            )}
           </p>
         </blockquote>
         <div className="mt-8 border-t border-[var(--g-100)] pt-6">
@@ -180,7 +188,11 @@ export default function FigmaReviewCard({
       </div>
       <blockquote className="mt-5 flex-1">
         <p className="text-[15px] leading-7 text-[var(--t-body)]">
-          {reviewtekst(review.quote, review.quoteEn, taal)}
+          {reviewtekst(
+            review.quote,
+            { en: review.quoteEn, es: review.quoteEs },
+            taal,
+          )}
         </p>
       </blockquote>
       <div className="mt-6 border-t border-[var(--g-100)] pt-5">

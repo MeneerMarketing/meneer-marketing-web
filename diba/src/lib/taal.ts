@@ -171,13 +171,15 @@ export function vertaaldePaden(): readonly string[] {
  * aan wie dat niet doet.
  *
  * Yasin, 15 september 2026: "spaans moet uit de language switcher ook tijdelijk eruit
- * totdat we klaar daarmee zijn."
+ * totdat we klaar daarmee zijn." Een dag later stond het Spaans op 100% en waren
+ * `npm run vreemdetaal es` en de meting met ingevuld huidprofiel schoon. Yasin, 16
+ * september 2026: het moet geïndexeerd en live, zonder eerst een leesronde van Rojda.
  */
 export const TAAL_AF: Readonly<Record<Taal, boolean>> = {
   nl: true,
   en: true,
-  /* Omzetten zodra `npm run vreemdetaal es` schoon is. */
-  es: false,
+  /* Aan sinds 16 september 2026: taalkiezer, sitemap, hreflang en index in één keer. */
+  es: true,
 };
 
 /**

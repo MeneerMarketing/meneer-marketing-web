@@ -12,39 +12,71 @@ import type { Taal } from "@/lib/taal";
  * Engels. Dit zijn regels in plaats van losse regels, dus elke nieuwe vorm gaat vanzelf mee.
  *
  * De reviewtekst zelf vertalen we niet: die is door een klant geschreven en een vertaalde
- * review is een verzonnen review. De datum eromheen is van ons.
+ * review is een verzonnen review. De datum eromheen is van ons, en die staat dus in de
+ * taal van de pagina, ook naast een Nederlandse review.
  */
 
-const EENHEDEN: readonly (readonly [RegExp, string, string])[] = [
-  [/\buur\b/, "hour", "hours"],
-  [/\bdag(en)?\b/, "day", "days"],
-  [/\bweken?\b/, "week", "weeks"],
-  [/\bmaand(en)?\b/, "month", "months"],
-  [/\bjaar|jaren\b/, "year", "years"],
-];
+type Vorm = {
+  /** Per eenheid: het Nederlandse patroon, enkelvoud, meervoud en het woord voor "een". */
+  readonly eenheden: readonly (readonly [RegExp, string, string, string])[];
+  /** De bepaling vooraf: "ongeveer", "bijna", "meer dan". */
+  readonly vooraf: {
+    readonly ongeveer: string;
+    readonly bijna: string;
+    readonly meerDan: string;
+  };
+  /** Zet de delen in de volgorde van de taal: "2 months ago" tegenover "hace 2 meses". */
+  readonly zin: (vooraf: string, aantal: string, woord: string) => string;
+};
+
+const VORMEN: Readonly<Record<Exclude<Taal, "nl">, Vorm>> = {
+  en: {
+    eenheden: [
+      [/\buur\b/, "hour", "hours", "an"],
+      [/\bdag(en)?\b/, "day", "days", "a"],
+      [/\bweken?\b/, "week", "weeks", "a"],
+      [/\bmaand(en)?\b/, "month", "months", "a"],
+      [/\bjaar|jaren\b/, "year", "years", "a"],
+    ],
+    vooraf: { ongeveer: "about ", bijna: "almost ", meerDan: "over " },
+    zin: (vooraf, aantal, woord) => `${vooraf}${aantal} ${woord} ago`,
+  },
+  es: {
+    eenheden: [
+      [/\buur\b/, "hora", "horas", "una"],
+      [/\bdag(en)?\b/, "día", "días", "un"],
+      [/\bweken?\b/, "semana", "semanas", "una"],
+      [/\bmaand(en)?\b/, "mes", "meses", "un"],
+      [/\bjaar|jaren\b/, "año", "años", "un"],
+    ],
+    vooraf: {
+      ongeveer: "aproximadamente ",
+      bijna: "casi ",
+      meerDan: "más de ",
+    },
+    zin: (vooraf, aantal, woord) => `hace ${vooraf}${aantal} ${woord}`,
+  },
+};
 
 export function relatieveDatum(nl: string, taal: Taal): string {
-  /* Alleen Engels. De Spaanse kant toont voorlopig de Nederlandse vorm van een
-     reviewdatum; die staat naast een Nederlandse review, dus dat is consequent. Zodra de
-     reviews een Spaanse vertaling krijgen hoort hier een tabel per taal. */
-  if (taal !== "en") return nl;
+  if (taal === "nl") return nl;
+  const vorm = VORMEN[taal];
 
   const tekst = nl.toLowerCase();
 
-  const eenheid = EENHEDEN.find(([patroon]) => patroon.test(tekst));
+  const eenheid = vorm.eenheden.find(([patroon]) => patroon.test(tekst));
   if (!eenheid) return nl;
 
   const getal = tekst.match(/\d+/)?.[0];
   const isEen = /\been\b/.test(tekst);
-  const aantal = getal ?? (isEen ? "a" : "");
+  const aantal = getal ?? (isEen ? eenheid[3] : "");
   const woord = getal && getal !== "1" ? eenheid[2] : eenheid[1];
 
-  /* De bepaling vooraf: "ongeveer", "bijna", "meer dan". */
   let vooraf = "";
-  if (tekst.startsWith("ongeveer")) vooraf = "about ";
-  else if (tekst.startsWith("bijna")) vooraf = "almost ";
-  else if (tekst.startsWith("meer dan")) vooraf = "over ";
+  if (tekst.startsWith("ongeveer")) vooraf = vorm.vooraf.ongeveer;
+  else if (tekst.startsWith("bijna")) vooraf = vorm.vooraf.bijna;
+  else if (tekst.startsWith("meer dan")) vooraf = vorm.vooraf.meerDan;
 
-  const kern = `${vooraf}${aantal} ${woord} ago`.replace(/\s+/g, " ").trim();
+  const kern = vorm.zin(vooraf, aantal, woord).replace(/\s+/g, " ").trim();
   return kern.charAt(0).toUpperCase() + kern.slice(1);
 }

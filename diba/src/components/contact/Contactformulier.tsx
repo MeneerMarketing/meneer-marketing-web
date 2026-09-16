@@ -119,7 +119,8 @@ export default function Contactformulier() {
           {t("Je bericht is verstuurd.")}
         </p>
         <p className="mt-3 text-[16px] leading-7 text-[var(--t-body)]">
-          {DIBA_REACTIETIJDEN.email} Heb je er eerder antwoord op nodig, bel dan{" "}
+          {tc(DIBA_REACTIETIJDEN.email)}{" "}
+          {t("Heb je er eerder antwoord op nodig, bel dan")}{" "}
           <a
             href={DIBA_TELEFOON_HREF}
             className="text-[var(--g-700)] underline underline-offset-4"

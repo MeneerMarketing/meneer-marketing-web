@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { TAAL_AF, taalAlternatieven, taalVanPad, TAALCODES } from "@/lib/taal";
 import { DIBA_SITE, DIBA_SITE_URL } from "@/lib/site";
+import { vertaal } from "@/lib/vertaal";
 
 /**
  * De velden die zoekmachines en berichtendiensten lezen maar die nergens op de pagina staan.
@@ -93,9 +94,23 @@ export function zoekmachineVelden({
   gewijzigd,
   extra,
 }: ZoekmachineVelden): Metadata {
+  /* De alt-tekst van het deelbeeld gaat door het woordenboek, in de taal die het pad
+     draagt. De vertaalde wrappers doen dat al via `lib/vertaalde-metadata.ts`, maar de
+     Engelse en de Spaanse homepage bouwen hun velden hier rechtstreeks. Die hielden
+     "huidkliniek in Rotterdam" als enige Nederlandse regel op een verder vertaalde
+     pagina, onzichtbaar in de browser en zichtbaar zodra iemand de link deelt. Voor een
+     Nederlands pad verandert er niets. */
+  const taal = taalVanPad(pad);
   const beelden = beeld
-    ? [{ url: beeld.url, width: 1200, height: 630, alt: beeld.alt }]
-    : [DEELBEELD];
+    ? [
+        {
+          url: beeld.url,
+          width: 1200,
+          height: 630,
+          alt: vertaal(beeld.alt, taal),
+        },
+      ]
+    : [{ ...DEELBEELD, alt: vertaal(DEELBEELD.alt, taal) }];
 
   return {
     ...(titel ? { title: titel } : {}),

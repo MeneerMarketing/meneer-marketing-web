@@ -998,9 +998,14 @@ export default async function BehandelingPage({ params }: PageProps) {
           hadden er geen, dertien hadden er een of twee. De eigen vragen staan voorop; daarna
           komen de vier die iedereen stelt en waarvan het antwoord al in deze pagina staat:
           hoe lang, welke hersteltijd, hoe vaak en wat het kost. Blijft het onder de drie,
-          dan staat de sectie er niet. */}
+          dan staat de sectie er niet.
+
+          Het onderwerp is de vertaalde naam, niet de Nederlandse in kleine letters: het
+          label zet hem toch in kapitalen, en `t()` kent de Nederlandse naam alleen met
+          hoofdletters. Met kleine letters stond er "Over nordlys ipl bij pigment" op
+          /en en /es. */}
       {vragen.length >= 3 ? (
-        <PillarFaq items={vragen} onderwerp={b.naam.toLowerCase()} />
+        <PillarFaq items={vragen} onderwerp={tc(b.naam)} />
       ) : null}
 
       {/* ── Afsluiter ── */}

@@ -21,7 +21,7 @@ import MobielInklap from "@/components/ui/MobielInklap";
 import { t, tc } from "@/lib/vertaal";
 import { taalNu } from "@/lib/taalcontext";
 import { relatieveDatum } from "@/lib/relatieve-datum";
-import { reviewtekst } from "@/lib/reviewtaal";
+import { reviewtaalcode, reviewtekst } from "@/lib/reviewtaal";
 import Vertaaldnoot from "@/components/reviews/Vertaaldnoot";
 
 /**
@@ -254,8 +254,11 @@ export default function Reviewarchief({
                 className="flex flex-col rounded-[var(--r-lg)] bg-white p-6"
               >
                 <Sterren aantal={Math.round(r.sterren)} />
-                <p className="mt-4 grow text-[15px] leading-7 text-[var(--g-900)]">
-                  {reviewtekst(r.tekst, r.tekstEn, taal)}
+                <p
+                  className="mt-4 grow text-[15px] leading-7 text-[var(--g-900)]"
+                  lang={reviewtaalcode({ en: r.tekstEn, es: r.tekstEs }, taal)}
+                >
+                  {reviewtekst(r.tekst, { en: r.tekstEn, es: r.tekstEs }, taal)}
                 </p>
                 <p className="diba-label mt-5 flex items-baseline justify-between gap-3 text-[var(--t-muted)]">
                   <span className="truncate">{r.naam}</span>
@@ -280,8 +283,18 @@ export default function Reviewarchief({
                     className="flex flex-col rounded-[var(--r-lg)] bg-white p-6"
                   >
                     <Sterren aantal={Math.round(r.sterren)} />
-                    <p className="mt-4 grow text-[15px] leading-7 text-[var(--g-900)]">
-                      {reviewtekst(r.tekst, r.tekstEn, taal)}
+                    <p
+                      className="mt-4 grow text-[15px] leading-7 text-[var(--g-900)]"
+                      lang={reviewtaalcode(
+                        { en: r.tekstEn, es: r.tekstEs },
+                        taal,
+                      )}
+                    >
+                      {reviewtekst(
+                        r.tekst,
+                        { en: r.tekstEn, es: r.tekstEs },
+                        taal,
+                      )}
                     </p>
                     <p className="diba-label mt-5 flex items-baseline justify-between gap-3 text-[var(--t-muted)]">
                       <span className="truncate">{r.naam}</span>

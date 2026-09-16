@@ -28,6 +28,7 @@ import {
 } from "@/lib/laser-pricing";
 import { DIBA_WHATSAPP_URL } from "@/lib/site";
 import { useT, useTc } from "@/lib/gebruik-taal";
+import { vul } from "@/lib/vul";
 
 import { useTaal } from "@/lib/gebruik-taal";
 /**
@@ -116,6 +117,16 @@ export default function Configurator() {
   );
   const gedekt = useMemo(() => gedekteZones(gekozen), [gekozen]);
   const advies = useMemo(() => pakketAdvies(gekozen), [gekozen]);
+  /* De zin met het dikgedrukte pakket erin. De sjabloon gaat als geheel door het
+     woordenboek en wordt op {2} in tweeën geknipt, zodat de <strong> in elke taal op de
+     plek van het pakket komt en de rest van de zin niet in losse stukken vertaald hoeft. */
+  const adviesZin = advies
+    ? vul(
+        t("Je hebt {0} van de {1} zones uit {2} aangewezen."),
+        advies.gekozen,
+        advies.totaal,
+      ).split("{2}")
+    : ["", ""];
   const pakketten = zonesVoor(geslacht).filter((z) => z.area === "pakket");
 
   /* De tarieven die geen eigen vorm op de kaart hebben.
@@ -309,14 +320,20 @@ export default function Configurator() {
 
           {advies ? (
             <p className="mt-5 max-w-[56ch] rounded-[var(--r-sm)] bg-[var(--g-050)] p-5 text-[15px] leading-7 text-[var(--t-body)]">
-              {t("Je hebt")} {advies.gekozen} van de {advies.totaal} zones uit{" "}
+              {adviesZin[0]}
               <strong className="font-medium text-[var(--t-strong)]">
                 {tc(advies.label)}
-              </strong>{" "}
-              aangewezen. Wat er nog bij zou komen:{" "}
-              {advies.erbij.map((id) => tc(label(id)).toLowerCase()).join(", ")}
-              . {t("Of")}
-              dat gunstiger uitkomt hangt af van de definitieve tarieven.
+              </strong>
+              {adviesZin[1]}{" "}
+              {vul(
+                t("Wat er nog bij zou komen: {0}."),
+                advies.erbij
+                  .map((id) => tc(label(id)).toLowerCase())
+                  .join(", "),
+              )}{" "}
+              {t(
+                "Of dat gunstiger uitkomt hangt af van de definitieve tarieven.",
+              )}
             </p>
           ) : null}
         </div>

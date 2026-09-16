@@ -75,13 +75,14 @@ const TALEN = GEVRAAGD.length ? GEVRAAGD : VREEMDE_TALEN;
  *
  * Elk woord dat ook Engels kan zijn (van, die, met, hoe, want, per) staat met opzet niet in
  * de Engelse lijst. Een zeef die honderd valse meldingen geeft wordt niet gelezen, en dan
- * vindt hij de ene echte ook niet meer. Voor het Spaans valt "no" af en komt "meer" erbij.
+ * vindt hij de ene echte ook niet meer. Voor het Spaans valt "no" af en komt "meer" erbij;
+ * "lees" valt daar ook af, want dat is Spaans voor "jij leest" (tú lees).
  */
 const NL_IN_EN =
   /\b(wij|jouw|jij|niet|geen|waarom|huid|behandeling|behandelingen|afspraak|tarieven|vanaf|minuten|weken|maanden|dagen|zonder|eerste|tweede|altijd|nooit|meestal|misschien|daarna|daarom|precies|gewoon|samen|tijdens|volgens|ongeveer|bijvoorbeeld|huidtherapeut|huidtherapeuten|klanten|kliniek|meting|sessies|zelf|omdat|terwijl|maar|ook|nog|wel|dus|welke|hoeveel|wanneer|iedereen|niets|veel|weinig|beter|bekijk|lees|maken|kiezen|weten|zien|gaan|komen|staat|staan|heeft|hebben|wordt|worden|kost|kosten)\b/gi;
 
 const NL_IN_ES =
-  /\b(wij|jouw|jij|niet|geen|waarom|huid|behandeling|behandelingen|afspraak|tarieven|vanaf|minuten|weken|maanden|dagen|zonder|eerste|tweede|altijd|nooit|meestal|misschien|daarna|daarom|precies|gewoon|samen|tijdens|volgens|ongeveer|bijvoorbeeld|huidtherapeut|huidtherapeuten|klanten|kliniek|meting|sessies|zelf|omdat|terwijl|maar|meer|ook|nog|wel|dus|welke|hoeveel|wanneer|iedereen|niets|veel|weinig|goed|beter|bekijk|lees|maken|kiezen|weten|zien|gaan|komen|staat|staan|heeft|hebben|wordt|worden|kost|kosten|het|een|jouw|deze|die|dat|voor|door|naar|over|bij|uit|aan|tot)\b/gi;
+  /\b(wij|jouw|jij|niet|geen|waarom|huid|behandeling|behandelingen|afspraak|tarieven|vanaf|minuten|weken|maanden|dagen|zonder|eerste|tweede|altijd|nooit|meestal|misschien|daarna|daarom|precies|gewoon|samen|tijdens|volgens|ongeveer|bijvoorbeeld|huidtherapeut|huidtherapeuten|klanten|kliniek|meting|sessies|zelf|omdat|terwijl|maar|meer|ook|nog|wel|dus|welke|hoeveel|wanneer|iedereen|niets|veel|weinig|goed|beter|bekijk|maken|kiezen|weten|zien|gaan|komen|staat|staan|heeft|hebben|wordt|worden|kost|kosten|het|een|jouw|deze|die|dat|voor|door|naar|over|bij|uit|aan|tot)\b/gi;
 
 const ZEVEN = { en: NL_IN_EN, es: NL_IN_ES };
 

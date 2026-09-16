@@ -159,7 +159,7 @@ function Regel({
                   : "text-[var(--t-muted)]"
               }`}
             >
-              {MERKTEKEN[oordeel!.grond]!.tekst}
+              {t(MERKTEKEN[oordeel!.grond]!.tekst)}
             </span>
           ) : null}
         </span>
