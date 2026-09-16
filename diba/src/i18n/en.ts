@@ -154,6 +154,7 @@ export const WOORDENBOEK: Readonly<Record<string, string>> = {
   "Diba kennisbank": "Diba knowledge base",
   "Uitleg per klacht.": "An explanation per concern.",
   "Naar de kennisbank": "To the knowledge base",
+  "Bekijk alle huidproblemen": "View all skin concerns",
   "Lees meer": "Read more",
   Huidklachten: "Skin concerns",
   Waardering: "Rating",
